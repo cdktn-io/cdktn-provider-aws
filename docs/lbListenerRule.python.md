@@ -37,22 +37,22 @@ lbListenerRule.LbListenerRule(
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRule.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRule.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRule.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRule.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRule.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRule.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRule.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRule.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRule.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRule.Initializer.parameter.action">action</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleAction">LbListenerRuleAction</a>]</code> | action block. |
-| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRule.Initializer.parameter.condition">condition</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleCondition">LbListenerRuleCondition</a>]</code> | condition block. |
+| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRule.Initializer.parameter.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRule.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRule.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktn.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRule.Initializer.parameter.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRule.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRule.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRule.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRule.Initializer.parameter.action">action</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleAction">LbListenerRuleAction</a>]</code> | action block. |
+| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRule.Initializer.parameter.condition">condition</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleCondition">LbListenerRuleCondition</a>]</code> | condition block. |
 | <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRule.Initializer.parameter.listenerArn">listener_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lb_listener_rule#listener_arn LbListenerRule#listener_arn}. |
 | <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRule.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lb_listener_rule#id LbListenerRule#id}. |
 | <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRule.Initializer.parameter.priority">priority</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lb_listener_rule#priority LbListenerRule#priority}. |
 | <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRule.Initializer.parameter.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRule.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lb_listener_rule#tags LbListenerRule#tags}. |
 | <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRule.Initializer.parameter.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lb_listener_rule#tags_all LbListenerRule#tags_all}. |
-| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRule.Initializer.parameter.transform">transform</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleTransform">LbListenerRuleTransform</a>]</code> | transform block. |
+| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRule.Initializer.parameter.transform">transform</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleTransform">LbListenerRuleTransform</a>]</code> | transform block. |
 
 ---
 
@@ -76,49 +76,49 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-aws.lbListenerRule.LbListenerRule.Initializer.parameter.connection"></a>
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-aws.lbListenerRule.LbListenerRule.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
 ##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-aws.lbListenerRule.LbListenerRule.Initializer.parameter.dependsOn"></a>
 
-- *Type:* typing.List[cdktf.ITerraformDependable]
+- *Type:* typing.List[cdktn.ITerraformDependable]
 
 ---
 
 ##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-aws.lbListenerRule.LbListenerRule.Initializer.parameter.forEach"></a>
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-aws.lbListenerRule.LbListenerRule.Initializer.parameter.lifecycle"></a>
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
 ##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.lbListenerRule.LbListenerRule.Initializer.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-aws.lbListenerRule.LbListenerRule.Initializer.parameter.provisioners"></a>
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
 
 ---
 
 ##### `action`<sup>Required</sup> <a name="action" id="@cdktn/provider-aws.lbListenerRule.LbListenerRule.Initializer.parameter.action"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleAction">LbListenerRuleAction</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleAction">LbListenerRuleAction</a>]
 
 action block.
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `condition`<sup>Required</sup> <a name="condition" id="@cdktn/provider-aws.lbListenerRule.LbListenerRule.Initializer.parameter.condition"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleCondition">LbListenerRuleCondition</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleCondition">LbListenerRuleCondition</a>]
 
 condition block.
 
@@ -191,7 +191,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `transform`<sup>Optional</sup> <a name="transform" id="@cdktn/provider-aws.lbListenerRule.LbListenerRule.Initializer.parameter.transform"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleTransform">LbListenerRuleTransform</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleTransform">LbListenerRuleTransform</a>]
 
 transform block.
 
@@ -480,7 +480,7 @@ def import_from(
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.lbListenerRule.LbListenerRule.importFrom.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -573,7 +573,7 @@ def put_action(
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.lbListenerRule.LbListenerRule.putAction.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleAction">LbListenerRuleAction</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleAction">LbListenerRuleAction</a>]
 
 ---
 
@@ -587,7 +587,7 @@ def put_condition(
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.lbListenerRule.LbListenerRule.putCondition.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleCondition">LbListenerRuleCondition</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleCondition">LbListenerRuleCondition</a>]
 
 ---
 
@@ -601,7 +601,7 @@ def put_transform(
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.lbListenerRule.LbListenerRule.putTransform.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleTransform">LbListenerRuleTransform</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleTransform">LbListenerRuleTransform</a>]
 
 ---
 
@@ -648,7 +648,7 @@ def reset_transform() -> None
 | <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRule.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRule.isTerraformElement">is_terraform_element</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRule.isTerraformResource">is_terraform_resource</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRule.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTF code for importing a LbListenerRule resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRule.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTN code for importing a LbListenerRule resource upon running "cdktn plan <stack-name>". |
 
 ---
 
@@ -731,7 +731,7 @@ lbListenerRule.LbListenerRule.generate_config_for_import(
 )
 ```
 
-Generates CDKTF code for importing a LbListenerRule resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a LbListenerRule resource upon running "cdktn plan <stack-name>".
 
 ###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-aws.lbListenerRule.LbListenerRule.generateConfigForImport.parameter.scope"></a>
 
@@ -761,7 +761,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.lbListenerRule.LbListenerRule.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ? Optional instance of the provider where the LbListenerRule to import is found.
 
@@ -772,32 +772,32 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRule.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRule.property.cdktfStack">cdktf_stack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRule.property.cdktfStack">cdktf_stack</a></code> | <code>cdktn.TerraformStack</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRule.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRule.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRule.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRule.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRule.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRule.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRule.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRule.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRule.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRule.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRule.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRule.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRule.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRule.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRule.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRule.property.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRule.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRule.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRule.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRule.property.action">action</a></code> | <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionList">LbListenerRuleActionList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRule.property.arn">arn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRule.property.condition">condition</a></code> | <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleConditionList">LbListenerRuleConditionList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRule.property.transform">transform</a></code> | <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleTransformList">LbListenerRuleTransformList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRule.property.actionInput">action_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleAction">LbListenerRuleAction</a>]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRule.property.conditionInput">condition_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleCondition">LbListenerRuleCondition</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRule.property.actionInput">action_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleAction">LbListenerRuleAction</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRule.property.conditionInput">condition_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleCondition">LbListenerRuleCondition</a>]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRule.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRule.property.listenerArnInput">listener_arn_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRule.property.priorityInput">priority_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRule.property.regionInput">region_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRule.property.tagsAllInput">tags_all_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRule.property.tagsInput">tags_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRule.property.transformInput">transform_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleTransform">LbListenerRuleTransform</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRule.property.transformInput">transform_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleTransform">LbListenerRuleTransform</a>]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRule.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRule.property.listenerArn">listener_arn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRule.property.priority">priority</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
@@ -825,7 +825,7 @@ The tree node.
 cdktf_stack: TerraformStack
 ```
 
-- *Type:* cdktf.TerraformStack
+- *Type:* cdktn.TerraformStack
 
 ---
 
@@ -875,7 +875,7 @@ terraform_resource_type: str
 terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ```
 
-- *Type:* cdktf.TerraformProviderGeneratorMetadata
+- *Type:* cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
@@ -885,7 +885,7 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -895,7 +895,7 @@ connection: SSHProvisionerConnection | WinrmProvisionerConnection
 count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
@@ -915,7 +915,7 @@ depends_on: typing.List[str]
 for_each: ITerraformIterator
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -925,7 +925,7 @@ for_each: ITerraformIterator
 lifecycle: TerraformResourceLifecycle
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -935,7 +935,7 @@ lifecycle: TerraformResourceLifecycle
 provider: TerraformProvider
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -945,7 +945,7 @@ provider: TerraformProvider
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
 
 ---
 
@@ -995,7 +995,7 @@ transform: LbListenerRuleTransformList
 action_input: IResolvable | typing.List[LbListenerRuleAction]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleAction">LbListenerRuleAction</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleAction">LbListenerRuleAction</a>]
 
 ---
 
@@ -1005,7 +1005,7 @@ action_input: IResolvable | typing.List[LbListenerRuleAction]
 condition_input: IResolvable | typing.List[LbListenerRuleCondition]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleCondition">LbListenerRuleCondition</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleCondition">LbListenerRuleCondition</a>]
 
 ---
 
@@ -1075,7 +1075,7 @@ tags_input: typing.Mapping[str]
 transform_input: IResolvable | typing.List[LbListenerRuleTransform]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleTransform">LbListenerRuleTransform</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleTransform">LbListenerRuleTransform</a>]
 
 ---
 
@@ -1694,7 +1694,7 @@ lbListenerRule.LbListenerRuleActionForward(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionForward.property.targetGroup">target_group</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionForwardTargetGroup">LbListenerRuleActionForwardTargetGroup</a>]</code> | target_group block. |
+| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionForward.property.targetGroup">target_group</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionForwardTargetGroup">LbListenerRuleActionForwardTargetGroup</a>]</code> | target_group block. |
 | <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionForward.property.stickiness">stickiness</a></code> | <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionForwardStickiness">LbListenerRuleActionForwardStickiness</a></code> | stickiness block. |
 
 ---
@@ -1705,7 +1705,7 @@ lbListenerRule.LbListenerRuleActionForward(
 target_group: IResolvable | typing.List[LbListenerRuleActionForwardTargetGroup]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionForwardTargetGroup">LbListenerRuleActionForwardTargetGroup</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionForwardTargetGroup">LbListenerRuleActionForwardTargetGroup</a>]
 
 target_group block.
 
@@ -1745,7 +1745,7 @@ lbListenerRule.LbListenerRuleActionForwardStickiness(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionForwardStickiness.property.duration">duration</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lb_listener_rule#duration LbListenerRule#duration}. |
-| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionForwardStickiness.property.enabled">enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lb_listener_rule#enabled LbListenerRule#enabled}. |
+| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionForwardStickiness.property.enabled">enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lb_listener_rule#enabled LbListenerRule#enabled}. |
 
 ---
 
@@ -1767,7 +1767,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 enabled: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lb_listener_rule#enabled LbListenerRule#enabled}.
 
@@ -1839,7 +1839,7 @@ lbListenerRule.LbListenerRuleActionJwtValidation(
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionJwtValidation.property.issuer">issuer</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lb_listener_rule#issuer LbListenerRule#issuer}. |
 | <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionJwtValidation.property.jwksEndpoint">jwks_endpoint</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lb_listener_rule#jwks_endpoint LbListenerRule#jwks_endpoint}. |
-| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionJwtValidation.property.additionalClaim">additional_claim</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionJwtValidationAdditionalClaim">LbListenerRuleActionJwtValidationAdditionalClaim</a>]</code> | additional_claim block. |
+| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionJwtValidation.property.additionalClaim">additional_claim</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionJwtValidationAdditionalClaim">LbListenerRuleActionJwtValidationAdditionalClaim</a>]</code> | additional_claim block. |
 
 ---
 
@@ -1873,7 +1873,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 additional_claim: IResolvable | typing.List[LbListenerRuleActionJwtValidationAdditionalClaim]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionJwtValidationAdditionalClaim">LbListenerRuleActionJwtValidationAdditionalClaim</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionJwtValidationAdditionalClaim">LbListenerRuleActionJwtValidationAdditionalClaim</a>]
 
 additional_claim block.
 
@@ -2068,7 +2068,7 @@ lbListenerRule.LbListenerRuleCondition(
 | <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleCondition.property.httpHeader">http_header</a></code> | <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleConditionHttpHeader">LbListenerRuleConditionHttpHeader</a></code> | http_header block. |
 | <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleCondition.property.httpRequestMethod">http_request_method</a></code> | <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleConditionHttpRequestMethod">LbListenerRuleConditionHttpRequestMethod</a></code> | http_request_method block. |
 | <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleCondition.property.pathPattern">path_pattern</a></code> | <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleConditionPathPattern">LbListenerRuleConditionPathPattern</a></code> | path_pattern block. |
-| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleCondition.property.queryString">query_string</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleConditionQueryString">LbListenerRuleConditionQueryString</a>]</code> | query_string block. |
+| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleCondition.property.queryString">query_string</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleConditionQueryString">LbListenerRuleConditionQueryString</a>]</code> | query_string block. |
 | <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleCondition.property.sourceIp">source_ip</a></code> | <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleConditionSourceIp">LbListenerRuleConditionSourceIp</a></code> | source_ip block. |
 
 ---
@@ -2135,7 +2135,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 query_string: IResolvable | typing.List[LbListenerRuleConditionQueryString]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleConditionQueryString">LbListenerRuleConditionQueryString</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleConditionQueryString">LbListenerRuleConditionQueryString</a>]
 
 query_string block.
 
@@ -2450,22 +2450,22 @@ lbListenerRule.LbListenerRuleConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleConfig.property.action">action</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleAction">LbListenerRuleAction</a>]</code> | action block. |
-| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleConfig.property.condition">condition</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleCondition">LbListenerRuleCondition</a>]</code> | condition block. |
+| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleConfig.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktn.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleConfig.property.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleConfig.property.action">action</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleAction">LbListenerRuleAction</a>]</code> | action block. |
+| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleConfig.property.condition">condition</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleCondition">LbListenerRuleCondition</a>]</code> | condition block. |
 | <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleConfig.property.listenerArn">listener_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lb_listener_rule#listener_arn LbListenerRule#listener_arn}. |
 | <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lb_listener_rule#id LbListenerRule#id}. |
 | <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleConfig.property.priority">priority</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lb_listener_rule#priority LbListenerRule#priority}. |
 | <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleConfig.property.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lb_listener_rule#tags LbListenerRule#tags}. |
 | <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleConfig.property.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lb_listener_rule#tags_all LbListenerRule#tags_all}. |
-| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleConfig.property.transform">transform</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleTransform">LbListenerRuleTransform</a>]</code> | transform block. |
+| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleConfig.property.transform">transform</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleTransform">LbListenerRuleTransform</a>]</code> | transform block. |
 
 ---
 
@@ -2475,7 +2475,7 @@ lbListenerRule.LbListenerRuleConfig(
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -2485,7 +2485,7 @@ connection: SSHProvisionerConnection | WinrmProvisionerConnection
 count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
@@ -2495,7 +2495,7 @@ count: typing.Union[int, float] | TerraformCount
 depends_on: typing.List[ITerraformDependable]
 ```
 
-- *Type:* typing.List[cdktf.ITerraformDependable]
+- *Type:* typing.List[cdktn.ITerraformDependable]
 
 ---
 
@@ -2505,7 +2505,7 @@ depends_on: typing.List[ITerraformDependable]
 for_each: ITerraformIterator
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -2515,7 +2515,7 @@ for_each: ITerraformIterator
 lifecycle: TerraformResourceLifecycle
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -2525,7 +2525,7 @@ lifecycle: TerraformResourceLifecycle
 provider: TerraformProvider
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -2535,7 +2535,7 @@ provider: TerraformProvider
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
 
 ---
 
@@ -2545,7 +2545,7 @@ provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecPro
 action: IResolvable | typing.List[LbListenerRuleAction]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleAction">LbListenerRuleAction</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleAction">LbListenerRuleAction</a>]
 
 action block.
 
@@ -2559,7 +2559,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 condition: IResolvable | typing.List[LbListenerRuleCondition]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleCondition">LbListenerRuleCondition</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleCondition">LbListenerRuleCondition</a>]
 
 condition block.
 
@@ -2650,7 +2650,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 transform: IResolvable | typing.List[LbListenerRuleTransform]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleTransform">LbListenerRuleTransform</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleTransform">LbListenerRuleTransform</a>]
 
 transform block.
 
@@ -2899,14 +2899,14 @@ lbListenerRule.LbListenerRuleActionAuthenticateCognitoOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionAuthenticateCognitoOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionAuthenticateCognitoOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionAuthenticateCognitoOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionAuthenticateCognitoOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -3103,7 +3103,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionAuthenticateCognitoOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -3384,14 +3384,14 @@ lbListenerRule.LbListenerRuleActionAuthenticateOidcOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionAuthenticateOidcOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionAuthenticateOidcOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionAuthenticateOidcOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionAuthenticateOidcOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -3588,7 +3588,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionAuthenticateOidcOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -3935,14 +3935,14 @@ lbListenerRule.LbListenerRuleActionFixedResponseOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionFixedResponseOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionFixedResponseOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionFixedResponseOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionFixedResponseOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -4136,7 +4136,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionFixedResponseOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -4289,14 +4289,14 @@ lbListenerRule.LbListenerRuleActionForwardOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionForwardOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionForwardOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionForwardOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionForwardOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -4491,7 +4491,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionForwardOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -4524,7 +4524,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `enabled`<sup>Optional</sup> <a name="enabled" id="@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionForwardOutputReference.putStickiness.parameter.enabled"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lb_listener_rule#enabled LbListenerRule#enabled}.
 
@@ -4540,7 +4540,7 @@ def put_target_group(
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionForwardOutputReference.putTargetGroup.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionForwardTargetGroup">LbListenerRuleActionForwardTargetGroup</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionForwardTargetGroup">LbListenerRuleActionForwardTargetGroup</a>]
 
 ---
 
@@ -4560,7 +4560,7 @@ def reset_stickiness() -> None
 | <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionForwardOutputReference.property.stickiness">stickiness</a></code> | <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionForwardStickinessOutputReference">LbListenerRuleActionForwardStickinessOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionForwardOutputReference.property.targetGroup">target_group</a></code> | <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionForwardTargetGroupList">LbListenerRuleActionForwardTargetGroupList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionForwardOutputReference.property.stickinessInput">stickiness_input</a></code> | <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionForwardStickiness">LbListenerRuleActionForwardStickiness</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionForwardOutputReference.property.targetGroupInput">target_group_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionForwardTargetGroup">LbListenerRuleActionForwardTargetGroup</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionForwardOutputReference.property.targetGroupInput">target_group_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionForwardTargetGroup">LbListenerRuleActionForwardTargetGroup</a>]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionForwardOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionForward">LbListenerRuleActionForward</a></code> | *No description.* |
 
 ---
@@ -4625,7 +4625,7 @@ stickiness_input: LbListenerRuleActionForwardStickiness
 target_group_input: IResolvable | typing.List[LbListenerRuleActionForwardTargetGroup]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionForwardTargetGroup">LbListenerRuleActionForwardTargetGroup</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionForwardTargetGroup">LbListenerRuleActionForwardTargetGroup</a>]
 
 ---
 
@@ -4655,14 +4655,14 @@ lbListenerRule.LbListenerRuleActionForwardStickinessOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionForwardStickinessOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionForwardStickinessOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionForwardStickinessOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionForwardStickinessOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -4855,7 +4855,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionForwardStickinessOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -4883,9 +4883,9 @@ def reset_enabled() -> None
 | <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionForwardStickinessOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionForwardStickinessOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionForwardStickinessOutputReference.property.durationInput">duration_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionForwardStickinessOutputReference.property.enabledInput">enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionForwardStickinessOutputReference.property.enabledInput">enabled_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionForwardStickinessOutputReference.property.duration">duration</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionForwardStickinessOutputReference.property.enabled">enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionForwardStickinessOutputReference.property.enabled">enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionForwardStickinessOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionForwardStickiness">LbListenerRuleActionForwardStickiness</a></code> | *No description.* |
 
 ---
@@ -4930,7 +4930,7 @@ duration_input: typing.Union[int, float]
 enabled_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -4950,7 +4950,7 @@ duration: typing.Union[int, float]
 enabled: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -4981,7 +4981,7 @@ lbListenerRule.LbListenerRuleActionForwardTargetGroupList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionForwardTargetGroupList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionForwardTargetGroupList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionForwardTargetGroupList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionForwardTargetGroupList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -4989,7 +4989,7 @@ lbListenerRule.LbListenerRuleActionForwardTargetGroupList(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionForwardTargetGroupList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -5059,7 +5059,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionForwardTargetGroupList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -5096,7 +5096,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionForwardTargetGroupList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionForwardTargetGroupList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionForwardTargetGroupList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionForwardTargetGroup">LbListenerRuleActionForwardTargetGroup</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionForwardTargetGroupList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionForwardTargetGroup">LbListenerRuleActionForwardTargetGroup</a>]</code> | *No description.* |
 
 ---
 
@@ -5130,7 +5130,7 @@ fqn: str
 internal_value: IResolvable | typing.List[LbListenerRuleActionForwardTargetGroup]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionForwardTargetGroup">LbListenerRuleActionForwardTargetGroup</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionForwardTargetGroup">LbListenerRuleActionForwardTargetGroup</a>]
 
 ---
 
@@ -5152,7 +5152,7 @@ lbListenerRule.LbListenerRuleActionForwardTargetGroupOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionForwardTargetGroupOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionForwardTargetGroupOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionForwardTargetGroupOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionForwardTargetGroupOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionForwardTargetGroupOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -5161,7 +5161,7 @@ lbListenerRule.LbListenerRuleActionForwardTargetGroupOutputReference(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionForwardTargetGroupOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -5370,7 +5370,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionForwardTargetGroupOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -5401,7 +5401,7 @@ def reset_weight() -> None
 | <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionForwardTargetGroupOutputReference.property.weightInput">weight_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionForwardTargetGroupOutputReference.property.arn">arn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionForwardTargetGroupOutputReference.property.weight">weight</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionForwardTargetGroupOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionForwardTargetGroup">LbListenerRuleActionForwardTargetGroup</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionForwardTargetGroupOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionForwardTargetGroup">LbListenerRuleActionForwardTargetGroup</a></code> | *No description.* |
 
 ---
 
@@ -5475,7 +5475,7 @@ weight: typing.Union[int, float]
 internal_value: IResolvable | LbListenerRuleActionForwardTargetGroup
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionForwardTargetGroup">LbListenerRuleActionForwardTargetGroup</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionForwardTargetGroup">LbListenerRuleActionForwardTargetGroup</a>
 
 ---
 
@@ -5496,7 +5496,7 @@ lbListenerRule.LbListenerRuleActionJwtValidationAdditionalClaimList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionJwtValidationAdditionalClaimList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionJwtValidationAdditionalClaimList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionJwtValidationAdditionalClaimList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionJwtValidationAdditionalClaimList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -5504,7 +5504,7 @@ lbListenerRule.LbListenerRuleActionJwtValidationAdditionalClaimList(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionJwtValidationAdditionalClaimList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -5574,7 +5574,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionJwtValidationAdditionalClaimList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -5611,7 +5611,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionJwtValidationAdditionalClaimList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionJwtValidationAdditionalClaimList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionJwtValidationAdditionalClaimList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionJwtValidationAdditionalClaim">LbListenerRuleActionJwtValidationAdditionalClaim</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionJwtValidationAdditionalClaimList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionJwtValidationAdditionalClaim">LbListenerRuleActionJwtValidationAdditionalClaim</a>]</code> | *No description.* |
 
 ---
 
@@ -5645,7 +5645,7 @@ fqn: str
 internal_value: IResolvable | typing.List[LbListenerRuleActionJwtValidationAdditionalClaim]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionJwtValidationAdditionalClaim">LbListenerRuleActionJwtValidationAdditionalClaim</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionJwtValidationAdditionalClaim">LbListenerRuleActionJwtValidationAdditionalClaim</a>]
 
 ---
 
@@ -5667,7 +5667,7 @@ lbListenerRule.LbListenerRuleActionJwtValidationAdditionalClaimOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionJwtValidationAdditionalClaimOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionJwtValidationAdditionalClaimOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionJwtValidationAdditionalClaimOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionJwtValidationAdditionalClaimOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionJwtValidationAdditionalClaimOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -5676,7 +5676,7 @@ lbListenerRule.LbListenerRuleActionJwtValidationAdditionalClaimOutputReference(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionJwtValidationAdditionalClaimOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -5884,7 +5884,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionJwtValidationAdditionalClaimOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -5911,7 +5911,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionJwtValidationAdditionalClaimOutputReference.property.format">format</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionJwtValidationAdditionalClaimOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionJwtValidationAdditionalClaimOutputReference.property.values">values</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionJwtValidationAdditionalClaimOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionJwtValidationAdditionalClaim">LbListenerRuleActionJwtValidationAdditionalClaim</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionJwtValidationAdditionalClaimOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionJwtValidationAdditionalClaim">LbListenerRuleActionJwtValidationAdditionalClaim</a></code> | *No description.* |
 
 ---
 
@@ -6005,7 +6005,7 @@ values: typing.List[str]
 internal_value: IResolvable | LbListenerRuleActionJwtValidationAdditionalClaim
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionJwtValidationAdditionalClaim">LbListenerRuleActionJwtValidationAdditionalClaim</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionJwtValidationAdditionalClaim">LbListenerRuleActionJwtValidationAdditionalClaim</a>
 
 ---
 
@@ -6025,14 +6025,14 @@ lbListenerRule.LbListenerRuleActionJwtValidationOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionJwtValidationOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionJwtValidationOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionJwtValidationOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionJwtValidationOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -6226,7 +6226,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionJwtValidationOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -6250,7 +6250,7 @@ def put_additional_claim(
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionJwtValidationOutputReference.putAdditionalClaim.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionJwtValidationAdditionalClaim">LbListenerRuleActionJwtValidationAdditionalClaim</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionJwtValidationAdditionalClaim">LbListenerRuleActionJwtValidationAdditionalClaim</a>]
 
 ---
 
@@ -6268,7 +6268,7 @@ def reset_additional_claim() -> None
 | <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionJwtValidationOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionJwtValidationOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionJwtValidationOutputReference.property.additionalClaim">additional_claim</a></code> | <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionJwtValidationAdditionalClaimList">LbListenerRuleActionJwtValidationAdditionalClaimList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionJwtValidationOutputReference.property.additionalClaimInput">additional_claim_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionJwtValidationAdditionalClaim">LbListenerRuleActionJwtValidationAdditionalClaim</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionJwtValidationOutputReference.property.additionalClaimInput">additional_claim_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionJwtValidationAdditionalClaim">LbListenerRuleActionJwtValidationAdditionalClaim</a>]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionJwtValidationOutputReference.property.issuerInput">issuer_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionJwtValidationOutputReference.property.jwksEndpointInput">jwks_endpoint_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionJwtValidationOutputReference.property.issuer">issuer</a></code> | <code>str</code> | *No description.* |
@@ -6317,7 +6317,7 @@ additional_claim: LbListenerRuleActionJwtValidationAdditionalClaimList
 additional_claim_input: IResolvable | typing.List[LbListenerRuleActionJwtValidationAdditionalClaim]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionJwtValidationAdditionalClaim">LbListenerRuleActionJwtValidationAdditionalClaim</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionJwtValidationAdditionalClaim">LbListenerRuleActionJwtValidationAdditionalClaim</a>]
 
 ---
 
@@ -6388,7 +6388,7 @@ lbListenerRule.LbListenerRuleActionList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -6396,7 +6396,7 @@ lbListenerRule.LbListenerRuleActionList(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -6466,7 +6466,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -6503,7 +6503,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleAction">LbListenerRuleAction</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleAction">LbListenerRuleAction</a>]</code> | *No description.* |
 
 ---
 
@@ -6537,7 +6537,7 @@ fqn: str
 internal_value: IResolvable | typing.List[LbListenerRuleAction]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleAction">LbListenerRuleAction</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleAction">LbListenerRuleAction</a>]
 
 ---
 
@@ -6559,7 +6559,7 @@ lbListenerRule.LbListenerRuleActionOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -6568,7 +6568,7 @@ lbListenerRule.LbListenerRuleActionOutputReference(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -6790,7 +6790,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -7034,7 +7034,7 @@ def put_forward(
 
 ###### `target_group`<sup>Required</sup> <a name="target_group" id="@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionOutputReference.putForward.parameter.targetGroup"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionForwardTargetGroup">LbListenerRuleActionForwardTargetGroup</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionForwardTargetGroup">LbListenerRuleActionForwardTargetGroup</a>]
 
 target_group block.
 
@@ -7080,7 +7080,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `additional_claim`<sup>Optional</sup> <a name="additional_claim" id="@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionOutputReference.putJwtValidation.parameter.additionalClaim"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionJwtValidationAdditionalClaim">LbListenerRuleActionJwtValidationAdditionalClaim</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionJwtValidationAdditionalClaim">LbListenerRuleActionJwtValidationAdditionalClaim</a>]
 
 additional_claim block.
 
@@ -7222,7 +7222,7 @@ def reset_target_group_arn() -> None
 | <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionOutputReference.property.order">order</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionOutputReference.property.targetGroupArn">target_group_arn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionOutputReference.property.type">type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleAction">LbListenerRuleAction</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleAction">LbListenerRuleAction</a></code> | *No description.* |
 
 ---
 
@@ -7436,7 +7436,7 @@ type: str
 internal_value: IResolvable | LbListenerRuleAction
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleAction">LbListenerRuleAction</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleAction">LbListenerRuleAction</a>
 
 ---
 
@@ -7456,14 +7456,14 @@ lbListenerRule.LbListenerRuleActionRedirectOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionRedirectOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionRedirectOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionRedirectOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionRedirectOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -7660,7 +7660,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.lbListenerRule.LbListenerRuleActionRedirectOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -7897,14 +7897,14 @@ lbListenerRule.LbListenerRuleConditionHostHeaderOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleConditionHostHeaderOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleConditionHostHeaderOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleConditionHostHeaderOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.lbListenerRule.LbListenerRuleConditionHostHeaderOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -8098,7 +8098,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.lbListenerRule.LbListenerRuleConditionHostHeaderOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -8229,14 +8229,14 @@ lbListenerRule.LbListenerRuleConditionHttpHeaderOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleConditionHttpHeaderOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleConditionHttpHeaderOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleConditionHttpHeaderOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.lbListenerRule.LbListenerRuleConditionHttpHeaderOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -8430,7 +8430,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.lbListenerRule.LbListenerRuleConditionHttpHeaderOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -8583,14 +8583,14 @@ lbListenerRule.LbListenerRuleConditionHttpRequestMethodOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleConditionHttpRequestMethodOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleConditionHttpRequestMethodOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleConditionHttpRequestMethodOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.lbListenerRule.LbListenerRuleConditionHttpRequestMethodOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -8782,7 +8782,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.lbListenerRule.LbListenerRuleConditionHttpRequestMethodOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -8880,7 +8880,7 @@ lbListenerRule.LbListenerRuleConditionList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleConditionList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleConditionList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleConditionList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleConditionList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -8888,7 +8888,7 @@ lbListenerRule.LbListenerRuleConditionList(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.lbListenerRule.LbListenerRuleConditionList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -8958,7 +8958,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.lbListenerRule.LbListenerRuleConditionList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -8995,7 +8995,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleConditionList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleConditionList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleConditionList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleCondition">LbListenerRuleCondition</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleConditionList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleCondition">LbListenerRuleCondition</a>]</code> | *No description.* |
 
 ---
 
@@ -9029,7 +9029,7 @@ fqn: str
 internal_value: IResolvable | typing.List[LbListenerRuleCondition]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleCondition">LbListenerRuleCondition</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleCondition">LbListenerRuleCondition</a>]
 
 ---
 
@@ -9051,7 +9051,7 @@ lbListenerRule.LbListenerRuleConditionOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleConditionOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleConditionOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleConditionOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleConditionOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleConditionOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -9060,7 +9060,7 @@ lbListenerRule.LbListenerRuleConditionOutputReference(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.lbListenerRule.LbListenerRuleConditionOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -9280,7 +9280,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.lbListenerRule.LbListenerRuleConditionOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -9404,7 +9404,7 @@ def put_query_string(
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.lbListenerRule.LbListenerRuleConditionOutputReference.putQueryString.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleConditionQueryString">LbListenerRuleConditionQueryString</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleConditionQueryString">LbListenerRuleConditionQueryString</a>]
 
 ---
 
@@ -9477,9 +9477,9 @@ def reset_source_ip() -> None
 | <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleConditionOutputReference.property.httpHeaderInput">http_header_input</a></code> | <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleConditionHttpHeader">LbListenerRuleConditionHttpHeader</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleConditionOutputReference.property.httpRequestMethodInput">http_request_method_input</a></code> | <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleConditionHttpRequestMethod">LbListenerRuleConditionHttpRequestMethod</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleConditionOutputReference.property.pathPatternInput">path_pattern_input</a></code> | <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleConditionPathPattern">LbListenerRuleConditionPathPattern</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleConditionOutputReference.property.queryStringInput">query_string_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleConditionQueryString">LbListenerRuleConditionQueryString</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleConditionOutputReference.property.queryStringInput">query_string_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleConditionQueryString">LbListenerRuleConditionQueryString</a>]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleConditionOutputReference.property.sourceIpInput">source_ip_input</a></code> | <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleConditionSourceIp">LbListenerRuleConditionSourceIp</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleConditionOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleCondition">LbListenerRuleCondition</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleConditionOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleCondition">LbListenerRuleCondition</a></code> | *No description.* |
 
 ---
 
@@ -9613,7 +9613,7 @@ path_pattern_input: LbListenerRuleConditionPathPattern
 query_string_input: IResolvable | typing.List[LbListenerRuleConditionQueryString]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleConditionQueryString">LbListenerRuleConditionQueryString</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleConditionQueryString">LbListenerRuleConditionQueryString</a>]
 
 ---
 
@@ -9633,7 +9633,7 @@ source_ip_input: LbListenerRuleConditionSourceIp
 internal_value: IResolvable | LbListenerRuleCondition
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleCondition">LbListenerRuleCondition</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleCondition">LbListenerRuleCondition</a>
 
 ---
 
@@ -9653,14 +9653,14 @@ lbListenerRule.LbListenerRuleConditionPathPatternOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleConditionPathPatternOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleConditionPathPatternOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleConditionPathPatternOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.lbListenerRule.LbListenerRuleConditionPathPatternOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -9854,7 +9854,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.lbListenerRule.LbListenerRuleConditionPathPatternOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -9986,7 +9986,7 @@ lbListenerRule.LbListenerRuleConditionQueryStringList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleConditionQueryStringList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleConditionQueryStringList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleConditionQueryStringList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleConditionQueryStringList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -9994,7 +9994,7 @@ lbListenerRule.LbListenerRuleConditionQueryStringList(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.lbListenerRule.LbListenerRuleConditionQueryStringList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -10064,7 +10064,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.lbListenerRule.LbListenerRuleConditionQueryStringList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -10101,7 +10101,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleConditionQueryStringList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleConditionQueryStringList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleConditionQueryStringList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleConditionQueryString">LbListenerRuleConditionQueryString</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleConditionQueryStringList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleConditionQueryString">LbListenerRuleConditionQueryString</a>]</code> | *No description.* |
 
 ---
 
@@ -10135,7 +10135,7 @@ fqn: str
 internal_value: IResolvable | typing.List[LbListenerRuleConditionQueryString]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleConditionQueryString">LbListenerRuleConditionQueryString</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleConditionQueryString">LbListenerRuleConditionQueryString</a>]
 
 ---
 
@@ -10157,7 +10157,7 @@ lbListenerRule.LbListenerRuleConditionQueryStringOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleConditionQueryStringOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleConditionQueryStringOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleConditionQueryStringOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleConditionQueryStringOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleConditionQueryStringOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -10166,7 +10166,7 @@ lbListenerRule.LbListenerRuleConditionQueryStringOutputReference(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.lbListenerRule.LbListenerRuleConditionQueryStringOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -10375,7 +10375,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.lbListenerRule.LbListenerRuleConditionQueryStringOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -10406,7 +10406,7 @@ def reset_key() -> None
 | <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleConditionQueryStringOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleConditionQueryStringOutputReference.property.key">key</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleConditionQueryStringOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleConditionQueryStringOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleConditionQueryString">LbListenerRuleConditionQueryString</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleConditionQueryStringOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleConditionQueryString">LbListenerRuleConditionQueryString</a></code> | *No description.* |
 
 ---
 
@@ -10480,7 +10480,7 @@ value: str
 internal_value: IResolvable | LbListenerRuleConditionQueryString
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleConditionQueryString">LbListenerRuleConditionQueryString</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleConditionQueryString">LbListenerRuleConditionQueryString</a>
 
 ---
 
@@ -10500,14 +10500,14 @@ lbListenerRule.LbListenerRuleConditionSourceIpOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleConditionSourceIpOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleConditionSourceIpOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleConditionSourceIpOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.lbListenerRule.LbListenerRuleConditionSourceIpOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -10699,7 +10699,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.lbListenerRule.LbListenerRuleConditionSourceIpOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -10796,14 +10796,14 @@ lbListenerRule.LbListenerRuleTransformHostHeaderRewriteConfigOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleTransformHostHeaderRewriteConfigOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleTransformHostHeaderRewriteConfigOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleTransformHostHeaderRewriteConfigOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.lbListenerRule.LbListenerRuleTransformHostHeaderRewriteConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -10997,7 +10997,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.lbListenerRule.LbListenerRuleTransformHostHeaderRewriteConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -11125,14 +11125,14 @@ lbListenerRule.LbListenerRuleTransformHostHeaderRewriteConfigRewriteOutputRefere
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleTransformHostHeaderRewriteConfigRewriteOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleTransformHostHeaderRewriteConfigRewriteOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleTransformHostHeaderRewriteConfigRewriteOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.lbListenerRule.LbListenerRuleTransformHostHeaderRewriteConfigRewriteOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -11324,7 +11324,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.lbListenerRule.LbListenerRuleTransformHostHeaderRewriteConfigRewriteOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -11444,7 +11444,7 @@ lbListenerRule.LbListenerRuleTransformList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleTransformList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleTransformList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleTransformList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleTransformList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -11452,7 +11452,7 @@ lbListenerRule.LbListenerRuleTransformList(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.lbListenerRule.LbListenerRuleTransformList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -11522,7 +11522,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.lbListenerRule.LbListenerRuleTransformList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -11559,7 +11559,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleTransformList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleTransformList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleTransformList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleTransform">LbListenerRuleTransform</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleTransformList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleTransform">LbListenerRuleTransform</a>]</code> | *No description.* |
 
 ---
 
@@ -11593,7 +11593,7 @@ fqn: str
 internal_value: IResolvable | typing.List[LbListenerRuleTransform]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleTransform">LbListenerRuleTransform</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleTransform">LbListenerRuleTransform</a>]
 
 ---
 
@@ -11615,7 +11615,7 @@ lbListenerRule.LbListenerRuleTransformOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleTransformOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleTransformOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleTransformOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleTransformOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleTransformOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -11624,7 +11624,7 @@ lbListenerRule.LbListenerRuleTransformOutputReference(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.lbListenerRule.LbListenerRuleTransformOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -11836,7 +11836,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.lbListenerRule.LbListenerRuleTransformOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -11911,7 +11911,7 @@ def reset_url_rewrite_config() -> None
 | <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleTransformOutputReference.property.typeInput">type_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleTransformOutputReference.property.urlRewriteConfigInput">url_rewrite_config_input</a></code> | <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleTransformUrlRewriteConfig">LbListenerRuleTransformUrlRewriteConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleTransformOutputReference.property.type">type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleTransformOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleTransform">LbListenerRuleTransform</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleTransformOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleTransform">LbListenerRuleTransform</a></code> | *No description.* |
 
 ---
 
@@ -12005,7 +12005,7 @@ type: str
 internal_value: IResolvable | LbListenerRuleTransform
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleTransform">LbListenerRuleTransform</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleTransform">LbListenerRuleTransform</a>
 
 ---
 
@@ -12025,14 +12025,14 @@ lbListenerRule.LbListenerRuleTransformUrlRewriteConfigOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleTransformUrlRewriteConfigOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleTransformUrlRewriteConfigOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleTransformUrlRewriteConfigOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.lbListenerRule.LbListenerRuleTransformUrlRewriteConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -12226,7 +12226,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.lbListenerRule.LbListenerRuleTransformUrlRewriteConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -12354,14 +12354,14 @@ lbListenerRule.LbListenerRuleTransformUrlRewriteConfigRewriteOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleTransformUrlRewriteConfigRewriteOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleTransformUrlRewriteConfigRewriteOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.lbListenerRule.LbListenerRuleTransformUrlRewriteConfigRewriteOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.lbListenerRule.LbListenerRuleTransformUrlRewriteConfigRewriteOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -12553,7 +12553,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.lbListenerRule.LbListenerRuleTransformUrlRewriteConfigRewriteOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 

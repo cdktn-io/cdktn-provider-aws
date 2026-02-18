@@ -293,7 +293,7 @@ public importFrom(id: string, provider?: TerraformProvider): void
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformer.importFrom.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -375,7 +375,7 @@ public putTransformerConfig(value: IResolvable | CloudwatchLogTransformerTransfo
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformer.putTransformerConfig.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfig">CloudwatchLogTransformerTransformerConfig</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfig">CloudwatchLogTransformerTransformerConfig</a>[]
 
 ---
 
@@ -398,7 +398,7 @@ public resetTransformerConfig(): void
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformer.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformer.isTerraformElement">isTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformer.isTerraformResource">isTerraformResource</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformer.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTF code for importing a CloudwatchLogTransformer resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformer.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTN code for importing a CloudwatchLogTransformer resource upon running "cdktn plan <stack-name>". |
 
 ---
 
@@ -470,7 +470,7 @@ import { cloudwatchLogTransformer } from '@cdktn/provider-aws'
 cloudwatchLogTransformer.CloudwatchLogTransformer.generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: TerraformProvider)
 ```
 
-Generates CDKTF code for importing a CloudwatchLogTransformer resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a CloudwatchLogTransformer resource upon running "cdktn plan <stack-name>".
 
 ###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformer.generateConfigForImport.parameter.scope"></a>
 
@@ -500,7 +500,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformer.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ? Optional instance of the provider where the CloudwatchLogTransformer to import is found.
 
@@ -511,23 +511,23 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformer.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformer.property.cdktfStack">cdktfStack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformer.property.cdktfStack">cdktfStack</a></code> | <code>cdktn.TerraformStack</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformer.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformer.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformer.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformer.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformer.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformer.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformer.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformer.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformer.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformer.property.count">count</a></code> | <code>number \| cdktn.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformer.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformer.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformer.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformer.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformer.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformer.property.forEach">forEach</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformer.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformer.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformer.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformer.property.transformerConfig">transformerConfig</a></code> | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigList">CloudwatchLogTransformerTransformerConfigList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformer.property.logGroupArnInput">logGroupArnInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformer.property.regionInput">regionInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformer.property.transformerConfigInput">transformerConfigInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfig">CloudwatchLogTransformerTransformerConfig</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformer.property.transformerConfigInput">transformerConfigInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfig">CloudwatchLogTransformerTransformerConfig</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformer.property.logGroupArn">logGroupArn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformer.property.region">region</a></code> | <code>string</code> | *No description.* |
 
@@ -551,7 +551,7 @@ The tree node.
 public readonly cdktfStack: TerraformStack;
 ```
 
-- *Type:* cdktf.TerraformStack
+- *Type:* cdktn.TerraformStack
 
 ---
 
@@ -601,7 +601,7 @@ public readonly terraformResourceType: string;
 public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ```
 
-- *Type:* cdktf.TerraformProviderGeneratorMetadata
+- *Type:* cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
@@ -611,7 +611,7 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -621,7 +621,7 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number | cdktf.TerraformCount
+- *Type:* number | cdktn.TerraformCount
 
 ---
 
@@ -641,7 +641,7 @@ public readonly dependsOn: string[];
 public readonly forEach: ITerraformIterator;
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -651,7 +651,7 @@ public readonly forEach: ITerraformIterator;
 public readonly lifecycle: TerraformResourceLifecycle;
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -661,7 +661,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 public readonly provider: TerraformProvider;
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -671,7 +671,7 @@ public readonly provider: TerraformProvider;
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
 ```
 
-- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
+- *Type:* cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner[]
 
 ---
 
@@ -711,7 +711,7 @@ public readonly regionInput: string;
 public readonly transformerConfigInput: IResolvable | CloudwatchLogTransformerTransformerConfig[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfig">CloudwatchLogTransformerTransformerConfig</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfig">CloudwatchLogTransformerTransformerConfig</a>[]
 
 ---
 
@@ -769,16 +769,16 @@ const cloudwatchLogTransformerConfig: cloudwatchLogTransformer.CloudwatchLogTran
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerConfig.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerConfig.property.count">count</a></code> | <code>number \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerConfig.property.dependsOn">dependsOn</a></code> | <code>cdktn.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerConfig.property.forEach">forEach</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerConfig.property.logGroupArn">logGroupArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_log_transformer#log_group_arn CloudwatchLogTransformer#log_group_arn}. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerConfig.property.region">region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerConfig.property.transformerConfig">transformerConfig</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfig">CloudwatchLogTransformerTransformerConfig</a>[]</code> | transformer_config block. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerConfig.property.transformerConfig">transformerConfig</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfig">CloudwatchLogTransformerTransformerConfig</a>[]</code> | transformer_config block. |
 
 ---
 
@@ -788,7 +788,7 @@ const cloudwatchLogTransformerConfig: cloudwatchLogTransformer.CloudwatchLogTran
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -798,7 +798,7 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number | cdktf.TerraformCount
+- *Type:* number | cdktn.TerraformCount
 
 ---
 
@@ -808,7 +808,7 @@ public readonly count: number | TerraformCount;
 public readonly dependsOn: ITerraformDependable[];
 ```
 
-- *Type:* cdktf.ITerraformDependable[]
+- *Type:* cdktn.ITerraformDependable[]
 
 ---
 
@@ -818,7 +818,7 @@ public readonly dependsOn: ITerraformDependable[];
 public readonly forEach: ITerraformIterator;
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -828,7 +828,7 @@ public readonly forEach: ITerraformIterator;
 public readonly lifecycle: TerraformResourceLifecycle;
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -838,7 +838,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 public readonly provider: TerraformProvider;
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -848,7 +848,7 @@ public readonly provider: TerraformProvider;
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
 ```
 
-- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
+- *Type:* cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner[]
 
 ---
 
@@ -884,7 +884,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly transformerConfig: IResolvable | CloudwatchLogTransformerTransformerConfig[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfig">CloudwatchLogTransformerTransformerConfig</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfig">CloudwatchLogTransformerTransformerConfig</a>[]
 
 transformer_config block.
 
@@ -906,29 +906,29 @@ const cloudwatchLogTransformerTransformerConfig: cloudwatchLogTransformer.Cloudw
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfig.property.addKeys">addKeys</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigAddKeys">CloudwatchLogTransformerTransformerConfigAddKeys</a>[]</code> | add_keys block. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfig.property.copyValue">copyValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCopyValue">CloudwatchLogTransformerTransformerConfigCopyValue</a>[]</code> | copy_value block. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfig.property.csv">csv</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCsv">CloudwatchLogTransformerTransformerConfigCsv</a>[]</code> | csv block. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfig.property.dateTimeConverter">dateTimeConverter</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigDateTimeConverter">CloudwatchLogTransformerTransformerConfigDateTimeConverter</a>[]</code> | date_time_converter block. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfig.property.deleteKeys">deleteKeys</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigDeleteKeys">CloudwatchLogTransformerTransformerConfigDeleteKeys</a>[]</code> | delete_keys block. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfig.property.grok">grok</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigGrok">CloudwatchLogTransformerTransformerConfigGrok</a>[]</code> | grok block. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfig.property.listToMap">listToMap</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigListToMap">CloudwatchLogTransformerTransformerConfigListToMap</a>[]</code> | list_to_map block. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfig.property.lowerCaseString">lowerCaseString</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigLowerCaseString">CloudwatchLogTransformerTransformerConfigLowerCaseString</a>[]</code> | lower_case_string block. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfig.property.moveKeys">moveKeys</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigMoveKeys">CloudwatchLogTransformerTransformerConfigMoveKeys</a>[]</code> | move_keys block. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfig.property.parseCloudfront">parseCloudfront</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseCloudfront">CloudwatchLogTransformerTransformerConfigParseCloudfront</a>[]</code> | parse_cloudfront block. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfig.property.parseJson">parseJson</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseJson">CloudwatchLogTransformerTransformerConfigParseJson</a>[]</code> | parse_json block. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfig.property.parseKeyValue">parseKeyValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseKeyValue">CloudwatchLogTransformerTransformerConfigParseKeyValue</a>[]</code> | parse_key_value block. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfig.property.parsePostgres">parsePostgres</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParsePostgres">CloudwatchLogTransformerTransformerConfigParsePostgres</a>[]</code> | parse_postgres block. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfig.property.parseRoute53">parseRoute53</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseRoute53">CloudwatchLogTransformerTransformerConfigParseRoute53</a>[]</code> | parse_route53 block. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfig.property.parseToOcsf">parseToOcsf</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseToOcsf">CloudwatchLogTransformerTransformerConfigParseToOcsf</a>[]</code> | parse_to_ocsf block. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfig.property.parseVpc">parseVpc</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseVpc">CloudwatchLogTransformerTransformerConfigParseVpc</a>[]</code> | parse_vpc block. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfig.property.parseWaf">parseWaf</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseWaf">CloudwatchLogTransformerTransformerConfigParseWaf</a>[]</code> | parse_waf block. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfig.property.renameKeys">renameKeys</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigRenameKeys">CloudwatchLogTransformerTransformerConfigRenameKeys</a>[]</code> | rename_keys block. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfig.property.splitString">splitString</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSplitString">CloudwatchLogTransformerTransformerConfigSplitString</a>[]</code> | split_string block. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfig.property.substituteString">substituteString</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSubstituteString">CloudwatchLogTransformerTransformerConfigSubstituteString</a>[]</code> | substitute_string block. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfig.property.trimString">trimString</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigTrimString">CloudwatchLogTransformerTransformerConfigTrimString</a>[]</code> | trim_string block. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfig.property.typeConverter">typeConverter</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigTypeConverter">CloudwatchLogTransformerTransformerConfigTypeConverter</a>[]</code> | type_converter block. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfig.property.upperCaseString">upperCaseString</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigUpperCaseString">CloudwatchLogTransformerTransformerConfigUpperCaseString</a>[]</code> | upper_case_string block. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfig.property.addKeys">addKeys</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigAddKeys">CloudwatchLogTransformerTransformerConfigAddKeys</a>[]</code> | add_keys block. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfig.property.copyValue">copyValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCopyValue">CloudwatchLogTransformerTransformerConfigCopyValue</a>[]</code> | copy_value block. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfig.property.csv">csv</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCsv">CloudwatchLogTransformerTransformerConfigCsv</a>[]</code> | csv block. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfig.property.dateTimeConverter">dateTimeConverter</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigDateTimeConverter">CloudwatchLogTransformerTransformerConfigDateTimeConverter</a>[]</code> | date_time_converter block. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfig.property.deleteKeys">deleteKeys</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigDeleteKeys">CloudwatchLogTransformerTransformerConfigDeleteKeys</a>[]</code> | delete_keys block. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfig.property.grok">grok</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigGrok">CloudwatchLogTransformerTransformerConfigGrok</a>[]</code> | grok block. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfig.property.listToMap">listToMap</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigListToMap">CloudwatchLogTransformerTransformerConfigListToMap</a>[]</code> | list_to_map block. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfig.property.lowerCaseString">lowerCaseString</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigLowerCaseString">CloudwatchLogTransformerTransformerConfigLowerCaseString</a>[]</code> | lower_case_string block. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfig.property.moveKeys">moveKeys</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigMoveKeys">CloudwatchLogTransformerTransformerConfigMoveKeys</a>[]</code> | move_keys block. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfig.property.parseCloudfront">parseCloudfront</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseCloudfront">CloudwatchLogTransformerTransformerConfigParseCloudfront</a>[]</code> | parse_cloudfront block. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfig.property.parseJson">parseJson</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseJson">CloudwatchLogTransformerTransformerConfigParseJson</a>[]</code> | parse_json block. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfig.property.parseKeyValue">parseKeyValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseKeyValue">CloudwatchLogTransformerTransformerConfigParseKeyValue</a>[]</code> | parse_key_value block. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfig.property.parsePostgres">parsePostgres</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParsePostgres">CloudwatchLogTransformerTransformerConfigParsePostgres</a>[]</code> | parse_postgres block. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfig.property.parseRoute53">parseRoute53</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseRoute53">CloudwatchLogTransformerTransformerConfigParseRoute53</a>[]</code> | parse_route53 block. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfig.property.parseToOcsf">parseToOcsf</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseToOcsf">CloudwatchLogTransformerTransformerConfigParseToOcsf</a>[]</code> | parse_to_ocsf block. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfig.property.parseVpc">parseVpc</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseVpc">CloudwatchLogTransformerTransformerConfigParseVpc</a>[]</code> | parse_vpc block. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfig.property.parseWaf">parseWaf</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseWaf">CloudwatchLogTransformerTransformerConfigParseWaf</a>[]</code> | parse_waf block. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfig.property.renameKeys">renameKeys</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigRenameKeys">CloudwatchLogTransformerTransformerConfigRenameKeys</a>[]</code> | rename_keys block. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfig.property.splitString">splitString</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSplitString">CloudwatchLogTransformerTransformerConfigSplitString</a>[]</code> | split_string block. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfig.property.substituteString">substituteString</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSubstituteString">CloudwatchLogTransformerTransformerConfigSubstituteString</a>[]</code> | substitute_string block. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfig.property.trimString">trimString</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigTrimString">CloudwatchLogTransformerTransformerConfigTrimString</a>[]</code> | trim_string block. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfig.property.typeConverter">typeConverter</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigTypeConverter">CloudwatchLogTransformerTransformerConfigTypeConverter</a>[]</code> | type_converter block. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfig.property.upperCaseString">upperCaseString</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigUpperCaseString">CloudwatchLogTransformerTransformerConfigUpperCaseString</a>[]</code> | upper_case_string block. |
 
 ---
 
@@ -938,7 +938,7 @@ const cloudwatchLogTransformerTransformerConfig: cloudwatchLogTransformer.Cloudw
 public readonly addKeys: IResolvable | CloudwatchLogTransformerTransformerConfigAddKeys[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigAddKeys">CloudwatchLogTransformerTransformerConfigAddKeys</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigAddKeys">CloudwatchLogTransformerTransformerConfigAddKeys</a>[]
 
 add_keys block.
 
@@ -952,7 +952,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly copyValue: IResolvable | CloudwatchLogTransformerTransformerConfigCopyValue[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCopyValue">CloudwatchLogTransformerTransformerConfigCopyValue</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCopyValue">CloudwatchLogTransformerTransformerConfigCopyValue</a>[]
 
 copy_value block.
 
@@ -966,7 +966,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly csv: IResolvable | CloudwatchLogTransformerTransformerConfigCsv[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCsv">CloudwatchLogTransformerTransformerConfigCsv</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCsv">CloudwatchLogTransformerTransformerConfigCsv</a>[]
 
 csv block.
 
@@ -980,7 +980,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly dateTimeConverter: IResolvable | CloudwatchLogTransformerTransformerConfigDateTimeConverter[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigDateTimeConverter">CloudwatchLogTransformerTransformerConfigDateTimeConverter</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigDateTimeConverter">CloudwatchLogTransformerTransformerConfigDateTimeConverter</a>[]
 
 date_time_converter block.
 
@@ -994,7 +994,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly deleteKeys: IResolvable | CloudwatchLogTransformerTransformerConfigDeleteKeys[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigDeleteKeys">CloudwatchLogTransformerTransformerConfigDeleteKeys</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigDeleteKeys">CloudwatchLogTransformerTransformerConfigDeleteKeys</a>[]
 
 delete_keys block.
 
@@ -1008,7 +1008,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly grok: IResolvable | CloudwatchLogTransformerTransformerConfigGrok[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigGrok">CloudwatchLogTransformerTransformerConfigGrok</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigGrok">CloudwatchLogTransformerTransformerConfigGrok</a>[]
 
 grok block.
 
@@ -1022,7 +1022,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly listToMap: IResolvable | CloudwatchLogTransformerTransformerConfigListToMap[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigListToMap">CloudwatchLogTransformerTransformerConfigListToMap</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigListToMap">CloudwatchLogTransformerTransformerConfigListToMap</a>[]
 
 list_to_map block.
 
@@ -1036,7 +1036,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly lowerCaseString: IResolvable | CloudwatchLogTransformerTransformerConfigLowerCaseString[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigLowerCaseString">CloudwatchLogTransformerTransformerConfigLowerCaseString</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigLowerCaseString">CloudwatchLogTransformerTransformerConfigLowerCaseString</a>[]
 
 lower_case_string block.
 
@@ -1050,7 +1050,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly moveKeys: IResolvable | CloudwatchLogTransformerTransformerConfigMoveKeys[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigMoveKeys">CloudwatchLogTransformerTransformerConfigMoveKeys</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigMoveKeys">CloudwatchLogTransformerTransformerConfigMoveKeys</a>[]
 
 move_keys block.
 
@@ -1064,7 +1064,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly parseCloudfront: IResolvable | CloudwatchLogTransformerTransformerConfigParseCloudfront[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseCloudfront">CloudwatchLogTransformerTransformerConfigParseCloudfront</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseCloudfront">CloudwatchLogTransformerTransformerConfigParseCloudfront</a>[]
 
 parse_cloudfront block.
 
@@ -1078,7 +1078,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly parseJson: IResolvable | CloudwatchLogTransformerTransformerConfigParseJson[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseJson">CloudwatchLogTransformerTransformerConfigParseJson</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseJson">CloudwatchLogTransformerTransformerConfigParseJson</a>[]
 
 parse_json block.
 
@@ -1092,7 +1092,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly parseKeyValue: IResolvable | CloudwatchLogTransformerTransformerConfigParseKeyValue[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseKeyValue">CloudwatchLogTransformerTransformerConfigParseKeyValue</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseKeyValue">CloudwatchLogTransformerTransformerConfigParseKeyValue</a>[]
 
 parse_key_value block.
 
@@ -1106,7 +1106,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly parsePostgres: IResolvable | CloudwatchLogTransformerTransformerConfigParsePostgres[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParsePostgres">CloudwatchLogTransformerTransformerConfigParsePostgres</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParsePostgres">CloudwatchLogTransformerTransformerConfigParsePostgres</a>[]
 
 parse_postgres block.
 
@@ -1120,7 +1120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly parseRoute53: IResolvable | CloudwatchLogTransformerTransformerConfigParseRoute53[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseRoute53">CloudwatchLogTransformerTransformerConfigParseRoute53</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseRoute53">CloudwatchLogTransformerTransformerConfigParseRoute53</a>[]
 
 parse_route53 block.
 
@@ -1134,7 +1134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly parseToOcsf: IResolvable | CloudwatchLogTransformerTransformerConfigParseToOcsf[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseToOcsf">CloudwatchLogTransformerTransformerConfigParseToOcsf</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseToOcsf">CloudwatchLogTransformerTransformerConfigParseToOcsf</a>[]
 
 parse_to_ocsf block.
 
@@ -1148,7 +1148,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly parseVpc: IResolvable | CloudwatchLogTransformerTransformerConfigParseVpc[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseVpc">CloudwatchLogTransformerTransformerConfigParseVpc</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseVpc">CloudwatchLogTransformerTransformerConfigParseVpc</a>[]
 
 parse_vpc block.
 
@@ -1162,7 +1162,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly parseWaf: IResolvable | CloudwatchLogTransformerTransformerConfigParseWaf[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseWaf">CloudwatchLogTransformerTransformerConfigParseWaf</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseWaf">CloudwatchLogTransformerTransformerConfigParseWaf</a>[]
 
 parse_waf block.
 
@@ -1176,7 +1176,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly renameKeys: IResolvable | CloudwatchLogTransformerTransformerConfigRenameKeys[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigRenameKeys">CloudwatchLogTransformerTransformerConfigRenameKeys</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigRenameKeys">CloudwatchLogTransformerTransformerConfigRenameKeys</a>[]
 
 rename_keys block.
 
@@ -1190,7 +1190,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly splitString: IResolvable | CloudwatchLogTransformerTransformerConfigSplitString[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSplitString">CloudwatchLogTransformerTransformerConfigSplitString</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSplitString">CloudwatchLogTransformerTransformerConfigSplitString</a>[]
 
 split_string block.
 
@@ -1204,7 +1204,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly substituteString: IResolvable | CloudwatchLogTransformerTransformerConfigSubstituteString[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSubstituteString">CloudwatchLogTransformerTransformerConfigSubstituteString</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSubstituteString">CloudwatchLogTransformerTransformerConfigSubstituteString</a>[]
 
 substitute_string block.
 
@@ -1218,7 +1218,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly trimString: IResolvable | CloudwatchLogTransformerTransformerConfigTrimString[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigTrimString">CloudwatchLogTransformerTransformerConfigTrimString</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigTrimString">CloudwatchLogTransformerTransformerConfigTrimString</a>[]
 
 trim_string block.
 
@@ -1232,7 +1232,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly typeConverter: IResolvable | CloudwatchLogTransformerTransformerConfigTypeConverter[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigTypeConverter">CloudwatchLogTransformerTransformerConfigTypeConverter</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigTypeConverter">CloudwatchLogTransformerTransformerConfigTypeConverter</a>[]
 
 type_converter block.
 
@@ -1246,7 +1246,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly upperCaseString: IResolvable | CloudwatchLogTransformerTransformerConfigUpperCaseString[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigUpperCaseString">CloudwatchLogTransformerTransformerConfigUpperCaseString</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigUpperCaseString">CloudwatchLogTransformerTransformerConfigUpperCaseString</a>[]
 
 upper_case_string block.
 
@@ -1268,7 +1268,7 @@ const cloudwatchLogTransformerTransformerConfigAddKeys: cloudwatchLogTransformer
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigAddKeys.property.entry">entry</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigAddKeysEntry">CloudwatchLogTransformerTransformerConfigAddKeysEntry</a>[]</code> | entry block. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigAddKeys.property.entry">entry</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigAddKeysEntry">CloudwatchLogTransformerTransformerConfigAddKeysEntry</a>[]</code> | entry block. |
 
 ---
 
@@ -1278,7 +1278,7 @@ const cloudwatchLogTransformerTransformerConfigAddKeys: cloudwatchLogTransformer
 public readonly entry: IResolvable | CloudwatchLogTransformerTransformerConfigAddKeysEntry[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigAddKeysEntry">CloudwatchLogTransformerTransformerConfigAddKeysEntry</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigAddKeysEntry">CloudwatchLogTransformerTransformerConfigAddKeysEntry</a>[]
 
 entry block.
 
@@ -1302,7 +1302,7 @@ const cloudwatchLogTransformerTransformerConfigAddKeysEntry: cloudwatchLogTransf
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigAddKeysEntry.property.key">key</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_log_transformer#key CloudwatchLogTransformer#key}. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigAddKeysEntry.property.value">value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_log_transformer#value CloudwatchLogTransformer#value}. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigAddKeysEntry.property.overwriteIfExists">overwriteIfExists</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_log_transformer#overwrite_if_exists CloudwatchLogTransformer#overwrite_if_exists}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigAddKeysEntry.property.overwriteIfExists">overwriteIfExists</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_log_transformer#overwrite_if_exists CloudwatchLogTransformer#overwrite_if_exists}. |
 
 ---
 
@@ -1336,7 +1336,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly overwriteIfExists: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_log_transformer#overwrite_if_exists CloudwatchLogTransformer#overwrite_if_exists}.
 
@@ -1356,7 +1356,7 @@ const cloudwatchLogTransformerTransformerConfigCopyValue: cloudwatchLogTransform
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCopyValue.property.entry">entry</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCopyValueEntry">CloudwatchLogTransformerTransformerConfigCopyValueEntry</a>[]</code> | entry block. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCopyValue.property.entry">entry</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCopyValueEntry">CloudwatchLogTransformerTransformerConfigCopyValueEntry</a>[]</code> | entry block. |
 
 ---
 
@@ -1366,7 +1366,7 @@ const cloudwatchLogTransformerTransformerConfigCopyValue: cloudwatchLogTransform
 public readonly entry: IResolvable | CloudwatchLogTransformerTransformerConfigCopyValueEntry[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCopyValueEntry">CloudwatchLogTransformerTransformerConfigCopyValueEntry</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCopyValueEntry">CloudwatchLogTransformerTransformerConfigCopyValueEntry</a>[]
 
 entry block.
 
@@ -1390,7 +1390,7 @@ const cloudwatchLogTransformerTransformerConfigCopyValueEntry: cloudwatchLogTran
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCopyValueEntry.property.source">source</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_log_transformer#source CloudwatchLogTransformer#source}. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCopyValueEntry.property.target">target</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_log_transformer#target CloudwatchLogTransformer#target}. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCopyValueEntry.property.overwriteIfExists">overwriteIfExists</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_log_transformer#overwrite_if_exists CloudwatchLogTransformer#overwrite_if_exists}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCopyValueEntry.property.overwriteIfExists">overwriteIfExists</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_log_transformer#overwrite_if_exists CloudwatchLogTransformer#overwrite_if_exists}. |
 
 ---
 
@@ -1424,7 +1424,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly overwriteIfExists: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_log_transformer#overwrite_if_exists CloudwatchLogTransformer#overwrite_if_exists}.
 
@@ -1696,7 +1696,7 @@ const cloudwatchLogTransformerTransformerConfigListToMap: cloudwatchLogTransform
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigListToMap.property.key">key</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_log_transformer#key CloudwatchLogTransformer#key}. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigListToMap.property.source">source</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_log_transformer#source CloudwatchLogTransformer#source}. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigListToMap.property.flatten">flatten</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_log_transformer#flatten CloudwatchLogTransformer#flatten}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigListToMap.property.flatten">flatten</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_log_transformer#flatten CloudwatchLogTransformer#flatten}. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigListToMap.property.flattenedElement">flattenedElement</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_log_transformer#flattened_element CloudwatchLogTransformer#flattened_element}. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigListToMap.property.target">target</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_log_transformer#target CloudwatchLogTransformer#target}. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigListToMap.property.valueKey">valueKey</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_log_transformer#value_key CloudwatchLogTransformer#value_key}. |
@@ -1733,7 +1733,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly flatten: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_log_transformer#flatten CloudwatchLogTransformer#flatten}.
 
@@ -1819,7 +1819,7 @@ const cloudwatchLogTransformerTransformerConfigMoveKeys: cloudwatchLogTransforme
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigMoveKeys.property.entry">entry</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigMoveKeysEntry">CloudwatchLogTransformerTransformerConfigMoveKeysEntry</a>[]</code> | entry block. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigMoveKeys.property.entry">entry</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigMoveKeysEntry">CloudwatchLogTransformerTransformerConfigMoveKeysEntry</a>[]</code> | entry block. |
 
 ---
 
@@ -1829,7 +1829,7 @@ const cloudwatchLogTransformerTransformerConfigMoveKeys: cloudwatchLogTransforme
 public readonly entry: IResolvable | CloudwatchLogTransformerTransformerConfigMoveKeysEntry[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigMoveKeysEntry">CloudwatchLogTransformerTransformerConfigMoveKeysEntry</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigMoveKeysEntry">CloudwatchLogTransformerTransformerConfigMoveKeysEntry</a>[]
 
 entry block.
 
@@ -1853,7 +1853,7 @@ const cloudwatchLogTransformerTransformerConfigMoveKeysEntry: cloudwatchLogTrans
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigMoveKeysEntry.property.source">source</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_log_transformer#source CloudwatchLogTransformer#source}. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigMoveKeysEntry.property.target">target</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_log_transformer#target CloudwatchLogTransformer#target}. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigMoveKeysEntry.property.overwriteIfExists">overwriteIfExists</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_log_transformer#overwrite_if_exists CloudwatchLogTransformer#overwrite_if_exists}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigMoveKeysEntry.property.overwriteIfExists">overwriteIfExists</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_log_transformer#overwrite_if_exists CloudwatchLogTransformer#overwrite_if_exists}. |
 
 ---
 
@@ -1887,7 +1887,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly overwriteIfExists: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_log_transformer#overwrite_if_exists CloudwatchLogTransformer#overwrite_if_exists}.
 
@@ -1985,7 +1985,7 @@ const cloudwatchLogTransformerTransformerConfigParseKeyValue: cloudwatchLogTrans
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseKeyValue.property.keyPrefix">keyPrefix</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_log_transformer#key_prefix CloudwatchLogTransformer#key_prefix}. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseKeyValue.property.keyValueDelimiter">keyValueDelimiter</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_log_transformer#key_value_delimiter CloudwatchLogTransformer#key_value_delimiter}. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseKeyValue.property.nonMatchValue">nonMatchValue</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_log_transformer#non_match_value CloudwatchLogTransformer#non_match_value}. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseKeyValue.property.overwriteIfExists">overwriteIfExists</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_log_transformer#overwrite_if_exists CloudwatchLogTransformer#overwrite_if_exists}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseKeyValue.property.overwriteIfExists">overwriteIfExists</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_log_transformer#overwrite_if_exists CloudwatchLogTransformer#overwrite_if_exists}. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseKeyValue.property.source">source</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_log_transformer#source CloudwatchLogTransformer#source}. |
 
 ---
@@ -2056,7 +2056,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly overwriteIfExists: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_log_transformer#overwrite_if_exists CloudwatchLogTransformer#overwrite_if_exists}.
 
@@ -2264,7 +2264,7 @@ const cloudwatchLogTransformerTransformerConfigRenameKeys: cloudwatchLogTransfor
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigRenameKeys.property.entry">entry</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigRenameKeysEntry">CloudwatchLogTransformerTransformerConfigRenameKeysEntry</a>[]</code> | entry block. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigRenameKeys.property.entry">entry</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigRenameKeysEntry">CloudwatchLogTransformerTransformerConfigRenameKeysEntry</a>[]</code> | entry block. |
 
 ---
 
@@ -2274,7 +2274,7 @@ const cloudwatchLogTransformerTransformerConfigRenameKeys: cloudwatchLogTransfor
 public readonly entry: IResolvable | CloudwatchLogTransformerTransformerConfigRenameKeysEntry[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigRenameKeysEntry">CloudwatchLogTransformerTransformerConfigRenameKeysEntry</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigRenameKeysEntry">CloudwatchLogTransformerTransformerConfigRenameKeysEntry</a>[]
 
 entry block.
 
@@ -2298,7 +2298,7 @@ const cloudwatchLogTransformerTransformerConfigRenameKeysEntry: cloudwatchLogTra
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigRenameKeysEntry.property.key">key</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_log_transformer#key CloudwatchLogTransformer#key}. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigRenameKeysEntry.property.renameTo">renameTo</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_log_transformer#rename_to CloudwatchLogTransformer#rename_to}. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigRenameKeysEntry.property.overwriteIfExists">overwriteIfExists</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_log_transformer#overwrite_if_exists CloudwatchLogTransformer#overwrite_if_exists}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigRenameKeysEntry.property.overwriteIfExists">overwriteIfExists</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_log_transformer#overwrite_if_exists CloudwatchLogTransformer#overwrite_if_exists}. |
 
 ---
 
@@ -2332,7 +2332,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly overwriteIfExists: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudwatch_log_transformer#overwrite_if_exists CloudwatchLogTransformer#overwrite_if_exists}.
 
@@ -2352,7 +2352,7 @@ const cloudwatchLogTransformerTransformerConfigSplitString: cloudwatchLogTransfo
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSplitString.property.entry">entry</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSplitStringEntry">CloudwatchLogTransformerTransformerConfigSplitStringEntry</a>[]</code> | entry block. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSplitString.property.entry">entry</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSplitStringEntry">CloudwatchLogTransformerTransformerConfigSplitStringEntry</a>[]</code> | entry block. |
 
 ---
 
@@ -2362,7 +2362,7 @@ const cloudwatchLogTransformerTransformerConfigSplitString: cloudwatchLogTransfo
 public readonly entry: IResolvable | CloudwatchLogTransformerTransformerConfigSplitStringEntry[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSplitStringEntry">CloudwatchLogTransformerTransformerConfigSplitStringEntry</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSplitStringEntry">CloudwatchLogTransformerTransformerConfigSplitStringEntry</a>[]
 
 entry block.
 
@@ -2427,7 +2427,7 @@ const cloudwatchLogTransformerTransformerConfigSubstituteString: cloudwatchLogTr
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSubstituteString.property.entry">entry</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSubstituteStringEntry">CloudwatchLogTransformerTransformerConfigSubstituteStringEntry</a>[]</code> | entry block. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSubstituteString.property.entry">entry</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSubstituteStringEntry">CloudwatchLogTransformerTransformerConfigSubstituteStringEntry</a>[]</code> | entry block. |
 
 ---
 
@@ -2437,7 +2437,7 @@ const cloudwatchLogTransformerTransformerConfigSubstituteString: cloudwatchLogTr
 public readonly entry: IResolvable | CloudwatchLogTransformerTransformerConfigSubstituteStringEntry[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSubstituteStringEntry">CloudwatchLogTransformerTransformerConfigSubstituteStringEntry</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSubstituteStringEntry">CloudwatchLogTransformerTransformerConfigSubstituteStringEntry</a>[]
 
 entry block.
 
@@ -2545,7 +2545,7 @@ const cloudwatchLogTransformerTransformerConfigTypeConverter: cloudwatchLogTrans
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigTypeConverter.property.entry">entry</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigTypeConverterEntry">CloudwatchLogTransformerTransformerConfigTypeConverterEntry</a>[]</code> | entry block. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigTypeConverter.property.entry">entry</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigTypeConverterEntry">CloudwatchLogTransformerTransformerConfigTypeConverterEntry</a>[]</code> | entry block. |
 
 ---
 
@@ -2555,7 +2555,7 @@ const cloudwatchLogTransformerTransformerConfigTypeConverter: cloudwatchLogTrans
 public readonly entry: IResolvable | CloudwatchLogTransformerTransformerConfigTypeConverterEntry[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigTypeConverterEntry">CloudwatchLogTransformerTransformerConfigTypeConverterEntry</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigTypeConverterEntry">CloudwatchLogTransformerTransformerConfigTypeConverterEntry</a>[]
 
 entry block.
 
@@ -2650,7 +2650,7 @@ new cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigAddKeysEnt
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigAddKeysEntryList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigAddKeysEntryList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigAddKeysEntryList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigAddKeysEntryList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -2658,7 +2658,7 @@ new cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigAddKeysEnt
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigAddKeysEntryList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -2724,7 +2724,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigAddKeysEntryList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -2759,7 +2759,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigAddKeysEntryList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigAddKeysEntryList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigAddKeysEntryList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigAddKeysEntry">CloudwatchLogTransformerTransformerConfigAddKeysEntry</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigAddKeysEntryList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigAddKeysEntry">CloudwatchLogTransformerTransformerConfigAddKeysEntry</a>[]</code> | *No description.* |
 
 ---
 
@@ -2793,7 +2793,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | CloudwatchLogTransformerTransformerConfigAddKeysEntry[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigAddKeysEntry">CloudwatchLogTransformerTransformerConfigAddKeysEntry</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigAddKeysEntry">CloudwatchLogTransformerTransformerConfigAddKeysEntry</a>[]
 
 ---
 
@@ -2810,7 +2810,7 @@ new cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigAddKeysEnt
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigAddKeysEntryOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigAddKeysEntryOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigAddKeysEntryOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigAddKeysEntryOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigAddKeysEntryOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -2819,7 +2819,7 @@ new cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigAddKeysEnt
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigAddKeysEntryOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -3006,7 +3006,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigAddKeysEntryOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -3034,12 +3034,12 @@ public resetOverwriteIfExists(): void
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigAddKeysEntryOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigAddKeysEntryOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigAddKeysEntryOutputReference.property.keyInput">keyInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigAddKeysEntryOutputReference.property.overwriteIfExistsInput">overwriteIfExistsInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigAddKeysEntryOutputReference.property.overwriteIfExistsInput">overwriteIfExistsInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigAddKeysEntryOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigAddKeysEntryOutputReference.property.key">key</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigAddKeysEntryOutputReference.property.overwriteIfExists">overwriteIfExists</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigAddKeysEntryOutputReference.property.overwriteIfExists">overwriteIfExists</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigAddKeysEntryOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigAddKeysEntryOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigAddKeysEntry">CloudwatchLogTransformerTransformerConfigAddKeysEntry</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigAddKeysEntryOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigAddKeysEntry">CloudwatchLogTransformerTransformerConfigAddKeysEntry</a></code> | *No description.* |
 
 ---
 
@@ -3083,7 +3083,7 @@ public readonly keyInput: string;
 public readonly overwriteIfExistsInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -3113,7 +3113,7 @@ public readonly key: string;
 public readonly overwriteIfExists: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -3133,7 +3133,7 @@ public readonly value: string;
 public readonly internalValue: IResolvable | CloudwatchLogTransformerTransformerConfigAddKeysEntry;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigAddKeysEntry">CloudwatchLogTransformerTransformerConfigAddKeysEntry</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigAddKeysEntry">CloudwatchLogTransformerTransformerConfigAddKeysEntry</a>
 
 ---
 
@@ -3150,7 +3150,7 @@ new cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigAddKeysLis
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigAddKeysList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigAddKeysList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigAddKeysList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigAddKeysList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -3158,7 +3158,7 @@ new cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigAddKeysLis
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigAddKeysList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -3224,7 +3224,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigAddKeysList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -3259,7 +3259,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigAddKeysList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigAddKeysList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigAddKeysList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigAddKeys">CloudwatchLogTransformerTransformerConfigAddKeys</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigAddKeysList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigAddKeys">CloudwatchLogTransformerTransformerConfigAddKeys</a>[]</code> | *No description.* |
 
 ---
 
@@ -3293,7 +3293,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | CloudwatchLogTransformerTransformerConfigAddKeys[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigAddKeys">CloudwatchLogTransformerTransformerConfigAddKeys</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigAddKeys">CloudwatchLogTransformerTransformerConfigAddKeys</a>[]
 
 ---
 
@@ -3310,7 +3310,7 @@ new cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigAddKeysOut
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigAddKeysOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigAddKeysOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigAddKeysOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigAddKeysOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigAddKeysOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -3319,7 +3319,7 @@ new cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigAddKeysOut
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigAddKeysOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -3507,7 +3507,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigAddKeysOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -3529,7 +3529,7 @@ public putEntry(value: IResolvable | CloudwatchLogTransformerTransformerConfigAd
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigAddKeysOutputReference.putEntry.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigAddKeysEntry">CloudwatchLogTransformerTransformerConfigAddKeysEntry</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigAddKeysEntry">CloudwatchLogTransformerTransformerConfigAddKeysEntry</a>[]
 
 ---
 
@@ -3547,8 +3547,8 @@ public resetEntry(): void
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigAddKeysOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigAddKeysOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigAddKeysOutputReference.property.entry">entry</a></code> | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigAddKeysEntryList">CloudwatchLogTransformerTransformerConfigAddKeysEntryList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigAddKeysOutputReference.property.entryInput">entryInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigAddKeysEntry">CloudwatchLogTransformerTransformerConfigAddKeysEntry</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigAddKeysOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigAddKeys">CloudwatchLogTransformerTransformerConfigAddKeys</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigAddKeysOutputReference.property.entryInput">entryInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigAddKeysEntry">CloudwatchLogTransformerTransformerConfigAddKeysEntry</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigAddKeysOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigAddKeys">CloudwatchLogTransformerTransformerConfigAddKeys</a></code> | *No description.* |
 
 ---
 
@@ -3592,7 +3592,7 @@ public readonly entry: CloudwatchLogTransformerTransformerConfigAddKeysEntryList
 public readonly entryInput: IResolvable | CloudwatchLogTransformerTransformerConfigAddKeysEntry[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigAddKeysEntry">CloudwatchLogTransformerTransformerConfigAddKeysEntry</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigAddKeysEntry">CloudwatchLogTransformerTransformerConfigAddKeysEntry</a>[]
 
 ---
 
@@ -3602,7 +3602,7 @@ public readonly entryInput: IResolvable | CloudwatchLogTransformerTransformerCon
 public readonly internalValue: IResolvable | CloudwatchLogTransformerTransformerConfigAddKeys;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigAddKeys">CloudwatchLogTransformerTransformerConfigAddKeys</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigAddKeys">CloudwatchLogTransformerTransformerConfigAddKeys</a>
 
 ---
 
@@ -3619,7 +3619,7 @@ new cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCopyValueE
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCopyValueEntryList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCopyValueEntryList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCopyValueEntryList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCopyValueEntryList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -3627,7 +3627,7 @@ new cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCopyValueE
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCopyValueEntryList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -3693,7 +3693,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCopyValueEntryList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -3728,7 +3728,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCopyValueEntryList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCopyValueEntryList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCopyValueEntryList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCopyValueEntry">CloudwatchLogTransformerTransformerConfigCopyValueEntry</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCopyValueEntryList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCopyValueEntry">CloudwatchLogTransformerTransformerConfigCopyValueEntry</a>[]</code> | *No description.* |
 
 ---
 
@@ -3762,7 +3762,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | CloudwatchLogTransformerTransformerConfigCopyValueEntry[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCopyValueEntry">CloudwatchLogTransformerTransformerConfigCopyValueEntry</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCopyValueEntry">CloudwatchLogTransformerTransformerConfigCopyValueEntry</a>[]
 
 ---
 
@@ -3779,7 +3779,7 @@ new cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCopyValueE
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCopyValueEntryOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCopyValueEntryOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCopyValueEntryOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCopyValueEntryOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCopyValueEntryOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -3788,7 +3788,7 @@ new cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCopyValueE
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCopyValueEntryOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -3975,7 +3975,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCopyValueEntryOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -4002,13 +4002,13 @@ public resetOverwriteIfExists(): void
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCopyValueEntryOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCopyValueEntryOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCopyValueEntryOutputReference.property.overwriteIfExistsInput">overwriteIfExistsInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCopyValueEntryOutputReference.property.overwriteIfExistsInput">overwriteIfExistsInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCopyValueEntryOutputReference.property.sourceInput">sourceInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCopyValueEntryOutputReference.property.targetInput">targetInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCopyValueEntryOutputReference.property.overwriteIfExists">overwriteIfExists</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCopyValueEntryOutputReference.property.overwriteIfExists">overwriteIfExists</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCopyValueEntryOutputReference.property.source">source</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCopyValueEntryOutputReference.property.target">target</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCopyValueEntryOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCopyValueEntry">CloudwatchLogTransformerTransformerConfigCopyValueEntry</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCopyValueEntryOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCopyValueEntry">CloudwatchLogTransformerTransformerConfigCopyValueEntry</a></code> | *No description.* |
 
 ---
 
@@ -4042,7 +4042,7 @@ public readonly fqn: string;
 public readonly overwriteIfExistsInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -4072,7 +4072,7 @@ public readonly targetInput: string;
 public readonly overwriteIfExists: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -4102,7 +4102,7 @@ public readonly target: string;
 public readonly internalValue: IResolvable | CloudwatchLogTransformerTransformerConfigCopyValueEntry;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCopyValueEntry">CloudwatchLogTransformerTransformerConfigCopyValueEntry</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCopyValueEntry">CloudwatchLogTransformerTransformerConfigCopyValueEntry</a>
 
 ---
 
@@ -4119,7 +4119,7 @@ new cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCopyValueL
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCopyValueList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCopyValueList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCopyValueList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCopyValueList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -4127,7 +4127,7 @@ new cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCopyValueL
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCopyValueList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -4193,7 +4193,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCopyValueList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -4228,7 +4228,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCopyValueList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCopyValueList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCopyValueList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCopyValue">CloudwatchLogTransformerTransformerConfigCopyValue</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCopyValueList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCopyValue">CloudwatchLogTransformerTransformerConfigCopyValue</a>[]</code> | *No description.* |
 
 ---
 
@@ -4262,7 +4262,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | CloudwatchLogTransformerTransformerConfigCopyValue[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCopyValue">CloudwatchLogTransformerTransformerConfigCopyValue</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCopyValue">CloudwatchLogTransformerTransformerConfigCopyValue</a>[]
 
 ---
 
@@ -4279,7 +4279,7 @@ new cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCopyValueO
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCopyValueOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCopyValueOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCopyValueOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCopyValueOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCopyValueOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -4288,7 +4288,7 @@ new cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCopyValueO
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCopyValueOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -4476,7 +4476,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCopyValueOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -4498,7 +4498,7 @@ public putEntry(value: IResolvable | CloudwatchLogTransformerTransformerConfigCo
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCopyValueOutputReference.putEntry.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCopyValueEntry">CloudwatchLogTransformerTransformerConfigCopyValueEntry</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCopyValueEntry">CloudwatchLogTransformerTransformerConfigCopyValueEntry</a>[]
 
 ---
 
@@ -4516,8 +4516,8 @@ public resetEntry(): void
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCopyValueOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCopyValueOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCopyValueOutputReference.property.entry">entry</a></code> | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCopyValueEntryList">CloudwatchLogTransformerTransformerConfigCopyValueEntryList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCopyValueOutputReference.property.entryInput">entryInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCopyValueEntry">CloudwatchLogTransformerTransformerConfigCopyValueEntry</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCopyValueOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCopyValue">CloudwatchLogTransformerTransformerConfigCopyValue</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCopyValueOutputReference.property.entryInput">entryInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCopyValueEntry">CloudwatchLogTransformerTransformerConfigCopyValueEntry</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCopyValueOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCopyValue">CloudwatchLogTransformerTransformerConfigCopyValue</a></code> | *No description.* |
 
 ---
 
@@ -4561,7 +4561,7 @@ public readonly entry: CloudwatchLogTransformerTransformerConfigCopyValueEntryLi
 public readonly entryInput: IResolvable | CloudwatchLogTransformerTransformerConfigCopyValueEntry[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCopyValueEntry">CloudwatchLogTransformerTransformerConfigCopyValueEntry</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCopyValueEntry">CloudwatchLogTransformerTransformerConfigCopyValueEntry</a>[]
 
 ---
 
@@ -4571,7 +4571,7 @@ public readonly entryInput: IResolvable | CloudwatchLogTransformerTransformerCon
 public readonly internalValue: IResolvable | CloudwatchLogTransformerTransformerConfigCopyValue;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCopyValue">CloudwatchLogTransformerTransformerConfigCopyValue</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCopyValue">CloudwatchLogTransformerTransformerConfigCopyValue</a>
 
 ---
 
@@ -4588,7 +4588,7 @@ new cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCsvList(te
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCsvList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCsvList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCsvList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCsvList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -4596,7 +4596,7 @@ new cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCsvList(te
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCsvList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -4662,7 +4662,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCsvList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -4697,7 +4697,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCsvList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCsvList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCsvList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCsv">CloudwatchLogTransformerTransformerConfigCsv</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCsvList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCsv">CloudwatchLogTransformerTransformerConfigCsv</a>[]</code> | *No description.* |
 
 ---
 
@@ -4731,7 +4731,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | CloudwatchLogTransformerTransformerConfigCsv[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCsv">CloudwatchLogTransformerTransformerConfigCsv</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCsv">CloudwatchLogTransformerTransformerConfigCsv</a>[]
 
 ---
 
@@ -4748,7 +4748,7 @@ new cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCsvOutputR
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCsvOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCsvOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCsvOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCsvOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCsvOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -4757,7 +4757,7 @@ new cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCsvOutputR
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCsvOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -4947,7 +4947,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCsvOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -5000,7 +5000,7 @@ public resetSource(): void
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCsvOutputReference.property.delimiter">delimiter</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCsvOutputReference.property.quoteCharacter">quoteCharacter</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCsvOutputReference.property.source">source</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCsvOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCsv">CloudwatchLogTransformerTransformerConfigCsv</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCsvOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCsv">CloudwatchLogTransformerTransformerConfigCsv</a></code> | *No description.* |
 
 ---
 
@@ -5114,7 +5114,7 @@ public readonly source: string;
 public readonly internalValue: IResolvable | CloudwatchLogTransformerTransformerConfigCsv;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCsv">CloudwatchLogTransformerTransformerConfigCsv</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCsv">CloudwatchLogTransformerTransformerConfigCsv</a>
 
 ---
 
@@ -5131,7 +5131,7 @@ new cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigDateTimeCo
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigDateTimeConverterList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigDateTimeConverterList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigDateTimeConverterList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigDateTimeConverterList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -5139,7 +5139,7 @@ new cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigDateTimeCo
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigDateTimeConverterList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -5205,7 +5205,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigDateTimeConverterList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -5240,7 +5240,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigDateTimeConverterList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigDateTimeConverterList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigDateTimeConverterList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigDateTimeConverter">CloudwatchLogTransformerTransformerConfigDateTimeConverter</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigDateTimeConverterList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigDateTimeConverter">CloudwatchLogTransformerTransformerConfigDateTimeConverter</a>[]</code> | *No description.* |
 
 ---
 
@@ -5274,7 +5274,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | CloudwatchLogTransformerTransformerConfigDateTimeConverter[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigDateTimeConverter">CloudwatchLogTransformerTransformerConfigDateTimeConverter</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigDateTimeConverter">CloudwatchLogTransformerTransformerConfigDateTimeConverter</a>[]
 
 ---
 
@@ -5291,7 +5291,7 @@ new cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigDateTimeCo
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigDateTimeConverterOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigDateTimeConverterOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigDateTimeConverterOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigDateTimeConverterOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigDateTimeConverterOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -5300,7 +5300,7 @@ new cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigDateTimeCo
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigDateTimeConverterOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -5490,7 +5490,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigDateTimeConverterOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -5549,7 +5549,7 @@ public resetTargetTimezone(): void
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigDateTimeConverterOutputReference.property.target">target</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigDateTimeConverterOutputReference.property.targetFormat">targetFormat</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigDateTimeConverterOutputReference.property.targetTimezone">targetTimezone</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigDateTimeConverterOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigDateTimeConverter">CloudwatchLogTransformerTransformerConfigDateTimeConverter</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigDateTimeConverterOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigDateTimeConverter">CloudwatchLogTransformerTransformerConfigDateTimeConverter</a></code> | *No description.* |
 
 ---
 
@@ -5723,7 +5723,7 @@ public readonly targetTimezone: string;
 public readonly internalValue: IResolvable | CloudwatchLogTransformerTransformerConfigDateTimeConverter;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigDateTimeConverter">CloudwatchLogTransformerTransformerConfigDateTimeConverter</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigDateTimeConverter">CloudwatchLogTransformerTransformerConfigDateTimeConverter</a>
 
 ---
 
@@ -5740,7 +5740,7 @@ new cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigDeleteKeys
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigDeleteKeysList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigDeleteKeysList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigDeleteKeysList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigDeleteKeysList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -5748,7 +5748,7 @@ new cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigDeleteKeys
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigDeleteKeysList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -5814,7 +5814,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigDeleteKeysList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -5849,7 +5849,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigDeleteKeysList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigDeleteKeysList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigDeleteKeysList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigDeleteKeys">CloudwatchLogTransformerTransformerConfigDeleteKeys</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigDeleteKeysList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigDeleteKeys">CloudwatchLogTransformerTransformerConfigDeleteKeys</a>[]</code> | *No description.* |
 
 ---
 
@@ -5883,7 +5883,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | CloudwatchLogTransformerTransformerConfigDeleteKeys[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigDeleteKeys">CloudwatchLogTransformerTransformerConfigDeleteKeys</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigDeleteKeys">CloudwatchLogTransformerTransformerConfigDeleteKeys</a>[]
 
 ---
 
@@ -5900,7 +5900,7 @@ new cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigDeleteKeys
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigDeleteKeysOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigDeleteKeysOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigDeleteKeysOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigDeleteKeysOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigDeleteKeysOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -5909,7 +5909,7 @@ new cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigDeleteKeys
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigDeleteKeysOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -6095,7 +6095,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigDeleteKeysOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -6118,7 +6118,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigDeleteKeysOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigDeleteKeysOutputReference.property.withKeysInput">withKeysInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigDeleteKeysOutputReference.property.withKeys">withKeys</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigDeleteKeysOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigDeleteKeys">CloudwatchLogTransformerTransformerConfigDeleteKeys</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigDeleteKeysOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigDeleteKeys">CloudwatchLogTransformerTransformerConfigDeleteKeys</a></code> | *No description.* |
 
 ---
 
@@ -6172,7 +6172,7 @@ public readonly withKeys: string[];
 public readonly internalValue: IResolvable | CloudwatchLogTransformerTransformerConfigDeleteKeys;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigDeleteKeys">CloudwatchLogTransformerTransformerConfigDeleteKeys</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigDeleteKeys">CloudwatchLogTransformerTransformerConfigDeleteKeys</a>
 
 ---
 
@@ -6189,7 +6189,7 @@ new cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigGrokList(t
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigGrokList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigGrokList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigGrokList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigGrokList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -6197,7 +6197,7 @@ new cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigGrokList(t
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigGrokList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -6263,7 +6263,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigGrokList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -6298,7 +6298,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigGrokList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigGrokList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigGrokList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigGrok">CloudwatchLogTransformerTransformerConfigGrok</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigGrokList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigGrok">CloudwatchLogTransformerTransformerConfigGrok</a>[]</code> | *No description.* |
 
 ---
 
@@ -6332,7 +6332,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | CloudwatchLogTransformerTransformerConfigGrok[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigGrok">CloudwatchLogTransformerTransformerConfigGrok</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigGrok">CloudwatchLogTransformerTransformerConfigGrok</a>[]
 
 ---
 
@@ -6349,7 +6349,7 @@ new cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigGrokOutput
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigGrokOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigGrokOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigGrokOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigGrokOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigGrokOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -6358,7 +6358,7 @@ new cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigGrokOutput
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigGrokOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -6545,7 +6545,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigGrokOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -6576,7 +6576,7 @@ public resetSource(): void
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigGrokOutputReference.property.sourceInput">sourceInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigGrokOutputReference.property.match">match</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigGrokOutputReference.property.source">source</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigGrokOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigGrok">CloudwatchLogTransformerTransformerConfigGrok</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigGrokOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigGrok">CloudwatchLogTransformerTransformerConfigGrok</a></code> | *No description.* |
 
 ---
 
@@ -6650,7 +6650,7 @@ public readonly source: string;
 public readonly internalValue: IResolvable | CloudwatchLogTransformerTransformerConfigGrok;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigGrok">CloudwatchLogTransformerTransformerConfigGrok</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigGrok">CloudwatchLogTransformerTransformerConfigGrok</a>
 
 ---
 
@@ -6667,7 +6667,7 @@ new cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigList(terra
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -6675,7 +6675,7 @@ new cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigList(terra
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -6741,7 +6741,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -6776,7 +6776,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfig">CloudwatchLogTransformerTransformerConfig</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfig">CloudwatchLogTransformerTransformerConfig</a>[]</code> | *No description.* |
 
 ---
 
@@ -6810,7 +6810,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | CloudwatchLogTransformerTransformerConfig[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfig">CloudwatchLogTransformerTransformerConfig</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfig">CloudwatchLogTransformerTransformerConfig</a>[]
 
 ---
 
@@ -6827,7 +6827,7 @@ new cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigListToMapL
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigListToMapList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigListToMapList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigListToMapList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigListToMapList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -6835,7 +6835,7 @@ new cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigListToMapL
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigListToMapList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -6901,7 +6901,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigListToMapList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -6936,7 +6936,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigListToMapList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigListToMapList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigListToMapList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigListToMap">CloudwatchLogTransformerTransformerConfigListToMap</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigListToMapList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigListToMap">CloudwatchLogTransformerTransformerConfigListToMap</a>[]</code> | *No description.* |
 
 ---
 
@@ -6970,7 +6970,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | CloudwatchLogTransformerTransformerConfigListToMap[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigListToMap">CloudwatchLogTransformerTransformerConfigListToMap</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigListToMap">CloudwatchLogTransformerTransformerConfigListToMap</a>[]
 
 ---
 
@@ -6987,7 +6987,7 @@ new cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigListToMapO
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigListToMapOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigListToMapOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigListToMapOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigListToMapOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigListToMapOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -6996,7 +6996,7 @@ new cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigListToMapO
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigListToMapOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -7186,7 +7186,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigListToMapOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -7232,18 +7232,18 @@ public resetValueKey(): void
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigListToMapOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigListToMapOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigListToMapOutputReference.property.flattenedElementInput">flattenedElementInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigListToMapOutputReference.property.flattenInput">flattenInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigListToMapOutputReference.property.flattenInput">flattenInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigListToMapOutputReference.property.keyInput">keyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigListToMapOutputReference.property.sourceInput">sourceInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigListToMapOutputReference.property.targetInput">targetInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigListToMapOutputReference.property.valueKeyInput">valueKeyInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigListToMapOutputReference.property.flatten">flatten</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigListToMapOutputReference.property.flatten">flatten</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigListToMapOutputReference.property.flattenedElement">flattenedElement</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigListToMapOutputReference.property.key">key</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigListToMapOutputReference.property.source">source</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigListToMapOutputReference.property.target">target</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigListToMapOutputReference.property.valueKey">valueKey</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigListToMapOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigListToMap">CloudwatchLogTransformerTransformerConfigListToMap</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigListToMapOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigListToMap">CloudwatchLogTransformerTransformerConfigListToMap</a></code> | *No description.* |
 
 ---
 
@@ -7287,7 +7287,7 @@ public readonly flattenedElementInput: string;
 public readonly flattenInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -7337,7 +7337,7 @@ public readonly valueKeyInput: string;
 public readonly flatten: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -7397,7 +7397,7 @@ public readonly valueKey: string;
 public readonly internalValue: IResolvable | CloudwatchLogTransformerTransformerConfigListToMap;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigListToMap">CloudwatchLogTransformerTransformerConfigListToMap</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigListToMap">CloudwatchLogTransformerTransformerConfigListToMap</a>
 
 ---
 
@@ -7414,7 +7414,7 @@ new cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigLowerCaseS
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigLowerCaseStringList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigLowerCaseStringList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigLowerCaseStringList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigLowerCaseStringList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -7422,7 +7422,7 @@ new cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigLowerCaseS
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigLowerCaseStringList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -7488,7 +7488,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigLowerCaseStringList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -7523,7 +7523,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigLowerCaseStringList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigLowerCaseStringList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigLowerCaseStringList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigLowerCaseString">CloudwatchLogTransformerTransformerConfigLowerCaseString</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigLowerCaseStringList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigLowerCaseString">CloudwatchLogTransformerTransformerConfigLowerCaseString</a>[]</code> | *No description.* |
 
 ---
 
@@ -7557,7 +7557,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | CloudwatchLogTransformerTransformerConfigLowerCaseString[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigLowerCaseString">CloudwatchLogTransformerTransformerConfigLowerCaseString</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigLowerCaseString">CloudwatchLogTransformerTransformerConfigLowerCaseString</a>[]
 
 ---
 
@@ -7574,7 +7574,7 @@ new cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigLowerCaseS
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigLowerCaseStringOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigLowerCaseStringOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigLowerCaseStringOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigLowerCaseStringOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigLowerCaseStringOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -7583,7 +7583,7 @@ new cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigLowerCaseS
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigLowerCaseStringOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -7769,7 +7769,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigLowerCaseStringOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -7792,7 +7792,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigLowerCaseStringOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigLowerCaseStringOutputReference.property.withKeysInput">withKeysInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigLowerCaseStringOutputReference.property.withKeys">withKeys</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigLowerCaseStringOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigLowerCaseString">CloudwatchLogTransformerTransformerConfigLowerCaseString</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigLowerCaseStringOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigLowerCaseString">CloudwatchLogTransformerTransformerConfigLowerCaseString</a></code> | *No description.* |
 
 ---
 
@@ -7846,7 +7846,7 @@ public readonly withKeys: string[];
 public readonly internalValue: IResolvable | CloudwatchLogTransformerTransformerConfigLowerCaseString;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigLowerCaseString">CloudwatchLogTransformerTransformerConfigLowerCaseString</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigLowerCaseString">CloudwatchLogTransformerTransformerConfigLowerCaseString</a>
 
 ---
 
@@ -7863,7 +7863,7 @@ new cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigMoveKeysEn
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigMoveKeysEntryList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigMoveKeysEntryList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigMoveKeysEntryList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigMoveKeysEntryList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -7871,7 +7871,7 @@ new cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigMoveKeysEn
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigMoveKeysEntryList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -7937,7 +7937,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigMoveKeysEntryList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -7972,7 +7972,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigMoveKeysEntryList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigMoveKeysEntryList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigMoveKeysEntryList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigMoveKeysEntry">CloudwatchLogTransformerTransformerConfigMoveKeysEntry</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigMoveKeysEntryList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigMoveKeysEntry">CloudwatchLogTransformerTransformerConfigMoveKeysEntry</a>[]</code> | *No description.* |
 
 ---
 
@@ -8006,7 +8006,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | CloudwatchLogTransformerTransformerConfigMoveKeysEntry[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigMoveKeysEntry">CloudwatchLogTransformerTransformerConfigMoveKeysEntry</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigMoveKeysEntry">CloudwatchLogTransformerTransformerConfigMoveKeysEntry</a>[]
 
 ---
 
@@ -8023,7 +8023,7 @@ new cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigMoveKeysEn
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigMoveKeysEntryOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigMoveKeysEntryOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigMoveKeysEntryOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigMoveKeysEntryOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigMoveKeysEntryOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -8032,7 +8032,7 @@ new cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigMoveKeysEn
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigMoveKeysEntryOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -8219,7 +8219,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigMoveKeysEntryOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -8246,13 +8246,13 @@ public resetOverwriteIfExists(): void
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigMoveKeysEntryOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigMoveKeysEntryOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigMoveKeysEntryOutputReference.property.overwriteIfExistsInput">overwriteIfExistsInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigMoveKeysEntryOutputReference.property.overwriteIfExistsInput">overwriteIfExistsInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigMoveKeysEntryOutputReference.property.sourceInput">sourceInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigMoveKeysEntryOutputReference.property.targetInput">targetInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigMoveKeysEntryOutputReference.property.overwriteIfExists">overwriteIfExists</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigMoveKeysEntryOutputReference.property.overwriteIfExists">overwriteIfExists</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigMoveKeysEntryOutputReference.property.source">source</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigMoveKeysEntryOutputReference.property.target">target</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigMoveKeysEntryOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigMoveKeysEntry">CloudwatchLogTransformerTransformerConfigMoveKeysEntry</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigMoveKeysEntryOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigMoveKeysEntry">CloudwatchLogTransformerTransformerConfigMoveKeysEntry</a></code> | *No description.* |
 
 ---
 
@@ -8286,7 +8286,7 @@ public readonly fqn: string;
 public readonly overwriteIfExistsInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -8316,7 +8316,7 @@ public readonly targetInput: string;
 public readonly overwriteIfExists: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -8346,7 +8346,7 @@ public readonly target: string;
 public readonly internalValue: IResolvable | CloudwatchLogTransformerTransformerConfigMoveKeysEntry;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigMoveKeysEntry">CloudwatchLogTransformerTransformerConfigMoveKeysEntry</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigMoveKeysEntry">CloudwatchLogTransformerTransformerConfigMoveKeysEntry</a>
 
 ---
 
@@ -8363,7 +8363,7 @@ new cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigMoveKeysLi
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigMoveKeysList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigMoveKeysList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigMoveKeysList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigMoveKeysList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -8371,7 +8371,7 @@ new cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigMoveKeysLi
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigMoveKeysList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -8437,7 +8437,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigMoveKeysList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -8472,7 +8472,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigMoveKeysList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigMoveKeysList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigMoveKeysList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigMoveKeys">CloudwatchLogTransformerTransformerConfigMoveKeys</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigMoveKeysList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigMoveKeys">CloudwatchLogTransformerTransformerConfigMoveKeys</a>[]</code> | *No description.* |
 
 ---
 
@@ -8506,7 +8506,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | CloudwatchLogTransformerTransformerConfigMoveKeys[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigMoveKeys">CloudwatchLogTransformerTransformerConfigMoveKeys</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigMoveKeys">CloudwatchLogTransformerTransformerConfigMoveKeys</a>[]
 
 ---
 
@@ -8523,7 +8523,7 @@ new cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigMoveKeysOu
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigMoveKeysOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigMoveKeysOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigMoveKeysOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigMoveKeysOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigMoveKeysOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -8532,7 +8532,7 @@ new cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigMoveKeysOu
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigMoveKeysOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -8720,7 +8720,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigMoveKeysOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -8742,7 +8742,7 @@ public putEntry(value: IResolvable | CloudwatchLogTransformerTransformerConfigMo
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigMoveKeysOutputReference.putEntry.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigMoveKeysEntry">CloudwatchLogTransformerTransformerConfigMoveKeysEntry</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigMoveKeysEntry">CloudwatchLogTransformerTransformerConfigMoveKeysEntry</a>[]
 
 ---
 
@@ -8760,8 +8760,8 @@ public resetEntry(): void
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigMoveKeysOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigMoveKeysOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigMoveKeysOutputReference.property.entry">entry</a></code> | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigMoveKeysEntryList">CloudwatchLogTransformerTransformerConfigMoveKeysEntryList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigMoveKeysOutputReference.property.entryInput">entryInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigMoveKeysEntry">CloudwatchLogTransformerTransformerConfigMoveKeysEntry</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigMoveKeysOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigMoveKeys">CloudwatchLogTransformerTransformerConfigMoveKeys</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigMoveKeysOutputReference.property.entryInput">entryInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigMoveKeysEntry">CloudwatchLogTransformerTransformerConfigMoveKeysEntry</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigMoveKeysOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigMoveKeys">CloudwatchLogTransformerTransformerConfigMoveKeys</a></code> | *No description.* |
 
 ---
 
@@ -8805,7 +8805,7 @@ public readonly entry: CloudwatchLogTransformerTransformerConfigMoveKeysEntryLis
 public readonly entryInput: IResolvable | CloudwatchLogTransformerTransformerConfigMoveKeysEntry[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigMoveKeysEntry">CloudwatchLogTransformerTransformerConfigMoveKeysEntry</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigMoveKeysEntry">CloudwatchLogTransformerTransformerConfigMoveKeysEntry</a>[]
 
 ---
 
@@ -8815,7 +8815,7 @@ public readonly entryInput: IResolvable | CloudwatchLogTransformerTransformerCon
 public readonly internalValue: IResolvable | CloudwatchLogTransformerTransformerConfigMoveKeys;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigMoveKeys">CloudwatchLogTransformerTransformerConfigMoveKeys</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigMoveKeys">CloudwatchLogTransformerTransformerConfigMoveKeys</a>
 
 ---
 
@@ -8832,7 +8832,7 @@ new cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigOutputRefe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -8841,7 +8841,7 @@ new cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigOutputRefe
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -9073,7 +9073,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -9095,7 +9095,7 @@ public putAddKeys(value: IResolvable | CloudwatchLogTransformerTransformerConfig
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigOutputReference.putAddKeys.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigAddKeys">CloudwatchLogTransformerTransformerConfigAddKeys</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigAddKeys">CloudwatchLogTransformerTransformerConfigAddKeys</a>[]
 
 ---
 
@@ -9107,7 +9107,7 @@ public putCopyValue(value: IResolvable | CloudwatchLogTransformerTransformerConf
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigOutputReference.putCopyValue.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCopyValue">CloudwatchLogTransformerTransformerConfigCopyValue</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCopyValue">CloudwatchLogTransformerTransformerConfigCopyValue</a>[]
 
 ---
 
@@ -9119,7 +9119,7 @@ public putCsv(value: IResolvable | CloudwatchLogTransformerTransformerConfigCsv[
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigOutputReference.putCsv.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCsv">CloudwatchLogTransformerTransformerConfigCsv</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCsv">CloudwatchLogTransformerTransformerConfigCsv</a>[]
 
 ---
 
@@ -9131,7 +9131,7 @@ public putDateTimeConverter(value: IResolvable | CloudwatchLogTransformerTransfo
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigOutputReference.putDateTimeConverter.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigDateTimeConverter">CloudwatchLogTransformerTransformerConfigDateTimeConverter</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigDateTimeConverter">CloudwatchLogTransformerTransformerConfigDateTimeConverter</a>[]
 
 ---
 
@@ -9143,7 +9143,7 @@ public putDeleteKeys(value: IResolvable | CloudwatchLogTransformerTransformerCon
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigOutputReference.putDeleteKeys.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigDeleteKeys">CloudwatchLogTransformerTransformerConfigDeleteKeys</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigDeleteKeys">CloudwatchLogTransformerTransformerConfigDeleteKeys</a>[]
 
 ---
 
@@ -9155,7 +9155,7 @@ public putGrok(value: IResolvable | CloudwatchLogTransformerTransformerConfigGro
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigOutputReference.putGrok.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigGrok">CloudwatchLogTransformerTransformerConfigGrok</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigGrok">CloudwatchLogTransformerTransformerConfigGrok</a>[]
 
 ---
 
@@ -9167,7 +9167,7 @@ public putListToMap(value: IResolvable | CloudwatchLogTransformerTransformerConf
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigOutputReference.putListToMap.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigListToMap">CloudwatchLogTransformerTransformerConfigListToMap</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigListToMap">CloudwatchLogTransformerTransformerConfigListToMap</a>[]
 
 ---
 
@@ -9179,7 +9179,7 @@ public putLowerCaseString(value: IResolvable | CloudwatchLogTransformerTransform
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigOutputReference.putLowerCaseString.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigLowerCaseString">CloudwatchLogTransformerTransformerConfigLowerCaseString</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigLowerCaseString">CloudwatchLogTransformerTransformerConfigLowerCaseString</a>[]
 
 ---
 
@@ -9191,7 +9191,7 @@ public putMoveKeys(value: IResolvable | CloudwatchLogTransformerTransformerConfi
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigOutputReference.putMoveKeys.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigMoveKeys">CloudwatchLogTransformerTransformerConfigMoveKeys</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigMoveKeys">CloudwatchLogTransformerTransformerConfigMoveKeys</a>[]
 
 ---
 
@@ -9203,7 +9203,7 @@ public putParseCloudfront(value: IResolvable | CloudwatchLogTransformerTransform
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigOutputReference.putParseCloudfront.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseCloudfront">CloudwatchLogTransformerTransformerConfigParseCloudfront</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseCloudfront">CloudwatchLogTransformerTransformerConfigParseCloudfront</a>[]
 
 ---
 
@@ -9215,7 +9215,7 @@ public putParseJson(value: IResolvable | CloudwatchLogTransformerTransformerConf
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigOutputReference.putParseJson.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseJson">CloudwatchLogTransformerTransformerConfigParseJson</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseJson">CloudwatchLogTransformerTransformerConfigParseJson</a>[]
 
 ---
 
@@ -9227,7 +9227,7 @@ public putParseKeyValue(value: IResolvable | CloudwatchLogTransformerTransformer
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigOutputReference.putParseKeyValue.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseKeyValue">CloudwatchLogTransformerTransformerConfigParseKeyValue</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseKeyValue">CloudwatchLogTransformerTransformerConfigParseKeyValue</a>[]
 
 ---
 
@@ -9239,7 +9239,7 @@ public putParsePostgres(value: IResolvable | CloudwatchLogTransformerTransformer
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigOutputReference.putParsePostgres.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParsePostgres">CloudwatchLogTransformerTransformerConfigParsePostgres</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParsePostgres">CloudwatchLogTransformerTransformerConfigParsePostgres</a>[]
 
 ---
 
@@ -9251,7 +9251,7 @@ public putParseRoute53(value: IResolvable | CloudwatchLogTransformerTransformerC
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigOutputReference.putParseRoute53.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseRoute53">CloudwatchLogTransformerTransformerConfigParseRoute53</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseRoute53">CloudwatchLogTransformerTransformerConfigParseRoute53</a>[]
 
 ---
 
@@ -9263,7 +9263,7 @@ public putParseToOcsf(value: IResolvable | CloudwatchLogTransformerTransformerCo
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigOutputReference.putParseToOcsf.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseToOcsf">CloudwatchLogTransformerTransformerConfigParseToOcsf</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseToOcsf">CloudwatchLogTransformerTransformerConfigParseToOcsf</a>[]
 
 ---
 
@@ -9275,7 +9275,7 @@ public putParseVpc(value: IResolvable | CloudwatchLogTransformerTransformerConfi
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigOutputReference.putParseVpc.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseVpc">CloudwatchLogTransformerTransformerConfigParseVpc</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseVpc">CloudwatchLogTransformerTransformerConfigParseVpc</a>[]
 
 ---
 
@@ -9287,7 +9287,7 @@ public putParseWaf(value: IResolvable | CloudwatchLogTransformerTransformerConfi
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigOutputReference.putParseWaf.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseWaf">CloudwatchLogTransformerTransformerConfigParseWaf</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseWaf">CloudwatchLogTransformerTransformerConfigParseWaf</a>[]
 
 ---
 
@@ -9299,7 +9299,7 @@ public putRenameKeys(value: IResolvable | CloudwatchLogTransformerTransformerCon
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigOutputReference.putRenameKeys.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigRenameKeys">CloudwatchLogTransformerTransformerConfigRenameKeys</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigRenameKeys">CloudwatchLogTransformerTransformerConfigRenameKeys</a>[]
 
 ---
 
@@ -9311,7 +9311,7 @@ public putSplitString(value: IResolvable | CloudwatchLogTransformerTransformerCo
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigOutputReference.putSplitString.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSplitString">CloudwatchLogTransformerTransformerConfigSplitString</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSplitString">CloudwatchLogTransformerTransformerConfigSplitString</a>[]
 
 ---
 
@@ -9323,7 +9323,7 @@ public putSubstituteString(value: IResolvable | CloudwatchLogTransformerTransfor
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigOutputReference.putSubstituteString.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSubstituteString">CloudwatchLogTransformerTransformerConfigSubstituteString</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSubstituteString">CloudwatchLogTransformerTransformerConfigSubstituteString</a>[]
 
 ---
 
@@ -9335,7 +9335,7 @@ public putTrimString(value: IResolvable | CloudwatchLogTransformerTransformerCon
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigOutputReference.putTrimString.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigTrimString">CloudwatchLogTransformerTransformerConfigTrimString</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigTrimString">CloudwatchLogTransformerTransformerConfigTrimString</a>[]
 
 ---
 
@@ -9347,7 +9347,7 @@ public putTypeConverter(value: IResolvable | CloudwatchLogTransformerTransformer
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigOutputReference.putTypeConverter.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigTypeConverter">CloudwatchLogTransformerTransformerConfigTypeConverter</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigTypeConverter">CloudwatchLogTransformerTransformerConfigTypeConverter</a>[]
 
 ---
 
@@ -9359,7 +9359,7 @@ public putUpperCaseString(value: IResolvable | CloudwatchLogTransformerTransform
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigOutputReference.putUpperCaseString.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigUpperCaseString">CloudwatchLogTransformerTransformerConfigUpperCaseString</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigUpperCaseString">CloudwatchLogTransformerTransformerConfigUpperCaseString</a>[]
 
 ---
 
@@ -9531,30 +9531,30 @@ public resetUpperCaseString(): void
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigOutputReference.property.trimString">trimString</a></code> | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigTrimStringList">CloudwatchLogTransformerTransformerConfigTrimStringList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigOutputReference.property.typeConverter">typeConverter</a></code> | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigTypeConverterList">CloudwatchLogTransformerTransformerConfigTypeConverterList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigOutputReference.property.upperCaseString">upperCaseString</a></code> | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigUpperCaseStringList">CloudwatchLogTransformerTransformerConfigUpperCaseStringList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigOutputReference.property.addKeysInput">addKeysInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigAddKeys">CloudwatchLogTransformerTransformerConfigAddKeys</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigOutputReference.property.copyValueInput">copyValueInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCopyValue">CloudwatchLogTransformerTransformerConfigCopyValue</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigOutputReference.property.csvInput">csvInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCsv">CloudwatchLogTransformerTransformerConfigCsv</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigOutputReference.property.dateTimeConverterInput">dateTimeConverterInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigDateTimeConverter">CloudwatchLogTransformerTransformerConfigDateTimeConverter</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigOutputReference.property.deleteKeysInput">deleteKeysInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigDeleteKeys">CloudwatchLogTransformerTransformerConfigDeleteKeys</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigOutputReference.property.grokInput">grokInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigGrok">CloudwatchLogTransformerTransformerConfigGrok</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigOutputReference.property.listToMapInput">listToMapInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigListToMap">CloudwatchLogTransformerTransformerConfigListToMap</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigOutputReference.property.lowerCaseStringInput">lowerCaseStringInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigLowerCaseString">CloudwatchLogTransformerTransformerConfigLowerCaseString</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigOutputReference.property.moveKeysInput">moveKeysInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigMoveKeys">CloudwatchLogTransformerTransformerConfigMoveKeys</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigOutputReference.property.parseCloudfrontInput">parseCloudfrontInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseCloudfront">CloudwatchLogTransformerTransformerConfigParseCloudfront</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigOutputReference.property.parseJsonInput">parseJsonInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseJson">CloudwatchLogTransformerTransformerConfigParseJson</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigOutputReference.property.parseKeyValueInput">parseKeyValueInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseKeyValue">CloudwatchLogTransformerTransformerConfigParseKeyValue</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigOutputReference.property.parsePostgresInput">parsePostgresInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParsePostgres">CloudwatchLogTransformerTransformerConfigParsePostgres</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigOutputReference.property.parseRoute53Input">parseRoute53Input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseRoute53">CloudwatchLogTransformerTransformerConfigParseRoute53</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigOutputReference.property.parseToOcsfInput">parseToOcsfInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseToOcsf">CloudwatchLogTransformerTransformerConfigParseToOcsf</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigOutputReference.property.parseVpcInput">parseVpcInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseVpc">CloudwatchLogTransformerTransformerConfigParseVpc</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigOutputReference.property.parseWafInput">parseWafInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseWaf">CloudwatchLogTransformerTransformerConfigParseWaf</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigOutputReference.property.renameKeysInput">renameKeysInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigRenameKeys">CloudwatchLogTransformerTransformerConfigRenameKeys</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigOutputReference.property.splitStringInput">splitStringInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSplitString">CloudwatchLogTransformerTransformerConfigSplitString</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigOutputReference.property.substituteStringInput">substituteStringInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSubstituteString">CloudwatchLogTransformerTransformerConfigSubstituteString</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigOutputReference.property.trimStringInput">trimStringInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigTrimString">CloudwatchLogTransformerTransformerConfigTrimString</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigOutputReference.property.typeConverterInput">typeConverterInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigTypeConverter">CloudwatchLogTransformerTransformerConfigTypeConverter</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigOutputReference.property.upperCaseStringInput">upperCaseStringInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigUpperCaseString">CloudwatchLogTransformerTransformerConfigUpperCaseString</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfig">CloudwatchLogTransformerTransformerConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigOutputReference.property.addKeysInput">addKeysInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigAddKeys">CloudwatchLogTransformerTransformerConfigAddKeys</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigOutputReference.property.copyValueInput">copyValueInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCopyValue">CloudwatchLogTransformerTransformerConfigCopyValue</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigOutputReference.property.csvInput">csvInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCsv">CloudwatchLogTransformerTransformerConfigCsv</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigOutputReference.property.dateTimeConverterInput">dateTimeConverterInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigDateTimeConverter">CloudwatchLogTransformerTransformerConfigDateTimeConverter</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigOutputReference.property.deleteKeysInput">deleteKeysInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigDeleteKeys">CloudwatchLogTransformerTransformerConfigDeleteKeys</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigOutputReference.property.grokInput">grokInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigGrok">CloudwatchLogTransformerTransformerConfigGrok</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigOutputReference.property.listToMapInput">listToMapInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigListToMap">CloudwatchLogTransformerTransformerConfigListToMap</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigOutputReference.property.lowerCaseStringInput">lowerCaseStringInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigLowerCaseString">CloudwatchLogTransformerTransformerConfigLowerCaseString</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigOutputReference.property.moveKeysInput">moveKeysInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigMoveKeys">CloudwatchLogTransformerTransformerConfigMoveKeys</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigOutputReference.property.parseCloudfrontInput">parseCloudfrontInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseCloudfront">CloudwatchLogTransformerTransformerConfigParseCloudfront</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigOutputReference.property.parseJsonInput">parseJsonInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseJson">CloudwatchLogTransformerTransformerConfigParseJson</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigOutputReference.property.parseKeyValueInput">parseKeyValueInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseKeyValue">CloudwatchLogTransformerTransformerConfigParseKeyValue</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigOutputReference.property.parsePostgresInput">parsePostgresInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParsePostgres">CloudwatchLogTransformerTransformerConfigParsePostgres</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigOutputReference.property.parseRoute53Input">parseRoute53Input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseRoute53">CloudwatchLogTransformerTransformerConfigParseRoute53</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigOutputReference.property.parseToOcsfInput">parseToOcsfInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseToOcsf">CloudwatchLogTransformerTransformerConfigParseToOcsf</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigOutputReference.property.parseVpcInput">parseVpcInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseVpc">CloudwatchLogTransformerTransformerConfigParseVpc</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigOutputReference.property.parseWafInput">parseWafInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseWaf">CloudwatchLogTransformerTransformerConfigParseWaf</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigOutputReference.property.renameKeysInput">renameKeysInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigRenameKeys">CloudwatchLogTransformerTransformerConfigRenameKeys</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigOutputReference.property.splitStringInput">splitStringInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSplitString">CloudwatchLogTransformerTransformerConfigSplitString</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigOutputReference.property.substituteStringInput">substituteStringInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSubstituteString">CloudwatchLogTransformerTransformerConfigSubstituteString</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigOutputReference.property.trimStringInput">trimStringInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigTrimString">CloudwatchLogTransformerTransformerConfigTrimString</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigOutputReference.property.typeConverterInput">typeConverterInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigTypeConverter">CloudwatchLogTransformerTransformerConfigTypeConverter</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigOutputReference.property.upperCaseStringInput">upperCaseStringInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigUpperCaseString">CloudwatchLogTransformerTransformerConfigUpperCaseString</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfig">CloudwatchLogTransformerTransformerConfig</a></code> | *No description.* |
 
 ---
 
@@ -9818,7 +9818,7 @@ public readonly upperCaseString: CloudwatchLogTransformerTransformerConfigUpperC
 public readonly addKeysInput: IResolvable | CloudwatchLogTransformerTransformerConfigAddKeys[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigAddKeys">CloudwatchLogTransformerTransformerConfigAddKeys</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigAddKeys">CloudwatchLogTransformerTransformerConfigAddKeys</a>[]
 
 ---
 
@@ -9828,7 +9828,7 @@ public readonly addKeysInput: IResolvable | CloudwatchLogTransformerTransformerC
 public readonly copyValueInput: IResolvable | CloudwatchLogTransformerTransformerConfigCopyValue[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCopyValue">CloudwatchLogTransformerTransformerConfigCopyValue</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCopyValue">CloudwatchLogTransformerTransformerConfigCopyValue</a>[]
 
 ---
 
@@ -9838,7 +9838,7 @@ public readonly copyValueInput: IResolvable | CloudwatchLogTransformerTransforme
 public readonly csvInput: IResolvable | CloudwatchLogTransformerTransformerConfigCsv[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCsv">CloudwatchLogTransformerTransformerConfigCsv</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCsv">CloudwatchLogTransformerTransformerConfigCsv</a>[]
 
 ---
 
@@ -9848,7 +9848,7 @@ public readonly csvInput: IResolvable | CloudwatchLogTransformerTransformerConfi
 public readonly dateTimeConverterInput: IResolvable | CloudwatchLogTransformerTransformerConfigDateTimeConverter[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigDateTimeConverter">CloudwatchLogTransformerTransformerConfigDateTimeConverter</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigDateTimeConverter">CloudwatchLogTransformerTransformerConfigDateTimeConverter</a>[]
 
 ---
 
@@ -9858,7 +9858,7 @@ public readonly dateTimeConverterInput: IResolvable | CloudwatchLogTransformerTr
 public readonly deleteKeysInput: IResolvable | CloudwatchLogTransformerTransformerConfigDeleteKeys[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigDeleteKeys">CloudwatchLogTransformerTransformerConfigDeleteKeys</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigDeleteKeys">CloudwatchLogTransformerTransformerConfigDeleteKeys</a>[]
 
 ---
 
@@ -9868,7 +9868,7 @@ public readonly deleteKeysInput: IResolvable | CloudwatchLogTransformerTransform
 public readonly grokInput: IResolvable | CloudwatchLogTransformerTransformerConfigGrok[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigGrok">CloudwatchLogTransformerTransformerConfigGrok</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigGrok">CloudwatchLogTransformerTransformerConfigGrok</a>[]
 
 ---
 
@@ -9878,7 +9878,7 @@ public readonly grokInput: IResolvable | CloudwatchLogTransformerTransformerConf
 public readonly listToMapInput: IResolvable | CloudwatchLogTransformerTransformerConfigListToMap[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigListToMap">CloudwatchLogTransformerTransformerConfigListToMap</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigListToMap">CloudwatchLogTransformerTransformerConfigListToMap</a>[]
 
 ---
 
@@ -9888,7 +9888,7 @@ public readonly listToMapInput: IResolvable | CloudwatchLogTransformerTransforme
 public readonly lowerCaseStringInput: IResolvable | CloudwatchLogTransformerTransformerConfigLowerCaseString[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigLowerCaseString">CloudwatchLogTransformerTransformerConfigLowerCaseString</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigLowerCaseString">CloudwatchLogTransformerTransformerConfigLowerCaseString</a>[]
 
 ---
 
@@ -9898,7 +9898,7 @@ public readonly lowerCaseStringInput: IResolvable | CloudwatchLogTransformerTran
 public readonly moveKeysInput: IResolvable | CloudwatchLogTransformerTransformerConfigMoveKeys[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigMoveKeys">CloudwatchLogTransformerTransformerConfigMoveKeys</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigMoveKeys">CloudwatchLogTransformerTransformerConfigMoveKeys</a>[]
 
 ---
 
@@ -9908,7 +9908,7 @@ public readonly moveKeysInput: IResolvable | CloudwatchLogTransformerTransformer
 public readonly parseCloudfrontInput: IResolvable | CloudwatchLogTransformerTransformerConfigParseCloudfront[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseCloudfront">CloudwatchLogTransformerTransformerConfigParseCloudfront</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseCloudfront">CloudwatchLogTransformerTransformerConfigParseCloudfront</a>[]
 
 ---
 
@@ -9918,7 +9918,7 @@ public readonly parseCloudfrontInput: IResolvable | CloudwatchLogTransformerTran
 public readonly parseJsonInput: IResolvable | CloudwatchLogTransformerTransformerConfigParseJson[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseJson">CloudwatchLogTransformerTransformerConfigParseJson</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseJson">CloudwatchLogTransformerTransformerConfigParseJson</a>[]
 
 ---
 
@@ -9928,7 +9928,7 @@ public readonly parseJsonInput: IResolvable | CloudwatchLogTransformerTransforme
 public readonly parseKeyValueInput: IResolvable | CloudwatchLogTransformerTransformerConfigParseKeyValue[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseKeyValue">CloudwatchLogTransformerTransformerConfigParseKeyValue</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseKeyValue">CloudwatchLogTransformerTransformerConfigParseKeyValue</a>[]
 
 ---
 
@@ -9938,7 +9938,7 @@ public readonly parseKeyValueInput: IResolvable | CloudwatchLogTransformerTransf
 public readonly parsePostgresInput: IResolvable | CloudwatchLogTransformerTransformerConfigParsePostgres[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParsePostgres">CloudwatchLogTransformerTransformerConfigParsePostgres</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParsePostgres">CloudwatchLogTransformerTransformerConfigParsePostgres</a>[]
 
 ---
 
@@ -9948,7 +9948,7 @@ public readonly parsePostgresInput: IResolvable | CloudwatchLogTransformerTransf
 public readonly parseRoute53Input: IResolvable | CloudwatchLogTransformerTransformerConfigParseRoute53[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseRoute53">CloudwatchLogTransformerTransformerConfigParseRoute53</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseRoute53">CloudwatchLogTransformerTransformerConfigParseRoute53</a>[]
 
 ---
 
@@ -9958,7 +9958,7 @@ public readonly parseRoute53Input: IResolvable | CloudwatchLogTransformerTransfo
 public readonly parseToOcsfInput: IResolvable | CloudwatchLogTransformerTransformerConfigParseToOcsf[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseToOcsf">CloudwatchLogTransformerTransformerConfigParseToOcsf</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseToOcsf">CloudwatchLogTransformerTransformerConfigParseToOcsf</a>[]
 
 ---
 
@@ -9968,7 +9968,7 @@ public readonly parseToOcsfInput: IResolvable | CloudwatchLogTransformerTransfor
 public readonly parseVpcInput: IResolvable | CloudwatchLogTransformerTransformerConfigParseVpc[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseVpc">CloudwatchLogTransformerTransformerConfigParseVpc</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseVpc">CloudwatchLogTransformerTransformerConfigParseVpc</a>[]
 
 ---
 
@@ -9978,7 +9978,7 @@ public readonly parseVpcInput: IResolvable | CloudwatchLogTransformerTransformer
 public readonly parseWafInput: IResolvable | CloudwatchLogTransformerTransformerConfigParseWaf[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseWaf">CloudwatchLogTransformerTransformerConfigParseWaf</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseWaf">CloudwatchLogTransformerTransformerConfigParseWaf</a>[]
 
 ---
 
@@ -9988,7 +9988,7 @@ public readonly parseWafInput: IResolvable | CloudwatchLogTransformerTransformer
 public readonly renameKeysInput: IResolvable | CloudwatchLogTransformerTransformerConfigRenameKeys[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigRenameKeys">CloudwatchLogTransformerTransformerConfigRenameKeys</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigRenameKeys">CloudwatchLogTransformerTransformerConfigRenameKeys</a>[]
 
 ---
 
@@ -9998,7 +9998,7 @@ public readonly renameKeysInput: IResolvable | CloudwatchLogTransformerTransform
 public readonly splitStringInput: IResolvable | CloudwatchLogTransformerTransformerConfigSplitString[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSplitString">CloudwatchLogTransformerTransformerConfigSplitString</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSplitString">CloudwatchLogTransformerTransformerConfigSplitString</a>[]
 
 ---
 
@@ -10008,7 +10008,7 @@ public readonly splitStringInput: IResolvable | CloudwatchLogTransformerTransfor
 public readonly substituteStringInput: IResolvable | CloudwatchLogTransformerTransformerConfigSubstituteString[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSubstituteString">CloudwatchLogTransformerTransformerConfigSubstituteString</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSubstituteString">CloudwatchLogTransformerTransformerConfigSubstituteString</a>[]
 
 ---
 
@@ -10018,7 +10018,7 @@ public readonly substituteStringInput: IResolvable | CloudwatchLogTransformerTra
 public readonly trimStringInput: IResolvable | CloudwatchLogTransformerTransformerConfigTrimString[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigTrimString">CloudwatchLogTransformerTransformerConfigTrimString</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigTrimString">CloudwatchLogTransformerTransformerConfigTrimString</a>[]
 
 ---
 
@@ -10028,7 +10028,7 @@ public readonly trimStringInput: IResolvable | CloudwatchLogTransformerTransform
 public readonly typeConverterInput: IResolvable | CloudwatchLogTransformerTransformerConfigTypeConverter[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigTypeConverter">CloudwatchLogTransformerTransformerConfigTypeConverter</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigTypeConverter">CloudwatchLogTransformerTransformerConfigTypeConverter</a>[]
 
 ---
 
@@ -10038,7 +10038,7 @@ public readonly typeConverterInput: IResolvable | CloudwatchLogTransformerTransf
 public readonly upperCaseStringInput: IResolvable | CloudwatchLogTransformerTransformerConfigUpperCaseString[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigUpperCaseString">CloudwatchLogTransformerTransformerConfigUpperCaseString</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigUpperCaseString">CloudwatchLogTransformerTransformerConfigUpperCaseString</a>[]
 
 ---
 
@@ -10048,7 +10048,7 @@ public readonly upperCaseStringInput: IResolvable | CloudwatchLogTransformerTran
 public readonly internalValue: IResolvable | CloudwatchLogTransformerTransformerConfig;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfig">CloudwatchLogTransformerTransformerConfig</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfig">CloudwatchLogTransformerTransformerConfig</a>
 
 ---
 
@@ -10065,7 +10065,7 @@ new cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseCloud
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseCloudfrontList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseCloudfrontList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseCloudfrontList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseCloudfrontList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -10073,7 +10073,7 @@ new cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseCloud
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseCloudfrontList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -10139,7 +10139,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseCloudfrontList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -10174,7 +10174,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseCloudfrontList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseCloudfrontList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseCloudfrontList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseCloudfront">CloudwatchLogTransformerTransformerConfigParseCloudfront</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseCloudfrontList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseCloudfront">CloudwatchLogTransformerTransformerConfigParseCloudfront</a>[]</code> | *No description.* |
 
 ---
 
@@ -10208,7 +10208,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | CloudwatchLogTransformerTransformerConfigParseCloudfront[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseCloudfront">CloudwatchLogTransformerTransformerConfigParseCloudfront</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseCloudfront">CloudwatchLogTransformerTransformerConfigParseCloudfront</a>[]
 
 ---
 
@@ -10225,7 +10225,7 @@ new cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseCloud
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseCloudfrontOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseCloudfrontOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseCloudfrontOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseCloudfrontOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseCloudfrontOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -10234,7 +10234,7 @@ new cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseCloud
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseCloudfrontOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -10421,7 +10421,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseCloudfrontOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -10450,7 +10450,7 @@ public resetSource(): void
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseCloudfrontOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseCloudfrontOutputReference.property.sourceInput">sourceInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseCloudfrontOutputReference.property.source">source</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseCloudfrontOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseCloudfront">CloudwatchLogTransformerTransformerConfigParseCloudfront</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseCloudfrontOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseCloudfront">CloudwatchLogTransformerTransformerConfigParseCloudfront</a></code> | *No description.* |
 
 ---
 
@@ -10504,7 +10504,7 @@ public readonly source: string;
 public readonly internalValue: IResolvable | CloudwatchLogTransformerTransformerConfigParseCloudfront;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseCloudfront">CloudwatchLogTransformerTransformerConfigParseCloudfront</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseCloudfront">CloudwatchLogTransformerTransformerConfigParseCloudfront</a>
 
 ---
 
@@ -10521,7 +10521,7 @@ new cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseJsonL
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseJsonList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseJsonList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseJsonList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseJsonList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -10529,7 +10529,7 @@ new cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseJsonL
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseJsonList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -10595,7 +10595,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseJsonList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -10630,7 +10630,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseJsonList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseJsonList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseJsonList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseJson">CloudwatchLogTransformerTransformerConfigParseJson</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseJsonList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseJson">CloudwatchLogTransformerTransformerConfigParseJson</a>[]</code> | *No description.* |
 
 ---
 
@@ -10664,7 +10664,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | CloudwatchLogTransformerTransformerConfigParseJson[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseJson">CloudwatchLogTransformerTransformerConfigParseJson</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseJson">CloudwatchLogTransformerTransformerConfigParseJson</a>[]
 
 ---
 
@@ -10681,7 +10681,7 @@ new cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseJsonO
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseJsonOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseJsonOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseJsonOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseJsonOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseJsonOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -10690,7 +10690,7 @@ new cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseJsonO
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseJsonOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -10878,7 +10878,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseJsonOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -10915,7 +10915,7 @@ public resetSource(): void
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseJsonOutputReference.property.sourceInput">sourceInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseJsonOutputReference.property.destination">destination</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseJsonOutputReference.property.source">source</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseJsonOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseJson">CloudwatchLogTransformerTransformerConfigParseJson</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseJsonOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseJson">CloudwatchLogTransformerTransformerConfigParseJson</a></code> | *No description.* |
 
 ---
 
@@ -10989,7 +10989,7 @@ public readonly source: string;
 public readonly internalValue: IResolvable | CloudwatchLogTransformerTransformerConfigParseJson;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseJson">CloudwatchLogTransformerTransformerConfigParseJson</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseJson">CloudwatchLogTransformerTransformerConfigParseJson</a>
 
 ---
 
@@ -11006,7 +11006,7 @@ new cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseKeyVa
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseKeyValueList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseKeyValueList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseKeyValueList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseKeyValueList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -11014,7 +11014,7 @@ new cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseKeyVa
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseKeyValueList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -11080,7 +11080,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseKeyValueList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -11115,7 +11115,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseKeyValueList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseKeyValueList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseKeyValueList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseKeyValue">CloudwatchLogTransformerTransformerConfigParseKeyValue</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseKeyValueList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseKeyValue">CloudwatchLogTransformerTransformerConfigParseKeyValue</a>[]</code> | *No description.* |
 
 ---
 
@@ -11149,7 +11149,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | CloudwatchLogTransformerTransformerConfigParseKeyValue[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseKeyValue">CloudwatchLogTransformerTransformerConfigParseKeyValue</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseKeyValue">CloudwatchLogTransformerTransformerConfigParseKeyValue</a>[]
 
 ---
 
@@ -11166,7 +11166,7 @@ new cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseKeyVa
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseKeyValueOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseKeyValueOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseKeyValueOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseKeyValueOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseKeyValueOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -11175,7 +11175,7 @@ new cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseKeyVa
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseKeyValueOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -11368,7 +11368,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseKeyValueOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -11436,16 +11436,16 @@ public resetSource(): void
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseKeyValueOutputReference.property.keyPrefixInput">keyPrefixInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseKeyValueOutputReference.property.keyValueDelimiterInput">keyValueDelimiterInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseKeyValueOutputReference.property.nonMatchValueInput">nonMatchValueInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseKeyValueOutputReference.property.overwriteIfExistsInput">overwriteIfExistsInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseKeyValueOutputReference.property.overwriteIfExistsInput">overwriteIfExistsInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseKeyValueOutputReference.property.sourceInput">sourceInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseKeyValueOutputReference.property.destination">destination</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseKeyValueOutputReference.property.fieldDelimiter">fieldDelimiter</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseKeyValueOutputReference.property.keyPrefix">keyPrefix</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseKeyValueOutputReference.property.keyValueDelimiter">keyValueDelimiter</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseKeyValueOutputReference.property.nonMatchValue">nonMatchValue</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseKeyValueOutputReference.property.overwriteIfExists">overwriteIfExists</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseKeyValueOutputReference.property.overwriteIfExists">overwriteIfExists</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseKeyValueOutputReference.property.source">source</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseKeyValueOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseKeyValue">CloudwatchLogTransformerTransformerConfigParseKeyValue</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseKeyValueOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseKeyValue">CloudwatchLogTransformerTransformerConfigParseKeyValue</a></code> | *No description.* |
 
 ---
 
@@ -11529,7 +11529,7 @@ public readonly nonMatchValueInput: string;
 public readonly overwriteIfExistsInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -11599,7 +11599,7 @@ public readonly nonMatchValue: string;
 public readonly overwriteIfExists: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -11619,7 +11619,7 @@ public readonly source: string;
 public readonly internalValue: IResolvable | CloudwatchLogTransformerTransformerConfigParseKeyValue;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseKeyValue">CloudwatchLogTransformerTransformerConfigParseKeyValue</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseKeyValue">CloudwatchLogTransformerTransformerConfigParseKeyValue</a>
 
 ---
 
@@ -11636,7 +11636,7 @@ new cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParsePostg
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParsePostgresList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParsePostgresList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParsePostgresList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParsePostgresList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -11644,7 +11644,7 @@ new cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParsePostg
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParsePostgresList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -11710,7 +11710,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParsePostgresList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -11745,7 +11745,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParsePostgresList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParsePostgresList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParsePostgresList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParsePostgres">CloudwatchLogTransformerTransformerConfigParsePostgres</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParsePostgresList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParsePostgres">CloudwatchLogTransformerTransformerConfigParsePostgres</a>[]</code> | *No description.* |
 
 ---
 
@@ -11779,7 +11779,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | CloudwatchLogTransformerTransformerConfigParsePostgres[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParsePostgres">CloudwatchLogTransformerTransformerConfigParsePostgres</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParsePostgres">CloudwatchLogTransformerTransformerConfigParsePostgres</a>[]
 
 ---
 
@@ -11796,7 +11796,7 @@ new cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParsePostg
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParsePostgresOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParsePostgresOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParsePostgresOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParsePostgresOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParsePostgresOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -11805,7 +11805,7 @@ new cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParsePostg
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParsePostgresOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -11992,7 +11992,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParsePostgresOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -12021,7 +12021,7 @@ public resetSource(): void
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParsePostgresOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParsePostgresOutputReference.property.sourceInput">sourceInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParsePostgresOutputReference.property.source">source</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParsePostgresOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParsePostgres">CloudwatchLogTransformerTransformerConfigParsePostgres</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParsePostgresOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParsePostgres">CloudwatchLogTransformerTransformerConfigParsePostgres</a></code> | *No description.* |
 
 ---
 
@@ -12075,7 +12075,7 @@ public readonly source: string;
 public readonly internalValue: IResolvable | CloudwatchLogTransformerTransformerConfigParsePostgres;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParsePostgres">CloudwatchLogTransformerTransformerConfigParsePostgres</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParsePostgres">CloudwatchLogTransformerTransformerConfigParsePostgres</a>
 
 ---
 
@@ -12092,7 +12092,7 @@ new cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseRoute
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseRoute53List.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseRoute53List.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseRoute53List.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseRoute53List.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -12100,7 +12100,7 @@ new cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseRoute
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseRoute53List.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -12166,7 +12166,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseRoute53List.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -12201,7 +12201,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseRoute53List.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseRoute53List.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseRoute53List.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseRoute53">CloudwatchLogTransformerTransformerConfigParseRoute53</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseRoute53List.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseRoute53">CloudwatchLogTransformerTransformerConfigParseRoute53</a>[]</code> | *No description.* |
 
 ---
 
@@ -12235,7 +12235,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | CloudwatchLogTransformerTransformerConfigParseRoute53[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseRoute53">CloudwatchLogTransformerTransformerConfigParseRoute53</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseRoute53">CloudwatchLogTransformerTransformerConfigParseRoute53</a>[]
 
 ---
 
@@ -12252,7 +12252,7 @@ new cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseRoute
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseRoute53OutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseRoute53OutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseRoute53OutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseRoute53OutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseRoute53OutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -12261,7 +12261,7 @@ new cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseRoute
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseRoute53OutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -12448,7 +12448,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseRoute53OutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -12477,7 +12477,7 @@ public resetSource(): void
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseRoute53OutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseRoute53OutputReference.property.sourceInput">sourceInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseRoute53OutputReference.property.source">source</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseRoute53OutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseRoute53">CloudwatchLogTransformerTransformerConfigParseRoute53</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseRoute53OutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseRoute53">CloudwatchLogTransformerTransformerConfigParseRoute53</a></code> | *No description.* |
 
 ---
 
@@ -12531,7 +12531,7 @@ public readonly source: string;
 public readonly internalValue: IResolvable | CloudwatchLogTransformerTransformerConfigParseRoute53;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseRoute53">CloudwatchLogTransformerTransformerConfigParseRoute53</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseRoute53">CloudwatchLogTransformerTransformerConfigParseRoute53</a>
 
 ---
 
@@ -12548,7 +12548,7 @@ new cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseToOcs
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseToOcsfList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseToOcsfList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseToOcsfList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseToOcsfList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -12556,7 +12556,7 @@ new cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseToOcs
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseToOcsfList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -12622,7 +12622,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseToOcsfList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -12657,7 +12657,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseToOcsfList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseToOcsfList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseToOcsfList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseToOcsf">CloudwatchLogTransformerTransformerConfigParseToOcsf</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseToOcsfList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseToOcsf">CloudwatchLogTransformerTransformerConfigParseToOcsf</a>[]</code> | *No description.* |
 
 ---
 
@@ -12691,7 +12691,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | CloudwatchLogTransformerTransformerConfigParseToOcsf[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseToOcsf">CloudwatchLogTransformerTransformerConfigParseToOcsf</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseToOcsf">CloudwatchLogTransformerTransformerConfigParseToOcsf</a>[]
 
 ---
 
@@ -12708,7 +12708,7 @@ new cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseToOcs
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseToOcsfOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseToOcsfOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseToOcsfOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseToOcsfOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseToOcsfOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -12717,7 +12717,7 @@ new cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseToOcs
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseToOcsfOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -12904,7 +12904,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseToOcsfOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -12937,7 +12937,7 @@ public resetSource(): void
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseToOcsfOutputReference.property.eventSource">eventSource</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseToOcsfOutputReference.property.ocsfVersion">ocsfVersion</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseToOcsfOutputReference.property.source">source</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseToOcsfOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseToOcsf">CloudwatchLogTransformerTransformerConfigParseToOcsf</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseToOcsfOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseToOcsf">CloudwatchLogTransformerTransformerConfigParseToOcsf</a></code> | *No description.* |
 
 ---
 
@@ -13031,7 +13031,7 @@ public readonly source: string;
 public readonly internalValue: IResolvable | CloudwatchLogTransformerTransformerConfigParseToOcsf;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseToOcsf">CloudwatchLogTransformerTransformerConfigParseToOcsf</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseToOcsf">CloudwatchLogTransformerTransformerConfigParseToOcsf</a>
 
 ---
 
@@ -13048,7 +13048,7 @@ new cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseVpcLi
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseVpcList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseVpcList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseVpcList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseVpcList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -13056,7 +13056,7 @@ new cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseVpcLi
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseVpcList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -13122,7 +13122,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseVpcList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -13157,7 +13157,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseVpcList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseVpcList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseVpcList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseVpc">CloudwatchLogTransformerTransformerConfigParseVpc</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseVpcList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseVpc">CloudwatchLogTransformerTransformerConfigParseVpc</a>[]</code> | *No description.* |
 
 ---
 
@@ -13191,7 +13191,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | CloudwatchLogTransformerTransformerConfigParseVpc[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseVpc">CloudwatchLogTransformerTransformerConfigParseVpc</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseVpc">CloudwatchLogTransformerTransformerConfigParseVpc</a>[]
 
 ---
 
@@ -13208,7 +13208,7 @@ new cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseVpcOu
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseVpcOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseVpcOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseVpcOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseVpcOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseVpcOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -13217,7 +13217,7 @@ new cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseVpcOu
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseVpcOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -13404,7 +13404,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseVpcOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -13433,7 +13433,7 @@ public resetSource(): void
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseVpcOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseVpcOutputReference.property.sourceInput">sourceInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseVpcOutputReference.property.source">source</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseVpcOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseVpc">CloudwatchLogTransformerTransformerConfigParseVpc</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseVpcOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseVpc">CloudwatchLogTransformerTransformerConfigParseVpc</a></code> | *No description.* |
 
 ---
 
@@ -13487,7 +13487,7 @@ public readonly source: string;
 public readonly internalValue: IResolvable | CloudwatchLogTransformerTransformerConfigParseVpc;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseVpc">CloudwatchLogTransformerTransformerConfigParseVpc</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseVpc">CloudwatchLogTransformerTransformerConfigParseVpc</a>
 
 ---
 
@@ -13504,7 +13504,7 @@ new cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseWafLi
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseWafList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseWafList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseWafList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseWafList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -13512,7 +13512,7 @@ new cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseWafLi
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseWafList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -13578,7 +13578,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseWafList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -13613,7 +13613,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseWafList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseWafList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseWafList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseWaf">CloudwatchLogTransformerTransformerConfigParseWaf</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseWafList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseWaf">CloudwatchLogTransformerTransformerConfigParseWaf</a>[]</code> | *No description.* |
 
 ---
 
@@ -13647,7 +13647,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | CloudwatchLogTransformerTransformerConfigParseWaf[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseWaf">CloudwatchLogTransformerTransformerConfigParseWaf</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseWaf">CloudwatchLogTransformerTransformerConfigParseWaf</a>[]
 
 ---
 
@@ -13664,7 +13664,7 @@ new cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseWafOu
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseWafOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseWafOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseWafOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseWafOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseWafOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -13673,7 +13673,7 @@ new cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseWafOu
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseWafOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -13860,7 +13860,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseWafOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -13889,7 +13889,7 @@ public resetSource(): void
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseWafOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseWafOutputReference.property.sourceInput">sourceInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseWafOutputReference.property.source">source</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseWafOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseWaf">CloudwatchLogTransformerTransformerConfigParseWaf</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseWafOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseWaf">CloudwatchLogTransformerTransformerConfigParseWaf</a></code> | *No description.* |
 
 ---
 
@@ -13943,7 +13943,7 @@ public readonly source: string;
 public readonly internalValue: IResolvable | CloudwatchLogTransformerTransformerConfigParseWaf;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseWaf">CloudwatchLogTransformerTransformerConfigParseWaf</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseWaf">CloudwatchLogTransformerTransformerConfigParseWaf</a>
 
 ---
 
@@ -13960,7 +13960,7 @@ new cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigRenameKeys
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigRenameKeysEntryList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigRenameKeysEntryList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigRenameKeysEntryList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigRenameKeysEntryList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -13968,7 +13968,7 @@ new cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigRenameKeys
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigRenameKeysEntryList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -14034,7 +14034,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigRenameKeysEntryList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -14069,7 +14069,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigRenameKeysEntryList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigRenameKeysEntryList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigRenameKeysEntryList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigRenameKeysEntry">CloudwatchLogTransformerTransformerConfigRenameKeysEntry</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigRenameKeysEntryList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigRenameKeysEntry">CloudwatchLogTransformerTransformerConfigRenameKeysEntry</a>[]</code> | *No description.* |
 
 ---
 
@@ -14103,7 +14103,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | CloudwatchLogTransformerTransformerConfigRenameKeysEntry[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigRenameKeysEntry">CloudwatchLogTransformerTransformerConfigRenameKeysEntry</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigRenameKeysEntry">CloudwatchLogTransformerTransformerConfigRenameKeysEntry</a>[]
 
 ---
 
@@ -14120,7 +14120,7 @@ new cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigRenameKeys
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigRenameKeysEntryOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigRenameKeysEntryOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigRenameKeysEntryOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigRenameKeysEntryOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigRenameKeysEntryOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -14129,7 +14129,7 @@ new cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigRenameKeys
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigRenameKeysEntryOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -14316,7 +14316,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigRenameKeysEntryOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -14344,12 +14344,12 @@ public resetOverwriteIfExists(): void
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigRenameKeysEntryOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigRenameKeysEntryOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigRenameKeysEntryOutputReference.property.keyInput">keyInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigRenameKeysEntryOutputReference.property.overwriteIfExistsInput">overwriteIfExistsInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigRenameKeysEntryOutputReference.property.overwriteIfExistsInput">overwriteIfExistsInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigRenameKeysEntryOutputReference.property.renameToInput">renameToInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigRenameKeysEntryOutputReference.property.key">key</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigRenameKeysEntryOutputReference.property.overwriteIfExists">overwriteIfExists</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigRenameKeysEntryOutputReference.property.overwriteIfExists">overwriteIfExists</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigRenameKeysEntryOutputReference.property.renameTo">renameTo</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigRenameKeysEntryOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigRenameKeysEntry">CloudwatchLogTransformerTransformerConfigRenameKeysEntry</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigRenameKeysEntryOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigRenameKeysEntry">CloudwatchLogTransformerTransformerConfigRenameKeysEntry</a></code> | *No description.* |
 
 ---
 
@@ -14393,7 +14393,7 @@ public readonly keyInput: string;
 public readonly overwriteIfExistsInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -14423,7 +14423,7 @@ public readonly key: string;
 public readonly overwriteIfExists: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -14443,7 +14443,7 @@ public readonly renameTo: string;
 public readonly internalValue: IResolvable | CloudwatchLogTransformerTransformerConfigRenameKeysEntry;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigRenameKeysEntry">CloudwatchLogTransformerTransformerConfigRenameKeysEntry</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigRenameKeysEntry">CloudwatchLogTransformerTransformerConfigRenameKeysEntry</a>
 
 ---
 
@@ -14460,7 +14460,7 @@ new cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigRenameKeys
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigRenameKeysList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigRenameKeysList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigRenameKeysList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigRenameKeysList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -14468,7 +14468,7 @@ new cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigRenameKeys
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigRenameKeysList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -14534,7 +14534,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigRenameKeysList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -14569,7 +14569,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigRenameKeysList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigRenameKeysList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigRenameKeysList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigRenameKeys">CloudwatchLogTransformerTransformerConfigRenameKeys</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigRenameKeysList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigRenameKeys">CloudwatchLogTransformerTransformerConfigRenameKeys</a>[]</code> | *No description.* |
 
 ---
 
@@ -14603,7 +14603,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | CloudwatchLogTransformerTransformerConfigRenameKeys[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigRenameKeys">CloudwatchLogTransformerTransformerConfigRenameKeys</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigRenameKeys">CloudwatchLogTransformerTransformerConfigRenameKeys</a>[]
 
 ---
 
@@ -14620,7 +14620,7 @@ new cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigRenameKeys
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigRenameKeysOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigRenameKeysOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigRenameKeysOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigRenameKeysOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigRenameKeysOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -14629,7 +14629,7 @@ new cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigRenameKeys
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigRenameKeysOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -14817,7 +14817,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigRenameKeysOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -14839,7 +14839,7 @@ public putEntry(value: IResolvable | CloudwatchLogTransformerTransformerConfigRe
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigRenameKeysOutputReference.putEntry.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigRenameKeysEntry">CloudwatchLogTransformerTransformerConfigRenameKeysEntry</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigRenameKeysEntry">CloudwatchLogTransformerTransformerConfigRenameKeysEntry</a>[]
 
 ---
 
@@ -14857,8 +14857,8 @@ public resetEntry(): void
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigRenameKeysOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigRenameKeysOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigRenameKeysOutputReference.property.entry">entry</a></code> | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigRenameKeysEntryList">CloudwatchLogTransformerTransformerConfigRenameKeysEntryList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigRenameKeysOutputReference.property.entryInput">entryInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigRenameKeysEntry">CloudwatchLogTransformerTransformerConfigRenameKeysEntry</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigRenameKeysOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigRenameKeys">CloudwatchLogTransformerTransformerConfigRenameKeys</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigRenameKeysOutputReference.property.entryInput">entryInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigRenameKeysEntry">CloudwatchLogTransformerTransformerConfigRenameKeysEntry</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigRenameKeysOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigRenameKeys">CloudwatchLogTransformerTransformerConfigRenameKeys</a></code> | *No description.* |
 
 ---
 
@@ -14902,7 +14902,7 @@ public readonly entry: CloudwatchLogTransformerTransformerConfigRenameKeysEntryL
 public readonly entryInput: IResolvable | CloudwatchLogTransformerTransformerConfigRenameKeysEntry[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigRenameKeysEntry">CloudwatchLogTransformerTransformerConfigRenameKeysEntry</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigRenameKeysEntry">CloudwatchLogTransformerTransformerConfigRenameKeysEntry</a>[]
 
 ---
 
@@ -14912,7 +14912,7 @@ public readonly entryInput: IResolvable | CloudwatchLogTransformerTransformerCon
 public readonly internalValue: IResolvable | CloudwatchLogTransformerTransformerConfigRenameKeys;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigRenameKeys">CloudwatchLogTransformerTransformerConfigRenameKeys</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigRenameKeys">CloudwatchLogTransformerTransformerConfigRenameKeys</a>
 
 ---
 
@@ -14929,7 +14929,7 @@ new cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSplitStrin
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSplitStringEntryList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSplitStringEntryList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSplitStringEntryList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSplitStringEntryList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -14937,7 +14937,7 @@ new cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSplitStrin
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSplitStringEntryList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -15003,7 +15003,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSplitStringEntryList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -15038,7 +15038,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSplitStringEntryList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSplitStringEntryList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSplitStringEntryList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSplitStringEntry">CloudwatchLogTransformerTransformerConfigSplitStringEntry</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSplitStringEntryList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSplitStringEntry">CloudwatchLogTransformerTransformerConfigSplitStringEntry</a>[]</code> | *No description.* |
 
 ---
 
@@ -15072,7 +15072,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | CloudwatchLogTransformerTransformerConfigSplitStringEntry[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSplitStringEntry">CloudwatchLogTransformerTransformerConfigSplitStringEntry</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSplitStringEntry">CloudwatchLogTransformerTransformerConfigSplitStringEntry</a>[]
 
 ---
 
@@ -15089,7 +15089,7 @@ new cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSplitStrin
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSplitStringEntryOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSplitStringEntryOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSplitStringEntryOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSplitStringEntryOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSplitStringEntryOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -15098,7 +15098,7 @@ new cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSplitStrin
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSplitStringEntryOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -15284,7 +15284,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSplitStringEntryOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -15309,7 +15309,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSplitStringEntryOutputReference.property.sourceInput">sourceInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSplitStringEntryOutputReference.property.delimiter">delimiter</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSplitStringEntryOutputReference.property.source">source</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSplitStringEntryOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSplitStringEntry">CloudwatchLogTransformerTransformerConfigSplitStringEntry</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSplitStringEntryOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSplitStringEntry">CloudwatchLogTransformerTransformerConfigSplitStringEntry</a></code> | *No description.* |
 
 ---
 
@@ -15383,7 +15383,7 @@ public readonly source: string;
 public readonly internalValue: IResolvable | CloudwatchLogTransformerTransformerConfigSplitStringEntry;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSplitStringEntry">CloudwatchLogTransformerTransformerConfigSplitStringEntry</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSplitStringEntry">CloudwatchLogTransformerTransformerConfigSplitStringEntry</a>
 
 ---
 
@@ -15400,7 +15400,7 @@ new cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSplitStrin
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSplitStringList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSplitStringList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSplitStringList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSplitStringList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -15408,7 +15408,7 @@ new cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSplitStrin
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSplitStringList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -15474,7 +15474,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSplitStringList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -15509,7 +15509,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSplitStringList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSplitStringList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSplitStringList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSplitString">CloudwatchLogTransformerTransformerConfigSplitString</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSplitStringList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSplitString">CloudwatchLogTransformerTransformerConfigSplitString</a>[]</code> | *No description.* |
 
 ---
 
@@ -15543,7 +15543,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | CloudwatchLogTransformerTransformerConfigSplitString[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSplitString">CloudwatchLogTransformerTransformerConfigSplitString</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSplitString">CloudwatchLogTransformerTransformerConfigSplitString</a>[]
 
 ---
 
@@ -15560,7 +15560,7 @@ new cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSplitStrin
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSplitStringOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSplitStringOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSplitStringOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSplitStringOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSplitStringOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -15569,7 +15569,7 @@ new cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSplitStrin
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSplitStringOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -15757,7 +15757,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSplitStringOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -15779,7 +15779,7 @@ public putEntry(value: IResolvable | CloudwatchLogTransformerTransformerConfigSp
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSplitStringOutputReference.putEntry.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSplitStringEntry">CloudwatchLogTransformerTransformerConfigSplitStringEntry</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSplitStringEntry">CloudwatchLogTransformerTransformerConfigSplitStringEntry</a>[]
 
 ---
 
@@ -15797,8 +15797,8 @@ public resetEntry(): void
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSplitStringOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSplitStringOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSplitStringOutputReference.property.entry">entry</a></code> | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSplitStringEntryList">CloudwatchLogTransformerTransformerConfigSplitStringEntryList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSplitStringOutputReference.property.entryInput">entryInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSplitStringEntry">CloudwatchLogTransformerTransformerConfigSplitStringEntry</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSplitStringOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSplitString">CloudwatchLogTransformerTransformerConfigSplitString</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSplitStringOutputReference.property.entryInput">entryInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSplitStringEntry">CloudwatchLogTransformerTransformerConfigSplitStringEntry</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSplitStringOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSplitString">CloudwatchLogTransformerTransformerConfigSplitString</a></code> | *No description.* |
 
 ---
 
@@ -15842,7 +15842,7 @@ public readonly entry: CloudwatchLogTransformerTransformerConfigSplitStringEntry
 public readonly entryInput: IResolvable | CloudwatchLogTransformerTransformerConfigSplitStringEntry[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSplitStringEntry">CloudwatchLogTransformerTransformerConfigSplitStringEntry</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSplitStringEntry">CloudwatchLogTransformerTransformerConfigSplitStringEntry</a>[]
 
 ---
 
@@ -15852,7 +15852,7 @@ public readonly entryInput: IResolvable | CloudwatchLogTransformerTransformerCon
 public readonly internalValue: IResolvable | CloudwatchLogTransformerTransformerConfigSplitString;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSplitString">CloudwatchLogTransformerTransformerConfigSplitString</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSplitString">CloudwatchLogTransformerTransformerConfigSplitString</a>
 
 ---
 
@@ -15869,7 +15869,7 @@ new cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSubstitute
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSubstituteStringEntryList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSubstituteStringEntryList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSubstituteStringEntryList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSubstituteStringEntryList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -15877,7 +15877,7 @@ new cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSubstitute
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSubstituteStringEntryList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -15943,7 +15943,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSubstituteStringEntryList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -15978,7 +15978,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSubstituteStringEntryList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSubstituteStringEntryList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSubstituteStringEntryList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSubstituteStringEntry">CloudwatchLogTransformerTransformerConfigSubstituteStringEntry</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSubstituteStringEntryList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSubstituteStringEntry">CloudwatchLogTransformerTransformerConfigSubstituteStringEntry</a>[]</code> | *No description.* |
 
 ---
 
@@ -16012,7 +16012,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | CloudwatchLogTransformerTransformerConfigSubstituteStringEntry[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSubstituteStringEntry">CloudwatchLogTransformerTransformerConfigSubstituteStringEntry</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSubstituteStringEntry">CloudwatchLogTransformerTransformerConfigSubstituteStringEntry</a>[]
 
 ---
 
@@ -16029,7 +16029,7 @@ new cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSubstitute
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSubstituteStringEntryOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSubstituteStringEntryOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSubstituteStringEntryOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSubstituteStringEntryOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSubstituteStringEntryOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -16038,7 +16038,7 @@ new cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSubstitute
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSubstituteStringEntryOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -16224,7 +16224,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSubstituteStringEntryOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -16251,7 +16251,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSubstituteStringEntryOutputReference.property.from">from</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSubstituteStringEntryOutputReference.property.source">source</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSubstituteStringEntryOutputReference.property.to">to</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSubstituteStringEntryOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSubstituteStringEntry">CloudwatchLogTransformerTransformerConfigSubstituteStringEntry</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSubstituteStringEntryOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSubstituteStringEntry">CloudwatchLogTransformerTransformerConfigSubstituteStringEntry</a></code> | *No description.* |
 
 ---
 
@@ -16345,7 +16345,7 @@ public readonly to: string;
 public readonly internalValue: IResolvable | CloudwatchLogTransformerTransformerConfigSubstituteStringEntry;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSubstituteStringEntry">CloudwatchLogTransformerTransformerConfigSubstituteStringEntry</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSubstituteStringEntry">CloudwatchLogTransformerTransformerConfigSubstituteStringEntry</a>
 
 ---
 
@@ -16362,7 +16362,7 @@ new cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSubstitute
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSubstituteStringList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSubstituteStringList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSubstituteStringList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSubstituteStringList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -16370,7 +16370,7 @@ new cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSubstitute
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSubstituteStringList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -16436,7 +16436,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSubstituteStringList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -16471,7 +16471,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSubstituteStringList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSubstituteStringList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSubstituteStringList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSubstituteString">CloudwatchLogTransformerTransformerConfigSubstituteString</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSubstituteStringList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSubstituteString">CloudwatchLogTransformerTransformerConfigSubstituteString</a>[]</code> | *No description.* |
 
 ---
 
@@ -16505,7 +16505,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | CloudwatchLogTransformerTransformerConfigSubstituteString[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSubstituteString">CloudwatchLogTransformerTransformerConfigSubstituteString</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSubstituteString">CloudwatchLogTransformerTransformerConfigSubstituteString</a>[]
 
 ---
 
@@ -16522,7 +16522,7 @@ new cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSubstitute
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSubstituteStringOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSubstituteStringOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSubstituteStringOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSubstituteStringOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSubstituteStringOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -16531,7 +16531,7 @@ new cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSubstitute
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSubstituteStringOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -16719,7 +16719,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSubstituteStringOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -16741,7 +16741,7 @@ public putEntry(value: IResolvable | CloudwatchLogTransformerTransformerConfigSu
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSubstituteStringOutputReference.putEntry.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSubstituteStringEntry">CloudwatchLogTransformerTransformerConfigSubstituteStringEntry</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSubstituteStringEntry">CloudwatchLogTransformerTransformerConfigSubstituteStringEntry</a>[]
 
 ---
 
@@ -16759,8 +16759,8 @@ public resetEntry(): void
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSubstituteStringOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSubstituteStringOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSubstituteStringOutputReference.property.entry">entry</a></code> | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSubstituteStringEntryList">CloudwatchLogTransformerTransformerConfigSubstituteStringEntryList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSubstituteStringOutputReference.property.entryInput">entryInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSubstituteStringEntry">CloudwatchLogTransformerTransformerConfigSubstituteStringEntry</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSubstituteStringOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSubstituteString">CloudwatchLogTransformerTransformerConfigSubstituteString</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSubstituteStringOutputReference.property.entryInput">entryInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSubstituteStringEntry">CloudwatchLogTransformerTransformerConfigSubstituteStringEntry</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSubstituteStringOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSubstituteString">CloudwatchLogTransformerTransformerConfigSubstituteString</a></code> | *No description.* |
 
 ---
 
@@ -16804,7 +16804,7 @@ public readonly entry: CloudwatchLogTransformerTransformerConfigSubstituteString
 public readonly entryInput: IResolvable | CloudwatchLogTransformerTransformerConfigSubstituteStringEntry[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSubstituteStringEntry">CloudwatchLogTransformerTransformerConfigSubstituteStringEntry</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSubstituteStringEntry">CloudwatchLogTransformerTransformerConfigSubstituteStringEntry</a>[]
 
 ---
 
@@ -16814,7 +16814,7 @@ public readonly entryInput: IResolvable | CloudwatchLogTransformerTransformerCon
 public readonly internalValue: IResolvable | CloudwatchLogTransformerTransformerConfigSubstituteString;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSubstituteString">CloudwatchLogTransformerTransformerConfigSubstituteString</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSubstituteString">CloudwatchLogTransformerTransformerConfigSubstituteString</a>
 
 ---
 
@@ -16831,7 +16831,7 @@ new cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigTrimString
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigTrimStringList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigTrimStringList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigTrimStringList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigTrimStringList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -16839,7 +16839,7 @@ new cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigTrimString
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigTrimStringList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -16905,7 +16905,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigTrimStringList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -16940,7 +16940,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigTrimStringList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigTrimStringList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigTrimStringList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigTrimString">CloudwatchLogTransformerTransformerConfigTrimString</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigTrimStringList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigTrimString">CloudwatchLogTransformerTransformerConfigTrimString</a>[]</code> | *No description.* |
 
 ---
 
@@ -16974,7 +16974,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | CloudwatchLogTransformerTransformerConfigTrimString[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigTrimString">CloudwatchLogTransformerTransformerConfigTrimString</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigTrimString">CloudwatchLogTransformerTransformerConfigTrimString</a>[]
 
 ---
 
@@ -16991,7 +16991,7 @@ new cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigTrimString
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigTrimStringOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigTrimStringOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigTrimStringOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigTrimStringOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigTrimStringOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -17000,7 +17000,7 @@ new cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigTrimString
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigTrimStringOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -17186,7 +17186,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigTrimStringOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -17209,7 +17209,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigTrimStringOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigTrimStringOutputReference.property.withKeysInput">withKeysInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigTrimStringOutputReference.property.withKeys">withKeys</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigTrimStringOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigTrimString">CloudwatchLogTransformerTransformerConfigTrimString</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigTrimStringOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigTrimString">CloudwatchLogTransformerTransformerConfigTrimString</a></code> | *No description.* |
 
 ---
 
@@ -17263,7 +17263,7 @@ public readonly withKeys: string[];
 public readonly internalValue: IResolvable | CloudwatchLogTransformerTransformerConfigTrimString;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigTrimString">CloudwatchLogTransformerTransformerConfigTrimString</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigTrimString">CloudwatchLogTransformerTransformerConfigTrimString</a>
 
 ---
 
@@ -17280,7 +17280,7 @@ new cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigTypeConver
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigTypeConverterEntryList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigTypeConverterEntryList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigTypeConverterEntryList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigTypeConverterEntryList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -17288,7 +17288,7 @@ new cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigTypeConver
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigTypeConverterEntryList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -17354,7 +17354,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigTypeConverterEntryList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -17389,7 +17389,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigTypeConverterEntryList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigTypeConverterEntryList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigTypeConverterEntryList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigTypeConverterEntry">CloudwatchLogTransformerTransformerConfigTypeConverterEntry</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigTypeConverterEntryList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigTypeConverterEntry">CloudwatchLogTransformerTransformerConfigTypeConverterEntry</a>[]</code> | *No description.* |
 
 ---
 
@@ -17423,7 +17423,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | CloudwatchLogTransformerTransformerConfigTypeConverterEntry[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigTypeConverterEntry">CloudwatchLogTransformerTransformerConfigTypeConverterEntry</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigTypeConverterEntry">CloudwatchLogTransformerTransformerConfigTypeConverterEntry</a>[]
 
 ---
 
@@ -17440,7 +17440,7 @@ new cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigTypeConver
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigTypeConverterEntryOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigTypeConverterEntryOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigTypeConverterEntryOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigTypeConverterEntryOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigTypeConverterEntryOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -17449,7 +17449,7 @@ new cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigTypeConver
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigTypeConverterEntryOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -17635,7 +17635,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigTypeConverterEntryOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -17660,7 +17660,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigTypeConverterEntryOutputReference.property.typeInput">typeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigTypeConverterEntryOutputReference.property.key">key</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigTypeConverterEntryOutputReference.property.type">type</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigTypeConverterEntryOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigTypeConverterEntry">CloudwatchLogTransformerTransformerConfigTypeConverterEntry</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigTypeConverterEntryOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigTypeConverterEntry">CloudwatchLogTransformerTransformerConfigTypeConverterEntry</a></code> | *No description.* |
 
 ---
 
@@ -17734,7 +17734,7 @@ public readonly type: string;
 public readonly internalValue: IResolvable | CloudwatchLogTransformerTransformerConfigTypeConverterEntry;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigTypeConverterEntry">CloudwatchLogTransformerTransformerConfigTypeConverterEntry</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigTypeConverterEntry">CloudwatchLogTransformerTransformerConfigTypeConverterEntry</a>
 
 ---
 
@@ -17751,7 +17751,7 @@ new cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigTypeConver
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigTypeConverterList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigTypeConverterList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigTypeConverterList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigTypeConverterList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -17759,7 +17759,7 @@ new cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigTypeConver
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigTypeConverterList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -17825,7 +17825,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigTypeConverterList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -17860,7 +17860,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigTypeConverterList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigTypeConverterList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigTypeConverterList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigTypeConverter">CloudwatchLogTransformerTransformerConfigTypeConverter</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigTypeConverterList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigTypeConverter">CloudwatchLogTransformerTransformerConfigTypeConverter</a>[]</code> | *No description.* |
 
 ---
 
@@ -17894,7 +17894,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | CloudwatchLogTransformerTransformerConfigTypeConverter[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigTypeConverter">CloudwatchLogTransformerTransformerConfigTypeConverter</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigTypeConverter">CloudwatchLogTransformerTransformerConfigTypeConverter</a>[]
 
 ---
 
@@ -17911,7 +17911,7 @@ new cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigTypeConver
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigTypeConverterOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigTypeConverterOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigTypeConverterOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigTypeConverterOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigTypeConverterOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -17920,7 +17920,7 @@ new cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigTypeConver
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigTypeConverterOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -18108,7 +18108,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigTypeConverterOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -18130,7 +18130,7 @@ public putEntry(value: IResolvable | CloudwatchLogTransformerTransformerConfigTy
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigTypeConverterOutputReference.putEntry.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigTypeConverterEntry">CloudwatchLogTransformerTransformerConfigTypeConverterEntry</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigTypeConverterEntry">CloudwatchLogTransformerTransformerConfigTypeConverterEntry</a>[]
 
 ---
 
@@ -18148,8 +18148,8 @@ public resetEntry(): void
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigTypeConverterOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigTypeConverterOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigTypeConverterOutputReference.property.entry">entry</a></code> | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigTypeConverterEntryList">CloudwatchLogTransformerTransformerConfigTypeConverterEntryList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigTypeConverterOutputReference.property.entryInput">entryInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigTypeConverterEntry">CloudwatchLogTransformerTransformerConfigTypeConverterEntry</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigTypeConverterOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigTypeConverter">CloudwatchLogTransformerTransformerConfigTypeConverter</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigTypeConverterOutputReference.property.entryInput">entryInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigTypeConverterEntry">CloudwatchLogTransformerTransformerConfigTypeConverterEntry</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigTypeConverterOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigTypeConverter">CloudwatchLogTransformerTransformerConfigTypeConverter</a></code> | *No description.* |
 
 ---
 
@@ -18193,7 +18193,7 @@ public readonly entry: CloudwatchLogTransformerTransformerConfigTypeConverterEnt
 public readonly entryInput: IResolvable | CloudwatchLogTransformerTransformerConfigTypeConverterEntry[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigTypeConverterEntry">CloudwatchLogTransformerTransformerConfigTypeConverterEntry</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigTypeConverterEntry">CloudwatchLogTransformerTransformerConfigTypeConverterEntry</a>[]
 
 ---
 
@@ -18203,7 +18203,7 @@ public readonly entryInput: IResolvable | CloudwatchLogTransformerTransformerCon
 public readonly internalValue: IResolvable | CloudwatchLogTransformerTransformerConfigTypeConverter;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigTypeConverter">CloudwatchLogTransformerTransformerConfigTypeConverter</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigTypeConverter">CloudwatchLogTransformerTransformerConfigTypeConverter</a>
 
 ---
 
@@ -18220,7 +18220,7 @@ new cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigUpperCaseS
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigUpperCaseStringList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigUpperCaseStringList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigUpperCaseStringList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigUpperCaseStringList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -18228,7 +18228,7 @@ new cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigUpperCaseS
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigUpperCaseStringList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -18294,7 +18294,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigUpperCaseStringList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -18329,7 +18329,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigUpperCaseStringList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigUpperCaseStringList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigUpperCaseStringList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigUpperCaseString">CloudwatchLogTransformerTransformerConfigUpperCaseString</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigUpperCaseStringList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigUpperCaseString">CloudwatchLogTransformerTransformerConfigUpperCaseString</a>[]</code> | *No description.* |
 
 ---
 
@@ -18363,7 +18363,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | CloudwatchLogTransformerTransformerConfigUpperCaseString[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigUpperCaseString">CloudwatchLogTransformerTransformerConfigUpperCaseString</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigUpperCaseString">CloudwatchLogTransformerTransformerConfigUpperCaseString</a>[]
 
 ---
 
@@ -18380,7 +18380,7 @@ new cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigUpperCaseS
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigUpperCaseStringOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigUpperCaseStringOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigUpperCaseStringOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigUpperCaseStringOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigUpperCaseStringOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -18389,7 +18389,7 @@ new cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigUpperCaseS
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigUpperCaseStringOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -18575,7 +18575,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigUpperCaseStringOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -18598,7 +18598,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigUpperCaseStringOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigUpperCaseStringOutputReference.property.withKeysInput">withKeysInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigUpperCaseStringOutputReference.property.withKeys">withKeys</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigUpperCaseStringOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigUpperCaseString">CloudwatchLogTransformerTransformerConfigUpperCaseString</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigUpperCaseStringOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigUpperCaseString">CloudwatchLogTransformerTransformerConfigUpperCaseString</a></code> | *No description.* |
 
 ---
 
@@ -18652,7 +18652,7 @@ public readonly withKeys: string[];
 public readonly internalValue: IResolvable | CloudwatchLogTransformerTransformerConfigUpperCaseString;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigUpperCaseString">CloudwatchLogTransformerTransformerConfigUpperCaseString</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigUpperCaseString">CloudwatchLogTransformerTransformerConfigUpperCaseString</a>
 
 ---
 

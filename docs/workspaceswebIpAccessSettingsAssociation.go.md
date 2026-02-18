@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.workspaceswebIpAccessSettingsAssociation.WorkspaceswebIpAccessSettingsAssociation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/workspaceswebipaccesssettingsassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/workspaceswebipaccesssettingsassociation"
 
 workspaceswebipaccesssettingsassociation.NewWorkspaceswebIpAccessSettingsAssociation(scope Construct, id *string, config WorkspaceswebIpAccessSettingsAssociationConfig) WorkspaceswebIpAccessSettingsAssociation
 ```
@@ -291,7 +291,7 @@ func ImportFrom(id *string, provider TerraformProvider)
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.workspaceswebIpAccessSettingsAssociation.WorkspaceswebIpAccessSettingsAssociation.importFrom.parameter.provider"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider
 
 ---
 
@@ -378,14 +378,14 @@ func ResetRegion()
 | <code><a href="#@cdktn/provider-aws.workspaceswebIpAccessSettingsAssociation.WorkspaceswebIpAccessSettingsAssociation.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktn/provider-aws.workspaceswebIpAccessSettingsAssociation.WorkspaceswebIpAccessSettingsAssociation.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.workspaceswebIpAccessSettingsAssociation.WorkspaceswebIpAccessSettingsAssociation.isTerraformResource">IsTerraformResource</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.workspaceswebIpAccessSettingsAssociation.WorkspaceswebIpAccessSettingsAssociation.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a WorkspaceswebIpAccessSettingsAssociation resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-aws.workspaceswebIpAccessSettingsAssociation.WorkspaceswebIpAccessSettingsAssociation.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTN code for importing a WorkspaceswebIpAccessSettingsAssociation resource upon running "cdktn plan <stack-name>". |
 
 ---
 
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.workspaceswebIpAccessSettingsAssociation.WorkspaceswebIpAccessSettingsAssociation.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/workspaceswebipaccesssettingsassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/workspaceswebipaccesssettingsassociation"
 
 workspaceswebipaccesssettingsassociation.WorkspaceswebIpAccessSettingsAssociation_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +417,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.workspaceswebIpAccessSettingsAssociation.WorkspaceswebIpAccessSettingsAssociation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/workspaceswebipaccesssettingsassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/workspaceswebipaccesssettingsassociation"
 
 workspaceswebipaccesssettingsassociation.WorkspaceswebIpAccessSettingsAssociation_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ workspaceswebipaccesssettingsassociation.WorkspaceswebIpAccessSettingsAssociatio
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.workspaceswebIpAccessSettingsAssociation.WorkspaceswebIpAccessSettingsAssociation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/workspaceswebipaccesssettingsassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/workspaceswebipaccesssettingsassociation"
 
 workspaceswebipaccesssettingsassociation.WorkspaceswebIpAccessSettingsAssociation_IsTerraformResource(x interface{}) *bool
 ```
@@ -445,12 +445,12 @@ workspaceswebipaccesssettingsassociation.WorkspaceswebIpAccessSettingsAssociatio
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.workspaceswebIpAccessSettingsAssociation.WorkspaceswebIpAccessSettingsAssociation.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/workspaceswebipaccesssettingsassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/workspaceswebipaccesssettingsassociation"
 
 workspaceswebipaccesssettingsassociation.WorkspaceswebIpAccessSettingsAssociation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
 
-Generates CDKTF code for importing a WorkspaceswebIpAccessSettingsAssociation resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a WorkspaceswebIpAccessSettingsAssociation resource upon running "cdktn plan <stack-name>".
 
 ###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-aws.workspaceswebIpAccessSettingsAssociation.WorkspaceswebIpAccessSettingsAssociation.generateConfigForImport.parameter.scope"></a>
 
@@ -480,7 +480,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.workspaceswebIpAccessSettingsAssociation.WorkspaceswebIpAccessSettingsAssociation.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider
 
 ? Optional instance of the provider where the WorkspaceswebIpAccessSettingsAssociation to import is found.
 
@@ -491,18 +491,18 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.workspaceswebIpAccessSettingsAssociation.WorkspaceswebIpAccessSettingsAssociation.property.node">Node</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Node</code> | The tree node. |
-| <code><a href="#@cdktn/provider-aws.workspaceswebIpAccessSettingsAssociation.WorkspaceswebIpAccessSettingsAssociation.property.cdktfStack">CdktfStack</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.workspaceswebIpAccessSettingsAssociation.WorkspaceswebIpAccessSettingsAssociation.property.cdktfStack">CdktfStack</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformStack</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.workspaceswebIpAccessSettingsAssociation.WorkspaceswebIpAccessSettingsAssociation.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.workspaceswebIpAccessSettingsAssociation.WorkspaceswebIpAccessSettingsAssociation.property.friendlyUniqueId">FriendlyUniqueId</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.workspaceswebIpAccessSettingsAssociation.WorkspaceswebIpAccessSettingsAssociation.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>*map[string]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.workspaceswebIpAccessSettingsAssociation.WorkspaceswebIpAccessSettingsAssociation.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.workspaceswebIpAccessSettingsAssociation.WorkspaceswebIpAccessSettingsAssociation.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.workspaceswebIpAccessSettingsAssociation.WorkspaceswebIpAccessSettingsAssociation.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.workspaceswebIpAccessSettingsAssociation.WorkspaceswebIpAccessSettingsAssociation.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.workspaceswebIpAccessSettingsAssociation.WorkspaceswebIpAccessSettingsAssociation.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.workspaceswebIpAccessSettingsAssociation.WorkspaceswebIpAccessSettingsAssociation.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.workspaceswebIpAccessSettingsAssociation.WorkspaceswebIpAccessSettingsAssociation.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.workspaceswebIpAccessSettingsAssociation.WorkspaceswebIpAccessSettingsAssociation.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.workspaceswebIpAccessSettingsAssociation.WorkspaceswebIpAccessSettingsAssociation.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.workspaceswebIpAccessSettingsAssociation.WorkspaceswebIpAccessSettingsAssociation.property.forEach">ForEach</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.workspaceswebIpAccessSettingsAssociation.WorkspaceswebIpAccessSettingsAssociation.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.workspaceswebIpAccessSettingsAssociation.WorkspaceswebIpAccessSettingsAssociation.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.workspaceswebIpAccessSettingsAssociation.WorkspaceswebIpAccessSettingsAssociation.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.workspaceswebIpAccessSettingsAssociation.WorkspaceswebIpAccessSettingsAssociation.property.ipAccessSettingsArnInput">IpAccessSettingsArnInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.workspaceswebIpAccessSettingsAssociation.WorkspaceswebIpAccessSettingsAssociation.property.portalArnInput">PortalArnInput</a></code> | <code>*string</code> | *No description.* |
@@ -531,7 +531,7 @@ The tree node.
 func CdktfStack() TerraformStack
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformStack
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformStack
 
 ---
 
@@ -581,7 +581,7 @@ func TerraformResourceType() *string
 func TerraformGeneratorMetadata() TerraformProviderGeneratorMetadata
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
@@ -621,7 +621,7 @@ func DependsOn() *[]*string
 func ForEach() ITerraformIterator
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformIterator
 
 ---
 
@@ -631,7 +631,7 @@ func ForEach() ITerraformIterator
 func Lifecycle() TerraformResourceLifecycle
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -641,7 +641,7 @@ func Lifecycle() TerraformResourceLifecycle
 func Provider() TerraformProvider
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider
 
 ---
 
@@ -740,15 +740,15 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.workspaceswebIpAccessSettingsAssociation.WorkspaceswebIpAccessSettingsAssociationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/workspaceswebipaccesssettingsassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/workspaceswebipaccesssettingsassociation"
 
 &workspaceswebipaccesssettingsassociation.WorkspaceswebIpAccessSettingsAssociationConfig {
 	Connection: interface{},
 	Count: interface{},
-	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
-	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
-	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
-	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
+	DependsOn: *[]github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformDependable,
+	ForEach: github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformIterator,
+	Lifecycle: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle,
+	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	IpAccessSettingsArn: *string,
 	PortalArn: *string,
@@ -762,10 +762,10 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/workspaceswebipaccesss
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.workspaceswebIpAccessSettingsAssociation.WorkspaceswebIpAccessSettingsAssociationConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.workspaceswebIpAccessSettingsAssociation.WorkspaceswebIpAccessSettingsAssociationConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.workspaceswebIpAccessSettingsAssociation.WorkspaceswebIpAccessSettingsAssociationConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.workspaceswebIpAccessSettingsAssociation.WorkspaceswebIpAccessSettingsAssociationConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.workspaceswebIpAccessSettingsAssociation.WorkspaceswebIpAccessSettingsAssociationConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.workspaceswebIpAccessSettingsAssociation.WorkspaceswebIpAccessSettingsAssociationConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.workspaceswebIpAccessSettingsAssociation.WorkspaceswebIpAccessSettingsAssociationConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformDependable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.workspaceswebIpAccessSettingsAssociation.WorkspaceswebIpAccessSettingsAssociationConfig.property.forEach">ForEach</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.workspaceswebIpAccessSettingsAssociation.WorkspaceswebIpAccessSettingsAssociationConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.workspaceswebIpAccessSettingsAssociation.WorkspaceswebIpAccessSettingsAssociationConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.workspaceswebIpAccessSettingsAssociation.WorkspaceswebIpAccessSettingsAssociationConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.workspaceswebIpAccessSettingsAssociation.WorkspaceswebIpAccessSettingsAssociationConfig.property.ipAccessSettingsArn">IpAccessSettingsArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/workspacesweb_ip_access_settings_association#ip_access_settings_arn WorkspaceswebIpAccessSettingsAssociation#ip_access_settings_arn}. |
 | <code><a href="#@cdktn/provider-aws.workspaceswebIpAccessSettingsAssociation.WorkspaceswebIpAccessSettingsAssociationConfig.property.portalArn">PortalArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/workspacesweb_ip_access_settings_association#portal_arn WorkspaceswebIpAccessSettingsAssociation#portal_arn}. |
@@ -799,7 +799,7 @@ Count interface{}
 DependsOn *[]ITerraformDependable
 ```
 
-- *Type:* *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable
+- *Type:* *[]github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformDependable
 
 ---
 
@@ -809,7 +809,7 @@ DependsOn *[]ITerraformDependable
 ForEach ITerraformIterator
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformIterator
 
 ---
 
@@ -819,7 +819,7 @@ ForEach ITerraformIterator
 Lifecycle TerraformResourceLifecycle
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -829,7 +829,7 @@ Lifecycle TerraformResourceLifecycle
 Provider TerraformProvider
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider
 
 ---
 

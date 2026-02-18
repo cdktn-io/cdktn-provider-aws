@@ -314,7 +314,7 @@ public importFrom(id: string, provider?: TerraformProvider): void
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistribution.importFrom.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -396,7 +396,7 @@ public putActiveTrustedKeyGroups(value: IResolvable | CloudfrontMultitenantDistr
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistribution.putActiveTrustedKeyGroups.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionActiveTrustedKeyGroups">CloudfrontMultitenantDistributionActiveTrustedKeyGroups</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionActiveTrustedKeyGroups">CloudfrontMultitenantDistributionActiveTrustedKeyGroups</a>[]
 
 ---
 
@@ -408,7 +408,7 @@ public putCacheBehavior(value: IResolvable | CloudfrontMultitenantDistributionCa
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistribution.putCacheBehavior.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehavior">CloudfrontMultitenantDistributionCacheBehavior</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehavior">CloudfrontMultitenantDistributionCacheBehavior</a>[]
 
 ---
 
@@ -420,7 +420,7 @@ public putCustomErrorResponse(value: IResolvable | CloudfrontMultitenantDistribu
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistribution.putCustomErrorResponse.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCustomErrorResponse">CloudfrontMultitenantDistributionCustomErrorResponse</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCustomErrorResponse">CloudfrontMultitenantDistributionCustomErrorResponse</a>[]
 
 ---
 
@@ -432,7 +432,7 @@ public putDefaultCacheBehavior(value: IResolvable | CloudfrontMultitenantDistrib
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistribution.putDefaultCacheBehavior.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehavior">CloudfrontMultitenantDistributionDefaultCacheBehavior</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehavior">CloudfrontMultitenantDistributionDefaultCacheBehavior</a>[]
 
 ---
 
@@ -444,7 +444,7 @@ public putOrigin(value: IResolvable | CloudfrontMultitenantDistributionOrigin[])
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistribution.putOrigin.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOrigin">CloudfrontMultitenantDistributionOrigin</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOrigin">CloudfrontMultitenantDistributionOrigin</a>[]
 
 ---
 
@@ -456,7 +456,7 @@ public putOriginGroup(value: IResolvable | CloudfrontMultitenantDistributionOrig
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistribution.putOriginGroup.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroup">CloudfrontMultitenantDistributionOriginGroup</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroup">CloudfrontMultitenantDistributionOriginGroup</a>[]
 
 ---
 
@@ -468,7 +468,7 @@ public putRestrictions(value: IResolvable | CloudfrontMultitenantDistributionRes
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistribution.putRestrictions.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionRestrictions">CloudfrontMultitenantDistributionRestrictions</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionRestrictions">CloudfrontMultitenantDistributionRestrictions</a>[]
 
 ---
 
@@ -480,7 +480,7 @@ public putTenantConfig(value: IResolvable | CloudfrontMultitenantDistributionTen
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistribution.putTenantConfig.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfig">CloudfrontMultitenantDistributionTenantConfig</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfig">CloudfrontMultitenantDistributionTenantConfig</a>[]
 
 ---
 
@@ -504,7 +504,7 @@ public putViewerCertificate(value: IResolvable | CloudfrontMultitenantDistributi
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistribution.putViewerCertificate.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionViewerCertificate">CloudfrontMultitenantDistributionViewerCertificate</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionViewerCertificate">CloudfrontMultitenantDistributionViewerCertificate</a>[]
 
 ---
 
@@ -599,7 +599,7 @@ public resetWebAclId(): void
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistribution.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistribution.isTerraformElement">isTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistribution.isTerraformResource">isTerraformResource</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistribution.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTF code for importing a CloudfrontMultitenantDistribution resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistribution.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTN code for importing a CloudfrontMultitenantDistribution resource upon running "cdktn plan <stack-name>". |
 
 ---
 
@@ -671,7 +671,7 @@ import { cloudfrontMultitenantDistribution } from '@cdktn/provider-aws'
 cloudfrontMultitenantDistribution.CloudfrontMultitenantDistribution.generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: TerraformProvider)
 ```
 
-Generates CDKTF code for importing a CloudfrontMultitenantDistribution resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a CloudfrontMultitenantDistribution resource upon running "cdktn plan <stack-name>".
 
 ###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistribution.generateConfigForImport.parameter.scope"></a>
 
@@ -701,7 +701,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistribution.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ? Optional instance of the provider where the CloudfrontMultitenantDistribution to import is found.
 
@@ -712,19 +712,19 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistribution.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistribution.property.cdktfStack">cdktfStack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistribution.property.cdktfStack">cdktfStack</a></code> | <code>cdktn.TerraformStack</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistribution.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistribution.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistribution.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistribution.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistribution.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistribution.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistribution.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistribution.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistribution.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistribution.property.count">count</a></code> | <code>number \| cdktn.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistribution.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistribution.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistribution.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistribution.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistribution.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistribution.property.forEach">forEach</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistribution.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistribution.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistribution.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistribution.property.activeTrustedKeyGroups">activeTrustedKeyGroups</a></code> | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionActiveTrustedKeyGroupsList">CloudfrontMultitenantDistributionActiveTrustedKeyGroupsList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistribution.property.arn">arn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistribution.property.cacheBehavior">cacheBehavior</a></code> | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorList">CloudfrontMultitenantDistributionCacheBehaviorList</a></code> | *No description.* |
@@ -741,29 +741,29 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistribution.property.originGroup">originGroup</a></code> | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroupList">CloudfrontMultitenantDistributionOriginGroupList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistribution.property.restrictions">restrictions</a></code> | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionRestrictionsList">CloudfrontMultitenantDistributionRestrictionsList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistribution.property.status">status</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistribution.property.tagsAll">tagsAll</a></code> | <code>cdktf.StringMap</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistribution.property.tagsAll">tagsAll</a></code> | <code>cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistribution.property.tenantConfig">tenantConfig</a></code> | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigList">CloudfrontMultitenantDistributionTenantConfigList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistribution.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTimeoutsOutputReference">CloudfrontMultitenantDistributionTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistribution.property.viewerCertificate">viewerCertificate</a></code> | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionViewerCertificateList">CloudfrontMultitenantDistributionViewerCertificateList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistribution.property.activeTrustedKeyGroupsInput">activeTrustedKeyGroupsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionActiveTrustedKeyGroups">CloudfrontMultitenantDistributionActiveTrustedKeyGroups</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistribution.property.cacheBehaviorInput">cacheBehaviorInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehavior">CloudfrontMultitenantDistributionCacheBehavior</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistribution.property.activeTrustedKeyGroupsInput">activeTrustedKeyGroupsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionActiveTrustedKeyGroups">CloudfrontMultitenantDistributionActiveTrustedKeyGroups</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistribution.property.cacheBehaviorInput">cacheBehaviorInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehavior">CloudfrontMultitenantDistributionCacheBehavior</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistribution.property.commentInput">commentInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistribution.property.customErrorResponseInput">customErrorResponseInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCustomErrorResponse">CloudfrontMultitenantDistributionCustomErrorResponse</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistribution.property.defaultCacheBehaviorInput">defaultCacheBehaviorInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehavior">CloudfrontMultitenantDistributionDefaultCacheBehavior</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistribution.property.customErrorResponseInput">customErrorResponseInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCustomErrorResponse">CloudfrontMultitenantDistributionCustomErrorResponse</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistribution.property.defaultCacheBehaviorInput">defaultCacheBehaviorInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehavior">CloudfrontMultitenantDistributionDefaultCacheBehavior</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistribution.property.defaultRootObjectInput">defaultRootObjectInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistribution.property.enabledInput">enabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistribution.property.enabledInput">enabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistribution.property.httpVersionInput">httpVersionInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistribution.property.originGroupInput">originGroupInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroup">CloudfrontMultitenantDistributionOriginGroup</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistribution.property.originInput">originInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOrigin">CloudfrontMultitenantDistributionOrigin</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistribution.property.restrictionsInput">restrictionsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionRestrictions">CloudfrontMultitenantDistributionRestrictions</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistribution.property.originGroupInput">originGroupInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroup">CloudfrontMultitenantDistributionOriginGroup</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistribution.property.originInput">originInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOrigin">CloudfrontMultitenantDistributionOrigin</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistribution.property.restrictionsInput">restrictionsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionRestrictions">CloudfrontMultitenantDistributionRestrictions</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistribution.property.tagsInput">tagsInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistribution.property.tenantConfigInput">tenantConfigInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfig">CloudfrontMultitenantDistributionTenantConfig</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistribution.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTimeouts">CloudfrontMultitenantDistributionTimeouts</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistribution.property.viewerCertificateInput">viewerCertificateInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionViewerCertificate">CloudfrontMultitenantDistributionViewerCertificate</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistribution.property.tenantConfigInput">tenantConfigInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfig">CloudfrontMultitenantDistributionTenantConfig</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistribution.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTimeouts">CloudfrontMultitenantDistributionTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistribution.property.viewerCertificateInput">viewerCertificateInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionViewerCertificate">CloudfrontMultitenantDistributionViewerCertificate</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistribution.property.webAclIdInput">webAclIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistribution.property.comment">comment</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistribution.property.defaultRootObject">defaultRootObject</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistribution.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistribution.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistribution.property.httpVersion">httpVersion</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistribution.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistribution.property.webAclId">webAclId</a></code> | <code>string</code> | *No description.* |
@@ -788,7 +788,7 @@ The tree node.
 public readonly cdktfStack: TerraformStack;
 ```
 
-- *Type:* cdktf.TerraformStack
+- *Type:* cdktn.TerraformStack
 
 ---
 
@@ -838,7 +838,7 @@ public readonly terraformResourceType: string;
 public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ```
 
-- *Type:* cdktf.TerraformProviderGeneratorMetadata
+- *Type:* cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
@@ -848,7 +848,7 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -858,7 +858,7 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number | cdktf.TerraformCount
+- *Type:* number | cdktn.TerraformCount
 
 ---
 
@@ -878,7 +878,7 @@ public readonly dependsOn: string[];
 public readonly forEach: ITerraformIterator;
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -888,7 +888,7 @@ public readonly forEach: ITerraformIterator;
 public readonly lifecycle: TerraformResourceLifecycle;
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -898,7 +898,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 public readonly provider: TerraformProvider;
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -908,7 +908,7 @@ public readonly provider: TerraformProvider;
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
 ```
 
-- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
+- *Type:* cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner[]
 
 ---
 
@@ -1078,7 +1078,7 @@ public readonly status: string;
 public readonly tagsAll: StringMap;
 ```
 
-- *Type:* cdktf.StringMap
+- *Type:* cdktn.StringMap
 
 ---
 
@@ -1118,7 +1118,7 @@ public readonly viewerCertificate: CloudfrontMultitenantDistributionViewerCertif
 public readonly activeTrustedKeyGroupsInput: IResolvable | CloudfrontMultitenantDistributionActiveTrustedKeyGroups[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionActiveTrustedKeyGroups">CloudfrontMultitenantDistributionActiveTrustedKeyGroups</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionActiveTrustedKeyGroups">CloudfrontMultitenantDistributionActiveTrustedKeyGroups</a>[]
 
 ---
 
@@ -1128,7 +1128,7 @@ public readonly activeTrustedKeyGroupsInput: IResolvable | CloudfrontMultitenant
 public readonly cacheBehaviorInput: IResolvable | CloudfrontMultitenantDistributionCacheBehavior[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehavior">CloudfrontMultitenantDistributionCacheBehavior</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehavior">CloudfrontMultitenantDistributionCacheBehavior</a>[]
 
 ---
 
@@ -1148,7 +1148,7 @@ public readonly commentInput: string;
 public readonly customErrorResponseInput: IResolvable | CloudfrontMultitenantDistributionCustomErrorResponse[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCustomErrorResponse">CloudfrontMultitenantDistributionCustomErrorResponse</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCustomErrorResponse">CloudfrontMultitenantDistributionCustomErrorResponse</a>[]
 
 ---
 
@@ -1158,7 +1158,7 @@ public readonly customErrorResponseInput: IResolvable | CloudfrontMultitenantDis
 public readonly defaultCacheBehaviorInput: IResolvable | CloudfrontMultitenantDistributionDefaultCacheBehavior[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehavior">CloudfrontMultitenantDistributionDefaultCacheBehavior</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehavior">CloudfrontMultitenantDistributionDefaultCacheBehavior</a>[]
 
 ---
 
@@ -1178,7 +1178,7 @@ public readonly defaultRootObjectInput: string;
 public readonly enabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -1198,7 +1198,7 @@ public readonly httpVersionInput: string;
 public readonly originGroupInput: IResolvable | CloudfrontMultitenantDistributionOriginGroup[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroup">CloudfrontMultitenantDistributionOriginGroup</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroup">CloudfrontMultitenantDistributionOriginGroup</a>[]
 
 ---
 
@@ -1208,7 +1208,7 @@ public readonly originGroupInput: IResolvable | CloudfrontMultitenantDistributio
 public readonly originInput: IResolvable | CloudfrontMultitenantDistributionOrigin[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOrigin">CloudfrontMultitenantDistributionOrigin</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOrigin">CloudfrontMultitenantDistributionOrigin</a>[]
 
 ---
 
@@ -1218,7 +1218,7 @@ public readonly originInput: IResolvable | CloudfrontMultitenantDistributionOrig
 public readonly restrictionsInput: IResolvable | CloudfrontMultitenantDistributionRestrictions[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionRestrictions">CloudfrontMultitenantDistributionRestrictions</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionRestrictions">CloudfrontMultitenantDistributionRestrictions</a>[]
 
 ---
 
@@ -1238,7 +1238,7 @@ public readonly tagsInput: {[ key: string ]: string};
 public readonly tenantConfigInput: IResolvable | CloudfrontMultitenantDistributionTenantConfig[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfig">CloudfrontMultitenantDistributionTenantConfig</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfig">CloudfrontMultitenantDistributionTenantConfig</a>[]
 
 ---
 
@@ -1248,7 +1248,7 @@ public readonly tenantConfigInput: IResolvable | CloudfrontMultitenantDistributi
 public readonly timeoutsInput: IResolvable | CloudfrontMultitenantDistributionTimeouts;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTimeouts">CloudfrontMultitenantDistributionTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTimeouts">CloudfrontMultitenantDistributionTimeouts</a>
 
 ---
 
@@ -1258,7 +1258,7 @@ public readonly timeoutsInput: IResolvable | CloudfrontMultitenantDistributionTi
 public readonly viewerCertificateInput: IResolvable | CloudfrontMultitenantDistributionViewerCertificate[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionViewerCertificate">CloudfrontMultitenantDistributionViewerCertificate</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionViewerCertificate">CloudfrontMultitenantDistributionViewerCertificate</a>[]
 
 ---
 
@@ -1298,7 +1298,7 @@ public readonly defaultRootObject: string;
 public readonly enabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -1366,7 +1366,7 @@ const cloudfrontMultitenantDistributionActiveTrustedKeyGroups: cloudfrontMultite
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionActiveTrustedKeyGroups.property.items">items</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionActiveTrustedKeyGroupsItems">CloudfrontMultitenantDistributionActiveTrustedKeyGroupsItems</a>[]</code> | items block. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionActiveTrustedKeyGroups.property.items">items</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionActiveTrustedKeyGroupsItems">CloudfrontMultitenantDistributionActiveTrustedKeyGroupsItems</a>[]</code> | items block. |
 
 ---
 
@@ -1376,7 +1376,7 @@ const cloudfrontMultitenantDistributionActiveTrustedKeyGroups: cloudfrontMultite
 public readonly items: IResolvable | CloudfrontMultitenantDistributionActiveTrustedKeyGroupsItems[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionActiveTrustedKeyGroupsItems">CloudfrontMultitenantDistributionActiveTrustedKeyGroupsItems</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionActiveTrustedKeyGroupsItems">CloudfrontMultitenantDistributionActiveTrustedKeyGroupsItems</a>[]
 
 items block.
 
@@ -1412,16 +1412,16 @@ const cloudfrontMultitenantDistributionCacheBehavior: cloudfrontMultitenantDistr
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehavior.property.pathPattern">pathPattern</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudfront_multitenant_distribution#path_pattern CloudfrontMultitenantDistribution#path_pattern}. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehavior.property.targetOriginId">targetOriginId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudfront_multitenant_distribution#target_origin_id CloudfrontMultitenantDistribution#target_origin_id}. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehavior.property.viewerProtocolPolicy">viewerProtocolPolicy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudfront_multitenant_distribution#viewer_protocol_policy CloudfrontMultitenantDistribution#viewer_protocol_policy}. |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehavior.property.allowedMethods">allowedMethods</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorAllowedMethods">CloudfrontMultitenantDistributionCacheBehaviorAllowedMethods</a>[]</code> | allowed_methods block. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehavior.property.allowedMethods">allowedMethods</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorAllowedMethods">CloudfrontMultitenantDistributionCacheBehaviorAllowedMethods</a>[]</code> | allowed_methods block. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehavior.property.cachePolicyId">cachePolicyId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudfront_multitenant_distribution#cache_policy_id CloudfrontMultitenantDistribution#cache_policy_id}. |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehavior.property.compress">compress</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudfront_multitenant_distribution#compress CloudfrontMultitenantDistribution#compress}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehavior.property.compress">compress</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudfront_multitenant_distribution#compress CloudfrontMultitenantDistribution#compress}. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehavior.property.fieldLevelEncryptionId">fieldLevelEncryptionId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudfront_multitenant_distribution#field_level_encryption_id CloudfrontMultitenantDistribution#field_level_encryption_id}. |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehavior.property.functionAssociation">functionAssociation</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorFunctionAssociation">CloudfrontMultitenantDistributionCacheBehaviorFunctionAssociation</a>[]</code> | function_association block. |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehavior.property.lambdaFunctionAssociation">lambdaFunctionAssociation</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorLambdaFunctionAssociation">CloudfrontMultitenantDistributionCacheBehaviorLambdaFunctionAssociation</a>[]</code> | lambda_function_association block. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehavior.property.functionAssociation">functionAssociation</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorFunctionAssociation">CloudfrontMultitenantDistributionCacheBehaviorFunctionAssociation</a>[]</code> | function_association block. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehavior.property.lambdaFunctionAssociation">lambdaFunctionAssociation</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorLambdaFunctionAssociation">CloudfrontMultitenantDistributionCacheBehaviorLambdaFunctionAssociation</a>[]</code> | lambda_function_association block. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehavior.property.originRequestPolicyId">originRequestPolicyId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudfront_multitenant_distribution#origin_request_policy_id CloudfrontMultitenantDistribution#origin_request_policy_id}. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehavior.property.realtimeLogConfigArn">realtimeLogConfigArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudfront_multitenant_distribution#realtime_log_config_arn CloudfrontMultitenantDistribution#realtime_log_config_arn}. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehavior.property.responseHeadersPolicyId">responseHeadersPolicyId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudfront_multitenant_distribution#response_headers_policy_id CloudfrontMultitenantDistribution#response_headers_policy_id}. |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehavior.property.trustedKeyGroups">trustedKeyGroups</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorTrustedKeyGroups">CloudfrontMultitenantDistributionCacheBehaviorTrustedKeyGroups</a>[]</code> | trusted_key_groups block. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehavior.property.trustedKeyGroups">trustedKeyGroups</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorTrustedKeyGroups">CloudfrontMultitenantDistributionCacheBehaviorTrustedKeyGroups</a>[]</code> | trusted_key_groups block. |
 
 ---
 
@@ -1467,7 +1467,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly allowedMethods: IResolvable | CloudfrontMultitenantDistributionCacheBehaviorAllowedMethods[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorAllowedMethods">CloudfrontMultitenantDistributionCacheBehaviorAllowedMethods</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorAllowedMethods">CloudfrontMultitenantDistributionCacheBehaviorAllowedMethods</a>[]
 
 allowed_methods block.
 
@@ -1493,7 +1493,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly compress: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudfront_multitenant_distribution#compress CloudfrontMultitenantDistribution#compress}.
 
@@ -1517,7 +1517,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly functionAssociation: IResolvable | CloudfrontMultitenantDistributionCacheBehaviorFunctionAssociation[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorFunctionAssociation">CloudfrontMultitenantDistributionCacheBehaviorFunctionAssociation</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorFunctionAssociation">CloudfrontMultitenantDistributionCacheBehaviorFunctionAssociation</a>[]
 
 function_association block.
 
@@ -1531,7 +1531,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly lambdaFunctionAssociation: IResolvable | CloudfrontMultitenantDistributionCacheBehaviorLambdaFunctionAssociation[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorLambdaFunctionAssociation">CloudfrontMultitenantDistributionCacheBehaviorLambdaFunctionAssociation</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorLambdaFunctionAssociation">CloudfrontMultitenantDistributionCacheBehaviorLambdaFunctionAssociation</a>[]
 
 lambda_function_association block.
 
@@ -1581,7 +1581,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly trustedKeyGroups: IResolvable | CloudfrontMultitenantDistributionCacheBehaviorTrustedKeyGroups[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorTrustedKeyGroups">CloudfrontMultitenantDistributionCacheBehaviorTrustedKeyGroups</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorTrustedKeyGroups">CloudfrontMultitenantDistributionCacheBehaviorTrustedKeyGroups</a>[]
 
 trusted_key_groups block.
 
@@ -1691,7 +1691,7 @@ const cloudfrontMultitenantDistributionCacheBehaviorLambdaFunctionAssociation: c
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorLambdaFunctionAssociation.property.eventType">eventType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudfront_multitenant_distribution#event_type CloudfrontMultitenantDistribution#event_type}. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorLambdaFunctionAssociation.property.lambdaFunctionArn">lambdaFunctionArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudfront_multitenant_distribution#lambda_function_arn CloudfrontMultitenantDistribution#lambda_function_arn}. |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorLambdaFunctionAssociation.property.includeBody">includeBody</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudfront_multitenant_distribution#include_body CloudfrontMultitenantDistribution#include_body}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorLambdaFunctionAssociation.property.includeBody">includeBody</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudfront_multitenant_distribution#include_body CloudfrontMultitenantDistribution#include_body}. |
 
 ---
 
@@ -1725,7 +1725,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly includeBody: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudfront_multitenant_distribution#include_body CloudfrontMultitenantDistribution#include_body}.
 
@@ -1745,7 +1745,7 @@ const cloudfrontMultitenantDistributionCacheBehaviorTrustedKeyGroups: cloudfront
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorTrustedKeyGroups.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudfront_multitenant_distribution#enabled CloudfrontMultitenantDistribution#enabled}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorTrustedKeyGroups.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudfront_multitenant_distribution#enabled CloudfrontMultitenantDistribution#enabled}. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorTrustedKeyGroups.property.items">items</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudfront_multitenant_distribution#items CloudfrontMultitenantDistribution#items}. |
 
 ---
@@ -1756,7 +1756,7 @@ const cloudfrontMultitenantDistributionCacheBehaviorTrustedKeyGroups: cloudfront
 public readonly enabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudfront_multitenant_distribution#enabled CloudfrontMultitenantDistribution#enabled}.
 
@@ -1788,28 +1788,28 @@ const cloudfrontMultitenantDistributionConfig: cloudfrontMultitenantDistribution
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionConfig.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionConfig.property.count">count</a></code> | <code>number \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionConfig.property.dependsOn">dependsOn</a></code> | <code>cdktn.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionConfig.property.forEach">forEach</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionConfig.property.comment">comment</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudfront_multitenant_distribution#comment CloudfrontMultitenantDistribution#comment}. |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionConfig.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudfront_multitenant_distribution#enabled CloudfrontMultitenantDistribution#enabled}. |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionConfig.property.activeTrustedKeyGroups">activeTrustedKeyGroups</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionActiveTrustedKeyGroups">CloudfrontMultitenantDistributionActiveTrustedKeyGroups</a>[]</code> | active_trusted_key_groups block. |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionConfig.property.cacheBehavior">cacheBehavior</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehavior">CloudfrontMultitenantDistributionCacheBehavior</a>[]</code> | cache_behavior block. |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionConfig.property.customErrorResponse">customErrorResponse</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCustomErrorResponse">CloudfrontMultitenantDistributionCustomErrorResponse</a>[]</code> | custom_error_response block. |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionConfig.property.defaultCacheBehavior">defaultCacheBehavior</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehavior">CloudfrontMultitenantDistributionDefaultCacheBehavior</a>[]</code> | default_cache_behavior block. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionConfig.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudfront_multitenant_distribution#enabled CloudfrontMultitenantDistribution#enabled}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionConfig.property.activeTrustedKeyGroups">activeTrustedKeyGroups</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionActiveTrustedKeyGroups">CloudfrontMultitenantDistributionActiveTrustedKeyGroups</a>[]</code> | active_trusted_key_groups block. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionConfig.property.cacheBehavior">cacheBehavior</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehavior">CloudfrontMultitenantDistributionCacheBehavior</a>[]</code> | cache_behavior block. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionConfig.property.customErrorResponse">customErrorResponse</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCustomErrorResponse">CloudfrontMultitenantDistributionCustomErrorResponse</a>[]</code> | custom_error_response block. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionConfig.property.defaultCacheBehavior">defaultCacheBehavior</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehavior">CloudfrontMultitenantDistributionDefaultCacheBehavior</a>[]</code> | default_cache_behavior block. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionConfig.property.defaultRootObject">defaultRootObject</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudfront_multitenant_distribution#default_root_object CloudfrontMultitenantDistribution#default_root_object}. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionConfig.property.httpVersion">httpVersion</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudfront_multitenant_distribution#http_version CloudfrontMultitenantDistribution#http_version}. |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionConfig.property.origin">origin</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOrigin">CloudfrontMultitenantDistributionOrigin</a>[]</code> | origin block. |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionConfig.property.originGroup">originGroup</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroup">CloudfrontMultitenantDistributionOriginGroup</a>[]</code> | origin_group block. |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionConfig.property.restrictions">restrictions</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionRestrictions">CloudfrontMultitenantDistributionRestrictions</a>[]</code> | restrictions block. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionConfig.property.origin">origin</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOrigin">CloudfrontMultitenantDistributionOrigin</a>[]</code> | origin block. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionConfig.property.originGroup">originGroup</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroup">CloudfrontMultitenantDistributionOriginGroup</a>[]</code> | origin_group block. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionConfig.property.restrictions">restrictions</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionRestrictions">CloudfrontMultitenantDistributionRestrictions</a>[]</code> | restrictions block. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudfront_multitenant_distribution#tags CloudfrontMultitenantDistribution#tags}. |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionConfig.property.tenantConfig">tenantConfig</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfig">CloudfrontMultitenantDistributionTenantConfig</a>[]</code> | tenant_config block. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionConfig.property.tenantConfig">tenantConfig</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfig">CloudfrontMultitenantDistributionTenantConfig</a>[]</code> | tenant_config block. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTimeouts">CloudfrontMultitenantDistributionTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionConfig.property.viewerCertificate">viewerCertificate</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionViewerCertificate">CloudfrontMultitenantDistributionViewerCertificate</a>[]</code> | viewer_certificate block. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionConfig.property.viewerCertificate">viewerCertificate</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionViewerCertificate">CloudfrontMultitenantDistributionViewerCertificate</a>[]</code> | viewer_certificate block. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionConfig.property.webAclId">webAclId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudfront_multitenant_distribution#web_acl_id CloudfrontMultitenantDistribution#web_acl_id}. |
 
 ---
@@ -1820,7 +1820,7 @@ const cloudfrontMultitenantDistributionConfig: cloudfrontMultitenantDistribution
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -1830,7 +1830,7 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number | cdktf.TerraformCount
+- *Type:* number | cdktn.TerraformCount
 
 ---
 
@@ -1840,7 +1840,7 @@ public readonly count: number | TerraformCount;
 public readonly dependsOn: ITerraformDependable[];
 ```
 
-- *Type:* cdktf.ITerraformDependable[]
+- *Type:* cdktn.ITerraformDependable[]
 
 ---
 
@@ -1850,7 +1850,7 @@ public readonly dependsOn: ITerraformDependable[];
 public readonly forEach: ITerraformIterator;
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -1860,7 +1860,7 @@ public readonly forEach: ITerraformIterator;
 public readonly lifecycle: TerraformResourceLifecycle;
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -1870,7 +1870,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 public readonly provider: TerraformProvider;
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -1880,7 +1880,7 @@ public readonly provider: TerraformProvider;
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
 ```
 
-- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
+- *Type:* cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner[]
 
 ---
 
@@ -1902,7 +1902,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly enabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudfront_multitenant_distribution#enabled CloudfrontMultitenantDistribution#enabled}.
 
@@ -1914,7 +1914,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly activeTrustedKeyGroups: IResolvable | CloudfrontMultitenantDistributionActiveTrustedKeyGroups[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionActiveTrustedKeyGroups">CloudfrontMultitenantDistributionActiveTrustedKeyGroups</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionActiveTrustedKeyGroups">CloudfrontMultitenantDistributionActiveTrustedKeyGroups</a>[]
 
 active_trusted_key_groups block.
 
@@ -1928,7 +1928,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly cacheBehavior: IResolvable | CloudfrontMultitenantDistributionCacheBehavior[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehavior">CloudfrontMultitenantDistributionCacheBehavior</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehavior">CloudfrontMultitenantDistributionCacheBehavior</a>[]
 
 cache_behavior block.
 
@@ -1942,7 +1942,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly customErrorResponse: IResolvable | CloudfrontMultitenantDistributionCustomErrorResponse[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCustomErrorResponse">CloudfrontMultitenantDistributionCustomErrorResponse</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCustomErrorResponse">CloudfrontMultitenantDistributionCustomErrorResponse</a>[]
 
 custom_error_response block.
 
@@ -1956,7 +1956,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly defaultCacheBehavior: IResolvable | CloudfrontMultitenantDistributionDefaultCacheBehavior[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehavior">CloudfrontMultitenantDistributionDefaultCacheBehavior</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehavior">CloudfrontMultitenantDistributionDefaultCacheBehavior</a>[]
 
 default_cache_behavior block.
 
@@ -1994,7 +1994,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly origin: IResolvable | CloudfrontMultitenantDistributionOrigin[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOrigin">CloudfrontMultitenantDistributionOrigin</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOrigin">CloudfrontMultitenantDistributionOrigin</a>[]
 
 origin block.
 
@@ -2008,7 +2008,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly originGroup: IResolvable | CloudfrontMultitenantDistributionOriginGroup[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroup">CloudfrontMultitenantDistributionOriginGroup</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroup">CloudfrontMultitenantDistributionOriginGroup</a>[]
 
 origin_group block.
 
@@ -2022,7 +2022,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly restrictions: IResolvable | CloudfrontMultitenantDistributionRestrictions[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionRestrictions">CloudfrontMultitenantDistributionRestrictions</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionRestrictions">CloudfrontMultitenantDistributionRestrictions</a>[]
 
 restrictions block.
 
@@ -2048,7 +2048,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly tenantConfig: IResolvable | CloudfrontMultitenantDistributionTenantConfig[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfig">CloudfrontMultitenantDistributionTenantConfig</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfig">CloudfrontMultitenantDistributionTenantConfig</a>[]
 
 tenant_config block.
 
@@ -2076,7 +2076,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly viewerCertificate: IResolvable | CloudfrontMultitenantDistributionViewerCertificate[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionViewerCertificate">CloudfrontMultitenantDistributionViewerCertificate</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionViewerCertificate">CloudfrontMultitenantDistributionViewerCertificate</a>[]
 
 viewer_certificate block.
 
@@ -2181,16 +2181,16 @@ const cloudfrontMultitenantDistributionDefaultCacheBehavior: cloudfrontMultitena
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehavior.property.targetOriginId">targetOriginId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudfront_multitenant_distribution#target_origin_id CloudfrontMultitenantDistribution#target_origin_id}. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehavior.property.viewerProtocolPolicy">viewerProtocolPolicy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudfront_multitenant_distribution#viewer_protocol_policy CloudfrontMultitenantDistribution#viewer_protocol_policy}. |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehavior.property.allowedMethods">allowedMethods</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorAllowedMethods">CloudfrontMultitenantDistributionDefaultCacheBehaviorAllowedMethods</a>[]</code> | allowed_methods block. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehavior.property.allowedMethods">allowedMethods</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorAllowedMethods">CloudfrontMultitenantDistributionDefaultCacheBehaviorAllowedMethods</a>[]</code> | allowed_methods block. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehavior.property.cachePolicyId">cachePolicyId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudfront_multitenant_distribution#cache_policy_id CloudfrontMultitenantDistribution#cache_policy_id}. |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehavior.property.compress">compress</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudfront_multitenant_distribution#compress CloudfrontMultitenantDistribution#compress}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehavior.property.compress">compress</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudfront_multitenant_distribution#compress CloudfrontMultitenantDistribution#compress}. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehavior.property.fieldLevelEncryptionId">fieldLevelEncryptionId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudfront_multitenant_distribution#field_level_encryption_id CloudfrontMultitenantDistribution#field_level_encryption_id}. |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehavior.property.functionAssociation">functionAssociation</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorFunctionAssociation">CloudfrontMultitenantDistributionDefaultCacheBehaviorFunctionAssociation</a>[]</code> | function_association block. |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehavior.property.lambdaFunctionAssociation">lambdaFunctionAssociation</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorLambdaFunctionAssociation">CloudfrontMultitenantDistributionDefaultCacheBehaviorLambdaFunctionAssociation</a>[]</code> | lambda_function_association block. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehavior.property.functionAssociation">functionAssociation</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorFunctionAssociation">CloudfrontMultitenantDistributionDefaultCacheBehaviorFunctionAssociation</a>[]</code> | function_association block. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehavior.property.lambdaFunctionAssociation">lambdaFunctionAssociation</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorLambdaFunctionAssociation">CloudfrontMultitenantDistributionDefaultCacheBehaviorLambdaFunctionAssociation</a>[]</code> | lambda_function_association block. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehavior.property.originRequestPolicyId">originRequestPolicyId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudfront_multitenant_distribution#origin_request_policy_id CloudfrontMultitenantDistribution#origin_request_policy_id}. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehavior.property.realtimeLogConfigArn">realtimeLogConfigArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudfront_multitenant_distribution#realtime_log_config_arn CloudfrontMultitenantDistribution#realtime_log_config_arn}. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehavior.property.responseHeadersPolicyId">responseHeadersPolicyId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudfront_multitenant_distribution#response_headers_policy_id CloudfrontMultitenantDistribution#response_headers_policy_id}. |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehavior.property.trustedKeyGroups">trustedKeyGroups</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorTrustedKeyGroups">CloudfrontMultitenantDistributionDefaultCacheBehaviorTrustedKeyGroups</a>[]</code> | trusted_key_groups block. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehavior.property.trustedKeyGroups">trustedKeyGroups</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorTrustedKeyGroups">CloudfrontMultitenantDistributionDefaultCacheBehaviorTrustedKeyGroups</a>[]</code> | trusted_key_groups block. |
 
 ---
 
@@ -2224,7 +2224,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly allowedMethods: IResolvable | CloudfrontMultitenantDistributionDefaultCacheBehaviorAllowedMethods[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorAllowedMethods">CloudfrontMultitenantDistributionDefaultCacheBehaviorAllowedMethods</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorAllowedMethods">CloudfrontMultitenantDistributionDefaultCacheBehaviorAllowedMethods</a>[]
 
 allowed_methods block.
 
@@ -2250,7 +2250,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly compress: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudfront_multitenant_distribution#compress CloudfrontMultitenantDistribution#compress}.
 
@@ -2274,7 +2274,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly functionAssociation: IResolvable | CloudfrontMultitenantDistributionDefaultCacheBehaviorFunctionAssociation[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorFunctionAssociation">CloudfrontMultitenantDistributionDefaultCacheBehaviorFunctionAssociation</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorFunctionAssociation">CloudfrontMultitenantDistributionDefaultCacheBehaviorFunctionAssociation</a>[]
 
 function_association block.
 
@@ -2288,7 +2288,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly lambdaFunctionAssociation: IResolvable | CloudfrontMultitenantDistributionDefaultCacheBehaviorLambdaFunctionAssociation[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorLambdaFunctionAssociation">CloudfrontMultitenantDistributionDefaultCacheBehaviorLambdaFunctionAssociation</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorLambdaFunctionAssociation">CloudfrontMultitenantDistributionDefaultCacheBehaviorLambdaFunctionAssociation</a>[]
 
 lambda_function_association block.
 
@@ -2338,7 +2338,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly trustedKeyGroups: IResolvable | CloudfrontMultitenantDistributionDefaultCacheBehaviorTrustedKeyGroups[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorTrustedKeyGroups">CloudfrontMultitenantDistributionDefaultCacheBehaviorTrustedKeyGroups</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorTrustedKeyGroups">CloudfrontMultitenantDistributionDefaultCacheBehaviorTrustedKeyGroups</a>[]
 
 trusted_key_groups block.
 
@@ -2448,7 +2448,7 @@ const cloudfrontMultitenantDistributionDefaultCacheBehaviorLambdaFunctionAssocia
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorLambdaFunctionAssociation.property.eventType">eventType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudfront_multitenant_distribution#event_type CloudfrontMultitenantDistribution#event_type}. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorLambdaFunctionAssociation.property.lambdaFunctionArn">lambdaFunctionArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudfront_multitenant_distribution#lambda_function_arn CloudfrontMultitenantDistribution#lambda_function_arn}. |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorLambdaFunctionAssociation.property.includeBody">includeBody</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudfront_multitenant_distribution#include_body CloudfrontMultitenantDistribution#include_body}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorLambdaFunctionAssociation.property.includeBody">includeBody</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudfront_multitenant_distribution#include_body CloudfrontMultitenantDistribution#include_body}. |
 
 ---
 
@@ -2482,7 +2482,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly includeBody: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudfront_multitenant_distribution#include_body CloudfrontMultitenantDistribution#include_body}.
 
@@ -2502,7 +2502,7 @@ const cloudfrontMultitenantDistributionDefaultCacheBehaviorTrustedKeyGroups: clo
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorTrustedKeyGroups.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudfront_multitenant_distribution#enabled CloudfrontMultitenantDistribution#enabled}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorTrustedKeyGroups.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudfront_multitenant_distribution#enabled CloudfrontMultitenantDistribution#enabled}. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorTrustedKeyGroups.property.items">items</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudfront_multitenant_distribution#items CloudfrontMultitenantDistribution#items}. |
 
 ---
@@ -2513,7 +2513,7 @@ const cloudfrontMultitenantDistributionDefaultCacheBehaviorTrustedKeyGroups: clo
 public readonly enabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudfront_multitenant_distribution#enabled CloudfrontMultitenantDistribution#enabled}.
 
@@ -2549,13 +2549,13 @@ const cloudfrontMultitenantDistributionOrigin: cloudfrontMultitenantDistribution
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOrigin.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudfront_multitenant_distribution#id CloudfrontMultitenantDistribution#id}. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOrigin.property.connectionAttempts">connectionAttempts</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudfront_multitenant_distribution#connection_attempts CloudfrontMultitenantDistribution#connection_attempts}. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOrigin.property.connectionTimeout">connectionTimeout</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudfront_multitenant_distribution#connection_timeout CloudfrontMultitenantDistribution#connection_timeout}. |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOrigin.property.customHeader">customHeader</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginCustomHeader">CloudfrontMultitenantDistributionOriginCustomHeader</a>[]</code> | custom_header block. |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOrigin.property.customOriginConfig">customOriginConfig</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginCustomOriginConfig">CloudfrontMultitenantDistributionOriginCustomOriginConfig</a>[]</code> | custom_origin_config block. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOrigin.property.customHeader">customHeader</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginCustomHeader">CloudfrontMultitenantDistributionOriginCustomHeader</a>[]</code> | custom_header block. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOrigin.property.customOriginConfig">customOriginConfig</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginCustomOriginConfig">CloudfrontMultitenantDistributionOriginCustomOriginConfig</a>[]</code> | custom_origin_config block. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOrigin.property.originAccessControlId">originAccessControlId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudfront_multitenant_distribution#origin_access_control_id CloudfrontMultitenantDistribution#origin_access_control_id}. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOrigin.property.originPath">originPath</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudfront_multitenant_distribution#origin_path CloudfrontMultitenantDistribution#origin_path}. |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOrigin.property.originShield">originShield</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginOriginShield">CloudfrontMultitenantDistributionOriginOriginShield</a>[]</code> | origin_shield block. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOrigin.property.originShield">originShield</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginOriginShield">CloudfrontMultitenantDistributionOriginOriginShield</a>[]</code> | origin_shield block. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOrigin.property.responseCompletionTimeout">responseCompletionTimeout</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudfront_multitenant_distribution#response_completion_timeout CloudfrontMultitenantDistribution#response_completion_timeout}. |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOrigin.property.vpcOriginConfig">vpcOriginConfig</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginVpcOriginConfig">CloudfrontMultitenantDistributionOriginVpcOriginConfig</a>[]</code> | vpc_origin_config block. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOrigin.property.vpcOriginConfig">vpcOriginConfig</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginVpcOriginConfig">CloudfrontMultitenantDistributionOriginVpcOriginConfig</a>[]</code> | vpc_origin_config block. |
 
 ---
 
@@ -2616,7 +2616,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly customHeader: IResolvable | CloudfrontMultitenantDistributionOriginCustomHeader[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginCustomHeader">CloudfrontMultitenantDistributionOriginCustomHeader</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginCustomHeader">CloudfrontMultitenantDistributionOriginCustomHeader</a>[]
 
 custom_header block.
 
@@ -2630,7 +2630,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly customOriginConfig: IResolvable | CloudfrontMultitenantDistributionOriginCustomOriginConfig[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginCustomOriginConfig">CloudfrontMultitenantDistributionOriginCustomOriginConfig</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginCustomOriginConfig">CloudfrontMultitenantDistributionOriginCustomOriginConfig</a>[]
 
 custom_origin_config block.
 
@@ -2668,7 +2668,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly originShield: IResolvable | CloudfrontMultitenantDistributionOriginOriginShield[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginOriginShield">CloudfrontMultitenantDistributionOriginOriginShield</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginOriginShield">CloudfrontMultitenantDistributionOriginOriginShield</a>[]
 
 origin_shield block.
 
@@ -2694,7 +2694,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly vpcOriginConfig: IResolvable | CloudfrontMultitenantDistributionOriginVpcOriginConfig[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginVpcOriginConfig">CloudfrontMultitenantDistributionOriginVpcOriginConfig</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginVpcOriginConfig">CloudfrontMultitenantDistributionOriginVpcOriginConfig</a>[]
 
 vpc_origin_config block.
 
@@ -2868,8 +2868,8 @@ const cloudfrontMultitenantDistributionOriginGroup: cloudfrontMultitenantDistrib
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroup.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudfront_multitenant_distribution#id CloudfrontMultitenantDistribution#id}. |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroup.property.failoverCriteria">failoverCriteria</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroupFailoverCriteria">CloudfrontMultitenantDistributionOriginGroupFailoverCriteria</a>[]</code> | failover_criteria block. |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroup.property.member">member</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroupMember">CloudfrontMultitenantDistributionOriginGroupMember</a>[]</code> | member block. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroup.property.failoverCriteria">failoverCriteria</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroupFailoverCriteria">CloudfrontMultitenantDistributionOriginGroupFailoverCriteria</a>[]</code> | failover_criteria block. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroup.property.member">member</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroupMember">CloudfrontMultitenantDistributionOriginGroupMember</a>[]</code> | member block. |
 
 ---
 
@@ -2894,7 +2894,7 @@ If you experience problems setting this value it might not be settable. Please t
 public readonly failoverCriteria: IResolvable | CloudfrontMultitenantDistributionOriginGroupFailoverCriteria[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroupFailoverCriteria">CloudfrontMultitenantDistributionOriginGroupFailoverCriteria</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroupFailoverCriteria">CloudfrontMultitenantDistributionOriginGroupFailoverCriteria</a>[]
 
 failover_criteria block.
 
@@ -2908,7 +2908,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly member: IResolvable | CloudfrontMultitenantDistributionOriginGroupMember[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroupMember">CloudfrontMultitenantDistributionOriginGroupMember</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroupMember">CloudfrontMultitenantDistributionOriginGroupMember</a>[]
 
 member block.
 
@@ -2990,7 +2990,7 @@ const cloudfrontMultitenantDistributionOriginOriginShield: cloudfrontMultitenant
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginOriginShield.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudfront_multitenant_distribution#enabled CloudfrontMultitenantDistribution#enabled}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginOriginShield.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudfront_multitenant_distribution#enabled CloudfrontMultitenantDistribution#enabled}. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginOriginShield.property.originShieldRegion">originShieldRegion</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudfront_multitenant_distribution#origin_shield_region CloudfrontMultitenantDistribution#origin_shield_region}. |
 
 ---
@@ -3001,7 +3001,7 @@ const cloudfrontMultitenantDistributionOriginOriginShield: cloudfrontMultitenant
 public readonly enabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudfront_multitenant_distribution#enabled CloudfrontMultitenantDistribution#enabled}.
 
@@ -3089,7 +3089,7 @@ const cloudfrontMultitenantDistributionRestrictions: cloudfrontMultitenantDistri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionRestrictions.property.geoRestriction">geoRestriction</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionRestrictionsGeoRestriction">CloudfrontMultitenantDistributionRestrictionsGeoRestriction</a>[]</code> | geo_restriction block. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionRestrictions.property.geoRestriction">geoRestriction</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionRestrictionsGeoRestriction">CloudfrontMultitenantDistributionRestrictionsGeoRestriction</a>[]</code> | geo_restriction block. |
 
 ---
 
@@ -3099,7 +3099,7 @@ const cloudfrontMultitenantDistributionRestrictions: cloudfrontMultitenantDistri
 public readonly geoRestriction: IResolvable | CloudfrontMultitenantDistributionRestrictionsGeoRestriction[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionRestrictionsGeoRestriction">CloudfrontMultitenantDistributionRestrictionsGeoRestriction</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionRestrictionsGeoRestriction">CloudfrontMultitenantDistributionRestrictionsGeoRestriction</a>[]
 
 geo_restriction block.
 
@@ -3164,7 +3164,7 @@ const cloudfrontMultitenantDistributionTenantConfig: cloudfrontMultitenantDistri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfig.property.parameterDefinition">parameterDefinition</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinition">CloudfrontMultitenantDistributionTenantConfigParameterDefinition</a>[]</code> | parameter_definition block. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfig.property.parameterDefinition">parameterDefinition</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinition">CloudfrontMultitenantDistributionTenantConfigParameterDefinition</a>[]</code> | parameter_definition block. |
 
 ---
 
@@ -3174,7 +3174,7 @@ const cloudfrontMultitenantDistributionTenantConfig: cloudfrontMultitenantDistri
 public readonly parameterDefinition: IResolvable | CloudfrontMultitenantDistributionTenantConfigParameterDefinition[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinition">CloudfrontMultitenantDistributionTenantConfigParameterDefinition</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinition">CloudfrontMultitenantDistributionTenantConfigParameterDefinition</a>[]
 
 parameter_definition block.
 
@@ -3197,7 +3197,7 @@ const cloudfrontMultitenantDistributionTenantConfigParameterDefinition: cloudfro
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinition.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudfront_multitenant_distribution#name CloudfrontMultitenantDistribution#name}. |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinition.property.definition">definition</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinition">CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinition</a>[]</code> | definition block. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinition.property.definition">definition</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinition">CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinition</a>[]</code> | definition block. |
 
 ---
 
@@ -3219,7 +3219,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly definition: IResolvable | CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinition[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinition">CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinition</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinition">CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinition</a>[]
 
 definition block.
 
@@ -3241,7 +3241,7 @@ const cloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinition
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinition.property.stringSchema">stringSchema</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinitionStringSchema">CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinitionStringSchema</a>[]</code> | string_schema block. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinition.property.stringSchema">stringSchema</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinitionStringSchema">CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinitionStringSchema</a>[]</code> | string_schema block. |
 
 ---
 
@@ -3251,7 +3251,7 @@ const cloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinition
 public readonly stringSchema: IResolvable | CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinitionStringSchema[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinitionStringSchema">CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinitionStringSchema</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinitionStringSchema">CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinitionStringSchema</a>[]
 
 string_schema block.
 
@@ -3273,7 +3273,7 @@ const cloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinition
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinitionStringSchema.property.required">required</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudfront_multitenant_distribution#required CloudfrontMultitenantDistribution#required}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinitionStringSchema.property.required">required</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudfront_multitenant_distribution#required CloudfrontMultitenantDistribution#required}. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinitionStringSchema.property.comment">comment</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudfront_multitenant_distribution#comment CloudfrontMultitenantDistribution#comment}. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinitionStringSchema.property.defaultValue">defaultValue</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudfront_multitenant_distribution#default_value CloudfrontMultitenantDistribution#default_value}. |
 
@@ -3285,7 +3285,7 @@ const cloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinition
 public readonly required: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudfront_multitenant_distribution#required CloudfrontMultitenantDistribution#required}.
 
@@ -3392,7 +3392,7 @@ const cloudfrontMultitenantDistributionViewerCertificate: cloudfrontMultitenantD
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionViewerCertificate.property.acmCertificateArn">acmCertificateArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudfront_multitenant_distribution#acm_certificate_arn CloudfrontMultitenantDistribution#acm_certificate_arn}. |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionViewerCertificate.property.cloudfrontDefaultCertificate">cloudfrontDefaultCertificate</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudfront_multitenant_distribution#cloudfront_default_certificate CloudfrontMultitenantDistribution#cloudfront_default_certificate}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionViewerCertificate.property.cloudfrontDefaultCertificate">cloudfrontDefaultCertificate</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudfront_multitenant_distribution#cloudfront_default_certificate CloudfrontMultitenantDistribution#cloudfront_default_certificate}. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionViewerCertificate.property.minimumProtocolVersion">minimumProtocolVersion</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudfront_multitenant_distribution#minimum_protocol_version CloudfrontMultitenantDistribution#minimum_protocol_version}. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionViewerCertificate.property.sslSupportMethod">sslSupportMethod</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudfront_multitenant_distribution#ssl_support_method CloudfrontMultitenantDistribution#ssl_support_method}. |
 
@@ -3416,7 +3416,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly cloudfrontDefaultCertificate: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/cloudfront_multitenant_distribution#cloudfront_default_certificate CloudfrontMultitenantDistribution#cloudfront_default_certificate}.
 
@@ -3460,7 +3460,7 @@ new cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionActiveTru
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionActiveTrustedKeyGroupsItemsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionActiveTrustedKeyGroupsItemsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionActiveTrustedKeyGroupsItemsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionActiveTrustedKeyGroupsItemsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -3468,7 +3468,7 @@ new cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionActiveTru
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionActiveTrustedKeyGroupsItemsList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -3534,7 +3534,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionActiveTrustedKeyGroupsItemsList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -3569,7 +3569,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionActiveTrustedKeyGroupsItemsList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionActiveTrustedKeyGroupsItemsList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionActiveTrustedKeyGroupsItemsList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionActiveTrustedKeyGroupsItems">CloudfrontMultitenantDistributionActiveTrustedKeyGroupsItems</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionActiveTrustedKeyGroupsItemsList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionActiveTrustedKeyGroupsItems">CloudfrontMultitenantDistributionActiveTrustedKeyGroupsItems</a>[]</code> | *No description.* |
 
 ---
 
@@ -3603,7 +3603,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | CloudfrontMultitenantDistributionActiveTrustedKeyGroupsItems[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionActiveTrustedKeyGroupsItems">CloudfrontMultitenantDistributionActiveTrustedKeyGroupsItems</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionActiveTrustedKeyGroupsItems">CloudfrontMultitenantDistributionActiveTrustedKeyGroupsItems</a>[]
 
 ---
 
@@ -3620,7 +3620,7 @@ new cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionActiveTru
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionActiveTrustedKeyGroupsItemsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionActiveTrustedKeyGroupsItemsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionActiveTrustedKeyGroupsItemsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionActiveTrustedKeyGroupsItemsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionActiveTrustedKeyGroupsItemsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -3629,7 +3629,7 @@ new cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionActiveTru
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionActiveTrustedKeyGroupsItemsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -3815,7 +3815,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionActiveTrustedKeyGroupsItemsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -3838,7 +3838,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionActiveTrustedKeyGroupsItemsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionActiveTrustedKeyGroupsItemsOutputReference.property.keyGroupId">keyGroupId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionActiveTrustedKeyGroupsItemsOutputReference.property.keyPairIds">keyPairIds</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionActiveTrustedKeyGroupsItemsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionActiveTrustedKeyGroupsItems">CloudfrontMultitenantDistributionActiveTrustedKeyGroupsItems</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionActiveTrustedKeyGroupsItemsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionActiveTrustedKeyGroupsItems">CloudfrontMultitenantDistributionActiveTrustedKeyGroupsItems</a></code> | *No description.* |
 
 ---
 
@@ -3892,7 +3892,7 @@ public readonly keyPairIds: string[];
 public readonly internalValue: IResolvable | CloudfrontMultitenantDistributionActiveTrustedKeyGroupsItems;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionActiveTrustedKeyGroupsItems">CloudfrontMultitenantDistributionActiveTrustedKeyGroupsItems</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionActiveTrustedKeyGroupsItems">CloudfrontMultitenantDistributionActiveTrustedKeyGroupsItems</a>
 
 ---
 
@@ -3909,7 +3909,7 @@ new cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionActiveTru
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionActiveTrustedKeyGroupsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionActiveTrustedKeyGroupsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionActiveTrustedKeyGroupsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionActiveTrustedKeyGroupsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -3917,7 +3917,7 @@ new cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionActiveTru
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionActiveTrustedKeyGroupsList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -3983,7 +3983,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionActiveTrustedKeyGroupsList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -4018,7 +4018,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionActiveTrustedKeyGroupsList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionActiveTrustedKeyGroupsList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionActiveTrustedKeyGroupsList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionActiveTrustedKeyGroups">CloudfrontMultitenantDistributionActiveTrustedKeyGroups</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionActiveTrustedKeyGroupsList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionActiveTrustedKeyGroups">CloudfrontMultitenantDistributionActiveTrustedKeyGroups</a>[]</code> | *No description.* |
 
 ---
 
@@ -4052,7 +4052,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | CloudfrontMultitenantDistributionActiveTrustedKeyGroups[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionActiveTrustedKeyGroups">CloudfrontMultitenantDistributionActiveTrustedKeyGroups</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionActiveTrustedKeyGroups">CloudfrontMultitenantDistributionActiveTrustedKeyGroups</a>[]
 
 ---
 
@@ -4069,7 +4069,7 @@ new cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionActiveTru
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionActiveTrustedKeyGroupsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionActiveTrustedKeyGroupsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionActiveTrustedKeyGroupsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionActiveTrustedKeyGroupsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionActiveTrustedKeyGroupsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -4078,7 +4078,7 @@ new cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionActiveTru
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionActiveTrustedKeyGroupsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -4266,7 +4266,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionActiveTrustedKeyGroupsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -4288,7 +4288,7 @@ public putItems(value: IResolvable | CloudfrontMultitenantDistributionActiveTrus
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionActiveTrustedKeyGroupsOutputReference.putItems.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionActiveTrustedKeyGroupsItems">CloudfrontMultitenantDistributionActiveTrustedKeyGroupsItems</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionActiveTrustedKeyGroupsItems">CloudfrontMultitenantDistributionActiveTrustedKeyGroupsItems</a>[]
 
 ---
 
@@ -4305,10 +4305,10 @@ public resetItems(): void
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionActiveTrustedKeyGroupsOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionActiveTrustedKeyGroupsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionActiveTrustedKeyGroupsOutputReference.property.enabled">enabled</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionActiveTrustedKeyGroupsOutputReference.property.enabled">enabled</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionActiveTrustedKeyGroupsOutputReference.property.items">items</a></code> | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionActiveTrustedKeyGroupsItemsList">CloudfrontMultitenantDistributionActiveTrustedKeyGroupsItemsList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionActiveTrustedKeyGroupsOutputReference.property.itemsInput">itemsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionActiveTrustedKeyGroupsItems">CloudfrontMultitenantDistributionActiveTrustedKeyGroupsItems</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionActiveTrustedKeyGroupsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionActiveTrustedKeyGroups">CloudfrontMultitenantDistributionActiveTrustedKeyGroups</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionActiveTrustedKeyGroupsOutputReference.property.itemsInput">itemsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionActiveTrustedKeyGroupsItems">CloudfrontMultitenantDistributionActiveTrustedKeyGroupsItems</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionActiveTrustedKeyGroupsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionActiveTrustedKeyGroups">CloudfrontMultitenantDistributionActiveTrustedKeyGroups</a></code> | *No description.* |
 
 ---
 
@@ -4342,7 +4342,7 @@ public readonly fqn: string;
 public readonly enabled: IResolvable;
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -4362,7 +4362,7 @@ public readonly items: CloudfrontMultitenantDistributionActiveTrustedKeyGroupsIt
 public readonly itemsInput: IResolvable | CloudfrontMultitenantDistributionActiveTrustedKeyGroupsItems[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionActiveTrustedKeyGroupsItems">CloudfrontMultitenantDistributionActiveTrustedKeyGroupsItems</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionActiveTrustedKeyGroupsItems">CloudfrontMultitenantDistributionActiveTrustedKeyGroupsItems</a>[]
 
 ---
 
@@ -4372,7 +4372,7 @@ public readonly itemsInput: IResolvable | CloudfrontMultitenantDistributionActiv
 public readonly internalValue: IResolvable | CloudfrontMultitenantDistributionActiveTrustedKeyGroups;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionActiveTrustedKeyGroups">CloudfrontMultitenantDistributionActiveTrustedKeyGroups</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionActiveTrustedKeyGroups">CloudfrontMultitenantDistributionActiveTrustedKeyGroups</a>
 
 ---
 
@@ -4389,7 +4389,7 @@ new cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBeha
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorAllowedMethodsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorAllowedMethodsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorAllowedMethodsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorAllowedMethodsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -4397,7 +4397,7 @@ new cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBeha
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorAllowedMethodsList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -4463,7 +4463,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorAllowedMethodsList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -4498,7 +4498,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorAllowedMethodsList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorAllowedMethodsList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorAllowedMethodsList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorAllowedMethods">CloudfrontMultitenantDistributionCacheBehaviorAllowedMethods</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorAllowedMethodsList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorAllowedMethods">CloudfrontMultitenantDistributionCacheBehaviorAllowedMethods</a>[]</code> | *No description.* |
 
 ---
 
@@ -4532,7 +4532,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | CloudfrontMultitenantDistributionCacheBehaviorAllowedMethods[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorAllowedMethods">CloudfrontMultitenantDistributionCacheBehaviorAllowedMethods</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorAllowedMethods">CloudfrontMultitenantDistributionCacheBehaviorAllowedMethods</a>[]
 
 ---
 
@@ -4549,7 +4549,7 @@ new cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBeha
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorAllowedMethodsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorAllowedMethodsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorAllowedMethodsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorAllowedMethodsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorAllowedMethodsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -4558,7 +4558,7 @@ new cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBeha
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorAllowedMethodsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -4744,7 +4744,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorAllowedMethodsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -4769,7 +4769,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorAllowedMethodsOutputReference.property.itemsInput">itemsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorAllowedMethodsOutputReference.property.cachedMethods">cachedMethods</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorAllowedMethodsOutputReference.property.items">items</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorAllowedMethodsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorAllowedMethods">CloudfrontMultitenantDistributionCacheBehaviorAllowedMethods</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorAllowedMethodsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorAllowedMethods">CloudfrontMultitenantDistributionCacheBehaviorAllowedMethods</a></code> | *No description.* |
 
 ---
 
@@ -4843,7 +4843,7 @@ public readonly items: string[];
 public readonly internalValue: IResolvable | CloudfrontMultitenantDistributionCacheBehaviorAllowedMethods;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorAllowedMethods">CloudfrontMultitenantDistributionCacheBehaviorAllowedMethods</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorAllowedMethods">CloudfrontMultitenantDistributionCacheBehaviorAllowedMethods</a>
 
 ---
 
@@ -4860,7 +4860,7 @@ new cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBeha
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorFunctionAssociationList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorFunctionAssociationList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorFunctionAssociationList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorFunctionAssociationList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -4868,7 +4868,7 @@ new cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBeha
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorFunctionAssociationList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -4934,7 +4934,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorFunctionAssociationList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -4969,7 +4969,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorFunctionAssociationList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorFunctionAssociationList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorFunctionAssociationList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorFunctionAssociation">CloudfrontMultitenantDistributionCacheBehaviorFunctionAssociation</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorFunctionAssociationList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorFunctionAssociation">CloudfrontMultitenantDistributionCacheBehaviorFunctionAssociation</a>[]</code> | *No description.* |
 
 ---
 
@@ -5003,7 +5003,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | CloudfrontMultitenantDistributionCacheBehaviorFunctionAssociation[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorFunctionAssociation">CloudfrontMultitenantDistributionCacheBehaviorFunctionAssociation</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorFunctionAssociation">CloudfrontMultitenantDistributionCacheBehaviorFunctionAssociation</a>[]
 
 ---
 
@@ -5020,7 +5020,7 @@ new cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBeha
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorFunctionAssociationOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorFunctionAssociationOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorFunctionAssociationOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorFunctionAssociationOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorFunctionAssociationOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -5029,7 +5029,7 @@ new cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBeha
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorFunctionAssociationOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -5215,7 +5215,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorFunctionAssociationOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -5240,7 +5240,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorFunctionAssociationOutputReference.property.functionArnInput">functionArnInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorFunctionAssociationOutputReference.property.eventType">eventType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorFunctionAssociationOutputReference.property.functionArn">functionArn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorFunctionAssociationOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorFunctionAssociation">CloudfrontMultitenantDistributionCacheBehaviorFunctionAssociation</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorFunctionAssociationOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorFunctionAssociation">CloudfrontMultitenantDistributionCacheBehaviorFunctionAssociation</a></code> | *No description.* |
 
 ---
 
@@ -5314,7 +5314,7 @@ public readonly functionArn: string;
 public readonly internalValue: IResolvable | CloudfrontMultitenantDistributionCacheBehaviorFunctionAssociation;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorFunctionAssociation">CloudfrontMultitenantDistributionCacheBehaviorFunctionAssociation</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorFunctionAssociation">CloudfrontMultitenantDistributionCacheBehaviorFunctionAssociation</a>
 
 ---
 
@@ -5331,7 +5331,7 @@ new cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBeha
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorLambdaFunctionAssociationList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorLambdaFunctionAssociationList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorLambdaFunctionAssociationList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorLambdaFunctionAssociationList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -5339,7 +5339,7 @@ new cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBeha
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorLambdaFunctionAssociationList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -5405,7 +5405,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorLambdaFunctionAssociationList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -5440,7 +5440,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorLambdaFunctionAssociationList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorLambdaFunctionAssociationList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorLambdaFunctionAssociationList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorLambdaFunctionAssociation">CloudfrontMultitenantDistributionCacheBehaviorLambdaFunctionAssociation</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorLambdaFunctionAssociationList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorLambdaFunctionAssociation">CloudfrontMultitenantDistributionCacheBehaviorLambdaFunctionAssociation</a>[]</code> | *No description.* |
 
 ---
 
@@ -5474,7 +5474,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | CloudfrontMultitenantDistributionCacheBehaviorLambdaFunctionAssociation[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorLambdaFunctionAssociation">CloudfrontMultitenantDistributionCacheBehaviorLambdaFunctionAssociation</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorLambdaFunctionAssociation">CloudfrontMultitenantDistributionCacheBehaviorLambdaFunctionAssociation</a>[]
 
 ---
 
@@ -5491,7 +5491,7 @@ new cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBeha
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorLambdaFunctionAssociationOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorLambdaFunctionAssociationOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorLambdaFunctionAssociationOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorLambdaFunctionAssociationOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorLambdaFunctionAssociationOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -5500,7 +5500,7 @@ new cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBeha
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorLambdaFunctionAssociationOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -5687,7 +5687,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorLambdaFunctionAssociationOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -5715,12 +5715,12 @@ public resetIncludeBody(): void
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorLambdaFunctionAssociationOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorLambdaFunctionAssociationOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorLambdaFunctionAssociationOutputReference.property.eventTypeInput">eventTypeInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorLambdaFunctionAssociationOutputReference.property.includeBodyInput">includeBodyInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorLambdaFunctionAssociationOutputReference.property.includeBodyInput">includeBodyInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorLambdaFunctionAssociationOutputReference.property.lambdaFunctionArnInput">lambdaFunctionArnInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorLambdaFunctionAssociationOutputReference.property.eventType">eventType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorLambdaFunctionAssociationOutputReference.property.includeBody">includeBody</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorLambdaFunctionAssociationOutputReference.property.includeBody">includeBody</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorLambdaFunctionAssociationOutputReference.property.lambdaFunctionArn">lambdaFunctionArn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorLambdaFunctionAssociationOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorLambdaFunctionAssociation">CloudfrontMultitenantDistributionCacheBehaviorLambdaFunctionAssociation</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorLambdaFunctionAssociationOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorLambdaFunctionAssociation">CloudfrontMultitenantDistributionCacheBehaviorLambdaFunctionAssociation</a></code> | *No description.* |
 
 ---
 
@@ -5764,7 +5764,7 @@ public readonly eventTypeInput: string;
 public readonly includeBodyInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -5794,7 +5794,7 @@ public readonly eventType: string;
 public readonly includeBody: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -5814,7 +5814,7 @@ public readonly lambdaFunctionArn: string;
 public readonly internalValue: IResolvable | CloudfrontMultitenantDistributionCacheBehaviorLambdaFunctionAssociation;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorLambdaFunctionAssociation">CloudfrontMultitenantDistributionCacheBehaviorLambdaFunctionAssociation</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorLambdaFunctionAssociation">CloudfrontMultitenantDistributionCacheBehaviorLambdaFunctionAssociation</a>
 
 ---
 
@@ -5831,7 +5831,7 @@ new cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBeha
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -5839,7 +5839,7 @@ new cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBeha
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -5905,7 +5905,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -5940,7 +5940,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehavior">CloudfrontMultitenantDistributionCacheBehavior</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehavior">CloudfrontMultitenantDistributionCacheBehavior</a>[]</code> | *No description.* |
 
 ---
 
@@ -5974,7 +5974,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | CloudfrontMultitenantDistributionCacheBehavior[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehavior">CloudfrontMultitenantDistributionCacheBehavior</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehavior">CloudfrontMultitenantDistributionCacheBehavior</a>[]
 
 ---
 
@@ -5991,7 +5991,7 @@ new cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBeha
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -6000,7 +6000,7 @@ new cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBeha
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -6200,7 +6200,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -6222,7 +6222,7 @@ public putAllowedMethods(value: IResolvable | CloudfrontMultitenantDistributionC
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorOutputReference.putAllowedMethods.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorAllowedMethods">CloudfrontMultitenantDistributionCacheBehaviorAllowedMethods</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorAllowedMethods">CloudfrontMultitenantDistributionCacheBehaviorAllowedMethods</a>[]
 
 ---
 
@@ -6234,7 +6234,7 @@ public putFunctionAssociation(value: IResolvable | CloudfrontMultitenantDistribu
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorOutputReference.putFunctionAssociation.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorFunctionAssociation">CloudfrontMultitenantDistributionCacheBehaviorFunctionAssociation</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorFunctionAssociation">CloudfrontMultitenantDistributionCacheBehaviorFunctionAssociation</a>[]
 
 ---
 
@@ -6246,7 +6246,7 @@ public putLambdaFunctionAssociation(value: IResolvable | CloudfrontMultitenantDi
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorOutputReference.putLambdaFunctionAssociation.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorLambdaFunctionAssociation">CloudfrontMultitenantDistributionCacheBehaviorLambdaFunctionAssociation</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorLambdaFunctionAssociation">CloudfrontMultitenantDistributionCacheBehaviorLambdaFunctionAssociation</a>[]
 
 ---
 
@@ -6258,7 +6258,7 @@ public putTrustedKeyGroups(value: IResolvable | CloudfrontMultitenantDistributio
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorOutputReference.putTrustedKeyGroups.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorTrustedKeyGroups">CloudfrontMultitenantDistributionCacheBehaviorTrustedKeyGroups</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorTrustedKeyGroups">CloudfrontMultitenantDistributionCacheBehaviorTrustedKeyGroups</a>[]
 
 ---
 
@@ -6333,21 +6333,21 @@ public resetTrustedKeyGroups(): void
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorOutputReference.property.functionAssociation">functionAssociation</a></code> | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorFunctionAssociationList">CloudfrontMultitenantDistributionCacheBehaviorFunctionAssociationList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorOutputReference.property.lambdaFunctionAssociation">lambdaFunctionAssociation</a></code> | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorLambdaFunctionAssociationList">CloudfrontMultitenantDistributionCacheBehaviorLambdaFunctionAssociationList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorOutputReference.property.trustedKeyGroups">trustedKeyGroups</a></code> | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorTrustedKeyGroupsList">CloudfrontMultitenantDistributionCacheBehaviorTrustedKeyGroupsList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorOutputReference.property.allowedMethodsInput">allowedMethodsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorAllowedMethods">CloudfrontMultitenantDistributionCacheBehaviorAllowedMethods</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorOutputReference.property.allowedMethodsInput">allowedMethodsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorAllowedMethods">CloudfrontMultitenantDistributionCacheBehaviorAllowedMethods</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorOutputReference.property.cachePolicyIdInput">cachePolicyIdInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorOutputReference.property.compressInput">compressInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorOutputReference.property.compressInput">compressInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorOutputReference.property.fieldLevelEncryptionIdInput">fieldLevelEncryptionIdInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorOutputReference.property.functionAssociationInput">functionAssociationInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorFunctionAssociation">CloudfrontMultitenantDistributionCacheBehaviorFunctionAssociation</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorOutputReference.property.lambdaFunctionAssociationInput">lambdaFunctionAssociationInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorLambdaFunctionAssociation">CloudfrontMultitenantDistributionCacheBehaviorLambdaFunctionAssociation</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorOutputReference.property.functionAssociationInput">functionAssociationInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorFunctionAssociation">CloudfrontMultitenantDistributionCacheBehaviorFunctionAssociation</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorOutputReference.property.lambdaFunctionAssociationInput">lambdaFunctionAssociationInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorLambdaFunctionAssociation">CloudfrontMultitenantDistributionCacheBehaviorLambdaFunctionAssociation</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorOutputReference.property.originRequestPolicyIdInput">originRequestPolicyIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorOutputReference.property.pathPatternInput">pathPatternInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorOutputReference.property.realtimeLogConfigArnInput">realtimeLogConfigArnInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorOutputReference.property.responseHeadersPolicyIdInput">responseHeadersPolicyIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorOutputReference.property.targetOriginIdInput">targetOriginIdInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorOutputReference.property.trustedKeyGroupsInput">trustedKeyGroupsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorTrustedKeyGroups">CloudfrontMultitenantDistributionCacheBehaviorTrustedKeyGroups</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorOutputReference.property.trustedKeyGroupsInput">trustedKeyGroupsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorTrustedKeyGroups">CloudfrontMultitenantDistributionCacheBehaviorTrustedKeyGroups</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorOutputReference.property.viewerProtocolPolicyInput">viewerProtocolPolicyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorOutputReference.property.cachePolicyId">cachePolicyId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorOutputReference.property.compress">compress</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorOutputReference.property.compress">compress</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorOutputReference.property.fieldLevelEncryptionId">fieldLevelEncryptionId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorOutputReference.property.originRequestPolicyId">originRequestPolicyId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorOutputReference.property.pathPattern">pathPattern</a></code> | <code>string</code> | *No description.* |
@@ -6355,7 +6355,7 @@ public resetTrustedKeyGroups(): void
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorOutputReference.property.responseHeadersPolicyId">responseHeadersPolicyId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorOutputReference.property.targetOriginId">targetOriginId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorOutputReference.property.viewerProtocolPolicy">viewerProtocolPolicy</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehavior">CloudfrontMultitenantDistributionCacheBehavior</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehavior">CloudfrontMultitenantDistributionCacheBehavior</a></code> | *No description.* |
 
 ---
 
@@ -6429,7 +6429,7 @@ public readonly trustedKeyGroups: CloudfrontMultitenantDistributionCacheBehavior
 public readonly allowedMethodsInput: IResolvable | CloudfrontMultitenantDistributionCacheBehaviorAllowedMethods[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorAllowedMethods">CloudfrontMultitenantDistributionCacheBehaviorAllowedMethods</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorAllowedMethods">CloudfrontMultitenantDistributionCacheBehaviorAllowedMethods</a>[]
 
 ---
 
@@ -6449,7 +6449,7 @@ public readonly cachePolicyIdInput: string;
 public readonly compressInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -6469,7 +6469,7 @@ public readonly fieldLevelEncryptionIdInput: string;
 public readonly functionAssociationInput: IResolvable | CloudfrontMultitenantDistributionCacheBehaviorFunctionAssociation[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorFunctionAssociation">CloudfrontMultitenantDistributionCacheBehaviorFunctionAssociation</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorFunctionAssociation">CloudfrontMultitenantDistributionCacheBehaviorFunctionAssociation</a>[]
 
 ---
 
@@ -6479,7 +6479,7 @@ public readonly functionAssociationInput: IResolvable | CloudfrontMultitenantDis
 public readonly lambdaFunctionAssociationInput: IResolvable | CloudfrontMultitenantDistributionCacheBehaviorLambdaFunctionAssociation[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorLambdaFunctionAssociation">CloudfrontMultitenantDistributionCacheBehaviorLambdaFunctionAssociation</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorLambdaFunctionAssociation">CloudfrontMultitenantDistributionCacheBehaviorLambdaFunctionAssociation</a>[]
 
 ---
 
@@ -6539,7 +6539,7 @@ public readonly targetOriginIdInput: string;
 public readonly trustedKeyGroupsInput: IResolvable | CloudfrontMultitenantDistributionCacheBehaviorTrustedKeyGroups[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorTrustedKeyGroups">CloudfrontMultitenantDistributionCacheBehaviorTrustedKeyGroups</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorTrustedKeyGroups">CloudfrontMultitenantDistributionCacheBehaviorTrustedKeyGroups</a>[]
 
 ---
 
@@ -6569,7 +6569,7 @@ public readonly cachePolicyId: string;
 public readonly compress: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -6649,7 +6649,7 @@ public readonly viewerProtocolPolicy: string;
 public readonly internalValue: IResolvable | CloudfrontMultitenantDistributionCacheBehavior;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehavior">CloudfrontMultitenantDistributionCacheBehavior</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehavior">CloudfrontMultitenantDistributionCacheBehavior</a>
 
 ---
 
@@ -6666,7 +6666,7 @@ new cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBeha
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorTrustedKeyGroupsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorTrustedKeyGroupsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorTrustedKeyGroupsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorTrustedKeyGroupsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -6674,7 +6674,7 @@ new cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBeha
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorTrustedKeyGroupsList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -6740,7 +6740,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorTrustedKeyGroupsList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -6775,7 +6775,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorTrustedKeyGroupsList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorTrustedKeyGroupsList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorTrustedKeyGroupsList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorTrustedKeyGroups">CloudfrontMultitenantDistributionCacheBehaviorTrustedKeyGroups</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorTrustedKeyGroupsList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorTrustedKeyGroups">CloudfrontMultitenantDistributionCacheBehaviorTrustedKeyGroups</a>[]</code> | *No description.* |
 
 ---
 
@@ -6809,7 +6809,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | CloudfrontMultitenantDistributionCacheBehaviorTrustedKeyGroups[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorTrustedKeyGroups">CloudfrontMultitenantDistributionCacheBehaviorTrustedKeyGroups</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorTrustedKeyGroups">CloudfrontMultitenantDistributionCacheBehaviorTrustedKeyGroups</a>[]
 
 ---
 
@@ -6826,7 +6826,7 @@ new cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBeha
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorTrustedKeyGroupsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorTrustedKeyGroupsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorTrustedKeyGroupsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorTrustedKeyGroupsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorTrustedKeyGroupsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -6835,7 +6835,7 @@ new cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBeha
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorTrustedKeyGroupsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -7023,7 +7023,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorTrustedKeyGroupsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -7056,11 +7056,11 @@ public resetItems(): void
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorTrustedKeyGroupsOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorTrustedKeyGroupsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorTrustedKeyGroupsOutputReference.property.enabledInput">enabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorTrustedKeyGroupsOutputReference.property.enabledInput">enabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorTrustedKeyGroupsOutputReference.property.itemsInput">itemsInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorTrustedKeyGroupsOutputReference.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorTrustedKeyGroupsOutputReference.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorTrustedKeyGroupsOutputReference.property.items">items</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorTrustedKeyGroupsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorTrustedKeyGroups">CloudfrontMultitenantDistributionCacheBehaviorTrustedKeyGroups</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorTrustedKeyGroupsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorTrustedKeyGroups">CloudfrontMultitenantDistributionCacheBehaviorTrustedKeyGroups</a></code> | *No description.* |
 
 ---
 
@@ -7094,7 +7094,7 @@ public readonly fqn: string;
 public readonly enabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -7114,7 +7114,7 @@ public readonly itemsInput: string[];
 public readonly enabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -7134,7 +7134,7 @@ public readonly items: string[];
 public readonly internalValue: IResolvable | CloudfrontMultitenantDistributionCacheBehaviorTrustedKeyGroups;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorTrustedKeyGroups">CloudfrontMultitenantDistributionCacheBehaviorTrustedKeyGroups</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorTrustedKeyGroups">CloudfrontMultitenantDistributionCacheBehaviorTrustedKeyGroups</a>
 
 ---
 
@@ -7151,7 +7151,7 @@ new cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCustomErr
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCustomErrorResponseList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCustomErrorResponseList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCustomErrorResponseList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCustomErrorResponseList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -7159,7 +7159,7 @@ new cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCustomErr
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCustomErrorResponseList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -7225,7 +7225,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCustomErrorResponseList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -7260,7 +7260,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCustomErrorResponseList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCustomErrorResponseList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCustomErrorResponseList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCustomErrorResponse">CloudfrontMultitenantDistributionCustomErrorResponse</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCustomErrorResponseList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCustomErrorResponse">CloudfrontMultitenantDistributionCustomErrorResponse</a>[]</code> | *No description.* |
 
 ---
 
@@ -7294,7 +7294,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | CloudfrontMultitenantDistributionCustomErrorResponse[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCustomErrorResponse">CloudfrontMultitenantDistributionCustomErrorResponse</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCustomErrorResponse">CloudfrontMultitenantDistributionCustomErrorResponse</a>[]
 
 ---
 
@@ -7311,7 +7311,7 @@ new cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCustomErr
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCustomErrorResponseOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCustomErrorResponseOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCustomErrorResponseOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCustomErrorResponseOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCustomErrorResponseOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -7320,7 +7320,7 @@ new cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCustomErr
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCustomErrorResponseOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -7509,7 +7509,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCustomErrorResponseOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -7556,7 +7556,7 @@ public resetResponsePagePath(): void
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCustomErrorResponseOutputReference.property.errorCode">errorCode</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCustomErrorResponseOutputReference.property.responseCode">responseCode</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCustomErrorResponseOutputReference.property.responsePagePath">responsePagePath</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCustomErrorResponseOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCustomErrorResponse">CloudfrontMultitenantDistributionCustomErrorResponse</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCustomErrorResponseOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCustomErrorResponse">CloudfrontMultitenantDistributionCustomErrorResponse</a></code> | *No description.* |
 
 ---
 
@@ -7670,7 +7670,7 @@ public readonly responsePagePath: string;
 public readonly internalValue: IResolvable | CloudfrontMultitenantDistributionCustomErrorResponse;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCustomErrorResponse">CloudfrontMultitenantDistributionCustomErrorResponse</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCustomErrorResponse">CloudfrontMultitenantDistributionCustomErrorResponse</a>
 
 ---
 
@@ -7687,7 +7687,7 @@ new cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCa
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorAllowedMethodsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorAllowedMethodsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorAllowedMethodsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorAllowedMethodsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -7695,7 +7695,7 @@ new cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCa
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorAllowedMethodsList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -7761,7 +7761,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorAllowedMethodsList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -7796,7 +7796,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorAllowedMethodsList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorAllowedMethodsList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorAllowedMethodsList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorAllowedMethods">CloudfrontMultitenantDistributionDefaultCacheBehaviorAllowedMethods</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorAllowedMethodsList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorAllowedMethods">CloudfrontMultitenantDistributionDefaultCacheBehaviorAllowedMethods</a>[]</code> | *No description.* |
 
 ---
 
@@ -7830,7 +7830,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | CloudfrontMultitenantDistributionDefaultCacheBehaviorAllowedMethods[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorAllowedMethods">CloudfrontMultitenantDistributionDefaultCacheBehaviorAllowedMethods</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorAllowedMethods">CloudfrontMultitenantDistributionDefaultCacheBehaviorAllowedMethods</a>[]
 
 ---
 
@@ -7847,7 +7847,7 @@ new cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCa
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorAllowedMethodsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorAllowedMethodsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorAllowedMethodsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorAllowedMethodsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorAllowedMethodsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -7856,7 +7856,7 @@ new cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCa
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorAllowedMethodsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -8042,7 +8042,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorAllowedMethodsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -8067,7 +8067,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorAllowedMethodsOutputReference.property.itemsInput">itemsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorAllowedMethodsOutputReference.property.cachedMethods">cachedMethods</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorAllowedMethodsOutputReference.property.items">items</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorAllowedMethodsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorAllowedMethods">CloudfrontMultitenantDistributionDefaultCacheBehaviorAllowedMethods</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorAllowedMethodsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorAllowedMethods">CloudfrontMultitenantDistributionDefaultCacheBehaviorAllowedMethods</a></code> | *No description.* |
 
 ---
 
@@ -8141,7 +8141,7 @@ public readonly items: string[];
 public readonly internalValue: IResolvable | CloudfrontMultitenantDistributionDefaultCacheBehaviorAllowedMethods;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorAllowedMethods">CloudfrontMultitenantDistributionDefaultCacheBehaviorAllowedMethods</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorAllowedMethods">CloudfrontMultitenantDistributionDefaultCacheBehaviorAllowedMethods</a>
 
 ---
 
@@ -8158,7 +8158,7 @@ new cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCa
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorFunctionAssociationList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorFunctionAssociationList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorFunctionAssociationList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorFunctionAssociationList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -8166,7 +8166,7 @@ new cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCa
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorFunctionAssociationList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -8232,7 +8232,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorFunctionAssociationList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -8267,7 +8267,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorFunctionAssociationList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorFunctionAssociationList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorFunctionAssociationList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorFunctionAssociation">CloudfrontMultitenantDistributionDefaultCacheBehaviorFunctionAssociation</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorFunctionAssociationList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorFunctionAssociation">CloudfrontMultitenantDistributionDefaultCacheBehaviorFunctionAssociation</a>[]</code> | *No description.* |
 
 ---
 
@@ -8301,7 +8301,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | CloudfrontMultitenantDistributionDefaultCacheBehaviorFunctionAssociation[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorFunctionAssociation">CloudfrontMultitenantDistributionDefaultCacheBehaviorFunctionAssociation</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorFunctionAssociation">CloudfrontMultitenantDistributionDefaultCacheBehaviorFunctionAssociation</a>[]
 
 ---
 
@@ -8318,7 +8318,7 @@ new cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCa
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorFunctionAssociationOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorFunctionAssociationOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorFunctionAssociationOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorFunctionAssociationOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorFunctionAssociationOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -8327,7 +8327,7 @@ new cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCa
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorFunctionAssociationOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -8513,7 +8513,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorFunctionAssociationOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -8538,7 +8538,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorFunctionAssociationOutputReference.property.functionArnInput">functionArnInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorFunctionAssociationOutputReference.property.eventType">eventType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorFunctionAssociationOutputReference.property.functionArn">functionArn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorFunctionAssociationOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorFunctionAssociation">CloudfrontMultitenantDistributionDefaultCacheBehaviorFunctionAssociation</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorFunctionAssociationOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorFunctionAssociation">CloudfrontMultitenantDistributionDefaultCacheBehaviorFunctionAssociation</a></code> | *No description.* |
 
 ---
 
@@ -8612,7 +8612,7 @@ public readonly functionArn: string;
 public readonly internalValue: IResolvable | CloudfrontMultitenantDistributionDefaultCacheBehaviorFunctionAssociation;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorFunctionAssociation">CloudfrontMultitenantDistributionDefaultCacheBehaviorFunctionAssociation</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorFunctionAssociation">CloudfrontMultitenantDistributionDefaultCacheBehaviorFunctionAssociation</a>
 
 ---
 
@@ -8629,7 +8629,7 @@ new cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCa
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorLambdaFunctionAssociationList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorLambdaFunctionAssociationList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorLambdaFunctionAssociationList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorLambdaFunctionAssociationList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -8637,7 +8637,7 @@ new cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCa
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorLambdaFunctionAssociationList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -8703,7 +8703,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorLambdaFunctionAssociationList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -8738,7 +8738,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorLambdaFunctionAssociationList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorLambdaFunctionAssociationList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorLambdaFunctionAssociationList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorLambdaFunctionAssociation">CloudfrontMultitenantDistributionDefaultCacheBehaviorLambdaFunctionAssociation</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorLambdaFunctionAssociationList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorLambdaFunctionAssociation">CloudfrontMultitenantDistributionDefaultCacheBehaviorLambdaFunctionAssociation</a>[]</code> | *No description.* |
 
 ---
 
@@ -8772,7 +8772,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | CloudfrontMultitenantDistributionDefaultCacheBehaviorLambdaFunctionAssociation[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorLambdaFunctionAssociation">CloudfrontMultitenantDistributionDefaultCacheBehaviorLambdaFunctionAssociation</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorLambdaFunctionAssociation">CloudfrontMultitenantDistributionDefaultCacheBehaviorLambdaFunctionAssociation</a>[]
 
 ---
 
@@ -8789,7 +8789,7 @@ new cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCa
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorLambdaFunctionAssociationOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorLambdaFunctionAssociationOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorLambdaFunctionAssociationOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorLambdaFunctionAssociationOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorLambdaFunctionAssociationOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -8798,7 +8798,7 @@ new cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCa
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorLambdaFunctionAssociationOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -8985,7 +8985,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorLambdaFunctionAssociationOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -9013,12 +9013,12 @@ public resetIncludeBody(): void
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorLambdaFunctionAssociationOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorLambdaFunctionAssociationOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorLambdaFunctionAssociationOutputReference.property.eventTypeInput">eventTypeInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorLambdaFunctionAssociationOutputReference.property.includeBodyInput">includeBodyInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorLambdaFunctionAssociationOutputReference.property.includeBodyInput">includeBodyInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorLambdaFunctionAssociationOutputReference.property.lambdaFunctionArnInput">lambdaFunctionArnInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorLambdaFunctionAssociationOutputReference.property.eventType">eventType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorLambdaFunctionAssociationOutputReference.property.includeBody">includeBody</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorLambdaFunctionAssociationOutputReference.property.includeBody">includeBody</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorLambdaFunctionAssociationOutputReference.property.lambdaFunctionArn">lambdaFunctionArn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorLambdaFunctionAssociationOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorLambdaFunctionAssociation">CloudfrontMultitenantDistributionDefaultCacheBehaviorLambdaFunctionAssociation</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorLambdaFunctionAssociationOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorLambdaFunctionAssociation">CloudfrontMultitenantDistributionDefaultCacheBehaviorLambdaFunctionAssociation</a></code> | *No description.* |
 
 ---
 
@@ -9062,7 +9062,7 @@ public readonly eventTypeInput: string;
 public readonly includeBodyInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -9092,7 +9092,7 @@ public readonly eventType: string;
 public readonly includeBody: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -9112,7 +9112,7 @@ public readonly lambdaFunctionArn: string;
 public readonly internalValue: IResolvable | CloudfrontMultitenantDistributionDefaultCacheBehaviorLambdaFunctionAssociation;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorLambdaFunctionAssociation">CloudfrontMultitenantDistributionDefaultCacheBehaviorLambdaFunctionAssociation</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorLambdaFunctionAssociation">CloudfrontMultitenantDistributionDefaultCacheBehaviorLambdaFunctionAssociation</a>
 
 ---
 
@@ -9129,7 +9129,7 @@ new cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCa
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -9137,7 +9137,7 @@ new cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCa
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -9203,7 +9203,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -9238,7 +9238,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehavior">CloudfrontMultitenantDistributionDefaultCacheBehavior</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehavior">CloudfrontMultitenantDistributionDefaultCacheBehavior</a>[]</code> | *No description.* |
 
 ---
 
@@ -9272,7 +9272,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | CloudfrontMultitenantDistributionDefaultCacheBehavior[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehavior">CloudfrontMultitenantDistributionDefaultCacheBehavior</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehavior">CloudfrontMultitenantDistributionDefaultCacheBehavior</a>[]
 
 ---
 
@@ -9289,7 +9289,7 @@ new cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCa
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -9298,7 +9298,7 @@ new cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCa
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -9498,7 +9498,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -9520,7 +9520,7 @@ public putAllowedMethods(value: IResolvable | CloudfrontMultitenantDistributionD
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorOutputReference.putAllowedMethods.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorAllowedMethods">CloudfrontMultitenantDistributionDefaultCacheBehaviorAllowedMethods</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorAllowedMethods">CloudfrontMultitenantDistributionDefaultCacheBehaviorAllowedMethods</a>[]
 
 ---
 
@@ -9532,7 +9532,7 @@ public putFunctionAssociation(value: IResolvable | CloudfrontMultitenantDistribu
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorOutputReference.putFunctionAssociation.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorFunctionAssociation">CloudfrontMultitenantDistributionDefaultCacheBehaviorFunctionAssociation</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorFunctionAssociation">CloudfrontMultitenantDistributionDefaultCacheBehaviorFunctionAssociation</a>[]
 
 ---
 
@@ -9544,7 +9544,7 @@ public putLambdaFunctionAssociation(value: IResolvable | CloudfrontMultitenantDi
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorOutputReference.putLambdaFunctionAssociation.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorLambdaFunctionAssociation">CloudfrontMultitenantDistributionDefaultCacheBehaviorLambdaFunctionAssociation</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorLambdaFunctionAssociation">CloudfrontMultitenantDistributionDefaultCacheBehaviorLambdaFunctionAssociation</a>[]
 
 ---
 
@@ -9556,7 +9556,7 @@ public putTrustedKeyGroups(value: IResolvable | CloudfrontMultitenantDistributio
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorOutputReference.putTrustedKeyGroups.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorTrustedKeyGroups">CloudfrontMultitenantDistributionDefaultCacheBehaviorTrustedKeyGroups</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorTrustedKeyGroups">CloudfrontMultitenantDistributionDefaultCacheBehaviorTrustedKeyGroups</a>[]
 
 ---
 
@@ -9631,27 +9631,27 @@ public resetTrustedKeyGroups(): void
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorOutputReference.property.functionAssociation">functionAssociation</a></code> | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorFunctionAssociationList">CloudfrontMultitenantDistributionDefaultCacheBehaviorFunctionAssociationList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorOutputReference.property.lambdaFunctionAssociation">lambdaFunctionAssociation</a></code> | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorLambdaFunctionAssociationList">CloudfrontMultitenantDistributionDefaultCacheBehaviorLambdaFunctionAssociationList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorOutputReference.property.trustedKeyGroups">trustedKeyGroups</a></code> | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorTrustedKeyGroupsList">CloudfrontMultitenantDistributionDefaultCacheBehaviorTrustedKeyGroupsList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorOutputReference.property.allowedMethodsInput">allowedMethodsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorAllowedMethods">CloudfrontMultitenantDistributionDefaultCacheBehaviorAllowedMethods</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorOutputReference.property.allowedMethodsInput">allowedMethodsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorAllowedMethods">CloudfrontMultitenantDistributionDefaultCacheBehaviorAllowedMethods</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorOutputReference.property.cachePolicyIdInput">cachePolicyIdInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorOutputReference.property.compressInput">compressInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorOutputReference.property.compressInput">compressInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorOutputReference.property.fieldLevelEncryptionIdInput">fieldLevelEncryptionIdInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorOutputReference.property.functionAssociationInput">functionAssociationInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorFunctionAssociation">CloudfrontMultitenantDistributionDefaultCacheBehaviorFunctionAssociation</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorOutputReference.property.lambdaFunctionAssociationInput">lambdaFunctionAssociationInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorLambdaFunctionAssociation">CloudfrontMultitenantDistributionDefaultCacheBehaviorLambdaFunctionAssociation</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorOutputReference.property.functionAssociationInput">functionAssociationInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorFunctionAssociation">CloudfrontMultitenantDistributionDefaultCacheBehaviorFunctionAssociation</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorOutputReference.property.lambdaFunctionAssociationInput">lambdaFunctionAssociationInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorLambdaFunctionAssociation">CloudfrontMultitenantDistributionDefaultCacheBehaviorLambdaFunctionAssociation</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorOutputReference.property.originRequestPolicyIdInput">originRequestPolicyIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorOutputReference.property.realtimeLogConfigArnInput">realtimeLogConfigArnInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorOutputReference.property.responseHeadersPolicyIdInput">responseHeadersPolicyIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorOutputReference.property.targetOriginIdInput">targetOriginIdInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorOutputReference.property.trustedKeyGroupsInput">trustedKeyGroupsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorTrustedKeyGroups">CloudfrontMultitenantDistributionDefaultCacheBehaviorTrustedKeyGroups</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorOutputReference.property.trustedKeyGroupsInput">trustedKeyGroupsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorTrustedKeyGroups">CloudfrontMultitenantDistributionDefaultCacheBehaviorTrustedKeyGroups</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorOutputReference.property.viewerProtocolPolicyInput">viewerProtocolPolicyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorOutputReference.property.cachePolicyId">cachePolicyId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorOutputReference.property.compress">compress</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorOutputReference.property.compress">compress</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorOutputReference.property.fieldLevelEncryptionId">fieldLevelEncryptionId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorOutputReference.property.originRequestPolicyId">originRequestPolicyId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorOutputReference.property.realtimeLogConfigArn">realtimeLogConfigArn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorOutputReference.property.responseHeadersPolicyId">responseHeadersPolicyId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorOutputReference.property.targetOriginId">targetOriginId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorOutputReference.property.viewerProtocolPolicy">viewerProtocolPolicy</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehavior">CloudfrontMultitenantDistributionDefaultCacheBehavior</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehavior">CloudfrontMultitenantDistributionDefaultCacheBehavior</a></code> | *No description.* |
 
 ---
 
@@ -9725,7 +9725,7 @@ public readonly trustedKeyGroups: CloudfrontMultitenantDistributionDefaultCacheB
 public readonly allowedMethodsInput: IResolvable | CloudfrontMultitenantDistributionDefaultCacheBehaviorAllowedMethods[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorAllowedMethods">CloudfrontMultitenantDistributionDefaultCacheBehaviorAllowedMethods</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorAllowedMethods">CloudfrontMultitenantDistributionDefaultCacheBehaviorAllowedMethods</a>[]
 
 ---
 
@@ -9745,7 +9745,7 @@ public readonly cachePolicyIdInput: string;
 public readonly compressInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -9765,7 +9765,7 @@ public readonly fieldLevelEncryptionIdInput: string;
 public readonly functionAssociationInput: IResolvable | CloudfrontMultitenantDistributionDefaultCacheBehaviorFunctionAssociation[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorFunctionAssociation">CloudfrontMultitenantDistributionDefaultCacheBehaviorFunctionAssociation</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorFunctionAssociation">CloudfrontMultitenantDistributionDefaultCacheBehaviorFunctionAssociation</a>[]
 
 ---
 
@@ -9775,7 +9775,7 @@ public readonly functionAssociationInput: IResolvable | CloudfrontMultitenantDis
 public readonly lambdaFunctionAssociationInput: IResolvable | CloudfrontMultitenantDistributionDefaultCacheBehaviorLambdaFunctionAssociation[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorLambdaFunctionAssociation">CloudfrontMultitenantDistributionDefaultCacheBehaviorLambdaFunctionAssociation</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorLambdaFunctionAssociation">CloudfrontMultitenantDistributionDefaultCacheBehaviorLambdaFunctionAssociation</a>[]
 
 ---
 
@@ -9825,7 +9825,7 @@ public readonly targetOriginIdInput: string;
 public readonly trustedKeyGroupsInput: IResolvable | CloudfrontMultitenantDistributionDefaultCacheBehaviorTrustedKeyGroups[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorTrustedKeyGroups">CloudfrontMultitenantDistributionDefaultCacheBehaviorTrustedKeyGroups</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorTrustedKeyGroups">CloudfrontMultitenantDistributionDefaultCacheBehaviorTrustedKeyGroups</a>[]
 
 ---
 
@@ -9855,7 +9855,7 @@ public readonly cachePolicyId: string;
 public readonly compress: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -9925,7 +9925,7 @@ public readonly viewerProtocolPolicy: string;
 public readonly internalValue: IResolvable | CloudfrontMultitenantDistributionDefaultCacheBehavior;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehavior">CloudfrontMultitenantDistributionDefaultCacheBehavior</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehavior">CloudfrontMultitenantDistributionDefaultCacheBehavior</a>
 
 ---
 
@@ -9942,7 +9942,7 @@ new cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCa
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorTrustedKeyGroupsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorTrustedKeyGroupsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorTrustedKeyGroupsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorTrustedKeyGroupsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -9950,7 +9950,7 @@ new cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCa
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorTrustedKeyGroupsList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -10016,7 +10016,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorTrustedKeyGroupsList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -10051,7 +10051,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorTrustedKeyGroupsList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorTrustedKeyGroupsList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorTrustedKeyGroupsList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorTrustedKeyGroups">CloudfrontMultitenantDistributionDefaultCacheBehaviorTrustedKeyGroups</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorTrustedKeyGroupsList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorTrustedKeyGroups">CloudfrontMultitenantDistributionDefaultCacheBehaviorTrustedKeyGroups</a>[]</code> | *No description.* |
 
 ---
 
@@ -10085,7 +10085,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | CloudfrontMultitenantDistributionDefaultCacheBehaviorTrustedKeyGroups[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorTrustedKeyGroups">CloudfrontMultitenantDistributionDefaultCacheBehaviorTrustedKeyGroups</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorTrustedKeyGroups">CloudfrontMultitenantDistributionDefaultCacheBehaviorTrustedKeyGroups</a>[]
 
 ---
 
@@ -10102,7 +10102,7 @@ new cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCa
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorTrustedKeyGroupsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorTrustedKeyGroupsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorTrustedKeyGroupsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorTrustedKeyGroupsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorTrustedKeyGroupsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -10111,7 +10111,7 @@ new cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCa
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorTrustedKeyGroupsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -10299,7 +10299,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorTrustedKeyGroupsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -10332,11 +10332,11 @@ public resetItems(): void
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorTrustedKeyGroupsOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorTrustedKeyGroupsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorTrustedKeyGroupsOutputReference.property.enabledInput">enabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorTrustedKeyGroupsOutputReference.property.enabledInput">enabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorTrustedKeyGroupsOutputReference.property.itemsInput">itemsInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorTrustedKeyGroupsOutputReference.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorTrustedKeyGroupsOutputReference.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorTrustedKeyGroupsOutputReference.property.items">items</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorTrustedKeyGroupsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorTrustedKeyGroups">CloudfrontMultitenantDistributionDefaultCacheBehaviorTrustedKeyGroups</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorTrustedKeyGroupsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorTrustedKeyGroups">CloudfrontMultitenantDistributionDefaultCacheBehaviorTrustedKeyGroups</a></code> | *No description.* |
 
 ---
 
@@ -10370,7 +10370,7 @@ public readonly fqn: string;
 public readonly enabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -10390,7 +10390,7 @@ public readonly itemsInput: string[];
 public readonly enabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -10410,7 +10410,7 @@ public readonly items: string[];
 public readonly internalValue: IResolvable | CloudfrontMultitenantDistributionDefaultCacheBehaviorTrustedKeyGroups;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorTrustedKeyGroups">CloudfrontMultitenantDistributionDefaultCacheBehaviorTrustedKeyGroups</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorTrustedKeyGroups">CloudfrontMultitenantDistributionDefaultCacheBehaviorTrustedKeyGroups</a>
 
 ---
 
@@ -10427,7 +10427,7 @@ new cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginCus
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginCustomHeaderList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginCustomHeaderList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginCustomHeaderList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginCustomHeaderList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -10435,7 +10435,7 @@ new cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginCus
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginCustomHeaderList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -10501,7 +10501,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginCustomHeaderList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -10536,7 +10536,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginCustomHeaderList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginCustomHeaderList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginCustomHeaderList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginCustomHeader">CloudfrontMultitenantDistributionOriginCustomHeader</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginCustomHeaderList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginCustomHeader">CloudfrontMultitenantDistributionOriginCustomHeader</a>[]</code> | *No description.* |
 
 ---
 
@@ -10570,7 +10570,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | CloudfrontMultitenantDistributionOriginCustomHeader[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginCustomHeader">CloudfrontMultitenantDistributionOriginCustomHeader</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginCustomHeader">CloudfrontMultitenantDistributionOriginCustomHeader</a>[]
 
 ---
 
@@ -10587,7 +10587,7 @@ new cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginCus
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginCustomHeaderOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginCustomHeaderOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginCustomHeaderOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginCustomHeaderOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginCustomHeaderOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -10596,7 +10596,7 @@ new cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginCus
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginCustomHeaderOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -10782,7 +10782,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginCustomHeaderOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -10807,7 +10807,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginCustomHeaderOutputReference.property.headerValueInput">headerValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginCustomHeaderOutputReference.property.headerName">headerName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginCustomHeaderOutputReference.property.headerValue">headerValue</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginCustomHeaderOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginCustomHeader">CloudfrontMultitenantDistributionOriginCustomHeader</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginCustomHeaderOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginCustomHeader">CloudfrontMultitenantDistributionOriginCustomHeader</a></code> | *No description.* |
 
 ---
 
@@ -10881,7 +10881,7 @@ public readonly headerValue: string;
 public readonly internalValue: IResolvable | CloudfrontMultitenantDistributionOriginCustomHeader;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginCustomHeader">CloudfrontMultitenantDistributionOriginCustomHeader</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginCustomHeader">CloudfrontMultitenantDistributionOriginCustomHeader</a>
 
 ---
 
@@ -10898,7 +10898,7 @@ new cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginCus
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginCustomOriginConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginCustomOriginConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginCustomOriginConfigList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginCustomOriginConfigList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -10906,7 +10906,7 @@ new cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginCus
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginCustomOriginConfigList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -10972,7 +10972,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginCustomOriginConfigList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -11007,7 +11007,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginCustomOriginConfigList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginCustomOriginConfigList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginCustomOriginConfigList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginCustomOriginConfig">CloudfrontMultitenantDistributionOriginCustomOriginConfig</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginCustomOriginConfigList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginCustomOriginConfig">CloudfrontMultitenantDistributionOriginCustomOriginConfig</a>[]</code> | *No description.* |
 
 ---
 
@@ -11041,7 +11041,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | CloudfrontMultitenantDistributionOriginCustomOriginConfig[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginCustomOriginConfig">CloudfrontMultitenantDistributionOriginCustomOriginConfig</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginCustomOriginConfig">CloudfrontMultitenantDistributionOriginCustomOriginConfig</a>[]
 
 ---
 
@@ -11058,7 +11058,7 @@ new cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginCus
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginCustomOriginConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginCustomOriginConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginCustomOriginConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginCustomOriginConfigOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginCustomOriginConfigOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -11067,7 +11067,7 @@ new cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginCus
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginCustomOriginConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -11256,7 +11256,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginCustomOriginConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -11309,7 +11309,7 @@ public resetOriginReadTimeout(): void
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginCustomOriginConfigOutputReference.property.originProtocolPolicy">originProtocolPolicy</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginCustomOriginConfigOutputReference.property.originReadTimeout">originReadTimeout</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginCustomOriginConfigOutputReference.property.originSslProtocols">originSslProtocols</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginCustomOriginConfigOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginCustomOriginConfig">CloudfrontMultitenantDistributionOriginCustomOriginConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginCustomOriginConfigOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginCustomOriginConfig">CloudfrontMultitenantDistributionOriginCustomOriginConfig</a></code> | *No description.* |
 
 ---
 
@@ -11483,7 +11483,7 @@ public readonly originSslProtocols: string[];
 public readonly internalValue: IResolvable | CloudfrontMultitenantDistributionOriginCustomOriginConfig;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginCustomOriginConfig">CloudfrontMultitenantDistributionOriginCustomOriginConfig</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginCustomOriginConfig">CloudfrontMultitenantDistributionOriginCustomOriginConfig</a>
 
 ---
 
@@ -11500,7 +11500,7 @@ new cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGro
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroupFailoverCriteriaList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroupFailoverCriteriaList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroupFailoverCriteriaList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroupFailoverCriteriaList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -11508,7 +11508,7 @@ new cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGro
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroupFailoverCriteriaList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -11574,7 +11574,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroupFailoverCriteriaList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -11609,7 +11609,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroupFailoverCriteriaList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroupFailoverCriteriaList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroupFailoverCriteriaList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroupFailoverCriteria">CloudfrontMultitenantDistributionOriginGroupFailoverCriteria</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroupFailoverCriteriaList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroupFailoverCriteria">CloudfrontMultitenantDistributionOriginGroupFailoverCriteria</a>[]</code> | *No description.* |
 
 ---
 
@@ -11643,7 +11643,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | CloudfrontMultitenantDistributionOriginGroupFailoverCriteria[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroupFailoverCriteria">CloudfrontMultitenantDistributionOriginGroupFailoverCriteria</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroupFailoverCriteria">CloudfrontMultitenantDistributionOriginGroupFailoverCriteria</a>[]
 
 ---
 
@@ -11660,7 +11660,7 @@ new cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGro
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroupFailoverCriteriaOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroupFailoverCriteriaOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroupFailoverCriteriaOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroupFailoverCriteriaOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroupFailoverCriteriaOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -11669,7 +11669,7 @@ new cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGro
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroupFailoverCriteriaOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -11855,7 +11855,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroupFailoverCriteriaOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -11878,7 +11878,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroupFailoverCriteriaOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroupFailoverCriteriaOutputReference.property.statusCodesInput">statusCodesInput</a></code> | <code>number[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroupFailoverCriteriaOutputReference.property.statusCodes">statusCodes</a></code> | <code>number[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroupFailoverCriteriaOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroupFailoverCriteria">CloudfrontMultitenantDistributionOriginGroupFailoverCriteria</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroupFailoverCriteriaOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroupFailoverCriteria">CloudfrontMultitenantDistributionOriginGroupFailoverCriteria</a></code> | *No description.* |
 
 ---
 
@@ -11932,7 +11932,7 @@ public readonly statusCodes: number[];
 public readonly internalValue: IResolvable | CloudfrontMultitenantDistributionOriginGroupFailoverCriteria;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroupFailoverCriteria">CloudfrontMultitenantDistributionOriginGroupFailoverCriteria</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroupFailoverCriteria">CloudfrontMultitenantDistributionOriginGroupFailoverCriteria</a>
 
 ---
 
@@ -11949,7 +11949,7 @@ new cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGro
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroupList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroupList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroupList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroupList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -11957,7 +11957,7 @@ new cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGro
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroupList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -12023,7 +12023,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroupList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -12058,7 +12058,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroupList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroupList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroupList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroup">CloudfrontMultitenantDistributionOriginGroup</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroupList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroup">CloudfrontMultitenantDistributionOriginGroup</a>[]</code> | *No description.* |
 
 ---
 
@@ -12092,7 +12092,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | CloudfrontMultitenantDistributionOriginGroup[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroup">CloudfrontMultitenantDistributionOriginGroup</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroup">CloudfrontMultitenantDistributionOriginGroup</a>[]
 
 ---
 
@@ -12109,7 +12109,7 @@ new cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGro
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroupMemberList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroupMemberList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroupMemberList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroupMemberList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -12117,7 +12117,7 @@ new cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGro
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroupMemberList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -12183,7 +12183,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroupMemberList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -12218,7 +12218,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroupMemberList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroupMemberList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroupMemberList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroupMember">CloudfrontMultitenantDistributionOriginGroupMember</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroupMemberList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroupMember">CloudfrontMultitenantDistributionOriginGroupMember</a>[]</code> | *No description.* |
 
 ---
 
@@ -12252,7 +12252,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | CloudfrontMultitenantDistributionOriginGroupMember[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroupMember">CloudfrontMultitenantDistributionOriginGroupMember</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroupMember">CloudfrontMultitenantDistributionOriginGroupMember</a>[]
 
 ---
 
@@ -12269,7 +12269,7 @@ new cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGro
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroupMemberOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroupMemberOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroupMemberOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroupMemberOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroupMemberOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -12278,7 +12278,7 @@ new cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGro
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroupMemberOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -12464,7 +12464,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroupMemberOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -12487,7 +12487,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroupMemberOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroupMemberOutputReference.property.originIdInput">originIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroupMemberOutputReference.property.originId">originId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroupMemberOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroupMember">CloudfrontMultitenantDistributionOriginGroupMember</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroupMemberOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroupMember">CloudfrontMultitenantDistributionOriginGroupMember</a></code> | *No description.* |
 
 ---
 
@@ -12541,7 +12541,7 @@ public readonly originId: string;
 public readonly internalValue: IResolvable | CloudfrontMultitenantDistributionOriginGroupMember;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroupMember">CloudfrontMultitenantDistributionOriginGroupMember</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroupMember">CloudfrontMultitenantDistributionOriginGroupMember</a>
 
 ---
 
@@ -12558,7 +12558,7 @@ new cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGro
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroupOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroupOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroupOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroupOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroupOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -12567,7 +12567,7 @@ new cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGro
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroupOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -12757,7 +12757,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroupOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -12779,7 +12779,7 @@ public putFailoverCriteria(value: IResolvable | CloudfrontMultitenantDistributio
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroupOutputReference.putFailoverCriteria.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroupFailoverCriteria">CloudfrontMultitenantDistributionOriginGroupFailoverCriteria</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroupFailoverCriteria">CloudfrontMultitenantDistributionOriginGroupFailoverCriteria</a>[]
 
 ---
 
@@ -12791,7 +12791,7 @@ public putMember(value: IResolvable | CloudfrontMultitenantDistributionOriginGro
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroupOutputReference.putMember.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroupMember">CloudfrontMultitenantDistributionOriginGroupMember</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroupMember">CloudfrontMultitenantDistributionOriginGroupMember</a>[]
 
 ---
 
@@ -12816,11 +12816,11 @@ public resetMember(): void
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroupOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroupOutputReference.property.failoverCriteria">failoverCriteria</a></code> | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroupFailoverCriteriaList">CloudfrontMultitenantDistributionOriginGroupFailoverCriteriaList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroupOutputReference.property.member">member</a></code> | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroupMemberList">CloudfrontMultitenantDistributionOriginGroupMemberList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroupOutputReference.property.failoverCriteriaInput">failoverCriteriaInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroupFailoverCriteria">CloudfrontMultitenantDistributionOriginGroupFailoverCriteria</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroupOutputReference.property.failoverCriteriaInput">failoverCriteriaInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroupFailoverCriteria">CloudfrontMultitenantDistributionOriginGroupFailoverCriteria</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroupOutputReference.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroupOutputReference.property.memberInput">memberInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroupMember">CloudfrontMultitenantDistributionOriginGroupMember</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroupOutputReference.property.memberInput">memberInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroupMember">CloudfrontMultitenantDistributionOriginGroupMember</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroupOutputReference.property.id">id</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroupOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroup">CloudfrontMultitenantDistributionOriginGroup</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroupOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroup">CloudfrontMultitenantDistributionOriginGroup</a></code> | *No description.* |
 
 ---
 
@@ -12874,7 +12874,7 @@ public readonly member: CloudfrontMultitenantDistributionOriginGroupMemberList;
 public readonly failoverCriteriaInput: IResolvable | CloudfrontMultitenantDistributionOriginGroupFailoverCriteria[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroupFailoverCriteria">CloudfrontMultitenantDistributionOriginGroupFailoverCriteria</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroupFailoverCriteria">CloudfrontMultitenantDistributionOriginGroupFailoverCriteria</a>[]
 
 ---
 
@@ -12894,7 +12894,7 @@ public readonly idInput: string;
 public readonly memberInput: IResolvable | CloudfrontMultitenantDistributionOriginGroupMember[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroupMember">CloudfrontMultitenantDistributionOriginGroupMember</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroupMember">CloudfrontMultitenantDistributionOriginGroupMember</a>[]
 
 ---
 
@@ -12914,7 +12914,7 @@ public readonly id: string;
 public readonly internalValue: IResolvable | CloudfrontMultitenantDistributionOriginGroup;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroup">CloudfrontMultitenantDistributionOriginGroup</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroup">CloudfrontMultitenantDistributionOriginGroup</a>
 
 ---
 
@@ -12931,7 +12931,7 @@ new cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginLis
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -12939,7 +12939,7 @@ new cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginLis
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -13005,7 +13005,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -13040,7 +13040,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOrigin">CloudfrontMultitenantDistributionOrigin</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOrigin">CloudfrontMultitenantDistributionOrigin</a>[]</code> | *No description.* |
 
 ---
 
@@ -13074,7 +13074,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | CloudfrontMultitenantDistributionOrigin[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOrigin">CloudfrontMultitenantDistributionOrigin</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOrigin">CloudfrontMultitenantDistributionOrigin</a>[]
 
 ---
 
@@ -13091,7 +13091,7 @@ new cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginOri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginOriginShieldList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginOriginShieldList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginOriginShieldList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginOriginShieldList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -13099,7 +13099,7 @@ new cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginOri
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginOriginShieldList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -13165,7 +13165,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginOriginShieldList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -13200,7 +13200,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginOriginShieldList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginOriginShieldList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginOriginShieldList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginOriginShield">CloudfrontMultitenantDistributionOriginOriginShield</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginOriginShieldList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginOriginShield">CloudfrontMultitenantDistributionOriginOriginShield</a>[]</code> | *No description.* |
 
 ---
 
@@ -13234,7 +13234,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | CloudfrontMultitenantDistributionOriginOriginShield[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginOriginShield">CloudfrontMultitenantDistributionOriginOriginShield</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginOriginShield">CloudfrontMultitenantDistributionOriginOriginShield</a>[]
 
 ---
 
@@ -13251,7 +13251,7 @@ new cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginOri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginOriginShieldOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginOriginShieldOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginOriginShieldOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginOriginShieldOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginOriginShieldOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -13260,7 +13260,7 @@ new cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginOri
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginOriginShieldOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -13447,7 +13447,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginOriginShieldOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -13474,11 +13474,11 @@ public resetOriginShieldRegion(): void
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginOriginShieldOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginOriginShieldOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginOriginShieldOutputReference.property.enabledInput">enabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginOriginShieldOutputReference.property.enabledInput">enabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginOriginShieldOutputReference.property.originShieldRegionInput">originShieldRegionInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginOriginShieldOutputReference.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginOriginShieldOutputReference.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginOriginShieldOutputReference.property.originShieldRegion">originShieldRegion</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginOriginShieldOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginOriginShield">CloudfrontMultitenantDistributionOriginOriginShield</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginOriginShieldOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginOriginShield">CloudfrontMultitenantDistributionOriginOriginShield</a></code> | *No description.* |
 
 ---
 
@@ -13512,7 +13512,7 @@ public readonly fqn: string;
 public readonly enabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -13532,7 +13532,7 @@ public readonly originShieldRegionInput: string;
 public readonly enabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -13552,7 +13552,7 @@ public readonly originShieldRegion: string;
 public readonly internalValue: IResolvable | CloudfrontMultitenantDistributionOriginOriginShield;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginOriginShield">CloudfrontMultitenantDistributionOriginOriginShield</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginOriginShield">CloudfrontMultitenantDistributionOriginOriginShield</a>
 
 ---
 
@@ -13569,7 +13569,7 @@ new cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginOut
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -13578,7 +13578,7 @@ new cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginOut
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -13777,7 +13777,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -13799,7 +13799,7 @@ public putCustomHeader(value: IResolvable | CloudfrontMultitenantDistributionOri
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginOutputReference.putCustomHeader.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginCustomHeader">CloudfrontMultitenantDistributionOriginCustomHeader</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginCustomHeader">CloudfrontMultitenantDistributionOriginCustomHeader</a>[]
 
 ---
 
@@ -13811,7 +13811,7 @@ public putCustomOriginConfig(value: IResolvable | CloudfrontMultitenantDistribut
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginOutputReference.putCustomOriginConfig.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginCustomOriginConfig">CloudfrontMultitenantDistributionOriginCustomOriginConfig</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginCustomOriginConfig">CloudfrontMultitenantDistributionOriginCustomOriginConfig</a>[]
 
 ---
 
@@ -13823,7 +13823,7 @@ public putOriginShield(value: IResolvable | CloudfrontMultitenantDistributionOri
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginOutputReference.putOriginShield.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginOriginShield">CloudfrontMultitenantDistributionOriginOriginShield</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginOriginShield">CloudfrontMultitenantDistributionOriginOriginShield</a>[]
 
 ---
 
@@ -13835,7 +13835,7 @@ public putVpcOriginConfig(value: IResolvable | CloudfrontMultitenantDistribution
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginOutputReference.putVpcOriginConfig.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginVpcOriginConfig">CloudfrontMultitenantDistributionOriginVpcOriginConfig</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginVpcOriginConfig">CloudfrontMultitenantDistributionOriginVpcOriginConfig</a>[]
 
 ---
 
@@ -13906,15 +13906,15 @@ public resetVpcOriginConfig(): void
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginOutputReference.property.vpcOriginConfig">vpcOriginConfig</a></code> | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginVpcOriginConfigList">CloudfrontMultitenantDistributionOriginVpcOriginConfigList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginOutputReference.property.connectionAttemptsInput">connectionAttemptsInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginOutputReference.property.connectionTimeoutInput">connectionTimeoutInput</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginOutputReference.property.customHeaderInput">customHeaderInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginCustomHeader">CloudfrontMultitenantDistributionOriginCustomHeader</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginOutputReference.property.customOriginConfigInput">customOriginConfigInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginCustomOriginConfig">CloudfrontMultitenantDistributionOriginCustomOriginConfig</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginOutputReference.property.customHeaderInput">customHeaderInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginCustomHeader">CloudfrontMultitenantDistributionOriginCustomHeader</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginOutputReference.property.customOriginConfigInput">customOriginConfigInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginCustomOriginConfig">CloudfrontMultitenantDistributionOriginCustomOriginConfig</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginOutputReference.property.domainNameInput">domainNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginOutputReference.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginOutputReference.property.originAccessControlIdInput">originAccessControlIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginOutputReference.property.originPathInput">originPathInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginOutputReference.property.originShieldInput">originShieldInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginOriginShield">CloudfrontMultitenantDistributionOriginOriginShield</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginOutputReference.property.originShieldInput">originShieldInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginOriginShield">CloudfrontMultitenantDistributionOriginOriginShield</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginOutputReference.property.responseCompletionTimeoutInput">responseCompletionTimeoutInput</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginOutputReference.property.vpcOriginConfigInput">vpcOriginConfigInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginVpcOriginConfig">CloudfrontMultitenantDistributionOriginVpcOriginConfig</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginOutputReference.property.vpcOriginConfigInput">vpcOriginConfigInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginVpcOriginConfig">CloudfrontMultitenantDistributionOriginVpcOriginConfig</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginOutputReference.property.connectionAttempts">connectionAttempts</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginOutputReference.property.connectionTimeout">connectionTimeout</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginOutputReference.property.domainName">domainName</a></code> | <code>string</code> | *No description.* |
@@ -13922,7 +13922,7 @@ public resetVpcOriginConfig(): void
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginOutputReference.property.originAccessControlId">originAccessControlId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginOutputReference.property.originPath">originPath</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginOutputReference.property.responseCompletionTimeout">responseCompletionTimeout</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOrigin">CloudfrontMultitenantDistributionOrigin</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOrigin">CloudfrontMultitenantDistributionOrigin</a></code> | *No description.* |
 
 ---
 
@@ -14016,7 +14016,7 @@ public readonly connectionTimeoutInput: number;
 public readonly customHeaderInput: IResolvable | CloudfrontMultitenantDistributionOriginCustomHeader[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginCustomHeader">CloudfrontMultitenantDistributionOriginCustomHeader</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginCustomHeader">CloudfrontMultitenantDistributionOriginCustomHeader</a>[]
 
 ---
 
@@ -14026,7 +14026,7 @@ public readonly customHeaderInput: IResolvable | CloudfrontMultitenantDistributi
 public readonly customOriginConfigInput: IResolvable | CloudfrontMultitenantDistributionOriginCustomOriginConfig[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginCustomOriginConfig">CloudfrontMultitenantDistributionOriginCustomOriginConfig</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginCustomOriginConfig">CloudfrontMultitenantDistributionOriginCustomOriginConfig</a>[]
 
 ---
 
@@ -14076,7 +14076,7 @@ public readonly originPathInput: string;
 public readonly originShieldInput: IResolvable | CloudfrontMultitenantDistributionOriginOriginShield[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginOriginShield">CloudfrontMultitenantDistributionOriginOriginShield</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginOriginShield">CloudfrontMultitenantDistributionOriginOriginShield</a>[]
 
 ---
 
@@ -14096,7 +14096,7 @@ public readonly responseCompletionTimeoutInput: number;
 public readonly vpcOriginConfigInput: IResolvable | CloudfrontMultitenantDistributionOriginVpcOriginConfig[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginVpcOriginConfig">CloudfrontMultitenantDistributionOriginVpcOriginConfig</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginVpcOriginConfig">CloudfrontMultitenantDistributionOriginVpcOriginConfig</a>[]
 
 ---
 
@@ -14176,7 +14176,7 @@ public readonly responseCompletionTimeout: number;
 public readonly internalValue: IResolvable | CloudfrontMultitenantDistributionOrigin;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOrigin">CloudfrontMultitenantDistributionOrigin</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOrigin">CloudfrontMultitenantDistributionOrigin</a>
 
 ---
 
@@ -14193,7 +14193,7 @@ new cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginVpc
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginVpcOriginConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginVpcOriginConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginVpcOriginConfigList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginVpcOriginConfigList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -14201,7 +14201,7 @@ new cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginVpc
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginVpcOriginConfigList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -14267,7 +14267,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginVpcOriginConfigList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -14302,7 +14302,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginVpcOriginConfigList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginVpcOriginConfigList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginVpcOriginConfigList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginVpcOriginConfig">CloudfrontMultitenantDistributionOriginVpcOriginConfig</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginVpcOriginConfigList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginVpcOriginConfig">CloudfrontMultitenantDistributionOriginVpcOriginConfig</a>[]</code> | *No description.* |
 
 ---
 
@@ -14336,7 +14336,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | CloudfrontMultitenantDistributionOriginVpcOriginConfig[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginVpcOriginConfig">CloudfrontMultitenantDistributionOriginVpcOriginConfig</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginVpcOriginConfig">CloudfrontMultitenantDistributionOriginVpcOriginConfig</a>[]
 
 ---
 
@@ -14353,7 +14353,7 @@ new cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginVpc
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginVpcOriginConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginVpcOriginConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginVpcOriginConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginVpcOriginConfigOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginVpcOriginConfigOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -14362,7 +14362,7 @@ new cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginVpc
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginVpcOriginConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -14550,7 +14550,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginVpcOriginConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -14589,7 +14589,7 @@ public resetOriginReadTimeout(): void
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginVpcOriginConfigOutputReference.property.originKeepaliveTimeout">originKeepaliveTimeout</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginVpcOriginConfigOutputReference.property.originReadTimeout">originReadTimeout</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginVpcOriginConfigOutputReference.property.vpcOriginId">vpcOriginId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginVpcOriginConfigOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginVpcOriginConfig">CloudfrontMultitenantDistributionOriginVpcOriginConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginVpcOriginConfigOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginVpcOriginConfig">CloudfrontMultitenantDistributionOriginVpcOriginConfig</a></code> | *No description.* |
 
 ---
 
@@ -14683,7 +14683,7 @@ public readonly vpcOriginId: string;
 public readonly internalValue: IResolvable | CloudfrontMultitenantDistributionOriginVpcOriginConfig;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginVpcOriginConfig">CloudfrontMultitenantDistributionOriginVpcOriginConfig</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginVpcOriginConfig">CloudfrontMultitenantDistributionOriginVpcOriginConfig</a>
 
 ---
 
@@ -14700,7 +14700,7 @@ new cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionRestricti
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionRestrictionsGeoRestrictionList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionRestrictionsGeoRestrictionList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionRestrictionsGeoRestrictionList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionRestrictionsGeoRestrictionList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -14708,7 +14708,7 @@ new cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionRestricti
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionRestrictionsGeoRestrictionList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -14774,7 +14774,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionRestrictionsGeoRestrictionList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -14809,7 +14809,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionRestrictionsGeoRestrictionList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionRestrictionsGeoRestrictionList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionRestrictionsGeoRestrictionList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionRestrictionsGeoRestriction">CloudfrontMultitenantDistributionRestrictionsGeoRestriction</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionRestrictionsGeoRestrictionList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionRestrictionsGeoRestriction">CloudfrontMultitenantDistributionRestrictionsGeoRestriction</a>[]</code> | *No description.* |
 
 ---
 
@@ -14843,7 +14843,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | CloudfrontMultitenantDistributionRestrictionsGeoRestriction[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionRestrictionsGeoRestriction">CloudfrontMultitenantDistributionRestrictionsGeoRestriction</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionRestrictionsGeoRestriction">CloudfrontMultitenantDistributionRestrictionsGeoRestriction</a>[]
 
 ---
 
@@ -14860,7 +14860,7 @@ new cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionRestricti
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionRestrictionsGeoRestrictionOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionRestrictionsGeoRestrictionOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionRestrictionsGeoRestrictionOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionRestrictionsGeoRestrictionOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionRestrictionsGeoRestrictionOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -14869,7 +14869,7 @@ new cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionRestricti
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionRestrictionsGeoRestrictionOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -15056,7 +15056,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionRestrictionsGeoRestrictionOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -15087,7 +15087,7 @@ public resetItems(): void
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionRestrictionsGeoRestrictionOutputReference.property.restrictionTypeInput">restrictionTypeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionRestrictionsGeoRestrictionOutputReference.property.items">items</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionRestrictionsGeoRestrictionOutputReference.property.restrictionType">restrictionType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionRestrictionsGeoRestrictionOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionRestrictionsGeoRestriction">CloudfrontMultitenantDistributionRestrictionsGeoRestriction</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionRestrictionsGeoRestrictionOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionRestrictionsGeoRestriction">CloudfrontMultitenantDistributionRestrictionsGeoRestriction</a></code> | *No description.* |
 
 ---
 
@@ -15161,7 +15161,7 @@ public readonly restrictionType: string;
 public readonly internalValue: IResolvable | CloudfrontMultitenantDistributionRestrictionsGeoRestriction;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionRestrictionsGeoRestriction">CloudfrontMultitenantDistributionRestrictionsGeoRestriction</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionRestrictionsGeoRestriction">CloudfrontMultitenantDistributionRestrictionsGeoRestriction</a>
 
 ---
 
@@ -15178,7 +15178,7 @@ new cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionRestricti
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionRestrictionsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionRestrictionsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionRestrictionsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionRestrictionsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -15186,7 +15186,7 @@ new cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionRestricti
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionRestrictionsList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -15252,7 +15252,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionRestrictionsList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -15287,7 +15287,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionRestrictionsList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionRestrictionsList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionRestrictionsList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionRestrictions">CloudfrontMultitenantDistributionRestrictions</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionRestrictionsList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionRestrictions">CloudfrontMultitenantDistributionRestrictions</a>[]</code> | *No description.* |
 
 ---
 
@@ -15321,7 +15321,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | CloudfrontMultitenantDistributionRestrictions[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionRestrictions">CloudfrontMultitenantDistributionRestrictions</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionRestrictions">CloudfrontMultitenantDistributionRestrictions</a>[]
 
 ---
 
@@ -15338,7 +15338,7 @@ new cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionRestricti
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionRestrictionsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionRestrictionsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionRestrictionsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionRestrictionsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionRestrictionsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -15347,7 +15347,7 @@ new cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionRestricti
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionRestrictionsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -15535,7 +15535,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionRestrictionsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -15557,7 +15557,7 @@ public putGeoRestriction(value: IResolvable | CloudfrontMultitenantDistributionR
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionRestrictionsOutputReference.putGeoRestriction.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionRestrictionsGeoRestriction">CloudfrontMultitenantDistributionRestrictionsGeoRestriction</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionRestrictionsGeoRestriction">CloudfrontMultitenantDistributionRestrictionsGeoRestriction</a>[]
 
 ---
 
@@ -15575,8 +15575,8 @@ public resetGeoRestriction(): void
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionRestrictionsOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionRestrictionsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionRestrictionsOutputReference.property.geoRestriction">geoRestriction</a></code> | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionRestrictionsGeoRestrictionList">CloudfrontMultitenantDistributionRestrictionsGeoRestrictionList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionRestrictionsOutputReference.property.geoRestrictionInput">geoRestrictionInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionRestrictionsGeoRestriction">CloudfrontMultitenantDistributionRestrictionsGeoRestriction</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionRestrictionsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionRestrictions">CloudfrontMultitenantDistributionRestrictions</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionRestrictionsOutputReference.property.geoRestrictionInput">geoRestrictionInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionRestrictionsGeoRestriction">CloudfrontMultitenantDistributionRestrictionsGeoRestriction</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionRestrictionsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionRestrictions">CloudfrontMultitenantDistributionRestrictions</a></code> | *No description.* |
 
 ---
 
@@ -15620,7 +15620,7 @@ public readonly geoRestriction: CloudfrontMultitenantDistributionRestrictionsGeo
 public readonly geoRestrictionInput: IResolvable | CloudfrontMultitenantDistributionRestrictionsGeoRestriction[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionRestrictionsGeoRestriction">CloudfrontMultitenantDistributionRestrictionsGeoRestriction</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionRestrictionsGeoRestriction">CloudfrontMultitenantDistributionRestrictionsGeoRestriction</a>[]
 
 ---
 
@@ -15630,7 +15630,7 @@ public readonly geoRestrictionInput: IResolvable | CloudfrontMultitenantDistribu
 public readonly internalValue: IResolvable | CloudfrontMultitenantDistributionRestrictions;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionRestrictions">CloudfrontMultitenantDistributionRestrictions</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionRestrictions">CloudfrontMultitenantDistributionRestrictions</a>
 
 ---
 
@@ -15647,7 +15647,7 @@ new cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantCon
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -15655,7 +15655,7 @@ new cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantCon
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -15721,7 +15721,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -15756,7 +15756,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfig">CloudfrontMultitenantDistributionTenantConfig</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfig">CloudfrontMultitenantDistributionTenantConfig</a>[]</code> | *No description.* |
 
 ---
 
@@ -15790,7 +15790,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | CloudfrontMultitenantDistributionTenantConfig[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfig">CloudfrontMultitenantDistributionTenantConfig</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfig">CloudfrontMultitenantDistributionTenantConfig</a>[]
 
 ---
 
@@ -15807,7 +15807,7 @@ new cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantCon
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -15816,7 +15816,7 @@ new cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantCon
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -16004,7 +16004,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -16026,7 +16026,7 @@ public putParameterDefinition(value: IResolvable | CloudfrontMultitenantDistribu
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigOutputReference.putParameterDefinition.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinition">CloudfrontMultitenantDistributionTenantConfigParameterDefinition</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinition">CloudfrontMultitenantDistributionTenantConfigParameterDefinition</a>[]
 
 ---
 
@@ -16044,8 +16044,8 @@ public resetParameterDefinition(): void
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigOutputReference.property.parameterDefinition">parameterDefinition</a></code> | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinitionList">CloudfrontMultitenantDistributionTenantConfigParameterDefinitionList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigOutputReference.property.parameterDefinitionInput">parameterDefinitionInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinition">CloudfrontMultitenantDistributionTenantConfigParameterDefinition</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfig">CloudfrontMultitenantDistributionTenantConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigOutputReference.property.parameterDefinitionInput">parameterDefinitionInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinition">CloudfrontMultitenantDistributionTenantConfigParameterDefinition</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfig">CloudfrontMultitenantDistributionTenantConfig</a></code> | *No description.* |
 
 ---
 
@@ -16089,7 +16089,7 @@ public readonly parameterDefinition: CloudfrontMultitenantDistributionTenantConf
 public readonly parameterDefinitionInput: IResolvable | CloudfrontMultitenantDistributionTenantConfigParameterDefinition[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinition">CloudfrontMultitenantDistributionTenantConfigParameterDefinition</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinition">CloudfrontMultitenantDistributionTenantConfigParameterDefinition</a>[]
 
 ---
 
@@ -16099,7 +16099,7 @@ public readonly parameterDefinitionInput: IResolvable | CloudfrontMultitenantDis
 public readonly internalValue: IResolvable | CloudfrontMultitenantDistributionTenantConfig;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfig">CloudfrontMultitenantDistributionTenantConfig</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfig">CloudfrontMultitenantDistributionTenantConfig</a>
 
 ---
 
@@ -16116,7 +16116,7 @@ new cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantCon
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinitionList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinitionList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinitionList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinitionList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -16124,7 +16124,7 @@ new cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantCon
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinitionList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -16190,7 +16190,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinitionList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -16225,7 +16225,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinitionList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinitionList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinitionList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinition">CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinition</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinitionList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinition">CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinition</a>[]</code> | *No description.* |
 
 ---
 
@@ -16259,7 +16259,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinition[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinition">CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinition</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinition">CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinition</a>[]
 
 ---
 
@@ -16276,7 +16276,7 @@ new cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantCon
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinitionOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinitionOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinitionOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinitionOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinitionOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -16285,7 +16285,7 @@ new cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantCon
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinitionOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -16473,7 +16473,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinitionOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -16495,7 +16495,7 @@ public putStringSchema(value: IResolvable | CloudfrontMultitenantDistributionTen
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinitionOutputReference.putStringSchema.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinitionStringSchema">CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinitionStringSchema</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinitionStringSchema">CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinitionStringSchema</a>[]
 
 ---
 
@@ -16513,8 +16513,8 @@ public resetStringSchema(): void
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinitionOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinitionOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinitionOutputReference.property.stringSchema">stringSchema</a></code> | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinitionStringSchemaList">CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinitionStringSchemaList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinitionOutputReference.property.stringSchemaInput">stringSchemaInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinitionStringSchema">CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinitionStringSchema</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinitionOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinition">CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinition</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinitionOutputReference.property.stringSchemaInput">stringSchemaInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinitionStringSchema">CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinitionStringSchema</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinitionOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinition">CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinition</a></code> | *No description.* |
 
 ---
 
@@ -16558,7 +16558,7 @@ public readonly stringSchema: CloudfrontMultitenantDistributionTenantConfigParam
 public readonly stringSchemaInput: IResolvable | CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinitionStringSchema[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinitionStringSchema">CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinitionStringSchema</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinitionStringSchema">CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinitionStringSchema</a>[]
 
 ---
 
@@ -16568,7 +16568,7 @@ public readonly stringSchemaInput: IResolvable | CloudfrontMultitenantDistributi
 public readonly internalValue: IResolvable | CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinition;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinition">CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinition</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinition">CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinition</a>
 
 ---
 
@@ -16585,7 +16585,7 @@ new cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantCon
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinitionStringSchemaList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinitionStringSchemaList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinitionStringSchemaList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinitionStringSchemaList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -16593,7 +16593,7 @@ new cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantCon
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinitionStringSchemaList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -16659,7 +16659,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinitionStringSchemaList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -16694,7 +16694,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinitionStringSchemaList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinitionStringSchemaList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinitionStringSchemaList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinitionStringSchema">CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinitionStringSchema</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinitionStringSchemaList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinitionStringSchema">CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinitionStringSchema</a>[]</code> | *No description.* |
 
 ---
 
@@ -16728,7 +16728,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinitionStringSchema[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinitionStringSchema">CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinitionStringSchema</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinitionStringSchema">CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinitionStringSchema</a>[]
 
 ---
 
@@ -16745,7 +16745,7 @@ new cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantCon
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinitionStringSchemaOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinitionStringSchemaOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinitionStringSchemaOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinitionStringSchemaOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinitionStringSchemaOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -16754,7 +16754,7 @@ new cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantCon
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinitionStringSchemaOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -16942,7 +16942,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinitionStringSchemaOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -16977,11 +16977,11 @@ public resetDefaultValue(): void
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinitionStringSchemaOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinitionStringSchemaOutputReference.property.commentInput">commentInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinitionStringSchemaOutputReference.property.defaultValueInput">defaultValueInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinitionStringSchemaOutputReference.property.requiredInput">requiredInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinitionStringSchemaOutputReference.property.requiredInput">requiredInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinitionStringSchemaOutputReference.property.comment">comment</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinitionStringSchemaOutputReference.property.defaultValue">defaultValue</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinitionStringSchemaOutputReference.property.required">required</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinitionStringSchemaOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinitionStringSchema">CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinitionStringSchema</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinitionStringSchemaOutputReference.property.required">required</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinitionStringSchemaOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinitionStringSchema">CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinitionStringSchema</a></code> | *No description.* |
 
 ---
 
@@ -17035,7 +17035,7 @@ public readonly defaultValueInput: string;
 public readonly requiredInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -17065,7 +17065,7 @@ public readonly defaultValue: string;
 public readonly required: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -17075,7 +17075,7 @@ public readonly required: boolean | IResolvable;
 public readonly internalValue: IResolvable | CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinitionStringSchema;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinitionStringSchema">CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinitionStringSchema</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinitionStringSchema">CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinitionStringSchema</a>
 
 ---
 
@@ -17092,7 +17092,7 @@ new cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantCon
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinitionList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinitionList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinitionList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinitionList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -17100,7 +17100,7 @@ new cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantCon
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinitionList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -17166,7 +17166,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinitionList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -17201,7 +17201,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinitionList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinitionList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinitionList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinition">CloudfrontMultitenantDistributionTenantConfigParameterDefinition</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinitionList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinition">CloudfrontMultitenantDistributionTenantConfigParameterDefinition</a>[]</code> | *No description.* |
 
 ---
 
@@ -17235,7 +17235,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | CloudfrontMultitenantDistributionTenantConfigParameterDefinition[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinition">CloudfrontMultitenantDistributionTenantConfigParameterDefinition</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinition">CloudfrontMultitenantDistributionTenantConfigParameterDefinition</a>[]
 
 ---
 
@@ -17252,7 +17252,7 @@ new cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantCon
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinitionOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinitionOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinitionOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinitionOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinitionOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -17261,7 +17261,7 @@ new cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantCon
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinitionOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -17449,7 +17449,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinitionOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -17471,7 +17471,7 @@ public putDefinition(value: IResolvable | CloudfrontMultitenantDistributionTenan
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinitionOutputReference.putDefinition.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinition">CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinition</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinition">CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinition</a>[]
 
 ---
 
@@ -17489,10 +17489,10 @@ public resetDefinition(): void
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinitionOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinitionOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinitionOutputReference.property.definition">definition</a></code> | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinitionList">CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinitionList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinitionOutputReference.property.definitionInput">definitionInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinition">CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinition</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinitionOutputReference.property.definitionInput">definitionInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinition">CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinition</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinitionOutputReference.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinitionOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinitionOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinition">CloudfrontMultitenantDistributionTenantConfigParameterDefinition</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinitionOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinition">CloudfrontMultitenantDistributionTenantConfigParameterDefinition</a></code> | *No description.* |
 
 ---
 
@@ -17536,7 +17536,7 @@ public readonly definition: CloudfrontMultitenantDistributionTenantConfigParamet
 public readonly definitionInput: IResolvable | CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinition[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinition">CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinition</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinition">CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinition</a>[]
 
 ---
 
@@ -17566,7 +17566,7 @@ public readonly name: string;
 public readonly internalValue: IResolvable | CloudfrontMultitenantDistributionTenantConfigParameterDefinition;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinition">CloudfrontMultitenantDistributionTenantConfigParameterDefinition</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinition">CloudfrontMultitenantDistributionTenantConfigParameterDefinition</a>
 
 ---
 
@@ -17583,14 +17583,14 @@ new cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTimeoutsO
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -17763,7 +17763,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTimeoutsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -17808,7 +17808,7 @@ public resetUpdate(): void
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTimeoutsOutputReference.property.create">create</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTimeoutsOutputReference.property.delete">delete</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTimeoutsOutputReference.property.update">update</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTimeouts">CloudfrontMultitenantDistributionTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTimeouts">CloudfrontMultitenantDistributionTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -17902,7 +17902,7 @@ public readonly update: string;
 public readonly internalValue: IResolvable | CloudfrontMultitenantDistributionTimeouts;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTimeouts">CloudfrontMultitenantDistributionTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTimeouts">CloudfrontMultitenantDistributionTimeouts</a>
 
 ---
 
@@ -17919,7 +17919,7 @@ new cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionViewerCer
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionViewerCertificateList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionViewerCertificateList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionViewerCertificateList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionViewerCertificateList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -17927,7 +17927,7 @@ new cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionViewerCer
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionViewerCertificateList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -17993,7 +17993,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionViewerCertificateList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -18028,7 +18028,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionViewerCertificateList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionViewerCertificateList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionViewerCertificateList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionViewerCertificate">CloudfrontMultitenantDistributionViewerCertificate</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionViewerCertificateList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionViewerCertificate">CloudfrontMultitenantDistributionViewerCertificate</a>[]</code> | *No description.* |
 
 ---
 
@@ -18062,7 +18062,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | CloudfrontMultitenantDistributionViewerCertificate[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionViewerCertificate">CloudfrontMultitenantDistributionViewerCertificate</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionViewerCertificate">CloudfrontMultitenantDistributionViewerCertificate</a>[]
 
 ---
 
@@ -18079,7 +18079,7 @@ new cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionViewerCer
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionViewerCertificateOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionViewerCertificateOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionViewerCertificateOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionViewerCertificateOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionViewerCertificateOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -18088,7 +18088,7 @@ new cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionViewerCer
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionViewerCertificateOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -18278,7 +18278,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionViewerCertificateOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -18324,14 +18324,14 @@ public resetSslSupportMethod(): void
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionViewerCertificateOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionViewerCertificateOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionViewerCertificateOutputReference.property.acmCertificateArnInput">acmCertificateArnInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionViewerCertificateOutputReference.property.cloudfrontDefaultCertificateInput">cloudfrontDefaultCertificateInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionViewerCertificateOutputReference.property.cloudfrontDefaultCertificateInput">cloudfrontDefaultCertificateInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionViewerCertificateOutputReference.property.minimumProtocolVersionInput">minimumProtocolVersionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionViewerCertificateOutputReference.property.sslSupportMethodInput">sslSupportMethodInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionViewerCertificateOutputReference.property.acmCertificateArn">acmCertificateArn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionViewerCertificateOutputReference.property.cloudfrontDefaultCertificate">cloudfrontDefaultCertificate</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionViewerCertificateOutputReference.property.cloudfrontDefaultCertificate">cloudfrontDefaultCertificate</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionViewerCertificateOutputReference.property.minimumProtocolVersion">minimumProtocolVersion</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionViewerCertificateOutputReference.property.sslSupportMethod">sslSupportMethod</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionViewerCertificateOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionViewerCertificate">CloudfrontMultitenantDistributionViewerCertificate</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionViewerCertificateOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionViewerCertificate">CloudfrontMultitenantDistributionViewerCertificate</a></code> | *No description.* |
 
 ---
 
@@ -18375,7 +18375,7 @@ public readonly acmCertificateArnInput: string;
 public readonly cloudfrontDefaultCertificateInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -18415,7 +18415,7 @@ public readonly acmCertificateArn: string;
 public readonly cloudfrontDefaultCertificate: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -18445,7 +18445,7 @@ public readonly sslSupportMethod: string;
 public readonly internalValue: IResolvable | CloudfrontMultitenantDistributionViewerCertificate;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionViewerCertificate">CloudfrontMultitenantDistributionViewerCertificate</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionViewerCertificate">CloudfrontMultitenantDistributionViewerCertificate</a>
 
 ---
 

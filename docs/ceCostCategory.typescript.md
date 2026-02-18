@@ -298,7 +298,7 @@ public importFrom(id: string, provider?: TerraformProvider): void
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.ceCostCategory.CeCostCategory.importFrom.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -380,7 +380,7 @@ public putRule(value: IResolvable | CeCostCategoryRule[]): void
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.ceCostCategory.CeCostCategory.putRule.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRule">CeCostCategoryRule</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRule">CeCostCategoryRule</a>[]
 
 ---
 
@@ -392,7 +392,7 @@ public putSplitChargeRule(value: IResolvable | CeCostCategorySplitChargeRule[]):
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.ceCostCategory.CeCostCategory.putSplitChargeRule.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategorySplitChargeRule">CeCostCategorySplitChargeRule</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategorySplitChargeRule">CeCostCategorySplitChargeRule</a>[]
 
 ---
 
@@ -439,7 +439,7 @@ public resetTagsAll(): void
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategory.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategory.isTerraformElement">isTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategory.isTerraformResource">isTerraformResource</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategory.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTF code for importing a CeCostCategory resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategory.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTN code for importing a CeCostCategory resource upon running "cdktn plan <stack-name>". |
 
 ---
 
@@ -511,7 +511,7 @@ import { ceCostCategory } from '@cdktn/provider-aws'
 ceCostCategory.CeCostCategory.generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: TerraformProvider)
 ```
 
-Generates CDKTF code for importing a CeCostCategory resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a CeCostCategory resource upon running "cdktn plan <stack-name>".
 
 ###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-aws.ceCostCategory.CeCostCategory.generateConfigForImport.parameter.scope"></a>
 
@@ -541,7 +541,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.ceCostCategory.CeCostCategory.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ? Optional instance of the provider where the CeCostCategory to import is found.
 
@@ -552,19 +552,19 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategory.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategory.property.cdktfStack">cdktfStack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategory.property.cdktfStack">cdktfStack</a></code> | <code>cdktn.TerraformStack</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategory.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategory.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategory.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategory.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategory.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategory.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategory.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategory.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategory.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategory.property.count">count</a></code> | <code>number \| cdktn.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategory.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategory.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategory.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategory.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategory.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategory.property.forEach">forEach</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategory.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategory.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategory.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategory.property.arn">arn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategory.property.effectiveEnd">effectiveEnd</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategory.property.rule">rule</a></code> | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleList">CeCostCategoryRuleList</a></code> | *No description.* |
@@ -573,9 +573,9 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategory.property.effectiveStartInput">effectiveStartInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategory.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategory.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategory.property.ruleInput">ruleInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRule">CeCostCategoryRule</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategory.property.ruleInput">ruleInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRule">CeCostCategoryRule</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategory.property.ruleVersionInput">ruleVersionInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategory.property.splitChargeRuleInput">splitChargeRuleInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategorySplitChargeRule">CeCostCategorySplitChargeRule</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategory.property.splitChargeRuleInput">splitChargeRuleInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategorySplitChargeRule">CeCostCategorySplitChargeRule</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategory.property.tagsAllInput">tagsAllInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategory.property.tagsInput">tagsInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategory.property.defaultValue">defaultValue</a></code> | <code>string</code> | *No description.* |
@@ -606,7 +606,7 @@ The tree node.
 public readonly cdktfStack: TerraformStack;
 ```
 
-- *Type:* cdktf.TerraformStack
+- *Type:* cdktn.TerraformStack
 
 ---
 
@@ -656,7 +656,7 @@ public readonly terraformResourceType: string;
 public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ```
 
-- *Type:* cdktf.TerraformProviderGeneratorMetadata
+- *Type:* cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
@@ -666,7 +666,7 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -676,7 +676,7 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number | cdktf.TerraformCount
+- *Type:* number | cdktn.TerraformCount
 
 ---
 
@@ -696,7 +696,7 @@ public readonly dependsOn: string[];
 public readonly forEach: ITerraformIterator;
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -706,7 +706,7 @@ public readonly forEach: ITerraformIterator;
 public readonly lifecycle: TerraformResourceLifecycle;
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -716,7 +716,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 public readonly provider: TerraformProvider;
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -726,7 +726,7 @@ public readonly provider: TerraformProvider;
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
 ```
 
-- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
+- *Type:* cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner[]
 
 ---
 
@@ -816,7 +816,7 @@ public readonly nameInput: string;
 public readonly ruleInput: IResolvable | CeCostCategoryRule[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRule">CeCostCategoryRule</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRule">CeCostCategoryRule</a>[]
 
 ---
 
@@ -836,7 +836,7 @@ public readonly ruleVersionInput: string;
 public readonly splitChargeRuleInput: IResolvable | CeCostCategorySplitChargeRule[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategorySplitChargeRule">CeCostCategorySplitChargeRule</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategorySplitChargeRule">CeCostCategorySplitChargeRule</a>[]
 
 ---
 
@@ -964,20 +964,20 @@ const ceCostCategoryConfig: ceCostCategory.CeCostCategoryConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryConfig.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryConfig.property.count">count</a></code> | <code>number \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryConfig.property.dependsOn">dependsOn</a></code> | <code>cdktn.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryConfig.property.forEach">forEach</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ce_cost_category#name CeCostCategory#name}. |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryConfig.property.rule">rule</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRule">CeCostCategoryRule</a>[]</code> | rule block. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryConfig.property.rule">rule</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRule">CeCostCategoryRule</a>[]</code> | rule block. |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryConfig.property.ruleVersion">ruleVersion</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ce_cost_category#rule_version CeCostCategory#rule_version}. |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryConfig.property.defaultValue">defaultValue</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ce_cost_category#default_value CeCostCategory#default_value}. |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryConfig.property.effectiveStart">effectiveStart</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ce_cost_category#effective_start CeCostCategory#effective_start}. |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ce_cost_category#id CeCostCategory#id}. |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryConfig.property.splitChargeRule">splitChargeRule</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategorySplitChargeRule">CeCostCategorySplitChargeRule</a>[]</code> | split_charge_rule block. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryConfig.property.splitChargeRule">splitChargeRule</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategorySplitChargeRule">CeCostCategorySplitChargeRule</a>[]</code> | split_charge_rule block. |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ce_cost_category#tags CeCostCategory#tags}. |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryConfig.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ce_cost_category#tags_all CeCostCategory#tags_all}. |
 
@@ -989,7 +989,7 @@ const ceCostCategoryConfig: ceCostCategory.CeCostCategoryConfig = { ... }
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -999,7 +999,7 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number | cdktf.TerraformCount
+- *Type:* number | cdktn.TerraformCount
 
 ---
 
@@ -1009,7 +1009,7 @@ public readonly count: number | TerraformCount;
 public readonly dependsOn: ITerraformDependable[];
 ```
 
-- *Type:* cdktf.ITerraformDependable[]
+- *Type:* cdktn.ITerraformDependable[]
 
 ---
 
@@ -1019,7 +1019,7 @@ public readonly dependsOn: ITerraformDependable[];
 public readonly forEach: ITerraformIterator;
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -1029,7 +1029,7 @@ public readonly forEach: ITerraformIterator;
 public readonly lifecycle: TerraformResourceLifecycle;
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -1039,7 +1039,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 public readonly provider: TerraformProvider;
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -1049,7 +1049,7 @@ public readonly provider: TerraformProvider;
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
 ```
 
-- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
+- *Type:* cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner[]
 
 ---
 
@@ -1071,7 +1071,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly rule: IResolvable | CeCostCategoryRule[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRule">CeCostCategoryRule</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRule">CeCostCategoryRule</a>[]
 
 rule block.
 
@@ -1136,7 +1136,7 @@ If you experience problems setting this value it might not be settable. Please t
 public readonly splitChargeRule: IResolvable | CeCostCategorySplitChargeRule[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategorySplitChargeRule">CeCostCategorySplitChargeRule</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategorySplitChargeRule">CeCostCategorySplitChargeRule</a>[]
 
 split_charge_rule block.
 
@@ -1298,11 +1298,11 @@ const ceCostCategoryRuleRule: ceCostCategory.CeCostCategoryRuleRule = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRule.property.and">and</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAnd">CeCostCategoryRuleRuleAnd</a>[]</code> | and block. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRule.property.and">and</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAnd">CeCostCategoryRuleRuleAnd</a>[]</code> | and block. |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRule.property.costCategory">costCategory</a></code> | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleCostCategory">CeCostCategoryRuleRuleCostCategory</a></code> | cost_category block. |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRule.property.dimension">dimension</a></code> | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleDimension">CeCostCategoryRuleRuleDimension</a></code> | dimension block. |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRule.property.not">not</a></code> | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNot">CeCostCategoryRuleRuleNot</a></code> | not block. |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRule.property.or">or</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOr">CeCostCategoryRuleRuleOr</a>[]</code> | or block. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRule.property.or">or</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOr">CeCostCategoryRuleRuleOr</a>[]</code> | or block. |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRule.property.tags">tags</a></code> | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleTags">CeCostCategoryRuleRuleTags</a></code> | tags block. |
 
 ---
@@ -1313,7 +1313,7 @@ const ceCostCategoryRuleRule: ceCostCategory.CeCostCategoryRuleRule = { ... }
 public readonly and: IResolvable | CeCostCategoryRuleRuleAnd[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAnd">CeCostCategoryRuleRuleAnd</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAnd">CeCostCategoryRuleRuleAnd</a>[]
 
 and block.
 
@@ -1369,7 +1369,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly or: IResolvable | CeCostCategoryRuleRuleOr[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOr">CeCostCategoryRuleRuleOr</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOr">CeCostCategoryRuleRuleOr</a>[]
 
 or block.
 
@@ -1405,11 +1405,11 @@ const ceCostCategoryRuleRuleAnd: ceCostCategory.CeCostCategoryRuleRuleAnd = { ..
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAnd.property.and">and</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAnd">CeCostCategoryRuleRuleAndAnd</a>[]</code> | and block. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAnd.property.and">and</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAnd">CeCostCategoryRuleRuleAndAnd</a>[]</code> | and block. |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAnd.property.costCategory">costCategory</a></code> | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndCostCategory">CeCostCategoryRuleRuleAndCostCategory</a></code> | cost_category block. |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAnd.property.dimension">dimension</a></code> | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndDimension">CeCostCategoryRuleRuleAndDimension</a></code> | dimension block. |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAnd.property.not">not</a></code> | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNot">CeCostCategoryRuleRuleAndNot</a></code> | not block. |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAnd.property.or">or</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOr">CeCostCategoryRuleRuleAndOr</a>[]</code> | or block. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAnd.property.or">or</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOr">CeCostCategoryRuleRuleAndOr</a>[]</code> | or block. |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAnd.property.tags">tags</a></code> | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndTags">CeCostCategoryRuleRuleAndTags</a></code> | tags block. |
 
 ---
@@ -1420,7 +1420,7 @@ const ceCostCategoryRuleRuleAnd: ceCostCategory.CeCostCategoryRuleRuleAnd = { ..
 public readonly and: IResolvable | CeCostCategoryRuleRuleAndAnd[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAnd">CeCostCategoryRuleRuleAndAnd</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAnd">CeCostCategoryRuleRuleAndAnd</a>[]
 
 and block.
 
@@ -1476,7 +1476,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly or: IResolvable | CeCostCategoryRuleRuleAndOr[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOr">CeCostCategoryRuleRuleAndOr</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOr">CeCostCategoryRuleRuleAndOr</a>[]
 
 or block.
 
@@ -2482,11 +2482,11 @@ const ceCostCategoryRuleRuleNot: ceCostCategory.CeCostCategoryRuleRuleNot = { ..
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNot.property.and">and</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAnd">CeCostCategoryRuleRuleNotAnd</a>[]</code> | and block. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNot.property.and">and</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAnd">CeCostCategoryRuleRuleNotAnd</a>[]</code> | and block. |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNot.property.costCategory">costCategory</a></code> | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotCostCategory">CeCostCategoryRuleRuleNotCostCategory</a></code> | cost_category block. |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNot.property.dimension">dimension</a></code> | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotDimension">CeCostCategoryRuleRuleNotDimension</a></code> | dimension block. |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNot.property.not">not</a></code> | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNot">CeCostCategoryRuleRuleNotNot</a></code> | not block. |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNot.property.or">or</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOr">CeCostCategoryRuleRuleNotOr</a>[]</code> | or block. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNot.property.or">or</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOr">CeCostCategoryRuleRuleNotOr</a>[]</code> | or block. |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNot.property.tags">tags</a></code> | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotTags">CeCostCategoryRuleRuleNotTags</a></code> | tags block. |
 
 ---
@@ -2497,7 +2497,7 @@ const ceCostCategoryRuleRuleNot: ceCostCategory.CeCostCategoryRuleRuleNot = { ..
 public readonly and: IResolvable | CeCostCategoryRuleRuleNotAnd[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAnd">CeCostCategoryRuleRuleNotAnd</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAnd">CeCostCategoryRuleRuleNotAnd</a>[]
 
 and block.
 
@@ -2553,7 +2553,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly or: IResolvable | CeCostCategoryRuleRuleNotOr[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOr">CeCostCategoryRuleRuleNotOr</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOr">CeCostCategoryRuleRuleNotOr</a>[]
 
 or block.
 
@@ -3447,11 +3447,11 @@ const ceCostCategoryRuleRuleOr: ceCostCategory.CeCostCategoryRuleRuleOr = { ... 
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOr.property.and">and</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAnd">CeCostCategoryRuleRuleOrAnd</a>[]</code> | and block. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOr.property.and">and</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAnd">CeCostCategoryRuleRuleOrAnd</a>[]</code> | and block. |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOr.property.costCategory">costCategory</a></code> | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrCostCategory">CeCostCategoryRuleRuleOrCostCategory</a></code> | cost_category block. |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOr.property.dimension">dimension</a></code> | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrDimension">CeCostCategoryRuleRuleOrDimension</a></code> | dimension block. |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOr.property.not">not</a></code> | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNot">CeCostCategoryRuleRuleOrNot</a></code> | not block. |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOr.property.or">or</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOr">CeCostCategoryRuleRuleOrOr</a>[]</code> | or block. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOr.property.or">or</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOr">CeCostCategoryRuleRuleOrOr</a>[]</code> | or block. |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOr.property.tags">tags</a></code> | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrTags">CeCostCategoryRuleRuleOrTags</a></code> | tags block. |
 
 ---
@@ -3462,7 +3462,7 @@ const ceCostCategoryRuleRuleOr: ceCostCategory.CeCostCategoryRuleRuleOr = { ... 
 public readonly and: IResolvable | CeCostCategoryRuleRuleOrAnd[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAnd">CeCostCategoryRuleRuleOrAnd</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAnd">CeCostCategoryRuleRuleOrAnd</a>[]
 
 and block.
 
@@ -3518,7 +3518,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly or: IResolvable | CeCostCategoryRuleRuleOrOr[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOr">CeCostCategoryRuleRuleOrOr</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOr">CeCostCategoryRuleRuleOrOr</a>[]
 
 or block.
 
@@ -4471,7 +4471,7 @@ const ceCostCategorySplitChargeRule: ceCostCategory.CeCostCategorySplitChargeRul
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategorySplitChargeRule.property.method">method</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ce_cost_category#method CeCostCategory#method}. |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategorySplitChargeRule.property.source">source</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ce_cost_category#source CeCostCategory#source}. |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategorySplitChargeRule.property.targets">targets</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ce_cost_category#targets CeCostCategory#targets}. |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategorySplitChargeRule.property.parameter">parameter</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategorySplitChargeRuleParameter">CeCostCategorySplitChargeRuleParameter</a>[]</code> | parameter block. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategorySplitChargeRule.property.parameter">parameter</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategorySplitChargeRuleParameter">CeCostCategorySplitChargeRuleParameter</a>[]</code> | parameter block. |
 
 ---
 
@@ -4517,7 +4517,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly parameter: IResolvable | CeCostCategorySplitChargeRuleParameter[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategorySplitChargeRuleParameter">CeCostCategorySplitChargeRuleParameter</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategorySplitChargeRuleParameter">CeCostCategorySplitChargeRuleParameter</a>[]
 
 parameter block.
 
@@ -4582,14 +4582,14 @@ new ceCostCategory.CeCostCategoryRuleInheritedValueOutputReference(terraformReso
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleInheritedValueOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleInheritedValueOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleInheritedValueOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleInheritedValueOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -4761,7 +4761,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleInheritedValueOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -4889,7 +4889,7 @@ new ceCostCategory.CeCostCategoryRuleList(terraformResource: IInterpolatingParen
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -4897,7 +4897,7 @@ new ceCostCategory.CeCostCategoryRuleList(terraformResource: IInterpolatingParen
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -4963,7 +4963,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -4998,7 +4998,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRule">CeCostCategoryRule</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRule">CeCostCategoryRule</a>[]</code> | *No description.* |
 
 ---
 
@@ -5032,7 +5032,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | CeCostCategoryRule[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRule">CeCostCategoryRule</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRule">CeCostCategoryRule</a>[]
 
 ---
 
@@ -5049,7 +5049,7 @@ new ceCostCategory.CeCostCategoryRuleOutputReference(terraformResource: IInterpo
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -5058,7 +5058,7 @@ new ceCostCategory.CeCostCategoryRuleOutputReference(terraformResource: IInterpo
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -5250,7 +5250,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -5327,7 +5327,7 @@ public resetValue(): void
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleOutputReference.property.type">type</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRule">CeCostCategoryRule</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRule">CeCostCategoryRule</a></code> | *No description.* |
 
 ---
 
@@ -5441,7 +5441,7 @@ public readonly value: string;
 public readonly internalValue: IResolvable | CeCostCategoryRule;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRule">CeCostCategoryRule</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRule">CeCostCategoryRule</a>
 
 ---
 
@@ -5458,14 +5458,14 @@ new ceCostCategory.CeCostCategoryRuleRuleAndAndCostCategoryOutputReference(terra
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndCostCategoryOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndCostCategoryOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndCostCategoryOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndCostCategoryOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -5638,7 +5638,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndCostCategoryOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -5794,14 +5794,14 @@ new ceCostCategory.CeCostCategoryRuleRuleAndAndDimensionOutputReference(terrafor
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndDimensionOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndDimensionOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndDimensionOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndDimensionOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -5974,7 +5974,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndDimensionOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -6130,7 +6130,7 @@ new ceCostCategory.CeCostCategoryRuleRuleAndAndList(terraformResource: IInterpol
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -6138,7 +6138,7 @@ new ceCostCategory.CeCostCategoryRuleRuleAndAndList(terraformResource: IInterpol
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -6204,7 +6204,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -6239,7 +6239,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAnd">CeCostCategoryRuleRuleAndAnd</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAnd">CeCostCategoryRuleRuleAndAnd</a>[]</code> | *No description.* |
 
 ---
 
@@ -6273,7 +6273,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | CeCostCategoryRuleRuleAndAnd[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAnd">CeCostCategoryRuleRuleAndAnd</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAnd">CeCostCategoryRuleRuleAndAnd</a>[]
 
 ---
 
@@ -6290,7 +6290,7 @@ new ceCostCategory.CeCostCategoryRuleRuleAndAndOutputReference(terraformResource
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -6299,7 +6299,7 @@ new ceCostCategory.CeCostCategoryRuleRuleAndAndOutputReference(terraformResource
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -6491,7 +6491,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -6572,7 +6572,7 @@ public resetTags(): void
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndOutputReference.property.costCategoryInput">costCategoryInput</a></code> | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndCostCategory">CeCostCategoryRuleRuleAndAndCostCategory</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndOutputReference.property.dimensionInput">dimensionInput</a></code> | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndDimension">CeCostCategoryRuleRuleAndAndDimension</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndOutputReference.property.tagsInput">tagsInput</a></code> | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndTags">CeCostCategoryRuleRuleAndAndTags</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAnd">CeCostCategoryRuleRuleAndAnd</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAnd">CeCostCategoryRuleRuleAndAnd</a></code> | *No description.* |
 
 ---
 
@@ -6666,7 +6666,7 @@ public readonly tagsInput: CeCostCategoryRuleRuleAndAndTags;
 public readonly internalValue: IResolvable | CeCostCategoryRuleRuleAndAnd;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAnd">CeCostCategoryRuleRuleAndAnd</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAnd">CeCostCategoryRuleRuleAndAnd</a>
 
 ---
 
@@ -6683,14 +6683,14 @@ new ceCostCategory.CeCostCategoryRuleRuleAndAndTagsOutputReference(terraformReso
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndTagsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndTagsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndTagsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndTagsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -6863,7 +6863,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndTagsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -7019,14 +7019,14 @@ new ceCostCategory.CeCostCategoryRuleRuleAndCostCategoryOutputReference(terrafor
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndCostCategoryOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndCostCategoryOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndCostCategoryOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndCostCategoryOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -7199,7 +7199,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndCostCategoryOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -7355,14 +7355,14 @@ new ceCostCategory.CeCostCategoryRuleRuleAndDimensionOutputReference(terraformRe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndDimensionOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndDimensionOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndDimensionOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndDimensionOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -7535,7 +7535,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndDimensionOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -7691,7 +7691,7 @@ new ceCostCategory.CeCostCategoryRuleRuleAndList(terraformResource: IInterpolati
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -7699,7 +7699,7 @@ new ceCostCategory.CeCostCategoryRuleRuleAndList(terraformResource: IInterpolati
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -7765,7 +7765,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -7800,7 +7800,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAnd">CeCostCategoryRuleRuleAnd</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAnd">CeCostCategoryRuleRuleAnd</a>[]</code> | *No description.* |
 
 ---
 
@@ -7834,7 +7834,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | CeCostCategoryRuleRuleAnd[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAnd">CeCostCategoryRuleRuleAnd</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAnd">CeCostCategoryRuleRuleAnd</a>[]
 
 ---
 
@@ -7851,14 +7851,14 @@ new ceCostCategory.CeCostCategoryRuleRuleAndNotCostCategoryOutputReference(terra
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotCostCategoryOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotCostCategoryOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotCostCategoryOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotCostCategoryOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -8031,7 +8031,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotCostCategoryOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -8187,14 +8187,14 @@ new ceCostCategory.CeCostCategoryRuleRuleAndNotDimensionOutputReference(terrafor
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotDimensionOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotDimensionOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotDimensionOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotDimensionOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -8367,7 +8367,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotDimensionOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -8523,14 +8523,14 @@ new ceCostCategory.CeCostCategoryRuleRuleAndNotOutputReference(terraformResource
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -8706,7 +8706,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -8898,14 +8898,14 @@ new ceCostCategory.CeCostCategoryRuleRuleAndNotTagsOutputReference(terraformReso
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotTagsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotTagsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotTagsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotTagsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -9078,7 +9078,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotTagsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -9234,14 +9234,14 @@ new ceCostCategory.CeCostCategoryRuleRuleAndOrCostCategoryOutputReference(terraf
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrCostCategoryOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrCostCategoryOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrCostCategoryOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrCostCategoryOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -9414,7 +9414,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrCostCategoryOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -9570,14 +9570,14 @@ new ceCostCategory.CeCostCategoryRuleRuleAndOrDimensionOutputReference(terraform
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrDimensionOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrDimensionOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrDimensionOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrDimensionOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -9750,7 +9750,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrDimensionOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -9906,7 +9906,7 @@ new ceCostCategory.CeCostCategoryRuleRuleAndOrList(terraformResource: IInterpola
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -9914,7 +9914,7 @@ new ceCostCategory.CeCostCategoryRuleRuleAndOrList(terraformResource: IInterpola
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -9980,7 +9980,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -10015,7 +10015,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOr">CeCostCategoryRuleRuleAndOr</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOr">CeCostCategoryRuleRuleAndOr</a>[]</code> | *No description.* |
 
 ---
 
@@ -10049,7 +10049,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | CeCostCategoryRuleRuleAndOr[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOr">CeCostCategoryRuleRuleAndOr</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOr">CeCostCategoryRuleRuleAndOr</a>[]
 
 ---
 
@@ -10066,7 +10066,7 @@ new ceCostCategory.CeCostCategoryRuleRuleAndOrOutputReference(terraformResource:
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -10075,7 +10075,7 @@ new ceCostCategory.CeCostCategoryRuleRuleAndOrOutputReference(terraformResource:
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -10267,7 +10267,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -10348,7 +10348,7 @@ public resetTags(): void
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrOutputReference.property.costCategoryInput">costCategoryInput</a></code> | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrCostCategory">CeCostCategoryRuleRuleAndOrCostCategory</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrOutputReference.property.dimensionInput">dimensionInput</a></code> | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrDimension">CeCostCategoryRuleRuleAndOrDimension</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrOutputReference.property.tagsInput">tagsInput</a></code> | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrTags">CeCostCategoryRuleRuleAndOrTags</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOr">CeCostCategoryRuleRuleAndOr</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOr">CeCostCategoryRuleRuleAndOr</a></code> | *No description.* |
 
 ---
 
@@ -10442,7 +10442,7 @@ public readonly tagsInput: CeCostCategoryRuleRuleAndOrTags;
 public readonly internalValue: IResolvable | CeCostCategoryRuleRuleAndOr;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOr">CeCostCategoryRuleRuleAndOr</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOr">CeCostCategoryRuleRuleAndOr</a>
 
 ---
 
@@ -10459,14 +10459,14 @@ new ceCostCategory.CeCostCategoryRuleRuleAndOrTagsOutputReference(terraformResou
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrTagsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrTagsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrTagsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrTagsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -10639,7 +10639,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrTagsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -10795,7 +10795,7 @@ new ceCostCategory.CeCostCategoryRuleRuleAndOutputReference(terraformResource: I
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -10804,7 +10804,7 @@ new ceCostCategory.CeCostCategoryRuleRuleAndOutputReference(terraformResource: I
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -11002,7 +11002,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -11024,7 +11024,7 @@ public putAnd(value: IResolvable | CeCostCategoryRuleRuleAndAnd[]): void
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOutputReference.putAnd.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAnd">CeCostCategoryRuleRuleAndAnd</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAnd">CeCostCategoryRuleRuleAndAnd</a>[]
 
 ---
 
@@ -11072,7 +11072,7 @@ public putOr(value: IResolvable | CeCostCategoryRuleRuleAndOr[]): void
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOutputReference.putOr.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOr">CeCostCategoryRuleRuleAndOr</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOr">CeCostCategoryRuleRuleAndOr</a>[]
 
 ---
 
@@ -11137,13 +11137,13 @@ public resetTags(): void
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOutputReference.property.not">not</a></code> | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotOutputReference">CeCostCategoryRuleRuleAndNotOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOutputReference.property.or">or</a></code> | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrList">CeCostCategoryRuleRuleAndOrList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOutputReference.property.tags">tags</a></code> | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndTagsOutputReference">CeCostCategoryRuleRuleAndTagsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOutputReference.property.andInput">andInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAnd">CeCostCategoryRuleRuleAndAnd</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOutputReference.property.andInput">andInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAnd">CeCostCategoryRuleRuleAndAnd</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOutputReference.property.costCategoryInput">costCategoryInput</a></code> | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndCostCategory">CeCostCategoryRuleRuleAndCostCategory</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOutputReference.property.dimensionInput">dimensionInput</a></code> | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndDimension">CeCostCategoryRuleRuleAndDimension</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOutputReference.property.notInput">notInput</a></code> | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNot">CeCostCategoryRuleRuleAndNot</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOutputReference.property.orInput">orInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOr">CeCostCategoryRuleRuleAndOr</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOutputReference.property.orInput">orInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOr">CeCostCategoryRuleRuleAndOr</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOutputReference.property.tagsInput">tagsInput</a></code> | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndTags">CeCostCategoryRuleRuleAndTags</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAnd">CeCostCategoryRuleRuleAnd</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAnd">CeCostCategoryRuleRuleAnd</a></code> | *No description.* |
 
 ---
 
@@ -11237,7 +11237,7 @@ public readonly tags: CeCostCategoryRuleRuleAndTagsOutputReference;
 public readonly andInput: IResolvable | CeCostCategoryRuleRuleAndAnd[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAnd">CeCostCategoryRuleRuleAndAnd</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAnd">CeCostCategoryRuleRuleAndAnd</a>[]
 
 ---
 
@@ -11277,7 +11277,7 @@ public readonly notInput: CeCostCategoryRuleRuleAndNot;
 public readonly orInput: IResolvable | CeCostCategoryRuleRuleAndOr[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOr">CeCostCategoryRuleRuleAndOr</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOr">CeCostCategoryRuleRuleAndOr</a>[]
 
 ---
 
@@ -11297,7 +11297,7 @@ public readonly tagsInput: CeCostCategoryRuleRuleAndTags;
 public readonly internalValue: IResolvable | CeCostCategoryRuleRuleAnd;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAnd">CeCostCategoryRuleRuleAnd</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAnd">CeCostCategoryRuleRuleAnd</a>
 
 ---
 
@@ -11314,14 +11314,14 @@ new ceCostCategory.CeCostCategoryRuleRuleAndTagsOutputReference(terraformResourc
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndTagsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndTagsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndTagsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndTagsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -11494,7 +11494,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndTagsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -11650,14 +11650,14 @@ new ceCostCategory.CeCostCategoryRuleRuleCostCategoryOutputReference(terraformRe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleCostCategoryOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleCostCategoryOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleCostCategoryOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleCostCategoryOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -11830,7 +11830,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleCostCategoryOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -11986,14 +11986,14 @@ new ceCostCategory.CeCostCategoryRuleRuleDimensionOutputReference(terraformResou
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleDimensionOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleDimensionOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleDimensionOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleDimensionOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -12166,7 +12166,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleDimensionOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -12322,14 +12322,14 @@ new ceCostCategory.CeCostCategoryRuleRuleNotAndCostCategoryOutputReference(terra
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndCostCategoryOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndCostCategoryOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndCostCategoryOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndCostCategoryOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -12502,7 +12502,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndCostCategoryOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -12658,14 +12658,14 @@ new ceCostCategory.CeCostCategoryRuleRuleNotAndDimensionOutputReference(terrafor
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndDimensionOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndDimensionOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndDimensionOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndDimensionOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -12838,7 +12838,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndDimensionOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -12994,7 +12994,7 @@ new ceCostCategory.CeCostCategoryRuleRuleNotAndList(terraformResource: IInterpol
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -13002,7 +13002,7 @@ new ceCostCategory.CeCostCategoryRuleRuleNotAndList(terraformResource: IInterpol
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -13068,7 +13068,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -13103,7 +13103,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAnd">CeCostCategoryRuleRuleNotAnd</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAnd">CeCostCategoryRuleRuleNotAnd</a>[]</code> | *No description.* |
 
 ---
 
@@ -13137,7 +13137,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | CeCostCategoryRuleRuleNotAnd[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAnd">CeCostCategoryRuleRuleNotAnd</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAnd">CeCostCategoryRuleRuleNotAnd</a>[]
 
 ---
 
@@ -13154,7 +13154,7 @@ new ceCostCategory.CeCostCategoryRuleRuleNotAndOutputReference(terraformResource
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -13163,7 +13163,7 @@ new ceCostCategory.CeCostCategoryRuleRuleNotAndOutputReference(terraformResource
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -13355,7 +13355,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -13436,7 +13436,7 @@ public resetTags(): void
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndOutputReference.property.costCategoryInput">costCategoryInput</a></code> | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndCostCategory">CeCostCategoryRuleRuleNotAndCostCategory</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndOutputReference.property.dimensionInput">dimensionInput</a></code> | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndDimension">CeCostCategoryRuleRuleNotAndDimension</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndOutputReference.property.tagsInput">tagsInput</a></code> | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndTags">CeCostCategoryRuleRuleNotAndTags</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAnd">CeCostCategoryRuleRuleNotAnd</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAnd">CeCostCategoryRuleRuleNotAnd</a></code> | *No description.* |
 
 ---
 
@@ -13530,7 +13530,7 @@ public readonly tagsInput: CeCostCategoryRuleRuleNotAndTags;
 public readonly internalValue: IResolvable | CeCostCategoryRuleRuleNotAnd;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAnd">CeCostCategoryRuleRuleNotAnd</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAnd">CeCostCategoryRuleRuleNotAnd</a>
 
 ---
 
@@ -13547,14 +13547,14 @@ new ceCostCategory.CeCostCategoryRuleRuleNotAndTagsOutputReference(terraformReso
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndTagsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndTagsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndTagsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndTagsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -13727,7 +13727,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndTagsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -13883,14 +13883,14 @@ new ceCostCategory.CeCostCategoryRuleRuleNotCostCategoryOutputReference(terrafor
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotCostCategoryOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotCostCategoryOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotCostCategoryOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotCostCategoryOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -14063,7 +14063,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotCostCategoryOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -14219,14 +14219,14 @@ new ceCostCategory.CeCostCategoryRuleRuleNotDimensionOutputReference(terraformRe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotDimensionOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotDimensionOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotDimensionOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotDimensionOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -14399,7 +14399,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotDimensionOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -14555,14 +14555,14 @@ new ceCostCategory.CeCostCategoryRuleRuleNotNotCostCategoryOutputReference(terra
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotCostCategoryOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotCostCategoryOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotCostCategoryOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotCostCategoryOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -14735,7 +14735,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotCostCategoryOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -14891,14 +14891,14 @@ new ceCostCategory.CeCostCategoryRuleRuleNotNotDimensionOutputReference(terrafor
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotDimensionOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotDimensionOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotDimensionOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotDimensionOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -15071,7 +15071,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotDimensionOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -15227,14 +15227,14 @@ new ceCostCategory.CeCostCategoryRuleRuleNotNotOutputReference(terraformResource
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -15410,7 +15410,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -15602,14 +15602,14 @@ new ceCostCategory.CeCostCategoryRuleRuleNotNotTagsOutputReference(terraformReso
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotTagsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotTagsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotTagsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotTagsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -15782,7 +15782,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotTagsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -15938,14 +15938,14 @@ new ceCostCategory.CeCostCategoryRuleRuleNotOrCostCategoryOutputReference(terraf
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrCostCategoryOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrCostCategoryOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrCostCategoryOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrCostCategoryOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -16118,7 +16118,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrCostCategoryOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -16274,14 +16274,14 @@ new ceCostCategory.CeCostCategoryRuleRuleNotOrDimensionOutputReference(terraform
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrDimensionOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrDimensionOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrDimensionOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrDimensionOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -16454,7 +16454,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrDimensionOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -16610,7 +16610,7 @@ new ceCostCategory.CeCostCategoryRuleRuleNotOrList(terraformResource: IInterpola
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -16618,7 +16618,7 @@ new ceCostCategory.CeCostCategoryRuleRuleNotOrList(terraformResource: IInterpola
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -16684,7 +16684,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -16719,7 +16719,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOr">CeCostCategoryRuleRuleNotOr</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOr">CeCostCategoryRuleRuleNotOr</a>[]</code> | *No description.* |
 
 ---
 
@@ -16753,7 +16753,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | CeCostCategoryRuleRuleNotOr[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOr">CeCostCategoryRuleRuleNotOr</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOr">CeCostCategoryRuleRuleNotOr</a>[]
 
 ---
 
@@ -16770,7 +16770,7 @@ new ceCostCategory.CeCostCategoryRuleRuleNotOrOutputReference(terraformResource:
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -16779,7 +16779,7 @@ new ceCostCategory.CeCostCategoryRuleRuleNotOrOutputReference(terraformResource:
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -16971,7 +16971,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -17052,7 +17052,7 @@ public resetTags(): void
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrOutputReference.property.costCategoryInput">costCategoryInput</a></code> | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrCostCategory">CeCostCategoryRuleRuleNotOrCostCategory</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrOutputReference.property.dimensionInput">dimensionInput</a></code> | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrDimension">CeCostCategoryRuleRuleNotOrDimension</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrOutputReference.property.tagsInput">tagsInput</a></code> | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrTags">CeCostCategoryRuleRuleNotOrTags</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOr">CeCostCategoryRuleRuleNotOr</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOr">CeCostCategoryRuleRuleNotOr</a></code> | *No description.* |
 
 ---
 
@@ -17146,7 +17146,7 @@ public readonly tagsInput: CeCostCategoryRuleRuleNotOrTags;
 public readonly internalValue: IResolvable | CeCostCategoryRuleRuleNotOr;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOr">CeCostCategoryRuleRuleNotOr</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOr">CeCostCategoryRuleRuleNotOr</a>
 
 ---
 
@@ -17163,14 +17163,14 @@ new ceCostCategory.CeCostCategoryRuleRuleNotOrTagsOutputReference(terraformResou
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrTagsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrTagsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrTagsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrTagsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -17343,7 +17343,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrTagsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -17499,14 +17499,14 @@ new ceCostCategory.CeCostCategoryRuleRuleNotOutputReference(terraformResource: I
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -17688,7 +17688,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -17710,7 +17710,7 @@ public putAnd(value: IResolvable | CeCostCategoryRuleRuleNotAnd[]): void
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOutputReference.putAnd.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAnd">CeCostCategoryRuleRuleNotAnd</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAnd">CeCostCategoryRuleRuleNotAnd</a>[]
 
 ---
 
@@ -17758,7 +17758,7 @@ public putOr(value: IResolvable | CeCostCategoryRuleRuleNotOr[]): void
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOutputReference.putOr.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOr">CeCostCategoryRuleRuleNotOr</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOr">CeCostCategoryRuleRuleNotOr</a>[]
 
 ---
 
@@ -17823,11 +17823,11 @@ public resetTags(): void
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOutputReference.property.not">not</a></code> | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotOutputReference">CeCostCategoryRuleRuleNotNotOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOutputReference.property.or">or</a></code> | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrList">CeCostCategoryRuleRuleNotOrList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOutputReference.property.tags">tags</a></code> | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotTagsOutputReference">CeCostCategoryRuleRuleNotTagsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOutputReference.property.andInput">andInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAnd">CeCostCategoryRuleRuleNotAnd</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOutputReference.property.andInput">andInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAnd">CeCostCategoryRuleRuleNotAnd</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOutputReference.property.costCategoryInput">costCategoryInput</a></code> | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotCostCategory">CeCostCategoryRuleRuleNotCostCategory</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOutputReference.property.dimensionInput">dimensionInput</a></code> | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotDimension">CeCostCategoryRuleRuleNotDimension</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOutputReference.property.notInput">notInput</a></code> | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNot">CeCostCategoryRuleRuleNotNot</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOutputReference.property.orInput">orInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOr">CeCostCategoryRuleRuleNotOr</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOutputReference.property.orInput">orInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOr">CeCostCategoryRuleRuleNotOr</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOutputReference.property.tagsInput">tagsInput</a></code> | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotTags">CeCostCategoryRuleRuleNotTags</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNot">CeCostCategoryRuleRuleNot</a></code> | *No description.* |
 
@@ -17923,7 +17923,7 @@ public readonly tags: CeCostCategoryRuleRuleNotTagsOutputReference;
 public readonly andInput: IResolvable | CeCostCategoryRuleRuleNotAnd[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAnd">CeCostCategoryRuleRuleNotAnd</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAnd">CeCostCategoryRuleRuleNotAnd</a>[]
 
 ---
 
@@ -17963,7 +17963,7 @@ public readonly notInput: CeCostCategoryRuleRuleNotNot;
 public readonly orInput: IResolvable | CeCostCategoryRuleRuleNotOr[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOr">CeCostCategoryRuleRuleNotOr</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOr">CeCostCategoryRuleRuleNotOr</a>[]
 
 ---
 
@@ -18000,14 +18000,14 @@ new ceCostCategory.CeCostCategoryRuleRuleNotTagsOutputReference(terraformResourc
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotTagsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotTagsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotTagsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotTagsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -18180,7 +18180,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotTagsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -18336,14 +18336,14 @@ new ceCostCategory.CeCostCategoryRuleRuleOrAndCostCategoryOutputReference(terraf
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndCostCategoryOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndCostCategoryOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndCostCategoryOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndCostCategoryOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -18516,7 +18516,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndCostCategoryOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -18672,14 +18672,14 @@ new ceCostCategory.CeCostCategoryRuleRuleOrAndDimensionOutputReference(terraform
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndDimensionOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndDimensionOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndDimensionOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndDimensionOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -18852,7 +18852,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndDimensionOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -19008,7 +19008,7 @@ new ceCostCategory.CeCostCategoryRuleRuleOrAndList(terraformResource: IInterpola
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -19016,7 +19016,7 @@ new ceCostCategory.CeCostCategoryRuleRuleOrAndList(terraformResource: IInterpola
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -19082,7 +19082,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -19117,7 +19117,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAnd">CeCostCategoryRuleRuleOrAnd</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAnd">CeCostCategoryRuleRuleOrAnd</a>[]</code> | *No description.* |
 
 ---
 
@@ -19151,7 +19151,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | CeCostCategoryRuleRuleOrAnd[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAnd">CeCostCategoryRuleRuleOrAnd</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAnd">CeCostCategoryRuleRuleOrAnd</a>[]
 
 ---
 
@@ -19168,7 +19168,7 @@ new ceCostCategory.CeCostCategoryRuleRuleOrAndOutputReference(terraformResource:
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -19177,7 +19177,7 @@ new ceCostCategory.CeCostCategoryRuleRuleOrAndOutputReference(terraformResource:
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -19369,7 +19369,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -19450,7 +19450,7 @@ public resetTags(): void
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndOutputReference.property.costCategoryInput">costCategoryInput</a></code> | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndCostCategory">CeCostCategoryRuleRuleOrAndCostCategory</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndOutputReference.property.dimensionInput">dimensionInput</a></code> | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndDimension">CeCostCategoryRuleRuleOrAndDimension</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndOutputReference.property.tagsInput">tagsInput</a></code> | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndTags">CeCostCategoryRuleRuleOrAndTags</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAnd">CeCostCategoryRuleRuleOrAnd</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAnd">CeCostCategoryRuleRuleOrAnd</a></code> | *No description.* |
 
 ---
 
@@ -19544,7 +19544,7 @@ public readonly tagsInput: CeCostCategoryRuleRuleOrAndTags;
 public readonly internalValue: IResolvable | CeCostCategoryRuleRuleOrAnd;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAnd">CeCostCategoryRuleRuleOrAnd</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAnd">CeCostCategoryRuleRuleOrAnd</a>
 
 ---
 
@@ -19561,14 +19561,14 @@ new ceCostCategory.CeCostCategoryRuleRuleOrAndTagsOutputReference(terraformResou
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndTagsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndTagsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndTagsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndTagsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -19741,7 +19741,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndTagsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -19897,14 +19897,14 @@ new ceCostCategory.CeCostCategoryRuleRuleOrCostCategoryOutputReference(terraform
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrCostCategoryOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrCostCategoryOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrCostCategoryOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrCostCategoryOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -20077,7 +20077,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrCostCategoryOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -20233,14 +20233,14 @@ new ceCostCategory.CeCostCategoryRuleRuleOrDimensionOutputReference(terraformRes
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrDimensionOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrDimensionOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrDimensionOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrDimensionOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -20413,7 +20413,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrDimensionOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -20569,7 +20569,7 @@ new ceCostCategory.CeCostCategoryRuleRuleOrList(terraformResource: IInterpolatin
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -20577,7 +20577,7 @@ new ceCostCategory.CeCostCategoryRuleRuleOrList(terraformResource: IInterpolatin
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -20643,7 +20643,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -20678,7 +20678,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOr">CeCostCategoryRuleRuleOr</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOr">CeCostCategoryRuleRuleOr</a>[]</code> | *No description.* |
 
 ---
 
@@ -20712,7 +20712,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | CeCostCategoryRuleRuleOr[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOr">CeCostCategoryRuleRuleOr</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOr">CeCostCategoryRuleRuleOr</a>[]
 
 ---
 
@@ -20729,14 +20729,14 @@ new ceCostCategory.CeCostCategoryRuleRuleOrNotCostCategoryOutputReference(terraf
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotCostCategoryOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotCostCategoryOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotCostCategoryOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotCostCategoryOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -20909,7 +20909,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotCostCategoryOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -21065,14 +21065,14 @@ new ceCostCategory.CeCostCategoryRuleRuleOrNotDimensionOutputReference(terraform
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotDimensionOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotDimensionOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotDimensionOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotDimensionOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -21245,7 +21245,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotDimensionOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -21401,14 +21401,14 @@ new ceCostCategory.CeCostCategoryRuleRuleOrNotOutputReference(terraformResource:
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -21584,7 +21584,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -21776,14 +21776,14 @@ new ceCostCategory.CeCostCategoryRuleRuleOrNotTagsOutputReference(terraformResou
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotTagsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotTagsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotTagsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotTagsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -21956,7 +21956,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotTagsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -22112,14 +22112,14 @@ new ceCostCategory.CeCostCategoryRuleRuleOrOrCostCategoryOutputReference(terrafo
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrCostCategoryOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrCostCategoryOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrCostCategoryOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrCostCategoryOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -22292,7 +22292,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrCostCategoryOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -22448,14 +22448,14 @@ new ceCostCategory.CeCostCategoryRuleRuleOrOrDimensionOutputReference(terraformR
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrDimensionOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrDimensionOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrDimensionOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrDimensionOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -22628,7 +22628,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrDimensionOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -22784,7 +22784,7 @@ new ceCostCategory.CeCostCategoryRuleRuleOrOrList(terraformResource: IInterpolat
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -22792,7 +22792,7 @@ new ceCostCategory.CeCostCategoryRuleRuleOrOrList(terraformResource: IInterpolat
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -22858,7 +22858,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -22893,7 +22893,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOr">CeCostCategoryRuleRuleOrOr</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOr">CeCostCategoryRuleRuleOrOr</a>[]</code> | *No description.* |
 
 ---
 
@@ -22927,7 +22927,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | CeCostCategoryRuleRuleOrOr[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOr">CeCostCategoryRuleRuleOrOr</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOr">CeCostCategoryRuleRuleOrOr</a>[]
 
 ---
 
@@ -22944,7 +22944,7 @@ new ceCostCategory.CeCostCategoryRuleRuleOrOrOutputReference(terraformResource: 
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -22953,7 +22953,7 @@ new ceCostCategory.CeCostCategoryRuleRuleOrOrOutputReference(terraformResource: 
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -23145,7 +23145,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -23226,7 +23226,7 @@ public resetTags(): void
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrOutputReference.property.costCategoryInput">costCategoryInput</a></code> | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrCostCategory">CeCostCategoryRuleRuleOrOrCostCategory</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrOutputReference.property.dimensionInput">dimensionInput</a></code> | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrDimension">CeCostCategoryRuleRuleOrOrDimension</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrOutputReference.property.tagsInput">tagsInput</a></code> | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrTags">CeCostCategoryRuleRuleOrOrTags</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOr">CeCostCategoryRuleRuleOrOr</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOr">CeCostCategoryRuleRuleOrOr</a></code> | *No description.* |
 
 ---
 
@@ -23320,7 +23320,7 @@ public readonly tagsInput: CeCostCategoryRuleRuleOrOrTags;
 public readonly internalValue: IResolvable | CeCostCategoryRuleRuleOrOr;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOr">CeCostCategoryRuleRuleOrOr</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOr">CeCostCategoryRuleRuleOrOr</a>
 
 ---
 
@@ -23337,14 +23337,14 @@ new ceCostCategory.CeCostCategoryRuleRuleOrOrTagsOutputReference(terraformResour
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrTagsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrTagsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrTagsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrTagsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -23517,7 +23517,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrTagsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -23673,7 +23673,7 @@ new ceCostCategory.CeCostCategoryRuleRuleOrOutputReference(terraformResource: II
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -23682,7 +23682,7 @@ new ceCostCategory.CeCostCategoryRuleRuleOrOutputReference(terraformResource: II
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -23880,7 +23880,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -23902,7 +23902,7 @@ public putAnd(value: IResolvable | CeCostCategoryRuleRuleOrAnd[]): void
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOutputReference.putAnd.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAnd">CeCostCategoryRuleRuleOrAnd</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAnd">CeCostCategoryRuleRuleOrAnd</a>[]
 
 ---
 
@@ -23950,7 +23950,7 @@ public putOr(value: IResolvable | CeCostCategoryRuleRuleOrOr[]): void
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOutputReference.putOr.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOr">CeCostCategoryRuleRuleOrOr</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOr">CeCostCategoryRuleRuleOrOr</a>[]
 
 ---
 
@@ -24015,13 +24015,13 @@ public resetTags(): void
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOutputReference.property.not">not</a></code> | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotOutputReference">CeCostCategoryRuleRuleOrNotOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOutputReference.property.or">or</a></code> | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrList">CeCostCategoryRuleRuleOrOrList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOutputReference.property.tags">tags</a></code> | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrTagsOutputReference">CeCostCategoryRuleRuleOrTagsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOutputReference.property.andInput">andInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAnd">CeCostCategoryRuleRuleOrAnd</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOutputReference.property.andInput">andInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAnd">CeCostCategoryRuleRuleOrAnd</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOutputReference.property.costCategoryInput">costCategoryInput</a></code> | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrCostCategory">CeCostCategoryRuleRuleOrCostCategory</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOutputReference.property.dimensionInput">dimensionInput</a></code> | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrDimension">CeCostCategoryRuleRuleOrDimension</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOutputReference.property.notInput">notInput</a></code> | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNot">CeCostCategoryRuleRuleOrNot</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOutputReference.property.orInput">orInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOr">CeCostCategoryRuleRuleOrOr</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOutputReference.property.orInput">orInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOr">CeCostCategoryRuleRuleOrOr</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOutputReference.property.tagsInput">tagsInput</a></code> | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrTags">CeCostCategoryRuleRuleOrTags</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOr">CeCostCategoryRuleRuleOr</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOr">CeCostCategoryRuleRuleOr</a></code> | *No description.* |
 
 ---
 
@@ -24115,7 +24115,7 @@ public readonly tags: CeCostCategoryRuleRuleOrTagsOutputReference;
 public readonly andInput: IResolvable | CeCostCategoryRuleRuleOrAnd[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAnd">CeCostCategoryRuleRuleOrAnd</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAnd">CeCostCategoryRuleRuleOrAnd</a>[]
 
 ---
 
@@ -24155,7 +24155,7 @@ public readonly notInput: CeCostCategoryRuleRuleOrNot;
 public readonly orInput: IResolvable | CeCostCategoryRuleRuleOrOr[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOr">CeCostCategoryRuleRuleOrOr</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOr">CeCostCategoryRuleRuleOrOr</a>[]
 
 ---
 
@@ -24175,7 +24175,7 @@ public readonly tagsInput: CeCostCategoryRuleRuleOrTags;
 public readonly internalValue: IResolvable | CeCostCategoryRuleRuleOr;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOr">CeCostCategoryRuleRuleOr</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOr">CeCostCategoryRuleRuleOr</a>
 
 ---
 
@@ -24192,14 +24192,14 @@ new ceCostCategory.CeCostCategoryRuleRuleOrTagsOutputReference(terraformResource
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrTagsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrTagsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrTagsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrTagsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -24372,7 +24372,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrTagsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -24528,14 +24528,14 @@ new ceCostCategory.CeCostCategoryRuleRuleOutputReference(terraformResource: IInt
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -24717,7 +24717,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -24739,7 +24739,7 @@ public putAnd(value: IResolvable | CeCostCategoryRuleRuleAnd[]): void
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOutputReference.putAnd.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAnd">CeCostCategoryRuleRuleAnd</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAnd">CeCostCategoryRuleRuleAnd</a>[]
 
 ---
 
@@ -24787,7 +24787,7 @@ public putOr(value: IResolvable | CeCostCategoryRuleRuleOr[]): void
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOutputReference.putOr.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOr">CeCostCategoryRuleRuleOr</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOr">CeCostCategoryRuleRuleOr</a>[]
 
 ---
 
@@ -24852,11 +24852,11 @@ public resetTags(): void
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOutputReference.property.not">not</a></code> | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOutputReference">CeCostCategoryRuleRuleNotOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOutputReference.property.or">or</a></code> | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrList">CeCostCategoryRuleRuleOrList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOutputReference.property.tags">tags</a></code> | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleTagsOutputReference">CeCostCategoryRuleRuleTagsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOutputReference.property.andInput">andInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAnd">CeCostCategoryRuleRuleAnd</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOutputReference.property.andInput">andInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAnd">CeCostCategoryRuleRuleAnd</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOutputReference.property.costCategoryInput">costCategoryInput</a></code> | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleCostCategory">CeCostCategoryRuleRuleCostCategory</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOutputReference.property.dimensionInput">dimensionInput</a></code> | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleDimension">CeCostCategoryRuleRuleDimension</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOutputReference.property.notInput">notInput</a></code> | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNot">CeCostCategoryRuleRuleNot</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOutputReference.property.orInput">orInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOr">CeCostCategoryRuleRuleOr</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOutputReference.property.orInput">orInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOr">CeCostCategoryRuleRuleOr</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOutputReference.property.tagsInput">tagsInput</a></code> | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleTags">CeCostCategoryRuleRuleTags</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRule">CeCostCategoryRuleRule</a></code> | *No description.* |
 
@@ -24952,7 +24952,7 @@ public readonly tags: CeCostCategoryRuleRuleTagsOutputReference;
 public readonly andInput: IResolvable | CeCostCategoryRuleRuleAnd[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAnd">CeCostCategoryRuleRuleAnd</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAnd">CeCostCategoryRuleRuleAnd</a>[]
 
 ---
 
@@ -24992,7 +24992,7 @@ public readonly notInput: CeCostCategoryRuleRuleNot;
 public readonly orInput: IResolvable | CeCostCategoryRuleRuleOr[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOr">CeCostCategoryRuleRuleOr</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOr">CeCostCategoryRuleRuleOr</a>[]
 
 ---
 
@@ -25029,14 +25029,14 @@ new ceCostCategory.CeCostCategoryRuleRuleTagsOutputReference(terraformResource: 
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleTagsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleTagsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleTagsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleTagsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -25209,7 +25209,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.ceCostCategory.CeCostCategoryRuleRuleTagsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -25365,7 +25365,7 @@ new ceCostCategory.CeCostCategorySplitChargeRuleList(terraformResource: IInterpo
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategorySplitChargeRuleList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategorySplitChargeRuleList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategorySplitChargeRuleList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategorySplitChargeRuleList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -25373,7 +25373,7 @@ new ceCostCategory.CeCostCategorySplitChargeRuleList(terraformResource: IInterpo
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.ceCostCategory.CeCostCategorySplitChargeRuleList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -25439,7 +25439,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.ceCostCategory.CeCostCategorySplitChargeRuleList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -25474,7 +25474,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategorySplitChargeRuleList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategorySplitChargeRuleList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategorySplitChargeRuleList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategorySplitChargeRule">CeCostCategorySplitChargeRule</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategorySplitChargeRuleList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategorySplitChargeRule">CeCostCategorySplitChargeRule</a>[]</code> | *No description.* |
 
 ---
 
@@ -25508,7 +25508,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | CeCostCategorySplitChargeRule[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategorySplitChargeRule">CeCostCategorySplitChargeRule</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategorySplitChargeRule">CeCostCategorySplitChargeRule</a>[]
 
 ---
 
@@ -25525,7 +25525,7 @@ new ceCostCategory.CeCostCategorySplitChargeRuleOutputReference(terraformResourc
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategorySplitChargeRuleOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategorySplitChargeRuleOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategorySplitChargeRuleOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategorySplitChargeRuleOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategorySplitChargeRuleOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -25534,7 +25534,7 @@ new ceCostCategory.CeCostCategorySplitChargeRuleOutputReference(terraformResourc
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.ceCostCategory.CeCostCategorySplitChargeRuleOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -25722,7 +25722,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.ceCostCategory.CeCostCategorySplitChargeRuleOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -25744,7 +25744,7 @@ public putParameter(value: IResolvable | CeCostCategorySplitChargeRuleParameter[
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.ceCostCategory.CeCostCategorySplitChargeRuleOutputReference.putParameter.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategorySplitChargeRuleParameter">CeCostCategorySplitChargeRuleParameter</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategorySplitChargeRuleParameter">CeCostCategorySplitChargeRuleParameter</a>[]
 
 ---
 
@@ -25763,13 +25763,13 @@ public resetParameter(): void
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategorySplitChargeRuleOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategorySplitChargeRuleOutputReference.property.parameter">parameter</a></code> | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategorySplitChargeRuleParameterList">CeCostCategorySplitChargeRuleParameterList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategorySplitChargeRuleOutputReference.property.methodInput">methodInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategorySplitChargeRuleOutputReference.property.parameterInput">parameterInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategorySplitChargeRuleParameter">CeCostCategorySplitChargeRuleParameter</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategorySplitChargeRuleOutputReference.property.parameterInput">parameterInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategorySplitChargeRuleParameter">CeCostCategorySplitChargeRuleParameter</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategorySplitChargeRuleOutputReference.property.sourceInput">sourceInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategorySplitChargeRuleOutputReference.property.targetsInput">targetsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategorySplitChargeRuleOutputReference.property.method">method</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategorySplitChargeRuleOutputReference.property.source">source</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategorySplitChargeRuleOutputReference.property.targets">targets</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategorySplitChargeRuleOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategorySplitChargeRule">CeCostCategorySplitChargeRule</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategorySplitChargeRuleOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategorySplitChargeRule">CeCostCategorySplitChargeRule</a></code> | *No description.* |
 
 ---
 
@@ -25823,7 +25823,7 @@ public readonly methodInput: string;
 public readonly parameterInput: IResolvable | CeCostCategorySplitChargeRuleParameter[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategorySplitChargeRuleParameter">CeCostCategorySplitChargeRuleParameter</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategorySplitChargeRuleParameter">CeCostCategorySplitChargeRuleParameter</a>[]
 
 ---
 
@@ -25883,7 +25883,7 @@ public readonly targets: string[];
 public readonly internalValue: IResolvable | CeCostCategorySplitChargeRule;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategorySplitChargeRule">CeCostCategorySplitChargeRule</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategorySplitChargeRule">CeCostCategorySplitChargeRule</a>
 
 ---
 
@@ -25900,7 +25900,7 @@ new ceCostCategory.CeCostCategorySplitChargeRuleParameterList(terraformResource:
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategorySplitChargeRuleParameterList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategorySplitChargeRuleParameterList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategorySplitChargeRuleParameterList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategorySplitChargeRuleParameterList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -25908,7 +25908,7 @@ new ceCostCategory.CeCostCategorySplitChargeRuleParameterList(terraformResource:
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.ceCostCategory.CeCostCategorySplitChargeRuleParameterList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -25974,7 +25974,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.ceCostCategory.CeCostCategorySplitChargeRuleParameterList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -26009,7 +26009,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategorySplitChargeRuleParameterList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategorySplitChargeRuleParameterList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategorySplitChargeRuleParameterList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategorySplitChargeRuleParameter">CeCostCategorySplitChargeRuleParameter</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategorySplitChargeRuleParameterList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategorySplitChargeRuleParameter">CeCostCategorySplitChargeRuleParameter</a>[]</code> | *No description.* |
 
 ---
 
@@ -26043,7 +26043,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | CeCostCategorySplitChargeRuleParameter[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategorySplitChargeRuleParameter">CeCostCategorySplitChargeRuleParameter</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategorySplitChargeRuleParameter">CeCostCategorySplitChargeRuleParameter</a>[]
 
 ---
 
@@ -26060,7 +26060,7 @@ new ceCostCategory.CeCostCategorySplitChargeRuleParameterOutputReference(terrafo
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategorySplitChargeRuleParameterOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategorySplitChargeRuleParameterOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategorySplitChargeRuleParameterOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategorySplitChargeRuleParameterOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategorySplitChargeRuleParameterOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -26069,7 +26069,7 @@ new ceCostCategory.CeCostCategorySplitChargeRuleParameterOutputReference(terrafo
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.ceCostCategory.CeCostCategorySplitChargeRuleParameterOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -26257,7 +26257,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.ceCostCategory.CeCostCategorySplitChargeRuleParameterOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -26294,7 +26294,7 @@ public resetValues(): void
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategorySplitChargeRuleParameterOutputReference.property.valuesInput">valuesInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategorySplitChargeRuleParameterOutputReference.property.type">type</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategorySplitChargeRuleParameterOutputReference.property.values">values</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategorySplitChargeRuleParameterOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategorySplitChargeRuleParameter">CeCostCategorySplitChargeRuleParameter</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategorySplitChargeRuleParameterOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategorySplitChargeRuleParameter">CeCostCategorySplitChargeRuleParameter</a></code> | *No description.* |
 
 ---
 
@@ -26368,7 +26368,7 @@ public readonly values: string[];
 public readonly internalValue: IResolvable | CeCostCategorySplitChargeRuleParameter;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategorySplitChargeRuleParameter">CeCostCategorySplitChargeRuleParameter</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.ceCostCategory.CeCostCategorySplitChargeRuleParameter">CeCostCategorySplitChargeRuleParameter</a>
 
 ---
 
