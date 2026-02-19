@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/budgets_budget
+// https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,94 +13,100 @@ import * as cdktn from 'cdktn';
 
 export interface BudgetsBudgetConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/budgets_budget#account_id BudgetsBudget#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#account_id BudgetsBudget#account_id}
   */
   readonly accountId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/budgets_budget#billing_view_arn BudgetsBudget#billing_view_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#billing_view_arn BudgetsBudget#billing_view_arn}
   */
   readonly billingViewArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/budgets_budget#budget_type BudgetsBudget#budget_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#budget_type BudgetsBudget#budget_type}
   */
   readonly budgetType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/budgets_budget#id BudgetsBudget#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#id BudgetsBudget#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/budgets_budget#limit_amount BudgetsBudget#limit_amount}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#limit_amount BudgetsBudget#limit_amount}
   */
   readonly limitAmount?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/budgets_budget#limit_unit BudgetsBudget#limit_unit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#limit_unit BudgetsBudget#limit_unit}
   */
   readonly limitUnit?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/budgets_budget#name BudgetsBudget#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#name BudgetsBudget#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/budgets_budget#name_prefix BudgetsBudget#name_prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#name_prefix BudgetsBudget#name_prefix}
   */
   readonly namePrefix?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/budgets_budget#tags BudgetsBudget#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#tags BudgetsBudget#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/budgets_budget#tags_all BudgetsBudget#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#tags_all BudgetsBudget#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/budgets_budget#time_period_end BudgetsBudget#time_period_end}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#time_period_end BudgetsBudget#time_period_end}
   */
   readonly timePeriodEnd?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/budgets_budget#time_period_start BudgetsBudget#time_period_start}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#time_period_start BudgetsBudget#time_period_start}
   */
   readonly timePeriodStart?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/budgets_budget#time_unit BudgetsBudget#time_unit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#time_unit BudgetsBudget#time_unit}
   */
   readonly timeUnit: string;
   /**
   * auto_adjust_data block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/budgets_budget#auto_adjust_data BudgetsBudget#auto_adjust_data}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#auto_adjust_data BudgetsBudget#auto_adjust_data}
   */
   readonly autoAdjustData?: BudgetsBudgetAutoAdjustData;
   /**
   * cost_filter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/budgets_budget#cost_filter BudgetsBudget#cost_filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#cost_filter BudgetsBudget#cost_filter}
   */
   readonly costFilter?: BudgetsBudgetCostFilter[] | cdktn.IResolvable;
   /**
   * cost_types block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/budgets_budget#cost_types BudgetsBudget#cost_types}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#cost_types BudgetsBudget#cost_types}
   */
   readonly costTypes?: BudgetsBudgetCostTypes;
   /**
+  * filter_expression block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#filter_expression BudgetsBudget#filter_expression}
+  */
+  readonly filterExpression?: BudgetsBudgetFilterExpression;
+  /**
   * notification block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/budgets_budget#notification BudgetsBudget#notification}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#notification BudgetsBudget#notification}
   */
   readonly notification?: BudgetsBudgetNotification[] | cdktn.IResolvable;
   /**
   * planned_limit block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/budgets_budget#planned_limit BudgetsBudget#planned_limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#planned_limit BudgetsBudget#planned_limit}
   */
   readonly plannedLimit?: BudgetsBudgetPlannedLimit[] | cdktn.IResolvable;
 }
 export interface BudgetsBudgetAutoAdjustDataHistoricalOptions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/budgets_budget#budget_adjustment_period BudgetsBudget#budget_adjustment_period}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#budget_adjustment_period BudgetsBudget#budget_adjustment_period}
   */
   readonly budgetAdjustmentPeriod: number;
 }
@@ -186,13 +192,13 @@ export class BudgetsBudgetAutoAdjustDataHistoricalOptionsOutputReference extends
 }
 export interface BudgetsBudgetAutoAdjustData {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/budgets_budget#auto_adjust_type BudgetsBudget#auto_adjust_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#auto_adjust_type BudgetsBudget#auto_adjust_type}
   */
   readonly autoAdjustType: string;
   /**
   * historical_options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/budgets_budget#historical_options BudgetsBudget#historical_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#historical_options BudgetsBudget#historical_options}
   */
   readonly historicalOptions?: BudgetsBudgetAutoAdjustDataHistoricalOptions;
 }
@@ -307,11 +313,11 @@ export class BudgetsBudgetAutoAdjustDataOutputReference extends cdktn.ComplexObj
 }
 export interface BudgetsBudgetCostFilter {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/budgets_budget#name BudgetsBudget#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#name BudgetsBudget#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/budgets_budget#values BudgetsBudget#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#values BudgetsBudget#values}
   */
   readonly values: string[];
 }
@@ -450,47 +456,47 @@ export class BudgetsBudgetCostFilterList extends cdktn.ComplexList {
 }
 export interface BudgetsBudgetCostTypes {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/budgets_budget#include_credit BudgetsBudget#include_credit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#include_credit BudgetsBudget#include_credit}
   */
   readonly includeCredit?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/budgets_budget#include_discount BudgetsBudget#include_discount}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#include_discount BudgetsBudget#include_discount}
   */
   readonly includeDiscount?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/budgets_budget#include_other_subscription BudgetsBudget#include_other_subscription}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#include_other_subscription BudgetsBudget#include_other_subscription}
   */
   readonly includeOtherSubscription?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/budgets_budget#include_recurring BudgetsBudget#include_recurring}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#include_recurring BudgetsBudget#include_recurring}
   */
   readonly includeRecurring?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/budgets_budget#include_refund BudgetsBudget#include_refund}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#include_refund BudgetsBudget#include_refund}
   */
   readonly includeRefund?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/budgets_budget#include_subscription BudgetsBudget#include_subscription}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#include_subscription BudgetsBudget#include_subscription}
   */
   readonly includeSubscription?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/budgets_budget#include_support BudgetsBudget#include_support}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#include_support BudgetsBudget#include_support}
   */
   readonly includeSupport?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/budgets_budget#include_tax BudgetsBudget#include_tax}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#include_tax BudgetsBudget#include_tax}
   */
   readonly includeTax?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/budgets_budget#include_upfront BudgetsBudget#include_upfront}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#include_upfront BudgetsBudget#include_upfront}
   */
   readonly includeUpfront?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/budgets_budget#use_amortized BudgetsBudget#use_amortized}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#use_amortized BudgetsBudget#use_amortized}
   */
   readonly useAmortized?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/budgets_budget#use_blended BudgetsBudget#use_blended}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#use_blended BudgetsBudget#use_blended}
   */
   readonly useBlended?: boolean | cdktn.IResolvable;
 }
@@ -862,29 +868,8505 @@ export class BudgetsBudgetCostTypesOutputReference extends cdktn.ComplexObject {
     return this._useBlended;
   }
 }
+export interface BudgetsBudgetFilterExpressionAndAndCostCategories {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#key BudgetsBudget#key}
+  */
+  readonly key?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}
+  */
+  readonly matchOptions?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#values BudgetsBudget#values}
+  */
+  readonly values?: string[];
+}
+
+export function budgetsBudgetFilterExpressionAndAndCostCategoriesToTerraform(struct?: BudgetsBudgetFilterExpressionAndAndCostCategoriesOutputReference | BudgetsBudgetFilterExpressionAndAndCostCategories): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    key: cdktn.stringToTerraform(struct!.key),
+    match_options: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.matchOptions),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
+  }
+}
+
+
+export function budgetsBudgetFilterExpressionAndAndCostCategoriesToHclTerraform(struct?: BudgetsBudgetFilterExpressionAndAndCostCategoriesOutputReference | BudgetsBudgetFilterExpressionAndAndCostCategories): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    key: {
+      value: cdktn.stringToHclTerraform(struct!.key),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    match_options: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.matchOptions),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    values: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class BudgetsBudgetFilterExpressionAndAndCostCategoriesOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): BudgetsBudgetFilterExpressionAndAndCostCategories | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._key !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.key = this._key;
+    }
+    if (this._matchOptions !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.matchOptions = this._matchOptions;
+    }
+    if (this._values !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.values = this._values;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: BudgetsBudgetFilterExpressionAndAndCostCategories | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._key = undefined;
+      this._matchOptions = undefined;
+      this._values = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._key = value.key;
+      this._matchOptions = value.matchOptions;
+      this._values = value.values;
+    }
+  }
+
+  // key - computed: false, optional: true, required: false
+  private _key?: string; 
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+  public set key(value: string) {
+    this._key = value;
+  }
+  public resetKey() {
+    this._key = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get keyInput() {
+    return this._key;
+  }
+
+  // match_options - computed: false, optional: true, required: false
+  private _matchOptions?: string[]; 
+  public get matchOptions() {
+    return this.getListAttribute('match_options');
+  }
+  public set matchOptions(value: string[]) {
+    this._matchOptions = value;
+  }
+  public resetMatchOptions() {
+    this._matchOptions = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get matchOptionsInput() {
+    return this._matchOptions;
+  }
+
+  // values - computed: false, optional: true, required: false
+  private _values?: string[]; 
+  public get values() {
+    return this.getListAttribute('values');
+  }
+  public set values(value: string[]) {
+    this._values = value;
+  }
+  public resetValues() {
+    this._values = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valuesInput() {
+    return this._values;
+  }
+}
+export interface BudgetsBudgetFilterExpressionAndAndDimensions {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#key BudgetsBudget#key}
+  */
+  readonly key: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}
+  */
+  readonly matchOptions?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#values BudgetsBudget#values}
+  */
+  readonly values: string[];
+}
+
+export function budgetsBudgetFilterExpressionAndAndDimensionsToTerraform(struct?: BudgetsBudgetFilterExpressionAndAndDimensionsOutputReference | BudgetsBudgetFilterExpressionAndAndDimensions): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    key: cdktn.stringToTerraform(struct!.key),
+    match_options: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.matchOptions),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
+  }
+}
+
+
+export function budgetsBudgetFilterExpressionAndAndDimensionsToHclTerraform(struct?: BudgetsBudgetFilterExpressionAndAndDimensionsOutputReference | BudgetsBudgetFilterExpressionAndAndDimensions): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    key: {
+      value: cdktn.stringToHclTerraform(struct!.key),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    match_options: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.matchOptions),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    values: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class BudgetsBudgetFilterExpressionAndAndDimensionsOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): BudgetsBudgetFilterExpressionAndAndDimensions | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._key !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.key = this._key;
+    }
+    if (this._matchOptions !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.matchOptions = this._matchOptions;
+    }
+    if (this._values !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.values = this._values;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: BudgetsBudgetFilterExpressionAndAndDimensions | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._key = undefined;
+      this._matchOptions = undefined;
+      this._values = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._key = value.key;
+      this._matchOptions = value.matchOptions;
+      this._values = value.values;
+    }
+  }
+
+  // key - computed: false, optional: false, required: true
+  private _key?: string; 
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+  public set key(value: string) {
+    this._key = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get keyInput() {
+    return this._key;
+  }
+
+  // match_options - computed: false, optional: true, required: false
+  private _matchOptions?: string[]; 
+  public get matchOptions() {
+    return this.getListAttribute('match_options');
+  }
+  public set matchOptions(value: string[]) {
+    this._matchOptions = value;
+  }
+  public resetMatchOptions() {
+    this._matchOptions = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get matchOptionsInput() {
+    return this._matchOptions;
+  }
+
+  // values - computed: false, optional: false, required: true
+  private _values?: string[]; 
+  public get values() {
+    return this.getListAttribute('values');
+  }
+  public set values(value: string[]) {
+    this._values = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valuesInput() {
+    return this._values;
+  }
+}
+export interface BudgetsBudgetFilterExpressionAndAndTags {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#key BudgetsBudget#key}
+  */
+  readonly key?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}
+  */
+  readonly matchOptions?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#values BudgetsBudget#values}
+  */
+  readonly values?: string[];
+}
+
+export function budgetsBudgetFilterExpressionAndAndTagsToTerraform(struct?: BudgetsBudgetFilterExpressionAndAndTagsOutputReference | BudgetsBudgetFilterExpressionAndAndTags): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    key: cdktn.stringToTerraform(struct!.key),
+    match_options: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.matchOptions),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
+  }
+}
+
+
+export function budgetsBudgetFilterExpressionAndAndTagsToHclTerraform(struct?: BudgetsBudgetFilterExpressionAndAndTagsOutputReference | BudgetsBudgetFilterExpressionAndAndTags): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    key: {
+      value: cdktn.stringToHclTerraform(struct!.key),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    match_options: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.matchOptions),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    values: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class BudgetsBudgetFilterExpressionAndAndTagsOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): BudgetsBudgetFilterExpressionAndAndTags | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._key !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.key = this._key;
+    }
+    if (this._matchOptions !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.matchOptions = this._matchOptions;
+    }
+    if (this._values !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.values = this._values;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: BudgetsBudgetFilterExpressionAndAndTags | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._key = undefined;
+      this._matchOptions = undefined;
+      this._values = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._key = value.key;
+      this._matchOptions = value.matchOptions;
+      this._values = value.values;
+    }
+  }
+
+  // key - computed: false, optional: true, required: false
+  private _key?: string; 
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+  public set key(value: string) {
+    this._key = value;
+  }
+  public resetKey() {
+    this._key = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get keyInput() {
+    return this._key;
+  }
+
+  // match_options - computed: false, optional: true, required: false
+  private _matchOptions?: string[]; 
+  public get matchOptions() {
+    return this.getListAttribute('match_options');
+  }
+  public set matchOptions(value: string[]) {
+    this._matchOptions = value;
+  }
+  public resetMatchOptions() {
+    this._matchOptions = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get matchOptionsInput() {
+    return this._matchOptions;
+  }
+
+  // values - computed: false, optional: true, required: false
+  private _values?: string[]; 
+  public get values() {
+    return this.getListAttribute('values');
+  }
+  public set values(value: string[]) {
+    this._values = value;
+  }
+  public resetValues() {
+    this._values = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valuesInput() {
+    return this._values;
+  }
+}
+export interface BudgetsBudgetFilterExpressionAndAnd {
+  /**
+  * cost_categories block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#cost_categories BudgetsBudget#cost_categories}
+  */
+  readonly costCategories?: BudgetsBudgetFilterExpressionAndAndCostCategories;
+  /**
+  * dimensions block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#dimensions BudgetsBudget#dimensions}
+  */
+  readonly dimensions?: BudgetsBudgetFilterExpressionAndAndDimensions;
+  /**
+  * tags block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#tags BudgetsBudget#tags}
+  */
+  readonly tags?: BudgetsBudgetFilterExpressionAndAndTags;
+}
+
+export function budgetsBudgetFilterExpressionAndAndToTerraform(struct?: BudgetsBudgetFilterExpressionAndAnd | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    cost_categories: budgetsBudgetFilterExpressionAndAndCostCategoriesToTerraform(struct!.costCategories),
+    dimensions: budgetsBudgetFilterExpressionAndAndDimensionsToTerraform(struct!.dimensions),
+    tags: budgetsBudgetFilterExpressionAndAndTagsToTerraform(struct!.tags),
+  }
+}
+
+
+export function budgetsBudgetFilterExpressionAndAndToHclTerraform(struct?: BudgetsBudgetFilterExpressionAndAnd | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    cost_categories: {
+      value: budgetsBudgetFilterExpressionAndAndCostCategoriesToHclTerraform(struct!.costCategories),
+      isBlock: true,
+      type: "list",
+      storageClassType: "BudgetsBudgetFilterExpressionAndAndCostCategoriesList",
+    },
+    dimensions: {
+      value: budgetsBudgetFilterExpressionAndAndDimensionsToHclTerraform(struct!.dimensions),
+      isBlock: true,
+      type: "list",
+      storageClassType: "BudgetsBudgetFilterExpressionAndAndDimensionsList",
+    },
+    tags: {
+      value: budgetsBudgetFilterExpressionAndAndTagsToHclTerraform(struct!.tags),
+      isBlock: true,
+      type: "list",
+      storageClassType: "BudgetsBudgetFilterExpressionAndAndTagsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class BudgetsBudgetFilterExpressionAndAndOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): BudgetsBudgetFilterExpressionAndAnd | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._costCategories?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.costCategories = this._costCategories?.internalValue;
+    }
+    if (this._dimensions?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.dimensions = this._dimensions?.internalValue;
+    }
+    if (this._tags?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.tags = this._tags?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: BudgetsBudgetFilterExpressionAndAnd | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._costCategories.internalValue = undefined;
+      this._dimensions.internalValue = undefined;
+      this._tags.internalValue = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._costCategories.internalValue = value.costCategories;
+      this._dimensions.internalValue = value.dimensions;
+      this._tags.internalValue = value.tags;
+    }
+  }
+
+  // cost_categories - computed: false, optional: true, required: false
+  private _costCategories = new BudgetsBudgetFilterExpressionAndAndCostCategoriesOutputReference(this, "cost_categories");
+  public get costCategories() {
+    return this._costCategories;
+  }
+  public putCostCategories(value: BudgetsBudgetFilterExpressionAndAndCostCategories) {
+    this._costCategories.internalValue = value;
+  }
+  public resetCostCategories() {
+    this._costCategories.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get costCategoriesInput() {
+    return this._costCategories.internalValue;
+  }
+
+  // dimensions - computed: false, optional: true, required: false
+  private _dimensions = new BudgetsBudgetFilterExpressionAndAndDimensionsOutputReference(this, "dimensions");
+  public get dimensions() {
+    return this._dimensions;
+  }
+  public putDimensions(value: BudgetsBudgetFilterExpressionAndAndDimensions) {
+    this._dimensions.internalValue = value;
+  }
+  public resetDimensions() {
+    this._dimensions.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dimensionsInput() {
+    return this._dimensions.internalValue;
+  }
+
+  // tags - computed: false, optional: true, required: false
+  private _tags = new BudgetsBudgetFilterExpressionAndAndTagsOutputReference(this, "tags");
+  public get tags() {
+    return this._tags;
+  }
+  public putTags(value: BudgetsBudgetFilterExpressionAndAndTags) {
+    this._tags.internalValue = value;
+  }
+  public resetTags() {
+    this._tags.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags.internalValue;
+  }
+}
+
+export class BudgetsBudgetFilterExpressionAndAndList extends cdktn.ComplexList {
+  public internalValue? : BudgetsBudgetFilterExpressionAndAnd[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): BudgetsBudgetFilterExpressionAndAndOutputReference {
+    return new BudgetsBudgetFilterExpressionAndAndOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface BudgetsBudgetFilterExpressionAndCostCategories {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#key BudgetsBudget#key}
+  */
+  readonly key?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}
+  */
+  readonly matchOptions?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#values BudgetsBudget#values}
+  */
+  readonly values?: string[];
+}
+
+export function budgetsBudgetFilterExpressionAndCostCategoriesToTerraform(struct?: BudgetsBudgetFilterExpressionAndCostCategoriesOutputReference | BudgetsBudgetFilterExpressionAndCostCategories): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    key: cdktn.stringToTerraform(struct!.key),
+    match_options: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.matchOptions),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
+  }
+}
+
+
+export function budgetsBudgetFilterExpressionAndCostCategoriesToHclTerraform(struct?: BudgetsBudgetFilterExpressionAndCostCategoriesOutputReference | BudgetsBudgetFilterExpressionAndCostCategories): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    key: {
+      value: cdktn.stringToHclTerraform(struct!.key),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    match_options: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.matchOptions),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    values: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class BudgetsBudgetFilterExpressionAndCostCategoriesOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): BudgetsBudgetFilterExpressionAndCostCategories | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._key !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.key = this._key;
+    }
+    if (this._matchOptions !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.matchOptions = this._matchOptions;
+    }
+    if (this._values !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.values = this._values;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: BudgetsBudgetFilterExpressionAndCostCategories | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._key = undefined;
+      this._matchOptions = undefined;
+      this._values = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._key = value.key;
+      this._matchOptions = value.matchOptions;
+      this._values = value.values;
+    }
+  }
+
+  // key - computed: false, optional: true, required: false
+  private _key?: string; 
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+  public set key(value: string) {
+    this._key = value;
+  }
+  public resetKey() {
+    this._key = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get keyInput() {
+    return this._key;
+  }
+
+  // match_options - computed: false, optional: true, required: false
+  private _matchOptions?: string[]; 
+  public get matchOptions() {
+    return this.getListAttribute('match_options');
+  }
+  public set matchOptions(value: string[]) {
+    this._matchOptions = value;
+  }
+  public resetMatchOptions() {
+    this._matchOptions = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get matchOptionsInput() {
+    return this._matchOptions;
+  }
+
+  // values - computed: false, optional: true, required: false
+  private _values?: string[]; 
+  public get values() {
+    return this.getListAttribute('values');
+  }
+  public set values(value: string[]) {
+    this._values = value;
+  }
+  public resetValues() {
+    this._values = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valuesInput() {
+    return this._values;
+  }
+}
+export interface BudgetsBudgetFilterExpressionAndDimensions {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#key BudgetsBudget#key}
+  */
+  readonly key: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}
+  */
+  readonly matchOptions?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#values BudgetsBudget#values}
+  */
+  readonly values: string[];
+}
+
+export function budgetsBudgetFilterExpressionAndDimensionsToTerraform(struct?: BudgetsBudgetFilterExpressionAndDimensionsOutputReference | BudgetsBudgetFilterExpressionAndDimensions): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    key: cdktn.stringToTerraform(struct!.key),
+    match_options: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.matchOptions),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
+  }
+}
+
+
+export function budgetsBudgetFilterExpressionAndDimensionsToHclTerraform(struct?: BudgetsBudgetFilterExpressionAndDimensionsOutputReference | BudgetsBudgetFilterExpressionAndDimensions): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    key: {
+      value: cdktn.stringToHclTerraform(struct!.key),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    match_options: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.matchOptions),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    values: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class BudgetsBudgetFilterExpressionAndDimensionsOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): BudgetsBudgetFilterExpressionAndDimensions | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._key !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.key = this._key;
+    }
+    if (this._matchOptions !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.matchOptions = this._matchOptions;
+    }
+    if (this._values !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.values = this._values;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: BudgetsBudgetFilterExpressionAndDimensions | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._key = undefined;
+      this._matchOptions = undefined;
+      this._values = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._key = value.key;
+      this._matchOptions = value.matchOptions;
+      this._values = value.values;
+    }
+  }
+
+  // key - computed: false, optional: false, required: true
+  private _key?: string; 
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+  public set key(value: string) {
+    this._key = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get keyInput() {
+    return this._key;
+  }
+
+  // match_options - computed: false, optional: true, required: false
+  private _matchOptions?: string[]; 
+  public get matchOptions() {
+    return this.getListAttribute('match_options');
+  }
+  public set matchOptions(value: string[]) {
+    this._matchOptions = value;
+  }
+  public resetMatchOptions() {
+    this._matchOptions = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get matchOptionsInput() {
+    return this._matchOptions;
+  }
+
+  // values - computed: false, optional: false, required: true
+  private _values?: string[]; 
+  public get values() {
+    return this.getListAttribute('values');
+  }
+  public set values(value: string[]) {
+    this._values = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valuesInput() {
+    return this._values;
+  }
+}
+export interface BudgetsBudgetFilterExpressionAndNotCostCategories {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#key BudgetsBudget#key}
+  */
+  readonly key?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}
+  */
+  readonly matchOptions?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#values BudgetsBudget#values}
+  */
+  readonly values?: string[];
+}
+
+export function budgetsBudgetFilterExpressionAndNotCostCategoriesToTerraform(struct?: BudgetsBudgetFilterExpressionAndNotCostCategoriesOutputReference | BudgetsBudgetFilterExpressionAndNotCostCategories): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    key: cdktn.stringToTerraform(struct!.key),
+    match_options: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.matchOptions),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
+  }
+}
+
+
+export function budgetsBudgetFilterExpressionAndNotCostCategoriesToHclTerraform(struct?: BudgetsBudgetFilterExpressionAndNotCostCategoriesOutputReference | BudgetsBudgetFilterExpressionAndNotCostCategories): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    key: {
+      value: cdktn.stringToHclTerraform(struct!.key),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    match_options: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.matchOptions),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    values: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class BudgetsBudgetFilterExpressionAndNotCostCategoriesOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): BudgetsBudgetFilterExpressionAndNotCostCategories | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._key !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.key = this._key;
+    }
+    if (this._matchOptions !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.matchOptions = this._matchOptions;
+    }
+    if (this._values !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.values = this._values;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: BudgetsBudgetFilterExpressionAndNotCostCategories | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._key = undefined;
+      this._matchOptions = undefined;
+      this._values = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._key = value.key;
+      this._matchOptions = value.matchOptions;
+      this._values = value.values;
+    }
+  }
+
+  // key - computed: false, optional: true, required: false
+  private _key?: string; 
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+  public set key(value: string) {
+    this._key = value;
+  }
+  public resetKey() {
+    this._key = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get keyInput() {
+    return this._key;
+  }
+
+  // match_options - computed: false, optional: true, required: false
+  private _matchOptions?: string[]; 
+  public get matchOptions() {
+    return this.getListAttribute('match_options');
+  }
+  public set matchOptions(value: string[]) {
+    this._matchOptions = value;
+  }
+  public resetMatchOptions() {
+    this._matchOptions = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get matchOptionsInput() {
+    return this._matchOptions;
+  }
+
+  // values - computed: false, optional: true, required: false
+  private _values?: string[]; 
+  public get values() {
+    return this.getListAttribute('values');
+  }
+  public set values(value: string[]) {
+    this._values = value;
+  }
+  public resetValues() {
+    this._values = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valuesInput() {
+    return this._values;
+  }
+}
+export interface BudgetsBudgetFilterExpressionAndNotDimensions {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#key BudgetsBudget#key}
+  */
+  readonly key: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}
+  */
+  readonly matchOptions?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#values BudgetsBudget#values}
+  */
+  readonly values: string[];
+}
+
+export function budgetsBudgetFilterExpressionAndNotDimensionsToTerraform(struct?: BudgetsBudgetFilterExpressionAndNotDimensionsOutputReference | BudgetsBudgetFilterExpressionAndNotDimensions): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    key: cdktn.stringToTerraform(struct!.key),
+    match_options: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.matchOptions),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
+  }
+}
+
+
+export function budgetsBudgetFilterExpressionAndNotDimensionsToHclTerraform(struct?: BudgetsBudgetFilterExpressionAndNotDimensionsOutputReference | BudgetsBudgetFilterExpressionAndNotDimensions): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    key: {
+      value: cdktn.stringToHclTerraform(struct!.key),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    match_options: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.matchOptions),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    values: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class BudgetsBudgetFilterExpressionAndNotDimensionsOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): BudgetsBudgetFilterExpressionAndNotDimensions | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._key !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.key = this._key;
+    }
+    if (this._matchOptions !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.matchOptions = this._matchOptions;
+    }
+    if (this._values !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.values = this._values;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: BudgetsBudgetFilterExpressionAndNotDimensions | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._key = undefined;
+      this._matchOptions = undefined;
+      this._values = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._key = value.key;
+      this._matchOptions = value.matchOptions;
+      this._values = value.values;
+    }
+  }
+
+  // key - computed: false, optional: false, required: true
+  private _key?: string; 
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+  public set key(value: string) {
+    this._key = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get keyInput() {
+    return this._key;
+  }
+
+  // match_options - computed: false, optional: true, required: false
+  private _matchOptions?: string[]; 
+  public get matchOptions() {
+    return this.getListAttribute('match_options');
+  }
+  public set matchOptions(value: string[]) {
+    this._matchOptions = value;
+  }
+  public resetMatchOptions() {
+    this._matchOptions = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get matchOptionsInput() {
+    return this._matchOptions;
+  }
+
+  // values - computed: false, optional: false, required: true
+  private _values?: string[]; 
+  public get values() {
+    return this.getListAttribute('values');
+  }
+  public set values(value: string[]) {
+    this._values = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valuesInput() {
+    return this._values;
+  }
+}
+export interface BudgetsBudgetFilterExpressionAndNotTags {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#key BudgetsBudget#key}
+  */
+  readonly key?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}
+  */
+  readonly matchOptions?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#values BudgetsBudget#values}
+  */
+  readonly values?: string[];
+}
+
+export function budgetsBudgetFilterExpressionAndNotTagsToTerraform(struct?: BudgetsBudgetFilterExpressionAndNotTagsOutputReference | BudgetsBudgetFilterExpressionAndNotTags): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    key: cdktn.stringToTerraform(struct!.key),
+    match_options: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.matchOptions),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
+  }
+}
+
+
+export function budgetsBudgetFilterExpressionAndNotTagsToHclTerraform(struct?: BudgetsBudgetFilterExpressionAndNotTagsOutputReference | BudgetsBudgetFilterExpressionAndNotTags): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    key: {
+      value: cdktn.stringToHclTerraform(struct!.key),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    match_options: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.matchOptions),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    values: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class BudgetsBudgetFilterExpressionAndNotTagsOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): BudgetsBudgetFilterExpressionAndNotTags | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._key !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.key = this._key;
+    }
+    if (this._matchOptions !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.matchOptions = this._matchOptions;
+    }
+    if (this._values !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.values = this._values;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: BudgetsBudgetFilterExpressionAndNotTags | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._key = undefined;
+      this._matchOptions = undefined;
+      this._values = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._key = value.key;
+      this._matchOptions = value.matchOptions;
+      this._values = value.values;
+    }
+  }
+
+  // key - computed: false, optional: true, required: false
+  private _key?: string; 
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+  public set key(value: string) {
+    this._key = value;
+  }
+  public resetKey() {
+    this._key = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get keyInput() {
+    return this._key;
+  }
+
+  // match_options - computed: false, optional: true, required: false
+  private _matchOptions?: string[]; 
+  public get matchOptions() {
+    return this.getListAttribute('match_options');
+  }
+  public set matchOptions(value: string[]) {
+    this._matchOptions = value;
+  }
+  public resetMatchOptions() {
+    this._matchOptions = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get matchOptionsInput() {
+    return this._matchOptions;
+  }
+
+  // values - computed: false, optional: true, required: false
+  private _values?: string[]; 
+  public get values() {
+    return this.getListAttribute('values');
+  }
+  public set values(value: string[]) {
+    this._values = value;
+  }
+  public resetValues() {
+    this._values = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valuesInput() {
+    return this._values;
+  }
+}
+export interface BudgetsBudgetFilterExpressionAndNot {
+  /**
+  * cost_categories block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#cost_categories BudgetsBudget#cost_categories}
+  */
+  readonly costCategories?: BudgetsBudgetFilterExpressionAndNotCostCategories;
+  /**
+  * dimensions block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#dimensions BudgetsBudget#dimensions}
+  */
+  readonly dimensions?: BudgetsBudgetFilterExpressionAndNotDimensions;
+  /**
+  * tags block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#tags BudgetsBudget#tags}
+  */
+  readonly tags?: BudgetsBudgetFilterExpressionAndNotTags;
+}
+
+export function budgetsBudgetFilterExpressionAndNotToTerraform(struct?: BudgetsBudgetFilterExpressionAndNotOutputReference | BudgetsBudgetFilterExpressionAndNot): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    cost_categories: budgetsBudgetFilterExpressionAndNotCostCategoriesToTerraform(struct!.costCategories),
+    dimensions: budgetsBudgetFilterExpressionAndNotDimensionsToTerraform(struct!.dimensions),
+    tags: budgetsBudgetFilterExpressionAndNotTagsToTerraform(struct!.tags),
+  }
+}
+
+
+export function budgetsBudgetFilterExpressionAndNotToHclTerraform(struct?: BudgetsBudgetFilterExpressionAndNotOutputReference | BudgetsBudgetFilterExpressionAndNot): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    cost_categories: {
+      value: budgetsBudgetFilterExpressionAndNotCostCategoriesToHclTerraform(struct!.costCategories),
+      isBlock: true,
+      type: "list",
+      storageClassType: "BudgetsBudgetFilterExpressionAndNotCostCategoriesList",
+    },
+    dimensions: {
+      value: budgetsBudgetFilterExpressionAndNotDimensionsToHclTerraform(struct!.dimensions),
+      isBlock: true,
+      type: "list",
+      storageClassType: "BudgetsBudgetFilterExpressionAndNotDimensionsList",
+    },
+    tags: {
+      value: budgetsBudgetFilterExpressionAndNotTagsToHclTerraform(struct!.tags),
+      isBlock: true,
+      type: "list",
+      storageClassType: "BudgetsBudgetFilterExpressionAndNotTagsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class BudgetsBudgetFilterExpressionAndNotOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): BudgetsBudgetFilterExpressionAndNot | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._costCategories?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.costCategories = this._costCategories?.internalValue;
+    }
+    if (this._dimensions?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.dimensions = this._dimensions?.internalValue;
+    }
+    if (this._tags?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.tags = this._tags?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: BudgetsBudgetFilterExpressionAndNot | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._costCategories.internalValue = undefined;
+      this._dimensions.internalValue = undefined;
+      this._tags.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._costCategories.internalValue = value.costCategories;
+      this._dimensions.internalValue = value.dimensions;
+      this._tags.internalValue = value.tags;
+    }
+  }
+
+  // cost_categories - computed: false, optional: true, required: false
+  private _costCategories = new BudgetsBudgetFilterExpressionAndNotCostCategoriesOutputReference(this, "cost_categories");
+  public get costCategories() {
+    return this._costCategories;
+  }
+  public putCostCategories(value: BudgetsBudgetFilterExpressionAndNotCostCategories) {
+    this._costCategories.internalValue = value;
+  }
+  public resetCostCategories() {
+    this._costCategories.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get costCategoriesInput() {
+    return this._costCategories.internalValue;
+  }
+
+  // dimensions - computed: false, optional: true, required: false
+  private _dimensions = new BudgetsBudgetFilterExpressionAndNotDimensionsOutputReference(this, "dimensions");
+  public get dimensions() {
+    return this._dimensions;
+  }
+  public putDimensions(value: BudgetsBudgetFilterExpressionAndNotDimensions) {
+    this._dimensions.internalValue = value;
+  }
+  public resetDimensions() {
+    this._dimensions.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dimensionsInput() {
+    return this._dimensions.internalValue;
+  }
+
+  // tags - computed: false, optional: true, required: false
+  private _tags = new BudgetsBudgetFilterExpressionAndNotTagsOutputReference(this, "tags");
+  public get tags() {
+    return this._tags;
+  }
+  public putTags(value: BudgetsBudgetFilterExpressionAndNotTags) {
+    this._tags.internalValue = value;
+  }
+  public resetTags() {
+    this._tags.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags.internalValue;
+  }
+}
+export interface BudgetsBudgetFilterExpressionAndOrCostCategories {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#key BudgetsBudget#key}
+  */
+  readonly key?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}
+  */
+  readonly matchOptions?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#values BudgetsBudget#values}
+  */
+  readonly values?: string[];
+}
+
+export function budgetsBudgetFilterExpressionAndOrCostCategoriesToTerraform(struct?: BudgetsBudgetFilterExpressionAndOrCostCategoriesOutputReference | BudgetsBudgetFilterExpressionAndOrCostCategories): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    key: cdktn.stringToTerraform(struct!.key),
+    match_options: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.matchOptions),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
+  }
+}
+
+
+export function budgetsBudgetFilterExpressionAndOrCostCategoriesToHclTerraform(struct?: BudgetsBudgetFilterExpressionAndOrCostCategoriesOutputReference | BudgetsBudgetFilterExpressionAndOrCostCategories): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    key: {
+      value: cdktn.stringToHclTerraform(struct!.key),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    match_options: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.matchOptions),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    values: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class BudgetsBudgetFilterExpressionAndOrCostCategoriesOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): BudgetsBudgetFilterExpressionAndOrCostCategories | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._key !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.key = this._key;
+    }
+    if (this._matchOptions !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.matchOptions = this._matchOptions;
+    }
+    if (this._values !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.values = this._values;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: BudgetsBudgetFilterExpressionAndOrCostCategories | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._key = undefined;
+      this._matchOptions = undefined;
+      this._values = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._key = value.key;
+      this._matchOptions = value.matchOptions;
+      this._values = value.values;
+    }
+  }
+
+  // key - computed: false, optional: true, required: false
+  private _key?: string; 
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+  public set key(value: string) {
+    this._key = value;
+  }
+  public resetKey() {
+    this._key = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get keyInput() {
+    return this._key;
+  }
+
+  // match_options - computed: false, optional: true, required: false
+  private _matchOptions?: string[]; 
+  public get matchOptions() {
+    return this.getListAttribute('match_options');
+  }
+  public set matchOptions(value: string[]) {
+    this._matchOptions = value;
+  }
+  public resetMatchOptions() {
+    this._matchOptions = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get matchOptionsInput() {
+    return this._matchOptions;
+  }
+
+  // values - computed: false, optional: true, required: false
+  private _values?: string[]; 
+  public get values() {
+    return this.getListAttribute('values');
+  }
+  public set values(value: string[]) {
+    this._values = value;
+  }
+  public resetValues() {
+    this._values = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valuesInput() {
+    return this._values;
+  }
+}
+export interface BudgetsBudgetFilterExpressionAndOrDimensions {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#key BudgetsBudget#key}
+  */
+  readonly key: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}
+  */
+  readonly matchOptions?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#values BudgetsBudget#values}
+  */
+  readonly values: string[];
+}
+
+export function budgetsBudgetFilterExpressionAndOrDimensionsToTerraform(struct?: BudgetsBudgetFilterExpressionAndOrDimensionsOutputReference | BudgetsBudgetFilterExpressionAndOrDimensions): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    key: cdktn.stringToTerraform(struct!.key),
+    match_options: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.matchOptions),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
+  }
+}
+
+
+export function budgetsBudgetFilterExpressionAndOrDimensionsToHclTerraform(struct?: BudgetsBudgetFilterExpressionAndOrDimensionsOutputReference | BudgetsBudgetFilterExpressionAndOrDimensions): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    key: {
+      value: cdktn.stringToHclTerraform(struct!.key),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    match_options: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.matchOptions),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    values: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class BudgetsBudgetFilterExpressionAndOrDimensionsOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): BudgetsBudgetFilterExpressionAndOrDimensions | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._key !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.key = this._key;
+    }
+    if (this._matchOptions !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.matchOptions = this._matchOptions;
+    }
+    if (this._values !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.values = this._values;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: BudgetsBudgetFilterExpressionAndOrDimensions | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._key = undefined;
+      this._matchOptions = undefined;
+      this._values = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._key = value.key;
+      this._matchOptions = value.matchOptions;
+      this._values = value.values;
+    }
+  }
+
+  // key - computed: false, optional: false, required: true
+  private _key?: string; 
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+  public set key(value: string) {
+    this._key = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get keyInput() {
+    return this._key;
+  }
+
+  // match_options - computed: false, optional: true, required: false
+  private _matchOptions?: string[]; 
+  public get matchOptions() {
+    return this.getListAttribute('match_options');
+  }
+  public set matchOptions(value: string[]) {
+    this._matchOptions = value;
+  }
+  public resetMatchOptions() {
+    this._matchOptions = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get matchOptionsInput() {
+    return this._matchOptions;
+  }
+
+  // values - computed: false, optional: false, required: true
+  private _values?: string[]; 
+  public get values() {
+    return this.getListAttribute('values');
+  }
+  public set values(value: string[]) {
+    this._values = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valuesInput() {
+    return this._values;
+  }
+}
+export interface BudgetsBudgetFilterExpressionAndOrTags {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#key BudgetsBudget#key}
+  */
+  readonly key?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}
+  */
+  readonly matchOptions?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#values BudgetsBudget#values}
+  */
+  readonly values?: string[];
+}
+
+export function budgetsBudgetFilterExpressionAndOrTagsToTerraform(struct?: BudgetsBudgetFilterExpressionAndOrTagsOutputReference | BudgetsBudgetFilterExpressionAndOrTags): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    key: cdktn.stringToTerraform(struct!.key),
+    match_options: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.matchOptions),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
+  }
+}
+
+
+export function budgetsBudgetFilterExpressionAndOrTagsToHclTerraform(struct?: BudgetsBudgetFilterExpressionAndOrTagsOutputReference | BudgetsBudgetFilterExpressionAndOrTags): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    key: {
+      value: cdktn.stringToHclTerraform(struct!.key),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    match_options: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.matchOptions),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    values: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class BudgetsBudgetFilterExpressionAndOrTagsOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): BudgetsBudgetFilterExpressionAndOrTags | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._key !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.key = this._key;
+    }
+    if (this._matchOptions !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.matchOptions = this._matchOptions;
+    }
+    if (this._values !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.values = this._values;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: BudgetsBudgetFilterExpressionAndOrTags | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._key = undefined;
+      this._matchOptions = undefined;
+      this._values = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._key = value.key;
+      this._matchOptions = value.matchOptions;
+      this._values = value.values;
+    }
+  }
+
+  // key - computed: false, optional: true, required: false
+  private _key?: string; 
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+  public set key(value: string) {
+    this._key = value;
+  }
+  public resetKey() {
+    this._key = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get keyInput() {
+    return this._key;
+  }
+
+  // match_options - computed: false, optional: true, required: false
+  private _matchOptions?: string[]; 
+  public get matchOptions() {
+    return this.getListAttribute('match_options');
+  }
+  public set matchOptions(value: string[]) {
+    this._matchOptions = value;
+  }
+  public resetMatchOptions() {
+    this._matchOptions = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get matchOptionsInput() {
+    return this._matchOptions;
+  }
+
+  // values - computed: false, optional: true, required: false
+  private _values?: string[]; 
+  public get values() {
+    return this.getListAttribute('values');
+  }
+  public set values(value: string[]) {
+    this._values = value;
+  }
+  public resetValues() {
+    this._values = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valuesInput() {
+    return this._values;
+  }
+}
+export interface BudgetsBudgetFilterExpressionAndOr {
+  /**
+  * cost_categories block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#cost_categories BudgetsBudget#cost_categories}
+  */
+  readonly costCategories?: BudgetsBudgetFilterExpressionAndOrCostCategories;
+  /**
+  * dimensions block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#dimensions BudgetsBudget#dimensions}
+  */
+  readonly dimensions?: BudgetsBudgetFilterExpressionAndOrDimensions;
+  /**
+  * tags block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#tags BudgetsBudget#tags}
+  */
+  readonly tags?: BudgetsBudgetFilterExpressionAndOrTags;
+}
+
+export function budgetsBudgetFilterExpressionAndOrToTerraform(struct?: BudgetsBudgetFilterExpressionAndOr | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    cost_categories: budgetsBudgetFilterExpressionAndOrCostCategoriesToTerraform(struct!.costCategories),
+    dimensions: budgetsBudgetFilterExpressionAndOrDimensionsToTerraform(struct!.dimensions),
+    tags: budgetsBudgetFilterExpressionAndOrTagsToTerraform(struct!.tags),
+  }
+}
+
+
+export function budgetsBudgetFilterExpressionAndOrToHclTerraform(struct?: BudgetsBudgetFilterExpressionAndOr | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    cost_categories: {
+      value: budgetsBudgetFilterExpressionAndOrCostCategoriesToHclTerraform(struct!.costCategories),
+      isBlock: true,
+      type: "list",
+      storageClassType: "BudgetsBudgetFilterExpressionAndOrCostCategoriesList",
+    },
+    dimensions: {
+      value: budgetsBudgetFilterExpressionAndOrDimensionsToHclTerraform(struct!.dimensions),
+      isBlock: true,
+      type: "list",
+      storageClassType: "BudgetsBudgetFilterExpressionAndOrDimensionsList",
+    },
+    tags: {
+      value: budgetsBudgetFilterExpressionAndOrTagsToHclTerraform(struct!.tags),
+      isBlock: true,
+      type: "list",
+      storageClassType: "BudgetsBudgetFilterExpressionAndOrTagsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class BudgetsBudgetFilterExpressionAndOrOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): BudgetsBudgetFilterExpressionAndOr | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._costCategories?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.costCategories = this._costCategories?.internalValue;
+    }
+    if (this._dimensions?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.dimensions = this._dimensions?.internalValue;
+    }
+    if (this._tags?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.tags = this._tags?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: BudgetsBudgetFilterExpressionAndOr | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._costCategories.internalValue = undefined;
+      this._dimensions.internalValue = undefined;
+      this._tags.internalValue = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._costCategories.internalValue = value.costCategories;
+      this._dimensions.internalValue = value.dimensions;
+      this._tags.internalValue = value.tags;
+    }
+  }
+
+  // cost_categories - computed: false, optional: true, required: false
+  private _costCategories = new BudgetsBudgetFilterExpressionAndOrCostCategoriesOutputReference(this, "cost_categories");
+  public get costCategories() {
+    return this._costCategories;
+  }
+  public putCostCategories(value: BudgetsBudgetFilterExpressionAndOrCostCategories) {
+    this._costCategories.internalValue = value;
+  }
+  public resetCostCategories() {
+    this._costCategories.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get costCategoriesInput() {
+    return this._costCategories.internalValue;
+  }
+
+  // dimensions - computed: false, optional: true, required: false
+  private _dimensions = new BudgetsBudgetFilterExpressionAndOrDimensionsOutputReference(this, "dimensions");
+  public get dimensions() {
+    return this._dimensions;
+  }
+  public putDimensions(value: BudgetsBudgetFilterExpressionAndOrDimensions) {
+    this._dimensions.internalValue = value;
+  }
+  public resetDimensions() {
+    this._dimensions.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dimensionsInput() {
+    return this._dimensions.internalValue;
+  }
+
+  // tags - computed: false, optional: true, required: false
+  private _tags = new BudgetsBudgetFilterExpressionAndOrTagsOutputReference(this, "tags");
+  public get tags() {
+    return this._tags;
+  }
+  public putTags(value: BudgetsBudgetFilterExpressionAndOrTags) {
+    this._tags.internalValue = value;
+  }
+  public resetTags() {
+    this._tags.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags.internalValue;
+  }
+}
+
+export class BudgetsBudgetFilterExpressionAndOrList extends cdktn.ComplexList {
+  public internalValue? : BudgetsBudgetFilterExpressionAndOr[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): BudgetsBudgetFilterExpressionAndOrOutputReference {
+    return new BudgetsBudgetFilterExpressionAndOrOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface BudgetsBudgetFilterExpressionAndTags {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#key BudgetsBudget#key}
+  */
+  readonly key?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}
+  */
+  readonly matchOptions?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#values BudgetsBudget#values}
+  */
+  readonly values?: string[];
+}
+
+export function budgetsBudgetFilterExpressionAndTagsToTerraform(struct?: BudgetsBudgetFilterExpressionAndTagsOutputReference | BudgetsBudgetFilterExpressionAndTags): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    key: cdktn.stringToTerraform(struct!.key),
+    match_options: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.matchOptions),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
+  }
+}
+
+
+export function budgetsBudgetFilterExpressionAndTagsToHclTerraform(struct?: BudgetsBudgetFilterExpressionAndTagsOutputReference | BudgetsBudgetFilterExpressionAndTags): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    key: {
+      value: cdktn.stringToHclTerraform(struct!.key),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    match_options: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.matchOptions),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    values: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class BudgetsBudgetFilterExpressionAndTagsOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): BudgetsBudgetFilterExpressionAndTags | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._key !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.key = this._key;
+    }
+    if (this._matchOptions !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.matchOptions = this._matchOptions;
+    }
+    if (this._values !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.values = this._values;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: BudgetsBudgetFilterExpressionAndTags | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._key = undefined;
+      this._matchOptions = undefined;
+      this._values = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._key = value.key;
+      this._matchOptions = value.matchOptions;
+      this._values = value.values;
+    }
+  }
+
+  // key - computed: false, optional: true, required: false
+  private _key?: string; 
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+  public set key(value: string) {
+    this._key = value;
+  }
+  public resetKey() {
+    this._key = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get keyInput() {
+    return this._key;
+  }
+
+  // match_options - computed: false, optional: true, required: false
+  private _matchOptions?: string[]; 
+  public get matchOptions() {
+    return this.getListAttribute('match_options');
+  }
+  public set matchOptions(value: string[]) {
+    this._matchOptions = value;
+  }
+  public resetMatchOptions() {
+    this._matchOptions = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get matchOptionsInput() {
+    return this._matchOptions;
+  }
+
+  // values - computed: false, optional: true, required: false
+  private _values?: string[]; 
+  public get values() {
+    return this.getListAttribute('values');
+  }
+  public set values(value: string[]) {
+    this._values = value;
+  }
+  public resetValues() {
+    this._values = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valuesInput() {
+    return this._values;
+  }
+}
+export interface BudgetsBudgetFilterExpressionAnd {
+  /**
+  * and block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#and BudgetsBudget#and}
+  */
+  readonly and?: BudgetsBudgetFilterExpressionAndAnd[] | cdktn.IResolvable;
+  /**
+  * cost_categories block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#cost_categories BudgetsBudget#cost_categories}
+  */
+  readonly costCategories?: BudgetsBudgetFilterExpressionAndCostCategories;
+  /**
+  * dimensions block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#dimensions BudgetsBudget#dimensions}
+  */
+  readonly dimensions?: BudgetsBudgetFilterExpressionAndDimensions;
+  /**
+  * not block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#not BudgetsBudget#not}
+  */
+  readonly not?: BudgetsBudgetFilterExpressionAndNot;
+  /**
+  * or block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#or BudgetsBudget#or}
+  */
+  readonly or?: BudgetsBudgetFilterExpressionAndOr[] | cdktn.IResolvable;
+  /**
+  * tags block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#tags BudgetsBudget#tags}
+  */
+  readonly tags?: BudgetsBudgetFilterExpressionAndTags;
+}
+
+export function budgetsBudgetFilterExpressionAndToTerraform(struct?: BudgetsBudgetFilterExpressionAnd | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    and: cdktn.listMapper(budgetsBudgetFilterExpressionAndAndToTerraform, true)(struct!.and),
+    cost_categories: budgetsBudgetFilterExpressionAndCostCategoriesToTerraform(struct!.costCategories),
+    dimensions: budgetsBudgetFilterExpressionAndDimensionsToTerraform(struct!.dimensions),
+    not: budgetsBudgetFilterExpressionAndNotToTerraform(struct!.not),
+    or: cdktn.listMapper(budgetsBudgetFilterExpressionAndOrToTerraform, true)(struct!.or),
+    tags: budgetsBudgetFilterExpressionAndTagsToTerraform(struct!.tags),
+  }
+}
+
+
+export function budgetsBudgetFilterExpressionAndToHclTerraform(struct?: BudgetsBudgetFilterExpressionAnd | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    and: {
+      value: cdktn.listMapperHcl(budgetsBudgetFilterExpressionAndAndToHclTerraform, true)(struct!.and),
+      isBlock: true,
+      type: "list",
+      storageClassType: "BudgetsBudgetFilterExpressionAndAndList",
+    },
+    cost_categories: {
+      value: budgetsBudgetFilterExpressionAndCostCategoriesToHclTerraform(struct!.costCategories),
+      isBlock: true,
+      type: "list",
+      storageClassType: "BudgetsBudgetFilterExpressionAndCostCategoriesList",
+    },
+    dimensions: {
+      value: budgetsBudgetFilterExpressionAndDimensionsToHclTerraform(struct!.dimensions),
+      isBlock: true,
+      type: "list",
+      storageClassType: "BudgetsBudgetFilterExpressionAndDimensionsList",
+    },
+    not: {
+      value: budgetsBudgetFilterExpressionAndNotToHclTerraform(struct!.not),
+      isBlock: true,
+      type: "list",
+      storageClassType: "BudgetsBudgetFilterExpressionAndNotList",
+    },
+    or: {
+      value: cdktn.listMapperHcl(budgetsBudgetFilterExpressionAndOrToHclTerraform, true)(struct!.or),
+      isBlock: true,
+      type: "list",
+      storageClassType: "BudgetsBudgetFilterExpressionAndOrList",
+    },
+    tags: {
+      value: budgetsBudgetFilterExpressionAndTagsToHclTerraform(struct!.tags),
+      isBlock: true,
+      type: "list",
+      storageClassType: "BudgetsBudgetFilterExpressionAndTagsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class BudgetsBudgetFilterExpressionAndOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): BudgetsBudgetFilterExpressionAnd | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._and?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.and = this._and?.internalValue;
+    }
+    if (this._costCategories?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.costCategories = this._costCategories?.internalValue;
+    }
+    if (this._dimensions?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.dimensions = this._dimensions?.internalValue;
+    }
+    if (this._not?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.not = this._not?.internalValue;
+    }
+    if (this._or?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.or = this._or?.internalValue;
+    }
+    if (this._tags?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.tags = this._tags?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: BudgetsBudgetFilterExpressionAnd | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._and.internalValue = undefined;
+      this._costCategories.internalValue = undefined;
+      this._dimensions.internalValue = undefined;
+      this._not.internalValue = undefined;
+      this._or.internalValue = undefined;
+      this._tags.internalValue = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._and.internalValue = value.and;
+      this._costCategories.internalValue = value.costCategories;
+      this._dimensions.internalValue = value.dimensions;
+      this._not.internalValue = value.not;
+      this._or.internalValue = value.or;
+      this._tags.internalValue = value.tags;
+    }
+  }
+
+  // and - computed: false, optional: true, required: false
+  private _and = new BudgetsBudgetFilterExpressionAndAndList(this, "and", false);
+  public get and() {
+    return this._and;
+  }
+  public putAnd(value: BudgetsBudgetFilterExpressionAndAnd[] | cdktn.IResolvable) {
+    this._and.internalValue = value;
+  }
+  public resetAnd() {
+    this._and.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get andInput() {
+    return this._and.internalValue;
+  }
+
+  // cost_categories - computed: false, optional: true, required: false
+  private _costCategories = new BudgetsBudgetFilterExpressionAndCostCategoriesOutputReference(this, "cost_categories");
+  public get costCategories() {
+    return this._costCategories;
+  }
+  public putCostCategories(value: BudgetsBudgetFilterExpressionAndCostCategories) {
+    this._costCategories.internalValue = value;
+  }
+  public resetCostCategories() {
+    this._costCategories.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get costCategoriesInput() {
+    return this._costCategories.internalValue;
+  }
+
+  // dimensions - computed: false, optional: true, required: false
+  private _dimensions = new BudgetsBudgetFilterExpressionAndDimensionsOutputReference(this, "dimensions");
+  public get dimensions() {
+    return this._dimensions;
+  }
+  public putDimensions(value: BudgetsBudgetFilterExpressionAndDimensions) {
+    this._dimensions.internalValue = value;
+  }
+  public resetDimensions() {
+    this._dimensions.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dimensionsInput() {
+    return this._dimensions.internalValue;
+  }
+
+  // not - computed: false, optional: true, required: false
+  private _not = new BudgetsBudgetFilterExpressionAndNotOutputReference(this, "not");
+  public get not() {
+    return this._not;
+  }
+  public putNot(value: BudgetsBudgetFilterExpressionAndNot) {
+    this._not.internalValue = value;
+  }
+  public resetNot() {
+    this._not.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get notInput() {
+    return this._not.internalValue;
+  }
+
+  // or - computed: false, optional: true, required: false
+  private _or = new BudgetsBudgetFilterExpressionAndOrList(this, "or", false);
+  public get or() {
+    return this._or;
+  }
+  public putOr(value: BudgetsBudgetFilterExpressionAndOr[] | cdktn.IResolvable) {
+    this._or.internalValue = value;
+  }
+  public resetOr() {
+    this._or.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get orInput() {
+    return this._or.internalValue;
+  }
+
+  // tags - computed: false, optional: true, required: false
+  private _tags = new BudgetsBudgetFilterExpressionAndTagsOutputReference(this, "tags");
+  public get tags() {
+    return this._tags;
+  }
+  public putTags(value: BudgetsBudgetFilterExpressionAndTags) {
+    this._tags.internalValue = value;
+  }
+  public resetTags() {
+    this._tags.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags.internalValue;
+  }
+}
+
+export class BudgetsBudgetFilterExpressionAndList extends cdktn.ComplexList {
+  public internalValue? : BudgetsBudgetFilterExpressionAnd[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): BudgetsBudgetFilterExpressionAndOutputReference {
+    return new BudgetsBudgetFilterExpressionAndOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface BudgetsBudgetFilterExpressionCostCategories {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#key BudgetsBudget#key}
+  */
+  readonly key?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}
+  */
+  readonly matchOptions?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#values BudgetsBudget#values}
+  */
+  readonly values?: string[];
+}
+
+export function budgetsBudgetFilterExpressionCostCategoriesToTerraform(struct?: BudgetsBudgetFilterExpressionCostCategoriesOutputReference | BudgetsBudgetFilterExpressionCostCategories): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    key: cdktn.stringToTerraform(struct!.key),
+    match_options: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.matchOptions),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
+  }
+}
+
+
+export function budgetsBudgetFilterExpressionCostCategoriesToHclTerraform(struct?: BudgetsBudgetFilterExpressionCostCategoriesOutputReference | BudgetsBudgetFilterExpressionCostCategories): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    key: {
+      value: cdktn.stringToHclTerraform(struct!.key),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    match_options: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.matchOptions),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    values: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class BudgetsBudgetFilterExpressionCostCategoriesOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): BudgetsBudgetFilterExpressionCostCategories | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._key !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.key = this._key;
+    }
+    if (this._matchOptions !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.matchOptions = this._matchOptions;
+    }
+    if (this._values !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.values = this._values;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: BudgetsBudgetFilterExpressionCostCategories | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._key = undefined;
+      this._matchOptions = undefined;
+      this._values = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._key = value.key;
+      this._matchOptions = value.matchOptions;
+      this._values = value.values;
+    }
+  }
+
+  // key - computed: false, optional: true, required: false
+  private _key?: string; 
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+  public set key(value: string) {
+    this._key = value;
+  }
+  public resetKey() {
+    this._key = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get keyInput() {
+    return this._key;
+  }
+
+  // match_options - computed: false, optional: true, required: false
+  private _matchOptions?: string[]; 
+  public get matchOptions() {
+    return this.getListAttribute('match_options');
+  }
+  public set matchOptions(value: string[]) {
+    this._matchOptions = value;
+  }
+  public resetMatchOptions() {
+    this._matchOptions = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get matchOptionsInput() {
+    return this._matchOptions;
+  }
+
+  // values - computed: false, optional: true, required: false
+  private _values?: string[]; 
+  public get values() {
+    return this.getListAttribute('values');
+  }
+  public set values(value: string[]) {
+    this._values = value;
+  }
+  public resetValues() {
+    this._values = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valuesInput() {
+    return this._values;
+  }
+}
+export interface BudgetsBudgetFilterExpressionDimensions {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#key BudgetsBudget#key}
+  */
+  readonly key: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}
+  */
+  readonly matchOptions?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#values BudgetsBudget#values}
+  */
+  readonly values: string[];
+}
+
+export function budgetsBudgetFilterExpressionDimensionsToTerraform(struct?: BudgetsBudgetFilterExpressionDimensionsOutputReference | BudgetsBudgetFilterExpressionDimensions): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    key: cdktn.stringToTerraform(struct!.key),
+    match_options: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.matchOptions),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
+  }
+}
+
+
+export function budgetsBudgetFilterExpressionDimensionsToHclTerraform(struct?: BudgetsBudgetFilterExpressionDimensionsOutputReference | BudgetsBudgetFilterExpressionDimensions): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    key: {
+      value: cdktn.stringToHclTerraform(struct!.key),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    match_options: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.matchOptions),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    values: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class BudgetsBudgetFilterExpressionDimensionsOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): BudgetsBudgetFilterExpressionDimensions | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._key !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.key = this._key;
+    }
+    if (this._matchOptions !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.matchOptions = this._matchOptions;
+    }
+    if (this._values !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.values = this._values;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: BudgetsBudgetFilterExpressionDimensions | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._key = undefined;
+      this._matchOptions = undefined;
+      this._values = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._key = value.key;
+      this._matchOptions = value.matchOptions;
+      this._values = value.values;
+    }
+  }
+
+  // key - computed: false, optional: false, required: true
+  private _key?: string; 
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+  public set key(value: string) {
+    this._key = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get keyInput() {
+    return this._key;
+  }
+
+  // match_options - computed: false, optional: true, required: false
+  private _matchOptions?: string[]; 
+  public get matchOptions() {
+    return this.getListAttribute('match_options');
+  }
+  public set matchOptions(value: string[]) {
+    this._matchOptions = value;
+  }
+  public resetMatchOptions() {
+    this._matchOptions = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get matchOptionsInput() {
+    return this._matchOptions;
+  }
+
+  // values - computed: false, optional: false, required: true
+  private _values?: string[]; 
+  public get values() {
+    return this.getListAttribute('values');
+  }
+  public set values(value: string[]) {
+    this._values = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valuesInput() {
+    return this._values;
+  }
+}
+export interface BudgetsBudgetFilterExpressionNotAndCostCategories {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#key BudgetsBudget#key}
+  */
+  readonly key?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}
+  */
+  readonly matchOptions?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#values BudgetsBudget#values}
+  */
+  readonly values?: string[];
+}
+
+export function budgetsBudgetFilterExpressionNotAndCostCategoriesToTerraform(struct?: BudgetsBudgetFilterExpressionNotAndCostCategoriesOutputReference | BudgetsBudgetFilterExpressionNotAndCostCategories): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    key: cdktn.stringToTerraform(struct!.key),
+    match_options: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.matchOptions),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
+  }
+}
+
+
+export function budgetsBudgetFilterExpressionNotAndCostCategoriesToHclTerraform(struct?: BudgetsBudgetFilterExpressionNotAndCostCategoriesOutputReference | BudgetsBudgetFilterExpressionNotAndCostCategories): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    key: {
+      value: cdktn.stringToHclTerraform(struct!.key),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    match_options: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.matchOptions),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    values: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class BudgetsBudgetFilterExpressionNotAndCostCategoriesOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): BudgetsBudgetFilterExpressionNotAndCostCategories | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._key !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.key = this._key;
+    }
+    if (this._matchOptions !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.matchOptions = this._matchOptions;
+    }
+    if (this._values !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.values = this._values;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: BudgetsBudgetFilterExpressionNotAndCostCategories | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._key = undefined;
+      this._matchOptions = undefined;
+      this._values = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._key = value.key;
+      this._matchOptions = value.matchOptions;
+      this._values = value.values;
+    }
+  }
+
+  // key - computed: false, optional: true, required: false
+  private _key?: string; 
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+  public set key(value: string) {
+    this._key = value;
+  }
+  public resetKey() {
+    this._key = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get keyInput() {
+    return this._key;
+  }
+
+  // match_options - computed: false, optional: true, required: false
+  private _matchOptions?: string[]; 
+  public get matchOptions() {
+    return this.getListAttribute('match_options');
+  }
+  public set matchOptions(value: string[]) {
+    this._matchOptions = value;
+  }
+  public resetMatchOptions() {
+    this._matchOptions = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get matchOptionsInput() {
+    return this._matchOptions;
+  }
+
+  // values - computed: false, optional: true, required: false
+  private _values?: string[]; 
+  public get values() {
+    return this.getListAttribute('values');
+  }
+  public set values(value: string[]) {
+    this._values = value;
+  }
+  public resetValues() {
+    this._values = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valuesInput() {
+    return this._values;
+  }
+}
+export interface BudgetsBudgetFilterExpressionNotAndDimensions {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#key BudgetsBudget#key}
+  */
+  readonly key: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}
+  */
+  readonly matchOptions?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#values BudgetsBudget#values}
+  */
+  readonly values: string[];
+}
+
+export function budgetsBudgetFilterExpressionNotAndDimensionsToTerraform(struct?: BudgetsBudgetFilterExpressionNotAndDimensionsOutputReference | BudgetsBudgetFilterExpressionNotAndDimensions): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    key: cdktn.stringToTerraform(struct!.key),
+    match_options: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.matchOptions),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
+  }
+}
+
+
+export function budgetsBudgetFilterExpressionNotAndDimensionsToHclTerraform(struct?: BudgetsBudgetFilterExpressionNotAndDimensionsOutputReference | BudgetsBudgetFilterExpressionNotAndDimensions): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    key: {
+      value: cdktn.stringToHclTerraform(struct!.key),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    match_options: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.matchOptions),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    values: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class BudgetsBudgetFilterExpressionNotAndDimensionsOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): BudgetsBudgetFilterExpressionNotAndDimensions | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._key !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.key = this._key;
+    }
+    if (this._matchOptions !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.matchOptions = this._matchOptions;
+    }
+    if (this._values !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.values = this._values;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: BudgetsBudgetFilterExpressionNotAndDimensions | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._key = undefined;
+      this._matchOptions = undefined;
+      this._values = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._key = value.key;
+      this._matchOptions = value.matchOptions;
+      this._values = value.values;
+    }
+  }
+
+  // key - computed: false, optional: false, required: true
+  private _key?: string; 
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+  public set key(value: string) {
+    this._key = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get keyInput() {
+    return this._key;
+  }
+
+  // match_options - computed: false, optional: true, required: false
+  private _matchOptions?: string[]; 
+  public get matchOptions() {
+    return this.getListAttribute('match_options');
+  }
+  public set matchOptions(value: string[]) {
+    this._matchOptions = value;
+  }
+  public resetMatchOptions() {
+    this._matchOptions = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get matchOptionsInput() {
+    return this._matchOptions;
+  }
+
+  // values - computed: false, optional: false, required: true
+  private _values?: string[]; 
+  public get values() {
+    return this.getListAttribute('values');
+  }
+  public set values(value: string[]) {
+    this._values = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valuesInput() {
+    return this._values;
+  }
+}
+export interface BudgetsBudgetFilterExpressionNotAndTags {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#key BudgetsBudget#key}
+  */
+  readonly key?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}
+  */
+  readonly matchOptions?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#values BudgetsBudget#values}
+  */
+  readonly values?: string[];
+}
+
+export function budgetsBudgetFilterExpressionNotAndTagsToTerraform(struct?: BudgetsBudgetFilterExpressionNotAndTagsOutputReference | BudgetsBudgetFilterExpressionNotAndTags): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    key: cdktn.stringToTerraform(struct!.key),
+    match_options: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.matchOptions),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
+  }
+}
+
+
+export function budgetsBudgetFilterExpressionNotAndTagsToHclTerraform(struct?: BudgetsBudgetFilterExpressionNotAndTagsOutputReference | BudgetsBudgetFilterExpressionNotAndTags): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    key: {
+      value: cdktn.stringToHclTerraform(struct!.key),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    match_options: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.matchOptions),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    values: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class BudgetsBudgetFilterExpressionNotAndTagsOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): BudgetsBudgetFilterExpressionNotAndTags | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._key !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.key = this._key;
+    }
+    if (this._matchOptions !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.matchOptions = this._matchOptions;
+    }
+    if (this._values !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.values = this._values;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: BudgetsBudgetFilterExpressionNotAndTags | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._key = undefined;
+      this._matchOptions = undefined;
+      this._values = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._key = value.key;
+      this._matchOptions = value.matchOptions;
+      this._values = value.values;
+    }
+  }
+
+  // key - computed: false, optional: true, required: false
+  private _key?: string; 
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+  public set key(value: string) {
+    this._key = value;
+  }
+  public resetKey() {
+    this._key = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get keyInput() {
+    return this._key;
+  }
+
+  // match_options - computed: false, optional: true, required: false
+  private _matchOptions?: string[]; 
+  public get matchOptions() {
+    return this.getListAttribute('match_options');
+  }
+  public set matchOptions(value: string[]) {
+    this._matchOptions = value;
+  }
+  public resetMatchOptions() {
+    this._matchOptions = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get matchOptionsInput() {
+    return this._matchOptions;
+  }
+
+  // values - computed: false, optional: true, required: false
+  private _values?: string[]; 
+  public get values() {
+    return this.getListAttribute('values');
+  }
+  public set values(value: string[]) {
+    this._values = value;
+  }
+  public resetValues() {
+    this._values = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valuesInput() {
+    return this._values;
+  }
+}
+export interface BudgetsBudgetFilterExpressionNotAnd {
+  /**
+  * cost_categories block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#cost_categories BudgetsBudget#cost_categories}
+  */
+  readonly costCategories?: BudgetsBudgetFilterExpressionNotAndCostCategories;
+  /**
+  * dimensions block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#dimensions BudgetsBudget#dimensions}
+  */
+  readonly dimensions?: BudgetsBudgetFilterExpressionNotAndDimensions;
+  /**
+  * tags block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#tags BudgetsBudget#tags}
+  */
+  readonly tags?: BudgetsBudgetFilterExpressionNotAndTags;
+}
+
+export function budgetsBudgetFilterExpressionNotAndToTerraform(struct?: BudgetsBudgetFilterExpressionNotAnd | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    cost_categories: budgetsBudgetFilterExpressionNotAndCostCategoriesToTerraform(struct!.costCategories),
+    dimensions: budgetsBudgetFilterExpressionNotAndDimensionsToTerraform(struct!.dimensions),
+    tags: budgetsBudgetFilterExpressionNotAndTagsToTerraform(struct!.tags),
+  }
+}
+
+
+export function budgetsBudgetFilterExpressionNotAndToHclTerraform(struct?: BudgetsBudgetFilterExpressionNotAnd | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    cost_categories: {
+      value: budgetsBudgetFilterExpressionNotAndCostCategoriesToHclTerraform(struct!.costCategories),
+      isBlock: true,
+      type: "list",
+      storageClassType: "BudgetsBudgetFilterExpressionNotAndCostCategoriesList",
+    },
+    dimensions: {
+      value: budgetsBudgetFilterExpressionNotAndDimensionsToHclTerraform(struct!.dimensions),
+      isBlock: true,
+      type: "list",
+      storageClassType: "BudgetsBudgetFilterExpressionNotAndDimensionsList",
+    },
+    tags: {
+      value: budgetsBudgetFilterExpressionNotAndTagsToHclTerraform(struct!.tags),
+      isBlock: true,
+      type: "list",
+      storageClassType: "BudgetsBudgetFilterExpressionNotAndTagsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class BudgetsBudgetFilterExpressionNotAndOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): BudgetsBudgetFilterExpressionNotAnd | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._costCategories?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.costCategories = this._costCategories?.internalValue;
+    }
+    if (this._dimensions?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.dimensions = this._dimensions?.internalValue;
+    }
+    if (this._tags?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.tags = this._tags?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: BudgetsBudgetFilterExpressionNotAnd | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._costCategories.internalValue = undefined;
+      this._dimensions.internalValue = undefined;
+      this._tags.internalValue = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._costCategories.internalValue = value.costCategories;
+      this._dimensions.internalValue = value.dimensions;
+      this._tags.internalValue = value.tags;
+    }
+  }
+
+  // cost_categories - computed: false, optional: true, required: false
+  private _costCategories = new BudgetsBudgetFilterExpressionNotAndCostCategoriesOutputReference(this, "cost_categories");
+  public get costCategories() {
+    return this._costCategories;
+  }
+  public putCostCategories(value: BudgetsBudgetFilterExpressionNotAndCostCategories) {
+    this._costCategories.internalValue = value;
+  }
+  public resetCostCategories() {
+    this._costCategories.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get costCategoriesInput() {
+    return this._costCategories.internalValue;
+  }
+
+  // dimensions - computed: false, optional: true, required: false
+  private _dimensions = new BudgetsBudgetFilterExpressionNotAndDimensionsOutputReference(this, "dimensions");
+  public get dimensions() {
+    return this._dimensions;
+  }
+  public putDimensions(value: BudgetsBudgetFilterExpressionNotAndDimensions) {
+    this._dimensions.internalValue = value;
+  }
+  public resetDimensions() {
+    this._dimensions.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dimensionsInput() {
+    return this._dimensions.internalValue;
+  }
+
+  // tags - computed: false, optional: true, required: false
+  private _tags = new BudgetsBudgetFilterExpressionNotAndTagsOutputReference(this, "tags");
+  public get tags() {
+    return this._tags;
+  }
+  public putTags(value: BudgetsBudgetFilterExpressionNotAndTags) {
+    this._tags.internalValue = value;
+  }
+  public resetTags() {
+    this._tags.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags.internalValue;
+  }
+}
+
+export class BudgetsBudgetFilterExpressionNotAndList extends cdktn.ComplexList {
+  public internalValue? : BudgetsBudgetFilterExpressionNotAnd[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): BudgetsBudgetFilterExpressionNotAndOutputReference {
+    return new BudgetsBudgetFilterExpressionNotAndOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface BudgetsBudgetFilterExpressionNotCostCategories {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#key BudgetsBudget#key}
+  */
+  readonly key?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}
+  */
+  readonly matchOptions?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#values BudgetsBudget#values}
+  */
+  readonly values?: string[];
+}
+
+export function budgetsBudgetFilterExpressionNotCostCategoriesToTerraform(struct?: BudgetsBudgetFilterExpressionNotCostCategoriesOutputReference | BudgetsBudgetFilterExpressionNotCostCategories): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    key: cdktn.stringToTerraform(struct!.key),
+    match_options: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.matchOptions),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
+  }
+}
+
+
+export function budgetsBudgetFilterExpressionNotCostCategoriesToHclTerraform(struct?: BudgetsBudgetFilterExpressionNotCostCategoriesOutputReference | BudgetsBudgetFilterExpressionNotCostCategories): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    key: {
+      value: cdktn.stringToHclTerraform(struct!.key),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    match_options: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.matchOptions),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    values: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class BudgetsBudgetFilterExpressionNotCostCategoriesOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): BudgetsBudgetFilterExpressionNotCostCategories | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._key !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.key = this._key;
+    }
+    if (this._matchOptions !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.matchOptions = this._matchOptions;
+    }
+    if (this._values !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.values = this._values;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: BudgetsBudgetFilterExpressionNotCostCategories | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._key = undefined;
+      this._matchOptions = undefined;
+      this._values = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._key = value.key;
+      this._matchOptions = value.matchOptions;
+      this._values = value.values;
+    }
+  }
+
+  // key - computed: false, optional: true, required: false
+  private _key?: string; 
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+  public set key(value: string) {
+    this._key = value;
+  }
+  public resetKey() {
+    this._key = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get keyInput() {
+    return this._key;
+  }
+
+  // match_options - computed: false, optional: true, required: false
+  private _matchOptions?: string[]; 
+  public get matchOptions() {
+    return this.getListAttribute('match_options');
+  }
+  public set matchOptions(value: string[]) {
+    this._matchOptions = value;
+  }
+  public resetMatchOptions() {
+    this._matchOptions = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get matchOptionsInput() {
+    return this._matchOptions;
+  }
+
+  // values - computed: false, optional: true, required: false
+  private _values?: string[]; 
+  public get values() {
+    return this.getListAttribute('values');
+  }
+  public set values(value: string[]) {
+    this._values = value;
+  }
+  public resetValues() {
+    this._values = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valuesInput() {
+    return this._values;
+  }
+}
+export interface BudgetsBudgetFilterExpressionNotDimensions {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#key BudgetsBudget#key}
+  */
+  readonly key: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}
+  */
+  readonly matchOptions?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#values BudgetsBudget#values}
+  */
+  readonly values: string[];
+}
+
+export function budgetsBudgetFilterExpressionNotDimensionsToTerraform(struct?: BudgetsBudgetFilterExpressionNotDimensionsOutputReference | BudgetsBudgetFilterExpressionNotDimensions): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    key: cdktn.stringToTerraform(struct!.key),
+    match_options: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.matchOptions),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
+  }
+}
+
+
+export function budgetsBudgetFilterExpressionNotDimensionsToHclTerraform(struct?: BudgetsBudgetFilterExpressionNotDimensionsOutputReference | BudgetsBudgetFilterExpressionNotDimensions): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    key: {
+      value: cdktn.stringToHclTerraform(struct!.key),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    match_options: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.matchOptions),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    values: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class BudgetsBudgetFilterExpressionNotDimensionsOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): BudgetsBudgetFilterExpressionNotDimensions | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._key !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.key = this._key;
+    }
+    if (this._matchOptions !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.matchOptions = this._matchOptions;
+    }
+    if (this._values !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.values = this._values;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: BudgetsBudgetFilterExpressionNotDimensions | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._key = undefined;
+      this._matchOptions = undefined;
+      this._values = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._key = value.key;
+      this._matchOptions = value.matchOptions;
+      this._values = value.values;
+    }
+  }
+
+  // key - computed: false, optional: false, required: true
+  private _key?: string; 
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+  public set key(value: string) {
+    this._key = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get keyInput() {
+    return this._key;
+  }
+
+  // match_options - computed: false, optional: true, required: false
+  private _matchOptions?: string[]; 
+  public get matchOptions() {
+    return this.getListAttribute('match_options');
+  }
+  public set matchOptions(value: string[]) {
+    this._matchOptions = value;
+  }
+  public resetMatchOptions() {
+    this._matchOptions = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get matchOptionsInput() {
+    return this._matchOptions;
+  }
+
+  // values - computed: false, optional: false, required: true
+  private _values?: string[]; 
+  public get values() {
+    return this.getListAttribute('values');
+  }
+  public set values(value: string[]) {
+    this._values = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valuesInput() {
+    return this._values;
+  }
+}
+export interface BudgetsBudgetFilterExpressionNotNotCostCategories {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#key BudgetsBudget#key}
+  */
+  readonly key?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}
+  */
+  readonly matchOptions?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#values BudgetsBudget#values}
+  */
+  readonly values?: string[];
+}
+
+export function budgetsBudgetFilterExpressionNotNotCostCategoriesToTerraform(struct?: BudgetsBudgetFilterExpressionNotNotCostCategoriesOutputReference | BudgetsBudgetFilterExpressionNotNotCostCategories): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    key: cdktn.stringToTerraform(struct!.key),
+    match_options: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.matchOptions),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
+  }
+}
+
+
+export function budgetsBudgetFilterExpressionNotNotCostCategoriesToHclTerraform(struct?: BudgetsBudgetFilterExpressionNotNotCostCategoriesOutputReference | BudgetsBudgetFilterExpressionNotNotCostCategories): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    key: {
+      value: cdktn.stringToHclTerraform(struct!.key),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    match_options: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.matchOptions),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    values: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class BudgetsBudgetFilterExpressionNotNotCostCategoriesOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): BudgetsBudgetFilterExpressionNotNotCostCategories | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._key !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.key = this._key;
+    }
+    if (this._matchOptions !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.matchOptions = this._matchOptions;
+    }
+    if (this._values !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.values = this._values;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: BudgetsBudgetFilterExpressionNotNotCostCategories | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._key = undefined;
+      this._matchOptions = undefined;
+      this._values = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._key = value.key;
+      this._matchOptions = value.matchOptions;
+      this._values = value.values;
+    }
+  }
+
+  // key - computed: false, optional: true, required: false
+  private _key?: string; 
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+  public set key(value: string) {
+    this._key = value;
+  }
+  public resetKey() {
+    this._key = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get keyInput() {
+    return this._key;
+  }
+
+  // match_options - computed: false, optional: true, required: false
+  private _matchOptions?: string[]; 
+  public get matchOptions() {
+    return this.getListAttribute('match_options');
+  }
+  public set matchOptions(value: string[]) {
+    this._matchOptions = value;
+  }
+  public resetMatchOptions() {
+    this._matchOptions = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get matchOptionsInput() {
+    return this._matchOptions;
+  }
+
+  // values - computed: false, optional: true, required: false
+  private _values?: string[]; 
+  public get values() {
+    return this.getListAttribute('values');
+  }
+  public set values(value: string[]) {
+    this._values = value;
+  }
+  public resetValues() {
+    this._values = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valuesInput() {
+    return this._values;
+  }
+}
+export interface BudgetsBudgetFilterExpressionNotNotDimensions {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#key BudgetsBudget#key}
+  */
+  readonly key: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}
+  */
+  readonly matchOptions?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#values BudgetsBudget#values}
+  */
+  readonly values: string[];
+}
+
+export function budgetsBudgetFilterExpressionNotNotDimensionsToTerraform(struct?: BudgetsBudgetFilterExpressionNotNotDimensionsOutputReference | BudgetsBudgetFilterExpressionNotNotDimensions): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    key: cdktn.stringToTerraform(struct!.key),
+    match_options: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.matchOptions),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
+  }
+}
+
+
+export function budgetsBudgetFilterExpressionNotNotDimensionsToHclTerraform(struct?: BudgetsBudgetFilterExpressionNotNotDimensionsOutputReference | BudgetsBudgetFilterExpressionNotNotDimensions): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    key: {
+      value: cdktn.stringToHclTerraform(struct!.key),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    match_options: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.matchOptions),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    values: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class BudgetsBudgetFilterExpressionNotNotDimensionsOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): BudgetsBudgetFilterExpressionNotNotDimensions | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._key !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.key = this._key;
+    }
+    if (this._matchOptions !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.matchOptions = this._matchOptions;
+    }
+    if (this._values !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.values = this._values;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: BudgetsBudgetFilterExpressionNotNotDimensions | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._key = undefined;
+      this._matchOptions = undefined;
+      this._values = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._key = value.key;
+      this._matchOptions = value.matchOptions;
+      this._values = value.values;
+    }
+  }
+
+  // key - computed: false, optional: false, required: true
+  private _key?: string; 
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+  public set key(value: string) {
+    this._key = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get keyInput() {
+    return this._key;
+  }
+
+  // match_options - computed: false, optional: true, required: false
+  private _matchOptions?: string[]; 
+  public get matchOptions() {
+    return this.getListAttribute('match_options');
+  }
+  public set matchOptions(value: string[]) {
+    this._matchOptions = value;
+  }
+  public resetMatchOptions() {
+    this._matchOptions = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get matchOptionsInput() {
+    return this._matchOptions;
+  }
+
+  // values - computed: false, optional: false, required: true
+  private _values?: string[]; 
+  public get values() {
+    return this.getListAttribute('values');
+  }
+  public set values(value: string[]) {
+    this._values = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valuesInput() {
+    return this._values;
+  }
+}
+export interface BudgetsBudgetFilterExpressionNotNotTags {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#key BudgetsBudget#key}
+  */
+  readonly key?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}
+  */
+  readonly matchOptions?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#values BudgetsBudget#values}
+  */
+  readonly values?: string[];
+}
+
+export function budgetsBudgetFilterExpressionNotNotTagsToTerraform(struct?: BudgetsBudgetFilterExpressionNotNotTagsOutputReference | BudgetsBudgetFilterExpressionNotNotTags): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    key: cdktn.stringToTerraform(struct!.key),
+    match_options: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.matchOptions),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
+  }
+}
+
+
+export function budgetsBudgetFilterExpressionNotNotTagsToHclTerraform(struct?: BudgetsBudgetFilterExpressionNotNotTagsOutputReference | BudgetsBudgetFilterExpressionNotNotTags): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    key: {
+      value: cdktn.stringToHclTerraform(struct!.key),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    match_options: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.matchOptions),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    values: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class BudgetsBudgetFilterExpressionNotNotTagsOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): BudgetsBudgetFilterExpressionNotNotTags | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._key !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.key = this._key;
+    }
+    if (this._matchOptions !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.matchOptions = this._matchOptions;
+    }
+    if (this._values !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.values = this._values;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: BudgetsBudgetFilterExpressionNotNotTags | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._key = undefined;
+      this._matchOptions = undefined;
+      this._values = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._key = value.key;
+      this._matchOptions = value.matchOptions;
+      this._values = value.values;
+    }
+  }
+
+  // key - computed: false, optional: true, required: false
+  private _key?: string; 
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+  public set key(value: string) {
+    this._key = value;
+  }
+  public resetKey() {
+    this._key = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get keyInput() {
+    return this._key;
+  }
+
+  // match_options - computed: false, optional: true, required: false
+  private _matchOptions?: string[]; 
+  public get matchOptions() {
+    return this.getListAttribute('match_options');
+  }
+  public set matchOptions(value: string[]) {
+    this._matchOptions = value;
+  }
+  public resetMatchOptions() {
+    this._matchOptions = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get matchOptionsInput() {
+    return this._matchOptions;
+  }
+
+  // values - computed: false, optional: true, required: false
+  private _values?: string[]; 
+  public get values() {
+    return this.getListAttribute('values');
+  }
+  public set values(value: string[]) {
+    this._values = value;
+  }
+  public resetValues() {
+    this._values = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valuesInput() {
+    return this._values;
+  }
+}
+export interface BudgetsBudgetFilterExpressionNotNot {
+  /**
+  * cost_categories block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#cost_categories BudgetsBudget#cost_categories}
+  */
+  readonly costCategories?: BudgetsBudgetFilterExpressionNotNotCostCategories;
+  /**
+  * dimensions block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#dimensions BudgetsBudget#dimensions}
+  */
+  readonly dimensions?: BudgetsBudgetFilterExpressionNotNotDimensions;
+  /**
+  * tags block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#tags BudgetsBudget#tags}
+  */
+  readonly tags?: BudgetsBudgetFilterExpressionNotNotTags;
+}
+
+export function budgetsBudgetFilterExpressionNotNotToTerraform(struct?: BudgetsBudgetFilterExpressionNotNotOutputReference | BudgetsBudgetFilterExpressionNotNot): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    cost_categories: budgetsBudgetFilterExpressionNotNotCostCategoriesToTerraform(struct!.costCategories),
+    dimensions: budgetsBudgetFilterExpressionNotNotDimensionsToTerraform(struct!.dimensions),
+    tags: budgetsBudgetFilterExpressionNotNotTagsToTerraform(struct!.tags),
+  }
+}
+
+
+export function budgetsBudgetFilterExpressionNotNotToHclTerraform(struct?: BudgetsBudgetFilterExpressionNotNotOutputReference | BudgetsBudgetFilterExpressionNotNot): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    cost_categories: {
+      value: budgetsBudgetFilterExpressionNotNotCostCategoriesToHclTerraform(struct!.costCategories),
+      isBlock: true,
+      type: "list",
+      storageClassType: "BudgetsBudgetFilterExpressionNotNotCostCategoriesList",
+    },
+    dimensions: {
+      value: budgetsBudgetFilterExpressionNotNotDimensionsToHclTerraform(struct!.dimensions),
+      isBlock: true,
+      type: "list",
+      storageClassType: "BudgetsBudgetFilterExpressionNotNotDimensionsList",
+    },
+    tags: {
+      value: budgetsBudgetFilterExpressionNotNotTagsToHclTerraform(struct!.tags),
+      isBlock: true,
+      type: "list",
+      storageClassType: "BudgetsBudgetFilterExpressionNotNotTagsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class BudgetsBudgetFilterExpressionNotNotOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): BudgetsBudgetFilterExpressionNotNot | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._costCategories?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.costCategories = this._costCategories?.internalValue;
+    }
+    if (this._dimensions?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.dimensions = this._dimensions?.internalValue;
+    }
+    if (this._tags?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.tags = this._tags?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: BudgetsBudgetFilterExpressionNotNot | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._costCategories.internalValue = undefined;
+      this._dimensions.internalValue = undefined;
+      this._tags.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._costCategories.internalValue = value.costCategories;
+      this._dimensions.internalValue = value.dimensions;
+      this._tags.internalValue = value.tags;
+    }
+  }
+
+  // cost_categories - computed: false, optional: true, required: false
+  private _costCategories = new BudgetsBudgetFilterExpressionNotNotCostCategoriesOutputReference(this, "cost_categories");
+  public get costCategories() {
+    return this._costCategories;
+  }
+  public putCostCategories(value: BudgetsBudgetFilterExpressionNotNotCostCategories) {
+    this._costCategories.internalValue = value;
+  }
+  public resetCostCategories() {
+    this._costCategories.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get costCategoriesInput() {
+    return this._costCategories.internalValue;
+  }
+
+  // dimensions - computed: false, optional: true, required: false
+  private _dimensions = new BudgetsBudgetFilterExpressionNotNotDimensionsOutputReference(this, "dimensions");
+  public get dimensions() {
+    return this._dimensions;
+  }
+  public putDimensions(value: BudgetsBudgetFilterExpressionNotNotDimensions) {
+    this._dimensions.internalValue = value;
+  }
+  public resetDimensions() {
+    this._dimensions.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dimensionsInput() {
+    return this._dimensions.internalValue;
+  }
+
+  // tags - computed: false, optional: true, required: false
+  private _tags = new BudgetsBudgetFilterExpressionNotNotTagsOutputReference(this, "tags");
+  public get tags() {
+    return this._tags;
+  }
+  public putTags(value: BudgetsBudgetFilterExpressionNotNotTags) {
+    this._tags.internalValue = value;
+  }
+  public resetTags() {
+    this._tags.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags.internalValue;
+  }
+}
+export interface BudgetsBudgetFilterExpressionNotOrCostCategories {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#key BudgetsBudget#key}
+  */
+  readonly key?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}
+  */
+  readonly matchOptions?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#values BudgetsBudget#values}
+  */
+  readonly values?: string[];
+}
+
+export function budgetsBudgetFilterExpressionNotOrCostCategoriesToTerraform(struct?: BudgetsBudgetFilterExpressionNotOrCostCategoriesOutputReference | BudgetsBudgetFilterExpressionNotOrCostCategories): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    key: cdktn.stringToTerraform(struct!.key),
+    match_options: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.matchOptions),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
+  }
+}
+
+
+export function budgetsBudgetFilterExpressionNotOrCostCategoriesToHclTerraform(struct?: BudgetsBudgetFilterExpressionNotOrCostCategoriesOutputReference | BudgetsBudgetFilterExpressionNotOrCostCategories): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    key: {
+      value: cdktn.stringToHclTerraform(struct!.key),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    match_options: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.matchOptions),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    values: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class BudgetsBudgetFilterExpressionNotOrCostCategoriesOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): BudgetsBudgetFilterExpressionNotOrCostCategories | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._key !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.key = this._key;
+    }
+    if (this._matchOptions !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.matchOptions = this._matchOptions;
+    }
+    if (this._values !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.values = this._values;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: BudgetsBudgetFilterExpressionNotOrCostCategories | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._key = undefined;
+      this._matchOptions = undefined;
+      this._values = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._key = value.key;
+      this._matchOptions = value.matchOptions;
+      this._values = value.values;
+    }
+  }
+
+  // key - computed: false, optional: true, required: false
+  private _key?: string; 
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+  public set key(value: string) {
+    this._key = value;
+  }
+  public resetKey() {
+    this._key = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get keyInput() {
+    return this._key;
+  }
+
+  // match_options - computed: false, optional: true, required: false
+  private _matchOptions?: string[]; 
+  public get matchOptions() {
+    return this.getListAttribute('match_options');
+  }
+  public set matchOptions(value: string[]) {
+    this._matchOptions = value;
+  }
+  public resetMatchOptions() {
+    this._matchOptions = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get matchOptionsInput() {
+    return this._matchOptions;
+  }
+
+  // values - computed: false, optional: true, required: false
+  private _values?: string[]; 
+  public get values() {
+    return this.getListAttribute('values');
+  }
+  public set values(value: string[]) {
+    this._values = value;
+  }
+  public resetValues() {
+    this._values = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valuesInput() {
+    return this._values;
+  }
+}
+export interface BudgetsBudgetFilterExpressionNotOrDimensions {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#key BudgetsBudget#key}
+  */
+  readonly key: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}
+  */
+  readonly matchOptions?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#values BudgetsBudget#values}
+  */
+  readonly values: string[];
+}
+
+export function budgetsBudgetFilterExpressionNotOrDimensionsToTerraform(struct?: BudgetsBudgetFilterExpressionNotOrDimensionsOutputReference | BudgetsBudgetFilterExpressionNotOrDimensions): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    key: cdktn.stringToTerraform(struct!.key),
+    match_options: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.matchOptions),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
+  }
+}
+
+
+export function budgetsBudgetFilterExpressionNotOrDimensionsToHclTerraform(struct?: BudgetsBudgetFilterExpressionNotOrDimensionsOutputReference | BudgetsBudgetFilterExpressionNotOrDimensions): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    key: {
+      value: cdktn.stringToHclTerraform(struct!.key),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    match_options: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.matchOptions),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    values: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class BudgetsBudgetFilterExpressionNotOrDimensionsOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): BudgetsBudgetFilterExpressionNotOrDimensions | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._key !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.key = this._key;
+    }
+    if (this._matchOptions !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.matchOptions = this._matchOptions;
+    }
+    if (this._values !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.values = this._values;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: BudgetsBudgetFilterExpressionNotOrDimensions | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._key = undefined;
+      this._matchOptions = undefined;
+      this._values = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._key = value.key;
+      this._matchOptions = value.matchOptions;
+      this._values = value.values;
+    }
+  }
+
+  // key - computed: false, optional: false, required: true
+  private _key?: string; 
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+  public set key(value: string) {
+    this._key = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get keyInput() {
+    return this._key;
+  }
+
+  // match_options - computed: false, optional: true, required: false
+  private _matchOptions?: string[]; 
+  public get matchOptions() {
+    return this.getListAttribute('match_options');
+  }
+  public set matchOptions(value: string[]) {
+    this._matchOptions = value;
+  }
+  public resetMatchOptions() {
+    this._matchOptions = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get matchOptionsInput() {
+    return this._matchOptions;
+  }
+
+  // values - computed: false, optional: false, required: true
+  private _values?: string[]; 
+  public get values() {
+    return this.getListAttribute('values');
+  }
+  public set values(value: string[]) {
+    this._values = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valuesInput() {
+    return this._values;
+  }
+}
+export interface BudgetsBudgetFilterExpressionNotOrTags {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#key BudgetsBudget#key}
+  */
+  readonly key?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}
+  */
+  readonly matchOptions?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#values BudgetsBudget#values}
+  */
+  readonly values?: string[];
+}
+
+export function budgetsBudgetFilterExpressionNotOrTagsToTerraform(struct?: BudgetsBudgetFilterExpressionNotOrTagsOutputReference | BudgetsBudgetFilterExpressionNotOrTags): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    key: cdktn.stringToTerraform(struct!.key),
+    match_options: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.matchOptions),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
+  }
+}
+
+
+export function budgetsBudgetFilterExpressionNotOrTagsToHclTerraform(struct?: BudgetsBudgetFilterExpressionNotOrTagsOutputReference | BudgetsBudgetFilterExpressionNotOrTags): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    key: {
+      value: cdktn.stringToHclTerraform(struct!.key),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    match_options: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.matchOptions),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    values: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class BudgetsBudgetFilterExpressionNotOrTagsOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): BudgetsBudgetFilterExpressionNotOrTags | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._key !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.key = this._key;
+    }
+    if (this._matchOptions !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.matchOptions = this._matchOptions;
+    }
+    if (this._values !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.values = this._values;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: BudgetsBudgetFilterExpressionNotOrTags | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._key = undefined;
+      this._matchOptions = undefined;
+      this._values = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._key = value.key;
+      this._matchOptions = value.matchOptions;
+      this._values = value.values;
+    }
+  }
+
+  // key - computed: false, optional: true, required: false
+  private _key?: string; 
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+  public set key(value: string) {
+    this._key = value;
+  }
+  public resetKey() {
+    this._key = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get keyInput() {
+    return this._key;
+  }
+
+  // match_options - computed: false, optional: true, required: false
+  private _matchOptions?: string[]; 
+  public get matchOptions() {
+    return this.getListAttribute('match_options');
+  }
+  public set matchOptions(value: string[]) {
+    this._matchOptions = value;
+  }
+  public resetMatchOptions() {
+    this._matchOptions = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get matchOptionsInput() {
+    return this._matchOptions;
+  }
+
+  // values - computed: false, optional: true, required: false
+  private _values?: string[]; 
+  public get values() {
+    return this.getListAttribute('values');
+  }
+  public set values(value: string[]) {
+    this._values = value;
+  }
+  public resetValues() {
+    this._values = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valuesInput() {
+    return this._values;
+  }
+}
+export interface BudgetsBudgetFilterExpressionNotOr {
+  /**
+  * cost_categories block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#cost_categories BudgetsBudget#cost_categories}
+  */
+  readonly costCategories?: BudgetsBudgetFilterExpressionNotOrCostCategories;
+  /**
+  * dimensions block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#dimensions BudgetsBudget#dimensions}
+  */
+  readonly dimensions?: BudgetsBudgetFilterExpressionNotOrDimensions;
+  /**
+  * tags block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#tags BudgetsBudget#tags}
+  */
+  readonly tags?: BudgetsBudgetFilterExpressionNotOrTags;
+}
+
+export function budgetsBudgetFilterExpressionNotOrToTerraform(struct?: BudgetsBudgetFilterExpressionNotOr | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    cost_categories: budgetsBudgetFilterExpressionNotOrCostCategoriesToTerraform(struct!.costCategories),
+    dimensions: budgetsBudgetFilterExpressionNotOrDimensionsToTerraform(struct!.dimensions),
+    tags: budgetsBudgetFilterExpressionNotOrTagsToTerraform(struct!.tags),
+  }
+}
+
+
+export function budgetsBudgetFilterExpressionNotOrToHclTerraform(struct?: BudgetsBudgetFilterExpressionNotOr | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    cost_categories: {
+      value: budgetsBudgetFilterExpressionNotOrCostCategoriesToHclTerraform(struct!.costCategories),
+      isBlock: true,
+      type: "list",
+      storageClassType: "BudgetsBudgetFilterExpressionNotOrCostCategoriesList",
+    },
+    dimensions: {
+      value: budgetsBudgetFilterExpressionNotOrDimensionsToHclTerraform(struct!.dimensions),
+      isBlock: true,
+      type: "list",
+      storageClassType: "BudgetsBudgetFilterExpressionNotOrDimensionsList",
+    },
+    tags: {
+      value: budgetsBudgetFilterExpressionNotOrTagsToHclTerraform(struct!.tags),
+      isBlock: true,
+      type: "list",
+      storageClassType: "BudgetsBudgetFilterExpressionNotOrTagsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class BudgetsBudgetFilterExpressionNotOrOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): BudgetsBudgetFilterExpressionNotOr | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._costCategories?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.costCategories = this._costCategories?.internalValue;
+    }
+    if (this._dimensions?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.dimensions = this._dimensions?.internalValue;
+    }
+    if (this._tags?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.tags = this._tags?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: BudgetsBudgetFilterExpressionNotOr | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._costCategories.internalValue = undefined;
+      this._dimensions.internalValue = undefined;
+      this._tags.internalValue = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._costCategories.internalValue = value.costCategories;
+      this._dimensions.internalValue = value.dimensions;
+      this._tags.internalValue = value.tags;
+    }
+  }
+
+  // cost_categories - computed: false, optional: true, required: false
+  private _costCategories = new BudgetsBudgetFilterExpressionNotOrCostCategoriesOutputReference(this, "cost_categories");
+  public get costCategories() {
+    return this._costCategories;
+  }
+  public putCostCategories(value: BudgetsBudgetFilterExpressionNotOrCostCategories) {
+    this._costCategories.internalValue = value;
+  }
+  public resetCostCategories() {
+    this._costCategories.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get costCategoriesInput() {
+    return this._costCategories.internalValue;
+  }
+
+  // dimensions - computed: false, optional: true, required: false
+  private _dimensions = new BudgetsBudgetFilterExpressionNotOrDimensionsOutputReference(this, "dimensions");
+  public get dimensions() {
+    return this._dimensions;
+  }
+  public putDimensions(value: BudgetsBudgetFilterExpressionNotOrDimensions) {
+    this._dimensions.internalValue = value;
+  }
+  public resetDimensions() {
+    this._dimensions.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dimensionsInput() {
+    return this._dimensions.internalValue;
+  }
+
+  // tags - computed: false, optional: true, required: false
+  private _tags = new BudgetsBudgetFilterExpressionNotOrTagsOutputReference(this, "tags");
+  public get tags() {
+    return this._tags;
+  }
+  public putTags(value: BudgetsBudgetFilterExpressionNotOrTags) {
+    this._tags.internalValue = value;
+  }
+  public resetTags() {
+    this._tags.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags.internalValue;
+  }
+}
+
+export class BudgetsBudgetFilterExpressionNotOrList extends cdktn.ComplexList {
+  public internalValue? : BudgetsBudgetFilterExpressionNotOr[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): BudgetsBudgetFilterExpressionNotOrOutputReference {
+    return new BudgetsBudgetFilterExpressionNotOrOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface BudgetsBudgetFilterExpressionNotTags {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#key BudgetsBudget#key}
+  */
+  readonly key?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}
+  */
+  readonly matchOptions?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#values BudgetsBudget#values}
+  */
+  readonly values?: string[];
+}
+
+export function budgetsBudgetFilterExpressionNotTagsToTerraform(struct?: BudgetsBudgetFilterExpressionNotTagsOutputReference | BudgetsBudgetFilterExpressionNotTags): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    key: cdktn.stringToTerraform(struct!.key),
+    match_options: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.matchOptions),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
+  }
+}
+
+
+export function budgetsBudgetFilterExpressionNotTagsToHclTerraform(struct?: BudgetsBudgetFilterExpressionNotTagsOutputReference | BudgetsBudgetFilterExpressionNotTags): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    key: {
+      value: cdktn.stringToHclTerraform(struct!.key),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    match_options: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.matchOptions),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    values: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class BudgetsBudgetFilterExpressionNotTagsOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): BudgetsBudgetFilterExpressionNotTags | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._key !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.key = this._key;
+    }
+    if (this._matchOptions !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.matchOptions = this._matchOptions;
+    }
+    if (this._values !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.values = this._values;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: BudgetsBudgetFilterExpressionNotTags | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._key = undefined;
+      this._matchOptions = undefined;
+      this._values = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._key = value.key;
+      this._matchOptions = value.matchOptions;
+      this._values = value.values;
+    }
+  }
+
+  // key - computed: false, optional: true, required: false
+  private _key?: string; 
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+  public set key(value: string) {
+    this._key = value;
+  }
+  public resetKey() {
+    this._key = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get keyInput() {
+    return this._key;
+  }
+
+  // match_options - computed: false, optional: true, required: false
+  private _matchOptions?: string[]; 
+  public get matchOptions() {
+    return this.getListAttribute('match_options');
+  }
+  public set matchOptions(value: string[]) {
+    this._matchOptions = value;
+  }
+  public resetMatchOptions() {
+    this._matchOptions = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get matchOptionsInput() {
+    return this._matchOptions;
+  }
+
+  // values - computed: false, optional: true, required: false
+  private _values?: string[]; 
+  public get values() {
+    return this.getListAttribute('values');
+  }
+  public set values(value: string[]) {
+    this._values = value;
+  }
+  public resetValues() {
+    this._values = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valuesInput() {
+    return this._values;
+  }
+}
+export interface BudgetsBudgetFilterExpressionNot {
+  /**
+  * and block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#and BudgetsBudget#and}
+  */
+  readonly and?: BudgetsBudgetFilterExpressionNotAnd[] | cdktn.IResolvable;
+  /**
+  * cost_categories block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#cost_categories BudgetsBudget#cost_categories}
+  */
+  readonly costCategories?: BudgetsBudgetFilterExpressionNotCostCategories;
+  /**
+  * dimensions block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#dimensions BudgetsBudget#dimensions}
+  */
+  readonly dimensions?: BudgetsBudgetFilterExpressionNotDimensions;
+  /**
+  * not block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#not BudgetsBudget#not}
+  */
+  readonly not?: BudgetsBudgetFilterExpressionNotNot;
+  /**
+  * or block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#or BudgetsBudget#or}
+  */
+  readonly or?: BudgetsBudgetFilterExpressionNotOr[] | cdktn.IResolvable;
+  /**
+  * tags block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#tags BudgetsBudget#tags}
+  */
+  readonly tags?: BudgetsBudgetFilterExpressionNotTags;
+}
+
+export function budgetsBudgetFilterExpressionNotToTerraform(struct?: BudgetsBudgetFilterExpressionNotOutputReference | BudgetsBudgetFilterExpressionNot): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    and: cdktn.listMapper(budgetsBudgetFilterExpressionNotAndToTerraform, true)(struct!.and),
+    cost_categories: budgetsBudgetFilterExpressionNotCostCategoriesToTerraform(struct!.costCategories),
+    dimensions: budgetsBudgetFilterExpressionNotDimensionsToTerraform(struct!.dimensions),
+    not: budgetsBudgetFilterExpressionNotNotToTerraform(struct!.not),
+    or: cdktn.listMapper(budgetsBudgetFilterExpressionNotOrToTerraform, true)(struct!.or),
+    tags: budgetsBudgetFilterExpressionNotTagsToTerraform(struct!.tags),
+  }
+}
+
+
+export function budgetsBudgetFilterExpressionNotToHclTerraform(struct?: BudgetsBudgetFilterExpressionNotOutputReference | BudgetsBudgetFilterExpressionNot): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    and: {
+      value: cdktn.listMapperHcl(budgetsBudgetFilterExpressionNotAndToHclTerraform, true)(struct!.and),
+      isBlock: true,
+      type: "list",
+      storageClassType: "BudgetsBudgetFilterExpressionNotAndList",
+    },
+    cost_categories: {
+      value: budgetsBudgetFilterExpressionNotCostCategoriesToHclTerraform(struct!.costCategories),
+      isBlock: true,
+      type: "list",
+      storageClassType: "BudgetsBudgetFilterExpressionNotCostCategoriesList",
+    },
+    dimensions: {
+      value: budgetsBudgetFilterExpressionNotDimensionsToHclTerraform(struct!.dimensions),
+      isBlock: true,
+      type: "list",
+      storageClassType: "BudgetsBudgetFilterExpressionNotDimensionsList",
+    },
+    not: {
+      value: budgetsBudgetFilterExpressionNotNotToHclTerraform(struct!.not),
+      isBlock: true,
+      type: "list",
+      storageClassType: "BudgetsBudgetFilterExpressionNotNotList",
+    },
+    or: {
+      value: cdktn.listMapperHcl(budgetsBudgetFilterExpressionNotOrToHclTerraform, true)(struct!.or),
+      isBlock: true,
+      type: "list",
+      storageClassType: "BudgetsBudgetFilterExpressionNotOrList",
+    },
+    tags: {
+      value: budgetsBudgetFilterExpressionNotTagsToHclTerraform(struct!.tags),
+      isBlock: true,
+      type: "list",
+      storageClassType: "BudgetsBudgetFilterExpressionNotTagsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class BudgetsBudgetFilterExpressionNotOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): BudgetsBudgetFilterExpressionNot | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._and?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.and = this._and?.internalValue;
+    }
+    if (this._costCategories?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.costCategories = this._costCategories?.internalValue;
+    }
+    if (this._dimensions?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.dimensions = this._dimensions?.internalValue;
+    }
+    if (this._not?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.not = this._not?.internalValue;
+    }
+    if (this._or?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.or = this._or?.internalValue;
+    }
+    if (this._tags?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.tags = this._tags?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: BudgetsBudgetFilterExpressionNot | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._and.internalValue = undefined;
+      this._costCategories.internalValue = undefined;
+      this._dimensions.internalValue = undefined;
+      this._not.internalValue = undefined;
+      this._or.internalValue = undefined;
+      this._tags.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._and.internalValue = value.and;
+      this._costCategories.internalValue = value.costCategories;
+      this._dimensions.internalValue = value.dimensions;
+      this._not.internalValue = value.not;
+      this._or.internalValue = value.or;
+      this._tags.internalValue = value.tags;
+    }
+  }
+
+  // and - computed: false, optional: true, required: false
+  private _and = new BudgetsBudgetFilterExpressionNotAndList(this, "and", false);
+  public get and() {
+    return this._and;
+  }
+  public putAnd(value: BudgetsBudgetFilterExpressionNotAnd[] | cdktn.IResolvable) {
+    this._and.internalValue = value;
+  }
+  public resetAnd() {
+    this._and.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get andInput() {
+    return this._and.internalValue;
+  }
+
+  // cost_categories - computed: false, optional: true, required: false
+  private _costCategories = new BudgetsBudgetFilterExpressionNotCostCategoriesOutputReference(this, "cost_categories");
+  public get costCategories() {
+    return this._costCategories;
+  }
+  public putCostCategories(value: BudgetsBudgetFilterExpressionNotCostCategories) {
+    this._costCategories.internalValue = value;
+  }
+  public resetCostCategories() {
+    this._costCategories.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get costCategoriesInput() {
+    return this._costCategories.internalValue;
+  }
+
+  // dimensions - computed: false, optional: true, required: false
+  private _dimensions = new BudgetsBudgetFilterExpressionNotDimensionsOutputReference(this, "dimensions");
+  public get dimensions() {
+    return this._dimensions;
+  }
+  public putDimensions(value: BudgetsBudgetFilterExpressionNotDimensions) {
+    this._dimensions.internalValue = value;
+  }
+  public resetDimensions() {
+    this._dimensions.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dimensionsInput() {
+    return this._dimensions.internalValue;
+  }
+
+  // not - computed: false, optional: true, required: false
+  private _not = new BudgetsBudgetFilterExpressionNotNotOutputReference(this, "not");
+  public get not() {
+    return this._not;
+  }
+  public putNot(value: BudgetsBudgetFilterExpressionNotNot) {
+    this._not.internalValue = value;
+  }
+  public resetNot() {
+    this._not.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get notInput() {
+    return this._not.internalValue;
+  }
+
+  // or - computed: false, optional: true, required: false
+  private _or = new BudgetsBudgetFilterExpressionNotOrList(this, "or", false);
+  public get or() {
+    return this._or;
+  }
+  public putOr(value: BudgetsBudgetFilterExpressionNotOr[] | cdktn.IResolvable) {
+    this._or.internalValue = value;
+  }
+  public resetOr() {
+    this._or.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get orInput() {
+    return this._or.internalValue;
+  }
+
+  // tags - computed: false, optional: true, required: false
+  private _tags = new BudgetsBudgetFilterExpressionNotTagsOutputReference(this, "tags");
+  public get tags() {
+    return this._tags;
+  }
+  public putTags(value: BudgetsBudgetFilterExpressionNotTags) {
+    this._tags.internalValue = value;
+  }
+  public resetTags() {
+    this._tags.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags.internalValue;
+  }
+}
+export interface BudgetsBudgetFilterExpressionOrAndCostCategories {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#key BudgetsBudget#key}
+  */
+  readonly key?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}
+  */
+  readonly matchOptions?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#values BudgetsBudget#values}
+  */
+  readonly values?: string[];
+}
+
+export function budgetsBudgetFilterExpressionOrAndCostCategoriesToTerraform(struct?: BudgetsBudgetFilterExpressionOrAndCostCategoriesOutputReference | BudgetsBudgetFilterExpressionOrAndCostCategories): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    key: cdktn.stringToTerraform(struct!.key),
+    match_options: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.matchOptions),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
+  }
+}
+
+
+export function budgetsBudgetFilterExpressionOrAndCostCategoriesToHclTerraform(struct?: BudgetsBudgetFilterExpressionOrAndCostCategoriesOutputReference | BudgetsBudgetFilterExpressionOrAndCostCategories): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    key: {
+      value: cdktn.stringToHclTerraform(struct!.key),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    match_options: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.matchOptions),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    values: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class BudgetsBudgetFilterExpressionOrAndCostCategoriesOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): BudgetsBudgetFilterExpressionOrAndCostCategories | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._key !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.key = this._key;
+    }
+    if (this._matchOptions !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.matchOptions = this._matchOptions;
+    }
+    if (this._values !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.values = this._values;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: BudgetsBudgetFilterExpressionOrAndCostCategories | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._key = undefined;
+      this._matchOptions = undefined;
+      this._values = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._key = value.key;
+      this._matchOptions = value.matchOptions;
+      this._values = value.values;
+    }
+  }
+
+  // key - computed: false, optional: true, required: false
+  private _key?: string; 
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+  public set key(value: string) {
+    this._key = value;
+  }
+  public resetKey() {
+    this._key = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get keyInput() {
+    return this._key;
+  }
+
+  // match_options - computed: false, optional: true, required: false
+  private _matchOptions?: string[]; 
+  public get matchOptions() {
+    return this.getListAttribute('match_options');
+  }
+  public set matchOptions(value: string[]) {
+    this._matchOptions = value;
+  }
+  public resetMatchOptions() {
+    this._matchOptions = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get matchOptionsInput() {
+    return this._matchOptions;
+  }
+
+  // values - computed: false, optional: true, required: false
+  private _values?: string[]; 
+  public get values() {
+    return this.getListAttribute('values');
+  }
+  public set values(value: string[]) {
+    this._values = value;
+  }
+  public resetValues() {
+    this._values = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valuesInput() {
+    return this._values;
+  }
+}
+export interface BudgetsBudgetFilterExpressionOrAndDimensions {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#key BudgetsBudget#key}
+  */
+  readonly key: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}
+  */
+  readonly matchOptions?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#values BudgetsBudget#values}
+  */
+  readonly values: string[];
+}
+
+export function budgetsBudgetFilterExpressionOrAndDimensionsToTerraform(struct?: BudgetsBudgetFilterExpressionOrAndDimensionsOutputReference | BudgetsBudgetFilterExpressionOrAndDimensions): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    key: cdktn.stringToTerraform(struct!.key),
+    match_options: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.matchOptions),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
+  }
+}
+
+
+export function budgetsBudgetFilterExpressionOrAndDimensionsToHclTerraform(struct?: BudgetsBudgetFilterExpressionOrAndDimensionsOutputReference | BudgetsBudgetFilterExpressionOrAndDimensions): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    key: {
+      value: cdktn.stringToHclTerraform(struct!.key),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    match_options: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.matchOptions),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    values: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class BudgetsBudgetFilterExpressionOrAndDimensionsOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): BudgetsBudgetFilterExpressionOrAndDimensions | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._key !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.key = this._key;
+    }
+    if (this._matchOptions !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.matchOptions = this._matchOptions;
+    }
+    if (this._values !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.values = this._values;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: BudgetsBudgetFilterExpressionOrAndDimensions | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._key = undefined;
+      this._matchOptions = undefined;
+      this._values = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._key = value.key;
+      this._matchOptions = value.matchOptions;
+      this._values = value.values;
+    }
+  }
+
+  // key - computed: false, optional: false, required: true
+  private _key?: string; 
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+  public set key(value: string) {
+    this._key = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get keyInput() {
+    return this._key;
+  }
+
+  // match_options - computed: false, optional: true, required: false
+  private _matchOptions?: string[]; 
+  public get matchOptions() {
+    return this.getListAttribute('match_options');
+  }
+  public set matchOptions(value: string[]) {
+    this._matchOptions = value;
+  }
+  public resetMatchOptions() {
+    this._matchOptions = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get matchOptionsInput() {
+    return this._matchOptions;
+  }
+
+  // values - computed: false, optional: false, required: true
+  private _values?: string[]; 
+  public get values() {
+    return this.getListAttribute('values');
+  }
+  public set values(value: string[]) {
+    this._values = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valuesInput() {
+    return this._values;
+  }
+}
+export interface BudgetsBudgetFilterExpressionOrAndTags {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#key BudgetsBudget#key}
+  */
+  readonly key?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}
+  */
+  readonly matchOptions?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#values BudgetsBudget#values}
+  */
+  readonly values?: string[];
+}
+
+export function budgetsBudgetFilterExpressionOrAndTagsToTerraform(struct?: BudgetsBudgetFilterExpressionOrAndTagsOutputReference | BudgetsBudgetFilterExpressionOrAndTags): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    key: cdktn.stringToTerraform(struct!.key),
+    match_options: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.matchOptions),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
+  }
+}
+
+
+export function budgetsBudgetFilterExpressionOrAndTagsToHclTerraform(struct?: BudgetsBudgetFilterExpressionOrAndTagsOutputReference | BudgetsBudgetFilterExpressionOrAndTags): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    key: {
+      value: cdktn.stringToHclTerraform(struct!.key),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    match_options: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.matchOptions),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    values: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class BudgetsBudgetFilterExpressionOrAndTagsOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): BudgetsBudgetFilterExpressionOrAndTags | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._key !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.key = this._key;
+    }
+    if (this._matchOptions !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.matchOptions = this._matchOptions;
+    }
+    if (this._values !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.values = this._values;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: BudgetsBudgetFilterExpressionOrAndTags | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._key = undefined;
+      this._matchOptions = undefined;
+      this._values = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._key = value.key;
+      this._matchOptions = value.matchOptions;
+      this._values = value.values;
+    }
+  }
+
+  // key - computed: false, optional: true, required: false
+  private _key?: string; 
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+  public set key(value: string) {
+    this._key = value;
+  }
+  public resetKey() {
+    this._key = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get keyInput() {
+    return this._key;
+  }
+
+  // match_options - computed: false, optional: true, required: false
+  private _matchOptions?: string[]; 
+  public get matchOptions() {
+    return this.getListAttribute('match_options');
+  }
+  public set matchOptions(value: string[]) {
+    this._matchOptions = value;
+  }
+  public resetMatchOptions() {
+    this._matchOptions = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get matchOptionsInput() {
+    return this._matchOptions;
+  }
+
+  // values - computed: false, optional: true, required: false
+  private _values?: string[]; 
+  public get values() {
+    return this.getListAttribute('values');
+  }
+  public set values(value: string[]) {
+    this._values = value;
+  }
+  public resetValues() {
+    this._values = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valuesInput() {
+    return this._values;
+  }
+}
+export interface BudgetsBudgetFilterExpressionOrAnd {
+  /**
+  * cost_categories block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#cost_categories BudgetsBudget#cost_categories}
+  */
+  readonly costCategories?: BudgetsBudgetFilterExpressionOrAndCostCategories;
+  /**
+  * dimensions block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#dimensions BudgetsBudget#dimensions}
+  */
+  readonly dimensions?: BudgetsBudgetFilterExpressionOrAndDimensions;
+  /**
+  * tags block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#tags BudgetsBudget#tags}
+  */
+  readonly tags?: BudgetsBudgetFilterExpressionOrAndTags;
+}
+
+export function budgetsBudgetFilterExpressionOrAndToTerraform(struct?: BudgetsBudgetFilterExpressionOrAnd | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    cost_categories: budgetsBudgetFilterExpressionOrAndCostCategoriesToTerraform(struct!.costCategories),
+    dimensions: budgetsBudgetFilterExpressionOrAndDimensionsToTerraform(struct!.dimensions),
+    tags: budgetsBudgetFilterExpressionOrAndTagsToTerraform(struct!.tags),
+  }
+}
+
+
+export function budgetsBudgetFilterExpressionOrAndToHclTerraform(struct?: BudgetsBudgetFilterExpressionOrAnd | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    cost_categories: {
+      value: budgetsBudgetFilterExpressionOrAndCostCategoriesToHclTerraform(struct!.costCategories),
+      isBlock: true,
+      type: "list",
+      storageClassType: "BudgetsBudgetFilterExpressionOrAndCostCategoriesList",
+    },
+    dimensions: {
+      value: budgetsBudgetFilterExpressionOrAndDimensionsToHclTerraform(struct!.dimensions),
+      isBlock: true,
+      type: "list",
+      storageClassType: "BudgetsBudgetFilterExpressionOrAndDimensionsList",
+    },
+    tags: {
+      value: budgetsBudgetFilterExpressionOrAndTagsToHclTerraform(struct!.tags),
+      isBlock: true,
+      type: "list",
+      storageClassType: "BudgetsBudgetFilterExpressionOrAndTagsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class BudgetsBudgetFilterExpressionOrAndOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): BudgetsBudgetFilterExpressionOrAnd | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._costCategories?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.costCategories = this._costCategories?.internalValue;
+    }
+    if (this._dimensions?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.dimensions = this._dimensions?.internalValue;
+    }
+    if (this._tags?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.tags = this._tags?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: BudgetsBudgetFilterExpressionOrAnd | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._costCategories.internalValue = undefined;
+      this._dimensions.internalValue = undefined;
+      this._tags.internalValue = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._costCategories.internalValue = value.costCategories;
+      this._dimensions.internalValue = value.dimensions;
+      this._tags.internalValue = value.tags;
+    }
+  }
+
+  // cost_categories - computed: false, optional: true, required: false
+  private _costCategories = new BudgetsBudgetFilterExpressionOrAndCostCategoriesOutputReference(this, "cost_categories");
+  public get costCategories() {
+    return this._costCategories;
+  }
+  public putCostCategories(value: BudgetsBudgetFilterExpressionOrAndCostCategories) {
+    this._costCategories.internalValue = value;
+  }
+  public resetCostCategories() {
+    this._costCategories.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get costCategoriesInput() {
+    return this._costCategories.internalValue;
+  }
+
+  // dimensions - computed: false, optional: true, required: false
+  private _dimensions = new BudgetsBudgetFilterExpressionOrAndDimensionsOutputReference(this, "dimensions");
+  public get dimensions() {
+    return this._dimensions;
+  }
+  public putDimensions(value: BudgetsBudgetFilterExpressionOrAndDimensions) {
+    this._dimensions.internalValue = value;
+  }
+  public resetDimensions() {
+    this._dimensions.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dimensionsInput() {
+    return this._dimensions.internalValue;
+  }
+
+  // tags - computed: false, optional: true, required: false
+  private _tags = new BudgetsBudgetFilterExpressionOrAndTagsOutputReference(this, "tags");
+  public get tags() {
+    return this._tags;
+  }
+  public putTags(value: BudgetsBudgetFilterExpressionOrAndTags) {
+    this._tags.internalValue = value;
+  }
+  public resetTags() {
+    this._tags.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags.internalValue;
+  }
+}
+
+export class BudgetsBudgetFilterExpressionOrAndList extends cdktn.ComplexList {
+  public internalValue? : BudgetsBudgetFilterExpressionOrAnd[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): BudgetsBudgetFilterExpressionOrAndOutputReference {
+    return new BudgetsBudgetFilterExpressionOrAndOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface BudgetsBudgetFilterExpressionOrCostCategories {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#key BudgetsBudget#key}
+  */
+  readonly key?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}
+  */
+  readonly matchOptions?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#values BudgetsBudget#values}
+  */
+  readonly values?: string[];
+}
+
+export function budgetsBudgetFilterExpressionOrCostCategoriesToTerraform(struct?: BudgetsBudgetFilterExpressionOrCostCategoriesOutputReference | BudgetsBudgetFilterExpressionOrCostCategories): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    key: cdktn.stringToTerraform(struct!.key),
+    match_options: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.matchOptions),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
+  }
+}
+
+
+export function budgetsBudgetFilterExpressionOrCostCategoriesToHclTerraform(struct?: BudgetsBudgetFilterExpressionOrCostCategoriesOutputReference | BudgetsBudgetFilterExpressionOrCostCategories): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    key: {
+      value: cdktn.stringToHclTerraform(struct!.key),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    match_options: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.matchOptions),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    values: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class BudgetsBudgetFilterExpressionOrCostCategoriesOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): BudgetsBudgetFilterExpressionOrCostCategories | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._key !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.key = this._key;
+    }
+    if (this._matchOptions !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.matchOptions = this._matchOptions;
+    }
+    if (this._values !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.values = this._values;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: BudgetsBudgetFilterExpressionOrCostCategories | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._key = undefined;
+      this._matchOptions = undefined;
+      this._values = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._key = value.key;
+      this._matchOptions = value.matchOptions;
+      this._values = value.values;
+    }
+  }
+
+  // key - computed: false, optional: true, required: false
+  private _key?: string; 
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+  public set key(value: string) {
+    this._key = value;
+  }
+  public resetKey() {
+    this._key = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get keyInput() {
+    return this._key;
+  }
+
+  // match_options - computed: false, optional: true, required: false
+  private _matchOptions?: string[]; 
+  public get matchOptions() {
+    return this.getListAttribute('match_options');
+  }
+  public set matchOptions(value: string[]) {
+    this._matchOptions = value;
+  }
+  public resetMatchOptions() {
+    this._matchOptions = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get matchOptionsInput() {
+    return this._matchOptions;
+  }
+
+  // values - computed: false, optional: true, required: false
+  private _values?: string[]; 
+  public get values() {
+    return this.getListAttribute('values');
+  }
+  public set values(value: string[]) {
+    this._values = value;
+  }
+  public resetValues() {
+    this._values = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valuesInput() {
+    return this._values;
+  }
+}
+export interface BudgetsBudgetFilterExpressionOrDimensions {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#key BudgetsBudget#key}
+  */
+  readonly key: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}
+  */
+  readonly matchOptions?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#values BudgetsBudget#values}
+  */
+  readonly values: string[];
+}
+
+export function budgetsBudgetFilterExpressionOrDimensionsToTerraform(struct?: BudgetsBudgetFilterExpressionOrDimensionsOutputReference | BudgetsBudgetFilterExpressionOrDimensions): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    key: cdktn.stringToTerraform(struct!.key),
+    match_options: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.matchOptions),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
+  }
+}
+
+
+export function budgetsBudgetFilterExpressionOrDimensionsToHclTerraform(struct?: BudgetsBudgetFilterExpressionOrDimensionsOutputReference | BudgetsBudgetFilterExpressionOrDimensions): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    key: {
+      value: cdktn.stringToHclTerraform(struct!.key),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    match_options: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.matchOptions),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    values: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class BudgetsBudgetFilterExpressionOrDimensionsOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): BudgetsBudgetFilterExpressionOrDimensions | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._key !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.key = this._key;
+    }
+    if (this._matchOptions !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.matchOptions = this._matchOptions;
+    }
+    if (this._values !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.values = this._values;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: BudgetsBudgetFilterExpressionOrDimensions | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._key = undefined;
+      this._matchOptions = undefined;
+      this._values = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._key = value.key;
+      this._matchOptions = value.matchOptions;
+      this._values = value.values;
+    }
+  }
+
+  // key - computed: false, optional: false, required: true
+  private _key?: string; 
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+  public set key(value: string) {
+    this._key = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get keyInput() {
+    return this._key;
+  }
+
+  // match_options - computed: false, optional: true, required: false
+  private _matchOptions?: string[]; 
+  public get matchOptions() {
+    return this.getListAttribute('match_options');
+  }
+  public set matchOptions(value: string[]) {
+    this._matchOptions = value;
+  }
+  public resetMatchOptions() {
+    this._matchOptions = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get matchOptionsInput() {
+    return this._matchOptions;
+  }
+
+  // values - computed: false, optional: false, required: true
+  private _values?: string[]; 
+  public get values() {
+    return this.getListAttribute('values');
+  }
+  public set values(value: string[]) {
+    this._values = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valuesInput() {
+    return this._values;
+  }
+}
+export interface BudgetsBudgetFilterExpressionOrNotCostCategories {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#key BudgetsBudget#key}
+  */
+  readonly key?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}
+  */
+  readonly matchOptions?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#values BudgetsBudget#values}
+  */
+  readonly values?: string[];
+}
+
+export function budgetsBudgetFilterExpressionOrNotCostCategoriesToTerraform(struct?: BudgetsBudgetFilterExpressionOrNotCostCategoriesOutputReference | BudgetsBudgetFilterExpressionOrNotCostCategories): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    key: cdktn.stringToTerraform(struct!.key),
+    match_options: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.matchOptions),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
+  }
+}
+
+
+export function budgetsBudgetFilterExpressionOrNotCostCategoriesToHclTerraform(struct?: BudgetsBudgetFilterExpressionOrNotCostCategoriesOutputReference | BudgetsBudgetFilterExpressionOrNotCostCategories): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    key: {
+      value: cdktn.stringToHclTerraform(struct!.key),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    match_options: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.matchOptions),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    values: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class BudgetsBudgetFilterExpressionOrNotCostCategoriesOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): BudgetsBudgetFilterExpressionOrNotCostCategories | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._key !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.key = this._key;
+    }
+    if (this._matchOptions !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.matchOptions = this._matchOptions;
+    }
+    if (this._values !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.values = this._values;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: BudgetsBudgetFilterExpressionOrNotCostCategories | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._key = undefined;
+      this._matchOptions = undefined;
+      this._values = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._key = value.key;
+      this._matchOptions = value.matchOptions;
+      this._values = value.values;
+    }
+  }
+
+  // key - computed: false, optional: true, required: false
+  private _key?: string; 
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+  public set key(value: string) {
+    this._key = value;
+  }
+  public resetKey() {
+    this._key = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get keyInput() {
+    return this._key;
+  }
+
+  // match_options - computed: false, optional: true, required: false
+  private _matchOptions?: string[]; 
+  public get matchOptions() {
+    return this.getListAttribute('match_options');
+  }
+  public set matchOptions(value: string[]) {
+    this._matchOptions = value;
+  }
+  public resetMatchOptions() {
+    this._matchOptions = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get matchOptionsInput() {
+    return this._matchOptions;
+  }
+
+  // values - computed: false, optional: true, required: false
+  private _values?: string[]; 
+  public get values() {
+    return this.getListAttribute('values');
+  }
+  public set values(value: string[]) {
+    this._values = value;
+  }
+  public resetValues() {
+    this._values = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valuesInput() {
+    return this._values;
+  }
+}
+export interface BudgetsBudgetFilterExpressionOrNotDimensions {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#key BudgetsBudget#key}
+  */
+  readonly key: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}
+  */
+  readonly matchOptions?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#values BudgetsBudget#values}
+  */
+  readonly values: string[];
+}
+
+export function budgetsBudgetFilterExpressionOrNotDimensionsToTerraform(struct?: BudgetsBudgetFilterExpressionOrNotDimensionsOutputReference | BudgetsBudgetFilterExpressionOrNotDimensions): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    key: cdktn.stringToTerraform(struct!.key),
+    match_options: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.matchOptions),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
+  }
+}
+
+
+export function budgetsBudgetFilterExpressionOrNotDimensionsToHclTerraform(struct?: BudgetsBudgetFilterExpressionOrNotDimensionsOutputReference | BudgetsBudgetFilterExpressionOrNotDimensions): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    key: {
+      value: cdktn.stringToHclTerraform(struct!.key),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    match_options: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.matchOptions),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    values: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class BudgetsBudgetFilterExpressionOrNotDimensionsOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): BudgetsBudgetFilterExpressionOrNotDimensions | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._key !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.key = this._key;
+    }
+    if (this._matchOptions !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.matchOptions = this._matchOptions;
+    }
+    if (this._values !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.values = this._values;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: BudgetsBudgetFilterExpressionOrNotDimensions | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._key = undefined;
+      this._matchOptions = undefined;
+      this._values = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._key = value.key;
+      this._matchOptions = value.matchOptions;
+      this._values = value.values;
+    }
+  }
+
+  // key - computed: false, optional: false, required: true
+  private _key?: string; 
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+  public set key(value: string) {
+    this._key = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get keyInput() {
+    return this._key;
+  }
+
+  // match_options - computed: false, optional: true, required: false
+  private _matchOptions?: string[]; 
+  public get matchOptions() {
+    return this.getListAttribute('match_options');
+  }
+  public set matchOptions(value: string[]) {
+    this._matchOptions = value;
+  }
+  public resetMatchOptions() {
+    this._matchOptions = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get matchOptionsInput() {
+    return this._matchOptions;
+  }
+
+  // values - computed: false, optional: false, required: true
+  private _values?: string[]; 
+  public get values() {
+    return this.getListAttribute('values');
+  }
+  public set values(value: string[]) {
+    this._values = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valuesInput() {
+    return this._values;
+  }
+}
+export interface BudgetsBudgetFilterExpressionOrNotTags {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#key BudgetsBudget#key}
+  */
+  readonly key?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}
+  */
+  readonly matchOptions?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#values BudgetsBudget#values}
+  */
+  readonly values?: string[];
+}
+
+export function budgetsBudgetFilterExpressionOrNotTagsToTerraform(struct?: BudgetsBudgetFilterExpressionOrNotTagsOutputReference | BudgetsBudgetFilterExpressionOrNotTags): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    key: cdktn.stringToTerraform(struct!.key),
+    match_options: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.matchOptions),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
+  }
+}
+
+
+export function budgetsBudgetFilterExpressionOrNotTagsToHclTerraform(struct?: BudgetsBudgetFilterExpressionOrNotTagsOutputReference | BudgetsBudgetFilterExpressionOrNotTags): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    key: {
+      value: cdktn.stringToHclTerraform(struct!.key),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    match_options: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.matchOptions),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    values: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class BudgetsBudgetFilterExpressionOrNotTagsOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): BudgetsBudgetFilterExpressionOrNotTags | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._key !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.key = this._key;
+    }
+    if (this._matchOptions !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.matchOptions = this._matchOptions;
+    }
+    if (this._values !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.values = this._values;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: BudgetsBudgetFilterExpressionOrNotTags | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._key = undefined;
+      this._matchOptions = undefined;
+      this._values = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._key = value.key;
+      this._matchOptions = value.matchOptions;
+      this._values = value.values;
+    }
+  }
+
+  // key - computed: false, optional: true, required: false
+  private _key?: string; 
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+  public set key(value: string) {
+    this._key = value;
+  }
+  public resetKey() {
+    this._key = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get keyInput() {
+    return this._key;
+  }
+
+  // match_options - computed: false, optional: true, required: false
+  private _matchOptions?: string[]; 
+  public get matchOptions() {
+    return this.getListAttribute('match_options');
+  }
+  public set matchOptions(value: string[]) {
+    this._matchOptions = value;
+  }
+  public resetMatchOptions() {
+    this._matchOptions = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get matchOptionsInput() {
+    return this._matchOptions;
+  }
+
+  // values - computed: false, optional: true, required: false
+  private _values?: string[]; 
+  public get values() {
+    return this.getListAttribute('values');
+  }
+  public set values(value: string[]) {
+    this._values = value;
+  }
+  public resetValues() {
+    this._values = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valuesInput() {
+    return this._values;
+  }
+}
+export interface BudgetsBudgetFilterExpressionOrNot {
+  /**
+  * cost_categories block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#cost_categories BudgetsBudget#cost_categories}
+  */
+  readonly costCategories?: BudgetsBudgetFilterExpressionOrNotCostCategories;
+  /**
+  * dimensions block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#dimensions BudgetsBudget#dimensions}
+  */
+  readonly dimensions?: BudgetsBudgetFilterExpressionOrNotDimensions;
+  /**
+  * tags block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#tags BudgetsBudget#tags}
+  */
+  readonly tags?: BudgetsBudgetFilterExpressionOrNotTags;
+}
+
+export function budgetsBudgetFilterExpressionOrNotToTerraform(struct?: BudgetsBudgetFilterExpressionOrNotOutputReference | BudgetsBudgetFilterExpressionOrNot): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    cost_categories: budgetsBudgetFilterExpressionOrNotCostCategoriesToTerraform(struct!.costCategories),
+    dimensions: budgetsBudgetFilterExpressionOrNotDimensionsToTerraform(struct!.dimensions),
+    tags: budgetsBudgetFilterExpressionOrNotTagsToTerraform(struct!.tags),
+  }
+}
+
+
+export function budgetsBudgetFilterExpressionOrNotToHclTerraform(struct?: BudgetsBudgetFilterExpressionOrNotOutputReference | BudgetsBudgetFilterExpressionOrNot): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    cost_categories: {
+      value: budgetsBudgetFilterExpressionOrNotCostCategoriesToHclTerraform(struct!.costCategories),
+      isBlock: true,
+      type: "list",
+      storageClassType: "BudgetsBudgetFilterExpressionOrNotCostCategoriesList",
+    },
+    dimensions: {
+      value: budgetsBudgetFilterExpressionOrNotDimensionsToHclTerraform(struct!.dimensions),
+      isBlock: true,
+      type: "list",
+      storageClassType: "BudgetsBudgetFilterExpressionOrNotDimensionsList",
+    },
+    tags: {
+      value: budgetsBudgetFilterExpressionOrNotTagsToHclTerraform(struct!.tags),
+      isBlock: true,
+      type: "list",
+      storageClassType: "BudgetsBudgetFilterExpressionOrNotTagsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class BudgetsBudgetFilterExpressionOrNotOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): BudgetsBudgetFilterExpressionOrNot | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._costCategories?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.costCategories = this._costCategories?.internalValue;
+    }
+    if (this._dimensions?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.dimensions = this._dimensions?.internalValue;
+    }
+    if (this._tags?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.tags = this._tags?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: BudgetsBudgetFilterExpressionOrNot | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._costCategories.internalValue = undefined;
+      this._dimensions.internalValue = undefined;
+      this._tags.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._costCategories.internalValue = value.costCategories;
+      this._dimensions.internalValue = value.dimensions;
+      this._tags.internalValue = value.tags;
+    }
+  }
+
+  // cost_categories - computed: false, optional: true, required: false
+  private _costCategories = new BudgetsBudgetFilterExpressionOrNotCostCategoriesOutputReference(this, "cost_categories");
+  public get costCategories() {
+    return this._costCategories;
+  }
+  public putCostCategories(value: BudgetsBudgetFilterExpressionOrNotCostCategories) {
+    this._costCategories.internalValue = value;
+  }
+  public resetCostCategories() {
+    this._costCategories.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get costCategoriesInput() {
+    return this._costCategories.internalValue;
+  }
+
+  // dimensions - computed: false, optional: true, required: false
+  private _dimensions = new BudgetsBudgetFilterExpressionOrNotDimensionsOutputReference(this, "dimensions");
+  public get dimensions() {
+    return this._dimensions;
+  }
+  public putDimensions(value: BudgetsBudgetFilterExpressionOrNotDimensions) {
+    this._dimensions.internalValue = value;
+  }
+  public resetDimensions() {
+    this._dimensions.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dimensionsInput() {
+    return this._dimensions.internalValue;
+  }
+
+  // tags - computed: false, optional: true, required: false
+  private _tags = new BudgetsBudgetFilterExpressionOrNotTagsOutputReference(this, "tags");
+  public get tags() {
+    return this._tags;
+  }
+  public putTags(value: BudgetsBudgetFilterExpressionOrNotTags) {
+    this._tags.internalValue = value;
+  }
+  public resetTags() {
+    this._tags.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags.internalValue;
+  }
+}
+export interface BudgetsBudgetFilterExpressionOrOrCostCategories {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#key BudgetsBudget#key}
+  */
+  readonly key?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}
+  */
+  readonly matchOptions?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#values BudgetsBudget#values}
+  */
+  readonly values?: string[];
+}
+
+export function budgetsBudgetFilterExpressionOrOrCostCategoriesToTerraform(struct?: BudgetsBudgetFilterExpressionOrOrCostCategoriesOutputReference | BudgetsBudgetFilterExpressionOrOrCostCategories): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    key: cdktn.stringToTerraform(struct!.key),
+    match_options: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.matchOptions),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
+  }
+}
+
+
+export function budgetsBudgetFilterExpressionOrOrCostCategoriesToHclTerraform(struct?: BudgetsBudgetFilterExpressionOrOrCostCategoriesOutputReference | BudgetsBudgetFilterExpressionOrOrCostCategories): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    key: {
+      value: cdktn.stringToHclTerraform(struct!.key),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    match_options: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.matchOptions),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    values: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class BudgetsBudgetFilterExpressionOrOrCostCategoriesOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): BudgetsBudgetFilterExpressionOrOrCostCategories | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._key !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.key = this._key;
+    }
+    if (this._matchOptions !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.matchOptions = this._matchOptions;
+    }
+    if (this._values !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.values = this._values;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: BudgetsBudgetFilterExpressionOrOrCostCategories | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._key = undefined;
+      this._matchOptions = undefined;
+      this._values = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._key = value.key;
+      this._matchOptions = value.matchOptions;
+      this._values = value.values;
+    }
+  }
+
+  // key - computed: false, optional: true, required: false
+  private _key?: string; 
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+  public set key(value: string) {
+    this._key = value;
+  }
+  public resetKey() {
+    this._key = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get keyInput() {
+    return this._key;
+  }
+
+  // match_options - computed: false, optional: true, required: false
+  private _matchOptions?: string[]; 
+  public get matchOptions() {
+    return this.getListAttribute('match_options');
+  }
+  public set matchOptions(value: string[]) {
+    this._matchOptions = value;
+  }
+  public resetMatchOptions() {
+    this._matchOptions = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get matchOptionsInput() {
+    return this._matchOptions;
+  }
+
+  // values - computed: false, optional: true, required: false
+  private _values?: string[]; 
+  public get values() {
+    return this.getListAttribute('values');
+  }
+  public set values(value: string[]) {
+    this._values = value;
+  }
+  public resetValues() {
+    this._values = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valuesInput() {
+    return this._values;
+  }
+}
+export interface BudgetsBudgetFilterExpressionOrOrDimensions {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#key BudgetsBudget#key}
+  */
+  readonly key: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}
+  */
+  readonly matchOptions?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#values BudgetsBudget#values}
+  */
+  readonly values: string[];
+}
+
+export function budgetsBudgetFilterExpressionOrOrDimensionsToTerraform(struct?: BudgetsBudgetFilterExpressionOrOrDimensionsOutputReference | BudgetsBudgetFilterExpressionOrOrDimensions): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    key: cdktn.stringToTerraform(struct!.key),
+    match_options: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.matchOptions),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
+  }
+}
+
+
+export function budgetsBudgetFilterExpressionOrOrDimensionsToHclTerraform(struct?: BudgetsBudgetFilterExpressionOrOrDimensionsOutputReference | BudgetsBudgetFilterExpressionOrOrDimensions): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    key: {
+      value: cdktn.stringToHclTerraform(struct!.key),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    match_options: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.matchOptions),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    values: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class BudgetsBudgetFilterExpressionOrOrDimensionsOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): BudgetsBudgetFilterExpressionOrOrDimensions | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._key !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.key = this._key;
+    }
+    if (this._matchOptions !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.matchOptions = this._matchOptions;
+    }
+    if (this._values !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.values = this._values;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: BudgetsBudgetFilterExpressionOrOrDimensions | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._key = undefined;
+      this._matchOptions = undefined;
+      this._values = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._key = value.key;
+      this._matchOptions = value.matchOptions;
+      this._values = value.values;
+    }
+  }
+
+  // key - computed: false, optional: false, required: true
+  private _key?: string; 
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+  public set key(value: string) {
+    this._key = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get keyInput() {
+    return this._key;
+  }
+
+  // match_options - computed: false, optional: true, required: false
+  private _matchOptions?: string[]; 
+  public get matchOptions() {
+    return this.getListAttribute('match_options');
+  }
+  public set matchOptions(value: string[]) {
+    this._matchOptions = value;
+  }
+  public resetMatchOptions() {
+    this._matchOptions = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get matchOptionsInput() {
+    return this._matchOptions;
+  }
+
+  // values - computed: false, optional: false, required: true
+  private _values?: string[]; 
+  public get values() {
+    return this.getListAttribute('values');
+  }
+  public set values(value: string[]) {
+    this._values = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valuesInput() {
+    return this._values;
+  }
+}
+export interface BudgetsBudgetFilterExpressionOrOrTags {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#key BudgetsBudget#key}
+  */
+  readonly key?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}
+  */
+  readonly matchOptions?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#values BudgetsBudget#values}
+  */
+  readonly values?: string[];
+}
+
+export function budgetsBudgetFilterExpressionOrOrTagsToTerraform(struct?: BudgetsBudgetFilterExpressionOrOrTagsOutputReference | BudgetsBudgetFilterExpressionOrOrTags): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    key: cdktn.stringToTerraform(struct!.key),
+    match_options: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.matchOptions),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
+  }
+}
+
+
+export function budgetsBudgetFilterExpressionOrOrTagsToHclTerraform(struct?: BudgetsBudgetFilterExpressionOrOrTagsOutputReference | BudgetsBudgetFilterExpressionOrOrTags): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    key: {
+      value: cdktn.stringToHclTerraform(struct!.key),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    match_options: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.matchOptions),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    values: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class BudgetsBudgetFilterExpressionOrOrTagsOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): BudgetsBudgetFilterExpressionOrOrTags | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._key !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.key = this._key;
+    }
+    if (this._matchOptions !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.matchOptions = this._matchOptions;
+    }
+    if (this._values !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.values = this._values;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: BudgetsBudgetFilterExpressionOrOrTags | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._key = undefined;
+      this._matchOptions = undefined;
+      this._values = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._key = value.key;
+      this._matchOptions = value.matchOptions;
+      this._values = value.values;
+    }
+  }
+
+  // key - computed: false, optional: true, required: false
+  private _key?: string; 
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+  public set key(value: string) {
+    this._key = value;
+  }
+  public resetKey() {
+    this._key = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get keyInput() {
+    return this._key;
+  }
+
+  // match_options - computed: false, optional: true, required: false
+  private _matchOptions?: string[]; 
+  public get matchOptions() {
+    return this.getListAttribute('match_options');
+  }
+  public set matchOptions(value: string[]) {
+    this._matchOptions = value;
+  }
+  public resetMatchOptions() {
+    this._matchOptions = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get matchOptionsInput() {
+    return this._matchOptions;
+  }
+
+  // values - computed: false, optional: true, required: false
+  private _values?: string[]; 
+  public get values() {
+    return this.getListAttribute('values');
+  }
+  public set values(value: string[]) {
+    this._values = value;
+  }
+  public resetValues() {
+    this._values = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valuesInput() {
+    return this._values;
+  }
+}
+export interface BudgetsBudgetFilterExpressionOrOr {
+  /**
+  * cost_categories block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#cost_categories BudgetsBudget#cost_categories}
+  */
+  readonly costCategories?: BudgetsBudgetFilterExpressionOrOrCostCategories;
+  /**
+  * dimensions block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#dimensions BudgetsBudget#dimensions}
+  */
+  readonly dimensions?: BudgetsBudgetFilterExpressionOrOrDimensions;
+  /**
+  * tags block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#tags BudgetsBudget#tags}
+  */
+  readonly tags?: BudgetsBudgetFilterExpressionOrOrTags;
+}
+
+export function budgetsBudgetFilterExpressionOrOrToTerraform(struct?: BudgetsBudgetFilterExpressionOrOr | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    cost_categories: budgetsBudgetFilterExpressionOrOrCostCategoriesToTerraform(struct!.costCategories),
+    dimensions: budgetsBudgetFilterExpressionOrOrDimensionsToTerraform(struct!.dimensions),
+    tags: budgetsBudgetFilterExpressionOrOrTagsToTerraform(struct!.tags),
+  }
+}
+
+
+export function budgetsBudgetFilterExpressionOrOrToHclTerraform(struct?: BudgetsBudgetFilterExpressionOrOr | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    cost_categories: {
+      value: budgetsBudgetFilterExpressionOrOrCostCategoriesToHclTerraform(struct!.costCategories),
+      isBlock: true,
+      type: "list",
+      storageClassType: "BudgetsBudgetFilterExpressionOrOrCostCategoriesList",
+    },
+    dimensions: {
+      value: budgetsBudgetFilterExpressionOrOrDimensionsToHclTerraform(struct!.dimensions),
+      isBlock: true,
+      type: "list",
+      storageClassType: "BudgetsBudgetFilterExpressionOrOrDimensionsList",
+    },
+    tags: {
+      value: budgetsBudgetFilterExpressionOrOrTagsToHclTerraform(struct!.tags),
+      isBlock: true,
+      type: "list",
+      storageClassType: "BudgetsBudgetFilterExpressionOrOrTagsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class BudgetsBudgetFilterExpressionOrOrOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): BudgetsBudgetFilterExpressionOrOr | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._costCategories?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.costCategories = this._costCategories?.internalValue;
+    }
+    if (this._dimensions?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.dimensions = this._dimensions?.internalValue;
+    }
+    if (this._tags?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.tags = this._tags?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: BudgetsBudgetFilterExpressionOrOr | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._costCategories.internalValue = undefined;
+      this._dimensions.internalValue = undefined;
+      this._tags.internalValue = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._costCategories.internalValue = value.costCategories;
+      this._dimensions.internalValue = value.dimensions;
+      this._tags.internalValue = value.tags;
+    }
+  }
+
+  // cost_categories - computed: false, optional: true, required: false
+  private _costCategories = new BudgetsBudgetFilterExpressionOrOrCostCategoriesOutputReference(this, "cost_categories");
+  public get costCategories() {
+    return this._costCategories;
+  }
+  public putCostCategories(value: BudgetsBudgetFilterExpressionOrOrCostCategories) {
+    this._costCategories.internalValue = value;
+  }
+  public resetCostCategories() {
+    this._costCategories.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get costCategoriesInput() {
+    return this._costCategories.internalValue;
+  }
+
+  // dimensions - computed: false, optional: true, required: false
+  private _dimensions = new BudgetsBudgetFilterExpressionOrOrDimensionsOutputReference(this, "dimensions");
+  public get dimensions() {
+    return this._dimensions;
+  }
+  public putDimensions(value: BudgetsBudgetFilterExpressionOrOrDimensions) {
+    this._dimensions.internalValue = value;
+  }
+  public resetDimensions() {
+    this._dimensions.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dimensionsInput() {
+    return this._dimensions.internalValue;
+  }
+
+  // tags - computed: false, optional: true, required: false
+  private _tags = new BudgetsBudgetFilterExpressionOrOrTagsOutputReference(this, "tags");
+  public get tags() {
+    return this._tags;
+  }
+  public putTags(value: BudgetsBudgetFilterExpressionOrOrTags) {
+    this._tags.internalValue = value;
+  }
+  public resetTags() {
+    this._tags.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags.internalValue;
+  }
+}
+
+export class BudgetsBudgetFilterExpressionOrOrList extends cdktn.ComplexList {
+  public internalValue? : BudgetsBudgetFilterExpressionOrOr[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): BudgetsBudgetFilterExpressionOrOrOutputReference {
+    return new BudgetsBudgetFilterExpressionOrOrOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface BudgetsBudgetFilterExpressionOrTags {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#key BudgetsBudget#key}
+  */
+  readonly key?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}
+  */
+  readonly matchOptions?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#values BudgetsBudget#values}
+  */
+  readonly values?: string[];
+}
+
+export function budgetsBudgetFilterExpressionOrTagsToTerraform(struct?: BudgetsBudgetFilterExpressionOrTagsOutputReference | BudgetsBudgetFilterExpressionOrTags): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    key: cdktn.stringToTerraform(struct!.key),
+    match_options: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.matchOptions),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
+  }
+}
+
+
+export function budgetsBudgetFilterExpressionOrTagsToHclTerraform(struct?: BudgetsBudgetFilterExpressionOrTagsOutputReference | BudgetsBudgetFilterExpressionOrTags): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    key: {
+      value: cdktn.stringToHclTerraform(struct!.key),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    match_options: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.matchOptions),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    values: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class BudgetsBudgetFilterExpressionOrTagsOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): BudgetsBudgetFilterExpressionOrTags | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._key !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.key = this._key;
+    }
+    if (this._matchOptions !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.matchOptions = this._matchOptions;
+    }
+    if (this._values !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.values = this._values;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: BudgetsBudgetFilterExpressionOrTags | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._key = undefined;
+      this._matchOptions = undefined;
+      this._values = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._key = value.key;
+      this._matchOptions = value.matchOptions;
+      this._values = value.values;
+    }
+  }
+
+  // key - computed: false, optional: true, required: false
+  private _key?: string; 
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+  public set key(value: string) {
+    this._key = value;
+  }
+  public resetKey() {
+    this._key = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get keyInput() {
+    return this._key;
+  }
+
+  // match_options - computed: false, optional: true, required: false
+  private _matchOptions?: string[]; 
+  public get matchOptions() {
+    return this.getListAttribute('match_options');
+  }
+  public set matchOptions(value: string[]) {
+    this._matchOptions = value;
+  }
+  public resetMatchOptions() {
+    this._matchOptions = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get matchOptionsInput() {
+    return this._matchOptions;
+  }
+
+  // values - computed: false, optional: true, required: false
+  private _values?: string[]; 
+  public get values() {
+    return this.getListAttribute('values');
+  }
+  public set values(value: string[]) {
+    this._values = value;
+  }
+  public resetValues() {
+    this._values = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valuesInput() {
+    return this._values;
+  }
+}
+export interface BudgetsBudgetFilterExpressionOr {
+  /**
+  * and block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#and BudgetsBudget#and}
+  */
+  readonly and?: BudgetsBudgetFilterExpressionOrAnd[] | cdktn.IResolvable;
+  /**
+  * cost_categories block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#cost_categories BudgetsBudget#cost_categories}
+  */
+  readonly costCategories?: BudgetsBudgetFilterExpressionOrCostCategories;
+  /**
+  * dimensions block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#dimensions BudgetsBudget#dimensions}
+  */
+  readonly dimensions?: BudgetsBudgetFilterExpressionOrDimensions;
+  /**
+  * not block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#not BudgetsBudget#not}
+  */
+  readonly not?: BudgetsBudgetFilterExpressionOrNot;
+  /**
+  * or block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#or BudgetsBudget#or}
+  */
+  readonly or?: BudgetsBudgetFilterExpressionOrOr[] | cdktn.IResolvable;
+  /**
+  * tags block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#tags BudgetsBudget#tags}
+  */
+  readonly tags?: BudgetsBudgetFilterExpressionOrTags;
+}
+
+export function budgetsBudgetFilterExpressionOrToTerraform(struct?: BudgetsBudgetFilterExpressionOr | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    and: cdktn.listMapper(budgetsBudgetFilterExpressionOrAndToTerraform, true)(struct!.and),
+    cost_categories: budgetsBudgetFilterExpressionOrCostCategoriesToTerraform(struct!.costCategories),
+    dimensions: budgetsBudgetFilterExpressionOrDimensionsToTerraform(struct!.dimensions),
+    not: budgetsBudgetFilterExpressionOrNotToTerraform(struct!.not),
+    or: cdktn.listMapper(budgetsBudgetFilterExpressionOrOrToTerraform, true)(struct!.or),
+    tags: budgetsBudgetFilterExpressionOrTagsToTerraform(struct!.tags),
+  }
+}
+
+
+export function budgetsBudgetFilterExpressionOrToHclTerraform(struct?: BudgetsBudgetFilterExpressionOr | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    and: {
+      value: cdktn.listMapperHcl(budgetsBudgetFilterExpressionOrAndToHclTerraform, true)(struct!.and),
+      isBlock: true,
+      type: "list",
+      storageClassType: "BudgetsBudgetFilterExpressionOrAndList",
+    },
+    cost_categories: {
+      value: budgetsBudgetFilterExpressionOrCostCategoriesToHclTerraform(struct!.costCategories),
+      isBlock: true,
+      type: "list",
+      storageClassType: "BudgetsBudgetFilterExpressionOrCostCategoriesList",
+    },
+    dimensions: {
+      value: budgetsBudgetFilterExpressionOrDimensionsToHclTerraform(struct!.dimensions),
+      isBlock: true,
+      type: "list",
+      storageClassType: "BudgetsBudgetFilterExpressionOrDimensionsList",
+    },
+    not: {
+      value: budgetsBudgetFilterExpressionOrNotToHclTerraform(struct!.not),
+      isBlock: true,
+      type: "list",
+      storageClassType: "BudgetsBudgetFilterExpressionOrNotList",
+    },
+    or: {
+      value: cdktn.listMapperHcl(budgetsBudgetFilterExpressionOrOrToHclTerraform, true)(struct!.or),
+      isBlock: true,
+      type: "list",
+      storageClassType: "BudgetsBudgetFilterExpressionOrOrList",
+    },
+    tags: {
+      value: budgetsBudgetFilterExpressionOrTagsToHclTerraform(struct!.tags),
+      isBlock: true,
+      type: "list",
+      storageClassType: "BudgetsBudgetFilterExpressionOrTagsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class BudgetsBudgetFilterExpressionOrOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): BudgetsBudgetFilterExpressionOr | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._and?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.and = this._and?.internalValue;
+    }
+    if (this._costCategories?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.costCategories = this._costCategories?.internalValue;
+    }
+    if (this._dimensions?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.dimensions = this._dimensions?.internalValue;
+    }
+    if (this._not?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.not = this._not?.internalValue;
+    }
+    if (this._or?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.or = this._or?.internalValue;
+    }
+    if (this._tags?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.tags = this._tags?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: BudgetsBudgetFilterExpressionOr | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._and.internalValue = undefined;
+      this._costCategories.internalValue = undefined;
+      this._dimensions.internalValue = undefined;
+      this._not.internalValue = undefined;
+      this._or.internalValue = undefined;
+      this._tags.internalValue = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._and.internalValue = value.and;
+      this._costCategories.internalValue = value.costCategories;
+      this._dimensions.internalValue = value.dimensions;
+      this._not.internalValue = value.not;
+      this._or.internalValue = value.or;
+      this._tags.internalValue = value.tags;
+    }
+  }
+
+  // and - computed: false, optional: true, required: false
+  private _and = new BudgetsBudgetFilterExpressionOrAndList(this, "and", false);
+  public get and() {
+    return this._and;
+  }
+  public putAnd(value: BudgetsBudgetFilterExpressionOrAnd[] | cdktn.IResolvable) {
+    this._and.internalValue = value;
+  }
+  public resetAnd() {
+    this._and.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get andInput() {
+    return this._and.internalValue;
+  }
+
+  // cost_categories - computed: false, optional: true, required: false
+  private _costCategories = new BudgetsBudgetFilterExpressionOrCostCategoriesOutputReference(this, "cost_categories");
+  public get costCategories() {
+    return this._costCategories;
+  }
+  public putCostCategories(value: BudgetsBudgetFilterExpressionOrCostCategories) {
+    this._costCategories.internalValue = value;
+  }
+  public resetCostCategories() {
+    this._costCategories.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get costCategoriesInput() {
+    return this._costCategories.internalValue;
+  }
+
+  // dimensions - computed: false, optional: true, required: false
+  private _dimensions = new BudgetsBudgetFilterExpressionOrDimensionsOutputReference(this, "dimensions");
+  public get dimensions() {
+    return this._dimensions;
+  }
+  public putDimensions(value: BudgetsBudgetFilterExpressionOrDimensions) {
+    this._dimensions.internalValue = value;
+  }
+  public resetDimensions() {
+    this._dimensions.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dimensionsInput() {
+    return this._dimensions.internalValue;
+  }
+
+  // not - computed: false, optional: true, required: false
+  private _not = new BudgetsBudgetFilterExpressionOrNotOutputReference(this, "not");
+  public get not() {
+    return this._not;
+  }
+  public putNot(value: BudgetsBudgetFilterExpressionOrNot) {
+    this._not.internalValue = value;
+  }
+  public resetNot() {
+    this._not.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get notInput() {
+    return this._not.internalValue;
+  }
+
+  // or - computed: false, optional: true, required: false
+  private _or = new BudgetsBudgetFilterExpressionOrOrList(this, "or", false);
+  public get or() {
+    return this._or;
+  }
+  public putOr(value: BudgetsBudgetFilterExpressionOrOr[] | cdktn.IResolvable) {
+    this._or.internalValue = value;
+  }
+  public resetOr() {
+    this._or.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get orInput() {
+    return this._or.internalValue;
+  }
+
+  // tags - computed: false, optional: true, required: false
+  private _tags = new BudgetsBudgetFilterExpressionOrTagsOutputReference(this, "tags");
+  public get tags() {
+    return this._tags;
+  }
+  public putTags(value: BudgetsBudgetFilterExpressionOrTags) {
+    this._tags.internalValue = value;
+  }
+  public resetTags() {
+    this._tags.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags.internalValue;
+  }
+}
+
+export class BudgetsBudgetFilterExpressionOrList extends cdktn.ComplexList {
+  public internalValue? : BudgetsBudgetFilterExpressionOr[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): BudgetsBudgetFilterExpressionOrOutputReference {
+    return new BudgetsBudgetFilterExpressionOrOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface BudgetsBudgetFilterExpressionTags {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#key BudgetsBudget#key}
+  */
+  readonly key?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#match_options BudgetsBudget#match_options}
+  */
+  readonly matchOptions?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#values BudgetsBudget#values}
+  */
+  readonly values?: string[];
+}
+
+export function budgetsBudgetFilterExpressionTagsToTerraform(struct?: BudgetsBudgetFilterExpressionTagsOutputReference | BudgetsBudgetFilterExpressionTags): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    key: cdktn.stringToTerraform(struct!.key),
+    match_options: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.matchOptions),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
+  }
+}
+
+
+export function budgetsBudgetFilterExpressionTagsToHclTerraform(struct?: BudgetsBudgetFilterExpressionTagsOutputReference | BudgetsBudgetFilterExpressionTags): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    key: {
+      value: cdktn.stringToHclTerraform(struct!.key),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    match_options: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.matchOptions),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    values: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class BudgetsBudgetFilterExpressionTagsOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): BudgetsBudgetFilterExpressionTags | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._key !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.key = this._key;
+    }
+    if (this._matchOptions !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.matchOptions = this._matchOptions;
+    }
+    if (this._values !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.values = this._values;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: BudgetsBudgetFilterExpressionTags | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._key = undefined;
+      this._matchOptions = undefined;
+      this._values = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._key = value.key;
+      this._matchOptions = value.matchOptions;
+      this._values = value.values;
+    }
+  }
+
+  // key - computed: false, optional: true, required: false
+  private _key?: string; 
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+  public set key(value: string) {
+    this._key = value;
+  }
+  public resetKey() {
+    this._key = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get keyInput() {
+    return this._key;
+  }
+
+  // match_options - computed: false, optional: true, required: false
+  private _matchOptions?: string[]; 
+  public get matchOptions() {
+    return this.getListAttribute('match_options');
+  }
+  public set matchOptions(value: string[]) {
+    this._matchOptions = value;
+  }
+  public resetMatchOptions() {
+    this._matchOptions = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get matchOptionsInput() {
+    return this._matchOptions;
+  }
+
+  // values - computed: false, optional: true, required: false
+  private _values?: string[]; 
+  public get values() {
+    return this.getListAttribute('values');
+  }
+  public set values(value: string[]) {
+    this._values = value;
+  }
+  public resetValues() {
+    this._values = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valuesInput() {
+    return this._values;
+  }
+}
+export interface BudgetsBudgetFilterExpression {
+  /**
+  * and block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#and BudgetsBudget#and}
+  */
+  readonly and?: BudgetsBudgetFilterExpressionAnd[] | cdktn.IResolvable;
+  /**
+  * cost_categories block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#cost_categories BudgetsBudget#cost_categories}
+  */
+  readonly costCategories?: BudgetsBudgetFilterExpressionCostCategories;
+  /**
+  * dimensions block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#dimensions BudgetsBudget#dimensions}
+  */
+  readonly dimensions?: BudgetsBudgetFilterExpressionDimensions;
+  /**
+  * not block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#not BudgetsBudget#not}
+  */
+  readonly not?: BudgetsBudgetFilterExpressionNot;
+  /**
+  * or block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#or BudgetsBudget#or}
+  */
+  readonly or?: BudgetsBudgetFilterExpressionOr[] | cdktn.IResolvable;
+  /**
+  * tags block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#tags BudgetsBudget#tags}
+  */
+  readonly tags?: BudgetsBudgetFilterExpressionTags;
+}
+
+export function budgetsBudgetFilterExpressionToTerraform(struct?: BudgetsBudgetFilterExpressionOutputReference | BudgetsBudgetFilterExpression): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    and: cdktn.listMapper(budgetsBudgetFilterExpressionAndToTerraform, true)(struct!.and),
+    cost_categories: budgetsBudgetFilterExpressionCostCategoriesToTerraform(struct!.costCategories),
+    dimensions: budgetsBudgetFilterExpressionDimensionsToTerraform(struct!.dimensions),
+    not: budgetsBudgetFilterExpressionNotToTerraform(struct!.not),
+    or: cdktn.listMapper(budgetsBudgetFilterExpressionOrToTerraform, true)(struct!.or),
+    tags: budgetsBudgetFilterExpressionTagsToTerraform(struct!.tags),
+  }
+}
+
+
+export function budgetsBudgetFilterExpressionToHclTerraform(struct?: BudgetsBudgetFilterExpressionOutputReference | BudgetsBudgetFilterExpression): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    and: {
+      value: cdktn.listMapperHcl(budgetsBudgetFilterExpressionAndToHclTerraform, true)(struct!.and),
+      isBlock: true,
+      type: "list",
+      storageClassType: "BudgetsBudgetFilterExpressionAndList",
+    },
+    cost_categories: {
+      value: budgetsBudgetFilterExpressionCostCategoriesToHclTerraform(struct!.costCategories),
+      isBlock: true,
+      type: "list",
+      storageClassType: "BudgetsBudgetFilterExpressionCostCategoriesList",
+    },
+    dimensions: {
+      value: budgetsBudgetFilterExpressionDimensionsToHclTerraform(struct!.dimensions),
+      isBlock: true,
+      type: "list",
+      storageClassType: "BudgetsBudgetFilterExpressionDimensionsList",
+    },
+    not: {
+      value: budgetsBudgetFilterExpressionNotToHclTerraform(struct!.not),
+      isBlock: true,
+      type: "list",
+      storageClassType: "BudgetsBudgetFilterExpressionNotList",
+    },
+    or: {
+      value: cdktn.listMapperHcl(budgetsBudgetFilterExpressionOrToHclTerraform, true)(struct!.or),
+      isBlock: true,
+      type: "list",
+      storageClassType: "BudgetsBudgetFilterExpressionOrList",
+    },
+    tags: {
+      value: budgetsBudgetFilterExpressionTagsToHclTerraform(struct!.tags),
+      isBlock: true,
+      type: "list",
+      storageClassType: "BudgetsBudgetFilterExpressionTagsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class BudgetsBudgetFilterExpressionOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): BudgetsBudgetFilterExpression | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._and?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.and = this._and?.internalValue;
+    }
+    if (this._costCategories?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.costCategories = this._costCategories?.internalValue;
+    }
+    if (this._dimensions?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.dimensions = this._dimensions?.internalValue;
+    }
+    if (this._not?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.not = this._not?.internalValue;
+    }
+    if (this._or?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.or = this._or?.internalValue;
+    }
+    if (this._tags?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.tags = this._tags?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: BudgetsBudgetFilterExpression | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._and.internalValue = undefined;
+      this._costCategories.internalValue = undefined;
+      this._dimensions.internalValue = undefined;
+      this._not.internalValue = undefined;
+      this._or.internalValue = undefined;
+      this._tags.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._and.internalValue = value.and;
+      this._costCategories.internalValue = value.costCategories;
+      this._dimensions.internalValue = value.dimensions;
+      this._not.internalValue = value.not;
+      this._or.internalValue = value.or;
+      this._tags.internalValue = value.tags;
+    }
+  }
+
+  // and - computed: false, optional: true, required: false
+  private _and = new BudgetsBudgetFilterExpressionAndList(this, "and", false);
+  public get and() {
+    return this._and;
+  }
+  public putAnd(value: BudgetsBudgetFilterExpressionAnd[] | cdktn.IResolvable) {
+    this._and.internalValue = value;
+  }
+  public resetAnd() {
+    this._and.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get andInput() {
+    return this._and.internalValue;
+  }
+
+  // cost_categories - computed: false, optional: true, required: false
+  private _costCategories = new BudgetsBudgetFilterExpressionCostCategoriesOutputReference(this, "cost_categories");
+  public get costCategories() {
+    return this._costCategories;
+  }
+  public putCostCategories(value: BudgetsBudgetFilterExpressionCostCategories) {
+    this._costCategories.internalValue = value;
+  }
+  public resetCostCategories() {
+    this._costCategories.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get costCategoriesInput() {
+    return this._costCategories.internalValue;
+  }
+
+  // dimensions - computed: false, optional: true, required: false
+  private _dimensions = new BudgetsBudgetFilterExpressionDimensionsOutputReference(this, "dimensions");
+  public get dimensions() {
+    return this._dimensions;
+  }
+  public putDimensions(value: BudgetsBudgetFilterExpressionDimensions) {
+    this._dimensions.internalValue = value;
+  }
+  public resetDimensions() {
+    this._dimensions.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dimensionsInput() {
+    return this._dimensions.internalValue;
+  }
+
+  // not - computed: false, optional: true, required: false
+  private _not = new BudgetsBudgetFilterExpressionNotOutputReference(this, "not");
+  public get not() {
+    return this._not;
+  }
+  public putNot(value: BudgetsBudgetFilterExpressionNot) {
+    this._not.internalValue = value;
+  }
+  public resetNot() {
+    this._not.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get notInput() {
+    return this._not.internalValue;
+  }
+
+  // or - computed: false, optional: true, required: false
+  private _or = new BudgetsBudgetFilterExpressionOrList(this, "or", false);
+  public get or() {
+    return this._or;
+  }
+  public putOr(value: BudgetsBudgetFilterExpressionOr[] | cdktn.IResolvable) {
+    this._or.internalValue = value;
+  }
+  public resetOr() {
+    this._or.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get orInput() {
+    return this._or.internalValue;
+  }
+
+  // tags - computed: false, optional: true, required: false
+  private _tags = new BudgetsBudgetFilterExpressionTagsOutputReference(this, "tags");
+  public get tags() {
+    return this._tags;
+  }
+  public putTags(value: BudgetsBudgetFilterExpressionTags) {
+    this._tags.internalValue = value;
+  }
+  public resetTags() {
+    this._tags.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags.internalValue;
+  }
+}
 export interface BudgetsBudgetNotification {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/budgets_budget#comparison_operator BudgetsBudget#comparison_operator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#comparison_operator BudgetsBudget#comparison_operator}
   */
   readonly comparisonOperator: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/budgets_budget#notification_type BudgetsBudget#notification_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#notification_type BudgetsBudget#notification_type}
   */
   readonly notificationType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/budgets_budget#subscriber_email_addresses BudgetsBudget#subscriber_email_addresses}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#subscriber_email_addresses BudgetsBudget#subscriber_email_addresses}
   */
   readonly subscriberEmailAddresses?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/budgets_budget#subscriber_sns_topic_arns BudgetsBudget#subscriber_sns_topic_arns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#subscriber_sns_topic_arns BudgetsBudget#subscriber_sns_topic_arns}
   */
   readonly subscriberSnsTopicArns?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/budgets_budget#threshold BudgetsBudget#threshold}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#threshold BudgetsBudget#threshold}
   */
   readonly threshold: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/budgets_budget#threshold_type BudgetsBudget#threshold_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#threshold_type BudgetsBudget#threshold_type}
   */
   readonly thresholdType: string;
 }
@@ -1133,15 +9615,15 @@ export class BudgetsBudgetNotificationList extends cdktn.ComplexList {
 }
 export interface BudgetsBudgetPlannedLimit {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/budgets_budget#amount BudgetsBudget#amount}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#amount BudgetsBudget#amount}
   */
   readonly amount: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/budgets_budget#start_time BudgetsBudget#start_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#start_time BudgetsBudget#start_time}
   */
   readonly startTime: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/budgets_budget#unit BudgetsBudget#unit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#unit BudgetsBudget#unit}
   */
   readonly unit: string;
 }
@@ -1306,7 +9788,7 @@ export class BudgetsBudgetPlannedLimitList extends cdktn.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/budgets_budget aws_budgets_budget}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget aws_budgets_budget}
 */
 export class BudgetsBudget extends cdktn.TerraformResource {
 
@@ -1322,7 +9804,7 @@ export class BudgetsBudget extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a BudgetsBudget resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the BudgetsBudget to import
-  * @param importFromId The id of the existing BudgetsBudget that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/budgets_budget#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing BudgetsBudget that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the BudgetsBudget to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -1334,7 +9816,7 @@ export class BudgetsBudget extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/budgets_budget aws_budgets_budget} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/budgets_budget aws_budgets_budget} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1345,7 +9827,7 @@ export class BudgetsBudget extends cdktn.TerraformResource {
       terraformResourceType: 'aws_budgets_budget',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.32.1',
+        providerVersion: '6.33.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
@@ -1372,6 +9854,7 @@ export class BudgetsBudget extends cdktn.TerraformResource {
     this._autoAdjustData.internalValue = config.autoAdjustData;
     this._costFilter.internalValue = config.costFilter;
     this._costTypes.internalValue = config.costTypes;
+    this._filterExpression.internalValue = config.filterExpression;
     this._notification.internalValue = config.notification;
     this._plannedLimit.internalValue = config.plannedLimit;
   }
@@ -1635,6 +10118,22 @@ export class BudgetsBudget extends cdktn.TerraformResource {
     return this._costTypes.internalValue;
   }
 
+  // filter_expression - computed: false, optional: true, required: false
+  private _filterExpression = new BudgetsBudgetFilterExpressionOutputReference(this, "filter_expression");
+  public get filterExpression() {
+    return this._filterExpression;
+  }
+  public putFilterExpression(value: BudgetsBudgetFilterExpression) {
+    this._filterExpression.internalValue = value;
+  }
+  public resetFilterExpression() {
+    this._filterExpression.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get filterExpressionInput() {
+    return this._filterExpression.internalValue;
+  }
+
   // notification - computed: false, optional: true, required: false
   private _notification = new BudgetsBudgetNotificationList(this, "notification", true);
   public get notification() {
@@ -1689,6 +10188,7 @@ export class BudgetsBudget extends cdktn.TerraformResource {
       auto_adjust_data: budgetsBudgetAutoAdjustDataToTerraform(this._autoAdjustData.internalValue),
       cost_filter: cdktn.listMapper(budgetsBudgetCostFilterToTerraform, true)(this._costFilter.internalValue),
       cost_types: budgetsBudgetCostTypesToTerraform(this._costTypes.internalValue),
+      filter_expression: budgetsBudgetFilterExpressionToTerraform(this._filterExpression.internalValue),
       notification: cdktn.listMapper(budgetsBudgetNotificationToTerraform, true)(this._notification.internalValue),
       planned_limit: cdktn.listMapper(budgetsBudgetPlannedLimitToTerraform, true)(this._plannedLimit.internalValue),
     };
@@ -1791,6 +10291,12 @@ export class BudgetsBudget extends cdktn.TerraformResource {
         isBlock: true,
         type: "list",
         storageClassType: "BudgetsBudgetCostTypesList",
+      },
+      filter_expression: {
+        value: budgetsBudgetFilterExpressionToHclTerraform(this._filterExpression.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "BudgetsBudgetFilterExpressionList",
       },
       notification: {
         value: cdktn.listMapperHcl(budgetsBudgetNotificationToHclTerraform, true)(this._notification.internalValue),
