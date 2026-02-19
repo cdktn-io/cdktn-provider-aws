@@ -4,7 +4,7 @@
 
 ### Lexv2ModelsSlot <a name="Lexv2ModelsSlot" id="@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlot"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot aws_lexv2models_slot}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot aws_lexv2models_slot}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlot.Initializer"></a>
 
@@ -588,7 +588,7 @@ The construct id used in the generated config for the Lexv2ModelsSlot to import.
 
 The id of the existing Lexv2ModelsSlot that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1133,16 +1133,16 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lexv2modelsslot"
 | <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotConfig.property.botId">BotId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#bot_id Lexv2ModelsSlot#bot_id}. |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotConfig.property.botVersion">BotVersion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#bot_version Lexv2ModelsSlot#bot_version}. |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotConfig.property.intentId">IntentId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#intent_id Lexv2ModelsSlot#intent_id}. |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotConfig.property.localeId">LocaleId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#locale_id Lexv2ModelsSlot#locale_id}. |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#name Lexv2ModelsSlot#name}. |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#description Lexv2ModelsSlot#description}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotConfig.property.botId">BotId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#bot_id Lexv2ModelsSlot#bot_id}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotConfig.property.botVersion">BotVersion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#bot_version Lexv2ModelsSlot#bot_version}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotConfig.property.intentId">IntentId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#intent_id Lexv2ModelsSlot#intent_id}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotConfig.property.localeId">LocaleId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#locale_id Lexv2ModelsSlot#locale_id}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#name Lexv2ModelsSlot#name}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#description Lexv2ModelsSlot#description}. |
 | <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotConfig.property.multipleValuesSetting">MultipleValuesSetting</a></code> | <code>interface{}</code> | multiple_values_setting block. |
 | <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotConfig.property.obfuscationSetting">ObfuscationSetting</a></code> | <code>interface{}</code> | obfuscation_setting block. |
 | <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotConfig.property.slotTypeId">SlotTypeId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#slot_type_id Lexv2ModelsSlot#slot_type_id}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotConfig.property.slotTypeId">SlotTypeId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#slot_type_id Lexv2ModelsSlot#slot_type_id}. |
 | <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotConfig.property.subSlotSetting">SubSlotSetting</a></code> | <code>interface{}</code> | sub_slot_setting block. |
 | <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotTimeouts">Lexv2ModelsSlotTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotConfig.property.valueElicitationSetting">ValueElicitationSetting</a></code> | <code>interface{}</code> | value_elicitation_setting block. |
@@ -1227,7 +1227,7 @@ BotId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#bot_id Lexv2ModelsSlot#bot_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#bot_id Lexv2ModelsSlot#bot_id}.
 
 ---
 
@@ -1239,7 +1239,7 @@ BotVersion *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#bot_version Lexv2ModelsSlot#bot_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#bot_version Lexv2ModelsSlot#bot_version}.
 
 ---
 
@@ -1251,7 +1251,7 @@ IntentId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#intent_id Lexv2ModelsSlot#intent_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#intent_id Lexv2ModelsSlot#intent_id}.
 
 ---
 
@@ -1263,7 +1263,7 @@ LocaleId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#locale_id Lexv2ModelsSlot#locale_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#locale_id Lexv2ModelsSlot#locale_id}.
 
 ---
 
@@ -1275,7 +1275,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#name Lexv2ModelsSlot#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#name Lexv2ModelsSlot#name}.
 
 ---
 
@@ -1287,7 +1287,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#description Lexv2ModelsSlot#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#description Lexv2ModelsSlot#description}.
 
 ---
 
@@ -1301,7 +1301,7 @@ MultipleValuesSetting interface{}
 
 multiple_values_setting block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#multiple_values_setting Lexv2ModelsSlot#multiple_values_setting}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#multiple_values_setting Lexv2ModelsSlot#multiple_values_setting}
 
 ---
 
@@ -1315,7 +1315,7 @@ ObfuscationSetting interface{}
 
 obfuscation_setting block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#obfuscation_setting Lexv2ModelsSlot#obfuscation_setting}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#obfuscation_setting Lexv2ModelsSlot#obfuscation_setting}
 
 ---
 
@@ -1329,7 +1329,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#region Lexv2ModelsSlot#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#region Lexv2ModelsSlot#region}
 
 ---
 
@@ -1341,7 +1341,7 @@ SlotTypeId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#slot_type_id Lexv2ModelsSlot#slot_type_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#slot_type_id Lexv2ModelsSlot#slot_type_id}.
 
 ---
 
@@ -1355,7 +1355,7 @@ SubSlotSetting interface{}
 
 sub_slot_setting block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#sub_slot_setting Lexv2ModelsSlot#sub_slot_setting}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#sub_slot_setting Lexv2ModelsSlot#sub_slot_setting}
 
 ---
 
@@ -1369,7 +1369,7 @@ Timeouts Lexv2ModelsSlotTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#timeouts Lexv2ModelsSlot#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#timeouts Lexv2ModelsSlot#timeouts}
 
 ---
 
@@ -1383,7 +1383,7 @@ ValueElicitationSetting interface{}
 
 value_elicitation_setting block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#value_elicitation_setting Lexv2ModelsSlot#value_elicitation_setting}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#value_elicitation_setting Lexv2ModelsSlot#value_elicitation_setting}
 
 ---
 
@@ -1403,7 +1403,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lexv2modelsslot"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotMultipleValuesSetting.property.allowMultipleValues">AllowMultipleValues</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#allow_multiple_values Lexv2ModelsSlot#allow_multiple_values}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotMultipleValuesSetting.property.allowMultipleValues">AllowMultipleValues</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#allow_multiple_values Lexv2ModelsSlot#allow_multiple_values}. |
 
 ---
 
@@ -1415,7 +1415,7 @@ AllowMultipleValues interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#allow_multiple_values Lexv2ModelsSlot#allow_multiple_values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#allow_multiple_values Lexv2ModelsSlot#allow_multiple_values}.
 
 ---
 
@@ -1435,7 +1435,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lexv2modelsslot"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotObfuscationSetting.property.obfuscationSettingType">ObfuscationSettingType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#obfuscation_setting_type Lexv2ModelsSlot#obfuscation_setting_type}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotObfuscationSetting.property.obfuscationSettingType">ObfuscationSettingType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#obfuscation_setting_type Lexv2ModelsSlot#obfuscation_setting_type}. |
 
 ---
 
@@ -1447,7 +1447,7 @@ ObfuscationSettingType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#obfuscation_setting_type Lexv2ModelsSlot#obfuscation_setting_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#obfuscation_setting_type Lexv2ModelsSlot#obfuscation_setting_type}.
 
 ---
 
@@ -1468,7 +1468,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lexv2modelsslot"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSetting.property.expression">Expression</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#expression Lexv2ModelsSlot#expression}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSetting.property.expression">Expression</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#expression Lexv2ModelsSlot#expression}. |
 | <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSetting.property.slotSpecification">SlotSpecification</a></code> | <code>interface{}</code> | slot_specification block. |
 
 ---
@@ -1481,7 +1481,7 @@ Expression *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#expression Lexv2ModelsSlot#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#expression Lexv2ModelsSlot#expression}.
 
 ---
 
@@ -1495,7 +1495,7 @@ SlotSpecification interface{}
 
 slot_specification block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#slot_specification Lexv2ModelsSlot#slot_specification}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#slot_specification Lexv2ModelsSlot#slot_specification}
 
 ---
 
@@ -1517,8 +1517,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lexv2modelsslot"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecification.property.mapBlockKey">MapBlockKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#map_block_key Lexv2ModelsSlot#map_block_key}. |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecification.property.slotTypeId">SlotTypeId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#slot_type_id Lexv2ModelsSlot#slot_type_id}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecification.property.mapBlockKey">MapBlockKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#map_block_key Lexv2ModelsSlot#map_block_key}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecification.property.slotTypeId">SlotTypeId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#slot_type_id Lexv2ModelsSlot#slot_type_id}. |
 | <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecification.property.valueElicitationSetting">ValueElicitationSetting</a></code> | <code>interface{}</code> | value_elicitation_setting block. |
 
 ---
@@ -1531,7 +1531,7 @@ MapBlockKey *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#map_block_key Lexv2ModelsSlot#map_block_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#map_block_key Lexv2ModelsSlot#map_block_key}.
 
 ---
 
@@ -1543,7 +1543,7 @@ SlotTypeId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#slot_type_id Lexv2ModelsSlot#slot_type_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#slot_type_id Lexv2ModelsSlot#slot_type_id}.
 
 ---
 
@@ -1557,7 +1557,7 @@ ValueElicitationSetting interface{}
 
 value_elicitation_setting block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#value_elicitation_setting Lexv2ModelsSlot#value_elicitation_setting}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#value_elicitation_setting Lexv2ModelsSlot#value_elicitation_setting}
 
 ---
 
@@ -1597,7 +1597,7 @@ DefaultValueSpecification interface{}
 
 default_value_specification block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#default_value_specification Lexv2ModelsSlot#default_value_specification}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#default_value_specification Lexv2ModelsSlot#default_value_specification}
 
 ---
 
@@ -1611,7 +1611,7 @@ PromptSpecification interface{}
 
 prompt_specification block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#prompt_specification Lexv2ModelsSlot#prompt_specification}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#prompt_specification Lexv2ModelsSlot#prompt_specification}
 
 ---
 
@@ -1625,7 +1625,7 @@ SampleUtterance interface{}
 
 sample_utterance block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#sample_utterance Lexv2ModelsSlot#sample_utterance}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#sample_utterance Lexv2ModelsSlot#sample_utterance}
 
 ---
 
@@ -1639,7 +1639,7 @@ WaitAndContinueSpecification interface{}
 
 wait_and_continue_specification block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#wait_and_continue_specification Lexv2ModelsSlot#wait_and_continue_specification}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#wait_and_continue_specification Lexv2ModelsSlot#wait_and_continue_specification}
 
 ---
 
@@ -1673,7 +1673,7 @@ DefaultValueList interface{}
 
 default_value_list block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#default_value_list Lexv2ModelsSlot#default_value_list}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#default_value_list Lexv2ModelsSlot#default_value_list}
 
 ---
 
@@ -1693,7 +1693,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lexv2modelsslot"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingDefaultValueSpecificationDefaultValueListStruct.property.defaultValue">DefaultValue</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#default_value Lexv2ModelsSlot#default_value}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingDefaultValueSpecificationDefaultValueListStruct.property.defaultValue">DefaultValue</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#default_value Lexv2ModelsSlot#default_value}. |
 
 ---
 
@@ -1705,7 +1705,7 @@ DefaultValue *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#default_value Lexv2ModelsSlot#default_value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#default_value Lexv2ModelsSlot#default_value}.
 
 ---
 
@@ -1729,10 +1729,10 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lexv2modelsslot"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingPromptSpecification.property.maxRetries">MaxRetries</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#max_retries Lexv2ModelsSlot#max_retries}. |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingPromptSpecification.property.allowInterrupt">AllowInterrupt</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#allow_interrupt Lexv2ModelsSlot#allow_interrupt}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingPromptSpecification.property.maxRetries">MaxRetries</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#max_retries Lexv2ModelsSlot#max_retries}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingPromptSpecification.property.allowInterrupt">AllowInterrupt</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#allow_interrupt Lexv2ModelsSlot#allow_interrupt}. |
 | <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingPromptSpecification.property.messageGroup">MessageGroup</a></code> | <code>interface{}</code> | message_group block. |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingPromptSpecification.property.messageSelectionStrategy">MessageSelectionStrategy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#message_selection_strategy Lexv2ModelsSlot#message_selection_strategy}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingPromptSpecification.property.messageSelectionStrategy">MessageSelectionStrategy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#message_selection_strategy Lexv2ModelsSlot#message_selection_strategy}. |
 | <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingPromptSpecification.property.promptAttemptsSpecification">PromptAttemptsSpecification</a></code> | <code>interface{}</code> | prompt_attempts_specification block. |
 
 ---
@@ -1745,7 +1745,7 @@ MaxRetries *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#max_retries Lexv2ModelsSlot#max_retries}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#max_retries Lexv2ModelsSlot#max_retries}.
 
 ---
 
@@ -1757,7 +1757,7 @@ AllowInterrupt interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#allow_interrupt Lexv2ModelsSlot#allow_interrupt}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#allow_interrupt Lexv2ModelsSlot#allow_interrupt}.
 
 ---
 
@@ -1771,7 +1771,7 @@ MessageGroup interface{}
 
 message_group block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#message_group Lexv2ModelsSlot#message_group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#message_group Lexv2ModelsSlot#message_group}
 
 ---
 
@@ -1783,7 +1783,7 @@ MessageSelectionStrategy *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#message_selection_strategy Lexv2ModelsSlot#message_selection_strategy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#message_selection_strategy Lexv2ModelsSlot#message_selection_strategy}.
 
 ---
 
@@ -1797,7 +1797,7 @@ PromptAttemptsSpecification interface{}
 
 prompt_attempts_specification block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#prompt_attempts_specification Lexv2ModelsSlot#prompt_attempts_specification}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#prompt_attempts_specification Lexv2ModelsSlot#prompt_attempts_specification}
 
 ---
 
@@ -1833,7 +1833,7 @@ Message interface{}
 
 message block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#message Lexv2ModelsSlot#message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#message Lexv2ModelsSlot#message}
 
 ---
 
@@ -1847,7 +1847,7 @@ Variation interface{}
 
 variation block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#variation Lexv2ModelsSlot#variation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#variation Lexv2ModelsSlot#variation}
 
 ---
 
@@ -1887,7 +1887,7 @@ CustomPayload interface{}
 
 custom_payload block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#custom_payload Lexv2ModelsSlot#custom_payload}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#custom_payload Lexv2ModelsSlot#custom_payload}
 
 ---
 
@@ -1901,7 +1901,7 @@ ImageResponseCard interface{}
 
 image_response_card block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#image_response_card Lexv2ModelsSlot#image_response_card}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#image_response_card Lexv2ModelsSlot#image_response_card}
 
 ---
 
@@ -1915,7 +1915,7 @@ PlainTextMessage interface{}
 
 plain_text_message block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#plain_text_message Lexv2ModelsSlot#plain_text_message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#plain_text_message Lexv2ModelsSlot#plain_text_message}
 
 ---
 
@@ -1929,7 +1929,7 @@ SsmlMessage interface{}
 
 ssml_message block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#ssml_message Lexv2ModelsSlot#ssml_message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#ssml_message Lexv2ModelsSlot#ssml_message}
 
 ---
 
@@ -1949,7 +1949,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lexv2modelsslot"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingPromptSpecificationMessageGroupMessageCustomPayload.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingPromptSpecificationMessageGroupMessageCustomPayload.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}. |
 
 ---
 
@@ -1961,7 +1961,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}.
 
 ---
 
@@ -1984,10 +1984,10 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lexv2modelsslot"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingPromptSpecificationMessageGroupMessageImageResponseCard.property.title">Title</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#title Lexv2ModelsSlot#title}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingPromptSpecificationMessageGroupMessageImageResponseCard.property.title">Title</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#title Lexv2ModelsSlot#title}. |
 | <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingPromptSpecificationMessageGroupMessageImageResponseCard.property.button">Button</a></code> | <code>interface{}</code> | button block. |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingPromptSpecificationMessageGroupMessageImageResponseCard.property.imageUrl">ImageUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#image_url Lexv2ModelsSlot#image_url}. |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingPromptSpecificationMessageGroupMessageImageResponseCard.property.subtitle">Subtitle</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#subtitle Lexv2ModelsSlot#subtitle}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingPromptSpecificationMessageGroupMessageImageResponseCard.property.imageUrl">ImageUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#image_url Lexv2ModelsSlot#image_url}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingPromptSpecificationMessageGroupMessageImageResponseCard.property.subtitle">Subtitle</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#subtitle Lexv2ModelsSlot#subtitle}. |
 
 ---
 
@@ -1999,7 +1999,7 @@ Title *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#title Lexv2ModelsSlot#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#title Lexv2ModelsSlot#title}.
 
 ---
 
@@ -2013,7 +2013,7 @@ Button interface{}
 
 button block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#button Lexv2ModelsSlot#button}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#button Lexv2ModelsSlot#button}
 
 ---
 
@@ -2025,7 +2025,7 @@ ImageUrl *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#image_url Lexv2ModelsSlot#image_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#image_url Lexv2ModelsSlot#image_url}.
 
 ---
 
@@ -2037,7 +2037,7 @@ Subtitle *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#subtitle Lexv2ModelsSlot#subtitle}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#subtitle Lexv2ModelsSlot#subtitle}.
 
 ---
 
@@ -2058,8 +2058,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lexv2modelsslot"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingPromptSpecificationMessageGroupMessageImageResponseCardButton.property.text">Text</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#text Lexv2ModelsSlot#text}. |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingPromptSpecificationMessageGroupMessageImageResponseCardButton.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingPromptSpecificationMessageGroupMessageImageResponseCardButton.property.text">Text</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#text Lexv2ModelsSlot#text}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingPromptSpecificationMessageGroupMessageImageResponseCardButton.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}. |
 
 ---
 
@@ -2071,7 +2071,7 @@ Text *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#text Lexv2ModelsSlot#text}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#text Lexv2ModelsSlot#text}.
 
 ---
 
@@ -2083,7 +2083,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}.
 
 ---
 
@@ -2103,7 +2103,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lexv2modelsslot"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingPromptSpecificationMessageGroupMessagePlainTextMessage.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingPromptSpecificationMessageGroupMessagePlainTextMessage.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}. |
 
 ---
 
@@ -2115,7 +2115,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}.
 
 ---
 
@@ -2135,7 +2135,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lexv2modelsslot"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingPromptSpecificationMessageGroupMessageSsmlMessage.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingPromptSpecificationMessageGroupMessageSsmlMessage.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}. |
 
 ---
 
@@ -2147,7 +2147,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}.
 
 ---
 
@@ -2187,7 +2187,7 @@ CustomPayload interface{}
 
 custom_payload block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#custom_payload Lexv2ModelsSlot#custom_payload}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#custom_payload Lexv2ModelsSlot#custom_payload}
 
 ---
 
@@ -2201,7 +2201,7 @@ ImageResponseCard interface{}
 
 image_response_card block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#image_response_card Lexv2ModelsSlot#image_response_card}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#image_response_card Lexv2ModelsSlot#image_response_card}
 
 ---
 
@@ -2215,7 +2215,7 @@ PlainTextMessage interface{}
 
 plain_text_message block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#plain_text_message Lexv2ModelsSlot#plain_text_message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#plain_text_message Lexv2ModelsSlot#plain_text_message}
 
 ---
 
@@ -2229,7 +2229,7 @@ SsmlMessage interface{}
 
 ssml_message block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#ssml_message Lexv2ModelsSlot#ssml_message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#ssml_message Lexv2ModelsSlot#ssml_message}
 
 ---
 
@@ -2249,7 +2249,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lexv2modelsslot"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingPromptSpecificationMessageGroupVariationCustomPayload.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingPromptSpecificationMessageGroupVariationCustomPayload.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}. |
 
 ---
 
@@ -2261,7 +2261,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}.
 
 ---
 
@@ -2284,10 +2284,10 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lexv2modelsslot"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingPromptSpecificationMessageGroupVariationImageResponseCard.property.title">Title</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#title Lexv2ModelsSlot#title}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingPromptSpecificationMessageGroupVariationImageResponseCard.property.title">Title</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#title Lexv2ModelsSlot#title}. |
 | <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingPromptSpecificationMessageGroupVariationImageResponseCard.property.button">Button</a></code> | <code>interface{}</code> | button block. |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingPromptSpecificationMessageGroupVariationImageResponseCard.property.imageUrl">ImageUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#image_url Lexv2ModelsSlot#image_url}. |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingPromptSpecificationMessageGroupVariationImageResponseCard.property.subtitle">Subtitle</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#subtitle Lexv2ModelsSlot#subtitle}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingPromptSpecificationMessageGroupVariationImageResponseCard.property.imageUrl">ImageUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#image_url Lexv2ModelsSlot#image_url}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingPromptSpecificationMessageGroupVariationImageResponseCard.property.subtitle">Subtitle</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#subtitle Lexv2ModelsSlot#subtitle}. |
 
 ---
 
@@ -2299,7 +2299,7 @@ Title *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#title Lexv2ModelsSlot#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#title Lexv2ModelsSlot#title}.
 
 ---
 
@@ -2313,7 +2313,7 @@ Button interface{}
 
 button block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#button Lexv2ModelsSlot#button}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#button Lexv2ModelsSlot#button}
 
 ---
 
@@ -2325,7 +2325,7 @@ ImageUrl *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#image_url Lexv2ModelsSlot#image_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#image_url Lexv2ModelsSlot#image_url}.
 
 ---
 
@@ -2337,7 +2337,7 @@ Subtitle *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#subtitle Lexv2ModelsSlot#subtitle}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#subtitle Lexv2ModelsSlot#subtitle}.
 
 ---
 
@@ -2358,8 +2358,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lexv2modelsslot"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingPromptSpecificationMessageGroupVariationImageResponseCardButton.property.text">Text</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#text Lexv2ModelsSlot#text}. |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingPromptSpecificationMessageGroupVariationImageResponseCardButton.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingPromptSpecificationMessageGroupVariationImageResponseCardButton.property.text">Text</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#text Lexv2ModelsSlot#text}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingPromptSpecificationMessageGroupVariationImageResponseCardButton.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}. |
 
 ---
 
@@ -2371,7 +2371,7 @@ Text *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#text Lexv2ModelsSlot#text}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#text Lexv2ModelsSlot#text}.
 
 ---
 
@@ -2383,7 +2383,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}.
 
 ---
 
@@ -2403,7 +2403,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lexv2modelsslot"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingPromptSpecificationMessageGroupVariationPlainTextMessage.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingPromptSpecificationMessageGroupVariationPlainTextMessage.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}. |
 
 ---
 
@@ -2415,7 +2415,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}.
 
 ---
 
@@ -2435,7 +2435,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lexv2modelsslot"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingPromptSpecificationMessageGroupVariationSsmlMessage.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingPromptSpecificationMessageGroupVariationSsmlMessage.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}. |
 
 ---
 
@@ -2447,7 +2447,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}.
 
 ---
 
@@ -2471,9 +2471,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lexv2modelsslot"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingPromptSpecificationPromptAttemptsSpecification.property.mapBlockKey">MapBlockKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#map_block_key Lexv2ModelsSlot#map_block_key}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingPromptSpecificationPromptAttemptsSpecification.property.mapBlockKey">MapBlockKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#map_block_key Lexv2ModelsSlot#map_block_key}. |
 | <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingPromptSpecificationPromptAttemptsSpecification.property.allowedInputTypes">AllowedInputTypes</a></code> | <code>interface{}</code> | allowed_input_types block. |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingPromptSpecificationPromptAttemptsSpecification.property.allowInterrupt">AllowInterrupt</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#allow_interrupt Lexv2ModelsSlot#allow_interrupt}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingPromptSpecificationPromptAttemptsSpecification.property.allowInterrupt">AllowInterrupt</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#allow_interrupt Lexv2ModelsSlot#allow_interrupt}. |
 | <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingPromptSpecificationPromptAttemptsSpecification.property.audioAndDtmfInputSpecification">AudioAndDtmfInputSpecification</a></code> | <code>interface{}</code> | audio_and_dtmf_input_specification block. |
 | <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingPromptSpecificationPromptAttemptsSpecification.property.textInputSpecification">TextInputSpecification</a></code> | <code>interface{}</code> | text_input_specification block. |
 
@@ -2487,7 +2487,7 @@ MapBlockKey *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#map_block_key Lexv2ModelsSlot#map_block_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#map_block_key Lexv2ModelsSlot#map_block_key}.
 
 ---
 
@@ -2501,7 +2501,7 @@ AllowedInputTypes interface{}
 
 allowed_input_types block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#allowed_input_types Lexv2ModelsSlot#allowed_input_types}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#allowed_input_types Lexv2ModelsSlot#allowed_input_types}
 
 ---
 
@@ -2513,7 +2513,7 @@ AllowInterrupt interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#allow_interrupt Lexv2ModelsSlot#allow_interrupt}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#allow_interrupt Lexv2ModelsSlot#allow_interrupt}.
 
 ---
 
@@ -2527,7 +2527,7 @@ AudioAndDtmfInputSpecification interface{}
 
 audio_and_dtmf_input_specification block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#audio_and_dtmf_input_specification Lexv2ModelsSlot#audio_and_dtmf_input_specification}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#audio_and_dtmf_input_specification Lexv2ModelsSlot#audio_and_dtmf_input_specification}
 
 ---
 
@@ -2541,7 +2541,7 @@ TextInputSpecification interface{}
 
 text_input_specification block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#text_input_specification Lexv2ModelsSlot#text_input_specification}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#text_input_specification Lexv2ModelsSlot#text_input_specification}
 
 ---
 
@@ -2562,8 +2562,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lexv2modelsslot"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationAllowedInputTypes.property.allowAudioInput">AllowAudioInput</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#allow_audio_input Lexv2ModelsSlot#allow_audio_input}. |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationAllowedInputTypes.property.allowDtmfInput">AllowDtmfInput</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#allow_dtmf_input Lexv2ModelsSlot#allow_dtmf_input}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationAllowedInputTypes.property.allowAudioInput">AllowAudioInput</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#allow_audio_input Lexv2ModelsSlot#allow_audio_input}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationAllowedInputTypes.property.allowDtmfInput">AllowDtmfInput</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#allow_dtmf_input Lexv2ModelsSlot#allow_dtmf_input}. |
 
 ---
 
@@ -2575,7 +2575,7 @@ AllowAudioInput interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#allow_audio_input Lexv2ModelsSlot#allow_audio_input}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#allow_audio_input Lexv2ModelsSlot#allow_audio_input}.
 
 ---
 
@@ -2587,7 +2587,7 @@ AllowDtmfInput interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#allow_dtmf_input Lexv2ModelsSlot#allow_dtmf_input}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#allow_dtmf_input Lexv2ModelsSlot#allow_dtmf_input}.
 
 ---
 
@@ -2609,7 +2609,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lexv2modelsslot"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationAudioAndDtmfInputSpecification.property.startTimeoutMs">StartTimeoutMs</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#start_timeout_ms Lexv2ModelsSlot#start_timeout_ms}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationAudioAndDtmfInputSpecification.property.startTimeoutMs">StartTimeoutMs</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#start_timeout_ms Lexv2ModelsSlot#start_timeout_ms}. |
 | <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationAudioAndDtmfInputSpecification.property.audioSpecification">AudioSpecification</a></code> | <code>interface{}</code> | audio_specification block. |
 | <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationAudioAndDtmfInputSpecification.property.dtmfSpecification">DtmfSpecification</a></code> | <code>interface{}</code> | dtmf_specification block. |
 
@@ -2623,7 +2623,7 @@ StartTimeoutMs *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#start_timeout_ms Lexv2ModelsSlot#start_timeout_ms}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#start_timeout_ms Lexv2ModelsSlot#start_timeout_ms}.
 
 ---
 
@@ -2637,7 +2637,7 @@ AudioSpecification interface{}
 
 audio_specification block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#audio_specification Lexv2ModelsSlot#audio_specification}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#audio_specification Lexv2ModelsSlot#audio_specification}
 
 ---
 
@@ -2651,7 +2651,7 @@ DtmfSpecification interface{}
 
 dtmf_specification block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#dtmf_specification Lexv2ModelsSlot#dtmf_specification}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#dtmf_specification Lexv2ModelsSlot#dtmf_specification}
 
 ---
 
@@ -2672,8 +2672,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lexv2modelsslot"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationAudioAndDtmfInputSpecificationAudioSpecification.property.endTimeoutMs">EndTimeoutMs</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#end_timeout_ms Lexv2ModelsSlot#end_timeout_ms}. |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationAudioAndDtmfInputSpecificationAudioSpecification.property.maxLengthMs">MaxLengthMs</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#max_length_ms Lexv2ModelsSlot#max_length_ms}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationAudioAndDtmfInputSpecificationAudioSpecification.property.endTimeoutMs">EndTimeoutMs</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#end_timeout_ms Lexv2ModelsSlot#end_timeout_ms}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationAudioAndDtmfInputSpecificationAudioSpecification.property.maxLengthMs">MaxLengthMs</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#max_length_ms Lexv2ModelsSlot#max_length_ms}. |
 
 ---
 
@@ -2685,7 +2685,7 @@ EndTimeoutMs *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#end_timeout_ms Lexv2ModelsSlot#end_timeout_ms}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#end_timeout_ms Lexv2ModelsSlot#end_timeout_ms}.
 
 ---
 
@@ -2697,7 +2697,7 @@ MaxLengthMs *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#max_length_ms Lexv2ModelsSlot#max_length_ms}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#max_length_ms Lexv2ModelsSlot#max_length_ms}.
 
 ---
 
@@ -2720,10 +2720,10 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lexv2modelsslot"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationAudioAndDtmfInputSpecificationDtmfSpecification.property.deletionCharacter">DeletionCharacter</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#deletion_character Lexv2ModelsSlot#deletion_character}. |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationAudioAndDtmfInputSpecificationDtmfSpecification.property.endCharacter">EndCharacter</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#end_character Lexv2ModelsSlot#end_character}. |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationAudioAndDtmfInputSpecificationDtmfSpecification.property.endTimeoutMs">EndTimeoutMs</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#end_timeout_ms Lexv2ModelsSlot#end_timeout_ms}. |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationAudioAndDtmfInputSpecificationDtmfSpecification.property.maxLength">MaxLength</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#max_length Lexv2ModelsSlot#max_length}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationAudioAndDtmfInputSpecificationDtmfSpecification.property.deletionCharacter">DeletionCharacter</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#deletion_character Lexv2ModelsSlot#deletion_character}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationAudioAndDtmfInputSpecificationDtmfSpecification.property.endCharacter">EndCharacter</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#end_character Lexv2ModelsSlot#end_character}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationAudioAndDtmfInputSpecificationDtmfSpecification.property.endTimeoutMs">EndTimeoutMs</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#end_timeout_ms Lexv2ModelsSlot#end_timeout_ms}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationAudioAndDtmfInputSpecificationDtmfSpecification.property.maxLength">MaxLength</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#max_length Lexv2ModelsSlot#max_length}. |
 
 ---
 
@@ -2735,7 +2735,7 @@ DeletionCharacter *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#deletion_character Lexv2ModelsSlot#deletion_character}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#deletion_character Lexv2ModelsSlot#deletion_character}.
 
 ---
 
@@ -2747,7 +2747,7 @@ EndCharacter *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#end_character Lexv2ModelsSlot#end_character}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#end_character Lexv2ModelsSlot#end_character}.
 
 ---
 
@@ -2759,7 +2759,7 @@ EndTimeoutMs *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#end_timeout_ms Lexv2ModelsSlot#end_timeout_ms}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#end_timeout_ms Lexv2ModelsSlot#end_timeout_ms}.
 
 ---
 
@@ -2771,7 +2771,7 @@ MaxLength *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#max_length Lexv2ModelsSlot#max_length}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#max_length Lexv2ModelsSlot#max_length}.
 
 ---
 
@@ -2791,7 +2791,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lexv2modelsslot"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationTextInputSpecification.property.startTimeoutMs">StartTimeoutMs</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#start_timeout_ms Lexv2ModelsSlot#start_timeout_ms}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationTextInputSpecification.property.startTimeoutMs">StartTimeoutMs</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#start_timeout_ms Lexv2ModelsSlot#start_timeout_ms}. |
 
 ---
 
@@ -2803,7 +2803,7 @@ StartTimeoutMs *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#start_timeout_ms Lexv2ModelsSlot#start_timeout_ms}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#start_timeout_ms Lexv2ModelsSlot#start_timeout_ms}.
 
 ---
 
@@ -2823,7 +2823,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lexv2modelsslot"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingSampleUtterance.property.utterance">Utterance</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#utterance Lexv2ModelsSlot#utterance}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingSampleUtterance.property.utterance">Utterance</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#utterance Lexv2ModelsSlot#utterance}. |
 
 ---
 
@@ -2835,7 +2835,7 @@ Utterance *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#utterance Lexv2ModelsSlot#utterance}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#utterance Lexv2ModelsSlot#utterance}.
 
 ---
 
@@ -2858,7 +2858,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lexv2modelsslot"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecification.property.active">Active</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#active Lexv2ModelsSlot#active}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecification.property.active">Active</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#active Lexv2ModelsSlot#active}. |
 | <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecification.property.continueResponse">ContinueResponse</a></code> | <code>interface{}</code> | continue_response block. |
 | <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecification.property.stillWaitingResponse">StillWaitingResponse</a></code> | <code>interface{}</code> | still_waiting_response block. |
 | <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecification.property.waitingResponse">WaitingResponse</a></code> | <code>interface{}</code> | waiting_response block. |
@@ -2873,7 +2873,7 @@ Active interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#active Lexv2ModelsSlot#active}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#active Lexv2ModelsSlot#active}.
 
 ---
 
@@ -2887,7 +2887,7 @@ ContinueResponse interface{}
 
 continue_response block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#continue_response Lexv2ModelsSlot#continue_response}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#continue_response Lexv2ModelsSlot#continue_response}
 
 ---
 
@@ -2901,7 +2901,7 @@ StillWaitingResponse interface{}
 
 still_waiting_response block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#still_waiting_response Lexv2ModelsSlot#still_waiting_response}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#still_waiting_response Lexv2ModelsSlot#still_waiting_response}
 
 ---
 
@@ -2915,7 +2915,7 @@ WaitingResponse interface{}
 
 waiting_response block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#waiting_response Lexv2ModelsSlot#waiting_response}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#waiting_response Lexv2ModelsSlot#waiting_response}
 
 ---
 
@@ -2936,7 +2936,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lexv2modelsslot"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationContinueResponse.property.allowInterrupt">AllowInterrupt</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#allow_interrupt Lexv2ModelsSlot#allow_interrupt}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationContinueResponse.property.allowInterrupt">AllowInterrupt</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#allow_interrupt Lexv2ModelsSlot#allow_interrupt}. |
 | <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationContinueResponse.property.messageGroup">MessageGroup</a></code> | <code>interface{}</code> | message_group block. |
 
 ---
@@ -2949,7 +2949,7 @@ AllowInterrupt interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#allow_interrupt Lexv2ModelsSlot#allow_interrupt}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#allow_interrupt Lexv2ModelsSlot#allow_interrupt}.
 
 ---
 
@@ -2963,7 +2963,7 @@ MessageGroup interface{}
 
 message_group block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#message_group Lexv2ModelsSlot#message_group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#message_group Lexv2ModelsSlot#message_group}
 
 ---
 
@@ -2999,7 +2999,7 @@ Message interface{}
 
 message block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#message Lexv2ModelsSlot#message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#message Lexv2ModelsSlot#message}
 
 ---
 
@@ -3013,7 +3013,7 @@ Variation interface{}
 
 variation block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#variation Lexv2ModelsSlot#variation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#variation Lexv2ModelsSlot#variation}
 
 ---
 
@@ -3053,7 +3053,7 @@ CustomPayload interface{}
 
 custom_payload block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#custom_payload Lexv2ModelsSlot#custom_payload}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#custom_payload Lexv2ModelsSlot#custom_payload}
 
 ---
 
@@ -3067,7 +3067,7 @@ ImageResponseCard interface{}
 
 image_response_card block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#image_response_card Lexv2ModelsSlot#image_response_card}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#image_response_card Lexv2ModelsSlot#image_response_card}
 
 ---
 
@@ -3081,7 +3081,7 @@ PlainTextMessage interface{}
 
 plain_text_message block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#plain_text_message Lexv2ModelsSlot#plain_text_message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#plain_text_message Lexv2ModelsSlot#plain_text_message}
 
 ---
 
@@ -3095,7 +3095,7 @@ SsmlMessage interface{}
 
 ssml_message block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#ssml_message Lexv2ModelsSlot#ssml_message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#ssml_message Lexv2ModelsSlot#ssml_message}
 
 ---
 
@@ -3115,7 +3115,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lexv2modelsslot"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageCustomPayload.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageCustomPayload.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}. |
 
 ---
 
@@ -3127,7 +3127,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}.
 
 ---
 
@@ -3150,10 +3150,10 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lexv2modelsslot"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageImageResponseCard.property.title">Title</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#title Lexv2ModelsSlot#title}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageImageResponseCard.property.title">Title</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#title Lexv2ModelsSlot#title}. |
 | <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageImageResponseCard.property.button">Button</a></code> | <code>interface{}</code> | button block. |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageImageResponseCard.property.imageUrl">ImageUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#image_url Lexv2ModelsSlot#image_url}. |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageImageResponseCard.property.subtitle">Subtitle</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#subtitle Lexv2ModelsSlot#subtitle}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageImageResponseCard.property.imageUrl">ImageUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#image_url Lexv2ModelsSlot#image_url}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageImageResponseCard.property.subtitle">Subtitle</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#subtitle Lexv2ModelsSlot#subtitle}. |
 
 ---
 
@@ -3165,7 +3165,7 @@ Title *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#title Lexv2ModelsSlot#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#title Lexv2ModelsSlot#title}.
 
 ---
 
@@ -3179,7 +3179,7 @@ Button interface{}
 
 button block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#button Lexv2ModelsSlot#button}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#button Lexv2ModelsSlot#button}
 
 ---
 
@@ -3191,7 +3191,7 @@ ImageUrl *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#image_url Lexv2ModelsSlot#image_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#image_url Lexv2ModelsSlot#image_url}.
 
 ---
 
@@ -3203,7 +3203,7 @@ Subtitle *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#subtitle Lexv2ModelsSlot#subtitle}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#subtitle Lexv2ModelsSlot#subtitle}.
 
 ---
 
@@ -3224,8 +3224,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lexv2modelsslot"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageImageResponseCardButton.property.text">Text</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#text Lexv2ModelsSlot#text}. |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageImageResponseCardButton.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageImageResponseCardButton.property.text">Text</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#text Lexv2ModelsSlot#text}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageImageResponseCardButton.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}. |
 
 ---
 
@@ -3237,7 +3237,7 @@ Text *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#text Lexv2ModelsSlot#text}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#text Lexv2ModelsSlot#text}.
 
 ---
 
@@ -3249,7 +3249,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}.
 
 ---
 
@@ -3269,7 +3269,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lexv2modelsslot"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessagePlainTextMessage.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessagePlainTextMessage.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}. |
 
 ---
 
@@ -3281,7 +3281,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}.
 
 ---
 
@@ -3301,7 +3301,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lexv2modelsslot"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageSsmlMessage.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageSsmlMessage.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}. |
 
 ---
 
@@ -3313,7 +3313,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}.
 
 ---
 
@@ -3353,7 +3353,7 @@ CustomPayload interface{}
 
 custom_payload block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#custom_payload Lexv2ModelsSlot#custom_payload}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#custom_payload Lexv2ModelsSlot#custom_payload}
 
 ---
 
@@ -3367,7 +3367,7 @@ ImageResponseCard interface{}
 
 image_response_card block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#image_response_card Lexv2ModelsSlot#image_response_card}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#image_response_card Lexv2ModelsSlot#image_response_card}
 
 ---
 
@@ -3381,7 +3381,7 @@ PlainTextMessage interface{}
 
 plain_text_message block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#plain_text_message Lexv2ModelsSlot#plain_text_message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#plain_text_message Lexv2ModelsSlot#plain_text_message}
 
 ---
 
@@ -3395,7 +3395,7 @@ SsmlMessage interface{}
 
 ssml_message block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#ssml_message Lexv2ModelsSlot#ssml_message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#ssml_message Lexv2ModelsSlot#ssml_message}
 
 ---
 
@@ -3415,7 +3415,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lexv2modelsslot"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationCustomPayload.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationCustomPayload.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}. |
 
 ---
 
@@ -3427,7 +3427,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}.
 
 ---
 
@@ -3450,10 +3450,10 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lexv2modelsslot"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationImageResponseCard.property.title">Title</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#title Lexv2ModelsSlot#title}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationImageResponseCard.property.title">Title</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#title Lexv2ModelsSlot#title}. |
 | <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationImageResponseCard.property.button">Button</a></code> | <code>interface{}</code> | button block. |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationImageResponseCard.property.imageUrl">ImageUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#image_url Lexv2ModelsSlot#image_url}. |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationImageResponseCard.property.subtitle">Subtitle</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#subtitle Lexv2ModelsSlot#subtitle}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationImageResponseCard.property.imageUrl">ImageUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#image_url Lexv2ModelsSlot#image_url}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationImageResponseCard.property.subtitle">Subtitle</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#subtitle Lexv2ModelsSlot#subtitle}. |
 
 ---
 
@@ -3465,7 +3465,7 @@ Title *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#title Lexv2ModelsSlot#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#title Lexv2ModelsSlot#title}.
 
 ---
 
@@ -3479,7 +3479,7 @@ Button interface{}
 
 button block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#button Lexv2ModelsSlot#button}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#button Lexv2ModelsSlot#button}
 
 ---
 
@@ -3491,7 +3491,7 @@ ImageUrl *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#image_url Lexv2ModelsSlot#image_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#image_url Lexv2ModelsSlot#image_url}.
 
 ---
 
@@ -3503,7 +3503,7 @@ Subtitle *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#subtitle Lexv2ModelsSlot#subtitle}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#subtitle Lexv2ModelsSlot#subtitle}.
 
 ---
 
@@ -3524,8 +3524,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lexv2modelsslot"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationImageResponseCardButton.property.text">Text</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#text Lexv2ModelsSlot#text}. |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationImageResponseCardButton.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationImageResponseCardButton.property.text">Text</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#text Lexv2ModelsSlot#text}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationImageResponseCardButton.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}. |
 
 ---
 
@@ -3537,7 +3537,7 @@ Text *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#text Lexv2ModelsSlot#text}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#text Lexv2ModelsSlot#text}.
 
 ---
 
@@ -3549,7 +3549,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}.
 
 ---
 
@@ -3569,7 +3569,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lexv2modelsslot"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationPlainTextMessage.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationPlainTextMessage.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}. |
 
 ---
 
@@ -3581,7 +3581,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}.
 
 ---
 
@@ -3601,7 +3601,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lexv2modelsslot"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationSsmlMessage.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationSsmlMessage.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}. |
 
 ---
 
@@ -3613,7 +3613,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}.
 
 ---
 
@@ -3636,9 +3636,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lexv2modelsslot"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponse.property.frequencyInSeconds">FrequencyInSeconds</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#frequency_in_seconds Lexv2ModelsSlot#frequency_in_seconds}. |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponse.property.timeoutInSeconds">TimeoutInSeconds</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#timeout_in_seconds Lexv2ModelsSlot#timeout_in_seconds}. |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponse.property.allowInterrupt">AllowInterrupt</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#allow_interrupt Lexv2ModelsSlot#allow_interrupt}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponse.property.frequencyInSeconds">FrequencyInSeconds</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#frequency_in_seconds Lexv2ModelsSlot#frequency_in_seconds}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponse.property.timeoutInSeconds">TimeoutInSeconds</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#timeout_in_seconds Lexv2ModelsSlot#timeout_in_seconds}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponse.property.allowInterrupt">AllowInterrupt</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#allow_interrupt Lexv2ModelsSlot#allow_interrupt}. |
 | <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponse.property.messageGroup">MessageGroup</a></code> | <code>interface{}</code> | message_group block. |
 
 ---
@@ -3651,7 +3651,7 @@ FrequencyInSeconds *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#frequency_in_seconds Lexv2ModelsSlot#frequency_in_seconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#frequency_in_seconds Lexv2ModelsSlot#frequency_in_seconds}.
 
 ---
 
@@ -3663,7 +3663,7 @@ TimeoutInSeconds *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#timeout_in_seconds Lexv2ModelsSlot#timeout_in_seconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#timeout_in_seconds Lexv2ModelsSlot#timeout_in_seconds}.
 
 ---
 
@@ -3675,7 +3675,7 @@ AllowInterrupt interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#allow_interrupt Lexv2ModelsSlot#allow_interrupt}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#allow_interrupt Lexv2ModelsSlot#allow_interrupt}.
 
 ---
 
@@ -3689,7 +3689,7 @@ MessageGroup interface{}
 
 message_group block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#message_group Lexv2ModelsSlot#message_group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#message_group Lexv2ModelsSlot#message_group}
 
 ---
 
@@ -3725,7 +3725,7 @@ Message interface{}
 
 message block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#message Lexv2ModelsSlot#message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#message Lexv2ModelsSlot#message}
 
 ---
 
@@ -3739,7 +3739,7 @@ Variation interface{}
 
 variation block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#variation Lexv2ModelsSlot#variation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#variation Lexv2ModelsSlot#variation}
 
 ---
 
@@ -3779,7 +3779,7 @@ CustomPayload interface{}
 
 custom_payload block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#custom_payload Lexv2ModelsSlot#custom_payload}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#custom_payload Lexv2ModelsSlot#custom_payload}
 
 ---
 
@@ -3793,7 +3793,7 @@ ImageResponseCard interface{}
 
 image_response_card block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#image_response_card Lexv2ModelsSlot#image_response_card}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#image_response_card Lexv2ModelsSlot#image_response_card}
 
 ---
 
@@ -3807,7 +3807,7 @@ PlainTextMessage interface{}
 
 plain_text_message block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#plain_text_message Lexv2ModelsSlot#plain_text_message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#plain_text_message Lexv2ModelsSlot#plain_text_message}
 
 ---
 
@@ -3821,7 +3821,7 @@ SsmlMessage interface{}
 
 ssml_message block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#ssml_message Lexv2ModelsSlot#ssml_message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#ssml_message Lexv2ModelsSlot#ssml_message}
 
 ---
 
@@ -3841,7 +3841,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lexv2modelsslot"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessageCustomPayload.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessageCustomPayload.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}. |
 
 ---
 
@@ -3853,7 +3853,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}.
 
 ---
 
@@ -3876,10 +3876,10 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lexv2modelsslot"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessageImageResponseCard.property.title">Title</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#title Lexv2ModelsSlot#title}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessageImageResponseCard.property.title">Title</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#title Lexv2ModelsSlot#title}. |
 | <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessageImageResponseCard.property.button">Button</a></code> | <code>interface{}</code> | button block. |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessageImageResponseCard.property.imageUrl">ImageUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#image_url Lexv2ModelsSlot#image_url}. |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessageImageResponseCard.property.subtitle">Subtitle</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#subtitle Lexv2ModelsSlot#subtitle}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessageImageResponseCard.property.imageUrl">ImageUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#image_url Lexv2ModelsSlot#image_url}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessageImageResponseCard.property.subtitle">Subtitle</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#subtitle Lexv2ModelsSlot#subtitle}. |
 
 ---
 
@@ -3891,7 +3891,7 @@ Title *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#title Lexv2ModelsSlot#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#title Lexv2ModelsSlot#title}.
 
 ---
 
@@ -3905,7 +3905,7 @@ Button interface{}
 
 button block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#button Lexv2ModelsSlot#button}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#button Lexv2ModelsSlot#button}
 
 ---
 
@@ -3917,7 +3917,7 @@ ImageUrl *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#image_url Lexv2ModelsSlot#image_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#image_url Lexv2ModelsSlot#image_url}.
 
 ---
 
@@ -3929,7 +3929,7 @@ Subtitle *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#subtitle Lexv2ModelsSlot#subtitle}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#subtitle Lexv2ModelsSlot#subtitle}.
 
 ---
 
@@ -3950,8 +3950,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lexv2modelsslot"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessageImageResponseCardButton.property.text">Text</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#text Lexv2ModelsSlot#text}. |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessageImageResponseCardButton.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessageImageResponseCardButton.property.text">Text</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#text Lexv2ModelsSlot#text}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessageImageResponseCardButton.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}. |
 
 ---
 
@@ -3963,7 +3963,7 @@ Text *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#text Lexv2ModelsSlot#text}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#text Lexv2ModelsSlot#text}.
 
 ---
 
@@ -3975,7 +3975,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}.
 
 ---
 
@@ -3995,7 +3995,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lexv2modelsslot"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessagePlainTextMessage.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessagePlainTextMessage.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}. |
 
 ---
 
@@ -4007,7 +4007,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}.
 
 ---
 
@@ -4027,7 +4027,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lexv2modelsslot"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessageSsmlMessage.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessageSsmlMessage.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}. |
 
 ---
 
@@ -4039,7 +4039,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}.
 
 ---
 
@@ -4079,7 +4079,7 @@ CustomPayload interface{}
 
 custom_payload block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#custom_payload Lexv2ModelsSlot#custom_payload}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#custom_payload Lexv2ModelsSlot#custom_payload}
 
 ---
 
@@ -4093,7 +4093,7 @@ ImageResponseCard interface{}
 
 image_response_card block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#image_response_card Lexv2ModelsSlot#image_response_card}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#image_response_card Lexv2ModelsSlot#image_response_card}
 
 ---
 
@@ -4107,7 +4107,7 @@ PlainTextMessage interface{}
 
 plain_text_message block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#plain_text_message Lexv2ModelsSlot#plain_text_message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#plain_text_message Lexv2ModelsSlot#plain_text_message}
 
 ---
 
@@ -4121,7 +4121,7 @@ SsmlMessage interface{}
 
 ssml_message block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#ssml_message Lexv2ModelsSlot#ssml_message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#ssml_message Lexv2ModelsSlot#ssml_message}
 
 ---
 
@@ -4141,7 +4141,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lexv2modelsslot"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationCustomPayload.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationCustomPayload.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}. |
 
 ---
 
@@ -4153,7 +4153,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}.
 
 ---
 
@@ -4176,10 +4176,10 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lexv2modelsslot"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationImageResponseCard.property.title">Title</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#title Lexv2ModelsSlot#title}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationImageResponseCard.property.title">Title</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#title Lexv2ModelsSlot#title}. |
 | <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationImageResponseCard.property.button">Button</a></code> | <code>interface{}</code> | button block. |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationImageResponseCard.property.imageUrl">ImageUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#image_url Lexv2ModelsSlot#image_url}. |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationImageResponseCard.property.subtitle">Subtitle</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#subtitle Lexv2ModelsSlot#subtitle}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationImageResponseCard.property.imageUrl">ImageUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#image_url Lexv2ModelsSlot#image_url}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationImageResponseCard.property.subtitle">Subtitle</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#subtitle Lexv2ModelsSlot#subtitle}. |
 
 ---
 
@@ -4191,7 +4191,7 @@ Title *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#title Lexv2ModelsSlot#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#title Lexv2ModelsSlot#title}.
 
 ---
 
@@ -4205,7 +4205,7 @@ Button interface{}
 
 button block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#button Lexv2ModelsSlot#button}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#button Lexv2ModelsSlot#button}
 
 ---
 
@@ -4217,7 +4217,7 @@ ImageUrl *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#image_url Lexv2ModelsSlot#image_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#image_url Lexv2ModelsSlot#image_url}.
 
 ---
 
@@ -4229,7 +4229,7 @@ Subtitle *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#subtitle Lexv2ModelsSlot#subtitle}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#subtitle Lexv2ModelsSlot#subtitle}.
 
 ---
 
@@ -4250,8 +4250,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lexv2modelsslot"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationImageResponseCardButton.property.text">Text</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#text Lexv2ModelsSlot#text}. |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationImageResponseCardButton.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationImageResponseCardButton.property.text">Text</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#text Lexv2ModelsSlot#text}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationImageResponseCardButton.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}. |
 
 ---
 
@@ -4263,7 +4263,7 @@ Text *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#text Lexv2ModelsSlot#text}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#text Lexv2ModelsSlot#text}.
 
 ---
 
@@ -4275,7 +4275,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}.
 
 ---
 
@@ -4295,7 +4295,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lexv2modelsslot"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationPlainTextMessage.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationPlainTextMessage.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}. |
 
 ---
 
@@ -4307,7 +4307,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}.
 
 ---
 
@@ -4327,7 +4327,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lexv2modelsslot"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationSsmlMessage.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationSsmlMessage.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}. |
 
 ---
 
@@ -4339,7 +4339,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}.
 
 ---
 
@@ -4360,7 +4360,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lexv2modelsslot"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationWaitingResponse.property.allowInterrupt">AllowInterrupt</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#allow_interrupt Lexv2ModelsSlot#allow_interrupt}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationWaitingResponse.property.allowInterrupt">AllowInterrupt</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#allow_interrupt Lexv2ModelsSlot#allow_interrupt}. |
 | <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationWaitingResponse.property.messageGroup">MessageGroup</a></code> | <code>interface{}</code> | message_group block. |
 
 ---
@@ -4373,7 +4373,7 @@ AllowInterrupt interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#allow_interrupt Lexv2ModelsSlot#allow_interrupt}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#allow_interrupt Lexv2ModelsSlot#allow_interrupt}.
 
 ---
 
@@ -4387,7 +4387,7 @@ MessageGroup interface{}
 
 message_group block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#message_group Lexv2ModelsSlot#message_group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#message_group Lexv2ModelsSlot#message_group}
 
 ---
 
@@ -4423,7 +4423,7 @@ Message interface{}
 
 message block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#message Lexv2ModelsSlot#message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#message Lexv2ModelsSlot#message}
 
 ---
 
@@ -4437,7 +4437,7 @@ Variation interface{}
 
 variation block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#variation Lexv2ModelsSlot#variation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#variation Lexv2ModelsSlot#variation}
 
 ---
 
@@ -4477,7 +4477,7 @@ CustomPayload interface{}
 
 custom_payload block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#custom_payload Lexv2ModelsSlot#custom_payload}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#custom_payload Lexv2ModelsSlot#custom_payload}
 
 ---
 
@@ -4491,7 +4491,7 @@ ImageResponseCard interface{}
 
 image_response_card block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#image_response_card Lexv2ModelsSlot#image_response_card}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#image_response_card Lexv2ModelsSlot#image_response_card}
 
 ---
 
@@ -4505,7 +4505,7 @@ PlainTextMessage interface{}
 
 plain_text_message block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#plain_text_message Lexv2ModelsSlot#plain_text_message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#plain_text_message Lexv2ModelsSlot#plain_text_message}
 
 ---
 
@@ -4519,7 +4519,7 @@ SsmlMessage interface{}
 
 ssml_message block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#ssml_message Lexv2ModelsSlot#ssml_message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#ssml_message Lexv2ModelsSlot#ssml_message}
 
 ---
 
@@ -4539,7 +4539,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lexv2modelsslot"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessageCustomPayload.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessageCustomPayload.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}. |
 
 ---
 
@@ -4551,7 +4551,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}.
 
 ---
 
@@ -4574,10 +4574,10 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lexv2modelsslot"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessageImageResponseCard.property.title">Title</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#title Lexv2ModelsSlot#title}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessageImageResponseCard.property.title">Title</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#title Lexv2ModelsSlot#title}. |
 | <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessageImageResponseCard.property.button">Button</a></code> | <code>interface{}</code> | button block. |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessageImageResponseCard.property.imageUrl">ImageUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#image_url Lexv2ModelsSlot#image_url}. |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessageImageResponseCard.property.subtitle">Subtitle</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#subtitle Lexv2ModelsSlot#subtitle}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessageImageResponseCard.property.imageUrl">ImageUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#image_url Lexv2ModelsSlot#image_url}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessageImageResponseCard.property.subtitle">Subtitle</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#subtitle Lexv2ModelsSlot#subtitle}. |
 
 ---
 
@@ -4589,7 +4589,7 @@ Title *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#title Lexv2ModelsSlot#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#title Lexv2ModelsSlot#title}.
 
 ---
 
@@ -4603,7 +4603,7 @@ Button interface{}
 
 button block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#button Lexv2ModelsSlot#button}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#button Lexv2ModelsSlot#button}
 
 ---
 
@@ -4615,7 +4615,7 @@ ImageUrl *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#image_url Lexv2ModelsSlot#image_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#image_url Lexv2ModelsSlot#image_url}.
 
 ---
 
@@ -4627,7 +4627,7 @@ Subtitle *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#subtitle Lexv2ModelsSlot#subtitle}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#subtitle Lexv2ModelsSlot#subtitle}.
 
 ---
 
@@ -4648,8 +4648,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lexv2modelsslot"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessageImageResponseCardButton.property.text">Text</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#text Lexv2ModelsSlot#text}. |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessageImageResponseCardButton.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessageImageResponseCardButton.property.text">Text</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#text Lexv2ModelsSlot#text}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessageImageResponseCardButton.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}. |
 
 ---
 
@@ -4661,7 +4661,7 @@ Text *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#text Lexv2ModelsSlot#text}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#text Lexv2ModelsSlot#text}.
 
 ---
 
@@ -4673,7 +4673,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}.
 
 ---
 
@@ -4693,7 +4693,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lexv2modelsslot"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessagePlainTextMessage.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessagePlainTextMessage.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}. |
 
 ---
 
@@ -4705,7 +4705,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}.
 
 ---
 
@@ -4725,7 +4725,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lexv2modelsslot"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessageSsmlMessage.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessageSsmlMessage.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}. |
 
 ---
 
@@ -4737,7 +4737,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}.
 
 ---
 
@@ -4777,7 +4777,7 @@ CustomPayload interface{}
 
 custom_payload block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#custom_payload Lexv2ModelsSlot#custom_payload}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#custom_payload Lexv2ModelsSlot#custom_payload}
 
 ---
 
@@ -4791,7 +4791,7 @@ ImageResponseCard interface{}
 
 image_response_card block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#image_response_card Lexv2ModelsSlot#image_response_card}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#image_response_card Lexv2ModelsSlot#image_response_card}
 
 ---
 
@@ -4805,7 +4805,7 @@ PlainTextMessage interface{}
 
 plain_text_message block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#plain_text_message Lexv2ModelsSlot#plain_text_message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#plain_text_message Lexv2ModelsSlot#plain_text_message}
 
 ---
 
@@ -4819,7 +4819,7 @@ SsmlMessage interface{}
 
 ssml_message block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#ssml_message Lexv2ModelsSlot#ssml_message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#ssml_message Lexv2ModelsSlot#ssml_message}
 
 ---
 
@@ -4839,7 +4839,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lexv2modelsslot"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationCustomPayload.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationCustomPayload.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}. |
 
 ---
 
@@ -4851,7 +4851,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}.
 
 ---
 
@@ -4874,10 +4874,10 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lexv2modelsslot"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationImageResponseCard.property.title">Title</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#title Lexv2ModelsSlot#title}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationImageResponseCard.property.title">Title</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#title Lexv2ModelsSlot#title}. |
 | <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationImageResponseCard.property.button">Button</a></code> | <code>interface{}</code> | button block. |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationImageResponseCard.property.imageUrl">ImageUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#image_url Lexv2ModelsSlot#image_url}. |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationImageResponseCard.property.subtitle">Subtitle</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#subtitle Lexv2ModelsSlot#subtitle}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationImageResponseCard.property.imageUrl">ImageUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#image_url Lexv2ModelsSlot#image_url}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationImageResponseCard.property.subtitle">Subtitle</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#subtitle Lexv2ModelsSlot#subtitle}. |
 
 ---
 
@@ -4889,7 +4889,7 @@ Title *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#title Lexv2ModelsSlot#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#title Lexv2ModelsSlot#title}.
 
 ---
 
@@ -4903,7 +4903,7 @@ Button interface{}
 
 button block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#button Lexv2ModelsSlot#button}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#button Lexv2ModelsSlot#button}
 
 ---
 
@@ -4915,7 +4915,7 @@ ImageUrl *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#image_url Lexv2ModelsSlot#image_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#image_url Lexv2ModelsSlot#image_url}.
 
 ---
 
@@ -4927,7 +4927,7 @@ Subtitle *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#subtitle Lexv2ModelsSlot#subtitle}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#subtitle Lexv2ModelsSlot#subtitle}.
 
 ---
 
@@ -4948,8 +4948,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lexv2modelsslot"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationImageResponseCardButton.property.text">Text</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#text Lexv2ModelsSlot#text}. |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationImageResponseCardButton.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationImageResponseCardButton.property.text">Text</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#text Lexv2ModelsSlot#text}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationImageResponseCardButton.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}. |
 
 ---
 
@@ -4961,7 +4961,7 @@ Text *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#text Lexv2ModelsSlot#text}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#text Lexv2ModelsSlot#text}.
 
 ---
 
@@ -4973,7 +4973,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}.
 
 ---
 
@@ -4993,7 +4993,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lexv2modelsslot"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationPlainTextMessage.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationPlainTextMessage.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}. |
 
 ---
 
@@ -5005,7 +5005,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}.
 
 ---
 
@@ -5025,7 +5025,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lexv2modelsslot"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationSsmlMessage.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotSubSlotSettingSlotSpecificationValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationSsmlMessage.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}. |
 
 ---
 
@@ -5037,7 +5037,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}.
 
 ---
 
@@ -5075,7 +5075,7 @@ Create *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#create Lexv2ModelsSlot#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#create Lexv2ModelsSlot#create}
 
 ---
 
@@ -5089,7 +5089,7 @@ Delete *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#delete Lexv2ModelsSlot#delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#delete Lexv2ModelsSlot#delete}
 
 ---
 
@@ -5103,7 +5103,7 @@ Update *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#update Lexv2ModelsSlot#update}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#update Lexv2ModelsSlot#update}
 
 ---
 
@@ -5128,7 +5128,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lexv2modelsslot"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSetting.property.slotConstraint">SlotConstraint</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#slot_constraint Lexv2ModelsSlot#slot_constraint}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSetting.property.slotConstraint">SlotConstraint</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#slot_constraint Lexv2ModelsSlot#slot_constraint}. |
 | <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSetting.property.defaultValueSpecification">DefaultValueSpecification</a></code> | <code>interface{}</code> | default_value_specification block. |
 | <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSetting.property.promptSpecification">PromptSpecification</a></code> | <code>interface{}</code> | prompt_specification block. |
 | <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSetting.property.sampleUtterance">SampleUtterance</a></code> | <code>interface{}</code> | sample_utterance block. |
@@ -5145,7 +5145,7 @@ SlotConstraint *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#slot_constraint Lexv2ModelsSlot#slot_constraint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#slot_constraint Lexv2ModelsSlot#slot_constraint}.
 
 ---
 
@@ -5159,7 +5159,7 @@ DefaultValueSpecification interface{}
 
 default_value_specification block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#default_value_specification Lexv2ModelsSlot#default_value_specification}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#default_value_specification Lexv2ModelsSlot#default_value_specification}
 
 ---
 
@@ -5173,7 +5173,7 @@ PromptSpecification interface{}
 
 prompt_specification block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#prompt_specification Lexv2ModelsSlot#prompt_specification}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#prompt_specification Lexv2ModelsSlot#prompt_specification}
 
 ---
 
@@ -5187,7 +5187,7 @@ SampleUtterance interface{}
 
 sample_utterance block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#sample_utterance Lexv2ModelsSlot#sample_utterance}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#sample_utterance Lexv2ModelsSlot#sample_utterance}
 
 ---
 
@@ -5201,7 +5201,7 @@ SlotResolutionSetting interface{}
 
 slot_resolution_setting block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#slot_resolution_setting Lexv2ModelsSlot#slot_resolution_setting}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#slot_resolution_setting Lexv2ModelsSlot#slot_resolution_setting}
 
 ---
 
@@ -5215,7 +5215,7 @@ WaitAndContinueSpecification interface{}
 
 wait_and_continue_specification block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#wait_and_continue_specification Lexv2ModelsSlot#wait_and_continue_specification}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#wait_and_continue_specification Lexv2ModelsSlot#wait_and_continue_specification}
 
 ---
 
@@ -5249,7 +5249,7 @@ DefaultValueList interface{}
 
 default_value_list block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#default_value_list Lexv2ModelsSlot#default_value_list}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#default_value_list Lexv2ModelsSlot#default_value_list}
 
 ---
 
@@ -5269,7 +5269,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lexv2modelsslot"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingDefaultValueSpecificationDefaultValueListStruct.property.defaultValue">DefaultValue</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#default_value Lexv2ModelsSlot#default_value}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingDefaultValueSpecificationDefaultValueListStruct.property.defaultValue">DefaultValue</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#default_value Lexv2ModelsSlot#default_value}. |
 
 ---
 
@@ -5281,7 +5281,7 @@ DefaultValue *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#default_value Lexv2ModelsSlot#default_value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#default_value Lexv2ModelsSlot#default_value}.
 
 ---
 
@@ -5305,10 +5305,10 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lexv2modelsslot"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingPromptSpecification.property.maxRetries">MaxRetries</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#max_retries Lexv2ModelsSlot#max_retries}. |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingPromptSpecification.property.allowInterrupt">AllowInterrupt</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#allow_interrupt Lexv2ModelsSlot#allow_interrupt}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingPromptSpecification.property.maxRetries">MaxRetries</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#max_retries Lexv2ModelsSlot#max_retries}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingPromptSpecification.property.allowInterrupt">AllowInterrupt</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#allow_interrupt Lexv2ModelsSlot#allow_interrupt}. |
 | <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingPromptSpecification.property.messageGroup">MessageGroup</a></code> | <code>interface{}</code> | message_group block. |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingPromptSpecification.property.messageSelectionStrategy">MessageSelectionStrategy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#message_selection_strategy Lexv2ModelsSlot#message_selection_strategy}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingPromptSpecification.property.messageSelectionStrategy">MessageSelectionStrategy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#message_selection_strategy Lexv2ModelsSlot#message_selection_strategy}. |
 | <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingPromptSpecification.property.promptAttemptsSpecification">PromptAttemptsSpecification</a></code> | <code>interface{}</code> | prompt_attempts_specification block. |
 
 ---
@@ -5321,7 +5321,7 @@ MaxRetries *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#max_retries Lexv2ModelsSlot#max_retries}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#max_retries Lexv2ModelsSlot#max_retries}.
 
 ---
 
@@ -5333,7 +5333,7 @@ AllowInterrupt interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#allow_interrupt Lexv2ModelsSlot#allow_interrupt}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#allow_interrupt Lexv2ModelsSlot#allow_interrupt}.
 
 ---
 
@@ -5347,7 +5347,7 @@ MessageGroup interface{}
 
 message_group block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#message_group Lexv2ModelsSlot#message_group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#message_group Lexv2ModelsSlot#message_group}
 
 ---
 
@@ -5359,7 +5359,7 @@ MessageSelectionStrategy *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#message_selection_strategy Lexv2ModelsSlot#message_selection_strategy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#message_selection_strategy Lexv2ModelsSlot#message_selection_strategy}.
 
 ---
 
@@ -5373,7 +5373,7 @@ PromptAttemptsSpecification interface{}
 
 prompt_attempts_specification block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#prompt_attempts_specification Lexv2ModelsSlot#prompt_attempts_specification}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#prompt_attempts_specification Lexv2ModelsSlot#prompt_attempts_specification}
 
 ---
 
@@ -5409,7 +5409,7 @@ Message interface{}
 
 message block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#message Lexv2ModelsSlot#message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#message Lexv2ModelsSlot#message}
 
 ---
 
@@ -5423,7 +5423,7 @@ Variation interface{}
 
 variation block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#variation Lexv2ModelsSlot#variation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#variation Lexv2ModelsSlot#variation}
 
 ---
 
@@ -5463,7 +5463,7 @@ CustomPayload interface{}
 
 custom_payload block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#custom_payload Lexv2ModelsSlot#custom_payload}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#custom_payload Lexv2ModelsSlot#custom_payload}
 
 ---
 
@@ -5477,7 +5477,7 @@ ImageResponseCard interface{}
 
 image_response_card block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#image_response_card Lexv2ModelsSlot#image_response_card}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#image_response_card Lexv2ModelsSlot#image_response_card}
 
 ---
 
@@ -5491,7 +5491,7 @@ PlainTextMessage interface{}
 
 plain_text_message block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#plain_text_message Lexv2ModelsSlot#plain_text_message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#plain_text_message Lexv2ModelsSlot#plain_text_message}
 
 ---
 
@@ -5505,7 +5505,7 @@ SsmlMessage interface{}
 
 ssml_message block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#ssml_message Lexv2ModelsSlot#ssml_message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#ssml_message Lexv2ModelsSlot#ssml_message}
 
 ---
 
@@ -5525,7 +5525,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lexv2modelsslot"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupMessageCustomPayload.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupMessageCustomPayload.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}. |
 
 ---
 
@@ -5537,7 +5537,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}.
 
 ---
 
@@ -5560,10 +5560,10 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lexv2modelsslot"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupMessageImageResponseCard.property.title">Title</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#title Lexv2ModelsSlot#title}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupMessageImageResponseCard.property.title">Title</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#title Lexv2ModelsSlot#title}. |
 | <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupMessageImageResponseCard.property.button">Button</a></code> | <code>interface{}</code> | button block. |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupMessageImageResponseCard.property.imageUrl">ImageUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#image_url Lexv2ModelsSlot#image_url}. |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupMessageImageResponseCard.property.subtitle">Subtitle</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#subtitle Lexv2ModelsSlot#subtitle}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupMessageImageResponseCard.property.imageUrl">ImageUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#image_url Lexv2ModelsSlot#image_url}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupMessageImageResponseCard.property.subtitle">Subtitle</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#subtitle Lexv2ModelsSlot#subtitle}. |
 
 ---
 
@@ -5575,7 +5575,7 @@ Title *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#title Lexv2ModelsSlot#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#title Lexv2ModelsSlot#title}.
 
 ---
 
@@ -5589,7 +5589,7 @@ Button interface{}
 
 button block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#button Lexv2ModelsSlot#button}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#button Lexv2ModelsSlot#button}
 
 ---
 
@@ -5601,7 +5601,7 @@ ImageUrl *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#image_url Lexv2ModelsSlot#image_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#image_url Lexv2ModelsSlot#image_url}.
 
 ---
 
@@ -5613,7 +5613,7 @@ Subtitle *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#subtitle Lexv2ModelsSlot#subtitle}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#subtitle Lexv2ModelsSlot#subtitle}.
 
 ---
 
@@ -5634,8 +5634,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lexv2modelsslot"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupMessageImageResponseCardButton.property.text">Text</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#text Lexv2ModelsSlot#text}. |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupMessageImageResponseCardButton.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupMessageImageResponseCardButton.property.text">Text</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#text Lexv2ModelsSlot#text}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupMessageImageResponseCardButton.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}. |
 
 ---
 
@@ -5647,7 +5647,7 @@ Text *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#text Lexv2ModelsSlot#text}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#text Lexv2ModelsSlot#text}.
 
 ---
 
@@ -5659,7 +5659,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}.
 
 ---
 
@@ -5679,7 +5679,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lexv2modelsslot"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupMessagePlainTextMessage.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupMessagePlainTextMessage.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}. |
 
 ---
 
@@ -5691,7 +5691,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}.
 
 ---
 
@@ -5711,7 +5711,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lexv2modelsslot"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupMessageSsmlMessage.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupMessageSsmlMessage.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}. |
 
 ---
 
@@ -5723,7 +5723,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}.
 
 ---
 
@@ -5763,7 +5763,7 @@ CustomPayload interface{}
 
 custom_payload block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#custom_payload Lexv2ModelsSlot#custom_payload}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#custom_payload Lexv2ModelsSlot#custom_payload}
 
 ---
 
@@ -5777,7 +5777,7 @@ ImageResponseCard interface{}
 
 image_response_card block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#image_response_card Lexv2ModelsSlot#image_response_card}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#image_response_card Lexv2ModelsSlot#image_response_card}
 
 ---
 
@@ -5791,7 +5791,7 @@ PlainTextMessage interface{}
 
 plain_text_message block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#plain_text_message Lexv2ModelsSlot#plain_text_message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#plain_text_message Lexv2ModelsSlot#plain_text_message}
 
 ---
 
@@ -5805,7 +5805,7 @@ SsmlMessage interface{}
 
 ssml_message block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#ssml_message Lexv2ModelsSlot#ssml_message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#ssml_message Lexv2ModelsSlot#ssml_message}
 
 ---
 
@@ -5825,7 +5825,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lexv2modelsslot"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupVariationCustomPayload.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupVariationCustomPayload.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}. |
 
 ---
 
@@ -5837,7 +5837,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}.
 
 ---
 
@@ -5860,10 +5860,10 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lexv2modelsslot"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupVariationImageResponseCard.property.title">Title</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#title Lexv2ModelsSlot#title}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupVariationImageResponseCard.property.title">Title</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#title Lexv2ModelsSlot#title}. |
 | <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupVariationImageResponseCard.property.button">Button</a></code> | <code>interface{}</code> | button block. |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupVariationImageResponseCard.property.imageUrl">ImageUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#image_url Lexv2ModelsSlot#image_url}. |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupVariationImageResponseCard.property.subtitle">Subtitle</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#subtitle Lexv2ModelsSlot#subtitle}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupVariationImageResponseCard.property.imageUrl">ImageUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#image_url Lexv2ModelsSlot#image_url}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupVariationImageResponseCard.property.subtitle">Subtitle</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#subtitle Lexv2ModelsSlot#subtitle}. |
 
 ---
 
@@ -5875,7 +5875,7 @@ Title *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#title Lexv2ModelsSlot#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#title Lexv2ModelsSlot#title}.
 
 ---
 
@@ -5889,7 +5889,7 @@ Button interface{}
 
 button block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#button Lexv2ModelsSlot#button}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#button Lexv2ModelsSlot#button}
 
 ---
 
@@ -5901,7 +5901,7 @@ ImageUrl *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#image_url Lexv2ModelsSlot#image_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#image_url Lexv2ModelsSlot#image_url}.
 
 ---
 
@@ -5913,7 +5913,7 @@ Subtitle *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#subtitle Lexv2ModelsSlot#subtitle}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#subtitle Lexv2ModelsSlot#subtitle}.
 
 ---
 
@@ -5934,8 +5934,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lexv2modelsslot"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupVariationImageResponseCardButton.property.text">Text</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#text Lexv2ModelsSlot#text}. |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupVariationImageResponseCardButton.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupVariationImageResponseCardButton.property.text">Text</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#text Lexv2ModelsSlot#text}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupVariationImageResponseCardButton.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}. |
 
 ---
 
@@ -5947,7 +5947,7 @@ Text *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#text Lexv2ModelsSlot#text}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#text Lexv2ModelsSlot#text}.
 
 ---
 
@@ -5959,7 +5959,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}.
 
 ---
 
@@ -5979,7 +5979,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lexv2modelsslot"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupVariationPlainTextMessage.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupVariationPlainTextMessage.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}. |
 
 ---
 
@@ -5991,7 +5991,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}.
 
 ---
 
@@ -6011,7 +6011,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lexv2modelsslot"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupVariationSsmlMessage.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupVariationSsmlMessage.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}. |
 
 ---
 
@@ -6023,7 +6023,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}.
 
 ---
 
@@ -6047,9 +6047,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lexv2modelsslot"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingPromptSpecificationPromptAttemptsSpecification.property.mapBlockKey">MapBlockKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#map_block_key Lexv2ModelsSlot#map_block_key}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingPromptSpecificationPromptAttemptsSpecification.property.mapBlockKey">MapBlockKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#map_block_key Lexv2ModelsSlot#map_block_key}. |
 | <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingPromptSpecificationPromptAttemptsSpecification.property.allowedInputTypes">AllowedInputTypes</a></code> | <code>interface{}</code> | allowed_input_types block. |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingPromptSpecificationPromptAttemptsSpecification.property.allowInterrupt">AllowInterrupt</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#allow_interrupt Lexv2ModelsSlot#allow_interrupt}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingPromptSpecificationPromptAttemptsSpecification.property.allowInterrupt">AllowInterrupt</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#allow_interrupt Lexv2ModelsSlot#allow_interrupt}. |
 | <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingPromptSpecificationPromptAttemptsSpecification.property.audioAndDtmfInputSpecification">AudioAndDtmfInputSpecification</a></code> | <code>interface{}</code> | audio_and_dtmf_input_specification block. |
 | <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingPromptSpecificationPromptAttemptsSpecification.property.textInputSpecification">TextInputSpecification</a></code> | <code>interface{}</code> | text_input_specification block. |
 
@@ -6063,7 +6063,7 @@ MapBlockKey *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#map_block_key Lexv2ModelsSlot#map_block_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#map_block_key Lexv2ModelsSlot#map_block_key}.
 
 ---
 
@@ -6077,7 +6077,7 @@ AllowedInputTypes interface{}
 
 allowed_input_types block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#allowed_input_types Lexv2ModelsSlot#allowed_input_types}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#allowed_input_types Lexv2ModelsSlot#allowed_input_types}
 
 ---
 
@@ -6089,7 +6089,7 @@ AllowInterrupt interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#allow_interrupt Lexv2ModelsSlot#allow_interrupt}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#allow_interrupt Lexv2ModelsSlot#allow_interrupt}.
 
 ---
 
@@ -6103,7 +6103,7 @@ AudioAndDtmfInputSpecification interface{}
 
 audio_and_dtmf_input_specification block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#audio_and_dtmf_input_specification Lexv2ModelsSlot#audio_and_dtmf_input_specification}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#audio_and_dtmf_input_specification Lexv2ModelsSlot#audio_and_dtmf_input_specification}
 
 ---
 
@@ -6117,7 +6117,7 @@ TextInputSpecification interface{}
 
 text_input_specification block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#text_input_specification Lexv2ModelsSlot#text_input_specification}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#text_input_specification Lexv2ModelsSlot#text_input_specification}
 
 ---
 
@@ -6138,8 +6138,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lexv2modelsslot"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationAllowedInputTypes.property.allowAudioInput">AllowAudioInput</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#allow_audio_input Lexv2ModelsSlot#allow_audio_input}. |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationAllowedInputTypes.property.allowDtmfInput">AllowDtmfInput</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#allow_dtmf_input Lexv2ModelsSlot#allow_dtmf_input}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationAllowedInputTypes.property.allowAudioInput">AllowAudioInput</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#allow_audio_input Lexv2ModelsSlot#allow_audio_input}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationAllowedInputTypes.property.allowDtmfInput">AllowDtmfInput</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#allow_dtmf_input Lexv2ModelsSlot#allow_dtmf_input}. |
 
 ---
 
@@ -6151,7 +6151,7 @@ AllowAudioInput interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#allow_audio_input Lexv2ModelsSlot#allow_audio_input}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#allow_audio_input Lexv2ModelsSlot#allow_audio_input}.
 
 ---
 
@@ -6163,7 +6163,7 @@ AllowDtmfInput interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#allow_dtmf_input Lexv2ModelsSlot#allow_dtmf_input}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#allow_dtmf_input Lexv2ModelsSlot#allow_dtmf_input}.
 
 ---
 
@@ -6185,7 +6185,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lexv2modelsslot"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationAudioAndDtmfInputSpecification.property.startTimeoutMs">StartTimeoutMs</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#start_timeout_ms Lexv2ModelsSlot#start_timeout_ms}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationAudioAndDtmfInputSpecification.property.startTimeoutMs">StartTimeoutMs</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#start_timeout_ms Lexv2ModelsSlot#start_timeout_ms}. |
 | <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationAudioAndDtmfInputSpecification.property.audioSpecification">AudioSpecification</a></code> | <code>interface{}</code> | audio_specification block. |
 | <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationAudioAndDtmfInputSpecification.property.dtmfSpecification">DtmfSpecification</a></code> | <code>interface{}</code> | dtmf_specification block. |
 
@@ -6199,7 +6199,7 @@ StartTimeoutMs *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#start_timeout_ms Lexv2ModelsSlot#start_timeout_ms}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#start_timeout_ms Lexv2ModelsSlot#start_timeout_ms}.
 
 ---
 
@@ -6213,7 +6213,7 @@ AudioSpecification interface{}
 
 audio_specification block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#audio_specification Lexv2ModelsSlot#audio_specification}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#audio_specification Lexv2ModelsSlot#audio_specification}
 
 ---
 
@@ -6227,7 +6227,7 @@ DtmfSpecification interface{}
 
 dtmf_specification block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#dtmf_specification Lexv2ModelsSlot#dtmf_specification}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#dtmf_specification Lexv2ModelsSlot#dtmf_specification}
 
 ---
 
@@ -6248,8 +6248,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lexv2modelsslot"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationAudioAndDtmfInputSpecificationAudioSpecification.property.endTimeoutMs">EndTimeoutMs</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#end_timeout_ms Lexv2ModelsSlot#end_timeout_ms}. |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationAudioAndDtmfInputSpecificationAudioSpecification.property.maxLengthMs">MaxLengthMs</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#max_length_ms Lexv2ModelsSlot#max_length_ms}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationAudioAndDtmfInputSpecificationAudioSpecification.property.endTimeoutMs">EndTimeoutMs</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#end_timeout_ms Lexv2ModelsSlot#end_timeout_ms}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationAudioAndDtmfInputSpecificationAudioSpecification.property.maxLengthMs">MaxLengthMs</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#max_length_ms Lexv2ModelsSlot#max_length_ms}. |
 
 ---
 
@@ -6261,7 +6261,7 @@ EndTimeoutMs *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#end_timeout_ms Lexv2ModelsSlot#end_timeout_ms}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#end_timeout_ms Lexv2ModelsSlot#end_timeout_ms}.
 
 ---
 
@@ -6273,7 +6273,7 @@ MaxLengthMs *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#max_length_ms Lexv2ModelsSlot#max_length_ms}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#max_length_ms Lexv2ModelsSlot#max_length_ms}.
 
 ---
 
@@ -6296,10 +6296,10 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lexv2modelsslot"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationAudioAndDtmfInputSpecificationDtmfSpecification.property.deletionCharacter">DeletionCharacter</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#deletion_character Lexv2ModelsSlot#deletion_character}. |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationAudioAndDtmfInputSpecificationDtmfSpecification.property.endCharacter">EndCharacter</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#end_character Lexv2ModelsSlot#end_character}. |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationAudioAndDtmfInputSpecificationDtmfSpecification.property.endTimeoutMs">EndTimeoutMs</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#end_timeout_ms Lexv2ModelsSlot#end_timeout_ms}. |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationAudioAndDtmfInputSpecificationDtmfSpecification.property.maxLength">MaxLength</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#max_length Lexv2ModelsSlot#max_length}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationAudioAndDtmfInputSpecificationDtmfSpecification.property.deletionCharacter">DeletionCharacter</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#deletion_character Lexv2ModelsSlot#deletion_character}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationAudioAndDtmfInputSpecificationDtmfSpecification.property.endCharacter">EndCharacter</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#end_character Lexv2ModelsSlot#end_character}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationAudioAndDtmfInputSpecificationDtmfSpecification.property.endTimeoutMs">EndTimeoutMs</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#end_timeout_ms Lexv2ModelsSlot#end_timeout_ms}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationAudioAndDtmfInputSpecificationDtmfSpecification.property.maxLength">MaxLength</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#max_length Lexv2ModelsSlot#max_length}. |
 
 ---
 
@@ -6311,7 +6311,7 @@ DeletionCharacter *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#deletion_character Lexv2ModelsSlot#deletion_character}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#deletion_character Lexv2ModelsSlot#deletion_character}.
 
 ---
 
@@ -6323,7 +6323,7 @@ EndCharacter *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#end_character Lexv2ModelsSlot#end_character}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#end_character Lexv2ModelsSlot#end_character}.
 
 ---
 
@@ -6335,7 +6335,7 @@ EndTimeoutMs *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#end_timeout_ms Lexv2ModelsSlot#end_timeout_ms}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#end_timeout_ms Lexv2ModelsSlot#end_timeout_ms}.
 
 ---
 
@@ -6347,7 +6347,7 @@ MaxLength *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#max_length Lexv2ModelsSlot#max_length}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#max_length Lexv2ModelsSlot#max_length}.
 
 ---
 
@@ -6367,7 +6367,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lexv2modelsslot"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationTextInputSpecification.property.startTimeoutMs">StartTimeoutMs</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#start_timeout_ms Lexv2ModelsSlot#start_timeout_ms}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationTextInputSpecification.property.startTimeoutMs">StartTimeoutMs</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#start_timeout_ms Lexv2ModelsSlot#start_timeout_ms}. |
 
 ---
 
@@ -6379,7 +6379,7 @@ StartTimeoutMs *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#start_timeout_ms Lexv2ModelsSlot#start_timeout_ms}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#start_timeout_ms Lexv2ModelsSlot#start_timeout_ms}.
 
 ---
 
@@ -6399,7 +6399,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lexv2modelsslot"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingSampleUtterance.property.utterance">Utterance</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#utterance Lexv2ModelsSlot#utterance}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingSampleUtterance.property.utterance">Utterance</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#utterance Lexv2ModelsSlot#utterance}. |
 
 ---
 
@@ -6411,7 +6411,7 @@ Utterance *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#utterance Lexv2ModelsSlot#utterance}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#utterance Lexv2ModelsSlot#utterance}.
 
 ---
 
@@ -6431,7 +6431,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lexv2modelsslot"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingSlotResolutionSetting.property.slotResolutionStrategy">SlotResolutionStrategy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#slot_resolution_strategy Lexv2ModelsSlot#slot_resolution_strategy}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingSlotResolutionSetting.property.slotResolutionStrategy">SlotResolutionStrategy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#slot_resolution_strategy Lexv2ModelsSlot#slot_resolution_strategy}. |
 
 ---
 
@@ -6443,7 +6443,7 @@ SlotResolutionStrategy *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#slot_resolution_strategy Lexv2ModelsSlot#slot_resolution_strategy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#slot_resolution_strategy Lexv2ModelsSlot#slot_resolution_strategy}.
 
 ---
 
@@ -6466,7 +6466,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lexv2modelsslot"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecification.property.active">Active</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#active Lexv2ModelsSlot#active}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecification.property.active">Active</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#active Lexv2ModelsSlot#active}. |
 | <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecification.property.continueResponse">ContinueResponse</a></code> | <code>interface{}</code> | continue_response block. |
 | <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecification.property.stillWaitingResponse">StillWaitingResponse</a></code> | <code>interface{}</code> | still_waiting_response block. |
 | <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecification.property.waitingResponse">WaitingResponse</a></code> | <code>interface{}</code> | waiting_response block. |
@@ -6481,7 +6481,7 @@ Active interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#active Lexv2ModelsSlot#active}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#active Lexv2ModelsSlot#active}.
 
 ---
 
@@ -6495,7 +6495,7 @@ ContinueResponse interface{}
 
 continue_response block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#continue_response Lexv2ModelsSlot#continue_response}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#continue_response Lexv2ModelsSlot#continue_response}
 
 ---
 
@@ -6509,7 +6509,7 @@ StillWaitingResponse interface{}
 
 still_waiting_response block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#still_waiting_response Lexv2ModelsSlot#still_waiting_response}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#still_waiting_response Lexv2ModelsSlot#still_waiting_response}
 
 ---
 
@@ -6523,7 +6523,7 @@ WaitingResponse interface{}
 
 waiting_response block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#waiting_response Lexv2ModelsSlot#waiting_response}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#waiting_response Lexv2ModelsSlot#waiting_response}
 
 ---
 
@@ -6544,7 +6544,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lexv2modelsslot"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponse.property.allowInterrupt">AllowInterrupt</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#allow_interrupt Lexv2ModelsSlot#allow_interrupt}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponse.property.allowInterrupt">AllowInterrupt</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#allow_interrupt Lexv2ModelsSlot#allow_interrupt}. |
 | <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponse.property.messageGroup">MessageGroup</a></code> | <code>interface{}</code> | message_group block. |
 
 ---
@@ -6557,7 +6557,7 @@ AllowInterrupt interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#allow_interrupt Lexv2ModelsSlot#allow_interrupt}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#allow_interrupt Lexv2ModelsSlot#allow_interrupt}.
 
 ---
 
@@ -6571,7 +6571,7 @@ MessageGroup interface{}
 
 message_group block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#message_group Lexv2ModelsSlot#message_group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#message_group Lexv2ModelsSlot#message_group}
 
 ---
 
@@ -6607,7 +6607,7 @@ Message interface{}
 
 message block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#message Lexv2ModelsSlot#message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#message Lexv2ModelsSlot#message}
 
 ---
 
@@ -6621,7 +6621,7 @@ Variation interface{}
 
 variation block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#variation Lexv2ModelsSlot#variation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#variation Lexv2ModelsSlot#variation}
 
 ---
 
@@ -6661,7 +6661,7 @@ CustomPayload interface{}
 
 custom_payload block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#custom_payload Lexv2ModelsSlot#custom_payload}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#custom_payload Lexv2ModelsSlot#custom_payload}
 
 ---
 
@@ -6675,7 +6675,7 @@ ImageResponseCard interface{}
 
 image_response_card block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#image_response_card Lexv2ModelsSlot#image_response_card}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#image_response_card Lexv2ModelsSlot#image_response_card}
 
 ---
 
@@ -6689,7 +6689,7 @@ PlainTextMessage interface{}
 
 plain_text_message block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#plain_text_message Lexv2ModelsSlot#plain_text_message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#plain_text_message Lexv2ModelsSlot#plain_text_message}
 
 ---
 
@@ -6703,7 +6703,7 @@ SsmlMessage interface{}
 
 ssml_message block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#ssml_message Lexv2ModelsSlot#ssml_message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#ssml_message Lexv2ModelsSlot#ssml_message}
 
 ---
 
@@ -6723,7 +6723,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lexv2modelsslot"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageCustomPayload.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageCustomPayload.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}. |
 
 ---
 
@@ -6735,7 +6735,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}.
 
 ---
 
@@ -6758,10 +6758,10 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lexv2modelsslot"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageImageResponseCard.property.title">Title</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#title Lexv2ModelsSlot#title}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageImageResponseCard.property.title">Title</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#title Lexv2ModelsSlot#title}. |
 | <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageImageResponseCard.property.button">Button</a></code> | <code>interface{}</code> | button block. |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageImageResponseCard.property.imageUrl">ImageUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#image_url Lexv2ModelsSlot#image_url}. |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageImageResponseCard.property.subtitle">Subtitle</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#subtitle Lexv2ModelsSlot#subtitle}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageImageResponseCard.property.imageUrl">ImageUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#image_url Lexv2ModelsSlot#image_url}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageImageResponseCard.property.subtitle">Subtitle</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#subtitle Lexv2ModelsSlot#subtitle}. |
 
 ---
 
@@ -6773,7 +6773,7 @@ Title *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#title Lexv2ModelsSlot#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#title Lexv2ModelsSlot#title}.
 
 ---
 
@@ -6787,7 +6787,7 @@ Button interface{}
 
 button block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#button Lexv2ModelsSlot#button}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#button Lexv2ModelsSlot#button}
 
 ---
 
@@ -6799,7 +6799,7 @@ ImageUrl *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#image_url Lexv2ModelsSlot#image_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#image_url Lexv2ModelsSlot#image_url}.
 
 ---
 
@@ -6811,7 +6811,7 @@ Subtitle *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#subtitle Lexv2ModelsSlot#subtitle}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#subtitle Lexv2ModelsSlot#subtitle}.
 
 ---
 
@@ -6832,8 +6832,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lexv2modelsslot"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageImageResponseCardButton.property.text">Text</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#text Lexv2ModelsSlot#text}. |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageImageResponseCardButton.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageImageResponseCardButton.property.text">Text</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#text Lexv2ModelsSlot#text}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageImageResponseCardButton.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}. |
 
 ---
 
@@ -6845,7 +6845,7 @@ Text *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#text Lexv2ModelsSlot#text}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#text Lexv2ModelsSlot#text}.
 
 ---
 
@@ -6857,7 +6857,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}.
 
 ---
 
@@ -6877,7 +6877,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lexv2modelsslot"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessagePlainTextMessage.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessagePlainTextMessage.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}. |
 
 ---
 
@@ -6889,7 +6889,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}.
 
 ---
 
@@ -6909,7 +6909,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lexv2modelsslot"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageSsmlMessage.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageSsmlMessage.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}. |
 
 ---
 
@@ -6921,7 +6921,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}.
 
 ---
 
@@ -6961,7 +6961,7 @@ CustomPayload interface{}
 
 custom_payload block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#custom_payload Lexv2ModelsSlot#custom_payload}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#custom_payload Lexv2ModelsSlot#custom_payload}
 
 ---
 
@@ -6975,7 +6975,7 @@ ImageResponseCard interface{}
 
 image_response_card block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#image_response_card Lexv2ModelsSlot#image_response_card}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#image_response_card Lexv2ModelsSlot#image_response_card}
 
 ---
 
@@ -6989,7 +6989,7 @@ PlainTextMessage interface{}
 
 plain_text_message block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#plain_text_message Lexv2ModelsSlot#plain_text_message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#plain_text_message Lexv2ModelsSlot#plain_text_message}
 
 ---
 
@@ -7003,7 +7003,7 @@ SsmlMessage interface{}
 
 ssml_message block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#ssml_message Lexv2ModelsSlot#ssml_message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#ssml_message Lexv2ModelsSlot#ssml_message}
 
 ---
 
@@ -7023,7 +7023,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lexv2modelsslot"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationCustomPayload.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationCustomPayload.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}. |
 
 ---
 
@@ -7035,7 +7035,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}.
 
 ---
 
@@ -7058,10 +7058,10 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lexv2modelsslot"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationImageResponseCard.property.title">Title</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#title Lexv2ModelsSlot#title}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationImageResponseCard.property.title">Title</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#title Lexv2ModelsSlot#title}. |
 | <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationImageResponseCard.property.button">Button</a></code> | <code>interface{}</code> | button block. |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationImageResponseCard.property.imageUrl">ImageUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#image_url Lexv2ModelsSlot#image_url}. |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationImageResponseCard.property.subtitle">Subtitle</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#subtitle Lexv2ModelsSlot#subtitle}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationImageResponseCard.property.imageUrl">ImageUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#image_url Lexv2ModelsSlot#image_url}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationImageResponseCard.property.subtitle">Subtitle</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#subtitle Lexv2ModelsSlot#subtitle}. |
 
 ---
 
@@ -7073,7 +7073,7 @@ Title *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#title Lexv2ModelsSlot#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#title Lexv2ModelsSlot#title}.
 
 ---
 
@@ -7087,7 +7087,7 @@ Button interface{}
 
 button block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#button Lexv2ModelsSlot#button}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#button Lexv2ModelsSlot#button}
 
 ---
 
@@ -7099,7 +7099,7 @@ ImageUrl *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#image_url Lexv2ModelsSlot#image_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#image_url Lexv2ModelsSlot#image_url}.
 
 ---
 
@@ -7111,7 +7111,7 @@ Subtitle *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#subtitle Lexv2ModelsSlot#subtitle}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#subtitle Lexv2ModelsSlot#subtitle}.
 
 ---
 
@@ -7132,8 +7132,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lexv2modelsslot"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationImageResponseCardButton.property.text">Text</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#text Lexv2ModelsSlot#text}. |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationImageResponseCardButton.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationImageResponseCardButton.property.text">Text</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#text Lexv2ModelsSlot#text}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationImageResponseCardButton.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}. |
 
 ---
 
@@ -7145,7 +7145,7 @@ Text *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#text Lexv2ModelsSlot#text}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#text Lexv2ModelsSlot#text}.
 
 ---
 
@@ -7157,7 +7157,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}.
 
 ---
 
@@ -7177,7 +7177,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lexv2modelsslot"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationPlainTextMessage.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationPlainTextMessage.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}. |
 
 ---
 
@@ -7189,7 +7189,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}.
 
 ---
 
@@ -7209,7 +7209,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lexv2modelsslot"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationSsmlMessage.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationSsmlMessage.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}. |
 
 ---
 
@@ -7221,7 +7221,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}.
 
 ---
 
@@ -7244,9 +7244,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lexv2modelsslot"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponse.property.frequencyInSeconds">FrequencyInSeconds</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#frequency_in_seconds Lexv2ModelsSlot#frequency_in_seconds}. |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponse.property.timeoutInSeconds">TimeoutInSeconds</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#timeout_in_seconds Lexv2ModelsSlot#timeout_in_seconds}. |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponse.property.allowInterrupt">AllowInterrupt</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#allow_interrupt Lexv2ModelsSlot#allow_interrupt}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponse.property.frequencyInSeconds">FrequencyInSeconds</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#frequency_in_seconds Lexv2ModelsSlot#frequency_in_seconds}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponse.property.timeoutInSeconds">TimeoutInSeconds</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#timeout_in_seconds Lexv2ModelsSlot#timeout_in_seconds}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponse.property.allowInterrupt">AllowInterrupt</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#allow_interrupt Lexv2ModelsSlot#allow_interrupt}. |
 | <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponse.property.messageGroup">MessageGroup</a></code> | <code>interface{}</code> | message_group block. |
 
 ---
@@ -7259,7 +7259,7 @@ FrequencyInSeconds *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#frequency_in_seconds Lexv2ModelsSlot#frequency_in_seconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#frequency_in_seconds Lexv2ModelsSlot#frequency_in_seconds}.
 
 ---
 
@@ -7271,7 +7271,7 @@ TimeoutInSeconds *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#timeout_in_seconds Lexv2ModelsSlot#timeout_in_seconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#timeout_in_seconds Lexv2ModelsSlot#timeout_in_seconds}.
 
 ---
 
@@ -7283,7 +7283,7 @@ AllowInterrupt interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#allow_interrupt Lexv2ModelsSlot#allow_interrupt}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#allow_interrupt Lexv2ModelsSlot#allow_interrupt}.
 
 ---
 
@@ -7297,7 +7297,7 @@ MessageGroup interface{}
 
 message_group block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#message_group Lexv2ModelsSlot#message_group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#message_group Lexv2ModelsSlot#message_group}
 
 ---
 
@@ -7333,7 +7333,7 @@ Message interface{}
 
 message block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#message Lexv2ModelsSlot#message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#message Lexv2ModelsSlot#message}
 
 ---
 
@@ -7347,7 +7347,7 @@ Variation interface{}
 
 variation block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#variation Lexv2ModelsSlot#variation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#variation Lexv2ModelsSlot#variation}
 
 ---
 
@@ -7387,7 +7387,7 @@ CustomPayload interface{}
 
 custom_payload block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#custom_payload Lexv2ModelsSlot#custom_payload}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#custom_payload Lexv2ModelsSlot#custom_payload}
 
 ---
 
@@ -7401,7 +7401,7 @@ ImageResponseCard interface{}
 
 image_response_card block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#image_response_card Lexv2ModelsSlot#image_response_card}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#image_response_card Lexv2ModelsSlot#image_response_card}
 
 ---
 
@@ -7415,7 +7415,7 @@ PlainTextMessage interface{}
 
 plain_text_message block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#plain_text_message Lexv2ModelsSlot#plain_text_message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#plain_text_message Lexv2ModelsSlot#plain_text_message}
 
 ---
 
@@ -7429,7 +7429,7 @@ SsmlMessage interface{}
 
 ssml_message block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#ssml_message Lexv2ModelsSlot#ssml_message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#ssml_message Lexv2ModelsSlot#ssml_message}
 
 ---
 
@@ -7449,7 +7449,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lexv2modelsslot"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessageCustomPayload.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessageCustomPayload.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}. |
 
 ---
 
@@ -7461,7 +7461,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}.
 
 ---
 
@@ -7484,10 +7484,10 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lexv2modelsslot"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessageImageResponseCard.property.title">Title</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#title Lexv2ModelsSlot#title}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessageImageResponseCard.property.title">Title</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#title Lexv2ModelsSlot#title}. |
 | <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessageImageResponseCard.property.button">Button</a></code> | <code>interface{}</code> | button block. |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessageImageResponseCard.property.imageUrl">ImageUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#image_url Lexv2ModelsSlot#image_url}. |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessageImageResponseCard.property.subtitle">Subtitle</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#subtitle Lexv2ModelsSlot#subtitle}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessageImageResponseCard.property.imageUrl">ImageUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#image_url Lexv2ModelsSlot#image_url}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessageImageResponseCard.property.subtitle">Subtitle</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#subtitle Lexv2ModelsSlot#subtitle}. |
 
 ---
 
@@ -7499,7 +7499,7 @@ Title *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#title Lexv2ModelsSlot#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#title Lexv2ModelsSlot#title}.
 
 ---
 
@@ -7513,7 +7513,7 @@ Button interface{}
 
 button block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#button Lexv2ModelsSlot#button}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#button Lexv2ModelsSlot#button}
 
 ---
 
@@ -7525,7 +7525,7 @@ ImageUrl *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#image_url Lexv2ModelsSlot#image_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#image_url Lexv2ModelsSlot#image_url}.
 
 ---
 
@@ -7537,7 +7537,7 @@ Subtitle *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#subtitle Lexv2ModelsSlot#subtitle}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#subtitle Lexv2ModelsSlot#subtitle}.
 
 ---
 
@@ -7558,8 +7558,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lexv2modelsslot"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessageImageResponseCardButton.property.text">Text</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#text Lexv2ModelsSlot#text}. |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessageImageResponseCardButton.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessageImageResponseCardButton.property.text">Text</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#text Lexv2ModelsSlot#text}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessageImageResponseCardButton.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}. |
 
 ---
 
@@ -7571,7 +7571,7 @@ Text *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#text Lexv2ModelsSlot#text}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#text Lexv2ModelsSlot#text}.
 
 ---
 
@@ -7583,7 +7583,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}.
 
 ---
 
@@ -7603,7 +7603,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lexv2modelsslot"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessagePlainTextMessage.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessagePlainTextMessage.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}. |
 
 ---
 
@@ -7615,7 +7615,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}.
 
 ---
 
@@ -7635,7 +7635,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lexv2modelsslot"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessageSsmlMessage.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessageSsmlMessage.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}. |
 
 ---
 
@@ -7647,7 +7647,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}.
 
 ---
 
@@ -7687,7 +7687,7 @@ CustomPayload interface{}
 
 custom_payload block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#custom_payload Lexv2ModelsSlot#custom_payload}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#custom_payload Lexv2ModelsSlot#custom_payload}
 
 ---
 
@@ -7701,7 +7701,7 @@ ImageResponseCard interface{}
 
 image_response_card block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#image_response_card Lexv2ModelsSlot#image_response_card}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#image_response_card Lexv2ModelsSlot#image_response_card}
 
 ---
 
@@ -7715,7 +7715,7 @@ PlainTextMessage interface{}
 
 plain_text_message block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#plain_text_message Lexv2ModelsSlot#plain_text_message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#plain_text_message Lexv2ModelsSlot#plain_text_message}
 
 ---
 
@@ -7729,7 +7729,7 @@ SsmlMessage interface{}
 
 ssml_message block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#ssml_message Lexv2ModelsSlot#ssml_message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#ssml_message Lexv2ModelsSlot#ssml_message}
 
 ---
 
@@ -7749,7 +7749,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lexv2modelsslot"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationCustomPayload.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationCustomPayload.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}. |
 
 ---
 
@@ -7761,7 +7761,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}.
 
 ---
 
@@ -7784,10 +7784,10 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lexv2modelsslot"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationImageResponseCard.property.title">Title</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#title Lexv2ModelsSlot#title}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationImageResponseCard.property.title">Title</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#title Lexv2ModelsSlot#title}. |
 | <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationImageResponseCard.property.button">Button</a></code> | <code>interface{}</code> | button block. |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationImageResponseCard.property.imageUrl">ImageUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#image_url Lexv2ModelsSlot#image_url}. |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationImageResponseCard.property.subtitle">Subtitle</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#subtitle Lexv2ModelsSlot#subtitle}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationImageResponseCard.property.imageUrl">ImageUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#image_url Lexv2ModelsSlot#image_url}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationImageResponseCard.property.subtitle">Subtitle</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#subtitle Lexv2ModelsSlot#subtitle}. |
 
 ---
 
@@ -7799,7 +7799,7 @@ Title *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#title Lexv2ModelsSlot#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#title Lexv2ModelsSlot#title}.
 
 ---
 
@@ -7813,7 +7813,7 @@ Button interface{}
 
 button block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#button Lexv2ModelsSlot#button}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#button Lexv2ModelsSlot#button}
 
 ---
 
@@ -7825,7 +7825,7 @@ ImageUrl *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#image_url Lexv2ModelsSlot#image_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#image_url Lexv2ModelsSlot#image_url}.
 
 ---
 
@@ -7837,7 +7837,7 @@ Subtitle *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#subtitle Lexv2ModelsSlot#subtitle}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#subtitle Lexv2ModelsSlot#subtitle}.
 
 ---
 
@@ -7858,8 +7858,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lexv2modelsslot"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationImageResponseCardButton.property.text">Text</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#text Lexv2ModelsSlot#text}. |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationImageResponseCardButton.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationImageResponseCardButton.property.text">Text</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#text Lexv2ModelsSlot#text}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationImageResponseCardButton.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}. |
 
 ---
 
@@ -7871,7 +7871,7 @@ Text *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#text Lexv2ModelsSlot#text}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#text Lexv2ModelsSlot#text}.
 
 ---
 
@@ -7883,7 +7883,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}.
 
 ---
 
@@ -7903,7 +7903,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lexv2modelsslot"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationPlainTextMessage.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationPlainTextMessage.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}. |
 
 ---
 
@@ -7915,7 +7915,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}.
 
 ---
 
@@ -7935,7 +7935,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lexv2modelsslot"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationSsmlMessage.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationSsmlMessage.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}. |
 
 ---
 
@@ -7947,7 +7947,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}.
 
 ---
 
@@ -7968,7 +7968,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lexv2modelsslot"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponse.property.allowInterrupt">AllowInterrupt</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#allow_interrupt Lexv2ModelsSlot#allow_interrupt}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponse.property.allowInterrupt">AllowInterrupt</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#allow_interrupt Lexv2ModelsSlot#allow_interrupt}. |
 | <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponse.property.messageGroup">MessageGroup</a></code> | <code>interface{}</code> | message_group block. |
 
 ---
@@ -7981,7 +7981,7 @@ AllowInterrupt interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#allow_interrupt Lexv2ModelsSlot#allow_interrupt}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#allow_interrupt Lexv2ModelsSlot#allow_interrupt}.
 
 ---
 
@@ -7995,7 +7995,7 @@ MessageGroup interface{}
 
 message_group block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#message_group Lexv2ModelsSlot#message_group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#message_group Lexv2ModelsSlot#message_group}
 
 ---
 
@@ -8031,7 +8031,7 @@ Message interface{}
 
 message block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#message Lexv2ModelsSlot#message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#message Lexv2ModelsSlot#message}
 
 ---
 
@@ -8045,7 +8045,7 @@ Variation interface{}
 
 variation block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#variation Lexv2ModelsSlot#variation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#variation Lexv2ModelsSlot#variation}
 
 ---
 
@@ -8085,7 +8085,7 @@ CustomPayload interface{}
 
 custom_payload block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#custom_payload Lexv2ModelsSlot#custom_payload}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#custom_payload Lexv2ModelsSlot#custom_payload}
 
 ---
 
@@ -8099,7 +8099,7 @@ ImageResponseCard interface{}
 
 image_response_card block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#image_response_card Lexv2ModelsSlot#image_response_card}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#image_response_card Lexv2ModelsSlot#image_response_card}
 
 ---
 
@@ -8113,7 +8113,7 @@ PlainTextMessage interface{}
 
 plain_text_message block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#plain_text_message Lexv2ModelsSlot#plain_text_message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#plain_text_message Lexv2ModelsSlot#plain_text_message}
 
 ---
 
@@ -8127,7 +8127,7 @@ SsmlMessage interface{}
 
 ssml_message block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#ssml_message Lexv2ModelsSlot#ssml_message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#ssml_message Lexv2ModelsSlot#ssml_message}
 
 ---
 
@@ -8147,7 +8147,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lexv2modelsslot"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessageCustomPayload.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessageCustomPayload.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}. |
 
 ---
 
@@ -8159,7 +8159,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}.
 
 ---
 
@@ -8182,10 +8182,10 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lexv2modelsslot"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessageImageResponseCard.property.title">Title</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#title Lexv2ModelsSlot#title}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessageImageResponseCard.property.title">Title</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#title Lexv2ModelsSlot#title}. |
 | <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessageImageResponseCard.property.button">Button</a></code> | <code>interface{}</code> | button block. |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessageImageResponseCard.property.imageUrl">ImageUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#image_url Lexv2ModelsSlot#image_url}. |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessageImageResponseCard.property.subtitle">Subtitle</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#subtitle Lexv2ModelsSlot#subtitle}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessageImageResponseCard.property.imageUrl">ImageUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#image_url Lexv2ModelsSlot#image_url}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessageImageResponseCard.property.subtitle">Subtitle</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#subtitle Lexv2ModelsSlot#subtitle}. |
 
 ---
 
@@ -8197,7 +8197,7 @@ Title *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#title Lexv2ModelsSlot#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#title Lexv2ModelsSlot#title}.
 
 ---
 
@@ -8211,7 +8211,7 @@ Button interface{}
 
 button block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#button Lexv2ModelsSlot#button}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#button Lexv2ModelsSlot#button}
 
 ---
 
@@ -8223,7 +8223,7 @@ ImageUrl *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#image_url Lexv2ModelsSlot#image_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#image_url Lexv2ModelsSlot#image_url}.
 
 ---
 
@@ -8235,7 +8235,7 @@ Subtitle *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#subtitle Lexv2ModelsSlot#subtitle}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#subtitle Lexv2ModelsSlot#subtitle}.
 
 ---
 
@@ -8256,8 +8256,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lexv2modelsslot"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessageImageResponseCardButton.property.text">Text</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#text Lexv2ModelsSlot#text}. |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessageImageResponseCardButton.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessageImageResponseCardButton.property.text">Text</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#text Lexv2ModelsSlot#text}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessageImageResponseCardButton.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}. |
 
 ---
 
@@ -8269,7 +8269,7 @@ Text *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#text Lexv2ModelsSlot#text}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#text Lexv2ModelsSlot#text}.
 
 ---
 
@@ -8281,7 +8281,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}.
 
 ---
 
@@ -8301,7 +8301,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lexv2modelsslot"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessagePlainTextMessage.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessagePlainTextMessage.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}. |
 
 ---
 
@@ -8313,7 +8313,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}.
 
 ---
 
@@ -8333,7 +8333,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lexv2modelsslot"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessageSsmlMessage.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessageSsmlMessage.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}. |
 
 ---
 
@@ -8345,7 +8345,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}.
 
 ---
 
@@ -8385,7 +8385,7 @@ CustomPayload interface{}
 
 custom_payload block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#custom_payload Lexv2ModelsSlot#custom_payload}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#custom_payload Lexv2ModelsSlot#custom_payload}
 
 ---
 
@@ -8399,7 +8399,7 @@ ImageResponseCard interface{}
 
 image_response_card block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#image_response_card Lexv2ModelsSlot#image_response_card}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#image_response_card Lexv2ModelsSlot#image_response_card}
 
 ---
 
@@ -8413,7 +8413,7 @@ PlainTextMessage interface{}
 
 plain_text_message block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#plain_text_message Lexv2ModelsSlot#plain_text_message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#plain_text_message Lexv2ModelsSlot#plain_text_message}
 
 ---
 
@@ -8427,7 +8427,7 @@ SsmlMessage interface{}
 
 ssml_message block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#ssml_message Lexv2ModelsSlot#ssml_message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#ssml_message Lexv2ModelsSlot#ssml_message}
 
 ---
 
@@ -8447,7 +8447,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lexv2modelsslot"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationCustomPayload.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationCustomPayload.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}. |
 
 ---
 
@@ -8459,7 +8459,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}.
 
 ---
 
@@ -8482,10 +8482,10 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lexv2modelsslot"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationImageResponseCard.property.title">Title</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#title Lexv2ModelsSlot#title}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationImageResponseCard.property.title">Title</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#title Lexv2ModelsSlot#title}. |
 | <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationImageResponseCard.property.button">Button</a></code> | <code>interface{}</code> | button block. |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationImageResponseCard.property.imageUrl">ImageUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#image_url Lexv2ModelsSlot#image_url}. |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationImageResponseCard.property.subtitle">Subtitle</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#subtitle Lexv2ModelsSlot#subtitle}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationImageResponseCard.property.imageUrl">ImageUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#image_url Lexv2ModelsSlot#image_url}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationImageResponseCard.property.subtitle">Subtitle</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#subtitle Lexv2ModelsSlot#subtitle}. |
 
 ---
 
@@ -8497,7 +8497,7 @@ Title *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#title Lexv2ModelsSlot#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#title Lexv2ModelsSlot#title}.
 
 ---
 
@@ -8511,7 +8511,7 @@ Button interface{}
 
 button block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#button Lexv2ModelsSlot#button}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#button Lexv2ModelsSlot#button}
 
 ---
 
@@ -8523,7 +8523,7 @@ ImageUrl *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#image_url Lexv2ModelsSlot#image_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#image_url Lexv2ModelsSlot#image_url}.
 
 ---
 
@@ -8535,7 +8535,7 @@ Subtitle *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#subtitle Lexv2ModelsSlot#subtitle}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#subtitle Lexv2ModelsSlot#subtitle}.
 
 ---
 
@@ -8556,8 +8556,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lexv2modelsslot"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationImageResponseCardButton.property.text">Text</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#text Lexv2ModelsSlot#text}. |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationImageResponseCardButton.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationImageResponseCardButton.property.text">Text</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#text Lexv2ModelsSlot#text}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationImageResponseCardButton.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}. |
 
 ---
 
@@ -8569,7 +8569,7 @@ Text *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#text Lexv2ModelsSlot#text}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#text Lexv2ModelsSlot#text}.
 
 ---
 
@@ -8581,7 +8581,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}.
 
 ---
 
@@ -8601,7 +8601,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lexv2modelsslot"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationPlainTextMessage.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationPlainTextMessage.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}. |
 
 ---
 
@@ -8613,7 +8613,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}.
 
 ---
 
@@ -8633,7 +8633,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lexv2modelsslot"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationSsmlMessage.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationSsmlMessage.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}. |
 
 ---
 
@@ -8645,7 +8645,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}.
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### DataAwsBillingViews <a name="DataAwsBillingViews" id="@cdktn/provider-aws.dataAwsBillingViews.DataAwsBillingViews"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/billing_views aws_billing_views}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/data-sources/billing_views aws_billing_views}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsBillingViews.DataAwsBillingViews.Initializer"></a>
 
@@ -372,7 +372,7 @@ The construct id used in the generated config for the DataAwsBillingViews to imp
 
 The id of the existing DataAwsBillingViews that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/billing_views#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/data-sources/billing_views#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -621,7 +621,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsbillingviews"
 | <code><a href="#@cdktn/provider-aws.dataAwsBillingViews.DataAwsBillingViewsConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsBillingViews.DataAwsBillingViewsConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsBillingViews.DataAwsBillingViewsConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dataAwsBillingViews.DataAwsBillingViewsConfig.property.billingViewTypes">BillingViewTypes</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/billing_views#billing_view_types DataAwsBillingViews#billing_view_types}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsBillingViews.DataAwsBillingViewsConfig.property.billingViewTypes">BillingViewTypes</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/data-sources/billing_views#billing_view_types DataAwsBillingViews#billing_view_types}. |
 
 ---
 
@@ -703,7 +703,7 @@ BillingViewTypes *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/billing_views#billing_view_types DataAwsBillingViews#billing_view_types}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/data-sources/billing_views#billing_view_types DataAwsBillingViews#billing_view_types}.
 
 ---
 

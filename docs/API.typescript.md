@@ -1630,6 +1630,7 @@ The following submodules are available:
 - [networkflowmonitorMonitor](./networkflowmonitorMonitor.typescript.md)
 - [networkflowmonitorScope](./networkflowmonitorScope.typescript.md)
 - [networkmanagerAttachmentAccepter](./networkmanagerAttachmentAccepter.typescript.md)
+- [networkmanagerAttachmentRoutingPolicyLabel](./networkmanagerAttachmentRoutingPolicyLabel.typescript.md)
 - [networkmanagerConnectAttachment](./networkmanagerConnectAttachment.typescript.md)
 - [networkmanagerConnectPeer](./networkmanagerConnectPeer.typescript.md)
 - [networkmanagerConnection](./networkmanagerConnection.typescript.md)

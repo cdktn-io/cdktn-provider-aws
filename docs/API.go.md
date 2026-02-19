@@ -1630,6 +1630,7 @@ The following submodules are available:
 - [networkflowmonitorMonitor](./networkflowmonitorMonitor.go.md)
 - [networkflowmonitorScope](./networkflowmonitorScope.go.md)
 - [networkmanagerAttachmentAccepter](./networkmanagerAttachmentAccepter.go.md)
+- [networkmanagerAttachmentRoutingPolicyLabel](./networkmanagerAttachmentRoutingPolicyLabel.go.md)
 - [networkmanagerConnectAttachment](./networkmanagerConnectAttachment.go.md)
 - [networkmanagerConnectPeer](./networkmanagerConnectPeer.go.md)
 - [networkmanagerConnection](./networkmanagerConnection.go.md)

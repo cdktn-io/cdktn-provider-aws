@@ -986,6 +986,7 @@ export * as networkfirewallVpcEndpointAssociation from './networkfirewall-vpc-en
 export * as networkflowmonitorMonitor from './networkflowmonitor-monitor';
 export * as networkflowmonitorScope from './networkflowmonitor-scope';
 export * as networkmanagerAttachmentAccepter from './networkmanager-attachment-accepter';
+export * as networkmanagerAttachmentRoutingPolicyLabel from './networkmanager-attachment-routing-policy-label';
 export * as networkmanagerConnectAttachment from './networkmanager-connect-attachment';
 export * as networkmanagerConnectPeer from './networkmanager-connect-peer';
 export * as networkmanagerConnection from './networkmanager-connection';

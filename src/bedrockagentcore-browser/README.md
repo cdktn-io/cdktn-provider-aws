@@ -1,3 +1,3 @@
 # `aws_bedrockagentcore_browser`
 
-Refer to the Terraform Registry for docs: [`aws_bedrockagentcore_browser`](https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/bedrockagentcore_browser).
+Refer to the Terraform Registry for docs: [`aws_bedrockagentcore_browser`](https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/bedrockagentcore_browser).

@@ -1630,6 +1630,7 @@ The following submodules are available:
 - [networkflowmonitorMonitor](./networkflowmonitorMonitor.python.md)
 - [networkflowmonitorScope](./networkflowmonitorScope.python.md)
 - [networkmanagerAttachmentAccepter](./networkmanagerAttachmentAccepter.python.md)
+- [networkmanagerAttachmentRoutingPolicyLabel](./networkmanagerAttachmentRoutingPolicyLabel.python.md)
 - [networkmanagerConnectAttachment](./networkmanagerConnectAttachment.python.md)
 - [networkmanagerConnectPeer](./networkmanagerConnectPeer.python.md)
 - [networkmanagerConnection](./networkmanagerConnection.python.md)
