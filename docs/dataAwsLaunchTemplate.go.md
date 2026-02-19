@@ -4,7 +4,7 @@
 
 ### DataAwsLaunchTemplate <a name="DataAwsLaunchTemplate" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplate"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/launch_template aws_launch_template}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/data-sources/launch_template aws_launch_template}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplate.Initializer"></a>
 
@@ -433,7 +433,7 @@ The construct id used in the generated config for the DataAwsLaunchTemplate to i
 
 The id of the existing DataAwsLaunchTemplate that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/launch_template#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/data-sources/launch_template#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -488,9 +488,11 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1
 | <code><a href="#@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplate.property.metadataOptions">MetadataOptions</a></code> | <code><a href="#@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateMetadataOptionsList">DataAwsLaunchTemplateMetadataOptionsList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplate.property.monitoring">Monitoring</a></code> | <code><a href="#@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateMonitoringList">DataAwsLaunchTemplateMonitoringList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplate.property.networkInterfaces">NetworkInterfaces</a></code> | <code><a href="#@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateNetworkInterfacesList">DataAwsLaunchTemplateNetworkInterfacesList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplate.property.networkPerformanceOptions">NetworkPerformanceOptions</a></code> | <code><a href="#@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateNetworkPerformanceOptionsList">DataAwsLaunchTemplateNetworkPerformanceOptionsList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplate.property.placement">Placement</a></code> | <code><a href="#@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplatePlacementList">DataAwsLaunchTemplatePlacementList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplate.property.privateDnsNameOptions">PrivateDnsNameOptions</a></code> | <code><a href="#@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplatePrivateDnsNameOptionsList">DataAwsLaunchTemplatePrivateDnsNameOptionsList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplate.property.ramDiskId">RamDiskId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplate.property.secondaryInterfaces">SecondaryInterfaces</a></code> | <code><a href="#@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateSecondaryInterfacesList">DataAwsLaunchTemplateSecondaryInterfacesList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplate.property.securityGroupNames">SecurityGroupNames</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplate.property.tagSpecifications">TagSpecifications</a></code> | <code><a href="#@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateTagSpecificationsList">DataAwsLaunchTemplateTagSpecificationsList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplate.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateTimeoutsOutputReference">DataAwsLaunchTemplateTimeoutsOutputReference</a></code> | *No description.* |
@@ -901,6 +903,16 @@ func NetworkInterfaces() DataAwsLaunchTemplateNetworkInterfacesList
 
 ---
 
+##### `NetworkPerformanceOptions`<sup>Required</sup> <a name="NetworkPerformanceOptions" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplate.property.networkPerformanceOptions"></a>
+
+```go
+func NetworkPerformanceOptions() DataAwsLaunchTemplateNetworkPerformanceOptionsList
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateNetworkPerformanceOptionsList">DataAwsLaunchTemplateNetworkPerformanceOptionsList</a>
+
+---
+
 ##### `Placement`<sup>Required</sup> <a name="Placement" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplate.property.placement"></a>
 
 ```go
@@ -928,6 +940,16 @@ func RamDiskId() *string
 ```
 
 - *Type:* *string
+
+---
+
+##### `SecondaryInterfaces`<sup>Required</sup> <a name="SecondaryInterfaces" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplate.property.secondaryInterfaces"></a>
+
+```go
+func SecondaryInterfaces() DataAwsLaunchTemplateSecondaryInterfacesList
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateSecondaryInterfacesList">DataAwsLaunchTemplateSecondaryInterfacesList</a>
 
 ---
 
@@ -1189,10 +1211,10 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawslaunchtemplate"
 | <code><a href="#@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateConfig.property.filter">Filter</a></code> | <code>interface{}</code> | filter block. |
-| <code><a href="#@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/launch_template#id DataAwsLaunchTemplate#id}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/launch_template#name DataAwsLaunchTemplate#name}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/data-sources/launch_template#id DataAwsLaunchTemplate#id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/data-sources/launch_template#name DataAwsLaunchTemplate#name}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/launch_template#tags DataAwsLaunchTemplate#tags}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/data-sources/launch_template#tags DataAwsLaunchTemplate#tags}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateTimeouts">DataAwsLaunchTemplateTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1277,7 +1299,7 @@ Filter interface{}
 
 filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/launch_template#filter DataAwsLaunchTemplate#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/data-sources/launch_template#filter DataAwsLaunchTemplate#filter}
 
 ---
 
@@ -1289,7 +1311,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/launch_template#id DataAwsLaunchTemplate#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/data-sources/launch_template#id DataAwsLaunchTemplate#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1304,7 +1326,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/launch_template#name DataAwsLaunchTemplate#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/data-sources/launch_template#name DataAwsLaunchTemplate#name}.
 
 ---
 
@@ -1318,7 +1340,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/launch_template#region DataAwsLaunchTemplate#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/data-sources/launch_template#region DataAwsLaunchTemplate#region}
 
 ---
 
@@ -1330,7 +1352,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/launch_template#tags DataAwsLaunchTemplate#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/data-sources/launch_template#tags DataAwsLaunchTemplate#tags}.
 
 ---
 
@@ -1344,7 +1366,7 @@ Timeouts DataAwsLaunchTemplateTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/launch_template#timeouts DataAwsLaunchTemplate#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/data-sources/launch_template#timeouts DataAwsLaunchTemplate#timeouts}
 
 ---
 
@@ -1404,8 +1426,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawslaunchtemplate"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateFilter.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/launch_template#name DataAwsLaunchTemplate#name}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateFilter.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/launch_template#values DataAwsLaunchTemplate#values}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateFilter.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/data-sources/launch_template#name DataAwsLaunchTemplate#name}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateFilter.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/data-sources/launch_template#values DataAwsLaunchTemplate#values}. |
 
 ---
 
@@ -1417,7 +1439,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/launch_template#name DataAwsLaunchTemplate#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/data-sources/launch_template#name DataAwsLaunchTemplate#name}.
 
 ---
 
@@ -1429,7 +1451,7 @@ Values *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/launch_template#values DataAwsLaunchTemplate#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/data-sources/launch_template#values DataAwsLaunchTemplate#values}.
 
 ---
 
@@ -1693,6 +1715,19 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawslaunchtemplate"
 ```
 
 
+### DataAwsLaunchTemplateNetworkPerformanceOptions <a name="DataAwsLaunchTemplateNetworkPerformanceOptions" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateNetworkPerformanceOptions"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateNetworkPerformanceOptions.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawslaunchtemplate"
+
+&dataawslaunchtemplate.DataAwsLaunchTemplateNetworkPerformanceOptions {
+
+}
+```
+
+
 ### DataAwsLaunchTemplatePlacement <a name="DataAwsLaunchTemplatePlacement" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplatePlacement"></a>
 
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplatePlacement.Initializer"></a>
@@ -1714,6 +1749,19 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawslaunchtemplate"
 import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawslaunchtemplate"
 
 &dataawslaunchtemplate.DataAwsLaunchTemplatePrivateDnsNameOptions {
+
+}
+```
+
+
+### DataAwsLaunchTemplateSecondaryInterfaces <a name="DataAwsLaunchTemplateSecondaryInterfaces" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateSecondaryInterfaces"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateSecondaryInterfaces.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawslaunchtemplate"
+
+&dataawslaunchtemplate.DataAwsLaunchTemplateSecondaryInterfaces {
 
 }
 ```
@@ -1748,7 +1796,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawslaunchtemplate"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/launch_template#read DataAwsLaunchTemplate#read}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/data-sources/launch_template#read DataAwsLaunchTemplate#read}. |
 
 ---
 
@@ -1760,7 +1808,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/launch_template#read DataAwsLaunchTemplate#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/data-sources/launch_template#read DataAwsLaunchTemplate#read}.
 
 ---
 
@@ -3996,6 +4044,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateCpuOptionsOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateCpuOptionsOutputReference.property.amdSevSnp">AmdSevSnp</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateCpuOptionsOutputReference.property.coreCount">CoreCount</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateCpuOptionsOutputReference.property.nestedVirtualization">NestedVirtualization</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateCpuOptionsOutputReference.property.threadsPerCore">ThreadsPerCore</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateCpuOptionsOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateCpuOptions">DataAwsLaunchTemplateCpuOptions</a></code> | *No description.* |
 
@@ -4042,6 +4091,16 @@ func CoreCount() *f64
 ```
 
 - *Type:* *f64
+
+---
+
+##### `NestedVirtualization`<sup>Required</sup> <a name="NestedVirtualization" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateCpuOptionsOutputReference.property.nestedVirtualization"></a>
+
+```go
+func NestedVirtualization() *string
+```
+
+- *Type:* *string
 
 ---
 
@@ -14635,6 +14694,433 @@ func InternalValue() DataAwsLaunchTemplateNetworkInterfaces
 ---
 
 
+### DataAwsLaunchTemplateNetworkPerformanceOptionsList <a name="DataAwsLaunchTemplateNetworkPerformanceOptionsList" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateNetworkPerformanceOptionsList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateNetworkPerformanceOptionsList.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawslaunchtemplate"
+
+dataawslaunchtemplate.NewDataAwsLaunchTemplateNetworkPerformanceOptionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsLaunchTemplateNetworkPerformanceOptionsList
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateNetworkPerformanceOptionsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateNetworkPerformanceOptionsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateNetworkPerformanceOptionsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateNetworkPerformanceOptionsList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateNetworkPerformanceOptionsList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateNetworkPerformanceOptionsList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateNetworkPerformanceOptionsList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateNetworkPerformanceOptionsList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateNetworkPerformanceOptionsList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateNetworkPerformanceOptionsList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateNetworkPerformanceOptionsList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateNetworkPerformanceOptionsList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateNetworkPerformanceOptionsList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateNetworkPerformanceOptionsList.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateNetworkPerformanceOptionsList.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateNetworkPerformanceOptionsList.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateNetworkPerformanceOptionsList.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `Get` <a name="Get" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateNetworkPerformanceOptionsList.get"></a>
+
+```go
+func Get(index *f64) DataAwsLaunchTemplateNetworkPerformanceOptionsOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateNetworkPerformanceOptionsList.get.parameter.index"></a>
+
+- *Type:* *f64
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateNetworkPerformanceOptionsList.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateNetworkPerformanceOptionsList.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateNetworkPerformanceOptionsList.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateNetworkPerformanceOptionsList.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+
+### DataAwsLaunchTemplateNetworkPerformanceOptionsOutputReference <a name="DataAwsLaunchTemplateNetworkPerformanceOptionsOutputReference" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateNetworkPerformanceOptionsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateNetworkPerformanceOptionsOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawslaunchtemplate"
+
+dataawslaunchtemplate.NewDataAwsLaunchTemplateNetworkPerformanceOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsLaunchTemplateNetworkPerformanceOptionsOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateNetworkPerformanceOptionsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateNetworkPerformanceOptionsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateNetworkPerformanceOptionsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>*f64</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateNetworkPerformanceOptionsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateNetworkPerformanceOptionsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateNetworkPerformanceOptionsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateNetworkPerformanceOptionsOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* *f64
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateNetworkPerformanceOptionsOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateNetworkPerformanceOptionsOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateNetworkPerformanceOptionsOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateNetworkPerformanceOptionsOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateNetworkPerformanceOptionsOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateNetworkPerformanceOptionsOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateNetworkPerformanceOptionsOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateNetworkPerformanceOptionsOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateNetworkPerformanceOptionsOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateNetworkPerformanceOptionsOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateNetworkPerformanceOptionsOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateNetworkPerformanceOptionsOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateNetworkPerformanceOptionsOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateNetworkPerformanceOptionsOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateNetworkPerformanceOptionsOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateNetworkPerformanceOptionsOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateNetworkPerformanceOptionsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateNetworkPerformanceOptionsOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateNetworkPerformanceOptionsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateNetworkPerformanceOptionsOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateNetworkPerformanceOptionsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateNetworkPerformanceOptionsOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateNetworkPerformanceOptionsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateNetworkPerformanceOptionsOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateNetworkPerformanceOptionsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateNetworkPerformanceOptionsOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateNetworkPerformanceOptionsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateNetworkPerformanceOptionsOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateNetworkPerformanceOptionsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateNetworkPerformanceOptionsOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateNetworkPerformanceOptionsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateNetworkPerformanceOptionsOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateNetworkPerformanceOptionsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateNetworkPerformanceOptionsOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateNetworkPerformanceOptionsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateNetworkPerformanceOptionsOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateNetworkPerformanceOptionsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateNetworkPerformanceOptionsOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateNetworkPerformanceOptionsOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateNetworkPerformanceOptionsOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateNetworkPerformanceOptionsOutputReference.property.bandwidthWeighting">BandwidthWeighting</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateNetworkPerformanceOptionsOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateNetworkPerformanceOptions">DataAwsLaunchTemplateNetworkPerformanceOptions</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateNetworkPerformanceOptionsOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateNetworkPerformanceOptionsOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `BandwidthWeighting`<sup>Required</sup> <a name="BandwidthWeighting" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateNetworkPerformanceOptionsOutputReference.property.bandwidthWeighting"></a>
+
+```go
+func BandwidthWeighting() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateNetworkPerformanceOptionsOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() DataAwsLaunchTemplateNetworkPerformanceOptions
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateNetworkPerformanceOptions">DataAwsLaunchTemplateNetworkPerformanceOptions</a>
+
+---
+
+
 ### DataAwsLaunchTemplatePlacementList <a name="DataAwsLaunchTemplatePlacementList" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplatePlacementList"></a>
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplatePlacementList.Initializer"></a>
@@ -15595,6 +16081,499 @@ func InternalValue() DataAwsLaunchTemplatePrivateDnsNameOptions
 ```
 
 - *Type:* <a href="#@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplatePrivateDnsNameOptions">DataAwsLaunchTemplatePrivateDnsNameOptions</a>
+
+---
+
+
+### DataAwsLaunchTemplateSecondaryInterfacesList <a name="DataAwsLaunchTemplateSecondaryInterfacesList" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateSecondaryInterfacesList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateSecondaryInterfacesList.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawslaunchtemplate"
+
+dataawslaunchtemplate.NewDataAwsLaunchTemplateSecondaryInterfacesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsLaunchTemplateSecondaryInterfacesList
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateSecondaryInterfacesList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateSecondaryInterfacesList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateSecondaryInterfacesList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateSecondaryInterfacesList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateSecondaryInterfacesList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateSecondaryInterfacesList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateSecondaryInterfacesList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateSecondaryInterfacesList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateSecondaryInterfacesList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateSecondaryInterfacesList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateSecondaryInterfacesList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateSecondaryInterfacesList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateSecondaryInterfacesList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateSecondaryInterfacesList.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateSecondaryInterfacesList.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateSecondaryInterfacesList.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateSecondaryInterfacesList.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `Get` <a name="Get" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateSecondaryInterfacesList.get"></a>
+
+```go
+func Get(index *f64) DataAwsLaunchTemplateSecondaryInterfacesOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateSecondaryInterfacesList.get.parameter.index"></a>
+
+- *Type:* *f64
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateSecondaryInterfacesList.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateSecondaryInterfacesList.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateSecondaryInterfacesList.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateSecondaryInterfacesList.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+
+### DataAwsLaunchTemplateSecondaryInterfacesOutputReference <a name="DataAwsLaunchTemplateSecondaryInterfacesOutputReference" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateSecondaryInterfacesOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateSecondaryInterfacesOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawslaunchtemplate"
+
+dataawslaunchtemplate.NewDataAwsLaunchTemplateSecondaryInterfacesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsLaunchTemplateSecondaryInterfacesOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateSecondaryInterfacesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateSecondaryInterfacesOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateSecondaryInterfacesOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>*f64</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateSecondaryInterfacesOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateSecondaryInterfacesOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateSecondaryInterfacesOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateSecondaryInterfacesOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* *f64
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateSecondaryInterfacesOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateSecondaryInterfacesOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateSecondaryInterfacesOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateSecondaryInterfacesOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateSecondaryInterfacesOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateSecondaryInterfacesOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateSecondaryInterfacesOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateSecondaryInterfacesOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateSecondaryInterfacesOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateSecondaryInterfacesOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateSecondaryInterfacesOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateSecondaryInterfacesOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateSecondaryInterfacesOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateSecondaryInterfacesOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateSecondaryInterfacesOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateSecondaryInterfacesOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateSecondaryInterfacesOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateSecondaryInterfacesOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateSecondaryInterfacesOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateSecondaryInterfacesOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateSecondaryInterfacesOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateSecondaryInterfacesOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateSecondaryInterfacesOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateSecondaryInterfacesOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateSecondaryInterfacesOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateSecondaryInterfacesOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateSecondaryInterfacesOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateSecondaryInterfacesOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateSecondaryInterfacesOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateSecondaryInterfacesOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateSecondaryInterfacesOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateSecondaryInterfacesOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateSecondaryInterfacesOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateSecondaryInterfacesOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateSecondaryInterfacesOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateSecondaryInterfacesOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateSecondaryInterfacesOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateSecondaryInterfacesOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateSecondaryInterfacesOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateSecondaryInterfacesOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateSecondaryInterfacesOutputReference.property.deleteOnTermination">DeleteOnTermination</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateSecondaryInterfacesOutputReference.property.deviceIndex">DeviceIndex</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateSecondaryInterfacesOutputReference.property.interfaceType">InterfaceType</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateSecondaryInterfacesOutputReference.property.networkCardIndex">NetworkCardIndex</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateSecondaryInterfacesOutputReference.property.privateIpAddressCount">PrivateIpAddressCount</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateSecondaryInterfacesOutputReference.property.privateIpAddresses">PrivateIpAddresses</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateSecondaryInterfacesOutputReference.property.secondarySubnetId">SecondarySubnetId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateSecondaryInterfacesOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateSecondaryInterfaces">DataAwsLaunchTemplateSecondaryInterfaces</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateSecondaryInterfacesOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateSecondaryInterfacesOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `DeleteOnTermination`<sup>Required</sup> <a name="DeleteOnTermination" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateSecondaryInterfacesOutputReference.property.deleteOnTermination"></a>
+
+```go
+func DeleteOnTermination() IResolvable
+```
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolvable
+
+---
+
+##### `DeviceIndex`<sup>Required</sup> <a name="DeviceIndex" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateSecondaryInterfacesOutputReference.property.deviceIndex"></a>
+
+```go
+func DeviceIndex() *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `InterfaceType`<sup>Required</sup> <a name="InterfaceType" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateSecondaryInterfacesOutputReference.property.interfaceType"></a>
+
+```go
+func InterfaceType() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `NetworkCardIndex`<sup>Required</sup> <a name="NetworkCardIndex" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateSecondaryInterfacesOutputReference.property.networkCardIndex"></a>
+
+```go
+func NetworkCardIndex() *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `PrivateIpAddressCount`<sup>Required</sup> <a name="PrivateIpAddressCount" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateSecondaryInterfacesOutputReference.property.privateIpAddressCount"></a>
+
+```go
+func PrivateIpAddressCount() *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `PrivateIpAddresses`<sup>Required</sup> <a name="PrivateIpAddresses" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateSecondaryInterfacesOutputReference.property.privateIpAddresses"></a>
+
+```go
+func PrivateIpAddresses() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
+##### `SecondarySubnetId`<sup>Required</sup> <a name="SecondarySubnetId" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateSecondaryInterfacesOutputReference.property.secondarySubnetId"></a>
+
+```go
+func SecondarySubnetId() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateSecondaryInterfacesOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() DataAwsLaunchTemplateSecondaryInterfaces
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateSecondaryInterfaces">DataAwsLaunchTemplateSecondaryInterfaces</a>
 
 ---
 

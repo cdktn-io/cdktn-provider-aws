@@ -4,7 +4,7 @@
 
 ### Ec2SecondarySubnet <a name="Ec2SecondarySubnet" id="@cdktn/provider-aws.ec2SecondarySubnet.Ec2SecondarySubnet"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ec2_secondary_subnet aws_ec2_secondary_subnet}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/ec2_secondary_subnet aws_ec2_secondary_subnet}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ec2SecondarySubnet.Ec2SecondarySubnet.Initializer"></a>
 
@@ -515,7 +515,7 @@ The construct id used in the generated config for the Ec2SecondarySubnet to impo
 
 The id of the existing Ec2SecondarySubnet that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ec2_secondary_subnet#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/ec2_secondary_subnet#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -973,12 +973,12 @@ const ec2SecondarySubnetConfig: ec2SecondarySubnet.Ec2SecondarySubnetConfig = { 
 | <code><a href="#@cdktn/provider-aws.ec2SecondarySubnet.Ec2SecondarySubnetConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.ec2SecondarySubnet.Ec2SecondarySubnetConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.ec2SecondarySubnet.Ec2SecondarySubnetConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.ec2SecondarySubnet.Ec2SecondarySubnetConfig.property.ipv4CidrBlock">ipv4CidrBlock</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ec2_secondary_subnet#ipv4_cidr_block Ec2SecondarySubnet#ipv4_cidr_block}. |
-| <code><a href="#@cdktn/provider-aws.ec2SecondarySubnet.Ec2SecondarySubnetConfig.property.secondaryNetworkId">secondaryNetworkId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ec2_secondary_subnet#secondary_network_id Ec2SecondarySubnet#secondary_network_id}. |
-| <code><a href="#@cdktn/provider-aws.ec2SecondarySubnet.Ec2SecondarySubnetConfig.property.availabilityZone">availabilityZone</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ec2_secondary_subnet#availability_zone Ec2SecondarySubnet#availability_zone}. |
-| <code><a href="#@cdktn/provider-aws.ec2SecondarySubnet.Ec2SecondarySubnetConfig.property.availabilityZoneId">availabilityZoneId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ec2_secondary_subnet#availability_zone_id Ec2SecondarySubnet#availability_zone_id}. |
+| <code><a href="#@cdktn/provider-aws.ec2SecondarySubnet.Ec2SecondarySubnetConfig.property.ipv4CidrBlock">ipv4CidrBlock</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/ec2_secondary_subnet#ipv4_cidr_block Ec2SecondarySubnet#ipv4_cidr_block}. |
+| <code><a href="#@cdktn/provider-aws.ec2SecondarySubnet.Ec2SecondarySubnetConfig.property.secondaryNetworkId">secondaryNetworkId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/ec2_secondary_subnet#secondary_network_id Ec2SecondarySubnet#secondary_network_id}. |
+| <code><a href="#@cdktn/provider-aws.ec2SecondarySubnet.Ec2SecondarySubnetConfig.property.availabilityZone">availabilityZone</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/ec2_secondary_subnet#availability_zone Ec2SecondarySubnet#availability_zone}. |
+| <code><a href="#@cdktn/provider-aws.ec2SecondarySubnet.Ec2SecondarySubnetConfig.property.availabilityZoneId">availabilityZoneId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/ec2_secondary_subnet#availability_zone_id Ec2SecondarySubnet#availability_zone_id}. |
 | <code><a href="#@cdktn/provider-aws.ec2SecondarySubnet.Ec2SecondarySubnetConfig.property.region">region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.ec2SecondarySubnet.Ec2SecondarySubnetConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ec2_secondary_subnet#tags Ec2SecondarySubnet#tags}. |
+| <code><a href="#@cdktn/provider-aws.ec2SecondarySubnet.Ec2SecondarySubnetConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/ec2_secondary_subnet#tags Ec2SecondarySubnet#tags}. |
 | <code><a href="#@cdktn/provider-aws.ec2SecondarySubnet.Ec2SecondarySubnetConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-aws.ec2SecondarySubnet.Ec2SecondarySubnetTimeouts">Ec2SecondarySubnetTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1061,7 +1061,7 @@ public readonly ipv4CidrBlock: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ec2_secondary_subnet#ipv4_cidr_block Ec2SecondarySubnet#ipv4_cidr_block}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/ec2_secondary_subnet#ipv4_cidr_block Ec2SecondarySubnet#ipv4_cidr_block}.
 
 ---
 
@@ -1073,7 +1073,7 @@ public readonly secondaryNetworkId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ec2_secondary_subnet#secondary_network_id Ec2SecondarySubnet#secondary_network_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/ec2_secondary_subnet#secondary_network_id Ec2SecondarySubnet#secondary_network_id}.
 
 ---
 
@@ -1085,7 +1085,7 @@ public readonly availabilityZone: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ec2_secondary_subnet#availability_zone Ec2SecondarySubnet#availability_zone}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/ec2_secondary_subnet#availability_zone Ec2SecondarySubnet#availability_zone}.
 
 ---
 
@@ -1097,7 +1097,7 @@ public readonly availabilityZoneId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ec2_secondary_subnet#availability_zone_id Ec2SecondarySubnet#availability_zone_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/ec2_secondary_subnet#availability_zone_id Ec2SecondarySubnet#availability_zone_id}.
 
 ---
 
@@ -1111,7 +1111,7 @@ public readonly region: string;
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ec2_secondary_subnet#region Ec2SecondarySubnet#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/ec2_secondary_subnet#region Ec2SecondarySubnet#region}
 
 ---
 
@@ -1123,7 +1123,7 @@ public readonly tags: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ec2_secondary_subnet#tags Ec2SecondarySubnet#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/ec2_secondary_subnet#tags Ec2SecondarySubnet#tags}.
 
 ---
 
@@ -1137,7 +1137,7 @@ public readonly timeouts: Ec2SecondarySubnetTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ec2_secondary_subnet#timeouts Ec2SecondarySubnet#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/ec2_secondary_subnet#timeouts Ec2SecondarySubnet#timeouts}
 
 ---
 
@@ -1182,7 +1182,7 @@ public readonly create: string;
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ec2_secondary_subnet#create Ec2SecondarySubnet#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/ec2_secondary_subnet#create Ec2SecondarySubnet#create}
 
 ---
 
@@ -1196,7 +1196,7 @@ public readonly delete: string;
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ec2_secondary_subnet#delete Ec2SecondarySubnet#delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/ec2_secondary_subnet#delete Ec2SecondarySubnet#delete}
 
 ---
 
@@ -1210,7 +1210,7 @@ public readonly update: string;
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/ec2_secondary_subnet#update Ec2SecondarySubnet#update}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/ec2_secondary_subnet#update Ec2SecondarySubnet#update}
 
 ---
 

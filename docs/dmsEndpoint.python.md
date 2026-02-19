@@ -4,7 +4,7 @@
 
 ### DmsEndpoint <a name="DmsEndpoint" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpoint"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint aws_dms_endpoint}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint aws_dms_endpoint}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpoint.Initializer"></a>
 
@@ -65,36 +65,36 @@ dmsEndpoint.DmsEndpoint(
 | <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpoint.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpoint.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpoint.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpoint.Initializer.parameter.endpointId">endpoint_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#endpoint_id DmsEndpoint#endpoint_id}. |
-| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpoint.Initializer.parameter.endpointType">endpoint_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#endpoint_type DmsEndpoint#endpoint_type}. |
-| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpoint.Initializer.parameter.engineName">engine_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#engine_name DmsEndpoint#engine_name}. |
-| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpoint.Initializer.parameter.certificateArn">certificate_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#certificate_arn DmsEndpoint#certificate_arn}. |
-| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpoint.Initializer.parameter.databaseName">database_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#database_name DmsEndpoint#database_name}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpoint.Initializer.parameter.endpointId">endpoint_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#endpoint_id DmsEndpoint#endpoint_id}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpoint.Initializer.parameter.endpointType">endpoint_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#endpoint_type DmsEndpoint#endpoint_type}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpoint.Initializer.parameter.engineName">engine_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#engine_name DmsEndpoint#engine_name}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpoint.Initializer.parameter.certificateArn">certificate_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#certificate_arn DmsEndpoint#certificate_arn}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpoint.Initializer.parameter.databaseName">database_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#database_name DmsEndpoint#database_name}. |
 | <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpoint.Initializer.parameter.elasticsearchSettings">elasticsearch_settings</a></code> | <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointElasticsearchSettings">DmsEndpointElasticsearchSettings</a></code> | elasticsearch_settings block. |
-| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpoint.Initializer.parameter.extraConnectionAttributes">extra_connection_attributes</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#extra_connection_attributes DmsEndpoint#extra_connection_attributes}. |
-| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpoint.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#id DmsEndpoint#id}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpoint.Initializer.parameter.extraConnectionAttributes">extra_connection_attributes</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#extra_connection_attributes DmsEndpoint#extra_connection_attributes}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpoint.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#id DmsEndpoint#id}. |
 | <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpoint.Initializer.parameter.kafkaSettings">kafka_settings</a></code> | <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointKafkaSettings">DmsEndpointKafkaSettings</a></code> | kafka_settings block. |
 | <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpoint.Initializer.parameter.kinesisSettings">kinesis_settings</a></code> | <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointKinesisSettings">DmsEndpointKinesisSettings</a></code> | kinesis_settings block. |
-| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpoint.Initializer.parameter.kmsKeyArn">kms_key_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#kms_key_arn DmsEndpoint#kms_key_arn}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpoint.Initializer.parameter.kmsKeyArn">kms_key_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#kms_key_arn DmsEndpoint#kms_key_arn}. |
 | <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpoint.Initializer.parameter.mongodbSettings">mongodb_settings</a></code> | <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointMongodbSettings">DmsEndpointMongodbSettings</a></code> | mongodb_settings block. |
 | <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpoint.Initializer.parameter.mysqlSettings">mysql_settings</a></code> | <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointMysqlSettings">DmsEndpointMysqlSettings</a></code> | mysql_settings block. |
 | <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpoint.Initializer.parameter.oracleSettings">oracle_settings</a></code> | <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettings">DmsEndpointOracleSettings</a></code> | oracle_settings block. |
-| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpoint.Initializer.parameter.password">password</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#password DmsEndpoint#password}. |
-| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpoint.Initializer.parameter.pauseReplicationTasks">pause_replication_tasks</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#pause_replication_tasks DmsEndpoint#pause_replication_tasks}. |
-| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpoint.Initializer.parameter.port">port</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#port DmsEndpoint#port}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpoint.Initializer.parameter.password">password</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#password DmsEndpoint#password}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpoint.Initializer.parameter.pauseReplicationTasks">pause_replication_tasks</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#pause_replication_tasks DmsEndpoint#pause_replication_tasks}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpoint.Initializer.parameter.port">port</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#port DmsEndpoint#port}. |
 | <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpoint.Initializer.parameter.postgresSettings">postgres_settings</a></code> | <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointPostgresSettings">DmsEndpointPostgresSettings</a></code> | postgres_settings block. |
 | <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpoint.Initializer.parameter.redisSettings">redis_settings</a></code> | <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointRedisSettings">DmsEndpointRedisSettings</a></code> | redis_settings block. |
 | <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpoint.Initializer.parameter.redshiftSettings">redshift_settings</a></code> | <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointRedshiftSettings">DmsEndpointRedshiftSettings</a></code> | redshift_settings block. |
 | <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpoint.Initializer.parameter.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpoint.Initializer.parameter.secretsManagerAccessRoleArn">secrets_manager_access_role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#secrets_manager_access_role_arn DmsEndpoint#secrets_manager_access_role_arn}. |
-| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpoint.Initializer.parameter.secretsManagerArn">secrets_manager_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#secrets_manager_arn DmsEndpoint#secrets_manager_arn}. |
-| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpoint.Initializer.parameter.serverName">server_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#server_name DmsEndpoint#server_name}. |
-| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpoint.Initializer.parameter.serviceAccessRole">service_access_role</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#service_access_role DmsEndpoint#service_access_role}. |
-| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpoint.Initializer.parameter.sslMode">ssl_mode</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#ssl_mode DmsEndpoint#ssl_mode}. |
-| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpoint.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#tags DmsEndpoint#tags}. |
-| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpoint.Initializer.parameter.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#tags_all DmsEndpoint#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpoint.Initializer.parameter.secretsManagerAccessRoleArn">secrets_manager_access_role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#secrets_manager_access_role_arn DmsEndpoint#secrets_manager_access_role_arn}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpoint.Initializer.parameter.secretsManagerArn">secrets_manager_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#secrets_manager_arn DmsEndpoint#secrets_manager_arn}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpoint.Initializer.parameter.serverName">server_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#server_name DmsEndpoint#server_name}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpoint.Initializer.parameter.serviceAccessRole">service_access_role</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#service_access_role DmsEndpoint#service_access_role}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpoint.Initializer.parameter.sslMode">ssl_mode</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#ssl_mode DmsEndpoint#ssl_mode}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpoint.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#tags DmsEndpoint#tags}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpoint.Initializer.parameter.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#tags_all DmsEndpoint#tags_all}. |
 | <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpoint.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointTimeouts">DmsEndpointTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpoint.Initializer.parameter.username">username</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#username DmsEndpoint#username}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpoint.Initializer.parameter.username">username</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#username DmsEndpoint#username}. |
 
 ---
 
@@ -162,7 +162,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#endpoint_id DmsEndpoint#endpoint_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#endpoint_id DmsEndpoint#endpoint_id}.
 
 ---
 
@@ -170,7 +170,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#endpoint_type DmsEndpoint#endpoint_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#endpoint_type DmsEndpoint#endpoint_type}.
 
 ---
 
@@ -178,7 +178,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#engine_name DmsEndpoint#engine_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#engine_name DmsEndpoint#engine_name}.
 
 ---
 
@@ -186,7 +186,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#certificate_arn DmsEndpoint#certificate_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#certificate_arn DmsEndpoint#certificate_arn}.
 
 ---
 
@@ -194,7 +194,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#database_name DmsEndpoint#database_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#database_name DmsEndpoint#database_name}.
 
 ---
 
@@ -204,7 +204,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 elasticsearch_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#elasticsearch_settings DmsEndpoint#elasticsearch_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#elasticsearch_settings DmsEndpoint#elasticsearch_settings}
 
 ---
 
@@ -212,7 +212,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#extra_connection_attributes DmsEndpoint#extra_connection_attributes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#extra_connection_attributes DmsEndpoint#extra_connection_attributes}.
 
 ---
 
@@ -220,7 +220,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#id DmsEndpoint#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#id DmsEndpoint#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -233,7 +233,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 kafka_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#kafka_settings DmsEndpoint#kafka_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#kafka_settings DmsEndpoint#kafka_settings}
 
 ---
 
@@ -243,7 +243,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 kinesis_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#kinesis_settings DmsEndpoint#kinesis_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#kinesis_settings DmsEndpoint#kinesis_settings}
 
 ---
 
@@ -251,7 +251,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#kms_key_arn DmsEndpoint#kms_key_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#kms_key_arn DmsEndpoint#kms_key_arn}.
 
 ---
 
@@ -261,7 +261,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 mongodb_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#mongodb_settings DmsEndpoint#mongodb_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#mongodb_settings DmsEndpoint#mongodb_settings}
 
 ---
 
@@ -271,7 +271,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 mysql_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#mysql_settings DmsEndpoint#mysql_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#mysql_settings DmsEndpoint#mysql_settings}
 
 ---
 
@@ -281,7 +281,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 oracle_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#oracle_settings DmsEndpoint#oracle_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#oracle_settings DmsEndpoint#oracle_settings}
 
 ---
 
@@ -289,7 +289,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#password DmsEndpoint#password}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#password DmsEndpoint#password}.
 
 ---
 
@@ -297,7 +297,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#pause_replication_tasks DmsEndpoint#pause_replication_tasks}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#pause_replication_tasks DmsEndpoint#pause_replication_tasks}.
 
 ---
 
@@ -305,7 +305,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#port DmsEndpoint#port}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#port DmsEndpoint#port}.
 
 ---
 
@@ -315,7 +315,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 postgres_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#postgres_settings DmsEndpoint#postgres_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#postgres_settings DmsEndpoint#postgres_settings}
 
 ---
 
@@ -325,7 +325,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 redis_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#redis_settings DmsEndpoint#redis_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#redis_settings DmsEndpoint#redis_settings}
 
 ---
 
@@ -335,7 +335,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 redshift_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#redshift_settings DmsEndpoint#redshift_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#redshift_settings DmsEndpoint#redshift_settings}
 
 ---
 
@@ -345,7 +345,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#region DmsEndpoint#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#region DmsEndpoint#region}
 
 ---
 
@@ -353,7 +353,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#secrets_manager_access_role_arn DmsEndpoint#secrets_manager_access_role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#secrets_manager_access_role_arn DmsEndpoint#secrets_manager_access_role_arn}.
 
 ---
 
@@ -361,7 +361,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#secrets_manager_arn DmsEndpoint#secrets_manager_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#secrets_manager_arn DmsEndpoint#secrets_manager_arn}.
 
 ---
 
@@ -369,7 +369,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#server_name DmsEndpoint#server_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#server_name DmsEndpoint#server_name}.
 
 ---
 
@@ -377,7 +377,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#service_access_role DmsEndpoint#service_access_role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#service_access_role DmsEndpoint#service_access_role}.
 
 ---
 
@@ -385,7 +385,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#ssl_mode DmsEndpoint#ssl_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#ssl_mode DmsEndpoint#ssl_mode}.
 
 ---
 
@@ -393,7 +393,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#tags DmsEndpoint#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#tags DmsEndpoint#tags}.
 
 ---
 
@@ -401,7 +401,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#tags_all DmsEndpoint#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#tags_all DmsEndpoint#tags_all}.
 
 ---
 
@@ -411,7 +411,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#timeouts DmsEndpoint#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#timeouts DmsEndpoint#timeouts}
 
 ---
 
@@ -419,7 +419,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#username DmsEndpoint#username}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#username DmsEndpoint#username}.
 
 ---
 
@@ -831,7 +831,7 @@ def put_elasticsearch_settings(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#endpoint_uri DmsEndpoint#endpoint_uri}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#endpoint_uri DmsEndpoint#endpoint_uri}.
 
 ---
 
@@ -839,7 +839,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#service_access_role_arn DmsEndpoint#service_access_role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#service_access_role_arn DmsEndpoint#service_access_role_arn}.
 
 ---
 
@@ -847,7 +847,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#error_retry_duration DmsEndpoint#error_retry_duration}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#error_retry_duration DmsEndpoint#error_retry_duration}.
 
 ---
 
@@ -855,7 +855,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#full_load_error_percentage DmsEndpoint#full_load_error_percentage}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#full_load_error_percentage DmsEndpoint#full_load_error_percentage}.
 
 ---
 
@@ -863,7 +863,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#use_new_mapping_type DmsEndpoint#use_new_mapping_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#use_new_mapping_type DmsEndpoint#use_new_mapping_type}.
 
 ---
 
@@ -897,7 +897,7 @@ def put_kafka_settings(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#broker DmsEndpoint#broker}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#broker DmsEndpoint#broker}.
 
 ---
 
@@ -905,7 +905,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#include_control_details DmsEndpoint#include_control_details}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#include_control_details DmsEndpoint#include_control_details}.
 
 ---
 
@@ -913,7 +913,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#include_null_and_empty DmsEndpoint#include_null_and_empty}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#include_null_and_empty DmsEndpoint#include_null_and_empty}.
 
 ---
 
@@ -921,7 +921,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#include_partition_value DmsEndpoint#include_partition_value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#include_partition_value DmsEndpoint#include_partition_value}.
 
 ---
 
@@ -929,7 +929,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#include_table_alter_operations DmsEndpoint#include_table_alter_operations}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#include_table_alter_operations DmsEndpoint#include_table_alter_operations}.
 
 ---
 
@@ -937,7 +937,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#include_transaction_details DmsEndpoint#include_transaction_details}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#include_transaction_details DmsEndpoint#include_transaction_details}.
 
 ---
 
@@ -945,7 +945,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#message_format DmsEndpoint#message_format}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#message_format DmsEndpoint#message_format}.
 
 ---
 
@@ -953,7 +953,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#message_max_bytes DmsEndpoint#message_max_bytes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#message_max_bytes DmsEndpoint#message_max_bytes}.
 
 ---
 
@@ -961,7 +961,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#no_hex_prefix DmsEndpoint#no_hex_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#no_hex_prefix DmsEndpoint#no_hex_prefix}.
 
 ---
 
@@ -969,7 +969,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#partition_include_schema_table DmsEndpoint#partition_include_schema_table}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#partition_include_schema_table DmsEndpoint#partition_include_schema_table}.
 
 ---
 
@@ -977,7 +977,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#sasl_mechanism DmsEndpoint#sasl_mechanism}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#sasl_mechanism DmsEndpoint#sasl_mechanism}.
 
 ---
 
@@ -985,7 +985,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#sasl_password DmsEndpoint#sasl_password}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#sasl_password DmsEndpoint#sasl_password}.
 
 ---
 
@@ -993,7 +993,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#sasl_username DmsEndpoint#sasl_username}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#sasl_username DmsEndpoint#sasl_username}.
 
 ---
 
@@ -1001,7 +1001,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#security_protocol DmsEndpoint#security_protocol}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#security_protocol DmsEndpoint#security_protocol}.
 
 ---
 
@@ -1009,7 +1009,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#ssl_ca_certificate_arn DmsEndpoint#ssl_ca_certificate_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#ssl_ca_certificate_arn DmsEndpoint#ssl_ca_certificate_arn}.
 
 ---
 
@@ -1017,7 +1017,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#ssl_client_certificate_arn DmsEndpoint#ssl_client_certificate_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#ssl_client_certificate_arn DmsEndpoint#ssl_client_certificate_arn}.
 
 ---
 
@@ -1025,7 +1025,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#ssl_client_key_arn DmsEndpoint#ssl_client_key_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#ssl_client_key_arn DmsEndpoint#ssl_client_key_arn}.
 
 ---
 
@@ -1033,7 +1033,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#ssl_client_key_password DmsEndpoint#ssl_client_key_password}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#ssl_client_key_password DmsEndpoint#ssl_client_key_password}.
 
 ---
 
@@ -1041,7 +1041,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#topic DmsEndpoint#topic}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#topic DmsEndpoint#topic}.
 
 ---
 
@@ -1066,7 +1066,7 @@ def put_kinesis_settings(
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#include_control_details DmsEndpoint#include_control_details}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#include_control_details DmsEndpoint#include_control_details}.
 
 ---
 
@@ -1074,7 +1074,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#include_null_and_empty DmsEndpoint#include_null_and_empty}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#include_null_and_empty DmsEndpoint#include_null_and_empty}.
 
 ---
 
@@ -1082,7 +1082,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#include_partition_value DmsEndpoint#include_partition_value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#include_partition_value DmsEndpoint#include_partition_value}.
 
 ---
 
@@ -1090,7 +1090,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#include_table_alter_operations DmsEndpoint#include_table_alter_operations}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#include_table_alter_operations DmsEndpoint#include_table_alter_operations}.
 
 ---
 
@@ -1098,7 +1098,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#include_transaction_details DmsEndpoint#include_transaction_details}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#include_transaction_details DmsEndpoint#include_transaction_details}.
 
 ---
 
@@ -1106,7 +1106,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#message_format DmsEndpoint#message_format}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#message_format DmsEndpoint#message_format}.
 
 ---
 
@@ -1114,7 +1114,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#partition_include_schema_table DmsEndpoint#partition_include_schema_table}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#partition_include_schema_table DmsEndpoint#partition_include_schema_table}.
 
 ---
 
@@ -1122,7 +1122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#service_access_role_arn DmsEndpoint#service_access_role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#service_access_role_arn DmsEndpoint#service_access_role_arn}.
 
 ---
 
@@ -1130,7 +1130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#stream_arn DmsEndpoint#stream_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#stream_arn DmsEndpoint#stream_arn}.
 
 ---
 
@@ -1138,7 +1138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#use_large_integer_value DmsEndpoint#use_large_integer_value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#use_large_integer_value DmsEndpoint#use_large_integer_value}.
 
 ---
 
@@ -1151,7 +1151,8 @@ def put_mongodb_settings(
   auth_type: str = None,
   docs_to_investigate: str = None,
   extract_doc_id: str = None,
-  nesting_level: str = None
+  nesting_level: str = None,
+  use_update_lookup: bool | IResolvable = None
 ) -> None
 ```
 
@@ -1159,7 +1160,7 @@ def put_mongodb_settings(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#auth_mechanism DmsEndpoint#auth_mechanism}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#auth_mechanism DmsEndpoint#auth_mechanism}.
 
 ---
 
@@ -1167,7 +1168,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#auth_source DmsEndpoint#auth_source}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#auth_source DmsEndpoint#auth_source}.
 
 ---
 
@@ -1175,7 +1176,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#auth_type DmsEndpoint#auth_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#auth_type DmsEndpoint#auth_type}.
 
 ---
 
@@ -1183,7 +1184,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#docs_to_investigate DmsEndpoint#docs_to_investigate}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#docs_to_investigate DmsEndpoint#docs_to_investigate}.
 
 ---
 
@@ -1191,7 +1192,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#extract_doc_id DmsEndpoint#extract_doc_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#extract_doc_id DmsEndpoint#extract_doc_id}.
 
 ---
 
@@ -1199,7 +1200,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#nesting_level DmsEndpoint#nesting_level}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#nesting_level DmsEndpoint#nesting_level}.
+
+---
+
+###### `use_update_lookup`<sup>Optional</sup> <a name="use_update_lookup" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpoint.putMongodbSettings.parameter.useUpdateLookup"></a>
+
+- *Type:* bool | cdktn.IResolvable
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#use_update_lookup DmsEndpoint#use_update_lookup}.
 
 ---
 
@@ -1224,7 +1233,7 @@ def put_mysql_settings(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#after_connect_script DmsEndpoint#after_connect_script}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#after_connect_script DmsEndpoint#after_connect_script}.
 
 ---
 
@@ -1232,7 +1241,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#authentication_method DmsEndpoint#authentication_method}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#authentication_method DmsEndpoint#authentication_method}.
 
 ---
 
@@ -1240,7 +1249,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#clean_source_metadata_on_mismatch DmsEndpoint#clean_source_metadata_on_mismatch}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#clean_source_metadata_on_mismatch DmsEndpoint#clean_source_metadata_on_mismatch}.
 
 ---
 
@@ -1248,7 +1257,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#events_poll_interval DmsEndpoint#events_poll_interval}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#events_poll_interval DmsEndpoint#events_poll_interval}.
 
 ---
 
@@ -1256,7 +1265,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#execute_timeout DmsEndpoint#execute_timeout}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#execute_timeout DmsEndpoint#execute_timeout}.
 
 ---
 
@@ -1264,7 +1273,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#max_file_size DmsEndpoint#max_file_size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#max_file_size DmsEndpoint#max_file_size}.
 
 ---
 
@@ -1272,7 +1281,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#parallel_load_threads DmsEndpoint#parallel_load_threads}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#parallel_load_threads DmsEndpoint#parallel_load_threads}.
 
 ---
 
@@ -1280,7 +1289,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#server_timezone DmsEndpoint#server_timezone}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#server_timezone DmsEndpoint#server_timezone}.
 
 ---
 
@@ -1288,7 +1297,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#service_access_role_arn DmsEndpoint#service_access_role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#service_access_role_arn DmsEndpoint#service_access_role_arn}.
 
 ---
 
@@ -1296,7 +1305,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#target_db_type DmsEndpoint#target_db_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#target_db_type DmsEndpoint#target_db_type}.
 
 ---
 
@@ -1304,15 +1313,339 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ```python
 def put_oracle_settings(
-  authentication_method: str = None
+  access_alternate_directly: bool | IResolvable = None,
+  additional_archived_log_dest_id: typing.Union[int, float] = None,
+  add_supplemental_logging: bool | IResolvable = None,
+  allow_selected_nested_tables: bool | IResolvable = None,
+  archived_log_dest_id: typing.Union[int, float] = None,
+  archived_logs_only: bool | IResolvable = None,
+  asm_password: str = None,
+  asm_server: str = None,
+  asm_user: str = None,
+  authentication_method: str = None,
+  char_length_semantics: str = None,
+  convert_timestamp_with_zone_to_utc: bool | IResolvable = None,
+  direct_path_no_log: bool | IResolvable = None,
+  direct_path_parallel_load: bool | IResolvable = None,
+  enable_homogenous_tablespace: bool | IResolvable = None,
+  extra_archived_log_dest_ids: typing.List[typing.Union[int, float]] = None,
+  fail_task_on_lob_truncation: bool | IResolvable = None,
+  number_datatype_scale: typing.Union[int, float] = None,
+  open_transaction_window: typing.Union[int, float] = None,
+  oracle_path_prefix: str = None,
+  parallel_asm_read_threads: typing.Union[int, float] = None,
+  read_ahead_blocks: typing.Union[int, float] = None,
+  read_table_space_name: bool | IResolvable = None,
+  replace_path_prefix: bool | IResolvable = None,
+  retry_interval: typing.Union[int, float] = None,
+  secrets_manager_oracle_asm_access_role_arn: str = None,
+  secrets_manager_oracle_asm_secret_id: str = None,
+  security_db_encryption: str = None,
+  security_db_encryption_name: str = None,
+  spatial_data_option_to_geo_json_function_name: str = None,
+  standby_delay_time: typing.Union[int, float] = None,
+  trim_space_in_char: bool | IResolvable = None,
+  use_alternate_folder_for_online: bool | IResolvable = None,
+  use_bfile: bool | IResolvable = None,
+  use_direct_path_full_load: bool | IResolvable = None,
+  use_logminer_reader: bool | IResolvable = None,
+  use_path_prefix: str = None
 ) -> None
 ```
+
+###### `access_alternate_directly`<sup>Optional</sup> <a name="access_alternate_directly" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpoint.putOracleSettings.parameter.accessAlternateDirectly"></a>
+
+- *Type:* bool | cdktn.IResolvable
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#access_alternate_directly DmsEndpoint#access_alternate_directly}.
+
+---
+
+###### `additional_archived_log_dest_id`<sup>Optional</sup> <a name="additional_archived_log_dest_id" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpoint.putOracleSettings.parameter.additionalArchivedLogDestId"></a>
+
+- *Type:* typing.Union[int, float]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#additional_archived_log_dest_id DmsEndpoint#additional_archived_log_dest_id}.
+
+---
+
+###### `add_supplemental_logging`<sup>Optional</sup> <a name="add_supplemental_logging" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpoint.putOracleSettings.parameter.addSupplementalLogging"></a>
+
+- *Type:* bool | cdktn.IResolvable
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#add_supplemental_logging DmsEndpoint#add_supplemental_logging}.
+
+---
+
+###### `allow_selected_nested_tables`<sup>Optional</sup> <a name="allow_selected_nested_tables" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpoint.putOracleSettings.parameter.allowSelectedNestedTables"></a>
+
+- *Type:* bool | cdktn.IResolvable
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#allow_selected_nested_tables DmsEndpoint#allow_selected_nested_tables}.
+
+---
+
+###### `archived_log_dest_id`<sup>Optional</sup> <a name="archived_log_dest_id" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpoint.putOracleSettings.parameter.archivedLogDestId"></a>
+
+- *Type:* typing.Union[int, float]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#archived_log_dest_id DmsEndpoint#archived_log_dest_id}.
+
+---
+
+###### `archived_logs_only`<sup>Optional</sup> <a name="archived_logs_only" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpoint.putOracleSettings.parameter.archivedLogsOnly"></a>
+
+- *Type:* bool | cdktn.IResolvable
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#archived_logs_only DmsEndpoint#archived_logs_only}.
+
+---
+
+###### `asm_password`<sup>Optional</sup> <a name="asm_password" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpoint.putOracleSettings.parameter.asmPassword"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#asm_password DmsEndpoint#asm_password}.
+
+---
+
+###### `asm_server`<sup>Optional</sup> <a name="asm_server" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpoint.putOracleSettings.parameter.asmServer"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#asm_server DmsEndpoint#asm_server}.
+
+---
+
+###### `asm_user`<sup>Optional</sup> <a name="asm_user" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpoint.putOracleSettings.parameter.asmUser"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#asm_user DmsEndpoint#asm_user}.
+
+---
 
 ###### `authentication_method`<sup>Optional</sup> <a name="authentication_method" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpoint.putOracleSettings.parameter.authenticationMethod"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#authentication_method DmsEndpoint#authentication_method}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#authentication_method DmsEndpoint#authentication_method}.
+
+---
+
+###### `char_length_semantics`<sup>Optional</sup> <a name="char_length_semantics" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpoint.putOracleSettings.parameter.charLengthSemantics"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#char_length_semantics DmsEndpoint#char_length_semantics}.
+
+---
+
+###### `convert_timestamp_with_zone_to_utc`<sup>Optional</sup> <a name="convert_timestamp_with_zone_to_utc" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpoint.putOracleSettings.parameter.convertTimestampWithZoneToUtc"></a>
+
+- *Type:* bool | cdktn.IResolvable
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#convert_timestamp_with_zone_to_utc DmsEndpoint#convert_timestamp_with_zone_to_utc}.
+
+---
+
+###### `direct_path_no_log`<sup>Optional</sup> <a name="direct_path_no_log" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpoint.putOracleSettings.parameter.directPathNoLog"></a>
+
+- *Type:* bool | cdktn.IResolvable
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#direct_path_no_log DmsEndpoint#direct_path_no_log}.
+
+---
+
+###### `direct_path_parallel_load`<sup>Optional</sup> <a name="direct_path_parallel_load" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpoint.putOracleSettings.parameter.directPathParallelLoad"></a>
+
+- *Type:* bool | cdktn.IResolvable
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#direct_path_parallel_load DmsEndpoint#direct_path_parallel_load}.
+
+---
+
+###### `enable_homogenous_tablespace`<sup>Optional</sup> <a name="enable_homogenous_tablespace" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpoint.putOracleSettings.parameter.enableHomogenousTablespace"></a>
+
+- *Type:* bool | cdktn.IResolvable
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#enable_homogenous_tablespace DmsEndpoint#enable_homogenous_tablespace}.
+
+---
+
+###### `extra_archived_log_dest_ids`<sup>Optional</sup> <a name="extra_archived_log_dest_ids" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpoint.putOracleSettings.parameter.extraArchivedLogDestIds"></a>
+
+- *Type:* typing.List[typing.Union[int, float]]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#extra_archived_log_dest_ids DmsEndpoint#extra_archived_log_dest_ids}.
+
+---
+
+###### `fail_task_on_lob_truncation`<sup>Optional</sup> <a name="fail_task_on_lob_truncation" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpoint.putOracleSettings.parameter.failTaskOnLobTruncation"></a>
+
+- *Type:* bool | cdktn.IResolvable
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#fail_task_on_lob_truncation DmsEndpoint#fail_task_on_lob_truncation}.
+
+---
+
+###### `number_datatype_scale`<sup>Optional</sup> <a name="number_datatype_scale" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpoint.putOracleSettings.parameter.numberDatatypeScale"></a>
+
+- *Type:* typing.Union[int, float]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#number_datatype_scale DmsEndpoint#number_datatype_scale}.
+
+---
+
+###### `open_transaction_window`<sup>Optional</sup> <a name="open_transaction_window" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpoint.putOracleSettings.parameter.openTransactionWindow"></a>
+
+- *Type:* typing.Union[int, float]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#open_transaction_window DmsEndpoint#open_transaction_window}.
+
+---
+
+###### `oracle_path_prefix`<sup>Optional</sup> <a name="oracle_path_prefix" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpoint.putOracleSettings.parameter.oraclePathPrefix"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#oracle_path_prefix DmsEndpoint#oracle_path_prefix}.
+
+---
+
+###### `parallel_asm_read_threads`<sup>Optional</sup> <a name="parallel_asm_read_threads" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpoint.putOracleSettings.parameter.parallelAsmReadThreads"></a>
+
+- *Type:* typing.Union[int, float]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#parallel_asm_read_threads DmsEndpoint#parallel_asm_read_threads}.
+
+---
+
+###### `read_ahead_blocks`<sup>Optional</sup> <a name="read_ahead_blocks" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpoint.putOracleSettings.parameter.readAheadBlocks"></a>
+
+- *Type:* typing.Union[int, float]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#read_ahead_blocks DmsEndpoint#read_ahead_blocks}.
+
+---
+
+###### `read_table_space_name`<sup>Optional</sup> <a name="read_table_space_name" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpoint.putOracleSettings.parameter.readTableSpaceName"></a>
+
+- *Type:* bool | cdktn.IResolvable
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#read_table_space_name DmsEndpoint#read_table_space_name}.
+
+---
+
+###### `replace_path_prefix`<sup>Optional</sup> <a name="replace_path_prefix" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpoint.putOracleSettings.parameter.replacePathPrefix"></a>
+
+- *Type:* bool | cdktn.IResolvable
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#replace_path_prefix DmsEndpoint#replace_path_prefix}.
+
+---
+
+###### `retry_interval`<sup>Optional</sup> <a name="retry_interval" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpoint.putOracleSettings.parameter.retryInterval"></a>
+
+- *Type:* typing.Union[int, float]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#retry_interval DmsEndpoint#retry_interval}.
+
+---
+
+###### `secrets_manager_oracle_asm_access_role_arn`<sup>Optional</sup> <a name="secrets_manager_oracle_asm_access_role_arn" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpoint.putOracleSettings.parameter.secretsManagerOracleAsmAccessRoleArn"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#secrets_manager_oracle_asm_access_role_arn DmsEndpoint#secrets_manager_oracle_asm_access_role_arn}.
+
+---
+
+###### `secrets_manager_oracle_asm_secret_id`<sup>Optional</sup> <a name="secrets_manager_oracle_asm_secret_id" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpoint.putOracleSettings.parameter.secretsManagerOracleAsmSecretId"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#secrets_manager_oracle_asm_secret_id DmsEndpoint#secrets_manager_oracle_asm_secret_id}.
+
+---
+
+###### `security_db_encryption`<sup>Optional</sup> <a name="security_db_encryption" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpoint.putOracleSettings.parameter.securityDbEncryption"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#security_db_encryption DmsEndpoint#security_db_encryption}.
+
+---
+
+###### `security_db_encryption_name`<sup>Optional</sup> <a name="security_db_encryption_name" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpoint.putOracleSettings.parameter.securityDbEncryptionName"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#security_db_encryption_name DmsEndpoint#security_db_encryption_name}.
+
+---
+
+###### `spatial_data_option_to_geo_json_function_name`<sup>Optional</sup> <a name="spatial_data_option_to_geo_json_function_name" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpoint.putOracleSettings.parameter.spatialDataOptionToGeoJsonFunctionName"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#spatial_data_option_to_geo_json_function_name DmsEndpoint#spatial_data_option_to_geo_json_function_name}.
+
+---
+
+###### `standby_delay_time`<sup>Optional</sup> <a name="standby_delay_time" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpoint.putOracleSettings.parameter.standbyDelayTime"></a>
+
+- *Type:* typing.Union[int, float]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#standby_delay_time DmsEndpoint#standby_delay_time}.
+
+---
+
+###### `trim_space_in_char`<sup>Optional</sup> <a name="trim_space_in_char" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpoint.putOracleSettings.parameter.trimSpaceInChar"></a>
+
+- *Type:* bool | cdktn.IResolvable
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#trim_space_in_char DmsEndpoint#trim_space_in_char}.
+
+---
+
+###### `use_alternate_folder_for_online`<sup>Optional</sup> <a name="use_alternate_folder_for_online" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpoint.putOracleSettings.parameter.useAlternateFolderForOnline"></a>
+
+- *Type:* bool | cdktn.IResolvable
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#use_alternate_folder_for_online DmsEndpoint#use_alternate_folder_for_online}.
+
+---
+
+###### `use_bfile`<sup>Optional</sup> <a name="use_bfile" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpoint.putOracleSettings.parameter.useBfile"></a>
+
+- *Type:* bool | cdktn.IResolvable
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#use_bfile DmsEndpoint#use_bfile}.
+
+---
+
+###### `use_direct_path_full_load`<sup>Optional</sup> <a name="use_direct_path_full_load" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpoint.putOracleSettings.parameter.useDirectPathFullLoad"></a>
+
+- *Type:* bool | cdktn.IResolvable
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#use_direct_path_full_load DmsEndpoint#use_direct_path_full_load}.
+
+---
+
+###### `use_logminer_reader`<sup>Optional</sup> <a name="use_logminer_reader" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpoint.putOracleSettings.parameter.useLogminerReader"></a>
+
+- *Type:* bool | cdktn.IResolvable
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#use_logminer_reader DmsEndpoint#use_logminer_reader}.
+
+---
+
+###### `use_path_prefix`<sup>Optional</sup> <a name="use_path_prefix" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpoint.putOracleSettings.parameter.usePathPrefix"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#use_path_prefix DmsEndpoint#use_path_prefix}.
 
 ---
 
@@ -1345,7 +1678,7 @@ def put_postgres_settings(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#after_connect_script DmsEndpoint#after_connect_script}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#after_connect_script DmsEndpoint#after_connect_script}.
 
 ---
 
@@ -1353,7 +1686,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#authentication_method DmsEndpoint#authentication_method}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#authentication_method DmsEndpoint#authentication_method}.
 
 ---
 
@@ -1361,7 +1694,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#babelfish_database_name DmsEndpoint#babelfish_database_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#babelfish_database_name DmsEndpoint#babelfish_database_name}.
 
 ---
 
@@ -1369,7 +1702,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#capture_ddls DmsEndpoint#capture_ddls}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#capture_ddls DmsEndpoint#capture_ddls}.
 
 ---
 
@@ -1377,7 +1710,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#database_mode DmsEndpoint#database_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#database_mode DmsEndpoint#database_mode}.
 
 ---
 
@@ -1385,7 +1718,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#ddl_artifacts_schema DmsEndpoint#ddl_artifacts_schema}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#ddl_artifacts_schema DmsEndpoint#ddl_artifacts_schema}.
 
 ---
 
@@ -1393,7 +1726,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#execute_timeout DmsEndpoint#execute_timeout}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#execute_timeout DmsEndpoint#execute_timeout}.
 
 ---
 
@@ -1401,7 +1734,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#fail_tasks_on_lob_truncation DmsEndpoint#fail_tasks_on_lob_truncation}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#fail_tasks_on_lob_truncation DmsEndpoint#fail_tasks_on_lob_truncation}.
 
 ---
 
@@ -1409,7 +1742,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#heartbeat_enable DmsEndpoint#heartbeat_enable}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#heartbeat_enable DmsEndpoint#heartbeat_enable}.
 
 ---
 
@@ -1417,7 +1750,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#heartbeat_frequency DmsEndpoint#heartbeat_frequency}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#heartbeat_frequency DmsEndpoint#heartbeat_frequency}.
 
 ---
 
@@ -1425,7 +1758,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#heartbeat_schema DmsEndpoint#heartbeat_schema}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#heartbeat_schema DmsEndpoint#heartbeat_schema}.
 
 ---
 
@@ -1433,7 +1766,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#map_boolean_as_boolean DmsEndpoint#map_boolean_as_boolean}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#map_boolean_as_boolean DmsEndpoint#map_boolean_as_boolean}.
 
 ---
 
@@ -1441,7 +1774,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#map_jsonb_as_clob DmsEndpoint#map_jsonb_as_clob}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#map_jsonb_as_clob DmsEndpoint#map_jsonb_as_clob}.
 
 ---
 
@@ -1449,7 +1782,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#map_long_varchar_as DmsEndpoint#map_long_varchar_as}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#map_long_varchar_as DmsEndpoint#map_long_varchar_as}.
 
 ---
 
@@ -1457,7 +1790,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#max_file_size DmsEndpoint#max_file_size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#max_file_size DmsEndpoint#max_file_size}.
 
 ---
 
@@ -1465,7 +1798,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#plugin_name DmsEndpoint#plugin_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#plugin_name DmsEndpoint#plugin_name}.
 
 ---
 
@@ -1473,7 +1806,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#service_access_role_arn DmsEndpoint#service_access_role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#service_access_role_arn DmsEndpoint#service_access_role_arn}.
 
 ---
 
@@ -1481,7 +1814,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#slot_name DmsEndpoint#slot_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#slot_name DmsEndpoint#slot_name}.
 
 ---
 
@@ -1503,7 +1836,7 @@ def put_redis_settings(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#auth_type DmsEndpoint#auth_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#auth_type DmsEndpoint#auth_type}.
 
 ---
 
@@ -1511,7 +1844,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#port DmsEndpoint#port}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#port DmsEndpoint#port}.
 
 ---
 
@@ -1519,7 +1852,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#server_name DmsEndpoint#server_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#server_name DmsEndpoint#server_name}.
 
 ---
 
@@ -1527,7 +1860,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#auth_password DmsEndpoint#auth_password}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#auth_password DmsEndpoint#auth_password}.
 
 ---
 
@@ -1535,7 +1868,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#auth_user_name DmsEndpoint#auth_user_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#auth_user_name DmsEndpoint#auth_user_name}.
 
 ---
 
@@ -1543,7 +1876,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#ssl_ca_certificate_arn DmsEndpoint#ssl_ca_certificate_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#ssl_ca_certificate_arn DmsEndpoint#ssl_ca_certificate_arn}.
 
 ---
 
@@ -1551,7 +1884,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#ssl_security_protocol DmsEndpoint#ssl_security_protocol}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#ssl_security_protocol DmsEndpoint#ssl_security_protocol}.
 
 ---
 
@@ -1571,7 +1904,7 @@ def put_redshift_settings(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#bucket_folder DmsEndpoint#bucket_folder}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#bucket_folder DmsEndpoint#bucket_folder}.
 
 ---
 
@@ -1579,7 +1912,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#bucket_name DmsEndpoint#bucket_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#bucket_name DmsEndpoint#bucket_name}.
 
 ---
 
@@ -1587,7 +1920,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#encryption_mode DmsEndpoint#encryption_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#encryption_mode DmsEndpoint#encryption_mode}.
 
 ---
 
@@ -1595,7 +1928,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#server_side_encryption_kms_key_id DmsEndpoint#server_side_encryption_kms_key_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#server_side_encryption_kms_key_id DmsEndpoint#server_side_encryption_kms_key_id}.
 
 ---
 
@@ -1603,7 +1936,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#service_access_role_arn DmsEndpoint#service_access_role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#service_access_role_arn DmsEndpoint#service_access_role_arn}.
 
 ---
 
@@ -1620,7 +1953,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#create DmsEndpoint#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#create DmsEndpoint#create}.
 
 ---
 
@@ -1628,7 +1961,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#delete DmsEndpoint#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#delete DmsEndpoint#delete}.
 
 ---
 
@@ -1908,7 +2241,7 @@ The construct id used in the generated config for the DmsEndpoint to import.
 
 The id of the existing DmsEndpoint that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -2833,36 +3166,36 @@ dmsEndpoint.DmsEndpointConfig(
 | <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointConfig.property.endpointId">endpoint_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#endpoint_id DmsEndpoint#endpoint_id}. |
-| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointConfig.property.endpointType">endpoint_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#endpoint_type DmsEndpoint#endpoint_type}. |
-| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointConfig.property.engineName">engine_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#engine_name DmsEndpoint#engine_name}. |
-| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointConfig.property.certificateArn">certificate_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#certificate_arn DmsEndpoint#certificate_arn}. |
-| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointConfig.property.databaseName">database_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#database_name DmsEndpoint#database_name}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointConfig.property.endpointId">endpoint_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#endpoint_id DmsEndpoint#endpoint_id}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointConfig.property.endpointType">endpoint_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#endpoint_type DmsEndpoint#endpoint_type}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointConfig.property.engineName">engine_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#engine_name DmsEndpoint#engine_name}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointConfig.property.certificateArn">certificate_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#certificate_arn DmsEndpoint#certificate_arn}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointConfig.property.databaseName">database_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#database_name DmsEndpoint#database_name}. |
 | <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointConfig.property.elasticsearchSettings">elasticsearch_settings</a></code> | <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointElasticsearchSettings">DmsEndpointElasticsearchSettings</a></code> | elasticsearch_settings block. |
-| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointConfig.property.extraConnectionAttributes">extra_connection_attributes</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#extra_connection_attributes DmsEndpoint#extra_connection_attributes}. |
-| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#id DmsEndpoint#id}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointConfig.property.extraConnectionAttributes">extra_connection_attributes</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#extra_connection_attributes DmsEndpoint#extra_connection_attributes}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#id DmsEndpoint#id}. |
 | <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointConfig.property.kafkaSettings">kafka_settings</a></code> | <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointKafkaSettings">DmsEndpointKafkaSettings</a></code> | kafka_settings block. |
 | <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointConfig.property.kinesisSettings">kinesis_settings</a></code> | <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointKinesisSettings">DmsEndpointKinesisSettings</a></code> | kinesis_settings block. |
-| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointConfig.property.kmsKeyArn">kms_key_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#kms_key_arn DmsEndpoint#kms_key_arn}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointConfig.property.kmsKeyArn">kms_key_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#kms_key_arn DmsEndpoint#kms_key_arn}. |
 | <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointConfig.property.mongodbSettings">mongodb_settings</a></code> | <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointMongodbSettings">DmsEndpointMongodbSettings</a></code> | mongodb_settings block. |
 | <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointConfig.property.mysqlSettings">mysql_settings</a></code> | <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointMysqlSettings">DmsEndpointMysqlSettings</a></code> | mysql_settings block. |
 | <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointConfig.property.oracleSettings">oracle_settings</a></code> | <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettings">DmsEndpointOracleSettings</a></code> | oracle_settings block. |
-| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointConfig.property.password">password</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#password DmsEndpoint#password}. |
-| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointConfig.property.pauseReplicationTasks">pause_replication_tasks</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#pause_replication_tasks DmsEndpoint#pause_replication_tasks}. |
-| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointConfig.property.port">port</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#port DmsEndpoint#port}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointConfig.property.password">password</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#password DmsEndpoint#password}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointConfig.property.pauseReplicationTasks">pause_replication_tasks</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#pause_replication_tasks DmsEndpoint#pause_replication_tasks}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointConfig.property.port">port</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#port DmsEndpoint#port}. |
 | <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointConfig.property.postgresSettings">postgres_settings</a></code> | <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointPostgresSettings">DmsEndpointPostgresSettings</a></code> | postgres_settings block. |
 | <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointConfig.property.redisSettings">redis_settings</a></code> | <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointRedisSettings">DmsEndpointRedisSettings</a></code> | redis_settings block. |
 | <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointConfig.property.redshiftSettings">redshift_settings</a></code> | <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointRedshiftSettings">DmsEndpointRedshiftSettings</a></code> | redshift_settings block. |
 | <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointConfig.property.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointConfig.property.secretsManagerAccessRoleArn">secrets_manager_access_role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#secrets_manager_access_role_arn DmsEndpoint#secrets_manager_access_role_arn}. |
-| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointConfig.property.secretsManagerArn">secrets_manager_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#secrets_manager_arn DmsEndpoint#secrets_manager_arn}. |
-| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointConfig.property.serverName">server_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#server_name DmsEndpoint#server_name}. |
-| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointConfig.property.serviceAccessRole">service_access_role</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#service_access_role DmsEndpoint#service_access_role}. |
-| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointConfig.property.sslMode">ssl_mode</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#ssl_mode DmsEndpoint#ssl_mode}. |
-| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#tags DmsEndpoint#tags}. |
-| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointConfig.property.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#tags_all DmsEndpoint#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointConfig.property.secretsManagerAccessRoleArn">secrets_manager_access_role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#secrets_manager_access_role_arn DmsEndpoint#secrets_manager_access_role_arn}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointConfig.property.secretsManagerArn">secrets_manager_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#secrets_manager_arn DmsEndpoint#secrets_manager_arn}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointConfig.property.serverName">server_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#server_name DmsEndpoint#server_name}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointConfig.property.serviceAccessRole">service_access_role</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#service_access_role DmsEndpoint#service_access_role}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointConfig.property.sslMode">ssl_mode</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#ssl_mode DmsEndpoint#ssl_mode}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#tags DmsEndpoint#tags}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointConfig.property.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#tags_all DmsEndpoint#tags_all}. |
 | <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointTimeouts">DmsEndpointTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointConfig.property.username">username</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#username DmsEndpoint#username}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointConfig.property.username">username</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#username DmsEndpoint#username}. |
 
 ---
 
@@ -2944,7 +3277,7 @@ endpoint_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#endpoint_id DmsEndpoint#endpoint_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#endpoint_id DmsEndpoint#endpoint_id}.
 
 ---
 
@@ -2956,7 +3289,7 @@ endpoint_type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#endpoint_type DmsEndpoint#endpoint_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#endpoint_type DmsEndpoint#endpoint_type}.
 
 ---
 
@@ -2968,7 +3301,7 @@ engine_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#engine_name DmsEndpoint#engine_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#engine_name DmsEndpoint#engine_name}.
 
 ---
 
@@ -2980,7 +3313,7 @@ certificate_arn: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#certificate_arn DmsEndpoint#certificate_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#certificate_arn DmsEndpoint#certificate_arn}.
 
 ---
 
@@ -2992,7 +3325,7 @@ database_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#database_name DmsEndpoint#database_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#database_name DmsEndpoint#database_name}.
 
 ---
 
@@ -3006,7 +3339,7 @@ elasticsearch_settings: DmsEndpointElasticsearchSettings
 
 elasticsearch_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#elasticsearch_settings DmsEndpoint#elasticsearch_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#elasticsearch_settings DmsEndpoint#elasticsearch_settings}
 
 ---
 
@@ -3018,7 +3351,7 @@ extra_connection_attributes: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#extra_connection_attributes DmsEndpoint#extra_connection_attributes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#extra_connection_attributes DmsEndpoint#extra_connection_attributes}.
 
 ---
 
@@ -3030,7 +3363,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#id DmsEndpoint#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#id DmsEndpoint#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -3047,7 +3380,7 @@ kafka_settings: DmsEndpointKafkaSettings
 
 kafka_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#kafka_settings DmsEndpoint#kafka_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#kafka_settings DmsEndpoint#kafka_settings}
 
 ---
 
@@ -3061,7 +3394,7 @@ kinesis_settings: DmsEndpointKinesisSettings
 
 kinesis_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#kinesis_settings DmsEndpoint#kinesis_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#kinesis_settings DmsEndpoint#kinesis_settings}
 
 ---
 
@@ -3073,7 +3406,7 @@ kms_key_arn: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#kms_key_arn DmsEndpoint#kms_key_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#kms_key_arn DmsEndpoint#kms_key_arn}.
 
 ---
 
@@ -3087,7 +3420,7 @@ mongodb_settings: DmsEndpointMongodbSettings
 
 mongodb_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#mongodb_settings DmsEndpoint#mongodb_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#mongodb_settings DmsEndpoint#mongodb_settings}
 
 ---
 
@@ -3101,7 +3434,7 @@ mysql_settings: DmsEndpointMysqlSettings
 
 mysql_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#mysql_settings DmsEndpoint#mysql_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#mysql_settings DmsEndpoint#mysql_settings}
 
 ---
 
@@ -3115,7 +3448,7 @@ oracle_settings: DmsEndpointOracleSettings
 
 oracle_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#oracle_settings DmsEndpoint#oracle_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#oracle_settings DmsEndpoint#oracle_settings}
 
 ---
 
@@ -3127,7 +3460,7 @@ password: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#password DmsEndpoint#password}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#password DmsEndpoint#password}.
 
 ---
 
@@ -3139,7 +3472,7 @@ pause_replication_tasks: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#pause_replication_tasks DmsEndpoint#pause_replication_tasks}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#pause_replication_tasks DmsEndpoint#pause_replication_tasks}.
 
 ---
 
@@ -3151,7 +3484,7 @@ port: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#port DmsEndpoint#port}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#port DmsEndpoint#port}.
 
 ---
 
@@ -3165,7 +3498,7 @@ postgres_settings: DmsEndpointPostgresSettings
 
 postgres_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#postgres_settings DmsEndpoint#postgres_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#postgres_settings DmsEndpoint#postgres_settings}
 
 ---
 
@@ -3179,7 +3512,7 @@ redis_settings: DmsEndpointRedisSettings
 
 redis_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#redis_settings DmsEndpoint#redis_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#redis_settings DmsEndpoint#redis_settings}
 
 ---
 
@@ -3193,7 +3526,7 @@ redshift_settings: DmsEndpointRedshiftSettings
 
 redshift_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#redshift_settings DmsEndpoint#redshift_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#redshift_settings DmsEndpoint#redshift_settings}
 
 ---
 
@@ -3207,7 +3540,7 @@ region: str
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#region DmsEndpoint#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#region DmsEndpoint#region}
 
 ---
 
@@ -3219,7 +3552,7 @@ secrets_manager_access_role_arn: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#secrets_manager_access_role_arn DmsEndpoint#secrets_manager_access_role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#secrets_manager_access_role_arn DmsEndpoint#secrets_manager_access_role_arn}.
 
 ---
 
@@ -3231,7 +3564,7 @@ secrets_manager_arn: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#secrets_manager_arn DmsEndpoint#secrets_manager_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#secrets_manager_arn DmsEndpoint#secrets_manager_arn}.
 
 ---
 
@@ -3243,7 +3576,7 @@ server_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#server_name DmsEndpoint#server_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#server_name DmsEndpoint#server_name}.
 
 ---
 
@@ -3255,7 +3588,7 @@ service_access_role: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#service_access_role DmsEndpoint#service_access_role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#service_access_role DmsEndpoint#service_access_role}.
 
 ---
 
@@ -3267,7 +3600,7 @@ ssl_mode: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#ssl_mode DmsEndpoint#ssl_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#ssl_mode DmsEndpoint#ssl_mode}.
 
 ---
 
@@ -3279,7 +3612,7 @@ tags: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#tags DmsEndpoint#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#tags DmsEndpoint#tags}.
 
 ---
 
@@ -3291,7 +3624,7 @@ tags_all: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#tags_all DmsEndpoint#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#tags_all DmsEndpoint#tags_all}.
 
 ---
 
@@ -3305,7 +3638,7 @@ timeouts: DmsEndpointTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#timeouts DmsEndpoint#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#timeouts DmsEndpoint#timeouts}
 
 ---
 
@@ -3317,7 +3650,7 @@ username: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#username DmsEndpoint#username}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#username DmsEndpoint#username}.
 
 ---
 
@@ -3341,11 +3674,11 @@ dmsEndpoint.DmsEndpointElasticsearchSettings(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointElasticsearchSettings.property.endpointUri">endpoint_uri</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#endpoint_uri DmsEndpoint#endpoint_uri}. |
-| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointElasticsearchSettings.property.serviceAccessRoleArn">service_access_role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#service_access_role_arn DmsEndpoint#service_access_role_arn}. |
-| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointElasticsearchSettings.property.errorRetryDuration">error_retry_duration</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#error_retry_duration DmsEndpoint#error_retry_duration}. |
-| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointElasticsearchSettings.property.fullLoadErrorPercentage">full_load_error_percentage</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#full_load_error_percentage DmsEndpoint#full_load_error_percentage}. |
-| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointElasticsearchSettings.property.useNewMappingType">use_new_mapping_type</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#use_new_mapping_type DmsEndpoint#use_new_mapping_type}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointElasticsearchSettings.property.endpointUri">endpoint_uri</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#endpoint_uri DmsEndpoint#endpoint_uri}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointElasticsearchSettings.property.serviceAccessRoleArn">service_access_role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#service_access_role_arn DmsEndpoint#service_access_role_arn}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointElasticsearchSettings.property.errorRetryDuration">error_retry_duration</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#error_retry_duration DmsEndpoint#error_retry_duration}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointElasticsearchSettings.property.fullLoadErrorPercentage">full_load_error_percentage</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#full_load_error_percentage DmsEndpoint#full_load_error_percentage}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointElasticsearchSettings.property.useNewMappingType">use_new_mapping_type</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#use_new_mapping_type DmsEndpoint#use_new_mapping_type}. |
 
 ---
 
@@ -3357,7 +3690,7 @@ endpoint_uri: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#endpoint_uri DmsEndpoint#endpoint_uri}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#endpoint_uri DmsEndpoint#endpoint_uri}.
 
 ---
 
@@ -3369,7 +3702,7 @@ service_access_role_arn: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#service_access_role_arn DmsEndpoint#service_access_role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#service_access_role_arn DmsEndpoint#service_access_role_arn}.
 
 ---
 
@@ -3381,7 +3714,7 @@ error_retry_duration: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#error_retry_duration DmsEndpoint#error_retry_duration}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#error_retry_duration DmsEndpoint#error_retry_duration}.
 
 ---
 
@@ -3393,7 +3726,7 @@ full_load_error_percentage: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#full_load_error_percentage DmsEndpoint#full_load_error_percentage}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#full_load_error_percentage DmsEndpoint#full_load_error_percentage}.
 
 ---
 
@@ -3405,7 +3738,7 @@ use_new_mapping_type: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#use_new_mapping_type DmsEndpoint#use_new_mapping_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#use_new_mapping_type DmsEndpoint#use_new_mapping_type}.
 
 ---
 
@@ -3443,25 +3776,25 @@ dmsEndpoint.DmsEndpointKafkaSettings(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointKafkaSettings.property.broker">broker</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#broker DmsEndpoint#broker}. |
-| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointKafkaSettings.property.includeControlDetails">include_control_details</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#include_control_details DmsEndpoint#include_control_details}. |
-| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointKafkaSettings.property.includeNullAndEmpty">include_null_and_empty</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#include_null_and_empty DmsEndpoint#include_null_and_empty}. |
-| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointKafkaSettings.property.includePartitionValue">include_partition_value</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#include_partition_value DmsEndpoint#include_partition_value}. |
-| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointKafkaSettings.property.includeTableAlterOperations">include_table_alter_operations</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#include_table_alter_operations DmsEndpoint#include_table_alter_operations}. |
-| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointKafkaSettings.property.includeTransactionDetails">include_transaction_details</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#include_transaction_details DmsEndpoint#include_transaction_details}. |
-| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointKafkaSettings.property.messageFormat">message_format</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#message_format DmsEndpoint#message_format}. |
-| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointKafkaSettings.property.messageMaxBytes">message_max_bytes</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#message_max_bytes DmsEndpoint#message_max_bytes}. |
-| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointKafkaSettings.property.noHexPrefix">no_hex_prefix</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#no_hex_prefix DmsEndpoint#no_hex_prefix}. |
-| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointKafkaSettings.property.partitionIncludeSchemaTable">partition_include_schema_table</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#partition_include_schema_table DmsEndpoint#partition_include_schema_table}. |
-| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointKafkaSettings.property.saslMechanism">sasl_mechanism</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#sasl_mechanism DmsEndpoint#sasl_mechanism}. |
-| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointKafkaSettings.property.saslPassword">sasl_password</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#sasl_password DmsEndpoint#sasl_password}. |
-| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointKafkaSettings.property.saslUsername">sasl_username</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#sasl_username DmsEndpoint#sasl_username}. |
-| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointKafkaSettings.property.securityProtocol">security_protocol</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#security_protocol DmsEndpoint#security_protocol}. |
-| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointKafkaSettings.property.sslCaCertificateArn">ssl_ca_certificate_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#ssl_ca_certificate_arn DmsEndpoint#ssl_ca_certificate_arn}. |
-| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointKafkaSettings.property.sslClientCertificateArn">ssl_client_certificate_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#ssl_client_certificate_arn DmsEndpoint#ssl_client_certificate_arn}. |
-| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointKafkaSettings.property.sslClientKeyArn">ssl_client_key_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#ssl_client_key_arn DmsEndpoint#ssl_client_key_arn}. |
-| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointKafkaSettings.property.sslClientKeyPassword">ssl_client_key_password</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#ssl_client_key_password DmsEndpoint#ssl_client_key_password}. |
-| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointKafkaSettings.property.topic">topic</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#topic DmsEndpoint#topic}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointKafkaSettings.property.broker">broker</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#broker DmsEndpoint#broker}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointKafkaSettings.property.includeControlDetails">include_control_details</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#include_control_details DmsEndpoint#include_control_details}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointKafkaSettings.property.includeNullAndEmpty">include_null_and_empty</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#include_null_and_empty DmsEndpoint#include_null_and_empty}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointKafkaSettings.property.includePartitionValue">include_partition_value</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#include_partition_value DmsEndpoint#include_partition_value}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointKafkaSettings.property.includeTableAlterOperations">include_table_alter_operations</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#include_table_alter_operations DmsEndpoint#include_table_alter_operations}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointKafkaSettings.property.includeTransactionDetails">include_transaction_details</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#include_transaction_details DmsEndpoint#include_transaction_details}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointKafkaSettings.property.messageFormat">message_format</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#message_format DmsEndpoint#message_format}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointKafkaSettings.property.messageMaxBytes">message_max_bytes</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#message_max_bytes DmsEndpoint#message_max_bytes}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointKafkaSettings.property.noHexPrefix">no_hex_prefix</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#no_hex_prefix DmsEndpoint#no_hex_prefix}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointKafkaSettings.property.partitionIncludeSchemaTable">partition_include_schema_table</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#partition_include_schema_table DmsEndpoint#partition_include_schema_table}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointKafkaSettings.property.saslMechanism">sasl_mechanism</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#sasl_mechanism DmsEndpoint#sasl_mechanism}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointKafkaSettings.property.saslPassword">sasl_password</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#sasl_password DmsEndpoint#sasl_password}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointKafkaSettings.property.saslUsername">sasl_username</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#sasl_username DmsEndpoint#sasl_username}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointKafkaSettings.property.securityProtocol">security_protocol</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#security_protocol DmsEndpoint#security_protocol}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointKafkaSettings.property.sslCaCertificateArn">ssl_ca_certificate_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#ssl_ca_certificate_arn DmsEndpoint#ssl_ca_certificate_arn}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointKafkaSettings.property.sslClientCertificateArn">ssl_client_certificate_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#ssl_client_certificate_arn DmsEndpoint#ssl_client_certificate_arn}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointKafkaSettings.property.sslClientKeyArn">ssl_client_key_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#ssl_client_key_arn DmsEndpoint#ssl_client_key_arn}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointKafkaSettings.property.sslClientKeyPassword">ssl_client_key_password</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#ssl_client_key_password DmsEndpoint#ssl_client_key_password}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointKafkaSettings.property.topic">topic</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#topic DmsEndpoint#topic}. |
 
 ---
 
@@ -3473,7 +3806,7 @@ broker: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#broker DmsEndpoint#broker}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#broker DmsEndpoint#broker}.
 
 ---
 
@@ -3485,7 +3818,7 @@ include_control_details: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#include_control_details DmsEndpoint#include_control_details}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#include_control_details DmsEndpoint#include_control_details}.
 
 ---
 
@@ -3497,7 +3830,7 @@ include_null_and_empty: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#include_null_and_empty DmsEndpoint#include_null_and_empty}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#include_null_and_empty DmsEndpoint#include_null_and_empty}.
 
 ---
 
@@ -3509,7 +3842,7 @@ include_partition_value: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#include_partition_value DmsEndpoint#include_partition_value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#include_partition_value DmsEndpoint#include_partition_value}.
 
 ---
 
@@ -3521,7 +3854,7 @@ include_table_alter_operations: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#include_table_alter_operations DmsEndpoint#include_table_alter_operations}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#include_table_alter_operations DmsEndpoint#include_table_alter_operations}.
 
 ---
 
@@ -3533,7 +3866,7 @@ include_transaction_details: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#include_transaction_details DmsEndpoint#include_transaction_details}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#include_transaction_details DmsEndpoint#include_transaction_details}.
 
 ---
 
@@ -3545,7 +3878,7 @@ message_format: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#message_format DmsEndpoint#message_format}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#message_format DmsEndpoint#message_format}.
 
 ---
 
@@ -3557,7 +3890,7 @@ message_max_bytes: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#message_max_bytes DmsEndpoint#message_max_bytes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#message_max_bytes DmsEndpoint#message_max_bytes}.
 
 ---
 
@@ -3569,7 +3902,7 @@ no_hex_prefix: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#no_hex_prefix DmsEndpoint#no_hex_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#no_hex_prefix DmsEndpoint#no_hex_prefix}.
 
 ---
 
@@ -3581,7 +3914,7 @@ partition_include_schema_table: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#partition_include_schema_table DmsEndpoint#partition_include_schema_table}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#partition_include_schema_table DmsEndpoint#partition_include_schema_table}.
 
 ---
 
@@ -3593,7 +3926,7 @@ sasl_mechanism: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#sasl_mechanism DmsEndpoint#sasl_mechanism}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#sasl_mechanism DmsEndpoint#sasl_mechanism}.
 
 ---
 
@@ -3605,7 +3938,7 @@ sasl_password: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#sasl_password DmsEndpoint#sasl_password}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#sasl_password DmsEndpoint#sasl_password}.
 
 ---
 
@@ -3617,7 +3950,7 @@ sasl_username: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#sasl_username DmsEndpoint#sasl_username}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#sasl_username DmsEndpoint#sasl_username}.
 
 ---
 
@@ -3629,7 +3962,7 @@ security_protocol: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#security_protocol DmsEndpoint#security_protocol}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#security_protocol DmsEndpoint#security_protocol}.
 
 ---
 
@@ -3641,7 +3974,7 @@ ssl_ca_certificate_arn: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#ssl_ca_certificate_arn DmsEndpoint#ssl_ca_certificate_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#ssl_ca_certificate_arn DmsEndpoint#ssl_ca_certificate_arn}.
 
 ---
 
@@ -3653,7 +3986,7 @@ ssl_client_certificate_arn: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#ssl_client_certificate_arn DmsEndpoint#ssl_client_certificate_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#ssl_client_certificate_arn DmsEndpoint#ssl_client_certificate_arn}.
 
 ---
 
@@ -3665,7 +3998,7 @@ ssl_client_key_arn: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#ssl_client_key_arn DmsEndpoint#ssl_client_key_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#ssl_client_key_arn DmsEndpoint#ssl_client_key_arn}.
 
 ---
 
@@ -3677,7 +4010,7 @@ ssl_client_key_password: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#ssl_client_key_password DmsEndpoint#ssl_client_key_password}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#ssl_client_key_password DmsEndpoint#ssl_client_key_password}.
 
 ---
 
@@ -3689,7 +4022,7 @@ topic: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#topic DmsEndpoint#topic}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#topic DmsEndpoint#topic}.
 
 ---
 
@@ -3718,16 +4051,16 @@ dmsEndpoint.DmsEndpointKinesisSettings(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointKinesisSettings.property.includeControlDetails">include_control_details</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#include_control_details DmsEndpoint#include_control_details}. |
-| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointKinesisSettings.property.includeNullAndEmpty">include_null_and_empty</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#include_null_and_empty DmsEndpoint#include_null_and_empty}. |
-| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointKinesisSettings.property.includePartitionValue">include_partition_value</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#include_partition_value DmsEndpoint#include_partition_value}. |
-| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointKinesisSettings.property.includeTableAlterOperations">include_table_alter_operations</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#include_table_alter_operations DmsEndpoint#include_table_alter_operations}. |
-| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointKinesisSettings.property.includeTransactionDetails">include_transaction_details</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#include_transaction_details DmsEndpoint#include_transaction_details}. |
-| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointKinesisSettings.property.messageFormat">message_format</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#message_format DmsEndpoint#message_format}. |
-| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointKinesisSettings.property.partitionIncludeSchemaTable">partition_include_schema_table</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#partition_include_schema_table DmsEndpoint#partition_include_schema_table}. |
-| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointKinesisSettings.property.serviceAccessRoleArn">service_access_role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#service_access_role_arn DmsEndpoint#service_access_role_arn}. |
-| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointKinesisSettings.property.streamArn">stream_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#stream_arn DmsEndpoint#stream_arn}. |
-| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointKinesisSettings.property.useLargeIntegerValue">use_large_integer_value</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#use_large_integer_value DmsEndpoint#use_large_integer_value}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointKinesisSettings.property.includeControlDetails">include_control_details</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#include_control_details DmsEndpoint#include_control_details}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointKinesisSettings.property.includeNullAndEmpty">include_null_and_empty</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#include_null_and_empty DmsEndpoint#include_null_and_empty}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointKinesisSettings.property.includePartitionValue">include_partition_value</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#include_partition_value DmsEndpoint#include_partition_value}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointKinesisSettings.property.includeTableAlterOperations">include_table_alter_operations</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#include_table_alter_operations DmsEndpoint#include_table_alter_operations}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointKinesisSettings.property.includeTransactionDetails">include_transaction_details</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#include_transaction_details DmsEndpoint#include_transaction_details}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointKinesisSettings.property.messageFormat">message_format</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#message_format DmsEndpoint#message_format}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointKinesisSettings.property.partitionIncludeSchemaTable">partition_include_schema_table</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#partition_include_schema_table DmsEndpoint#partition_include_schema_table}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointKinesisSettings.property.serviceAccessRoleArn">service_access_role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#service_access_role_arn DmsEndpoint#service_access_role_arn}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointKinesisSettings.property.streamArn">stream_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#stream_arn DmsEndpoint#stream_arn}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointKinesisSettings.property.useLargeIntegerValue">use_large_integer_value</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#use_large_integer_value DmsEndpoint#use_large_integer_value}. |
 
 ---
 
@@ -3739,7 +4072,7 @@ include_control_details: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#include_control_details DmsEndpoint#include_control_details}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#include_control_details DmsEndpoint#include_control_details}.
 
 ---
 
@@ -3751,7 +4084,7 @@ include_null_and_empty: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#include_null_and_empty DmsEndpoint#include_null_and_empty}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#include_null_and_empty DmsEndpoint#include_null_and_empty}.
 
 ---
 
@@ -3763,7 +4096,7 @@ include_partition_value: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#include_partition_value DmsEndpoint#include_partition_value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#include_partition_value DmsEndpoint#include_partition_value}.
 
 ---
 
@@ -3775,7 +4108,7 @@ include_table_alter_operations: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#include_table_alter_operations DmsEndpoint#include_table_alter_operations}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#include_table_alter_operations DmsEndpoint#include_table_alter_operations}.
 
 ---
 
@@ -3787,7 +4120,7 @@ include_transaction_details: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#include_transaction_details DmsEndpoint#include_transaction_details}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#include_transaction_details DmsEndpoint#include_transaction_details}.
 
 ---
 
@@ -3799,7 +4132,7 @@ message_format: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#message_format DmsEndpoint#message_format}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#message_format DmsEndpoint#message_format}.
 
 ---
 
@@ -3811,7 +4144,7 @@ partition_include_schema_table: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#partition_include_schema_table DmsEndpoint#partition_include_schema_table}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#partition_include_schema_table DmsEndpoint#partition_include_schema_table}.
 
 ---
 
@@ -3823,7 +4156,7 @@ service_access_role_arn: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#service_access_role_arn DmsEndpoint#service_access_role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#service_access_role_arn DmsEndpoint#service_access_role_arn}.
 
 ---
 
@@ -3835,7 +4168,7 @@ stream_arn: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#stream_arn DmsEndpoint#stream_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#stream_arn DmsEndpoint#stream_arn}.
 
 ---
 
@@ -3847,7 +4180,7 @@ use_large_integer_value: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#use_large_integer_value DmsEndpoint#use_large_integer_value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#use_large_integer_value DmsEndpoint#use_large_integer_value}.
 
 ---
 
@@ -3864,7 +4197,8 @@ dmsEndpoint.DmsEndpointMongodbSettings(
   auth_type: str = None,
   docs_to_investigate: str = None,
   extract_doc_id: str = None,
-  nesting_level: str = None
+  nesting_level: str = None,
+  use_update_lookup: bool | IResolvable = None
 )
 ```
 
@@ -3872,12 +4206,13 @@ dmsEndpoint.DmsEndpointMongodbSettings(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointMongodbSettings.property.authMechanism">auth_mechanism</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#auth_mechanism DmsEndpoint#auth_mechanism}. |
-| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointMongodbSettings.property.authSource">auth_source</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#auth_source DmsEndpoint#auth_source}. |
-| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointMongodbSettings.property.authType">auth_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#auth_type DmsEndpoint#auth_type}. |
-| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointMongodbSettings.property.docsToInvestigate">docs_to_investigate</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#docs_to_investigate DmsEndpoint#docs_to_investigate}. |
-| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointMongodbSettings.property.extractDocId">extract_doc_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#extract_doc_id DmsEndpoint#extract_doc_id}. |
-| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointMongodbSettings.property.nestingLevel">nesting_level</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#nesting_level DmsEndpoint#nesting_level}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointMongodbSettings.property.authMechanism">auth_mechanism</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#auth_mechanism DmsEndpoint#auth_mechanism}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointMongodbSettings.property.authSource">auth_source</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#auth_source DmsEndpoint#auth_source}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointMongodbSettings.property.authType">auth_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#auth_type DmsEndpoint#auth_type}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointMongodbSettings.property.docsToInvestigate">docs_to_investigate</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#docs_to_investigate DmsEndpoint#docs_to_investigate}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointMongodbSettings.property.extractDocId">extract_doc_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#extract_doc_id DmsEndpoint#extract_doc_id}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointMongodbSettings.property.nestingLevel">nesting_level</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#nesting_level DmsEndpoint#nesting_level}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointMongodbSettings.property.useUpdateLookup">use_update_lookup</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#use_update_lookup DmsEndpoint#use_update_lookup}. |
 
 ---
 
@@ -3889,7 +4224,7 @@ auth_mechanism: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#auth_mechanism DmsEndpoint#auth_mechanism}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#auth_mechanism DmsEndpoint#auth_mechanism}.
 
 ---
 
@@ -3901,7 +4236,7 @@ auth_source: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#auth_source DmsEndpoint#auth_source}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#auth_source DmsEndpoint#auth_source}.
 
 ---
 
@@ -3913,7 +4248,7 @@ auth_type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#auth_type DmsEndpoint#auth_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#auth_type DmsEndpoint#auth_type}.
 
 ---
 
@@ -3925,7 +4260,7 @@ docs_to_investigate: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#docs_to_investigate DmsEndpoint#docs_to_investigate}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#docs_to_investigate DmsEndpoint#docs_to_investigate}.
 
 ---
 
@@ -3937,7 +4272,7 @@ extract_doc_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#extract_doc_id DmsEndpoint#extract_doc_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#extract_doc_id DmsEndpoint#extract_doc_id}.
 
 ---
 
@@ -3949,7 +4284,19 @@ nesting_level: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#nesting_level DmsEndpoint#nesting_level}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#nesting_level DmsEndpoint#nesting_level}.
+
+---
+
+##### `use_update_lookup`<sup>Optional</sup> <a name="use_update_lookup" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpointMongodbSettings.property.useUpdateLookup"></a>
+
+```python
+use_update_lookup: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#use_update_lookup DmsEndpoint#use_update_lookup}.
 
 ---
 
@@ -3978,16 +4325,16 @@ dmsEndpoint.DmsEndpointMysqlSettings(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointMysqlSettings.property.afterConnectScript">after_connect_script</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#after_connect_script DmsEndpoint#after_connect_script}. |
-| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointMysqlSettings.property.authenticationMethod">authentication_method</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#authentication_method DmsEndpoint#authentication_method}. |
-| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointMysqlSettings.property.cleanSourceMetadataOnMismatch">clean_source_metadata_on_mismatch</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#clean_source_metadata_on_mismatch DmsEndpoint#clean_source_metadata_on_mismatch}. |
-| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointMysqlSettings.property.eventsPollInterval">events_poll_interval</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#events_poll_interval DmsEndpoint#events_poll_interval}. |
-| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointMysqlSettings.property.executeTimeout">execute_timeout</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#execute_timeout DmsEndpoint#execute_timeout}. |
-| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointMysqlSettings.property.maxFileSize">max_file_size</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#max_file_size DmsEndpoint#max_file_size}. |
-| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointMysqlSettings.property.parallelLoadThreads">parallel_load_threads</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#parallel_load_threads DmsEndpoint#parallel_load_threads}. |
-| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointMysqlSettings.property.serverTimezone">server_timezone</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#server_timezone DmsEndpoint#server_timezone}. |
-| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointMysqlSettings.property.serviceAccessRoleArn">service_access_role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#service_access_role_arn DmsEndpoint#service_access_role_arn}. |
-| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointMysqlSettings.property.targetDbType">target_db_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#target_db_type DmsEndpoint#target_db_type}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointMysqlSettings.property.afterConnectScript">after_connect_script</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#after_connect_script DmsEndpoint#after_connect_script}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointMysqlSettings.property.authenticationMethod">authentication_method</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#authentication_method DmsEndpoint#authentication_method}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointMysqlSettings.property.cleanSourceMetadataOnMismatch">clean_source_metadata_on_mismatch</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#clean_source_metadata_on_mismatch DmsEndpoint#clean_source_metadata_on_mismatch}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointMysqlSettings.property.eventsPollInterval">events_poll_interval</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#events_poll_interval DmsEndpoint#events_poll_interval}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointMysqlSettings.property.executeTimeout">execute_timeout</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#execute_timeout DmsEndpoint#execute_timeout}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointMysqlSettings.property.maxFileSize">max_file_size</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#max_file_size DmsEndpoint#max_file_size}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointMysqlSettings.property.parallelLoadThreads">parallel_load_threads</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#parallel_load_threads DmsEndpoint#parallel_load_threads}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointMysqlSettings.property.serverTimezone">server_timezone</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#server_timezone DmsEndpoint#server_timezone}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointMysqlSettings.property.serviceAccessRoleArn">service_access_role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#service_access_role_arn DmsEndpoint#service_access_role_arn}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointMysqlSettings.property.targetDbType">target_db_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#target_db_type DmsEndpoint#target_db_type}. |
 
 ---
 
@@ -3999,7 +4346,7 @@ after_connect_script: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#after_connect_script DmsEndpoint#after_connect_script}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#after_connect_script DmsEndpoint#after_connect_script}.
 
 ---
 
@@ -4011,7 +4358,7 @@ authentication_method: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#authentication_method DmsEndpoint#authentication_method}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#authentication_method DmsEndpoint#authentication_method}.
 
 ---
 
@@ -4023,7 +4370,7 @@ clean_source_metadata_on_mismatch: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#clean_source_metadata_on_mismatch DmsEndpoint#clean_source_metadata_on_mismatch}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#clean_source_metadata_on_mismatch DmsEndpoint#clean_source_metadata_on_mismatch}.
 
 ---
 
@@ -4035,7 +4382,7 @@ events_poll_interval: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#events_poll_interval DmsEndpoint#events_poll_interval}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#events_poll_interval DmsEndpoint#events_poll_interval}.
 
 ---
 
@@ -4047,7 +4394,7 @@ execute_timeout: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#execute_timeout DmsEndpoint#execute_timeout}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#execute_timeout DmsEndpoint#execute_timeout}.
 
 ---
 
@@ -4059,7 +4406,7 @@ max_file_size: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#max_file_size DmsEndpoint#max_file_size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#max_file_size DmsEndpoint#max_file_size}.
 
 ---
 
@@ -4071,7 +4418,7 @@ parallel_load_threads: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#parallel_load_threads DmsEndpoint#parallel_load_threads}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#parallel_load_threads DmsEndpoint#parallel_load_threads}.
 
 ---
 
@@ -4083,7 +4430,7 @@ server_timezone: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#server_timezone DmsEndpoint#server_timezone}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#server_timezone DmsEndpoint#server_timezone}.
 
 ---
 
@@ -4095,7 +4442,7 @@ service_access_role_arn: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#service_access_role_arn DmsEndpoint#service_access_role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#service_access_role_arn DmsEndpoint#service_access_role_arn}.
 
 ---
 
@@ -4107,7 +4454,7 @@ target_db_type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#target_db_type DmsEndpoint#target_db_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#target_db_type DmsEndpoint#target_db_type}.
 
 ---
 
@@ -4119,7 +4466,43 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 from cdktn_provider_aws import dms_endpoint
 
 dmsEndpoint.DmsEndpointOracleSettings(
-  authentication_method: str = None
+  access_alternate_directly: bool | IResolvable = None,
+  additional_archived_log_dest_id: typing.Union[int, float] = None,
+  add_supplemental_logging: bool | IResolvable = None,
+  allow_selected_nested_tables: bool | IResolvable = None,
+  archived_log_dest_id: typing.Union[int, float] = None,
+  archived_logs_only: bool | IResolvable = None,
+  asm_password: str = None,
+  asm_server: str = None,
+  asm_user: str = None,
+  authentication_method: str = None,
+  char_length_semantics: str = None,
+  convert_timestamp_with_zone_to_utc: bool | IResolvable = None,
+  direct_path_no_log: bool | IResolvable = None,
+  direct_path_parallel_load: bool | IResolvable = None,
+  enable_homogenous_tablespace: bool | IResolvable = None,
+  extra_archived_log_dest_ids: typing.List[typing.Union[int, float]] = None,
+  fail_task_on_lob_truncation: bool | IResolvable = None,
+  number_datatype_scale: typing.Union[int, float] = None,
+  open_transaction_window: typing.Union[int, float] = None,
+  oracle_path_prefix: str = None,
+  parallel_asm_read_threads: typing.Union[int, float] = None,
+  read_ahead_blocks: typing.Union[int, float] = None,
+  read_table_space_name: bool | IResolvable = None,
+  replace_path_prefix: bool | IResolvable = None,
+  retry_interval: typing.Union[int, float] = None,
+  secrets_manager_oracle_asm_access_role_arn: str = None,
+  secrets_manager_oracle_asm_secret_id: str = None,
+  security_db_encryption: str = None,
+  security_db_encryption_name: str = None,
+  spatial_data_option_to_geo_json_function_name: str = None,
+  standby_delay_time: typing.Union[int, float] = None,
+  trim_space_in_char: bool | IResolvable = None,
+  use_alternate_folder_for_online: bool | IResolvable = None,
+  use_bfile: bool | IResolvable = None,
+  use_direct_path_full_load: bool | IResolvable = None,
+  use_logminer_reader: bool | IResolvable = None,
+  use_path_prefix: str = None
 )
 ```
 
@@ -4127,7 +4510,151 @@ dmsEndpoint.DmsEndpointOracleSettings(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettings.property.authenticationMethod">authentication_method</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#authentication_method DmsEndpoint#authentication_method}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettings.property.accessAlternateDirectly">access_alternate_directly</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#access_alternate_directly DmsEndpoint#access_alternate_directly}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettings.property.additionalArchivedLogDestId">additional_archived_log_dest_id</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#additional_archived_log_dest_id DmsEndpoint#additional_archived_log_dest_id}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettings.property.addSupplementalLogging">add_supplemental_logging</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#add_supplemental_logging DmsEndpoint#add_supplemental_logging}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettings.property.allowSelectedNestedTables">allow_selected_nested_tables</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#allow_selected_nested_tables DmsEndpoint#allow_selected_nested_tables}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettings.property.archivedLogDestId">archived_log_dest_id</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#archived_log_dest_id DmsEndpoint#archived_log_dest_id}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettings.property.archivedLogsOnly">archived_logs_only</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#archived_logs_only DmsEndpoint#archived_logs_only}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettings.property.asmPassword">asm_password</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#asm_password DmsEndpoint#asm_password}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettings.property.asmServer">asm_server</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#asm_server DmsEndpoint#asm_server}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettings.property.asmUser">asm_user</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#asm_user DmsEndpoint#asm_user}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettings.property.authenticationMethod">authentication_method</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#authentication_method DmsEndpoint#authentication_method}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettings.property.charLengthSemantics">char_length_semantics</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#char_length_semantics DmsEndpoint#char_length_semantics}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettings.property.convertTimestampWithZoneToUtc">convert_timestamp_with_zone_to_utc</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#convert_timestamp_with_zone_to_utc DmsEndpoint#convert_timestamp_with_zone_to_utc}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettings.property.directPathNoLog">direct_path_no_log</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#direct_path_no_log DmsEndpoint#direct_path_no_log}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettings.property.directPathParallelLoad">direct_path_parallel_load</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#direct_path_parallel_load DmsEndpoint#direct_path_parallel_load}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettings.property.enableHomogenousTablespace">enable_homogenous_tablespace</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#enable_homogenous_tablespace DmsEndpoint#enable_homogenous_tablespace}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettings.property.extraArchivedLogDestIds">extra_archived_log_dest_ids</a></code> | <code>typing.List[typing.Union[int, float]]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#extra_archived_log_dest_ids DmsEndpoint#extra_archived_log_dest_ids}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettings.property.failTaskOnLobTruncation">fail_task_on_lob_truncation</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#fail_task_on_lob_truncation DmsEndpoint#fail_task_on_lob_truncation}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettings.property.numberDatatypeScale">number_datatype_scale</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#number_datatype_scale DmsEndpoint#number_datatype_scale}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettings.property.openTransactionWindow">open_transaction_window</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#open_transaction_window DmsEndpoint#open_transaction_window}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettings.property.oraclePathPrefix">oracle_path_prefix</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#oracle_path_prefix DmsEndpoint#oracle_path_prefix}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettings.property.parallelAsmReadThreads">parallel_asm_read_threads</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#parallel_asm_read_threads DmsEndpoint#parallel_asm_read_threads}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettings.property.readAheadBlocks">read_ahead_blocks</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#read_ahead_blocks DmsEndpoint#read_ahead_blocks}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettings.property.readTableSpaceName">read_table_space_name</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#read_table_space_name DmsEndpoint#read_table_space_name}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettings.property.replacePathPrefix">replace_path_prefix</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#replace_path_prefix DmsEndpoint#replace_path_prefix}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettings.property.retryInterval">retry_interval</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#retry_interval DmsEndpoint#retry_interval}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettings.property.secretsManagerOracleAsmAccessRoleArn">secrets_manager_oracle_asm_access_role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#secrets_manager_oracle_asm_access_role_arn DmsEndpoint#secrets_manager_oracle_asm_access_role_arn}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettings.property.secretsManagerOracleAsmSecretId">secrets_manager_oracle_asm_secret_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#secrets_manager_oracle_asm_secret_id DmsEndpoint#secrets_manager_oracle_asm_secret_id}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettings.property.securityDbEncryption">security_db_encryption</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#security_db_encryption DmsEndpoint#security_db_encryption}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettings.property.securityDbEncryptionName">security_db_encryption_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#security_db_encryption_name DmsEndpoint#security_db_encryption_name}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettings.property.spatialDataOptionToGeoJsonFunctionName">spatial_data_option_to_geo_json_function_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#spatial_data_option_to_geo_json_function_name DmsEndpoint#spatial_data_option_to_geo_json_function_name}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettings.property.standbyDelayTime">standby_delay_time</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#standby_delay_time DmsEndpoint#standby_delay_time}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettings.property.trimSpaceInChar">trim_space_in_char</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#trim_space_in_char DmsEndpoint#trim_space_in_char}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettings.property.useAlternateFolderForOnline">use_alternate_folder_for_online</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#use_alternate_folder_for_online DmsEndpoint#use_alternate_folder_for_online}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettings.property.useBfile">use_bfile</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#use_bfile DmsEndpoint#use_bfile}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettings.property.useDirectPathFullLoad">use_direct_path_full_load</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#use_direct_path_full_load DmsEndpoint#use_direct_path_full_load}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettings.property.useLogminerReader">use_logminer_reader</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#use_logminer_reader DmsEndpoint#use_logminer_reader}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettings.property.usePathPrefix">use_path_prefix</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#use_path_prefix DmsEndpoint#use_path_prefix}. |
+
+---
+
+##### `access_alternate_directly`<sup>Optional</sup> <a name="access_alternate_directly" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettings.property.accessAlternateDirectly"></a>
+
+```python
+access_alternate_directly: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#access_alternate_directly DmsEndpoint#access_alternate_directly}.
+
+---
+
+##### `additional_archived_log_dest_id`<sup>Optional</sup> <a name="additional_archived_log_dest_id" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettings.property.additionalArchivedLogDestId"></a>
+
+```python
+additional_archived_log_dest_id: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#additional_archived_log_dest_id DmsEndpoint#additional_archived_log_dest_id}.
+
+---
+
+##### `add_supplemental_logging`<sup>Optional</sup> <a name="add_supplemental_logging" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettings.property.addSupplementalLogging"></a>
+
+```python
+add_supplemental_logging: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#add_supplemental_logging DmsEndpoint#add_supplemental_logging}.
+
+---
+
+##### `allow_selected_nested_tables`<sup>Optional</sup> <a name="allow_selected_nested_tables" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettings.property.allowSelectedNestedTables"></a>
+
+```python
+allow_selected_nested_tables: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#allow_selected_nested_tables DmsEndpoint#allow_selected_nested_tables}.
+
+---
+
+##### `archived_log_dest_id`<sup>Optional</sup> <a name="archived_log_dest_id" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettings.property.archivedLogDestId"></a>
+
+```python
+archived_log_dest_id: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#archived_log_dest_id DmsEndpoint#archived_log_dest_id}.
+
+---
+
+##### `archived_logs_only`<sup>Optional</sup> <a name="archived_logs_only" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettings.property.archivedLogsOnly"></a>
+
+```python
+archived_logs_only: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#archived_logs_only DmsEndpoint#archived_logs_only}.
+
+---
+
+##### `asm_password`<sup>Optional</sup> <a name="asm_password" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettings.property.asmPassword"></a>
+
+```python
+asm_password: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#asm_password DmsEndpoint#asm_password}.
+
+---
+
+##### `asm_server`<sup>Optional</sup> <a name="asm_server" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettings.property.asmServer"></a>
+
+```python
+asm_server: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#asm_server DmsEndpoint#asm_server}.
+
+---
+
+##### `asm_user`<sup>Optional</sup> <a name="asm_user" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettings.property.asmUser"></a>
+
+```python
+asm_user: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#asm_user DmsEndpoint#asm_user}.
 
 ---
 
@@ -4139,7 +4666,331 @@ authentication_method: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#authentication_method DmsEndpoint#authentication_method}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#authentication_method DmsEndpoint#authentication_method}.
+
+---
+
+##### `char_length_semantics`<sup>Optional</sup> <a name="char_length_semantics" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettings.property.charLengthSemantics"></a>
+
+```python
+char_length_semantics: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#char_length_semantics DmsEndpoint#char_length_semantics}.
+
+---
+
+##### `convert_timestamp_with_zone_to_utc`<sup>Optional</sup> <a name="convert_timestamp_with_zone_to_utc" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettings.property.convertTimestampWithZoneToUtc"></a>
+
+```python
+convert_timestamp_with_zone_to_utc: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#convert_timestamp_with_zone_to_utc DmsEndpoint#convert_timestamp_with_zone_to_utc}.
+
+---
+
+##### `direct_path_no_log`<sup>Optional</sup> <a name="direct_path_no_log" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettings.property.directPathNoLog"></a>
+
+```python
+direct_path_no_log: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#direct_path_no_log DmsEndpoint#direct_path_no_log}.
+
+---
+
+##### `direct_path_parallel_load`<sup>Optional</sup> <a name="direct_path_parallel_load" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettings.property.directPathParallelLoad"></a>
+
+```python
+direct_path_parallel_load: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#direct_path_parallel_load DmsEndpoint#direct_path_parallel_load}.
+
+---
+
+##### `enable_homogenous_tablespace`<sup>Optional</sup> <a name="enable_homogenous_tablespace" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettings.property.enableHomogenousTablespace"></a>
+
+```python
+enable_homogenous_tablespace: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#enable_homogenous_tablespace DmsEndpoint#enable_homogenous_tablespace}.
+
+---
+
+##### `extra_archived_log_dest_ids`<sup>Optional</sup> <a name="extra_archived_log_dest_ids" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettings.property.extraArchivedLogDestIds"></a>
+
+```python
+extra_archived_log_dest_ids: typing.List[typing.Union[int, float]]
+```
+
+- *Type:* typing.List[typing.Union[int, float]]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#extra_archived_log_dest_ids DmsEndpoint#extra_archived_log_dest_ids}.
+
+---
+
+##### `fail_task_on_lob_truncation`<sup>Optional</sup> <a name="fail_task_on_lob_truncation" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettings.property.failTaskOnLobTruncation"></a>
+
+```python
+fail_task_on_lob_truncation: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#fail_task_on_lob_truncation DmsEndpoint#fail_task_on_lob_truncation}.
+
+---
+
+##### `number_datatype_scale`<sup>Optional</sup> <a name="number_datatype_scale" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettings.property.numberDatatypeScale"></a>
+
+```python
+number_datatype_scale: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#number_datatype_scale DmsEndpoint#number_datatype_scale}.
+
+---
+
+##### `open_transaction_window`<sup>Optional</sup> <a name="open_transaction_window" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettings.property.openTransactionWindow"></a>
+
+```python
+open_transaction_window: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#open_transaction_window DmsEndpoint#open_transaction_window}.
+
+---
+
+##### `oracle_path_prefix`<sup>Optional</sup> <a name="oracle_path_prefix" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettings.property.oraclePathPrefix"></a>
+
+```python
+oracle_path_prefix: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#oracle_path_prefix DmsEndpoint#oracle_path_prefix}.
+
+---
+
+##### `parallel_asm_read_threads`<sup>Optional</sup> <a name="parallel_asm_read_threads" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettings.property.parallelAsmReadThreads"></a>
+
+```python
+parallel_asm_read_threads: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#parallel_asm_read_threads DmsEndpoint#parallel_asm_read_threads}.
+
+---
+
+##### `read_ahead_blocks`<sup>Optional</sup> <a name="read_ahead_blocks" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettings.property.readAheadBlocks"></a>
+
+```python
+read_ahead_blocks: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#read_ahead_blocks DmsEndpoint#read_ahead_blocks}.
+
+---
+
+##### `read_table_space_name`<sup>Optional</sup> <a name="read_table_space_name" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettings.property.readTableSpaceName"></a>
+
+```python
+read_table_space_name: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#read_table_space_name DmsEndpoint#read_table_space_name}.
+
+---
+
+##### `replace_path_prefix`<sup>Optional</sup> <a name="replace_path_prefix" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettings.property.replacePathPrefix"></a>
+
+```python
+replace_path_prefix: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#replace_path_prefix DmsEndpoint#replace_path_prefix}.
+
+---
+
+##### `retry_interval`<sup>Optional</sup> <a name="retry_interval" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettings.property.retryInterval"></a>
+
+```python
+retry_interval: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#retry_interval DmsEndpoint#retry_interval}.
+
+---
+
+##### `secrets_manager_oracle_asm_access_role_arn`<sup>Optional</sup> <a name="secrets_manager_oracle_asm_access_role_arn" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettings.property.secretsManagerOracleAsmAccessRoleArn"></a>
+
+```python
+secrets_manager_oracle_asm_access_role_arn: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#secrets_manager_oracle_asm_access_role_arn DmsEndpoint#secrets_manager_oracle_asm_access_role_arn}.
+
+---
+
+##### `secrets_manager_oracle_asm_secret_id`<sup>Optional</sup> <a name="secrets_manager_oracle_asm_secret_id" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettings.property.secretsManagerOracleAsmSecretId"></a>
+
+```python
+secrets_manager_oracle_asm_secret_id: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#secrets_manager_oracle_asm_secret_id DmsEndpoint#secrets_manager_oracle_asm_secret_id}.
+
+---
+
+##### `security_db_encryption`<sup>Optional</sup> <a name="security_db_encryption" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettings.property.securityDbEncryption"></a>
+
+```python
+security_db_encryption: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#security_db_encryption DmsEndpoint#security_db_encryption}.
+
+---
+
+##### `security_db_encryption_name`<sup>Optional</sup> <a name="security_db_encryption_name" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettings.property.securityDbEncryptionName"></a>
+
+```python
+security_db_encryption_name: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#security_db_encryption_name DmsEndpoint#security_db_encryption_name}.
+
+---
+
+##### `spatial_data_option_to_geo_json_function_name`<sup>Optional</sup> <a name="spatial_data_option_to_geo_json_function_name" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettings.property.spatialDataOptionToGeoJsonFunctionName"></a>
+
+```python
+spatial_data_option_to_geo_json_function_name: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#spatial_data_option_to_geo_json_function_name DmsEndpoint#spatial_data_option_to_geo_json_function_name}.
+
+---
+
+##### `standby_delay_time`<sup>Optional</sup> <a name="standby_delay_time" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettings.property.standbyDelayTime"></a>
+
+```python
+standby_delay_time: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#standby_delay_time DmsEndpoint#standby_delay_time}.
+
+---
+
+##### `trim_space_in_char`<sup>Optional</sup> <a name="trim_space_in_char" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettings.property.trimSpaceInChar"></a>
+
+```python
+trim_space_in_char: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#trim_space_in_char DmsEndpoint#trim_space_in_char}.
+
+---
+
+##### `use_alternate_folder_for_online`<sup>Optional</sup> <a name="use_alternate_folder_for_online" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettings.property.useAlternateFolderForOnline"></a>
+
+```python
+use_alternate_folder_for_online: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#use_alternate_folder_for_online DmsEndpoint#use_alternate_folder_for_online}.
+
+---
+
+##### `use_bfile`<sup>Optional</sup> <a name="use_bfile" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettings.property.useBfile"></a>
+
+```python
+use_bfile: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#use_bfile DmsEndpoint#use_bfile}.
+
+---
+
+##### `use_direct_path_full_load`<sup>Optional</sup> <a name="use_direct_path_full_load" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettings.property.useDirectPathFullLoad"></a>
+
+```python
+use_direct_path_full_load: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#use_direct_path_full_load DmsEndpoint#use_direct_path_full_load}.
+
+---
+
+##### `use_logminer_reader`<sup>Optional</sup> <a name="use_logminer_reader" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettings.property.useLogminerReader"></a>
+
+```python
+use_logminer_reader: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#use_logminer_reader DmsEndpoint#use_logminer_reader}.
+
+---
+
+##### `use_path_prefix`<sup>Optional</sup> <a name="use_path_prefix" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettings.property.usePathPrefix"></a>
+
+```python
+use_path_prefix: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#use_path_prefix DmsEndpoint#use_path_prefix}.
 
 ---
 
@@ -4176,24 +5027,24 @@ dmsEndpoint.DmsEndpointPostgresSettings(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointPostgresSettings.property.afterConnectScript">after_connect_script</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#after_connect_script DmsEndpoint#after_connect_script}. |
-| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointPostgresSettings.property.authenticationMethod">authentication_method</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#authentication_method DmsEndpoint#authentication_method}. |
-| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointPostgresSettings.property.babelfishDatabaseName">babelfish_database_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#babelfish_database_name DmsEndpoint#babelfish_database_name}. |
-| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointPostgresSettings.property.captureDdls">capture_ddls</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#capture_ddls DmsEndpoint#capture_ddls}. |
-| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointPostgresSettings.property.databaseMode">database_mode</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#database_mode DmsEndpoint#database_mode}. |
-| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointPostgresSettings.property.ddlArtifactsSchema">ddl_artifacts_schema</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#ddl_artifacts_schema DmsEndpoint#ddl_artifacts_schema}. |
-| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointPostgresSettings.property.executeTimeout">execute_timeout</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#execute_timeout DmsEndpoint#execute_timeout}. |
-| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointPostgresSettings.property.failTasksOnLobTruncation">fail_tasks_on_lob_truncation</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#fail_tasks_on_lob_truncation DmsEndpoint#fail_tasks_on_lob_truncation}. |
-| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointPostgresSettings.property.heartbeatEnable">heartbeat_enable</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#heartbeat_enable DmsEndpoint#heartbeat_enable}. |
-| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointPostgresSettings.property.heartbeatFrequency">heartbeat_frequency</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#heartbeat_frequency DmsEndpoint#heartbeat_frequency}. |
-| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointPostgresSettings.property.heartbeatSchema">heartbeat_schema</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#heartbeat_schema DmsEndpoint#heartbeat_schema}. |
-| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointPostgresSettings.property.mapBooleanAsBoolean">map_boolean_as_boolean</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#map_boolean_as_boolean DmsEndpoint#map_boolean_as_boolean}. |
-| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointPostgresSettings.property.mapJsonbAsClob">map_jsonb_as_clob</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#map_jsonb_as_clob DmsEndpoint#map_jsonb_as_clob}. |
-| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointPostgresSettings.property.mapLongVarcharAs">map_long_varchar_as</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#map_long_varchar_as DmsEndpoint#map_long_varchar_as}. |
-| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointPostgresSettings.property.maxFileSize">max_file_size</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#max_file_size DmsEndpoint#max_file_size}. |
-| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointPostgresSettings.property.pluginName">plugin_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#plugin_name DmsEndpoint#plugin_name}. |
-| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointPostgresSettings.property.serviceAccessRoleArn">service_access_role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#service_access_role_arn DmsEndpoint#service_access_role_arn}. |
-| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointPostgresSettings.property.slotName">slot_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#slot_name DmsEndpoint#slot_name}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointPostgresSettings.property.afterConnectScript">after_connect_script</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#after_connect_script DmsEndpoint#after_connect_script}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointPostgresSettings.property.authenticationMethod">authentication_method</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#authentication_method DmsEndpoint#authentication_method}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointPostgresSettings.property.babelfishDatabaseName">babelfish_database_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#babelfish_database_name DmsEndpoint#babelfish_database_name}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointPostgresSettings.property.captureDdls">capture_ddls</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#capture_ddls DmsEndpoint#capture_ddls}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointPostgresSettings.property.databaseMode">database_mode</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#database_mode DmsEndpoint#database_mode}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointPostgresSettings.property.ddlArtifactsSchema">ddl_artifacts_schema</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#ddl_artifacts_schema DmsEndpoint#ddl_artifacts_schema}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointPostgresSettings.property.executeTimeout">execute_timeout</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#execute_timeout DmsEndpoint#execute_timeout}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointPostgresSettings.property.failTasksOnLobTruncation">fail_tasks_on_lob_truncation</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#fail_tasks_on_lob_truncation DmsEndpoint#fail_tasks_on_lob_truncation}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointPostgresSettings.property.heartbeatEnable">heartbeat_enable</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#heartbeat_enable DmsEndpoint#heartbeat_enable}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointPostgresSettings.property.heartbeatFrequency">heartbeat_frequency</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#heartbeat_frequency DmsEndpoint#heartbeat_frequency}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointPostgresSettings.property.heartbeatSchema">heartbeat_schema</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#heartbeat_schema DmsEndpoint#heartbeat_schema}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointPostgresSettings.property.mapBooleanAsBoolean">map_boolean_as_boolean</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#map_boolean_as_boolean DmsEndpoint#map_boolean_as_boolean}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointPostgresSettings.property.mapJsonbAsClob">map_jsonb_as_clob</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#map_jsonb_as_clob DmsEndpoint#map_jsonb_as_clob}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointPostgresSettings.property.mapLongVarcharAs">map_long_varchar_as</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#map_long_varchar_as DmsEndpoint#map_long_varchar_as}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointPostgresSettings.property.maxFileSize">max_file_size</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#max_file_size DmsEndpoint#max_file_size}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointPostgresSettings.property.pluginName">plugin_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#plugin_name DmsEndpoint#plugin_name}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointPostgresSettings.property.serviceAccessRoleArn">service_access_role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#service_access_role_arn DmsEndpoint#service_access_role_arn}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointPostgresSettings.property.slotName">slot_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#slot_name DmsEndpoint#slot_name}. |
 
 ---
 
@@ -4205,7 +5056,7 @@ after_connect_script: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#after_connect_script DmsEndpoint#after_connect_script}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#after_connect_script DmsEndpoint#after_connect_script}.
 
 ---
 
@@ -4217,7 +5068,7 @@ authentication_method: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#authentication_method DmsEndpoint#authentication_method}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#authentication_method DmsEndpoint#authentication_method}.
 
 ---
 
@@ -4229,7 +5080,7 @@ babelfish_database_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#babelfish_database_name DmsEndpoint#babelfish_database_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#babelfish_database_name DmsEndpoint#babelfish_database_name}.
 
 ---
 
@@ -4241,7 +5092,7 @@ capture_ddls: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#capture_ddls DmsEndpoint#capture_ddls}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#capture_ddls DmsEndpoint#capture_ddls}.
 
 ---
 
@@ -4253,7 +5104,7 @@ database_mode: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#database_mode DmsEndpoint#database_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#database_mode DmsEndpoint#database_mode}.
 
 ---
 
@@ -4265,7 +5116,7 @@ ddl_artifacts_schema: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#ddl_artifacts_schema DmsEndpoint#ddl_artifacts_schema}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#ddl_artifacts_schema DmsEndpoint#ddl_artifacts_schema}.
 
 ---
 
@@ -4277,7 +5128,7 @@ execute_timeout: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#execute_timeout DmsEndpoint#execute_timeout}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#execute_timeout DmsEndpoint#execute_timeout}.
 
 ---
 
@@ -4289,7 +5140,7 @@ fail_tasks_on_lob_truncation: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#fail_tasks_on_lob_truncation DmsEndpoint#fail_tasks_on_lob_truncation}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#fail_tasks_on_lob_truncation DmsEndpoint#fail_tasks_on_lob_truncation}.
 
 ---
 
@@ -4301,7 +5152,7 @@ heartbeat_enable: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#heartbeat_enable DmsEndpoint#heartbeat_enable}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#heartbeat_enable DmsEndpoint#heartbeat_enable}.
 
 ---
 
@@ -4313,7 +5164,7 @@ heartbeat_frequency: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#heartbeat_frequency DmsEndpoint#heartbeat_frequency}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#heartbeat_frequency DmsEndpoint#heartbeat_frequency}.
 
 ---
 
@@ -4325,7 +5176,7 @@ heartbeat_schema: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#heartbeat_schema DmsEndpoint#heartbeat_schema}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#heartbeat_schema DmsEndpoint#heartbeat_schema}.
 
 ---
 
@@ -4337,7 +5188,7 @@ map_boolean_as_boolean: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#map_boolean_as_boolean DmsEndpoint#map_boolean_as_boolean}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#map_boolean_as_boolean DmsEndpoint#map_boolean_as_boolean}.
 
 ---
 
@@ -4349,7 +5200,7 @@ map_jsonb_as_clob: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#map_jsonb_as_clob DmsEndpoint#map_jsonb_as_clob}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#map_jsonb_as_clob DmsEndpoint#map_jsonb_as_clob}.
 
 ---
 
@@ -4361,7 +5212,7 @@ map_long_varchar_as: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#map_long_varchar_as DmsEndpoint#map_long_varchar_as}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#map_long_varchar_as DmsEndpoint#map_long_varchar_as}.
 
 ---
 
@@ -4373,7 +5224,7 @@ max_file_size: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#max_file_size DmsEndpoint#max_file_size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#max_file_size DmsEndpoint#max_file_size}.
 
 ---
 
@@ -4385,7 +5236,7 @@ plugin_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#plugin_name DmsEndpoint#plugin_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#plugin_name DmsEndpoint#plugin_name}.
 
 ---
 
@@ -4397,7 +5248,7 @@ service_access_role_arn: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#service_access_role_arn DmsEndpoint#service_access_role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#service_access_role_arn DmsEndpoint#service_access_role_arn}.
 
 ---
 
@@ -4409,7 +5260,7 @@ slot_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#slot_name DmsEndpoint#slot_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#slot_name DmsEndpoint#slot_name}.
 
 ---
 
@@ -4435,13 +5286,13 @@ dmsEndpoint.DmsEndpointRedisSettings(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointRedisSettings.property.authType">auth_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#auth_type DmsEndpoint#auth_type}. |
-| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointRedisSettings.property.port">port</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#port DmsEndpoint#port}. |
-| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointRedisSettings.property.serverName">server_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#server_name DmsEndpoint#server_name}. |
-| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointRedisSettings.property.authPassword">auth_password</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#auth_password DmsEndpoint#auth_password}. |
-| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointRedisSettings.property.authUserName">auth_user_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#auth_user_name DmsEndpoint#auth_user_name}. |
-| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointRedisSettings.property.sslCaCertificateArn">ssl_ca_certificate_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#ssl_ca_certificate_arn DmsEndpoint#ssl_ca_certificate_arn}. |
-| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointRedisSettings.property.sslSecurityProtocol">ssl_security_protocol</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#ssl_security_protocol DmsEndpoint#ssl_security_protocol}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointRedisSettings.property.authType">auth_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#auth_type DmsEndpoint#auth_type}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointRedisSettings.property.port">port</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#port DmsEndpoint#port}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointRedisSettings.property.serverName">server_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#server_name DmsEndpoint#server_name}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointRedisSettings.property.authPassword">auth_password</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#auth_password DmsEndpoint#auth_password}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointRedisSettings.property.authUserName">auth_user_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#auth_user_name DmsEndpoint#auth_user_name}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointRedisSettings.property.sslCaCertificateArn">ssl_ca_certificate_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#ssl_ca_certificate_arn DmsEndpoint#ssl_ca_certificate_arn}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointRedisSettings.property.sslSecurityProtocol">ssl_security_protocol</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#ssl_security_protocol DmsEndpoint#ssl_security_protocol}. |
 
 ---
 
@@ -4453,7 +5304,7 @@ auth_type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#auth_type DmsEndpoint#auth_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#auth_type DmsEndpoint#auth_type}.
 
 ---
 
@@ -4465,7 +5316,7 @@ port: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#port DmsEndpoint#port}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#port DmsEndpoint#port}.
 
 ---
 
@@ -4477,7 +5328,7 @@ server_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#server_name DmsEndpoint#server_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#server_name DmsEndpoint#server_name}.
 
 ---
 
@@ -4489,7 +5340,7 @@ auth_password: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#auth_password DmsEndpoint#auth_password}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#auth_password DmsEndpoint#auth_password}.
 
 ---
 
@@ -4501,7 +5352,7 @@ auth_user_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#auth_user_name DmsEndpoint#auth_user_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#auth_user_name DmsEndpoint#auth_user_name}.
 
 ---
 
@@ -4513,7 +5364,7 @@ ssl_ca_certificate_arn: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#ssl_ca_certificate_arn DmsEndpoint#ssl_ca_certificate_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#ssl_ca_certificate_arn DmsEndpoint#ssl_ca_certificate_arn}.
 
 ---
 
@@ -4525,7 +5376,7 @@ ssl_security_protocol: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#ssl_security_protocol DmsEndpoint#ssl_security_protocol}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#ssl_security_protocol DmsEndpoint#ssl_security_protocol}.
 
 ---
 
@@ -4549,11 +5400,11 @@ dmsEndpoint.DmsEndpointRedshiftSettings(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointRedshiftSettings.property.bucketFolder">bucket_folder</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#bucket_folder DmsEndpoint#bucket_folder}. |
-| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointRedshiftSettings.property.bucketName">bucket_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#bucket_name DmsEndpoint#bucket_name}. |
-| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointRedshiftSettings.property.encryptionMode">encryption_mode</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#encryption_mode DmsEndpoint#encryption_mode}. |
-| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointRedshiftSettings.property.serverSideEncryptionKmsKeyId">server_side_encryption_kms_key_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#server_side_encryption_kms_key_id DmsEndpoint#server_side_encryption_kms_key_id}. |
-| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointRedshiftSettings.property.serviceAccessRoleArn">service_access_role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#service_access_role_arn DmsEndpoint#service_access_role_arn}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointRedshiftSettings.property.bucketFolder">bucket_folder</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#bucket_folder DmsEndpoint#bucket_folder}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointRedshiftSettings.property.bucketName">bucket_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#bucket_name DmsEndpoint#bucket_name}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointRedshiftSettings.property.encryptionMode">encryption_mode</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#encryption_mode DmsEndpoint#encryption_mode}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointRedshiftSettings.property.serverSideEncryptionKmsKeyId">server_side_encryption_kms_key_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#server_side_encryption_kms_key_id DmsEndpoint#server_side_encryption_kms_key_id}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointRedshiftSettings.property.serviceAccessRoleArn">service_access_role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#service_access_role_arn DmsEndpoint#service_access_role_arn}. |
 
 ---
 
@@ -4565,7 +5416,7 @@ bucket_folder: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#bucket_folder DmsEndpoint#bucket_folder}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#bucket_folder DmsEndpoint#bucket_folder}.
 
 ---
 
@@ -4577,7 +5428,7 @@ bucket_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#bucket_name DmsEndpoint#bucket_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#bucket_name DmsEndpoint#bucket_name}.
 
 ---
 
@@ -4589,7 +5440,7 @@ encryption_mode: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#encryption_mode DmsEndpoint#encryption_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#encryption_mode DmsEndpoint#encryption_mode}.
 
 ---
 
@@ -4601,7 +5452,7 @@ server_side_encryption_kms_key_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#server_side_encryption_kms_key_id DmsEndpoint#server_side_encryption_kms_key_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#server_side_encryption_kms_key_id DmsEndpoint#server_side_encryption_kms_key_id}.
 
 ---
 
@@ -4613,7 +5464,7 @@ service_access_role_arn: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#service_access_role_arn DmsEndpoint#service_access_role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#service_access_role_arn DmsEndpoint#service_access_role_arn}.
 
 ---
 
@@ -4634,8 +5485,8 @@ dmsEndpoint.DmsEndpointTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#create DmsEndpoint#create}. |
-| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#delete DmsEndpoint#delete}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#create DmsEndpoint#create}. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#delete DmsEndpoint#delete}. |
 
 ---
 
@@ -4647,7 +5498,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#create DmsEndpoint#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#create DmsEndpoint#create}.
 
 ---
 
@@ -4659,7 +5510,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#delete DmsEndpoint#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#delete DmsEndpoint#delete}.
 
 ---
 
@@ -6511,6 +7362,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointMongodbSettingsOutputReference.resetDocsToInvestigate">reset_docs_to_investigate</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointMongodbSettingsOutputReference.resetExtractDocId">reset_extract_doc_id</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointMongodbSettingsOutputReference.resetNestingLevel">reset_nesting_level</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointMongodbSettingsOutputReference.resetUseUpdateLookup">reset_use_update_lookup</a></code> | *No description.* |
 
 ---
 
@@ -6722,6 +7574,12 @@ def reset_extract_doc_id() -> None
 def reset_nesting_level() -> None
 ```
 
+##### `reset_use_update_lookup` <a name="reset_use_update_lookup" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpointMongodbSettingsOutputReference.resetUseUpdateLookup"></a>
+
+```python
+def reset_use_update_lookup() -> None
+```
+
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -6735,12 +7593,14 @@ def reset_nesting_level() -> None
 | <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointMongodbSettingsOutputReference.property.docsToInvestigateInput">docs_to_investigate_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointMongodbSettingsOutputReference.property.extractDocIdInput">extract_doc_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointMongodbSettingsOutputReference.property.nestingLevelInput">nesting_level_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointMongodbSettingsOutputReference.property.useUpdateLookupInput">use_update_lookup_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointMongodbSettingsOutputReference.property.authMechanism">auth_mechanism</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointMongodbSettingsOutputReference.property.authSource">auth_source</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointMongodbSettingsOutputReference.property.authType">auth_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointMongodbSettingsOutputReference.property.docsToInvestigate">docs_to_investigate</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointMongodbSettingsOutputReference.property.extractDocId">extract_doc_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointMongodbSettingsOutputReference.property.nestingLevel">nesting_level</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointMongodbSettingsOutputReference.property.useUpdateLookup">use_update_lookup</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointMongodbSettingsOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointMongodbSettings">DmsEndpointMongodbSettings</a></code> | *No description.* |
 
 ---
@@ -6829,6 +7689,16 @@ nesting_level_input: str
 
 ---
 
+##### `use_update_lookup_input`<sup>Optional</sup> <a name="use_update_lookup_input" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpointMongodbSettingsOutputReference.property.useUpdateLookupInput"></a>
+
+```python
+use_update_lookup_input: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
 ##### `auth_mechanism`<sup>Required</sup> <a name="auth_mechanism" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpointMongodbSettingsOutputReference.property.authMechanism"></a>
 
 ```python
@@ -6886,6 +7756,16 @@ nesting_level: str
 ```
 
 - *Type:* str
+
+---
+
+##### `use_update_lookup`<sup>Required</sup> <a name="use_update_lookup" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpointMongodbSettingsOutputReference.property.useUpdateLookup"></a>
+
+```python
+use_update_lookup: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -7517,7 +8397,43 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.resetAccessAlternateDirectly">reset_access_alternate_directly</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.resetAdditionalArchivedLogDestId">reset_additional_archived_log_dest_id</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.resetAddSupplementalLogging">reset_add_supplemental_logging</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.resetAllowSelectedNestedTables">reset_allow_selected_nested_tables</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.resetArchivedLogDestId">reset_archived_log_dest_id</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.resetArchivedLogsOnly">reset_archived_logs_only</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.resetAsmPassword">reset_asm_password</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.resetAsmServer">reset_asm_server</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.resetAsmUser">reset_asm_user</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.resetAuthenticationMethod">reset_authentication_method</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.resetCharLengthSemantics">reset_char_length_semantics</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.resetConvertTimestampWithZoneToUtc">reset_convert_timestamp_with_zone_to_utc</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.resetDirectPathNoLog">reset_direct_path_no_log</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.resetDirectPathParallelLoad">reset_direct_path_parallel_load</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.resetEnableHomogenousTablespace">reset_enable_homogenous_tablespace</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.resetExtraArchivedLogDestIds">reset_extra_archived_log_dest_ids</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.resetFailTaskOnLobTruncation">reset_fail_task_on_lob_truncation</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.resetNumberDatatypeScale">reset_number_datatype_scale</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.resetOpenTransactionWindow">reset_open_transaction_window</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.resetOraclePathPrefix">reset_oracle_path_prefix</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.resetParallelAsmReadThreads">reset_parallel_asm_read_threads</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.resetReadAheadBlocks">reset_read_ahead_blocks</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.resetReadTableSpaceName">reset_read_table_space_name</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.resetReplacePathPrefix">reset_replace_path_prefix</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.resetRetryInterval">reset_retry_interval</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.resetSecretsManagerOracleAsmAccessRoleArn">reset_secrets_manager_oracle_asm_access_role_arn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.resetSecretsManagerOracleAsmSecretId">reset_secrets_manager_oracle_asm_secret_id</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.resetSecurityDbEncryption">reset_security_db_encryption</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.resetSecurityDbEncryptionName">reset_security_db_encryption_name</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.resetSpatialDataOptionToGeoJsonFunctionName">reset_spatial_data_option_to_geo_json_function_name</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.resetStandbyDelayTime">reset_standby_delay_time</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.resetTrimSpaceInChar">reset_trim_space_in_char</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.resetUseAlternateFolderForOnline">reset_use_alternate_folder_for_online</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.resetUseBfile">reset_use_bfile</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.resetUseDirectPathFullLoad">reset_use_direct_path_full_load</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.resetUseLogminerReader">reset_use_logminer_reader</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.resetUsePathPrefix">reset_use_path_prefix</a></code> | *No description.* |
 
 ---
 
@@ -7693,10 +8609,226 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
+##### `reset_access_alternate_directly` <a name="reset_access_alternate_directly" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.resetAccessAlternateDirectly"></a>
+
+```python
+def reset_access_alternate_directly() -> None
+```
+
+##### `reset_additional_archived_log_dest_id` <a name="reset_additional_archived_log_dest_id" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.resetAdditionalArchivedLogDestId"></a>
+
+```python
+def reset_additional_archived_log_dest_id() -> None
+```
+
+##### `reset_add_supplemental_logging` <a name="reset_add_supplemental_logging" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.resetAddSupplementalLogging"></a>
+
+```python
+def reset_add_supplemental_logging() -> None
+```
+
+##### `reset_allow_selected_nested_tables` <a name="reset_allow_selected_nested_tables" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.resetAllowSelectedNestedTables"></a>
+
+```python
+def reset_allow_selected_nested_tables() -> None
+```
+
+##### `reset_archived_log_dest_id` <a name="reset_archived_log_dest_id" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.resetArchivedLogDestId"></a>
+
+```python
+def reset_archived_log_dest_id() -> None
+```
+
+##### `reset_archived_logs_only` <a name="reset_archived_logs_only" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.resetArchivedLogsOnly"></a>
+
+```python
+def reset_archived_logs_only() -> None
+```
+
+##### `reset_asm_password` <a name="reset_asm_password" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.resetAsmPassword"></a>
+
+```python
+def reset_asm_password() -> None
+```
+
+##### `reset_asm_server` <a name="reset_asm_server" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.resetAsmServer"></a>
+
+```python
+def reset_asm_server() -> None
+```
+
+##### `reset_asm_user` <a name="reset_asm_user" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.resetAsmUser"></a>
+
+```python
+def reset_asm_user() -> None
+```
+
 ##### `reset_authentication_method` <a name="reset_authentication_method" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.resetAuthenticationMethod"></a>
 
 ```python
 def reset_authentication_method() -> None
+```
+
+##### `reset_char_length_semantics` <a name="reset_char_length_semantics" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.resetCharLengthSemantics"></a>
+
+```python
+def reset_char_length_semantics() -> None
+```
+
+##### `reset_convert_timestamp_with_zone_to_utc` <a name="reset_convert_timestamp_with_zone_to_utc" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.resetConvertTimestampWithZoneToUtc"></a>
+
+```python
+def reset_convert_timestamp_with_zone_to_utc() -> None
+```
+
+##### `reset_direct_path_no_log` <a name="reset_direct_path_no_log" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.resetDirectPathNoLog"></a>
+
+```python
+def reset_direct_path_no_log() -> None
+```
+
+##### `reset_direct_path_parallel_load` <a name="reset_direct_path_parallel_load" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.resetDirectPathParallelLoad"></a>
+
+```python
+def reset_direct_path_parallel_load() -> None
+```
+
+##### `reset_enable_homogenous_tablespace` <a name="reset_enable_homogenous_tablespace" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.resetEnableHomogenousTablespace"></a>
+
+```python
+def reset_enable_homogenous_tablespace() -> None
+```
+
+##### `reset_extra_archived_log_dest_ids` <a name="reset_extra_archived_log_dest_ids" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.resetExtraArchivedLogDestIds"></a>
+
+```python
+def reset_extra_archived_log_dest_ids() -> None
+```
+
+##### `reset_fail_task_on_lob_truncation` <a name="reset_fail_task_on_lob_truncation" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.resetFailTaskOnLobTruncation"></a>
+
+```python
+def reset_fail_task_on_lob_truncation() -> None
+```
+
+##### `reset_number_datatype_scale` <a name="reset_number_datatype_scale" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.resetNumberDatatypeScale"></a>
+
+```python
+def reset_number_datatype_scale() -> None
+```
+
+##### `reset_open_transaction_window` <a name="reset_open_transaction_window" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.resetOpenTransactionWindow"></a>
+
+```python
+def reset_open_transaction_window() -> None
+```
+
+##### `reset_oracle_path_prefix` <a name="reset_oracle_path_prefix" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.resetOraclePathPrefix"></a>
+
+```python
+def reset_oracle_path_prefix() -> None
+```
+
+##### `reset_parallel_asm_read_threads` <a name="reset_parallel_asm_read_threads" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.resetParallelAsmReadThreads"></a>
+
+```python
+def reset_parallel_asm_read_threads() -> None
+```
+
+##### `reset_read_ahead_blocks` <a name="reset_read_ahead_blocks" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.resetReadAheadBlocks"></a>
+
+```python
+def reset_read_ahead_blocks() -> None
+```
+
+##### `reset_read_table_space_name` <a name="reset_read_table_space_name" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.resetReadTableSpaceName"></a>
+
+```python
+def reset_read_table_space_name() -> None
+```
+
+##### `reset_replace_path_prefix` <a name="reset_replace_path_prefix" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.resetReplacePathPrefix"></a>
+
+```python
+def reset_replace_path_prefix() -> None
+```
+
+##### `reset_retry_interval` <a name="reset_retry_interval" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.resetRetryInterval"></a>
+
+```python
+def reset_retry_interval() -> None
+```
+
+##### `reset_secrets_manager_oracle_asm_access_role_arn` <a name="reset_secrets_manager_oracle_asm_access_role_arn" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.resetSecretsManagerOracleAsmAccessRoleArn"></a>
+
+```python
+def reset_secrets_manager_oracle_asm_access_role_arn() -> None
+```
+
+##### `reset_secrets_manager_oracle_asm_secret_id` <a name="reset_secrets_manager_oracle_asm_secret_id" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.resetSecretsManagerOracleAsmSecretId"></a>
+
+```python
+def reset_secrets_manager_oracle_asm_secret_id() -> None
+```
+
+##### `reset_security_db_encryption` <a name="reset_security_db_encryption" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.resetSecurityDbEncryption"></a>
+
+```python
+def reset_security_db_encryption() -> None
+```
+
+##### `reset_security_db_encryption_name` <a name="reset_security_db_encryption_name" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.resetSecurityDbEncryptionName"></a>
+
+```python
+def reset_security_db_encryption_name() -> None
+```
+
+##### `reset_spatial_data_option_to_geo_json_function_name` <a name="reset_spatial_data_option_to_geo_json_function_name" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.resetSpatialDataOptionToGeoJsonFunctionName"></a>
+
+```python
+def reset_spatial_data_option_to_geo_json_function_name() -> None
+```
+
+##### `reset_standby_delay_time` <a name="reset_standby_delay_time" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.resetStandbyDelayTime"></a>
+
+```python
+def reset_standby_delay_time() -> None
+```
+
+##### `reset_trim_space_in_char` <a name="reset_trim_space_in_char" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.resetTrimSpaceInChar"></a>
+
+```python
+def reset_trim_space_in_char() -> None
+```
+
+##### `reset_use_alternate_folder_for_online` <a name="reset_use_alternate_folder_for_online" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.resetUseAlternateFolderForOnline"></a>
+
+```python
+def reset_use_alternate_folder_for_online() -> None
+```
+
+##### `reset_use_bfile` <a name="reset_use_bfile" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.resetUseBfile"></a>
+
+```python
+def reset_use_bfile() -> None
+```
+
+##### `reset_use_direct_path_full_load` <a name="reset_use_direct_path_full_load" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.resetUseDirectPathFullLoad"></a>
+
+```python
+def reset_use_direct_path_full_load() -> None
+```
+
+##### `reset_use_logminer_reader` <a name="reset_use_logminer_reader" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.resetUseLogminerReader"></a>
+
+```python
+def reset_use_logminer_reader() -> None
+```
+
+##### `reset_use_path_prefix` <a name="reset_use_path_prefix" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.resetUsePathPrefix"></a>
+
+```python
+def reset_use_path_prefix() -> None
 ```
 
 
@@ -7706,8 +8838,80 @@ def reset_authentication_method() -> None
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.property.accessAlternateDirectlyInput">access_alternate_directly_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.property.additionalArchivedLogDestIdInput">additional_archived_log_dest_id_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.property.addSupplementalLoggingInput">add_supplemental_logging_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.property.allowSelectedNestedTablesInput">allow_selected_nested_tables_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.property.archivedLogDestIdInput">archived_log_dest_id_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.property.archivedLogsOnlyInput">archived_logs_only_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.property.asmPasswordInput">asm_password_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.property.asmServerInput">asm_server_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.property.asmUserInput">asm_user_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.property.authenticationMethodInput">authentication_method_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.property.charLengthSemanticsInput">char_length_semantics_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.property.convertTimestampWithZoneToUtcInput">convert_timestamp_with_zone_to_utc_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.property.directPathNoLogInput">direct_path_no_log_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.property.directPathParallelLoadInput">direct_path_parallel_load_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.property.enableHomogenousTablespaceInput">enable_homogenous_tablespace_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.property.extraArchivedLogDestIdsInput">extra_archived_log_dest_ids_input</a></code> | <code>typing.List[typing.Union[int, float]]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.property.failTaskOnLobTruncationInput">fail_task_on_lob_truncation_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.property.numberDatatypeScaleInput">number_datatype_scale_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.property.openTransactionWindowInput">open_transaction_window_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.property.oraclePathPrefixInput">oracle_path_prefix_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.property.parallelAsmReadThreadsInput">parallel_asm_read_threads_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.property.readAheadBlocksInput">read_ahead_blocks_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.property.readTableSpaceNameInput">read_table_space_name_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.property.replacePathPrefixInput">replace_path_prefix_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.property.retryIntervalInput">retry_interval_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.property.secretsManagerOracleAsmAccessRoleArnInput">secrets_manager_oracle_asm_access_role_arn_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.property.secretsManagerOracleAsmSecretIdInput">secrets_manager_oracle_asm_secret_id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.property.securityDbEncryptionInput">security_db_encryption_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.property.securityDbEncryptionNameInput">security_db_encryption_name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.property.spatialDataOptionToGeoJsonFunctionNameInput">spatial_data_option_to_geo_json_function_name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.property.standbyDelayTimeInput">standby_delay_time_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.property.trimSpaceInCharInput">trim_space_in_char_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.property.useAlternateFolderForOnlineInput">use_alternate_folder_for_online_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.property.useBfileInput">use_bfile_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.property.useDirectPathFullLoadInput">use_direct_path_full_load_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.property.useLogminerReaderInput">use_logminer_reader_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.property.usePathPrefixInput">use_path_prefix_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.property.accessAlternateDirectly">access_alternate_directly</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.property.additionalArchivedLogDestId">additional_archived_log_dest_id</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.property.addSupplementalLogging">add_supplemental_logging</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.property.allowSelectedNestedTables">allow_selected_nested_tables</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.property.archivedLogDestId">archived_log_dest_id</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.property.archivedLogsOnly">archived_logs_only</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.property.asmPassword">asm_password</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.property.asmServer">asm_server</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.property.asmUser">asm_user</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.property.authenticationMethod">authentication_method</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.property.charLengthSemantics">char_length_semantics</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.property.convertTimestampWithZoneToUtc">convert_timestamp_with_zone_to_utc</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.property.directPathNoLog">direct_path_no_log</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.property.directPathParallelLoad">direct_path_parallel_load</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.property.enableHomogenousTablespace">enable_homogenous_tablespace</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.property.extraArchivedLogDestIds">extra_archived_log_dest_ids</a></code> | <code>typing.List[typing.Union[int, float]]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.property.failTaskOnLobTruncation">fail_task_on_lob_truncation</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.property.numberDatatypeScale">number_datatype_scale</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.property.openTransactionWindow">open_transaction_window</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.property.oraclePathPrefix">oracle_path_prefix</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.property.parallelAsmReadThreads">parallel_asm_read_threads</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.property.readAheadBlocks">read_ahead_blocks</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.property.readTableSpaceName">read_table_space_name</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.property.replacePathPrefix">replace_path_prefix</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.property.retryInterval">retry_interval</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.property.secretsManagerOracleAsmAccessRoleArn">secrets_manager_oracle_asm_access_role_arn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.property.secretsManagerOracleAsmSecretId">secrets_manager_oracle_asm_secret_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.property.securityDbEncryption">security_db_encryption</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.property.securityDbEncryptionName">security_db_encryption_name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.property.spatialDataOptionToGeoJsonFunctionName">spatial_data_option_to_geo_json_function_name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.property.standbyDelayTime">standby_delay_time</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.property.trimSpaceInChar">trim_space_in_char</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.property.useAlternateFolderForOnline">use_alternate_folder_for_online</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.property.useBfile">use_bfile</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.property.useDirectPathFullLoad">use_direct_path_full_load</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.property.useLogminerReader">use_logminer_reader</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.property.usePathPrefix">use_path_prefix</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettings">DmsEndpointOracleSettings</a></code> | *No description.* |
 
 ---
@@ -7736,6 +8940,96 @@ fqn: str
 
 ---
 
+##### `access_alternate_directly_input`<sup>Optional</sup> <a name="access_alternate_directly_input" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.property.accessAlternateDirectlyInput"></a>
+
+```python
+access_alternate_directly_input: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `additional_archived_log_dest_id_input`<sup>Optional</sup> <a name="additional_archived_log_dest_id_input" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.property.additionalArchivedLogDestIdInput"></a>
+
+```python
+additional_archived_log_dest_id_input: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `add_supplemental_logging_input`<sup>Optional</sup> <a name="add_supplemental_logging_input" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.property.addSupplementalLoggingInput"></a>
+
+```python
+add_supplemental_logging_input: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `allow_selected_nested_tables_input`<sup>Optional</sup> <a name="allow_selected_nested_tables_input" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.property.allowSelectedNestedTablesInput"></a>
+
+```python
+allow_selected_nested_tables_input: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `archived_log_dest_id_input`<sup>Optional</sup> <a name="archived_log_dest_id_input" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.property.archivedLogDestIdInput"></a>
+
+```python
+archived_log_dest_id_input: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `archived_logs_only_input`<sup>Optional</sup> <a name="archived_logs_only_input" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.property.archivedLogsOnlyInput"></a>
+
+```python
+archived_logs_only_input: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `asm_password_input`<sup>Optional</sup> <a name="asm_password_input" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.property.asmPasswordInput"></a>
+
+```python
+asm_password_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `asm_server_input`<sup>Optional</sup> <a name="asm_server_input" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.property.asmServerInput"></a>
+
+```python
+asm_server_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `asm_user_input`<sup>Optional</sup> <a name="asm_user_input" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.property.asmUserInput"></a>
+
+```python
+asm_user_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `authentication_method_input`<sup>Optional</sup> <a name="authentication_method_input" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.property.authenticationMethodInput"></a>
 
 ```python
@@ -7746,10 +9040,640 @@ authentication_method_input: str
 
 ---
 
+##### `char_length_semantics_input`<sup>Optional</sup> <a name="char_length_semantics_input" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.property.charLengthSemanticsInput"></a>
+
+```python
+char_length_semantics_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `convert_timestamp_with_zone_to_utc_input`<sup>Optional</sup> <a name="convert_timestamp_with_zone_to_utc_input" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.property.convertTimestampWithZoneToUtcInput"></a>
+
+```python
+convert_timestamp_with_zone_to_utc_input: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `direct_path_no_log_input`<sup>Optional</sup> <a name="direct_path_no_log_input" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.property.directPathNoLogInput"></a>
+
+```python
+direct_path_no_log_input: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `direct_path_parallel_load_input`<sup>Optional</sup> <a name="direct_path_parallel_load_input" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.property.directPathParallelLoadInput"></a>
+
+```python
+direct_path_parallel_load_input: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `enable_homogenous_tablespace_input`<sup>Optional</sup> <a name="enable_homogenous_tablespace_input" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.property.enableHomogenousTablespaceInput"></a>
+
+```python
+enable_homogenous_tablespace_input: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `extra_archived_log_dest_ids_input`<sup>Optional</sup> <a name="extra_archived_log_dest_ids_input" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.property.extraArchivedLogDestIdsInput"></a>
+
+```python
+extra_archived_log_dest_ids_input: typing.List[typing.Union[int, float]]
+```
+
+- *Type:* typing.List[typing.Union[int, float]]
+
+---
+
+##### `fail_task_on_lob_truncation_input`<sup>Optional</sup> <a name="fail_task_on_lob_truncation_input" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.property.failTaskOnLobTruncationInput"></a>
+
+```python
+fail_task_on_lob_truncation_input: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `number_datatype_scale_input`<sup>Optional</sup> <a name="number_datatype_scale_input" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.property.numberDatatypeScaleInput"></a>
+
+```python
+number_datatype_scale_input: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `open_transaction_window_input`<sup>Optional</sup> <a name="open_transaction_window_input" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.property.openTransactionWindowInput"></a>
+
+```python
+open_transaction_window_input: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `oracle_path_prefix_input`<sup>Optional</sup> <a name="oracle_path_prefix_input" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.property.oraclePathPrefixInput"></a>
+
+```python
+oracle_path_prefix_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `parallel_asm_read_threads_input`<sup>Optional</sup> <a name="parallel_asm_read_threads_input" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.property.parallelAsmReadThreadsInput"></a>
+
+```python
+parallel_asm_read_threads_input: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `read_ahead_blocks_input`<sup>Optional</sup> <a name="read_ahead_blocks_input" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.property.readAheadBlocksInput"></a>
+
+```python
+read_ahead_blocks_input: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `read_table_space_name_input`<sup>Optional</sup> <a name="read_table_space_name_input" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.property.readTableSpaceNameInput"></a>
+
+```python
+read_table_space_name_input: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `replace_path_prefix_input`<sup>Optional</sup> <a name="replace_path_prefix_input" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.property.replacePathPrefixInput"></a>
+
+```python
+replace_path_prefix_input: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `retry_interval_input`<sup>Optional</sup> <a name="retry_interval_input" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.property.retryIntervalInput"></a>
+
+```python
+retry_interval_input: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `secrets_manager_oracle_asm_access_role_arn_input`<sup>Optional</sup> <a name="secrets_manager_oracle_asm_access_role_arn_input" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.property.secretsManagerOracleAsmAccessRoleArnInput"></a>
+
+```python
+secrets_manager_oracle_asm_access_role_arn_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `secrets_manager_oracle_asm_secret_id_input`<sup>Optional</sup> <a name="secrets_manager_oracle_asm_secret_id_input" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.property.secretsManagerOracleAsmSecretIdInput"></a>
+
+```python
+secrets_manager_oracle_asm_secret_id_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `security_db_encryption_input`<sup>Optional</sup> <a name="security_db_encryption_input" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.property.securityDbEncryptionInput"></a>
+
+```python
+security_db_encryption_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `security_db_encryption_name_input`<sup>Optional</sup> <a name="security_db_encryption_name_input" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.property.securityDbEncryptionNameInput"></a>
+
+```python
+security_db_encryption_name_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `spatial_data_option_to_geo_json_function_name_input`<sup>Optional</sup> <a name="spatial_data_option_to_geo_json_function_name_input" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.property.spatialDataOptionToGeoJsonFunctionNameInput"></a>
+
+```python
+spatial_data_option_to_geo_json_function_name_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `standby_delay_time_input`<sup>Optional</sup> <a name="standby_delay_time_input" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.property.standbyDelayTimeInput"></a>
+
+```python
+standby_delay_time_input: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `trim_space_in_char_input`<sup>Optional</sup> <a name="trim_space_in_char_input" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.property.trimSpaceInCharInput"></a>
+
+```python
+trim_space_in_char_input: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `use_alternate_folder_for_online_input`<sup>Optional</sup> <a name="use_alternate_folder_for_online_input" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.property.useAlternateFolderForOnlineInput"></a>
+
+```python
+use_alternate_folder_for_online_input: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `use_bfile_input`<sup>Optional</sup> <a name="use_bfile_input" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.property.useBfileInput"></a>
+
+```python
+use_bfile_input: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `use_direct_path_full_load_input`<sup>Optional</sup> <a name="use_direct_path_full_load_input" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.property.useDirectPathFullLoadInput"></a>
+
+```python
+use_direct_path_full_load_input: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `use_logminer_reader_input`<sup>Optional</sup> <a name="use_logminer_reader_input" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.property.useLogminerReaderInput"></a>
+
+```python
+use_logminer_reader_input: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `use_path_prefix_input`<sup>Optional</sup> <a name="use_path_prefix_input" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.property.usePathPrefixInput"></a>
+
+```python
+use_path_prefix_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `access_alternate_directly`<sup>Required</sup> <a name="access_alternate_directly" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.property.accessAlternateDirectly"></a>
+
+```python
+access_alternate_directly: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `additional_archived_log_dest_id`<sup>Required</sup> <a name="additional_archived_log_dest_id" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.property.additionalArchivedLogDestId"></a>
+
+```python
+additional_archived_log_dest_id: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `add_supplemental_logging`<sup>Required</sup> <a name="add_supplemental_logging" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.property.addSupplementalLogging"></a>
+
+```python
+add_supplemental_logging: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `allow_selected_nested_tables`<sup>Required</sup> <a name="allow_selected_nested_tables" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.property.allowSelectedNestedTables"></a>
+
+```python
+allow_selected_nested_tables: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `archived_log_dest_id`<sup>Required</sup> <a name="archived_log_dest_id" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.property.archivedLogDestId"></a>
+
+```python
+archived_log_dest_id: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `archived_logs_only`<sup>Required</sup> <a name="archived_logs_only" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.property.archivedLogsOnly"></a>
+
+```python
+archived_logs_only: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `asm_password`<sup>Required</sup> <a name="asm_password" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.property.asmPassword"></a>
+
+```python
+asm_password: str
+```
+
+- *Type:* str
+
+---
+
+##### `asm_server`<sup>Required</sup> <a name="asm_server" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.property.asmServer"></a>
+
+```python
+asm_server: str
+```
+
+- *Type:* str
+
+---
+
+##### `asm_user`<sup>Required</sup> <a name="asm_user" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.property.asmUser"></a>
+
+```python
+asm_user: str
+```
+
+- *Type:* str
+
+---
+
 ##### `authentication_method`<sup>Required</sup> <a name="authentication_method" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.property.authenticationMethod"></a>
 
 ```python
 authentication_method: str
+```
+
+- *Type:* str
+
+---
+
+##### `char_length_semantics`<sup>Required</sup> <a name="char_length_semantics" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.property.charLengthSemantics"></a>
+
+```python
+char_length_semantics: str
+```
+
+- *Type:* str
+
+---
+
+##### `convert_timestamp_with_zone_to_utc`<sup>Required</sup> <a name="convert_timestamp_with_zone_to_utc" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.property.convertTimestampWithZoneToUtc"></a>
+
+```python
+convert_timestamp_with_zone_to_utc: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `direct_path_no_log`<sup>Required</sup> <a name="direct_path_no_log" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.property.directPathNoLog"></a>
+
+```python
+direct_path_no_log: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `direct_path_parallel_load`<sup>Required</sup> <a name="direct_path_parallel_load" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.property.directPathParallelLoad"></a>
+
+```python
+direct_path_parallel_load: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `enable_homogenous_tablespace`<sup>Required</sup> <a name="enable_homogenous_tablespace" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.property.enableHomogenousTablespace"></a>
+
+```python
+enable_homogenous_tablespace: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `extra_archived_log_dest_ids`<sup>Required</sup> <a name="extra_archived_log_dest_ids" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.property.extraArchivedLogDestIds"></a>
+
+```python
+extra_archived_log_dest_ids: typing.List[typing.Union[int, float]]
+```
+
+- *Type:* typing.List[typing.Union[int, float]]
+
+---
+
+##### `fail_task_on_lob_truncation`<sup>Required</sup> <a name="fail_task_on_lob_truncation" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.property.failTaskOnLobTruncation"></a>
+
+```python
+fail_task_on_lob_truncation: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `number_datatype_scale`<sup>Required</sup> <a name="number_datatype_scale" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.property.numberDatatypeScale"></a>
+
+```python
+number_datatype_scale: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `open_transaction_window`<sup>Required</sup> <a name="open_transaction_window" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.property.openTransactionWindow"></a>
+
+```python
+open_transaction_window: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `oracle_path_prefix`<sup>Required</sup> <a name="oracle_path_prefix" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.property.oraclePathPrefix"></a>
+
+```python
+oracle_path_prefix: str
+```
+
+- *Type:* str
+
+---
+
+##### `parallel_asm_read_threads`<sup>Required</sup> <a name="parallel_asm_read_threads" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.property.parallelAsmReadThreads"></a>
+
+```python
+parallel_asm_read_threads: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `read_ahead_blocks`<sup>Required</sup> <a name="read_ahead_blocks" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.property.readAheadBlocks"></a>
+
+```python
+read_ahead_blocks: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `read_table_space_name`<sup>Required</sup> <a name="read_table_space_name" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.property.readTableSpaceName"></a>
+
+```python
+read_table_space_name: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `replace_path_prefix`<sup>Required</sup> <a name="replace_path_prefix" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.property.replacePathPrefix"></a>
+
+```python
+replace_path_prefix: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `retry_interval`<sup>Required</sup> <a name="retry_interval" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.property.retryInterval"></a>
+
+```python
+retry_interval: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `secrets_manager_oracle_asm_access_role_arn`<sup>Required</sup> <a name="secrets_manager_oracle_asm_access_role_arn" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.property.secretsManagerOracleAsmAccessRoleArn"></a>
+
+```python
+secrets_manager_oracle_asm_access_role_arn: str
+```
+
+- *Type:* str
+
+---
+
+##### `secrets_manager_oracle_asm_secret_id`<sup>Required</sup> <a name="secrets_manager_oracle_asm_secret_id" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.property.secretsManagerOracleAsmSecretId"></a>
+
+```python
+secrets_manager_oracle_asm_secret_id: str
+```
+
+- *Type:* str
+
+---
+
+##### `security_db_encryption`<sup>Required</sup> <a name="security_db_encryption" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.property.securityDbEncryption"></a>
+
+```python
+security_db_encryption: str
+```
+
+- *Type:* str
+
+---
+
+##### `security_db_encryption_name`<sup>Required</sup> <a name="security_db_encryption_name" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.property.securityDbEncryptionName"></a>
+
+```python
+security_db_encryption_name: str
+```
+
+- *Type:* str
+
+---
+
+##### `spatial_data_option_to_geo_json_function_name`<sup>Required</sup> <a name="spatial_data_option_to_geo_json_function_name" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.property.spatialDataOptionToGeoJsonFunctionName"></a>
+
+```python
+spatial_data_option_to_geo_json_function_name: str
+```
+
+- *Type:* str
+
+---
+
+##### `standby_delay_time`<sup>Required</sup> <a name="standby_delay_time" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.property.standbyDelayTime"></a>
+
+```python
+standby_delay_time: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `trim_space_in_char`<sup>Required</sup> <a name="trim_space_in_char" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.property.trimSpaceInChar"></a>
+
+```python
+trim_space_in_char: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `use_alternate_folder_for_online`<sup>Required</sup> <a name="use_alternate_folder_for_online" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.property.useAlternateFolderForOnline"></a>
+
+```python
+use_alternate_folder_for_online: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `use_bfile`<sup>Required</sup> <a name="use_bfile" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.property.useBfile"></a>
+
+```python
+use_bfile: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `use_direct_path_full_load`<sup>Required</sup> <a name="use_direct_path_full_load" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.property.useDirectPathFullLoad"></a>
+
+```python
+use_direct_path_full_load: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `use_logminer_reader`<sup>Required</sup> <a name="use_logminer_reader" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.property.useLogminerReader"></a>
+
+```python
+use_logminer_reader: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `use_path_prefix`<sup>Required</sup> <a name="use_path_prefix" id="@cdktn/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference.property.usePathPrefix"></a>
+
+```python
+use_path_prefix: str
 ```
 
 - *Type:* str
