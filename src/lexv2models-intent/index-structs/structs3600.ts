@@ -18,7 +18,7 @@ lexv2ModelsIntentInitialResponseSettingConditionalToHclTerraform,
 Lexv2ModelsIntentInitialResponseSettingConditionalList } from './structs3200'
 export interface Lexv2ModelsIntentInitialResponseSettingInitialResponseMessageGroupVariationCustomPayload {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_intent#value Lexv2ModelsIntent#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_intent#value Lexv2ModelsIntent#value}
   */
   readonly value: string;
 }
@@ -131,11 +131,11 @@ export class Lexv2ModelsIntentInitialResponseSettingInitialResponseMessageGroupV
 }
 export interface Lexv2ModelsIntentInitialResponseSettingInitialResponseMessageGroupVariationImageResponseCardButton {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_intent#text Lexv2ModelsIntent#text}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_intent#text Lexv2ModelsIntent#text}
   */
   readonly text: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_intent#value Lexv2ModelsIntent#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_intent#value Lexv2ModelsIntent#value}
   */
   readonly value: string;
 }
@@ -274,21 +274,21 @@ export class Lexv2ModelsIntentInitialResponseSettingInitialResponseMessageGroupV
 }
 export interface Lexv2ModelsIntentInitialResponseSettingInitialResponseMessageGroupVariationImageResponseCard {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_intent#image_url Lexv2ModelsIntent#image_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_intent#image_url Lexv2ModelsIntent#image_url}
   */
   readonly imageUrl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_intent#subtitle Lexv2ModelsIntent#subtitle}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_intent#subtitle Lexv2ModelsIntent#subtitle}
   */
   readonly subtitle?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_intent#title Lexv2ModelsIntent#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_intent#title Lexv2ModelsIntent#title}
   */
   readonly title: string;
   /**
   * button block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_intent#button Lexv2ModelsIntent#button}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_intent#button Lexv2ModelsIntent#button}
   */
   readonly button?: Lexv2ModelsIntentInitialResponseSettingInitialResponseMessageGroupVariationImageResponseCardButton[] | cdktn.IResolvable;
 }
@@ -488,7 +488,7 @@ export class Lexv2ModelsIntentInitialResponseSettingInitialResponseMessageGroupV
 }
 export interface Lexv2ModelsIntentInitialResponseSettingInitialResponseMessageGroupVariationPlainTextMessage {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_intent#value Lexv2ModelsIntent#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_intent#value Lexv2ModelsIntent#value}
   */
   readonly value: string;
 }
@@ -601,7 +601,7 @@ export class Lexv2ModelsIntentInitialResponseSettingInitialResponseMessageGroupV
 }
 export interface Lexv2ModelsIntentInitialResponseSettingInitialResponseMessageGroupVariationSsmlMessage {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_intent#value Lexv2ModelsIntent#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_intent#value Lexv2ModelsIntent#value}
   */
   readonly value: string;
 }
@@ -716,25 +716,25 @@ export interface Lexv2ModelsIntentInitialResponseSettingInitialResponseMessageGr
   /**
   * custom_payload block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_intent#custom_payload Lexv2ModelsIntent#custom_payload}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_intent#custom_payload Lexv2ModelsIntent#custom_payload}
   */
   readonly customPayload?: Lexv2ModelsIntentInitialResponseSettingInitialResponseMessageGroupVariationCustomPayload[] | cdktn.IResolvable;
   /**
   * image_response_card block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_intent#image_response_card Lexv2ModelsIntent#image_response_card}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_intent#image_response_card Lexv2ModelsIntent#image_response_card}
   */
   readonly imageResponseCard?: Lexv2ModelsIntentInitialResponseSettingInitialResponseMessageGroupVariationImageResponseCard[] | cdktn.IResolvable;
   /**
   * plain_text_message block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_intent#plain_text_message Lexv2ModelsIntent#plain_text_message}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_intent#plain_text_message Lexv2ModelsIntent#plain_text_message}
   */
   readonly plainTextMessage?: Lexv2ModelsIntentInitialResponseSettingInitialResponseMessageGroupVariationPlainTextMessage[] | cdktn.IResolvable;
   /**
   * ssml_message block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_intent#ssml_message Lexv2ModelsIntent#ssml_message}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_intent#ssml_message Lexv2ModelsIntent#ssml_message}
   */
   readonly ssmlMessage?: Lexv2ModelsIntentInitialResponseSettingInitialResponseMessageGroupVariationSsmlMessage[] | cdktn.IResolvable;
 }
@@ -939,13 +939,13 @@ export interface Lexv2ModelsIntentInitialResponseSettingInitialResponseMessageGr
   /**
   * message block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_intent#message Lexv2ModelsIntent#message}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_intent#message Lexv2ModelsIntent#message}
   */
   readonly message?: Lexv2ModelsIntentInitialResponseSettingInitialResponseMessageGroupMessage[] | cdktn.IResolvable;
   /**
   * variation block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_intent#variation Lexv2ModelsIntent#variation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_intent#variation Lexv2ModelsIntent#variation}
   */
   readonly variation?: Lexv2ModelsIntentInitialResponseSettingInitialResponseMessageGroupVariation[] | cdktn.IResolvable;
 }
@@ -1090,13 +1090,13 @@ export class Lexv2ModelsIntentInitialResponseSettingInitialResponseMessageGroupL
 }
 export interface Lexv2ModelsIntentInitialResponseSettingInitialResponse {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_intent#allow_interrupt Lexv2ModelsIntent#allow_interrupt}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_intent#allow_interrupt Lexv2ModelsIntent#allow_interrupt}
   */
   readonly allowInterrupt?: boolean | cdktn.IResolvable;
   /**
   * message_group block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_intent#message_group Lexv2ModelsIntent#message_group}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_intent#message_group Lexv2ModelsIntent#message_group}
   */
   readonly messageGroup?: Lexv2ModelsIntentInitialResponseSettingInitialResponseMessageGroup[] | cdktn.IResolvable;
 }
@@ -1241,15 +1241,15 @@ export class Lexv2ModelsIntentInitialResponseSettingInitialResponseList extends 
 }
 export interface Lexv2ModelsIntentInitialResponseSettingNextStepDialogAction {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_intent#slot_to_elicit Lexv2ModelsIntent#slot_to_elicit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_intent#slot_to_elicit Lexv2ModelsIntent#slot_to_elicit}
   */
   readonly slotToElicit?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_intent#suppress_next_message Lexv2ModelsIntent#suppress_next_message}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_intent#suppress_next_message Lexv2ModelsIntent#suppress_next_message}
   */
   readonly suppressNextMessage?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_intent#type Lexv2ModelsIntent#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_intent#type Lexv2ModelsIntent#type}
   */
   readonly type: string;
 }
@@ -1420,7 +1420,7 @@ export class Lexv2ModelsIntentInitialResponseSettingNextStepDialogActionList ext
 }
 export interface Lexv2ModelsIntentInitialResponseSettingNextStepIntentSlotValue {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_intent#interpreted_value Lexv2ModelsIntent#interpreted_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_intent#interpreted_value Lexv2ModelsIntent#interpreted_value}
   */
   readonly interpretedValue?: string;
 }
@@ -1536,17 +1536,17 @@ export class Lexv2ModelsIntentInitialResponseSettingNextStepIntentSlotValueList 
 }
 export interface Lexv2ModelsIntentInitialResponseSettingNextStepIntentSlot {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_intent#map_block_key Lexv2ModelsIntent#map_block_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_intent#map_block_key Lexv2ModelsIntent#map_block_key}
   */
   readonly mapBlockKey: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_intent#shape Lexv2ModelsIntent#shape}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_intent#shape Lexv2ModelsIntent#shape}
   */
   readonly shape?: string;
   /**
   * value block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_intent#value Lexv2ModelsIntent#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_intent#value Lexv2ModelsIntent#value}
   */
   readonly value?: Lexv2ModelsIntentInitialResponseSettingNextStepIntentSlotValue[] | cdktn.IResolvable;
 }
@@ -1717,13 +1717,13 @@ export class Lexv2ModelsIntentInitialResponseSettingNextStepIntentSlotList exten
 }
 export interface Lexv2ModelsIntentInitialResponseSettingNextStepIntent {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_intent#name Lexv2ModelsIntent#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_intent#name Lexv2ModelsIntent#name}
   */
   readonly name?: string;
   /**
   * slot block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_intent#slot Lexv2ModelsIntent#slot}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_intent#slot Lexv2ModelsIntent#slot}
   */
   readonly slot?: Lexv2ModelsIntentInitialResponseSettingNextStepIntentSlot[] | cdktn.IResolvable;
 }
@@ -1868,19 +1868,19 @@ export class Lexv2ModelsIntentInitialResponseSettingNextStepIntentList extends c
 }
 export interface Lexv2ModelsIntentInitialResponseSettingNextStep {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_intent#session_attributes Lexv2ModelsIntent#session_attributes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_intent#session_attributes Lexv2ModelsIntent#session_attributes}
   */
   readonly sessionAttributes?: { [key: string]: string };
   /**
   * dialog_action block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_intent#dialog_action Lexv2ModelsIntent#dialog_action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_intent#dialog_action Lexv2ModelsIntent#dialog_action}
   */
   readonly dialogAction?: Lexv2ModelsIntentInitialResponseSettingNextStepDialogAction[] | cdktn.IResolvable;
   /**
   * intent block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_intent#intent Lexv2ModelsIntent#intent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_intent#intent Lexv2ModelsIntent#intent}
   */
   readonly intent?: Lexv2ModelsIntentInitialResponseSettingNextStepIntent[] | cdktn.IResolvable;
 }
@@ -2056,25 +2056,25 @@ export interface Lexv2ModelsIntentInitialResponseSetting {
   /**
   * code_hook block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_intent#code_hook Lexv2ModelsIntent#code_hook}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_intent#code_hook Lexv2ModelsIntent#code_hook}
   */
   readonly codeHook?: Lexv2ModelsIntentInitialResponseSettingCodeHook[] | cdktn.IResolvable;
   /**
   * conditional block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_intent#conditional Lexv2ModelsIntent#conditional}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_intent#conditional Lexv2ModelsIntent#conditional}
   */
   readonly conditional?: Lexv2ModelsIntentInitialResponseSettingConditional[] | cdktn.IResolvable;
   /**
   * initial_response block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_intent#initial_response Lexv2ModelsIntent#initial_response}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_intent#initial_response Lexv2ModelsIntent#initial_response}
   */
   readonly initialResponse?: Lexv2ModelsIntentInitialResponseSettingInitialResponse[] | cdktn.IResolvable;
   /**
   * next_step block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_intent#next_step Lexv2ModelsIntent#next_step}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_intent#next_step Lexv2ModelsIntent#next_step}
   */
   readonly nextStep?: Lexv2ModelsIntentInitialResponseSettingNextStep[] | cdktn.IResolvable;
 }
@@ -2277,7 +2277,7 @@ export class Lexv2ModelsIntentInitialResponseSettingList extends cdktn.ComplexLi
 }
 export interface Lexv2ModelsIntentInputContext {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_intent#name Lexv2ModelsIntent#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_intent#name Lexv2ModelsIntent#name}
   */
   readonly name: string;
 }
@@ -2390,15 +2390,15 @@ export class Lexv2ModelsIntentInputContextList extends cdktn.ComplexList {
 }
 export interface Lexv2ModelsIntentKendraConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_intent#kendra_index Lexv2ModelsIntent#kendra_index}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_intent#kendra_index Lexv2ModelsIntent#kendra_index}
   */
   readonly kendraIndex: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_intent#query_filter_string Lexv2ModelsIntent#query_filter_string}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_intent#query_filter_string Lexv2ModelsIntent#query_filter_string}
   */
   readonly queryFilterString?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_intent#query_filter_string_enabled Lexv2ModelsIntent#query_filter_string_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_intent#query_filter_string_enabled Lexv2ModelsIntent#query_filter_string_enabled}
   */
   readonly queryFilterStringEnabled?: boolean | cdktn.IResolvable;
 }
@@ -2569,15 +2569,15 @@ export class Lexv2ModelsIntentKendraConfigurationList extends cdktn.ComplexList 
 }
 export interface Lexv2ModelsIntentOutputContext {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_intent#name Lexv2ModelsIntent#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_intent#name Lexv2ModelsIntent#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_intent#time_to_live_in_seconds Lexv2ModelsIntent#time_to_live_in_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_intent#time_to_live_in_seconds Lexv2ModelsIntent#time_to_live_in_seconds}
   */
   readonly timeToLiveInSeconds: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_intent#turns_to_live Lexv2ModelsIntent#turns_to_live}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_intent#turns_to_live Lexv2ModelsIntent#turns_to_live}
   */
   readonly turnsToLive: number;
 }
@@ -2740,9 +2740,1603 @@ export class Lexv2ModelsIntentOutputContextList extends cdktn.ComplexList {
     return new Lexv2ModelsIntentOutputContextOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface Lexv2ModelsIntentQnaIntentConfigurationBedrockModelConfigurationGuardrail {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_intent#identifier Lexv2ModelsIntent#identifier}
+  */
+  readonly identifier: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_intent#version Lexv2ModelsIntent#version}
+  */
+  readonly version: string;
+}
+
+export function lexv2ModelsIntentQnaIntentConfigurationBedrockModelConfigurationGuardrailToTerraform(struct?: Lexv2ModelsIntentQnaIntentConfigurationBedrockModelConfigurationGuardrail | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    identifier: cdktn.stringToTerraform(struct!.identifier),
+    version: cdktn.stringToTerraform(struct!.version),
+  }
+}
+
+
+export function lexv2ModelsIntentQnaIntentConfigurationBedrockModelConfigurationGuardrailToHclTerraform(struct?: Lexv2ModelsIntentQnaIntentConfigurationBedrockModelConfigurationGuardrail | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    identifier: {
+      value: cdktn.stringToHclTerraform(struct!.identifier),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    version: {
+      value: cdktn.stringToHclTerraform(struct!.version),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class Lexv2ModelsIntentQnaIntentConfigurationBedrockModelConfigurationGuardrailOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): Lexv2ModelsIntentQnaIntentConfigurationBedrockModelConfigurationGuardrail | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._identifier !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.identifier = this._identifier;
+    }
+    if (this._version !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.version = this._version;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: Lexv2ModelsIntentQnaIntentConfigurationBedrockModelConfigurationGuardrail | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._identifier = undefined;
+      this._version = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._identifier = value.identifier;
+      this._version = value.version;
+    }
+  }
+
+  // identifier - computed: false, optional: false, required: true
+  private _identifier?: string; 
+  public get identifier() {
+    return this.getStringAttribute('identifier');
+  }
+  public set identifier(value: string) {
+    this._identifier = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get identifierInput() {
+    return this._identifier;
+  }
+
+  // version - computed: false, optional: false, required: true
+  private _version?: string; 
+  public get version() {
+    return this.getStringAttribute('version');
+  }
+  public set version(value: string) {
+    this._version = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get versionInput() {
+    return this._version;
+  }
+}
+
+export class Lexv2ModelsIntentQnaIntentConfigurationBedrockModelConfigurationGuardrailList extends cdktn.ComplexList {
+  public internalValue? : Lexv2ModelsIntentQnaIntentConfigurationBedrockModelConfigurationGuardrail[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): Lexv2ModelsIntentQnaIntentConfigurationBedrockModelConfigurationGuardrailOutputReference {
+    return new Lexv2ModelsIntentQnaIntentConfigurationBedrockModelConfigurationGuardrailOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface Lexv2ModelsIntentQnaIntentConfigurationBedrockModelConfiguration {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_intent#custom_prompt Lexv2ModelsIntent#custom_prompt}
+  */
+  readonly customPrompt?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_intent#model_arn Lexv2ModelsIntent#model_arn}
+  */
+  readonly modelArn: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_intent#trace_status Lexv2ModelsIntent#trace_status}
+  */
+  readonly traceStatus?: string;
+  /**
+  * guardrail block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_intent#guardrail Lexv2ModelsIntent#guardrail}
+  */
+  readonly guardrail?: Lexv2ModelsIntentQnaIntentConfigurationBedrockModelConfigurationGuardrail[] | cdktn.IResolvable;
+}
+
+export function lexv2ModelsIntentQnaIntentConfigurationBedrockModelConfigurationToTerraform(struct?: Lexv2ModelsIntentQnaIntentConfigurationBedrockModelConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    custom_prompt: cdktn.stringToTerraform(struct!.customPrompt),
+    model_arn: cdktn.stringToTerraform(struct!.modelArn),
+    trace_status: cdktn.stringToTerraform(struct!.traceStatus),
+    guardrail: cdktn.listMapper(lexv2ModelsIntentQnaIntentConfigurationBedrockModelConfigurationGuardrailToTerraform, true)(struct!.guardrail),
+  }
+}
+
+
+export function lexv2ModelsIntentQnaIntentConfigurationBedrockModelConfigurationToHclTerraform(struct?: Lexv2ModelsIntentQnaIntentConfigurationBedrockModelConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    custom_prompt: {
+      value: cdktn.stringToHclTerraform(struct!.customPrompt),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    model_arn: {
+      value: cdktn.stringToHclTerraform(struct!.modelArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    trace_status: {
+      value: cdktn.stringToHclTerraform(struct!.traceStatus),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    guardrail: {
+      value: cdktn.listMapperHcl(lexv2ModelsIntentQnaIntentConfigurationBedrockModelConfigurationGuardrailToHclTerraform, true)(struct!.guardrail),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Lexv2ModelsIntentQnaIntentConfigurationBedrockModelConfigurationGuardrailList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class Lexv2ModelsIntentQnaIntentConfigurationBedrockModelConfigurationOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): Lexv2ModelsIntentQnaIntentConfigurationBedrockModelConfiguration | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._customPrompt !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.customPrompt = this._customPrompt;
+    }
+    if (this._modelArn !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.modelArn = this._modelArn;
+    }
+    if (this._traceStatus !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.traceStatus = this._traceStatus;
+    }
+    if (this._guardrail?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.guardrail = this._guardrail?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: Lexv2ModelsIntentQnaIntentConfigurationBedrockModelConfiguration | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._customPrompt = undefined;
+      this._modelArn = undefined;
+      this._traceStatus = undefined;
+      this._guardrail.internalValue = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._customPrompt = value.customPrompt;
+      this._modelArn = value.modelArn;
+      this._traceStatus = value.traceStatus;
+      this._guardrail.internalValue = value.guardrail;
+    }
+  }
+
+  // custom_prompt - computed: false, optional: true, required: false
+  private _customPrompt?: string; 
+  public get customPrompt() {
+    return this.getStringAttribute('custom_prompt');
+  }
+  public set customPrompt(value: string) {
+    this._customPrompt = value;
+  }
+  public resetCustomPrompt() {
+    this._customPrompt = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get customPromptInput() {
+    return this._customPrompt;
+  }
+
+  // model_arn - computed: false, optional: false, required: true
+  private _modelArn?: string; 
+  public get modelArn() {
+    return this.getStringAttribute('model_arn');
+  }
+  public set modelArn(value: string) {
+    this._modelArn = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get modelArnInput() {
+    return this._modelArn;
+  }
+
+  // trace_status - computed: false, optional: true, required: false
+  private _traceStatus?: string; 
+  public get traceStatus() {
+    return this.getStringAttribute('trace_status');
+  }
+  public set traceStatus(value: string) {
+    this._traceStatus = value;
+  }
+  public resetTraceStatus() {
+    this._traceStatus = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get traceStatusInput() {
+    return this._traceStatus;
+  }
+
+  // guardrail - computed: false, optional: true, required: false
+  private _guardrail = new Lexv2ModelsIntentQnaIntentConfigurationBedrockModelConfigurationGuardrailList(this, "guardrail", false);
+  public get guardrail() {
+    return this._guardrail;
+  }
+  public putGuardrail(value: Lexv2ModelsIntentQnaIntentConfigurationBedrockModelConfigurationGuardrail[] | cdktn.IResolvable) {
+    this._guardrail.internalValue = value;
+  }
+  public resetGuardrail() {
+    this._guardrail.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get guardrailInput() {
+    return this._guardrail.internalValue;
+  }
+}
+
+export class Lexv2ModelsIntentQnaIntentConfigurationBedrockModelConfigurationList extends cdktn.ComplexList {
+  public internalValue? : Lexv2ModelsIntentQnaIntentConfigurationBedrockModelConfiguration[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): Lexv2ModelsIntentQnaIntentConfigurationBedrockModelConfigurationOutputReference {
+    return new Lexv2ModelsIntentQnaIntentConfigurationBedrockModelConfigurationOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface Lexv2ModelsIntentQnaIntentConfigurationDataSourceConfigurationBedrockKnowledgeStoreConfigurationExactResponseFields {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_intent#answer_field Lexv2ModelsIntent#answer_field}
+  */
+  readonly answerField?: string;
+}
+
+export function lexv2ModelsIntentQnaIntentConfigurationDataSourceConfigurationBedrockKnowledgeStoreConfigurationExactResponseFieldsToTerraform(struct?: Lexv2ModelsIntentQnaIntentConfigurationDataSourceConfigurationBedrockKnowledgeStoreConfigurationExactResponseFields | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    answer_field: cdktn.stringToTerraform(struct!.answerField),
+  }
+}
+
+
+export function lexv2ModelsIntentQnaIntentConfigurationDataSourceConfigurationBedrockKnowledgeStoreConfigurationExactResponseFieldsToHclTerraform(struct?: Lexv2ModelsIntentQnaIntentConfigurationDataSourceConfigurationBedrockKnowledgeStoreConfigurationExactResponseFields | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    answer_field: {
+      value: cdktn.stringToHclTerraform(struct!.answerField),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class Lexv2ModelsIntentQnaIntentConfigurationDataSourceConfigurationBedrockKnowledgeStoreConfigurationExactResponseFieldsOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): Lexv2ModelsIntentQnaIntentConfigurationDataSourceConfigurationBedrockKnowledgeStoreConfigurationExactResponseFields | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._answerField !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.answerField = this._answerField;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: Lexv2ModelsIntentQnaIntentConfigurationDataSourceConfigurationBedrockKnowledgeStoreConfigurationExactResponseFields | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._answerField = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._answerField = value.answerField;
+    }
+  }
+
+  // answer_field - computed: false, optional: true, required: false
+  private _answerField?: string; 
+  public get answerField() {
+    return this.getStringAttribute('answer_field');
+  }
+  public set answerField(value: string) {
+    this._answerField = value;
+  }
+  public resetAnswerField() {
+    this._answerField = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get answerFieldInput() {
+    return this._answerField;
+  }
+}
+
+export class Lexv2ModelsIntentQnaIntentConfigurationDataSourceConfigurationBedrockKnowledgeStoreConfigurationExactResponseFieldsList extends cdktn.ComplexList {
+  public internalValue? : Lexv2ModelsIntentQnaIntentConfigurationDataSourceConfigurationBedrockKnowledgeStoreConfigurationExactResponseFields[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): Lexv2ModelsIntentQnaIntentConfigurationDataSourceConfigurationBedrockKnowledgeStoreConfigurationExactResponseFieldsOutputReference {
+    return new Lexv2ModelsIntentQnaIntentConfigurationDataSourceConfigurationBedrockKnowledgeStoreConfigurationExactResponseFieldsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface Lexv2ModelsIntentQnaIntentConfigurationDataSourceConfigurationBedrockKnowledgeStoreConfiguration {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_intent#bedrock_knowledge_base_arn Lexv2ModelsIntent#bedrock_knowledge_base_arn}
+  */
+  readonly bedrockKnowledgeBaseArn: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_intent#exact_response Lexv2ModelsIntent#exact_response}
+  */
+  readonly exactResponse?: boolean | cdktn.IResolvable;
+  /**
+  * exact_response_fields block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_intent#exact_response_fields Lexv2ModelsIntent#exact_response_fields}
+  */
+  readonly exactResponseFields?: Lexv2ModelsIntentQnaIntentConfigurationDataSourceConfigurationBedrockKnowledgeStoreConfigurationExactResponseFields[] | cdktn.IResolvable;
+}
+
+export function lexv2ModelsIntentQnaIntentConfigurationDataSourceConfigurationBedrockKnowledgeStoreConfigurationToTerraform(struct?: Lexv2ModelsIntentQnaIntentConfigurationDataSourceConfigurationBedrockKnowledgeStoreConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    bedrock_knowledge_base_arn: cdktn.stringToTerraform(struct!.bedrockKnowledgeBaseArn),
+    exact_response: cdktn.booleanToTerraform(struct!.exactResponse),
+    exact_response_fields: cdktn.listMapper(lexv2ModelsIntentQnaIntentConfigurationDataSourceConfigurationBedrockKnowledgeStoreConfigurationExactResponseFieldsToTerraform, true)(struct!.exactResponseFields),
+  }
+}
+
+
+export function lexv2ModelsIntentQnaIntentConfigurationDataSourceConfigurationBedrockKnowledgeStoreConfigurationToHclTerraform(struct?: Lexv2ModelsIntentQnaIntentConfigurationDataSourceConfigurationBedrockKnowledgeStoreConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    bedrock_knowledge_base_arn: {
+      value: cdktn.stringToHclTerraform(struct!.bedrockKnowledgeBaseArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    exact_response: {
+      value: cdktn.booleanToHclTerraform(struct!.exactResponse),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    exact_response_fields: {
+      value: cdktn.listMapperHcl(lexv2ModelsIntentQnaIntentConfigurationDataSourceConfigurationBedrockKnowledgeStoreConfigurationExactResponseFieldsToHclTerraform, true)(struct!.exactResponseFields),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Lexv2ModelsIntentQnaIntentConfigurationDataSourceConfigurationBedrockKnowledgeStoreConfigurationExactResponseFieldsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class Lexv2ModelsIntentQnaIntentConfigurationDataSourceConfigurationBedrockKnowledgeStoreConfigurationOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): Lexv2ModelsIntentQnaIntentConfigurationDataSourceConfigurationBedrockKnowledgeStoreConfiguration | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._bedrockKnowledgeBaseArn !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.bedrockKnowledgeBaseArn = this._bedrockKnowledgeBaseArn;
+    }
+    if (this._exactResponse !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.exactResponse = this._exactResponse;
+    }
+    if (this._exactResponseFields?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.exactResponseFields = this._exactResponseFields?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: Lexv2ModelsIntentQnaIntentConfigurationDataSourceConfigurationBedrockKnowledgeStoreConfiguration | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._bedrockKnowledgeBaseArn = undefined;
+      this._exactResponse = undefined;
+      this._exactResponseFields.internalValue = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._bedrockKnowledgeBaseArn = value.bedrockKnowledgeBaseArn;
+      this._exactResponse = value.exactResponse;
+      this._exactResponseFields.internalValue = value.exactResponseFields;
+    }
+  }
+
+  // bedrock_knowledge_base_arn - computed: false, optional: false, required: true
+  private _bedrockKnowledgeBaseArn?: string; 
+  public get bedrockKnowledgeBaseArn() {
+    return this.getStringAttribute('bedrock_knowledge_base_arn');
+  }
+  public set bedrockKnowledgeBaseArn(value: string) {
+    this._bedrockKnowledgeBaseArn = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get bedrockKnowledgeBaseArnInput() {
+    return this._bedrockKnowledgeBaseArn;
+  }
+
+  // exact_response - computed: true, optional: true, required: false
+  private _exactResponse?: boolean | cdktn.IResolvable; 
+  public get exactResponse() {
+    return this.getBooleanAttribute('exact_response');
+  }
+  public set exactResponse(value: boolean | cdktn.IResolvable) {
+    this._exactResponse = value;
+  }
+  public resetExactResponse() {
+    this._exactResponse = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get exactResponseInput() {
+    return this._exactResponse;
+  }
+
+  // exact_response_fields - computed: false, optional: true, required: false
+  private _exactResponseFields = new Lexv2ModelsIntentQnaIntentConfigurationDataSourceConfigurationBedrockKnowledgeStoreConfigurationExactResponseFieldsList(this, "exact_response_fields", false);
+  public get exactResponseFields() {
+    return this._exactResponseFields;
+  }
+  public putExactResponseFields(value: Lexv2ModelsIntentQnaIntentConfigurationDataSourceConfigurationBedrockKnowledgeStoreConfigurationExactResponseFields[] | cdktn.IResolvable) {
+    this._exactResponseFields.internalValue = value;
+  }
+  public resetExactResponseFields() {
+    this._exactResponseFields.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get exactResponseFieldsInput() {
+    return this._exactResponseFields.internalValue;
+  }
+}
+
+export class Lexv2ModelsIntentQnaIntentConfigurationDataSourceConfigurationBedrockKnowledgeStoreConfigurationList extends cdktn.ComplexList {
+  public internalValue? : Lexv2ModelsIntentQnaIntentConfigurationDataSourceConfigurationBedrockKnowledgeStoreConfiguration[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): Lexv2ModelsIntentQnaIntentConfigurationDataSourceConfigurationBedrockKnowledgeStoreConfigurationOutputReference {
+    return new Lexv2ModelsIntentQnaIntentConfigurationDataSourceConfigurationBedrockKnowledgeStoreConfigurationOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface Lexv2ModelsIntentQnaIntentConfigurationDataSourceConfigurationKendraConfiguration {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_intent#exact_response Lexv2ModelsIntent#exact_response}
+  */
+  readonly exactResponse?: boolean | cdktn.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_intent#kendra_index Lexv2ModelsIntent#kendra_index}
+  */
+  readonly kendraIndex: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_intent#query_filter_string Lexv2ModelsIntent#query_filter_string}
+  */
+  readonly queryFilterString?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_intent#query_filter_string_enabled Lexv2ModelsIntent#query_filter_string_enabled}
+  */
+  readonly queryFilterStringEnabled?: boolean | cdktn.IResolvable;
+}
+
+export function lexv2ModelsIntentQnaIntentConfigurationDataSourceConfigurationKendraConfigurationToTerraform(struct?: Lexv2ModelsIntentQnaIntentConfigurationDataSourceConfigurationKendraConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    exact_response: cdktn.booleanToTerraform(struct!.exactResponse),
+    kendra_index: cdktn.stringToTerraform(struct!.kendraIndex),
+    query_filter_string: cdktn.stringToTerraform(struct!.queryFilterString),
+    query_filter_string_enabled: cdktn.booleanToTerraform(struct!.queryFilterStringEnabled),
+  }
+}
+
+
+export function lexv2ModelsIntentQnaIntentConfigurationDataSourceConfigurationKendraConfigurationToHclTerraform(struct?: Lexv2ModelsIntentQnaIntentConfigurationDataSourceConfigurationKendraConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    exact_response: {
+      value: cdktn.booleanToHclTerraform(struct!.exactResponse),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    kendra_index: {
+      value: cdktn.stringToHclTerraform(struct!.kendraIndex),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    query_filter_string: {
+      value: cdktn.stringToHclTerraform(struct!.queryFilterString),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    query_filter_string_enabled: {
+      value: cdktn.booleanToHclTerraform(struct!.queryFilterStringEnabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class Lexv2ModelsIntentQnaIntentConfigurationDataSourceConfigurationKendraConfigurationOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): Lexv2ModelsIntentQnaIntentConfigurationDataSourceConfigurationKendraConfiguration | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._exactResponse !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.exactResponse = this._exactResponse;
+    }
+    if (this._kendraIndex !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.kendraIndex = this._kendraIndex;
+    }
+    if (this._queryFilterString !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.queryFilterString = this._queryFilterString;
+    }
+    if (this._queryFilterStringEnabled !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.queryFilterStringEnabled = this._queryFilterStringEnabled;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: Lexv2ModelsIntentQnaIntentConfigurationDataSourceConfigurationKendraConfiguration | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._exactResponse = undefined;
+      this._kendraIndex = undefined;
+      this._queryFilterString = undefined;
+      this._queryFilterStringEnabled = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._exactResponse = value.exactResponse;
+      this._kendraIndex = value.kendraIndex;
+      this._queryFilterString = value.queryFilterString;
+      this._queryFilterStringEnabled = value.queryFilterStringEnabled;
+    }
+  }
+
+  // exact_response - computed: true, optional: true, required: false
+  private _exactResponse?: boolean | cdktn.IResolvable; 
+  public get exactResponse() {
+    return this.getBooleanAttribute('exact_response');
+  }
+  public set exactResponse(value: boolean | cdktn.IResolvable) {
+    this._exactResponse = value;
+  }
+  public resetExactResponse() {
+    this._exactResponse = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get exactResponseInput() {
+    return this._exactResponse;
+  }
+
+  // kendra_index - computed: false, optional: false, required: true
+  private _kendraIndex?: string; 
+  public get kendraIndex() {
+    return this.getStringAttribute('kendra_index');
+  }
+  public set kendraIndex(value: string) {
+    this._kendraIndex = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get kendraIndexInput() {
+    return this._kendraIndex;
+  }
+
+  // query_filter_string - computed: false, optional: true, required: false
+  private _queryFilterString?: string; 
+  public get queryFilterString() {
+    return this.getStringAttribute('query_filter_string');
+  }
+  public set queryFilterString(value: string) {
+    this._queryFilterString = value;
+  }
+  public resetQueryFilterString() {
+    this._queryFilterString = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get queryFilterStringInput() {
+    return this._queryFilterString;
+  }
+
+  // query_filter_string_enabled - computed: false, optional: true, required: false
+  private _queryFilterStringEnabled?: boolean | cdktn.IResolvable; 
+  public get queryFilterStringEnabled() {
+    return this.getBooleanAttribute('query_filter_string_enabled');
+  }
+  public set queryFilterStringEnabled(value: boolean | cdktn.IResolvable) {
+    this._queryFilterStringEnabled = value;
+  }
+  public resetQueryFilterStringEnabled() {
+    this._queryFilterStringEnabled = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get queryFilterStringEnabledInput() {
+    return this._queryFilterStringEnabled;
+  }
+}
+
+export class Lexv2ModelsIntentQnaIntentConfigurationDataSourceConfigurationKendraConfigurationList extends cdktn.ComplexList {
+  public internalValue? : Lexv2ModelsIntentQnaIntentConfigurationDataSourceConfigurationKendraConfiguration[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): Lexv2ModelsIntentQnaIntentConfigurationDataSourceConfigurationKendraConfigurationOutputReference {
+    return new Lexv2ModelsIntentQnaIntentConfigurationDataSourceConfigurationKendraConfigurationOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface Lexv2ModelsIntentQnaIntentConfigurationDataSourceConfigurationOpensearchConfigurationExactResponseFields {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_intent#answer_field Lexv2ModelsIntent#answer_field}
+  */
+  readonly answerField: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_intent#question_field Lexv2ModelsIntent#question_field}
+  */
+  readonly questionField: string;
+}
+
+export function lexv2ModelsIntentQnaIntentConfigurationDataSourceConfigurationOpensearchConfigurationExactResponseFieldsToTerraform(struct?: Lexv2ModelsIntentQnaIntentConfigurationDataSourceConfigurationOpensearchConfigurationExactResponseFields | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    answer_field: cdktn.stringToTerraform(struct!.answerField),
+    question_field: cdktn.stringToTerraform(struct!.questionField),
+  }
+}
+
+
+export function lexv2ModelsIntentQnaIntentConfigurationDataSourceConfigurationOpensearchConfigurationExactResponseFieldsToHclTerraform(struct?: Lexv2ModelsIntentQnaIntentConfigurationDataSourceConfigurationOpensearchConfigurationExactResponseFields | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    answer_field: {
+      value: cdktn.stringToHclTerraform(struct!.answerField),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    question_field: {
+      value: cdktn.stringToHclTerraform(struct!.questionField),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class Lexv2ModelsIntentQnaIntentConfigurationDataSourceConfigurationOpensearchConfigurationExactResponseFieldsOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): Lexv2ModelsIntentQnaIntentConfigurationDataSourceConfigurationOpensearchConfigurationExactResponseFields | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._answerField !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.answerField = this._answerField;
+    }
+    if (this._questionField !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.questionField = this._questionField;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: Lexv2ModelsIntentQnaIntentConfigurationDataSourceConfigurationOpensearchConfigurationExactResponseFields | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._answerField = undefined;
+      this._questionField = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._answerField = value.answerField;
+      this._questionField = value.questionField;
+    }
+  }
+
+  // answer_field - computed: false, optional: false, required: true
+  private _answerField?: string; 
+  public get answerField() {
+    return this.getStringAttribute('answer_field');
+  }
+  public set answerField(value: string) {
+    this._answerField = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get answerFieldInput() {
+    return this._answerField;
+  }
+
+  // question_field - computed: false, optional: false, required: true
+  private _questionField?: string; 
+  public get questionField() {
+    return this.getStringAttribute('question_field');
+  }
+  public set questionField(value: string) {
+    this._questionField = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get questionFieldInput() {
+    return this._questionField;
+  }
+}
+
+export class Lexv2ModelsIntentQnaIntentConfigurationDataSourceConfigurationOpensearchConfigurationExactResponseFieldsList extends cdktn.ComplexList {
+  public internalValue? : Lexv2ModelsIntentQnaIntentConfigurationDataSourceConfigurationOpensearchConfigurationExactResponseFields[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): Lexv2ModelsIntentQnaIntentConfigurationDataSourceConfigurationOpensearchConfigurationExactResponseFieldsOutputReference {
+    return new Lexv2ModelsIntentQnaIntentConfigurationDataSourceConfigurationOpensearchConfigurationExactResponseFieldsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface Lexv2ModelsIntentQnaIntentConfigurationDataSourceConfigurationOpensearchConfiguration {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_intent#domain_endpoint Lexv2ModelsIntent#domain_endpoint}
+  */
+  readonly domainEndpoint: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_intent#exact_response Lexv2ModelsIntent#exact_response}
+  */
+  readonly exactResponse?: boolean | cdktn.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_intent#include_fields Lexv2ModelsIntent#include_fields}
+  */
+  readonly includeFields?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_intent#index_name Lexv2ModelsIntent#index_name}
+  */
+  readonly indexName: string;
+  /**
+  * exact_response_fields block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_intent#exact_response_fields Lexv2ModelsIntent#exact_response_fields}
+  */
+  readonly exactResponseFields?: Lexv2ModelsIntentQnaIntentConfigurationDataSourceConfigurationOpensearchConfigurationExactResponseFields[] | cdktn.IResolvable;
+}
+
+export function lexv2ModelsIntentQnaIntentConfigurationDataSourceConfigurationOpensearchConfigurationToTerraform(struct?: Lexv2ModelsIntentQnaIntentConfigurationDataSourceConfigurationOpensearchConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    domain_endpoint: cdktn.stringToTerraform(struct!.domainEndpoint),
+    exact_response: cdktn.booleanToTerraform(struct!.exactResponse),
+    include_fields: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.includeFields),
+    index_name: cdktn.stringToTerraform(struct!.indexName),
+    exact_response_fields: cdktn.listMapper(lexv2ModelsIntentQnaIntentConfigurationDataSourceConfigurationOpensearchConfigurationExactResponseFieldsToTerraform, true)(struct!.exactResponseFields),
+  }
+}
+
+
+export function lexv2ModelsIntentQnaIntentConfigurationDataSourceConfigurationOpensearchConfigurationToHclTerraform(struct?: Lexv2ModelsIntentQnaIntentConfigurationDataSourceConfigurationOpensearchConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    domain_endpoint: {
+      value: cdktn.stringToHclTerraform(struct!.domainEndpoint),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    exact_response: {
+      value: cdktn.booleanToHclTerraform(struct!.exactResponse),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    include_fields: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.includeFields),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    index_name: {
+      value: cdktn.stringToHclTerraform(struct!.indexName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    exact_response_fields: {
+      value: cdktn.listMapperHcl(lexv2ModelsIntentQnaIntentConfigurationDataSourceConfigurationOpensearchConfigurationExactResponseFieldsToHclTerraform, true)(struct!.exactResponseFields),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Lexv2ModelsIntentQnaIntentConfigurationDataSourceConfigurationOpensearchConfigurationExactResponseFieldsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class Lexv2ModelsIntentQnaIntentConfigurationDataSourceConfigurationOpensearchConfigurationOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): Lexv2ModelsIntentQnaIntentConfigurationDataSourceConfigurationOpensearchConfiguration | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._domainEndpoint !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.domainEndpoint = this._domainEndpoint;
+    }
+    if (this._exactResponse !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.exactResponse = this._exactResponse;
+    }
+    if (this._includeFields !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.includeFields = this._includeFields;
+    }
+    if (this._indexName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.indexName = this._indexName;
+    }
+    if (this._exactResponseFields?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.exactResponseFields = this._exactResponseFields?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: Lexv2ModelsIntentQnaIntentConfigurationDataSourceConfigurationOpensearchConfiguration | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._domainEndpoint = undefined;
+      this._exactResponse = undefined;
+      this._includeFields = undefined;
+      this._indexName = undefined;
+      this._exactResponseFields.internalValue = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._domainEndpoint = value.domainEndpoint;
+      this._exactResponse = value.exactResponse;
+      this._includeFields = value.includeFields;
+      this._indexName = value.indexName;
+      this._exactResponseFields.internalValue = value.exactResponseFields;
+    }
+  }
+
+  // domain_endpoint - computed: false, optional: false, required: true
+  private _domainEndpoint?: string; 
+  public get domainEndpoint() {
+    return this.getStringAttribute('domain_endpoint');
+  }
+  public set domainEndpoint(value: string) {
+    this._domainEndpoint = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get domainEndpointInput() {
+    return this._domainEndpoint;
+  }
+
+  // exact_response - computed: true, optional: true, required: false
+  private _exactResponse?: boolean | cdktn.IResolvable; 
+  public get exactResponse() {
+    return this.getBooleanAttribute('exact_response');
+  }
+  public set exactResponse(value: boolean | cdktn.IResolvable) {
+    this._exactResponse = value;
+  }
+  public resetExactResponse() {
+    this._exactResponse = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get exactResponseInput() {
+    return this._exactResponse;
+  }
+
+  // include_fields - computed: false, optional: true, required: false
+  private _includeFields?: string[]; 
+  public get includeFields() {
+    return this.getListAttribute('include_fields');
+  }
+  public set includeFields(value: string[]) {
+    this._includeFields = value;
+  }
+  public resetIncludeFields() {
+    this._includeFields = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get includeFieldsInput() {
+    return this._includeFields;
+  }
+
+  // index_name - computed: false, optional: false, required: true
+  private _indexName?: string; 
+  public get indexName() {
+    return this.getStringAttribute('index_name');
+  }
+  public set indexName(value: string) {
+    this._indexName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get indexNameInput() {
+    return this._indexName;
+  }
+
+  // exact_response_fields - computed: false, optional: true, required: false
+  private _exactResponseFields = new Lexv2ModelsIntentQnaIntentConfigurationDataSourceConfigurationOpensearchConfigurationExactResponseFieldsList(this, "exact_response_fields", false);
+  public get exactResponseFields() {
+    return this._exactResponseFields;
+  }
+  public putExactResponseFields(value: Lexv2ModelsIntentQnaIntentConfigurationDataSourceConfigurationOpensearchConfigurationExactResponseFields[] | cdktn.IResolvable) {
+    this._exactResponseFields.internalValue = value;
+  }
+  public resetExactResponseFields() {
+    this._exactResponseFields.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get exactResponseFieldsInput() {
+    return this._exactResponseFields.internalValue;
+  }
+}
+
+export class Lexv2ModelsIntentQnaIntentConfigurationDataSourceConfigurationOpensearchConfigurationList extends cdktn.ComplexList {
+  public internalValue? : Lexv2ModelsIntentQnaIntentConfigurationDataSourceConfigurationOpensearchConfiguration[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): Lexv2ModelsIntentQnaIntentConfigurationDataSourceConfigurationOpensearchConfigurationOutputReference {
+    return new Lexv2ModelsIntentQnaIntentConfigurationDataSourceConfigurationOpensearchConfigurationOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface Lexv2ModelsIntentQnaIntentConfigurationDataSourceConfiguration {
+  /**
+  * bedrock_knowledge_store_configuration block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_intent#bedrock_knowledge_store_configuration Lexv2ModelsIntent#bedrock_knowledge_store_configuration}
+  */
+  readonly bedrockKnowledgeStoreConfiguration?: Lexv2ModelsIntentQnaIntentConfigurationDataSourceConfigurationBedrockKnowledgeStoreConfiguration[] | cdktn.IResolvable;
+  /**
+  * kendra_configuration block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_intent#kendra_configuration Lexv2ModelsIntent#kendra_configuration}
+  */
+  readonly kendraConfiguration?: Lexv2ModelsIntentQnaIntentConfigurationDataSourceConfigurationKendraConfiguration[] | cdktn.IResolvable;
+  /**
+  * opensearch_configuration block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_intent#opensearch_configuration Lexv2ModelsIntent#opensearch_configuration}
+  */
+  readonly opensearchConfiguration?: Lexv2ModelsIntentQnaIntentConfigurationDataSourceConfigurationOpensearchConfiguration[] | cdktn.IResolvable;
+}
+
+export function lexv2ModelsIntentQnaIntentConfigurationDataSourceConfigurationToTerraform(struct?: Lexv2ModelsIntentQnaIntentConfigurationDataSourceConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    bedrock_knowledge_store_configuration: cdktn.listMapper(lexv2ModelsIntentQnaIntentConfigurationDataSourceConfigurationBedrockKnowledgeStoreConfigurationToTerraform, true)(struct!.bedrockKnowledgeStoreConfiguration),
+    kendra_configuration: cdktn.listMapper(lexv2ModelsIntentQnaIntentConfigurationDataSourceConfigurationKendraConfigurationToTerraform, true)(struct!.kendraConfiguration),
+    opensearch_configuration: cdktn.listMapper(lexv2ModelsIntentQnaIntentConfigurationDataSourceConfigurationOpensearchConfigurationToTerraform, true)(struct!.opensearchConfiguration),
+  }
+}
+
+
+export function lexv2ModelsIntentQnaIntentConfigurationDataSourceConfigurationToHclTerraform(struct?: Lexv2ModelsIntentQnaIntentConfigurationDataSourceConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    bedrock_knowledge_store_configuration: {
+      value: cdktn.listMapperHcl(lexv2ModelsIntentQnaIntentConfigurationDataSourceConfigurationBedrockKnowledgeStoreConfigurationToHclTerraform, true)(struct!.bedrockKnowledgeStoreConfiguration),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Lexv2ModelsIntentQnaIntentConfigurationDataSourceConfigurationBedrockKnowledgeStoreConfigurationList",
+    },
+    kendra_configuration: {
+      value: cdktn.listMapperHcl(lexv2ModelsIntentQnaIntentConfigurationDataSourceConfigurationKendraConfigurationToHclTerraform, true)(struct!.kendraConfiguration),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Lexv2ModelsIntentQnaIntentConfigurationDataSourceConfigurationKendraConfigurationList",
+    },
+    opensearch_configuration: {
+      value: cdktn.listMapperHcl(lexv2ModelsIntentQnaIntentConfigurationDataSourceConfigurationOpensearchConfigurationToHclTerraform, true)(struct!.opensearchConfiguration),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Lexv2ModelsIntentQnaIntentConfigurationDataSourceConfigurationOpensearchConfigurationList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class Lexv2ModelsIntentQnaIntentConfigurationDataSourceConfigurationOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): Lexv2ModelsIntentQnaIntentConfigurationDataSourceConfiguration | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._bedrockKnowledgeStoreConfiguration?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.bedrockKnowledgeStoreConfiguration = this._bedrockKnowledgeStoreConfiguration?.internalValue;
+    }
+    if (this._kendraConfiguration?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.kendraConfiguration = this._kendraConfiguration?.internalValue;
+    }
+    if (this._opensearchConfiguration?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.opensearchConfiguration = this._opensearchConfiguration?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: Lexv2ModelsIntentQnaIntentConfigurationDataSourceConfiguration | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._bedrockKnowledgeStoreConfiguration.internalValue = undefined;
+      this._kendraConfiguration.internalValue = undefined;
+      this._opensearchConfiguration.internalValue = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._bedrockKnowledgeStoreConfiguration.internalValue = value.bedrockKnowledgeStoreConfiguration;
+      this._kendraConfiguration.internalValue = value.kendraConfiguration;
+      this._opensearchConfiguration.internalValue = value.opensearchConfiguration;
+    }
+  }
+
+  // bedrock_knowledge_store_configuration - computed: false, optional: true, required: false
+  private _bedrockKnowledgeStoreConfiguration = new Lexv2ModelsIntentQnaIntentConfigurationDataSourceConfigurationBedrockKnowledgeStoreConfigurationList(this, "bedrock_knowledge_store_configuration", false);
+  public get bedrockKnowledgeStoreConfiguration() {
+    return this._bedrockKnowledgeStoreConfiguration;
+  }
+  public putBedrockKnowledgeStoreConfiguration(value: Lexv2ModelsIntentQnaIntentConfigurationDataSourceConfigurationBedrockKnowledgeStoreConfiguration[] | cdktn.IResolvable) {
+    this._bedrockKnowledgeStoreConfiguration.internalValue = value;
+  }
+  public resetBedrockKnowledgeStoreConfiguration() {
+    this._bedrockKnowledgeStoreConfiguration.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get bedrockKnowledgeStoreConfigurationInput() {
+    return this._bedrockKnowledgeStoreConfiguration.internalValue;
+  }
+
+  // kendra_configuration - computed: false, optional: true, required: false
+  private _kendraConfiguration = new Lexv2ModelsIntentQnaIntentConfigurationDataSourceConfigurationKendraConfigurationList(this, "kendra_configuration", false);
+  public get kendraConfiguration() {
+    return this._kendraConfiguration;
+  }
+  public putKendraConfiguration(value: Lexv2ModelsIntentQnaIntentConfigurationDataSourceConfigurationKendraConfiguration[] | cdktn.IResolvable) {
+    this._kendraConfiguration.internalValue = value;
+  }
+  public resetKendraConfiguration() {
+    this._kendraConfiguration.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get kendraConfigurationInput() {
+    return this._kendraConfiguration.internalValue;
+  }
+
+  // opensearch_configuration - computed: false, optional: true, required: false
+  private _opensearchConfiguration = new Lexv2ModelsIntentQnaIntentConfigurationDataSourceConfigurationOpensearchConfigurationList(this, "opensearch_configuration", false);
+  public get opensearchConfiguration() {
+    return this._opensearchConfiguration;
+  }
+  public putOpensearchConfiguration(value: Lexv2ModelsIntentQnaIntentConfigurationDataSourceConfigurationOpensearchConfiguration[] | cdktn.IResolvable) {
+    this._opensearchConfiguration.internalValue = value;
+  }
+  public resetOpensearchConfiguration() {
+    this._opensearchConfiguration.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get opensearchConfigurationInput() {
+    return this._opensearchConfiguration.internalValue;
+  }
+}
+
+export class Lexv2ModelsIntentQnaIntentConfigurationDataSourceConfigurationList extends cdktn.ComplexList {
+  public internalValue? : Lexv2ModelsIntentQnaIntentConfigurationDataSourceConfiguration[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): Lexv2ModelsIntentQnaIntentConfigurationDataSourceConfigurationOutputReference {
+    return new Lexv2ModelsIntentQnaIntentConfigurationDataSourceConfigurationOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface Lexv2ModelsIntentQnaIntentConfiguration {
+  /**
+  * bedrock_model_configuration block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_intent#bedrock_model_configuration Lexv2ModelsIntent#bedrock_model_configuration}
+  */
+  readonly bedrockModelConfiguration?: Lexv2ModelsIntentQnaIntentConfigurationBedrockModelConfiguration[] | cdktn.IResolvable;
+  /**
+  * data_source_configuration block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_intent#data_source_configuration Lexv2ModelsIntent#data_source_configuration}
+  */
+  readonly dataSourceConfiguration?: Lexv2ModelsIntentQnaIntentConfigurationDataSourceConfiguration[] | cdktn.IResolvable;
+}
+
+export function lexv2ModelsIntentQnaIntentConfigurationToTerraform(struct?: Lexv2ModelsIntentQnaIntentConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    bedrock_model_configuration: cdktn.listMapper(lexv2ModelsIntentQnaIntentConfigurationBedrockModelConfigurationToTerraform, true)(struct!.bedrockModelConfiguration),
+    data_source_configuration: cdktn.listMapper(lexv2ModelsIntentQnaIntentConfigurationDataSourceConfigurationToTerraform, true)(struct!.dataSourceConfiguration),
+  }
+}
+
+
+export function lexv2ModelsIntentQnaIntentConfigurationToHclTerraform(struct?: Lexv2ModelsIntentQnaIntentConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    bedrock_model_configuration: {
+      value: cdktn.listMapperHcl(lexv2ModelsIntentQnaIntentConfigurationBedrockModelConfigurationToHclTerraform, true)(struct!.bedrockModelConfiguration),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Lexv2ModelsIntentQnaIntentConfigurationBedrockModelConfigurationList",
+    },
+    data_source_configuration: {
+      value: cdktn.listMapperHcl(lexv2ModelsIntentQnaIntentConfigurationDataSourceConfigurationToHclTerraform, true)(struct!.dataSourceConfiguration),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Lexv2ModelsIntentQnaIntentConfigurationDataSourceConfigurationList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class Lexv2ModelsIntentQnaIntentConfigurationOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): Lexv2ModelsIntentQnaIntentConfiguration | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._bedrockModelConfiguration?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.bedrockModelConfiguration = this._bedrockModelConfiguration?.internalValue;
+    }
+    if (this._dataSourceConfiguration?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.dataSourceConfiguration = this._dataSourceConfiguration?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: Lexv2ModelsIntentQnaIntentConfiguration | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._bedrockModelConfiguration.internalValue = undefined;
+      this._dataSourceConfiguration.internalValue = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._bedrockModelConfiguration.internalValue = value.bedrockModelConfiguration;
+      this._dataSourceConfiguration.internalValue = value.dataSourceConfiguration;
+    }
+  }
+
+  // bedrock_model_configuration - computed: false, optional: true, required: false
+  private _bedrockModelConfiguration = new Lexv2ModelsIntentQnaIntentConfigurationBedrockModelConfigurationList(this, "bedrock_model_configuration", false);
+  public get bedrockModelConfiguration() {
+    return this._bedrockModelConfiguration;
+  }
+  public putBedrockModelConfiguration(value: Lexv2ModelsIntentQnaIntentConfigurationBedrockModelConfiguration[] | cdktn.IResolvable) {
+    this._bedrockModelConfiguration.internalValue = value;
+  }
+  public resetBedrockModelConfiguration() {
+    this._bedrockModelConfiguration.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get bedrockModelConfigurationInput() {
+    return this._bedrockModelConfiguration.internalValue;
+  }
+
+  // data_source_configuration - computed: false, optional: true, required: false
+  private _dataSourceConfiguration = new Lexv2ModelsIntentQnaIntentConfigurationDataSourceConfigurationList(this, "data_source_configuration", false);
+  public get dataSourceConfiguration() {
+    return this._dataSourceConfiguration;
+  }
+  public putDataSourceConfiguration(value: Lexv2ModelsIntentQnaIntentConfigurationDataSourceConfiguration[] | cdktn.IResolvable) {
+    this._dataSourceConfiguration.internalValue = value;
+  }
+  public resetDataSourceConfiguration() {
+    this._dataSourceConfiguration.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dataSourceConfigurationInput() {
+    return this._dataSourceConfiguration.internalValue;
+  }
+}
+
+export class Lexv2ModelsIntentQnaIntentConfigurationList extends cdktn.ComplexList {
+  public internalValue? : Lexv2ModelsIntentQnaIntentConfiguration[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): Lexv2ModelsIntentQnaIntentConfigurationOutputReference {
+    return new Lexv2ModelsIntentQnaIntentConfigurationOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface Lexv2ModelsIntentSampleUtterance {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_intent#utterance Lexv2ModelsIntent#utterance}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_intent#utterance Lexv2ModelsIntent#utterance}
   */
   readonly utterance: string;
 }
@@ -2855,11 +4449,11 @@ export class Lexv2ModelsIntentSampleUtteranceList extends cdktn.ComplexList {
 }
 export interface Lexv2ModelsIntentSlotPriority {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_intent#priority Lexv2ModelsIntent#priority}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_intent#priority Lexv2ModelsIntent#priority}
   */
   readonly priority: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_intent#slot_id Lexv2ModelsIntent#slot_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_intent#slot_id Lexv2ModelsIntent#slot_id}
   */
   readonly slotId: string;
 }
@@ -3000,19 +4594,19 @@ export interface Lexv2ModelsIntentTimeouts {
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_intent#create Lexv2ModelsIntent#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_intent#create Lexv2ModelsIntent#create}
   */
   readonly create?: string;
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_intent#delete Lexv2ModelsIntent#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_intent#delete Lexv2ModelsIntent#delete}
   */
   readonly delete?: string;
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/lexv2models_intent#update Lexv2ModelsIntent#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/lexv2models_intent#update Lexv2ModelsIntent#update}
   */
   readonly update?: string;
 }

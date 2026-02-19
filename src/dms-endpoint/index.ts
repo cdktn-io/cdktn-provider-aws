@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint
+// https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,170 +13,170 @@ import * as cdktn from 'cdktn';
 
 export interface DmsEndpointConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#certificate_arn DmsEndpoint#certificate_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#certificate_arn DmsEndpoint#certificate_arn}
   */
   readonly certificateArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#database_name DmsEndpoint#database_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#database_name DmsEndpoint#database_name}
   */
   readonly databaseName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#endpoint_id DmsEndpoint#endpoint_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#endpoint_id DmsEndpoint#endpoint_id}
   */
   readonly endpointId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#endpoint_type DmsEndpoint#endpoint_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#endpoint_type DmsEndpoint#endpoint_type}
   */
   readonly endpointType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#engine_name DmsEndpoint#engine_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#engine_name DmsEndpoint#engine_name}
   */
   readonly engineName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#extra_connection_attributes DmsEndpoint#extra_connection_attributes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#extra_connection_attributes DmsEndpoint#extra_connection_attributes}
   */
   readonly extraConnectionAttributes?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#id DmsEndpoint#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#id DmsEndpoint#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#kms_key_arn DmsEndpoint#kms_key_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#kms_key_arn DmsEndpoint#kms_key_arn}
   */
   readonly kmsKeyArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#password DmsEndpoint#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#password DmsEndpoint#password}
   */
   readonly password?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#pause_replication_tasks DmsEndpoint#pause_replication_tasks}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#pause_replication_tasks DmsEndpoint#pause_replication_tasks}
   */
   readonly pauseReplicationTasks?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#port DmsEndpoint#port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#port DmsEndpoint#port}
   */
   readonly port?: number;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#region DmsEndpoint#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#region DmsEndpoint#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#secrets_manager_access_role_arn DmsEndpoint#secrets_manager_access_role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#secrets_manager_access_role_arn DmsEndpoint#secrets_manager_access_role_arn}
   */
   readonly secretsManagerAccessRoleArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#secrets_manager_arn DmsEndpoint#secrets_manager_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#secrets_manager_arn DmsEndpoint#secrets_manager_arn}
   */
   readonly secretsManagerArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#server_name DmsEndpoint#server_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#server_name DmsEndpoint#server_name}
   */
   readonly serverName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#service_access_role DmsEndpoint#service_access_role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#service_access_role DmsEndpoint#service_access_role}
   */
   readonly serviceAccessRole?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#ssl_mode DmsEndpoint#ssl_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#ssl_mode DmsEndpoint#ssl_mode}
   */
   readonly sslMode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#tags DmsEndpoint#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#tags DmsEndpoint#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#tags_all DmsEndpoint#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#tags_all DmsEndpoint#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#username DmsEndpoint#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#username DmsEndpoint#username}
   */
   readonly username?: string;
   /**
   * elasticsearch_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#elasticsearch_settings DmsEndpoint#elasticsearch_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#elasticsearch_settings DmsEndpoint#elasticsearch_settings}
   */
   readonly elasticsearchSettings?: DmsEndpointElasticsearchSettings;
   /**
   * kafka_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#kafka_settings DmsEndpoint#kafka_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#kafka_settings DmsEndpoint#kafka_settings}
   */
   readonly kafkaSettings?: DmsEndpointKafkaSettings;
   /**
   * kinesis_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#kinesis_settings DmsEndpoint#kinesis_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#kinesis_settings DmsEndpoint#kinesis_settings}
   */
   readonly kinesisSettings?: DmsEndpointKinesisSettings;
   /**
   * mongodb_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#mongodb_settings DmsEndpoint#mongodb_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#mongodb_settings DmsEndpoint#mongodb_settings}
   */
   readonly mongodbSettings?: DmsEndpointMongodbSettings;
   /**
   * mysql_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#mysql_settings DmsEndpoint#mysql_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#mysql_settings DmsEndpoint#mysql_settings}
   */
   readonly mysqlSettings?: DmsEndpointMysqlSettings;
   /**
   * oracle_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#oracle_settings DmsEndpoint#oracle_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#oracle_settings DmsEndpoint#oracle_settings}
   */
   readonly oracleSettings?: DmsEndpointOracleSettings;
   /**
   * postgres_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#postgres_settings DmsEndpoint#postgres_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#postgres_settings DmsEndpoint#postgres_settings}
   */
   readonly postgresSettings?: DmsEndpointPostgresSettings;
   /**
   * redis_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#redis_settings DmsEndpoint#redis_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#redis_settings DmsEndpoint#redis_settings}
   */
   readonly redisSettings?: DmsEndpointRedisSettings;
   /**
   * redshift_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#redshift_settings DmsEndpoint#redshift_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#redshift_settings DmsEndpoint#redshift_settings}
   */
   readonly redshiftSettings?: DmsEndpointRedshiftSettings;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#timeouts DmsEndpoint#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#timeouts DmsEndpoint#timeouts}
   */
   readonly timeouts?: DmsEndpointTimeouts;
 }
 export interface DmsEndpointElasticsearchSettings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#endpoint_uri DmsEndpoint#endpoint_uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#endpoint_uri DmsEndpoint#endpoint_uri}
   */
   readonly endpointUri: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#error_retry_duration DmsEndpoint#error_retry_duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#error_retry_duration DmsEndpoint#error_retry_duration}
   */
   readonly errorRetryDuration?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#full_load_error_percentage DmsEndpoint#full_load_error_percentage}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#full_load_error_percentage DmsEndpoint#full_load_error_percentage}
   */
   readonly fullLoadErrorPercentage?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#service_access_role_arn DmsEndpoint#service_access_role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#service_access_role_arn DmsEndpoint#service_access_role_arn}
   */
   readonly serviceAccessRoleArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#use_new_mapping_type DmsEndpoint#use_new_mapping_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#use_new_mapping_type DmsEndpoint#use_new_mapping_type}
   */
   readonly useNewMappingType?: boolean | cdktn.IResolvable;
 }
@@ -370,79 +370,79 @@ export class DmsEndpointElasticsearchSettingsOutputReference extends cdktn.Compl
 }
 export interface DmsEndpointKafkaSettings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#broker DmsEndpoint#broker}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#broker DmsEndpoint#broker}
   */
   readonly broker: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#include_control_details DmsEndpoint#include_control_details}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#include_control_details DmsEndpoint#include_control_details}
   */
   readonly includeControlDetails?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#include_null_and_empty DmsEndpoint#include_null_and_empty}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#include_null_and_empty DmsEndpoint#include_null_and_empty}
   */
   readonly includeNullAndEmpty?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#include_partition_value DmsEndpoint#include_partition_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#include_partition_value DmsEndpoint#include_partition_value}
   */
   readonly includePartitionValue?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#include_table_alter_operations DmsEndpoint#include_table_alter_operations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#include_table_alter_operations DmsEndpoint#include_table_alter_operations}
   */
   readonly includeTableAlterOperations?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#include_transaction_details DmsEndpoint#include_transaction_details}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#include_transaction_details DmsEndpoint#include_transaction_details}
   */
   readonly includeTransactionDetails?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#message_format DmsEndpoint#message_format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#message_format DmsEndpoint#message_format}
   */
   readonly messageFormat?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#message_max_bytes DmsEndpoint#message_max_bytes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#message_max_bytes DmsEndpoint#message_max_bytes}
   */
   readonly messageMaxBytes?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#no_hex_prefix DmsEndpoint#no_hex_prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#no_hex_prefix DmsEndpoint#no_hex_prefix}
   */
   readonly noHexPrefix?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#partition_include_schema_table DmsEndpoint#partition_include_schema_table}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#partition_include_schema_table DmsEndpoint#partition_include_schema_table}
   */
   readonly partitionIncludeSchemaTable?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#sasl_mechanism DmsEndpoint#sasl_mechanism}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#sasl_mechanism DmsEndpoint#sasl_mechanism}
   */
   readonly saslMechanism?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#sasl_password DmsEndpoint#sasl_password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#sasl_password DmsEndpoint#sasl_password}
   */
   readonly saslPassword?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#sasl_username DmsEndpoint#sasl_username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#sasl_username DmsEndpoint#sasl_username}
   */
   readonly saslUsername?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#security_protocol DmsEndpoint#security_protocol}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#security_protocol DmsEndpoint#security_protocol}
   */
   readonly securityProtocol?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#ssl_ca_certificate_arn DmsEndpoint#ssl_ca_certificate_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#ssl_ca_certificate_arn DmsEndpoint#ssl_ca_certificate_arn}
   */
   readonly sslCaCertificateArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#ssl_client_certificate_arn DmsEndpoint#ssl_client_certificate_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#ssl_client_certificate_arn DmsEndpoint#ssl_client_certificate_arn}
   */
   readonly sslClientCertificateArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#ssl_client_key_arn DmsEndpoint#ssl_client_key_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#ssl_client_key_arn DmsEndpoint#ssl_client_key_arn}
   */
   readonly sslClientKeyArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#ssl_client_key_password DmsEndpoint#ssl_client_key_password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#ssl_client_key_password DmsEndpoint#ssl_client_key_password}
   */
   readonly sslClientKeyPassword?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#topic DmsEndpoint#topic}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#topic DmsEndpoint#topic}
   */
   readonly topic?: string;
 }
@@ -1045,43 +1045,43 @@ export class DmsEndpointKafkaSettingsOutputReference extends cdktn.ComplexObject
 }
 export interface DmsEndpointKinesisSettings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#include_control_details DmsEndpoint#include_control_details}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#include_control_details DmsEndpoint#include_control_details}
   */
   readonly includeControlDetails?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#include_null_and_empty DmsEndpoint#include_null_and_empty}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#include_null_and_empty DmsEndpoint#include_null_and_empty}
   */
   readonly includeNullAndEmpty?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#include_partition_value DmsEndpoint#include_partition_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#include_partition_value DmsEndpoint#include_partition_value}
   */
   readonly includePartitionValue?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#include_table_alter_operations DmsEndpoint#include_table_alter_operations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#include_table_alter_operations DmsEndpoint#include_table_alter_operations}
   */
   readonly includeTableAlterOperations?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#include_transaction_details DmsEndpoint#include_transaction_details}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#include_transaction_details DmsEndpoint#include_transaction_details}
   */
   readonly includeTransactionDetails?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#message_format DmsEndpoint#message_format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#message_format DmsEndpoint#message_format}
   */
   readonly messageFormat?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#partition_include_schema_table DmsEndpoint#partition_include_schema_table}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#partition_include_schema_table DmsEndpoint#partition_include_schema_table}
   */
   readonly partitionIncludeSchemaTable?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#service_access_role_arn DmsEndpoint#service_access_role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#service_access_role_arn DmsEndpoint#service_access_role_arn}
   */
   readonly serviceAccessRoleArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#stream_arn DmsEndpoint#stream_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#stream_arn DmsEndpoint#stream_arn}
   */
   readonly streamArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#use_large_integer_value DmsEndpoint#use_large_integer_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#use_large_integer_value DmsEndpoint#use_large_integer_value}
   */
   readonly useLargeIntegerValue?: boolean | cdktn.IResolvable;
 }
@@ -1426,29 +1426,33 @@ export class DmsEndpointKinesisSettingsOutputReference extends cdktn.ComplexObje
 }
 export interface DmsEndpointMongodbSettings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#auth_mechanism DmsEndpoint#auth_mechanism}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#auth_mechanism DmsEndpoint#auth_mechanism}
   */
   readonly authMechanism?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#auth_source DmsEndpoint#auth_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#auth_source DmsEndpoint#auth_source}
   */
   readonly authSource?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#auth_type DmsEndpoint#auth_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#auth_type DmsEndpoint#auth_type}
   */
   readonly authType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#docs_to_investigate DmsEndpoint#docs_to_investigate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#docs_to_investigate DmsEndpoint#docs_to_investigate}
   */
   readonly docsToInvestigate?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#extract_doc_id DmsEndpoint#extract_doc_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#extract_doc_id DmsEndpoint#extract_doc_id}
   */
   readonly extractDocId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#nesting_level DmsEndpoint#nesting_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#nesting_level DmsEndpoint#nesting_level}
   */
   readonly nestingLevel?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#use_update_lookup DmsEndpoint#use_update_lookup}
+  */
+  readonly useUpdateLookup?: boolean | cdktn.IResolvable;
 }
 
 export function dmsEndpointMongodbSettingsToTerraform(struct?: DmsEndpointMongodbSettingsOutputReference | DmsEndpointMongodbSettings): any {
@@ -1463,6 +1467,7 @@ export function dmsEndpointMongodbSettingsToTerraform(struct?: DmsEndpointMongod
     docs_to_investigate: cdktn.stringToTerraform(struct!.docsToInvestigate),
     extract_doc_id: cdktn.stringToTerraform(struct!.extractDocId),
     nesting_level: cdktn.stringToTerraform(struct!.nestingLevel),
+    use_update_lookup: cdktn.booleanToTerraform(struct!.useUpdateLookup),
   }
 }
 
@@ -1509,6 +1514,12 @@ export function dmsEndpointMongodbSettingsToHclTerraform(struct?: DmsEndpointMon
       type: "simple",
       storageClassType: "string",
     },
+    use_update_lookup: {
+      value: cdktn.booleanToHclTerraform(struct!.useUpdateLookup),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
   };
 
   // remove undefined attributes
@@ -1553,6 +1564,10 @@ export class DmsEndpointMongodbSettingsOutputReference extends cdktn.ComplexObje
       hasAnyValues = true;
       internalValueResult.nestingLevel = this._nestingLevel;
     }
+    if (this._useUpdateLookup !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.useUpdateLookup = this._useUpdateLookup;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -1565,6 +1580,7 @@ export class DmsEndpointMongodbSettingsOutputReference extends cdktn.ComplexObje
       this._docsToInvestigate = undefined;
       this._extractDocId = undefined;
       this._nestingLevel = undefined;
+      this._useUpdateLookup = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
@@ -1574,6 +1590,7 @@ export class DmsEndpointMongodbSettingsOutputReference extends cdktn.ComplexObje
       this._docsToInvestigate = value.docsToInvestigate;
       this._extractDocId = value.extractDocId;
       this._nestingLevel = value.nestingLevel;
+      this._useUpdateLookup = value.useUpdateLookup;
     }
   }
 
@@ -1672,46 +1689,62 @@ export class DmsEndpointMongodbSettingsOutputReference extends cdktn.ComplexObje
   public get nestingLevelInput() {
     return this._nestingLevel;
   }
+
+  // use_update_lookup - computed: false, optional: true, required: false
+  private _useUpdateLookup?: boolean | cdktn.IResolvable; 
+  public get useUpdateLookup() {
+    return this.getBooleanAttribute('use_update_lookup');
+  }
+  public set useUpdateLookup(value: boolean | cdktn.IResolvable) {
+    this._useUpdateLookup = value;
+  }
+  public resetUseUpdateLookup() {
+    this._useUpdateLookup = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get useUpdateLookupInput() {
+    return this._useUpdateLookup;
+  }
 }
 export interface DmsEndpointMysqlSettings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#after_connect_script DmsEndpoint#after_connect_script}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#after_connect_script DmsEndpoint#after_connect_script}
   */
   readonly afterConnectScript?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#authentication_method DmsEndpoint#authentication_method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#authentication_method DmsEndpoint#authentication_method}
   */
   readonly authenticationMethod?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#clean_source_metadata_on_mismatch DmsEndpoint#clean_source_metadata_on_mismatch}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#clean_source_metadata_on_mismatch DmsEndpoint#clean_source_metadata_on_mismatch}
   */
   readonly cleanSourceMetadataOnMismatch?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#events_poll_interval DmsEndpoint#events_poll_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#events_poll_interval DmsEndpoint#events_poll_interval}
   */
   readonly eventsPollInterval?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#execute_timeout DmsEndpoint#execute_timeout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#execute_timeout DmsEndpoint#execute_timeout}
   */
   readonly executeTimeout?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#max_file_size DmsEndpoint#max_file_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#max_file_size DmsEndpoint#max_file_size}
   */
   readonly maxFileSize?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#parallel_load_threads DmsEndpoint#parallel_load_threads}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#parallel_load_threads DmsEndpoint#parallel_load_threads}
   */
   readonly parallelLoadThreads?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#server_timezone DmsEndpoint#server_timezone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#server_timezone DmsEndpoint#server_timezone}
   */
   readonly serverTimezone?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#service_access_role_arn DmsEndpoint#service_access_role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#service_access_role_arn DmsEndpoint#service_access_role_arn}
   */
   readonly serviceAccessRoleArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#target_db_type DmsEndpoint#target_db_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#target_db_type DmsEndpoint#target_db_type}
   */
   readonly targetDbType?: string;
 }
@@ -2056,9 +2089,153 @@ export class DmsEndpointMysqlSettingsOutputReference extends cdktn.ComplexObject
 }
 export interface DmsEndpointOracleSettings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#authentication_method DmsEndpoint#authentication_method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#access_alternate_directly DmsEndpoint#access_alternate_directly}
+  */
+  readonly accessAlternateDirectly?: boolean | cdktn.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#add_supplemental_logging DmsEndpoint#add_supplemental_logging}
+  */
+  readonly addSupplementalLogging?: boolean | cdktn.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#additional_archived_log_dest_id DmsEndpoint#additional_archived_log_dest_id}
+  */
+  readonly additionalArchivedLogDestId?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#allow_selected_nested_tables DmsEndpoint#allow_selected_nested_tables}
+  */
+  readonly allowSelectedNestedTables?: boolean | cdktn.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#archived_log_dest_id DmsEndpoint#archived_log_dest_id}
+  */
+  readonly archivedLogDestId?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#archived_logs_only DmsEndpoint#archived_logs_only}
+  */
+  readonly archivedLogsOnly?: boolean | cdktn.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#asm_password DmsEndpoint#asm_password}
+  */
+  readonly asmPassword?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#asm_server DmsEndpoint#asm_server}
+  */
+  readonly asmServer?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#asm_user DmsEndpoint#asm_user}
+  */
+  readonly asmUser?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#authentication_method DmsEndpoint#authentication_method}
   */
   readonly authenticationMethod?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#char_length_semantics DmsEndpoint#char_length_semantics}
+  */
+  readonly charLengthSemantics?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#convert_timestamp_with_zone_to_utc DmsEndpoint#convert_timestamp_with_zone_to_utc}
+  */
+  readonly convertTimestampWithZoneToUtc?: boolean | cdktn.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#direct_path_no_log DmsEndpoint#direct_path_no_log}
+  */
+  readonly directPathNoLog?: boolean | cdktn.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#direct_path_parallel_load DmsEndpoint#direct_path_parallel_load}
+  */
+  readonly directPathParallelLoad?: boolean | cdktn.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#enable_homogenous_tablespace DmsEndpoint#enable_homogenous_tablespace}
+  */
+  readonly enableHomogenousTablespace?: boolean | cdktn.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#extra_archived_log_dest_ids DmsEndpoint#extra_archived_log_dest_ids}
+  */
+  readonly extraArchivedLogDestIds?: number[];
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#fail_task_on_lob_truncation DmsEndpoint#fail_task_on_lob_truncation}
+  */
+  readonly failTaskOnLobTruncation?: boolean | cdktn.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#number_datatype_scale DmsEndpoint#number_datatype_scale}
+  */
+  readonly numberDatatypeScale?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#open_transaction_window DmsEndpoint#open_transaction_window}
+  */
+  readonly openTransactionWindow?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#oracle_path_prefix DmsEndpoint#oracle_path_prefix}
+  */
+  readonly oraclePathPrefix?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#parallel_asm_read_threads DmsEndpoint#parallel_asm_read_threads}
+  */
+  readonly parallelAsmReadThreads?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#read_ahead_blocks DmsEndpoint#read_ahead_blocks}
+  */
+  readonly readAheadBlocks?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#read_table_space_name DmsEndpoint#read_table_space_name}
+  */
+  readonly readTableSpaceName?: boolean | cdktn.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#replace_path_prefix DmsEndpoint#replace_path_prefix}
+  */
+  readonly replacePathPrefix?: boolean | cdktn.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#retry_interval DmsEndpoint#retry_interval}
+  */
+  readonly retryInterval?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#secrets_manager_oracle_asm_access_role_arn DmsEndpoint#secrets_manager_oracle_asm_access_role_arn}
+  */
+  readonly secretsManagerOracleAsmAccessRoleArn?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#secrets_manager_oracle_asm_secret_id DmsEndpoint#secrets_manager_oracle_asm_secret_id}
+  */
+  readonly secretsManagerOracleAsmSecretId?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#security_db_encryption DmsEndpoint#security_db_encryption}
+  */
+  readonly securityDbEncryption?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#security_db_encryption_name DmsEndpoint#security_db_encryption_name}
+  */
+  readonly securityDbEncryptionName?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#spatial_data_option_to_geo_json_function_name DmsEndpoint#spatial_data_option_to_geo_json_function_name}
+  */
+  readonly spatialDataOptionToGeoJsonFunctionName?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#standby_delay_time DmsEndpoint#standby_delay_time}
+  */
+  readonly standbyDelayTime?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#trim_space_in_char DmsEndpoint#trim_space_in_char}
+  */
+  readonly trimSpaceInChar?: boolean | cdktn.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#use_alternate_folder_for_online DmsEndpoint#use_alternate_folder_for_online}
+  */
+  readonly useAlternateFolderForOnline?: boolean | cdktn.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#use_bfile DmsEndpoint#use_bfile}
+  */
+  readonly useBfile?: boolean | cdktn.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#use_direct_path_full_load DmsEndpoint#use_direct_path_full_load}
+  */
+  readonly useDirectPathFullLoad?: boolean | cdktn.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#use_logminer_reader DmsEndpoint#use_logminer_reader}
+  */
+  readonly useLogminerReader?: boolean | cdktn.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#use_path_prefix DmsEndpoint#use_path_prefix}
+  */
+  readonly usePathPrefix?: string;
 }
 
 export function dmsEndpointOracleSettingsToTerraform(struct?: DmsEndpointOracleSettingsOutputReference | DmsEndpointOracleSettings): any {
@@ -2067,7 +2244,43 @@ export function dmsEndpointOracleSettingsToTerraform(struct?: DmsEndpointOracleS
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
+    access_alternate_directly: cdktn.booleanToTerraform(struct!.accessAlternateDirectly),
+    add_supplemental_logging: cdktn.booleanToTerraform(struct!.addSupplementalLogging),
+    additional_archived_log_dest_id: cdktn.numberToTerraform(struct!.additionalArchivedLogDestId),
+    allow_selected_nested_tables: cdktn.booleanToTerraform(struct!.allowSelectedNestedTables),
+    archived_log_dest_id: cdktn.numberToTerraform(struct!.archivedLogDestId),
+    archived_logs_only: cdktn.booleanToTerraform(struct!.archivedLogsOnly),
+    asm_password: cdktn.stringToTerraform(struct!.asmPassword),
+    asm_server: cdktn.stringToTerraform(struct!.asmServer),
+    asm_user: cdktn.stringToTerraform(struct!.asmUser),
     authentication_method: cdktn.stringToTerraform(struct!.authenticationMethod),
+    char_length_semantics: cdktn.stringToTerraform(struct!.charLengthSemantics),
+    convert_timestamp_with_zone_to_utc: cdktn.booleanToTerraform(struct!.convertTimestampWithZoneToUtc),
+    direct_path_no_log: cdktn.booleanToTerraform(struct!.directPathNoLog),
+    direct_path_parallel_load: cdktn.booleanToTerraform(struct!.directPathParallelLoad),
+    enable_homogenous_tablespace: cdktn.booleanToTerraform(struct!.enableHomogenousTablespace),
+    extra_archived_log_dest_ids: cdktn.listMapper(cdktn.numberToTerraform, false)(struct!.extraArchivedLogDestIds),
+    fail_task_on_lob_truncation: cdktn.booleanToTerraform(struct!.failTaskOnLobTruncation),
+    number_datatype_scale: cdktn.numberToTerraform(struct!.numberDatatypeScale),
+    open_transaction_window: cdktn.numberToTerraform(struct!.openTransactionWindow),
+    oracle_path_prefix: cdktn.stringToTerraform(struct!.oraclePathPrefix),
+    parallel_asm_read_threads: cdktn.numberToTerraform(struct!.parallelAsmReadThreads),
+    read_ahead_blocks: cdktn.numberToTerraform(struct!.readAheadBlocks),
+    read_table_space_name: cdktn.booleanToTerraform(struct!.readTableSpaceName),
+    replace_path_prefix: cdktn.booleanToTerraform(struct!.replacePathPrefix),
+    retry_interval: cdktn.numberToTerraform(struct!.retryInterval),
+    secrets_manager_oracle_asm_access_role_arn: cdktn.stringToTerraform(struct!.secretsManagerOracleAsmAccessRoleArn),
+    secrets_manager_oracle_asm_secret_id: cdktn.stringToTerraform(struct!.secretsManagerOracleAsmSecretId),
+    security_db_encryption: cdktn.stringToTerraform(struct!.securityDbEncryption),
+    security_db_encryption_name: cdktn.stringToTerraform(struct!.securityDbEncryptionName),
+    spatial_data_option_to_geo_json_function_name: cdktn.stringToTerraform(struct!.spatialDataOptionToGeoJsonFunctionName),
+    standby_delay_time: cdktn.numberToTerraform(struct!.standbyDelayTime),
+    trim_space_in_char: cdktn.booleanToTerraform(struct!.trimSpaceInChar),
+    use_alternate_folder_for_online: cdktn.booleanToTerraform(struct!.useAlternateFolderForOnline),
+    use_bfile: cdktn.booleanToTerraform(struct!.useBfile),
+    use_direct_path_full_load: cdktn.booleanToTerraform(struct!.useDirectPathFullLoad),
+    use_logminer_reader: cdktn.booleanToTerraform(struct!.useLogminerReader),
+    use_path_prefix: cdktn.stringToTerraform(struct!.usePathPrefix),
   }
 }
 
@@ -2078,8 +2291,224 @@ export function dmsEndpointOracleSettingsToHclTerraform(struct?: DmsEndpointOrac
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
+    access_alternate_directly: {
+      value: cdktn.booleanToHclTerraform(struct!.accessAlternateDirectly),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    add_supplemental_logging: {
+      value: cdktn.booleanToHclTerraform(struct!.addSupplementalLogging),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    additional_archived_log_dest_id: {
+      value: cdktn.numberToHclTerraform(struct!.additionalArchivedLogDestId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    allow_selected_nested_tables: {
+      value: cdktn.booleanToHclTerraform(struct!.allowSelectedNestedTables),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    archived_log_dest_id: {
+      value: cdktn.numberToHclTerraform(struct!.archivedLogDestId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    archived_logs_only: {
+      value: cdktn.booleanToHclTerraform(struct!.archivedLogsOnly),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    asm_password: {
+      value: cdktn.stringToHclTerraform(struct!.asmPassword),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    asm_server: {
+      value: cdktn.stringToHclTerraform(struct!.asmServer),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    asm_user: {
+      value: cdktn.stringToHclTerraform(struct!.asmUser),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
     authentication_method: {
       value: cdktn.stringToHclTerraform(struct!.authenticationMethod),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    char_length_semantics: {
+      value: cdktn.stringToHclTerraform(struct!.charLengthSemantics),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    convert_timestamp_with_zone_to_utc: {
+      value: cdktn.booleanToHclTerraform(struct!.convertTimestampWithZoneToUtc),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    direct_path_no_log: {
+      value: cdktn.booleanToHclTerraform(struct!.directPathNoLog),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    direct_path_parallel_load: {
+      value: cdktn.booleanToHclTerraform(struct!.directPathParallelLoad),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    enable_homogenous_tablespace: {
+      value: cdktn.booleanToHclTerraform(struct!.enableHomogenousTablespace),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    extra_archived_log_dest_ids: {
+      value: cdktn.listMapperHcl(cdktn.numberToHclTerraform, false)(struct!.extraArchivedLogDestIds),
+      isBlock: false,
+      type: "list",
+      storageClassType: "numberList",
+    },
+    fail_task_on_lob_truncation: {
+      value: cdktn.booleanToHclTerraform(struct!.failTaskOnLobTruncation),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    number_datatype_scale: {
+      value: cdktn.numberToHclTerraform(struct!.numberDatatypeScale),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    open_transaction_window: {
+      value: cdktn.numberToHclTerraform(struct!.openTransactionWindow),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    oracle_path_prefix: {
+      value: cdktn.stringToHclTerraform(struct!.oraclePathPrefix),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    parallel_asm_read_threads: {
+      value: cdktn.numberToHclTerraform(struct!.parallelAsmReadThreads),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    read_ahead_blocks: {
+      value: cdktn.numberToHclTerraform(struct!.readAheadBlocks),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    read_table_space_name: {
+      value: cdktn.booleanToHclTerraform(struct!.readTableSpaceName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    replace_path_prefix: {
+      value: cdktn.booleanToHclTerraform(struct!.replacePathPrefix),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    retry_interval: {
+      value: cdktn.numberToHclTerraform(struct!.retryInterval),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    secrets_manager_oracle_asm_access_role_arn: {
+      value: cdktn.stringToHclTerraform(struct!.secretsManagerOracleAsmAccessRoleArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    secrets_manager_oracle_asm_secret_id: {
+      value: cdktn.stringToHclTerraform(struct!.secretsManagerOracleAsmSecretId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    security_db_encryption: {
+      value: cdktn.stringToHclTerraform(struct!.securityDbEncryption),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    security_db_encryption_name: {
+      value: cdktn.stringToHclTerraform(struct!.securityDbEncryptionName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    spatial_data_option_to_geo_json_function_name: {
+      value: cdktn.stringToHclTerraform(struct!.spatialDataOptionToGeoJsonFunctionName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    standby_delay_time: {
+      value: cdktn.numberToHclTerraform(struct!.standbyDelayTime),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    trim_space_in_char: {
+      value: cdktn.booleanToHclTerraform(struct!.trimSpaceInChar),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    use_alternate_folder_for_online: {
+      value: cdktn.booleanToHclTerraform(struct!.useAlternateFolderForOnline),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    use_bfile: {
+      value: cdktn.booleanToHclTerraform(struct!.useBfile),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    use_direct_path_full_load: {
+      value: cdktn.booleanToHclTerraform(struct!.useDirectPathFullLoad),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    use_logminer_reader: {
+      value: cdktn.booleanToHclTerraform(struct!.useLogminerReader),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    use_path_prefix: {
+      value: cdktn.stringToHclTerraform(struct!.usePathPrefix),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2104,9 +2533,153 @@ export class DmsEndpointOracleSettingsOutputReference extends cdktn.ComplexObjec
   public get internalValue(): DmsEndpointOracleSettings | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
+    if (this._accessAlternateDirectly !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.accessAlternateDirectly = this._accessAlternateDirectly;
+    }
+    if (this._addSupplementalLogging !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.addSupplementalLogging = this._addSupplementalLogging;
+    }
+    if (this._additionalArchivedLogDestId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.additionalArchivedLogDestId = this._additionalArchivedLogDestId;
+    }
+    if (this._allowSelectedNestedTables !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.allowSelectedNestedTables = this._allowSelectedNestedTables;
+    }
+    if (this._archivedLogDestId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.archivedLogDestId = this._archivedLogDestId;
+    }
+    if (this._archivedLogsOnly !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.archivedLogsOnly = this._archivedLogsOnly;
+    }
+    if (this._asmPassword !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.asmPassword = this._asmPassword;
+    }
+    if (this._asmServer !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.asmServer = this._asmServer;
+    }
+    if (this._asmUser !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.asmUser = this._asmUser;
+    }
     if (this._authenticationMethod !== undefined) {
       hasAnyValues = true;
       internalValueResult.authenticationMethod = this._authenticationMethod;
+    }
+    if (this._charLengthSemantics !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.charLengthSemantics = this._charLengthSemantics;
+    }
+    if (this._convertTimestampWithZoneToUtc !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.convertTimestampWithZoneToUtc = this._convertTimestampWithZoneToUtc;
+    }
+    if (this._directPathNoLog !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.directPathNoLog = this._directPathNoLog;
+    }
+    if (this._directPathParallelLoad !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.directPathParallelLoad = this._directPathParallelLoad;
+    }
+    if (this._enableHomogenousTablespace !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.enableHomogenousTablespace = this._enableHomogenousTablespace;
+    }
+    if (this._extraArchivedLogDestIds !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.extraArchivedLogDestIds = this._extraArchivedLogDestIds;
+    }
+    if (this._failTaskOnLobTruncation !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.failTaskOnLobTruncation = this._failTaskOnLobTruncation;
+    }
+    if (this._numberDatatypeScale !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.numberDatatypeScale = this._numberDatatypeScale;
+    }
+    if (this._openTransactionWindow !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.openTransactionWindow = this._openTransactionWindow;
+    }
+    if (this._oraclePathPrefix !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.oraclePathPrefix = this._oraclePathPrefix;
+    }
+    if (this._parallelAsmReadThreads !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.parallelAsmReadThreads = this._parallelAsmReadThreads;
+    }
+    if (this._readAheadBlocks !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.readAheadBlocks = this._readAheadBlocks;
+    }
+    if (this._readTableSpaceName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.readTableSpaceName = this._readTableSpaceName;
+    }
+    if (this._replacePathPrefix !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.replacePathPrefix = this._replacePathPrefix;
+    }
+    if (this._retryInterval !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.retryInterval = this._retryInterval;
+    }
+    if (this._secretsManagerOracleAsmAccessRoleArn !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.secretsManagerOracleAsmAccessRoleArn = this._secretsManagerOracleAsmAccessRoleArn;
+    }
+    if (this._secretsManagerOracleAsmSecretId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.secretsManagerOracleAsmSecretId = this._secretsManagerOracleAsmSecretId;
+    }
+    if (this._securityDbEncryption !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.securityDbEncryption = this._securityDbEncryption;
+    }
+    if (this._securityDbEncryptionName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.securityDbEncryptionName = this._securityDbEncryptionName;
+    }
+    if (this._spatialDataOptionToGeoJsonFunctionName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.spatialDataOptionToGeoJsonFunctionName = this._spatialDataOptionToGeoJsonFunctionName;
+    }
+    if (this._standbyDelayTime !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.standbyDelayTime = this._standbyDelayTime;
+    }
+    if (this._trimSpaceInChar !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.trimSpaceInChar = this._trimSpaceInChar;
+    }
+    if (this._useAlternateFolderForOnline !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.useAlternateFolderForOnline = this._useAlternateFolderForOnline;
+    }
+    if (this._useBfile !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.useBfile = this._useBfile;
+    }
+    if (this._useDirectPathFullLoad !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.useDirectPathFullLoad = this._useDirectPathFullLoad;
+    }
+    if (this._useLogminerReader !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.useLogminerReader = this._useLogminerReader;
+    }
+    if (this._usePathPrefix !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.usePathPrefix = this._usePathPrefix;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -2114,12 +2687,228 @@ export class DmsEndpointOracleSettingsOutputReference extends cdktn.ComplexObjec
   public set internalValue(value: DmsEndpointOracleSettings | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this._accessAlternateDirectly = undefined;
+      this._addSupplementalLogging = undefined;
+      this._additionalArchivedLogDestId = undefined;
+      this._allowSelectedNestedTables = undefined;
+      this._archivedLogDestId = undefined;
+      this._archivedLogsOnly = undefined;
+      this._asmPassword = undefined;
+      this._asmServer = undefined;
+      this._asmUser = undefined;
       this._authenticationMethod = undefined;
+      this._charLengthSemantics = undefined;
+      this._convertTimestampWithZoneToUtc = undefined;
+      this._directPathNoLog = undefined;
+      this._directPathParallelLoad = undefined;
+      this._enableHomogenousTablespace = undefined;
+      this._extraArchivedLogDestIds = undefined;
+      this._failTaskOnLobTruncation = undefined;
+      this._numberDatatypeScale = undefined;
+      this._openTransactionWindow = undefined;
+      this._oraclePathPrefix = undefined;
+      this._parallelAsmReadThreads = undefined;
+      this._readAheadBlocks = undefined;
+      this._readTableSpaceName = undefined;
+      this._replacePathPrefix = undefined;
+      this._retryInterval = undefined;
+      this._secretsManagerOracleAsmAccessRoleArn = undefined;
+      this._secretsManagerOracleAsmSecretId = undefined;
+      this._securityDbEncryption = undefined;
+      this._securityDbEncryptionName = undefined;
+      this._spatialDataOptionToGeoJsonFunctionName = undefined;
+      this._standbyDelayTime = undefined;
+      this._trimSpaceInChar = undefined;
+      this._useAlternateFolderForOnline = undefined;
+      this._useBfile = undefined;
+      this._useDirectPathFullLoad = undefined;
+      this._useLogminerReader = undefined;
+      this._usePathPrefix = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this._accessAlternateDirectly = value.accessAlternateDirectly;
+      this._addSupplementalLogging = value.addSupplementalLogging;
+      this._additionalArchivedLogDestId = value.additionalArchivedLogDestId;
+      this._allowSelectedNestedTables = value.allowSelectedNestedTables;
+      this._archivedLogDestId = value.archivedLogDestId;
+      this._archivedLogsOnly = value.archivedLogsOnly;
+      this._asmPassword = value.asmPassword;
+      this._asmServer = value.asmServer;
+      this._asmUser = value.asmUser;
       this._authenticationMethod = value.authenticationMethod;
+      this._charLengthSemantics = value.charLengthSemantics;
+      this._convertTimestampWithZoneToUtc = value.convertTimestampWithZoneToUtc;
+      this._directPathNoLog = value.directPathNoLog;
+      this._directPathParallelLoad = value.directPathParallelLoad;
+      this._enableHomogenousTablespace = value.enableHomogenousTablespace;
+      this._extraArchivedLogDestIds = value.extraArchivedLogDestIds;
+      this._failTaskOnLobTruncation = value.failTaskOnLobTruncation;
+      this._numberDatatypeScale = value.numberDatatypeScale;
+      this._openTransactionWindow = value.openTransactionWindow;
+      this._oraclePathPrefix = value.oraclePathPrefix;
+      this._parallelAsmReadThreads = value.parallelAsmReadThreads;
+      this._readAheadBlocks = value.readAheadBlocks;
+      this._readTableSpaceName = value.readTableSpaceName;
+      this._replacePathPrefix = value.replacePathPrefix;
+      this._retryInterval = value.retryInterval;
+      this._secretsManagerOracleAsmAccessRoleArn = value.secretsManagerOracleAsmAccessRoleArn;
+      this._secretsManagerOracleAsmSecretId = value.secretsManagerOracleAsmSecretId;
+      this._securityDbEncryption = value.securityDbEncryption;
+      this._securityDbEncryptionName = value.securityDbEncryptionName;
+      this._spatialDataOptionToGeoJsonFunctionName = value.spatialDataOptionToGeoJsonFunctionName;
+      this._standbyDelayTime = value.standbyDelayTime;
+      this._trimSpaceInChar = value.trimSpaceInChar;
+      this._useAlternateFolderForOnline = value.useAlternateFolderForOnline;
+      this._useBfile = value.useBfile;
+      this._useDirectPathFullLoad = value.useDirectPathFullLoad;
+      this._useLogminerReader = value.useLogminerReader;
+      this._usePathPrefix = value.usePathPrefix;
     }
+  }
+
+  // access_alternate_directly - computed: false, optional: true, required: false
+  private _accessAlternateDirectly?: boolean | cdktn.IResolvable; 
+  public get accessAlternateDirectly() {
+    return this.getBooleanAttribute('access_alternate_directly');
+  }
+  public set accessAlternateDirectly(value: boolean | cdktn.IResolvable) {
+    this._accessAlternateDirectly = value;
+  }
+  public resetAccessAlternateDirectly() {
+    this._accessAlternateDirectly = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get accessAlternateDirectlyInput() {
+    return this._accessAlternateDirectly;
+  }
+
+  // add_supplemental_logging - computed: false, optional: true, required: false
+  private _addSupplementalLogging?: boolean | cdktn.IResolvable; 
+  public get addSupplementalLogging() {
+    return this.getBooleanAttribute('add_supplemental_logging');
+  }
+  public set addSupplementalLogging(value: boolean | cdktn.IResolvable) {
+    this._addSupplementalLogging = value;
+  }
+  public resetAddSupplementalLogging() {
+    this._addSupplementalLogging = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get addSupplementalLoggingInput() {
+    return this._addSupplementalLogging;
+  }
+
+  // additional_archived_log_dest_id - computed: false, optional: true, required: false
+  private _additionalArchivedLogDestId?: number; 
+  public get additionalArchivedLogDestId() {
+    return this.getNumberAttribute('additional_archived_log_dest_id');
+  }
+  public set additionalArchivedLogDestId(value: number) {
+    this._additionalArchivedLogDestId = value;
+  }
+  public resetAdditionalArchivedLogDestId() {
+    this._additionalArchivedLogDestId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get additionalArchivedLogDestIdInput() {
+    return this._additionalArchivedLogDestId;
+  }
+
+  // allow_selected_nested_tables - computed: false, optional: true, required: false
+  private _allowSelectedNestedTables?: boolean | cdktn.IResolvable; 
+  public get allowSelectedNestedTables() {
+    return this.getBooleanAttribute('allow_selected_nested_tables');
+  }
+  public set allowSelectedNestedTables(value: boolean | cdktn.IResolvable) {
+    this._allowSelectedNestedTables = value;
+  }
+  public resetAllowSelectedNestedTables() {
+    this._allowSelectedNestedTables = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get allowSelectedNestedTablesInput() {
+    return this._allowSelectedNestedTables;
+  }
+
+  // archived_log_dest_id - computed: false, optional: true, required: false
+  private _archivedLogDestId?: number; 
+  public get archivedLogDestId() {
+    return this.getNumberAttribute('archived_log_dest_id');
+  }
+  public set archivedLogDestId(value: number) {
+    this._archivedLogDestId = value;
+  }
+  public resetArchivedLogDestId() {
+    this._archivedLogDestId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get archivedLogDestIdInput() {
+    return this._archivedLogDestId;
+  }
+
+  // archived_logs_only - computed: false, optional: true, required: false
+  private _archivedLogsOnly?: boolean | cdktn.IResolvable; 
+  public get archivedLogsOnly() {
+    return this.getBooleanAttribute('archived_logs_only');
+  }
+  public set archivedLogsOnly(value: boolean | cdktn.IResolvable) {
+    this._archivedLogsOnly = value;
+  }
+  public resetArchivedLogsOnly() {
+    this._archivedLogsOnly = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get archivedLogsOnlyInput() {
+    return this._archivedLogsOnly;
+  }
+
+  // asm_password - computed: false, optional: true, required: false
+  private _asmPassword?: string; 
+  public get asmPassword() {
+    return this.getStringAttribute('asm_password');
+  }
+  public set asmPassword(value: string) {
+    this._asmPassword = value;
+  }
+  public resetAsmPassword() {
+    this._asmPassword = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get asmPasswordInput() {
+    return this._asmPassword;
+  }
+
+  // asm_server - computed: false, optional: true, required: false
+  private _asmServer?: string; 
+  public get asmServer() {
+    return this.getStringAttribute('asm_server');
+  }
+  public set asmServer(value: string) {
+    this._asmServer = value;
+  }
+  public resetAsmServer() {
+    this._asmServer = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get asmServerInput() {
+    return this._asmServer;
+  }
+
+  // asm_user - computed: false, optional: true, required: false
+  private _asmUser?: string; 
+  public get asmUser() {
+    return this.getStringAttribute('asm_user');
+  }
+  public set asmUser(value: string) {
+    this._asmUser = value;
+  }
+  public resetAsmUser() {
+    this._asmUser = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get asmUserInput() {
+    return this._asmUser;
   }
 
   // authentication_method - computed: true, optional: true, required: false
@@ -2137,78 +2926,510 @@ export class DmsEndpointOracleSettingsOutputReference extends cdktn.ComplexObjec
   public get authenticationMethodInput() {
     return this._authenticationMethod;
   }
+
+  // char_length_semantics - computed: false, optional: true, required: false
+  private _charLengthSemantics?: string; 
+  public get charLengthSemantics() {
+    return this.getStringAttribute('char_length_semantics');
+  }
+  public set charLengthSemantics(value: string) {
+    this._charLengthSemantics = value;
+  }
+  public resetCharLengthSemantics() {
+    this._charLengthSemantics = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get charLengthSemanticsInput() {
+    return this._charLengthSemantics;
+  }
+
+  // convert_timestamp_with_zone_to_utc - computed: false, optional: true, required: false
+  private _convertTimestampWithZoneToUtc?: boolean | cdktn.IResolvable; 
+  public get convertTimestampWithZoneToUtc() {
+    return this.getBooleanAttribute('convert_timestamp_with_zone_to_utc');
+  }
+  public set convertTimestampWithZoneToUtc(value: boolean | cdktn.IResolvable) {
+    this._convertTimestampWithZoneToUtc = value;
+  }
+  public resetConvertTimestampWithZoneToUtc() {
+    this._convertTimestampWithZoneToUtc = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get convertTimestampWithZoneToUtcInput() {
+    return this._convertTimestampWithZoneToUtc;
+  }
+
+  // direct_path_no_log - computed: false, optional: true, required: false
+  private _directPathNoLog?: boolean | cdktn.IResolvable; 
+  public get directPathNoLog() {
+    return this.getBooleanAttribute('direct_path_no_log');
+  }
+  public set directPathNoLog(value: boolean | cdktn.IResolvable) {
+    this._directPathNoLog = value;
+  }
+  public resetDirectPathNoLog() {
+    this._directPathNoLog = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get directPathNoLogInput() {
+    return this._directPathNoLog;
+  }
+
+  // direct_path_parallel_load - computed: false, optional: true, required: false
+  private _directPathParallelLoad?: boolean | cdktn.IResolvable; 
+  public get directPathParallelLoad() {
+    return this.getBooleanAttribute('direct_path_parallel_load');
+  }
+  public set directPathParallelLoad(value: boolean | cdktn.IResolvable) {
+    this._directPathParallelLoad = value;
+  }
+  public resetDirectPathParallelLoad() {
+    this._directPathParallelLoad = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get directPathParallelLoadInput() {
+    return this._directPathParallelLoad;
+  }
+
+  // enable_homogenous_tablespace - computed: false, optional: true, required: false
+  private _enableHomogenousTablespace?: boolean | cdktn.IResolvable; 
+  public get enableHomogenousTablespace() {
+    return this.getBooleanAttribute('enable_homogenous_tablespace');
+  }
+  public set enableHomogenousTablespace(value: boolean | cdktn.IResolvable) {
+    this._enableHomogenousTablespace = value;
+  }
+  public resetEnableHomogenousTablespace() {
+    this._enableHomogenousTablespace = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enableHomogenousTablespaceInput() {
+    return this._enableHomogenousTablespace;
+  }
+
+  // extra_archived_log_dest_ids - computed: false, optional: true, required: false
+  private _extraArchivedLogDestIds?: number[]; 
+  public get extraArchivedLogDestIds() {
+    return this.getNumberListAttribute('extra_archived_log_dest_ids');
+  }
+  public set extraArchivedLogDestIds(value: number[]) {
+    this._extraArchivedLogDestIds = value;
+  }
+  public resetExtraArchivedLogDestIds() {
+    this._extraArchivedLogDestIds = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get extraArchivedLogDestIdsInput() {
+    return this._extraArchivedLogDestIds;
+  }
+
+  // fail_task_on_lob_truncation - computed: false, optional: true, required: false
+  private _failTaskOnLobTruncation?: boolean | cdktn.IResolvable; 
+  public get failTaskOnLobTruncation() {
+    return this.getBooleanAttribute('fail_task_on_lob_truncation');
+  }
+  public set failTaskOnLobTruncation(value: boolean | cdktn.IResolvable) {
+    this._failTaskOnLobTruncation = value;
+  }
+  public resetFailTaskOnLobTruncation() {
+    this._failTaskOnLobTruncation = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get failTaskOnLobTruncationInput() {
+    return this._failTaskOnLobTruncation;
+  }
+
+  // number_datatype_scale - computed: false, optional: true, required: false
+  private _numberDatatypeScale?: number; 
+  public get numberDatatypeScale() {
+    return this.getNumberAttribute('number_datatype_scale');
+  }
+  public set numberDatatypeScale(value: number) {
+    this._numberDatatypeScale = value;
+  }
+  public resetNumberDatatypeScale() {
+    this._numberDatatypeScale = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get numberDatatypeScaleInput() {
+    return this._numberDatatypeScale;
+  }
+
+  // open_transaction_window - computed: false, optional: true, required: false
+  private _openTransactionWindow?: number; 
+  public get openTransactionWindow() {
+    return this.getNumberAttribute('open_transaction_window');
+  }
+  public set openTransactionWindow(value: number) {
+    this._openTransactionWindow = value;
+  }
+  public resetOpenTransactionWindow() {
+    this._openTransactionWindow = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get openTransactionWindowInput() {
+    return this._openTransactionWindow;
+  }
+
+  // oracle_path_prefix - computed: false, optional: true, required: false
+  private _oraclePathPrefix?: string; 
+  public get oraclePathPrefix() {
+    return this.getStringAttribute('oracle_path_prefix');
+  }
+  public set oraclePathPrefix(value: string) {
+    this._oraclePathPrefix = value;
+  }
+  public resetOraclePathPrefix() {
+    this._oraclePathPrefix = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get oraclePathPrefixInput() {
+    return this._oraclePathPrefix;
+  }
+
+  // parallel_asm_read_threads - computed: false, optional: true, required: false
+  private _parallelAsmReadThreads?: number; 
+  public get parallelAsmReadThreads() {
+    return this.getNumberAttribute('parallel_asm_read_threads');
+  }
+  public set parallelAsmReadThreads(value: number) {
+    this._parallelAsmReadThreads = value;
+  }
+  public resetParallelAsmReadThreads() {
+    this._parallelAsmReadThreads = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get parallelAsmReadThreadsInput() {
+    return this._parallelAsmReadThreads;
+  }
+
+  // read_ahead_blocks - computed: false, optional: true, required: false
+  private _readAheadBlocks?: number; 
+  public get readAheadBlocks() {
+    return this.getNumberAttribute('read_ahead_blocks');
+  }
+  public set readAheadBlocks(value: number) {
+    this._readAheadBlocks = value;
+  }
+  public resetReadAheadBlocks() {
+    this._readAheadBlocks = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get readAheadBlocksInput() {
+    return this._readAheadBlocks;
+  }
+
+  // read_table_space_name - computed: false, optional: true, required: false
+  private _readTableSpaceName?: boolean | cdktn.IResolvable; 
+  public get readTableSpaceName() {
+    return this.getBooleanAttribute('read_table_space_name');
+  }
+  public set readTableSpaceName(value: boolean | cdktn.IResolvable) {
+    this._readTableSpaceName = value;
+  }
+  public resetReadTableSpaceName() {
+    this._readTableSpaceName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get readTableSpaceNameInput() {
+    return this._readTableSpaceName;
+  }
+
+  // replace_path_prefix - computed: false, optional: true, required: false
+  private _replacePathPrefix?: boolean | cdktn.IResolvable; 
+  public get replacePathPrefix() {
+    return this.getBooleanAttribute('replace_path_prefix');
+  }
+  public set replacePathPrefix(value: boolean | cdktn.IResolvable) {
+    this._replacePathPrefix = value;
+  }
+  public resetReplacePathPrefix() {
+    this._replacePathPrefix = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get replacePathPrefixInput() {
+    return this._replacePathPrefix;
+  }
+
+  // retry_interval - computed: false, optional: true, required: false
+  private _retryInterval?: number; 
+  public get retryInterval() {
+    return this.getNumberAttribute('retry_interval');
+  }
+  public set retryInterval(value: number) {
+    this._retryInterval = value;
+  }
+  public resetRetryInterval() {
+    this._retryInterval = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get retryIntervalInput() {
+    return this._retryInterval;
+  }
+
+  // secrets_manager_oracle_asm_access_role_arn - computed: false, optional: true, required: false
+  private _secretsManagerOracleAsmAccessRoleArn?: string; 
+  public get secretsManagerOracleAsmAccessRoleArn() {
+    return this.getStringAttribute('secrets_manager_oracle_asm_access_role_arn');
+  }
+  public set secretsManagerOracleAsmAccessRoleArn(value: string) {
+    this._secretsManagerOracleAsmAccessRoleArn = value;
+  }
+  public resetSecretsManagerOracleAsmAccessRoleArn() {
+    this._secretsManagerOracleAsmAccessRoleArn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get secretsManagerOracleAsmAccessRoleArnInput() {
+    return this._secretsManagerOracleAsmAccessRoleArn;
+  }
+
+  // secrets_manager_oracle_asm_secret_id - computed: false, optional: true, required: false
+  private _secretsManagerOracleAsmSecretId?: string; 
+  public get secretsManagerOracleAsmSecretId() {
+    return this.getStringAttribute('secrets_manager_oracle_asm_secret_id');
+  }
+  public set secretsManagerOracleAsmSecretId(value: string) {
+    this._secretsManagerOracleAsmSecretId = value;
+  }
+  public resetSecretsManagerOracleAsmSecretId() {
+    this._secretsManagerOracleAsmSecretId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get secretsManagerOracleAsmSecretIdInput() {
+    return this._secretsManagerOracleAsmSecretId;
+  }
+
+  // security_db_encryption - computed: false, optional: true, required: false
+  private _securityDbEncryption?: string; 
+  public get securityDbEncryption() {
+    return this.getStringAttribute('security_db_encryption');
+  }
+  public set securityDbEncryption(value: string) {
+    this._securityDbEncryption = value;
+  }
+  public resetSecurityDbEncryption() {
+    this._securityDbEncryption = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get securityDbEncryptionInput() {
+    return this._securityDbEncryption;
+  }
+
+  // security_db_encryption_name - computed: false, optional: true, required: false
+  private _securityDbEncryptionName?: string; 
+  public get securityDbEncryptionName() {
+    return this.getStringAttribute('security_db_encryption_name');
+  }
+  public set securityDbEncryptionName(value: string) {
+    this._securityDbEncryptionName = value;
+  }
+  public resetSecurityDbEncryptionName() {
+    this._securityDbEncryptionName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get securityDbEncryptionNameInput() {
+    return this._securityDbEncryptionName;
+  }
+
+  // spatial_data_option_to_geo_json_function_name - computed: false, optional: true, required: false
+  private _spatialDataOptionToGeoJsonFunctionName?: string; 
+  public get spatialDataOptionToGeoJsonFunctionName() {
+    return this.getStringAttribute('spatial_data_option_to_geo_json_function_name');
+  }
+  public set spatialDataOptionToGeoJsonFunctionName(value: string) {
+    this._spatialDataOptionToGeoJsonFunctionName = value;
+  }
+  public resetSpatialDataOptionToGeoJsonFunctionName() {
+    this._spatialDataOptionToGeoJsonFunctionName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get spatialDataOptionToGeoJsonFunctionNameInput() {
+    return this._spatialDataOptionToGeoJsonFunctionName;
+  }
+
+  // standby_delay_time - computed: false, optional: true, required: false
+  private _standbyDelayTime?: number; 
+  public get standbyDelayTime() {
+    return this.getNumberAttribute('standby_delay_time');
+  }
+  public set standbyDelayTime(value: number) {
+    this._standbyDelayTime = value;
+  }
+  public resetStandbyDelayTime() {
+    this._standbyDelayTime = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get standbyDelayTimeInput() {
+    return this._standbyDelayTime;
+  }
+
+  // trim_space_in_char - computed: false, optional: true, required: false
+  private _trimSpaceInChar?: boolean | cdktn.IResolvable; 
+  public get trimSpaceInChar() {
+    return this.getBooleanAttribute('trim_space_in_char');
+  }
+  public set trimSpaceInChar(value: boolean | cdktn.IResolvable) {
+    this._trimSpaceInChar = value;
+  }
+  public resetTrimSpaceInChar() {
+    this._trimSpaceInChar = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get trimSpaceInCharInput() {
+    return this._trimSpaceInChar;
+  }
+
+  // use_alternate_folder_for_online - computed: false, optional: true, required: false
+  private _useAlternateFolderForOnline?: boolean | cdktn.IResolvable; 
+  public get useAlternateFolderForOnline() {
+    return this.getBooleanAttribute('use_alternate_folder_for_online');
+  }
+  public set useAlternateFolderForOnline(value: boolean | cdktn.IResolvable) {
+    this._useAlternateFolderForOnline = value;
+  }
+  public resetUseAlternateFolderForOnline() {
+    this._useAlternateFolderForOnline = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get useAlternateFolderForOnlineInput() {
+    return this._useAlternateFolderForOnline;
+  }
+
+  // use_bfile - computed: false, optional: true, required: false
+  private _useBfile?: boolean | cdktn.IResolvable; 
+  public get useBfile() {
+    return this.getBooleanAttribute('use_bfile');
+  }
+  public set useBfile(value: boolean | cdktn.IResolvable) {
+    this._useBfile = value;
+  }
+  public resetUseBfile() {
+    this._useBfile = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get useBfileInput() {
+    return this._useBfile;
+  }
+
+  // use_direct_path_full_load - computed: false, optional: true, required: false
+  private _useDirectPathFullLoad?: boolean | cdktn.IResolvable; 
+  public get useDirectPathFullLoad() {
+    return this.getBooleanAttribute('use_direct_path_full_load');
+  }
+  public set useDirectPathFullLoad(value: boolean | cdktn.IResolvable) {
+    this._useDirectPathFullLoad = value;
+  }
+  public resetUseDirectPathFullLoad() {
+    this._useDirectPathFullLoad = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get useDirectPathFullLoadInput() {
+    return this._useDirectPathFullLoad;
+  }
+
+  // use_logminer_reader - computed: false, optional: true, required: false
+  private _useLogminerReader?: boolean | cdktn.IResolvable; 
+  public get useLogminerReader() {
+    return this.getBooleanAttribute('use_logminer_reader');
+  }
+  public set useLogminerReader(value: boolean | cdktn.IResolvable) {
+    this._useLogminerReader = value;
+  }
+  public resetUseLogminerReader() {
+    this._useLogminerReader = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get useLogminerReaderInput() {
+    return this._useLogminerReader;
+  }
+
+  // use_path_prefix - computed: false, optional: true, required: false
+  private _usePathPrefix?: string; 
+  public get usePathPrefix() {
+    return this.getStringAttribute('use_path_prefix');
+  }
+  public set usePathPrefix(value: string) {
+    this._usePathPrefix = value;
+  }
+  public resetUsePathPrefix() {
+    this._usePathPrefix = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get usePathPrefixInput() {
+    return this._usePathPrefix;
+  }
 }
 export interface DmsEndpointPostgresSettings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#after_connect_script DmsEndpoint#after_connect_script}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#after_connect_script DmsEndpoint#after_connect_script}
   */
   readonly afterConnectScript?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#authentication_method DmsEndpoint#authentication_method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#authentication_method DmsEndpoint#authentication_method}
   */
   readonly authenticationMethod?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#babelfish_database_name DmsEndpoint#babelfish_database_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#babelfish_database_name DmsEndpoint#babelfish_database_name}
   */
   readonly babelfishDatabaseName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#capture_ddls DmsEndpoint#capture_ddls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#capture_ddls DmsEndpoint#capture_ddls}
   */
   readonly captureDdls?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#database_mode DmsEndpoint#database_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#database_mode DmsEndpoint#database_mode}
   */
   readonly databaseMode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#ddl_artifacts_schema DmsEndpoint#ddl_artifacts_schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#ddl_artifacts_schema DmsEndpoint#ddl_artifacts_schema}
   */
   readonly ddlArtifactsSchema?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#execute_timeout DmsEndpoint#execute_timeout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#execute_timeout DmsEndpoint#execute_timeout}
   */
   readonly executeTimeout?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#fail_tasks_on_lob_truncation DmsEndpoint#fail_tasks_on_lob_truncation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#fail_tasks_on_lob_truncation DmsEndpoint#fail_tasks_on_lob_truncation}
   */
   readonly failTasksOnLobTruncation?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#heartbeat_enable DmsEndpoint#heartbeat_enable}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#heartbeat_enable DmsEndpoint#heartbeat_enable}
   */
   readonly heartbeatEnable?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#heartbeat_frequency DmsEndpoint#heartbeat_frequency}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#heartbeat_frequency DmsEndpoint#heartbeat_frequency}
   */
   readonly heartbeatFrequency?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#heartbeat_schema DmsEndpoint#heartbeat_schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#heartbeat_schema DmsEndpoint#heartbeat_schema}
   */
   readonly heartbeatSchema?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#map_boolean_as_boolean DmsEndpoint#map_boolean_as_boolean}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#map_boolean_as_boolean DmsEndpoint#map_boolean_as_boolean}
   */
   readonly mapBooleanAsBoolean?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#map_jsonb_as_clob DmsEndpoint#map_jsonb_as_clob}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#map_jsonb_as_clob DmsEndpoint#map_jsonb_as_clob}
   */
   readonly mapJsonbAsClob?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#map_long_varchar_as DmsEndpoint#map_long_varchar_as}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#map_long_varchar_as DmsEndpoint#map_long_varchar_as}
   */
   readonly mapLongVarcharAs?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#max_file_size DmsEndpoint#max_file_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#max_file_size DmsEndpoint#max_file_size}
   */
   readonly maxFileSize?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#plugin_name DmsEndpoint#plugin_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#plugin_name DmsEndpoint#plugin_name}
   */
   readonly pluginName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#service_access_role_arn DmsEndpoint#service_access_role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#service_access_role_arn DmsEndpoint#service_access_role_arn}
   */
   readonly serviceAccessRoleArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#slot_name DmsEndpoint#slot_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#slot_name DmsEndpoint#slot_name}
   */
   readonly slotName?: string;
 }
@@ -2785,31 +4006,31 @@ export class DmsEndpointPostgresSettingsOutputReference extends cdktn.ComplexObj
 }
 export interface DmsEndpointRedisSettings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#auth_password DmsEndpoint#auth_password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#auth_password DmsEndpoint#auth_password}
   */
   readonly authPassword?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#auth_type DmsEndpoint#auth_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#auth_type DmsEndpoint#auth_type}
   */
   readonly authType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#auth_user_name DmsEndpoint#auth_user_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#auth_user_name DmsEndpoint#auth_user_name}
   */
   readonly authUserName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#port DmsEndpoint#port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#port DmsEndpoint#port}
   */
   readonly port: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#server_name DmsEndpoint#server_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#server_name DmsEndpoint#server_name}
   */
   readonly serverName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#ssl_ca_certificate_arn DmsEndpoint#ssl_ca_certificate_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#ssl_ca_certificate_arn DmsEndpoint#ssl_ca_certificate_arn}
   */
   readonly sslCaCertificateArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#ssl_security_protocol DmsEndpoint#ssl_security_protocol}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#ssl_security_protocol DmsEndpoint#ssl_security_protocol}
   */
   readonly sslSecurityProtocol?: string;
 }
@@ -3058,23 +4279,23 @@ export class DmsEndpointRedisSettingsOutputReference extends cdktn.ComplexObject
 }
 export interface DmsEndpointRedshiftSettings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#bucket_folder DmsEndpoint#bucket_folder}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#bucket_folder DmsEndpoint#bucket_folder}
   */
   readonly bucketFolder?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#bucket_name DmsEndpoint#bucket_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#bucket_name DmsEndpoint#bucket_name}
   */
   readonly bucketName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#encryption_mode DmsEndpoint#encryption_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#encryption_mode DmsEndpoint#encryption_mode}
   */
   readonly encryptionMode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#server_side_encryption_kms_key_id DmsEndpoint#server_side_encryption_kms_key_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#server_side_encryption_kms_key_id DmsEndpoint#server_side_encryption_kms_key_id}
   */
   readonly serverSideEncryptionKmsKeyId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#service_access_role_arn DmsEndpoint#service_access_role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#service_access_role_arn DmsEndpoint#service_access_role_arn}
   */
   readonly serviceAccessRoleArn?: string;
 }
@@ -3274,11 +4495,11 @@ export class DmsEndpointRedshiftSettingsOutputReference extends cdktn.ComplexObj
 }
 export interface DmsEndpointTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#create DmsEndpoint#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#create DmsEndpoint#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#delete DmsEndpoint#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#delete DmsEndpoint#delete}
   */
   readonly delete?: string;
 }
@@ -3401,7 +4622,7 @@ export class DmsEndpointTimeoutsOutputReference extends cdktn.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint aws_dms_endpoint}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint aws_dms_endpoint}
 */
 export class DmsEndpoint extends cdktn.TerraformResource {
 
@@ -3417,7 +4638,7 @@ export class DmsEndpoint extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a DmsEndpoint resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DmsEndpoint to import
-  * @param importFromId The id of the existing DmsEndpoint that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DmsEndpoint that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DmsEndpoint to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -3429,7 +4650,7 @@ export class DmsEndpoint extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/resources/dms_endpoint aws_dms_endpoint} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/dms_endpoint aws_dms_endpoint} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -3440,7 +4661,7 @@ export class DmsEndpoint extends cdktn.TerraformResource {
       terraformResourceType: 'aws_dms_endpoint',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.32.1',
+        providerVersion: '6.33.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

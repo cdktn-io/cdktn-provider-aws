@@ -986,6 +986,7 @@ Object.defineProperty(exports, 'networkfirewallVpcEndpointAssociation', { get: f
 Object.defineProperty(exports, 'networkflowmonitorMonitor', { get: function () { return require('./networkflowmonitor-monitor'); } });
 Object.defineProperty(exports, 'networkflowmonitorScope', { get: function () { return require('./networkflowmonitor-scope'); } });
 Object.defineProperty(exports, 'networkmanagerAttachmentAccepter', { get: function () { return require('./networkmanager-attachment-accepter'); } });
+Object.defineProperty(exports, 'networkmanagerAttachmentRoutingPolicyLabel', { get: function () { return require('./networkmanager-attachment-routing-policy-label'); } });
 Object.defineProperty(exports, 'networkmanagerConnectAttachment', { get: function () { return require('./networkmanager-connect-attachment'); } });
 Object.defineProperty(exports, 'networkmanagerConnectPeer', { get: function () { return require('./networkmanager-connect-peer'); } });
 Object.defineProperty(exports, 'networkmanagerConnection', { get: function () { return require('./networkmanager-connection'); } });

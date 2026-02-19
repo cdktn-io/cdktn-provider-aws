@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/launch_template
+// https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/data-sources/launch_template
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,36 +13,36 @@ import * as cdktn from 'cdktn';
 
 export interface DataAwsLaunchTemplateConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/launch_template#id DataAwsLaunchTemplate#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/data-sources/launch_template#id DataAwsLaunchTemplate#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/launch_template#name DataAwsLaunchTemplate#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/data-sources/launch_template#name DataAwsLaunchTemplate#name}
   */
   readonly name?: string;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/launch_template#region DataAwsLaunchTemplate#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/data-sources/launch_template#region DataAwsLaunchTemplate#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/launch_template#tags DataAwsLaunchTemplate#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/data-sources/launch_template#tags DataAwsLaunchTemplate#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
   * filter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/launch_template#filter DataAwsLaunchTemplate#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/data-sources/launch_template#filter DataAwsLaunchTemplate#filter}
   */
   readonly filter?: DataAwsLaunchTemplateFilter[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/launch_template#timeouts DataAwsLaunchTemplate#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/data-sources/launch_template#timeouts DataAwsLaunchTemplate#timeouts}
   */
   readonly timeouts?: DataAwsLaunchTemplateTimeouts;
 }
@@ -472,6 +472,11 @@ export class DataAwsLaunchTemplateCpuOptionsOutputReference extends cdktn.Comple
   // core_count - computed: true, optional: false, required: false
   public get coreCount() {
     return this.getNumberAttribute('core_count');
+  }
+
+  // nested_virtualization - computed: true, optional: false, required: false
+  public get nestedVirtualization() {
+    return this.getStringAttribute('nested_virtualization');
   }
 
   // threads_per_core - computed: true, optional: false, required: false
@@ -2479,6 +2484,81 @@ export class DataAwsLaunchTemplateNetworkInterfacesList extends cdktn.ComplexLis
     return new DataAwsLaunchTemplateNetworkInterfacesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface DataAwsLaunchTemplateNetworkPerformanceOptions {
+}
+
+export function dataAwsLaunchTemplateNetworkPerformanceOptionsToTerraform(struct?: DataAwsLaunchTemplateNetworkPerformanceOptions): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function dataAwsLaunchTemplateNetworkPerformanceOptionsToHclTerraform(struct?: DataAwsLaunchTemplateNetworkPerformanceOptions): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataAwsLaunchTemplateNetworkPerformanceOptionsOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsLaunchTemplateNetworkPerformanceOptions | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsLaunchTemplateNetworkPerformanceOptions | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // bandwidth_weighting - computed: true, optional: false, required: false
+  public get bandwidthWeighting() {
+    return this.getStringAttribute('bandwidth_weighting');
+  }
+}
+
+export class DataAwsLaunchTemplateNetworkPerformanceOptionsList extends cdktn.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsLaunchTemplateNetworkPerformanceOptionsOutputReference {
+    return new DataAwsLaunchTemplateNetworkPerformanceOptionsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface DataAwsLaunchTemplatePlacement {
 }
 
@@ -2679,6 +2759,111 @@ export class DataAwsLaunchTemplatePrivateDnsNameOptionsList extends cdktn.Comple
     return new DataAwsLaunchTemplatePrivateDnsNameOptionsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface DataAwsLaunchTemplateSecondaryInterfaces {
+}
+
+export function dataAwsLaunchTemplateSecondaryInterfacesToTerraform(struct?: DataAwsLaunchTemplateSecondaryInterfaces): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function dataAwsLaunchTemplateSecondaryInterfacesToHclTerraform(struct?: DataAwsLaunchTemplateSecondaryInterfaces): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataAwsLaunchTemplateSecondaryInterfacesOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsLaunchTemplateSecondaryInterfaces | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsLaunchTemplateSecondaryInterfaces | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // delete_on_termination - computed: true, optional: false, required: false
+  public get deleteOnTermination() {
+    return this.getBooleanAttribute('delete_on_termination');
+  }
+
+  // device_index - computed: true, optional: false, required: false
+  public get deviceIndex() {
+    return this.getNumberAttribute('device_index');
+  }
+
+  // interface_type - computed: true, optional: false, required: false
+  public get interfaceType() {
+    return this.getStringAttribute('interface_type');
+  }
+
+  // network_card_index - computed: true, optional: false, required: false
+  public get networkCardIndex() {
+    return this.getNumberAttribute('network_card_index');
+  }
+
+  // private_ip_address_count - computed: true, optional: false, required: false
+  public get privateIpAddressCount() {
+    return this.getNumberAttribute('private_ip_address_count');
+  }
+
+  // private_ip_addresses - computed: true, optional: false, required: false
+  public get privateIpAddresses() {
+    return cdktn.Fn.tolist(this.getListAttribute('private_ip_addresses'));
+  }
+
+  // secondary_subnet_id - computed: true, optional: false, required: false
+  public get secondarySubnetId() {
+    return this.getStringAttribute('secondary_subnet_id');
+  }
+}
+
+export class DataAwsLaunchTemplateSecondaryInterfacesList extends cdktn.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsLaunchTemplateSecondaryInterfacesOutputReference {
+    return new DataAwsLaunchTemplateSecondaryInterfacesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface DataAwsLaunchTemplateTagSpecifications {
 }
 
@@ -2762,11 +2947,11 @@ export class DataAwsLaunchTemplateTagSpecificationsList extends cdktn.ComplexLis
 }
 export interface DataAwsLaunchTemplateFilter {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/launch_template#name DataAwsLaunchTemplate#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/data-sources/launch_template#name DataAwsLaunchTemplate#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/launch_template#values DataAwsLaunchTemplate#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/data-sources/launch_template#values DataAwsLaunchTemplate#values}
   */
   readonly values: string[];
 }
@@ -2905,7 +3090,7 @@ export class DataAwsLaunchTemplateFilterList extends cdktn.ComplexList {
 }
 export interface DataAwsLaunchTemplateTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/launch_template#read DataAwsLaunchTemplate#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/data-sources/launch_template#read DataAwsLaunchTemplate#read}
   */
   readonly read?: string;
 }
@@ -2999,7 +3184,7 @@ export class DataAwsLaunchTemplateTimeoutsOutputReference extends cdktn.ComplexO
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/launch_template aws_launch_template}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/data-sources/launch_template aws_launch_template}
 */
 export class DataAwsLaunchTemplate extends cdktn.TerraformDataSource {
 
@@ -3015,7 +3200,7 @@ export class DataAwsLaunchTemplate extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataAwsLaunchTemplate resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsLaunchTemplate to import
-  * @param importFromId The id of the existing DataAwsLaunchTemplate that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/launch_template#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsLaunchTemplate that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/data-sources/launch_template#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsLaunchTemplate to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -3027,7 +3212,7 @@ export class DataAwsLaunchTemplate extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.32.1/docs/data-sources/launch_template aws_launch_template} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/data-sources/launch_template aws_launch_template} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -3038,7 +3223,7 @@ export class DataAwsLaunchTemplate extends cdktn.TerraformDataSource {
       terraformResourceType: 'aws_launch_template',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.32.1',
+        providerVersion: '6.33.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
@@ -3237,6 +3422,12 @@ export class DataAwsLaunchTemplate extends cdktn.TerraformDataSource {
     return this._networkInterfaces;
   }
 
+  // network_performance_options - computed: true, optional: false, required: false
+  private _networkPerformanceOptions = new DataAwsLaunchTemplateNetworkPerformanceOptionsList(this, "network_performance_options", false);
+  public get networkPerformanceOptions() {
+    return this._networkPerformanceOptions;
+  }
+
   // placement - computed: true, optional: false, required: false
   private _placement = new DataAwsLaunchTemplatePlacementList(this, "placement", false);
   public get placement() {
@@ -3268,6 +3459,12 @@ export class DataAwsLaunchTemplate extends cdktn.TerraformDataSource {
   // Temporarily expose input value. Use with caution.
   public get regionInput() {
     return this._region;
+  }
+
+  // secondary_interfaces - computed: true, optional: false, required: false
+  private _secondaryInterfaces = new DataAwsLaunchTemplateSecondaryInterfacesList(this, "secondary_interfaces", false);
+  public get secondaryInterfaces() {
+    return this._secondaryInterfaces;
   }
 
   // security_group_names - computed: true, optional: false, required: false
