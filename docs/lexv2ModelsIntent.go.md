@@ -51,6 +51,7 @@ Must be unique amongst siblings in the same scope
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktn/provider-aws.lexv2ModelsIntent.Lexv2ModelsIntent.toString">ToString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsIntent.Lexv2ModelsIntent.with">With</a></code> | Applies one or more mixins to this construct. |
 | <code><a href="#@cdktn/provider-aws.lexv2ModelsIntent.Lexv2ModelsIntent.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.lexv2ModelsIntent.Lexv2ModelsIntent.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktn/provider-aws.lexv2ModelsIntent.Lexv2ModelsIntent.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
@@ -110,6 +111,27 @@ func ToString() *string
 ```
 
 Returns a string representation of this construct.
+
+##### `With` <a name="With" id="@cdktn/provider-aws.lexv2ModelsIntent.Lexv2ModelsIntent.with"></a>
+
+```go
+func With(mixins ...IMixin) IConstruct
+```
+
+Applies one or more mixins to this construct.
+
+Mixins are applied in order. The list of constructs is captured at the
+start of the call, so constructs added by a mixin will not be visited.
+Use multiple `with()` calls if subsequent mixins should apply to added
+constructs.
+
+###### `mixins`<sup>Required</sup> <a name="mixins" id="@cdktn/provider-aws.lexv2ModelsIntent.Lexv2ModelsIntent.with.parameter.mixins"></a>
+
+- *Type:* ...github.com/aws/constructs-go/constructs/v10.IMixin
+
+The mixins to apply.
+
+---
 
 ##### `AddOverride` <a name="AddOverride" id="@cdktn/provider-aws.lexv2ModelsIntent.Lexv2ModelsIntent.addOverride"></a>
 
@@ -149975,25 +149997,3 @@ func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
 func GetStringAttribute(terraformAttribute *string) *string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.lexv2ModelsIntent.Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutConditionalConditionalBranchResponseMessageGroupMessageSsmlMessageOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* *string
-
----
-
-##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-aws.lexv2ModelsIntent.Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutConditionalConditionalBranchResponseMessageGroupMessageSsmlMessageOutputReference.getStringMapAttribute"></a>
-
-```go
-func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.lexv2ModelsIntent.Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutConditionalConditionalBranchResponseMessageGroupMessageSsmlMessageOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* *string
-
----
-
-##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-aws.lexv2ModelsIntent.Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutConditionalConditionalBranchResponseMessageGroupMessageSsmlMessageOutputReference.interpolationForAttribute"></a>
-
-```go
-func InterpolationForAttribute(property *string) IResolvable

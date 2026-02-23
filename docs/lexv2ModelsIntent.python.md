@@ -319,6 +319,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktn/provider-aws.lexv2ModelsIntent.Lexv2ModelsIntent.toString">to_string</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsIntent.Lexv2ModelsIntent.with">with</a></code> | Applies one or more mixins to this construct. |
 | <code><a href="#@cdktn/provider-aws.lexv2ModelsIntent.Lexv2ModelsIntent.addOverride">add_override</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.lexv2ModelsIntent.Lexv2ModelsIntent.overrideLogicalId">override_logical_id</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktn/provider-aws.lexv2ModelsIntent.Lexv2ModelsIntent.resetOverrideLogicalId">reset_override_logical_id</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
@@ -378,6 +379,29 @@ def to_string() -> str
 ```
 
 Returns a string representation of this construct.
+
+##### `with` <a name="with" id="@cdktn/provider-aws.lexv2ModelsIntent.Lexv2ModelsIntent.with"></a>
+
+```python
+def with(
+  mixins: *IMixin
+) -> IConstruct
+```
+
+Applies one or more mixins to this construct.
+
+Mixins are applied in order. The list of constructs is captured at the
+start of the call, so constructs added by a mixin will not be visited.
+Use multiple `with()` calls if subsequent mixins should apply to added
+constructs.
+
+###### `mixins`<sup>Required</sup> <a name="mixins" id="@cdktn/provider-aws.lexv2ModelsIntent.Lexv2ModelsIntent.with.parameter.mixins"></a>
+
+- *Type:* *constructs.IMixin
+
+The mixins to apply.
+
+---
 
 ##### `add_override` <a name="add_override" id="@cdktn/provider-aws.lexv2ModelsIntent.Lexv2ModelsIntent.addOverride"></a>
 
@@ -149973,27 +149997,3 @@ Returns a reversible string representation.
 
 
 #### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsIntent.Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessResponseMessageGroupVariationPlainTextMessageOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsIntent.Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessResponseMessageGroupVariationPlainTextMessageOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsIntent.Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessResponseMessageGroupVariationPlainTextMessageOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsIntent.Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessResponseMessageGroupVariationPlainTextMessageOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsIntent.Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessResponseMessageGroupVariationPlainTextMessageOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.lexv2ModelsIntent.Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessResponseMessageGroupVariationPlainTextMessage">Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessResponseMessageGroupVariationPlainTextMessage</a></code> | *No description.* |
-
----
-
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-aws.lexv2ModelsIntent.Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessResponseMessageGroupVariationPlainTextMessageOutputReference.property.creationStack"></a>
-
-```python
-creation_stack: typing.List[str]
-```
-
-- *Type:* typing.List[str]
-
-The creation stack of this resolvable which will be appended to errors thrown during resolution.
-
-If this returns an empty array the stack will not be attached.
-
----

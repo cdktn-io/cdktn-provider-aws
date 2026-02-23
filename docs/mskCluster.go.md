@@ -51,6 +51,7 @@ Must be unique amongst siblings in the same scope
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktn/provider-aws.mskCluster.MskCluster.toString">ToString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-aws.mskCluster.MskCluster.with">With</a></code> | Applies one or more mixins to this construct. |
 | <code><a href="#@cdktn/provider-aws.mskCluster.MskCluster.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.mskCluster.MskCluster.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktn/provider-aws.mskCluster.MskCluster.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
@@ -104,6 +105,27 @@ func ToString() *string
 ```
 
 Returns a string representation of this construct.
+
+##### `With` <a name="With" id="@cdktn/provider-aws.mskCluster.MskCluster.with"></a>
+
+```go
+func With(mixins ...IMixin) IConstruct
+```
+
+Applies one or more mixins to this construct.
+
+Mixins are applied in order. The list of constructs is captured at the
+start of the call, so constructs added by a mixin will not be visited.
+Use multiple `with()` calls if subsequent mixins should apply to added
+constructs.
+
+###### `mixins`<sup>Required</sup> <a name="mixins" id="@cdktn/provider-aws.mskCluster.MskCluster.with.parameter.mixins"></a>
+
+- *Type:* ...github.com/aws/constructs-go/constructs/v10.IMixin
+
+The mixins to apply.
+
+---
 
 ##### `AddOverride` <a name="AddOverride" id="@cdktn/provider-aws.mskCluster.MskCluster.addOverride"></a>
 
