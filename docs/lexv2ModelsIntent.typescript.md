@@ -51,6 +51,7 @@ Must be unique amongst siblings in the same scope
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktn/provider-aws.lexv2ModelsIntent.Lexv2ModelsIntent.toString">toString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsIntent.Lexv2ModelsIntent.with">with</a></code> | Applies one or more mixins to this construct. |
 | <code><a href="#@cdktn/provider-aws.lexv2ModelsIntent.Lexv2ModelsIntent.addOverride">addOverride</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.lexv2ModelsIntent.Lexv2ModelsIntent.overrideLogicalId">overrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktn/provider-aws.lexv2ModelsIntent.Lexv2ModelsIntent.resetOverrideLogicalId">resetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
@@ -110,6 +111,27 @@ public toString(): string
 ```
 
 Returns a string representation of this construct.
+
+##### `with` <a name="with" id="@cdktn/provider-aws.lexv2ModelsIntent.Lexv2ModelsIntent.with"></a>
+
+```typescript
+public with(mixins: ...IMixin[]): IConstruct
+```
+
+Applies one or more mixins to this construct.
+
+Mixins are applied in order. The list of constructs is captured at the
+start of the call, so constructs added by a mixin will not be visited.
+Use multiple `with()` calls if subsequent mixins should apply to added
+constructs.
+
+###### `mixins`<sup>Required</sup> <a name="mixins" id="@cdktn/provider-aws.lexv2ModelsIntent.Lexv2ModelsIntent.with.parameter.mixins"></a>
+
+- *Type:* ...constructs.IMixin[]
+
+The mixins to apply.
+
+---
 
 ##### `addOverride` <a name="addOverride" id="@cdktn/provider-aws.lexv2ModelsIntent.Lexv2ModelsIntent.addOverride"></a>
 
@@ -149974,26 +149996,4 @@ Produce the Token's value at resolution time.
 ---
 
 ##### `toString` <a name="toString" id="@cdktn/provider-aws.lexv2ModelsIntent.Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutConditionalConditionalBranchResponseMessageGroupVariationSsmlMessageList.toString"></a>
-
-```typescript
-public toString(): string
-```
-
-Return a string representation of this resolvable object.
-
-Returns a reversible string representation.
-
-##### `get` <a name="get" id="@cdktn/provider-aws.lexv2ModelsIntent.Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutConditionalConditionalBranchResponseMessageGroupVariationSsmlMessageList.get"></a>
-
-```typescript
-public get(index: number): Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutConditionalConditionalBranchResponseMessageGroupVariationSsmlMessageOutputReference
-```
-
-###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-aws.lexv2ModelsIntent.Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutConditionalConditionalBranchResponseMessageGroupVariationSsmlMessageList.get.parameter.index"></a>
-
-- *Type:* number
-
-the index of the item to return.
-
----
 
