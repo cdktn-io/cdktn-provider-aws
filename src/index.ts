@@ -998,6 +998,7 @@ export * as networkmanagerDxGatewayAttachment from './networkmanager-dx-gateway-
 export * as networkmanagerGlobalNetwork from './networkmanager-global-network';
 export * as networkmanagerLink from './networkmanager-link';
 export * as networkmanagerLinkAssociation from './networkmanager-link-association';
+export * as networkmanagerPrefixListAssociation from './networkmanager-prefix-list-association';
 export * as networkmanagerSite from './networkmanager-site';
 export * as networkmanagerSiteToSiteVpnAttachment from './networkmanager-site-to-site-vpn-attachment';
 export * as networkmanagerTransitGatewayConnectPeerAssociation from './networkmanager-transit-gateway-connect-peer-association';

@@ -1642,6 +1642,7 @@ The following submodules are available:
 - [networkmanagerGlobalNetwork](./networkmanagerGlobalNetwork.python.md)
 - [networkmanagerLink](./networkmanagerLink.python.md)
 - [networkmanagerLinkAssociation](./networkmanagerLinkAssociation.python.md)
+- [networkmanagerPrefixListAssociation](./networkmanagerPrefixListAssociation.python.md)
 - [networkmanagerSite](./networkmanagerSite.python.md)
 - [networkmanagerSiteToSiteVpnAttachment](./networkmanagerSiteToSiteVpnAttachment.python.md)
 - [networkmanagerTransitGatewayConnectPeerAssociation](./networkmanagerTransitGatewayConnectPeerAssociation.python.md)

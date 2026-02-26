@@ -4,7 +4,7 @@
 
 ### DataAwsAppstreamImage <a name="DataAwsAppstreamImage" id="@cdktn/provider-aws.dataAwsAppstreamImage.DataAwsAppstreamImage"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/data-sources/appstream_image aws_appstream_image}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/data-sources/appstream_image aws_appstream_image}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAppstreamImage.DataAwsAppstreamImage.Initializer"></a>
 
@@ -429,7 +429,7 @@ The construct id used in the generated config for the DataAwsAppstreamImage to i
 
 The id of the existing DataAwsAppstreamImage that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/data-sources/appstream_image#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/data-sources/appstream_image#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -920,12 +920,12 @@ const dataAwsAppstreamImageConfig: dataAwsAppstreamImage.DataAwsAppstreamImageCo
 | <code><a href="#@cdktn/provider-aws.dataAwsAppstreamImage.DataAwsAppstreamImageConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsAppstreamImage.DataAwsAppstreamImageConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsAppstreamImage.DataAwsAppstreamImageConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dataAwsAppstreamImage.DataAwsAppstreamImageConfig.property.arn">arn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/data-sources/appstream_image#arn DataAwsAppstreamImage#arn}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsAppstreamImage.DataAwsAppstreamImageConfig.property.mostRecent">mostRecent</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/data-sources/appstream_image#most_recent DataAwsAppstreamImage#most_recent}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsAppstreamImage.DataAwsAppstreamImageConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/data-sources/appstream_image#name DataAwsAppstreamImage#name}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsAppstreamImage.DataAwsAppstreamImageConfig.property.nameRegex">nameRegex</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/data-sources/appstream_image#name_regex DataAwsAppstreamImage#name_regex}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsAppstreamImage.DataAwsAppstreamImageConfig.property.arn">arn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/data-sources/appstream_image#arn DataAwsAppstreamImage#arn}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsAppstreamImage.DataAwsAppstreamImageConfig.property.mostRecent">mostRecent</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/data-sources/appstream_image#most_recent DataAwsAppstreamImage#most_recent}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsAppstreamImage.DataAwsAppstreamImageConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/data-sources/appstream_image#name DataAwsAppstreamImage#name}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsAppstreamImage.DataAwsAppstreamImageConfig.property.nameRegex">nameRegex</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/data-sources/appstream_image#name_regex DataAwsAppstreamImage#name_regex}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsAppstreamImage.DataAwsAppstreamImageConfig.property.region">region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.dataAwsAppstreamImage.DataAwsAppstreamImageConfig.property.type">type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/data-sources/appstream_image#type DataAwsAppstreamImage#type}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsAppstreamImage.DataAwsAppstreamImageConfig.property.type">type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/data-sources/appstream_image#type DataAwsAppstreamImage#type}. |
 
 ---
 
@@ -1007,7 +1007,7 @@ public readonly arn: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/data-sources/appstream_image#arn DataAwsAppstreamImage#arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/data-sources/appstream_image#arn DataAwsAppstreamImage#arn}.
 
 ---
 
@@ -1019,7 +1019,7 @@ public readonly mostRecent: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/data-sources/appstream_image#most_recent DataAwsAppstreamImage#most_recent}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/data-sources/appstream_image#most_recent DataAwsAppstreamImage#most_recent}.
 
 ---
 
@@ -1031,7 +1031,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/data-sources/appstream_image#name DataAwsAppstreamImage#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/data-sources/appstream_image#name DataAwsAppstreamImage#name}.
 
 ---
 
@@ -1043,7 +1043,7 @@ public readonly nameRegex: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/data-sources/appstream_image#name_regex DataAwsAppstreamImage#name_regex}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/data-sources/appstream_image#name_regex DataAwsAppstreamImage#name_regex}.
 
 ---
 
@@ -1057,7 +1057,7 @@ public readonly region: string;
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/data-sources/appstream_image#region DataAwsAppstreamImage#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/data-sources/appstream_image#region DataAwsAppstreamImage#region}
 
 ---
 
@@ -1069,7 +1069,7 @@ public readonly type: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/data-sources/appstream_image#type DataAwsAppstreamImage#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/data-sources/appstream_image#type DataAwsAppstreamImage#type}.
 
 ---
 

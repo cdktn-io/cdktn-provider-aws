@@ -4,7 +4,7 @@
 
 ### GuarddutyIpset <a name="GuarddutyIpset" id="@cdktn/provider-aws.guarddutyIpset.GuarddutyIpset"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/guardduty_ipset aws_guardduty_ipset}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/guardduty_ipset aws_guardduty_ipset}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.guarddutyIpset.GuarddutyIpset.Initializer"></a>
 
@@ -517,7 +517,7 @@ The construct id used in the generated config for the GuarddutyIpset to import.
 
 The id of the existing GuarddutyIpset that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/guardduty_ipset#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/guardduty_ipset#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -959,15 +959,15 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/guarddutyipset"
 | <code><a href="#@cdktn/provider-aws.guarddutyIpset.GuarddutyIpsetConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.guarddutyIpset.GuarddutyIpsetConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.guarddutyIpset.GuarddutyIpsetConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.guarddutyIpset.GuarddutyIpsetConfig.property.activate">Activate</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/guardduty_ipset#activate GuarddutyIpset#activate}. |
-| <code><a href="#@cdktn/provider-aws.guarddutyIpset.GuarddutyIpsetConfig.property.detectorId">DetectorId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/guardduty_ipset#detector_id GuarddutyIpset#detector_id}. |
-| <code><a href="#@cdktn/provider-aws.guarddutyIpset.GuarddutyIpsetConfig.property.format">Format</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/guardduty_ipset#format GuarddutyIpset#format}. |
-| <code><a href="#@cdktn/provider-aws.guarddutyIpset.GuarddutyIpsetConfig.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/guardduty_ipset#location GuarddutyIpset#location}. |
-| <code><a href="#@cdktn/provider-aws.guarddutyIpset.GuarddutyIpsetConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/guardduty_ipset#name GuarddutyIpset#name}. |
-| <code><a href="#@cdktn/provider-aws.guarddutyIpset.GuarddutyIpsetConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/guardduty_ipset#id GuarddutyIpset#id}. |
+| <code><a href="#@cdktn/provider-aws.guarddutyIpset.GuarddutyIpsetConfig.property.activate">Activate</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/guardduty_ipset#activate GuarddutyIpset#activate}. |
+| <code><a href="#@cdktn/provider-aws.guarddutyIpset.GuarddutyIpsetConfig.property.detectorId">DetectorId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/guardduty_ipset#detector_id GuarddutyIpset#detector_id}. |
+| <code><a href="#@cdktn/provider-aws.guarddutyIpset.GuarddutyIpsetConfig.property.format">Format</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/guardduty_ipset#format GuarddutyIpset#format}. |
+| <code><a href="#@cdktn/provider-aws.guarddutyIpset.GuarddutyIpsetConfig.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/guardduty_ipset#location GuarddutyIpset#location}. |
+| <code><a href="#@cdktn/provider-aws.guarddutyIpset.GuarddutyIpsetConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/guardduty_ipset#name GuarddutyIpset#name}. |
+| <code><a href="#@cdktn/provider-aws.guarddutyIpset.GuarddutyIpsetConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/guardduty_ipset#id GuarddutyIpset#id}. |
 | <code><a href="#@cdktn/provider-aws.guarddutyIpset.GuarddutyIpsetConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.guarddutyIpset.GuarddutyIpsetConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/guardduty_ipset#tags GuarddutyIpset#tags}. |
-| <code><a href="#@cdktn/provider-aws.guarddutyIpset.GuarddutyIpsetConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/guardduty_ipset#tags_all GuarddutyIpset#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.guarddutyIpset.GuarddutyIpsetConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/guardduty_ipset#tags GuarddutyIpset#tags}. |
+| <code><a href="#@cdktn/provider-aws.guarddutyIpset.GuarddutyIpsetConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/guardduty_ipset#tags_all GuarddutyIpset#tags_all}. |
 
 ---
 
@@ -1049,7 +1049,7 @@ Activate interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/guardduty_ipset#activate GuarddutyIpset#activate}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/guardduty_ipset#activate GuarddutyIpset#activate}.
 
 ---
 
@@ -1061,7 +1061,7 @@ DetectorId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/guardduty_ipset#detector_id GuarddutyIpset#detector_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/guardduty_ipset#detector_id GuarddutyIpset#detector_id}.
 
 ---
 
@@ -1073,7 +1073,7 @@ Format *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/guardduty_ipset#format GuarddutyIpset#format}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/guardduty_ipset#format GuarddutyIpset#format}.
 
 ---
 
@@ -1085,7 +1085,7 @@ Location *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/guardduty_ipset#location GuarddutyIpset#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/guardduty_ipset#location GuarddutyIpset#location}.
 
 ---
 
@@ -1097,7 +1097,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/guardduty_ipset#name GuarddutyIpset#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/guardduty_ipset#name GuarddutyIpset#name}.
 
 ---
 
@@ -1109,7 +1109,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/guardduty_ipset#id GuarddutyIpset#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/guardduty_ipset#id GuarddutyIpset#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1126,7 +1126,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/guardduty_ipset#region GuarddutyIpset#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/guardduty_ipset#region GuarddutyIpset#region}
 
 ---
 
@@ -1138,7 +1138,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/guardduty_ipset#tags GuarddutyIpset#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/guardduty_ipset#tags GuarddutyIpset#tags}.
 
 ---
 
@@ -1150,7 +1150,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/resources/guardduty_ipset#tags_all GuarddutyIpset#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/guardduty_ipset#tags_all GuarddutyIpset#tags_all}.
 
 ---
 
