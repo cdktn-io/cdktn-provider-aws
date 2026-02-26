@@ -998,6 +998,7 @@ Object.defineProperty(exports, 'networkmanagerDxGatewayAttachment', { get: funct
 Object.defineProperty(exports, 'networkmanagerGlobalNetwork', { get: function () { return require('./networkmanager-global-network'); } });
 Object.defineProperty(exports, 'networkmanagerLink', { get: function () { return require('./networkmanager-link'); } });
 Object.defineProperty(exports, 'networkmanagerLinkAssociation', { get: function () { return require('./networkmanager-link-association'); } });
+Object.defineProperty(exports, 'networkmanagerPrefixListAssociation', { get: function () { return require('./networkmanager-prefix-list-association'); } });
 Object.defineProperty(exports, 'networkmanagerSite', { get: function () { return require('./networkmanager-site'); } });
 Object.defineProperty(exports, 'networkmanagerSiteToSiteVpnAttachment', { get: function () { return require('./networkmanager-site-to-site-vpn-attachment'); } });
 Object.defineProperty(exports, 'networkmanagerTransitGatewayConnectPeerAssociation', { get: function () { return require('./networkmanager-transit-gateway-connect-peer-association'); } });
