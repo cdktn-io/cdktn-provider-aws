@@ -1642,6 +1642,7 @@ The following submodules are available:
 - [networkmanagerGlobalNetwork](./networkmanagerGlobalNetwork.go.md)
 - [networkmanagerLink](./networkmanagerLink.go.md)
 - [networkmanagerLinkAssociation](./networkmanagerLinkAssociation.go.md)
+- [networkmanagerPrefixListAssociation](./networkmanagerPrefixListAssociation.go.md)
 - [networkmanagerSite](./networkmanagerSite.go.md)
 - [networkmanagerSiteToSiteVpnAttachment](./networkmanagerSiteToSiteVpnAttachment.go.md)
 - [networkmanagerTransitGatewayConnectPeerAssociation](./networkmanagerTransitGatewayConnectPeerAssociation.go.md)

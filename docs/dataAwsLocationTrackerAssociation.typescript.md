@@ -4,7 +4,7 @@
 
 ### DataAwsLocationTrackerAssociation <a name="DataAwsLocationTrackerAssociation" id="@cdktn/provider-aws.dataAwsLocationTrackerAssociation.DataAwsLocationTrackerAssociation"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/data-sources/location_tracker_association aws_location_tracker_association}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/data-sources/location_tracker_association aws_location_tracker_association}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLocationTrackerAssociation.DataAwsLocationTrackerAssociation.Initializer"></a>
 
@@ -401,7 +401,7 @@ The construct id used in the generated config for the DataAwsLocationTrackerAsso
 
 The id of the existing DataAwsLocationTrackerAssociation that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/data-sources/location_tracker_association#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/data-sources/location_tracker_association#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -683,9 +683,9 @@ const dataAwsLocationTrackerAssociationConfig: dataAwsLocationTrackerAssociation
 | <code><a href="#@cdktn/provider-aws.dataAwsLocationTrackerAssociation.DataAwsLocationTrackerAssociationConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsLocationTrackerAssociation.DataAwsLocationTrackerAssociationConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsLocationTrackerAssociation.DataAwsLocationTrackerAssociationConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dataAwsLocationTrackerAssociation.DataAwsLocationTrackerAssociationConfig.property.consumerArn">consumerArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/data-sources/location_tracker_association#consumer_arn DataAwsLocationTrackerAssociation#consumer_arn}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsLocationTrackerAssociation.DataAwsLocationTrackerAssociationConfig.property.trackerName">trackerName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/data-sources/location_tracker_association#tracker_name DataAwsLocationTrackerAssociation#tracker_name}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsLocationTrackerAssociation.DataAwsLocationTrackerAssociationConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/data-sources/location_tracker_association#id DataAwsLocationTrackerAssociation#id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsLocationTrackerAssociation.DataAwsLocationTrackerAssociationConfig.property.consumerArn">consumerArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/data-sources/location_tracker_association#consumer_arn DataAwsLocationTrackerAssociation#consumer_arn}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsLocationTrackerAssociation.DataAwsLocationTrackerAssociationConfig.property.trackerName">trackerName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/data-sources/location_tracker_association#tracker_name DataAwsLocationTrackerAssociation#tracker_name}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsLocationTrackerAssociation.DataAwsLocationTrackerAssociationConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/data-sources/location_tracker_association#id DataAwsLocationTrackerAssociation#id}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsLocationTrackerAssociation.DataAwsLocationTrackerAssociationConfig.property.region">region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -768,7 +768,7 @@ public readonly consumerArn: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/data-sources/location_tracker_association#consumer_arn DataAwsLocationTrackerAssociation#consumer_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/data-sources/location_tracker_association#consumer_arn DataAwsLocationTrackerAssociation#consumer_arn}.
 
 ---
 
@@ -780,7 +780,7 @@ public readonly trackerName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/data-sources/location_tracker_association#tracker_name DataAwsLocationTrackerAssociation#tracker_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/data-sources/location_tracker_association#tracker_name DataAwsLocationTrackerAssociation#tracker_name}.
 
 ---
 
@@ -792,7 +792,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/data-sources/location_tracker_association#id DataAwsLocationTrackerAssociation#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/data-sources/location_tracker_association#id DataAwsLocationTrackerAssociation#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -809,7 +809,7 @@ public readonly region: string;
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.33.0/docs/data-sources/location_tracker_association#region DataAwsLocationTrackerAssociation#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/data-sources/location_tracker_association#region DataAwsLocationTrackerAssociation#region}
 
 ---
 

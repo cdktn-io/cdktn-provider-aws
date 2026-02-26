@@ -1642,6 +1642,7 @@ The following submodules are available:
 - [networkmanagerGlobalNetwork](./networkmanagerGlobalNetwork.typescript.md)
 - [networkmanagerLink](./networkmanagerLink.typescript.md)
 - [networkmanagerLinkAssociation](./networkmanagerLinkAssociation.typescript.md)
+- [networkmanagerPrefixListAssociation](./networkmanagerPrefixListAssociation.typescript.md)
 - [networkmanagerSite](./networkmanagerSite.typescript.md)
 - [networkmanagerSiteToSiteVpnAttachment](./networkmanagerSiteToSiteVpnAttachment.typescript.md)
 - [networkmanagerTransitGatewayConnectPeerAssociation](./networkmanagerTransitGatewayConnectPeerAssociation.typescript.md)
