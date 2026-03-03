@@ -144,6 +144,13 @@
       }
     ]
   },
+  "cdktf": {
+    "isDeprecated": false,
+    "provider": {
+      "name": "registry.terraform.io/hashicorp/aws",
+      "version": "6.34.0"
+    }
+  },
   "cdktn": {
     "isDeprecated": false,
     "provider": {
