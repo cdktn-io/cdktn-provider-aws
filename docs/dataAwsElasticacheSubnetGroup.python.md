@@ -4,7 +4,7 @@
 
 ### DataAwsElasticacheSubnetGroup <a name="DataAwsElasticacheSubnetGroup" id="@cdktn/provider-aws.dataAwsElasticacheSubnetGroup.DataAwsElasticacheSubnetGroup"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/data-sources/elasticache_subnet_group aws_elasticache_subnet_group}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/data-sources/elasticache_subnet_group aws_elasticache_subnet_group}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsElasticacheSubnetGroup.DataAwsElasticacheSubnetGroup.Initializer"></a>
 
@@ -39,10 +39,10 @@ dataAwsElasticacheSubnetGroup.DataAwsElasticacheSubnetGroup(
 | <code><a href="#@cdktn/provider-aws.dataAwsElasticacheSubnetGroup.DataAwsElasticacheSubnetGroup.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsElasticacheSubnetGroup.DataAwsElasticacheSubnetGroup.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsElasticacheSubnetGroup.DataAwsElasticacheSubnetGroup.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dataAwsElasticacheSubnetGroup.DataAwsElasticacheSubnetGroup.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/data-sources/elasticache_subnet_group#name DataAwsElasticacheSubnetGroup#name}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsElasticacheSubnetGroup.DataAwsElasticacheSubnetGroup.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/data-sources/elasticache_subnet_group#id DataAwsElasticacheSubnetGroup#id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsElasticacheSubnetGroup.DataAwsElasticacheSubnetGroup.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/data-sources/elasticache_subnet_group#name DataAwsElasticacheSubnetGroup#name}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsElasticacheSubnetGroup.DataAwsElasticacheSubnetGroup.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/data-sources/elasticache_subnet_group#id DataAwsElasticacheSubnetGroup#id}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsElasticacheSubnetGroup.DataAwsElasticacheSubnetGroup.Initializer.parameter.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.dataAwsElasticacheSubnetGroup.DataAwsElasticacheSubnetGroup.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/data-sources/elasticache_subnet_group#tags DataAwsElasticacheSubnetGroup#tags}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsElasticacheSubnetGroup.DataAwsElasticacheSubnetGroup.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/data-sources/elasticache_subnet_group#tags DataAwsElasticacheSubnetGroup#tags}. |
 
 ---
 
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/data-sources/elasticache_subnet_group#name DataAwsElasticacheSubnetGroup#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/data-sources/elasticache_subnet_group#name DataAwsElasticacheSubnetGroup#name}.
 
 ---
 
@@ -118,7 +118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/data-sources/elasticache_subnet_group#id DataAwsElasticacheSubnetGroup#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/data-sources/elasticache_subnet_group#id DataAwsElasticacheSubnetGroup#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -131,7 +131,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/data-sources/elasticache_subnet_group#region DataAwsElasticacheSubnetGroup#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/data-sources/elasticache_subnet_group#region DataAwsElasticacheSubnetGroup#region}
 
 ---
 
@@ -139,7 +139,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/data-sources/elasticache_subnet_group#tags DataAwsElasticacheSubnetGroup#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/data-sources/elasticache_subnet_group#tags DataAwsElasticacheSubnetGroup#tags}.
 
 ---
 
@@ -543,7 +543,7 @@ The construct id used in the generated config for the DataAwsElasticacheSubnetGr
 
 The id of the existing DataAwsElasticacheSubnetGroup that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/data-sources/elasticache_subnet_group#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/data-sources/elasticache_subnet_group#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -881,10 +881,10 @@ dataAwsElasticacheSubnetGroup.DataAwsElasticacheSubnetGroupConfig(
 | <code><a href="#@cdktn/provider-aws.dataAwsElasticacheSubnetGroup.DataAwsElasticacheSubnetGroupConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsElasticacheSubnetGroup.DataAwsElasticacheSubnetGroupConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsElasticacheSubnetGroup.DataAwsElasticacheSubnetGroupConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dataAwsElasticacheSubnetGroup.DataAwsElasticacheSubnetGroupConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/data-sources/elasticache_subnet_group#name DataAwsElasticacheSubnetGroup#name}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsElasticacheSubnetGroup.DataAwsElasticacheSubnetGroupConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/data-sources/elasticache_subnet_group#id DataAwsElasticacheSubnetGroup#id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsElasticacheSubnetGroup.DataAwsElasticacheSubnetGroupConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/data-sources/elasticache_subnet_group#name DataAwsElasticacheSubnetGroup#name}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsElasticacheSubnetGroup.DataAwsElasticacheSubnetGroupConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/data-sources/elasticache_subnet_group#id DataAwsElasticacheSubnetGroup#id}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsElasticacheSubnetGroup.DataAwsElasticacheSubnetGroupConfig.property.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.dataAwsElasticacheSubnetGroup.DataAwsElasticacheSubnetGroupConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/data-sources/elasticache_subnet_group#tags DataAwsElasticacheSubnetGroup#tags}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsElasticacheSubnetGroup.DataAwsElasticacheSubnetGroupConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/data-sources/elasticache_subnet_group#tags DataAwsElasticacheSubnetGroup#tags}. |
 
 ---
 
@@ -966,7 +966,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/data-sources/elasticache_subnet_group#name DataAwsElasticacheSubnetGroup#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/data-sources/elasticache_subnet_group#name DataAwsElasticacheSubnetGroup#name}.
 
 ---
 
@@ -978,7 +978,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/data-sources/elasticache_subnet_group#id DataAwsElasticacheSubnetGroup#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/data-sources/elasticache_subnet_group#id DataAwsElasticacheSubnetGroup#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -995,7 +995,7 @@ region: str
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/data-sources/elasticache_subnet_group#region DataAwsElasticacheSubnetGroup#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/data-sources/elasticache_subnet_group#region DataAwsElasticacheSubnetGroup#region}
 
 ---
 
@@ -1007,7 +1007,7 @@ tags: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/data-sources/elasticache_subnet_group#tags DataAwsElasticacheSubnetGroup#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/data-sources/elasticache_subnet_group#tags DataAwsElasticacheSubnetGroup#tags}.
 
 ---
 

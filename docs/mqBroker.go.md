@@ -4,7 +4,7 @@
 
 ### MqBroker <a name="MqBroker" id="@cdktn/provider-aws.mqBroker.MqBroker"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/mq_broker aws_mq_broker}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/mq_broker aws_mq_broker}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mqBroker.MqBroker.Initializer"></a>
 
@@ -720,7 +720,7 @@ The construct id used in the generated config for the MqBroker to import.
 
 The id of the existing MqBroker that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/mq_broker#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/mq_broker#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1552,30 +1552,30 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/mqbroker"
 | <code><a href="#@cdktn/provider-aws.mqBroker.MqBrokerConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.mqBroker.MqBrokerConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.mqBroker.MqBrokerConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.mqBroker.MqBrokerConfig.property.brokerName">BrokerName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/mq_broker#broker_name MqBroker#broker_name}. |
-| <code><a href="#@cdktn/provider-aws.mqBroker.MqBrokerConfig.property.engineType">EngineType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/mq_broker#engine_type MqBroker#engine_type}. |
-| <code><a href="#@cdktn/provider-aws.mqBroker.MqBrokerConfig.property.engineVersion">EngineVersion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/mq_broker#engine_version MqBroker#engine_version}. |
-| <code><a href="#@cdktn/provider-aws.mqBroker.MqBrokerConfig.property.hostInstanceType">HostInstanceType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/mq_broker#host_instance_type MqBroker#host_instance_type}. |
+| <code><a href="#@cdktn/provider-aws.mqBroker.MqBrokerConfig.property.brokerName">BrokerName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/mq_broker#broker_name MqBroker#broker_name}. |
+| <code><a href="#@cdktn/provider-aws.mqBroker.MqBrokerConfig.property.engineType">EngineType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/mq_broker#engine_type MqBroker#engine_type}. |
+| <code><a href="#@cdktn/provider-aws.mqBroker.MqBrokerConfig.property.engineVersion">EngineVersion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/mq_broker#engine_version MqBroker#engine_version}. |
+| <code><a href="#@cdktn/provider-aws.mqBroker.MqBrokerConfig.property.hostInstanceType">HostInstanceType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/mq_broker#host_instance_type MqBroker#host_instance_type}. |
 | <code><a href="#@cdktn/provider-aws.mqBroker.MqBrokerConfig.property.user">User</a></code> | <code>interface{}</code> | user block. |
-| <code><a href="#@cdktn/provider-aws.mqBroker.MqBrokerConfig.property.applyImmediately">ApplyImmediately</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/mq_broker#apply_immediately MqBroker#apply_immediately}. |
-| <code><a href="#@cdktn/provider-aws.mqBroker.MqBrokerConfig.property.authenticationStrategy">AuthenticationStrategy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/mq_broker#authentication_strategy MqBroker#authentication_strategy}. |
-| <code><a href="#@cdktn/provider-aws.mqBroker.MqBrokerConfig.property.autoMinorVersionUpgrade">AutoMinorVersionUpgrade</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/mq_broker#auto_minor_version_upgrade MqBroker#auto_minor_version_upgrade}. |
+| <code><a href="#@cdktn/provider-aws.mqBroker.MqBrokerConfig.property.applyImmediately">ApplyImmediately</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/mq_broker#apply_immediately MqBroker#apply_immediately}. |
+| <code><a href="#@cdktn/provider-aws.mqBroker.MqBrokerConfig.property.authenticationStrategy">AuthenticationStrategy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/mq_broker#authentication_strategy MqBroker#authentication_strategy}. |
+| <code><a href="#@cdktn/provider-aws.mqBroker.MqBrokerConfig.property.autoMinorVersionUpgrade">AutoMinorVersionUpgrade</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/mq_broker#auto_minor_version_upgrade MqBroker#auto_minor_version_upgrade}. |
 | <code><a href="#@cdktn/provider-aws.mqBroker.MqBrokerConfig.property.configuration">Configuration</a></code> | <code><a href="#@cdktn/provider-aws.mqBroker.MqBrokerConfiguration">MqBrokerConfiguration</a></code> | configuration block. |
-| <code><a href="#@cdktn/provider-aws.mqBroker.MqBrokerConfig.property.dataReplicationMode">DataReplicationMode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/mq_broker#data_replication_mode MqBroker#data_replication_mode}. |
-| <code><a href="#@cdktn/provider-aws.mqBroker.MqBrokerConfig.property.dataReplicationPrimaryBrokerArn">DataReplicationPrimaryBrokerArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/mq_broker#data_replication_primary_broker_arn MqBroker#data_replication_primary_broker_arn}. |
-| <code><a href="#@cdktn/provider-aws.mqBroker.MqBrokerConfig.property.deploymentMode">DeploymentMode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/mq_broker#deployment_mode MqBroker#deployment_mode}. |
+| <code><a href="#@cdktn/provider-aws.mqBroker.MqBrokerConfig.property.dataReplicationMode">DataReplicationMode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/mq_broker#data_replication_mode MqBroker#data_replication_mode}. |
+| <code><a href="#@cdktn/provider-aws.mqBroker.MqBrokerConfig.property.dataReplicationPrimaryBrokerArn">DataReplicationPrimaryBrokerArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/mq_broker#data_replication_primary_broker_arn MqBroker#data_replication_primary_broker_arn}. |
+| <code><a href="#@cdktn/provider-aws.mqBroker.MqBrokerConfig.property.deploymentMode">DeploymentMode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/mq_broker#deployment_mode MqBroker#deployment_mode}. |
 | <code><a href="#@cdktn/provider-aws.mqBroker.MqBrokerConfig.property.encryptionOptions">EncryptionOptions</a></code> | <code><a href="#@cdktn/provider-aws.mqBroker.MqBrokerEncryptionOptions">MqBrokerEncryptionOptions</a></code> | encryption_options block. |
-| <code><a href="#@cdktn/provider-aws.mqBroker.MqBrokerConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/mq_broker#id MqBroker#id}. |
+| <code><a href="#@cdktn/provider-aws.mqBroker.MqBrokerConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/mq_broker#id MqBroker#id}. |
 | <code><a href="#@cdktn/provider-aws.mqBroker.MqBrokerConfig.property.ldapServerMetadata">LdapServerMetadata</a></code> | <code><a href="#@cdktn/provider-aws.mqBroker.MqBrokerLdapServerMetadata">MqBrokerLdapServerMetadata</a></code> | ldap_server_metadata block. |
 | <code><a href="#@cdktn/provider-aws.mqBroker.MqBrokerConfig.property.logs">Logs</a></code> | <code><a href="#@cdktn/provider-aws.mqBroker.MqBrokerLogs">MqBrokerLogs</a></code> | logs block. |
 | <code><a href="#@cdktn/provider-aws.mqBroker.MqBrokerConfig.property.maintenanceWindowStartTime">MaintenanceWindowStartTime</a></code> | <code><a href="#@cdktn/provider-aws.mqBroker.MqBrokerMaintenanceWindowStartTime">MqBrokerMaintenanceWindowStartTime</a></code> | maintenance_window_start_time block. |
-| <code><a href="#@cdktn/provider-aws.mqBroker.MqBrokerConfig.property.publiclyAccessible">PubliclyAccessible</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/mq_broker#publicly_accessible MqBroker#publicly_accessible}. |
+| <code><a href="#@cdktn/provider-aws.mqBroker.MqBrokerConfig.property.publiclyAccessible">PubliclyAccessible</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/mq_broker#publicly_accessible MqBroker#publicly_accessible}. |
 | <code><a href="#@cdktn/provider-aws.mqBroker.MqBrokerConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.mqBroker.MqBrokerConfig.property.securityGroups">SecurityGroups</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/mq_broker#security_groups MqBroker#security_groups}. |
-| <code><a href="#@cdktn/provider-aws.mqBroker.MqBrokerConfig.property.storageType">StorageType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/mq_broker#storage_type MqBroker#storage_type}. |
-| <code><a href="#@cdktn/provider-aws.mqBroker.MqBrokerConfig.property.subnetIds">SubnetIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/mq_broker#subnet_ids MqBroker#subnet_ids}. |
-| <code><a href="#@cdktn/provider-aws.mqBroker.MqBrokerConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/mq_broker#tags MqBroker#tags}. |
-| <code><a href="#@cdktn/provider-aws.mqBroker.MqBrokerConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/mq_broker#tags_all MqBroker#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.mqBroker.MqBrokerConfig.property.securityGroups">SecurityGroups</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/mq_broker#security_groups MqBroker#security_groups}. |
+| <code><a href="#@cdktn/provider-aws.mqBroker.MqBrokerConfig.property.storageType">StorageType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/mq_broker#storage_type MqBroker#storage_type}. |
+| <code><a href="#@cdktn/provider-aws.mqBroker.MqBrokerConfig.property.subnetIds">SubnetIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/mq_broker#subnet_ids MqBroker#subnet_ids}. |
+| <code><a href="#@cdktn/provider-aws.mqBroker.MqBrokerConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/mq_broker#tags MqBroker#tags}. |
+| <code><a href="#@cdktn/provider-aws.mqBroker.MqBrokerConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/mq_broker#tags_all MqBroker#tags_all}. |
 | <code><a href="#@cdktn/provider-aws.mqBroker.MqBrokerConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.mqBroker.MqBrokerTimeouts">MqBrokerTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1658,7 +1658,7 @@ BrokerName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/mq_broker#broker_name MqBroker#broker_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/mq_broker#broker_name MqBroker#broker_name}.
 
 ---
 
@@ -1670,7 +1670,7 @@ EngineType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/mq_broker#engine_type MqBroker#engine_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/mq_broker#engine_type MqBroker#engine_type}.
 
 ---
 
@@ -1682,7 +1682,7 @@ EngineVersion *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/mq_broker#engine_version MqBroker#engine_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/mq_broker#engine_version MqBroker#engine_version}.
 
 ---
 
@@ -1694,7 +1694,7 @@ HostInstanceType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/mq_broker#host_instance_type MqBroker#host_instance_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/mq_broker#host_instance_type MqBroker#host_instance_type}.
 
 ---
 
@@ -1708,7 +1708,7 @@ User interface{}
 
 user block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/mq_broker#user MqBroker#user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/mq_broker#user MqBroker#user}
 
 ---
 
@@ -1720,7 +1720,7 @@ ApplyImmediately interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/mq_broker#apply_immediately MqBroker#apply_immediately}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/mq_broker#apply_immediately MqBroker#apply_immediately}.
 
 ---
 
@@ -1732,7 +1732,7 @@ AuthenticationStrategy *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/mq_broker#authentication_strategy MqBroker#authentication_strategy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/mq_broker#authentication_strategy MqBroker#authentication_strategy}.
 
 ---
 
@@ -1744,7 +1744,7 @@ AutoMinorVersionUpgrade interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/mq_broker#auto_minor_version_upgrade MqBroker#auto_minor_version_upgrade}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/mq_broker#auto_minor_version_upgrade MqBroker#auto_minor_version_upgrade}.
 
 ---
 
@@ -1758,7 +1758,7 @@ Configuration MqBrokerConfiguration
 
 configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/mq_broker#configuration MqBroker#configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/mq_broker#configuration MqBroker#configuration}
 
 ---
 
@@ -1770,7 +1770,7 @@ DataReplicationMode *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/mq_broker#data_replication_mode MqBroker#data_replication_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/mq_broker#data_replication_mode MqBroker#data_replication_mode}.
 
 ---
 
@@ -1782,7 +1782,7 @@ DataReplicationPrimaryBrokerArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/mq_broker#data_replication_primary_broker_arn MqBroker#data_replication_primary_broker_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/mq_broker#data_replication_primary_broker_arn MqBroker#data_replication_primary_broker_arn}.
 
 ---
 
@@ -1794,7 +1794,7 @@ DeploymentMode *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/mq_broker#deployment_mode MqBroker#deployment_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/mq_broker#deployment_mode MqBroker#deployment_mode}.
 
 ---
 
@@ -1808,7 +1808,7 @@ EncryptionOptions MqBrokerEncryptionOptions
 
 encryption_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/mq_broker#encryption_options MqBroker#encryption_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/mq_broker#encryption_options MqBroker#encryption_options}
 
 ---
 
@@ -1820,7 +1820,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/mq_broker#id MqBroker#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/mq_broker#id MqBroker#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1837,7 +1837,7 @@ LdapServerMetadata MqBrokerLdapServerMetadata
 
 ldap_server_metadata block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/mq_broker#ldap_server_metadata MqBroker#ldap_server_metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/mq_broker#ldap_server_metadata MqBroker#ldap_server_metadata}
 
 ---
 
@@ -1851,7 +1851,7 @@ Logs MqBrokerLogs
 
 logs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/mq_broker#logs MqBroker#logs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/mq_broker#logs MqBroker#logs}
 
 ---
 
@@ -1865,7 +1865,7 @@ MaintenanceWindowStartTime MqBrokerMaintenanceWindowStartTime
 
 maintenance_window_start_time block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/mq_broker#maintenance_window_start_time MqBroker#maintenance_window_start_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/mq_broker#maintenance_window_start_time MqBroker#maintenance_window_start_time}
 
 ---
 
@@ -1877,7 +1877,7 @@ PubliclyAccessible interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/mq_broker#publicly_accessible MqBroker#publicly_accessible}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/mq_broker#publicly_accessible MqBroker#publicly_accessible}.
 
 ---
 
@@ -1891,7 +1891,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/mq_broker#region MqBroker#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/mq_broker#region MqBroker#region}
 
 ---
 
@@ -1903,7 +1903,7 @@ SecurityGroups *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/mq_broker#security_groups MqBroker#security_groups}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/mq_broker#security_groups MqBroker#security_groups}.
 
 ---
 
@@ -1915,7 +1915,7 @@ StorageType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/mq_broker#storage_type MqBroker#storage_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/mq_broker#storage_type MqBroker#storage_type}.
 
 ---
 
@@ -1927,7 +1927,7 @@ SubnetIds *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/mq_broker#subnet_ids MqBroker#subnet_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/mq_broker#subnet_ids MqBroker#subnet_ids}.
 
 ---
 
@@ -1939,7 +1939,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/mq_broker#tags MqBroker#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/mq_broker#tags MqBroker#tags}.
 
 ---
 
@@ -1951,7 +1951,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/mq_broker#tags_all MqBroker#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/mq_broker#tags_all MqBroker#tags_all}.
 
 ---
 
@@ -1965,7 +1965,7 @@ Timeouts MqBrokerTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/mq_broker#timeouts MqBroker#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/mq_broker#timeouts MqBroker#timeouts}
 
 ---
 
@@ -1986,8 +1986,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/mqbroker"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.mqBroker.MqBrokerConfiguration.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/mq_broker#id MqBroker#id}. |
-| <code><a href="#@cdktn/provider-aws.mqBroker.MqBrokerConfiguration.property.revision">Revision</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/mq_broker#revision MqBroker#revision}. |
+| <code><a href="#@cdktn/provider-aws.mqBroker.MqBrokerConfiguration.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/mq_broker#id MqBroker#id}. |
+| <code><a href="#@cdktn/provider-aws.mqBroker.MqBrokerConfiguration.property.revision">Revision</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/mq_broker#revision MqBroker#revision}. |
 
 ---
 
@@ -1999,7 +1999,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/mq_broker#id MqBroker#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/mq_broker#id MqBroker#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2014,7 +2014,7 @@ Revision *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/mq_broker#revision MqBroker#revision}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/mq_broker#revision MqBroker#revision}.
 
 ---
 
@@ -2035,8 +2035,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/mqbroker"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.mqBroker.MqBrokerEncryptionOptions.property.kmsKeyId">KmsKeyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/mq_broker#kms_key_id MqBroker#kms_key_id}. |
-| <code><a href="#@cdktn/provider-aws.mqBroker.MqBrokerEncryptionOptions.property.useAwsOwnedKey">UseAwsOwnedKey</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/mq_broker#use_aws_owned_key MqBroker#use_aws_owned_key}. |
+| <code><a href="#@cdktn/provider-aws.mqBroker.MqBrokerEncryptionOptions.property.kmsKeyId">KmsKeyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/mq_broker#kms_key_id MqBroker#kms_key_id}. |
+| <code><a href="#@cdktn/provider-aws.mqBroker.MqBrokerEncryptionOptions.property.useAwsOwnedKey">UseAwsOwnedKey</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/mq_broker#use_aws_owned_key MqBroker#use_aws_owned_key}. |
 
 ---
 
@@ -2048,7 +2048,7 @@ KmsKeyId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/mq_broker#kms_key_id MqBroker#kms_key_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/mq_broker#kms_key_id MqBroker#kms_key_id}.
 
 ---
 
@@ -2060,7 +2060,7 @@ UseAwsOwnedKey interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/mq_broker#use_aws_owned_key MqBroker#use_aws_owned_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/mq_broker#use_aws_owned_key MqBroker#use_aws_owned_key}.
 
 ---
 
@@ -2103,17 +2103,17 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/mqbroker"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.mqBroker.MqBrokerLdapServerMetadata.property.hosts">Hosts</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/mq_broker#hosts MqBroker#hosts}. |
-| <code><a href="#@cdktn/provider-aws.mqBroker.MqBrokerLdapServerMetadata.property.roleBase">RoleBase</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/mq_broker#role_base MqBroker#role_base}. |
-| <code><a href="#@cdktn/provider-aws.mqBroker.MqBrokerLdapServerMetadata.property.roleName">RoleName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/mq_broker#role_name MqBroker#role_name}. |
-| <code><a href="#@cdktn/provider-aws.mqBroker.MqBrokerLdapServerMetadata.property.roleSearchMatching">RoleSearchMatching</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/mq_broker#role_search_matching MqBroker#role_search_matching}. |
-| <code><a href="#@cdktn/provider-aws.mqBroker.MqBrokerLdapServerMetadata.property.roleSearchSubtree">RoleSearchSubtree</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/mq_broker#role_search_subtree MqBroker#role_search_subtree}. |
-| <code><a href="#@cdktn/provider-aws.mqBroker.MqBrokerLdapServerMetadata.property.serviceAccountPassword">ServiceAccountPassword</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/mq_broker#service_account_password MqBroker#service_account_password}. |
-| <code><a href="#@cdktn/provider-aws.mqBroker.MqBrokerLdapServerMetadata.property.serviceAccountUsername">ServiceAccountUsername</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/mq_broker#service_account_username MqBroker#service_account_username}. |
-| <code><a href="#@cdktn/provider-aws.mqBroker.MqBrokerLdapServerMetadata.property.userBase">UserBase</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/mq_broker#user_base MqBroker#user_base}. |
-| <code><a href="#@cdktn/provider-aws.mqBroker.MqBrokerLdapServerMetadata.property.userRoleName">UserRoleName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/mq_broker#user_role_name MqBroker#user_role_name}. |
-| <code><a href="#@cdktn/provider-aws.mqBroker.MqBrokerLdapServerMetadata.property.userSearchMatching">UserSearchMatching</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/mq_broker#user_search_matching MqBroker#user_search_matching}. |
-| <code><a href="#@cdktn/provider-aws.mqBroker.MqBrokerLdapServerMetadata.property.userSearchSubtree">UserSearchSubtree</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/mq_broker#user_search_subtree MqBroker#user_search_subtree}. |
+| <code><a href="#@cdktn/provider-aws.mqBroker.MqBrokerLdapServerMetadata.property.hosts">Hosts</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/mq_broker#hosts MqBroker#hosts}. |
+| <code><a href="#@cdktn/provider-aws.mqBroker.MqBrokerLdapServerMetadata.property.roleBase">RoleBase</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/mq_broker#role_base MqBroker#role_base}. |
+| <code><a href="#@cdktn/provider-aws.mqBroker.MqBrokerLdapServerMetadata.property.roleName">RoleName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/mq_broker#role_name MqBroker#role_name}. |
+| <code><a href="#@cdktn/provider-aws.mqBroker.MqBrokerLdapServerMetadata.property.roleSearchMatching">RoleSearchMatching</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/mq_broker#role_search_matching MqBroker#role_search_matching}. |
+| <code><a href="#@cdktn/provider-aws.mqBroker.MqBrokerLdapServerMetadata.property.roleSearchSubtree">RoleSearchSubtree</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/mq_broker#role_search_subtree MqBroker#role_search_subtree}. |
+| <code><a href="#@cdktn/provider-aws.mqBroker.MqBrokerLdapServerMetadata.property.serviceAccountPassword">ServiceAccountPassword</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/mq_broker#service_account_password MqBroker#service_account_password}. |
+| <code><a href="#@cdktn/provider-aws.mqBroker.MqBrokerLdapServerMetadata.property.serviceAccountUsername">ServiceAccountUsername</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/mq_broker#service_account_username MqBroker#service_account_username}. |
+| <code><a href="#@cdktn/provider-aws.mqBroker.MqBrokerLdapServerMetadata.property.userBase">UserBase</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/mq_broker#user_base MqBroker#user_base}. |
+| <code><a href="#@cdktn/provider-aws.mqBroker.MqBrokerLdapServerMetadata.property.userRoleName">UserRoleName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/mq_broker#user_role_name MqBroker#user_role_name}. |
+| <code><a href="#@cdktn/provider-aws.mqBroker.MqBrokerLdapServerMetadata.property.userSearchMatching">UserSearchMatching</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/mq_broker#user_search_matching MqBroker#user_search_matching}. |
+| <code><a href="#@cdktn/provider-aws.mqBroker.MqBrokerLdapServerMetadata.property.userSearchSubtree">UserSearchSubtree</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/mq_broker#user_search_subtree MqBroker#user_search_subtree}. |
 
 ---
 
@@ -2125,7 +2125,7 @@ Hosts *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/mq_broker#hosts MqBroker#hosts}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/mq_broker#hosts MqBroker#hosts}.
 
 ---
 
@@ -2137,7 +2137,7 @@ RoleBase *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/mq_broker#role_base MqBroker#role_base}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/mq_broker#role_base MqBroker#role_base}.
 
 ---
 
@@ -2149,7 +2149,7 @@ RoleName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/mq_broker#role_name MqBroker#role_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/mq_broker#role_name MqBroker#role_name}.
 
 ---
 
@@ -2161,7 +2161,7 @@ RoleSearchMatching *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/mq_broker#role_search_matching MqBroker#role_search_matching}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/mq_broker#role_search_matching MqBroker#role_search_matching}.
 
 ---
 
@@ -2173,7 +2173,7 @@ RoleSearchSubtree interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/mq_broker#role_search_subtree MqBroker#role_search_subtree}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/mq_broker#role_search_subtree MqBroker#role_search_subtree}.
 
 ---
 
@@ -2185,7 +2185,7 @@ ServiceAccountPassword *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/mq_broker#service_account_password MqBroker#service_account_password}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/mq_broker#service_account_password MqBroker#service_account_password}.
 
 ---
 
@@ -2197,7 +2197,7 @@ ServiceAccountUsername *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/mq_broker#service_account_username MqBroker#service_account_username}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/mq_broker#service_account_username MqBroker#service_account_username}.
 
 ---
 
@@ -2209,7 +2209,7 @@ UserBase *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/mq_broker#user_base MqBroker#user_base}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/mq_broker#user_base MqBroker#user_base}.
 
 ---
 
@@ -2221,7 +2221,7 @@ UserRoleName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/mq_broker#user_role_name MqBroker#user_role_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/mq_broker#user_role_name MqBroker#user_role_name}.
 
 ---
 
@@ -2233,7 +2233,7 @@ UserSearchMatching *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/mq_broker#user_search_matching MqBroker#user_search_matching}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/mq_broker#user_search_matching MqBroker#user_search_matching}.
 
 ---
 
@@ -2245,7 +2245,7 @@ UserSearchSubtree interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/mq_broker#user_search_subtree MqBroker#user_search_subtree}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/mq_broker#user_search_subtree MqBroker#user_search_subtree}.
 
 ---
 
@@ -2266,8 +2266,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/mqbroker"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.mqBroker.MqBrokerLogs.property.audit">Audit</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/mq_broker#audit MqBroker#audit}. |
-| <code><a href="#@cdktn/provider-aws.mqBroker.MqBrokerLogs.property.general">General</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/mq_broker#general MqBroker#general}. |
+| <code><a href="#@cdktn/provider-aws.mqBroker.MqBrokerLogs.property.audit">Audit</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/mq_broker#audit MqBroker#audit}. |
+| <code><a href="#@cdktn/provider-aws.mqBroker.MqBrokerLogs.property.general">General</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/mq_broker#general MqBroker#general}. |
 
 ---
 
@@ -2279,7 +2279,7 @@ Audit *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/mq_broker#audit MqBroker#audit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/mq_broker#audit MqBroker#audit}.
 
 ---
 
@@ -2291,7 +2291,7 @@ General interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/mq_broker#general MqBroker#general}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/mq_broker#general MqBroker#general}.
 
 ---
 
@@ -2313,9 +2313,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/mqbroker"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.mqBroker.MqBrokerMaintenanceWindowStartTime.property.dayOfWeek">DayOfWeek</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/mq_broker#day_of_week MqBroker#day_of_week}. |
-| <code><a href="#@cdktn/provider-aws.mqBroker.MqBrokerMaintenanceWindowStartTime.property.timeOfDay">TimeOfDay</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/mq_broker#time_of_day MqBroker#time_of_day}. |
-| <code><a href="#@cdktn/provider-aws.mqBroker.MqBrokerMaintenanceWindowStartTime.property.timeZone">TimeZone</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/mq_broker#time_zone MqBroker#time_zone}. |
+| <code><a href="#@cdktn/provider-aws.mqBroker.MqBrokerMaintenanceWindowStartTime.property.dayOfWeek">DayOfWeek</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/mq_broker#day_of_week MqBroker#day_of_week}. |
+| <code><a href="#@cdktn/provider-aws.mqBroker.MqBrokerMaintenanceWindowStartTime.property.timeOfDay">TimeOfDay</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/mq_broker#time_of_day MqBroker#time_of_day}. |
+| <code><a href="#@cdktn/provider-aws.mqBroker.MqBrokerMaintenanceWindowStartTime.property.timeZone">TimeZone</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/mq_broker#time_zone MqBroker#time_zone}. |
 
 ---
 
@@ -2327,7 +2327,7 @@ DayOfWeek *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/mq_broker#day_of_week MqBroker#day_of_week}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/mq_broker#day_of_week MqBroker#day_of_week}.
 
 ---
 
@@ -2339,7 +2339,7 @@ TimeOfDay *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/mq_broker#time_of_day MqBroker#time_of_day}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/mq_broker#time_of_day MqBroker#time_of_day}.
 
 ---
 
@@ -2351,7 +2351,7 @@ TimeZone *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/mq_broker#time_zone MqBroker#time_zone}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/mq_broker#time_zone MqBroker#time_zone}.
 
 ---
 
@@ -2373,9 +2373,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/mqbroker"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.mqBroker.MqBrokerTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/mq_broker#create MqBroker#create}. |
-| <code><a href="#@cdktn/provider-aws.mqBroker.MqBrokerTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/mq_broker#delete MqBroker#delete}. |
-| <code><a href="#@cdktn/provider-aws.mqBroker.MqBrokerTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/mq_broker#update MqBroker#update}. |
+| <code><a href="#@cdktn/provider-aws.mqBroker.MqBrokerTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/mq_broker#create MqBroker#create}. |
+| <code><a href="#@cdktn/provider-aws.mqBroker.MqBrokerTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/mq_broker#delete MqBroker#delete}. |
+| <code><a href="#@cdktn/provider-aws.mqBroker.MqBrokerTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/mq_broker#update MqBroker#update}. |
 
 ---
 
@@ -2387,7 +2387,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/mq_broker#create MqBroker#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/mq_broker#create MqBroker#create}.
 
 ---
 
@@ -2399,7 +2399,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/mq_broker#delete MqBroker#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/mq_broker#delete MqBroker#delete}.
 
 ---
 
@@ -2411,7 +2411,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/mq_broker#update MqBroker#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/mq_broker#update MqBroker#update}.
 
 ---
 
@@ -2435,11 +2435,11 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/mqbroker"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.mqBroker.MqBrokerUser.property.password">Password</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/mq_broker#password MqBroker#password}. |
-| <code><a href="#@cdktn/provider-aws.mqBroker.MqBrokerUser.property.username">Username</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/mq_broker#username MqBroker#username}. |
-| <code><a href="#@cdktn/provider-aws.mqBroker.MqBrokerUser.property.consoleAccess">ConsoleAccess</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/mq_broker#console_access MqBroker#console_access}. |
-| <code><a href="#@cdktn/provider-aws.mqBroker.MqBrokerUser.property.groups">Groups</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/mq_broker#groups MqBroker#groups}. |
-| <code><a href="#@cdktn/provider-aws.mqBroker.MqBrokerUser.property.replicationUser">ReplicationUser</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/mq_broker#replication_user MqBroker#replication_user}. |
+| <code><a href="#@cdktn/provider-aws.mqBroker.MqBrokerUser.property.password">Password</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/mq_broker#password MqBroker#password}. |
+| <code><a href="#@cdktn/provider-aws.mqBroker.MqBrokerUser.property.username">Username</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/mq_broker#username MqBroker#username}. |
+| <code><a href="#@cdktn/provider-aws.mqBroker.MqBrokerUser.property.consoleAccess">ConsoleAccess</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/mq_broker#console_access MqBroker#console_access}. |
+| <code><a href="#@cdktn/provider-aws.mqBroker.MqBrokerUser.property.groups">Groups</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/mq_broker#groups MqBroker#groups}. |
+| <code><a href="#@cdktn/provider-aws.mqBroker.MqBrokerUser.property.replicationUser">ReplicationUser</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/mq_broker#replication_user MqBroker#replication_user}. |
 
 ---
 
@@ -2451,7 +2451,7 @@ Password *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/mq_broker#password MqBroker#password}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/mq_broker#password MqBroker#password}.
 
 ---
 
@@ -2463,7 +2463,7 @@ Username *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/mq_broker#username MqBroker#username}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/mq_broker#username MqBroker#username}.
 
 ---
 
@@ -2475,7 +2475,7 @@ ConsoleAccess interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/mq_broker#console_access MqBroker#console_access}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/mq_broker#console_access MqBroker#console_access}.
 
 ---
 
@@ -2487,7 +2487,7 @@ Groups *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/mq_broker#groups MqBroker#groups}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/mq_broker#groups MqBroker#groups}.
 
 ---
 
@@ -2499,7 +2499,7 @@ ReplicationUser interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/mq_broker#replication_user MqBroker#replication_user}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/mq_broker#replication_user MqBroker#replication_user}.
 
 ---
 

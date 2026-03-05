@@ -4,7 +4,7 @@
 
 ### DataAwsLambdaLayerVersion <a name="DataAwsLambdaLayerVersion" id="@cdktn/provider-aws.dataAwsLambdaLayerVersion.DataAwsLambdaLayerVersion"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/data-sources/lambda_layer_version aws_lambda_layer_version}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/data-sources/lambda_layer_version aws_lambda_layer_version}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLambdaLayerVersion.DataAwsLambdaLayerVersion.Initializer"></a>
 
@@ -40,7 +40,7 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `config`<sup>Required</sup> <a name="config" id="@cdktn/provider-aws.dataAwsLambdaLayerVersion.DataAwsLambdaLayerVersion.Initializer.parameter.config"></a>
+##### `config`<sup>Optional</sup> <a name="config" id="@cdktn/provider-aws.dataAwsLambdaLayerVersion.DataAwsLambdaLayerVersion.Initializer.parameter.config"></a>
 
 - *Type:* <a href="#@cdktn/provider-aws.dataAwsLambdaLayerVersion.DataAwsLambdaLayerVersionConfig">DataAwsLambdaLayerVersionConfig</a>
 
@@ -71,6 +71,8 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-aws.dataAwsLambdaLayerVersion.DataAwsLambdaLayerVersion.resetCompatibleArchitecture">ResetCompatibleArchitecture</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsLambdaLayerVersion.DataAwsLambdaLayerVersion.resetCompatibleRuntime">ResetCompatibleRuntime</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsLambdaLayerVersion.DataAwsLambdaLayerVersion.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsLambdaLayerVersion.DataAwsLambdaLayerVersion.resetLayerName">ResetLayerName</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsLambdaLayerVersion.DataAwsLambdaLayerVersion.resetLayerVersionArn">ResetLayerVersionArn</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsLambdaLayerVersion.DataAwsLambdaLayerVersion.resetRegion">ResetRegion</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsLambdaLayerVersion.DataAwsLambdaLayerVersion.resetVersion">ResetVersion</a></code> | *No description.* |
 
@@ -307,6 +309,18 @@ func ResetCompatibleRuntime()
 func ResetId()
 ```
 
+##### `ResetLayerName` <a name="ResetLayerName" id="@cdktn/provider-aws.dataAwsLambdaLayerVersion.DataAwsLambdaLayerVersion.resetLayerName"></a>
+
+```go
+func ResetLayerName()
+```
+
+##### `ResetLayerVersionArn` <a name="ResetLayerVersionArn" id="@cdktn/provider-aws.dataAwsLambdaLayerVersion.DataAwsLambdaLayerVersion.resetLayerVersionArn"></a>
+
+```go
+func ResetLayerVersionArn()
+```
+
 ##### `ResetRegion` <a name="ResetRegion" id="@cdktn/provider-aws.dataAwsLambdaLayerVersion.DataAwsLambdaLayerVersion.resetRegion"></a>
 
 ```go
@@ -422,7 +436,7 @@ The construct id used in the generated config for the DataAwsLambdaLayerVersion 
 
 The id of the existing DataAwsLambdaLayerVersion that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/data-sources/lambda_layer_version#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/data-sources/lambda_layer_version#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -466,12 +480,14 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0
 | <code><a href="#@cdktn/provider-aws.dataAwsLambdaLayerVersion.DataAwsLambdaLayerVersion.property.compatibleRuntimeInput">CompatibleRuntimeInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsLambdaLayerVersion.DataAwsLambdaLayerVersion.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsLambdaLayerVersion.DataAwsLambdaLayerVersion.property.layerNameInput">LayerNameInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsLambdaLayerVersion.DataAwsLambdaLayerVersion.property.layerVersionArnInput">LayerVersionArnInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsLambdaLayerVersion.DataAwsLambdaLayerVersion.property.regionInput">RegionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsLambdaLayerVersion.DataAwsLambdaLayerVersion.property.versionInput">VersionInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsLambdaLayerVersion.DataAwsLambdaLayerVersion.property.compatibleArchitecture">CompatibleArchitecture</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsLambdaLayerVersion.DataAwsLambdaLayerVersion.property.compatibleRuntime">CompatibleRuntime</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsLambdaLayerVersion.DataAwsLambdaLayerVersion.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsLambdaLayerVersion.DataAwsLambdaLayerVersion.property.layerName">LayerName</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsLambdaLayerVersion.DataAwsLambdaLayerVersion.property.layerVersionArn">LayerVersionArn</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsLambdaLayerVersion.DataAwsLambdaLayerVersion.property.region">Region</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsLambdaLayerVersion.DataAwsLambdaLayerVersion.property.version">Version</a></code> | <code>*f64</code> | *No description.* |
 
@@ -759,6 +775,16 @@ func LayerNameInput() *string
 
 ---
 
+##### `LayerVersionArnInput`<sup>Optional</sup> <a name="LayerVersionArnInput" id="@cdktn/provider-aws.dataAwsLambdaLayerVersion.DataAwsLambdaLayerVersion.property.layerVersionArnInput"></a>
+
+```go
+func LayerVersionArnInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `RegionInput`<sup>Optional</sup> <a name="RegionInput" id="@cdktn/provider-aws.dataAwsLambdaLayerVersion.DataAwsLambdaLayerVersion.property.regionInput"></a>
 
 ```go
@@ -813,6 +839,16 @@ func Id() *string
 
 ```go
 func LayerName() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `LayerVersionArn`<sup>Required</sup> <a name="LayerVersionArn" id="@cdktn/provider-aws.dataAwsLambdaLayerVersion.DataAwsLambdaLayerVersion.property.layerVersionArn"></a>
+
+```go
+func LayerVersionArn() *string
 ```
 
 - *Type:* *string
@@ -874,10 +910,11 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawslambdalayervers
 	Lifecycle: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle,
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
-	LayerName: *string,
 	CompatibleArchitecture: *string,
 	CompatibleRuntime: *string,
 	Id: *string,
+	LayerName: *string,
+	LayerVersionArn: *string,
 	Region: *string,
 	Version: *f64,
 }
@@ -894,12 +931,13 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawslambdalayervers
 | <code><a href="#@cdktn/provider-aws.dataAwsLambdaLayerVersion.DataAwsLambdaLayerVersionConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsLambdaLayerVersion.DataAwsLambdaLayerVersionConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsLambdaLayerVersion.DataAwsLambdaLayerVersionConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dataAwsLambdaLayerVersion.DataAwsLambdaLayerVersionConfig.property.layerName">LayerName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/data-sources/lambda_layer_version#layer_name DataAwsLambdaLayerVersion#layer_name}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsLambdaLayerVersion.DataAwsLambdaLayerVersionConfig.property.compatibleArchitecture">CompatibleArchitecture</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/data-sources/lambda_layer_version#compatible_architecture DataAwsLambdaLayerVersion#compatible_architecture}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsLambdaLayerVersion.DataAwsLambdaLayerVersionConfig.property.compatibleRuntime">CompatibleRuntime</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/data-sources/lambda_layer_version#compatible_runtime DataAwsLambdaLayerVersion#compatible_runtime}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsLambdaLayerVersion.DataAwsLambdaLayerVersionConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/data-sources/lambda_layer_version#id DataAwsLambdaLayerVersion#id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsLambdaLayerVersion.DataAwsLambdaLayerVersionConfig.property.compatibleArchitecture">CompatibleArchitecture</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/data-sources/lambda_layer_version#compatible_architecture DataAwsLambdaLayerVersion#compatible_architecture}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsLambdaLayerVersion.DataAwsLambdaLayerVersionConfig.property.compatibleRuntime">CompatibleRuntime</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/data-sources/lambda_layer_version#compatible_runtime DataAwsLambdaLayerVersion#compatible_runtime}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsLambdaLayerVersion.DataAwsLambdaLayerVersionConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/data-sources/lambda_layer_version#id DataAwsLambdaLayerVersion#id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsLambdaLayerVersion.DataAwsLambdaLayerVersionConfig.property.layerName">LayerName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/data-sources/lambda_layer_version#layer_name DataAwsLambdaLayerVersion#layer_name}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsLambdaLayerVersion.DataAwsLambdaLayerVersionConfig.property.layerVersionArn">LayerVersionArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/data-sources/lambda_layer_version#layer_version_arn DataAwsLambdaLayerVersion#layer_version_arn}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsLambdaLayerVersion.DataAwsLambdaLayerVersionConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.dataAwsLambdaLayerVersion.DataAwsLambdaLayerVersionConfig.property.version">Version</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/data-sources/lambda_layer_version#version DataAwsLambdaLayerVersion#version}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsLambdaLayerVersion.DataAwsLambdaLayerVersionConfig.property.version">Version</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/data-sources/lambda_layer_version#version DataAwsLambdaLayerVersion#version}. |
 
 ---
 
@@ -973,18 +1011,6 @@ Provisioners *[]interface{}
 
 ---
 
-##### `LayerName`<sup>Required</sup> <a name="LayerName" id="@cdktn/provider-aws.dataAwsLambdaLayerVersion.DataAwsLambdaLayerVersionConfig.property.layerName"></a>
-
-```go
-LayerName *string
-```
-
-- *Type:* *string
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/data-sources/lambda_layer_version#layer_name DataAwsLambdaLayerVersion#layer_name}.
-
----
-
 ##### `CompatibleArchitecture`<sup>Optional</sup> <a name="CompatibleArchitecture" id="@cdktn/provider-aws.dataAwsLambdaLayerVersion.DataAwsLambdaLayerVersionConfig.property.compatibleArchitecture"></a>
 
 ```go
@@ -993,7 +1019,7 @@ CompatibleArchitecture *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/data-sources/lambda_layer_version#compatible_architecture DataAwsLambdaLayerVersion#compatible_architecture}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/data-sources/lambda_layer_version#compatible_architecture DataAwsLambdaLayerVersion#compatible_architecture}.
 
 ---
 
@@ -1005,7 +1031,7 @@ CompatibleRuntime *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/data-sources/lambda_layer_version#compatible_runtime DataAwsLambdaLayerVersion#compatible_runtime}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/data-sources/lambda_layer_version#compatible_runtime DataAwsLambdaLayerVersion#compatible_runtime}.
 
 ---
 
@@ -1017,10 +1043,34 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/data-sources/lambda_layer_version#id DataAwsLambdaLayerVersion#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/data-sources/lambda_layer_version#id DataAwsLambdaLayerVersion#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `LayerName`<sup>Optional</sup> <a name="LayerName" id="@cdktn/provider-aws.dataAwsLambdaLayerVersion.DataAwsLambdaLayerVersionConfig.property.layerName"></a>
+
+```go
+LayerName *string
+```
+
+- *Type:* *string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/data-sources/lambda_layer_version#layer_name DataAwsLambdaLayerVersion#layer_name}.
+
+---
+
+##### `LayerVersionArn`<sup>Optional</sup> <a name="LayerVersionArn" id="@cdktn/provider-aws.dataAwsLambdaLayerVersion.DataAwsLambdaLayerVersionConfig.property.layerVersionArn"></a>
+
+```go
+LayerVersionArn *string
+```
+
+- *Type:* *string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/data-sources/lambda_layer_version#layer_version_arn DataAwsLambdaLayerVersion#layer_version_arn}.
 
 ---
 
@@ -1034,7 +1084,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/data-sources/lambda_layer_version#region DataAwsLambdaLayerVersion#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/data-sources/lambda_layer_version#region DataAwsLambdaLayerVersion#region}
 
 ---
 
@@ -1046,7 +1096,7 @@ Version *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/data-sources/lambda_layer_version#version DataAwsLambdaLayerVersion#version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/data-sources/lambda_layer_version#version DataAwsLambdaLayerVersion#version}.
 
 ---
 

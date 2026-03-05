@@ -4,7 +4,7 @@
 
 ### ConnectHoursOfOperation <a name="ConnectHoursOfOperation" id="@cdktn/provider-aws.connectHoursOfOperation.ConnectHoursOfOperation"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/connect_hours_of_operation aws_connect_hours_of_operation}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/connect_hours_of_operation aws_connect_hours_of_operation}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.connectHoursOfOperation.ConnectHoursOfOperation.Initializer"></a>
 
@@ -537,7 +537,7 @@ The construct id used in the generated config for the ConnectHoursOfOperation to
 
 The id of the existing ConnectHoursOfOperation that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/connect_hours_of_operation#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/connect_hours_of_operation#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -991,14 +991,14 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/connecthoursofoperatio
 | <code><a href="#@cdktn/provider-aws.connectHoursOfOperation.ConnectHoursOfOperationConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.connectHoursOfOperation.ConnectHoursOfOperationConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.connectHoursOfOperation.ConnectHoursOfOperationConfig.property.config">Config</a></code> | <code>interface{}</code> | config block. |
-| <code><a href="#@cdktn/provider-aws.connectHoursOfOperation.ConnectHoursOfOperationConfig.property.instanceId">InstanceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/connect_hours_of_operation#instance_id ConnectHoursOfOperation#instance_id}. |
-| <code><a href="#@cdktn/provider-aws.connectHoursOfOperation.ConnectHoursOfOperationConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/connect_hours_of_operation#name ConnectHoursOfOperation#name}. |
-| <code><a href="#@cdktn/provider-aws.connectHoursOfOperation.ConnectHoursOfOperationConfig.property.timeZone">TimeZone</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/connect_hours_of_operation#time_zone ConnectHoursOfOperation#time_zone}. |
-| <code><a href="#@cdktn/provider-aws.connectHoursOfOperation.ConnectHoursOfOperationConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/connect_hours_of_operation#description ConnectHoursOfOperation#description}. |
-| <code><a href="#@cdktn/provider-aws.connectHoursOfOperation.ConnectHoursOfOperationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/connect_hours_of_operation#id ConnectHoursOfOperation#id}. |
+| <code><a href="#@cdktn/provider-aws.connectHoursOfOperation.ConnectHoursOfOperationConfig.property.instanceId">InstanceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/connect_hours_of_operation#instance_id ConnectHoursOfOperation#instance_id}. |
+| <code><a href="#@cdktn/provider-aws.connectHoursOfOperation.ConnectHoursOfOperationConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/connect_hours_of_operation#name ConnectHoursOfOperation#name}. |
+| <code><a href="#@cdktn/provider-aws.connectHoursOfOperation.ConnectHoursOfOperationConfig.property.timeZone">TimeZone</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/connect_hours_of_operation#time_zone ConnectHoursOfOperation#time_zone}. |
+| <code><a href="#@cdktn/provider-aws.connectHoursOfOperation.ConnectHoursOfOperationConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/connect_hours_of_operation#description ConnectHoursOfOperation#description}. |
+| <code><a href="#@cdktn/provider-aws.connectHoursOfOperation.ConnectHoursOfOperationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/connect_hours_of_operation#id ConnectHoursOfOperation#id}. |
 | <code><a href="#@cdktn/provider-aws.connectHoursOfOperation.ConnectHoursOfOperationConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.connectHoursOfOperation.ConnectHoursOfOperationConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/connect_hours_of_operation#tags ConnectHoursOfOperation#tags}. |
-| <code><a href="#@cdktn/provider-aws.connectHoursOfOperation.ConnectHoursOfOperationConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/connect_hours_of_operation#tags_all ConnectHoursOfOperation#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.connectHoursOfOperation.ConnectHoursOfOperationConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/connect_hours_of_operation#tags ConnectHoursOfOperation#tags}. |
+| <code><a href="#@cdktn/provider-aws.connectHoursOfOperation.ConnectHoursOfOperationConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/connect_hours_of_operation#tags_all ConnectHoursOfOperation#tags_all}. |
 
 ---
 
@@ -1082,7 +1082,7 @@ Config interface{}
 
 config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/connect_hours_of_operation#config ConnectHoursOfOperation#config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/connect_hours_of_operation#config ConnectHoursOfOperation#config}
 
 ---
 
@@ -1094,7 +1094,7 @@ InstanceId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/connect_hours_of_operation#instance_id ConnectHoursOfOperation#instance_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/connect_hours_of_operation#instance_id ConnectHoursOfOperation#instance_id}.
 
 ---
 
@@ -1106,7 +1106,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/connect_hours_of_operation#name ConnectHoursOfOperation#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/connect_hours_of_operation#name ConnectHoursOfOperation#name}.
 
 ---
 
@@ -1118,7 +1118,7 @@ TimeZone *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/connect_hours_of_operation#time_zone ConnectHoursOfOperation#time_zone}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/connect_hours_of_operation#time_zone ConnectHoursOfOperation#time_zone}.
 
 ---
 
@@ -1130,7 +1130,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/connect_hours_of_operation#description ConnectHoursOfOperation#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/connect_hours_of_operation#description ConnectHoursOfOperation#description}.
 
 ---
 
@@ -1142,7 +1142,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/connect_hours_of_operation#id ConnectHoursOfOperation#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/connect_hours_of_operation#id ConnectHoursOfOperation#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1159,7 +1159,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/connect_hours_of_operation#region ConnectHoursOfOperation#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/connect_hours_of_operation#region ConnectHoursOfOperation#region}
 
 ---
 
@@ -1171,7 +1171,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/connect_hours_of_operation#tags ConnectHoursOfOperation#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/connect_hours_of_operation#tags ConnectHoursOfOperation#tags}.
 
 ---
 
@@ -1183,7 +1183,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/connect_hours_of_operation#tags_all ConnectHoursOfOperation#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/connect_hours_of_operation#tags_all ConnectHoursOfOperation#tags_all}.
 
 ---
 
@@ -1205,7 +1205,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/connecthoursofoperatio
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.connectHoursOfOperation.ConnectHoursOfOperationConfigA.property.day">Day</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/connect_hours_of_operation#day ConnectHoursOfOperation#day}. |
+| <code><a href="#@cdktn/provider-aws.connectHoursOfOperation.ConnectHoursOfOperationConfigA.property.day">Day</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/connect_hours_of_operation#day ConnectHoursOfOperation#day}. |
 | <code><a href="#@cdktn/provider-aws.connectHoursOfOperation.ConnectHoursOfOperationConfigA.property.endTime">EndTime</a></code> | <code><a href="#@cdktn/provider-aws.connectHoursOfOperation.ConnectHoursOfOperationConfigEndTime">ConnectHoursOfOperationConfigEndTime</a></code> | end_time block. |
 | <code><a href="#@cdktn/provider-aws.connectHoursOfOperation.ConnectHoursOfOperationConfigA.property.startTime">StartTime</a></code> | <code><a href="#@cdktn/provider-aws.connectHoursOfOperation.ConnectHoursOfOperationConfigStartTime">ConnectHoursOfOperationConfigStartTime</a></code> | start_time block. |
 
@@ -1219,7 +1219,7 @@ Day *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/connect_hours_of_operation#day ConnectHoursOfOperation#day}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/connect_hours_of_operation#day ConnectHoursOfOperation#day}.
 
 ---
 
@@ -1233,7 +1233,7 @@ EndTime ConnectHoursOfOperationConfigEndTime
 
 end_time block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/connect_hours_of_operation#end_time ConnectHoursOfOperation#end_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/connect_hours_of_operation#end_time ConnectHoursOfOperation#end_time}
 
 ---
 
@@ -1247,7 +1247,7 @@ StartTime ConnectHoursOfOperationConfigStartTime
 
 start_time block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/connect_hours_of_operation#start_time ConnectHoursOfOperation#start_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/connect_hours_of_operation#start_time ConnectHoursOfOperation#start_time}
 
 ---
 
@@ -1268,8 +1268,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/connecthoursofoperatio
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.connectHoursOfOperation.ConnectHoursOfOperationConfigEndTime.property.hours">Hours</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/connect_hours_of_operation#hours ConnectHoursOfOperation#hours}. |
-| <code><a href="#@cdktn/provider-aws.connectHoursOfOperation.ConnectHoursOfOperationConfigEndTime.property.minutes">Minutes</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/connect_hours_of_operation#minutes ConnectHoursOfOperation#minutes}. |
+| <code><a href="#@cdktn/provider-aws.connectHoursOfOperation.ConnectHoursOfOperationConfigEndTime.property.hours">Hours</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/connect_hours_of_operation#hours ConnectHoursOfOperation#hours}. |
+| <code><a href="#@cdktn/provider-aws.connectHoursOfOperation.ConnectHoursOfOperationConfigEndTime.property.minutes">Minutes</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/connect_hours_of_operation#minutes ConnectHoursOfOperation#minutes}. |
 
 ---
 
@@ -1281,7 +1281,7 @@ Hours *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/connect_hours_of_operation#hours ConnectHoursOfOperation#hours}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/connect_hours_of_operation#hours ConnectHoursOfOperation#hours}.
 
 ---
 
@@ -1293,7 +1293,7 @@ Minutes *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/connect_hours_of_operation#minutes ConnectHoursOfOperation#minutes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/connect_hours_of_operation#minutes ConnectHoursOfOperation#minutes}.
 
 ---
 
@@ -1314,8 +1314,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/connecthoursofoperatio
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.connectHoursOfOperation.ConnectHoursOfOperationConfigStartTime.property.hours">Hours</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/connect_hours_of_operation#hours ConnectHoursOfOperation#hours}. |
-| <code><a href="#@cdktn/provider-aws.connectHoursOfOperation.ConnectHoursOfOperationConfigStartTime.property.minutes">Minutes</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/connect_hours_of_operation#minutes ConnectHoursOfOperation#minutes}. |
+| <code><a href="#@cdktn/provider-aws.connectHoursOfOperation.ConnectHoursOfOperationConfigStartTime.property.hours">Hours</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/connect_hours_of_operation#hours ConnectHoursOfOperation#hours}. |
+| <code><a href="#@cdktn/provider-aws.connectHoursOfOperation.ConnectHoursOfOperationConfigStartTime.property.minutes">Minutes</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/connect_hours_of_operation#minutes ConnectHoursOfOperation#minutes}. |
 
 ---
 
@@ -1327,7 +1327,7 @@ Hours *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/connect_hours_of_operation#hours ConnectHoursOfOperation#hours}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/connect_hours_of_operation#hours ConnectHoursOfOperation#hours}.
 
 ---
 
@@ -1339,7 +1339,7 @@ Minutes *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/connect_hours_of_operation#minutes ConnectHoursOfOperation#minutes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/connect_hours_of_operation#minutes ConnectHoursOfOperation#minutes}.
 
 ---
 

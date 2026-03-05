@@ -4,7 +4,7 @@
 
 ### RamResourceShare <a name="RamResourceShare" id="@cdktn/provider-aws.ramResourceShare.RamResourceShare"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/ram_resource_share aws_ram_resource_share}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/ram_resource_share aws_ram_resource_share}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ramResourceShare.RamResourceShare.Initializer"></a>
 
@@ -26,6 +26,7 @@ ramResourceShare.RamResourceShare(
   id: str = None,
   permission_arns: typing.List[str] = None,
   region: str = None,
+  resource_share_configuration: RamResourceShareResourceShareConfiguration = None,
   tags: typing.Mapping[str] = None,
   tags_all: typing.Mapping[str] = None,
   timeouts: RamResourceShareTimeouts = None
@@ -43,13 +44,14 @@ ramResourceShare.RamResourceShare(
 | <code><a href="#@cdktn/provider-aws.ramResourceShare.RamResourceShare.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.ramResourceShare.RamResourceShare.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.ramResourceShare.RamResourceShare.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.ramResourceShare.RamResourceShare.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/ram_resource_share#name RamResourceShare#name}. |
-| <code><a href="#@cdktn/provider-aws.ramResourceShare.RamResourceShare.Initializer.parameter.allowExternalPrincipals">allow_external_principals</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/ram_resource_share#allow_external_principals RamResourceShare#allow_external_principals}. |
-| <code><a href="#@cdktn/provider-aws.ramResourceShare.RamResourceShare.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/ram_resource_share#id RamResourceShare#id}. |
-| <code><a href="#@cdktn/provider-aws.ramResourceShare.RamResourceShare.Initializer.parameter.permissionArns">permission_arns</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/ram_resource_share#permission_arns RamResourceShare#permission_arns}. |
+| <code><a href="#@cdktn/provider-aws.ramResourceShare.RamResourceShare.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/ram_resource_share#name RamResourceShare#name}. |
+| <code><a href="#@cdktn/provider-aws.ramResourceShare.RamResourceShare.Initializer.parameter.allowExternalPrincipals">allow_external_principals</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/ram_resource_share#allow_external_principals RamResourceShare#allow_external_principals}. |
+| <code><a href="#@cdktn/provider-aws.ramResourceShare.RamResourceShare.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/ram_resource_share#id RamResourceShare#id}. |
+| <code><a href="#@cdktn/provider-aws.ramResourceShare.RamResourceShare.Initializer.parameter.permissionArns">permission_arns</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/ram_resource_share#permission_arns RamResourceShare#permission_arns}. |
 | <code><a href="#@cdktn/provider-aws.ramResourceShare.RamResourceShare.Initializer.parameter.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.ramResourceShare.RamResourceShare.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/ram_resource_share#tags RamResourceShare#tags}. |
-| <code><a href="#@cdktn/provider-aws.ramResourceShare.RamResourceShare.Initializer.parameter.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/ram_resource_share#tags_all RamResourceShare#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.ramResourceShare.RamResourceShare.Initializer.parameter.resourceShareConfiguration">resource_share_configuration</a></code> | <code><a href="#@cdktn/provider-aws.ramResourceShare.RamResourceShareResourceShareConfiguration">RamResourceShareResourceShareConfiguration</a></code> | resource_share_configuration block. |
+| <code><a href="#@cdktn/provider-aws.ramResourceShare.RamResourceShare.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/ram_resource_share#tags RamResourceShare#tags}. |
+| <code><a href="#@cdktn/provider-aws.ramResourceShare.RamResourceShare.Initializer.parameter.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/ram_resource_share#tags_all RamResourceShare#tags_all}. |
 | <code><a href="#@cdktn/provider-aws.ramResourceShare.RamResourceShare.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-aws.ramResourceShare.RamResourceShareTimeouts">RamResourceShareTimeouts</a></code> | timeouts block. |
 
 ---
@@ -118,7 +120,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/ram_resource_share#name RamResourceShare#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/ram_resource_share#name RamResourceShare#name}.
 
 ---
 
@@ -126,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/ram_resource_share#allow_external_principals RamResourceShare#allow_external_principals}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/ram_resource_share#allow_external_principals RamResourceShare#allow_external_principals}.
 
 ---
 
@@ -134,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/ram_resource_share#id RamResourceShare#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/ram_resource_share#id RamResourceShare#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -145,7 +147,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/ram_resource_share#permission_arns RamResourceShare#permission_arns}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/ram_resource_share#permission_arns RamResourceShare#permission_arns}.
 
 ---
 
@@ -155,7 +157,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/ram_resource_share#region RamResourceShare#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/ram_resource_share#region RamResourceShare#region}
+
+---
+
+##### `resource_share_configuration`<sup>Optional</sup> <a name="resource_share_configuration" id="@cdktn/provider-aws.ramResourceShare.RamResourceShare.Initializer.parameter.resourceShareConfiguration"></a>
+
+- *Type:* <a href="#@cdktn/provider-aws.ramResourceShare.RamResourceShareResourceShareConfiguration">RamResourceShareResourceShareConfiguration</a>
+
+resource_share_configuration block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/ram_resource_share#resource_share_configuration RamResourceShare#resource_share_configuration}
 
 ---
 
@@ -163,7 +175,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/ram_resource_share#tags RamResourceShare#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/ram_resource_share#tags RamResourceShare#tags}.
 
 ---
 
@@ -171,7 +183,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/ram_resource_share#tags_all RamResourceShare#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/ram_resource_share#tags_all RamResourceShare#tags_all}.
 
 ---
 
@@ -181,7 +193,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/ram_resource_share#timeouts RamResourceShare#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/ram_resource_share#timeouts RamResourceShare#timeouts}
 
 ---
 
@@ -213,11 +225,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-aws.ramResourceShare.RamResourceShare.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktn/provider-aws.ramResourceShare.RamResourceShare.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-aws.ramResourceShare.RamResourceShare.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-aws.ramResourceShare.RamResourceShare.putResourceShareConfiguration">put_resource_share_configuration</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.ramResourceShare.RamResourceShare.putTimeouts">put_timeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.ramResourceShare.RamResourceShare.resetAllowExternalPrincipals">reset_allow_external_principals</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.ramResourceShare.RamResourceShare.resetId">reset_id</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.ramResourceShare.RamResourceShare.resetPermissionArns">reset_permission_arns</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.ramResourceShare.RamResourceShare.resetRegion">reset_region</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ramResourceShare.RamResourceShare.resetResourceShareConfiguration">reset_resource_share_configuration</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.ramResourceShare.RamResourceShare.resetTags">reset_tags</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.ramResourceShare.RamResourceShare.resetTagsAll">reset_tags_all</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.ramResourceShare.RamResourceShare.resetTimeouts">reset_timeouts</a></code> | *No description.* |
@@ -572,6 +586,22 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `put_resource_share_configuration` <a name="put_resource_share_configuration" id="@cdktn/provider-aws.ramResourceShare.RamResourceShare.putResourceShareConfiguration"></a>
+
+```python
+def put_resource_share_configuration(
+  retain_sharing_on_account_leave_organization: bool | IResolvable = None
+) -> None
+```
+
+###### `retain_sharing_on_account_leave_organization`<sup>Optional</sup> <a name="retain_sharing_on_account_leave_organization" id="@cdktn/provider-aws.ramResourceShare.RamResourceShare.putResourceShareConfiguration.parameter.retainSharingOnAccountLeaveOrganization"></a>
+
+- *Type:* bool | cdktn.IResolvable
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/ram_resource_share#retain_sharing_on_account_leave_organization RamResourceShare#retain_sharing_on_account_leave_organization}.
+
+---
+
 ##### `put_timeouts` <a name="put_timeouts" id="@cdktn/provider-aws.ramResourceShare.RamResourceShare.putTimeouts"></a>
 
 ```python
@@ -585,7 +615,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/ram_resource_share#create RamResourceShare#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/ram_resource_share#create RamResourceShare#create}.
 
 ---
 
@@ -593,7 +623,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/ram_resource_share#delete RamResourceShare#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/ram_resource_share#delete RamResourceShare#delete}.
 
 ---
 
@@ -619,6 +649,12 @@ def reset_permission_arns() -> None
 
 ```python
 def reset_region() -> None
+```
+
+##### `reset_resource_share_configuration` <a name="reset_resource_share_configuration" id="@cdktn/provider-aws.ramResourceShare.RamResourceShare.resetResourceShareConfiguration"></a>
+
+```python
+def reset_resource_share_configuration() -> None
 ```
 
 ##### `reset_tags` <a name="reset_tags" id="@cdktn/provider-aws.ramResourceShare.RamResourceShare.resetTags"></a>
@@ -753,7 +789,7 @@ The construct id used in the generated config for the RamResourceShare to import
 
 The id of the existing RamResourceShare that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/ram_resource_share#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/ram_resource_share#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -784,12 +820,14 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0
 | <code><a href="#@cdktn/provider-aws.ramResourceShare.RamResourceShare.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.ramResourceShare.RamResourceShare.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.ramResourceShare.RamResourceShare.property.arn">arn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ramResourceShare.RamResourceShare.property.resourceShareConfiguration">resource_share_configuration</a></code> | <code><a href="#@cdktn/provider-aws.ramResourceShare.RamResourceShareResourceShareConfigurationOutputReference">RamResourceShareResourceShareConfigurationOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.ramResourceShare.RamResourceShare.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-aws.ramResourceShare.RamResourceShareTimeoutsOutputReference">RamResourceShareTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.ramResourceShare.RamResourceShare.property.allowExternalPrincipalsInput">allow_external_principals_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.ramResourceShare.RamResourceShare.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.ramResourceShare.RamResourceShare.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.ramResourceShare.RamResourceShare.property.permissionArnsInput">permission_arns_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.ramResourceShare.RamResourceShare.property.regionInput">region_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ramResourceShare.RamResourceShare.property.resourceShareConfigurationInput">resource_share_configuration_input</a></code> | <code><a href="#@cdktn/provider-aws.ramResourceShare.RamResourceShareResourceShareConfiguration">RamResourceShareResourceShareConfiguration</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.ramResourceShare.RamResourceShare.property.tagsAllInput">tags_all_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.ramResourceShare.RamResourceShare.property.tagsInput">tags_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.ramResourceShare.RamResourceShare.property.timeoutsInput">timeouts_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.ramResourceShare.RamResourceShareTimeouts">RamResourceShareTimeouts</a></code> | *No description.* |
@@ -955,6 +993,16 @@ arn: str
 
 ---
 
+##### `resource_share_configuration`<sup>Required</sup> <a name="resource_share_configuration" id="@cdktn/provider-aws.ramResourceShare.RamResourceShare.property.resourceShareConfiguration"></a>
+
+```python
+resource_share_configuration: RamResourceShareResourceShareConfigurationOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.ramResourceShare.RamResourceShareResourceShareConfigurationOutputReference">RamResourceShareResourceShareConfigurationOutputReference</a>
+
+---
+
 ##### `timeouts`<sup>Required</sup> <a name="timeouts" id="@cdktn/provider-aws.ramResourceShare.RamResourceShare.property.timeouts"></a>
 
 ```python
@@ -1012,6 +1060,16 @@ region_input: str
 ```
 
 - *Type:* str
+
+---
+
+##### `resource_share_configuration_input`<sup>Optional</sup> <a name="resource_share_configuration_input" id="@cdktn/provider-aws.ramResourceShare.RamResourceShare.property.resourceShareConfigurationInput"></a>
+
+```python
+resource_share_configuration_input: RamResourceShareResourceShareConfiguration
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.ramResourceShare.RamResourceShareResourceShareConfiguration">RamResourceShareResourceShareConfiguration</a>
 
 ---
 
@@ -1155,6 +1213,7 @@ ramResourceShare.RamResourceShareConfig(
   id: str = None,
   permission_arns: typing.List[str] = None,
   region: str = None,
+  resource_share_configuration: RamResourceShareResourceShareConfiguration = None,
   tags: typing.Mapping[str] = None,
   tags_all: typing.Mapping[str] = None,
   timeouts: RamResourceShareTimeouts = None
@@ -1172,13 +1231,14 @@ ramResourceShare.RamResourceShareConfig(
 | <code><a href="#@cdktn/provider-aws.ramResourceShare.RamResourceShareConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.ramResourceShare.RamResourceShareConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.ramResourceShare.RamResourceShareConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.ramResourceShare.RamResourceShareConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/ram_resource_share#name RamResourceShare#name}. |
-| <code><a href="#@cdktn/provider-aws.ramResourceShare.RamResourceShareConfig.property.allowExternalPrincipals">allow_external_principals</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/ram_resource_share#allow_external_principals RamResourceShare#allow_external_principals}. |
-| <code><a href="#@cdktn/provider-aws.ramResourceShare.RamResourceShareConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/ram_resource_share#id RamResourceShare#id}. |
-| <code><a href="#@cdktn/provider-aws.ramResourceShare.RamResourceShareConfig.property.permissionArns">permission_arns</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/ram_resource_share#permission_arns RamResourceShare#permission_arns}. |
+| <code><a href="#@cdktn/provider-aws.ramResourceShare.RamResourceShareConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/ram_resource_share#name RamResourceShare#name}. |
+| <code><a href="#@cdktn/provider-aws.ramResourceShare.RamResourceShareConfig.property.allowExternalPrincipals">allow_external_principals</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/ram_resource_share#allow_external_principals RamResourceShare#allow_external_principals}. |
+| <code><a href="#@cdktn/provider-aws.ramResourceShare.RamResourceShareConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/ram_resource_share#id RamResourceShare#id}. |
+| <code><a href="#@cdktn/provider-aws.ramResourceShare.RamResourceShareConfig.property.permissionArns">permission_arns</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/ram_resource_share#permission_arns RamResourceShare#permission_arns}. |
 | <code><a href="#@cdktn/provider-aws.ramResourceShare.RamResourceShareConfig.property.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.ramResourceShare.RamResourceShareConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/ram_resource_share#tags RamResourceShare#tags}. |
-| <code><a href="#@cdktn/provider-aws.ramResourceShare.RamResourceShareConfig.property.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/ram_resource_share#tags_all RamResourceShare#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.ramResourceShare.RamResourceShareConfig.property.resourceShareConfiguration">resource_share_configuration</a></code> | <code><a href="#@cdktn/provider-aws.ramResourceShare.RamResourceShareResourceShareConfiguration">RamResourceShareResourceShareConfiguration</a></code> | resource_share_configuration block. |
+| <code><a href="#@cdktn/provider-aws.ramResourceShare.RamResourceShareConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/ram_resource_share#tags RamResourceShare#tags}. |
+| <code><a href="#@cdktn/provider-aws.ramResourceShare.RamResourceShareConfig.property.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/ram_resource_share#tags_all RamResourceShare#tags_all}. |
 | <code><a href="#@cdktn/provider-aws.ramResourceShare.RamResourceShareConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-aws.ramResourceShare.RamResourceShareTimeouts">RamResourceShareTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1261,7 +1321,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/ram_resource_share#name RamResourceShare#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/ram_resource_share#name RamResourceShare#name}.
 
 ---
 
@@ -1273,7 +1333,7 @@ allow_external_principals: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/ram_resource_share#allow_external_principals RamResourceShare#allow_external_principals}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/ram_resource_share#allow_external_principals RamResourceShare#allow_external_principals}.
 
 ---
 
@@ -1285,7 +1345,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/ram_resource_share#id RamResourceShare#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/ram_resource_share#id RamResourceShare#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1300,7 +1360,7 @@ permission_arns: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/ram_resource_share#permission_arns RamResourceShare#permission_arns}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/ram_resource_share#permission_arns RamResourceShare#permission_arns}.
 
 ---
 
@@ -1314,7 +1374,21 @@ region: str
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/ram_resource_share#region RamResourceShare#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/ram_resource_share#region RamResourceShare#region}
+
+---
+
+##### `resource_share_configuration`<sup>Optional</sup> <a name="resource_share_configuration" id="@cdktn/provider-aws.ramResourceShare.RamResourceShareConfig.property.resourceShareConfiguration"></a>
+
+```python
+resource_share_configuration: RamResourceShareResourceShareConfiguration
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.ramResourceShare.RamResourceShareResourceShareConfiguration">RamResourceShareResourceShareConfiguration</a>
+
+resource_share_configuration block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/ram_resource_share#resource_share_configuration RamResourceShare#resource_share_configuration}
 
 ---
 
@@ -1326,7 +1400,7 @@ tags: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/ram_resource_share#tags RamResourceShare#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/ram_resource_share#tags RamResourceShare#tags}.
 
 ---
 
@@ -1338,7 +1412,7 @@ tags_all: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/ram_resource_share#tags_all RamResourceShare#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/ram_resource_share#tags_all RamResourceShare#tags_all}.
 
 ---
 
@@ -1352,7 +1426,39 @@ timeouts: RamResourceShareTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/ram_resource_share#timeouts RamResourceShare#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/ram_resource_share#timeouts RamResourceShare#timeouts}
+
+---
+
+### RamResourceShareResourceShareConfiguration <a name="RamResourceShareResourceShareConfiguration" id="@cdktn/provider-aws.ramResourceShare.RamResourceShareResourceShareConfiguration"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.ramResourceShare.RamResourceShareResourceShareConfiguration.Initializer"></a>
+
+```python
+from cdktn_provider_aws import ram_resource_share
+
+ramResourceShare.RamResourceShareResourceShareConfiguration(
+  retain_sharing_on_account_leave_organization: bool | IResolvable = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.ramResourceShare.RamResourceShareResourceShareConfiguration.property.retainSharingOnAccountLeaveOrganization">retain_sharing_on_account_leave_organization</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/ram_resource_share#retain_sharing_on_account_leave_organization RamResourceShare#retain_sharing_on_account_leave_organization}. |
+
+---
+
+##### `retain_sharing_on_account_leave_organization`<sup>Optional</sup> <a name="retain_sharing_on_account_leave_organization" id="@cdktn/provider-aws.ramResourceShare.RamResourceShareResourceShareConfiguration.property.retainSharingOnAccountLeaveOrganization"></a>
+
+```python
+retain_sharing_on_account_leave_organization: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/ram_resource_share#retain_sharing_on_account_leave_organization RamResourceShare#retain_sharing_on_account_leave_organization}.
 
 ---
 
@@ -1373,8 +1479,8 @@ ramResourceShare.RamResourceShareTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.ramResourceShare.RamResourceShareTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/ram_resource_share#create RamResourceShare#create}. |
-| <code><a href="#@cdktn/provider-aws.ramResourceShare.RamResourceShareTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/ram_resource_share#delete RamResourceShare#delete}. |
+| <code><a href="#@cdktn/provider-aws.ramResourceShare.RamResourceShareTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/ram_resource_share#create RamResourceShare#create}. |
+| <code><a href="#@cdktn/provider-aws.ramResourceShare.RamResourceShareTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/ram_resource_share#delete RamResourceShare#delete}. |
 
 ---
 
@@ -1386,7 +1492,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/ram_resource_share#create RamResourceShare#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/ram_resource_share#create RamResourceShare#create}.
 
 ---
 
@@ -1398,11 +1504,314 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/ram_resource_share#delete RamResourceShare#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/ram_resource_share#delete RamResourceShare#delete}.
 
 ---
 
 ## Classes <a name="Classes" id="Classes"></a>
+
+### RamResourceShareResourceShareConfigurationOutputReference <a name="RamResourceShareResourceShareConfigurationOutputReference" id="@cdktn/provider-aws.ramResourceShare.RamResourceShareResourceShareConfigurationOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.ramResourceShare.RamResourceShareResourceShareConfigurationOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_aws import ram_resource_share
+
+ramResourceShare.RamResourceShareResourceShareConfigurationOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.ramResourceShare.RamResourceShareResourceShareConfigurationOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.ramResourceShare.RamResourceShareResourceShareConfigurationOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.ramResourceShare.RamResourceShareResourceShareConfigurationOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.ramResourceShare.RamResourceShareResourceShareConfigurationOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-aws.ramResourceShare.RamResourceShareResourceShareConfigurationOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ramResourceShare.RamResourceShareResourceShareConfigurationOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ramResourceShare.RamResourceShareResourceShareConfigurationOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ramResourceShare.RamResourceShareResourceShareConfigurationOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ramResourceShare.RamResourceShareResourceShareConfigurationOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ramResourceShare.RamResourceShareResourceShareConfigurationOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ramResourceShare.RamResourceShareResourceShareConfigurationOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ramResourceShare.RamResourceShareResourceShareConfigurationOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ramResourceShare.RamResourceShareResourceShareConfigurationOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ramResourceShare.RamResourceShareResourceShareConfigurationOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ramResourceShare.RamResourceShareResourceShareConfigurationOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ramResourceShare.RamResourceShareResourceShareConfigurationOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.ramResourceShare.RamResourceShareResourceShareConfigurationOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.ramResourceShare.RamResourceShareResourceShareConfigurationOutputReference.resetRetainSharingOnAccountLeaveOrganization">reset_retain_sharing_on_account_leave_organization</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-aws.ramResourceShare.RamResourceShareResourceShareConfigurationOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-aws.ramResourceShare.RamResourceShareResourceShareConfigurationOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.ramResourceShare.RamResourceShareResourceShareConfigurationOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-aws.ramResourceShare.RamResourceShareResourceShareConfigurationOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.ramResourceShare.RamResourceShareResourceShareConfigurationOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-aws.ramResourceShare.RamResourceShareResourceShareConfigurationOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.ramResourceShare.RamResourceShareResourceShareConfigurationOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-aws.ramResourceShare.RamResourceShareResourceShareConfigurationOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.ramResourceShare.RamResourceShareResourceShareConfigurationOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-aws.ramResourceShare.RamResourceShareResourceShareConfigurationOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.ramResourceShare.RamResourceShareResourceShareConfigurationOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-aws.ramResourceShare.RamResourceShareResourceShareConfigurationOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.ramResourceShare.RamResourceShareResourceShareConfigurationOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-aws.ramResourceShare.RamResourceShareResourceShareConfigurationOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.ramResourceShare.RamResourceShareResourceShareConfigurationOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-aws.ramResourceShare.RamResourceShareResourceShareConfigurationOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.ramResourceShare.RamResourceShareResourceShareConfigurationOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-aws.ramResourceShare.RamResourceShareResourceShareConfigurationOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.ramResourceShare.RamResourceShareResourceShareConfigurationOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-aws.ramResourceShare.RamResourceShareResourceShareConfigurationOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-aws.ramResourceShare.RamResourceShareResourceShareConfigurationOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-aws.ramResourceShare.RamResourceShareResourceShareConfigurationOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.ramResourceShare.RamResourceShareResourceShareConfigurationOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-aws.ramResourceShare.RamResourceShareResourceShareConfigurationOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `reset_retain_sharing_on_account_leave_organization` <a name="reset_retain_sharing_on_account_leave_organization" id="@cdktn/provider-aws.ramResourceShare.RamResourceShareResourceShareConfigurationOutputReference.resetRetainSharingOnAccountLeaveOrganization"></a>
+
+```python
+def reset_retain_sharing_on_account_leave_organization() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.ramResourceShare.RamResourceShareResourceShareConfigurationOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.ramResourceShare.RamResourceShareResourceShareConfigurationOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ramResourceShare.RamResourceShareResourceShareConfigurationOutputReference.property.retainSharingOnAccountLeaveOrganizationInput">retain_sharing_on_account_leave_organization_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ramResourceShare.RamResourceShareResourceShareConfigurationOutputReference.property.retainSharingOnAccountLeaveOrganization">retain_sharing_on_account_leave_organization</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ramResourceShare.RamResourceShareResourceShareConfigurationOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-aws.ramResourceShare.RamResourceShareResourceShareConfiguration">RamResourceShareResourceShareConfiguration</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-aws.ramResourceShare.RamResourceShareResourceShareConfigurationOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.ramResourceShare.RamResourceShareResourceShareConfigurationOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `retain_sharing_on_account_leave_organization_input`<sup>Optional</sup> <a name="retain_sharing_on_account_leave_organization_input" id="@cdktn/provider-aws.ramResourceShare.RamResourceShareResourceShareConfigurationOutputReference.property.retainSharingOnAccountLeaveOrganizationInput"></a>
+
+```python
+retain_sharing_on_account_leave_organization_input: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `retain_sharing_on_account_leave_organization`<sup>Required</sup> <a name="retain_sharing_on_account_leave_organization" id="@cdktn/provider-aws.ramResourceShare.RamResourceShareResourceShareConfigurationOutputReference.property.retainSharingOnAccountLeaveOrganization"></a>
+
+```python
+retain_sharing_on_account_leave_organization: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-aws.ramResourceShare.RamResourceShareResourceShareConfigurationOutputReference.property.internalValue"></a>
+
+```python
+internal_value: RamResourceShareResourceShareConfiguration
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.ramResourceShare.RamResourceShareResourceShareConfiguration">RamResourceShareResourceShareConfiguration</a>
+
+---
+
 
 ### RamResourceShareTimeoutsOutputReference <a name="RamResourceShareTimeoutsOutputReference" id="@cdktn/provider-aws.ramResourceShare.RamResourceShareTimeoutsOutputReference"></a>
 

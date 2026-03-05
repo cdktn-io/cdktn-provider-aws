@@ -4,7 +4,7 @@
 
 ### EmrserverlessApplication <a name="EmrserverlessApplication" id="@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplication"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/emrserverless_application aws_emrserverless_application}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/emrserverless_application aws_emrserverless_application}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplication.Initializer"></a>
 
@@ -79,6 +79,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplication.putImageConfiguration">putImageConfiguration</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplication.putInitialCapacity">putInitialCapacity</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplication.putInteractiveConfiguration">putInteractiveConfiguration</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplication.putJobLevelCostAllocationConfiguration">putJobLevelCostAllocationConfiguration</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplication.putMaximumCapacity">putMaximumCapacity</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplication.putMonitoringConfiguration">putMonitoringConfiguration</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplication.putNetworkConfiguration">putNetworkConfiguration</a></code> | *No description.* |
@@ -91,6 +92,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplication.resetImageConfiguration">resetImageConfiguration</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplication.resetInitialCapacity">resetInitialCapacity</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplication.resetInteractiveConfiguration">resetInteractiveConfiguration</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplication.resetJobLevelCostAllocationConfiguration">resetJobLevelCostAllocationConfiguration</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplication.resetMaximumCapacity">resetMaximumCapacity</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplication.resetMonitoringConfiguration">resetMonitoringConfiguration</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplication.resetNetworkConfiguration">resetNetworkConfiguration</a></code> | *No description.* |
@@ -471,6 +473,18 @@ public putInteractiveConfiguration(value: EmrserverlessApplicationInteractiveCon
 
 ---
 
+##### `putJobLevelCostAllocationConfiguration` <a name="putJobLevelCostAllocationConfiguration" id="@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplication.putJobLevelCostAllocationConfiguration"></a>
+
+```typescript
+public putJobLevelCostAllocationConfiguration(value: EmrserverlessApplicationJobLevelCostAllocationConfiguration): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplication.putJobLevelCostAllocationConfiguration.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationJobLevelCostAllocationConfiguration">EmrserverlessApplicationJobLevelCostAllocationConfiguration</a>
+
+---
+
 ##### `putMaximumCapacity` <a name="putMaximumCapacity" id="@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplication.putMaximumCapacity"></a>
 
 ```typescript
@@ -571,6 +585,12 @@ public resetInitialCapacity(): void
 
 ```typescript
 public resetInteractiveConfiguration(): void
+```
+
+##### `resetJobLevelCostAllocationConfiguration` <a name="resetJobLevelCostAllocationConfiguration" id="@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplication.resetJobLevelCostAllocationConfiguration"></a>
+
+```typescript
+public resetJobLevelCostAllocationConfiguration(): void
 ```
 
 ##### `resetMaximumCapacity` <a name="resetMaximumCapacity" id="@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplication.resetMaximumCapacity"></a>
@@ -724,7 +744,7 @@ The construct id used in the generated config for the EmrserverlessApplication t
 
 The id of the existing EmrserverlessApplication that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/emrserverless_application#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/emrserverless_application#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -760,6 +780,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0
 | <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplication.property.imageConfiguration">imageConfiguration</a></code> | <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationImageConfigurationOutputReference">EmrserverlessApplicationImageConfigurationOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplication.property.initialCapacity">initialCapacity</a></code> | <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationInitialCapacityList">EmrserverlessApplicationInitialCapacityList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplication.property.interactiveConfiguration">interactiveConfiguration</a></code> | <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationInteractiveConfigurationOutputReference">EmrserverlessApplicationInteractiveConfigurationOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplication.property.jobLevelCostAllocationConfiguration">jobLevelCostAllocationConfiguration</a></code> | <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationJobLevelCostAllocationConfigurationOutputReference">EmrserverlessApplicationJobLevelCostAllocationConfigurationOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplication.property.maximumCapacity">maximumCapacity</a></code> | <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationMaximumCapacityOutputReference">EmrserverlessApplicationMaximumCapacityOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplication.property.monitoringConfiguration">monitoringConfiguration</a></code> | <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationMonitoringConfigurationOutputReference">EmrserverlessApplicationMonitoringConfigurationOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplication.property.networkConfiguration">networkConfiguration</a></code> | <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationNetworkConfigurationOutputReference">EmrserverlessApplicationNetworkConfigurationOutputReference</a></code> | *No description.* |
@@ -772,6 +793,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0
 | <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplication.property.imageConfigurationInput">imageConfigurationInput</a></code> | <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationImageConfiguration">EmrserverlessApplicationImageConfiguration</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplication.property.initialCapacityInput">initialCapacityInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationInitialCapacity">EmrserverlessApplicationInitialCapacity</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplication.property.interactiveConfigurationInput">interactiveConfigurationInput</a></code> | <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationInteractiveConfiguration">EmrserverlessApplicationInteractiveConfiguration</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplication.property.jobLevelCostAllocationConfigurationInput">jobLevelCostAllocationConfigurationInput</a></code> | <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationJobLevelCostAllocationConfiguration">EmrserverlessApplicationJobLevelCostAllocationConfiguration</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplication.property.maximumCapacityInput">maximumCapacityInput</a></code> | <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationMaximumCapacity">EmrserverlessApplicationMaximumCapacity</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplication.property.monitoringConfigurationInput">monitoringConfigurationInput</a></code> | <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationMonitoringConfiguration">EmrserverlessApplicationMonitoringConfiguration</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplication.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
@@ -996,6 +1018,16 @@ public readonly interactiveConfiguration: EmrserverlessApplicationInteractiveCon
 
 ---
 
+##### `jobLevelCostAllocationConfiguration`<sup>Required</sup> <a name="jobLevelCostAllocationConfiguration" id="@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplication.property.jobLevelCostAllocationConfiguration"></a>
+
+```typescript
+public readonly jobLevelCostAllocationConfiguration: EmrserverlessApplicationJobLevelCostAllocationConfigurationOutputReference;
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationJobLevelCostAllocationConfigurationOutputReference">EmrserverlessApplicationJobLevelCostAllocationConfigurationOutputReference</a>
+
+---
+
 ##### `maximumCapacity`<sup>Required</sup> <a name="maximumCapacity" id="@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplication.property.maximumCapacity"></a>
 
 ```typescript
@@ -1113,6 +1145,16 @@ public readonly interactiveConfigurationInput: EmrserverlessApplicationInteracti
 ```
 
 - *Type:* <a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationInteractiveConfiguration">EmrserverlessApplicationInteractiveConfiguration</a>
+
+---
+
+##### `jobLevelCostAllocationConfigurationInput`<sup>Optional</sup> <a name="jobLevelCostAllocationConfigurationInput" id="@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplication.property.jobLevelCostAllocationConfigurationInput"></a>
+
+```typescript
+public readonly jobLevelCostAllocationConfigurationInput: EmrserverlessApplicationJobLevelCostAllocationConfiguration;
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationJobLevelCostAllocationConfiguration">EmrserverlessApplicationJobLevelCostAllocationConfiguration</a>
 
 ---
 
@@ -1340,7 +1382,7 @@ const emrserverlessApplicationAutoStartConfiguration: emrserverlessApplication.E
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationAutoStartConfiguration.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/emrserverless_application#enabled EmrserverlessApplication#enabled}. |
+| <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationAutoStartConfiguration.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/emrserverless_application#enabled EmrserverlessApplication#enabled}. |
 
 ---
 
@@ -1352,7 +1394,7 @@ public readonly enabled: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/emrserverless_application#enabled EmrserverlessApplication#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/emrserverless_application#enabled EmrserverlessApplication#enabled}.
 
 ---
 
@@ -1370,8 +1412,8 @@ const emrserverlessApplicationAutoStopConfiguration: emrserverlessApplication.Em
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationAutoStopConfiguration.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/emrserverless_application#enabled EmrserverlessApplication#enabled}. |
-| <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationAutoStopConfiguration.property.idleTimeoutMinutes">idleTimeoutMinutes</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/emrserverless_application#idle_timeout_minutes EmrserverlessApplication#idle_timeout_minutes}. |
+| <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationAutoStopConfiguration.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/emrserverless_application#enabled EmrserverlessApplication#enabled}. |
+| <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationAutoStopConfiguration.property.idleTimeoutMinutes">idleTimeoutMinutes</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/emrserverless_application#idle_timeout_minutes EmrserverlessApplication#idle_timeout_minutes}. |
 
 ---
 
@@ -1383,7 +1425,7 @@ public readonly enabled: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/emrserverless_application#enabled EmrserverlessApplication#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/emrserverless_application#enabled EmrserverlessApplication#enabled}.
 
 ---
 
@@ -1395,7 +1437,7 @@ public readonly idleTimeoutMinutes: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/emrserverless_application#idle_timeout_minutes EmrserverlessApplication#idle_timeout_minutes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/emrserverless_application#idle_timeout_minutes EmrserverlessApplication#idle_timeout_minutes}.
 
 ---
 
@@ -1420,24 +1462,25 @@ const emrserverlessApplicationConfig: emrserverlessApplication.EmrserverlessAppl
 | <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/emrserverless_application#name EmrserverlessApplication#name}. |
-| <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationConfig.property.releaseLabel">releaseLabel</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/emrserverless_application#release_label EmrserverlessApplication#release_label}. |
-| <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationConfig.property.type">type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/emrserverless_application#type EmrserverlessApplication#type}. |
-| <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationConfig.property.architecture">architecture</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/emrserverless_application#architecture EmrserverlessApplication#architecture}. |
+| <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/emrserverless_application#name EmrserverlessApplication#name}. |
+| <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationConfig.property.releaseLabel">releaseLabel</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/emrserverless_application#release_label EmrserverlessApplication#release_label}. |
+| <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationConfig.property.type">type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/emrserverless_application#type EmrserverlessApplication#type}. |
+| <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationConfig.property.architecture">architecture</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/emrserverless_application#architecture EmrserverlessApplication#architecture}. |
 | <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationConfig.property.autoStartConfiguration">autoStartConfiguration</a></code> | <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationAutoStartConfiguration">EmrserverlessApplicationAutoStartConfiguration</a></code> | auto_start_configuration block. |
 | <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationConfig.property.autoStopConfiguration">autoStopConfiguration</a></code> | <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationAutoStopConfiguration">EmrserverlessApplicationAutoStopConfiguration</a></code> | auto_stop_configuration block. |
-| <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/emrserverless_application#id EmrserverlessApplication#id}. |
+| <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/emrserverless_application#id EmrserverlessApplication#id}. |
 | <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationConfig.property.imageConfiguration">imageConfiguration</a></code> | <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationImageConfiguration">EmrserverlessApplicationImageConfiguration</a></code> | image_configuration block. |
 | <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationConfig.property.initialCapacity">initialCapacity</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationInitialCapacity">EmrserverlessApplicationInitialCapacity</a>[]</code> | initial_capacity block. |
 | <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationConfig.property.interactiveConfiguration">interactiveConfiguration</a></code> | <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationInteractiveConfiguration">EmrserverlessApplicationInteractiveConfiguration</a></code> | interactive_configuration block. |
+| <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationConfig.property.jobLevelCostAllocationConfiguration">jobLevelCostAllocationConfiguration</a></code> | <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationJobLevelCostAllocationConfiguration">EmrserverlessApplicationJobLevelCostAllocationConfiguration</a></code> | job_level_cost_allocation_configuration block. |
 | <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationConfig.property.maximumCapacity">maximumCapacity</a></code> | <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationMaximumCapacity">EmrserverlessApplicationMaximumCapacity</a></code> | maximum_capacity block. |
 | <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationConfig.property.monitoringConfiguration">monitoringConfiguration</a></code> | <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationMonitoringConfiguration">EmrserverlessApplicationMonitoringConfiguration</a></code> | monitoring_configuration block. |
 | <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationConfig.property.networkConfiguration">networkConfiguration</a></code> | <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationNetworkConfiguration">EmrserverlessApplicationNetworkConfiguration</a></code> | network_configuration block. |
 | <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationConfig.property.region">region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationConfig.property.runtimeConfiguration">runtimeConfiguration</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationRuntimeConfiguration">EmrserverlessApplicationRuntimeConfiguration</a>[]</code> | runtime_configuration block. |
 | <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationConfig.property.schedulerConfiguration">schedulerConfiguration</a></code> | <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationSchedulerConfiguration">EmrserverlessApplicationSchedulerConfiguration</a></code> | scheduler_configuration block. |
-| <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/emrserverless_application#tags EmrserverlessApplication#tags}. |
-| <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationConfig.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/emrserverless_application#tags_all EmrserverlessApplication#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/emrserverless_application#tags EmrserverlessApplication#tags}. |
+| <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationConfig.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/emrserverless_application#tags_all EmrserverlessApplication#tags_all}. |
 
 ---
 
@@ -1519,7 +1562,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/emrserverless_application#name EmrserverlessApplication#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/emrserverless_application#name EmrserverlessApplication#name}.
 
 ---
 
@@ -1531,7 +1574,7 @@ public readonly releaseLabel: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/emrserverless_application#release_label EmrserverlessApplication#release_label}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/emrserverless_application#release_label EmrserverlessApplication#release_label}.
 
 ---
 
@@ -1543,7 +1586,7 @@ public readonly type: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/emrserverless_application#type EmrserverlessApplication#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/emrserverless_application#type EmrserverlessApplication#type}.
 
 ---
 
@@ -1555,7 +1598,7 @@ public readonly architecture: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/emrserverless_application#architecture EmrserverlessApplication#architecture}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/emrserverless_application#architecture EmrserverlessApplication#architecture}.
 
 ---
 
@@ -1569,7 +1612,7 @@ public readonly autoStartConfiguration: EmrserverlessApplicationAutoStartConfigu
 
 auto_start_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/emrserverless_application#auto_start_configuration EmrserverlessApplication#auto_start_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/emrserverless_application#auto_start_configuration EmrserverlessApplication#auto_start_configuration}
 
 ---
 
@@ -1583,7 +1626,7 @@ public readonly autoStopConfiguration: EmrserverlessApplicationAutoStopConfigura
 
 auto_stop_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/emrserverless_application#auto_stop_configuration EmrserverlessApplication#auto_stop_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/emrserverless_application#auto_stop_configuration EmrserverlessApplication#auto_stop_configuration}
 
 ---
 
@@ -1595,7 +1638,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/emrserverless_application#id EmrserverlessApplication#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/emrserverless_application#id EmrserverlessApplication#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1612,7 +1655,7 @@ public readonly imageConfiguration: EmrserverlessApplicationImageConfiguration;
 
 image_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/emrserverless_application#image_configuration EmrserverlessApplication#image_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/emrserverless_application#image_configuration EmrserverlessApplication#image_configuration}
 
 ---
 
@@ -1626,7 +1669,7 @@ public readonly initialCapacity: IResolvable | EmrserverlessApplicationInitialCa
 
 initial_capacity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/emrserverless_application#initial_capacity EmrserverlessApplication#initial_capacity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/emrserverless_application#initial_capacity EmrserverlessApplication#initial_capacity}
 
 ---
 
@@ -1640,7 +1683,21 @@ public readonly interactiveConfiguration: EmrserverlessApplicationInteractiveCon
 
 interactive_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/emrserverless_application#interactive_configuration EmrserverlessApplication#interactive_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/emrserverless_application#interactive_configuration EmrserverlessApplication#interactive_configuration}
+
+---
+
+##### `jobLevelCostAllocationConfiguration`<sup>Optional</sup> <a name="jobLevelCostAllocationConfiguration" id="@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationConfig.property.jobLevelCostAllocationConfiguration"></a>
+
+```typescript
+public readonly jobLevelCostAllocationConfiguration: EmrserverlessApplicationJobLevelCostAllocationConfiguration;
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationJobLevelCostAllocationConfiguration">EmrserverlessApplicationJobLevelCostAllocationConfiguration</a>
+
+job_level_cost_allocation_configuration block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/emrserverless_application#job_level_cost_allocation_configuration EmrserverlessApplication#job_level_cost_allocation_configuration}
 
 ---
 
@@ -1654,7 +1711,7 @@ public readonly maximumCapacity: EmrserverlessApplicationMaximumCapacity;
 
 maximum_capacity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/emrserverless_application#maximum_capacity EmrserverlessApplication#maximum_capacity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/emrserverless_application#maximum_capacity EmrserverlessApplication#maximum_capacity}
 
 ---
 
@@ -1668,7 +1725,7 @@ public readonly monitoringConfiguration: EmrserverlessApplicationMonitoringConfi
 
 monitoring_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/emrserverless_application#monitoring_configuration EmrserverlessApplication#monitoring_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/emrserverless_application#monitoring_configuration EmrserverlessApplication#monitoring_configuration}
 
 ---
 
@@ -1682,7 +1739,7 @@ public readonly networkConfiguration: EmrserverlessApplicationNetworkConfigurati
 
 network_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/emrserverless_application#network_configuration EmrserverlessApplication#network_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/emrserverless_application#network_configuration EmrserverlessApplication#network_configuration}
 
 ---
 
@@ -1696,7 +1753,7 @@ public readonly region: string;
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/emrserverless_application#region EmrserverlessApplication#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/emrserverless_application#region EmrserverlessApplication#region}
 
 ---
 
@@ -1710,7 +1767,7 @@ public readonly runtimeConfiguration: IResolvable | EmrserverlessApplicationRunt
 
 runtime_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/emrserverless_application#runtime_configuration EmrserverlessApplication#runtime_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/emrserverless_application#runtime_configuration EmrserverlessApplication#runtime_configuration}
 
 ---
 
@@ -1724,7 +1781,7 @@ public readonly schedulerConfiguration: EmrserverlessApplicationSchedulerConfigu
 
 scheduler_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/emrserverless_application#scheduler_configuration EmrserverlessApplication#scheduler_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/emrserverless_application#scheduler_configuration EmrserverlessApplication#scheduler_configuration}
 
 ---
 
@@ -1736,7 +1793,7 @@ public readonly tags: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/emrserverless_application#tags EmrserverlessApplication#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/emrserverless_application#tags EmrserverlessApplication#tags}.
 
 ---
 
@@ -1748,7 +1805,7 @@ public readonly tagsAll: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/emrserverless_application#tags_all EmrserverlessApplication#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/emrserverless_application#tags_all EmrserverlessApplication#tags_all}.
 
 ---
 
@@ -1766,7 +1823,7 @@ const emrserverlessApplicationImageConfiguration: emrserverlessApplication.Emrse
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationImageConfiguration.property.imageUri">imageUri</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/emrserverless_application#image_uri EmrserverlessApplication#image_uri}. |
+| <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationImageConfiguration.property.imageUri">imageUri</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/emrserverless_application#image_uri EmrserverlessApplication#image_uri}. |
 
 ---
 
@@ -1778,7 +1835,7 @@ public readonly imageUri: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/emrserverless_application#image_uri EmrserverlessApplication#image_uri}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/emrserverless_application#image_uri EmrserverlessApplication#image_uri}.
 
 ---
 
@@ -1796,7 +1853,7 @@ const emrserverlessApplicationInitialCapacity: emrserverlessApplication.Emrserve
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationInitialCapacity.property.initialCapacityType">initialCapacityType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/emrserverless_application#initial_capacity_type EmrserverlessApplication#initial_capacity_type}. |
+| <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationInitialCapacity.property.initialCapacityType">initialCapacityType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/emrserverless_application#initial_capacity_type EmrserverlessApplication#initial_capacity_type}. |
 | <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationInitialCapacity.property.initialCapacityConfig">initialCapacityConfig</a></code> | <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationInitialCapacityInitialCapacityConfig">EmrserverlessApplicationInitialCapacityInitialCapacityConfig</a></code> | initial_capacity_config block. |
 
 ---
@@ -1809,7 +1866,7 @@ public readonly initialCapacityType: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/emrserverless_application#initial_capacity_type EmrserverlessApplication#initial_capacity_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/emrserverless_application#initial_capacity_type EmrserverlessApplication#initial_capacity_type}.
 
 ---
 
@@ -1823,7 +1880,7 @@ public readonly initialCapacityConfig: EmrserverlessApplicationInitialCapacityIn
 
 initial_capacity_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/emrserverless_application#initial_capacity_config EmrserverlessApplication#initial_capacity_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/emrserverless_application#initial_capacity_config EmrserverlessApplication#initial_capacity_config}
 
 ---
 
@@ -1841,7 +1898,7 @@ const emrserverlessApplicationInitialCapacityInitialCapacityConfig: emrserverles
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationInitialCapacityInitialCapacityConfig.property.workerCount">workerCount</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/emrserverless_application#worker_count EmrserverlessApplication#worker_count}. |
+| <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationInitialCapacityInitialCapacityConfig.property.workerCount">workerCount</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/emrserverless_application#worker_count EmrserverlessApplication#worker_count}. |
 | <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationInitialCapacityInitialCapacityConfig.property.workerConfiguration">workerConfiguration</a></code> | <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationInitialCapacityInitialCapacityConfigWorkerConfiguration">EmrserverlessApplicationInitialCapacityInitialCapacityConfigWorkerConfiguration</a></code> | worker_configuration block. |
 
 ---
@@ -1854,7 +1911,7 @@ public readonly workerCount: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/emrserverless_application#worker_count EmrserverlessApplication#worker_count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/emrserverless_application#worker_count EmrserverlessApplication#worker_count}.
 
 ---
 
@@ -1868,7 +1925,7 @@ public readonly workerConfiguration: EmrserverlessApplicationInitialCapacityInit
 
 worker_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/emrserverless_application#worker_configuration EmrserverlessApplication#worker_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/emrserverless_application#worker_configuration EmrserverlessApplication#worker_configuration}
 
 ---
 
@@ -1886,9 +1943,9 @@ const emrserverlessApplicationInitialCapacityInitialCapacityConfigWorkerConfigur
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationInitialCapacityInitialCapacityConfigWorkerConfiguration.property.cpu">cpu</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/emrserverless_application#cpu EmrserverlessApplication#cpu}. |
-| <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationInitialCapacityInitialCapacityConfigWorkerConfiguration.property.memory">memory</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/emrserverless_application#memory EmrserverlessApplication#memory}. |
-| <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationInitialCapacityInitialCapacityConfigWorkerConfiguration.property.disk">disk</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/emrserverless_application#disk EmrserverlessApplication#disk}. |
+| <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationInitialCapacityInitialCapacityConfigWorkerConfiguration.property.cpu">cpu</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/emrserverless_application#cpu EmrserverlessApplication#cpu}. |
+| <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationInitialCapacityInitialCapacityConfigWorkerConfiguration.property.memory">memory</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/emrserverless_application#memory EmrserverlessApplication#memory}. |
+| <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationInitialCapacityInitialCapacityConfigWorkerConfiguration.property.disk">disk</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/emrserverless_application#disk EmrserverlessApplication#disk}. |
 
 ---
 
@@ -1900,7 +1957,7 @@ public readonly cpu: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/emrserverless_application#cpu EmrserverlessApplication#cpu}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/emrserverless_application#cpu EmrserverlessApplication#cpu}.
 
 ---
 
@@ -1912,7 +1969,7 @@ public readonly memory: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/emrserverless_application#memory EmrserverlessApplication#memory}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/emrserverless_application#memory EmrserverlessApplication#memory}.
 
 ---
 
@@ -1924,7 +1981,7 @@ public readonly disk: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/emrserverless_application#disk EmrserverlessApplication#disk}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/emrserverless_application#disk EmrserverlessApplication#disk}.
 
 ---
 
@@ -1942,8 +1999,8 @@ const emrserverlessApplicationInteractiveConfiguration: emrserverlessApplication
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationInteractiveConfiguration.property.livyEndpointEnabled">livyEndpointEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/emrserverless_application#livy_endpoint_enabled EmrserverlessApplication#livy_endpoint_enabled}. |
-| <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationInteractiveConfiguration.property.studioEnabled">studioEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/emrserverless_application#studio_enabled EmrserverlessApplication#studio_enabled}. |
+| <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationInteractiveConfiguration.property.livyEndpointEnabled">livyEndpointEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/emrserverless_application#livy_endpoint_enabled EmrserverlessApplication#livy_endpoint_enabled}. |
+| <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationInteractiveConfiguration.property.studioEnabled">studioEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/emrserverless_application#studio_enabled EmrserverlessApplication#studio_enabled}. |
 
 ---
 
@@ -1955,7 +2012,7 @@ public readonly livyEndpointEnabled: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/emrserverless_application#livy_endpoint_enabled EmrserverlessApplication#livy_endpoint_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/emrserverless_application#livy_endpoint_enabled EmrserverlessApplication#livy_endpoint_enabled}.
 
 ---
 
@@ -1967,7 +2024,37 @@ public readonly studioEnabled: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/emrserverless_application#studio_enabled EmrserverlessApplication#studio_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/emrserverless_application#studio_enabled EmrserverlessApplication#studio_enabled}.
+
+---
+
+### EmrserverlessApplicationJobLevelCostAllocationConfiguration <a name="EmrserverlessApplicationJobLevelCostAllocationConfiguration" id="@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationJobLevelCostAllocationConfiguration"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationJobLevelCostAllocationConfiguration.Initializer"></a>
+
+```typescript
+import { emrserverlessApplication } from '@cdktn/provider-aws'
+
+const emrserverlessApplicationJobLevelCostAllocationConfiguration: emrserverlessApplication.EmrserverlessApplicationJobLevelCostAllocationConfiguration = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationJobLevelCostAllocationConfiguration.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/emrserverless_application#enabled EmrserverlessApplication#enabled}. |
+
+---
+
+##### `enabled`<sup>Optional</sup> <a name="enabled" id="@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationJobLevelCostAllocationConfiguration.property.enabled"></a>
+
+```typescript
+public readonly enabled: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktn.IResolvable
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/emrserverless_application#enabled EmrserverlessApplication#enabled}.
 
 ---
 
@@ -1985,9 +2072,9 @@ const emrserverlessApplicationMaximumCapacity: emrserverlessApplication.Emrserve
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationMaximumCapacity.property.cpu">cpu</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/emrserverless_application#cpu EmrserverlessApplication#cpu}. |
-| <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationMaximumCapacity.property.memory">memory</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/emrserverless_application#memory EmrserverlessApplication#memory}. |
-| <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationMaximumCapacity.property.disk">disk</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/emrserverless_application#disk EmrserverlessApplication#disk}. |
+| <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationMaximumCapacity.property.cpu">cpu</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/emrserverless_application#cpu EmrserverlessApplication#cpu}. |
+| <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationMaximumCapacity.property.memory">memory</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/emrserverless_application#memory EmrserverlessApplication#memory}. |
+| <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationMaximumCapacity.property.disk">disk</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/emrserverless_application#disk EmrserverlessApplication#disk}. |
 
 ---
 
@@ -1999,7 +2086,7 @@ public readonly cpu: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/emrserverless_application#cpu EmrserverlessApplication#cpu}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/emrserverless_application#cpu EmrserverlessApplication#cpu}.
 
 ---
 
@@ -2011,7 +2098,7 @@ public readonly memory: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/emrserverless_application#memory EmrserverlessApplication#memory}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/emrserverless_application#memory EmrserverlessApplication#memory}.
 
 ---
 
@@ -2023,7 +2110,7 @@ public readonly disk: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/emrserverless_application#disk EmrserverlessApplication#disk}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/emrserverless_application#disk EmrserverlessApplication#disk}.
 
 ---
 
@@ -2058,7 +2145,7 @@ public readonly cloudwatchLoggingConfiguration: EmrserverlessApplicationMonitori
 
 cloudwatch_logging_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/emrserverless_application#cloudwatch_logging_configuration EmrserverlessApplication#cloudwatch_logging_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/emrserverless_application#cloudwatch_logging_configuration EmrserverlessApplication#cloudwatch_logging_configuration}
 
 ---
 
@@ -2072,7 +2159,7 @@ public readonly managedPersistenceMonitoringConfiguration: EmrserverlessApplicat
 
 managed_persistence_monitoring_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/emrserverless_application#managed_persistence_monitoring_configuration EmrserverlessApplication#managed_persistence_monitoring_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/emrserverless_application#managed_persistence_monitoring_configuration EmrserverlessApplication#managed_persistence_monitoring_configuration}
 
 ---
 
@@ -2086,7 +2173,7 @@ public readonly prometheusMonitoringConfiguration: EmrserverlessApplicationMonit
 
 prometheus_monitoring_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/emrserverless_application#prometheus_monitoring_configuration EmrserverlessApplication#prometheus_monitoring_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/emrserverless_application#prometheus_monitoring_configuration EmrserverlessApplication#prometheus_monitoring_configuration}
 
 ---
 
@@ -2100,7 +2187,7 @@ public readonly s3MonitoringConfiguration: EmrserverlessApplicationMonitoringCon
 
 s3_monitoring_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/emrserverless_application#s3_monitoring_configuration EmrserverlessApplication#s3_monitoring_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/emrserverless_application#s3_monitoring_configuration EmrserverlessApplication#s3_monitoring_configuration}
 
 ---
 
@@ -2118,10 +2205,10 @@ const emrserverlessApplicationMonitoringConfigurationCloudwatchLoggingConfigurat
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationMonitoringConfigurationCloudwatchLoggingConfiguration.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/emrserverless_application#enabled EmrserverlessApplication#enabled}. |
-| <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationMonitoringConfigurationCloudwatchLoggingConfiguration.property.encryptionKeyArn">encryptionKeyArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/emrserverless_application#encryption_key_arn EmrserverlessApplication#encryption_key_arn}. |
-| <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationMonitoringConfigurationCloudwatchLoggingConfiguration.property.logGroupName">logGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/emrserverless_application#log_group_name EmrserverlessApplication#log_group_name}. |
-| <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationMonitoringConfigurationCloudwatchLoggingConfiguration.property.logStreamNamePrefix">logStreamNamePrefix</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/emrserverless_application#log_stream_name_prefix EmrserverlessApplication#log_stream_name_prefix}. |
+| <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationMonitoringConfigurationCloudwatchLoggingConfiguration.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/emrserverless_application#enabled EmrserverlessApplication#enabled}. |
+| <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationMonitoringConfigurationCloudwatchLoggingConfiguration.property.encryptionKeyArn">encryptionKeyArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/emrserverless_application#encryption_key_arn EmrserverlessApplication#encryption_key_arn}. |
+| <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationMonitoringConfigurationCloudwatchLoggingConfiguration.property.logGroupName">logGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/emrserverless_application#log_group_name EmrserverlessApplication#log_group_name}. |
+| <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationMonitoringConfigurationCloudwatchLoggingConfiguration.property.logStreamNamePrefix">logStreamNamePrefix</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/emrserverless_application#log_stream_name_prefix EmrserverlessApplication#log_stream_name_prefix}. |
 | <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationMonitoringConfigurationCloudwatchLoggingConfiguration.property.logTypes">logTypes</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationMonitoringConfigurationCloudwatchLoggingConfigurationLogTypes">EmrserverlessApplicationMonitoringConfigurationCloudwatchLoggingConfigurationLogTypes</a>[]</code> | log_types block. |
 
 ---
@@ -2134,7 +2221,7 @@ public readonly enabled: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/emrserverless_application#enabled EmrserverlessApplication#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/emrserverless_application#enabled EmrserverlessApplication#enabled}.
 
 ---
 
@@ -2146,7 +2233,7 @@ public readonly encryptionKeyArn: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/emrserverless_application#encryption_key_arn EmrserverlessApplication#encryption_key_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/emrserverless_application#encryption_key_arn EmrserverlessApplication#encryption_key_arn}.
 
 ---
 
@@ -2158,7 +2245,7 @@ public readonly logGroupName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/emrserverless_application#log_group_name EmrserverlessApplication#log_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/emrserverless_application#log_group_name EmrserverlessApplication#log_group_name}.
 
 ---
 
@@ -2170,7 +2257,7 @@ public readonly logStreamNamePrefix: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/emrserverless_application#log_stream_name_prefix EmrserverlessApplication#log_stream_name_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/emrserverless_application#log_stream_name_prefix EmrserverlessApplication#log_stream_name_prefix}.
 
 ---
 
@@ -2184,7 +2271,7 @@ public readonly logTypes: IResolvable | EmrserverlessApplicationMonitoringConfig
 
 log_types block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/emrserverless_application#log_types EmrserverlessApplication#log_types}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/emrserverless_application#log_types EmrserverlessApplication#log_types}
 
 ---
 
@@ -2202,8 +2289,8 @@ const emrserverlessApplicationMonitoringConfigurationCloudwatchLoggingConfigurat
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationMonitoringConfigurationCloudwatchLoggingConfigurationLogTypes.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/emrserverless_application#name EmrserverlessApplication#name}. |
-| <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationMonitoringConfigurationCloudwatchLoggingConfigurationLogTypes.property.values">values</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/emrserverless_application#values EmrserverlessApplication#values}. |
+| <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationMonitoringConfigurationCloudwatchLoggingConfigurationLogTypes.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/emrserverless_application#name EmrserverlessApplication#name}. |
+| <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationMonitoringConfigurationCloudwatchLoggingConfigurationLogTypes.property.values">values</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/emrserverless_application#values EmrserverlessApplication#values}. |
 
 ---
 
@@ -2215,7 +2302,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/emrserverless_application#name EmrserverlessApplication#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/emrserverless_application#name EmrserverlessApplication#name}.
 
 ---
 
@@ -2227,7 +2314,7 @@ public readonly values: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/emrserverless_application#values EmrserverlessApplication#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/emrserverless_application#values EmrserverlessApplication#values}.
 
 ---
 
@@ -2245,8 +2332,8 @@ const emrserverlessApplicationMonitoringConfigurationManagedPersistenceMonitorin
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationMonitoringConfigurationManagedPersistenceMonitoringConfiguration.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/emrserverless_application#enabled EmrserverlessApplication#enabled}. |
-| <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationMonitoringConfigurationManagedPersistenceMonitoringConfiguration.property.encryptionKeyArn">encryptionKeyArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/emrserverless_application#encryption_key_arn EmrserverlessApplication#encryption_key_arn}. |
+| <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationMonitoringConfigurationManagedPersistenceMonitoringConfiguration.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/emrserverless_application#enabled EmrserverlessApplication#enabled}. |
+| <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationMonitoringConfigurationManagedPersistenceMonitoringConfiguration.property.encryptionKeyArn">encryptionKeyArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/emrserverless_application#encryption_key_arn EmrserverlessApplication#encryption_key_arn}. |
 
 ---
 
@@ -2258,7 +2345,7 @@ public readonly enabled: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/emrserverless_application#enabled EmrserverlessApplication#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/emrserverless_application#enabled EmrserverlessApplication#enabled}.
 
 ---
 
@@ -2270,7 +2357,7 @@ public readonly encryptionKeyArn: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/emrserverless_application#encryption_key_arn EmrserverlessApplication#encryption_key_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/emrserverless_application#encryption_key_arn EmrserverlessApplication#encryption_key_arn}.
 
 ---
 
@@ -2288,7 +2375,7 @@ const emrserverlessApplicationMonitoringConfigurationPrometheusMonitoringConfigu
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationMonitoringConfigurationPrometheusMonitoringConfiguration.property.remoteWriteUrl">remoteWriteUrl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/emrserverless_application#remote_write_url EmrserverlessApplication#remote_write_url}. |
+| <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationMonitoringConfigurationPrometheusMonitoringConfiguration.property.remoteWriteUrl">remoteWriteUrl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/emrserverless_application#remote_write_url EmrserverlessApplication#remote_write_url}. |
 
 ---
 
@@ -2300,7 +2387,7 @@ public readonly remoteWriteUrl: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/emrserverless_application#remote_write_url EmrserverlessApplication#remote_write_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/emrserverless_application#remote_write_url EmrserverlessApplication#remote_write_url}.
 
 ---
 
@@ -2318,8 +2405,8 @@ const emrserverlessApplicationMonitoringConfigurationS3MonitoringConfiguration: 
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationMonitoringConfigurationS3MonitoringConfiguration.property.encryptionKeyArn">encryptionKeyArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/emrserverless_application#encryption_key_arn EmrserverlessApplication#encryption_key_arn}. |
-| <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationMonitoringConfigurationS3MonitoringConfiguration.property.logUri">logUri</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/emrserverless_application#log_uri EmrserverlessApplication#log_uri}. |
+| <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationMonitoringConfigurationS3MonitoringConfiguration.property.encryptionKeyArn">encryptionKeyArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/emrserverless_application#encryption_key_arn EmrserverlessApplication#encryption_key_arn}. |
+| <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationMonitoringConfigurationS3MonitoringConfiguration.property.logUri">logUri</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/emrserverless_application#log_uri EmrserverlessApplication#log_uri}. |
 
 ---
 
@@ -2331,7 +2418,7 @@ public readonly encryptionKeyArn: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/emrserverless_application#encryption_key_arn EmrserverlessApplication#encryption_key_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/emrserverless_application#encryption_key_arn EmrserverlessApplication#encryption_key_arn}.
 
 ---
 
@@ -2343,7 +2430,7 @@ public readonly logUri: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/emrserverless_application#log_uri EmrserverlessApplication#log_uri}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/emrserverless_application#log_uri EmrserverlessApplication#log_uri}.
 
 ---
 
@@ -2361,8 +2448,8 @@ const emrserverlessApplicationNetworkConfiguration: emrserverlessApplication.Emr
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationNetworkConfiguration.property.securityGroupIds">securityGroupIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/emrserverless_application#security_group_ids EmrserverlessApplication#security_group_ids}. |
-| <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationNetworkConfiguration.property.subnetIds">subnetIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/emrserverless_application#subnet_ids EmrserverlessApplication#subnet_ids}. |
+| <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationNetworkConfiguration.property.securityGroupIds">securityGroupIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/emrserverless_application#security_group_ids EmrserverlessApplication#security_group_ids}. |
+| <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationNetworkConfiguration.property.subnetIds">subnetIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/emrserverless_application#subnet_ids EmrserverlessApplication#subnet_ids}. |
 
 ---
 
@@ -2374,7 +2461,7 @@ public readonly securityGroupIds: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/emrserverless_application#security_group_ids EmrserverlessApplication#security_group_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/emrserverless_application#security_group_ids EmrserverlessApplication#security_group_ids}.
 
 ---
 
@@ -2386,7 +2473,7 @@ public readonly subnetIds: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/emrserverless_application#subnet_ids EmrserverlessApplication#subnet_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/emrserverless_application#subnet_ids EmrserverlessApplication#subnet_ids}.
 
 ---
 
@@ -2404,8 +2491,8 @@ const emrserverlessApplicationRuntimeConfiguration: emrserverlessApplication.Emr
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationRuntimeConfiguration.property.classification">classification</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/emrserverless_application#classification EmrserverlessApplication#classification}. |
-| <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationRuntimeConfiguration.property.properties">properties</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/emrserverless_application#properties EmrserverlessApplication#properties}. |
+| <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationRuntimeConfiguration.property.classification">classification</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/emrserverless_application#classification EmrserverlessApplication#classification}. |
+| <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationRuntimeConfiguration.property.properties">properties</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/emrserverless_application#properties EmrserverlessApplication#properties}. |
 
 ---
 
@@ -2417,7 +2504,7 @@ public readonly classification: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/emrserverless_application#classification EmrserverlessApplication#classification}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/emrserverless_application#classification EmrserverlessApplication#classification}.
 
 ---
 
@@ -2429,7 +2516,7 @@ public readonly properties: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/emrserverless_application#properties EmrserverlessApplication#properties}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/emrserverless_application#properties EmrserverlessApplication#properties}.
 
 ---
 
@@ -2447,8 +2534,8 @@ const emrserverlessApplicationSchedulerConfiguration: emrserverlessApplication.E
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationSchedulerConfiguration.property.maxConcurrentRuns">maxConcurrentRuns</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/emrserverless_application#max_concurrent_runs EmrserverlessApplication#max_concurrent_runs}. |
-| <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationSchedulerConfiguration.property.queueTimeoutMinutes">queueTimeoutMinutes</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/emrserverless_application#queue_timeout_minutes EmrserverlessApplication#queue_timeout_minutes}. |
+| <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationSchedulerConfiguration.property.maxConcurrentRuns">maxConcurrentRuns</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/emrserverless_application#max_concurrent_runs EmrserverlessApplication#max_concurrent_runs}. |
+| <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationSchedulerConfiguration.property.queueTimeoutMinutes">queueTimeoutMinutes</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/emrserverless_application#queue_timeout_minutes EmrserverlessApplication#queue_timeout_minutes}. |
 
 ---
 
@@ -2460,7 +2547,7 @@ public readonly maxConcurrentRuns: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/emrserverless_application#max_concurrent_runs EmrserverlessApplication#max_concurrent_runs}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/emrserverless_application#max_concurrent_runs EmrserverlessApplication#max_concurrent_runs}.
 
 ---
 
@@ -2472,7 +2559,7 @@ public readonly queueTimeoutMinutes: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/emrserverless_application#queue_timeout_minutes EmrserverlessApplication#queue_timeout_minutes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/emrserverless_application#queue_timeout_minutes EmrserverlessApplication#queue_timeout_minutes}.
 
 ---
 
@@ -4763,6 +4850,284 @@ public readonly internalValue: EmrserverlessApplicationInteractiveConfiguration;
 ```
 
 - *Type:* <a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationInteractiveConfiguration">EmrserverlessApplicationInteractiveConfiguration</a>
+
+---
+
+
+### EmrserverlessApplicationJobLevelCostAllocationConfigurationOutputReference <a name="EmrserverlessApplicationJobLevelCostAllocationConfigurationOutputReference" id="@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationJobLevelCostAllocationConfigurationOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationJobLevelCostAllocationConfigurationOutputReference.Initializer"></a>
+
+```typescript
+import { emrserverlessApplication } from '@cdktn/provider-aws'
+
+new emrserverlessApplication.EmrserverlessApplicationJobLevelCostAllocationConfigurationOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationJobLevelCostAllocationConfigurationOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationJobLevelCostAllocationConfigurationOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationJobLevelCostAllocationConfigurationOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationJobLevelCostAllocationConfigurationOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationJobLevelCostAllocationConfigurationOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationJobLevelCostAllocationConfigurationOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationJobLevelCostAllocationConfigurationOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationJobLevelCostAllocationConfigurationOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationJobLevelCostAllocationConfigurationOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationJobLevelCostAllocationConfigurationOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationJobLevelCostAllocationConfigurationOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationJobLevelCostAllocationConfigurationOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationJobLevelCostAllocationConfigurationOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationJobLevelCostAllocationConfigurationOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationJobLevelCostAllocationConfigurationOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationJobLevelCostAllocationConfigurationOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationJobLevelCostAllocationConfigurationOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationJobLevelCostAllocationConfigurationOutputReference.resetEnabled">resetEnabled</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationJobLevelCostAllocationConfigurationOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationJobLevelCostAllocationConfigurationOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationJobLevelCostAllocationConfigurationOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationJobLevelCostAllocationConfigurationOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationJobLevelCostAllocationConfigurationOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationJobLevelCostAllocationConfigurationOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationJobLevelCostAllocationConfigurationOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationJobLevelCostAllocationConfigurationOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationJobLevelCostAllocationConfigurationOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationJobLevelCostAllocationConfigurationOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationJobLevelCostAllocationConfigurationOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationJobLevelCostAllocationConfigurationOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationJobLevelCostAllocationConfigurationOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationJobLevelCostAllocationConfigurationOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationJobLevelCostAllocationConfigurationOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationJobLevelCostAllocationConfigurationOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationJobLevelCostAllocationConfigurationOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationJobLevelCostAllocationConfigurationOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationJobLevelCostAllocationConfigurationOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationJobLevelCostAllocationConfigurationOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationJobLevelCostAllocationConfigurationOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationJobLevelCostAllocationConfigurationOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationJobLevelCostAllocationConfigurationOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationJobLevelCostAllocationConfigurationOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetEnabled` <a name="resetEnabled" id="@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationJobLevelCostAllocationConfigurationOutputReference.resetEnabled"></a>
+
+```typescript
+public resetEnabled(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationJobLevelCostAllocationConfigurationOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationJobLevelCostAllocationConfigurationOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationJobLevelCostAllocationConfigurationOutputReference.property.enabledInput">enabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationJobLevelCostAllocationConfigurationOutputReference.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationJobLevelCostAllocationConfigurationOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationJobLevelCostAllocationConfiguration">EmrserverlessApplicationJobLevelCostAllocationConfiguration</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationJobLevelCostAllocationConfigurationOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationJobLevelCostAllocationConfigurationOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `enabledInput`<sup>Optional</sup> <a name="enabledInput" id="@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationJobLevelCostAllocationConfigurationOutputReference.property.enabledInput"></a>
+
+```typescript
+public readonly enabledInput: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktn.IResolvable
+
+---
+
+##### `enabled`<sup>Required</sup> <a name="enabled" id="@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationJobLevelCostAllocationConfigurationOutputReference.property.enabled"></a>
+
+```typescript
+public readonly enabled: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktn.IResolvable
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationJobLevelCostAllocationConfigurationOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: EmrserverlessApplicationJobLevelCostAllocationConfiguration;
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationJobLevelCostAllocationConfiguration">EmrserverlessApplicationJobLevelCostAllocationConfiguration</a>
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### DataAwsWafRule <a name="DataAwsWafRule" id="@cdktn/provider-aws.dataAwsWafRule.DataAwsWafRule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/data-sources/waf_rule aws_waf_rule}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/data-sources/waf_rule aws_waf_rule}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsWafRule.DataAwsWafRule.Initializer"></a>
 
@@ -37,8 +37,8 @@ dataAwsWafRule.DataAwsWafRule(
 | <code><a href="#@cdktn/provider-aws.dataAwsWafRule.DataAwsWafRule.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsWafRule.DataAwsWafRule.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsWafRule.DataAwsWafRule.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dataAwsWafRule.DataAwsWafRule.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/data-sources/waf_rule#name DataAwsWafRule#name}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsWafRule.DataAwsWafRule.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/data-sources/waf_rule#id DataAwsWafRule#id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsWafRule.DataAwsWafRule.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/data-sources/waf_rule#name DataAwsWafRule#name}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsWafRule.DataAwsWafRule.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/data-sources/waf_rule#id DataAwsWafRule#id}. |
 
 ---
 
@@ -106,7 +106,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/data-sources/waf_rule#name DataAwsWafRule#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/data-sources/waf_rule#name DataAwsWafRule#name}.
 
 ---
 
@@ -114,7 +114,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/data-sources/waf_rule#id DataAwsWafRule#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/data-sources/waf_rule#id DataAwsWafRule#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -507,7 +507,7 @@ The construct id used in the generated config for the DataAwsWafRule to import.
 
 The id of the existing DataAwsWafRule that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/data-sources/waf_rule#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/data-sources/waf_rule#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -755,8 +755,8 @@ dataAwsWafRule.DataAwsWafRuleConfig(
 | <code><a href="#@cdktn/provider-aws.dataAwsWafRule.DataAwsWafRuleConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsWafRule.DataAwsWafRuleConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsWafRule.DataAwsWafRuleConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dataAwsWafRule.DataAwsWafRuleConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/data-sources/waf_rule#name DataAwsWafRule#name}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsWafRule.DataAwsWafRuleConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/data-sources/waf_rule#id DataAwsWafRule#id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsWafRule.DataAwsWafRuleConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/data-sources/waf_rule#name DataAwsWafRule#name}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsWafRule.DataAwsWafRuleConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/data-sources/waf_rule#id DataAwsWafRule#id}. |
 
 ---
 
@@ -838,7 +838,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/data-sources/waf_rule#name DataAwsWafRule#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/data-sources/waf_rule#name DataAwsWafRule#name}.
 
 ---
 
@@ -850,7 +850,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/data-sources/waf_rule#id DataAwsWafRule#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/data-sources/waf_rule#id DataAwsWafRule#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
