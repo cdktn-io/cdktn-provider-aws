@@ -1021,6 +1021,7 @@ Object.defineProperty(exports, 'oamLink', { get: function () { return require('.
 Object.defineProperty(exports, 'oamSink', { get: function () { return require('./oam-sink'); } });
 Object.defineProperty(exports, 'oamSinkPolicy', { get: function () { return require('./oam-sink-policy'); } });
 Object.defineProperty(exports, 'observabilityadminCentralizationRuleForOrganization', { get: function () { return require('./observabilityadmin-centralization-rule-for-organization'); } });
+Object.defineProperty(exports, 'observabilityadminTelemetryPipeline', { get: function () { return require('./observabilityadmin-telemetry-pipeline'); } });
 Object.defineProperty(exports, 'odbCloudAutonomousVmCluster', { get: function () { return require('./odb-cloud-autonomous-vm-cluster'); } });
 Object.defineProperty(exports, 'odbCloudExadataInfrastructure', { get: function () { return require('./odb-cloud-exadata-infrastructure'); } });
 Object.defineProperty(exports, 'odbCloudVmCluster', { get: function () { return require('./odb-cloud-vm-cluster'); } });
@@ -1285,6 +1286,7 @@ Object.defineProperty(exports, 'sagemakerHumanTaskUi', { get: function () { retu
 Object.defineProperty(exports, 'sagemakerImage', { get: function () { return require('./sagemaker-image'); } });
 Object.defineProperty(exports, 'sagemakerImageVersion', { get: function () { return require('./sagemaker-image-version'); } });
 Object.defineProperty(exports, 'sagemakerLabelingJob', { get: function () { return require('./sagemaker-labeling-job'); } });
+Object.defineProperty(exports, 'sagemakerMlflowApp', { get: function () { return require('./sagemaker-mlflow-app'); } });
 Object.defineProperty(exports, 'sagemakerMlflowTrackingServer', { get: function () { return require('./sagemaker-mlflow-tracking-server'); } });
 Object.defineProperty(exports, 'sagemakerModel', { get: function () { return require('./sagemaker-model'); } });
 Object.defineProperty(exports, 'sagemakerModelCard', { get: function () { return require('./sagemaker-model-card'); } });
