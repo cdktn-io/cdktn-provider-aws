@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/data-sources/lambda_layer_version
+// https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/data-sources/lambda_layer_version
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,38 +13,42 @@ import * as cdktn from 'cdktn';
 
 export interface DataAwsLambdaLayerVersionConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/data-sources/lambda_layer_version#compatible_architecture DataAwsLambdaLayerVersion#compatible_architecture}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/data-sources/lambda_layer_version#compatible_architecture DataAwsLambdaLayerVersion#compatible_architecture}
   */
   readonly compatibleArchitecture?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/data-sources/lambda_layer_version#compatible_runtime DataAwsLambdaLayerVersion#compatible_runtime}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/data-sources/lambda_layer_version#compatible_runtime DataAwsLambdaLayerVersion#compatible_runtime}
   */
   readonly compatibleRuntime?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/data-sources/lambda_layer_version#id DataAwsLambdaLayerVersion#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/data-sources/lambda_layer_version#id DataAwsLambdaLayerVersion#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/data-sources/lambda_layer_version#layer_name DataAwsLambdaLayerVersion#layer_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/data-sources/lambda_layer_version#layer_name DataAwsLambdaLayerVersion#layer_name}
   */
-  readonly layerName: string;
+  readonly layerName?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/data-sources/lambda_layer_version#layer_version_arn DataAwsLambdaLayerVersion#layer_version_arn}
+  */
+  readonly layerVersionArn?: string;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/data-sources/lambda_layer_version#region DataAwsLambdaLayerVersion#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/data-sources/lambda_layer_version#region DataAwsLambdaLayerVersion#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/data-sources/lambda_layer_version#version DataAwsLambdaLayerVersion#version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/data-sources/lambda_layer_version#version DataAwsLambdaLayerVersion#version}
   */
   readonly version?: number;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/data-sources/lambda_layer_version aws_lambda_layer_version}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/data-sources/lambda_layer_version aws_lambda_layer_version}
 */
 export class DataAwsLambdaLayerVersion extends cdktn.TerraformDataSource {
 
@@ -60,7 +64,7 @@ export class DataAwsLambdaLayerVersion extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataAwsLambdaLayerVersion resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsLambdaLayerVersion to import
-  * @param importFromId The id of the existing DataAwsLambdaLayerVersion that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/data-sources/lambda_layer_version#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsLambdaLayerVersion that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/data-sources/lambda_layer_version#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsLambdaLayerVersion to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -72,18 +76,18 @@ export class DataAwsLambdaLayerVersion extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/data-sources/lambda_layer_version aws_lambda_layer_version} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/data-sources/lambda_layer_version aws_lambda_layer_version} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
-  * @param options DataAwsLambdaLayerVersionConfig
+  * @param options DataAwsLambdaLayerVersionConfig = {}
   */
-  public constructor(scope: Construct, id: string, config: DataAwsLambdaLayerVersionConfig) {
+  public constructor(scope: Construct, id: string, config: DataAwsLambdaLayerVersionConfig = {}) {
     super(scope, id, {
       terraformResourceType: 'aws_lambda_layer_version',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.34.0',
+        providerVersion: '6.35.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
@@ -98,6 +102,7 @@ export class DataAwsLambdaLayerVersion extends cdktn.TerraformDataSource {
     this._compatibleRuntime = config.compatibleRuntime;
     this._id = config.id;
     this._layerName = config.layerName;
+    this._layerVersionArn = config.layerVersionArn;
     this._region = config.region;
     this._version = config.version;
   }
@@ -189,7 +194,7 @@ export class DataAwsLambdaLayerVersion extends cdktn.TerraformDataSource {
     return this.getStringAttribute('layer_arn');
   }
 
-  // layer_name - computed: false, optional: false, required: true
+  // layer_name - computed: true, optional: true, required: false
   private _layerName?: string; 
   public get layerName() {
     return this.getStringAttribute('layer_name');
@@ -197,9 +202,28 @@ export class DataAwsLambdaLayerVersion extends cdktn.TerraformDataSource {
   public set layerName(value: string) {
     this._layerName = value;
   }
+  public resetLayerName() {
+    this._layerName = undefined;
+  }
   // Temporarily expose input value. Use with caution.
   public get layerNameInput() {
     return this._layerName;
+  }
+
+  // layer_version_arn - computed: true, optional: true, required: false
+  private _layerVersionArn?: string; 
+  public get layerVersionArn() {
+    return this.getStringAttribute('layer_version_arn');
+  }
+  public set layerVersionArn(value: string) {
+    this._layerVersionArn = value;
+  }
+  public resetLayerVersionArn() {
+    this._layerVersionArn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get layerVersionArnInput() {
+    return this._layerVersionArn;
   }
 
   // license_info - computed: true, optional: false, required: false
@@ -269,6 +293,7 @@ export class DataAwsLambdaLayerVersion extends cdktn.TerraformDataSource {
       compatible_runtime: cdktn.stringToTerraform(this._compatibleRuntime),
       id: cdktn.stringToTerraform(this._id),
       layer_name: cdktn.stringToTerraform(this._layerName),
+      layer_version_arn: cdktn.stringToTerraform(this._layerVersionArn),
       region: cdktn.stringToTerraform(this._region),
       version: cdktn.numberToTerraform(this._version),
     };
@@ -296,6 +321,12 @@ export class DataAwsLambdaLayerVersion extends cdktn.TerraformDataSource {
       },
       layer_name: {
         value: cdktn.stringToHclTerraform(this._layerName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      layer_version_arn: {
+        value: cdktn.stringToHclTerraform(this._layerVersionArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

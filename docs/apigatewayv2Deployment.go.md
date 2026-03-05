@@ -4,7 +4,7 @@
 
 ### Apigatewayv2Deployment <a name="Apigatewayv2Deployment" id="@cdktn/provider-aws.apigatewayv2Deployment.Apigatewayv2Deployment"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/apigatewayv2_deployment aws_apigatewayv2_deployment}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/apigatewayv2_deployment aws_apigatewayv2_deployment}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.apigatewayv2Deployment.Apigatewayv2Deployment.Initializer"></a>
 
@@ -517,7 +517,7 @@ The construct id used in the generated config for the Apigatewayv2Deployment to 
 
 The id of the existing Apigatewayv2Deployment that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/apigatewayv2_deployment#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/apigatewayv2_deployment#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -867,11 +867,11 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/apigatewayv2deployment
 | <code><a href="#@cdktn/provider-aws.apigatewayv2Deployment.Apigatewayv2DeploymentConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.apigatewayv2Deployment.Apigatewayv2DeploymentConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.apigatewayv2Deployment.Apigatewayv2DeploymentConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.apigatewayv2Deployment.Apigatewayv2DeploymentConfig.property.apiId">ApiId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/apigatewayv2_deployment#api_id Apigatewayv2Deployment#api_id}. |
-| <code><a href="#@cdktn/provider-aws.apigatewayv2Deployment.Apigatewayv2DeploymentConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/apigatewayv2_deployment#description Apigatewayv2Deployment#description}. |
-| <code><a href="#@cdktn/provider-aws.apigatewayv2Deployment.Apigatewayv2DeploymentConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/apigatewayv2_deployment#id Apigatewayv2Deployment#id}. |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Deployment.Apigatewayv2DeploymentConfig.property.apiId">ApiId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/apigatewayv2_deployment#api_id Apigatewayv2Deployment#api_id}. |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Deployment.Apigatewayv2DeploymentConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/apigatewayv2_deployment#description Apigatewayv2Deployment#description}. |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Deployment.Apigatewayv2DeploymentConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/apigatewayv2_deployment#id Apigatewayv2Deployment#id}. |
 | <code><a href="#@cdktn/provider-aws.apigatewayv2Deployment.Apigatewayv2DeploymentConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.apigatewayv2Deployment.Apigatewayv2DeploymentConfig.property.triggers">Triggers</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/apigatewayv2_deployment#triggers Apigatewayv2Deployment#triggers}. |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Deployment.Apigatewayv2DeploymentConfig.property.triggers">Triggers</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/apigatewayv2_deployment#triggers Apigatewayv2Deployment#triggers}. |
 
 ---
 
@@ -953,7 +953,7 @@ ApiId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/apigatewayv2_deployment#api_id Apigatewayv2Deployment#api_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/apigatewayv2_deployment#api_id Apigatewayv2Deployment#api_id}.
 
 ---
 
@@ -965,7 +965,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/apigatewayv2_deployment#description Apigatewayv2Deployment#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/apigatewayv2_deployment#description Apigatewayv2Deployment#description}.
 
 ---
 
@@ -977,7 +977,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/apigatewayv2_deployment#id Apigatewayv2Deployment#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/apigatewayv2_deployment#id Apigatewayv2Deployment#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -994,7 +994,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/apigatewayv2_deployment#region Apigatewayv2Deployment#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/apigatewayv2_deployment#region Apigatewayv2Deployment#region}
 
 ---
 
@@ -1006,7 +1006,7 @@ Triggers *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/apigatewayv2_deployment#triggers Apigatewayv2Deployment#triggers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/apigatewayv2_deployment#triggers Apigatewayv2Deployment#triggers}.
 
 ---
 

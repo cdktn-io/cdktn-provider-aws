@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/notifications_notification_configuration
+// https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/notifications_notification_configuration
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,25 +13,25 @@ import * as cdktn from 'cdktn';
 
 export interface NotificationsNotificationConfigurationConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/notifications_notification_configuration#aggregation_duration NotificationsNotificationConfiguration#aggregation_duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/notifications_notification_configuration#aggregation_duration NotificationsNotificationConfiguration#aggregation_duration}
   */
   readonly aggregationDuration?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/notifications_notification_configuration#description NotificationsNotificationConfiguration#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/notifications_notification_configuration#description NotificationsNotificationConfiguration#description}
   */
   readonly description: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/notifications_notification_configuration#name NotificationsNotificationConfiguration#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/notifications_notification_configuration#name NotificationsNotificationConfiguration#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/notifications_notification_configuration#tags NotificationsNotificationConfiguration#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/notifications_notification_configuration#tags NotificationsNotificationConfiguration#tags}
   */
   readonly tags?: { [key: string]: string };
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/notifications_notification_configuration aws_notifications_notification_configuration}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/notifications_notification_configuration aws_notifications_notification_configuration}
 */
 export class NotificationsNotificationConfiguration extends cdktn.TerraformResource {
 
@@ -47,7 +47,7 @@ export class NotificationsNotificationConfiguration extends cdktn.TerraformResou
   * Generates CDKTN code for importing a NotificationsNotificationConfiguration resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the NotificationsNotificationConfiguration to import
-  * @param importFromId The id of the existing NotificationsNotificationConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/notifications_notification_configuration#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing NotificationsNotificationConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/notifications_notification_configuration#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the NotificationsNotificationConfiguration to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -59,7 +59,7 @@ export class NotificationsNotificationConfiguration extends cdktn.TerraformResou
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/notifications_notification_configuration aws_notifications_notification_configuration} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/notifications_notification_configuration aws_notifications_notification_configuration} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -70,7 +70,7 @@ export class NotificationsNotificationConfiguration extends cdktn.TerraformResou
       terraformResourceType: 'aws_notifications_notification_configuration',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.34.0',
+        providerVersion: '6.35.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

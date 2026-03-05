@@ -4,7 +4,7 @@
 
 ### DataAwsEcrImage <a name="DataAwsEcrImage" id="@cdktn/provider-aws.dataAwsEcrImage.DataAwsEcrImage"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/data-sources/ecr_image aws_ecr_image}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/data-sources/ecr_image aws_ecr_image}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEcrImage.DataAwsEcrImage.Initializer"></a>
 
@@ -429,7 +429,7 @@ The construct id used in the generated config for the DataAwsEcrImage to import.
 
 The id of the existing DataAwsEcrImage that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/data-sources/ecr_image#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/data-sources/ecr_image#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -821,13 +821,13 @@ const dataAwsEcrImageConfig: dataAwsEcrImage.DataAwsEcrImageConfig = { ... }
 | <code><a href="#@cdktn/provider-aws.dataAwsEcrImage.DataAwsEcrImageConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsEcrImage.DataAwsEcrImageConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsEcrImage.DataAwsEcrImageConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dataAwsEcrImage.DataAwsEcrImageConfig.property.repositoryName">repositoryName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/data-sources/ecr_image#repository_name DataAwsEcrImage#repository_name}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsEcrImage.DataAwsEcrImageConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/data-sources/ecr_image#id DataAwsEcrImage#id}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsEcrImage.DataAwsEcrImageConfig.property.imageDigest">imageDigest</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/data-sources/ecr_image#image_digest DataAwsEcrImage#image_digest}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsEcrImage.DataAwsEcrImageConfig.property.imageTag">imageTag</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/data-sources/ecr_image#image_tag DataAwsEcrImage#image_tag}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsEcrImage.DataAwsEcrImageConfig.property.mostRecent">mostRecent</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/data-sources/ecr_image#most_recent DataAwsEcrImage#most_recent}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsEcrImage.DataAwsEcrImageConfig.property.repositoryName">repositoryName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/data-sources/ecr_image#repository_name DataAwsEcrImage#repository_name}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsEcrImage.DataAwsEcrImageConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/data-sources/ecr_image#id DataAwsEcrImage#id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsEcrImage.DataAwsEcrImageConfig.property.imageDigest">imageDigest</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/data-sources/ecr_image#image_digest DataAwsEcrImage#image_digest}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsEcrImage.DataAwsEcrImageConfig.property.imageTag">imageTag</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/data-sources/ecr_image#image_tag DataAwsEcrImage#image_tag}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsEcrImage.DataAwsEcrImageConfig.property.mostRecent">mostRecent</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/data-sources/ecr_image#most_recent DataAwsEcrImage#most_recent}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsEcrImage.DataAwsEcrImageConfig.property.region">region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.dataAwsEcrImage.DataAwsEcrImageConfig.property.registryId">registryId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/data-sources/ecr_image#registry_id DataAwsEcrImage#registry_id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsEcrImage.DataAwsEcrImageConfig.property.registryId">registryId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/data-sources/ecr_image#registry_id DataAwsEcrImage#registry_id}. |
 
 ---
 
@@ -909,7 +909,7 @@ public readonly repositoryName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/data-sources/ecr_image#repository_name DataAwsEcrImage#repository_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/data-sources/ecr_image#repository_name DataAwsEcrImage#repository_name}.
 
 ---
 
@@ -921,7 +921,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/data-sources/ecr_image#id DataAwsEcrImage#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/data-sources/ecr_image#id DataAwsEcrImage#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -936,7 +936,7 @@ public readonly imageDigest: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/data-sources/ecr_image#image_digest DataAwsEcrImage#image_digest}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/data-sources/ecr_image#image_digest DataAwsEcrImage#image_digest}.
 
 ---
 
@@ -948,7 +948,7 @@ public readonly imageTag: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/data-sources/ecr_image#image_tag DataAwsEcrImage#image_tag}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/data-sources/ecr_image#image_tag DataAwsEcrImage#image_tag}.
 
 ---
 
@@ -960,7 +960,7 @@ public readonly mostRecent: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/data-sources/ecr_image#most_recent DataAwsEcrImage#most_recent}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/data-sources/ecr_image#most_recent DataAwsEcrImage#most_recent}.
 
 ---
 
@@ -974,7 +974,7 @@ public readonly region: string;
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/data-sources/ecr_image#region DataAwsEcrImage#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/data-sources/ecr_image#region DataAwsEcrImage#region}
 
 ---
 
@@ -986,7 +986,7 @@ public readonly registryId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/data-sources/ecr_image#registry_id DataAwsEcrImage#registry_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/data-sources/ecr_image#registry_id DataAwsEcrImage#registry_id}.
 
 ---
 

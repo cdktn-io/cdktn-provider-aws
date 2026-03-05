@@ -4,7 +4,7 @@
 
 ### DataAwsLbListenerRule <a name="DataAwsLbListenerRule" id="@cdktn/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/data-sources/lb_listener_rule aws_lb_listener_rule}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/data-sources/lb_listener_rule aws_lb_listener_rule}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRule.Initializer"></a>
 
@@ -475,7 +475,7 @@ The construct id used in the generated config for the DataAwsLbListenerRule to i
 
 The id of the existing DataAwsLbListenerRule that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/data-sources/lb_listener_rule#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/data-sources/lb_listener_rule#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -853,7 +853,7 @@ AuthenticateCognito interface{}
 
 authenticate_cognito block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/data-sources/lb_listener_rule#authenticate_cognito DataAwsLbListenerRule#authenticate_cognito}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/data-sources/lb_listener_rule#authenticate_cognito DataAwsLbListenerRule#authenticate_cognito}
 
 ---
 
@@ -867,7 +867,7 @@ AuthenticateOidc interface{}
 
 authenticate_oidc block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/data-sources/lb_listener_rule#authenticate_oidc DataAwsLbListenerRule#authenticate_oidc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/data-sources/lb_listener_rule#authenticate_oidc DataAwsLbListenerRule#authenticate_oidc}
 
 ---
 
@@ -881,7 +881,7 @@ FixedResponse interface{}
 
 fixed_response block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/data-sources/lb_listener_rule#fixed_response DataAwsLbListenerRule#fixed_response}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/data-sources/lb_listener_rule#fixed_response DataAwsLbListenerRule#fixed_response}
 
 ---
 
@@ -895,7 +895,7 @@ Forward interface{}
 
 forward block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/data-sources/lb_listener_rule#forward DataAwsLbListenerRule#forward}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/data-sources/lb_listener_rule#forward DataAwsLbListenerRule#forward}
 
 ---
 
@@ -909,7 +909,7 @@ JwtValidation interface{}
 
 jwt_validation block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/data-sources/lb_listener_rule#jwt_validation DataAwsLbListenerRule#jwt_validation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/data-sources/lb_listener_rule#jwt_validation DataAwsLbListenerRule#jwt_validation}
 
 ---
 
@@ -923,7 +923,7 @@ Redirect interface{}
 
 redirect block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/data-sources/lb_listener_rule#redirect DataAwsLbListenerRule#redirect}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/data-sources/lb_listener_rule#redirect DataAwsLbListenerRule#redirect}
 
 ---
 
@@ -998,7 +998,7 @@ Stickiness interface{}
 
 stickiness block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/data-sources/lb_listener_rule#stickiness DataAwsLbListenerRule#stickiness}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/data-sources/lb_listener_rule#stickiness DataAwsLbListenerRule#stickiness}
 
 ---
 
@@ -1012,7 +1012,7 @@ TargetGroup interface{}
 
 target_group block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/data-sources/lb_listener_rule#target_group DataAwsLbListenerRule#target_group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/data-sources/lb_listener_rule#target_group DataAwsLbListenerRule#target_group}
 
 ---
 
@@ -1072,7 +1072,7 @@ AdditionalClaim interface{}
 
 additional_claim block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/data-sources/lb_listener_rule#additional_claim DataAwsLbListenerRule#additional_claim}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/data-sources/lb_listener_rule#additional_claim DataAwsLbListenerRule#additional_claim}
 
 ---
 
@@ -1142,7 +1142,7 @@ HostHeader interface{}
 
 host_header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/data-sources/lb_listener_rule#host_header DataAwsLbListenerRule#host_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/data-sources/lb_listener_rule#host_header DataAwsLbListenerRule#host_header}
 
 ---
 
@@ -1156,7 +1156,7 @@ HttpHeader interface{}
 
 http_header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/data-sources/lb_listener_rule#http_header DataAwsLbListenerRule#http_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/data-sources/lb_listener_rule#http_header DataAwsLbListenerRule#http_header}
 
 ---
 
@@ -1170,7 +1170,7 @@ HttpRequestMethod interface{}
 
 http_request_method block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/data-sources/lb_listener_rule#http_request_method DataAwsLbListenerRule#http_request_method}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/data-sources/lb_listener_rule#http_request_method DataAwsLbListenerRule#http_request_method}
 
 ---
 
@@ -1184,7 +1184,7 @@ PathPattern interface{}
 
 path_pattern block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/data-sources/lb_listener_rule#path_pattern DataAwsLbListenerRule#path_pattern}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/data-sources/lb_listener_rule#path_pattern DataAwsLbListenerRule#path_pattern}
 
 ---
 
@@ -1198,7 +1198,7 @@ QueryString interface{}
 
 query_string block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/data-sources/lb_listener_rule#query_string DataAwsLbListenerRule#query_string}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/data-sources/lb_listener_rule#query_string DataAwsLbListenerRule#query_string}
 
 ---
 
@@ -1212,7 +1212,7 @@ SourceIp interface{}
 
 source_ip block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/data-sources/lb_listener_rule#source_ip DataAwsLbListenerRule#source_ip}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/data-sources/lb_listener_rule#source_ip DataAwsLbListenerRule#source_ip}
 
 ---
 
@@ -1298,7 +1298,7 @@ Values interface{}
 
 values block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/data-sources/lb_listener_rule#values DataAwsLbListenerRule#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/data-sources/lb_listener_rule#values DataAwsLbListenerRule#values}
 
 ---
 
@@ -1365,10 +1365,10 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawslblistenerrule"
 | <code><a href="#@cdktn/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConfig.property.action">Action</a></code> | <code>interface{}</code> | action block. |
-| <code><a href="#@cdktn/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConfig.property.arn">Arn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/data-sources/lb_listener_rule#arn DataAwsLbListenerRule#arn}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConfig.property.arn">Arn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/data-sources/lb_listener_rule#arn DataAwsLbListenerRule#arn}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConfig.property.condition">Condition</a></code> | <code>interface{}</code> | condition block. |
-| <code><a href="#@cdktn/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConfig.property.listenerArn">ListenerArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/data-sources/lb_listener_rule#listener_arn DataAwsLbListenerRule#listener_arn}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConfig.property.priority">Priority</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/data-sources/lb_listener_rule#priority DataAwsLbListenerRule#priority}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConfig.property.listenerArn">ListenerArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/data-sources/lb_listener_rule#listener_arn DataAwsLbListenerRule#listener_arn}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConfig.property.priority">Priority</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/data-sources/lb_listener_rule#priority DataAwsLbListenerRule#priority}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktn/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConfig.property.transform">Transform</a></code> | <code>interface{}</code> | transform block. |
 
@@ -1454,7 +1454,7 @@ Action interface{}
 
 action block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/data-sources/lb_listener_rule#action DataAwsLbListenerRule#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/data-sources/lb_listener_rule#action DataAwsLbListenerRule#action}
 
 ---
 
@@ -1466,7 +1466,7 @@ Arn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/data-sources/lb_listener_rule#arn DataAwsLbListenerRule#arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/data-sources/lb_listener_rule#arn DataAwsLbListenerRule#arn}.
 
 ---
 
@@ -1480,7 +1480,7 @@ Condition interface{}
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/data-sources/lb_listener_rule#condition DataAwsLbListenerRule#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/data-sources/lb_listener_rule#condition DataAwsLbListenerRule#condition}
 
 ---
 
@@ -1492,7 +1492,7 @@ ListenerArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/data-sources/lb_listener_rule#listener_arn DataAwsLbListenerRule#listener_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/data-sources/lb_listener_rule#listener_arn DataAwsLbListenerRule#listener_arn}.
 
 ---
 
@@ -1504,7 +1504,7 @@ Priority *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/data-sources/lb_listener_rule#priority DataAwsLbListenerRule#priority}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/data-sources/lb_listener_rule#priority DataAwsLbListenerRule#priority}.
 
 ---
 
@@ -1518,7 +1518,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/data-sources/lb_listener_rule#region DataAwsLbListenerRule#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/data-sources/lb_listener_rule#region DataAwsLbListenerRule#region}
 
 ---
 
@@ -1532,7 +1532,7 @@ Transform interface{}
 
 transform block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/data-sources/lb_listener_rule#transform DataAwsLbListenerRule#transform}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/data-sources/lb_listener_rule#transform DataAwsLbListenerRule#transform}
 
 ---
 
@@ -1568,7 +1568,7 @@ HostHeaderRewriteConfig interface{}
 
 host_header_rewrite_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/data-sources/lb_listener_rule#host_header_rewrite_config DataAwsLbListenerRule#host_header_rewrite_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/data-sources/lb_listener_rule#host_header_rewrite_config DataAwsLbListenerRule#host_header_rewrite_config}
 
 ---
 
@@ -1582,7 +1582,7 @@ UrlRewriteConfig interface{}
 
 url_rewrite_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/data-sources/lb_listener_rule#url_rewrite_config DataAwsLbListenerRule#url_rewrite_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/data-sources/lb_listener_rule#url_rewrite_config DataAwsLbListenerRule#url_rewrite_config}
 
 ---
 
@@ -1616,7 +1616,7 @@ Rewrite interface{}
 
 rewrite block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/data-sources/lb_listener_rule#rewrite DataAwsLbListenerRule#rewrite}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/data-sources/lb_listener_rule#rewrite DataAwsLbListenerRule#rewrite}
 
 ---
 
@@ -1663,7 +1663,7 @@ Rewrite interface{}
 
 rewrite block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/data-sources/lb_listener_rule#rewrite DataAwsLbListenerRule#rewrite}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/data-sources/lb_listener_rule#rewrite DataAwsLbListenerRule#rewrite}
 
 ---
 

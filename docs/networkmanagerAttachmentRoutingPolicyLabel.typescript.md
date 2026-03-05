@@ -4,7 +4,7 @@
 
 ### NetworkmanagerAttachmentRoutingPolicyLabel <a name="NetworkmanagerAttachmentRoutingPolicyLabel" id="@cdktn/provider-aws.networkmanagerAttachmentRoutingPolicyLabel.NetworkmanagerAttachmentRoutingPolicyLabel"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/networkmanager_attachment_routing_policy_label aws_networkmanager_attachment_routing_policy_label}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/networkmanager_attachment_routing_policy_label aws_networkmanager_attachment_routing_policy_label}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.networkmanagerAttachmentRoutingPolicyLabel.NetworkmanagerAttachmentRoutingPolicyLabel.Initializer"></a>
 
@@ -489,7 +489,7 @@ The construct id used in the generated config for the NetworkmanagerAttachmentRo
 
 The id of the existing NetworkmanagerAttachmentRoutingPolicyLabel that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/networkmanager_attachment_routing_policy_label#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/networkmanager_attachment_routing_policy_label#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -771,9 +771,9 @@ const networkmanagerAttachmentRoutingPolicyLabelConfig: networkmanagerAttachment
 | <code><a href="#@cdktn/provider-aws.networkmanagerAttachmentRoutingPolicyLabel.NetworkmanagerAttachmentRoutingPolicyLabelConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.networkmanagerAttachmentRoutingPolicyLabel.NetworkmanagerAttachmentRoutingPolicyLabelConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.networkmanagerAttachmentRoutingPolicyLabel.NetworkmanagerAttachmentRoutingPolicyLabelConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.networkmanagerAttachmentRoutingPolicyLabel.NetworkmanagerAttachmentRoutingPolicyLabelConfig.property.attachmentId">attachmentId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/networkmanager_attachment_routing_policy_label#attachment_id NetworkmanagerAttachmentRoutingPolicyLabel#attachment_id}. |
-| <code><a href="#@cdktn/provider-aws.networkmanagerAttachmentRoutingPolicyLabel.NetworkmanagerAttachmentRoutingPolicyLabelConfig.property.coreNetworkId">coreNetworkId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/networkmanager_attachment_routing_policy_label#core_network_id NetworkmanagerAttachmentRoutingPolicyLabel#core_network_id}. |
-| <code><a href="#@cdktn/provider-aws.networkmanagerAttachmentRoutingPolicyLabel.NetworkmanagerAttachmentRoutingPolicyLabelConfig.property.routingPolicyLabel">routingPolicyLabel</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/networkmanager_attachment_routing_policy_label#routing_policy_label NetworkmanagerAttachmentRoutingPolicyLabel#routing_policy_label}. |
+| <code><a href="#@cdktn/provider-aws.networkmanagerAttachmentRoutingPolicyLabel.NetworkmanagerAttachmentRoutingPolicyLabelConfig.property.attachmentId">attachmentId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/networkmanager_attachment_routing_policy_label#attachment_id NetworkmanagerAttachmentRoutingPolicyLabel#attachment_id}. |
+| <code><a href="#@cdktn/provider-aws.networkmanagerAttachmentRoutingPolicyLabel.NetworkmanagerAttachmentRoutingPolicyLabelConfig.property.coreNetworkId">coreNetworkId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/networkmanager_attachment_routing_policy_label#core_network_id NetworkmanagerAttachmentRoutingPolicyLabel#core_network_id}. |
+| <code><a href="#@cdktn/provider-aws.networkmanagerAttachmentRoutingPolicyLabel.NetworkmanagerAttachmentRoutingPolicyLabelConfig.property.routingPolicyLabel">routingPolicyLabel</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/networkmanager_attachment_routing_policy_label#routing_policy_label NetworkmanagerAttachmentRoutingPolicyLabel#routing_policy_label}. |
 
 ---
 
@@ -855,7 +855,7 @@ public readonly attachmentId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/networkmanager_attachment_routing_policy_label#attachment_id NetworkmanagerAttachmentRoutingPolicyLabel#attachment_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/networkmanager_attachment_routing_policy_label#attachment_id NetworkmanagerAttachmentRoutingPolicyLabel#attachment_id}.
 
 ---
 
@@ -867,7 +867,7 @@ public readonly coreNetworkId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/networkmanager_attachment_routing_policy_label#core_network_id NetworkmanagerAttachmentRoutingPolicyLabel#core_network_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/networkmanager_attachment_routing_policy_label#core_network_id NetworkmanagerAttachmentRoutingPolicyLabel#core_network_id}.
 
 ---
 
@@ -879,7 +879,7 @@ public readonly routingPolicyLabel: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/networkmanager_attachment_routing_policy_label#routing_policy_label NetworkmanagerAttachmentRoutingPolicyLabel#routing_policy_label}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/networkmanager_attachment_routing_policy_label#routing_policy_label NetworkmanagerAttachmentRoutingPolicyLabel#routing_policy_label}.
 
 ---
 

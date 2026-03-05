@@ -4,7 +4,7 @@
 
 ### AppintegrationsEventIntegration <a name="AppintegrationsEventIntegration" id="@cdktn/provider-aws.appintegrationsEventIntegration.AppintegrationsEventIntegration"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/appintegrations_event_integration aws_appintegrations_event_integration}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/appintegrations_event_integration aws_appintegrations_event_integration}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appintegrationsEventIntegration.AppintegrationsEventIntegration.Initializer"></a>
 
@@ -537,7 +537,7 @@ The construct id used in the generated config for the AppintegrationsEventIntegr
 
 The id of the existing AppintegrationsEventIntegration that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/appintegrations_event_integration#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/appintegrations_event_integration#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -940,14 +940,14 @@ const appintegrationsEventIntegrationConfig: appintegrationsEventIntegration.App
 | <code><a href="#@cdktn/provider-aws.appintegrationsEventIntegration.AppintegrationsEventIntegrationConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.appintegrationsEventIntegration.AppintegrationsEventIntegrationConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.appintegrationsEventIntegration.AppintegrationsEventIntegrationConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.appintegrationsEventIntegration.AppintegrationsEventIntegrationConfig.property.eventbridgeBus">eventbridgeBus</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/appintegrations_event_integration#eventbridge_bus AppintegrationsEventIntegration#eventbridge_bus}. |
+| <code><a href="#@cdktn/provider-aws.appintegrationsEventIntegration.AppintegrationsEventIntegrationConfig.property.eventbridgeBus">eventbridgeBus</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/appintegrations_event_integration#eventbridge_bus AppintegrationsEventIntegration#eventbridge_bus}. |
 | <code><a href="#@cdktn/provider-aws.appintegrationsEventIntegration.AppintegrationsEventIntegrationConfig.property.eventFilter">eventFilter</a></code> | <code><a href="#@cdktn/provider-aws.appintegrationsEventIntegration.AppintegrationsEventIntegrationEventFilter">AppintegrationsEventIntegrationEventFilter</a></code> | event_filter block. |
-| <code><a href="#@cdktn/provider-aws.appintegrationsEventIntegration.AppintegrationsEventIntegrationConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/appintegrations_event_integration#name AppintegrationsEventIntegration#name}. |
-| <code><a href="#@cdktn/provider-aws.appintegrationsEventIntegration.AppintegrationsEventIntegrationConfig.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/appintegrations_event_integration#description AppintegrationsEventIntegration#description}. |
-| <code><a href="#@cdktn/provider-aws.appintegrationsEventIntegration.AppintegrationsEventIntegrationConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/appintegrations_event_integration#id AppintegrationsEventIntegration#id}. |
+| <code><a href="#@cdktn/provider-aws.appintegrationsEventIntegration.AppintegrationsEventIntegrationConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/appintegrations_event_integration#name AppintegrationsEventIntegration#name}. |
+| <code><a href="#@cdktn/provider-aws.appintegrationsEventIntegration.AppintegrationsEventIntegrationConfig.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/appintegrations_event_integration#description AppintegrationsEventIntegration#description}. |
+| <code><a href="#@cdktn/provider-aws.appintegrationsEventIntegration.AppintegrationsEventIntegrationConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/appintegrations_event_integration#id AppintegrationsEventIntegration#id}. |
 | <code><a href="#@cdktn/provider-aws.appintegrationsEventIntegration.AppintegrationsEventIntegrationConfig.property.region">region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.appintegrationsEventIntegration.AppintegrationsEventIntegrationConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/appintegrations_event_integration#tags AppintegrationsEventIntegration#tags}. |
-| <code><a href="#@cdktn/provider-aws.appintegrationsEventIntegration.AppintegrationsEventIntegrationConfig.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/appintegrations_event_integration#tags_all AppintegrationsEventIntegration#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.appintegrationsEventIntegration.AppintegrationsEventIntegrationConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/appintegrations_event_integration#tags AppintegrationsEventIntegration#tags}. |
+| <code><a href="#@cdktn/provider-aws.appintegrationsEventIntegration.AppintegrationsEventIntegrationConfig.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/appintegrations_event_integration#tags_all AppintegrationsEventIntegration#tags_all}. |
 
 ---
 
@@ -1029,7 +1029,7 @@ public readonly eventbridgeBus: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/appintegrations_event_integration#eventbridge_bus AppintegrationsEventIntegration#eventbridge_bus}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/appintegrations_event_integration#eventbridge_bus AppintegrationsEventIntegration#eventbridge_bus}.
 
 ---
 
@@ -1043,7 +1043,7 @@ public readonly eventFilter: AppintegrationsEventIntegrationEventFilter;
 
 event_filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/appintegrations_event_integration#event_filter AppintegrationsEventIntegration#event_filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/appintegrations_event_integration#event_filter AppintegrationsEventIntegration#event_filter}
 
 ---
 
@@ -1055,7 +1055,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/appintegrations_event_integration#name AppintegrationsEventIntegration#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/appintegrations_event_integration#name AppintegrationsEventIntegration#name}.
 
 ---
 
@@ -1067,7 +1067,7 @@ public readonly description: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/appintegrations_event_integration#description AppintegrationsEventIntegration#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/appintegrations_event_integration#description AppintegrationsEventIntegration#description}.
 
 ---
 
@@ -1079,7 +1079,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/appintegrations_event_integration#id AppintegrationsEventIntegration#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/appintegrations_event_integration#id AppintegrationsEventIntegration#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1096,7 +1096,7 @@ public readonly region: string;
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/appintegrations_event_integration#region AppintegrationsEventIntegration#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/appintegrations_event_integration#region AppintegrationsEventIntegration#region}
 
 ---
 
@@ -1108,7 +1108,7 @@ public readonly tags: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/appintegrations_event_integration#tags AppintegrationsEventIntegration#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/appintegrations_event_integration#tags AppintegrationsEventIntegration#tags}.
 
 ---
 
@@ -1120,7 +1120,7 @@ public readonly tagsAll: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/appintegrations_event_integration#tags_all AppintegrationsEventIntegration#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/appintegrations_event_integration#tags_all AppintegrationsEventIntegration#tags_all}.
 
 ---
 
@@ -1138,7 +1138,7 @@ const appintegrationsEventIntegrationEventFilter: appintegrationsEventIntegratio
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.appintegrationsEventIntegration.AppintegrationsEventIntegrationEventFilter.property.source">source</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/appintegrations_event_integration#source AppintegrationsEventIntegration#source}. |
+| <code><a href="#@cdktn/provider-aws.appintegrationsEventIntegration.AppintegrationsEventIntegrationEventFilter.property.source">source</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/appintegrations_event_integration#source AppintegrationsEventIntegration#source}. |
 
 ---
 
@@ -1150,7 +1150,7 @@ public readonly source: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/appintegrations_event_integration#source AppintegrationsEventIntegration#source}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/appintegrations_event_integration#source AppintegrationsEventIntegration#source}.
 
 ---
 

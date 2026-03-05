@@ -4,7 +4,7 @@
 
 ### IvschatRoom <a name="IvschatRoom" id="@cdktn/provider-aws.ivschatRoom.IvschatRoom"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/ivschat_room aws_ivschat_room}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/ivschat_room aws_ivschat_room}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ivschatRoom.IvschatRoom.Initializer"></a>
 
@@ -585,7 +585,7 @@ The construct id used in the generated config for the IvschatRoom to import.
 
 The id of the existing IvschatRoom that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/ivschat_room#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/ivschat_room#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1032,15 +1032,15 @@ const ivschatRoomConfig: ivschatRoom.IvschatRoomConfig = { ... }
 | <code><a href="#@cdktn/provider-aws.ivschatRoom.IvschatRoomConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.ivschatRoom.IvschatRoomConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.ivschatRoom.IvschatRoomConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.ivschatRoom.IvschatRoomConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/ivschat_room#id IvschatRoom#id}. |
-| <code><a href="#@cdktn/provider-aws.ivschatRoom.IvschatRoomConfig.property.loggingConfigurationIdentifiers">loggingConfigurationIdentifiers</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/ivschat_room#logging_configuration_identifiers IvschatRoom#logging_configuration_identifiers}. |
-| <code><a href="#@cdktn/provider-aws.ivschatRoom.IvschatRoomConfig.property.maximumMessageLength">maximumMessageLength</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/ivschat_room#maximum_message_length IvschatRoom#maximum_message_length}. |
-| <code><a href="#@cdktn/provider-aws.ivschatRoom.IvschatRoomConfig.property.maximumMessageRatePerSecond">maximumMessageRatePerSecond</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/ivschat_room#maximum_message_rate_per_second IvschatRoom#maximum_message_rate_per_second}. |
+| <code><a href="#@cdktn/provider-aws.ivschatRoom.IvschatRoomConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/ivschat_room#id IvschatRoom#id}. |
+| <code><a href="#@cdktn/provider-aws.ivschatRoom.IvschatRoomConfig.property.loggingConfigurationIdentifiers">loggingConfigurationIdentifiers</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/ivschat_room#logging_configuration_identifiers IvschatRoom#logging_configuration_identifiers}. |
+| <code><a href="#@cdktn/provider-aws.ivschatRoom.IvschatRoomConfig.property.maximumMessageLength">maximumMessageLength</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/ivschat_room#maximum_message_length IvschatRoom#maximum_message_length}. |
+| <code><a href="#@cdktn/provider-aws.ivschatRoom.IvschatRoomConfig.property.maximumMessageRatePerSecond">maximumMessageRatePerSecond</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/ivschat_room#maximum_message_rate_per_second IvschatRoom#maximum_message_rate_per_second}. |
 | <code><a href="#@cdktn/provider-aws.ivschatRoom.IvschatRoomConfig.property.messageReviewHandler">messageReviewHandler</a></code> | <code><a href="#@cdktn/provider-aws.ivschatRoom.IvschatRoomMessageReviewHandler">IvschatRoomMessageReviewHandler</a></code> | message_review_handler block. |
-| <code><a href="#@cdktn/provider-aws.ivschatRoom.IvschatRoomConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/ivschat_room#name IvschatRoom#name}. |
+| <code><a href="#@cdktn/provider-aws.ivschatRoom.IvschatRoomConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/ivschat_room#name IvschatRoom#name}. |
 | <code><a href="#@cdktn/provider-aws.ivschatRoom.IvschatRoomConfig.property.region">region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.ivschatRoom.IvschatRoomConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/ivschat_room#tags IvschatRoom#tags}. |
-| <code><a href="#@cdktn/provider-aws.ivschatRoom.IvschatRoomConfig.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/ivschat_room#tags_all IvschatRoom#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.ivschatRoom.IvschatRoomConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/ivschat_room#tags IvschatRoom#tags}. |
+| <code><a href="#@cdktn/provider-aws.ivschatRoom.IvschatRoomConfig.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/ivschat_room#tags_all IvschatRoom#tags_all}. |
 | <code><a href="#@cdktn/provider-aws.ivschatRoom.IvschatRoomConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-aws.ivschatRoom.IvschatRoomTimeouts">IvschatRoomTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1123,7 +1123,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/ivschat_room#id IvschatRoom#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/ivschat_room#id IvschatRoom#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1138,7 +1138,7 @@ public readonly loggingConfigurationIdentifiers: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/ivschat_room#logging_configuration_identifiers IvschatRoom#logging_configuration_identifiers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/ivschat_room#logging_configuration_identifiers IvschatRoom#logging_configuration_identifiers}.
 
 ---
 
@@ -1150,7 +1150,7 @@ public readonly maximumMessageLength: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/ivschat_room#maximum_message_length IvschatRoom#maximum_message_length}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/ivschat_room#maximum_message_length IvschatRoom#maximum_message_length}.
 
 ---
 
@@ -1162,7 +1162,7 @@ public readonly maximumMessageRatePerSecond: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/ivschat_room#maximum_message_rate_per_second IvschatRoom#maximum_message_rate_per_second}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/ivschat_room#maximum_message_rate_per_second IvschatRoom#maximum_message_rate_per_second}.
 
 ---
 
@@ -1176,7 +1176,7 @@ public readonly messageReviewHandler: IvschatRoomMessageReviewHandler;
 
 message_review_handler block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/ivschat_room#message_review_handler IvschatRoom#message_review_handler}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/ivschat_room#message_review_handler IvschatRoom#message_review_handler}
 
 ---
 
@@ -1188,7 +1188,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/ivschat_room#name IvschatRoom#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/ivschat_room#name IvschatRoom#name}.
 
 ---
 
@@ -1202,7 +1202,7 @@ public readonly region: string;
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/ivschat_room#region IvschatRoom#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/ivschat_room#region IvschatRoom#region}
 
 ---
 
@@ -1214,7 +1214,7 @@ public readonly tags: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/ivschat_room#tags IvschatRoom#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/ivschat_room#tags IvschatRoom#tags}.
 
 ---
 
@@ -1226,7 +1226,7 @@ public readonly tagsAll: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/ivschat_room#tags_all IvschatRoom#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/ivschat_room#tags_all IvschatRoom#tags_all}.
 
 ---
 
@@ -1240,7 +1240,7 @@ public readonly timeouts: IvschatRoomTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/ivschat_room#timeouts IvschatRoom#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/ivschat_room#timeouts IvschatRoom#timeouts}
 
 ---
 
@@ -1258,8 +1258,8 @@ const ivschatRoomMessageReviewHandler: ivschatRoom.IvschatRoomMessageReviewHandl
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.ivschatRoom.IvschatRoomMessageReviewHandler.property.fallbackResult">fallbackResult</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/ivschat_room#fallback_result IvschatRoom#fallback_result}. |
-| <code><a href="#@cdktn/provider-aws.ivschatRoom.IvschatRoomMessageReviewHandler.property.uri">uri</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/ivschat_room#uri IvschatRoom#uri}. |
+| <code><a href="#@cdktn/provider-aws.ivschatRoom.IvschatRoomMessageReviewHandler.property.fallbackResult">fallbackResult</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/ivschat_room#fallback_result IvschatRoom#fallback_result}. |
+| <code><a href="#@cdktn/provider-aws.ivschatRoom.IvschatRoomMessageReviewHandler.property.uri">uri</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/ivschat_room#uri IvschatRoom#uri}. |
 
 ---
 
@@ -1271,7 +1271,7 @@ public readonly fallbackResult: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/ivschat_room#fallback_result IvschatRoom#fallback_result}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/ivschat_room#fallback_result IvschatRoom#fallback_result}.
 
 ---
 
@@ -1283,7 +1283,7 @@ public readonly uri: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/ivschat_room#uri IvschatRoom#uri}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/ivschat_room#uri IvschatRoom#uri}.
 
 ---
 
@@ -1301,9 +1301,9 @@ const ivschatRoomTimeouts: ivschatRoom.IvschatRoomTimeouts = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.ivschatRoom.IvschatRoomTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/ivschat_room#create IvschatRoom#create}. |
-| <code><a href="#@cdktn/provider-aws.ivschatRoom.IvschatRoomTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/ivschat_room#delete IvschatRoom#delete}. |
-| <code><a href="#@cdktn/provider-aws.ivschatRoom.IvschatRoomTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/ivschat_room#update IvschatRoom#update}. |
+| <code><a href="#@cdktn/provider-aws.ivschatRoom.IvschatRoomTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/ivschat_room#create IvschatRoom#create}. |
+| <code><a href="#@cdktn/provider-aws.ivschatRoom.IvschatRoomTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/ivschat_room#delete IvschatRoom#delete}. |
+| <code><a href="#@cdktn/provider-aws.ivschatRoom.IvschatRoomTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/ivschat_room#update IvschatRoom#update}. |
 
 ---
 
@@ -1315,7 +1315,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/ivschat_room#create IvschatRoom#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/ivschat_room#create IvschatRoom#create}.
 
 ---
 
@@ -1327,7 +1327,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/ivschat_room#delete IvschatRoom#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/ivschat_room#delete IvschatRoom#delete}.
 
 ---
 
@@ -1339,7 +1339,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.34.0/docs/resources/ivschat_room#update IvschatRoom#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/ivschat_room#update IvschatRoom#update}.
 
 ---
 
