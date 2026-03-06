@@ -4,7 +4,7 @@
 
 ### TransferCertificate <a name="TransferCertificate" id="@cdktn/provider-aws.transferCertificate.TransferCertificate"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/transfer_certificate aws_transfer_certificate}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/transfer_certificate aws_transfer_certificate}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.transferCertificate.TransferCertificate.Initializer"></a>
 
@@ -538,7 +538,7 @@ The construct id used in the generated config for the TransferCertificate to imp
 
 The id of the existing TransferCertificate that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/transfer_certificate#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/transfer_certificate#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1013,15 +1013,15 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/transfercertificate"
 | <code><a href="#@cdktn/provider-aws.transferCertificate.TransferCertificateConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.transferCertificate.TransferCertificateConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.transferCertificate.TransferCertificateConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.transferCertificate.TransferCertificateConfig.property.certificate">Certificate</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/transfer_certificate#certificate TransferCertificate#certificate}. |
-| <code><a href="#@cdktn/provider-aws.transferCertificate.TransferCertificateConfig.property.usage">Usage</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/transfer_certificate#usage TransferCertificate#usage}. |
-| <code><a href="#@cdktn/provider-aws.transferCertificate.TransferCertificateConfig.property.certificateChain">CertificateChain</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/transfer_certificate#certificate_chain TransferCertificate#certificate_chain}. |
-| <code><a href="#@cdktn/provider-aws.transferCertificate.TransferCertificateConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/transfer_certificate#description TransferCertificate#description}. |
-| <code><a href="#@cdktn/provider-aws.transferCertificate.TransferCertificateConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/transfer_certificate#id TransferCertificate#id}. |
-| <code><a href="#@cdktn/provider-aws.transferCertificate.TransferCertificateConfig.property.privateKey">PrivateKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/transfer_certificate#private_key TransferCertificate#private_key}. |
+| <code><a href="#@cdktn/provider-aws.transferCertificate.TransferCertificateConfig.property.certificate">Certificate</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/transfer_certificate#certificate TransferCertificate#certificate}. |
+| <code><a href="#@cdktn/provider-aws.transferCertificate.TransferCertificateConfig.property.usage">Usage</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/transfer_certificate#usage TransferCertificate#usage}. |
+| <code><a href="#@cdktn/provider-aws.transferCertificate.TransferCertificateConfig.property.certificateChain">CertificateChain</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/transfer_certificate#certificate_chain TransferCertificate#certificate_chain}. |
+| <code><a href="#@cdktn/provider-aws.transferCertificate.TransferCertificateConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/transfer_certificate#description TransferCertificate#description}. |
+| <code><a href="#@cdktn/provider-aws.transferCertificate.TransferCertificateConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/transfer_certificate#id TransferCertificate#id}. |
+| <code><a href="#@cdktn/provider-aws.transferCertificate.TransferCertificateConfig.property.privateKey">PrivateKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/transfer_certificate#private_key TransferCertificate#private_key}. |
 | <code><a href="#@cdktn/provider-aws.transferCertificate.TransferCertificateConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.transferCertificate.TransferCertificateConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/transfer_certificate#tags TransferCertificate#tags}. |
-| <code><a href="#@cdktn/provider-aws.transferCertificate.TransferCertificateConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/transfer_certificate#tags_all TransferCertificate#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.transferCertificate.TransferCertificateConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/transfer_certificate#tags TransferCertificate#tags}. |
+| <code><a href="#@cdktn/provider-aws.transferCertificate.TransferCertificateConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/transfer_certificate#tags_all TransferCertificate#tags_all}. |
 
 ---
 
@@ -1103,7 +1103,7 @@ Certificate *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/transfer_certificate#certificate TransferCertificate#certificate}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/transfer_certificate#certificate TransferCertificate#certificate}.
 
 ---
 
@@ -1115,7 +1115,7 @@ Usage *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/transfer_certificate#usage TransferCertificate#usage}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/transfer_certificate#usage TransferCertificate#usage}.
 
 ---
 
@@ -1127,7 +1127,7 @@ CertificateChain *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/transfer_certificate#certificate_chain TransferCertificate#certificate_chain}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/transfer_certificate#certificate_chain TransferCertificate#certificate_chain}.
 
 ---
 
@@ -1139,7 +1139,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/transfer_certificate#description TransferCertificate#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/transfer_certificate#description TransferCertificate#description}.
 
 ---
 
@@ -1151,7 +1151,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/transfer_certificate#id TransferCertificate#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/transfer_certificate#id TransferCertificate#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1166,7 +1166,7 @@ PrivateKey *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/transfer_certificate#private_key TransferCertificate#private_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/transfer_certificate#private_key TransferCertificate#private_key}.
 
 ---
 
@@ -1180,7 +1180,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/transfer_certificate#region TransferCertificate#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/transfer_certificate#region TransferCertificate#region}
 
 ---
 
@@ -1192,7 +1192,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/transfer_certificate#tags TransferCertificate#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/transfer_certificate#tags TransferCertificate#tags}.
 
 ---
 
@@ -1204,7 +1204,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/transfer_certificate#tags_all TransferCertificate#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/transfer_certificate#tags_all TransferCertificate#tags_all}.
 
 ---
 

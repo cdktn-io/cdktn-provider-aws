@@ -4,7 +4,7 @@
 
 ### DataAwsDefaultTags <a name="DataAwsDefaultTags" id="@cdktn/provider-aws.dataAwsDefaultTags.DataAwsDefaultTags"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/data-sources/default_tags aws_default_tags}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/data-sources/default_tags aws_default_tags}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsDefaultTags.DataAwsDefaultTags.Initializer"></a>
 
@@ -394,7 +394,7 @@ The construct id used in the generated config for the DataAwsDefaultTags to impo
 
 The id of the existing DataAwsDefaultTags that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/data-sources/default_tags#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/data-sources/default_tags#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -621,7 +621,7 @@ const dataAwsDefaultTagsConfig: dataAwsDefaultTags.DataAwsDefaultTagsConfig = { 
 | <code><a href="#@cdktn/provider-aws.dataAwsDefaultTags.DataAwsDefaultTagsConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsDefaultTags.DataAwsDefaultTagsConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsDefaultTags.DataAwsDefaultTagsConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dataAwsDefaultTags.DataAwsDefaultTagsConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/data-sources/default_tags#id DataAwsDefaultTags#id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsDefaultTags.DataAwsDefaultTagsConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/data-sources/default_tags#id DataAwsDefaultTags#id}. |
 
 ---
 
@@ -703,7 +703,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/data-sources/default_tags#id DataAwsDefaultTags#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/data-sources/default_tags#id DataAwsDefaultTags#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
