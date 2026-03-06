@@ -4,7 +4,7 @@
 
 ### DbSnapshot <a name="DbSnapshot" id="@cdktn/provider-aws.dbSnapshot.DbSnapshot"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/db_snapshot aws_db_snapshot}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/db_snapshot aws_db_snapshot}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dbSnapshot.DbSnapshot.Initializer"></a>
 
@@ -544,7 +544,7 @@ The construct id used in the generated config for the DbSnapshot to import.
 
 The id of the existing DbSnapshot that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/db_snapshot#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/db_snapshot#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1123,13 +1123,13 @@ const dbSnapshotConfig: dbSnapshot.DbSnapshotConfig = { ... }
 | <code><a href="#@cdktn/provider-aws.dbSnapshot.DbSnapshotConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dbSnapshot.DbSnapshotConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dbSnapshot.DbSnapshotConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dbSnapshot.DbSnapshotConfig.property.dbInstanceIdentifier">dbInstanceIdentifier</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/db_snapshot#db_instance_identifier DbSnapshot#db_instance_identifier}. |
-| <code><a href="#@cdktn/provider-aws.dbSnapshot.DbSnapshotConfig.property.dbSnapshotIdentifier">dbSnapshotIdentifier</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/db_snapshot#db_snapshot_identifier DbSnapshot#db_snapshot_identifier}. |
-| <code><a href="#@cdktn/provider-aws.dbSnapshot.DbSnapshotConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/db_snapshot#id DbSnapshot#id}. |
+| <code><a href="#@cdktn/provider-aws.dbSnapshot.DbSnapshotConfig.property.dbInstanceIdentifier">dbInstanceIdentifier</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/db_snapshot#db_instance_identifier DbSnapshot#db_instance_identifier}. |
+| <code><a href="#@cdktn/provider-aws.dbSnapshot.DbSnapshotConfig.property.dbSnapshotIdentifier">dbSnapshotIdentifier</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/db_snapshot#db_snapshot_identifier DbSnapshot#db_snapshot_identifier}. |
+| <code><a href="#@cdktn/provider-aws.dbSnapshot.DbSnapshotConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/db_snapshot#id DbSnapshot#id}. |
 | <code><a href="#@cdktn/provider-aws.dbSnapshot.DbSnapshotConfig.property.region">region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.dbSnapshot.DbSnapshotConfig.property.sharedAccounts">sharedAccounts</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/db_snapshot#shared_accounts DbSnapshot#shared_accounts}. |
-| <code><a href="#@cdktn/provider-aws.dbSnapshot.DbSnapshotConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/db_snapshot#tags DbSnapshot#tags}. |
-| <code><a href="#@cdktn/provider-aws.dbSnapshot.DbSnapshotConfig.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/db_snapshot#tags_all DbSnapshot#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.dbSnapshot.DbSnapshotConfig.property.sharedAccounts">sharedAccounts</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/db_snapshot#shared_accounts DbSnapshot#shared_accounts}. |
+| <code><a href="#@cdktn/provider-aws.dbSnapshot.DbSnapshotConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/db_snapshot#tags DbSnapshot#tags}. |
+| <code><a href="#@cdktn/provider-aws.dbSnapshot.DbSnapshotConfig.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/db_snapshot#tags_all DbSnapshot#tags_all}. |
 | <code><a href="#@cdktn/provider-aws.dbSnapshot.DbSnapshotConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-aws.dbSnapshot.DbSnapshotTimeouts">DbSnapshotTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1212,7 +1212,7 @@ public readonly dbInstanceIdentifier: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/db_snapshot#db_instance_identifier DbSnapshot#db_instance_identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/db_snapshot#db_instance_identifier DbSnapshot#db_instance_identifier}.
 
 ---
 
@@ -1224,7 +1224,7 @@ public readonly dbSnapshotIdentifier: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/db_snapshot#db_snapshot_identifier DbSnapshot#db_snapshot_identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/db_snapshot#db_snapshot_identifier DbSnapshot#db_snapshot_identifier}.
 
 ---
 
@@ -1236,7 +1236,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/db_snapshot#id DbSnapshot#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/db_snapshot#id DbSnapshot#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1253,7 +1253,7 @@ public readonly region: string;
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/db_snapshot#region DbSnapshot#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/db_snapshot#region DbSnapshot#region}
 
 ---
 
@@ -1265,7 +1265,7 @@ public readonly sharedAccounts: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/db_snapshot#shared_accounts DbSnapshot#shared_accounts}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/db_snapshot#shared_accounts DbSnapshot#shared_accounts}.
 
 ---
 
@@ -1277,7 +1277,7 @@ public readonly tags: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/db_snapshot#tags DbSnapshot#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/db_snapshot#tags DbSnapshot#tags}.
 
 ---
 
@@ -1289,7 +1289,7 @@ public readonly tagsAll: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/db_snapshot#tags_all DbSnapshot#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/db_snapshot#tags_all DbSnapshot#tags_all}.
 
 ---
 
@@ -1303,7 +1303,7 @@ public readonly timeouts: DbSnapshotTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/db_snapshot#timeouts DbSnapshot#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/db_snapshot#timeouts DbSnapshot#timeouts}
 
 ---
 
@@ -1321,7 +1321,7 @@ const dbSnapshotTimeouts: dbSnapshot.DbSnapshotTimeouts = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.dbSnapshot.DbSnapshotTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/db_snapshot#create DbSnapshot#create}. |
+| <code><a href="#@cdktn/provider-aws.dbSnapshot.DbSnapshotTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/db_snapshot#create DbSnapshot#create}. |
 
 ---
 
@@ -1333,7 +1333,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/db_snapshot#create DbSnapshot#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/db_snapshot#create DbSnapshot#create}.
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### DataAwsCloudwatchEventSource <a name="DataAwsCloudwatchEventSource" id="@cdktn/provider-aws.dataAwsCloudwatchEventSource.DataAwsCloudwatchEventSource"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/data-sources/cloudwatch_event_source aws_cloudwatch_event_source}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/data-sources/cloudwatch_event_source aws_cloudwatch_event_source}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsCloudwatchEventSource.DataAwsCloudwatchEventSource.Initializer"></a>
 
@@ -408,7 +408,7 @@ The construct id used in the generated config for the DataAwsCloudwatchEventSour
 
 The id of the existing DataAwsCloudwatchEventSource that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/data-sources/cloudwatch_event_source#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/data-sources/cloudwatch_event_source#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -712,8 +712,8 @@ const dataAwsCloudwatchEventSourceConfig: dataAwsCloudwatchEventSource.DataAwsCl
 | <code><a href="#@cdktn/provider-aws.dataAwsCloudwatchEventSource.DataAwsCloudwatchEventSourceConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsCloudwatchEventSource.DataAwsCloudwatchEventSourceConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsCloudwatchEventSource.DataAwsCloudwatchEventSourceConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dataAwsCloudwatchEventSource.DataAwsCloudwatchEventSourceConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/data-sources/cloudwatch_event_source#id DataAwsCloudwatchEventSource#id}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsCloudwatchEventSource.DataAwsCloudwatchEventSourceConfig.property.namePrefix">namePrefix</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/data-sources/cloudwatch_event_source#name_prefix DataAwsCloudwatchEventSource#name_prefix}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsCloudwatchEventSource.DataAwsCloudwatchEventSourceConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/data-sources/cloudwatch_event_source#id DataAwsCloudwatchEventSource#id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsCloudwatchEventSource.DataAwsCloudwatchEventSourceConfig.property.namePrefix">namePrefix</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/data-sources/cloudwatch_event_source#name_prefix DataAwsCloudwatchEventSource#name_prefix}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsCloudwatchEventSource.DataAwsCloudwatchEventSourceConfig.property.region">region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -796,7 +796,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/data-sources/cloudwatch_event_source#id DataAwsCloudwatchEventSource#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/data-sources/cloudwatch_event_source#id DataAwsCloudwatchEventSource#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -811,7 +811,7 @@ public readonly namePrefix: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/data-sources/cloudwatch_event_source#name_prefix DataAwsCloudwatchEventSource#name_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/data-sources/cloudwatch_event_source#name_prefix DataAwsCloudwatchEventSource#name_prefix}.
 
 ---
 
@@ -825,7 +825,7 @@ public readonly region: string;
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/data-sources/cloudwatch_event_source#region DataAwsCloudwatchEventSource#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/data-sources/cloudwatch_event_source#region DataAwsCloudwatchEventSource#region}
 
 ---
 

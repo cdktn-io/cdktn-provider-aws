@@ -4,7 +4,7 @@
 
 ### DataAwsIamSamlProvider <a name="DataAwsIamSamlProvider" id="@cdktn/provider-aws.dataAwsIamSamlProvider.DataAwsIamSamlProvider"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/data-sources/iam_saml_provider aws_iam_saml_provider}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/data-sources/iam_saml_provider aws_iam_saml_provider}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsIamSamlProvider.DataAwsIamSamlProvider.Initializer"></a>
 
@@ -401,7 +401,7 @@ The construct id used in the generated config for the DataAwsIamSamlProvider to 
 
 The id of the existing DataAwsIamSamlProvider that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/data-sources/iam_saml_provider#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/data-sources/iam_saml_provider#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -716,9 +716,9 @@ const dataAwsIamSamlProviderConfig: dataAwsIamSamlProvider.DataAwsIamSamlProvide
 | <code><a href="#@cdktn/provider-aws.dataAwsIamSamlProvider.DataAwsIamSamlProviderConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsIamSamlProvider.DataAwsIamSamlProviderConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsIamSamlProvider.DataAwsIamSamlProviderConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dataAwsIamSamlProvider.DataAwsIamSamlProviderConfig.property.arn">arn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/data-sources/iam_saml_provider#arn DataAwsIamSamlProvider#arn}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsIamSamlProvider.DataAwsIamSamlProviderConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/data-sources/iam_saml_provider#id DataAwsIamSamlProvider#id}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsIamSamlProvider.DataAwsIamSamlProviderConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/data-sources/iam_saml_provider#tags DataAwsIamSamlProvider#tags}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsIamSamlProvider.DataAwsIamSamlProviderConfig.property.arn">arn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/data-sources/iam_saml_provider#arn DataAwsIamSamlProvider#arn}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsIamSamlProvider.DataAwsIamSamlProviderConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/data-sources/iam_saml_provider#id DataAwsIamSamlProvider#id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsIamSamlProvider.DataAwsIamSamlProviderConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/data-sources/iam_saml_provider#tags DataAwsIamSamlProvider#tags}. |
 
 ---
 
@@ -800,7 +800,7 @@ public readonly arn: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/data-sources/iam_saml_provider#arn DataAwsIamSamlProvider#arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/data-sources/iam_saml_provider#arn DataAwsIamSamlProvider#arn}.
 
 ---
 
@@ -812,7 +812,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/data-sources/iam_saml_provider#id DataAwsIamSamlProvider#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/data-sources/iam_saml_provider#id DataAwsIamSamlProvider#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -827,7 +827,7 @@ public readonly tags: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/data-sources/iam_saml_provider#tags DataAwsIamSamlProvider#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/data-sources/iam_saml_provider#tags DataAwsIamSamlProvider#tags}.
 
 ---
 

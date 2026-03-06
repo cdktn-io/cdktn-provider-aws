@@ -4,7 +4,7 @@
 
 ### CloudwatchLogGroup <a name="CloudwatchLogGroup" id="@cdktn/provider-aws.cloudwatchLogGroup.CloudwatchLogGroup"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/cloudwatch_log_group aws_cloudwatch_log_group}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/cloudwatch_log_group aws_cloudwatch_log_group}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudwatchLogGroup.CloudwatchLogGroup.Initializer"></a>
 
@@ -566,7 +566,7 @@ The construct id used in the generated config for the CloudwatchLogGroup to impo
 
 The id of the existing CloudwatchLogGroup that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/cloudwatch_log_group#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/cloudwatch_log_group#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1035,17 +1035,17 @@ const cloudwatchLogGroupConfig: cloudwatchLogGroup.CloudwatchLogGroupConfig = { 
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogGroup.CloudwatchLogGroupConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogGroup.CloudwatchLogGroupConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogGroup.CloudwatchLogGroupConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogGroup.CloudwatchLogGroupConfig.property.deletionProtectionEnabled">deletionProtectionEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/cloudwatch_log_group#deletion_protection_enabled CloudwatchLogGroup#deletion_protection_enabled}. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogGroup.CloudwatchLogGroupConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/cloudwatch_log_group#id CloudwatchLogGroup#id}. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogGroup.CloudwatchLogGroupConfig.property.kmsKeyId">kmsKeyId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/cloudwatch_log_group#kms_key_id CloudwatchLogGroup#kms_key_id}. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogGroup.CloudwatchLogGroupConfig.property.logGroupClass">logGroupClass</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/cloudwatch_log_group#log_group_class CloudwatchLogGroup#log_group_class}. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogGroup.CloudwatchLogGroupConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/cloudwatch_log_group#name CloudwatchLogGroup#name}. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogGroup.CloudwatchLogGroupConfig.property.namePrefix">namePrefix</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/cloudwatch_log_group#name_prefix CloudwatchLogGroup#name_prefix}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogGroup.CloudwatchLogGroupConfig.property.deletionProtectionEnabled">deletionProtectionEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/cloudwatch_log_group#deletion_protection_enabled CloudwatchLogGroup#deletion_protection_enabled}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogGroup.CloudwatchLogGroupConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/cloudwatch_log_group#id CloudwatchLogGroup#id}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogGroup.CloudwatchLogGroupConfig.property.kmsKeyId">kmsKeyId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/cloudwatch_log_group#kms_key_id CloudwatchLogGroup#kms_key_id}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogGroup.CloudwatchLogGroupConfig.property.logGroupClass">logGroupClass</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/cloudwatch_log_group#log_group_class CloudwatchLogGroup#log_group_class}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogGroup.CloudwatchLogGroupConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/cloudwatch_log_group#name CloudwatchLogGroup#name}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogGroup.CloudwatchLogGroupConfig.property.namePrefix">namePrefix</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/cloudwatch_log_group#name_prefix CloudwatchLogGroup#name_prefix}. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogGroup.CloudwatchLogGroupConfig.property.region">region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogGroup.CloudwatchLogGroupConfig.property.retentionInDays">retentionInDays</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/cloudwatch_log_group#retention_in_days CloudwatchLogGroup#retention_in_days}. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogGroup.CloudwatchLogGroupConfig.property.skipDestroy">skipDestroy</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/cloudwatch_log_group#skip_destroy CloudwatchLogGroup#skip_destroy}. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogGroup.CloudwatchLogGroupConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/cloudwatch_log_group#tags CloudwatchLogGroup#tags}. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogGroup.CloudwatchLogGroupConfig.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/cloudwatch_log_group#tags_all CloudwatchLogGroup#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogGroup.CloudwatchLogGroupConfig.property.retentionInDays">retentionInDays</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/cloudwatch_log_group#retention_in_days CloudwatchLogGroup#retention_in_days}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogGroup.CloudwatchLogGroupConfig.property.skipDestroy">skipDestroy</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/cloudwatch_log_group#skip_destroy CloudwatchLogGroup#skip_destroy}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogGroup.CloudwatchLogGroupConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/cloudwatch_log_group#tags CloudwatchLogGroup#tags}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogGroup.CloudwatchLogGroupConfig.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/cloudwatch_log_group#tags_all CloudwatchLogGroup#tags_all}. |
 
 ---
 
@@ -1127,7 +1127,7 @@ public readonly deletionProtectionEnabled: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/cloudwatch_log_group#deletion_protection_enabled CloudwatchLogGroup#deletion_protection_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/cloudwatch_log_group#deletion_protection_enabled CloudwatchLogGroup#deletion_protection_enabled}.
 
 ---
 
@@ -1139,7 +1139,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/cloudwatch_log_group#id CloudwatchLogGroup#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/cloudwatch_log_group#id CloudwatchLogGroup#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1154,7 +1154,7 @@ public readonly kmsKeyId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/cloudwatch_log_group#kms_key_id CloudwatchLogGroup#kms_key_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/cloudwatch_log_group#kms_key_id CloudwatchLogGroup#kms_key_id}.
 
 ---
 
@@ -1166,7 +1166,7 @@ public readonly logGroupClass: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/cloudwatch_log_group#log_group_class CloudwatchLogGroup#log_group_class}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/cloudwatch_log_group#log_group_class CloudwatchLogGroup#log_group_class}.
 
 ---
 
@@ -1178,7 +1178,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/cloudwatch_log_group#name CloudwatchLogGroup#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/cloudwatch_log_group#name CloudwatchLogGroup#name}.
 
 ---
 
@@ -1190,7 +1190,7 @@ public readonly namePrefix: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/cloudwatch_log_group#name_prefix CloudwatchLogGroup#name_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/cloudwatch_log_group#name_prefix CloudwatchLogGroup#name_prefix}.
 
 ---
 
@@ -1204,7 +1204,7 @@ public readonly region: string;
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/cloudwatch_log_group#region CloudwatchLogGroup#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/cloudwatch_log_group#region CloudwatchLogGroup#region}
 
 ---
 
@@ -1216,7 +1216,7 @@ public readonly retentionInDays: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/cloudwatch_log_group#retention_in_days CloudwatchLogGroup#retention_in_days}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/cloudwatch_log_group#retention_in_days CloudwatchLogGroup#retention_in_days}.
 
 ---
 
@@ -1228,7 +1228,7 @@ public readonly skipDestroy: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/cloudwatch_log_group#skip_destroy CloudwatchLogGroup#skip_destroy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/cloudwatch_log_group#skip_destroy CloudwatchLogGroup#skip_destroy}.
 
 ---
 
@@ -1240,7 +1240,7 @@ public readonly tags: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/cloudwatch_log_group#tags CloudwatchLogGroup#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/cloudwatch_log_group#tags CloudwatchLogGroup#tags}.
 
 ---
 
@@ -1252,7 +1252,7 @@ public readonly tagsAll: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/cloudwatch_log_group#tags_all CloudwatchLogGroup#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/cloudwatch_log_group#tags_all CloudwatchLogGroup#tags_all}.
 
 ---
 

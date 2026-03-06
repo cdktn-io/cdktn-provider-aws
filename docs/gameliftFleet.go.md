@@ -4,7 +4,7 @@
 
 ### GameliftFleet <a name="GameliftFleet" id="@cdktn/provider-aws.gameliftFleet.GameliftFleet"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/gamelift_fleet aws_gamelift_fleet}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/gamelift_fleet aws_gamelift_fleet}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.gameliftFleet.GameliftFleet.Initializer"></a>
 
@@ -666,7 +666,7 @@ The construct id used in the generated config for the GameliftFleet to import.
 
 The id of the existing GameliftFleet that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/gamelift_fleet#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/gamelift_fleet#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1328,7 +1328,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/gameliftfleet"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.gameliftFleet.GameliftFleetCertificateConfiguration.property.certificateType">CertificateType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/gamelift_fleet#certificate_type GameliftFleet#certificate_type}. |
+| <code><a href="#@cdktn/provider-aws.gameliftFleet.GameliftFleetCertificateConfiguration.property.certificateType">CertificateType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/gamelift_fleet#certificate_type GameliftFleet#certificate_type}. |
 
 ---
 
@@ -1340,7 +1340,7 @@ CertificateType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/gamelift_fleet#certificate_type GameliftFleet#certificate_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/gamelift_fleet#certificate_type GameliftFleet#certificate_type}.
 
 ---
 
@@ -1391,23 +1391,23 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/gameliftfleet"
 | <code><a href="#@cdktn/provider-aws.gameliftFleet.GameliftFleetConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.gameliftFleet.GameliftFleetConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.gameliftFleet.GameliftFleetConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.gameliftFleet.GameliftFleetConfig.property.ec2InstanceType">Ec2InstanceType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/gamelift_fleet#ec2_instance_type GameliftFleet#ec2_instance_type}. |
-| <code><a href="#@cdktn/provider-aws.gameliftFleet.GameliftFleetConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/gamelift_fleet#name GameliftFleet#name}. |
-| <code><a href="#@cdktn/provider-aws.gameliftFleet.GameliftFleetConfig.property.buildId">BuildId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/gamelift_fleet#build_id GameliftFleet#build_id}. |
+| <code><a href="#@cdktn/provider-aws.gameliftFleet.GameliftFleetConfig.property.ec2InstanceType">Ec2InstanceType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/gamelift_fleet#ec2_instance_type GameliftFleet#ec2_instance_type}. |
+| <code><a href="#@cdktn/provider-aws.gameliftFleet.GameliftFleetConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/gamelift_fleet#name GameliftFleet#name}. |
+| <code><a href="#@cdktn/provider-aws.gameliftFleet.GameliftFleetConfig.property.buildId">BuildId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/gamelift_fleet#build_id GameliftFleet#build_id}. |
 | <code><a href="#@cdktn/provider-aws.gameliftFleet.GameliftFleetConfig.property.certificateConfiguration">CertificateConfiguration</a></code> | <code><a href="#@cdktn/provider-aws.gameliftFleet.GameliftFleetCertificateConfiguration">GameliftFleetCertificateConfiguration</a></code> | certificate_configuration block. |
-| <code><a href="#@cdktn/provider-aws.gameliftFleet.GameliftFleetConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/gamelift_fleet#description GameliftFleet#description}. |
+| <code><a href="#@cdktn/provider-aws.gameliftFleet.GameliftFleetConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/gamelift_fleet#description GameliftFleet#description}. |
 | <code><a href="#@cdktn/provider-aws.gameliftFleet.GameliftFleetConfig.property.ec2InboundPermission">Ec2InboundPermission</a></code> | <code>interface{}</code> | ec2_inbound_permission block. |
-| <code><a href="#@cdktn/provider-aws.gameliftFleet.GameliftFleetConfig.property.fleetType">FleetType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/gamelift_fleet#fleet_type GameliftFleet#fleet_type}. |
-| <code><a href="#@cdktn/provider-aws.gameliftFleet.GameliftFleetConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/gamelift_fleet#id GameliftFleet#id}. |
-| <code><a href="#@cdktn/provider-aws.gameliftFleet.GameliftFleetConfig.property.instanceRoleArn">InstanceRoleArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/gamelift_fleet#instance_role_arn GameliftFleet#instance_role_arn}. |
-| <code><a href="#@cdktn/provider-aws.gameliftFleet.GameliftFleetConfig.property.metricGroups">MetricGroups</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/gamelift_fleet#metric_groups GameliftFleet#metric_groups}. |
-| <code><a href="#@cdktn/provider-aws.gameliftFleet.GameliftFleetConfig.property.newGameSessionProtectionPolicy">NewGameSessionProtectionPolicy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/gamelift_fleet#new_game_session_protection_policy GameliftFleet#new_game_session_protection_policy}. |
+| <code><a href="#@cdktn/provider-aws.gameliftFleet.GameliftFleetConfig.property.fleetType">FleetType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/gamelift_fleet#fleet_type GameliftFleet#fleet_type}. |
+| <code><a href="#@cdktn/provider-aws.gameliftFleet.GameliftFleetConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/gamelift_fleet#id GameliftFleet#id}. |
+| <code><a href="#@cdktn/provider-aws.gameliftFleet.GameliftFleetConfig.property.instanceRoleArn">InstanceRoleArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/gamelift_fleet#instance_role_arn GameliftFleet#instance_role_arn}. |
+| <code><a href="#@cdktn/provider-aws.gameliftFleet.GameliftFleetConfig.property.metricGroups">MetricGroups</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/gamelift_fleet#metric_groups GameliftFleet#metric_groups}. |
+| <code><a href="#@cdktn/provider-aws.gameliftFleet.GameliftFleetConfig.property.newGameSessionProtectionPolicy">NewGameSessionProtectionPolicy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/gamelift_fleet#new_game_session_protection_policy GameliftFleet#new_game_session_protection_policy}. |
 | <code><a href="#@cdktn/provider-aws.gameliftFleet.GameliftFleetConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktn/provider-aws.gameliftFleet.GameliftFleetConfig.property.resourceCreationLimitPolicy">ResourceCreationLimitPolicy</a></code> | <code><a href="#@cdktn/provider-aws.gameliftFleet.GameliftFleetResourceCreationLimitPolicy">GameliftFleetResourceCreationLimitPolicy</a></code> | resource_creation_limit_policy block. |
 | <code><a href="#@cdktn/provider-aws.gameliftFleet.GameliftFleetConfig.property.runtimeConfiguration">RuntimeConfiguration</a></code> | <code><a href="#@cdktn/provider-aws.gameliftFleet.GameliftFleetRuntimeConfiguration">GameliftFleetRuntimeConfiguration</a></code> | runtime_configuration block. |
-| <code><a href="#@cdktn/provider-aws.gameliftFleet.GameliftFleetConfig.property.scriptId">ScriptId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/gamelift_fleet#script_id GameliftFleet#script_id}. |
-| <code><a href="#@cdktn/provider-aws.gameliftFleet.GameliftFleetConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/gamelift_fleet#tags GameliftFleet#tags}. |
-| <code><a href="#@cdktn/provider-aws.gameliftFleet.GameliftFleetConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/gamelift_fleet#tags_all GameliftFleet#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.gameliftFleet.GameliftFleetConfig.property.scriptId">ScriptId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/gamelift_fleet#script_id GameliftFleet#script_id}. |
+| <code><a href="#@cdktn/provider-aws.gameliftFleet.GameliftFleetConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/gamelift_fleet#tags GameliftFleet#tags}. |
+| <code><a href="#@cdktn/provider-aws.gameliftFleet.GameliftFleetConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/gamelift_fleet#tags_all GameliftFleet#tags_all}. |
 | <code><a href="#@cdktn/provider-aws.gameliftFleet.GameliftFleetConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.gameliftFleet.GameliftFleetTimeouts">GameliftFleetTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1490,7 +1490,7 @@ Ec2InstanceType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/gamelift_fleet#ec2_instance_type GameliftFleet#ec2_instance_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/gamelift_fleet#ec2_instance_type GameliftFleet#ec2_instance_type}.
 
 ---
 
@@ -1502,7 +1502,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/gamelift_fleet#name GameliftFleet#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/gamelift_fleet#name GameliftFleet#name}.
 
 ---
 
@@ -1514,7 +1514,7 @@ BuildId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/gamelift_fleet#build_id GameliftFleet#build_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/gamelift_fleet#build_id GameliftFleet#build_id}.
 
 ---
 
@@ -1528,7 +1528,7 @@ CertificateConfiguration GameliftFleetCertificateConfiguration
 
 certificate_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/gamelift_fleet#certificate_configuration GameliftFleet#certificate_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/gamelift_fleet#certificate_configuration GameliftFleet#certificate_configuration}
 
 ---
 
@@ -1540,7 +1540,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/gamelift_fleet#description GameliftFleet#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/gamelift_fleet#description GameliftFleet#description}.
 
 ---
 
@@ -1554,7 +1554,7 @@ Ec2InboundPermission interface{}
 
 ec2_inbound_permission block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/gamelift_fleet#ec2_inbound_permission GameliftFleet#ec2_inbound_permission}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/gamelift_fleet#ec2_inbound_permission GameliftFleet#ec2_inbound_permission}
 
 ---
 
@@ -1566,7 +1566,7 @@ FleetType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/gamelift_fleet#fleet_type GameliftFleet#fleet_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/gamelift_fleet#fleet_type GameliftFleet#fleet_type}.
 
 ---
 
@@ -1578,7 +1578,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/gamelift_fleet#id GameliftFleet#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/gamelift_fleet#id GameliftFleet#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1593,7 +1593,7 @@ InstanceRoleArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/gamelift_fleet#instance_role_arn GameliftFleet#instance_role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/gamelift_fleet#instance_role_arn GameliftFleet#instance_role_arn}.
 
 ---
 
@@ -1605,7 +1605,7 @@ MetricGroups *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/gamelift_fleet#metric_groups GameliftFleet#metric_groups}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/gamelift_fleet#metric_groups GameliftFleet#metric_groups}.
 
 ---
 
@@ -1617,7 +1617,7 @@ NewGameSessionProtectionPolicy *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/gamelift_fleet#new_game_session_protection_policy GameliftFleet#new_game_session_protection_policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/gamelift_fleet#new_game_session_protection_policy GameliftFleet#new_game_session_protection_policy}.
 
 ---
 
@@ -1631,7 +1631,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/gamelift_fleet#region GameliftFleet#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/gamelift_fleet#region GameliftFleet#region}
 
 ---
 
@@ -1645,7 +1645,7 @@ ResourceCreationLimitPolicy GameliftFleetResourceCreationLimitPolicy
 
 resource_creation_limit_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/gamelift_fleet#resource_creation_limit_policy GameliftFleet#resource_creation_limit_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/gamelift_fleet#resource_creation_limit_policy GameliftFleet#resource_creation_limit_policy}
 
 ---
 
@@ -1659,7 +1659,7 @@ RuntimeConfiguration GameliftFleetRuntimeConfiguration
 
 runtime_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/gamelift_fleet#runtime_configuration GameliftFleet#runtime_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/gamelift_fleet#runtime_configuration GameliftFleet#runtime_configuration}
 
 ---
 
@@ -1671,7 +1671,7 @@ ScriptId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/gamelift_fleet#script_id GameliftFleet#script_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/gamelift_fleet#script_id GameliftFleet#script_id}.
 
 ---
 
@@ -1683,7 +1683,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/gamelift_fleet#tags GameliftFleet#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/gamelift_fleet#tags GameliftFleet#tags}.
 
 ---
 
@@ -1695,7 +1695,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/gamelift_fleet#tags_all GameliftFleet#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/gamelift_fleet#tags_all GameliftFleet#tags_all}.
 
 ---
 
@@ -1709,7 +1709,7 @@ Timeouts GameliftFleetTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/gamelift_fleet#timeouts GameliftFleet#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/gamelift_fleet#timeouts GameliftFleet#timeouts}
 
 ---
 
@@ -1732,10 +1732,10 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/gameliftfleet"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.gameliftFleet.GameliftFleetEc2InboundPermission.property.fromPort">FromPort</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/gamelift_fleet#from_port GameliftFleet#from_port}. |
-| <code><a href="#@cdktn/provider-aws.gameliftFleet.GameliftFleetEc2InboundPermission.property.ipRange">IpRange</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/gamelift_fleet#ip_range GameliftFleet#ip_range}. |
-| <code><a href="#@cdktn/provider-aws.gameliftFleet.GameliftFleetEc2InboundPermission.property.protocol">Protocol</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/gamelift_fleet#protocol GameliftFleet#protocol}. |
-| <code><a href="#@cdktn/provider-aws.gameliftFleet.GameliftFleetEc2InboundPermission.property.toPort">ToPort</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/gamelift_fleet#to_port GameliftFleet#to_port}. |
+| <code><a href="#@cdktn/provider-aws.gameliftFleet.GameliftFleetEc2InboundPermission.property.fromPort">FromPort</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/gamelift_fleet#from_port GameliftFleet#from_port}. |
+| <code><a href="#@cdktn/provider-aws.gameliftFleet.GameliftFleetEc2InboundPermission.property.ipRange">IpRange</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/gamelift_fleet#ip_range GameliftFleet#ip_range}. |
+| <code><a href="#@cdktn/provider-aws.gameliftFleet.GameliftFleetEc2InboundPermission.property.protocol">Protocol</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/gamelift_fleet#protocol GameliftFleet#protocol}. |
+| <code><a href="#@cdktn/provider-aws.gameliftFleet.GameliftFleetEc2InboundPermission.property.toPort">ToPort</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/gamelift_fleet#to_port GameliftFleet#to_port}. |
 
 ---
 
@@ -1747,7 +1747,7 @@ FromPort *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/gamelift_fleet#from_port GameliftFleet#from_port}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/gamelift_fleet#from_port GameliftFleet#from_port}.
 
 ---
 
@@ -1759,7 +1759,7 @@ IpRange *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/gamelift_fleet#ip_range GameliftFleet#ip_range}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/gamelift_fleet#ip_range GameliftFleet#ip_range}.
 
 ---
 
@@ -1771,7 +1771,7 @@ Protocol *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/gamelift_fleet#protocol GameliftFleet#protocol}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/gamelift_fleet#protocol GameliftFleet#protocol}.
 
 ---
 
@@ -1783,7 +1783,7 @@ ToPort *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/gamelift_fleet#to_port GameliftFleet#to_port}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/gamelift_fleet#to_port GameliftFleet#to_port}.
 
 ---
 
@@ -1804,8 +1804,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/gameliftfleet"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.gameliftFleet.GameliftFleetResourceCreationLimitPolicy.property.newGameSessionsPerCreator">NewGameSessionsPerCreator</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/gamelift_fleet#new_game_sessions_per_creator GameliftFleet#new_game_sessions_per_creator}. |
-| <code><a href="#@cdktn/provider-aws.gameliftFleet.GameliftFleetResourceCreationLimitPolicy.property.policyPeriodInMinutes">PolicyPeriodInMinutes</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/gamelift_fleet#policy_period_in_minutes GameliftFleet#policy_period_in_minutes}. |
+| <code><a href="#@cdktn/provider-aws.gameliftFleet.GameliftFleetResourceCreationLimitPolicy.property.newGameSessionsPerCreator">NewGameSessionsPerCreator</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/gamelift_fleet#new_game_sessions_per_creator GameliftFleet#new_game_sessions_per_creator}. |
+| <code><a href="#@cdktn/provider-aws.gameliftFleet.GameliftFleetResourceCreationLimitPolicy.property.policyPeriodInMinutes">PolicyPeriodInMinutes</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/gamelift_fleet#policy_period_in_minutes GameliftFleet#policy_period_in_minutes}. |
 
 ---
 
@@ -1817,7 +1817,7 @@ NewGameSessionsPerCreator *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/gamelift_fleet#new_game_sessions_per_creator GameliftFleet#new_game_sessions_per_creator}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/gamelift_fleet#new_game_sessions_per_creator GameliftFleet#new_game_sessions_per_creator}.
 
 ---
 
@@ -1829,7 +1829,7 @@ PolicyPeriodInMinutes *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/gamelift_fleet#policy_period_in_minutes GameliftFleet#policy_period_in_minutes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/gamelift_fleet#policy_period_in_minutes GameliftFleet#policy_period_in_minutes}.
 
 ---
 
@@ -1851,8 +1851,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/gameliftfleet"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.gameliftFleet.GameliftFleetRuntimeConfiguration.property.gameSessionActivationTimeoutSeconds">GameSessionActivationTimeoutSeconds</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/gamelift_fleet#game_session_activation_timeout_seconds GameliftFleet#game_session_activation_timeout_seconds}. |
-| <code><a href="#@cdktn/provider-aws.gameliftFleet.GameliftFleetRuntimeConfiguration.property.maxConcurrentGameSessionActivations">MaxConcurrentGameSessionActivations</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/gamelift_fleet#max_concurrent_game_session_activations GameliftFleet#max_concurrent_game_session_activations}. |
+| <code><a href="#@cdktn/provider-aws.gameliftFleet.GameliftFleetRuntimeConfiguration.property.gameSessionActivationTimeoutSeconds">GameSessionActivationTimeoutSeconds</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/gamelift_fleet#game_session_activation_timeout_seconds GameliftFleet#game_session_activation_timeout_seconds}. |
+| <code><a href="#@cdktn/provider-aws.gameliftFleet.GameliftFleetRuntimeConfiguration.property.maxConcurrentGameSessionActivations">MaxConcurrentGameSessionActivations</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/gamelift_fleet#max_concurrent_game_session_activations GameliftFleet#max_concurrent_game_session_activations}. |
 | <code><a href="#@cdktn/provider-aws.gameliftFleet.GameliftFleetRuntimeConfiguration.property.serverProcess">ServerProcess</a></code> | <code>interface{}</code> | server_process block. |
 
 ---
@@ -1865,7 +1865,7 @@ GameSessionActivationTimeoutSeconds *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/gamelift_fleet#game_session_activation_timeout_seconds GameliftFleet#game_session_activation_timeout_seconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/gamelift_fleet#game_session_activation_timeout_seconds GameliftFleet#game_session_activation_timeout_seconds}.
 
 ---
 
@@ -1877,7 +1877,7 @@ MaxConcurrentGameSessionActivations *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/gamelift_fleet#max_concurrent_game_session_activations GameliftFleet#max_concurrent_game_session_activations}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/gamelift_fleet#max_concurrent_game_session_activations GameliftFleet#max_concurrent_game_session_activations}.
 
 ---
 
@@ -1891,7 +1891,7 @@ ServerProcess interface{}
 
 server_process block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/gamelift_fleet#server_process GameliftFleet#server_process}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/gamelift_fleet#server_process GameliftFleet#server_process}
 
 ---
 
@@ -1913,9 +1913,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/gameliftfleet"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.gameliftFleet.GameliftFleetRuntimeConfigurationServerProcess.property.concurrentExecutions">ConcurrentExecutions</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/gamelift_fleet#concurrent_executions GameliftFleet#concurrent_executions}. |
-| <code><a href="#@cdktn/provider-aws.gameliftFleet.GameliftFleetRuntimeConfigurationServerProcess.property.launchPath">LaunchPath</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/gamelift_fleet#launch_path GameliftFleet#launch_path}. |
-| <code><a href="#@cdktn/provider-aws.gameliftFleet.GameliftFleetRuntimeConfigurationServerProcess.property.parameters">Parameters</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/gamelift_fleet#parameters GameliftFleet#parameters}. |
+| <code><a href="#@cdktn/provider-aws.gameliftFleet.GameliftFleetRuntimeConfigurationServerProcess.property.concurrentExecutions">ConcurrentExecutions</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/gamelift_fleet#concurrent_executions GameliftFleet#concurrent_executions}. |
+| <code><a href="#@cdktn/provider-aws.gameliftFleet.GameliftFleetRuntimeConfigurationServerProcess.property.launchPath">LaunchPath</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/gamelift_fleet#launch_path GameliftFleet#launch_path}. |
+| <code><a href="#@cdktn/provider-aws.gameliftFleet.GameliftFleetRuntimeConfigurationServerProcess.property.parameters">Parameters</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/gamelift_fleet#parameters GameliftFleet#parameters}. |
 
 ---
 
@@ -1927,7 +1927,7 @@ ConcurrentExecutions *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/gamelift_fleet#concurrent_executions GameliftFleet#concurrent_executions}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/gamelift_fleet#concurrent_executions GameliftFleet#concurrent_executions}.
 
 ---
 
@@ -1939,7 +1939,7 @@ LaunchPath *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/gamelift_fleet#launch_path GameliftFleet#launch_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/gamelift_fleet#launch_path GameliftFleet#launch_path}.
 
 ---
 
@@ -1951,7 +1951,7 @@ Parameters *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/gamelift_fleet#parameters GameliftFleet#parameters}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/gamelift_fleet#parameters GameliftFleet#parameters}.
 
 ---
 
@@ -1972,8 +1972,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/gameliftfleet"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.gameliftFleet.GameliftFleetTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/gamelift_fleet#create GameliftFleet#create}. |
-| <code><a href="#@cdktn/provider-aws.gameliftFleet.GameliftFleetTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/gamelift_fleet#delete GameliftFleet#delete}. |
+| <code><a href="#@cdktn/provider-aws.gameliftFleet.GameliftFleetTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/gamelift_fleet#create GameliftFleet#create}. |
+| <code><a href="#@cdktn/provider-aws.gameliftFleet.GameliftFleetTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/gamelift_fleet#delete GameliftFleet#delete}. |
 
 ---
 
@@ -1985,7 +1985,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/gamelift_fleet#create GameliftFleet#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/gamelift_fleet#create GameliftFleet#create}.
 
 ---
 
@@ -1997,7 +1997,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/gamelift_fleet#delete GameliftFleet#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/gamelift_fleet#delete GameliftFleet#delete}.
 
 ---
 

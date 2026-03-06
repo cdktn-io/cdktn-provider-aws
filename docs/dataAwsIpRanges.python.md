@@ -4,7 +4,7 @@
 
 ### DataAwsIpRanges <a name="DataAwsIpRanges" id="@cdktn/provider-aws.dataAwsIpRanges.DataAwsIpRanges"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/data-sources/ip_ranges aws_ip_ranges}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/data-sources/ip_ranges aws_ip_ranges}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsIpRanges.DataAwsIpRanges.Initializer"></a>
 
@@ -39,10 +39,10 @@ dataAwsIpRanges.DataAwsIpRanges(
 | <code><a href="#@cdktn/provider-aws.dataAwsIpRanges.DataAwsIpRanges.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsIpRanges.DataAwsIpRanges.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsIpRanges.DataAwsIpRanges.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dataAwsIpRanges.DataAwsIpRanges.Initializer.parameter.services">services</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/data-sources/ip_ranges#services DataAwsIpRanges#services}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsIpRanges.DataAwsIpRanges.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/data-sources/ip_ranges#id DataAwsIpRanges#id}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsIpRanges.DataAwsIpRanges.Initializer.parameter.regions">regions</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/data-sources/ip_ranges#regions DataAwsIpRanges#regions}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsIpRanges.DataAwsIpRanges.Initializer.parameter.url">url</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/data-sources/ip_ranges#url DataAwsIpRanges#url}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsIpRanges.DataAwsIpRanges.Initializer.parameter.services">services</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/data-sources/ip_ranges#services DataAwsIpRanges#services}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsIpRanges.DataAwsIpRanges.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/data-sources/ip_ranges#id DataAwsIpRanges#id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsIpRanges.DataAwsIpRanges.Initializer.parameter.regions">regions</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/data-sources/ip_ranges#regions DataAwsIpRanges#regions}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsIpRanges.DataAwsIpRanges.Initializer.parameter.url">url</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/data-sources/ip_ranges#url DataAwsIpRanges#url}. |
 
 ---
 
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/data-sources/ip_ranges#services DataAwsIpRanges#services}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/data-sources/ip_ranges#services DataAwsIpRanges#services}.
 
 ---
 
@@ -118,7 +118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/data-sources/ip_ranges#id DataAwsIpRanges#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/data-sources/ip_ranges#id DataAwsIpRanges#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -129,7 +129,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/data-sources/ip_ranges#regions DataAwsIpRanges#regions}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/data-sources/ip_ranges#regions DataAwsIpRanges#regions}.
 
 ---
 
@@ -137,7 +137,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/data-sources/ip_ranges#url DataAwsIpRanges#url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/data-sources/ip_ranges#url DataAwsIpRanges#url}.
 
 ---
 
@@ -541,7 +541,7 @@ The construct id used in the generated config for the DataAwsIpRanges to import.
 
 The id of the existing DataAwsIpRanges that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/data-sources/ip_ranges#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/data-sources/ip_ranges#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -879,10 +879,10 @@ dataAwsIpRanges.DataAwsIpRangesConfig(
 | <code><a href="#@cdktn/provider-aws.dataAwsIpRanges.DataAwsIpRangesConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsIpRanges.DataAwsIpRangesConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsIpRanges.DataAwsIpRangesConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dataAwsIpRanges.DataAwsIpRangesConfig.property.services">services</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/data-sources/ip_ranges#services DataAwsIpRanges#services}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsIpRanges.DataAwsIpRangesConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/data-sources/ip_ranges#id DataAwsIpRanges#id}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsIpRanges.DataAwsIpRangesConfig.property.regions">regions</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/data-sources/ip_ranges#regions DataAwsIpRanges#regions}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsIpRanges.DataAwsIpRangesConfig.property.url">url</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/data-sources/ip_ranges#url DataAwsIpRanges#url}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsIpRanges.DataAwsIpRangesConfig.property.services">services</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/data-sources/ip_ranges#services DataAwsIpRanges#services}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsIpRanges.DataAwsIpRangesConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/data-sources/ip_ranges#id DataAwsIpRanges#id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsIpRanges.DataAwsIpRangesConfig.property.regions">regions</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/data-sources/ip_ranges#regions DataAwsIpRanges#regions}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsIpRanges.DataAwsIpRangesConfig.property.url">url</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/data-sources/ip_ranges#url DataAwsIpRanges#url}. |
 
 ---
 
@@ -964,7 +964,7 @@ services: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/data-sources/ip_ranges#services DataAwsIpRanges#services}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/data-sources/ip_ranges#services DataAwsIpRanges#services}.
 
 ---
 
@@ -976,7 +976,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/data-sources/ip_ranges#id DataAwsIpRanges#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/data-sources/ip_ranges#id DataAwsIpRanges#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -991,7 +991,7 @@ regions: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/data-sources/ip_ranges#regions DataAwsIpRanges#regions}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/data-sources/ip_ranges#regions DataAwsIpRanges#regions}.
 
 ---
 
@@ -1003,7 +1003,7 @@ url: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/data-sources/ip_ranges#url DataAwsIpRanges#url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/data-sources/ip_ranges#url DataAwsIpRanges#url}.
 
 ---
 

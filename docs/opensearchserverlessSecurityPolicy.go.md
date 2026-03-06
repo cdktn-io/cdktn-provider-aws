@@ -4,7 +4,7 @@
 
 ### OpensearchserverlessSecurityPolicy <a name="OpensearchserverlessSecurityPolicy" id="@cdktn/provider-aws.opensearchserverlessSecurityPolicy.OpensearchserverlessSecurityPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/opensearchserverless_security_policy aws_opensearchserverless_security_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/opensearchserverless_security_policy aws_opensearchserverless_security_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.opensearchserverlessSecurityPolicy.OpensearchserverlessSecurityPolicy.Initializer"></a>
 
@@ -503,7 +503,7 @@ The construct id used in the generated config for the OpensearchserverlessSecuri
 
 The id of the existing OpensearchserverlessSecurityPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/opensearchserverless_security_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/opensearchserverless_security_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -952,7 +952,7 @@ Name *string
 
 Name of the policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/opensearchserverless_security_policy#name OpensearchserverlessSecurityPolicy#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/opensearchserverless_security_policy#name OpensearchserverlessSecurityPolicy#name}
 
 ---
 
@@ -966,7 +966,7 @@ Policy *string
 
 JSON policy document to use as the content for the new policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/opensearchserverless_security_policy#policy OpensearchserverlessSecurityPolicy#policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/opensearchserverless_security_policy#policy OpensearchserverlessSecurityPolicy#policy}
 
 ---
 
@@ -980,7 +980,7 @@ Type *string
 
 Type of security policy. One of `encryption` or `network`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/opensearchserverless_security_policy#type OpensearchserverlessSecurityPolicy#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/opensearchserverless_security_policy#type OpensearchserverlessSecurityPolicy#type}
 
 ---
 
@@ -994,7 +994,7 @@ Description *string
 
 Description of the policy. Typically used to store information about the permissions defined in the policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/opensearchserverless_security_policy#description OpensearchserverlessSecurityPolicy#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/opensearchserverless_security_policy#description OpensearchserverlessSecurityPolicy#description}
 
 ---
 
@@ -1008,7 +1008,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/opensearchserverless_security_policy#region OpensearchserverlessSecurityPolicy#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/opensearchserverless_security_policy#region OpensearchserverlessSecurityPolicy#region}
 
 ---
 

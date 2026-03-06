@@ -4,7 +4,7 @@
 
 ### DataAwsOutpostsSite <a name="DataAwsOutpostsSite" id="@cdktn/provider-aws.dataAwsOutpostsSite.DataAwsOutpostsSite"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/data-sources/outposts_site aws_outposts_site}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/data-sources/outposts_site aws_outposts_site}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsOutpostsSite.DataAwsOutpostsSite.Initializer"></a>
 
@@ -408,7 +408,7 @@ The construct id used in the generated config for the DataAwsOutpostsSite to imp
 
 The id of the existing DataAwsOutpostsSite that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/data-sources/outposts_site#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/data-sources/outposts_site#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -690,8 +690,8 @@ const dataAwsOutpostsSiteConfig: dataAwsOutpostsSite.DataAwsOutpostsSiteConfig =
 | <code><a href="#@cdktn/provider-aws.dataAwsOutpostsSite.DataAwsOutpostsSiteConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsOutpostsSite.DataAwsOutpostsSiteConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsOutpostsSite.DataAwsOutpostsSiteConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dataAwsOutpostsSite.DataAwsOutpostsSiteConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/data-sources/outposts_site#id DataAwsOutpostsSite#id}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsOutpostsSite.DataAwsOutpostsSiteConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/data-sources/outposts_site#name DataAwsOutpostsSite#name}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsOutpostsSite.DataAwsOutpostsSiteConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/data-sources/outposts_site#id DataAwsOutpostsSite#id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsOutpostsSite.DataAwsOutpostsSiteConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/data-sources/outposts_site#name DataAwsOutpostsSite#name}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsOutpostsSite.DataAwsOutpostsSiteConfig.property.region">region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -774,7 +774,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/data-sources/outposts_site#id DataAwsOutpostsSite#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/data-sources/outposts_site#id DataAwsOutpostsSite#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -789,7 +789,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/data-sources/outposts_site#name DataAwsOutpostsSite#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/data-sources/outposts_site#name DataAwsOutpostsSite#name}.
 
 ---
 
@@ -803,7 +803,7 @@ public readonly region: string;
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/data-sources/outposts_site#region DataAwsOutpostsSite#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/data-sources/outposts_site#region DataAwsOutpostsSite#region}
 
 ---
 

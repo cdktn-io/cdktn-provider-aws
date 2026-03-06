@@ -4,7 +4,7 @@
 
 ### FinspaceKxEnvironment <a name="FinspaceKxEnvironment" id="@cdktn/provider-aws.finspaceKxEnvironment.FinspaceKxEnvironment"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/finspace_kx_environment aws_finspace_kx_environment}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/finspace_kx_environment aws_finspace_kx_environment}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.finspaceKxEnvironment.FinspaceKxEnvironment.Initializer"></a>
 
@@ -577,7 +577,7 @@ The construct id used in the generated config for the FinspaceKxEnvironment to i
 
 The id of the existing FinspaceKxEnvironment that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/finspace_kx_environment#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/finspace_kx_environment#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1068,13 +1068,13 @@ const finspaceKxEnvironmentConfig: finspaceKxEnvironment.FinspaceKxEnvironmentCo
 | <code><a href="#@cdktn/provider-aws.finspaceKxEnvironment.FinspaceKxEnvironmentConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.finspaceKxEnvironment.FinspaceKxEnvironmentConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.finspaceKxEnvironment.FinspaceKxEnvironmentConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.finspaceKxEnvironment.FinspaceKxEnvironmentConfig.property.kmsKeyId">kmsKeyId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/finspace_kx_environment#kms_key_id FinspaceKxEnvironment#kms_key_id}. |
-| <code><a href="#@cdktn/provider-aws.finspaceKxEnvironment.FinspaceKxEnvironmentConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/finspace_kx_environment#name FinspaceKxEnvironment#name}. |
+| <code><a href="#@cdktn/provider-aws.finspaceKxEnvironment.FinspaceKxEnvironmentConfig.property.kmsKeyId">kmsKeyId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/finspace_kx_environment#kms_key_id FinspaceKxEnvironment#kms_key_id}. |
+| <code><a href="#@cdktn/provider-aws.finspaceKxEnvironment.FinspaceKxEnvironmentConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/finspace_kx_environment#name FinspaceKxEnvironment#name}. |
 | <code><a href="#@cdktn/provider-aws.finspaceKxEnvironment.FinspaceKxEnvironmentConfig.property.customDnsConfiguration">customDnsConfiguration</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.finspaceKxEnvironment.FinspaceKxEnvironmentCustomDnsConfiguration">FinspaceKxEnvironmentCustomDnsConfiguration</a>[]</code> | custom_dns_configuration block. |
-| <code><a href="#@cdktn/provider-aws.finspaceKxEnvironment.FinspaceKxEnvironmentConfig.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/finspace_kx_environment#description FinspaceKxEnvironment#description}. |
+| <code><a href="#@cdktn/provider-aws.finspaceKxEnvironment.FinspaceKxEnvironmentConfig.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/finspace_kx_environment#description FinspaceKxEnvironment#description}. |
 | <code><a href="#@cdktn/provider-aws.finspaceKxEnvironment.FinspaceKxEnvironmentConfig.property.region">region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.finspaceKxEnvironment.FinspaceKxEnvironmentConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/finspace_kx_environment#tags FinspaceKxEnvironment#tags}. |
-| <code><a href="#@cdktn/provider-aws.finspaceKxEnvironment.FinspaceKxEnvironmentConfig.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/finspace_kx_environment#tags_all FinspaceKxEnvironment#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.finspaceKxEnvironment.FinspaceKxEnvironmentConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/finspace_kx_environment#tags FinspaceKxEnvironment#tags}. |
+| <code><a href="#@cdktn/provider-aws.finspaceKxEnvironment.FinspaceKxEnvironmentConfig.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/finspace_kx_environment#tags_all FinspaceKxEnvironment#tags_all}. |
 | <code><a href="#@cdktn/provider-aws.finspaceKxEnvironment.FinspaceKxEnvironmentConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-aws.finspaceKxEnvironment.FinspaceKxEnvironmentTimeouts">FinspaceKxEnvironmentTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-aws.finspaceKxEnvironment.FinspaceKxEnvironmentConfig.property.transitGatewayConfiguration">transitGatewayConfiguration</a></code> | <code><a href="#@cdktn/provider-aws.finspaceKxEnvironment.FinspaceKxEnvironmentTransitGatewayConfiguration">FinspaceKxEnvironmentTransitGatewayConfiguration</a></code> | transit_gateway_configuration block. |
 
@@ -1158,7 +1158,7 @@ public readonly kmsKeyId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/finspace_kx_environment#kms_key_id FinspaceKxEnvironment#kms_key_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/finspace_kx_environment#kms_key_id FinspaceKxEnvironment#kms_key_id}.
 
 ---
 
@@ -1170,7 +1170,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/finspace_kx_environment#name FinspaceKxEnvironment#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/finspace_kx_environment#name FinspaceKxEnvironment#name}.
 
 ---
 
@@ -1184,7 +1184,7 @@ public readonly customDnsConfiguration: IResolvable | FinspaceKxEnvironmentCusto
 
 custom_dns_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/finspace_kx_environment#custom_dns_configuration FinspaceKxEnvironment#custom_dns_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/finspace_kx_environment#custom_dns_configuration FinspaceKxEnvironment#custom_dns_configuration}
 
 ---
 
@@ -1196,7 +1196,7 @@ public readonly description: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/finspace_kx_environment#description FinspaceKxEnvironment#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/finspace_kx_environment#description FinspaceKxEnvironment#description}.
 
 ---
 
@@ -1210,7 +1210,7 @@ public readonly region: string;
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/finspace_kx_environment#region FinspaceKxEnvironment#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/finspace_kx_environment#region FinspaceKxEnvironment#region}
 
 ---
 
@@ -1222,7 +1222,7 @@ public readonly tags: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/finspace_kx_environment#tags FinspaceKxEnvironment#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/finspace_kx_environment#tags FinspaceKxEnvironment#tags}.
 
 ---
 
@@ -1234,7 +1234,7 @@ public readonly tagsAll: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/finspace_kx_environment#tags_all FinspaceKxEnvironment#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/finspace_kx_environment#tags_all FinspaceKxEnvironment#tags_all}.
 
 ---
 
@@ -1248,7 +1248,7 @@ public readonly timeouts: FinspaceKxEnvironmentTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/finspace_kx_environment#timeouts FinspaceKxEnvironment#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/finspace_kx_environment#timeouts FinspaceKxEnvironment#timeouts}
 
 ---
 
@@ -1262,7 +1262,7 @@ public readonly transitGatewayConfiguration: FinspaceKxEnvironmentTransitGateway
 
 transit_gateway_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/finspace_kx_environment#transit_gateway_configuration FinspaceKxEnvironment#transit_gateway_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/finspace_kx_environment#transit_gateway_configuration FinspaceKxEnvironment#transit_gateway_configuration}
 
 ---
 
@@ -1280,8 +1280,8 @@ const finspaceKxEnvironmentCustomDnsConfiguration: finspaceKxEnvironment.Finspac
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.finspaceKxEnvironment.FinspaceKxEnvironmentCustomDnsConfiguration.property.customDnsServerIp">customDnsServerIp</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/finspace_kx_environment#custom_dns_server_ip FinspaceKxEnvironment#custom_dns_server_ip}. |
-| <code><a href="#@cdktn/provider-aws.finspaceKxEnvironment.FinspaceKxEnvironmentCustomDnsConfiguration.property.customDnsServerName">customDnsServerName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/finspace_kx_environment#custom_dns_server_name FinspaceKxEnvironment#custom_dns_server_name}. |
+| <code><a href="#@cdktn/provider-aws.finspaceKxEnvironment.FinspaceKxEnvironmentCustomDnsConfiguration.property.customDnsServerIp">customDnsServerIp</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/finspace_kx_environment#custom_dns_server_ip FinspaceKxEnvironment#custom_dns_server_ip}. |
+| <code><a href="#@cdktn/provider-aws.finspaceKxEnvironment.FinspaceKxEnvironmentCustomDnsConfiguration.property.customDnsServerName">customDnsServerName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/finspace_kx_environment#custom_dns_server_name FinspaceKxEnvironment#custom_dns_server_name}. |
 
 ---
 
@@ -1293,7 +1293,7 @@ public readonly customDnsServerIp: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/finspace_kx_environment#custom_dns_server_ip FinspaceKxEnvironment#custom_dns_server_ip}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/finspace_kx_environment#custom_dns_server_ip FinspaceKxEnvironment#custom_dns_server_ip}.
 
 ---
 
@@ -1305,7 +1305,7 @@ public readonly customDnsServerName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/finspace_kx_environment#custom_dns_server_name FinspaceKxEnvironment#custom_dns_server_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/finspace_kx_environment#custom_dns_server_name FinspaceKxEnvironment#custom_dns_server_name}.
 
 ---
 
@@ -1323,9 +1323,9 @@ const finspaceKxEnvironmentTimeouts: finspaceKxEnvironment.FinspaceKxEnvironment
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.finspaceKxEnvironment.FinspaceKxEnvironmentTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/finspace_kx_environment#create FinspaceKxEnvironment#create}. |
-| <code><a href="#@cdktn/provider-aws.finspaceKxEnvironment.FinspaceKxEnvironmentTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/finspace_kx_environment#delete FinspaceKxEnvironment#delete}. |
-| <code><a href="#@cdktn/provider-aws.finspaceKxEnvironment.FinspaceKxEnvironmentTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/finspace_kx_environment#update FinspaceKxEnvironment#update}. |
+| <code><a href="#@cdktn/provider-aws.finspaceKxEnvironment.FinspaceKxEnvironmentTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/finspace_kx_environment#create FinspaceKxEnvironment#create}. |
+| <code><a href="#@cdktn/provider-aws.finspaceKxEnvironment.FinspaceKxEnvironmentTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/finspace_kx_environment#delete FinspaceKxEnvironment#delete}. |
+| <code><a href="#@cdktn/provider-aws.finspaceKxEnvironment.FinspaceKxEnvironmentTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/finspace_kx_environment#update FinspaceKxEnvironment#update}. |
 
 ---
 
@@ -1337,7 +1337,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/finspace_kx_environment#create FinspaceKxEnvironment#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/finspace_kx_environment#create FinspaceKxEnvironment#create}.
 
 ---
 
@@ -1349,7 +1349,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/finspace_kx_environment#delete FinspaceKxEnvironment#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/finspace_kx_environment#delete FinspaceKxEnvironment#delete}.
 
 ---
 
@@ -1361,7 +1361,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/finspace_kx_environment#update FinspaceKxEnvironment#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/finspace_kx_environment#update FinspaceKxEnvironment#update}.
 
 ---
 
@@ -1379,8 +1379,8 @@ const finspaceKxEnvironmentTransitGatewayConfiguration: finspaceKxEnvironment.Fi
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.finspaceKxEnvironment.FinspaceKxEnvironmentTransitGatewayConfiguration.property.routableCidrSpace">routableCidrSpace</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/finspace_kx_environment#routable_cidr_space FinspaceKxEnvironment#routable_cidr_space}. |
-| <code><a href="#@cdktn/provider-aws.finspaceKxEnvironment.FinspaceKxEnvironmentTransitGatewayConfiguration.property.transitGatewayId">transitGatewayId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/finspace_kx_environment#transit_gateway_id FinspaceKxEnvironment#transit_gateway_id}. |
+| <code><a href="#@cdktn/provider-aws.finspaceKxEnvironment.FinspaceKxEnvironmentTransitGatewayConfiguration.property.routableCidrSpace">routableCidrSpace</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/finspace_kx_environment#routable_cidr_space FinspaceKxEnvironment#routable_cidr_space}. |
+| <code><a href="#@cdktn/provider-aws.finspaceKxEnvironment.FinspaceKxEnvironmentTransitGatewayConfiguration.property.transitGatewayId">transitGatewayId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/finspace_kx_environment#transit_gateway_id FinspaceKxEnvironment#transit_gateway_id}. |
 | <code><a href="#@cdktn/provider-aws.finspaceKxEnvironment.FinspaceKxEnvironmentTransitGatewayConfiguration.property.attachmentNetworkAclConfiguration">attachmentNetworkAclConfiguration</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.finspaceKxEnvironment.FinspaceKxEnvironmentTransitGatewayConfigurationAttachmentNetworkAclConfiguration">FinspaceKxEnvironmentTransitGatewayConfigurationAttachmentNetworkAclConfiguration</a>[]</code> | attachment_network_acl_configuration block. |
 
 ---
@@ -1393,7 +1393,7 @@ public readonly routableCidrSpace: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/finspace_kx_environment#routable_cidr_space FinspaceKxEnvironment#routable_cidr_space}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/finspace_kx_environment#routable_cidr_space FinspaceKxEnvironment#routable_cidr_space}.
 
 ---
 
@@ -1405,7 +1405,7 @@ public readonly transitGatewayId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/finspace_kx_environment#transit_gateway_id FinspaceKxEnvironment#transit_gateway_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/finspace_kx_environment#transit_gateway_id FinspaceKxEnvironment#transit_gateway_id}.
 
 ---
 
@@ -1419,7 +1419,7 @@ public readonly attachmentNetworkAclConfiguration: IResolvable | FinspaceKxEnvir
 
 attachment_network_acl_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/finspace_kx_environment#attachment_network_acl_configuration FinspaceKxEnvironment#attachment_network_acl_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/finspace_kx_environment#attachment_network_acl_configuration FinspaceKxEnvironment#attachment_network_acl_configuration}
 
 ---
 
@@ -1437,10 +1437,10 @@ const finspaceKxEnvironmentTransitGatewayConfigurationAttachmentNetworkAclConfig
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.finspaceKxEnvironment.FinspaceKxEnvironmentTransitGatewayConfigurationAttachmentNetworkAclConfiguration.property.cidrBlock">cidrBlock</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/finspace_kx_environment#cidr_block FinspaceKxEnvironment#cidr_block}. |
-| <code><a href="#@cdktn/provider-aws.finspaceKxEnvironment.FinspaceKxEnvironmentTransitGatewayConfigurationAttachmentNetworkAclConfiguration.property.protocol">protocol</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/finspace_kx_environment#protocol FinspaceKxEnvironment#protocol}. |
-| <code><a href="#@cdktn/provider-aws.finspaceKxEnvironment.FinspaceKxEnvironmentTransitGatewayConfigurationAttachmentNetworkAclConfiguration.property.ruleAction">ruleAction</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/finspace_kx_environment#rule_action FinspaceKxEnvironment#rule_action}. |
-| <code><a href="#@cdktn/provider-aws.finspaceKxEnvironment.FinspaceKxEnvironmentTransitGatewayConfigurationAttachmentNetworkAclConfiguration.property.ruleNumber">ruleNumber</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/finspace_kx_environment#rule_number FinspaceKxEnvironment#rule_number}. |
+| <code><a href="#@cdktn/provider-aws.finspaceKxEnvironment.FinspaceKxEnvironmentTransitGatewayConfigurationAttachmentNetworkAclConfiguration.property.cidrBlock">cidrBlock</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/finspace_kx_environment#cidr_block FinspaceKxEnvironment#cidr_block}. |
+| <code><a href="#@cdktn/provider-aws.finspaceKxEnvironment.FinspaceKxEnvironmentTransitGatewayConfigurationAttachmentNetworkAclConfiguration.property.protocol">protocol</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/finspace_kx_environment#protocol FinspaceKxEnvironment#protocol}. |
+| <code><a href="#@cdktn/provider-aws.finspaceKxEnvironment.FinspaceKxEnvironmentTransitGatewayConfigurationAttachmentNetworkAclConfiguration.property.ruleAction">ruleAction</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/finspace_kx_environment#rule_action FinspaceKxEnvironment#rule_action}. |
+| <code><a href="#@cdktn/provider-aws.finspaceKxEnvironment.FinspaceKxEnvironmentTransitGatewayConfigurationAttachmentNetworkAclConfiguration.property.ruleNumber">ruleNumber</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/finspace_kx_environment#rule_number FinspaceKxEnvironment#rule_number}. |
 | <code><a href="#@cdktn/provider-aws.finspaceKxEnvironment.FinspaceKxEnvironmentTransitGatewayConfigurationAttachmentNetworkAclConfiguration.property.icmpTypeCode">icmpTypeCode</a></code> | <code><a href="#@cdktn/provider-aws.finspaceKxEnvironment.FinspaceKxEnvironmentTransitGatewayConfigurationAttachmentNetworkAclConfigurationIcmpTypeCode">FinspaceKxEnvironmentTransitGatewayConfigurationAttachmentNetworkAclConfigurationIcmpTypeCode</a></code> | icmp_type_code block. |
 | <code><a href="#@cdktn/provider-aws.finspaceKxEnvironment.FinspaceKxEnvironmentTransitGatewayConfigurationAttachmentNetworkAclConfiguration.property.portRange">portRange</a></code> | <code><a href="#@cdktn/provider-aws.finspaceKxEnvironment.FinspaceKxEnvironmentTransitGatewayConfigurationAttachmentNetworkAclConfigurationPortRange">FinspaceKxEnvironmentTransitGatewayConfigurationAttachmentNetworkAclConfigurationPortRange</a></code> | port_range block. |
 
@@ -1454,7 +1454,7 @@ public readonly cidrBlock: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/finspace_kx_environment#cidr_block FinspaceKxEnvironment#cidr_block}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/finspace_kx_environment#cidr_block FinspaceKxEnvironment#cidr_block}.
 
 ---
 
@@ -1466,7 +1466,7 @@ public readonly protocol: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/finspace_kx_environment#protocol FinspaceKxEnvironment#protocol}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/finspace_kx_environment#protocol FinspaceKxEnvironment#protocol}.
 
 ---
 
@@ -1478,7 +1478,7 @@ public readonly ruleAction: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/finspace_kx_environment#rule_action FinspaceKxEnvironment#rule_action}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/finspace_kx_environment#rule_action FinspaceKxEnvironment#rule_action}.
 
 ---
 
@@ -1490,7 +1490,7 @@ public readonly ruleNumber: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/finspace_kx_environment#rule_number FinspaceKxEnvironment#rule_number}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/finspace_kx_environment#rule_number FinspaceKxEnvironment#rule_number}.
 
 ---
 
@@ -1504,7 +1504,7 @@ public readonly icmpTypeCode: FinspaceKxEnvironmentTransitGatewayConfigurationAt
 
 icmp_type_code block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/finspace_kx_environment#icmp_type_code FinspaceKxEnvironment#icmp_type_code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/finspace_kx_environment#icmp_type_code FinspaceKxEnvironment#icmp_type_code}
 
 ---
 
@@ -1518,7 +1518,7 @@ public readonly portRange: FinspaceKxEnvironmentTransitGatewayConfigurationAttac
 
 port_range block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/finspace_kx_environment#port_range FinspaceKxEnvironment#port_range}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/finspace_kx_environment#port_range FinspaceKxEnvironment#port_range}
 
 ---
 
@@ -1536,8 +1536,8 @@ const finspaceKxEnvironmentTransitGatewayConfigurationAttachmentNetworkAclConfig
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.finspaceKxEnvironment.FinspaceKxEnvironmentTransitGatewayConfigurationAttachmentNetworkAclConfigurationIcmpTypeCode.property.code">code</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/finspace_kx_environment#code FinspaceKxEnvironment#code}. |
-| <code><a href="#@cdktn/provider-aws.finspaceKxEnvironment.FinspaceKxEnvironmentTransitGatewayConfigurationAttachmentNetworkAclConfigurationIcmpTypeCode.property.type">type</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/finspace_kx_environment#type FinspaceKxEnvironment#type}. |
+| <code><a href="#@cdktn/provider-aws.finspaceKxEnvironment.FinspaceKxEnvironmentTransitGatewayConfigurationAttachmentNetworkAclConfigurationIcmpTypeCode.property.code">code</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/finspace_kx_environment#code FinspaceKxEnvironment#code}. |
+| <code><a href="#@cdktn/provider-aws.finspaceKxEnvironment.FinspaceKxEnvironmentTransitGatewayConfigurationAttachmentNetworkAclConfigurationIcmpTypeCode.property.type">type</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/finspace_kx_environment#type FinspaceKxEnvironment#type}. |
 
 ---
 
@@ -1549,7 +1549,7 @@ public readonly code: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/finspace_kx_environment#code FinspaceKxEnvironment#code}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/finspace_kx_environment#code FinspaceKxEnvironment#code}.
 
 ---
 
@@ -1561,7 +1561,7 @@ public readonly type: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/finspace_kx_environment#type FinspaceKxEnvironment#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/finspace_kx_environment#type FinspaceKxEnvironment#type}.
 
 ---
 
@@ -1579,8 +1579,8 @@ const finspaceKxEnvironmentTransitGatewayConfigurationAttachmentNetworkAclConfig
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.finspaceKxEnvironment.FinspaceKxEnvironmentTransitGatewayConfigurationAttachmentNetworkAclConfigurationPortRange.property.from">from</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/finspace_kx_environment#from FinspaceKxEnvironment#from}. |
-| <code><a href="#@cdktn/provider-aws.finspaceKxEnvironment.FinspaceKxEnvironmentTransitGatewayConfigurationAttachmentNetworkAclConfigurationPortRange.property.to">to</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/finspace_kx_environment#to FinspaceKxEnvironment#to}. |
+| <code><a href="#@cdktn/provider-aws.finspaceKxEnvironment.FinspaceKxEnvironmentTransitGatewayConfigurationAttachmentNetworkAclConfigurationPortRange.property.from">from</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/finspace_kx_environment#from FinspaceKxEnvironment#from}. |
+| <code><a href="#@cdktn/provider-aws.finspaceKxEnvironment.FinspaceKxEnvironmentTransitGatewayConfigurationAttachmentNetworkAclConfigurationPortRange.property.to">to</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/finspace_kx_environment#to FinspaceKxEnvironment#to}. |
 
 ---
 
@@ -1592,7 +1592,7 @@ public readonly from: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/finspace_kx_environment#from FinspaceKxEnvironment#from}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/finspace_kx_environment#from FinspaceKxEnvironment#from}.
 
 ---
 
@@ -1604,7 +1604,7 @@ public readonly to: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.0/docs/resources/finspace_kx_environment#to FinspaceKxEnvironment#to}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/finspace_kx_environment#to FinspaceKxEnvironment#to}.
 
 ---
 
