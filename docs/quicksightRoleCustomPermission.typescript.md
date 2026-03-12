@@ -4,7 +4,7 @@
 
 ### QuicksightRoleCustomPermission <a name="QuicksightRoleCustomPermission" id="@cdktn/provider-aws.quicksightRoleCustomPermission.QuicksightRoleCustomPermission"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/quicksight_role_custom_permission aws_quicksight_role_custom_permission}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/quicksight_role_custom_permission aws_quicksight_role_custom_permission}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.quicksightRoleCustomPermission.QuicksightRoleCustomPermission.Initializer"></a>
 
@@ -510,7 +510,7 @@ The construct id used in the generated config for the QuicksightRoleCustomPermis
 
 The id of the existing QuicksightRoleCustomPermission that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/quicksight_role_custom_permission#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/quicksight_role_custom_permission#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -836,10 +836,10 @@ const quicksightRoleCustomPermissionConfig: quicksightRoleCustomPermission.Quick
 | <code><a href="#@cdktn/provider-aws.quicksightRoleCustomPermission.QuicksightRoleCustomPermissionConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.quicksightRoleCustomPermission.QuicksightRoleCustomPermissionConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.quicksightRoleCustomPermission.QuicksightRoleCustomPermissionConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.quicksightRoleCustomPermission.QuicksightRoleCustomPermissionConfig.property.customPermissionsName">customPermissionsName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/quicksight_role_custom_permission#custom_permissions_name QuicksightRoleCustomPermission#custom_permissions_name}. |
-| <code><a href="#@cdktn/provider-aws.quicksightRoleCustomPermission.QuicksightRoleCustomPermissionConfig.property.role">role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/quicksight_role_custom_permission#role QuicksightRoleCustomPermission#role}. |
-| <code><a href="#@cdktn/provider-aws.quicksightRoleCustomPermission.QuicksightRoleCustomPermissionConfig.property.awsAccountId">awsAccountId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/quicksight_role_custom_permission#aws_account_id QuicksightRoleCustomPermission#aws_account_id}. |
-| <code><a href="#@cdktn/provider-aws.quicksightRoleCustomPermission.QuicksightRoleCustomPermissionConfig.property.namespace">namespace</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/quicksight_role_custom_permission#namespace QuicksightRoleCustomPermission#namespace}. |
+| <code><a href="#@cdktn/provider-aws.quicksightRoleCustomPermission.QuicksightRoleCustomPermissionConfig.property.customPermissionsName">customPermissionsName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/quicksight_role_custom_permission#custom_permissions_name QuicksightRoleCustomPermission#custom_permissions_name}. |
+| <code><a href="#@cdktn/provider-aws.quicksightRoleCustomPermission.QuicksightRoleCustomPermissionConfig.property.role">role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/quicksight_role_custom_permission#role QuicksightRoleCustomPermission#role}. |
+| <code><a href="#@cdktn/provider-aws.quicksightRoleCustomPermission.QuicksightRoleCustomPermissionConfig.property.awsAccountId">awsAccountId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/quicksight_role_custom_permission#aws_account_id QuicksightRoleCustomPermission#aws_account_id}. |
+| <code><a href="#@cdktn/provider-aws.quicksightRoleCustomPermission.QuicksightRoleCustomPermissionConfig.property.namespace">namespace</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/quicksight_role_custom_permission#namespace QuicksightRoleCustomPermission#namespace}. |
 | <code><a href="#@cdktn/provider-aws.quicksightRoleCustomPermission.QuicksightRoleCustomPermissionConfig.property.region">region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -922,7 +922,7 @@ public readonly customPermissionsName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/quicksight_role_custom_permission#custom_permissions_name QuicksightRoleCustomPermission#custom_permissions_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/quicksight_role_custom_permission#custom_permissions_name QuicksightRoleCustomPermission#custom_permissions_name}.
 
 ---
 
@@ -934,7 +934,7 @@ public readonly role: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/quicksight_role_custom_permission#role QuicksightRoleCustomPermission#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/quicksight_role_custom_permission#role QuicksightRoleCustomPermission#role}.
 
 ---
 
@@ -946,7 +946,7 @@ public readonly awsAccountId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/quicksight_role_custom_permission#aws_account_id QuicksightRoleCustomPermission#aws_account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/quicksight_role_custom_permission#aws_account_id QuicksightRoleCustomPermission#aws_account_id}.
 
 ---
 
@@ -958,7 +958,7 @@ public readonly namespace: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/quicksight_role_custom_permission#namespace QuicksightRoleCustomPermission#namespace}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/quicksight_role_custom_permission#namespace QuicksightRoleCustomPermission#namespace}.
 
 ---
 
@@ -972,7 +972,7 @@ public readonly region: string;
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/quicksight_role_custom_permission#region QuicksightRoleCustomPermission#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/quicksight_role_custom_permission#region QuicksightRoleCustomPermission#region}
 
 ---
 

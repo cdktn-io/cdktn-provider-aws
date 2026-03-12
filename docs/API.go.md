@@ -661,6 +661,7 @@ The following submodules are available:
 - [dataAwsIamInstanceProfile](./dataAwsIamInstanceProfile.go.md)
 - [dataAwsIamInstanceProfiles](./dataAwsIamInstanceProfiles.go.md)
 - [dataAwsIamOpenidConnectProvider](./dataAwsIamOpenidConnectProvider.go.md)
+- [dataAwsIamOutboundWebIdentityFederation](./dataAwsIamOutboundWebIdentityFederation.go.md)
 - [dataAwsIamPolicy](./dataAwsIamPolicy.go.md)
 - [dataAwsIamPolicyDocument](./dataAwsIamPolicyDocument.go.md)
 - [dataAwsIamPrincipalPolicySimulation](./dataAwsIamPrincipalPolicySimulation.go.md)

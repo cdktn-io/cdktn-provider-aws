@@ -661,6 +661,7 @@ The following submodules are available:
 - [dataAwsIamInstanceProfile](./dataAwsIamInstanceProfile.typescript.md)
 - [dataAwsIamInstanceProfiles](./dataAwsIamInstanceProfiles.typescript.md)
 - [dataAwsIamOpenidConnectProvider](./dataAwsIamOpenidConnectProvider.typescript.md)
+- [dataAwsIamOutboundWebIdentityFederation](./dataAwsIamOutboundWebIdentityFederation.typescript.md)
 - [dataAwsIamPolicy](./dataAwsIamPolicy.typescript.md)
 - [dataAwsIamPolicyDocument](./dataAwsIamPolicyDocument.typescript.md)
 - [dataAwsIamPrincipalPolicySimulation](./dataAwsIamPrincipalPolicySimulation.typescript.md)

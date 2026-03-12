@@ -4,7 +4,7 @@
 
 ### EcrPullTimeUpdateExclusion <a name="EcrPullTimeUpdateExclusion" id="@cdktn/provider-aws.ecrPullTimeUpdateExclusion.EcrPullTimeUpdateExclusion"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/ecr_pull_time_update_exclusion aws_ecr_pull_time_update_exclusion}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/ecr_pull_time_update_exclusion aws_ecr_pull_time_update_exclusion}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ecrPullTimeUpdateExclusion.EcrPullTimeUpdateExclusion.Initializer"></a>
 
@@ -496,7 +496,7 @@ The construct id used in the generated config for the EcrPullTimeUpdateExclusion
 
 The id of the existing EcrPullTimeUpdateExclusion that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/ecr_pull_time_update_exclusion#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/ecr_pull_time_update_exclusion#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -766,7 +766,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/ecrpulltimeupdateexclu
 | <code><a href="#@cdktn/provider-aws.ecrPullTimeUpdateExclusion.EcrPullTimeUpdateExclusionConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.ecrPullTimeUpdateExclusion.EcrPullTimeUpdateExclusionConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.ecrPullTimeUpdateExclusion.EcrPullTimeUpdateExclusionConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.ecrPullTimeUpdateExclusion.EcrPullTimeUpdateExclusionConfig.property.principalArn">PrincipalArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/ecr_pull_time_update_exclusion#principal_arn EcrPullTimeUpdateExclusion#principal_arn}. |
+| <code><a href="#@cdktn/provider-aws.ecrPullTimeUpdateExclusion.EcrPullTimeUpdateExclusionConfig.property.principalArn">PrincipalArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/ecr_pull_time_update_exclusion#principal_arn EcrPullTimeUpdateExclusion#principal_arn}. |
 | <code><a href="#@cdktn/provider-aws.ecrPullTimeUpdateExclusion.EcrPullTimeUpdateExclusionConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -849,7 +849,7 @@ PrincipalArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/ecr_pull_time_update_exclusion#principal_arn EcrPullTimeUpdateExclusion#principal_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/ecr_pull_time_update_exclusion#principal_arn EcrPullTimeUpdateExclusion#principal_arn}.
 
 ---
 
@@ -863,7 +863,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/ecr_pull_time_update_exclusion#region EcrPullTimeUpdateExclusion#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/ecr_pull_time_update_exclusion#region EcrPullTimeUpdateExclusion#region}
 
 ---
 
