@@ -4,7 +4,7 @@
 
 ### DevicefarmDevicePool <a name="DevicefarmDevicePool" id="@cdktn/provider-aws.devicefarmDevicePool.DevicefarmDevicePool"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/devicefarm_device_pool aws_devicefarm_device_pool}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/devicefarm_device_pool aws_devicefarm_device_pool}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.devicefarmDevicePool.DevicefarmDevicePool.Initializer"></a>
 
@@ -544,7 +544,7 @@ The construct id used in the generated config for the DevicefarmDevicePool to im
 
 The id of the existing DevicefarmDevicePool that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/devicefarm_device_pool#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/devicefarm_device_pool#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -997,15 +997,15 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/devicefarmdevicepool"
 | <code><a href="#@cdktn/provider-aws.devicefarmDevicePool.DevicefarmDevicePoolConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.devicefarmDevicePool.DevicefarmDevicePoolConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.devicefarmDevicePool.DevicefarmDevicePoolConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.devicefarmDevicePool.DevicefarmDevicePoolConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/devicefarm_device_pool#name DevicefarmDevicePool#name}. |
-| <code><a href="#@cdktn/provider-aws.devicefarmDevicePool.DevicefarmDevicePoolConfig.property.projectArn">ProjectArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/devicefarm_device_pool#project_arn DevicefarmDevicePool#project_arn}. |
+| <code><a href="#@cdktn/provider-aws.devicefarmDevicePool.DevicefarmDevicePoolConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/devicefarm_device_pool#name DevicefarmDevicePool#name}. |
+| <code><a href="#@cdktn/provider-aws.devicefarmDevicePool.DevicefarmDevicePoolConfig.property.projectArn">ProjectArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/devicefarm_device_pool#project_arn DevicefarmDevicePool#project_arn}. |
 | <code><a href="#@cdktn/provider-aws.devicefarmDevicePool.DevicefarmDevicePoolConfig.property.rule">Rule</a></code> | <code>interface{}</code> | rule block. |
-| <code><a href="#@cdktn/provider-aws.devicefarmDevicePool.DevicefarmDevicePoolConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/devicefarm_device_pool#description DevicefarmDevicePool#description}. |
-| <code><a href="#@cdktn/provider-aws.devicefarmDevicePool.DevicefarmDevicePoolConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/devicefarm_device_pool#id DevicefarmDevicePool#id}. |
-| <code><a href="#@cdktn/provider-aws.devicefarmDevicePool.DevicefarmDevicePoolConfig.property.maxDevices">MaxDevices</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/devicefarm_device_pool#max_devices DevicefarmDevicePool#max_devices}. |
+| <code><a href="#@cdktn/provider-aws.devicefarmDevicePool.DevicefarmDevicePoolConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/devicefarm_device_pool#description DevicefarmDevicePool#description}. |
+| <code><a href="#@cdktn/provider-aws.devicefarmDevicePool.DevicefarmDevicePoolConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/devicefarm_device_pool#id DevicefarmDevicePool#id}. |
+| <code><a href="#@cdktn/provider-aws.devicefarmDevicePool.DevicefarmDevicePoolConfig.property.maxDevices">MaxDevices</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/devicefarm_device_pool#max_devices DevicefarmDevicePool#max_devices}. |
 | <code><a href="#@cdktn/provider-aws.devicefarmDevicePool.DevicefarmDevicePoolConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.devicefarmDevicePool.DevicefarmDevicePoolConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/devicefarm_device_pool#tags DevicefarmDevicePool#tags}. |
-| <code><a href="#@cdktn/provider-aws.devicefarmDevicePool.DevicefarmDevicePoolConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/devicefarm_device_pool#tags_all DevicefarmDevicePool#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.devicefarmDevicePool.DevicefarmDevicePoolConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/devicefarm_device_pool#tags DevicefarmDevicePool#tags}. |
+| <code><a href="#@cdktn/provider-aws.devicefarmDevicePool.DevicefarmDevicePoolConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/devicefarm_device_pool#tags_all DevicefarmDevicePool#tags_all}. |
 
 ---
 
@@ -1087,7 +1087,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/devicefarm_device_pool#name DevicefarmDevicePool#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/devicefarm_device_pool#name DevicefarmDevicePool#name}.
 
 ---
 
@@ -1099,7 +1099,7 @@ ProjectArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/devicefarm_device_pool#project_arn DevicefarmDevicePool#project_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/devicefarm_device_pool#project_arn DevicefarmDevicePool#project_arn}.
 
 ---
 
@@ -1113,7 +1113,7 @@ Rule interface{}
 
 rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/devicefarm_device_pool#rule DevicefarmDevicePool#rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/devicefarm_device_pool#rule DevicefarmDevicePool#rule}
 
 ---
 
@@ -1125,7 +1125,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/devicefarm_device_pool#description DevicefarmDevicePool#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/devicefarm_device_pool#description DevicefarmDevicePool#description}.
 
 ---
 
@@ -1137,7 +1137,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/devicefarm_device_pool#id DevicefarmDevicePool#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/devicefarm_device_pool#id DevicefarmDevicePool#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1152,7 +1152,7 @@ MaxDevices *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/devicefarm_device_pool#max_devices DevicefarmDevicePool#max_devices}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/devicefarm_device_pool#max_devices DevicefarmDevicePool#max_devices}.
 
 ---
 
@@ -1166,7 +1166,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/devicefarm_device_pool#region DevicefarmDevicePool#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/devicefarm_device_pool#region DevicefarmDevicePool#region}
 
 ---
 
@@ -1178,7 +1178,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/devicefarm_device_pool#tags DevicefarmDevicePool#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/devicefarm_device_pool#tags DevicefarmDevicePool#tags}.
 
 ---
 
@@ -1190,7 +1190,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/devicefarm_device_pool#tags_all DevicefarmDevicePool#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/devicefarm_device_pool#tags_all DevicefarmDevicePool#tags_all}.
 
 ---
 
@@ -1212,9 +1212,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/devicefarmdevicepool"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.devicefarmDevicePool.DevicefarmDevicePoolRule.property.attribute">Attribute</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/devicefarm_device_pool#attribute DevicefarmDevicePool#attribute}. |
-| <code><a href="#@cdktn/provider-aws.devicefarmDevicePool.DevicefarmDevicePoolRule.property.operator">Operator</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/devicefarm_device_pool#operator DevicefarmDevicePool#operator}. |
-| <code><a href="#@cdktn/provider-aws.devicefarmDevicePool.DevicefarmDevicePoolRule.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/devicefarm_device_pool#value DevicefarmDevicePool#value}. |
+| <code><a href="#@cdktn/provider-aws.devicefarmDevicePool.DevicefarmDevicePoolRule.property.attribute">Attribute</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/devicefarm_device_pool#attribute DevicefarmDevicePool#attribute}. |
+| <code><a href="#@cdktn/provider-aws.devicefarmDevicePool.DevicefarmDevicePoolRule.property.operator">Operator</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/devicefarm_device_pool#operator DevicefarmDevicePool#operator}. |
+| <code><a href="#@cdktn/provider-aws.devicefarmDevicePool.DevicefarmDevicePoolRule.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/devicefarm_device_pool#value DevicefarmDevicePool#value}. |
 
 ---
 
@@ -1226,7 +1226,7 @@ Attribute *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/devicefarm_device_pool#attribute DevicefarmDevicePool#attribute}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/devicefarm_device_pool#attribute DevicefarmDevicePool#attribute}.
 
 ---
 
@@ -1238,7 +1238,7 @@ Operator *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/devicefarm_device_pool#operator DevicefarmDevicePool#operator}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/devicefarm_device_pool#operator DevicefarmDevicePool#operator}.
 
 ---
 
@@ -1250,7 +1250,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/devicefarm_device_pool#value DevicefarmDevicePool#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/devicefarm_device_pool#value DevicefarmDevicePool#value}.
 
 ---
 

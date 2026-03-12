@@ -1902,6 +1902,7 @@ export * as dataAwsIamGroup from './data-aws-iam-group';
 export * as dataAwsIamInstanceProfile from './data-aws-iam-instance-profile';
 export * as dataAwsIamInstanceProfiles from './data-aws-iam-instance-profiles';
 export * as dataAwsIamOpenidConnectProvider from './data-aws-iam-openid-connect-provider';
+export * as dataAwsIamOutboundWebIdentityFederation from './data-aws-iam-outbound-web-identity-federation';
 export * as dataAwsIamPolicy from './data-aws-iam-policy';
 export * as dataAwsIamPolicyDocument from './data-aws-iam-policy-document';
 export * as dataAwsIamPrincipalPolicySimulation from './data-aws-iam-principal-policy-simulation';

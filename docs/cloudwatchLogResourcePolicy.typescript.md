@@ -4,7 +4,7 @@
 
 ### CloudwatchLogResourcePolicy <a name="CloudwatchLogResourcePolicy" id="@cdktn/provider-aws.cloudwatchLogResourcePolicy.CloudwatchLogResourcePolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/cloudwatch_log_resource_policy aws_cloudwatch_log_resource_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/cloudwatch_log_resource_policy aws_cloudwatch_log_resource_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudwatchLogResourcePolicy.CloudwatchLogResourcePolicy.Initializer"></a>
 
@@ -75,7 +75,9 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogResourcePolicy.CloudwatchLogResourcePolicy.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogResourcePolicy.CloudwatchLogResourcePolicy.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogResourcePolicy.CloudwatchLogResourcePolicy.resetId">resetId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogResourcePolicy.CloudwatchLogResourcePolicy.resetPolicyName">resetPolicyName</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogResourcePolicy.CloudwatchLogResourcePolicy.resetRegion">resetRegion</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogResourcePolicy.CloudwatchLogResourcePolicy.resetResourceArn">resetResourceArn</a></code> | *No description.* |
 
 ---
 
@@ -394,10 +396,22 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 public resetId(): void
 ```
 
+##### `resetPolicyName` <a name="resetPolicyName" id="@cdktn/provider-aws.cloudwatchLogResourcePolicy.CloudwatchLogResourcePolicy.resetPolicyName"></a>
+
+```typescript
+public resetPolicyName(): void
+```
+
 ##### `resetRegion` <a name="resetRegion" id="@cdktn/provider-aws.cloudwatchLogResourcePolicy.CloudwatchLogResourcePolicy.resetRegion"></a>
 
 ```typescript
 public resetRegion(): void
+```
+
+##### `resetResourceArn` <a name="resetResourceArn" id="@cdktn/provider-aws.cloudwatchLogResourcePolicy.CloudwatchLogResourcePolicy.resetResourceArn"></a>
+
+```typescript
+public resetResourceArn(): void
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -503,7 +517,7 @@ The construct id used in the generated config for the CloudwatchLogResourcePolic
 
 The id of the existing CloudwatchLogResourcePolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/cloudwatch_log_resource_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/cloudwatch_log_resource_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -533,14 +547,18 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogResourcePolicy.CloudwatchLogResourcePolicy.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogResourcePolicy.CloudwatchLogResourcePolicy.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogResourcePolicy.CloudwatchLogResourcePolicy.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogResourcePolicy.CloudwatchLogResourcePolicy.property.policyScope">policyScope</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogResourcePolicy.CloudwatchLogResourcePolicy.property.revisionId">revisionId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogResourcePolicy.CloudwatchLogResourcePolicy.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogResourcePolicy.CloudwatchLogResourcePolicy.property.policyDocumentInput">policyDocumentInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogResourcePolicy.CloudwatchLogResourcePolicy.property.policyNameInput">policyNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogResourcePolicy.CloudwatchLogResourcePolicy.property.regionInput">regionInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogResourcePolicy.CloudwatchLogResourcePolicy.property.resourceArnInput">resourceArnInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogResourcePolicy.CloudwatchLogResourcePolicy.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogResourcePolicy.CloudwatchLogResourcePolicy.property.policyDocument">policyDocument</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogResourcePolicy.CloudwatchLogResourcePolicy.property.policyName">policyName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogResourcePolicy.CloudwatchLogResourcePolicy.property.region">region</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogResourcePolicy.CloudwatchLogResourcePolicy.property.resourceArn">resourceArn</a></code> | <code>string</code> | *No description.* |
 
 ---
 
@@ -686,6 +704,26 @@ public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteEx
 
 ---
 
+##### `policyScope`<sup>Required</sup> <a name="policyScope" id="@cdktn/provider-aws.cloudwatchLogResourcePolicy.CloudwatchLogResourcePolicy.property.policyScope"></a>
+
+```typescript
+public readonly policyScope: string;
+```
+
+- *Type:* string
+
+---
+
+##### `revisionId`<sup>Required</sup> <a name="revisionId" id="@cdktn/provider-aws.cloudwatchLogResourcePolicy.CloudwatchLogResourcePolicy.property.revisionId"></a>
+
+```typescript
+public readonly revisionId: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktn/provider-aws.cloudwatchLogResourcePolicy.CloudwatchLogResourcePolicy.property.idInput"></a>
 
 ```typescript
@@ -726,6 +764,16 @@ public readonly regionInput: string;
 
 ---
 
+##### `resourceArnInput`<sup>Optional</sup> <a name="resourceArnInput" id="@cdktn/provider-aws.cloudwatchLogResourcePolicy.CloudwatchLogResourcePolicy.property.resourceArnInput"></a>
+
+```typescript
+public readonly resourceArnInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.cloudwatchLogResourcePolicy.CloudwatchLogResourcePolicy.property.id"></a>
 
 ```typescript
@@ -760,6 +808,16 @@ public readonly policyName: string;
 
 ```typescript
 public readonly region: string;
+```
+
+- *Type:* string
+
+---
+
+##### `resourceArn`<sup>Required</sup> <a name="resourceArn" id="@cdktn/provider-aws.cloudwatchLogResourcePolicy.CloudwatchLogResourcePolicy.property.resourceArn"></a>
+
+```typescript
+public readonly resourceArn: string;
 ```
 
 - *Type:* string
@@ -807,10 +865,11 @@ const cloudwatchLogResourcePolicyConfig: cloudwatchLogResourcePolicy.CloudwatchL
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogResourcePolicy.CloudwatchLogResourcePolicyConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogResourcePolicy.CloudwatchLogResourcePolicyConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogResourcePolicy.CloudwatchLogResourcePolicyConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogResourcePolicy.CloudwatchLogResourcePolicyConfig.property.policyDocument">policyDocument</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/cloudwatch_log_resource_policy#policy_document CloudwatchLogResourcePolicy#policy_document}. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogResourcePolicy.CloudwatchLogResourcePolicyConfig.property.policyName">policyName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/cloudwatch_log_resource_policy#policy_name CloudwatchLogResourcePolicy#policy_name}. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogResourcePolicy.CloudwatchLogResourcePolicyConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/cloudwatch_log_resource_policy#id CloudwatchLogResourcePolicy#id}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogResourcePolicy.CloudwatchLogResourcePolicyConfig.property.policyDocument">policyDocument</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/cloudwatch_log_resource_policy#policy_document CloudwatchLogResourcePolicy#policy_document}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogResourcePolicy.CloudwatchLogResourcePolicyConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/cloudwatch_log_resource_policy#id CloudwatchLogResourcePolicy#id}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogResourcePolicy.CloudwatchLogResourcePolicyConfig.property.policyName">policyName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/cloudwatch_log_resource_policy#policy_name CloudwatchLogResourcePolicy#policy_name}. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogResourcePolicy.CloudwatchLogResourcePolicyConfig.property.region">region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogResourcePolicy.CloudwatchLogResourcePolicyConfig.property.resourceArn">resourceArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/cloudwatch_log_resource_policy#resource_arn CloudwatchLogResourcePolicy#resource_arn}. |
 
 ---
 
@@ -892,19 +951,7 @@ public readonly policyDocument: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/cloudwatch_log_resource_policy#policy_document CloudwatchLogResourcePolicy#policy_document}.
-
----
-
-##### `policyName`<sup>Required</sup> <a name="policyName" id="@cdktn/provider-aws.cloudwatchLogResourcePolicy.CloudwatchLogResourcePolicyConfig.property.policyName"></a>
-
-```typescript
-public readonly policyName: string;
-```
-
-- *Type:* string
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/cloudwatch_log_resource_policy#policy_name CloudwatchLogResourcePolicy#policy_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/cloudwatch_log_resource_policy#policy_document CloudwatchLogResourcePolicy#policy_document}.
 
 ---
 
@@ -916,10 +963,22 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/cloudwatch_log_resource_policy#id CloudwatchLogResourcePolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/cloudwatch_log_resource_policy#id CloudwatchLogResourcePolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `policyName`<sup>Optional</sup> <a name="policyName" id="@cdktn/provider-aws.cloudwatchLogResourcePolicy.CloudwatchLogResourcePolicyConfig.property.policyName"></a>
+
+```typescript
+public readonly policyName: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/cloudwatch_log_resource_policy#policy_name CloudwatchLogResourcePolicy#policy_name}.
 
 ---
 
@@ -933,7 +992,19 @@ public readonly region: string;
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/cloudwatch_log_resource_policy#region CloudwatchLogResourcePolicy#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/cloudwatch_log_resource_policy#region CloudwatchLogResourcePolicy#region}
+
+---
+
+##### `resourceArn`<sup>Optional</sup> <a name="resourceArn" id="@cdktn/provider-aws.cloudwatchLogResourcePolicy.CloudwatchLogResourcePolicyConfig.property.resourceArn"></a>
+
+```typescript
+public readonly resourceArn: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/cloudwatch_log_resource_policy#resource_arn CloudwatchLogResourcePolicy#resource_arn}.
 
 ---
 

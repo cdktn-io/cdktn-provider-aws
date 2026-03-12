@@ -1902,6 +1902,7 @@ Object.defineProperty(exports, 'dataAwsIamGroup', { get: function () { return re
 Object.defineProperty(exports, 'dataAwsIamInstanceProfile', { get: function () { return require('./data-aws-iam-instance-profile'); } });
 Object.defineProperty(exports, 'dataAwsIamInstanceProfiles', { get: function () { return require('./data-aws-iam-instance-profiles'); } });
 Object.defineProperty(exports, 'dataAwsIamOpenidConnectProvider', { get: function () { return require('./data-aws-iam-openid-connect-provider'); } });
+Object.defineProperty(exports, 'dataAwsIamOutboundWebIdentityFederation', { get: function () { return require('./data-aws-iam-outbound-web-identity-federation'); } });
 Object.defineProperty(exports, 'dataAwsIamPolicy', { get: function () { return require('./data-aws-iam-policy'); } });
 Object.defineProperty(exports, 'dataAwsIamPolicyDocument', { get: function () { return require('./data-aws-iam-policy-document'); } });
 Object.defineProperty(exports, 'dataAwsIamPrincipalPolicySimulation', { get: function () { return require('./data-aws-iam-principal-policy-simulation'); } });

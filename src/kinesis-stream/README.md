@@ -1,3 +1,3 @@
 # `aws_kinesis_stream`
 
-Refer to the Terraform Registry for docs: [`aws_kinesis_stream`](https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/kinesis_stream).
+Refer to the Terraform Registry for docs: [`aws_kinesis_stream`](https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/kinesis_stream).
