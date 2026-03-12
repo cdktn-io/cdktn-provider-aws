@@ -1,3 +1,3 @@
 # `aws_dax_cluster`
 
-Refer to the Terraform Registry for docs: [`aws_dax_cluster`](https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/dax_cluster).
+Refer to the Terraform Registry for docs: [`aws_dax_cluster`](https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/dax_cluster).

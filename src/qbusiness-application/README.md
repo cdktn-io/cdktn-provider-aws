@@ -1,3 +1,3 @@
 # `aws_qbusiness_application`
 
-Refer to the Terraform Registry for docs: [`aws_qbusiness_application`](https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/qbusiness_application).
+Refer to the Terraform Registry for docs: [`aws_qbusiness_application`](https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/qbusiness_application).

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/guardduty_publishing_destination
+// https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/guardduty_publishing_destination
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,38 +13,46 @@ import * as cdktn from 'cdktn';
 
 export interface GuarddutyPublishingDestinationConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/guardduty_publishing_destination#destination_arn GuarddutyPublishingDestination#destination_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/guardduty_publishing_destination#destination_arn GuarddutyPublishingDestination#destination_arn}
   */
   readonly destinationArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/guardduty_publishing_destination#destination_type GuarddutyPublishingDestination#destination_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/guardduty_publishing_destination#destination_type GuarddutyPublishingDestination#destination_type}
   */
   readonly destinationType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/guardduty_publishing_destination#detector_id GuarddutyPublishingDestination#detector_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/guardduty_publishing_destination#detector_id GuarddutyPublishingDestination#detector_id}
   */
   readonly detectorId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/guardduty_publishing_destination#id GuarddutyPublishingDestination#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/guardduty_publishing_destination#id GuarddutyPublishingDestination#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/guardduty_publishing_destination#kms_key_arn GuarddutyPublishingDestination#kms_key_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/guardduty_publishing_destination#kms_key_arn GuarddutyPublishingDestination#kms_key_arn}
   */
   readonly kmsKeyArn: string;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/guardduty_publishing_destination#region GuarddutyPublishingDestination#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/guardduty_publishing_destination#region GuarddutyPublishingDestination#region}
   */
   readonly region?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/guardduty_publishing_destination#tags GuarddutyPublishingDestination#tags}
+  */
+  readonly tags?: { [key: string]: string };
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/guardduty_publishing_destination#tags_all GuarddutyPublishingDestination#tags_all}
+  */
+  readonly tagsAll?: { [key: string]: string };
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/guardduty_publishing_destination aws_guardduty_publishing_destination}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/guardduty_publishing_destination aws_guardduty_publishing_destination}
 */
 export class GuarddutyPublishingDestination extends cdktn.TerraformResource {
 
@@ -60,7 +68,7 @@ export class GuarddutyPublishingDestination extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a GuarddutyPublishingDestination resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GuarddutyPublishingDestination to import
-  * @param importFromId The id of the existing GuarddutyPublishingDestination that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/guardduty_publishing_destination#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GuarddutyPublishingDestination that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/guardduty_publishing_destination#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GuarddutyPublishingDestination to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -72,7 +80,7 @@ export class GuarddutyPublishingDestination extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/guardduty_publishing_destination aws_guardduty_publishing_destination} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/guardduty_publishing_destination aws_guardduty_publishing_destination} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -83,7 +91,7 @@ export class GuarddutyPublishingDestination extends cdktn.TerraformResource {
       terraformResourceType: 'aws_guardduty_publishing_destination',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.35.1',
+        providerVersion: '6.36.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
@@ -100,11 +108,18 @@ export class GuarddutyPublishingDestination extends cdktn.TerraformResource {
     this._id = config.id;
     this._kmsKeyArn = config.kmsKeyArn;
     this._region = config.region;
+    this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
   }
 
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // arn - computed: true, optional: false, required: false
+  public get arn() {
+    return this.getStringAttribute('arn');
+  }
 
   // destination_arn - computed: false, optional: false, required: true
   private _destinationArn?: string; 
@@ -117,6 +132,11 @@ export class GuarddutyPublishingDestination extends cdktn.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get destinationArnInput() {
     return this._destinationArn;
+  }
+
+  // destination_id - computed: true, optional: false, required: false
+  public get destinationId() {
+    return this.getStringAttribute('destination_id');
   }
 
   // destination_type - computed: false, optional: true, required: false
@@ -193,6 +213,38 @@ export class GuarddutyPublishingDestination extends cdktn.TerraformResource {
     return this._region;
   }
 
+  // tags - computed: false, optional: true, required: false
+  private _tags?: { [key: string]: string }; 
+  public get tags() {
+    return this.getStringMapAttribute('tags');
+  }
+  public set tags(value: { [key: string]: string }) {
+    this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags;
+  }
+
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string }; 
+  public get tagsAll() {
+    return this.getStringMapAttribute('tags_all');
+  }
+  public set tagsAll(value: { [key: string]: string }) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -205,6 +257,8 @@ export class GuarddutyPublishingDestination extends cdktn.TerraformResource {
       id: cdktn.stringToTerraform(this._id),
       kms_key_arn: cdktn.stringToTerraform(this._kmsKeyArn),
       region: cdktn.stringToTerraform(this._region),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
     };
   }
 
@@ -245,6 +299,18 @@ export class GuarddutyPublishingDestination extends cdktn.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      tags: {
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
       },
     };
 

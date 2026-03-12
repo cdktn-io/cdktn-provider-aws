@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/glue_catalog_table
+// https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/glue_catalog_table
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,98 +13,1451 @@ import * as cdktn from 'cdktn';
 
 export interface GlueCatalogTableConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/glue_catalog_table#catalog_id GlueCatalogTable#catalog_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/glue_catalog_table#catalog_id GlueCatalogTable#catalog_id}
   */
   readonly catalogId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/glue_catalog_table#database_name GlueCatalogTable#database_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/glue_catalog_table#database_name GlueCatalogTable#database_name}
   */
   readonly databaseName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/glue_catalog_table#description GlueCatalogTable#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/glue_catalog_table#description GlueCatalogTable#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/glue_catalog_table#id GlueCatalogTable#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/glue_catalog_table#id GlueCatalogTable#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/glue_catalog_table#name GlueCatalogTable#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/glue_catalog_table#name GlueCatalogTable#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/glue_catalog_table#owner GlueCatalogTable#owner}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/glue_catalog_table#owner GlueCatalogTable#owner}
   */
   readonly owner?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/glue_catalog_table#parameters GlueCatalogTable#parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/glue_catalog_table#parameters GlueCatalogTable#parameters}
   */
   readonly parameters?: { [key: string]: string };
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/glue_catalog_table#region GlueCatalogTable#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/glue_catalog_table#region GlueCatalogTable#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/glue_catalog_table#retention GlueCatalogTable#retention}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/glue_catalog_table#retention GlueCatalogTable#retention}
   */
   readonly retention?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/glue_catalog_table#table_type GlueCatalogTable#table_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/glue_catalog_table#table_type GlueCatalogTable#table_type}
   */
   readonly tableType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/glue_catalog_table#view_expanded_text GlueCatalogTable#view_expanded_text}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/glue_catalog_table#view_expanded_text GlueCatalogTable#view_expanded_text}
   */
   readonly viewExpandedText?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/glue_catalog_table#view_original_text GlueCatalogTable#view_original_text}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/glue_catalog_table#view_original_text GlueCatalogTable#view_original_text}
   */
   readonly viewOriginalText?: string;
   /**
   * open_table_format_input block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/glue_catalog_table#open_table_format_input GlueCatalogTable#open_table_format_input}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/glue_catalog_table#open_table_format_input GlueCatalogTable#open_table_format_input}
   */
   readonly openTableFormatInput?: GlueCatalogTableOpenTableFormatInput;
   /**
   * partition_index block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/glue_catalog_table#partition_index GlueCatalogTable#partition_index}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/glue_catalog_table#partition_index GlueCatalogTable#partition_index}
   */
   readonly partitionIndex?: GlueCatalogTablePartitionIndex[] | cdktn.IResolvable;
   /**
   * partition_keys block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/glue_catalog_table#partition_keys GlueCatalogTable#partition_keys}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/glue_catalog_table#partition_keys GlueCatalogTable#partition_keys}
   */
   readonly partitionKeys?: GlueCatalogTablePartitionKeys[] | cdktn.IResolvable;
   /**
   * storage_descriptor block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/glue_catalog_table#storage_descriptor GlueCatalogTable#storage_descriptor}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/glue_catalog_table#storage_descriptor GlueCatalogTable#storage_descriptor}
   */
   readonly storageDescriptor?: GlueCatalogTableStorageDescriptor;
   /**
   * target_table block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/glue_catalog_table#target_table GlueCatalogTable#target_table}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/glue_catalog_table#target_table GlueCatalogTable#target_table}
   */
   readonly targetTable?: GlueCatalogTableTargetTable;
+  /**
+  * view_definition block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/glue_catalog_table#view_definition GlueCatalogTable#view_definition}
+  */
+  readonly viewDefinition?: GlueCatalogTableViewDefinition;
+}
+export interface GlueCatalogTableOpenTableFormatInputIcebergInputIcebergTableInputPartitionSpecFields {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/glue_catalog_table#field_id GlueCatalogTable#field_id}
+  */
+  readonly fieldId?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/glue_catalog_table#name GlueCatalogTable#name}
+  */
+  readonly name: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/glue_catalog_table#source_id GlueCatalogTable#source_id}
+  */
+  readonly sourceId: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/glue_catalog_table#transform GlueCatalogTable#transform}
+  */
+  readonly transform: string;
+}
+
+export function glueCatalogTableOpenTableFormatInputIcebergInputIcebergTableInputPartitionSpecFieldsToTerraform(struct?: GlueCatalogTableOpenTableFormatInputIcebergInputIcebergTableInputPartitionSpecFields | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    field_id: cdktn.numberToTerraform(struct!.fieldId),
+    name: cdktn.stringToTerraform(struct!.name),
+    source_id: cdktn.numberToTerraform(struct!.sourceId),
+    transform: cdktn.stringToTerraform(struct!.transform),
+  }
+}
+
+
+export function glueCatalogTableOpenTableFormatInputIcebergInputIcebergTableInputPartitionSpecFieldsToHclTerraform(struct?: GlueCatalogTableOpenTableFormatInputIcebergInputIcebergTableInputPartitionSpecFields | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    field_id: {
+      value: cdktn.numberToHclTerraform(struct!.fieldId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    name: {
+      value: cdktn.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    source_id: {
+      value: cdktn.numberToHclTerraform(struct!.sourceId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    transform: {
+      value: cdktn.stringToHclTerraform(struct!.transform),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GlueCatalogTableOpenTableFormatInputIcebergInputIcebergTableInputPartitionSpecFieldsOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GlueCatalogTableOpenTableFormatInputIcebergInputIcebergTableInputPartitionSpecFields | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._fieldId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.fieldId = this._fieldId;
+    }
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._sourceId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.sourceId = this._sourceId;
+    }
+    if (this._transform !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.transform = this._transform;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GlueCatalogTableOpenTableFormatInputIcebergInputIcebergTableInputPartitionSpecFields | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._fieldId = undefined;
+      this._name = undefined;
+      this._sourceId = undefined;
+      this._transform = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._fieldId = value.fieldId;
+      this._name = value.name;
+      this._sourceId = value.sourceId;
+      this._transform = value.transform;
+    }
+  }
+
+  // field_id - computed: false, optional: true, required: false
+  private _fieldId?: number; 
+  public get fieldId() {
+    return this.getNumberAttribute('field_id');
+  }
+  public set fieldId(value: number) {
+    this._fieldId = value;
+  }
+  public resetFieldId() {
+    this._fieldId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get fieldIdInput() {
+    return this._fieldId;
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // source_id - computed: false, optional: false, required: true
+  private _sourceId?: number; 
+  public get sourceId() {
+    return this.getNumberAttribute('source_id');
+  }
+  public set sourceId(value: number) {
+    this._sourceId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sourceIdInput() {
+    return this._sourceId;
+  }
+
+  // transform - computed: false, optional: false, required: true
+  private _transform?: string; 
+  public get transform() {
+    return this.getStringAttribute('transform');
+  }
+  public set transform(value: string) {
+    this._transform = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get transformInput() {
+    return this._transform;
+  }
+}
+
+export class GlueCatalogTableOpenTableFormatInputIcebergInputIcebergTableInputPartitionSpecFieldsList extends cdktn.ComplexList {
+  public internalValue? : GlueCatalogTableOpenTableFormatInputIcebergInputIcebergTableInputPartitionSpecFields[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GlueCatalogTableOpenTableFormatInputIcebergInputIcebergTableInputPartitionSpecFieldsOutputReference {
+    return new GlueCatalogTableOpenTableFormatInputIcebergInputIcebergTableInputPartitionSpecFieldsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface GlueCatalogTableOpenTableFormatInputIcebergInputIcebergTableInputPartitionSpec {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/glue_catalog_table#spec_id GlueCatalogTable#spec_id}
+  */
+  readonly specId?: number;
+  /**
+  * fields block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/glue_catalog_table#fields GlueCatalogTable#fields}
+  */
+  readonly fields: GlueCatalogTableOpenTableFormatInputIcebergInputIcebergTableInputPartitionSpecFields[] | cdktn.IResolvable;
+}
+
+export function glueCatalogTableOpenTableFormatInputIcebergInputIcebergTableInputPartitionSpecToTerraform(struct?: GlueCatalogTableOpenTableFormatInputIcebergInputIcebergTableInputPartitionSpecOutputReference | GlueCatalogTableOpenTableFormatInputIcebergInputIcebergTableInputPartitionSpec): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    spec_id: cdktn.numberToTerraform(struct!.specId),
+    fields: cdktn.listMapper(glueCatalogTableOpenTableFormatInputIcebergInputIcebergTableInputPartitionSpecFieldsToTerraform, true)(struct!.fields),
+  }
+}
+
+
+export function glueCatalogTableOpenTableFormatInputIcebergInputIcebergTableInputPartitionSpecToHclTerraform(struct?: GlueCatalogTableOpenTableFormatInputIcebergInputIcebergTableInputPartitionSpecOutputReference | GlueCatalogTableOpenTableFormatInputIcebergInputIcebergTableInputPartitionSpec): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    spec_id: {
+      value: cdktn.numberToHclTerraform(struct!.specId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    fields: {
+      value: cdktn.listMapperHcl(glueCatalogTableOpenTableFormatInputIcebergInputIcebergTableInputPartitionSpecFieldsToHclTerraform, true)(struct!.fields),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GlueCatalogTableOpenTableFormatInputIcebergInputIcebergTableInputPartitionSpecFieldsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GlueCatalogTableOpenTableFormatInputIcebergInputIcebergTableInputPartitionSpecOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GlueCatalogTableOpenTableFormatInputIcebergInputIcebergTableInputPartitionSpec | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._specId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.specId = this._specId;
+    }
+    if (this._fields?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.fields = this._fields?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GlueCatalogTableOpenTableFormatInputIcebergInputIcebergTableInputPartitionSpec | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._specId = undefined;
+      this._fields.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._specId = value.specId;
+      this._fields.internalValue = value.fields;
+    }
+  }
+
+  // spec_id - computed: false, optional: true, required: false
+  private _specId?: number; 
+  public get specId() {
+    return this.getNumberAttribute('spec_id');
+  }
+  public set specId(value: number) {
+    this._specId = value;
+  }
+  public resetSpecId() {
+    this._specId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get specIdInput() {
+    return this._specId;
+  }
+
+  // fields - computed: false, optional: false, required: true
+  private _fields = new GlueCatalogTableOpenTableFormatInputIcebergInputIcebergTableInputPartitionSpecFieldsList(this, "fields", false);
+  public get fields() {
+    return this._fields;
+  }
+  public putFields(value: GlueCatalogTableOpenTableFormatInputIcebergInputIcebergTableInputPartitionSpecFields[] | cdktn.IResolvable) {
+    this._fields.internalValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get fieldsInput() {
+    return this._fields.internalValue;
+  }
+}
+export interface GlueCatalogTableOpenTableFormatInputIcebergInputIcebergTableInputSchemaFields {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/glue_catalog_table#doc GlueCatalogTable#doc}
+  */
+  readonly doc?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/glue_catalog_table#id GlueCatalogTable#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/glue_catalog_table#initial_default GlueCatalogTable#initial_default}
+  */
+  readonly initialDefault?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/glue_catalog_table#name GlueCatalogTable#name}
+  */
+  readonly name: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/glue_catalog_table#required GlueCatalogTable#required}
+  */
+  readonly required: boolean | cdktn.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/glue_catalog_table#type GlueCatalogTable#type}
+  */
+  readonly type: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/glue_catalog_table#write_default GlueCatalogTable#write_default}
+  */
+  readonly writeDefault?: string;
+}
+
+export function glueCatalogTableOpenTableFormatInputIcebergInputIcebergTableInputSchemaFieldsToTerraform(struct?: GlueCatalogTableOpenTableFormatInputIcebergInputIcebergTableInputSchemaFields | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    doc: cdktn.stringToTerraform(struct!.doc),
+    id: cdktn.numberToTerraform(struct!.id),
+    initial_default: cdktn.stringToTerraform(struct!.initialDefault),
+    name: cdktn.stringToTerraform(struct!.name),
+    required: cdktn.booleanToTerraform(struct!.required),
+    type: cdktn.stringToTerraform(struct!.type),
+    write_default: cdktn.stringToTerraform(struct!.writeDefault),
+  }
+}
+
+
+export function glueCatalogTableOpenTableFormatInputIcebergInputIcebergTableInputSchemaFieldsToHclTerraform(struct?: GlueCatalogTableOpenTableFormatInputIcebergInputIcebergTableInputSchemaFields | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    doc: {
+      value: cdktn.stringToHclTerraform(struct!.doc),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    id: {
+      value: cdktn.numberToHclTerraform(struct!.id),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    initial_default: {
+      value: cdktn.stringToHclTerraform(struct!.initialDefault),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    name: {
+      value: cdktn.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    required: {
+      value: cdktn.booleanToHclTerraform(struct!.required),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    type: {
+      value: cdktn.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    write_default: {
+      value: cdktn.stringToHclTerraform(struct!.writeDefault),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GlueCatalogTableOpenTableFormatInputIcebergInputIcebergTableInputSchemaFieldsOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GlueCatalogTableOpenTableFormatInputIcebergInputIcebergTableInputSchemaFields | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._doc !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.doc = this._doc;
+    }
+    if (this._id !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.id = this._id;
+    }
+    if (this._initialDefault !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.initialDefault = this._initialDefault;
+    }
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._required !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.required = this._required;
+    }
+    if (this._type !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.type = this._type;
+    }
+    if (this._writeDefault !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.writeDefault = this._writeDefault;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GlueCatalogTableOpenTableFormatInputIcebergInputIcebergTableInputSchemaFields | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._doc = undefined;
+      this._id = undefined;
+      this._initialDefault = undefined;
+      this._name = undefined;
+      this._required = undefined;
+      this._type = undefined;
+      this._writeDefault = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._doc = value.doc;
+      this._id = value.id;
+      this._initialDefault = value.initialDefault;
+      this._name = value.name;
+      this._required = value.required;
+      this._type = value.type;
+      this._writeDefault = value.writeDefault;
+    }
+  }
+
+  // doc - computed: false, optional: true, required: false
+  private _doc?: string; 
+  public get doc() {
+    return this.getStringAttribute('doc');
+  }
+  public set doc(value: string) {
+    this._doc = value;
+  }
+  public resetDoc() {
+    this._doc = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get docInput() {
+    return this._doc;
+  }
+
+  // id - computed: false, optional: false, required: true
+  private _id?: number; 
+  public get id() {
+    return this.getNumberAttribute('id');
+  }
+  public set id(value: number) {
+    this._id = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
+  }
+
+  // initial_default - computed: false, optional: true, required: false
+  private _initialDefault?: string; 
+  public get initialDefault() {
+    return this.getStringAttribute('initial_default');
+  }
+  public set initialDefault(value: string) {
+    this._initialDefault = value;
+  }
+  public resetInitialDefault() {
+    this._initialDefault = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get initialDefaultInput() {
+    return this._initialDefault;
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // required - computed: false, optional: false, required: true
+  private _required?: boolean | cdktn.IResolvable; 
+  public get required() {
+    return this.getBooleanAttribute('required');
+  }
+  public set required(value: boolean | cdktn.IResolvable) {
+    this._required = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get requiredInput() {
+    return this._required;
+  }
+
+  // type - computed: false, optional: false, required: true
+  private _type?: string; 
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+  public set type(value: string) {
+    this._type = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get typeInput() {
+    return this._type;
+  }
+
+  // write_default - computed: false, optional: true, required: false
+  private _writeDefault?: string; 
+  public get writeDefault() {
+    return this.getStringAttribute('write_default');
+  }
+  public set writeDefault(value: string) {
+    this._writeDefault = value;
+  }
+  public resetWriteDefault() {
+    this._writeDefault = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get writeDefaultInput() {
+    return this._writeDefault;
+  }
+}
+
+export class GlueCatalogTableOpenTableFormatInputIcebergInputIcebergTableInputSchemaFieldsList extends cdktn.ComplexList {
+  public internalValue? : GlueCatalogTableOpenTableFormatInputIcebergInputIcebergTableInputSchemaFields[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GlueCatalogTableOpenTableFormatInputIcebergInputIcebergTableInputSchemaFieldsOutputReference {
+    return new GlueCatalogTableOpenTableFormatInputIcebergInputIcebergTableInputSchemaFieldsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface GlueCatalogTableOpenTableFormatInputIcebergInputIcebergTableInputSchema {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/glue_catalog_table#identifier_field_ids GlueCatalogTable#identifier_field_ids}
+  */
+  readonly identifierFieldIds?: number[];
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/glue_catalog_table#schema_id GlueCatalogTable#schema_id}
+  */
+  readonly schemaId?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/glue_catalog_table#type GlueCatalogTable#type}
+  */
+  readonly type?: string;
+  /**
+  * fields block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/glue_catalog_table#fields GlueCatalogTable#fields}
+  */
+  readonly fields: GlueCatalogTableOpenTableFormatInputIcebergInputIcebergTableInputSchemaFields[] | cdktn.IResolvable;
+}
+
+export function glueCatalogTableOpenTableFormatInputIcebergInputIcebergTableInputSchemaToTerraform(struct?: GlueCatalogTableOpenTableFormatInputIcebergInputIcebergTableInputSchemaOutputReference | GlueCatalogTableOpenTableFormatInputIcebergInputIcebergTableInputSchema): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    identifier_field_ids: cdktn.listMapper(cdktn.numberToTerraform, false)(struct!.identifierFieldIds),
+    schema_id: cdktn.numberToTerraform(struct!.schemaId),
+    type: cdktn.stringToTerraform(struct!.type),
+    fields: cdktn.listMapper(glueCatalogTableOpenTableFormatInputIcebergInputIcebergTableInputSchemaFieldsToTerraform, true)(struct!.fields),
+  }
+}
+
+
+export function glueCatalogTableOpenTableFormatInputIcebergInputIcebergTableInputSchemaToHclTerraform(struct?: GlueCatalogTableOpenTableFormatInputIcebergInputIcebergTableInputSchemaOutputReference | GlueCatalogTableOpenTableFormatInputIcebergInputIcebergTableInputSchema): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    identifier_field_ids: {
+      value: cdktn.listMapperHcl(cdktn.numberToHclTerraform, false)(struct!.identifierFieldIds),
+      isBlock: false,
+      type: "list",
+      storageClassType: "numberList",
+    },
+    schema_id: {
+      value: cdktn.numberToHclTerraform(struct!.schemaId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    type: {
+      value: cdktn.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    fields: {
+      value: cdktn.listMapperHcl(glueCatalogTableOpenTableFormatInputIcebergInputIcebergTableInputSchemaFieldsToHclTerraform, true)(struct!.fields),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GlueCatalogTableOpenTableFormatInputIcebergInputIcebergTableInputSchemaFieldsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GlueCatalogTableOpenTableFormatInputIcebergInputIcebergTableInputSchemaOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GlueCatalogTableOpenTableFormatInputIcebergInputIcebergTableInputSchema | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._identifierFieldIds !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.identifierFieldIds = this._identifierFieldIds;
+    }
+    if (this._schemaId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.schemaId = this._schemaId;
+    }
+    if (this._type !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.type = this._type;
+    }
+    if (this._fields?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.fields = this._fields?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GlueCatalogTableOpenTableFormatInputIcebergInputIcebergTableInputSchema | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._identifierFieldIds = undefined;
+      this._schemaId = undefined;
+      this._type = undefined;
+      this._fields.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._identifierFieldIds = value.identifierFieldIds;
+      this._schemaId = value.schemaId;
+      this._type = value.type;
+      this._fields.internalValue = value.fields;
+    }
+  }
+
+  // identifier_field_ids - computed: false, optional: true, required: false
+  private _identifierFieldIds?: number[]; 
+  public get identifierFieldIds() {
+    return this.getNumberListAttribute('identifier_field_ids');
+  }
+  public set identifierFieldIds(value: number[]) {
+    this._identifierFieldIds = value;
+  }
+  public resetIdentifierFieldIds() {
+    this._identifierFieldIds = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get identifierFieldIdsInput() {
+    return this._identifierFieldIds;
+  }
+
+  // schema_id - computed: false, optional: true, required: false
+  private _schemaId?: number; 
+  public get schemaId() {
+    return this.getNumberAttribute('schema_id');
+  }
+  public set schemaId(value: number) {
+    this._schemaId = value;
+  }
+  public resetSchemaId() {
+    this._schemaId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get schemaIdInput() {
+    return this._schemaId;
+  }
+
+  // type - computed: false, optional: true, required: false
+  private _type?: string; 
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+  public set type(value: string) {
+    this._type = value;
+  }
+  public resetType() {
+    this._type = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get typeInput() {
+    return this._type;
+  }
+
+  // fields - computed: false, optional: false, required: true
+  private _fields = new GlueCatalogTableOpenTableFormatInputIcebergInputIcebergTableInputSchemaFieldsList(this, "fields", false);
+  public get fields() {
+    return this._fields;
+  }
+  public putFields(value: GlueCatalogTableOpenTableFormatInputIcebergInputIcebergTableInputSchemaFields[] | cdktn.IResolvable) {
+    this._fields.internalValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get fieldsInput() {
+    return this._fields.internalValue;
+  }
+}
+export interface GlueCatalogTableOpenTableFormatInputIcebergInputIcebergTableInputSortOrderFields {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/glue_catalog_table#direction GlueCatalogTable#direction}
+  */
+  readonly direction: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/glue_catalog_table#null_order GlueCatalogTable#null_order}
+  */
+  readonly nullOrder: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/glue_catalog_table#source_id GlueCatalogTable#source_id}
+  */
+  readonly sourceId: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/glue_catalog_table#transform GlueCatalogTable#transform}
+  */
+  readonly transform: string;
+}
+
+export function glueCatalogTableOpenTableFormatInputIcebergInputIcebergTableInputSortOrderFieldsToTerraform(struct?: GlueCatalogTableOpenTableFormatInputIcebergInputIcebergTableInputSortOrderFields | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    direction: cdktn.stringToTerraform(struct!.direction),
+    null_order: cdktn.stringToTerraform(struct!.nullOrder),
+    source_id: cdktn.numberToTerraform(struct!.sourceId),
+    transform: cdktn.stringToTerraform(struct!.transform),
+  }
+}
+
+
+export function glueCatalogTableOpenTableFormatInputIcebergInputIcebergTableInputSortOrderFieldsToHclTerraform(struct?: GlueCatalogTableOpenTableFormatInputIcebergInputIcebergTableInputSortOrderFields | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    direction: {
+      value: cdktn.stringToHclTerraform(struct!.direction),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    null_order: {
+      value: cdktn.stringToHclTerraform(struct!.nullOrder),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    source_id: {
+      value: cdktn.numberToHclTerraform(struct!.sourceId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    transform: {
+      value: cdktn.stringToHclTerraform(struct!.transform),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GlueCatalogTableOpenTableFormatInputIcebergInputIcebergTableInputSortOrderFieldsOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GlueCatalogTableOpenTableFormatInputIcebergInputIcebergTableInputSortOrderFields | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._direction !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.direction = this._direction;
+    }
+    if (this._nullOrder !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.nullOrder = this._nullOrder;
+    }
+    if (this._sourceId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.sourceId = this._sourceId;
+    }
+    if (this._transform !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.transform = this._transform;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GlueCatalogTableOpenTableFormatInputIcebergInputIcebergTableInputSortOrderFields | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._direction = undefined;
+      this._nullOrder = undefined;
+      this._sourceId = undefined;
+      this._transform = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._direction = value.direction;
+      this._nullOrder = value.nullOrder;
+      this._sourceId = value.sourceId;
+      this._transform = value.transform;
+    }
+  }
+
+  // direction - computed: false, optional: false, required: true
+  private _direction?: string; 
+  public get direction() {
+    return this.getStringAttribute('direction');
+  }
+  public set direction(value: string) {
+    this._direction = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get directionInput() {
+    return this._direction;
+  }
+
+  // null_order - computed: false, optional: false, required: true
+  private _nullOrder?: string; 
+  public get nullOrder() {
+    return this.getStringAttribute('null_order');
+  }
+  public set nullOrder(value: string) {
+    this._nullOrder = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nullOrderInput() {
+    return this._nullOrder;
+  }
+
+  // source_id - computed: false, optional: false, required: true
+  private _sourceId?: number; 
+  public get sourceId() {
+    return this.getNumberAttribute('source_id');
+  }
+  public set sourceId(value: number) {
+    this._sourceId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sourceIdInput() {
+    return this._sourceId;
+  }
+
+  // transform - computed: false, optional: false, required: true
+  private _transform?: string; 
+  public get transform() {
+    return this.getStringAttribute('transform');
+  }
+  public set transform(value: string) {
+    this._transform = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get transformInput() {
+    return this._transform;
+  }
+}
+
+export class GlueCatalogTableOpenTableFormatInputIcebergInputIcebergTableInputSortOrderFieldsList extends cdktn.ComplexList {
+  public internalValue? : GlueCatalogTableOpenTableFormatInputIcebergInputIcebergTableInputSortOrderFields[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GlueCatalogTableOpenTableFormatInputIcebergInputIcebergTableInputSortOrderFieldsOutputReference {
+    return new GlueCatalogTableOpenTableFormatInputIcebergInputIcebergTableInputSortOrderFieldsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface GlueCatalogTableOpenTableFormatInputIcebergInputIcebergTableInputSortOrder {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/glue_catalog_table#order_id GlueCatalogTable#order_id}
+  */
+  readonly orderId: number;
+  /**
+  * fields block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/glue_catalog_table#fields GlueCatalogTable#fields}
+  */
+  readonly fields: GlueCatalogTableOpenTableFormatInputIcebergInputIcebergTableInputSortOrderFields[] | cdktn.IResolvable;
+}
+
+export function glueCatalogTableOpenTableFormatInputIcebergInputIcebergTableInputSortOrderToTerraform(struct?: GlueCatalogTableOpenTableFormatInputIcebergInputIcebergTableInputSortOrderOutputReference | GlueCatalogTableOpenTableFormatInputIcebergInputIcebergTableInputSortOrder): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    order_id: cdktn.numberToTerraform(struct!.orderId),
+    fields: cdktn.listMapper(glueCatalogTableOpenTableFormatInputIcebergInputIcebergTableInputSortOrderFieldsToTerraform, true)(struct!.fields),
+  }
+}
+
+
+export function glueCatalogTableOpenTableFormatInputIcebergInputIcebergTableInputSortOrderToHclTerraform(struct?: GlueCatalogTableOpenTableFormatInputIcebergInputIcebergTableInputSortOrderOutputReference | GlueCatalogTableOpenTableFormatInputIcebergInputIcebergTableInputSortOrder): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    order_id: {
+      value: cdktn.numberToHclTerraform(struct!.orderId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    fields: {
+      value: cdktn.listMapperHcl(glueCatalogTableOpenTableFormatInputIcebergInputIcebergTableInputSortOrderFieldsToHclTerraform, true)(struct!.fields),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GlueCatalogTableOpenTableFormatInputIcebergInputIcebergTableInputSortOrderFieldsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GlueCatalogTableOpenTableFormatInputIcebergInputIcebergTableInputSortOrderOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GlueCatalogTableOpenTableFormatInputIcebergInputIcebergTableInputSortOrder | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._orderId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.orderId = this._orderId;
+    }
+    if (this._fields?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.fields = this._fields?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GlueCatalogTableOpenTableFormatInputIcebergInputIcebergTableInputSortOrder | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._orderId = undefined;
+      this._fields.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._orderId = value.orderId;
+      this._fields.internalValue = value.fields;
+    }
+  }
+
+  // order_id - computed: false, optional: false, required: true
+  private _orderId?: number; 
+  public get orderId() {
+    return this.getNumberAttribute('order_id');
+  }
+  public set orderId(value: number) {
+    this._orderId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get orderIdInput() {
+    return this._orderId;
+  }
+
+  // fields - computed: false, optional: false, required: true
+  private _fields = new GlueCatalogTableOpenTableFormatInputIcebergInputIcebergTableInputSortOrderFieldsList(this, "fields", false);
+  public get fields() {
+    return this._fields;
+  }
+  public putFields(value: GlueCatalogTableOpenTableFormatInputIcebergInputIcebergTableInputSortOrderFields[] | cdktn.IResolvable) {
+    this._fields.internalValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get fieldsInput() {
+    return this._fields.internalValue;
+  }
+}
+export interface GlueCatalogTableOpenTableFormatInputIcebergInputIcebergTableInput {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/glue_catalog_table#location GlueCatalogTable#location}
+  */
+  readonly location: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/glue_catalog_table#properties GlueCatalogTable#properties}
+  */
+  readonly properties?: { [key: string]: string };
+  /**
+  * partition_spec block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/glue_catalog_table#partition_spec GlueCatalogTable#partition_spec}
+  */
+  readonly partitionSpec?: GlueCatalogTableOpenTableFormatInputIcebergInputIcebergTableInputPartitionSpec;
+  /**
+  * schema block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/glue_catalog_table#schema GlueCatalogTable#schema}
+  */
+  readonly schema: GlueCatalogTableOpenTableFormatInputIcebergInputIcebergTableInputSchema;
+  /**
+  * sort_order block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/glue_catalog_table#sort_order GlueCatalogTable#sort_order}
+  */
+  readonly sortOrder?: GlueCatalogTableOpenTableFormatInputIcebergInputIcebergTableInputSortOrder;
+}
+
+export function glueCatalogTableOpenTableFormatInputIcebergInputIcebergTableInputToTerraform(struct?: GlueCatalogTableOpenTableFormatInputIcebergInputIcebergTableInputOutputReference | GlueCatalogTableOpenTableFormatInputIcebergInputIcebergTableInput): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    location: cdktn.stringToTerraform(struct!.location),
+    properties: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.properties),
+    partition_spec: glueCatalogTableOpenTableFormatInputIcebergInputIcebergTableInputPartitionSpecToTerraform(struct!.partitionSpec),
+    schema: glueCatalogTableOpenTableFormatInputIcebergInputIcebergTableInputSchemaToTerraform(struct!.schema),
+    sort_order: glueCatalogTableOpenTableFormatInputIcebergInputIcebergTableInputSortOrderToTerraform(struct!.sortOrder),
+  }
+}
+
+
+export function glueCatalogTableOpenTableFormatInputIcebergInputIcebergTableInputToHclTerraform(struct?: GlueCatalogTableOpenTableFormatInputIcebergInputIcebergTableInputOutputReference | GlueCatalogTableOpenTableFormatInputIcebergInputIcebergTableInput): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    location: {
+      value: cdktn.stringToHclTerraform(struct!.location),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    properties: {
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.properties),
+      isBlock: false,
+      type: "map",
+      storageClassType: "stringMap",
+    },
+    partition_spec: {
+      value: glueCatalogTableOpenTableFormatInputIcebergInputIcebergTableInputPartitionSpecToHclTerraform(struct!.partitionSpec),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GlueCatalogTableOpenTableFormatInputIcebergInputIcebergTableInputPartitionSpecList",
+    },
+    schema: {
+      value: glueCatalogTableOpenTableFormatInputIcebergInputIcebergTableInputSchemaToHclTerraform(struct!.schema),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GlueCatalogTableOpenTableFormatInputIcebergInputIcebergTableInputSchemaList",
+    },
+    sort_order: {
+      value: glueCatalogTableOpenTableFormatInputIcebergInputIcebergTableInputSortOrderToHclTerraform(struct!.sortOrder),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GlueCatalogTableOpenTableFormatInputIcebergInputIcebergTableInputSortOrderList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GlueCatalogTableOpenTableFormatInputIcebergInputIcebergTableInputOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GlueCatalogTableOpenTableFormatInputIcebergInputIcebergTableInput | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._location !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.location = this._location;
+    }
+    if (this._properties !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.properties = this._properties;
+    }
+    if (this._partitionSpec?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.partitionSpec = this._partitionSpec?.internalValue;
+    }
+    if (this._schema?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.schema = this._schema?.internalValue;
+    }
+    if (this._sortOrder?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.sortOrder = this._sortOrder?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GlueCatalogTableOpenTableFormatInputIcebergInputIcebergTableInput | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._location = undefined;
+      this._properties = undefined;
+      this._partitionSpec.internalValue = undefined;
+      this._schema.internalValue = undefined;
+      this._sortOrder.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._location = value.location;
+      this._properties = value.properties;
+      this._partitionSpec.internalValue = value.partitionSpec;
+      this._schema.internalValue = value.schema;
+      this._sortOrder.internalValue = value.sortOrder;
+    }
+  }
+
+  // location - computed: false, optional: false, required: true
+  private _location?: string; 
+  public get location() {
+    return this.getStringAttribute('location');
+  }
+  public set location(value: string) {
+    this._location = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get locationInput() {
+    return this._location;
+  }
+
+  // properties - computed: false, optional: true, required: false
+  private _properties?: { [key: string]: string }; 
+  public get properties() {
+    return this.getStringMapAttribute('properties');
+  }
+  public set properties(value: { [key: string]: string }) {
+    this._properties = value;
+  }
+  public resetProperties() {
+    this._properties = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get propertiesInput() {
+    return this._properties;
+  }
+
+  // partition_spec - computed: false, optional: true, required: false
+  private _partitionSpec = new GlueCatalogTableOpenTableFormatInputIcebergInputIcebergTableInputPartitionSpecOutputReference(this, "partition_spec");
+  public get partitionSpec() {
+    return this._partitionSpec;
+  }
+  public putPartitionSpec(value: GlueCatalogTableOpenTableFormatInputIcebergInputIcebergTableInputPartitionSpec) {
+    this._partitionSpec.internalValue = value;
+  }
+  public resetPartitionSpec() {
+    this._partitionSpec.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get partitionSpecInput() {
+    return this._partitionSpec.internalValue;
+  }
+
+  // schema - computed: false, optional: false, required: true
+  private _schema = new GlueCatalogTableOpenTableFormatInputIcebergInputIcebergTableInputSchemaOutputReference(this, "schema");
+  public get schema() {
+    return this._schema;
+  }
+  public putSchema(value: GlueCatalogTableOpenTableFormatInputIcebergInputIcebergTableInputSchema) {
+    this._schema.internalValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get schemaInput() {
+    return this._schema.internalValue;
+  }
+
+  // sort_order - computed: false, optional: true, required: false
+  private _sortOrder = new GlueCatalogTableOpenTableFormatInputIcebergInputIcebergTableInputSortOrderOutputReference(this, "sort_order");
+  public get sortOrder() {
+    return this._sortOrder;
+  }
+  public putSortOrder(value: GlueCatalogTableOpenTableFormatInputIcebergInputIcebergTableInputSortOrder) {
+    this._sortOrder.internalValue = value;
+  }
+  public resetSortOrder() {
+    this._sortOrder.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sortOrderInput() {
+    return this._sortOrder.internalValue;
+  }
 }
 export interface GlueCatalogTableOpenTableFormatInputIcebergInput {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/glue_catalog_table#metadata_operation GlueCatalogTable#metadata_operation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/glue_catalog_table#metadata_operation GlueCatalogTable#metadata_operation}
   */
   readonly metadataOperation: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/glue_catalog_table#version GlueCatalogTable#version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/glue_catalog_table#version GlueCatalogTable#version}
   */
   readonly version?: string;
+  /**
+  * iceberg_table_input block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/glue_catalog_table#iceberg_table_input GlueCatalogTable#iceberg_table_input}
+  */
+  readonly icebergTableInput?: GlueCatalogTableOpenTableFormatInputIcebergInputIcebergTableInput;
 }
 
 export function glueCatalogTableOpenTableFormatInputIcebergInputToTerraform(struct?: GlueCatalogTableOpenTableFormatInputIcebergInputOutputReference | GlueCatalogTableOpenTableFormatInputIcebergInput): any {
@@ -115,6 +1468,7 @@ export function glueCatalogTableOpenTableFormatInputIcebergInputToTerraform(stru
   return {
     metadata_operation: cdktn.stringToTerraform(struct!.metadataOperation),
     version: cdktn.stringToTerraform(struct!.version),
+    iceberg_table_input: glueCatalogTableOpenTableFormatInputIcebergInputIcebergTableInputToTerraform(struct!.icebergTableInput),
   }
 }
 
@@ -136,6 +1490,12 @@ export function glueCatalogTableOpenTableFormatInputIcebergInputToHclTerraform(s
       isBlock: false,
       type: "simple",
       storageClassType: "string",
+    },
+    iceberg_table_input: {
+      value: glueCatalogTableOpenTableFormatInputIcebergInputIcebergTableInputToHclTerraform(struct!.icebergTableInput),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GlueCatalogTableOpenTableFormatInputIcebergInputIcebergTableInputList",
     },
   };
 
@@ -165,6 +1525,10 @@ export class GlueCatalogTableOpenTableFormatInputIcebergInputOutputReference ext
       hasAnyValues = true;
       internalValueResult.version = this._version;
     }
+    if (this._icebergTableInput?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.icebergTableInput = this._icebergTableInput?.internalValue;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -173,11 +1537,13 @@ export class GlueCatalogTableOpenTableFormatInputIcebergInputOutputReference ext
       this.isEmptyObject = false;
       this._metadataOperation = undefined;
       this._version = undefined;
+      this._icebergTableInput.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._metadataOperation = value.metadataOperation;
       this._version = value.version;
+      this._icebergTableInput.internalValue = value.icebergTableInput;
     }
   }
 
@@ -209,12 +1575,28 @@ export class GlueCatalogTableOpenTableFormatInputIcebergInputOutputReference ext
   public get versionInput() {
     return this._version;
   }
+
+  // iceberg_table_input - computed: false, optional: true, required: false
+  private _icebergTableInput = new GlueCatalogTableOpenTableFormatInputIcebergInputIcebergTableInputOutputReference(this, "iceberg_table_input");
+  public get icebergTableInput() {
+    return this._icebergTableInput;
+  }
+  public putIcebergTableInput(value: GlueCatalogTableOpenTableFormatInputIcebergInputIcebergTableInput) {
+    this._icebergTableInput.internalValue = value;
+  }
+  public resetIcebergTableInput() {
+    this._icebergTableInput.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get icebergTableInputInput() {
+    return this._icebergTableInput.internalValue;
+  }
 }
 export interface GlueCatalogTableOpenTableFormatInput {
   /**
   * iceberg_input block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/glue_catalog_table#iceberg_input GlueCatalogTable#iceberg_input}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/glue_catalog_table#iceberg_input GlueCatalogTable#iceberg_input}
   */
   readonly icebergInput: GlueCatalogTableOpenTableFormatInputIcebergInput;
 }
@@ -295,11 +1677,11 @@ export class GlueCatalogTableOpenTableFormatInputOutputReference extends cdktn.C
 }
 export interface GlueCatalogTablePartitionIndex {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/glue_catalog_table#index_name GlueCatalogTable#index_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/glue_catalog_table#index_name GlueCatalogTable#index_name}
   */
   readonly indexName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/glue_catalog_table#keys GlueCatalogTable#keys}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/glue_catalog_table#keys GlueCatalogTable#keys}
   */
   readonly keys: string[];
 }
@@ -443,19 +1825,19 @@ export class GlueCatalogTablePartitionIndexList extends cdktn.ComplexList {
 }
 export interface GlueCatalogTablePartitionKeys {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/glue_catalog_table#comment GlueCatalogTable#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/glue_catalog_table#comment GlueCatalogTable#comment}
   */
   readonly comment?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/glue_catalog_table#name GlueCatalogTable#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/glue_catalog_table#name GlueCatalogTable#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/glue_catalog_table#parameters GlueCatalogTable#parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/glue_catalog_table#parameters GlueCatalogTable#parameters}
   */
   readonly parameters?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/glue_catalog_table#type GlueCatalogTable#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/glue_catalog_table#type GlueCatalogTable#type}
   */
   readonly type?: string;
 }
@@ -655,19 +2037,19 @@ export class GlueCatalogTablePartitionKeysList extends cdktn.ComplexList {
 }
 export interface GlueCatalogTableStorageDescriptorColumns {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/glue_catalog_table#comment GlueCatalogTable#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/glue_catalog_table#comment GlueCatalogTable#comment}
   */
   readonly comment?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/glue_catalog_table#name GlueCatalogTable#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/glue_catalog_table#name GlueCatalogTable#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/glue_catalog_table#parameters GlueCatalogTable#parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/glue_catalog_table#parameters GlueCatalogTable#parameters}
   */
   readonly parameters?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/glue_catalog_table#type GlueCatalogTable#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/glue_catalog_table#type GlueCatalogTable#type}
   */
   readonly type?: string;
 }
@@ -867,15 +2249,15 @@ export class GlueCatalogTableStorageDescriptorColumnsList extends cdktn.ComplexL
 }
 export interface GlueCatalogTableStorageDescriptorSchemaReferenceSchemaId {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/glue_catalog_table#registry_name GlueCatalogTable#registry_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/glue_catalog_table#registry_name GlueCatalogTable#registry_name}
   */
   readonly registryName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/glue_catalog_table#schema_arn GlueCatalogTable#schema_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/glue_catalog_table#schema_arn GlueCatalogTable#schema_arn}
   */
   readonly schemaArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/glue_catalog_table#schema_name GlueCatalogTable#schema_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/glue_catalog_table#schema_name GlueCatalogTable#schema_name}
   */
   readonly schemaName?: string;
 }
@@ -1017,17 +2399,17 @@ export class GlueCatalogTableStorageDescriptorSchemaReferenceSchemaIdOutputRefer
 }
 export interface GlueCatalogTableStorageDescriptorSchemaReference {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/glue_catalog_table#schema_version_id GlueCatalogTable#schema_version_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/glue_catalog_table#schema_version_id GlueCatalogTable#schema_version_id}
   */
   readonly schemaVersionId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/glue_catalog_table#schema_version_number GlueCatalogTable#schema_version_number}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/glue_catalog_table#schema_version_number GlueCatalogTable#schema_version_number}
   */
   readonly schemaVersionNumber: number;
   /**
   * schema_id block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/glue_catalog_table#schema_id GlueCatalogTable#schema_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/glue_catalog_table#schema_id GlueCatalogTable#schema_id}
   */
   readonly schemaId?: GlueCatalogTableStorageDescriptorSchemaReferenceSchemaId;
 }
@@ -1166,15 +2548,15 @@ export class GlueCatalogTableStorageDescriptorSchemaReferenceOutputReference ext
 }
 export interface GlueCatalogTableStorageDescriptorSerDeInfo {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/glue_catalog_table#name GlueCatalogTable#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/glue_catalog_table#name GlueCatalogTable#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/glue_catalog_table#parameters GlueCatalogTable#parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/glue_catalog_table#parameters GlueCatalogTable#parameters}
   */
   readonly parameters?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/glue_catalog_table#serialization_library GlueCatalogTable#serialization_library}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/glue_catalog_table#serialization_library GlueCatalogTable#serialization_library}
   */
   readonly serializationLibrary?: string;
 }
@@ -1316,15 +2698,15 @@ export class GlueCatalogTableStorageDescriptorSerDeInfoOutputReference extends c
 }
 export interface GlueCatalogTableStorageDescriptorSkewedInfo {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/glue_catalog_table#skewed_column_names GlueCatalogTable#skewed_column_names}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/glue_catalog_table#skewed_column_names GlueCatalogTable#skewed_column_names}
   */
   readonly skewedColumnNames?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/glue_catalog_table#skewed_column_value_location_maps GlueCatalogTable#skewed_column_value_location_maps}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/glue_catalog_table#skewed_column_value_location_maps GlueCatalogTable#skewed_column_value_location_maps}
   */
   readonly skewedColumnValueLocationMaps?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/glue_catalog_table#skewed_column_values GlueCatalogTable#skewed_column_values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/glue_catalog_table#skewed_column_values GlueCatalogTable#skewed_column_values}
   */
   readonly skewedColumnValues?: string[];
 }
@@ -1466,11 +2848,11 @@ export class GlueCatalogTableStorageDescriptorSkewedInfoOutputReference extends 
 }
 export interface GlueCatalogTableStorageDescriptorSortColumns {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/glue_catalog_table#column GlueCatalogTable#column}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/glue_catalog_table#column GlueCatalogTable#column}
   */
   readonly column: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/glue_catalog_table#sort_order GlueCatalogTable#sort_order}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/glue_catalog_table#sort_order GlueCatalogTable#sort_order}
   */
   readonly sortOrder: number;
 }
@@ -1609,69 +2991,69 @@ export class GlueCatalogTableStorageDescriptorSortColumnsList extends cdktn.Comp
 }
 export interface GlueCatalogTableStorageDescriptor {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/glue_catalog_table#additional_locations GlueCatalogTable#additional_locations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/glue_catalog_table#additional_locations GlueCatalogTable#additional_locations}
   */
   readonly additionalLocations?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/glue_catalog_table#bucket_columns GlueCatalogTable#bucket_columns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/glue_catalog_table#bucket_columns GlueCatalogTable#bucket_columns}
   */
   readonly bucketColumns?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/glue_catalog_table#compressed GlueCatalogTable#compressed}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/glue_catalog_table#compressed GlueCatalogTable#compressed}
   */
   readonly compressed?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/glue_catalog_table#input_format GlueCatalogTable#input_format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/glue_catalog_table#input_format GlueCatalogTable#input_format}
   */
   readonly inputFormat?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/glue_catalog_table#location GlueCatalogTable#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/glue_catalog_table#location GlueCatalogTable#location}
   */
   readonly location?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/glue_catalog_table#number_of_buckets GlueCatalogTable#number_of_buckets}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/glue_catalog_table#number_of_buckets GlueCatalogTable#number_of_buckets}
   */
   readonly numberOfBuckets?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/glue_catalog_table#output_format GlueCatalogTable#output_format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/glue_catalog_table#output_format GlueCatalogTable#output_format}
   */
   readonly outputFormat?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/glue_catalog_table#parameters GlueCatalogTable#parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/glue_catalog_table#parameters GlueCatalogTable#parameters}
   */
   readonly parameters?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/glue_catalog_table#stored_as_sub_directories GlueCatalogTable#stored_as_sub_directories}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/glue_catalog_table#stored_as_sub_directories GlueCatalogTable#stored_as_sub_directories}
   */
   readonly storedAsSubDirectories?: boolean | cdktn.IResolvable;
   /**
   * columns block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/glue_catalog_table#columns GlueCatalogTable#columns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/glue_catalog_table#columns GlueCatalogTable#columns}
   */
   readonly columns?: GlueCatalogTableStorageDescriptorColumns[] | cdktn.IResolvable;
   /**
   * schema_reference block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/glue_catalog_table#schema_reference GlueCatalogTable#schema_reference}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/glue_catalog_table#schema_reference GlueCatalogTable#schema_reference}
   */
   readonly schemaReference?: GlueCatalogTableStorageDescriptorSchemaReference;
   /**
   * ser_de_info block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/glue_catalog_table#ser_de_info GlueCatalogTable#ser_de_info}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/glue_catalog_table#ser_de_info GlueCatalogTable#ser_de_info}
   */
   readonly serDeInfo?: GlueCatalogTableStorageDescriptorSerDeInfo;
   /**
   * skewed_info block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/glue_catalog_table#skewed_info GlueCatalogTable#skewed_info}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/glue_catalog_table#skewed_info GlueCatalogTable#skewed_info}
   */
   readonly skewedInfo?: GlueCatalogTableStorageDescriptorSkewedInfo;
   /**
   * sort_columns block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/glue_catalog_table#sort_columns GlueCatalogTable#sort_columns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/glue_catalog_table#sort_columns GlueCatalogTable#sort_columns}
   */
   readonly sortColumns?: GlueCatalogTableStorageDescriptorSortColumns[] | cdktn.IResolvable;
 }
@@ -2132,19 +3514,19 @@ export class GlueCatalogTableStorageDescriptorOutputReference extends cdktn.Comp
 }
 export interface GlueCatalogTableTargetTable {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/glue_catalog_table#catalog_id GlueCatalogTable#catalog_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/glue_catalog_table#catalog_id GlueCatalogTable#catalog_id}
   */
   readonly catalogId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/glue_catalog_table#database_name GlueCatalogTable#database_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/glue_catalog_table#database_name GlueCatalogTable#database_name}
   */
   readonly databaseName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/glue_catalog_table#name GlueCatalogTable#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/glue_catalog_table#name GlueCatalogTable#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/glue_catalog_table#region GlueCatalogTable#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/glue_catalog_table#region GlueCatalogTable#region}
   */
   readonly region?: string;
 }
@@ -2304,9 +3686,607 @@ export class GlueCatalogTableTargetTableOutputReference extends cdktn.ComplexObj
     return this._region;
   }
 }
+export interface GlueCatalogTableViewDefinitionRepresentations {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/glue_catalog_table#dialect GlueCatalogTable#dialect}
+  */
+  readonly dialect?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/glue_catalog_table#dialect_version GlueCatalogTable#dialect_version}
+  */
+  readonly dialectVersion?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/glue_catalog_table#validation_connection GlueCatalogTable#validation_connection}
+  */
+  readonly validationConnection?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/glue_catalog_table#view_expanded_text GlueCatalogTable#view_expanded_text}
+  */
+  readonly viewExpandedText?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/glue_catalog_table#view_original_text GlueCatalogTable#view_original_text}
+  */
+  readonly viewOriginalText?: string;
+}
+
+export function glueCatalogTableViewDefinitionRepresentationsToTerraform(struct?: GlueCatalogTableViewDefinitionRepresentations | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    dialect: cdktn.stringToTerraform(struct!.dialect),
+    dialect_version: cdktn.stringToTerraform(struct!.dialectVersion),
+    validation_connection: cdktn.stringToTerraform(struct!.validationConnection),
+    view_expanded_text: cdktn.stringToTerraform(struct!.viewExpandedText),
+    view_original_text: cdktn.stringToTerraform(struct!.viewOriginalText),
+  }
+}
+
+
+export function glueCatalogTableViewDefinitionRepresentationsToHclTerraform(struct?: GlueCatalogTableViewDefinitionRepresentations | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    dialect: {
+      value: cdktn.stringToHclTerraform(struct!.dialect),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    dialect_version: {
+      value: cdktn.stringToHclTerraform(struct!.dialectVersion),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    validation_connection: {
+      value: cdktn.stringToHclTerraform(struct!.validationConnection),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    view_expanded_text: {
+      value: cdktn.stringToHclTerraform(struct!.viewExpandedText),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    view_original_text: {
+      value: cdktn.stringToHclTerraform(struct!.viewOriginalText),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GlueCatalogTableViewDefinitionRepresentationsOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GlueCatalogTableViewDefinitionRepresentations | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._dialect !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.dialect = this._dialect;
+    }
+    if (this._dialectVersion !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.dialectVersion = this._dialectVersion;
+    }
+    if (this._validationConnection !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.validationConnection = this._validationConnection;
+    }
+    if (this._viewExpandedText !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.viewExpandedText = this._viewExpandedText;
+    }
+    if (this._viewOriginalText !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.viewOriginalText = this._viewOriginalText;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GlueCatalogTableViewDefinitionRepresentations | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._dialect = undefined;
+      this._dialectVersion = undefined;
+      this._validationConnection = undefined;
+      this._viewExpandedText = undefined;
+      this._viewOriginalText = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._dialect = value.dialect;
+      this._dialectVersion = value.dialectVersion;
+      this._validationConnection = value.validationConnection;
+      this._viewExpandedText = value.viewExpandedText;
+      this._viewOriginalText = value.viewOriginalText;
+    }
+  }
+
+  // dialect - computed: false, optional: true, required: false
+  private _dialect?: string; 
+  public get dialect() {
+    return this.getStringAttribute('dialect');
+  }
+  public set dialect(value: string) {
+    this._dialect = value;
+  }
+  public resetDialect() {
+    this._dialect = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dialectInput() {
+    return this._dialect;
+  }
+
+  // dialect_version - computed: false, optional: true, required: false
+  private _dialectVersion?: string; 
+  public get dialectVersion() {
+    return this.getStringAttribute('dialect_version');
+  }
+  public set dialectVersion(value: string) {
+    this._dialectVersion = value;
+  }
+  public resetDialectVersion() {
+    this._dialectVersion = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dialectVersionInput() {
+    return this._dialectVersion;
+  }
+
+  // validation_connection - computed: false, optional: true, required: false
+  private _validationConnection?: string; 
+  public get validationConnection() {
+    return this.getStringAttribute('validation_connection');
+  }
+  public set validationConnection(value: string) {
+    this._validationConnection = value;
+  }
+  public resetValidationConnection() {
+    this._validationConnection = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get validationConnectionInput() {
+    return this._validationConnection;
+  }
+
+  // view_expanded_text - computed: false, optional: true, required: false
+  private _viewExpandedText?: string; 
+  public get viewExpandedText() {
+    return this.getStringAttribute('view_expanded_text');
+  }
+  public set viewExpandedText(value: string) {
+    this._viewExpandedText = value;
+  }
+  public resetViewExpandedText() {
+    this._viewExpandedText = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get viewExpandedTextInput() {
+    return this._viewExpandedText;
+  }
+
+  // view_original_text - computed: false, optional: true, required: false
+  private _viewOriginalText?: string; 
+  public get viewOriginalText() {
+    return this.getStringAttribute('view_original_text');
+  }
+  public set viewOriginalText(value: string) {
+    this._viewOriginalText = value;
+  }
+  public resetViewOriginalText() {
+    this._viewOriginalText = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get viewOriginalTextInput() {
+    return this._viewOriginalText;
+  }
+}
+
+export class GlueCatalogTableViewDefinitionRepresentationsList extends cdktn.ComplexList {
+  public internalValue? : GlueCatalogTableViewDefinitionRepresentations[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GlueCatalogTableViewDefinitionRepresentationsOutputReference {
+    return new GlueCatalogTableViewDefinitionRepresentationsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface GlueCatalogTableViewDefinition {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/glue_catalog_table#definer GlueCatalogTable#definer}
+  */
+  readonly definer?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/glue_catalog_table#is_protected GlueCatalogTable#is_protected}
+  */
+  readonly isProtected?: boolean | cdktn.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/glue_catalog_table#last_refresh_type GlueCatalogTable#last_refresh_type}
+  */
+  readonly lastRefreshType?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/glue_catalog_table#refresh_seconds GlueCatalogTable#refresh_seconds}
+  */
+  readonly refreshSeconds?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/glue_catalog_table#sub_object_version_ids GlueCatalogTable#sub_object_version_ids}
+  */
+  readonly subObjectVersionIds?: number[];
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/glue_catalog_table#sub_objects GlueCatalogTable#sub_objects}
+  */
+  readonly subObjects?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/glue_catalog_table#view_version_id GlueCatalogTable#view_version_id}
+  */
+  readonly viewVersionId?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/glue_catalog_table#view_version_token GlueCatalogTable#view_version_token}
+  */
+  readonly viewVersionToken?: string;
+  /**
+  * representations block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/glue_catalog_table#representations GlueCatalogTable#representations}
+  */
+  readonly representations?: GlueCatalogTableViewDefinitionRepresentations[] | cdktn.IResolvable;
+}
+
+export function glueCatalogTableViewDefinitionToTerraform(struct?: GlueCatalogTableViewDefinitionOutputReference | GlueCatalogTableViewDefinition): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    definer: cdktn.stringToTerraform(struct!.definer),
+    is_protected: cdktn.booleanToTerraform(struct!.isProtected),
+    last_refresh_type: cdktn.stringToTerraform(struct!.lastRefreshType),
+    refresh_seconds: cdktn.numberToTerraform(struct!.refreshSeconds),
+    sub_object_version_ids: cdktn.listMapper(cdktn.numberToTerraform, false)(struct!.subObjectVersionIds),
+    sub_objects: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.subObjects),
+    view_version_id: cdktn.numberToTerraform(struct!.viewVersionId),
+    view_version_token: cdktn.stringToTerraform(struct!.viewVersionToken),
+    representations: cdktn.listMapper(glueCatalogTableViewDefinitionRepresentationsToTerraform, true)(struct!.representations),
+  }
+}
+
+
+export function glueCatalogTableViewDefinitionToHclTerraform(struct?: GlueCatalogTableViewDefinitionOutputReference | GlueCatalogTableViewDefinition): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    definer: {
+      value: cdktn.stringToHclTerraform(struct!.definer),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    is_protected: {
+      value: cdktn.booleanToHclTerraform(struct!.isProtected),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    last_refresh_type: {
+      value: cdktn.stringToHclTerraform(struct!.lastRefreshType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    refresh_seconds: {
+      value: cdktn.numberToHclTerraform(struct!.refreshSeconds),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    sub_object_version_ids: {
+      value: cdktn.listMapperHcl(cdktn.numberToHclTerraform, false)(struct!.subObjectVersionIds),
+      isBlock: false,
+      type: "list",
+      storageClassType: "numberList",
+    },
+    sub_objects: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.subObjects),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    view_version_id: {
+      value: cdktn.numberToHclTerraform(struct!.viewVersionId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    view_version_token: {
+      value: cdktn.stringToHclTerraform(struct!.viewVersionToken),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    representations: {
+      value: cdktn.listMapperHcl(glueCatalogTableViewDefinitionRepresentationsToHclTerraform, true)(struct!.representations),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GlueCatalogTableViewDefinitionRepresentationsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GlueCatalogTableViewDefinitionOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GlueCatalogTableViewDefinition | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._definer !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.definer = this._definer;
+    }
+    if (this._isProtected !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.isProtected = this._isProtected;
+    }
+    if (this._lastRefreshType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.lastRefreshType = this._lastRefreshType;
+    }
+    if (this._refreshSeconds !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.refreshSeconds = this._refreshSeconds;
+    }
+    if (this._subObjectVersionIds !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.subObjectVersionIds = this._subObjectVersionIds;
+    }
+    if (this._subObjects !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.subObjects = this._subObjects;
+    }
+    if (this._viewVersionId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.viewVersionId = this._viewVersionId;
+    }
+    if (this._viewVersionToken !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.viewVersionToken = this._viewVersionToken;
+    }
+    if (this._representations?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.representations = this._representations?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GlueCatalogTableViewDefinition | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._definer = undefined;
+      this._isProtected = undefined;
+      this._lastRefreshType = undefined;
+      this._refreshSeconds = undefined;
+      this._subObjectVersionIds = undefined;
+      this._subObjects = undefined;
+      this._viewVersionId = undefined;
+      this._viewVersionToken = undefined;
+      this._representations.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._definer = value.definer;
+      this._isProtected = value.isProtected;
+      this._lastRefreshType = value.lastRefreshType;
+      this._refreshSeconds = value.refreshSeconds;
+      this._subObjectVersionIds = value.subObjectVersionIds;
+      this._subObjects = value.subObjects;
+      this._viewVersionId = value.viewVersionId;
+      this._viewVersionToken = value.viewVersionToken;
+      this._representations.internalValue = value.representations;
+    }
+  }
+
+  // definer - computed: true, optional: true, required: false
+  private _definer?: string; 
+  public get definer() {
+    return this.getStringAttribute('definer');
+  }
+  public set definer(value: string) {
+    this._definer = value;
+  }
+  public resetDefiner() {
+    this._definer = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get definerInput() {
+    return this._definer;
+  }
+
+  // is_protected - computed: true, optional: true, required: false
+  private _isProtected?: boolean | cdktn.IResolvable; 
+  public get isProtected() {
+    return this.getBooleanAttribute('is_protected');
+  }
+  public set isProtected(value: boolean | cdktn.IResolvable) {
+    this._isProtected = value;
+  }
+  public resetIsProtected() {
+    this._isProtected = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get isProtectedInput() {
+    return this._isProtected;
+  }
+
+  // last_refresh_type - computed: false, optional: true, required: false
+  private _lastRefreshType?: string; 
+  public get lastRefreshType() {
+    return this.getStringAttribute('last_refresh_type');
+  }
+  public set lastRefreshType(value: string) {
+    this._lastRefreshType = value;
+  }
+  public resetLastRefreshType() {
+    this._lastRefreshType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get lastRefreshTypeInput() {
+    return this._lastRefreshType;
+  }
+
+  // refresh_seconds - computed: false, optional: true, required: false
+  private _refreshSeconds?: number; 
+  public get refreshSeconds() {
+    return this.getNumberAttribute('refresh_seconds');
+  }
+  public set refreshSeconds(value: number) {
+    this._refreshSeconds = value;
+  }
+  public resetRefreshSeconds() {
+    this._refreshSeconds = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get refreshSecondsInput() {
+    return this._refreshSeconds;
+  }
+
+  // sub_object_version_ids - computed: false, optional: true, required: false
+  private _subObjectVersionIds?: number[]; 
+  public get subObjectVersionIds() {
+    return this.getNumberListAttribute('sub_object_version_ids');
+  }
+  public set subObjectVersionIds(value: number[]) {
+    this._subObjectVersionIds = value;
+  }
+  public resetSubObjectVersionIds() {
+    this._subObjectVersionIds = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get subObjectVersionIdsInput() {
+    return this._subObjectVersionIds;
+  }
+
+  // sub_objects - computed: false, optional: true, required: false
+  private _subObjects?: string[]; 
+  public get subObjects() {
+    return this.getListAttribute('sub_objects');
+  }
+  public set subObjects(value: string[]) {
+    this._subObjects = value;
+  }
+  public resetSubObjects() {
+    this._subObjects = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get subObjectsInput() {
+    return this._subObjects;
+  }
+
+  // view_version_id - computed: false, optional: true, required: false
+  private _viewVersionId?: number; 
+  public get viewVersionId() {
+    return this.getNumberAttribute('view_version_id');
+  }
+  public set viewVersionId(value: number) {
+    this._viewVersionId = value;
+  }
+  public resetViewVersionId() {
+    this._viewVersionId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get viewVersionIdInput() {
+    return this._viewVersionId;
+  }
+
+  // view_version_token - computed: false, optional: true, required: false
+  private _viewVersionToken?: string; 
+  public get viewVersionToken() {
+    return this.getStringAttribute('view_version_token');
+  }
+  public set viewVersionToken(value: string) {
+    this._viewVersionToken = value;
+  }
+  public resetViewVersionToken() {
+    this._viewVersionToken = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get viewVersionTokenInput() {
+    return this._viewVersionToken;
+  }
+
+  // representations - computed: false, optional: true, required: false
+  private _representations = new GlueCatalogTableViewDefinitionRepresentationsList(this, "representations", false);
+  public get representations() {
+    return this._representations;
+  }
+  public putRepresentations(value: GlueCatalogTableViewDefinitionRepresentations[] | cdktn.IResolvable) {
+    this._representations.internalValue = value;
+  }
+  public resetRepresentations() {
+    this._representations.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get representationsInput() {
+    return this._representations.internalValue;
+  }
+}
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/glue_catalog_table aws_glue_catalog_table}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/glue_catalog_table aws_glue_catalog_table}
 */
 export class GlueCatalogTable extends cdktn.TerraformResource {
 
@@ -2322,7 +4302,7 @@ export class GlueCatalogTable extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a GlueCatalogTable resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GlueCatalogTable to import
-  * @param importFromId The id of the existing GlueCatalogTable that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/glue_catalog_table#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GlueCatalogTable that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/glue_catalog_table#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GlueCatalogTable to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -2334,7 +4314,7 @@ export class GlueCatalogTable extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/glue_catalog_table aws_glue_catalog_table} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/glue_catalog_table aws_glue_catalog_table} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -2345,7 +4325,7 @@ export class GlueCatalogTable extends cdktn.TerraformResource {
       terraformResourceType: 'aws_glue_catalog_table',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.35.1',
+        providerVersion: '6.36.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
@@ -2373,6 +4353,7 @@ export class GlueCatalogTable extends cdktn.TerraformResource {
     this._partitionKeys.internalValue = config.partitionKeys;
     this._storageDescriptor.internalValue = config.storageDescriptor;
     this._targetTable.internalValue = config.targetTable;
+    this._viewDefinition.internalValue = config.viewDefinition;
   }
 
   // ==========
@@ -2474,7 +4455,7 @@ export class GlueCatalogTable extends cdktn.TerraformResource {
     return this._owner;
   }
 
-  // parameters - computed: false, optional: true, required: false
+  // parameters - computed: true, optional: true, required: false
   private _parameters?: { [key: string]: string }; 
   public get parameters() {
     return this.getStringMapAttribute('parameters');
@@ -2522,7 +4503,7 @@ export class GlueCatalogTable extends cdktn.TerraformResource {
     return this._retention;
   }
 
-  // table_type - computed: false, optional: true, required: false
+  // table_type - computed: true, optional: true, required: false
   private _tableType?: string; 
   public get tableType() {
     return this.getStringAttribute('table_type');
@@ -2650,6 +4631,22 @@ export class GlueCatalogTable extends cdktn.TerraformResource {
     return this._targetTable.internalValue;
   }
 
+  // view_definition - computed: false, optional: true, required: false
+  private _viewDefinition = new GlueCatalogTableViewDefinitionOutputReference(this, "view_definition");
+  public get viewDefinition() {
+    return this._viewDefinition;
+  }
+  public putViewDefinition(value: GlueCatalogTableViewDefinition) {
+    this._viewDefinition.internalValue = value;
+  }
+  public resetViewDefinition() {
+    this._viewDefinition.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get viewDefinitionInput() {
+    return this._viewDefinition.internalValue;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -2673,6 +4670,7 @@ export class GlueCatalogTable extends cdktn.TerraformResource {
       partition_keys: cdktn.listMapper(glueCatalogTablePartitionKeysToTerraform, true)(this._partitionKeys.internalValue),
       storage_descriptor: glueCatalogTableStorageDescriptorToTerraform(this._storageDescriptor.internalValue),
       target_table: glueCatalogTableTargetTableToTerraform(this._targetTable.internalValue),
+      view_definition: glueCatalogTableViewDefinitionToTerraform(this._viewDefinition.internalValue),
     };
   }
 
@@ -2779,6 +4777,12 @@ export class GlueCatalogTable extends cdktn.TerraformResource {
         isBlock: true,
         type: "list",
         storageClassType: "GlueCatalogTableTargetTableList",
+      },
+      view_definition: {
+        value: glueCatalogTableViewDefinitionToHclTerraform(this._viewDefinition.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GlueCatalogTableViewDefinitionList",
       },
     };
 

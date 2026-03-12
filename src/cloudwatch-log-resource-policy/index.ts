@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/cloudwatch_log_resource_policy
+// https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/cloudwatch_log_resource_policy
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,30 +13,34 @@ import * as cdktn from 'cdktn';
 
 export interface CloudwatchLogResourcePolicyConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/cloudwatch_log_resource_policy#id CloudwatchLogResourcePolicy#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/cloudwatch_log_resource_policy#id CloudwatchLogResourcePolicy#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/cloudwatch_log_resource_policy#policy_document CloudwatchLogResourcePolicy#policy_document}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/cloudwatch_log_resource_policy#policy_document CloudwatchLogResourcePolicy#policy_document}
   */
   readonly policyDocument: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/cloudwatch_log_resource_policy#policy_name CloudwatchLogResourcePolicy#policy_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/cloudwatch_log_resource_policy#policy_name CloudwatchLogResourcePolicy#policy_name}
   */
-  readonly policyName: string;
+  readonly policyName?: string;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/cloudwatch_log_resource_policy#region CloudwatchLogResourcePolicy#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/cloudwatch_log_resource_policy#region CloudwatchLogResourcePolicy#region}
   */
   readonly region?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/cloudwatch_log_resource_policy#resource_arn CloudwatchLogResourcePolicy#resource_arn}
+  */
+  readonly resourceArn?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/cloudwatch_log_resource_policy aws_cloudwatch_log_resource_policy}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/cloudwatch_log_resource_policy aws_cloudwatch_log_resource_policy}
 */
 export class CloudwatchLogResourcePolicy extends cdktn.TerraformResource {
 
@@ -52,7 +56,7 @@ export class CloudwatchLogResourcePolicy extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a CloudwatchLogResourcePolicy resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CloudwatchLogResourcePolicy to import
-  * @param importFromId The id of the existing CloudwatchLogResourcePolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/cloudwatch_log_resource_policy#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing CloudwatchLogResourcePolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/cloudwatch_log_resource_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CloudwatchLogResourcePolicy to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -64,7 +68,7 @@ export class CloudwatchLogResourcePolicy extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.35.1/docs/resources/cloudwatch_log_resource_policy aws_cloudwatch_log_resource_policy} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/cloudwatch_log_resource_policy aws_cloudwatch_log_resource_policy} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -75,7 +79,7 @@ export class CloudwatchLogResourcePolicy extends cdktn.TerraformResource {
       terraformResourceType: 'aws_cloudwatch_log_resource_policy',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.35.1',
+        providerVersion: '6.36.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
@@ -90,6 +94,7 @@ export class CloudwatchLogResourcePolicy extends cdktn.TerraformResource {
     this._policyDocument = config.policyDocument;
     this._policyName = config.policyName;
     this._region = config.region;
+    this._resourceArn = config.resourceArn;
   }
 
   // ==========
@@ -125,7 +130,7 @@ export class CloudwatchLogResourcePolicy extends cdktn.TerraformResource {
     return this._policyDocument;
   }
 
-  // policy_name - computed: false, optional: false, required: true
+  // policy_name - computed: false, optional: true, required: false
   private _policyName?: string; 
   public get policyName() {
     return this.getStringAttribute('policy_name');
@@ -133,9 +138,17 @@ export class CloudwatchLogResourcePolicy extends cdktn.TerraformResource {
   public set policyName(value: string) {
     this._policyName = value;
   }
+  public resetPolicyName() {
+    this._policyName = undefined;
+  }
   // Temporarily expose input value. Use with caution.
   public get policyNameInput() {
     return this._policyName;
+  }
+
+  // policy_scope - computed: true, optional: false, required: false
+  public get policyScope() {
+    return this.getStringAttribute('policy_scope');
   }
 
   // region - computed: true, optional: true, required: false
@@ -154,6 +167,27 @@ export class CloudwatchLogResourcePolicy extends cdktn.TerraformResource {
     return this._region;
   }
 
+  // resource_arn - computed: false, optional: true, required: false
+  private _resourceArn?: string; 
+  public get resourceArn() {
+    return this.getStringAttribute('resource_arn');
+  }
+  public set resourceArn(value: string) {
+    this._resourceArn = value;
+  }
+  public resetResourceArn() {
+    this._resourceArn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get resourceArnInput() {
+    return this._resourceArn;
+  }
+
+  // revision_id - computed: true, optional: false, required: false
+  public get revisionId() {
+    return this.getStringAttribute('revision_id');
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -164,6 +198,7 @@ export class CloudwatchLogResourcePolicy extends cdktn.TerraformResource {
       policy_document: cdktn.stringToTerraform(this._policyDocument),
       policy_name: cdktn.stringToTerraform(this._policyName),
       region: cdktn.stringToTerraform(this._region),
+      resource_arn: cdktn.stringToTerraform(this._resourceArn),
     };
   }
 
@@ -189,6 +224,12 @@ export class CloudwatchLogResourcePolicy extends cdktn.TerraformResource {
       },
       region: {
         value: cdktn.stringToHclTerraform(this._region),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      resource_arn: {
+        value: cdktn.stringToHclTerraform(this._resourceArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
