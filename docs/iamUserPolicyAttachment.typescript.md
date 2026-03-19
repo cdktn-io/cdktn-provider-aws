@@ -4,7 +4,7 @@
 
 ### IamUserPolicyAttachment <a name="IamUserPolicyAttachment" id="@cdktn/provider-aws.iamUserPolicyAttachment.IamUserPolicyAttachment"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/iam_user_policy_attachment aws_iam_user_policy_attachment}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/iam_user_policy_attachment aws_iam_user_policy_attachment}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.iamUserPolicyAttachment.IamUserPolicyAttachment.Initializer"></a>
 
@@ -496,7 +496,7 @@ The construct id used in the generated config for the IamUserPolicyAttachment to
 
 The id of the existing IamUserPolicyAttachment that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/iam_user_policy_attachment#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/iam_user_policy_attachment#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -778,9 +778,9 @@ const iamUserPolicyAttachmentConfig: iamUserPolicyAttachment.IamUserPolicyAttach
 | <code><a href="#@cdktn/provider-aws.iamUserPolicyAttachment.IamUserPolicyAttachmentConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iamUserPolicyAttachment.IamUserPolicyAttachmentConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iamUserPolicyAttachment.IamUserPolicyAttachmentConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.iamUserPolicyAttachment.IamUserPolicyAttachmentConfig.property.policyArn">policyArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/iam_user_policy_attachment#policy_arn IamUserPolicyAttachment#policy_arn}. |
-| <code><a href="#@cdktn/provider-aws.iamUserPolicyAttachment.IamUserPolicyAttachmentConfig.property.user">user</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/iam_user_policy_attachment#user IamUserPolicyAttachment#user}. |
-| <code><a href="#@cdktn/provider-aws.iamUserPolicyAttachment.IamUserPolicyAttachmentConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/iam_user_policy_attachment#id IamUserPolicyAttachment#id}. |
+| <code><a href="#@cdktn/provider-aws.iamUserPolicyAttachment.IamUserPolicyAttachmentConfig.property.policyArn">policyArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/iam_user_policy_attachment#policy_arn IamUserPolicyAttachment#policy_arn}. |
+| <code><a href="#@cdktn/provider-aws.iamUserPolicyAttachment.IamUserPolicyAttachmentConfig.property.user">user</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/iam_user_policy_attachment#user IamUserPolicyAttachment#user}. |
+| <code><a href="#@cdktn/provider-aws.iamUserPolicyAttachment.IamUserPolicyAttachmentConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/iam_user_policy_attachment#id IamUserPolicyAttachment#id}. |
 
 ---
 
@@ -862,7 +862,7 @@ public readonly policyArn: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/iam_user_policy_attachment#policy_arn IamUserPolicyAttachment#policy_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/iam_user_policy_attachment#policy_arn IamUserPolicyAttachment#policy_arn}.
 
 ---
 
@@ -874,7 +874,7 @@ public readonly user: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/iam_user_policy_attachment#user IamUserPolicyAttachment#user}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/iam_user_policy_attachment#user IamUserPolicyAttachment#user}.
 
 ---
 
@@ -886,7 +886,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/iam_user_policy_attachment#id IamUserPolicyAttachment#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/iam_user_policy_attachment#id IamUserPolicyAttachment#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

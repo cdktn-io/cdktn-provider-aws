@@ -4,7 +4,7 @@
 
 ### DatapipelinePipeline <a name="DatapipelinePipeline" id="@cdktn/provider-aws.datapipelinePipeline.DatapipelinePipeline"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/datapipeline_pipeline aws_datapipeline_pipeline}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/datapipeline_pipeline aws_datapipeline_pipeline}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.datapipelinePipeline.DatapipelinePipeline.Initializer"></a>
 
@@ -41,12 +41,12 @@ datapipelinePipeline.DatapipelinePipeline(
 | <code><a href="#@cdktn/provider-aws.datapipelinePipeline.DatapipelinePipeline.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.datapipelinePipeline.DatapipelinePipeline.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.datapipelinePipeline.DatapipelinePipeline.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.datapipelinePipeline.DatapipelinePipeline.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/datapipeline_pipeline#name DatapipelinePipeline#name}. |
-| <code><a href="#@cdktn/provider-aws.datapipelinePipeline.DatapipelinePipeline.Initializer.parameter.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/datapipeline_pipeline#description DatapipelinePipeline#description}. |
-| <code><a href="#@cdktn/provider-aws.datapipelinePipeline.DatapipelinePipeline.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/datapipeline_pipeline#id DatapipelinePipeline#id}. |
+| <code><a href="#@cdktn/provider-aws.datapipelinePipeline.DatapipelinePipeline.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/datapipeline_pipeline#name DatapipelinePipeline#name}. |
+| <code><a href="#@cdktn/provider-aws.datapipelinePipeline.DatapipelinePipeline.Initializer.parameter.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/datapipeline_pipeline#description DatapipelinePipeline#description}. |
+| <code><a href="#@cdktn/provider-aws.datapipelinePipeline.DatapipelinePipeline.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/datapipeline_pipeline#id DatapipelinePipeline#id}. |
 | <code><a href="#@cdktn/provider-aws.datapipelinePipeline.DatapipelinePipeline.Initializer.parameter.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.datapipelinePipeline.DatapipelinePipeline.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/datapipeline_pipeline#tags DatapipelinePipeline#tags}. |
-| <code><a href="#@cdktn/provider-aws.datapipelinePipeline.DatapipelinePipeline.Initializer.parameter.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/datapipeline_pipeline#tags_all DatapipelinePipeline#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.datapipelinePipeline.DatapipelinePipeline.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/datapipeline_pipeline#tags DatapipelinePipeline#tags}. |
+| <code><a href="#@cdktn/provider-aws.datapipelinePipeline.DatapipelinePipeline.Initializer.parameter.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/datapipeline_pipeline#tags_all DatapipelinePipeline#tags_all}. |
 
 ---
 
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/datapipeline_pipeline#name DatapipelinePipeline#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/datapipeline_pipeline#name DatapipelinePipeline#name}.
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/datapipeline_pipeline#description DatapipelinePipeline#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/datapipeline_pipeline#description DatapipelinePipeline#description}.
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/datapipeline_pipeline#id DatapipelinePipeline#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/datapipeline_pipeline#id DatapipelinePipeline#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -143,7 +143,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/datapipeline_pipeline#region DatapipelinePipeline#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/datapipeline_pipeline#region DatapipelinePipeline#region}
 
 ---
 
@@ -151,7 +151,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/datapipeline_pipeline#tags DatapipelinePipeline#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/datapipeline_pipeline#tags DatapipelinePipeline#tags}.
 
 ---
 
@@ -159,7 +159,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/datapipeline_pipeline#tags_all DatapipelinePipeline#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/datapipeline_pipeline#tags_all DatapipelinePipeline#tags_all}.
 
 ---
 
@@ -691,7 +691,7 @@ The construct id used in the generated config for the DatapipelinePipeline to im
 
 The id of the existing DatapipelinePipeline that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/datapipeline_pipeline#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/datapipeline_pipeline#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1053,12 +1053,12 @@ datapipelinePipeline.DatapipelinePipelineConfig(
 | <code><a href="#@cdktn/provider-aws.datapipelinePipeline.DatapipelinePipelineConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.datapipelinePipeline.DatapipelinePipelineConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.datapipelinePipeline.DatapipelinePipelineConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.datapipelinePipeline.DatapipelinePipelineConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/datapipeline_pipeline#name DatapipelinePipeline#name}. |
-| <code><a href="#@cdktn/provider-aws.datapipelinePipeline.DatapipelinePipelineConfig.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/datapipeline_pipeline#description DatapipelinePipeline#description}. |
-| <code><a href="#@cdktn/provider-aws.datapipelinePipeline.DatapipelinePipelineConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/datapipeline_pipeline#id DatapipelinePipeline#id}. |
+| <code><a href="#@cdktn/provider-aws.datapipelinePipeline.DatapipelinePipelineConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/datapipeline_pipeline#name DatapipelinePipeline#name}. |
+| <code><a href="#@cdktn/provider-aws.datapipelinePipeline.DatapipelinePipelineConfig.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/datapipeline_pipeline#description DatapipelinePipeline#description}. |
+| <code><a href="#@cdktn/provider-aws.datapipelinePipeline.DatapipelinePipelineConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/datapipeline_pipeline#id DatapipelinePipeline#id}. |
 | <code><a href="#@cdktn/provider-aws.datapipelinePipeline.DatapipelinePipelineConfig.property.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.datapipelinePipeline.DatapipelinePipelineConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/datapipeline_pipeline#tags DatapipelinePipeline#tags}. |
-| <code><a href="#@cdktn/provider-aws.datapipelinePipeline.DatapipelinePipelineConfig.property.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/datapipeline_pipeline#tags_all DatapipelinePipeline#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.datapipelinePipeline.DatapipelinePipelineConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/datapipeline_pipeline#tags DatapipelinePipeline#tags}. |
+| <code><a href="#@cdktn/provider-aws.datapipelinePipeline.DatapipelinePipelineConfig.property.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/datapipeline_pipeline#tags_all DatapipelinePipeline#tags_all}. |
 
 ---
 
@@ -1140,7 +1140,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/datapipeline_pipeline#name DatapipelinePipeline#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/datapipeline_pipeline#name DatapipelinePipeline#name}.
 
 ---
 
@@ -1152,7 +1152,7 @@ description: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/datapipeline_pipeline#description DatapipelinePipeline#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/datapipeline_pipeline#description DatapipelinePipeline#description}.
 
 ---
 
@@ -1164,7 +1164,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/datapipeline_pipeline#id DatapipelinePipeline#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/datapipeline_pipeline#id DatapipelinePipeline#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1181,7 +1181,7 @@ region: str
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/datapipeline_pipeline#region DatapipelinePipeline#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/datapipeline_pipeline#region DatapipelinePipeline#region}
 
 ---
 
@@ -1193,7 +1193,7 @@ tags: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/datapipeline_pipeline#tags DatapipelinePipeline#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/datapipeline_pipeline#tags DatapipelinePipeline#tags}.
 
 ---
 
@@ -1205,7 +1205,7 @@ tags_all: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/datapipeline_pipeline#tags_all DatapipelinePipeline#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/datapipeline_pipeline#tags_all DatapipelinePipeline#tags_all}.
 
 ---
 

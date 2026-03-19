@@ -1,3 +1,3 @@
 # `aws_vpc_encryption_control`
 
-Refer to the Terraform Registry for docs: [`aws_vpc_encryption_control`](https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/vpc_encryption_control).
+Refer to the Terraform Registry for docs: [`aws_vpc_encryption_control`](https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/vpc_encryption_control).

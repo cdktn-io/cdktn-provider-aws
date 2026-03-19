@@ -4,7 +4,7 @@
 
 ### Cloudtrail <a name="Cloudtrail" id="@cdktn/provider-aws.cloudtrail.Cloudtrail"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/cloudtrail aws_cloudtrail}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/cloudtrail aws_cloudtrail}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudtrail.Cloudtrail.Initializer"></a>
 
@@ -647,7 +647,7 @@ The construct id used in the generated config for the Cloudtrail to import.
 
 The id of the existing Cloudtrail that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/cloudtrail#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/cloudtrail#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1308,7 +1308,7 @@ const cloudtrailAdvancedEventSelector: cloudtrail.CloudtrailAdvancedEventSelecto
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.cloudtrail.CloudtrailAdvancedEventSelector.property.fieldSelector">fieldSelector</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudtrail.CloudtrailAdvancedEventSelectorFieldSelector">CloudtrailAdvancedEventSelectorFieldSelector</a>[]</code> | field_selector block. |
-| <code><a href="#@cdktn/provider-aws.cloudtrail.CloudtrailAdvancedEventSelector.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/cloudtrail#name Cloudtrail#name}. |
+| <code><a href="#@cdktn/provider-aws.cloudtrail.CloudtrailAdvancedEventSelector.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/cloudtrail#name Cloudtrail#name}. |
 
 ---
 
@@ -1322,7 +1322,7 @@ public readonly fieldSelector: IResolvable | CloudtrailAdvancedEventSelectorFiel
 
 field_selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/cloudtrail#field_selector Cloudtrail#field_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/cloudtrail#field_selector Cloudtrail#field_selector}
 
 ---
 
@@ -1334,7 +1334,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/cloudtrail#name Cloudtrail#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/cloudtrail#name Cloudtrail#name}.
 
 ---
 
@@ -1352,13 +1352,13 @@ const cloudtrailAdvancedEventSelectorFieldSelector: cloudtrail.CloudtrailAdvance
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudtrail.CloudtrailAdvancedEventSelectorFieldSelector.property.field">field</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/cloudtrail#field Cloudtrail#field}. |
-| <code><a href="#@cdktn/provider-aws.cloudtrail.CloudtrailAdvancedEventSelectorFieldSelector.property.endsWith">endsWith</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/cloudtrail#ends_with Cloudtrail#ends_with}. |
-| <code><a href="#@cdktn/provider-aws.cloudtrail.CloudtrailAdvancedEventSelectorFieldSelector.property.equalTo">equalTo</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/cloudtrail#equals Cloudtrail#equals}. |
-| <code><a href="#@cdktn/provider-aws.cloudtrail.CloudtrailAdvancedEventSelectorFieldSelector.property.notEndsWith">notEndsWith</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/cloudtrail#not_ends_with Cloudtrail#not_ends_with}. |
-| <code><a href="#@cdktn/provider-aws.cloudtrail.CloudtrailAdvancedEventSelectorFieldSelector.property.notEquals">notEquals</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/cloudtrail#not_equals Cloudtrail#not_equals}. |
-| <code><a href="#@cdktn/provider-aws.cloudtrail.CloudtrailAdvancedEventSelectorFieldSelector.property.notStartsWith">notStartsWith</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/cloudtrail#not_starts_with Cloudtrail#not_starts_with}. |
-| <code><a href="#@cdktn/provider-aws.cloudtrail.CloudtrailAdvancedEventSelectorFieldSelector.property.startsWith">startsWith</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/cloudtrail#starts_with Cloudtrail#starts_with}. |
+| <code><a href="#@cdktn/provider-aws.cloudtrail.CloudtrailAdvancedEventSelectorFieldSelector.property.field">field</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/cloudtrail#field Cloudtrail#field}. |
+| <code><a href="#@cdktn/provider-aws.cloudtrail.CloudtrailAdvancedEventSelectorFieldSelector.property.endsWith">endsWith</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/cloudtrail#ends_with Cloudtrail#ends_with}. |
+| <code><a href="#@cdktn/provider-aws.cloudtrail.CloudtrailAdvancedEventSelectorFieldSelector.property.equalTo">equalTo</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/cloudtrail#equals Cloudtrail#equals}. |
+| <code><a href="#@cdktn/provider-aws.cloudtrail.CloudtrailAdvancedEventSelectorFieldSelector.property.notEndsWith">notEndsWith</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/cloudtrail#not_ends_with Cloudtrail#not_ends_with}. |
+| <code><a href="#@cdktn/provider-aws.cloudtrail.CloudtrailAdvancedEventSelectorFieldSelector.property.notEquals">notEquals</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/cloudtrail#not_equals Cloudtrail#not_equals}. |
+| <code><a href="#@cdktn/provider-aws.cloudtrail.CloudtrailAdvancedEventSelectorFieldSelector.property.notStartsWith">notStartsWith</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/cloudtrail#not_starts_with Cloudtrail#not_starts_with}. |
+| <code><a href="#@cdktn/provider-aws.cloudtrail.CloudtrailAdvancedEventSelectorFieldSelector.property.startsWith">startsWith</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/cloudtrail#starts_with Cloudtrail#starts_with}. |
 
 ---
 
@@ -1370,7 +1370,7 @@ public readonly field: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/cloudtrail#field Cloudtrail#field}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/cloudtrail#field Cloudtrail#field}.
 
 ---
 
@@ -1382,7 +1382,7 @@ public readonly endsWith: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/cloudtrail#ends_with Cloudtrail#ends_with}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/cloudtrail#ends_with Cloudtrail#ends_with}.
 
 ---
 
@@ -1394,7 +1394,7 @@ public readonly equalTo: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/cloudtrail#equals Cloudtrail#equals}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/cloudtrail#equals Cloudtrail#equals}.
 
 ---
 
@@ -1406,7 +1406,7 @@ public readonly notEndsWith: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/cloudtrail#not_ends_with Cloudtrail#not_ends_with}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/cloudtrail#not_ends_with Cloudtrail#not_ends_with}.
 
 ---
 
@@ -1418,7 +1418,7 @@ public readonly notEquals: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/cloudtrail#not_equals Cloudtrail#not_equals}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/cloudtrail#not_equals Cloudtrail#not_equals}.
 
 ---
 
@@ -1430,7 +1430,7 @@ public readonly notStartsWith: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/cloudtrail#not_starts_with Cloudtrail#not_starts_with}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/cloudtrail#not_starts_with Cloudtrail#not_starts_with}.
 
 ---
 
@@ -1442,7 +1442,7 @@ public readonly startsWith: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/cloudtrail#starts_with Cloudtrail#starts_with}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/cloudtrail#starts_with Cloudtrail#starts_with}.
 
 ---
 
@@ -1467,25 +1467,25 @@ const cloudtrailConfig: cloudtrail.CloudtrailConfig = { ... }
 | <code><a href="#@cdktn/provider-aws.cloudtrail.CloudtrailConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudtrail.CloudtrailConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudtrail.CloudtrailConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudtrail.CloudtrailConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/cloudtrail#name Cloudtrail#name}. |
-| <code><a href="#@cdktn/provider-aws.cloudtrail.CloudtrailConfig.property.s3BucketName">s3BucketName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/cloudtrail#s3_bucket_name Cloudtrail#s3_bucket_name}. |
+| <code><a href="#@cdktn/provider-aws.cloudtrail.CloudtrailConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/cloudtrail#name Cloudtrail#name}. |
+| <code><a href="#@cdktn/provider-aws.cloudtrail.CloudtrailConfig.property.s3BucketName">s3BucketName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/cloudtrail#s3_bucket_name Cloudtrail#s3_bucket_name}. |
 | <code><a href="#@cdktn/provider-aws.cloudtrail.CloudtrailConfig.property.advancedEventSelector">advancedEventSelector</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudtrail.CloudtrailAdvancedEventSelector">CloudtrailAdvancedEventSelector</a>[]</code> | advanced_event_selector block. |
-| <code><a href="#@cdktn/provider-aws.cloudtrail.CloudtrailConfig.property.cloudWatchLogsGroupArn">cloudWatchLogsGroupArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/cloudtrail#cloud_watch_logs_group_arn Cloudtrail#cloud_watch_logs_group_arn}. |
-| <code><a href="#@cdktn/provider-aws.cloudtrail.CloudtrailConfig.property.cloudWatchLogsRoleArn">cloudWatchLogsRoleArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/cloudtrail#cloud_watch_logs_role_arn Cloudtrail#cloud_watch_logs_role_arn}. |
-| <code><a href="#@cdktn/provider-aws.cloudtrail.CloudtrailConfig.property.enableLogFileValidation">enableLogFileValidation</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/cloudtrail#enable_log_file_validation Cloudtrail#enable_log_file_validation}. |
-| <code><a href="#@cdktn/provider-aws.cloudtrail.CloudtrailConfig.property.enableLogging">enableLogging</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/cloudtrail#enable_logging Cloudtrail#enable_logging}. |
+| <code><a href="#@cdktn/provider-aws.cloudtrail.CloudtrailConfig.property.cloudWatchLogsGroupArn">cloudWatchLogsGroupArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/cloudtrail#cloud_watch_logs_group_arn Cloudtrail#cloud_watch_logs_group_arn}. |
+| <code><a href="#@cdktn/provider-aws.cloudtrail.CloudtrailConfig.property.cloudWatchLogsRoleArn">cloudWatchLogsRoleArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/cloudtrail#cloud_watch_logs_role_arn Cloudtrail#cloud_watch_logs_role_arn}. |
+| <code><a href="#@cdktn/provider-aws.cloudtrail.CloudtrailConfig.property.enableLogFileValidation">enableLogFileValidation</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/cloudtrail#enable_log_file_validation Cloudtrail#enable_log_file_validation}. |
+| <code><a href="#@cdktn/provider-aws.cloudtrail.CloudtrailConfig.property.enableLogging">enableLogging</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/cloudtrail#enable_logging Cloudtrail#enable_logging}. |
 | <code><a href="#@cdktn/provider-aws.cloudtrail.CloudtrailConfig.property.eventSelector">eventSelector</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudtrail.CloudtrailEventSelector">CloudtrailEventSelector</a>[]</code> | event_selector block. |
-| <code><a href="#@cdktn/provider-aws.cloudtrail.CloudtrailConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/cloudtrail#id Cloudtrail#id}. |
-| <code><a href="#@cdktn/provider-aws.cloudtrail.CloudtrailConfig.property.includeGlobalServiceEvents">includeGlobalServiceEvents</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/cloudtrail#include_global_service_events Cloudtrail#include_global_service_events}. |
+| <code><a href="#@cdktn/provider-aws.cloudtrail.CloudtrailConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/cloudtrail#id Cloudtrail#id}. |
+| <code><a href="#@cdktn/provider-aws.cloudtrail.CloudtrailConfig.property.includeGlobalServiceEvents">includeGlobalServiceEvents</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/cloudtrail#include_global_service_events Cloudtrail#include_global_service_events}. |
 | <code><a href="#@cdktn/provider-aws.cloudtrail.CloudtrailConfig.property.insightSelector">insightSelector</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudtrail.CloudtrailInsightSelector">CloudtrailInsightSelector</a>[]</code> | insight_selector block. |
-| <code><a href="#@cdktn/provider-aws.cloudtrail.CloudtrailConfig.property.isMultiRegionTrail">isMultiRegionTrail</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/cloudtrail#is_multi_region_trail Cloudtrail#is_multi_region_trail}. |
-| <code><a href="#@cdktn/provider-aws.cloudtrail.CloudtrailConfig.property.isOrganizationTrail">isOrganizationTrail</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/cloudtrail#is_organization_trail Cloudtrail#is_organization_trail}. |
-| <code><a href="#@cdktn/provider-aws.cloudtrail.CloudtrailConfig.property.kmsKeyId">kmsKeyId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/cloudtrail#kms_key_id Cloudtrail#kms_key_id}. |
+| <code><a href="#@cdktn/provider-aws.cloudtrail.CloudtrailConfig.property.isMultiRegionTrail">isMultiRegionTrail</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/cloudtrail#is_multi_region_trail Cloudtrail#is_multi_region_trail}. |
+| <code><a href="#@cdktn/provider-aws.cloudtrail.CloudtrailConfig.property.isOrganizationTrail">isOrganizationTrail</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/cloudtrail#is_organization_trail Cloudtrail#is_organization_trail}. |
+| <code><a href="#@cdktn/provider-aws.cloudtrail.CloudtrailConfig.property.kmsKeyId">kmsKeyId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/cloudtrail#kms_key_id Cloudtrail#kms_key_id}. |
 | <code><a href="#@cdktn/provider-aws.cloudtrail.CloudtrailConfig.property.region">region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.cloudtrail.CloudtrailConfig.property.s3KeyPrefix">s3KeyPrefix</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/cloudtrail#s3_key_prefix Cloudtrail#s3_key_prefix}. |
-| <code><a href="#@cdktn/provider-aws.cloudtrail.CloudtrailConfig.property.snsTopicName">snsTopicName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/cloudtrail#sns_topic_name Cloudtrail#sns_topic_name}. |
-| <code><a href="#@cdktn/provider-aws.cloudtrail.CloudtrailConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/cloudtrail#tags Cloudtrail#tags}. |
-| <code><a href="#@cdktn/provider-aws.cloudtrail.CloudtrailConfig.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/cloudtrail#tags_all Cloudtrail#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.cloudtrail.CloudtrailConfig.property.s3KeyPrefix">s3KeyPrefix</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/cloudtrail#s3_key_prefix Cloudtrail#s3_key_prefix}. |
+| <code><a href="#@cdktn/provider-aws.cloudtrail.CloudtrailConfig.property.snsTopicName">snsTopicName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/cloudtrail#sns_topic_name Cloudtrail#sns_topic_name}. |
+| <code><a href="#@cdktn/provider-aws.cloudtrail.CloudtrailConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/cloudtrail#tags Cloudtrail#tags}. |
+| <code><a href="#@cdktn/provider-aws.cloudtrail.CloudtrailConfig.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/cloudtrail#tags_all Cloudtrail#tags_all}. |
 
 ---
 
@@ -1567,7 +1567,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/cloudtrail#name Cloudtrail#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/cloudtrail#name Cloudtrail#name}.
 
 ---
 
@@ -1579,7 +1579,7 @@ public readonly s3BucketName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/cloudtrail#s3_bucket_name Cloudtrail#s3_bucket_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/cloudtrail#s3_bucket_name Cloudtrail#s3_bucket_name}.
 
 ---
 
@@ -1593,7 +1593,7 @@ public readonly advancedEventSelector: IResolvable | CloudtrailAdvancedEventSele
 
 advanced_event_selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/cloudtrail#advanced_event_selector Cloudtrail#advanced_event_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/cloudtrail#advanced_event_selector Cloudtrail#advanced_event_selector}
 
 ---
 
@@ -1605,7 +1605,7 @@ public readonly cloudWatchLogsGroupArn: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/cloudtrail#cloud_watch_logs_group_arn Cloudtrail#cloud_watch_logs_group_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/cloudtrail#cloud_watch_logs_group_arn Cloudtrail#cloud_watch_logs_group_arn}.
 
 ---
 
@@ -1617,7 +1617,7 @@ public readonly cloudWatchLogsRoleArn: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/cloudtrail#cloud_watch_logs_role_arn Cloudtrail#cloud_watch_logs_role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/cloudtrail#cloud_watch_logs_role_arn Cloudtrail#cloud_watch_logs_role_arn}.
 
 ---
 
@@ -1629,7 +1629,7 @@ public readonly enableLogFileValidation: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/cloudtrail#enable_log_file_validation Cloudtrail#enable_log_file_validation}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/cloudtrail#enable_log_file_validation Cloudtrail#enable_log_file_validation}.
 
 ---
 
@@ -1641,7 +1641,7 @@ public readonly enableLogging: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/cloudtrail#enable_logging Cloudtrail#enable_logging}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/cloudtrail#enable_logging Cloudtrail#enable_logging}.
 
 ---
 
@@ -1655,7 +1655,7 @@ public readonly eventSelector: IResolvable | CloudtrailEventSelector[];
 
 event_selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/cloudtrail#event_selector Cloudtrail#event_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/cloudtrail#event_selector Cloudtrail#event_selector}
 
 ---
 
@@ -1667,7 +1667,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/cloudtrail#id Cloudtrail#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/cloudtrail#id Cloudtrail#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1682,7 +1682,7 @@ public readonly includeGlobalServiceEvents: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/cloudtrail#include_global_service_events Cloudtrail#include_global_service_events}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/cloudtrail#include_global_service_events Cloudtrail#include_global_service_events}.
 
 ---
 
@@ -1696,7 +1696,7 @@ public readonly insightSelector: IResolvable | CloudtrailInsightSelector[];
 
 insight_selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/cloudtrail#insight_selector Cloudtrail#insight_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/cloudtrail#insight_selector Cloudtrail#insight_selector}
 
 ---
 
@@ -1708,7 +1708,7 @@ public readonly isMultiRegionTrail: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/cloudtrail#is_multi_region_trail Cloudtrail#is_multi_region_trail}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/cloudtrail#is_multi_region_trail Cloudtrail#is_multi_region_trail}.
 
 ---
 
@@ -1720,7 +1720,7 @@ public readonly isOrganizationTrail: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/cloudtrail#is_organization_trail Cloudtrail#is_organization_trail}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/cloudtrail#is_organization_trail Cloudtrail#is_organization_trail}.
 
 ---
 
@@ -1732,7 +1732,7 @@ public readonly kmsKeyId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/cloudtrail#kms_key_id Cloudtrail#kms_key_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/cloudtrail#kms_key_id Cloudtrail#kms_key_id}.
 
 ---
 
@@ -1746,7 +1746,7 @@ public readonly region: string;
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/cloudtrail#region Cloudtrail#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/cloudtrail#region Cloudtrail#region}
 
 ---
 
@@ -1758,7 +1758,7 @@ public readonly s3KeyPrefix: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/cloudtrail#s3_key_prefix Cloudtrail#s3_key_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/cloudtrail#s3_key_prefix Cloudtrail#s3_key_prefix}.
 
 ---
 
@@ -1770,7 +1770,7 @@ public readonly snsTopicName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/cloudtrail#sns_topic_name Cloudtrail#sns_topic_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/cloudtrail#sns_topic_name Cloudtrail#sns_topic_name}.
 
 ---
 
@@ -1782,7 +1782,7 @@ public readonly tags: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/cloudtrail#tags Cloudtrail#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/cloudtrail#tags Cloudtrail#tags}.
 
 ---
 
@@ -1794,7 +1794,7 @@ public readonly tagsAll: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/cloudtrail#tags_all Cloudtrail#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/cloudtrail#tags_all Cloudtrail#tags_all}.
 
 ---
 
@@ -1813,9 +1813,9 @@ const cloudtrailEventSelector: cloudtrail.CloudtrailEventSelector = { ... }
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.cloudtrail.CloudtrailEventSelector.property.dataResource">dataResource</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.cloudtrail.CloudtrailEventSelectorDataResource">CloudtrailEventSelectorDataResource</a>[]</code> | data_resource block. |
-| <code><a href="#@cdktn/provider-aws.cloudtrail.CloudtrailEventSelector.property.excludeManagementEventSources">excludeManagementEventSources</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/cloudtrail#exclude_management_event_sources Cloudtrail#exclude_management_event_sources}. |
-| <code><a href="#@cdktn/provider-aws.cloudtrail.CloudtrailEventSelector.property.includeManagementEvents">includeManagementEvents</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/cloudtrail#include_management_events Cloudtrail#include_management_events}. |
-| <code><a href="#@cdktn/provider-aws.cloudtrail.CloudtrailEventSelector.property.readWriteType">readWriteType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/cloudtrail#read_write_type Cloudtrail#read_write_type}. |
+| <code><a href="#@cdktn/provider-aws.cloudtrail.CloudtrailEventSelector.property.excludeManagementEventSources">excludeManagementEventSources</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/cloudtrail#exclude_management_event_sources Cloudtrail#exclude_management_event_sources}. |
+| <code><a href="#@cdktn/provider-aws.cloudtrail.CloudtrailEventSelector.property.includeManagementEvents">includeManagementEvents</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/cloudtrail#include_management_events Cloudtrail#include_management_events}. |
+| <code><a href="#@cdktn/provider-aws.cloudtrail.CloudtrailEventSelector.property.readWriteType">readWriteType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/cloudtrail#read_write_type Cloudtrail#read_write_type}. |
 
 ---
 
@@ -1829,7 +1829,7 @@ public readonly dataResource: IResolvable | CloudtrailEventSelectorDataResource[
 
 data_resource block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/cloudtrail#data_resource Cloudtrail#data_resource}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/cloudtrail#data_resource Cloudtrail#data_resource}
 
 ---
 
@@ -1841,7 +1841,7 @@ public readonly excludeManagementEventSources: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/cloudtrail#exclude_management_event_sources Cloudtrail#exclude_management_event_sources}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/cloudtrail#exclude_management_event_sources Cloudtrail#exclude_management_event_sources}.
 
 ---
 
@@ -1853,7 +1853,7 @@ public readonly includeManagementEvents: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/cloudtrail#include_management_events Cloudtrail#include_management_events}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/cloudtrail#include_management_events Cloudtrail#include_management_events}.
 
 ---
 
@@ -1865,7 +1865,7 @@ public readonly readWriteType: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/cloudtrail#read_write_type Cloudtrail#read_write_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/cloudtrail#read_write_type Cloudtrail#read_write_type}.
 
 ---
 
@@ -1883,8 +1883,8 @@ const cloudtrailEventSelectorDataResource: cloudtrail.CloudtrailEventSelectorDat
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudtrail.CloudtrailEventSelectorDataResource.property.type">type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/cloudtrail#type Cloudtrail#type}. |
-| <code><a href="#@cdktn/provider-aws.cloudtrail.CloudtrailEventSelectorDataResource.property.values">values</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/cloudtrail#values Cloudtrail#values}. |
+| <code><a href="#@cdktn/provider-aws.cloudtrail.CloudtrailEventSelectorDataResource.property.type">type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/cloudtrail#type Cloudtrail#type}. |
+| <code><a href="#@cdktn/provider-aws.cloudtrail.CloudtrailEventSelectorDataResource.property.values">values</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/cloudtrail#values Cloudtrail#values}. |
 
 ---
 
@@ -1896,7 +1896,7 @@ public readonly type: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/cloudtrail#type Cloudtrail#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/cloudtrail#type Cloudtrail#type}.
 
 ---
 
@@ -1908,7 +1908,7 @@ public readonly values: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/cloudtrail#values Cloudtrail#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/cloudtrail#values Cloudtrail#values}.
 
 ---
 
@@ -1926,7 +1926,7 @@ const cloudtrailInsightSelector: cloudtrail.CloudtrailInsightSelector = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudtrail.CloudtrailInsightSelector.property.insightType">insightType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/cloudtrail#insight_type Cloudtrail#insight_type}. |
+| <code><a href="#@cdktn/provider-aws.cloudtrail.CloudtrailInsightSelector.property.insightType">insightType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/cloudtrail#insight_type Cloudtrail#insight_type}. |
 
 ---
 
@@ -1938,7 +1938,7 @@ public readonly insightType: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/cloudtrail#insight_type Cloudtrail#insight_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/cloudtrail#insight_type Cloudtrail#insight_type}.
 
 ---
 

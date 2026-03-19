@@ -1,3 +1,3 @@
 # `aws_servicecatalog_portfolio`
 
-Refer to the Terraform Registry for docs: [`aws_servicecatalog_portfolio`](https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/servicecatalog_portfolio).
+Refer to the Terraform Registry for docs: [`aws_servicecatalog_portfolio`](https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/servicecatalog_portfolio).

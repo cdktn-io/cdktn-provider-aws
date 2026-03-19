@@ -4,7 +4,7 @@
 
 ### DataAwsBatchSchedulingPolicy <a name="DataAwsBatchSchedulingPolicy" id="@cdktn/provider-aws.dataAwsBatchSchedulingPolicy.DataAwsBatchSchedulingPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/data-sources/batch_scheduling_policy aws_batch_scheduling_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/data-sources/batch_scheduling_policy aws_batch_scheduling_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsBatchSchedulingPolicy.DataAwsBatchSchedulingPolicy.Initializer"></a>
 
@@ -408,7 +408,7 @@ The construct id used in the generated config for the DataAwsBatchSchedulingPoli
 
 The id of the existing DataAwsBatchSchedulingPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/data-sources/batch_scheduling_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/data-sources/batch_scheduling_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -712,10 +712,10 @@ const dataAwsBatchSchedulingPolicyConfig: dataAwsBatchSchedulingPolicy.DataAwsBa
 | <code><a href="#@cdktn/provider-aws.dataAwsBatchSchedulingPolicy.DataAwsBatchSchedulingPolicyConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsBatchSchedulingPolicy.DataAwsBatchSchedulingPolicyConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsBatchSchedulingPolicy.DataAwsBatchSchedulingPolicyConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dataAwsBatchSchedulingPolicy.DataAwsBatchSchedulingPolicyConfig.property.arn">arn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/data-sources/batch_scheduling_policy#arn DataAwsBatchSchedulingPolicy#arn}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsBatchSchedulingPolicy.DataAwsBatchSchedulingPolicyConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/data-sources/batch_scheduling_policy#id DataAwsBatchSchedulingPolicy#id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsBatchSchedulingPolicy.DataAwsBatchSchedulingPolicyConfig.property.arn">arn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/data-sources/batch_scheduling_policy#arn DataAwsBatchSchedulingPolicy#arn}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsBatchSchedulingPolicy.DataAwsBatchSchedulingPolicyConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/data-sources/batch_scheduling_policy#id DataAwsBatchSchedulingPolicy#id}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsBatchSchedulingPolicy.DataAwsBatchSchedulingPolicyConfig.property.region">region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.dataAwsBatchSchedulingPolicy.DataAwsBatchSchedulingPolicyConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/data-sources/batch_scheduling_policy#tags DataAwsBatchSchedulingPolicy#tags}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsBatchSchedulingPolicy.DataAwsBatchSchedulingPolicyConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/data-sources/batch_scheduling_policy#tags DataAwsBatchSchedulingPolicy#tags}. |
 
 ---
 
@@ -797,7 +797,7 @@ public readonly arn: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/data-sources/batch_scheduling_policy#arn DataAwsBatchSchedulingPolicy#arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/data-sources/batch_scheduling_policy#arn DataAwsBatchSchedulingPolicy#arn}.
 
 ---
 
@@ -809,7 +809,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/data-sources/batch_scheduling_policy#id DataAwsBatchSchedulingPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/data-sources/batch_scheduling_policy#id DataAwsBatchSchedulingPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -826,7 +826,7 @@ public readonly region: string;
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/data-sources/batch_scheduling_policy#region DataAwsBatchSchedulingPolicy#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/data-sources/batch_scheduling_policy#region DataAwsBatchSchedulingPolicy#region}
 
 ---
 
@@ -838,7 +838,7 @@ public readonly tags: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/data-sources/batch_scheduling_policy#tags DataAwsBatchSchedulingPolicy#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/data-sources/batch_scheduling_policy#tags DataAwsBatchSchedulingPolicy#tags}.
 
 ---
 

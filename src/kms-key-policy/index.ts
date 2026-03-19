@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/kms_key_policy
+// https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/kms_key_policy
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,34 +13,34 @@ import * as cdktn from 'cdktn';
 
 export interface KmsKeyPolicyConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/kms_key_policy#bypass_policy_lockout_safety_check KmsKeyPolicy#bypass_policy_lockout_safety_check}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/kms_key_policy#bypass_policy_lockout_safety_check KmsKeyPolicy#bypass_policy_lockout_safety_check}
   */
   readonly bypassPolicyLockoutSafetyCheck?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/kms_key_policy#id KmsKeyPolicy#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/kms_key_policy#id KmsKeyPolicy#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/kms_key_policy#key_id KmsKeyPolicy#key_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/kms_key_policy#key_id KmsKeyPolicy#key_id}
   */
   readonly keyId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/kms_key_policy#policy KmsKeyPolicy#policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/kms_key_policy#policy KmsKeyPolicy#policy}
   */
   readonly policy: string;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/kms_key_policy#region KmsKeyPolicy#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/kms_key_policy#region KmsKeyPolicy#region}
   */
   readonly region?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/kms_key_policy aws_kms_key_policy}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/kms_key_policy aws_kms_key_policy}
 */
 export class KmsKeyPolicy extends cdktn.TerraformResource {
 
@@ -56,7 +56,7 @@ export class KmsKeyPolicy extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a KmsKeyPolicy resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the KmsKeyPolicy to import
-  * @param importFromId The id of the existing KmsKeyPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/kms_key_policy#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing KmsKeyPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/kms_key_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the KmsKeyPolicy to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -68,7 +68,7 @@ export class KmsKeyPolicy extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/kms_key_policy aws_kms_key_policy} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/kms_key_policy aws_kms_key_policy} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -79,7 +79,7 @@ export class KmsKeyPolicy extends cdktn.TerraformResource {
       terraformResourceType: 'aws_kms_key_policy',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.36.0',
+        providerVersion: '6.37.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

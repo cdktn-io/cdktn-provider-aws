@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/xray_resource_policy
+// https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/xray_resource_policy
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,31 +13,31 @@ import * as cdktn from 'cdktn';
 
 export interface XrayResourcePolicyConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/xray_resource_policy#bypass_policy_lockout_check XrayResourcePolicy#bypass_policy_lockout_check}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/xray_resource_policy#bypass_policy_lockout_check XrayResourcePolicy#bypass_policy_lockout_check}
   */
   readonly bypassPolicyLockoutCheck?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/xray_resource_policy#policy_document XrayResourcePolicy#policy_document}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/xray_resource_policy#policy_document XrayResourcePolicy#policy_document}
   */
   readonly policyDocument: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/xray_resource_policy#policy_name XrayResourcePolicy#policy_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/xray_resource_policy#policy_name XrayResourcePolicy#policy_name}
   */
   readonly policyName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/xray_resource_policy#policy_revision_id XrayResourcePolicy#policy_revision_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/xray_resource_policy#policy_revision_id XrayResourcePolicy#policy_revision_id}
   */
   readonly policyRevisionId?: string;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/xray_resource_policy#region XrayResourcePolicy#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/xray_resource_policy#region XrayResourcePolicy#region}
   */
   readonly region?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/xray_resource_policy aws_xray_resource_policy}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/xray_resource_policy aws_xray_resource_policy}
 */
 export class XrayResourcePolicy extends cdktn.TerraformResource {
 
@@ -53,7 +53,7 @@ export class XrayResourcePolicy extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a XrayResourcePolicy resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the XrayResourcePolicy to import
-  * @param importFromId The id of the existing XrayResourcePolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/xray_resource_policy#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing XrayResourcePolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/xray_resource_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the XrayResourcePolicy to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -65,7 +65,7 @@ export class XrayResourcePolicy extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/xray_resource_policy aws_xray_resource_policy} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/xray_resource_policy aws_xray_resource_policy} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -76,7 +76,7 @@ export class XrayResourcePolicy extends cdktn.TerraformResource {
       terraformResourceType: 'aws_xray_resource_policy',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.36.0',
+        providerVersion: '6.37.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

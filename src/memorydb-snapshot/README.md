@@ -1,3 +1,3 @@
 # `aws_memorydb_snapshot`
 
-Refer to the Terraform Registry for docs: [`aws_memorydb_snapshot`](https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/memorydb_snapshot).
+Refer to the Terraform Registry for docs: [`aws_memorydb_snapshot`](https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/memorydb_snapshot).

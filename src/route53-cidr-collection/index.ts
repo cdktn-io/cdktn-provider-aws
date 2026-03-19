@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/route53_cidr_collection
+// https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/route53_cidr_collection
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,13 +13,13 @@ import * as cdktn from 'cdktn';
 
 export interface Route53CidrCollectionConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/route53_cidr_collection#name Route53CidrCollection#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/route53_cidr_collection#name Route53CidrCollection#name}
   */
   readonly name: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/route53_cidr_collection aws_route53_cidr_collection}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/route53_cidr_collection aws_route53_cidr_collection}
 */
 export class Route53CidrCollection extends cdktn.TerraformResource {
 
@@ -35,7 +35,7 @@ export class Route53CidrCollection extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a Route53CidrCollection resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Route53CidrCollection to import
-  * @param importFromId The id of the existing Route53CidrCollection that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/route53_cidr_collection#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Route53CidrCollection that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/route53_cidr_collection#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Route53CidrCollection to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -47,7 +47,7 @@ export class Route53CidrCollection extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/route53_cidr_collection aws_route53_cidr_collection} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/route53_cidr_collection aws_route53_cidr_collection} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -58,7 +58,7 @@ export class Route53CidrCollection extends cdktn.TerraformResource {
       terraformResourceType: 'aws_route53_cidr_collection',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.36.0',
+        providerVersion: '6.37.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

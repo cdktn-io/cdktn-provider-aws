@@ -4,7 +4,7 @@
 
 ### CloudfrontKeyValueStore <a name="CloudfrontKeyValueStore" id="@cdktn/provider-aws.cloudfrontKeyValueStore.CloudfrontKeyValueStore"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/cloudfront_key_value_store aws_cloudfront_key_value_store}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/cloudfront_key_value_store aws_cloudfront_key_value_store}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontKeyValueStore.CloudfrontKeyValueStore.Initializer"></a>
 
@@ -516,7 +516,7 @@ The construct id used in the generated config for the CloudfrontKeyValueStore to
 
 The id of the existing CloudfrontKeyValueStore that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/cloudfront_key_value_store#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/cloudfront_key_value_store#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -853,8 +853,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/cloudfrontkeyvaluestor
 | <code><a href="#@cdktn/provider-aws.cloudfrontKeyValueStore.CloudfrontKeyValueStoreConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontKeyValueStore.CloudfrontKeyValueStoreConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontKeyValueStore.CloudfrontKeyValueStoreConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudfrontKeyValueStore.CloudfrontKeyValueStoreConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/cloudfront_key_value_store#name CloudfrontKeyValueStore#name}. |
-| <code><a href="#@cdktn/provider-aws.cloudfrontKeyValueStore.CloudfrontKeyValueStoreConfig.property.comment">Comment</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/cloudfront_key_value_store#comment CloudfrontKeyValueStore#comment}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontKeyValueStore.CloudfrontKeyValueStoreConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/cloudfront_key_value_store#name CloudfrontKeyValueStore#name}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontKeyValueStore.CloudfrontKeyValueStoreConfig.property.comment">Comment</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/cloudfront_key_value_store#comment CloudfrontKeyValueStore#comment}. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontKeyValueStore.CloudfrontKeyValueStoreConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.cloudfrontKeyValueStore.CloudfrontKeyValueStoreTimeouts">CloudfrontKeyValueStoreTimeouts</a></code> | timeouts block. |
 
 ---
@@ -937,7 +937,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/cloudfront_key_value_store#name CloudfrontKeyValueStore#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/cloudfront_key_value_store#name CloudfrontKeyValueStore#name}.
 
 ---
 
@@ -949,7 +949,7 @@ Comment *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/cloudfront_key_value_store#comment CloudfrontKeyValueStore#comment}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/cloudfront_key_value_store#comment CloudfrontKeyValueStore#comment}.
 
 ---
 
@@ -963,7 +963,7 @@ Timeouts CloudfrontKeyValueStoreTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/cloudfront_key_value_store#timeouts CloudfrontKeyValueStore#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/cloudfront_key_value_store#timeouts CloudfrontKeyValueStore#timeouts}
 
 ---
 
@@ -997,7 +997,7 @@ Create *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/cloudfront_key_value_store#create CloudfrontKeyValueStore#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/cloudfront_key_value_store#create CloudfrontKeyValueStore#create}
 
 ---
 
