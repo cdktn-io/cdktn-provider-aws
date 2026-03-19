@@ -1,3 +1,3 @@
 # `aws_ecr_repository`
 
-Refer to the Terraform Registry for docs: [`aws_ecr_repository`](https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/ecr_repository).
+Refer to the Terraform Registry for docs: [`aws_ecr_repository`](https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/ecr_repository).

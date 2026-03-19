@@ -1,3 +1,3 @@
 # `aws_securityhub_member`
 
-Refer to the Terraform Registry for docs: [`aws_securityhub_member`](https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_member).
+Refer to the Terraform Registry for docs: [`aws_securityhub_member`](https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_member).

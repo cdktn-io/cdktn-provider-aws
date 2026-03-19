@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/data-sources/quicksight_data_set
+// https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/data-sources/quicksight_data_set
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,15 +13,15 @@ import * as cdktn from 'cdktn';
 
 export interface DataAwsQuicksightDataSetConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/data-sources/quicksight_data_set#aws_account_id DataAwsQuicksightDataSet#aws_account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/data-sources/quicksight_data_set#aws_account_id DataAwsQuicksightDataSet#aws_account_id}
   */
   readonly awsAccountId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/data-sources/quicksight_data_set#data_set_id DataAwsQuicksightDataSet#data_set_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/data-sources/quicksight_data_set#data_set_id DataAwsQuicksightDataSet#data_set_id}
   */
   readonly dataSetId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/data-sources/quicksight_data_set#id DataAwsQuicksightDataSet#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/data-sources/quicksight_data_set#id DataAwsQuicksightDataSet#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -30,11 +30,11 @@ export interface DataAwsQuicksightDataSetConfig extends cdktn.TerraformMetaArgum
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/data-sources/quicksight_data_set#region DataAwsQuicksightDataSet#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/data-sources/quicksight_data_set#region DataAwsQuicksightDataSet#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/data-sources/quicksight_data_set#tags DataAwsQuicksightDataSet#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/data-sources/quicksight_data_set#tags DataAwsQuicksightDataSet#tags}
   */
   readonly tags?: { [key: string]: string };
 }
@@ -2829,7 +2829,7 @@ export class DataAwsQuicksightDataSetRowLevelPermissionTagConfigurationList exte
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/data-sources/quicksight_data_set aws_quicksight_data_set}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/data-sources/quicksight_data_set aws_quicksight_data_set}
 */
 export class DataAwsQuicksightDataSet extends cdktn.TerraformDataSource {
 
@@ -2845,7 +2845,7 @@ export class DataAwsQuicksightDataSet extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataAwsQuicksightDataSet resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsQuicksightDataSet to import
-  * @param importFromId The id of the existing DataAwsQuicksightDataSet that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/data-sources/quicksight_data_set#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsQuicksightDataSet that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/data-sources/quicksight_data_set#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsQuicksightDataSet to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -2857,7 +2857,7 @@ export class DataAwsQuicksightDataSet extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/data-sources/quicksight_data_set aws_quicksight_data_set} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/data-sources/quicksight_data_set aws_quicksight_data_set} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -2868,7 +2868,7 @@ export class DataAwsQuicksightDataSet extends cdktn.TerraformDataSource {
       terraformResourceType: 'aws_quicksight_data_set',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.36.0',
+        providerVersion: '6.37.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
