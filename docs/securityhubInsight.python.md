@@ -4,7 +4,7 @@
 
 ### SecurityhubInsight <a name="SecurityhubInsight" id="@cdktn/provider-aws.securityhubInsight.SecurityhubInsight"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight aws_securityhub_insight}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight aws_securityhub_insight}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securityhubInsight.SecurityhubInsight.Initializer"></a>
 
@@ -41,9 +41,9 @@ securityhubInsight.SecurityhubInsight(
 | <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsight.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsight.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsight.Initializer.parameter.filters">filters</a></code> | <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFilters">SecurityhubInsightFilters</a></code> | filters block. |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsight.Initializer.parameter.groupByAttribute">group_by_attribute</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#group_by_attribute SecurityhubInsight#group_by_attribute}. |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsight.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#name SecurityhubInsight#name}. |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsight.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#id SecurityhubInsight#id}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsight.Initializer.parameter.groupByAttribute">group_by_attribute</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#group_by_attribute SecurityhubInsight#group_by_attribute}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsight.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#name SecurityhubInsight#name}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsight.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#id SecurityhubInsight#id}. |
 | <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsight.Initializer.parameter.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 filters block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#filters SecurityhubInsight#filters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#filters SecurityhubInsight#filters}
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#group_by_attribute SecurityhubInsight#group_by_attribute}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#group_by_attribute SecurityhubInsight#group_by_attribute}.
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#name SecurityhubInsight#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#name SecurityhubInsight#name}.
 
 ---
 
@@ -138,7 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#id SecurityhubInsight#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#id SecurityhubInsight#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -151,7 +151,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#region SecurityhubInsight#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#region SecurityhubInsight#region}
 
 ---
 
@@ -638,7 +638,7 @@ def put_filters(
 
 aws_account_id block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#aws_account_id SecurityhubInsight#aws_account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#aws_account_id SecurityhubInsight#aws_account_id}
 
 ---
 
@@ -648,7 +648,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 company_name block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#company_name SecurityhubInsight#company_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#company_name SecurityhubInsight#company_name}
 
 ---
 
@@ -658,7 +658,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 compliance_status block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#compliance_status SecurityhubInsight#compliance_status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#compliance_status SecurityhubInsight#compliance_status}
 
 ---
 
@@ -668,7 +668,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 confidence block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#confidence SecurityhubInsight#confidence}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#confidence SecurityhubInsight#confidence}
 
 ---
 
@@ -678,7 +678,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 created_at block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#created_at SecurityhubInsight#created_at}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#created_at SecurityhubInsight#created_at}
 
 ---
 
@@ -688,7 +688,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 criticality block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#criticality SecurityhubInsight#criticality}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#criticality SecurityhubInsight#criticality}
 
 ---
 
@@ -698,7 +698,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 description block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#description SecurityhubInsight#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#description SecurityhubInsight#description}
 
 ---
 
@@ -708,7 +708,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 finding_provider_fields_confidence block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#finding_provider_fields_confidence SecurityhubInsight#finding_provider_fields_confidence}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#finding_provider_fields_confidence SecurityhubInsight#finding_provider_fields_confidence}
 
 ---
 
@@ -718,7 +718,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 finding_provider_fields_criticality block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#finding_provider_fields_criticality SecurityhubInsight#finding_provider_fields_criticality}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#finding_provider_fields_criticality SecurityhubInsight#finding_provider_fields_criticality}
 
 ---
 
@@ -728,7 +728,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 finding_provider_fields_related_findings_id block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#finding_provider_fields_related_findings_id SecurityhubInsight#finding_provider_fields_related_findings_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#finding_provider_fields_related_findings_id SecurityhubInsight#finding_provider_fields_related_findings_id}
 
 ---
 
@@ -738,7 +738,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 finding_provider_fields_related_findings_product_arn block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#finding_provider_fields_related_findings_product_arn SecurityhubInsight#finding_provider_fields_related_findings_product_arn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#finding_provider_fields_related_findings_product_arn SecurityhubInsight#finding_provider_fields_related_findings_product_arn}
 
 ---
 
@@ -748,7 +748,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 finding_provider_fields_severity_label block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#finding_provider_fields_severity_label SecurityhubInsight#finding_provider_fields_severity_label}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#finding_provider_fields_severity_label SecurityhubInsight#finding_provider_fields_severity_label}
 
 ---
 
@@ -758,7 +758,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 finding_provider_fields_severity_original block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#finding_provider_fields_severity_original SecurityhubInsight#finding_provider_fields_severity_original}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#finding_provider_fields_severity_original SecurityhubInsight#finding_provider_fields_severity_original}
 
 ---
 
@@ -768,7 +768,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 finding_provider_fields_types block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#finding_provider_fields_types SecurityhubInsight#finding_provider_fields_types}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#finding_provider_fields_types SecurityhubInsight#finding_provider_fields_types}
 
 ---
 
@@ -778,7 +778,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 first_observed_at block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#first_observed_at SecurityhubInsight#first_observed_at}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#first_observed_at SecurityhubInsight#first_observed_at}
 
 ---
 
@@ -788,7 +788,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 generator_id block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#generator_id SecurityhubInsight#generator_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#generator_id SecurityhubInsight#generator_id}
 
 ---
 
@@ -798,7 +798,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 id block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#id SecurityhubInsight#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#id SecurityhubInsight#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -811,7 +811,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 keyword block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#keyword SecurityhubInsight#keyword}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#keyword SecurityhubInsight#keyword}
 
 ---
 
@@ -821,7 +821,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 last_observed_at block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#last_observed_at SecurityhubInsight#last_observed_at}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#last_observed_at SecurityhubInsight#last_observed_at}
 
 ---
 
@@ -831,7 +831,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 malware_name block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#malware_name SecurityhubInsight#malware_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#malware_name SecurityhubInsight#malware_name}
 
 ---
 
@@ -841,7 +841,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 malware_path block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#malware_path SecurityhubInsight#malware_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#malware_path SecurityhubInsight#malware_path}
 
 ---
 
@@ -851,7 +851,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 malware_state block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#malware_state SecurityhubInsight#malware_state}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#malware_state SecurityhubInsight#malware_state}
 
 ---
 
@@ -861,7 +861,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 malware_type block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#malware_type SecurityhubInsight#malware_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#malware_type SecurityhubInsight#malware_type}
 
 ---
 
@@ -871,7 +871,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 network_destination_domain block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#network_destination_domain SecurityhubInsight#network_destination_domain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#network_destination_domain SecurityhubInsight#network_destination_domain}
 
 ---
 
@@ -881,7 +881,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 network_destination_ipv4 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#network_destination_ipv4 SecurityhubInsight#network_destination_ipv4}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#network_destination_ipv4 SecurityhubInsight#network_destination_ipv4}
 
 ---
 
@@ -891,7 +891,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 network_destination_ipv6 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#network_destination_ipv6 SecurityhubInsight#network_destination_ipv6}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#network_destination_ipv6 SecurityhubInsight#network_destination_ipv6}
 
 ---
 
@@ -901,7 +901,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 network_destination_port block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#network_destination_port SecurityhubInsight#network_destination_port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#network_destination_port SecurityhubInsight#network_destination_port}
 
 ---
 
@@ -911,7 +911,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 network_direction block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#network_direction SecurityhubInsight#network_direction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#network_direction SecurityhubInsight#network_direction}
 
 ---
 
@@ -921,7 +921,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 network_protocol block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#network_protocol SecurityhubInsight#network_protocol}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#network_protocol SecurityhubInsight#network_protocol}
 
 ---
 
@@ -931,7 +931,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 network_source_domain block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#network_source_domain SecurityhubInsight#network_source_domain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#network_source_domain SecurityhubInsight#network_source_domain}
 
 ---
 
@@ -941,7 +941,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 network_source_ipv4 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#network_source_ipv4 SecurityhubInsight#network_source_ipv4}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#network_source_ipv4 SecurityhubInsight#network_source_ipv4}
 
 ---
 
@@ -951,7 +951,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 network_source_ipv6 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#network_source_ipv6 SecurityhubInsight#network_source_ipv6}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#network_source_ipv6 SecurityhubInsight#network_source_ipv6}
 
 ---
 
@@ -961,7 +961,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 network_source_mac block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#network_source_mac SecurityhubInsight#network_source_mac}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#network_source_mac SecurityhubInsight#network_source_mac}
 
 ---
 
@@ -971,7 +971,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 network_source_port block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#network_source_port SecurityhubInsight#network_source_port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#network_source_port SecurityhubInsight#network_source_port}
 
 ---
 
@@ -981,7 +981,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 note_text block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#note_text SecurityhubInsight#note_text}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#note_text SecurityhubInsight#note_text}
 
 ---
 
@@ -991,7 +991,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 note_updated_at block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#note_updated_at SecurityhubInsight#note_updated_at}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#note_updated_at SecurityhubInsight#note_updated_at}
 
 ---
 
@@ -1001,7 +1001,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 note_updated_by block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#note_updated_by SecurityhubInsight#note_updated_by}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#note_updated_by SecurityhubInsight#note_updated_by}
 
 ---
 
@@ -1011,7 +1011,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 process_launched_at block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#process_launched_at SecurityhubInsight#process_launched_at}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#process_launched_at SecurityhubInsight#process_launched_at}
 
 ---
 
@@ -1021,7 +1021,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 process_name block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#process_name SecurityhubInsight#process_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#process_name SecurityhubInsight#process_name}
 
 ---
 
@@ -1031,7 +1031,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 process_parent_pid block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#process_parent_pid SecurityhubInsight#process_parent_pid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#process_parent_pid SecurityhubInsight#process_parent_pid}
 
 ---
 
@@ -1041,7 +1041,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 process_path block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#process_path SecurityhubInsight#process_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#process_path SecurityhubInsight#process_path}
 
 ---
 
@@ -1051,7 +1051,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 process_pid block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#process_pid SecurityhubInsight#process_pid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#process_pid SecurityhubInsight#process_pid}
 
 ---
 
@@ -1061,7 +1061,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 process_terminated_at block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#process_terminated_at SecurityhubInsight#process_terminated_at}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#process_terminated_at SecurityhubInsight#process_terminated_at}
 
 ---
 
@@ -1071,7 +1071,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 product_arn block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#product_arn SecurityhubInsight#product_arn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#product_arn SecurityhubInsight#product_arn}
 
 ---
 
@@ -1081,7 +1081,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 product_fields block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#product_fields SecurityhubInsight#product_fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#product_fields SecurityhubInsight#product_fields}
 
 ---
 
@@ -1091,7 +1091,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 product_name block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#product_name SecurityhubInsight#product_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#product_name SecurityhubInsight#product_name}
 
 ---
 
@@ -1101,7 +1101,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 recommendation_text block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#recommendation_text SecurityhubInsight#recommendation_text}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#recommendation_text SecurityhubInsight#recommendation_text}
 
 ---
 
@@ -1111,7 +1111,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 record_state block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#record_state SecurityhubInsight#record_state}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#record_state SecurityhubInsight#record_state}
 
 ---
 
@@ -1121,7 +1121,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 related_findings_id block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#related_findings_id SecurityhubInsight#related_findings_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#related_findings_id SecurityhubInsight#related_findings_id}
 
 ---
 
@@ -1131,7 +1131,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 related_findings_product_arn block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#related_findings_product_arn SecurityhubInsight#related_findings_product_arn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#related_findings_product_arn SecurityhubInsight#related_findings_product_arn}
 
 ---
 
@@ -1141,7 +1141,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 resource_aws_ec2_instance_iam_instance_profile_arn block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#resource_aws_ec2_instance_iam_instance_profile_arn SecurityhubInsight#resource_aws_ec2_instance_iam_instance_profile_arn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#resource_aws_ec2_instance_iam_instance_profile_arn SecurityhubInsight#resource_aws_ec2_instance_iam_instance_profile_arn}
 
 ---
 
@@ -1151,7 +1151,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 resource_aws_ec2_instance_image_id block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#resource_aws_ec2_instance_image_id SecurityhubInsight#resource_aws_ec2_instance_image_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#resource_aws_ec2_instance_image_id SecurityhubInsight#resource_aws_ec2_instance_image_id}
 
 ---
 
@@ -1161,7 +1161,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 resource_aws_ec2_instance_ipv4_addresses block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#resource_aws_ec2_instance_ipv4_addresses SecurityhubInsight#resource_aws_ec2_instance_ipv4_addresses}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#resource_aws_ec2_instance_ipv4_addresses SecurityhubInsight#resource_aws_ec2_instance_ipv4_addresses}
 
 ---
 
@@ -1171,7 +1171,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 resource_aws_ec2_instance_ipv6_addresses block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#resource_aws_ec2_instance_ipv6_addresses SecurityhubInsight#resource_aws_ec2_instance_ipv6_addresses}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#resource_aws_ec2_instance_ipv6_addresses SecurityhubInsight#resource_aws_ec2_instance_ipv6_addresses}
 
 ---
 
@@ -1181,7 +1181,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 resource_aws_ec2_instance_key_name block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#resource_aws_ec2_instance_key_name SecurityhubInsight#resource_aws_ec2_instance_key_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#resource_aws_ec2_instance_key_name SecurityhubInsight#resource_aws_ec2_instance_key_name}
 
 ---
 
@@ -1191,7 +1191,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 resource_aws_ec2_instance_launched_at block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#resource_aws_ec2_instance_launched_at SecurityhubInsight#resource_aws_ec2_instance_launched_at}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#resource_aws_ec2_instance_launched_at SecurityhubInsight#resource_aws_ec2_instance_launched_at}
 
 ---
 
@@ -1201,7 +1201,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 resource_aws_ec2_instance_subnet_id block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#resource_aws_ec2_instance_subnet_id SecurityhubInsight#resource_aws_ec2_instance_subnet_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#resource_aws_ec2_instance_subnet_id SecurityhubInsight#resource_aws_ec2_instance_subnet_id}
 
 ---
 
@@ -1211,7 +1211,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 resource_aws_ec2_instance_type block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#resource_aws_ec2_instance_type SecurityhubInsight#resource_aws_ec2_instance_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#resource_aws_ec2_instance_type SecurityhubInsight#resource_aws_ec2_instance_type}
 
 ---
 
@@ -1221,7 +1221,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 resource_aws_ec2_instance_vpc_id block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#resource_aws_ec2_instance_vpc_id SecurityhubInsight#resource_aws_ec2_instance_vpc_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#resource_aws_ec2_instance_vpc_id SecurityhubInsight#resource_aws_ec2_instance_vpc_id}
 
 ---
 
@@ -1231,7 +1231,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 resource_aws_iam_access_key_created_at block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#resource_aws_iam_access_key_created_at SecurityhubInsight#resource_aws_iam_access_key_created_at}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#resource_aws_iam_access_key_created_at SecurityhubInsight#resource_aws_iam_access_key_created_at}
 
 ---
 
@@ -1241,7 +1241,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 resource_aws_iam_access_key_status block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#resource_aws_iam_access_key_status SecurityhubInsight#resource_aws_iam_access_key_status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#resource_aws_iam_access_key_status SecurityhubInsight#resource_aws_iam_access_key_status}
 
 ---
 
@@ -1251,7 +1251,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 resource_aws_iam_access_key_user_name block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#resource_aws_iam_access_key_user_name SecurityhubInsight#resource_aws_iam_access_key_user_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#resource_aws_iam_access_key_user_name SecurityhubInsight#resource_aws_iam_access_key_user_name}
 
 ---
 
@@ -1261,7 +1261,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 resource_aws_s3_bucket_owner_id block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#resource_aws_s3_bucket_owner_id SecurityhubInsight#resource_aws_s3_bucket_owner_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#resource_aws_s3_bucket_owner_id SecurityhubInsight#resource_aws_s3_bucket_owner_id}
 
 ---
 
@@ -1271,7 +1271,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 resource_aws_s3_bucket_owner_name block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#resource_aws_s3_bucket_owner_name SecurityhubInsight#resource_aws_s3_bucket_owner_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#resource_aws_s3_bucket_owner_name SecurityhubInsight#resource_aws_s3_bucket_owner_name}
 
 ---
 
@@ -1281,7 +1281,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 resource_container_image_id block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#resource_container_image_id SecurityhubInsight#resource_container_image_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#resource_container_image_id SecurityhubInsight#resource_container_image_id}
 
 ---
 
@@ -1291,7 +1291,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 resource_container_image_name block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#resource_container_image_name SecurityhubInsight#resource_container_image_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#resource_container_image_name SecurityhubInsight#resource_container_image_name}
 
 ---
 
@@ -1301,7 +1301,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 resource_container_launched_at block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#resource_container_launched_at SecurityhubInsight#resource_container_launched_at}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#resource_container_launched_at SecurityhubInsight#resource_container_launched_at}
 
 ---
 
@@ -1311,7 +1311,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 resource_container_name block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#resource_container_name SecurityhubInsight#resource_container_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#resource_container_name SecurityhubInsight#resource_container_name}
 
 ---
 
@@ -1321,7 +1321,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 resource_details_other block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#resource_details_other SecurityhubInsight#resource_details_other}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#resource_details_other SecurityhubInsight#resource_details_other}
 
 ---
 
@@ -1331,7 +1331,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 resource_id block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#resource_id SecurityhubInsight#resource_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#resource_id SecurityhubInsight#resource_id}
 
 ---
 
@@ -1341,7 +1341,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 resource_partition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#resource_partition SecurityhubInsight#resource_partition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#resource_partition SecurityhubInsight#resource_partition}
 
 ---
 
@@ -1351,7 +1351,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 resource_region block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#resource_region SecurityhubInsight#resource_region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#resource_region SecurityhubInsight#resource_region}
 
 ---
 
@@ -1361,7 +1361,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 resource_tags block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#resource_tags SecurityhubInsight#resource_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#resource_tags SecurityhubInsight#resource_tags}
 
 ---
 
@@ -1371,7 +1371,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 resource_type block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#resource_type SecurityhubInsight#resource_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#resource_type SecurityhubInsight#resource_type}
 
 ---
 
@@ -1381,7 +1381,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 severity_label block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#severity_label SecurityhubInsight#severity_label}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#severity_label SecurityhubInsight#severity_label}
 
 ---
 
@@ -1391,7 +1391,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 source_url block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#source_url SecurityhubInsight#source_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#source_url SecurityhubInsight#source_url}
 
 ---
 
@@ -1401,7 +1401,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 threat_intel_indicator_category block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#threat_intel_indicator_category SecurityhubInsight#threat_intel_indicator_category}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#threat_intel_indicator_category SecurityhubInsight#threat_intel_indicator_category}
 
 ---
 
@@ -1411,7 +1411,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 threat_intel_indicator_last_observed_at block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#threat_intel_indicator_last_observed_at SecurityhubInsight#threat_intel_indicator_last_observed_at}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#threat_intel_indicator_last_observed_at SecurityhubInsight#threat_intel_indicator_last_observed_at}
 
 ---
 
@@ -1421,7 +1421,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 threat_intel_indicator_source block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#threat_intel_indicator_source SecurityhubInsight#threat_intel_indicator_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#threat_intel_indicator_source SecurityhubInsight#threat_intel_indicator_source}
 
 ---
 
@@ -1431,7 +1431,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 threat_intel_indicator_source_url block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#threat_intel_indicator_source_url SecurityhubInsight#threat_intel_indicator_source_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#threat_intel_indicator_source_url SecurityhubInsight#threat_intel_indicator_source_url}
 
 ---
 
@@ -1441,7 +1441,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 threat_intel_indicator_type block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#threat_intel_indicator_type SecurityhubInsight#threat_intel_indicator_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#threat_intel_indicator_type SecurityhubInsight#threat_intel_indicator_type}
 
 ---
 
@@ -1451,7 +1451,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 threat_intel_indicator_value block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#threat_intel_indicator_value SecurityhubInsight#threat_intel_indicator_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#threat_intel_indicator_value SecurityhubInsight#threat_intel_indicator_value}
 
 ---
 
@@ -1461,7 +1461,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 title block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#title SecurityhubInsight#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#title SecurityhubInsight#title}
 
 ---
 
@@ -1471,7 +1471,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 type block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#type SecurityhubInsight#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#type SecurityhubInsight#type}
 
 ---
 
@@ -1481,7 +1481,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 updated_at block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#updated_at SecurityhubInsight#updated_at}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#updated_at SecurityhubInsight#updated_at}
 
 ---
 
@@ -1491,7 +1491,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 user_defined_values block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#user_defined_values SecurityhubInsight#user_defined_values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#user_defined_values SecurityhubInsight#user_defined_values}
 
 ---
 
@@ -1501,7 +1501,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 verification_state block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#verification_state SecurityhubInsight#verification_state}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#verification_state SecurityhubInsight#verification_state}
 
 ---
 
@@ -1511,7 +1511,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 workflow_status block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#workflow_status SecurityhubInsight#workflow_status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#workflow_status SecurityhubInsight#workflow_status}
 
 ---
 
@@ -1641,7 +1641,7 @@ The construct id used in the generated config for the SecurityhubInsight to impo
 
 The id of the existing SecurityhubInsight that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1992,9 +1992,9 @@ securityhubInsight.SecurityhubInsightConfig(
 | <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightConfig.property.filters">filters</a></code> | <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFilters">SecurityhubInsightFilters</a></code> | filters block. |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightConfig.property.groupByAttribute">group_by_attribute</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#group_by_attribute SecurityhubInsight#group_by_attribute}. |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#name SecurityhubInsight#name}. |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#id SecurityhubInsight#id}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightConfig.property.groupByAttribute">group_by_attribute</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#group_by_attribute SecurityhubInsight#group_by_attribute}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#name SecurityhubInsight#name}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#id SecurityhubInsight#id}. |
 | <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightConfig.property.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -2079,7 +2079,7 @@ filters: SecurityhubInsightFilters
 
 filters block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#filters SecurityhubInsight#filters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#filters SecurityhubInsight#filters}
 
 ---
 
@@ -2091,7 +2091,7 @@ group_by_attribute: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#group_by_attribute SecurityhubInsight#group_by_attribute}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#group_by_attribute SecurityhubInsight#group_by_attribute}.
 
 ---
 
@@ -2103,7 +2103,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#name SecurityhubInsight#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#name SecurityhubInsight#name}.
 
 ---
 
@@ -2115,7 +2115,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#id SecurityhubInsight#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#id SecurityhubInsight#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2132,7 +2132,7 @@ region: str
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#region SecurityhubInsight#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#region SecurityhubInsight#region}
 
 ---
 
@@ -2340,7 +2340,7 @@ aws_account_id: IResolvable | typing.List[SecurityhubInsightFiltersAwsAccountId]
 
 aws_account_id block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#aws_account_id SecurityhubInsight#aws_account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#aws_account_id SecurityhubInsight#aws_account_id}
 
 ---
 
@@ -2354,7 +2354,7 @@ company_name: IResolvable | typing.List[SecurityhubInsightFiltersCompanyName]
 
 company_name block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#company_name SecurityhubInsight#company_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#company_name SecurityhubInsight#company_name}
 
 ---
 
@@ -2368,7 +2368,7 @@ compliance_status: IResolvable | typing.List[SecurityhubInsightFiltersCompliance
 
 compliance_status block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#compliance_status SecurityhubInsight#compliance_status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#compliance_status SecurityhubInsight#compliance_status}
 
 ---
 
@@ -2382,7 +2382,7 @@ confidence: IResolvable | typing.List[SecurityhubInsightFiltersConfidence]
 
 confidence block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#confidence SecurityhubInsight#confidence}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#confidence SecurityhubInsight#confidence}
 
 ---
 
@@ -2396,7 +2396,7 @@ created_at: IResolvable | typing.List[SecurityhubInsightFiltersCreatedAt]
 
 created_at block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#created_at SecurityhubInsight#created_at}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#created_at SecurityhubInsight#created_at}
 
 ---
 
@@ -2410,7 +2410,7 @@ criticality: IResolvable | typing.List[SecurityhubInsightFiltersCriticality]
 
 criticality block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#criticality SecurityhubInsight#criticality}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#criticality SecurityhubInsight#criticality}
 
 ---
 
@@ -2424,7 +2424,7 @@ description: IResolvable | typing.List[SecurityhubInsightFiltersDescription]
 
 description block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#description SecurityhubInsight#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#description SecurityhubInsight#description}
 
 ---
 
@@ -2438,7 +2438,7 @@ finding_provider_fields_confidence: IResolvable | typing.List[SecurityhubInsight
 
 finding_provider_fields_confidence block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#finding_provider_fields_confidence SecurityhubInsight#finding_provider_fields_confidence}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#finding_provider_fields_confidence SecurityhubInsight#finding_provider_fields_confidence}
 
 ---
 
@@ -2452,7 +2452,7 @@ finding_provider_fields_criticality: IResolvable | typing.List[SecurityhubInsigh
 
 finding_provider_fields_criticality block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#finding_provider_fields_criticality SecurityhubInsight#finding_provider_fields_criticality}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#finding_provider_fields_criticality SecurityhubInsight#finding_provider_fields_criticality}
 
 ---
 
@@ -2466,7 +2466,7 @@ finding_provider_fields_related_findings_id: IResolvable | typing.List[Securityh
 
 finding_provider_fields_related_findings_id block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#finding_provider_fields_related_findings_id SecurityhubInsight#finding_provider_fields_related_findings_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#finding_provider_fields_related_findings_id SecurityhubInsight#finding_provider_fields_related_findings_id}
 
 ---
 
@@ -2480,7 +2480,7 @@ finding_provider_fields_related_findings_product_arn: IResolvable | typing.List[
 
 finding_provider_fields_related_findings_product_arn block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#finding_provider_fields_related_findings_product_arn SecurityhubInsight#finding_provider_fields_related_findings_product_arn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#finding_provider_fields_related_findings_product_arn SecurityhubInsight#finding_provider_fields_related_findings_product_arn}
 
 ---
 
@@ -2494,7 +2494,7 @@ finding_provider_fields_severity_label: IResolvable | typing.List[SecurityhubIns
 
 finding_provider_fields_severity_label block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#finding_provider_fields_severity_label SecurityhubInsight#finding_provider_fields_severity_label}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#finding_provider_fields_severity_label SecurityhubInsight#finding_provider_fields_severity_label}
 
 ---
 
@@ -2508,7 +2508,7 @@ finding_provider_fields_severity_original: IResolvable | typing.List[Securityhub
 
 finding_provider_fields_severity_original block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#finding_provider_fields_severity_original SecurityhubInsight#finding_provider_fields_severity_original}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#finding_provider_fields_severity_original SecurityhubInsight#finding_provider_fields_severity_original}
 
 ---
 
@@ -2522,7 +2522,7 @@ finding_provider_fields_types: IResolvable | typing.List[SecurityhubInsightFilte
 
 finding_provider_fields_types block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#finding_provider_fields_types SecurityhubInsight#finding_provider_fields_types}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#finding_provider_fields_types SecurityhubInsight#finding_provider_fields_types}
 
 ---
 
@@ -2536,7 +2536,7 @@ first_observed_at: IResolvable | typing.List[SecurityhubInsightFiltersFirstObser
 
 first_observed_at block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#first_observed_at SecurityhubInsight#first_observed_at}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#first_observed_at SecurityhubInsight#first_observed_at}
 
 ---
 
@@ -2550,7 +2550,7 @@ generator_id: IResolvable | typing.List[SecurityhubInsightFiltersGeneratorId]
 
 generator_id block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#generator_id SecurityhubInsight#generator_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#generator_id SecurityhubInsight#generator_id}
 
 ---
 
@@ -2564,7 +2564,7 @@ id: IResolvable | typing.List[SecurityhubInsightFiltersId]
 
 id block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#id SecurityhubInsight#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#id SecurityhubInsight#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2581,7 +2581,7 @@ keyword: IResolvable | typing.List[SecurityhubInsightFiltersKeyword]
 
 keyword block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#keyword SecurityhubInsight#keyword}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#keyword SecurityhubInsight#keyword}
 
 ---
 
@@ -2595,7 +2595,7 @@ last_observed_at: IResolvable | typing.List[SecurityhubInsightFiltersLastObserve
 
 last_observed_at block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#last_observed_at SecurityhubInsight#last_observed_at}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#last_observed_at SecurityhubInsight#last_observed_at}
 
 ---
 
@@ -2609,7 +2609,7 @@ malware_name: IResolvable | typing.List[SecurityhubInsightFiltersMalwareName]
 
 malware_name block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#malware_name SecurityhubInsight#malware_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#malware_name SecurityhubInsight#malware_name}
 
 ---
 
@@ -2623,7 +2623,7 @@ malware_path: IResolvable | typing.List[SecurityhubInsightFiltersMalwarePath]
 
 malware_path block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#malware_path SecurityhubInsight#malware_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#malware_path SecurityhubInsight#malware_path}
 
 ---
 
@@ -2637,7 +2637,7 @@ malware_state: IResolvable | typing.List[SecurityhubInsightFiltersMalwareState]
 
 malware_state block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#malware_state SecurityhubInsight#malware_state}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#malware_state SecurityhubInsight#malware_state}
 
 ---
 
@@ -2651,7 +2651,7 @@ malware_type: IResolvable | typing.List[SecurityhubInsightFiltersMalwareType]
 
 malware_type block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#malware_type SecurityhubInsight#malware_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#malware_type SecurityhubInsight#malware_type}
 
 ---
 
@@ -2665,7 +2665,7 @@ network_destination_domain: IResolvable | typing.List[SecurityhubInsightFiltersN
 
 network_destination_domain block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#network_destination_domain SecurityhubInsight#network_destination_domain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#network_destination_domain SecurityhubInsight#network_destination_domain}
 
 ---
 
@@ -2679,7 +2679,7 @@ network_destination_ipv4: IResolvable | typing.List[SecurityhubInsightFiltersNet
 
 network_destination_ipv4 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#network_destination_ipv4 SecurityhubInsight#network_destination_ipv4}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#network_destination_ipv4 SecurityhubInsight#network_destination_ipv4}
 
 ---
 
@@ -2693,7 +2693,7 @@ network_destination_ipv6: IResolvable | typing.List[SecurityhubInsightFiltersNet
 
 network_destination_ipv6 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#network_destination_ipv6 SecurityhubInsight#network_destination_ipv6}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#network_destination_ipv6 SecurityhubInsight#network_destination_ipv6}
 
 ---
 
@@ -2707,7 +2707,7 @@ network_destination_port: IResolvable | typing.List[SecurityhubInsightFiltersNet
 
 network_destination_port block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#network_destination_port SecurityhubInsight#network_destination_port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#network_destination_port SecurityhubInsight#network_destination_port}
 
 ---
 
@@ -2721,7 +2721,7 @@ network_direction: IResolvable | typing.List[SecurityhubInsightFiltersNetworkDir
 
 network_direction block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#network_direction SecurityhubInsight#network_direction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#network_direction SecurityhubInsight#network_direction}
 
 ---
 
@@ -2735,7 +2735,7 @@ network_protocol: IResolvable | typing.List[SecurityhubInsightFiltersNetworkProt
 
 network_protocol block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#network_protocol SecurityhubInsight#network_protocol}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#network_protocol SecurityhubInsight#network_protocol}
 
 ---
 
@@ -2749,7 +2749,7 @@ network_source_domain: IResolvable | typing.List[SecurityhubInsightFiltersNetwor
 
 network_source_domain block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#network_source_domain SecurityhubInsight#network_source_domain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#network_source_domain SecurityhubInsight#network_source_domain}
 
 ---
 
@@ -2763,7 +2763,7 @@ network_source_ipv4: IResolvable | typing.List[SecurityhubInsightFiltersNetworkS
 
 network_source_ipv4 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#network_source_ipv4 SecurityhubInsight#network_source_ipv4}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#network_source_ipv4 SecurityhubInsight#network_source_ipv4}
 
 ---
 
@@ -2777,7 +2777,7 @@ network_source_ipv6: IResolvable | typing.List[SecurityhubInsightFiltersNetworkS
 
 network_source_ipv6 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#network_source_ipv6 SecurityhubInsight#network_source_ipv6}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#network_source_ipv6 SecurityhubInsight#network_source_ipv6}
 
 ---
 
@@ -2791,7 +2791,7 @@ network_source_mac: IResolvable | typing.List[SecurityhubInsightFiltersNetworkSo
 
 network_source_mac block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#network_source_mac SecurityhubInsight#network_source_mac}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#network_source_mac SecurityhubInsight#network_source_mac}
 
 ---
 
@@ -2805,7 +2805,7 @@ network_source_port: IResolvable | typing.List[SecurityhubInsightFiltersNetworkS
 
 network_source_port block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#network_source_port SecurityhubInsight#network_source_port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#network_source_port SecurityhubInsight#network_source_port}
 
 ---
 
@@ -2819,7 +2819,7 @@ note_text: IResolvable | typing.List[SecurityhubInsightFiltersNoteText]
 
 note_text block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#note_text SecurityhubInsight#note_text}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#note_text SecurityhubInsight#note_text}
 
 ---
 
@@ -2833,7 +2833,7 @@ note_updated_at: IResolvable | typing.List[SecurityhubInsightFiltersNoteUpdatedA
 
 note_updated_at block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#note_updated_at SecurityhubInsight#note_updated_at}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#note_updated_at SecurityhubInsight#note_updated_at}
 
 ---
 
@@ -2847,7 +2847,7 @@ note_updated_by: IResolvable | typing.List[SecurityhubInsightFiltersNoteUpdatedB
 
 note_updated_by block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#note_updated_by SecurityhubInsight#note_updated_by}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#note_updated_by SecurityhubInsight#note_updated_by}
 
 ---
 
@@ -2861,7 +2861,7 @@ process_launched_at: IResolvable | typing.List[SecurityhubInsightFiltersProcessL
 
 process_launched_at block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#process_launched_at SecurityhubInsight#process_launched_at}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#process_launched_at SecurityhubInsight#process_launched_at}
 
 ---
 
@@ -2875,7 +2875,7 @@ process_name: IResolvable | typing.List[SecurityhubInsightFiltersProcessName]
 
 process_name block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#process_name SecurityhubInsight#process_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#process_name SecurityhubInsight#process_name}
 
 ---
 
@@ -2889,7 +2889,7 @@ process_parent_pid: IResolvable | typing.List[SecurityhubInsightFiltersProcessPa
 
 process_parent_pid block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#process_parent_pid SecurityhubInsight#process_parent_pid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#process_parent_pid SecurityhubInsight#process_parent_pid}
 
 ---
 
@@ -2903,7 +2903,7 @@ process_path: IResolvable | typing.List[SecurityhubInsightFiltersProcessPath]
 
 process_path block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#process_path SecurityhubInsight#process_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#process_path SecurityhubInsight#process_path}
 
 ---
 
@@ -2917,7 +2917,7 @@ process_pid: IResolvable | typing.List[SecurityhubInsightFiltersProcessPid]
 
 process_pid block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#process_pid SecurityhubInsight#process_pid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#process_pid SecurityhubInsight#process_pid}
 
 ---
 
@@ -2931,7 +2931,7 @@ process_terminated_at: IResolvable | typing.List[SecurityhubInsightFiltersProces
 
 process_terminated_at block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#process_terminated_at SecurityhubInsight#process_terminated_at}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#process_terminated_at SecurityhubInsight#process_terminated_at}
 
 ---
 
@@ -2945,7 +2945,7 @@ product_arn: IResolvable | typing.List[SecurityhubInsightFiltersProductArn]
 
 product_arn block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#product_arn SecurityhubInsight#product_arn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#product_arn SecurityhubInsight#product_arn}
 
 ---
 
@@ -2959,7 +2959,7 @@ product_fields: IResolvable | typing.List[SecurityhubInsightFiltersProductFields
 
 product_fields block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#product_fields SecurityhubInsight#product_fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#product_fields SecurityhubInsight#product_fields}
 
 ---
 
@@ -2973,7 +2973,7 @@ product_name: IResolvable | typing.List[SecurityhubInsightFiltersProductName]
 
 product_name block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#product_name SecurityhubInsight#product_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#product_name SecurityhubInsight#product_name}
 
 ---
 
@@ -2987,7 +2987,7 @@ recommendation_text: IResolvable | typing.List[SecurityhubInsightFiltersRecommen
 
 recommendation_text block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#recommendation_text SecurityhubInsight#recommendation_text}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#recommendation_text SecurityhubInsight#recommendation_text}
 
 ---
 
@@ -3001,7 +3001,7 @@ record_state: IResolvable | typing.List[SecurityhubInsightFiltersRecordState]
 
 record_state block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#record_state SecurityhubInsight#record_state}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#record_state SecurityhubInsight#record_state}
 
 ---
 
@@ -3015,7 +3015,7 @@ related_findings_id: IResolvable | typing.List[SecurityhubInsightFiltersRelatedF
 
 related_findings_id block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#related_findings_id SecurityhubInsight#related_findings_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#related_findings_id SecurityhubInsight#related_findings_id}
 
 ---
 
@@ -3029,7 +3029,7 @@ related_findings_product_arn: IResolvable | typing.List[SecurityhubInsightFilter
 
 related_findings_product_arn block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#related_findings_product_arn SecurityhubInsight#related_findings_product_arn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#related_findings_product_arn SecurityhubInsight#related_findings_product_arn}
 
 ---
 
@@ -3043,7 +3043,7 @@ resource_aws_ec2_instance_iam_instance_profile_arn: IResolvable | typing.List[Se
 
 resource_aws_ec2_instance_iam_instance_profile_arn block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#resource_aws_ec2_instance_iam_instance_profile_arn SecurityhubInsight#resource_aws_ec2_instance_iam_instance_profile_arn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#resource_aws_ec2_instance_iam_instance_profile_arn SecurityhubInsight#resource_aws_ec2_instance_iam_instance_profile_arn}
 
 ---
 
@@ -3057,7 +3057,7 @@ resource_aws_ec2_instance_image_id: IResolvable | typing.List[SecurityhubInsight
 
 resource_aws_ec2_instance_image_id block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#resource_aws_ec2_instance_image_id SecurityhubInsight#resource_aws_ec2_instance_image_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#resource_aws_ec2_instance_image_id SecurityhubInsight#resource_aws_ec2_instance_image_id}
 
 ---
 
@@ -3071,7 +3071,7 @@ resource_aws_ec2_instance_ipv4_addresses: IResolvable | typing.List[SecurityhubI
 
 resource_aws_ec2_instance_ipv4_addresses block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#resource_aws_ec2_instance_ipv4_addresses SecurityhubInsight#resource_aws_ec2_instance_ipv4_addresses}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#resource_aws_ec2_instance_ipv4_addresses SecurityhubInsight#resource_aws_ec2_instance_ipv4_addresses}
 
 ---
 
@@ -3085,7 +3085,7 @@ resource_aws_ec2_instance_ipv6_addresses: IResolvable | typing.List[SecurityhubI
 
 resource_aws_ec2_instance_ipv6_addresses block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#resource_aws_ec2_instance_ipv6_addresses SecurityhubInsight#resource_aws_ec2_instance_ipv6_addresses}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#resource_aws_ec2_instance_ipv6_addresses SecurityhubInsight#resource_aws_ec2_instance_ipv6_addresses}
 
 ---
 
@@ -3099,7 +3099,7 @@ resource_aws_ec2_instance_key_name: IResolvable | typing.List[SecurityhubInsight
 
 resource_aws_ec2_instance_key_name block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#resource_aws_ec2_instance_key_name SecurityhubInsight#resource_aws_ec2_instance_key_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#resource_aws_ec2_instance_key_name SecurityhubInsight#resource_aws_ec2_instance_key_name}
 
 ---
 
@@ -3113,7 +3113,7 @@ resource_aws_ec2_instance_launched_at: IResolvable | typing.List[SecurityhubInsi
 
 resource_aws_ec2_instance_launched_at block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#resource_aws_ec2_instance_launched_at SecurityhubInsight#resource_aws_ec2_instance_launched_at}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#resource_aws_ec2_instance_launched_at SecurityhubInsight#resource_aws_ec2_instance_launched_at}
 
 ---
 
@@ -3127,7 +3127,7 @@ resource_aws_ec2_instance_subnet_id: IResolvable | typing.List[SecurityhubInsigh
 
 resource_aws_ec2_instance_subnet_id block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#resource_aws_ec2_instance_subnet_id SecurityhubInsight#resource_aws_ec2_instance_subnet_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#resource_aws_ec2_instance_subnet_id SecurityhubInsight#resource_aws_ec2_instance_subnet_id}
 
 ---
 
@@ -3141,7 +3141,7 @@ resource_aws_ec2_instance_type: IResolvable | typing.List[SecurityhubInsightFilt
 
 resource_aws_ec2_instance_type block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#resource_aws_ec2_instance_type SecurityhubInsight#resource_aws_ec2_instance_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#resource_aws_ec2_instance_type SecurityhubInsight#resource_aws_ec2_instance_type}
 
 ---
 
@@ -3155,7 +3155,7 @@ resource_aws_ec2_instance_vpc_id: IResolvable | typing.List[SecurityhubInsightFi
 
 resource_aws_ec2_instance_vpc_id block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#resource_aws_ec2_instance_vpc_id SecurityhubInsight#resource_aws_ec2_instance_vpc_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#resource_aws_ec2_instance_vpc_id SecurityhubInsight#resource_aws_ec2_instance_vpc_id}
 
 ---
 
@@ -3169,7 +3169,7 @@ resource_aws_iam_access_key_created_at: IResolvable | typing.List[SecurityhubIns
 
 resource_aws_iam_access_key_created_at block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#resource_aws_iam_access_key_created_at SecurityhubInsight#resource_aws_iam_access_key_created_at}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#resource_aws_iam_access_key_created_at SecurityhubInsight#resource_aws_iam_access_key_created_at}
 
 ---
 
@@ -3183,7 +3183,7 @@ resource_aws_iam_access_key_status: IResolvable | typing.List[SecurityhubInsight
 
 resource_aws_iam_access_key_status block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#resource_aws_iam_access_key_status SecurityhubInsight#resource_aws_iam_access_key_status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#resource_aws_iam_access_key_status SecurityhubInsight#resource_aws_iam_access_key_status}
 
 ---
 
@@ -3197,7 +3197,7 @@ resource_aws_iam_access_key_user_name: IResolvable | typing.List[SecurityhubInsi
 
 resource_aws_iam_access_key_user_name block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#resource_aws_iam_access_key_user_name SecurityhubInsight#resource_aws_iam_access_key_user_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#resource_aws_iam_access_key_user_name SecurityhubInsight#resource_aws_iam_access_key_user_name}
 
 ---
 
@@ -3211,7 +3211,7 @@ resource_aws_s3_bucket_owner_id: IResolvable | typing.List[SecurityhubInsightFil
 
 resource_aws_s3_bucket_owner_id block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#resource_aws_s3_bucket_owner_id SecurityhubInsight#resource_aws_s3_bucket_owner_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#resource_aws_s3_bucket_owner_id SecurityhubInsight#resource_aws_s3_bucket_owner_id}
 
 ---
 
@@ -3225,7 +3225,7 @@ resource_aws_s3_bucket_owner_name: IResolvable | typing.List[SecurityhubInsightF
 
 resource_aws_s3_bucket_owner_name block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#resource_aws_s3_bucket_owner_name SecurityhubInsight#resource_aws_s3_bucket_owner_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#resource_aws_s3_bucket_owner_name SecurityhubInsight#resource_aws_s3_bucket_owner_name}
 
 ---
 
@@ -3239,7 +3239,7 @@ resource_container_image_id: IResolvable | typing.List[SecurityhubInsightFilters
 
 resource_container_image_id block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#resource_container_image_id SecurityhubInsight#resource_container_image_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#resource_container_image_id SecurityhubInsight#resource_container_image_id}
 
 ---
 
@@ -3253,7 +3253,7 @@ resource_container_image_name: IResolvable | typing.List[SecurityhubInsightFilte
 
 resource_container_image_name block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#resource_container_image_name SecurityhubInsight#resource_container_image_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#resource_container_image_name SecurityhubInsight#resource_container_image_name}
 
 ---
 
@@ -3267,7 +3267,7 @@ resource_container_launched_at: IResolvable | typing.List[SecurityhubInsightFilt
 
 resource_container_launched_at block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#resource_container_launched_at SecurityhubInsight#resource_container_launched_at}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#resource_container_launched_at SecurityhubInsight#resource_container_launched_at}
 
 ---
 
@@ -3281,7 +3281,7 @@ resource_container_name: IResolvable | typing.List[SecurityhubInsightFiltersReso
 
 resource_container_name block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#resource_container_name SecurityhubInsight#resource_container_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#resource_container_name SecurityhubInsight#resource_container_name}
 
 ---
 
@@ -3295,7 +3295,7 @@ resource_details_other: IResolvable | typing.List[SecurityhubInsightFiltersResou
 
 resource_details_other block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#resource_details_other SecurityhubInsight#resource_details_other}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#resource_details_other SecurityhubInsight#resource_details_other}
 
 ---
 
@@ -3309,7 +3309,7 @@ resource_id: IResolvable | typing.List[SecurityhubInsightFiltersResourceId]
 
 resource_id block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#resource_id SecurityhubInsight#resource_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#resource_id SecurityhubInsight#resource_id}
 
 ---
 
@@ -3323,7 +3323,7 @@ resource_partition: IResolvable | typing.List[SecurityhubInsightFiltersResourceP
 
 resource_partition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#resource_partition SecurityhubInsight#resource_partition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#resource_partition SecurityhubInsight#resource_partition}
 
 ---
 
@@ -3337,7 +3337,7 @@ resource_region: IResolvable | typing.List[SecurityhubInsightFiltersResourceRegi
 
 resource_region block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#resource_region SecurityhubInsight#resource_region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#resource_region SecurityhubInsight#resource_region}
 
 ---
 
@@ -3351,7 +3351,7 @@ resource_tags: IResolvable | typing.List[SecurityhubInsightFiltersResourceTags]
 
 resource_tags block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#resource_tags SecurityhubInsight#resource_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#resource_tags SecurityhubInsight#resource_tags}
 
 ---
 
@@ -3365,7 +3365,7 @@ resource_type: IResolvable | typing.List[SecurityhubInsightFiltersResourceType]
 
 resource_type block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#resource_type SecurityhubInsight#resource_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#resource_type SecurityhubInsight#resource_type}
 
 ---
 
@@ -3379,7 +3379,7 @@ severity_label: IResolvable | typing.List[SecurityhubInsightFiltersSeverityLabel
 
 severity_label block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#severity_label SecurityhubInsight#severity_label}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#severity_label SecurityhubInsight#severity_label}
 
 ---
 
@@ -3393,7 +3393,7 @@ source_url: IResolvable | typing.List[SecurityhubInsightFiltersSourceUrl]
 
 source_url block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#source_url SecurityhubInsight#source_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#source_url SecurityhubInsight#source_url}
 
 ---
 
@@ -3407,7 +3407,7 @@ threat_intel_indicator_category: IResolvable | typing.List[SecurityhubInsightFil
 
 threat_intel_indicator_category block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#threat_intel_indicator_category SecurityhubInsight#threat_intel_indicator_category}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#threat_intel_indicator_category SecurityhubInsight#threat_intel_indicator_category}
 
 ---
 
@@ -3421,7 +3421,7 @@ threat_intel_indicator_last_observed_at: IResolvable | typing.List[SecurityhubIn
 
 threat_intel_indicator_last_observed_at block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#threat_intel_indicator_last_observed_at SecurityhubInsight#threat_intel_indicator_last_observed_at}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#threat_intel_indicator_last_observed_at SecurityhubInsight#threat_intel_indicator_last_observed_at}
 
 ---
 
@@ -3435,7 +3435,7 @@ threat_intel_indicator_source: IResolvable | typing.List[SecurityhubInsightFilte
 
 threat_intel_indicator_source block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#threat_intel_indicator_source SecurityhubInsight#threat_intel_indicator_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#threat_intel_indicator_source SecurityhubInsight#threat_intel_indicator_source}
 
 ---
 
@@ -3449,7 +3449,7 @@ threat_intel_indicator_source_url: IResolvable | typing.List[SecurityhubInsightF
 
 threat_intel_indicator_source_url block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#threat_intel_indicator_source_url SecurityhubInsight#threat_intel_indicator_source_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#threat_intel_indicator_source_url SecurityhubInsight#threat_intel_indicator_source_url}
 
 ---
 
@@ -3463,7 +3463,7 @@ threat_intel_indicator_type: IResolvable | typing.List[SecurityhubInsightFilters
 
 threat_intel_indicator_type block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#threat_intel_indicator_type SecurityhubInsight#threat_intel_indicator_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#threat_intel_indicator_type SecurityhubInsight#threat_intel_indicator_type}
 
 ---
 
@@ -3477,7 +3477,7 @@ threat_intel_indicator_value: IResolvable | typing.List[SecurityhubInsightFilter
 
 threat_intel_indicator_value block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#threat_intel_indicator_value SecurityhubInsight#threat_intel_indicator_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#threat_intel_indicator_value SecurityhubInsight#threat_intel_indicator_value}
 
 ---
 
@@ -3491,7 +3491,7 @@ title: IResolvable | typing.List[SecurityhubInsightFiltersTitle]
 
 title block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#title SecurityhubInsight#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#title SecurityhubInsight#title}
 
 ---
 
@@ -3505,7 +3505,7 @@ type: IResolvable | typing.List[SecurityhubInsightFiltersType]
 
 type block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#type SecurityhubInsight#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#type SecurityhubInsight#type}
 
 ---
 
@@ -3519,7 +3519,7 @@ updated_at: IResolvable | typing.List[SecurityhubInsightFiltersUpdatedAt]
 
 updated_at block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#updated_at SecurityhubInsight#updated_at}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#updated_at SecurityhubInsight#updated_at}
 
 ---
 
@@ -3533,7 +3533,7 @@ user_defined_values: IResolvable | typing.List[SecurityhubInsightFiltersUserDefi
 
 user_defined_values block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#user_defined_values SecurityhubInsight#user_defined_values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#user_defined_values SecurityhubInsight#user_defined_values}
 
 ---
 
@@ -3547,7 +3547,7 @@ verification_state: IResolvable | typing.List[SecurityhubInsightFiltersVerificat
 
 verification_state block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#verification_state SecurityhubInsight#verification_state}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#verification_state SecurityhubInsight#verification_state}
 
 ---
 
@@ -3561,7 +3561,7 @@ workflow_status: IResolvable | typing.List[SecurityhubInsightFiltersWorkflowStat
 
 workflow_status block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#workflow_status SecurityhubInsight#workflow_status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#workflow_status SecurityhubInsight#workflow_status}
 
 ---
 
@@ -3582,8 +3582,8 @@ securityhubInsight.SecurityhubInsightFiltersAwsAccountId(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersAwsAccountId.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersAwsAccountId.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersAwsAccountId.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersAwsAccountId.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
 
 ---
 
@@ -3595,7 +3595,7 @@ comparison: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
 
 ---
 
@@ -3607,7 +3607,7 @@ value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -3628,8 +3628,8 @@ securityhubInsight.SecurityhubInsightFiltersCompanyName(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersCompanyName.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersCompanyName.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersCompanyName.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersCompanyName.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
 
 ---
 
@@ -3641,7 +3641,7 @@ comparison: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
 
 ---
 
@@ -3653,7 +3653,7 @@ value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -3674,8 +3674,8 @@ securityhubInsight.SecurityhubInsightFiltersComplianceStatus(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersComplianceStatus.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersComplianceStatus.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersComplianceStatus.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersComplianceStatus.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
 
 ---
 
@@ -3687,7 +3687,7 @@ comparison: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
 
 ---
 
@@ -3699,7 +3699,7 @@ value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -3721,9 +3721,9 @@ securityhubInsight.SecurityhubInsightFiltersConfidence(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersConfidence.property.eq">eq</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#eq SecurityhubInsight#eq}. |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersConfidence.property.gte">gte</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#gte SecurityhubInsight#gte}. |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersConfidence.property.lte">lte</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#lte SecurityhubInsight#lte}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersConfidence.property.eq">eq</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#eq SecurityhubInsight#eq}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersConfidence.property.gte">gte</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#gte SecurityhubInsight#gte}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersConfidence.property.lte">lte</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#lte SecurityhubInsight#lte}. |
 
 ---
 
@@ -3735,7 +3735,7 @@ eq: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#eq SecurityhubInsight#eq}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#eq SecurityhubInsight#eq}.
 
 ---
 
@@ -3747,7 +3747,7 @@ gte: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#gte SecurityhubInsight#gte}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#gte SecurityhubInsight#gte}.
 
 ---
 
@@ -3759,7 +3759,7 @@ lte: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#lte SecurityhubInsight#lte}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#lte SecurityhubInsight#lte}.
 
 ---
 
@@ -3782,8 +3782,8 @@ securityhubInsight.SecurityhubInsightFiltersCreatedAt(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersCreatedAt.property.dateRange">date_range</a></code> | <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersCreatedAtDateRange">SecurityhubInsightFiltersCreatedAtDateRange</a></code> | date_range block. |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersCreatedAt.property.end">end</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#end SecurityhubInsight#end}. |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersCreatedAt.property.start">start</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#start SecurityhubInsight#start}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersCreatedAt.property.end">end</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#end SecurityhubInsight#end}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersCreatedAt.property.start">start</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#start SecurityhubInsight#start}. |
 
 ---
 
@@ -3797,7 +3797,7 @@ date_range: SecurityhubInsightFiltersCreatedAtDateRange
 
 date_range block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#date_range SecurityhubInsight#date_range}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#date_range SecurityhubInsight#date_range}
 
 ---
 
@@ -3809,7 +3809,7 @@ end: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#end SecurityhubInsight#end}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#end SecurityhubInsight#end}.
 
 ---
 
@@ -3821,7 +3821,7 @@ start: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#start SecurityhubInsight#start}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#start SecurityhubInsight#start}.
 
 ---
 
@@ -3842,8 +3842,8 @@ securityhubInsight.SecurityhubInsightFiltersCreatedAtDateRange(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersCreatedAtDateRange.property.unit">unit</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}. |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersCreatedAtDateRange.property.value">value</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersCreatedAtDateRange.property.unit">unit</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersCreatedAtDateRange.property.value">value</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
 
 ---
 
@@ -3855,7 +3855,7 @@ unit: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}.
 
 ---
 
@@ -3867,7 +3867,7 @@ value: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -3889,9 +3889,9 @@ securityhubInsight.SecurityhubInsightFiltersCriticality(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersCriticality.property.eq">eq</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#eq SecurityhubInsight#eq}. |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersCriticality.property.gte">gte</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#gte SecurityhubInsight#gte}. |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersCriticality.property.lte">lte</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#lte SecurityhubInsight#lte}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersCriticality.property.eq">eq</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#eq SecurityhubInsight#eq}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersCriticality.property.gte">gte</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#gte SecurityhubInsight#gte}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersCriticality.property.lte">lte</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#lte SecurityhubInsight#lte}. |
 
 ---
 
@@ -3903,7 +3903,7 @@ eq: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#eq SecurityhubInsight#eq}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#eq SecurityhubInsight#eq}.
 
 ---
 
@@ -3915,7 +3915,7 @@ gte: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#gte SecurityhubInsight#gte}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#gte SecurityhubInsight#gte}.
 
 ---
 
@@ -3927,7 +3927,7 @@ lte: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#lte SecurityhubInsight#lte}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#lte SecurityhubInsight#lte}.
 
 ---
 
@@ -3948,8 +3948,8 @@ securityhubInsight.SecurityhubInsightFiltersDescription(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersDescription.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersDescription.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersDescription.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersDescription.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
 
 ---
 
@@ -3961,7 +3961,7 @@ comparison: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
 
 ---
 
@@ -3973,7 +3973,7 @@ value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -3995,9 +3995,9 @@ securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsConfidence(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsConfidence.property.eq">eq</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#eq SecurityhubInsight#eq}. |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsConfidence.property.gte">gte</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#gte SecurityhubInsight#gte}. |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsConfidence.property.lte">lte</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#lte SecurityhubInsight#lte}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsConfidence.property.eq">eq</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#eq SecurityhubInsight#eq}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsConfidence.property.gte">gte</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#gte SecurityhubInsight#gte}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsConfidence.property.lte">lte</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#lte SecurityhubInsight#lte}. |
 
 ---
 
@@ -4009,7 +4009,7 @@ eq: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#eq SecurityhubInsight#eq}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#eq SecurityhubInsight#eq}.
 
 ---
 
@@ -4021,7 +4021,7 @@ gte: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#gte SecurityhubInsight#gte}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#gte SecurityhubInsight#gte}.
 
 ---
 
@@ -4033,7 +4033,7 @@ lte: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#lte SecurityhubInsight#lte}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#lte SecurityhubInsight#lte}.
 
 ---
 
@@ -4055,9 +4055,9 @@ securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsCriticality(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsCriticality.property.eq">eq</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#eq SecurityhubInsight#eq}. |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsCriticality.property.gte">gte</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#gte SecurityhubInsight#gte}. |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsCriticality.property.lte">lte</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#lte SecurityhubInsight#lte}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsCriticality.property.eq">eq</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#eq SecurityhubInsight#eq}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsCriticality.property.gte">gte</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#gte SecurityhubInsight#gte}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsCriticality.property.lte">lte</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#lte SecurityhubInsight#lte}. |
 
 ---
 
@@ -4069,7 +4069,7 @@ eq: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#eq SecurityhubInsight#eq}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#eq SecurityhubInsight#eq}.
 
 ---
 
@@ -4081,7 +4081,7 @@ gte: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#gte SecurityhubInsight#gte}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#gte SecurityhubInsight#gte}.
 
 ---
 
@@ -4093,7 +4093,7 @@ lte: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#lte SecurityhubInsight#lte}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#lte SecurityhubInsight#lte}.
 
 ---
 
@@ -4114,8 +4114,8 @@ securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindings
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
 
 ---
 
@@ -4127,7 +4127,7 @@ comparison: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
 
 ---
 
@@ -4139,7 +4139,7 @@ value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -4160,8 +4160,8 @@ securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindings
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
 
 ---
 
@@ -4173,7 +4173,7 @@ comparison: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
 
 ---
 
@@ -4185,7 +4185,7 @@ value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -4206,8 +4206,8 @@ securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
 
 ---
 
@@ -4219,7 +4219,7 @@ comparison: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
 
 ---
 
@@ -4231,7 +4231,7 @@ value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -4252,8 +4252,8 @@ securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityOrigina
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
 
 ---
 
@@ -4265,7 +4265,7 @@ comparison: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
 
 ---
 
@@ -4277,7 +4277,7 @@ value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -4298,8 +4298,8 @@ securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsTypes(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsTypes.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsTypes.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsTypes.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsTypes.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
 
 ---
 
@@ -4311,7 +4311,7 @@ comparison: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
 
 ---
 
@@ -4323,7 +4323,7 @@ value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -4346,8 +4346,8 @@ securityhubInsight.SecurityhubInsightFiltersFirstObservedAt(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersFirstObservedAt.property.dateRange">date_range</a></code> | <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersFirstObservedAtDateRange">SecurityhubInsightFiltersFirstObservedAtDateRange</a></code> | date_range block. |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersFirstObservedAt.property.end">end</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#end SecurityhubInsight#end}. |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersFirstObservedAt.property.start">start</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#start SecurityhubInsight#start}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersFirstObservedAt.property.end">end</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#end SecurityhubInsight#end}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersFirstObservedAt.property.start">start</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#start SecurityhubInsight#start}. |
 
 ---
 
@@ -4361,7 +4361,7 @@ date_range: SecurityhubInsightFiltersFirstObservedAtDateRange
 
 date_range block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#date_range SecurityhubInsight#date_range}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#date_range SecurityhubInsight#date_range}
 
 ---
 
@@ -4373,7 +4373,7 @@ end: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#end SecurityhubInsight#end}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#end SecurityhubInsight#end}.
 
 ---
 
@@ -4385,7 +4385,7 @@ start: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#start SecurityhubInsight#start}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#start SecurityhubInsight#start}.
 
 ---
 
@@ -4406,8 +4406,8 @@ securityhubInsight.SecurityhubInsightFiltersFirstObservedAtDateRange(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersFirstObservedAtDateRange.property.unit">unit</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}. |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersFirstObservedAtDateRange.property.value">value</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersFirstObservedAtDateRange.property.unit">unit</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersFirstObservedAtDateRange.property.value">value</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
 
 ---
 
@@ -4419,7 +4419,7 @@ unit: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}.
 
 ---
 
@@ -4431,7 +4431,7 @@ value: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -4452,8 +4452,8 @@ securityhubInsight.SecurityhubInsightFiltersGeneratorId(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersGeneratorId.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersGeneratorId.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersGeneratorId.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersGeneratorId.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
 
 ---
 
@@ -4465,7 +4465,7 @@ comparison: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
 
 ---
 
@@ -4477,7 +4477,7 @@ value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -4498,8 +4498,8 @@ securityhubInsight.SecurityhubInsightFiltersId(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersId.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersId.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersId.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersId.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
 
 ---
 
@@ -4511,7 +4511,7 @@ comparison: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
 
 ---
 
@@ -4523,7 +4523,7 @@ value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -4543,7 +4543,7 @@ securityhubInsight.SecurityhubInsightFiltersKeyword(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersKeyword.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersKeyword.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
 
 ---
 
@@ -4555,7 +4555,7 @@ value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -4578,8 +4578,8 @@ securityhubInsight.SecurityhubInsightFiltersLastObservedAt(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersLastObservedAt.property.dateRange">date_range</a></code> | <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersLastObservedAtDateRange">SecurityhubInsightFiltersLastObservedAtDateRange</a></code> | date_range block. |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersLastObservedAt.property.end">end</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#end SecurityhubInsight#end}. |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersLastObservedAt.property.start">start</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#start SecurityhubInsight#start}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersLastObservedAt.property.end">end</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#end SecurityhubInsight#end}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersLastObservedAt.property.start">start</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#start SecurityhubInsight#start}. |
 
 ---
 
@@ -4593,7 +4593,7 @@ date_range: SecurityhubInsightFiltersLastObservedAtDateRange
 
 date_range block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#date_range SecurityhubInsight#date_range}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#date_range SecurityhubInsight#date_range}
 
 ---
 
@@ -4605,7 +4605,7 @@ end: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#end SecurityhubInsight#end}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#end SecurityhubInsight#end}.
 
 ---
 
@@ -4617,7 +4617,7 @@ start: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#start SecurityhubInsight#start}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#start SecurityhubInsight#start}.
 
 ---
 
@@ -4638,8 +4638,8 @@ securityhubInsight.SecurityhubInsightFiltersLastObservedAtDateRange(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersLastObservedAtDateRange.property.unit">unit</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}. |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersLastObservedAtDateRange.property.value">value</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersLastObservedAtDateRange.property.unit">unit</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersLastObservedAtDateRange.property.value">value</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
 
 ---
 
@@ -4651,7 +4651,7 @@ unit: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}.
 
 ---
 
@@ -4663,7 +4663,7 @@ value: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -4684,8 +4684,8 @@ securityhubInsight.SecurityhubInsightFiltersMalwareName(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareName.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareName.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareName.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareName.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
 
 ---
 
@@ -4697,7 +4697,7 @@ comparison: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
 
 ---
 
@@ -4709,7 +4709,7 @@ value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -4730,8 +4730,8 @@ securityhubInsight.SecurityhubInsightFiltersMalwarePath(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwarePath.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwarePath.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwarePath.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwarePath.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
 
 ---
 
@@ -4743,7 +4743,7 @@ comparison: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
 
 ---
 
@@ -4755,7 +4755,7 @@ value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -4776,8 +4776,8 @@ securityhubInsight.SecurityhubInsightFiltersMalwareState(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareState.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareState.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareState.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareState.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
 
 ---
 
@@ -4789,7 +4789,7 @@ comparison: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
 
 ---
 
@@ -4801,7 +4801,7 @@ value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -4822,8 +4822,8 @@ securityhubInsight.SecurityhubInsightFiltersMalwareType(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareType.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareType.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareType.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareType.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
 
 ---
 
@@ -4835,7 +4835,7 @@ comparison: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
 
 ---
 
@@ -4847,7 +4847,7 @@ value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -4868,8 +4868,8 @@ securityhubInsight.SecurityhubInsightFiltersNetworkDestinationDomain(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationDomain.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationDomain.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationDomain.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationDomain.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
 
 ---
 
@@ -4881,7 +4881,7 @@ comparison: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
 
 ---
 
@@ -4893,7 +4893,7 @@ value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -4913,7 +4913,7 @@ securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv4(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv4.property.cidr">cidr</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#cidr SecurityhubInsight#cidr}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv4.property.cidr">cidr</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#cidr SecurityhubInsight#cidr}. |
 
 ---
 
@@ -4925,7 +4925,7 @@ cidr: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#cidr SecurityhubInsight#cidr}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#cidr SecurityhubInsight#cidr}.
 
 ---
 
@@ -4945,7 +4945,7 @@ securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv6(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv6.property.cidr">cidr</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#cidr SecurityhubInsight#cidr}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv6.property.cidr">cidr</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#cidr SecurityhubInsight#cidr}. |
 
 ---
 
@@ -4957,7 +4957,7 @@ cidr: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#cidr SecurityhubInsight#cidr}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#cidr SecurityhubInsight#cidr}.
 
 ---
 
@@ -4979,9 +4979,9 @@ securityhubInsight.SecurityhubInsightFiltersNetworkDestinationPort(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationPort.property.eq">eq</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#eq SecurityhubInsight#eq}. |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationPort.property.gte">gte</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#gte SecurityhubInsight#gte}. |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationPort.property.lte">lte</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#lte SecurityhubInsight#lte}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationPort.property.eq">eq</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#eq SecurityhubInsight#eq}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationPort.property.gte">gte</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#gte SecurityhubInsight#gte}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationPort.property.lte">lte</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#lte SecurityhubInsight#lte}. |
 
 ---
 
@@ -4993,7 +4993,7 @@ eq: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#eq SecurityhubInsight#eq}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#eq SecurityhubInsight#eq}.
 
 ---
 
@@ -5005,7 +5005,7 @@ gte: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#gte SecurityhubInsight#gte}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#gte SecurityhubInsight#gte}.
 
 ---
 
@@ -5017,7 +5017,7 @@ lte: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#lte SecurityhubInsight#lte}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#lte SecurityhubInsight#lte}.
 
 ---
 
@@ -5038,8 +5038,8 @@ securityhubInsight.SecurityhubInsightFiltersNetworkDirection(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDirection.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDirection.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDirection.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDirection.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
 
 ---
 
@@ -5051,7 +5051,7 @@ comparison: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
 
 ---
 
@@ -5063,7 +5063,7 @@ value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -5084,8 +5084,8 @@ securityhubInsight.SecurityhubInsightFiltersNetworkProtocol(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkProtocol.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkProtocol.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkProtocol.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkProtocol.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
 
 ---
 
@@ -5097,7 +5097,7 @@ comparison: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
 
 ---
 
@@ -5109,7 +5109,7 @@ value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -5130,8 +5130,8 @@ securityhubInsight.SecurityhubInsightFiltersNetworkSourceDomain(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceDomain.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceDomain.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceDomain.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceDomain.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
 
 ---
 
@@ -5143,7 +5143,7 @@ comparison: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
 
 ---
 
@@ -5155,7 +5155,7 @@ value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -5175,7 +5175,7 @@ securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv4(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv4.property.cidr">cidr</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#cidr SecurityhubInsight#cidr}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv4.property.cidr">cidr</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#cidr SecurityhubInsight#cidr}. |
 
 ---
 
@@ -5187,7 +5187,7 @@ cidr: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#cidr SecurityhubInsight#cidr}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#cidr SecurityhubInsight#cidr}.
 
 ---
 
@@ -5207,7 +5207,7 @@ securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv6(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv6.property.cidr">cidr</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#cidr SecurityhubInsight#cidr}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv6.property.cidr">cidr</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#cidr SecurityhubInsight#cidr}. |
 
 ---
 
@@ -5219,7 +5219,7 @@ cidr: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#cidr SecurityhubInsight#cidr}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#cidr SecurityhubInsight#cidr}.
 
 ---
 
@@ -5240,8 +5240,8 @@ securityhubInsight.SecurityhubInsightFiltersNetworkSourceMac(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceMac.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceMac.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceMac.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceMac.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
 
 ---
 
@@ -5253,7 +5253,7 @@ comparison: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
 
 ---
 
@@ -5265,7 +5265,7 @@ value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -5287,9 +5287,9 @@ securityhubInsight.SecurityhubInsightFiltersNetworkSourcePort(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourcePort.property.eq">eq</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#eq SecurityhubInsight#eq}. |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourcePort.property.gte">gte</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#gte SecurityhubInsight#gte}. |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourcePort.property.lte">lte</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#lte SecurityhubInsight#lte}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourcePort.property.eq">eq</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#eq SecurityhubInsight#eq}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourcePort.property.gte">gte</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#gte SecurityhubInsight#gte}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourcePort.property.lte">lte</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#lte SecurityhubInsight#lte}. |
 
 ---
 
@@ -5301,7 +5301,7 @@ eq: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#eq SecurityhubInsight#eq}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#eq SecurityhubInsight#eq}.
 
 ---
 
@@ -5313,7 +5313,7 @@ gte: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#gte SecurityhubInsight#gte}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#gte SecurityhubInsight#gte}.
 
 ---
 
@@ -5325,7 +5325,7 @@ lte: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#lte SecurityhubInsight#lte}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#lte SecurityhubInsight#lte}.
 
 ---
 
@@ -5346,8 +5346,8 @@ securityhubInsight.SecurityhubInsightFiltersNoteText(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteText.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteText.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteText.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteText.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
 
 ---
 
@@ -5359,7 +5359,7 @@ comparison: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
 
 ---
 
@@ -5371,7 +5371,7 @@ value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -5394,8 +5394,8 @@ securityhubInsight.SecurityhubInsightFiltersNoteUpdatedAt(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedAt.property.dateRange">date_range</a></code> | <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedAtDateRange">SecurityhubInsightFiltersNoteUpdatedAtDateRange</a></code> | date_range block. |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedAt.property.end">end</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#end SecurityhubInsight#end}. |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedAt.property.start">start</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#start SecurityhubInsight#start}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedAt.property.end">end</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#end SecurityhubInsight#end}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedAt.property.start">start</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#start SecurityhubInsight#start}. |
 
 ---
 
@@ -5409,7 +5409,7 @@ date_range: SecurityhubInsightFiltersNoteUpdatedAtDateRange
 
 date_range block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#date_range SecurityhubInsight#date_range}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#date_range SecurityhubInsight#date_range}
 
 ---
 
@@ -5421,7 +5421,7 @@ end: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#end SecurityhubInsight#end}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#end SecurityhubInsight#end}.
 
 ---
 
@@ -5433,7 +5433,7 @@ start: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#start SecurityhubInsight#start}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#start SecurityhubInsight#start}.
 
 ---
 
@@ -5454,8 +5454,8 @@ securityhubInsight.SecurityhubInsightFiltersNoteUpdatedAtDateRange(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedAtDateRange.property.unit">unit</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}. |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedAtDateRange.property.value">value</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedAtDateRange.property.unit">unit</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedAtDateRange.property.value">value</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
 
 ---
 
@@ -5467,7 +5467,7 @@ unit: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}.
 
 ---
 
@@ -5479,7 +5479,7 @@ value: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -5500,8 +5500,8 @@ securityhubInsight.SecurityhubInsightFiltersNoteUpdatedBy(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedBy.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedBy.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedBy.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedBy.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
 
 ---
 
@@ -5513,7 +5513,7 @@ comparison: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
 
 ---
 
@@ -5525,7 +5525,7 @@ value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -5548,8 +5548,8 @@ securityhubInsight.SecurityhubInsightFiltersProcessLaunchedAt(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessLaunchedAt.property.dateRange">date_range</a></code> | <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessLaunchedAtDateRange">SecurityhubInsightFiltersProcessLaunchedAtDateRange</a></code> | date_range block. |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessLaunchedAt.property.end">end</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#end SecurityhubInsight#end}. |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessLaunchedAt.property.start">start</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#start SecurityhubInsight#start}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessLaunchedAt.property.end">end</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#end SecurityhubInsight#end}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessLaunchedAt.property.start">start</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#start SecurityhubInsight#start}. |
 
 ---
 
@@ -5563,7 +5563,7 @@ date_range: SecurityhubInsightFiltersProcessLaunchedAtDateRange
 
 date_range block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#date_range SecurityhubInsight#date_range}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#date_range SecurityhubInsight#date_range}
 
 ---
 
@@ -5575,7 +5575,7 @@ end: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#end SecurityhubInsight#end}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#end SecurityhubInsight#end}.
 
 ---
 
@@ -5587,7 +5587,7 @@ start: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#start SecurityhubInsight#start}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#start SecurityhubInsight#start}.
 
 ---
 
@@ -5608,8 +5608,8 @@ securityhubInsight.SecurityhubInsightFiltersProcessLaunchedAtDateRange(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessLaunchedAtDateRange.property.unit">unit</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}. |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessLaunchedAtDateRange.property.value">value</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessLaunchedAtDateRange.property.unit">unit</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessLaunchedAtDateRange.property.value">value</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
 
 ---
 
@@ -5621,7 +5621,7 @@ unit: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}.
 
 ---
 
@@ -5633,7 +5633,7 @@ value: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -5654,8 +5654,8 @@ securityhubInsight.SecurityhubInsightFiltersProcessName(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessName.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessName.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessName.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessName.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
 
 ---
 
@@ -5667,7 +5667,7 @@ comparison: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
 
 ---
 
@@ -5679,7 +5679,7 @@ value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -5701,9 +5701,9 @@ securityhubInsight.SecurityhubInsightFiltersProcessParentPid(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessParentPid.property.eq">eq</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#eq SecurityhubInsight#eq}. |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessParentPid.property.gte">gte</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#gte SecurityhubInsight#gte}. |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessParentPid.property.lte">lte</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#lte SecurityhubInsight#lte}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessParentPid.property.eq">eq</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#eq SecurityhubInsight#eq}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessParentPid.property.gte">gte</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#gte SecurityhubInsight#gte}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessParentPid.property.lte">lte</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#lte SecurityhubInsight#lte}. |
 
 ---
 
@@ -5715,7 +5715,7 @@ eq: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#eq SecurityhubInsight#eq}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#eq SecurityhubInsight#eq}.
 
 ---
 
@@ -5727,7 +5727,7 @@ gte: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#gte SecurityhubInsight#gte}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#gte SecurityhubInsight#gte}.
 
 ---
 
@@ -5739,7 +5739,7 @@ lte: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#lte SecurityhubInsight#lte}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#lte SecurityhubInsight#lte}.
 
 ---
 
@@ -5760,8 +5760,8 @@ securityhubInsight.SecurityhubInsightFiltersProcessPath(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPath.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPath.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPath.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPath.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
 
 ---
 
@@ -5773,7 +5773,7 @@ comparison: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
 
 ---
 
@@ -5785,7 +5785,7 @@ value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -5807,9 +5807,9 @@ securityhubInsight.SecurityhubInsightFiltersProcessPid(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPid.property.eq">eq</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#eq SecurityhubInsight#eq}. |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPid.property.gte">gte</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#gte SecurityhubInsight#gte}. |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPid.property.lte">lte</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#lte SecurityhubInsight#lte}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPid.property.eq">eq</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#eq SecurityhubInsight#eq}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPid.property.gte">gte</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#gte SecurityhubInsight#gte}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPid.property.lte">lte</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#lte SecurityhubInsight#lte}. |
 
 ---
 
@@ -5821,7 +5821,7 @@ eq: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#eq SecurityhubInsight#eq}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#eq SecurityhubInsight#eq}.
 
 ---
 
@@ -5833,7 +5833,7 @@ gte: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#gte SecurityhubInsight#gte}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#gte SecurityhubInsight#gte}.
 
 ---
 
@@ -5845,7 +5845,7 @@ lte: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#lte SecurityhubInsight#lte}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#lte SecurityhubInsight#lte}.
 
 ---
 
@@ -5868,8 +5868,8 @@ securityhubInsight.SecurityhubInsightFiltersProcessTerminatedAt(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessTerminatedAt.property.dateRange">date_range</a></code> | <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessTerminatedAtDateRange">SecurityhubInsightFiltersProcessTerminatedAtDateRange</a></code> | date_range block. |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessTerminatedAt.property.end">end</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#end SecurityhubInsight#end}. |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessTerminatedAt.property.start">start</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#start SecurityhubInsight#start}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessTerminatedAt.property.end">end</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#end SecurityhubInsight#end}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessTerminatedAt.property.start">start</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#start SecurityhubInsight#start}. |
 
 ---
 
@@ -5883,7 +5883,7 @@ date_range: SecurityhubInsightFiltersProcessTerminatedAtDateRange
 
 date_range block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#date_range SecurityhubInsight#date_range}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#date_range SecurityhubInsight#date_range}
 
 ---
 
@@ -5895,7 +5895,7 @@ end: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#end SecurityhubInsight#end}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#end SecurityhubInsight#end}.
 
 ---
 
@@ -5907,7 +5907,7 @@ start: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#start SecurityhubInsight#start}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#start SecurityhubInsight#start}.
 
 ---
 
@@ -5928,8 +5928,8 @@ securityhubInsight.SecurityhubInsightFiltersProcessTerminatedAtDateRange(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessTerminatedAtDateRange.property.unit">unit</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}. |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessTerminatedAtDateRange.property.value">value</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessTerminatedAtDateRange.property.unit">unit</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessTerminatedAtDateRange.property.value">value</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
 
 ---
 
@@ -5941,7 +5941,7 @@ unit: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}.
 
 ---
 
@@ -5953,7 +5953,7 @@ value: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -5974,8 +5974,8 @@ securityhubInsight.SecurityhubInsightFiltersProductArn(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductArn.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductArn.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductArn.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductArn.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
 
 ---
 
@@ -5987,7 +5987,7 @@ comparison: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
 
 ---
 
@@ -5999,7 +5999,7 @@ value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -6021,9 +6021,9 @@ securityhubInsight.SecurityhubInsightFiltersProductFields(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductFields.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductFields.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#key SecurityhubInsight#key}. |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductFields.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductFields.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductFields.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#key SecurityhubInsight#key}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductFields.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
 
 ---
 
@@ -6035,7 +6035,7 @@ comparison: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
 
 ---
 
@@ -6047,7 +6047,7 @@ key: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#key SecurityhubInsight#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#key SecurityhubInsight#key}.
 
 ---
 
@@ -6059,7 +6059,7 @@ value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -6080,8 +6080,8 @@ securityhubInsight.SecurityhubInsightFiltersProductName(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductName.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductName.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductName.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductName.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
 
 ---
 
@@ -6093,7 +6093,7 @@ comparison: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
 
 ---
 
@@ -6105,7 +6105,7 @@ value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -6126,8 +6126,8 @@ securityhubInsight.SecurityhubInsightFiltersRecommendationText(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecommendationText.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecommendationText.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecommendationText.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecommendationText.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
 
 ---
 
@@ -6139,7 +6139,7 @@ comparison: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
 
 ---
 
@@ -6151,7 +6151,7 @@ value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -6172,8 +6172,8 @@ securityhubInsight.SecurityhubInsightFiltersRecordState(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecordState.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecordState.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecordState.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecordState.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
 
 ---
 
@@ -6185,7 +6185,7 @@ comparison: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
 
 ---
 
@@ -6197,7 +6197,7 @@ value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -6218,8 +6218,8 @@ securityhubInsight.SecurityhubInsightFiltersRelatedFindingsId(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsId.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsId.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsId.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsId.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
 
 ---
 
@@ -6231,7 +6231,7 @@ comparison: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
 
 ---
 
@@ -6243,7 +6243,7 @@ value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -6264,8 +6264,8 @@ securityhubInsight.SecurityhubInsightFiltersRelatedFindingsProductArn(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsProductArn.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsProductArn.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsProductArn.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsProductArn.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
 
 ---
 
@@ -6277,7 +6277,7 @@ comparison: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
 
 ---
 
@@ -6289,7 +6289,7 @@ value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -6310,8 +6310,8 @@ securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstancePro
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
 
 ---
 
@@ -6323,7 +6323,7 @@ comparison: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
 
 ---
 
@@ -6335,7 +6335,7 @@ value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -6356,8 +6356,8 @@ securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceImageId(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceImageId.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceImageId.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceImageId.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceImageId.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
 
 ---
 
@@ -6369,7 +6369,7 @@ comparison: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
 
 ---
 
@@ -6381,7 +6381,7 @@ value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -6401,7 +6401,7 @@ securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses.property.cidr">cidr</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#cidr SecurityhubInsight#cidr}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses.property.cidr">cidr</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#cidr SecurityhubInsight#cidr}. |
 
 ---
 
@@ -6413,7 +6413,7 @@ cidr: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#cidr SecurityhubInsight#cidr}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#cidr SecurityhubInsight#cidr}.
 
 ---
 
@@ -6433,7 +6433,7 @@ securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses.property.cidr">cidr</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#cidr SecurityhubInsight#cidr}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses.property.cidr">cidr</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#cidr SecurityhubInsight#cidr}. |
 
 ---
 
@@ -6445,7 +6445,7 @@ cidr: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#cidr SecurityhubInsight#cidr}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#cidr SecurityhubInsight#cidr}.
 
 ---
 
@@ -6466,8 +6466,8 @@ securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
 
 ---
 
@@ -6479,7 +6479,7 @@ comparison: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
 
 ---
 
@@ -6491,7 +6491,7 @@ value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -6514,8 +6514,8 @@ securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt.property.dateRange">date_range</a></code> | <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtDateRange">SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtDateRange</a></code> | date_range block. |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt.property.end">end</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#end SecurityhubInsight#end}. |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt.property.start">start</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#start SecurityhubInsight#start}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt.property.end">end</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#end SecurityhubInsight#end}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt.property.start">start</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#start SecurityhubInsight#start}. |
 
 ---
 
@@ -6529,7 +6529,7 @@ date_range: SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtDateRange
 
 date_range block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#date_range SecurityhubInsight#date_range}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#date_range SecurityhubInsight#date_range}
 
 ---
 
@@ -6541,7 +6541,7 @@ end: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#end SecurityhubInsight#end}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#end SecurityhubInsight#end}.
 
 ---
 
@@ -6553,7 +6553,7 @@ start: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#start SecurityhubInsight#start}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#start SecurityhubInsight#start}.
 
 ---
 
@@ -6574,8 +6574,8 @@ securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtDate
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtDateRange.property.unit">unit</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}. |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtDateRange.property.value">value</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtDateRange.property.unit">unit</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtDateRange.property.value">value</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
 
 ---
 
@@ -6587,7 +6587,7 @@ unit: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}.
 
 ---
 
@@ -6599,7 +6599,7 @@ value: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -6620,8 +6620,8 @@ securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
 
 ---
 
@@ -6633,7 +6633,7 @@ comparison: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
 
 ---
 
@@ -6645,7 +6645,7 @@ value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -6666,8 +6666,8 @@ securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceType(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceType.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceType.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceType.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceType.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
 
 ---
 
@@ -6679,7 +6679,7 @@ comparison: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
 
 ---
 
@@ -6691,7 +6691,7 @@ value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -6712,8 +6712,8 @@ securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
 
 ---
 
@@ -6725,7 +6725,7 @@ comparison: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
 
 ---
 
@@ -6737,7 +6737,7 @@ value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -6760,8 +6760,8 @@ securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt.property.dateRange">date_range</a></code> | <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtDateRange">SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtDateRange</a></code> | date_range block. |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt.property.end">end</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#end SecurityhubInsight#end}. |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt.property.start">start</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#start SecurityhubInsight#start}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt.property.end">end</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#end SecurityhubInsight#end}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt.property.start">start</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#start SecurityhubInsight#start}. |
 
 ---
 
@@ -6775,7 +6775,7 @@ date_range: SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtDateRange
 
 date_range block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#date_range SecurityhubInsight#date_range}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#date_range SecurityhubInsight#date_range}
 
 ---
 
@@ -6787,7 +6787,7 @@ end: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#end SecurityhubInsight#end}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#end SecurityhubInsight#end}.
 
 ---
 
@@ -6799,7 +6799,7 @@ start: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#start SecurityhubInsight#start}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#start SecurityhubInsight#start}.
 
 ---
 
@@ -6820,8 +6820,8 @@ securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtDate
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtDateRange.property.unit">unit</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}. |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtDateRange.property.value">value</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtDateRange.property.unit">unit</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtDateRange.property.value">value</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
 
 ---
 
@@ -6833,7 +6833,7 @@ unit: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}.
 
 ---
 
@@ -6845,7 +6845,7 @@ value: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -6866,8 +6866,8 @@ securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
 
 ---
 
@@ -6879,7 +6879,7 @@ comparison: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
 
 ---
 
@@ -6891,7 +6891,7 @@ value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -6912,8 +6912,8 @@ securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
 
 ---
 
@@ -6925,7 +6925,7 @@ comparison: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
 
 ---
 
@@ -6937,7 +6937,7 @@ value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -6958,8 +6958,8 @@ securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerId(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerId.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerId.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerId.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerId.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
 
 ---
 
@@ -6971,7 +6971,7 @@ comparison: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
 
 ---
 
@@ -6983,7 +6983,7 @@ value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -7004,8 +7004,8 @@ securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerName(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerName.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerName.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerName.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerName.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
 
 ---
 
@@ -7017,7 +7017,7 @@ comparison: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
 
 ---
 
@@ -7029,7 +7029,7 @@ value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -7050,8 +7050,8 @@ securityhubInsight.SecurityhubInsightFiltersResourceContainerImageId(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageId.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageId.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageId.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageId.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
 
 ---
 
@@ -7063,7 +7063,7 @@ comparison: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
 
 ---
 
@@ -7075,7 +7075,7 @@ value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -7096,8 +7096,8 @@ securityhubInsight.SecurityhubInsightFiltersResourceContainerImageName(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageName.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageName.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageName.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageName.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
 
 ---
 
@@ -7109,7 +7109,7 @@ comparison: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
 
 ---
 
@@ -7121,7 +7121,7 @@ value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -7144,8 +7144,8 @@ securityhubInsight.SecurityhubInsightFiltersResourceContainerLaunchedAt(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerLaunchedAt.property.dateRange">date_range</a></code> | <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerLaunchedAtDateRange">SecurityhubInsightFiltersResourceContainerLaunchedAtDateRange</a></code> | date_range block. |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerLaunchedAt.property.end">end</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#end SecurityhubInsight#end}. |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerLaunchedAt.property.start">start</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#start SecurityhubInsight#start}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerLaunchedAt.property.end">end</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#end SecurityhubInsight#end}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerLaunchedAt.property.start">start</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#start SecurityhubInsight#start}. |
 
 ---
 
@@ -7159,7 +7159,7 @@ date_range: SecurityhubInsightFiltersResourceContainerLaunchedAtDateRange
 
 date_range block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#date_range SecurityhubInsight#date_range}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#date_range SecurityhubInsight#date_range}
 
 ---
 
@@ -7171,7 +7171,7 @@ end: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#end SecurityhubInsight#end}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#end SecurityhubInsight#end}.
 
 ---
 
@@ -7183,7 +7183,7 @@ start: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#start SecurityhubInsight#start}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#start SecurityhubInsight#start}.
 
 ---
 
@@ -7204,8 +7204,8 @@ securityhubInsight.SecurityhubInsightFiltersResourceContainerLaunchedAtDateRange
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerLaunchedAtDateRange.property.unit">unit</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}. |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerLaunchedAtDateRange.property.value">value</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerLaunchedAtDateRange.property.unit">unit</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerLaunchedAtDateRange.property.value">value</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
 
 ---
 
@@ -7217,7 +7217,7 @@ unit: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}.
 
 ---
 
@@ -7229,7 +7229,7 @@ value: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -7250,8 +7250,8 @@ securityhubInsight.SecurityhubInsightFiltersResourceContainerName(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerName.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerName.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerName.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerName.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
 
 ---
 
@@ -7263,7 +7263,7 @@ comparison: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
 
 ---
 
@@ -7275,7 +7275,7 @@ value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -7297,9 +7297,9 @@ securityhubInsight.SecurityhubInsightFiltersResourceDetailsOther(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceDetailsOther.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceDetailsOther.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#key SecurityhubInsight#key}. |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceDetailsOther.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceDetailsOther.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceDetailsOther.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#key SecurityhubInsight#key}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceDetailsOther.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
 
 ---
 
@@ -7311,7 +7311,7 @@ comparison: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
 
 ---
 
@@ -7323,7 +7323,7 @@ key: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#key SecurityhubInsight#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#key SecurityhubInsight#key}.
 
 ---
 
@@ -7335,7 +7335,7 @@ value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -7356,8 +7356,8 @@ securityhubInsight.SecurityhubInsightFiltersResourceId(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceId.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceId.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceId.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceId.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
 
 ---
 
@@ -7369,7 +7369,7 @@ comparison: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
 
 ---
 
@@ -7381,7 +7381,7 @@ value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -7402,8 +7402,8 @@ securityhubInsight.SecurityhubInsightFiltersResourcePartition(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourcePartition.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourcePartition.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourcePartition.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourcePartition.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
 
 ---
 
@@ -7415,7 +7415,7 @@ comparison: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
 
 ---
 
@@ -7427,7 +7427,7 @@ value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -7448,8 +7448,8 @@ securityhubInsight.SecurityhubInsightFiltersResourceRegion(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceRegion.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceRegion.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceRegion.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceRegion.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
 
 ---
 
@@ -7461,7 +7461,7 @@ comparison: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
 
 ---
 
@@ -7473,7 +7473,7 @@ value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -7495,9 +7495,9 @@ securityhubInsight.SecurityhubInsightFiltersResourceTags(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTags.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTags.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#key SecurityhubInsight#key}. |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTags.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTags.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTags.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#key SecurityhubInsight#key}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTags.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
 
 ---
 
@@ -7509,7 +7509,7 @@ comparison: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
 
 ---
 
@@ -7521,7 +7521,7 @@ key: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#key SecurityhubInsight#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#key SecurityhubInsight#key}.
 
 ---
 
@@ -7533,7 +7533,7 @@ value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -7554,8 +7554,8 @@ securityhubInsight.SecurityhubInsightFiltersResourceType(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceType.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceType.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceType.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceType.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
 
 ---
 
@@ -7567,7 +7567,7 @@ comparison: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
 
 ---
 
@@ -7579,7 +7579,7 @@ value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -7600,8 +7600,8 @@ securityhubInsight.SecurityhubInsightFiltersSeverityLabel(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersSeverityLabel.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersSeverityLabel.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersSeverityLabel.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersSeverityLabel.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
 
 ---
 
@@ -7613,7 +7613,7 @@ comparison: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
 
 ---
 
@@ -7625,7 +7625,7 @@ value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -7646,8 +7646,8 @@ securityhubInsight.SecurityhubInsightFiltersSourceUrl(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersSourceUrl.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersSourceUrl.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersSourceUrl.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersSourceUrl.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
 
 ---
 
@@ -7659,7 +7659,7 @@ comparison: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
 
 ---
 
@@ -7671,7 +7671,7 @@ value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -7692,8 +7692,8 @@ securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorCategory(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorCategory.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorCategory.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorCategory.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorCategory.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
 
 ---
 
@@ -7705,7 +7705,7 @@ comparison: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
 
 ---
 
@@ -7717,7 +7717,7 @@ value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -7740,8 +7740,8 @@ securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt.property.dateRange">date_range</a></code> | <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAtDateRange">SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAtDateRange</a></code> | date_range block. |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt.property.end">end</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#end SecurityhubInsight#end}. |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt.property.start">start</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#start SecurityhubInsight#start}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt.property.end">end</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#end SecurityhubInsight#end}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt.property.start">start</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#start SecurityhubInsight#start}. |
 
 ---
 
@@ -7755,7 +7755,7 @@ date_range: SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAtDateRange
 
 date_range block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#date_range SecurityhubInsight#date_range}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#date_range SecurityhubInsight#date_range}
 
 ---
 
@@ -7767,7 +7767,7 @@ end: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#end SecurityhubInsight#end}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#end SecurityhubInsight#end}.
 
 ---
 
@@ -7779,7 +7779,7 @@ start: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#start SecurityhubInsight#start}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#start SecurityhubInsight#start}.
 
 ---
 
@@ -7800,8 +7800,8 @@ securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAtDa
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAtDateRange.property.unit">unit</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}. |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAtDateRange.property.value">value</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAtDateRange.property.unit">unit</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAtDateRange.property.value">value</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
 
 ---
 
@@ -7813,7 +7813,7 @@ unit: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}.
 
 ---
 
@@ -7825,7 +7825,7 @@ value: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -7846,8 +7846,8 @@ securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSource(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSource.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSource.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSource.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSource.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
 
 ---
 
@@ -7859,7 +7859,7 @@ comparison: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
 
 ---
 
@@ -7871,7 +7871,7 @@ value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -7892,8 +7892,8 @@ securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
 
 ---
 
@@ -7905,7 +7905,7 @@ comparison: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
 
 ---
 
@@ -7917,7 +7917,7 @@ value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -7938,8 +7938,8 @@ securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorType(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorType.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorType.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorType.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorType.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
 
 ---
 
@@ -7951,7 +7951,7 @@ comparison: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
 
 ---
 
@@ -7963,7 +7963,7 @@ value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -7984,8 +7984,8 @@ securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorValue(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorValue.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorValue.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorValue.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorValue.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
 
 ---
 
@@ -7997,7 +7997,7 @@ comparison: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
 
 ---
 
@@ -8009,7 +8009,7 @@ value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -8030,8 +8030,8 @@ securityhubInsight.SecurityhubInsightFiltersTitle(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersTitle.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersTitle.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersTitle.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersTitle.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
 
 ---
 
@@ -8043,7 +8043,7 @@ comparison: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
 
 ---
 
@@ -8055,7 +8055,7 @@ value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -8076,8 +8076,8 @@ securityhubInsight.SecurityhubInsightFiltersType(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersType.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersType.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersType.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersType.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
 
 ---
 
@@ -8089,7 +8089,7 @@ comparison: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
 
 ---
 
@@ -8101,7 +8101,7 @@ value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -8124,8 +8124,8 @@ securityhubInsight.SecurityhubInsightFiltersUpdatedAt(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersUpdatedAt.property.dateRange">date_range</a></code> | <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersUpdatedAtDateRange">SecurityhubInsightFiltersUpdatedAtDateRange</a></code> | date_range block. |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersUpdatedAt.property.end">end</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#end SecurityhubInsight#end}. |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersUpdatedAt.property.start">start</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#start SecurityhubInsight#start}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersUpdatedAt.property.end">end</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#end SecurityhubInsight#end}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersUpdatedAt.property.start">start</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#start SecurityhubInsight#start}. |
 
 ---
 
@@ -8139,7 +8139,7 @@ date_range: SecurityhubInsightFiltersUpdatedAtDateRange
 
 date_range block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#date_range SecurityhubInsight#date_range}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#date_range SecurityhubInsight#date_range}
 
 ---
 
@@ -8151,7 +8151,7 @@ end: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#end SecurityhubInsight#end}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#end SecurityhubInsight#end}.
 
 ---
 
@@ -8163,7 +8163,7 @@ start: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#start SecurityhubInsight#start}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#start SecurityhubInsight#start}.
 
 ---
 
@@ -8184,8 +8184,8 @@ securityhubInsight.SecurityhubInsightFiltersUpdatedAtDateRange(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersUpdatedAtDateRange.property.unit">unit</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}. |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersUpdatedAtDateRange.property.value">value</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersUpdatedAtDateRange.property.unit">unit</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersUpdatedAtDateRange.property.value">value</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
 
 ---
 
@@ -8197,7 +8197,7 @@ unit: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}.
 
 ---
 
@@ -8209,7 +8209,7 @@ value: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -8231,9 +8231,9 @@ securityhubInsight.SecurityhubInsightFiltersUserDefinedValues(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersUserDefinedValues.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersUserDefinedValues.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#key SecurityhubInsight#key}. |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersUserDefinedValues.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersUserDefinedValues.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersUserDefinedValues.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#key SecurityhubInsight#key}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersUserDefinedValues.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
 
 ---
 
@@ -8245,7 +8245,7 @@ comparison: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
 
 ---
 
@@ -8257,7 +8257,7 @@ key: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#key SecurityhubInsight#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#key SecurityhubInsight#key}.
 
 ---
 
@@ -8269,7 +8269,7 @@ value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -8290,8 +8290,8 @@ securityhubInsight.SecurityhubInsightFiltersVerificationState(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersVerificationState.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersVerificationState.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersVerificationState.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersVerificationState.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
 
 ---
 
@@ -8303,7 +8303,7 @@ comparison: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
 
 ---
 
@@ -8315,7 +8315,7 @@ value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -8336,8 +8336,8 @@ securityhubInsight.SecurityhubInsightFiltersWorkflowStatus(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersWorkflowStatus.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
-| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersWorkflowStatus.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersWorkflowStatus.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}. |
+| <code><a href="#@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersWorkflowStatus.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}. |
 
 ---
 
@@ -8349,7 +8349,7 @@ comparison: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}.
 
 ---
 
@@ -8361,7 +8361,7 @@ value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -11195,7 +11195,7 @@ def put_date_range(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}.
 
 ---
 
@@ -11203,7 +11203,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -16791,7 +16791,7 @@ def put_date_range(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}.
 
 ---
 
@@ -16799,7 +16799,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -19188,7 +19188,7 @@ def put_date_range(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}.
 
 ---
 
@@ -19196,7 +19196,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -28209,7 +28209,7 @@ def put_date_range(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}.
 
 ---
 
@@ -28217,7 +28217,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -33758,7 +33758,7 @@ def put_date_range(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}.
 
 ---
 
@@ -33766,7 +33766,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -36771,7 +36771,7 @@ def put_date_range(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}.
 
 ---
 
@@ -36779,7 +36779,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -43740,7 +43740,7 @@ def put_date_range(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}.
 
 ---
 
@@ -43748,7 +43748,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -46159,7 +46159,7 @@ def put_date_range(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}.
 
 ---
 
@@ -46167,7 +46167,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -50102,7 +50102,7 @@ def put_date_range(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}.
 
 ---
 
@@ -50110,7 +50110,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -56121,7 +56121,7 @@ def put_date_range(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}.
 
 ---
 
@@ -56129,7 +56129,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 
@@ -60064,7 +60064,7 @@ def put_date_range(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}.
 
 ---
 
@@ -60072,7 +60072,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}.
 
 ---
 

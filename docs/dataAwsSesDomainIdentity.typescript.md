@@ -4,7 +4,7 @@
 
 ### DataAwsSesDomainIdentity <a name="DataAwsSesDomainIdentity" id="@cdktn/provider-aws.dataAwsSesDomainIdentity.DataAwsSesDomainIdentity"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/data-sources/ses_domain_identity aws_ses_domain_identity}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/data-sources/ses_domain_identity aws_ses_domain_identity}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsSesDomainIdentity.DataAwsSesDomainIdentity.Initializer"></a>
 
@@ -401,7 +401,7 @@ The construct id used in the generated config for the DataAwsSesDomainIdentity t
 
 The id of the existing DataAwsSesDomainIdentity that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/data-sources/ses_domain_identity#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/data-sources/ses_domain_identity#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -683,8 +683,8 @@ const dataAwsSesDomainIdentityConfig: dataAwsSesDomainIdentity.DataAwsSesDomainI
 | <code><a href="#@cdktn/provider-aws.dataAwsSesDomainIdentity.DataAwsSesDomainIdentityConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsSesDomainIdentity.DataAwsSesDomainIdentityConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsSesDomainIdentity.DataAwsSesDomainIdentityConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dataAwsSesDomainIdentity.DataAwsSesDomainIdentityConfig.property.domain">domain</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/data-sources/ses_domain_identity#domain DataAwsSesDomainIdentity#domain}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsSesDomainIdentity.DataAwsSesDomainIdentityConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/data-sources/ses_domain_identity#id DataAwsSesDomainIdentity#id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsSesDomainIdentity.DataAwsSesDomainIdentityConfig.property.domain">domain</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/data-sources/ses_domain_identity#domain DataAwsSesDomainIdentity#domain}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsSesDomainIdentity.DataAwsSesDomainIdentityConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/data-sources/ses_domain_identity#id DataAwsSesDomainIdentity#id}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsSesDomainIdentity.DataAwsSesDomainIdentityConfig.property.region">region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -767,7 +767,7 @@ public readonly domain: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/data-sources/ses_domain_identity#domain DataAwsSesDomainIdentity#domain}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/data-sources/ses_domain_identity#domain DataAwsSesDomainIdentity#domain}.
 
 ---
 
@@ -779,7 +779,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/data-sources/ses_domain_identity#id DataAwsSesDomainIdentity#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/data-sources/ses_domain_identity#id DataAwsSesDomainIdentity#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -796,7 +796,7 @@ public readonly region: string;
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/data-sources/ses_domain_identity#region DataAwsSesDomainIdentity#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/data-sources/ses_domain_identity#region DataAwsSesDomainIdentity#region}
 
 ---
 

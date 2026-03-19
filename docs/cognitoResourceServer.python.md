@@ -4,7 +4,7 @@
 
 ### CognitoResourceServer <a name="CognitoResourceServer" id="@cdktn/provider-aws.cognitoResourceServer.CognitoResourceServer"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/cognito_resource_server aws_cognito_resource_server}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/cognito_resource_server aws_cognito_resource_server}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cognitoResourceServer.CognitoResourceServer.Initializer"></a>
 
@@ -41,10 +41,10 @@ cognitoResourceServer.CognitoResourceServer(
 | <code><a href="#@cdktn/provider-aws.cognitoResourceServer.CognitoResourceServer.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cognitoResourceServer.CognitoResourceServer.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cognitoResourceServer.CognitoResourceServer.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cognitoResourceServer.CognitoResourceServer.Initializer.parameter.identifier">identifier</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/cognito_resource_server#identifier CognitoResourceServer#identifier}. |
-| <code><a href="#@cdktn/provider-aws.cognitoResourceServer.CognitoResourceServer.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/cognito_resource_server#name CognitoResourceServer#name}. |
-| <code><a href="#@cdktn/provider-aws.cognitoResourceServer.CognitoResourceServer.Initializer.parameter.userPoolId">user_pool_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/cognito_resource_server#user_pool_id CognitoResourceServer#user_pool_id}. |
-| <code><a href="#@cdktn/provider-aws.cognitoResourceServer.CognitoResourceServer.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/cognito_resource_server#id CognitoResourceServer#id}. |
+| <code><a href="#@cdktn/provider-aws.cognitoResourceServer.CognitoResourceServer.Initializer.parameter.identifier">identifier</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/cognito_resource_server#identifier CognitoResourceServer#identifier}. |
+| <code><a href="#@cdktn/provider-aws.cognitoResourceServer.CognitoResourceServer.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/cognito_resource_server#name CognitoResourceServer#name}. |
+| <code><a href="#@cdktn/provider-aws.cognitoResourceServer.CognitoResourceServer.Initializer.parameter.userPoolId">user_pool_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/cognito_resource_server#user_pool_id CognitoResourceServer#user_pool_id}. |
+| <code><a href="#@cdktn/provider-aws.cognitoResourceServer.CognitoResourceServer.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/cognito_resource_server#id CognitoResourceServer#id}. |
 | <code><a href="#@cdktn/provider-aws.cognitoResourceServer.CognitoResourceServer.Initializer.parameter.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktn/provider-aws.cognitoResourceServer.CognitoResourceServer.Initializer.parameter.scope">scope</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.cognitoResourceServer.CognitoResourceServerScope">CognitoResourceServerScope</a>]</code> | scope block. |
 
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/cognito_resource_server#identifier CognitoResourceServer#identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/cognito_resource_server#identifier CognitoResourceServer#identifier}.
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/cognito_resource_server#name CognitoResourceServer#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/cognito_resource_server#name CognitoResourceServer#name}.
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/cognito_resource_server#user_pool_id CognitoResourceServer#user_pool_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/cognito_resource_server#user_pool_id CognitoResourceServer#user_pool_id}.
 
 ---
 
@@ -138,7 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/cognito_resource_server#id CognitoResourceServer#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/cognito_resource_server#id CognitoResourceServer#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -151,7 +151,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/cognito_resource_server#region CognitoResourceServer#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/cognito_resource_server#region CognitoResourceServer#region}
 
 ---
 
@@ -161,7 +161,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 scope block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/cognito_resource_server#scope CognitoResourceServer#scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/cognito_resource_server#scope CognitoResourceServer#scope}
 
 ---
 
@@ -694,7 +694,7 @@ The construct id used in the generated config for the CognitoResourceServer to i
 
 The id of the existing CognitoResourceServer that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/cognito_resource_server#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/cognito_resource_server#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1067,10 +1067,10 @@ cognitoResourceServer.CognitoResourceServerConfig(
 | <code><a href="#@cdktn/provider-aws.cognitoResourceServer.CognitoResourceServerConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cognitoResourceServer.CognitoResourceServerConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cognitoResourceServer.CognitoResourceServerConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cognitoResourceServer.CognitoResourceServerConfig.property.identifier">identifier</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/cognito_resource_server#identifier CognitoResourceServer#identifier}. |
-| <code><a href="#@cdktn/provider-aws.cognitoResourceServer.CognitoResourceServerConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/cognito_resource_server#name CognitoResourceServer#name}. |
-| <code><a href="#@cdktn/provider-aws.cognitoResourceServer.CognitoResourceServerConfig.property.userPoolId">user_pool_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/cognito_resource_server#user_pool_id CognitoResourceServer#user_pool_id}. |
-| <code><a href="#@cdktn/provider-aws.cognitoResourceServer.CognitoResourceServerConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/cognito_resource_server#id CognitoResourceServer#id}. |
+| <code><a href="#@cdktn/provider-aws.cognitoResourceServer.CognitoResourceServerConfig.property.identifier">identifier</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/cognito_resource_server#identifier CognitoResourceServer#identifier}. |
+| <code><a href="#@cdktn/provider-aws.cognitoResourceServer.CognitoResourceServerConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/cognito_resource_server#name CognitoResourceServer#name}. |
+| <code><a href="#@cdktn/provider-aws.cognitoResourceServer.CognitoResourceServerConfig.property.userPoolId">user_pool_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/cognito_resource_server#user_pool_id CognitoResourceServer#user_pool_id}. |
+| <code><a href="#@cdktn/provider-aws.cognitoResourceServer.CognitoResourceServerConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/cognito_resource_server#id CognitoResourceServer#id}. |
 | <code><a href="#@cdktn/provider-aws.cognitoResourceServer.CognitoResourceServerConfig.property.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktn/provider-aws.cognitoResourceServer.CognitoResourceServerConfig.property.scope">scope</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.cognitoResourceServer.CognitoResourceServerScope">CognitoResourceServerScope</a>]</code> | scope block. |
 
@@ -1154,7 +1154,7 @@ identifier: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/cognito_resource_server#identifier CognitoResourceServer#identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/cognito_resource_server#identifier CognitoResourceServer#identifier}.
 
 ---
 
@@ -1166,7 +1166,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/cognito_resource_server#name CognitoResourceServer#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/cognito_resource_server#name CognitoResourceServer#name}.
 
 ---
 
@@ -1178,7 +1178,7 @@ user_pool_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/cognito_resource_server#user_pool_id CognitoResourceServer#user_pool_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/cognito_resource_server#user_pool_id CognitoResourceServer#user_pool_id}.
 
 ---
 
@@ -1190,7 +1190,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/cognito_resource_server#id CognitoResourceServer#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/cognito_resource_server#id CognitoResourceServer#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1207,7 +1207,7 @@ region: str
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/cognito_resource_server#region CognitoResourceServer#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/cognito_resource_server#region CognitoResourceServer#region}
 
 ---
 
@@ -1221,7 +1221,7 @@ scope: IResolvable | typing.List[CognitoResourceServerScope]
 
 scope block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/cognito_resource_server#scope CognitoResourceServer#scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/cognito_resource_server#scope CognitoResourceServer#scope}
 
 ---
 
@@ -1242,8 +1242,8 @@ cognitoResourceServer.CognitoResourceServerScope(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cognitoResourceServer.CognitoResourceServerScope.property.scopeDescription">scope_description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/cognito_resource_server#scope_description CognitoResourceServer#scope_description}. |
-| <code><a href="#@cdktn/provider-aws.cognitoResourceServer.CognitoResourceServerScope.property.scopeName">scope_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/cognito_resource_server#scope_name CognitoResourceServer#scope_name}. |
+| <code><a href="#@cdktn/provider-aws.cognitoResourceServer.CognitoResourceServerScope.property.scopeDescription">scope_description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/cognito_resource_server#scope_description CognitoResourceServer#scope_description}. |
+| <code><a href="#@cdktn/provider-aws.cognitoResourceServer.CognitoResourceServerScope.property.scopeName">scope_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/cognito_resource_server#scope_name CognitoResourceServer#scope_name}. |
 
 ---
 
@@ -1255,7 +1255,7 @@ scope_description: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/cognito_resource_server#scope_description CognitoResourceServer#scope_description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/cognito_resource_server#scope_description CognitoResourceServer#scope_description}.
 
 ---
 
@@ -1267,7 +1267,7 @@ scope_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/cognito_resource_server#scope_name CognitoResourceServer#scope_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/cognito_resource_server#scope_name CognitoResourceServer#scope_name}.
 
 ---
 

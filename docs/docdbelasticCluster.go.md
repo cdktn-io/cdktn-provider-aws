@@ -4,7 +4,7 @@
 
 ### DocdbelasticCluster <a name="DocdbelasticCluster" id="@cdktn/provider-aws.docdbelasticCluster.DocdbelasticCluster"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/docdbelastic_cluster aws_docdbelastic_cluster}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/docdbelastic_cluster aws_docdbelastic_cluster}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.docdbelasticCluster.DocdbelasticCluster.Initializer"></a>
 
@@ -80,6 +80,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-aws.docdbelasticCluster.DocdbelasticCluster.resetPreferredBackupWindow">ResetPreferredBackupWindow</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.docdbelasticCluster.DocdbelasticCluster.resetPreferredMaintenanceWindow">ResetPreferredMaintenanceWindow</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.docdbelasticCluster.DocdbelasticCluster.resetRegion">ResetRegion</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.docdbelasticCluster.DocdbelasticCluster.resetShardInstanceCount">ResetShardInstanceCount</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.docdbelasticCluster.DocdbelasticCluster.resetSubnetIds">ResetSubnetIds</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.docdbelasticCluster.DocdbelasticCluster.resetTags">ResetTags</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.docdbelasticCluster.DocdbelasticCluster.resetTimeouts">ResetTimeouts</a></code> | *No description.* |
@@ -438,6 +439,12 @@ func ResetPreferredMaintenanceWindow()
 func ResetRegion()
 ```
 
+##### `ResetShardInstanceCount` <a name="ResetShardInstanceCount" id="@cdktn/provider-aws.docdbelasticCluster.DocdbelasticCluster.resetShardInstanceCount"></a>
+
+```go
+func ResetShardInstanceCount()
+```
+
 ##### `ResetSubnetIds` <a name="ResetSubnetIds" id="@cdktn/provider-aws.docdbelasticCluster.DocdbelasticCluster.resetSubnetIds"></a>
 
 ```go
@@ -565,7 +572,7 @@ The construct id used in the generated config for the DocdbelasticCluster to imp
 
 The id of the existing DocdbelasticCluster that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/docdbelastic_cluster#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/docdbelastic_cluster#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -611,6 +618,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0
 | <code><a href="#@cdktn/provider-aws.docdbelasticCluster.DocdbelasticCluster.property.regionInput">RegionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.docdbelasticCluster.DocdbelasticCluster.property.shardCapacityInput">ShardCapacityInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.docdbelasticCluster.DocdbelasticCluster.property.shardCountInput">ShardCountInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.docdbelasticCluster.DocdbelasticCluster.property.shardInstanceCountInput">ShardInstanceCountInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.docdbelasticCluster.DocdbelasticCluster.property.subnetIdsInput">SubnetIdsInput</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.docdbelasticCluster.DocdbelasticCluster.property.tagsInput">TagsInput</a></code> | <code>*map[string]*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.docdbelasticCluster.DocdbelasticCluster.property.timeoutsInput">TimeoutsInput</a></code> | <code>interface{}</code> | *No description.* |
@@ -626,6 +634,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0
 | <code><a href="#@cdktn/provider-aws.docdbelasticCluster.DocdbelasticCluster.property.region">Region</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.docdbelasticCluster.DocdbelasticCluster.property.shardCapacity">ShardCapacity</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.docdbelasticCluster.DocdbelasticCluster.property.shardCount">ShardCount</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.docdbelasticCluster.DocdbelasticCluster.property.shardInstanceCount">ShardInstanceCount</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.docdbelasticCluster.DocdbelasticCluster.property.subnetIds">SubnetIds</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.docdbelasticCluster.DocdbelasticCluster.property.tags">Tags</a></code> | <code>*map[string]*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.docdbelasticCluster.DocdbelasticCluster.property.vpcSecurityGroupIds">VpcSecurityGroupIds</a></code> | <code>*[]*string</code> | *No description.* |
@@ -934,6 +943,16 @@ func ShardCountInput() *f64
 
 ---
 
+##### `ShardInstanceCountInput`<sup>Optional</sup> <a name="ShardInstanceCountInput" id="@cdktn/provider-aws.docdbelasticCluster.DocdbelasticCluster.property.shardInstanceCountInput"></a>
+
+```go
+func ShardInstanceCountInput() *f64
+```
+
+- *Type:* *f64
+
+---
+
 ##### `SubnetIdsInput`<sup>Optional</sup> <a name="SubnetIdsInput" id="@cdktn/provider-aws.docdbelasticCluster.DocdbelasticCluster.property.subnetIdsInput"></a>
 
 ```go
@@ -1084,6 +1103,16 @@ func ShardCount() *f64
 
 ---
 
+##### `ShardInstanceCount`<sup>Required</sup> <a name="ShardInstanceCount" id="@cdktn/provider-aws.docdbelasticCluster.DocdbelasticCluster.property.shardInstanceCount"></a>
+
+```go
+func ShardInstanceCount() *f64
+```
+
+- *Type:* *f64
+
+---
+
 ##### `SubnetIds`<sup>Required</sup> <a name="SubnetIds" id="@cdktn/provider-aws.docdbelasticCluster.DocdbelasticCluster.property.subnetIds"></a>
 
 ```go
@@ -1160,6 +1189,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/docdbelasticcluster"
 	PreferredBackupWindow: *string,
 	PreferredMaintenanceWindow: *string,
 	Region: *string,
+	ShardInstanceCount: *f64,
 	SubnetIds: *[]*string,
 	Tags: *map[string]*string,
 	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.docdbelasticCluster.DocdbelasticClusterTimeouts,
@@ -1178,21 +1208,22 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/docdbelasticcluster"
 | <code><a href="#@cdktn/provider-aws.docdbelasticCluster.DocdbelasticClusterConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.docdbelasticCluster.DocdbelasticClusterConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.docdbelasticCluster.DocdbelasticClusterConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.docdbelasticCluster.DocdbelasticClusterConfig.property.adminUserName">AdminUserName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/docdbelastic_cluster#admin_user_name DocdbelasticCluster#admin_user_name}. |
-| <code><a href="#@cdktn/provider-aws.docdbelasticCluster.DocdbelasticClusterConfig.property.adminUserPassword">AdminUserPassword</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/docdbelastic_cluster#admin_user_password DocdbelasticCluster#admin_user_password}. |
-| <code><a href="#@cdktn/provider-aws.docdbelasticCluster.DocdbelasticClusterConfig.property.authType">AuthType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/docdbelastic_cluster#auth_type DocdbelasticCluster#auth_type}. |
-| <code><a href="#@cdktn/provider-aws.docdbelasticCluster.DocdbelasticClusterConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/docdbelastic_cluster#name DocdbelasticCluster#name}. |
-| <code><a href="#@cdktn/provider-aws.docdbelasticCluster.DocdbelasticClusterConfig.property.shardCapacity">ShardCapacity</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/docdbelastic_cluster#shard_capacity DocdbelasticCluster#shard_capacity}. |
-| <code><a href="#@cdktn/provider-aws.docdbelasticCluster.DocdbelasticClusterConfig.property.shardCount">ShardCount</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/docdbelastic_cluster#shard_count DocdbelasticCluster#shard_count}. |
-| <code><a href="#@cdktn/provider-aws.docdbelasticCluster.DocdbelasticClusterConfig.property.backupRetentionPeriod">BackupRetentionPeriod</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/docdbelastic_cluster#backup_retention_period DocdbelasticCluster#backup_retention_period}. |
-| <code><a href="#@cdktn/provider-aws.docdbelasticCluster.DocdbelasticClusterConfig.property.kmsKeyId">KmsKeyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/docdbelastic_cluster#kms_key_id DocdbelasticCluster#kms_key_id}. |
-| <code><a href="#@cdktn/provider-aws.docdbelasticCluster.DocdbelasticClusterConfig.property.preferredBackupWindow">PreferredBackupWindow</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/docdbelastic_cluster#preferred_backup_window DocdbelasticCluster#preferred_backup_window}. |
-| <code><a href="#@cdktn/provider-aws.docdbelasticCluster.DocdbelasticClusterConfig.property.preferredMaintenanceWindow">PreferredMaintenanceWindow</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/docdbelastic_cluster#preferred_maintenance_window DocdbelasticCluster#preferred_maintenance_window}. |
+| <code><a href="#@cdktn/provider-aws.docdbelasticCluster.DocdbelasticClusterConfig.property.adminUserName">AdminUserName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/docdbelastic_cluster#admin_user_name DocdbelasticCluster#admin_user_name}. |
+| <code><a href="#@cdktn/provider-aws.docdbelasticCluster.DocdbelasticClusterConfig.property.adminUserPassword">AdminUserPassword</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/docdbelastic_cluster#admin_user_password DocdbelasticCluster#admin_user_password}. |
+| <code><a href="#@cdktn/provider-aws.docdbelasticCluster.DocdbelasticClusterConfig.property.authType">AuthType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/docdbelastic_cluster#auth_type DocdbelasticCluster#auth_type}. |
+| <code><a href="#@cdktn/provider-aws.docdbelasticCluster.DocdbelasticClusterConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/docdbelastic_cluster#name DocdbelasticCluster#name}. |
+| <code><a href="#@cdktn/provider-aws.docdbelasticCluster.DocdbelasticClusterConfig.property.shardCapacity">ShardCapacity</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/docdbelastic_cluster#shard_capacity DocdbelasticCluster#shard_capacity}. |
+| <code><a href="#@cdktn/provider-aws.docdbelasticCluster.DocdbelasticClusterConfig.property.shardCount">ShardCount</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/docdbelastic_cluster#shard_count DocdbelasticCluster#shard_count}. |
+| <code><a href="#@cdktn/provider-aws.docdbelasticCluster.DocdbelasticClusterConfig.property.backupRetentionPeriod">BackupRetentionPeriod</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/docdbelastic_cluster#backup_retention_period DocdbelasticCluster#backup_retention_period}. |
+| <code><a href="#@cdktn/provider-aws.docdbelasticCluster.DocdbelasticClusterConfig.property.kmsKeyId">KmsKeyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/docdbelastic_cluster#kms_key_id DocdbelasticCluster#kms_key_id}. |
+| <code><a href="#@cdktn/provider-aws.docdbelasticCluster.DocdbelasticClusterConfig.property.preferredBackupWindow">PreferredBackupWindow</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/docdbelastic_cluster#preferred_backup_window DocdbelasticCluster#preferred_backup_window}. |
+| <code><a href="#@cdktn/provider-aws.docdbelasticCluster.DocdbelasticClusterConfig.property.preferredMaintenanceWindow">PreferredMaintenanceWindow</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/docdbelastic_cluster#preferred_maintenance_window DocdbelasticCluster#preferred_maintenance_window}. |
 | <code><a href="#@cdktn/provider-aws.docdbelasticCluster.DocdbelasticClusterConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.docdbelasticCluster.DocdbelasticClusterConfig.property.subnetIds">SubnetIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/docdbelastic_cluster#subnet_ids DocdbelasticCluster#subnet_ids}. |
-| <code><a href="#@cdktn/provider-aws.docdbelasticCluster.DocdbelasticClusterConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/docdbelastic_cluster#tags DocdbelasticCluster#tags}. |
+| <code><a href="#@cdktn/provider-aws.docdbelasticCluster.DocdbelasticClusterConfig.property.shardInstanceCount">ShardInstanceCount</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/docdbelastic_cluster#shard_instance_count DocdbelasticCluster#shard_instance_count}. |
+| <code><a href="#@cdktn/provider-aws.docdbelasticCluster.DocdbelasticClusterConfig.property.subnetIds">SubnetIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/docdbelastic_cluster#subnet_ids DocdbelasticCluster#subnet_ids}. |
+| <code><a href="#@cdktn/provider-aws.docdbelasticCluster.DocdbelasticClusterConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/docdbelastic_cluster#tags DocdbelasticCluster#tags}. |
 | <code><a href="#@cdktn/provider-aws.docdbelasticCluster.DocdbelasticClusterConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.docdbelasticCluster.DocdbelasticClusterTimeouts">DocdbelasticClusterTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktn/provider-aws.docdbelasticCluster.DocdbelasticClusterConfig.property.vpcSecurityGroupIds">VpcSecurityGroupIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/docdbelastic_cluster#vpc_security_group_ids DocdbelasticCluster#vpc_security_group_ids}. |
+| <code><a href="#@cdktn/provider-aws.docdbelasticCluster.DocdbelasticClusterConfig.property.vpcSecurityGroupIds">VpcSecurityGroupIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/docdbelastic_cluster#vpc_security_group_ids DocdbelasticCluster#vpc_security_group_ids}. |
 
 ---
 
@@ -1274,7 +1305,7 @@ AdminUserName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/docdbelastic_cluster#admin_user_name DocdbelasticCluster#admin_user_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/docdbelastic_cluster#admin_user_name DocdbelasticCluster#admin_user_name}.
 
 ---
 
@@ -1286,7 +1317,7 @@ AdminUserPassword *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/docdbelastic_cluster#admin_user_password DocdbelasticCluster#admin_user_password}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/docdbelastic_cluster#admin_user_password DocdbelasticCluster#admin_user_password}.
 
 ---
 
@@ -1298,7 +1329,7 @@ AuthType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/docdbelastic_cluster#auth_type DocdbelasticCluster#auth_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/docdbelastic_cluster#auth_type DocdbelasticCluster#auth_type}.
 
 ---
 
@@ -1310,7 +1341,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/docdbelastic_cluster#name DocdbelasticCluster#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/docdbelastic_cluster#name DocdbelasticCluster#name}.
 
 ---
 
@@ -1322,7 +1353,7 @@ ShardCapacity *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/docdbelastic_cluster#shard_capacity DocdbelasticCluster#shard_capacity}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/docdbelastic_cluster#shard_capacity DocdbelasticCluster#shard_capacity}.
 
 ---
 
@@ -1334,7 +1365,7 @@ ShardCount *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/docdbelastic_cluster#shard_count DocdbelasticCluster#shard_count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/docdbelastic_cluster#shard_count DocdbelasticCluster#shard_count}.
 
 ---
 
@@ -1346,7 +1377,7 @@ BackupRetentionPeriod *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/docdbelastic_cluster#backup_retention_period DocdbelasticCluster#backup_retention_period}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/docdbelastic_cluster#backup_retention_period DocdbelasticCluster#backup_retention_period}.
 
 ---
 
@@ -1358,7 +1389,7 @@ KmsKeyId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/docdbelastic_cluster#kms_key_id DocdbelasticCluster#kms_key_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/docdbelastic_cluster#kms_key_id DocdbelasticCluster#kms_key_id}.
 
 ---
 
@@ -1370,7 +1401,7 @@ PreferredBackupWindow *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/docdbelastic_cluster#preferred_backup_window DocdbelasticCluster#preferred_backup_window}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/docdbelastic_cluster#preferred_backup_window DocdbelasticCluster#preferred_backup_window}.
 
 ---
 
@@ -1382,7 +1413,7 @@ PreferredMaintenanceWindow *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/docdbelastic_cluster#preferred_maintenance_window DocdbelasticCluster#preferred_maintenance_window}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/docdbelastic_cluster#preferred_maintenance_window DocdbelasticCluster#preferred_maintenance_window}.
 
 ---
 
@@ -1396,7 +1427,19 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/docdbelastic_cluster#region DocdbelasticCluster#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/docdbelastic_cluster#region DocdbelasticCluster#region}
+
+---
+
+##### `ShardInstanceCount`<sup>Optional</sup> <a name="ShardInstanceCount" id="@cdktn/provider-aws.docdbelasticCluster.DocdbelasticClusterConfig.property.shardInstanceCount"></a>
+
+```go
+ShardInstanceCount *f64
+```
+
+- *Type:* *f64
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/docdbelastic_cluster#shard_instance_count DocdbelasticCluster#shard_instance_count}.
 
 ---
 
@@ -1408,7 +1451,7 @@ SubnetIds *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/docdbelastic_cluster#subnet_ids DocdbelasticCluster#subnet_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/docdbelastic_cluster#subnet_ids DocdbelasticCluster#subnet_ids}.
 
 ---
 
@@ -1420,7 +1463,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/docdbelastic_cluster#tags DocdbelasticCluster#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/docdbelastic_cluster#tags DocdbelasticCluster#tags}.
 
 ---
 
@@ -1434,7 +1477,7 @@ Timeouts DocdbelasticClusterTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/docdbelastic_cluster#timeouts DocdbelasticCluster#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/docdbelastic_cluster#timeouts DocdbelasticCluster#timeouts}
 
 ---
 
@@ -1446,7 +1489,7 @@ VpcSecurityGroupIds *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/docdbelastic_cluster#vpc_security_group_ids DocdbelasticCluster#vpc_security_group_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/docdbelastic_cluster#vpc_security_group_ids DocdbelasticCluster#vpc_security_group_ids}.
 
 ---
 
@@ -1484,7 +1527,7 @@ Create *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/docdbelastic_cluster#create DocdbelasticCluster#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/docdbelastic_cluster#create DocdbelasticCluster#create}
 
 ---
 
@@ -1498,7 +1541,7 @@ Delete *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/docdbelastic_cluster#delete DocdbelasticCluster#delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/docdbelastic_cluster#delete DocdbelasticCluster#delete}
 
 ---
 
@@ -1512,7 +1555,7 @@ Update *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/docdbelastic_cluster#update DocdbelasticCluster#update}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/docdbelastic_cluster#update DocdbelasticCluster#update}
 
 ---
 

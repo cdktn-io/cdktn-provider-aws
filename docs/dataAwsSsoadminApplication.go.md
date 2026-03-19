@@ -4,7 +4,7 @@
 
 ### DataAwsSsoadminApplication <a name="DataAwsSsoadminApplication" id="@cdktn/provider-aws.dataAwsSsoadminApplication.DataAwsSsoadminApplication"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/data-sources/ssoadmin_application aws_ssoadmin_application}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/data-sources/ssoadmin_application aws_ssoadmin_application}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsSsoadminApplication.DataAwsSsoadminApplication.Initializer"></a>
 
@@ -394,7 +394,7 @@ The construct id used in the generated config for the DataAwsSsoadminApplication
 
 The id of the existing DataAwsSsoadminApplication that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/data-sources/ssoadmin_application#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/data-sources/ssoadmin_application#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -730,7 +730,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsssoadminapplica
 | <code><a href="#@cdktn/provider-aws.dataAwsSsoadminApplication.DataAwsSsoadminApplicationConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsSsoadminApplication.DataAwsSsoadminApplicationConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsSsoadminApplication.DataAwsSsoadminApplicationConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dataAwsSsoadminApplication.DataAwsSsoadminApplicationConfig.property.applicationArn">ApplicationArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/data-sources/ssoadmin_application#application_arn DataAwsSsoadminApplication#application_arn}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsSsoadminApplication.DataAwsSsoadminApplicationConfig.property.applicationArn">ApplicationArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/data-sources/ssoadmin_application#application_arn DataAwsSsoadminApplication#application_arn}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsSsoadminApplication.DataAwsSsoadminApplicationConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -813,7 +813,7 @@ ApplicationArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/data-sources/ssoadmin_application#application_arn DataAwsSsoadminApplication#application_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/data-sources/ssoadmin_application#application_arn DataAwsSsoadminApplication#application_arn}.
 
 ---
 
@@ -827,7 +827,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/data-sources/ssoadmin_application#region DataAwsSsoadminApplication#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/data-sources/ssoadmin_application#region DataAwsSsoadminApplication#region}
 
 ---
 

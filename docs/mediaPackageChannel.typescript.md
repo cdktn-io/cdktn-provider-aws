@@ -4,7 +4,7 @@
 
 ### MediaPackageChannel <a name="MediaPackageChannel" id="@cdktn/provider-aws.mediaPackageChannel.MediaPackageChannel"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/media_package_channel aws_media_package_channel}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/media_package_channel aws_media_package_channel}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mediaPackageChannel.MediaPackageChannel.Initializer"></a>
 
@@ -524,7 +524,7 @@ The construct id used in the generated config for the MediaPackageChannel to imp
 
 The id of the existing MediaPackageChannel that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/media_package_channel#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/media_package_channel#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -894,12 +894,12 @@ const mediaPackageChannelConfig: mediaPackageChannel.MediaPackageChannelConfig =
 | <code><a href="#@cdktn/provider-aws.mediaPackageChannel.MediaPackageChannelConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.mediaPackageChannel.MediaPackageChannelConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.mediaPackageChannel.MediaPackageChannelConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.mediaPackageChannel.MediaPackageChannelConfig.property.channelId">channelId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/media_package_channel#channel_id MediaPackageChannel#channel_id}. |
-| <code><a href="#@cdktn/provider-aws.mediaPackageChannel.MediaPackageChannelConfig.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/media_package_channel#description MediaPackageChannel#description}. |
-| <code><a href="#@cdktn/provider-aws.mediaPackageChannel.MediaPackageChannelConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/media_package_channel#id MediaPackageChannel#id}. |
+| <code><a href="#@cdktn/provider-aws.mediaPackageChannel.MediaPackageChannelConfig.property.channelId">channelId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/media_package_channel#channel_id MediaPackageChannel#channel_id}. |
+| <code><a href="#@cdktn/provider-aws.mediaPackageChannel.MediaPackageChannelConfig.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/media_package_channel#description MediaPackageChannel#description}. |
+| <code><a href="#@cdktn/provider-aws.mediaPackageChannel.MediaPackageChannelConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/media_package_channel#id MediaPackageChannel#id}. |
 | <code><a href="#@cdktn/provider-aws.mediaPackageChannel.MediaPackageChannelConfig.property.region">region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.mediaPackageChannel.MediaPackageChannelConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/media_package_channel#tags MediaPackageChannel#tags}. |
-| <code><a href="#@cdktn/provider-aws.mediaPackageChannel.MediaPackageChannelConfig.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/media_package_channel#tags_all MediaPackageChannel#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.mediaPackageChannel.MediaPackageChannelConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/media_package_channel#tags MediaPackageChannel#tags}. |
+| <code><a href="#@cdktn/provider-aws.mediaPackageChannel.MediaPackageChannelConfig.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/media_package_channel#tags_all MediaPackageChannel#tags_all}. |
 
 ---
 
@@ -981,7 +981,7 @@ public readonly channelId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/media_package_channel#channel_id MediaPackageChannel#channel_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/media_package_channel#channel_id MediaPackageChannel#channel_id}.
 
 ---
 
@@ -993,7 +993,7 @@ public readonly description: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/media_package_channel#description MediaPackageChannel#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/media_package_channel#description MediaPackageChannel#description}.
 
 ---
 
@@ -1005,7 +1005,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/media_package_channel#id MediaPackageChannel#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/media_package_channel#id MediaPackageChannel#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1022,7 +1022,7 @@ public readonly region: string;
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/media_package_channel#region MediaPackageChannel#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/media_package_channel#region MediaPackageChannel#region}
 
 ---
 
@@ -1034,7 +1034,7 @@ public readonly tags: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/media_package_channel#tags MediaPackageChannel#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/media_package_channel#tags MediaPackageChannel#tags}.
 
 ---
 
@@ -1046,7 +1046,7 @@ public readonly tagsAll: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/resources/media_package_channel#tags_all MediaPackageChannel#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/media_package_channel#tags_all MediaPackageChannel#tags_all}.
 
 ---
 

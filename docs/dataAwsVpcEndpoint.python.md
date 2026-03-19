@@ -4,7 +4,7 @@
 
 ### DataAwsVpcEndpoint <a name="DataAwsVpcEndpoint" id="@cdktn/provider-aws.dataAwsVpcEndpoint.DataAwsVpcEndpoint"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/data-sources/vpc_endpoint aws_vpc_endpoint}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/data-sources/vpc_endpoint aws_vpc_endpoint}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsVpcEndpoint.DataAwsVpcEndpoint.Initializer"></a>
 
@@ -46,15 +46,15 @@ dataAwsVpcEndpoint.DataAwsVpcEndpoint(
 | <code><a href="#@cdktn/provider-aws.dataAwsVpcEndpoint.DataAwsVpcEndpoint.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsVpcEndpoint.DataAwsVpcEndpoint.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsVpcEndpoint.DataAwsVpcEndpoint.Initializer.parameter.filter">filter</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.dataAwsVpcEndpoint.DataAwsVpcEndpointFilter">DataAwsVpcEndpointFilter</a>]</code> | filter block. |
-| <code><a href="#@cdktn/provider-aws.dataAwsVpcEndpoint.DataAwsVpcEndpoint.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/data-sources/vpc_endpoint#id DataAwsVpcEndpoint#id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpcEndpoint.DataAwsVpcEndpoint.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/data-sources/vpc_endpoint#id DataAwsVpcEndpoint#id}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsVpcEndpoint.DataAwsVpcEndpoint.Initializer.parameter.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.dataAwsVpcEndpoint.DataAwsVpcEndpoint.Initializer.parameter.serviceName">service_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/data-sources/vpc_endpoint#service_name DataAwsVpcEndpoint#service_name}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsVpcEndpoint.DataAwsVpcEndpoint.Initializer.parameter.serviceRegion">service_region</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/data-sources/vpc_endpoint#service_region DataAwsVpcEndpoint#service_region}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsVpcEndpoint.DataAwsVpcEndpoint.Initializer.parameter.state">state</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/data-sources/vpc_endpoint#state DataAwsVpcEndpoint#state}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsVpcEndpoint.DataAwsVpcEndpoint.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/data-sources/vpc_endpoint#tags DataAwsVpcEndpoint#tags}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpcEndpoint.DataAwsVpcEndpoint.Initializer.parameter.serviceName">service_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/data-sources/vpc_endpoint#service_name DataAwsVpcEndpoint#service_name}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpcEndpoint.DataAwsVpcEndpoint.Initializer.parameter.serviceRegion">service_region</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/data-sources/vpc_endpoint#service_region DataAwsVpcEndpoint#service_region}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpcEndpoint.DataAwsVpcEndpoint.Initializer.parameter.state">state</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/data-sources/vpc_endpoint#state DataAwsVpcEndpoint#state}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpcEndpoint.DataAwsVpcEndpoint.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/data-sources/vpc_endpoint#tags DataAwsVpcEndpoint#tags}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsVpcEndpoint.DataAwsVpcEndpoint.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-aws.dataAwsVpcEndpoint.DataAwsVpcEndpointTimeouts">DataAwsVpcEndpointTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktn/provider-aws.dataAwsVpcEndpoint.DataAwsVpcEndpoint.Initializer.parameter.vpcEndpointType">vpc_endpoint_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/data-sources/vpc_endpoint#vpc_endpoint_type DataAwsVpcEndpoint#vpc_endpoint_type}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsVpcEndpoint.DataAwsVpcEndpoint.Initializer.parameter.vpcId">vpc_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/data-sources/vpc_endpoint#vpc_id DataAwsVpcEndpoint#vpc_id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpcEndpoint.DataAwsVpcEndpoint.Initializer.parameter.vpcEndpointType">vpc_endpoint_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/data-sources/vpc_endpoint#vpc_endpoint_type DataAwsVpcEndpoint#vpc_endpoint_type}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpcEndpoint.DataAwsVpcEndpoint.Initializer.parameter.vpcId">vpc_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/data-sources/vpc_endpoint#vpc_id DataAwsVpcEndpoint#vpc_id}. |
 
 ---
 
@@ -124,7 +124,7 @@ Must be unique amongst siblings in the same scope
 
 filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/data-sources/vpc_endpoint#filter DataAwsVpcEndpoint#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/data-sources/vpc_endpoint#filter DataAwsVpcEndpoint#filter}
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/data-sources/vpc_endpoint#id DataAwsVpcEndpoint#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/data-sources/vpc_endpoint#id DataAwsVpcEndpoint#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -145,7 +145,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/data-sources/vpc_endpoint#region DataAwsVpcEndpoint#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/data-sources/vpc_endpoint#region DataAwsVpcEndpoint#region}
 
 ---
 
@@ -153,7 +153,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/data-sources/vpc_endpoint#service_name DataAwsVpcEndpoint#service_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/data-sources/vpc_endpoint#service_name DataAwsVpcEndpoint#service_name}.
 
 ---
 
@@ -161,7 +161,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/data-sources/vpc_endpoint#service_region DataAwsVpcEndpoint#service_region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/data-sources/vpc_endpoint#service_region DataAwsVpcEndpoint#service_region}.
 
 ---
 
@@ -169,7 +169,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/data-sources/vpc_endpoint#state DataAwsVpcEndpoint#state}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/data-sources/vpc_endpoint#state DataAwsVpcEndpoint#state}.
 
 ---
 
@@ -177,7 +177,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/data-sources/vpc_endpoint#tags DataAwsVpcEndpoint#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/data-sources/vpc_endpoint#tags DataAwsVpcEndpoint#tags}.
 
 ---
 
@@ -187,7 +187,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/data-sources/vpc_endpoint#timeouts DataAwsVpcEndpoint#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/data-sources/vpc_endpoint#timeouts DataAwsVpcEndpoint#timeouts}
 
 ---
 
@@ -195,7 +195,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/data-sources/vpc_endpoint#vpc_endpoint_type DataAwsVpcEndpoint#vpc_endpoint_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/data-sources/vpc_endpoint#vpc_endpoint_type DataAwsVpcEndpoint#vpc_endpoint_type}.
 
 ---
 
@@ -203,7 +203,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/data-sources/vpc_endpoint#vpc_id DataAwsVpcEndpoint#vpc_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/data-sources/vpc_endpoint#vpc_id DataAwsVpcEndpoint#vpc_id}.
 
 ---
 
@@ -510,7 +510,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/data-sources/vpc_endpoint#read DataAwsVpcEndpoint#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/data-sources/vpc_endpoint#read DataAwsVpcEndpoint#read}.
 
 ---
 
@@ -688,7 +688,7 @@ The construct id used in the generated config for the DataAwsVpcEndpoint to impo
 
 The id of the existing DataAwsVpcEndpoint that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/data-sources/vpc_endpoint#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/data-sources/vpc_endpoint#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1275,15 +1275,15 @@ dataAwsVpcEndpoint.DataAwsVpcEndpointConfig(
 | <code><a href="#@cdktn/provider-aws.dataAwsVpcEndpoint.DataAwsVpcEndpointConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsVpcEndpoint.DataAwsVpcEndpointConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsVpcEndpoint.DataAwsVpcEndpointConfig.property.filter">filter</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.dataAwsVpcEndpoint.DataAwsVpcEndpointFilter">DataAwsVpcEndpointFilter</a>]</code> | filter block. |
-| <code><a href="#@cdktn/provider-aws.dataAwsVpcEndpoint.DataAwsVpcEndpointConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/data-sources/vpc_endpoint#id DataAwsVpcEndpoint#id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpcEndpoint.DataAwsVpcEndpointConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/data-sources/vpc_endpoint#id DataAwsVpcEndpoint#id}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsVpcEndpoint.DataAwsVpcEndpointConfig.property.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.dataAwsVpcEndpoint.DataAwsVpcEndpointConfig.property.serviceName">service_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/data-sources/vpc_endpoint#service_name DataAwsVpcEndpoint#service_name}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsVpcEndpoint.DataAwsVpcEndpointConfig.property.serviceRegion">service_region</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/data-sources/vpc_endpoint#service_region DataAwsVpcEndpoint#service_region}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsVpcEndpoint.DataAwsVpcEndpointConfig.property.state">state</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/data-sources/vpc_endpoint#state DataAwsVpcEndpoint#state}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsVpcEndpoint.DataAwsVpcEndpointConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/data-sources/vpc_endpoint#tags DataAwsVpcEndpoint#tags}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpcEndpoint.DataAwsVpcEndpointConfig.property.serviceName">service_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/data-sources/vpc_endpoint#service_name DataAwsVpcEndpoint#service_name}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpcEndpoint.DataAwsVpcEndpointConfig.property.serviceRegion">service_region</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/data-sources/vpc_endpoint#service_region DataAwsVpcEndpoint#service_region}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpcEndpoint.DataAwsVpcEndpointConfig.property.state">state</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/data-sources/vpc_endpoint#state DataAwsVpcEndpoint#state}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpcEndpoint.DataAwsVpcEndpointConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/data-sources/vpc_endpoint#tags DataAwsVpcEndpoint#tags}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsVpcEndpoint.DataAwsVpcEndpointConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-aws.dataAwsVpcEndpoint.DataAwsVpcEndpointTimeouts">DataAwsVpcEndpointTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktn/provider-aws.dataAwsVpcEndpoint.DataAwsVpcEndpointConfig.property.vpcEndpointType">vpc_endpoint_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/data-sources/vpc_endpoint#vpc_endpoint_type DataAwsVpcEndpoint#vpc_endpoint_type}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsVpcEndpoint.DataAwsVpcEndpointConfig.property.vpcId">vpc_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/data-sources/vpc_endpoint#vpc_id DataAwsVpcEndpoint#vpc_id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpcEndpoint.DataAwsVpcEndpointConfig.property.vpcEndpointType">vpc_endpoint_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/data-sources/vpc_endpoint#vpc_endpoint_type DataAwsVpcEndpoint#vpc_endpoint_type}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpcEndpoint.DataAwsVpcEndpointConfig.property.vpcId">vpc_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/data-sources/vpc_endpoint#vpc_id DataAwsVpcEndpoint#vpc_id}. |
 
 ---
 
@@ -1367,7 +1367,7 @@ filter: IResolvable | typing.List[DataAwsVpcEndpointFilter]
 
 filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/data-sources/vpc_endpoint#filter DataAwsVpcEndpoint#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/data-sources/vpc_endpoint#filter DataAwsVpcEndpoint#filter}
 
 ---
 
@@ -1379,7 +1379,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/data-sources/vpc_endpoint#id DataAwsVpcEndpoint#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/data-sources/vpc_endpoint#id DataAwsVpcEndpoint#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1396,7 +1396,7 @@ region: str
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/data-sources/vpc_endpoint#region DataAwsVpcEndpoint#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/data-sources/vpc_endpoint#region DataAwsVpcEndpoint#region}
 
 ---
 
@@ -1408,7 +1408,7 @@ service_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/data-sources/vpc_endpoint#service_name DataAwsVpcEndpoint#service_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/data-sources/vpc_endpoint#service_name DataAwsVpcEndpoint#service_name}.
 
 ---
 
@@ -1420,7 +1420,7 @@ service_region: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/data-sources/vpc_endpoint#service_region DataAwsVpcEndpoint#service_region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/data-sources/vpc_endpoint#service_region DataAwsVpcEndpoint#service_region}.
 
 ---
 
@@ -1432,7 +1432,7 @@ state: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/data-sources/vpc_endpoint#state DataAwsVpcEndpoint#state}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/data-sources/vpc_endpoint#state DataAwsVpcEndpoint#state}.
 
 ---
 
@@ -1444,7 +1444,7 @@ tags: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/data-sources/vpc_endpoint#tags DataAwsVpcEndpoint#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/data-sources/vpc_endpoint#tags DataAwsVpcEndpoint#tags}.
 
 ---
 
@@ -1458,7 +1458,7 @@ timeouts: DataAwsVpcEndpointTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/data-sources/vpc_endpoint#timeouts DataAwsVpcEndpoint#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/data-sources/vpc_endpoint#timeouts DataAwsVpcEndpoint#timeouts}
 
 ---
 
@@ -1470,7 +1470,7 @@ vpc_endpoint_type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/data-sources/vpc_endpoint#vpc_endpoint_type DataAwsVpcEndpoint#vpc_endpoint_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/data-sources/vpc_endpoint#vpc_endpoint_type DataAwsVpcEndpoint#vpc_endpoint_type}.
 
 ---
 
@@ -1482,7 +1482,7 @@ vpc_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/data-sources/vpc_endpoint#vpc_id DataAwsVpcEndpoint#vpc_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/data-sources/vpc_endpoint#vpc_id DataAwsVpcEndpoint#vpc_id}.
 
 ---
 
@@ -1525,8 +1525,8 @@ dataAwsVpcEndpoint.DataAwsVpcEndpointFilter(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.dataAwsVpcEndpoint.DataAwsVpcEndpointFilter.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/data-sources/vpc_endpoint#name DataAwsVpcEndpoint#name}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsVpcEndpoint.DataAwsVpcEndpointFilter.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/data-sources/vpc_endpoint#values DataAwsVpcEndpoint#values}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpcEndpoint.DataAwsVpcEndpointFilter.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/data-sources/vpc_endpoint#name DataAwsVpcEndpoint#name}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpcEndpoint.DataAwsVpcEndpointFilter.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/data-sources/vpc_endpoint#values DataAwsVpcEndpoint#values}. |
 
 ---
 
@@ -1538,7 +1538,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/data-sources/vpc_endpoint#name DataAwsVpcEndpoint#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/data-sources/vpc_endpoint#name DataAwsVpcEndpoint#name}.
 
 ---
 
@@ -1550,7 +1550,7 @@ values: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/data-sources/vpc_endpoint#values DataAwsVpcEndpoint#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/data-sources/vpc_endpoint#values DataAwsVpcEndpoint#values}.
 
 ---
 
@@ -1570,7 +1570,7 @@ dataAwsVpcEndpoint.DataAwsVpcEndpointTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.dataAwsVpcEndpoint.DataAwsVpcEndpointTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/data-sources/vpc_endpoint#read DataAwsVpcEndpoint#read}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpcEndpoint.DataAwsVpcEndpointTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/data-sources/vpc_endpoint#read DataAwsVpcEndpoint#read}. |
 
 ---
 
@@ -1582,7 +1582,7 @@ read: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.36.0/docs/data-sources/vpc_endpoint#read DataAwsVpcEndpoint#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/data-sources/vpc_endpoint#read DataAwsVpcEndpoint#read}.
 
 ---
 
