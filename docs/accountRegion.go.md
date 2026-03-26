@@ -4,7 +4,7 @@
 
 ### AccountRegion <a name="AccountRegion" id="@cdktn/provider-aws.accountRegion.AccountRegion"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/account_region aws_account_region}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/account_region aws_account_region}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.accountRegion.AccountRegion.Initializer"></a>
 
@@ -523,7 +523,7 @@ The construct id used in the generated config for the AccountRegion to import.
 
 The id of the existing AccountRegion that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/account_region#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/account_region#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -873,10 +873,10 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/accountregion"
 | <code><a href="#@cdktn/provider-aws.accountRegion.AccountRegionConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.accountRegion.AccountRegionConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.accountRegion.AccountRegionConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.accountRegion.AccountRegionConfig.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/account_region#enabled AccountRegion#enabled}. |
-| <code><a href="#@cdktn/provider-aws.accountRegion.AccountRegionConfig.property.regionName">RegionName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/account_region#region_name AccountRegion#region_name}. |
-| <code><a href="#@cdktn/provider-aws.accountRegion.AccountRegionConfig.property.accountId">AccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/account_region#account_id AccountRegion#account_id}. |
-| <code><a href="#@cdktn/provider-aws.accountRegion.AccountRegionConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/account_region#id AccountRegion#id}. |
+| <code><a href="#@cdktn/provider-aws.accountRegion.AccountRegionConfig.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/account_region#enabled AccountRegion#enabled}. |
+| <code><a href="#@cdktn/provider-aws.accountRegion.AccountRegionConfig.property.regionName">RegionName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/account_region#region_name AccountRegion#region_name}. |
+| <code><a href="#@cdktn/provider-aws.accountRegion.AccountRegionConfig.property.accountId">AccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/account_region#account_id AccountRegion#account_id}. |
+| <code><a href="#@cdktn/provider-aws.accountRegion.AccountRegionConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/account_region#id AccountRegion#id}. |
 | <code><a href="#@cdktn/provider-aws.accountRegion.AccountRegionConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.accountRegion.AccountRegionTimeouts">AccountRegionTimeouts</a></code> | timeouts block. |
 
 ---
@@ -959,7 +959,7 @@ Enabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/account_region#enabled AccountRegion#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/account_region#enabled AccountRegion#enabled}.
 
 ---
 
@@ -971,7 +971,7 @@ RegionName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/account_region#region_name AccountRegion#region_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/account_region#region_name AccountRegion#region_name}.
 
 ---
 
@@ -983,7 +983,7 @@ AccountId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/account_region#account_id AccountRegion#account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/account_region#account_id AccountRegion#account_id}.
 
 ---
 
@@ -995,7 +995,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/account_region#id AccountRegion#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/account_region#id AccountRegion#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1012,7 +1012,7 @@ Timeouts AccountRegionTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/account_region#timeouts AccountRegion#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/account_region#timeouts AccountRegion#timeouts}
 
 ---
 
@@ -1033,8 +1033,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/accountregion"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.accountRegion.AccountRegionTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/account_region#create AccountRegion#create}. |
-| <code><a href="#@cdktn/provider-aws.accountRegion.AccountRegionTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/account_region#update AccountRegion#update}. |
+| <code><a href="#@cdktn/provider-aws.accountRegion.AccountRegionTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/account_region#create AccountRegion#create}. |
+| <code><a href="#@cdktn/provider-aws.accountRegion.AccountRegionTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/account_region#update AccountRegion#update}. |
 
 ---
 
@@ -1046,7 +1046,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/account_region#create AccountRegion#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/account_region#create AccountRegion#create}.
 
 ---
 
@@ -1058,7 +1058,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/account_region#update AccountRegion#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/account_region#update AccountRegion#update}.
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### DataAwsIamSessionContext <a name="DataAwsIamSessionContext" id="@cdktn/provider-aws.dataAwsIamSessionContext.DataAwsIamSessionContext"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/data-sources/iam_session_context aws_iam_session_context}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/data-sources/iam_session_context aws_iam_session_context}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsIamSessionContext.DataAwsIamSessionContext.Initializer"></a>
 
@@ -37,8 +37,8 @@ dataAwsIamSessionContext.DataAwsIamSessionContext(
 | <code><a href="#@cdktn/provider-aws.dataAwsIamSessionContext.DataAwsIamSessionContext.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsIamSessionContext.DataAwsIamSessionContext.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsIamSessionContext.DataAwsIamSessionContext.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dataAwsIamSessionContext.DataAwsIamSessionContext.Initializer.parameter.arn">arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/data-sources/iam_session_context#arn DataAwsIamSessionContext#arn}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsIamSessionContext.DataAwsIamSessionContext.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/data-sources/iam_session_context#id DataAwsIamSessionContext#id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsIamSessionContext.DataAwsIamSessionContext.Initializer.parameter.arn">arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/data-sources/iam_session_context#arn DataAwsIamSessionContext#arn}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsIamSessionContext.DataAwsIamSessionContext.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/data-sources/iam_session_context#id DataAwsIamSessionContext#id}. |
 
 ---
 
@@ -106,7 +106,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/data-sources/iam_session_context#arn DataAwsIamSessionContext#arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/data-sources/iam_session_context#arn DataAwsIamSessionContext#arn}.
 
 ---
 
@@ -114,7 +114,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/data-sources/iam_session_context#id DataAwsIamSessionContext#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/data-sources/iam_session_context#id DataAwsIamSessionContext#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -507,7 +507,7 @@ The construct id used in the generated config for the DataAwsIamSessionContext t
 
 The id of the existing DataAwsIamSessionContext that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/data-sources/iam_session_context#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/data-sources/iam_session_context#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -799,8 +799,8 @@ dataAwsIamSessionContext.DataAwsIamSessionContextConfig(
 | <code><a href="#@cdktn/provider-aws.dataAwsIamSessionContext.DataAwsIamSessionContextConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsIamSessionContext.DataAwsIamSessionContextConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsIamSessionContext.DataAwsIamSessionContextConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dataAwsIamSessionContext.DataAwsIamSessionContextConfig.property.arn">arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/data-sources/iam_session_context#arn DataAwsIamSessionContext#arn}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsIamSessionContext.DataAwsIamSessionContextConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/data-sources/iam_session_context#id DataAwsIamSessionContext#id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsIamSessionContext.DataAwsIamSessionContextConfig.property.arn">arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/data-sources/iam_session_context#arn DataAwsIamSessionContext#arn}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsIamSessionContext.DataAwsIamSessionContextConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/data-sources/iam_session_context#id DataAwsIamSessionContext#id}. |
 
 ---
 
@@ -882,7 +882,7 @@ arn: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/data-sources/iam_session_context#arn DataAwsIamSessionContext#arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/data-sources/iam_session_context#arn DataAwsIamSessionContext#arn}.
 
 ---
 
@@ -894,7 +894,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/data-sources/iam_session_context#id DataAwsIamSessionContext#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/data-sources/iam_session_context#id DataAwsIamSessionContext#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

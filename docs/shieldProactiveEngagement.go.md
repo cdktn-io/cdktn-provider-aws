@@ -4,7 +4,7 @@
 
 ### ShieldProactiveEngagement <a name="ShieldProactiveEngagement" id="@cdktn/provider-aws.shieldProactiveEngagement.ShieldProactiveEngagement"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/shield_proactive_engagement aws_shield_proactive_engagement}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/shield_proactive_engagement aws_shield_proactive_engagement}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.shieldProactiveEngagement.ShieldProactiveEngagement.Initializer"></a>
 
@@ -509,7 +509,7 @@ The construct id used in the generated config for the ShieldProactiveEngagement 
 
 The id of the existing ShieldProactiveEngagement that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/shield_proactive_engagement#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/shield_proactive_engagement#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -790,7 +790,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/shieldproactiveengagem
 | <code><a href="#@cdktn/provider-aws.shieldProactiveEngagement.ShieldProactiveEngagementConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.shieldProactiveEngagement.ShieldProactiveEngagementConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.shieldProactiveEngagement.ShieldProactiveEngagementConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.shieldProactiveEngagement.ShieldProactiveEngagementConfig.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/shield_proactive_engagement#enabled ShieldProactiveEngagement#enabled}. |
+| <code><a href="#@cdktn/provider-aws.shieldProactiveEngagement.ShieldProactiveEngagementConfig.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/shield_proactive_engagement#enabled ShieldProactiveEngagement#enabled}. |
 | <code><a href="#@cdktn/provider-aws.shieldProactiveEngagement.ShieldProactiveEngagementConfig.property.emergencyContact">EmergencyContact</a></code> | <code>interface{}</code> | emergency_contact block. |
 
 ---
@@ -873,7 +873,7 @@ Enabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/shield_proactive_engagement#enabled ShieldProactiveEngagement#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/shield_proactive_engagement#enabled ShieldProactiveEngagement#enabled}.
 
 ---
 
@@ -887,7 +887,7 @@ EmergencyContact interface{}
 
 emergency_contact block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/shield_proactive_engagement#emergency_contact ShieldProactiveEngagement#emergency_contact}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/shield_proactive_engagement#emergency_contact ShieldProactiveEngagement#emergency_contact}
 
 ---
 
@@ -909,9 +909,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/shieldproactiveengagem
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.shieldProactiveEngagement.ShieldProactiveEngagementEmergencyContact.property.emailAddress">EmailAddress</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/shield_proactive_engagement#email_address ShieldProactiveEngagement#email_address}. |
-| <code><a href="#@cdktn/provider-aws.shieldProactiveEngagement.ShieldProactiveEngagementEmergencyContact.property.contactNotes">ContactNotes</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/shield_proactive_engagement#contact_notes ShieldProactiveEngagement#contact_notes}. |
-| <code><a href="#@cdktn/provider-aws.shieldProactiveEngagement.ShieldProactiveEngagementEmergencyContact.property.phoneNumber">PhoneNumber</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/shield_proactive_engagement#phone_number ShieldProactiveEngagement#phone_number}. |
+| <code><a href="#@cdktn/provider-aws.shieldProactiveEngagement.ShieldProactiveEngagementEmergencyContact.property.emailAddress">EmailAddress</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/shield_proactive_engagement#email_address ShieldProactiveEngagement#email_address}. |
+| <code><a href="#@cdktn/provider-aws.shieldProactiveEngagement.ShieldProactiveEngagementEmergencyContact.property.contactNotes">ContactNotes</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/shield_proactive_engagement#contact_notes ShieldProactiveEngagement#contact_notes}. |
+| <code><a href="#@cdktn/provider-aws.shieldProactiveEngagement.ShieldProactiveEngagementEmergencyContact.property.phoneNumber">PhoneNumber</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/shield_proactive_engagement#phone_number ShieldProactiveEngagement#phone_number}. |
 
 ---
 
@@ -923,7 +923,7 @@ EmailAddress *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/shield_proactive_engagement#email_address ShieldProactiveEngagement#email_address}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/shield_proactive_engagement#email_address ShieldProactiveEngagement#email_address}.
 
 ---
 
@@ -935,7 +935,7 @@ ContactNotes *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/shield_proactive_engagement#contact_notes ShieldProactiveEngagement#contact_notes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/shield_proactive_engagement#contact_notes ShieldProactiveEngagement#contact_notes}.
 
 ---
 
@@ -947,7 +947,7 @@ PhoneNumber *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/shield_proactive_engagement#phone_number ShieldProactiveEngagement#phone_number}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/shield_proactive_engagement#phone_number ShieldProactiveEngagement#phone_number}.
 
 ---
 

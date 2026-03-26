@@ -1,3 +1,3 @@
 # `aws_sagemaker_space`
 
-Refer to the Terraform Registry for docs: [`aws_sagemaker_space`](https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/sagemaker_space).
+Refer to the Terraform Registry for docs: [`aws_sagemaker_space`](https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/sagemaker_space).

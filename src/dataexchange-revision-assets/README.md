@@ -1,3 +1,3 @@
 # `aws_dataexchange_revision_assets`
 
-Refer to the Terraform Registry for docs: [`aws_dataexchange_revision_assets`](https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/dataexchange_revision_assets).
+Refer to the Terraform Registry for docs: [`aws_dataexchange_revision_assets`](https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/dataexchange_revision_assets).
