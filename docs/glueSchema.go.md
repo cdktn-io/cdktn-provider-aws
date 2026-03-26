@@ -4,7 +4,7 @@
 
 ### GlueSchema <a name="GlueSchema" id="@cdktn/provider-aws.glueSchema.GlueSchema"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/glue_schema aws_glue_schema}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/glue_schema aws_glue_schema}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.glueSchema.GlueSchema.Initializer"></a>
 
@@ -531,7 +531,7 @@ The construct id used in the generated config for the GlueSchema to import.
 
 The id of the existing GlueSchema that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/glue_schema#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/glue_schema#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1040,16 +1040,16 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/glueschema"
 | <code><a href="#@cdktn/provider-aws.glueSchema.GlueSchemaConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.glueSchema.GlueSchemaConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.glueSchema.GlueSchemaConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.glueSchema.GlueSchemaConfig.property.compatibility">Compatibility</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/glue_schema#compatibility GlueSchema#compatibility}. |
-| <code><a href="#@cdktn/provider-aws.glueSchema.GlueSchemaConfig.property.dataFormat">DataFormat</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/glue_schema#data_format GlueSchema#data_format}. |
-| <code><a href="#@cdktn/provider-aws.glueSchema.GlueSchemaConfig.property.schemaDefinition">SchemaDefinition</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/glue_schema#schema_definition GlueSchema#schema_definition}. |
-| <code><a href="#@cdktn/provider-aws.glueSchema.GlueSchemaConfig.property.schemaName">SchemaName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/glue_schema#schema_name GlueSchema#schema_name}. |
-| <code><a href="#@cdktn/provider-aws.glueSchema.GlueSchemaConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/glue_schema#description GlueSchema#description}. |
-| <code><a href="#@cdktn/provider-aws.glueSchema.GlueSchemaConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/glue_schema#id GlueSchema#id}. |
+| <code><a href="#@cdktn/provider-aws.glueSchema.GlueSchemaConfig.property.compatibility">Compatibility</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/glue_schema#compatibility GlueSchema#compatibility}. |
+| <code><a href="#@cdktn/provider-aws.glueSchema.GlueSchemaConfig.property.dataFormat">DataFormat</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/glue_schema#data_format GlueSchema#data_format}. |
+| <code><a href="#@cdktn/provider-aws.glueSchema.GlueSchemaConfig.property.schemaDefinition">SchemaDefinition</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/glue_schema#schema_definition GlueSchema#schema_definition}. |
+| <code><a href="#@cdktn/provider-aws.glueSchema.GlueSchemaConfig.property.schemaName">SchemaName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/glue_schema#schema_name GlueSchema#schema_name}. |
+| <code><a href="#@cdktn/provider-aws.glueSchema.GlueSchemaConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/glue_schema#description GlueSchema#description}. |
+| <code><a href="#@cdktn/provider-aws.glueSchema.GlueSchemaConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/glue_schema#id GlueSchema#id}. |
 | <code><a href="#@cdktn/provider-aws.glueSchema.GlueSchemaConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.glueSchema.GlueSchemaConfig.property.registryArn">RegistryArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/glue_schema#registry_arn GlueSchema#registry_arn}. |
-| <code><a href="#@cdktn/provider-aws.glueSchema.GlueSchemaConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/glue_schema#tags GlueSchema#tags}. |
-| <code><a href="#@cdktn/provider-aws.glueSchema.GlueSchemaConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/glue_schema#tags_all GlueSchema#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.glueSchema.GlueSchemaConfig.property.registryArn">RegistryArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/glue_schema#registry_arn GlueSchema#registry_arn}. |
+| <code><a href="#@cdktn/provider-aws.glueSchema.GlueSchemaConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/glue_schema#tags GlueSchema#tags}. |
+| <code><a href="#@cdktn/provider-aws.glueSchema.GlueSchemaConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/glue_schema#tags_all GlueSchema#tags_all}. |
 
 ---
 
@@ -1131,7 +1131,7 @@ Compatibility *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/glue_schema#compatibility GlueSchema#compatibility}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/glue_schema#compatibility GlueSchema#compatibility}.
 
 ---
 
@@ -1143,7 +1143,7 @@ DataFormat *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/glue_schema#data_format GlueSchema#data_format}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/glue_schema#data_format GlueSchema#data_format}.
 
 ---
 
@@ -1155,7 +1155,7 @@ SchemaDefinition *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/glue_schema#schema_definition GlueSchema#schema_definition}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/glue_schema#schema_definition GlueSchema#schema_definition}.
 
 ---
 
@@ -1167,7 +1167,7 @@ SchemaName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/glue_schema#schema_name GlueSchema#schema_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/glue_schema#schema_name GlueSchema#schema_name}.
 
 ---
 
@@ -1179,7 +1179,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/glue_schema#description GlueSchema#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/glue_schema#description GlueSchema#description}.
 
 ---
 
@@ -1191,7 +1191,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/glue_schema#id GlueSchema#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/glue_schema#id GlueSchema#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1208,7 +1208,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/glue_schema#region GlueSchema#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/glue_schema#region GlueSchema#region}
 
 ---
 
@@ -1220,7 +1220,7 @@ RegistryArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/glue_schema#registry_arn GlueSchema#registry_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/glue_schema#registry_arn GlueSchema#registry_arn}.
 
 ---
 
@@ -1232,7 +1232,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/glue_schema#tags GlueSchema#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/glue_schema#tags GlueSchema#tags}.
 
 ---
 
@@ -1244,7 +1244,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/glue_schema#tags_all GlueSchema#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/glue_schema#tags_all GlueSchema#tags_all}.
 
 ---
 

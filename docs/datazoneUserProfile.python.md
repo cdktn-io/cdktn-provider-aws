@@ -4,7 +4,7 @@
 
 ### DatazoneUserProfile <a name="DatazoneUserProfile" id="@cdktn/provider-aws.datazoneUserProfile.DatazoneUserProfile"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/datazone_user_profile aws_datazone_user_profile}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/datazone_user_profile aws_datazone_user_profile}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.datazoneUserProfile.DatazoneUserProfile.Initializer"></a>
 
@@ -41,12 +41,12 @@ datazoneUserProfile.DatazoneUserProfile(
 | <code><a href="#@cdktn/provider-aws.datazoneUserProfile.DatazoneUserProfile.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.datazoneUserProfile.DatazoneUserProfile.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.datazoneUserProfile.DatazoneUserProfile.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.datazoneUserProfile.DatazoneUserProfile.Initializer.parameter.domainIdentifier">domain_identifier</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/datazone_user_profile#domain_identifier DatazoneUserProfile#domain_identifier}. |
-| <code><a href="#@cdktn/provider-aws.datazoneUserProfile.DatazoneUserProfile.Initializer.parameter.userIdentifier">user_identifier</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/datazone_user_profile#user_identifier DatazoneUserProfile#user_identifier}. |
+| <code><a href="#@cdktn/provider-aws.datazoneUserProfile.DatazoneUserProfile.Initializer.parameter.domainIdentifier">domain_identifier</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/datazone_user_profile#domain_identifier DatazoneUserProfile#domain_identifier}. |
+| <code><a href="#@cdktn/provider-aws.datazoneUserProfile.DatazoneUserProfile.Initializer.parameter.userIdentifier">user_identifier</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/datazone_user_profile#user_identifier DatazoneUserProfile#user_identifier}. |
 | <code><a href="#@cdktn/provider-aws.datazoneUserProfile.DatazoneUserProfile.Initializer.parameter.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.datazoneUserProfile.DatazoneUserProfile.Initializer.parameter.status">status</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/datazone_user_profile#status DatazoneUserProfile#status}. |
+| <code><a href="#@cdktn/provider-aws.datazoneUserProfile.DatazoneUserProfile.Initializer.parameter.status">status</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/datazone_user_profile#status DatazoneUserProfile#status}. |
 | <code><a href="#@cdktn/provider-aws.datazoneUserProfile.DatazoneUserProfile.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-aws.datazoneUserProfile.DatazoneUserProfileTimeouts">DatazoneUserProfileTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktn/provider-aws.datazoneUserProfile.DatazoneUserProfile.Initializer.parameter.userType">user_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/datazone_user_profile#user_type DatazoneUserProfile#user_type}. |
+| <code><a href="#@cdktn/provider-aws.datazoneUserProfile.DatazoneUserProfile.Initializer.parameter.userType">user_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/datazone_user_profile#user_type DatazoneUserProfile#user_type}. |
 
 ---
 
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/datazone_user_profile#domain_identifier DatazoneUserProfile#domain_identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/datazone_user_profile#domain_identifier DatazoneUserProfile#domain_identifier}.
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/datazone_user_profile#user_identifier DatazoneUserProfile#user_identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/datazone_user_profile#user_identifier DatazoneUserProfile#user_identifier}.
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/datazone_user_profile#region DatazoneUserProfile#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/datazone_user_profile#region DatazoneUserProfile#region}
 
 ---
 
@@ -140,7 +140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/datazone_user_profile#status DatazoneUserProfile#status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/datazone_user_profile#status DatazoneUserProfile#status}.
 
 ---
 
@@ -150,7 +150,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/datazone_user_profile#timeouts DatazoneUserProfile#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/datazone_user_profile#timeouts DatazoneUserProfile#timeouts}
 
 ---
 
@@ -158,7 +158,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/datazone_user_profile#user_type DatazoneUserProfile#user_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/datazone_user_profile#user_type DatazoneUserProfile#user_type}.
 
 ---
 
@@ -561,7 +561,7 @@ def put_timeouts(
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/datazone_user_profile#create DatazoneUserProfile#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/datazone_user_profile#create DatazoneUserProfile#create}
 
 ---
 
@@ -571,7 +571,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/datazone_user_profile#update DatazoneUserProfile#update}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/datazone_user_profile#update DatazoneUserProfile#update}
 
 ---
 
@@ -713,7 +713,7 @@ The construct id used in the generated config for the DatazoneUserProfile to imp
 
 The id of the existing DatazoneUserProfile that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/datazone_user_profile#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/datazone_user_profile#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1108,12 +1108,12 @@ datazoneUserProfile.DatazoneUserProfileConfig(
 | <code><a href="#@cdktn/provider-aws.datazoneUserProfile.DatazoneUserProfileConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.datazoneUserProfile.DatazoneUserProfileConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.datazoneUserProfile.DatazoneUserProfileConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.datazoneUserProfile.DatazoneUserProfileConfig.property.domainIdentifier">domain_identifier</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/datazone_user_profile#domain_identifier DatazoneUserProfile#domain_identifier}. |
-| <code><a href="#@cdktn/provider-aws.datazoneUserProfile.DatazoneUserProfileConfig.property.userIdentifier">user_identifier</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/datazone_user_profile#user_identifier DatazoneUserProfile#user_identifier}. |
+| <code><a href="#@cdktn/provider-aws.datazoneUserProfile.DatazoneUserProfileConfig.property.domainIdentifier">domain_identifier</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/datazone_user_profile#domain_identifier DatazoneUserProfile#domain_identifier}. |
+| <code><a href="#@cdktn/provider-aws.datazoneUserProfile.DatazoneUserProfileConfig.property.userIdentifier">user_identifier</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/datazone_user_profile#user_identifier DatazoneUserProfile#user_identifier}. |
 | <code><a href="#@cdktn/provider-aws.datazoneUserProfile.DatazoneUserProfileConfig.property.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.datazoneUserProfile.DatazoneUserProfileConfig.property.status">status</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/datazone_user_profile#status DatazoneUserProfile#status}. |
+| <code><a href="#@cdktn/provider-aws.datazoneUserProfile.DatazoneUserProfileConfig.property.status">status</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/datazone_user_profile#status DatazoneUserProfile#status}. |
 | <code><a href="#@cdktn/provider-aws.datazoneUserProfile.DatazoneUserProfileConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-aws.datazoneUserProfile.DatazoneUserProfileTimeouts">DatazoneUserProfileTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktn/provider-aws.datazoneUserProfile.DatazoneUserProfileConfig.property.userType">user_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/datazone_user_profile#user_type DatazoneUserProfile#user_type}. |
+| <code><a href="#@cdktn/provider-aws.datazoneUserProfile.DatazoneUserProfileConfig.property.userType">user_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/datazone_user_profile#user_type DatazoneUserProfile#user_type}. |
 
 ---
 
@@ -1195,7 +1195,7 @@ domain_identifier: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/datazone_user_profile#domain_identifier DatazoneUserProfile#domain_identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/datazone_user_profile#domain_identifier DatazoneUserProfile#domain_identifier}.
 
 ---
 
@@ -1207,7 +1207,7 @@ user_identifier: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/datazone_user_profile#user_identifier DatazoneUserProfile#user_identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/datazone_user_profile#user_identifier DatazoneUserProfile#user_identifier}.
 
 ---
 
@@ -1221,7 +1221,7 @@ region: str
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/datazone_user_profile#region DatazoneUserProfile#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/datazone_user_profile#region DatazoneUserProfile#region}
 
 ---
 
@@ -1233,7 +1233,7 @@ status: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/datazone_user_profile#status DatazoneUserProfile#status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/datazone_user_profile#status DatazoneUserProfile#status}.
 
 ---
 
@@ -1247,7 +1247,7 @@ timeouts: DatazoneUserProfileTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/datazone_user_profile#timeouts DatazoneUserProfile#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/datazone_user_profile#timeouts DatazoneUserProfile#timeouts}
 
 ---
 
@@ -1259,7 +1259,7 @@ user_type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/datazone_user_profile#user_type DatazoneUserProfile#user_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/datazone_user_profile#user_type DatazoneUserProfile#user_type}.
 
 ---
 
@@ -1328,7 +1328,7 @@ create: str
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/datazone_user_profile#create DatazoneUserProfile#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/datazone_user_profile#create DatazoneUserProfile#create}
 
 ---
 
@@ -1342,7 +1342,7 @@ update: str
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/datazone_user_profile#update DatazoneUserProfile#update}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/datazone_user_profile#update DatazoneUserProfile#update}
 
 ---
 

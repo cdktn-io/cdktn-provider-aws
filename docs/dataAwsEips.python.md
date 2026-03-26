@@ -4,7 +4,7 @@
 
 ### DataAwsEips <a name="DataAwsEips" id="@cdktn/provider-aws.dataAwsEips.DataAwsEips"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/data-sources/eips aws_eips}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/data-sources/eips aws_eips}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEips.DataAwsEips.Initializer"></a>
 
@@ -41,9 +41,9 @@ dataAwsEips.DataAwsEips(
 | <code><a href="#@cdktn/provider-aws.dataAwsEips.DataAwsEips.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsEips.DataAwsEips.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsEips.DataAwsEips.Initializer.parameter.filter">filter</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.dataAwsEips.DataAwsEipsFilter">DataAwsEipsFilter</a>]</code> | filter block. |
-| <code><a href="#@cdktn/provider-aws.dataAwsEips.DataAwsEips.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/data-sources/eips#id DataAwsEips#id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsEips.DataAwsEips.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/data-sources/eips#id DataAwsEips#id}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsEips.DataAwsEips.Initializer.parameter.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.dataAwsEips.DataAwsEips.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/data-sources/eips#tags DataAwsEips#tags}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsEips.DataAwsEips.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/data-sources/eips#tags DataAwsEips#tags}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsEips.DataAwsEips.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-aws.dataAwsEips.DataAwsEipsTimeouts">DataAwsEipsTimeouts</a></code> | timeouts block. |
 
 ---
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/data-sources/eips#filter DataAwsEips#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/data-sources/eips#filter DataAwsEips#filter}
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/data-sources/eips#id DataAwsEips#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/data-sources/eips#id DataAwsEips#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -135,7 +135,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/data-sources/eips#region DataAwsEips#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/data-sources/eips#region DataAwsEips#region}
 
 ---
 
@@ -143,7 +143,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/data-sources/eips#tags DataAwsEips#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/data-sources/eips#tags DataAwsEips#tags}.
 
 ---
 
@@ -153,7 +153,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/data-sources/eips#timeouts DataAwsEips#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/data-sources/eips#timeouts DataAwsEips#timeouts}
 
 ---
 
@@ -455,7 +455,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/data-sources/eips#read DataAwsEips#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/data-sources/eips#read DataAwsEips#read}.
 
 ---
 
@@ -603,7 +603,7 @@ The construct id used in the generated config for the DataAwsEips to import.
 
 The id of the existing DataAwsEips that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/data-sources/eips#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/data-sources/eips#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -943,9 +943,9 @@ dataAwsEips.DataAwsEipsConfig(
 | <code><a href="#@cdktn/provider-aws.dataAwsEips.DataAwsEipsConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsEips.DataAwsEipsConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsEips.DataAwsEipsConfig.property.filter">filter</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.dataAwsEips.DataAwsEipsFilter">DataAwsEipsFilter</a>]</code> | filter block. |
-| <code><a href="#@cdktn/provider-aws.dataAwsEips.DataAwsEipsConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/data-sources/eips#id DataAwsEips#id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsEips.DataAwsEipsConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/data-sources/eips#id DataAwsEips#id}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsEips.DataAwsEipsConfig.property.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.dataAwsEips.DataAwsEipsConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/data-sources/eips#tags DataAwsEips#tags}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsEips.DataAwsEipsConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/data-sources/eips#tags DataAwsEips#tags}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsEips.DataAwsEipsConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-aws.dataAwsEips.DataAwsEipsTimeouts">DataAwsEipsTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1030,7 +1030,7 @@ filter: IResolvable | typing.List[DataAwsEipsFilter]
 
 filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/data-sources/eips#filter DataAwsEips#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/data-sources/eips#filter DataAwsEips#filter}
 
 ---
 
@@ -1042,7 +1042,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/data-sources/eips#id DataAwsEips#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/data-sources/eips#id DataAwsEips#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1059,7 +1059,7 @@ region: str
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/data-sources/eips#region DataAwsEips#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/data-sources/eips#region DataAwsEips#region}
 
 ---
 
@@ -1071,7 +1071,7 @@ tags: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/data-sources/eips#tags DataAwsEips#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/data-sources/eips#tags DataAwsEips#tags}.
 
 ---
 
@@ -1085,7 +1085,7 @@ timeouts: DataAwsEipsTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/data-sources/eips#timeouts DataAwsEips#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/data-sources/eips#timeouts DataAwsEips#timeouts}
 
 ---
 
@@ -1106,8 +1106,8 @@ dataAwsEips.DataAwsEipsFilter(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.dataAwsEips.DataAwsEipsFilter.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/data-sources/eips#name DataAwsEips#name}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsEips.DataAwsEipsFilter.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/data-sources/eips#values DataAwsEips#values}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsEips.DataAwsEipsFilter.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/data-sources/eips#name DataAwsEips#name}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsEips.DataAwsEipsFilter.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/data-sources/eips#values DataAwsEips#values}. |
 
 ---
 
@@ -1119,7 +1119,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/data-sources/eips#name DataAwsEips#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/data-sources/eips#name DataAwsEips#name}.
 
 ---
 
@@ -1131,7 +1131,7 @@ values: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/data-sources/eips#values DataAwsEips#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/data-sources/eips#values DataAwsEips#values}.
 
 ---
 
@@ -1151,7 +1151,7 @@ dataAwsEips.DataAwsEipsTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.dataAwsEips.DataAwsEipsTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/data-sources/eips#read DataAwsEips#read}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsEips.DataAwsEipsTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/data-sources/eips#read DataAwsEips#read}. |
 
 ---
 
@@ -1163,7 +1163,7 @@ read: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/data-sources/eips#read DataAwsEips#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/data-sources/eips#read DataAwsEips#read}.
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### DataAwsWafregionalRule <a name="DataAwsWafregionalRule" id="@cdktn/provider-aws.dataAwsWafregionalRule.DataAwsWafregionalRule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/data-sources/wafregional_rule aws_wafregional_rule}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/data-sources/wafregional_rule aws_wafregional_rule}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsWafregionalRule.DataAwsWafregionalRule.Initializer"></a>
 
@@ -401,7 +401,7 @@ The construct id used in the generated config for the DataAwsWafregionalRule to 
 
 The id of the existing DataAwsWafregionalRule that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/data-sources/wafregional_rule#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/data-sources/wafregional_rule#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -672,8 +672,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawswafregionalrule
 | <code><a href="#@cdktn/provider-aws.dataAwsWafregionalRule.DataAwsWafregionalRuleConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsWafregionalRule.DataAwsWafregionalRuleConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsWafregionalRule.DataAwsWafregionalRuleConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dataAwsWafregionalRule.DataAwsWafregionalRuleConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/data-sources/wafregional_rule#name DataAwsWafregionalRule#name}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsWafregionalRule.DataAwsWafregionalRuleConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/data-sources/wafregional_rule#id DataAwsWafregionalRule#id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsWafregionalRule.DataAwsWafregionalRuleConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/data-sources/wafregional_rule#name DataAwsWafregionalRule#name}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsWafregionalRule.DataAwsWafregionalRuleConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/data-sources/wafregional_rule#id DataAwsWafregionalRule#id}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsWafregionalRule.DataAwsWafregionalRuleConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -756,7 +756,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/data-sources/wafregional_rule#name DataAwsWafregionalRule#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/data-sources/wafregional_rule#name DataAwsWafregionalRule#name}.
 
 ---
 
@@ -768,7 +768,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/data-sources/wafregional_rule#id DataAwsWafregionalRule#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/data-sources/wafregional_rule#id DataAwsWafregionalRule#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -785,7 +785,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/data-sources/wafregional_rule#region DataAwsWafregionalRule#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/data-sources/wafregional_rule#region DataAwsWafregionalRule#region}
 
 ---
 

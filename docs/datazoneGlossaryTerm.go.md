@@ -4,7 +4,7 @@
 
 ### DatazoneGlossaryTerm <a name="DatazoneGlossaryTerm" id="@cdktn/provider-aws.datazoneGlossaryTerm.DatazoneGlossaryTerm"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/datazone_glossary_term aws_datazone_glossary_term}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/datazone_glossary_term aws_datazone_glossary_term}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.datazoneGlossaryTerm.DatazoneGlossaryTerm.Initializer"></a>
 
@@ -564,7 +564,7 @@ The construct id used in the generated config for the DatazoneGlossaryTerm to im
 
 The id of the existing DatazoneGlossaryTerm that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/datazone_glossary_term#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/datazone_glossary_term#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1028,13 +1028,13 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/datazoneglossaryterm"
 | <code><a href="#@cdktn/provider-aws.datazoneGlossaryTerm.DatazoneGlossaryTermConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.datazoneGlossaryTerm.DatazoneGlossaryTermConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.datazoneGlossaryTerm.DatazoneGlossaryTermConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.datazoneGlossaryTerm.DatazoneGlossaryTermConfig.property.glossaryIdentifier">GlossaryIdentifier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/datazone_glossary_term#glossary_identifier DatazoneGlossaryTerm#glossary_identifier}. |
-| <code><a href="#@cdktn/provider-aws.datazoneGlossaryTerm.DatazoneGlossaryTermConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/datazone_glossary_term#name DatazoneGlossaryTerm#name}. |
-| <code><a href="#@cdktn/provider-aws.datazoneGlossaryTerm.DatazoneGlossaryTermConfig.property.domainIdentifier">DomainIdentifier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/datazone_glossary_term#domain_identifier DatazoneGlossaryTerm#domain_identifier}. |
-| <code><a href="#@cdktn/provider-aws.datazoneGlossaryTerm.DatazoneGlossaryTermConfig.property.longDescription">LongDescription</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/datazone_glossary_term#long_description DatazoneGlossaryTerm#long_description}. |
+| <code><a href="#@cdktn/provider-aws.datazoneGlossaryTerm.DatazoneGlossaryTermConfig.property.glossaryIdentifier">GlossaryIdentifier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/datazone_glossary_term#glossary_identifier DatazoneGlossaryTerm#glossary_identifier}. |
+| <code><a href="#@cdktn/provider-aws.datazoneGlossaryTerm.DatazoneGlossaryTermConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/datazone_glossary_term#name DatazoneGlossaryTerm#name}. |
+| <code><a href="#@cdktn/provider-aws.datazoneGlossaryTerm.DatazoneGlossaryTermConfig.property.domainIdentifier">DomainIdentifier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/datazone_glossary_term#domain_identifier DatazoneGlossaryTerm#domain_identifier}. |
+| <code><a href="#@cdktn/provider-aws.datazoneGlossaryTerm.DatazoneGlossaryTermConfig.property.longDescription">LongDescription</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/datazone_glossary_term#long_description DatazoneGlossaryTerm#long_description}. |
 | <code><a href="#@cdktn/provider-aws.datazoneGlossaryTerm.DatazoneGlossaryTermConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.datazoneGlossaryTerm.DatazoneGlossaryTermConfig.property.shortDescription">ShortDescription</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/datazone_glossary_term#short_description DatazoneGlossaryTerm#short_description}. |
-| <code><a href="#@cdktn/provider-aws.datazoneGlossaryTerm.DatazoneGlossaryTermConfig.property.status">Status</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/datazone_glossary_term#status DatazoneGlossaryTerm#status}. |
+| <code><a href="#@cdktn/provider-aws.datazoneGlossaryTerm.DatazoneGlossaryTermConfig.property.shortDescription">ShortDescription</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/datazone_glossary_term#short_description DatazoneGlossaryTerm#short_description}. |
+| <code><a href="#@cdktn/provider-aws.datazoneGlossaryTerm.DatazoneGlossaryTermConfig.property.status">Status</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/datazone_glossary_term#status DatazoneGlossaryTerm#status}. |
 | <code><a href="#@cdktn/provider-aws.datazoneGlossaryTerm.DatazoneGlossaryTermConfig.property.termRelations">TermRelations</a></code> | <code>interface{}</code> | term_relations block. |
 | <code><a href="#@cdktn/provider-aws.datazoneGlossaryTerm.DatazoneGlossaryTermConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.datazoneGlossaryTerm.DatazoneGlossaryTermTimeouts">DatazoneGlossaryTermTimeouts</a></code> | timeouts block. |
 
@@ -1118,7 +1118,7 @@ GlossaryIdentifier *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/datazone_glossary_term#glossary_identifier DatazoneGlossaryTerm#glossary_identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/datazone_glossary_term#glossary_identifier DatazoneGlossaryTerm#glossary_identifier}.
 
 ---
 
@@ -1130,7 +1130,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/datazone_glossary_term#name DatazoneGlossaryTerm#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/datazone_glossary_term#name DatazoneGlossaryTerm#name}.
 
 ---
 
@@ -1142,7 +1142,7 @@ DomainIdentifier *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/datazone_glossary_term#domain_identifier DatazoneGlossaryTerm#domain_identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/datazone_glossary_term#domain_identifier DatazoneGlossaryTerm#domain_identifier}.
 
 ---
 
@@ -1154,7 +1154,7 @@ LongDescription *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/datazone_glossary_term#long_description DatazoneGlossaryTerm#long_description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/datazone_glossary_term#long_description DatazoneGlossaryTerm#long_description}.
 
 ---
 
@@ -1168,7 +1168,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/datazone_glossary_term#region DatazoneGlossaryTerm#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/datazone_glossary_term#region DatazoneGlossaryTerm#region}
 
 ---
 
@@ -1180,7 +1180,7 @@ ShortDescription *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/datazone_glossary_term#short_description DatazoneGlossaryTerm#short_description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/datazone_glossary_term#short_description DatazoneGlossaryTerm#short_description}.
 
 ---
 
@@ -1192,7 +1192,7 @@ Status *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/datazone_glossary_term#status DatazoneGlossaryTerm#status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/datazone_glossary_term#status DatazoneGlossaryTerm#status}.
 
 ---
 
@@ -1206,7 +1206,7 @@ TermRelations interface{}
 
 term_relations block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/datazone_glossary_term#term_relations DatazoneGlossaryTerm#term_relations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/datazone_glossary_term#term_relations DatazoneGlossaryTerm#term_relations}
 
 ---
 
@@ -1220,7 +1220,7 @@ Timeouts DatazoneGlossaryTermTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/datazone_glossary_term#timeouts DatazoneGlossaryTerm#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/datazone_glossary_term#timeouts DatazoneGlossaryTerm#timeouts}
 
 ---
 
@@ -1241,8 +1241,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/datazoneglossaryterm"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.datazoneGlossaryTerm.DatazoneGlossaryTermTermRelations.property.classifies">Classifies</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/datazone_glossary_term#classifies DatazoneGlossaryTerm#classifies}. |
-| <code><a href="#@cdktn/provider-aws.datazoneGlossaryTerm.DatazoneGlossaryTermTermRelations.property.isA">IsA</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/datazone_glossary_term#is_a DatazoneGlossaryTerm#is_a}. |
+| <code><a href="#@cdktn/provider-aws.datazoneGlossaryTerm.DatazoneGlossaryTermTermRelations.property.classifies">Classifies</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/datazone_glossary_term#classifies DatazoneGlossaryTerm#classifies}. |
+| <code><a href="#@cdktn/provider-aws.datazoneGlossaryTerm.DatazoneGlossaryTermTermRelations.property.isA">IsA</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/datazone_glossary_term#is_a DatazoneGlossaryTerm#is_a}. |
 
 ---
 
@@ -1254,7 +1254,7 @@ Classifies *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/datazone_glossary_term#classifies DatazoneGlossaryTerm#classifies}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/datazone_glossary_term#classifies DatazoneGlossaryTerm#classifies}.
 
 ---
 
@@ -1266,7 +1266,7 @@ IsA *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/datazone_glossary_term#is_a DatazoneGlossaryTerm#is_a}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/datazone_glossary_term#is_a DatazoneGlossaryTerm#is_a}.
 
 ---
 
@@ -1300,7 +1300,7 @@ Create *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/datazone_glossary_term#create DatazoneGlossaryTerm#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/datazone_glossary_term#create DatazoneGlossaryTerm#create}
 
 ---
 
