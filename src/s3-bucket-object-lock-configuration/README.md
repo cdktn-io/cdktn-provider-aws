@@ -1,3 +1,3 @@
 # `aws_s3_bucket_object_lock_configuration`
 
-Refer to the Terraform Registry for docs: [`aws_s3_bucket_object_lock_configuration`](https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/s3_bucket_object_lock_configuration).
+Refer to the Terraform Registry for docs: [`aws_s3_bucket_object_lock_configuration`](https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/s3_bucket_object_lock_configuration).

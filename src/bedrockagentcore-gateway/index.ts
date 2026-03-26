@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/bedrockagentcore_gateway
+// https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/bedrockagentcore_gateway
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,65 +13,65 @@ import * as cdktn from 'cdktn';
 
 export interface BedrockagentcoreGatewayConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/bedrockagentcore_gateway#authorizer_type BedrockagentcoreGateway#authorizer_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/bedrockagentcore_gateway#authorizer_type BedrockagentcoreGateway#authorizer_type}
   */
   readonly authorizerType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/bedrockagentcore_gateway#description BedrockagentcoreGateway#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/bedrockagentcore_gateway#description BedrockagentcoreGateway#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/bedrockagentcore_gateway#exception_level BedrockagentcoreGateway#exception_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/bedrockagentcore_gateway#exception_level BedrockagentcoreGateway#exception_level}
   */
   readonly exceptionLevel?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/bedrockagentcore_gateway#kms_key_arn BedrockagentcoreGateway#kms_key_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/bedrockagentcore_gateway#kms_key_arn BedrockagentcoreGateway#kms_key_arn}
   */
   readonly kmsKeyArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/bedrockagentcore_gateway#name BedrockagentcoreGateway#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/bedrockagentcore_gateway#name BedrockagentcoreGateway#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/bedrockagentcore_gateway#protocol_type BedrockagentcoreGateway#protocol_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/bedrockagentcore_gateway#protocol_type BedrockagentcoreGateway#protocol_type}
   */
   readonly protocolType: string;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/bedrockagentcore_gateway#region BedrockagentcoreGateway#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/bedrockagentcore_gateway#region BedrockagentcoreGateway#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/bedrockagentcore_gateway#role_arn BedrockagentcoreGateway#role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/bedrockagentcore_gateway#role_arn BedrockagentcoreGateway#role_arn}
   */
   readonly roleArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/bedrockagentcore_gateway#tags BedrockagentcoreGateway#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/bedrockagentcore_gateway#tags BedrockagentcoreGateway#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
   * authorizer_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/bedrockagentcore_gateway#authorizer_configuration BedrockagentcoreGateway#authorizer_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/bedrockagentcore_gateway#authorizer_configuration BedrockagentcoreGateway#authorizer_configuration}
   */
   readonly authorizerConfiguration?: BedrockagentcoreGatewayAuthorizerConfiguration[] | cdktn.IResolvable;
   /**
   * interceptor_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/bedrockagentcore_gateway#interceptor_configuration BedrockagentcoreGateway#interceptor_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/bedrockagentcore_gateway#interceptor_configuration BedrockagentcoreGateway#interceptor_configuration}
   */
   readonly interceptorConfiguration?: BedrockagentcoreGatewayInterceptorConfiguration[] | cdktn.IResolvable;
   /**
   * protocol_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/bedrockagentcore_gateway#protocol_configuration BedrockagentcoreGateway#protocol_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/bedrockagentcore_gateway#protocol_configuration BedrockagentcoreGateway#protocol_configuration}
   */
   readonly protocolConfiguration?: BedrockagentcoreGatewayProtocolConfiguration[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/bedrockagentcore_gateway#timeouts BedrockagentcoreGateway#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/bedrockagentcore_gateway#timeouts BedrockagentcoreGateway#timeouts}
   */
   readonly timeouts?: BedrockagentcoreGatewayTimeouts;
 }
@@ -150,23 +150,504 @@ export class BedrockagentcoreGatewayWorkloadIdentityDetailsList extends cdktn.Co
     return new BedrockagentcoreGatewayWorkloadIdentityDetailsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface BedrockagentcoreGatewayAuthorizerConfigurationCustomJwtAuthorizerCustomClaimAuthorizingClaimMatchValueClaimMatchValue {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/bedrockagentcore_gateway#match_value_string BedrockagentcoreGateway#match_value_string}
+  */
+  readonly matchValueString?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/bedrockagentcore_gateway#match_value_string_list BedrockagentcoreGateway#match_value_string_list}
+  */
+  readonly matchValueStringList?: string[];
+}
+
+export function bedrockagentcoreGatewayAuthorizerConfigurationCustomJwtAuthorizerCustomClaimAuthorizingClaimMatchValueClaimMatchValueToTerraform(struct?: BedrockagentcoreGatewayAuthorizerConfigurationCustomJwtAuthorizerCustomClaimAuthorizingClaimMatchValueClaimMatchValue | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    match_value_string: cdktn.stringToTerraform(struct!.matchValueString),
+    match_value_string_list: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.matchValueStringList),
+  }
+}
+
+
+export function bedrockagentcoreGatewayAuthorizerConfigurationCustomJwtAuthorizerCustomClaimAuthorizingClaimMatchValueClaimMatchValueToHclTerraform(struct?: BedrockagentcoreGatewayAuthorizerConfigurationCustomJwtAuthorizerCustomClaimAuthorizingClaimMatchValueClaimMatchValue | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    match_value_string: {
+      value: cdktn.stringToHclTerraform(struct!.matchValueString),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    match_value_string_list: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.matchValueStringList),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class BedrockagentcoreGatewayAuthorizerConfigurationCustomJwtAuthorizerCustomClaimAuthorizingClaimMatchValueClaimMatchValueOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): BedrockagentcoreGatewayAuthorizerConfigurationCustomJwtAuthorizerCustomClaimAuthorizingClaimMatchValueClaimMatchValue | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._matchValueString !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.matchValueString = this._matchValueString;
+    }
+    if (this._matchValueStringList !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.matchValueStringList = this._matchValueStringList;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: BedrockagentcoreGatewayAuthorizerConfigurationCustomJwtAuthorizerCustomClaimAuthorizingClaimMatchValueClaimMatchValue | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._matchValueString = undefined;
+      this._matchValueStringList = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._matchValueString = value.matchValueString;
+      this._matchValueStringList = value.matchValueStringList;
+    }
+  }
+
+  // match_value_string - computed: false, optional: true, required: false
+  private _matchValueString?: string; 
+  public get matchValueString() {
+    return this.getStringAttribute('match_value_string');
+  }
+  public set matchValueString(value: string) {
+    this._matchValueString = value;
+  }
+  public resetMatchValueString() {
+    this._matchValueString = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get matchValueStringInput() {
+    return this._matchValueString;
+  }
+
+  // match_value_string_list - computed: false, optional: true, required: false
+  private _matchValueStringList?: string[]; 
+  public get matchValueStringList() {
+    return cdktn.Fn.tolist(this.getListAttribute('match_value_string_list'));
+  }
+  public set matchValueStringList(value: string[]) {
+    this._matchValueStringList = value;
+  }
+  public resetMatchValueStringList() {
+    this._matchValueStringList = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get matchValueStringListInput() {
+    return this._matchValueStringList;
+  }
+}
+
+export class BedrockagentcoreGatewayAuthorizerConfigurationCustomJwtAuthorizerCustomClaimAuthorizingClaimMatchValueClaimMatchValueList extends cdktn.ComplexList {
+  public internalValue? : BedrockagentcoreGatewayAuthorizerConfigurationCustomJwtAuthorizerCustomClaimAuthorizingClaimMatchValueClaimMatchValue[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): BedrockagentcoreGatewayAuthorizerConfigurationCustomJwtAuthorizerCustomClaimAuthorizingClaimMatchValueClaimMatchValueOutputReference {
+    return new BedrockagentcoreGatewayAuthorizerConfigurationCustomJwtAuthorizerCustomClaimAuthorizingClaimMatchValueClaimMatchValueOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface BedrockagentcoreGatewayAuthorizerConfigurationCustomJwtAuthorizerCustomClaimAuthorizingClaimMatchValue {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/bedrockagentcore_gateway#claim_match_operator BedrockagentcoreGateway#claim_match_operator}
+  */
+  readonly claimMatchOperator: string;
+  /**
+  * claim_match_value block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/bedrockagentcore_gateway#claim_match_value BedrockagentcoreGateway#claim_match_value}
+  */
+  readonly claimMatchValue?: BedrockagentcoreGatewayAuthorizerConfigurationCustomJwtAuthorizerCustomClaimAuthorizingClaimMatchValueClaimMatchValue[] | cdktn.IResolvable;
+}
+
+export function bedrockagentcoreGatewayAuthorizerConfigurationCustomJwtAuthorizerCustomClaimAuthorizingClaimMatchValueToTerraform(struct?: BedrockagentcoreGatewayAuthorizerConfigurationCustomJwtAuthorizerCustomClaimAuthorizingClaimMatchValue | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    claim_match_operator: cdktn.stringToTerraform(struct!.claimMatchOperator),
+    claim_match_value: cdktn.listMapper(bedrockagentcoreGatewayAuthorizerConfigurationCustomJwtAuthorizerCustomClaimAuthorizingClaimMatchValueClaimMatchValueToTerraform, true)(struct!.claimMatchValue),
+  }
+}
+
+
+export function bedrockagentcoreGatewayAuthorizerConfigurationCustomJwtAuthorizerCustomClaimAuthorizingClaimMatchValueToHclTerraform(struct?: BedrockagentcoreGatewayAuthorizerConfigurationCustomJwtAuthorizerCustomClaimAuthorizingClaimMatchValue | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    claim_match_operator: {
+      value: cdktn.stringToHclTerraform(struct!.claimMatchOperator),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    claim_match_value: {
+      value: cdktn.listMapperHcl(bedrockagentcoreGatewayAuthorizerConfigurationCustomJwtAuthorizerCustomClaimAuthorizingClaimMatchValueClaimMatchValueToHclTerraform, true)(struct!.claimMatchValue),
+      isBlock: true,
+      type: "list",
+      storageClassType: "BedrockagentcoreGatewayAuthorizerConfigurationCustomJwtAuthorizerCustomClaimAuthorizingClaimMatchValueClaimMatchValueList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class BedrockagentcoreGatewayAuthorizerConfigurationCustomJwtAuthorizerCustomClaimAuthorizingClaimMatchValueOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): BedrockagentcoreGatewayAuthorizerConfigurationCustomJwtAuthorizerCustomClaimAuthorizingClaimMatchValue | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._claimMatchOperator !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.claimMatchOperator = this._claimMatchOperator;
+    }
+    if (this._claimMatchValue?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.claimMatchValue = this._claimMatchValue?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: BedrockagentcoreGatewayAuthorizerConfigurationCustomJwtAuthorizerCustomClaimAuthorizingClaimMatchValue | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._claimMatchOperator = undefined;
+      this._claimMatchValue.internalValue = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._claimMatchOperator = value.claimMatchOperator;
+      this._claimMatchValue.internalValue = value.claimMatchValue;
+    }
+  }
+
+  // claim_match_operator - computed: false, optional: false, required: true
+  private _claimMatchOperator?: string; 
+  public get claimMatchOperator() {
+    return this.getStringAttribute('claim_match_operator');
+  }
+  public set claimMatchOperator(value: string) {
+    this._claimMatchOperator = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get claimMatchOperatorInput() {
+    return this._claimMatchOperator;
+  }
+
+  // claim_match_value - computed: false, optional: true, required: false
+  private _claimMatchValue = new BedrockagentcoreGatewayAuthorizerConfigurationCustomJwtAuthorizerCustomClaimAuthorizingClaimMatchValueClaimMatchValueList(this, "claim_match_value", false);
+  public get claimMatchValue() {
+    return this._claimMatchValue;
+  }
+  public putClaimMatchValue(value: BedrockagentcoreGatewayAuthorizerConfigurationCustomJwtAuthorizerCustomClaimAuthorizingClaimMatchValueClaimMatchValue[] | cdktn.IResolvable) {
+    this._claimMatchValue.internalValue = value;
+  }
+  public resetClaimMatchValue() {
+    this._claimMatchValue.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get claimMatchValueInput() {
+    return this._claimMatchValue.internalValue;
+  }
+}
+
+export class BedrockagentcoreGatewayAuthorizerConfigurationCustomJwtAuthorizerCustomClaimAuthorizingClaimMatchValueList extends cdktn.ComplexList {
+  public internalValue? : BedrockagentcoreGatewayAuthorizerConfigurationCustomJwtAuthorizerCustomClaimAuthorizingClaimMatchValue[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): BedrockagentcoreGatewayAuthorizerConfigurationCustomJwtAuthorizerCustomClaimAuthorizingClaimMatchValueOutputReference {
+    return new BedrockagentcoreGatewayAuthorizerConfigurationCustomJwtAuthorizerCustomClaimAuthorizingClaimMatchValueOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface BedrockagentcoreGatewayAuthorizerConfigurationCustomJwtAuthorizerCustomClaim {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/bedrockagentcore_gateway#inbound_token_claim_name BedrockagentcoreGateway#inbound_token_claim_name}
+  */
+  readonly inboundTokenClaimName: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/bedrockagentcore_gateway#inbound_token_claim_value_type BedrockagentcoreGateway#inbound_token_claim_value_type}
+  */
+  readonly inboundTokenClaimValueType: string;
+  /**
+  * authorizing_claim_match_value block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/bedrockagentcore_gateway#authorizing_claim_match_value BedrockagentcoreGateway#authorizing_claim_match_value}
+  */
+  readonly authorizingClaimMatchValue?: BedrockagentcoreGatewayAuthorizerConfigurationCustomJwtAuthorizerCustomClaimAuthorizingClaimMatchValue[] | cdktn.IResolvable;
+}
+
+export function bedrockagentcoreGatewayAuthorizerConfigurationCustomJwtAuthorizerCustomClaimToTerraform(struct?: BedrockagentcoreGatewayAuthorizerConfigurationCustomJwtAuthorizerCustomClaim | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    inbound_token_claim_name: cdktn.stringToTerraform(struct!.inboundTokenClaimName),
+    inbound_token_claim_value_type: cdktn.stringToTerraform(struct!.inboundTokenClaimValueType),
+    authorizing_claim_match_value: cdktn.listMapper(bedrockagentcoreGatewayAuthorizerConfigurationCustomJwtAuthorizerCustomClaimAuthorizingClaimMatchValueToTerraform, true)(struct!.authorizingClaimMatchValue),
+  }
+}
+
+
+export function bedrockagentcoreGatewayAuthorizerConfigurationCustomJwtAuthorizerCustomClaimToHclTerraform(struct?: BedrockagentcoreGatewayAuthorizerConfigurationCustomJwtAuthorizerCustomClaim | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    inbound_token_claim_name: {
+      value: cdktn.stringToHclTerraform(struct!.inboundTokenClaimName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    inbound_token_claim_value_type: {
+      value: cdktn.stringToHclTerraform(struct!.inboundTokenClaimValueType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    authorizing_claim_match_value: {
+      value: cdktn.listMapperHcl(bedrockagentcoreGatewayAuthorizerConfigurationCustomJwtAuthorizerCustomClaimAuthorizingClaimMatchValueToHclTerraform, true)(struct!.authorizingClaimMatchValue),
+      isBlock: true,
+      type: "list",
+      storageClassType: "BedrockagentcoreGatewayAuthorizerConfigurationCustomJwtAuthorizerCustomClaimAuthorizingClaimMatchValueList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class BedrockagentcoreGatewayAuthorizerConfigurationCustomJwtAuthorizerCustomClaimOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): BedrockagentcoreGatewayAuthorizerConfigurationCustomJwtAuthorizerCustomClaim | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._inboundTokenClaimName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.inboundTokenClaimName = this._inboundTokenClaimName;
+    }
+    if (this._inboundTokenClaimValueType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.inboundTokenClaimValueType = this._inboundTokenClaimValueType;
+    }
+    if (this._authorizingClaimMatchValue?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.authorizingClaimMatchValue = this._authorizingClaimMatchValue?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: BedrockagentcoreGatewayAuthorizerConfigurationCustomJwtAuthorizerCustomClaim | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._inboundTokenClaimName = undefined;
+      this._inboundTokenClaimValueType = undefined;
+      this._authorizingClaimMatchValue.internalValue = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._inboundTokenClaimName = value.inboundTokenClaimName;
+      this._inboundTokenClaimValueType = value.inboundTokenClaimValueType;
+      this._authorizingClaimMatchValue.internalValue = value.authorizingClaimMatchValue;
+    }
+  }
+
+  // inbound_token_claim_name - computed: false, optional: false, required: true
+  private _inboundTokenClaimName?: string; 
+  public get inboundTokenClaimName() {
+    return this.getStringAttribute('inbound_token_claim_name');
+  }
+  public set inboundTokenClaimName(value: string) {
+    this._inboundTokenClaimName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get inboundTokenClaimNameInput() {
+    return this._inboundTokenClaimName;
+  }
+
+  // inbound_token_claim_value_type - computed: false, optional: false, required: true
+  private _inboundTokenClaimValueType?: string; 
+  public get inboundTokenClaimValueType() {
+    return this.getStringAttribute('inbound_token_claim_value_type');
+  }
+  public set inboundTokenClaimValueType(value: string) {
+    this._inboundTokenClaimValueType = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get inboundTokenClaimValueTypeInput() {
+    return this._inboundTokenClaimValueType;
+  }
+
+  // authorizing_claim_match_value - computed: false, optional: true, required: false
+  private _authorizingClaimMatchValue = new BedrockagentcoreGatewayAuthorizerConfigurationCustomJwtAuthorizerCustomClaimAuthorizingClaimMatchValueList(this, "authorizing_claim_match_value", false);
+  public get authorizingClaimMatchValue() {
+    return this._authorizingClaimMatchValue;
+  }
+  public putAuthorizingClaimMatchValue(value: BedrockagentcoreGatewayAuthorizerConfigurationCustomJwtAuthorizerCustomClaimAuthorizingClaimMatchValue[] | cdktn.IResolvable) {
+    this._authorizingClaimMatchValue.internalValue = value;
+  }
+  public resetAuthorizingClaimMatchValue() {
+    this._authorizingClaimMatchValue.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get authorizingClaimMatchValueInput() {
+    return this._authorizingClaimMatchValue.internalValue;
+  }
+}
+
+export class BedrockagentcoreGatewayAuthorizerConfigurationCustomJwtAuthorizerCustomClaimList extends cdktn.ComplexList {
+  public internalValue? : BedrockagentcoreGatewayAuthorizerConfigurationCustomJwtAuthorizerCustomClaim[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): BedrockagentcoreGatewayAuthorizerConfigurationCustomJwtAuthorizerCustomClaimOutputReference {
+    return new BedrockagentcoreGatewayAuthorizerConfigurationCustomJwtAuthorizerCustomClaimOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface BedrockagentcoreGatewayAuthorizerConfigurationCustomJwtAuthorizer {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/bedrockagentcore_gateway#allowed_audience BedrockagentcoreGateway#allowed_audience}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/bedrockagentcore_gateway#allowed_audience BedrockagentcoreGateway#allowed_audience}
   */
   readonly allowedAudience?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/bedrockagentcore_gateway#allowed_clients BedrockagentcoreGateway#allowed_clients}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/bedrockagentcore_gateway#allowed_clients BedrockagentcoreGateway#allowed_clients}
   */
   readonly allowedClients?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/bedrockagentcore_gateway#allowed_scopes BedrockagentcoreGateway#allowed_scopes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/bedrockagentcore_gateway#allowed_scopes BedrockagentcoreGateway#allowed_scopes}
   */
   readonly allowedScopes?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/bedrockagentcore_gateway#discovery_url BedrockagentcoreGateway#discovery_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/bedrockagentcore_gateway#discovery_url BedrockagentcoreGateway#discovery_url}
   */
   readonly discoveryUrl: string;
+  /**
+  * custom_claim block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/bedrockagentcore_gateway#custom_claim BedrockagentcoreGateway#custom_claim}
+  */
+  readonly customClaim?: BedrockagentcoreGatewayAuthorizerConfigurationCustomJwtAuthorizerCustomClaim[] | cdktn.IResolvable;
 }
 
 export function bedrockagentcoreGatewayAuthorizerConfigurationCustomJwtAuthorizerToTerraform(struct?: BedrockagentcoreGatewayAuthorizerConfigurationCustomJwtAuthorizer | cdktn.IResolvable): any {
@@ -179,6 +660,7 @@ export function bedrockagentcoreGatewayAuthorizerConfigurationCustomJwtAuthorize
     allowed_clients: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.allowedClients),
     allowed_scopes: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.allowedScopes),
     discovery_url: cdktn.stringToTerraform(struct!.discoveryUrl),
+    custom_claim: cdktn.listMapper(bedrockagentcoreGatewayAuthorizerConfigurationCustomJwtAuthorizerCustomClaimToTerraform, true)(struct!.customClaim),
   }
 }
 
@@ -212,6 +694,12 @@ export function bedrockagentcoreGatewayAuthorizerConfigurationCustomJwtAuthorize
       isBlock: false,
       type: "simple",
       storageClassType: "string",
+    },
+    custom_claim: {
+      value: cdktn.listMapperHcl(bedrockagentcoreGatewayAuthorizerConfigurationCustomJwtAuthorizerCustomClaimToHclTerraform, true)(struct!.customClaim),
+      isBlock: true,
+      type: "set",
+      storageClassType: "BedrockagentcoreGatewayAuthorizerConfigurationCustomJwtAuthorizerCustomClaimList",
     },
   };
 
@@ -255,6 +743,10 @@ export class BedrockagentcoreGatewayAuthorizerConfigurationCustomJwtAuthorizerOu
       hasAnyValues = true;
       internalValueResult.discoveryUrl = this._discoveryUrl;
     }
+    if (this._customClaim?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.customClaim = this._customClaim?.internalValue;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -266,6 +758,7 @@ export class BedrockagentcoreGatewayAuthorizerConfigurationCustomJwtAuthorizerOu
       this._allowedClients = undefined;
       this._allowedScopes = undefined;
       this._discoveryUrl = undefined;
+      this._customClaim.internalValue = undefined;
     }
     else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
@@ -278,6 +771,7 @@ export class BedrockagentcoreGatewayAuthorizerConfigurationCustomJwtAuthorizerOu
       this._allowedClients = value.allowedClients;
       this._allowedScopes = value.allowedScopes;
       this._discoveryUrl = value.discoveryUrl;
+      this._customClaim.internalValue = value.customClaim;
     }
   }
 
@@ -341,6 +835,22 @@ export class BedrockagentcoreGatewayAuthorizerConfigurationCustomJwtAuthorizerOu
   public get discoveryUrlInput() {
     return this._discoveryUrl;
   }
+
+  // custom_claim - computed: false, optional: true, required: false
+  private _customClaim = new BedrockagentcoreGatewayAuthorizerConfigurationCustomJwtAuthorizerCustomClaimList(this, "custom_claim", true);
+  public get customClaim() {
+    return this._customClaim;
+  }
+  public putCustomClaim(value: BedrockagentcoreGatewayAuthorizerConfigurationCustomJwtAuthorizerCustomClaim[] | cdktn.IResolvable) {
+    this._customClaim.internalValue = value;
+  }
+  public resetCustomClaim() {
+    this._customClaim.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get customClaimInput() {
+    return this._customClaim.internalValue;
+  }
 }
 
 export class BedrockagentcoreGatewayAuthorizerConfigurationCustomJwtAuthorizerList extends cdktn.ComplexList {
@@ -366,7 +876,7 @@ export interface BedrockagentcoreGatewayAuthorizerConfiguration {
   /**
   * custom_jwt_authorizer block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/bedrockagentcore_gateway#custom_jwt_authorizer BedrockagentcoreGateway#custom_jwt_authorizer}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/bedrockagentcore_gateway#custom_jwt_authorizer BedrockagentcoreGateway#custom_jwt_authorizer}
   */
   readonly customJwtAuthorizer?: BedrockagentcoreGatewayAuthorizerConfigurationCustomJwtAuthorizer[] | cdktn.IResolvable;
 }
@@ -482,7 +992,7 @@ export class BedrockagentcoreGatewayAuthorizerConfigurationList extends cdktn.Co
 }
 export interface BedrockagentcoreGatewayInterceptorConfigurationInputConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/bedrockagentcore_gateway#pass_request_headers BedrockagentcoreGateway#pass_request_headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/bedrockagentcore_gateway#pass_request_headers BedrockagentcoreGateway#pass_request_headers}
   */
   readonly passRequestHeaders: boolean | cdktn.IResolvable;
 }
@@ -595,7 +1105,7 @@ export class BedrockagentcoreGatewayInterceptorConfigurationInputConfigurationLi
 }
 export interface BedrockagentcoreGatewayInterceptorConfigurationInterceptorLambda {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/bedrockagentcore_gateway#arn BedrockagentcoreGateway#arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/bedrockagentcore_gateway#arn BedrockagentcoreGateway#arn}
   */
   readonly arn: string;
 }
@@ -710,7 +1220,7 @@ export interface BedrockagentcoreGatewayInterceptorConfigurationInterceptor {
   /**
   * lambda block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/bedrockagentcore_gateway#lambda BedrockagentcoreGateway#lambda}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/bedrockagentcore_gateway#lambda BedrockagentcoreGateway#lambda}
   */
   readonly lambda?: BedrockagentcoreGatewayInterceptorConfigurationInterceptorLambda[] | cdktn.IResolvable;
 }
@@ -826,19 +1336,19 @@ export class BedrockagentcoreGatewayInterceptorConfigurationInterceptorList exte
 }
 export interface BedrockagentcoreGatewayInterceptorConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/bedrockagentcore_gateway#interception_points BedrockagentcoreGateway#interception_points}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/bedrockagentcore_gateway#interception_points BedrockagentcoreGateway#interception_points}
   */
   readonly interceptionPoints: string[];
   /**
   * input_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/bedrockagentcore_gateway#input_configuration BedrockagentcoreGateway#input_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/bedrockagentcore_gateway#input_configuration BedrockagentcoreGateway#input_configuration}
   */
   readonly inputConfiguration?: BedrockagentcoreGatewayInterceptorConfigurationInputConfiguration[] | cdktn.IResolvable;
   /**
   * interceptor block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/bedrockagentcore_gateway#interceptor BedrockagentcoreGateway#interceptor}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/bedrockagentcore_gateway#interceptor BedrockagentcoreGateway#interceptor}
   */
   readonly interceptor?: BedrockagentcoreGatewayInterceptorConfigurationInterceptor[] | cdktn.IResolvable;
 }
@@ -1009,15 +1519,15 @@ export class BedrockagentcoreGatewayInterceptorConfigurationList extends cdktn.C
 }
 export interface BedrockagentcoreGatewayProtocolConfigurationMcp {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/bedrockagentcore_gateway#instructions BedrockagentcoreGateway#instructions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/bedrockagentcore_gateway#instructions BedrockagentcoreGateway#instructions}
   */
   readonly instructions?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/bedrockagentcore_gateway#search_type BedrockagentcoreGateway#search_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/bedrockagentcore_gateway#search_type BedrockagentcoreGateway#search_type}
   */
   readonly searchType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/bedrockagentcore_gateway#supported_versions BedrockagentcoreGateway#supported_versions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/bedrockagentcore_gateway#supported_versions BedrockagentcoreGateway#supported_versions}
   */
   readonly supportedVersions?: string[];
 }
@@ -1193,7 +1703,7 @@ export interface BedrockagentcoreGatewayProtocolConfiguration {
   /**
   * mcp block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/bedrockagentcore_gateway#mcp BedrockagentcoreGateway#mcp}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/bedrockagentcore_gateway#mcp BedrockagentcoreGateway#mcp}
   */
   readonly mcp?: BedrockagentcoreGatewayProtocolConfigurationMcp[] | cdktn.IResolvable;
 }
@@ -1311,19 +1821,19 @@ export interface BedrockagentcoreGatewayTimeouts {
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/bedrockagentcore_gateway#create BedrockagentcoreGateway#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/bedrockagentcore_gateway#create BedrockagentcoreGateway#create}
   */
   readonly create?: string;
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/bedrockagentcore_gateway#delete BedrockagentcoreGateway#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/bedrockagentcore_gateway#delete BedrockagentcoreGateway#delete}
   */
   readonly delete?: string;
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/bedrockagentcore_gateway#update BedrockagentcoreGateway#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/bedrockagentcore_gateway#update BedrockagentcoreGateway#update}
   */
   readonly update?: string;
 }
@@ -1475,7 +1985,7 @@ export class BedrockagentcoreGatewayTimeoutsOutputReference extends cdktn.Comple
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/bedrockagentcore_gateway aws_bedrockagentcore_gateway}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/bedrockagentcore_gateway aws_bedrockagentcore_gateway}
 */
 export class BedrockagentcoreGateway extends cdktn.TerraformResource {
 
@@ -1491,7 +2001,7 @@ export class BedrockagentcoreGateway extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a BedrockagentcoreGateway resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the BedrockagentcoreGateway to import
-  * @param importFromId The id of the existing BedrockagentcoreGateway that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/bedrockagentcore_gateway#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing BedrockagentcoreGateway that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/bedrockagentcore_gateway#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the BedrockagentcoreGateway to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -1503,7 +2013,7 @@ export class BedrockagentcoreGateway extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/bedrockagentcore_gateway aws_bedrockagentcore_gateway} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/bedrockagentcore_gateway aws_bedrockagentcore_gateway} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1514,7 +2024,7 @@ export class BedrockagentcoreGateway extends cdktn.TerraformResource {
       terraformResourceType: 'aws_bedrockagentcore_gateway',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.37.0',
+        providerVersion: '6.38.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

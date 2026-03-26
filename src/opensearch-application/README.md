@@ -1,3 +1,3 @@
 # `aws_opensearch_application`
 
-Refer to the Terraform Registry for docs: [`aws_opensearch_application`](https://registry.terraform.io/providers/hashicorp/aws/6.37.0/docs/resources/opensearch_application).
+Refer to the Terraform Registry for docs: [`aws_opensearch_application`](https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/opensearch_application).
