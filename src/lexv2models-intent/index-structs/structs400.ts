@@ -24,13 +24,13 @@ export interface Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecifi
   /**
   * message block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#message Lexv2ModelsIntent#message}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#message Lexv2ModelsIntent#message}
   */
   readonly message?: Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureConditionalDefaultBranchResponseMessageGroupMessage[] | cdktn.IResolvable;
   /**
   * variation block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#variation Lexv2ModelsIntent#variation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#variation Lexv2ModelsIntent#variation}
   */
   readonly variation?: Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureConditionalDefaultBranchResponseMessageGroupVariation[] | cdktn.IResolvable;
 }
@@ -162,7 +162,7 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -175,13 +175,13 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
 }
 export interface Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureConditionalDefaultBranchResponse {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#allow_interrupt Lexv2ModelsIntent#allow_interrupt}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#allow_interrupt Lexv2ModelsIntent#allow_interrupt}
   */
   readonly allowInterrupt?: boolean | cdktn.IResolvable;
   /**
   * message_group block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#message_group Lexv2ModelsIntent#message_group}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#message_group Lexv2ModelsIntent#message_group}
   */
   readonly messageGroup?: Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureConditionalDefaultBranchResponseMessageGroup[] | cdktn.IResolvable;
 }
@@ -313,7 +313,7 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -328,13 +328,13 @@ export interface Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecifi
   /**
   * next_step block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#next_step Lexv2ModelsIntent#next_step}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#next_step Lexv2ModelsIntent#next_step}
   */
   readonly nextStep?: Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureConditionalDefaultBranchNextStep[] | cdktn.IResolvable;
   /**
   * response block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#response Lexv2ModelsIntent#response}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#response Lexv2ModelsIntent#response}
   */
   readonly response?: Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureConditionalDefaultBranchResponse[] | cdktn.IResolvable;
 }
@@ -466,7 +466,7 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -479,19 +479,19 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
 }
 export interface Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureConditional {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#active Lexv2ModelsIntent#active}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#active Lexv2ModelsIntent#active}
   */
   readonly active: boolean | cdktn.IResolvable;
   /**
   * conditional_branch block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#conditional_branch Lexv2ModelsIntent#conditional_branch}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#conditional_branch Lexv2ModelsIntent#conditional_branch}
   */
   readonly conditionalBranch?: Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureConditionalConditionalBranch[] | cdktn.IResolvable;
   /**
   * default_branch block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#default_branch Lexv2ModelsIntent#default_branch}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#default_branch Lexv2ModelsIntent#default_branch}
   */
   readonly defaultBranch?: Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureConditionalDefaultBranch[] | cdktn.IResolvable;
 }
@@ -649,7 +649,7 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -662,15 +662,15 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
 }
 export interface Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureNextStepDialogAction {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#slot_to_elicit Lexv2ModelsIntent#slot_to_elicit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#slot_to_elicit Lexv2ModelsIntent#slot_to_elicit}
   */
   readonly slotToElicit?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#suppress_next_message Lexv2ModelsIntent#suppress_next_message}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#suppress_next_message Lexv2ModelsIntent#suppress_next_message}
   */
   readonly suppressNextMessage?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#type Lexv2ModelsIntent#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#type Lexv2ModelsIntent#type}
   */
   readonly type: string;
 }
@@ -828,7 +828,7 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -841,7 +841,7 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
 }
 export interface Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureNextStepIntentSlotValue {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#interpreted_value Lexv2ModelsIntent#interpreted_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#interpreted_value Lexv2ModelsIntent#interpreted_value}
   */
   readonly interpretedValue?: string;
 }
@@ -944,7 +944,7 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -957,17 +957,17 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
 }
 export interface Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureNextStepIntentSlot {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#map_block_key Lexv2ModelsIntent#map_block_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#map_block_key Lexv2ModelsIntent#map_block_key}
   */
   readonly mapBlockKey: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#shape Lexv2ModelsIntent#shape}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#shape Lexv2ModelsIntent#shape}
   */
   readonly shape?: string;
   /**
   * value block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#value Lexv2ModelsIntent#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#value Lexv2ModelsIntent#value}
   */
   readonly value?: Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureNextStepIntentSlotValue[] | cdktn.IResolvable;
 }
@@ -1125,7 +1125,7 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1138,13 +1138,13 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
 }
 export interface Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureNextStepIntent {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#name Lexv2ModelsIntent#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#name Lexv2ModelsIntent#name}
   */
   readonly name?: string;
   /**
   * slot block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#slot Lexv2ModelsIntent#slot}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#slot Lexv2ModelsIntent#slot}
   */
   readonly slot?: Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureNextStepIntentSlot[] | cdktn.IResolvable;
 }
@@ -1276,7 +1276,7 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1289,19 +1289,19 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
 }
 export interface Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureNextStep {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#session_attributes Lexv2ModelsIntent#session_attributes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#session_attributes Lexv2ModelsIntent#session_attributes}
   */
   readonly sessionAttributes?: { [key: string]: string };
   /**
   * dialog_action block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#dialog_action Lexv2ModelsIntent#dialog_action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#dialog_action Lexv2ModelsIntent#dialog_action}
   */
   readonly dialogAction?: Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureNextStepDialogAction[] | cdktn.IResolvable;
   /**
   * intent block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#intent Lexv2ModelsIntent#intent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#intent Lexv2ModelsIntent#intent}
   */
   readonly intent?: Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureNextStepIntent[] | cdktn.IResolvable;
 }
@@ -1462,7 +1462,7 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1475,7 +1475,7 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
 }
 export interface Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureResponseMessageGroupMessageCustomPayload {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#value Lexv2ModelsIntent#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#value Lexv2ModelsIntent#value}
   */
   readonly value: string;
 }
@@ -1575,7 +1575,7 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1588,11 +1588,11 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
 }
 export interface Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureResponseMessageGroupMessageImageResponseCardButton {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#text Lexv2ModelsIntent#text}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#text Lexv2ModelsIntent#text}
   */
   readonly text: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#value Lexv2ModelsIntent#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#value Lexv2ModelsIntent#value}
   */
   readonly value: string;
 }
@@ -1718,7 +1718,7 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1731,21 +1731,21 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
 }
 export interface Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureResponseMessageGroupMessageImageResponseCard {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#image_url Lexv2ModelsIntent#image_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#image_url Lexv2ModelsIntent#image_url}
   */
   readonly imageUrl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#subtitle Lexv2ModelsIntent#subtitle}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#subtitle Lexv2ModelsIntent#subtitle}
   */
   readonly subtitle?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#title Lexv2ModelsIntent#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#title Lexv2ModelsIntent#title}
   */
   readonly title: string;
   /**
   * button block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#button Lexv2ModelsIntent#button}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#button Lexv2ModelsIntent#button}
   */
   readonly button?: Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureResponseMessageGroupMessageImageResponseCardButton[] | cdktn.IResolvable;
 }
@@ -1932,7 +1932,7 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1945,7 +1945,7 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
 }
 export interface Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureResponseMessageGroupMessagePlainTextMessage {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#value Lexv2ModelsIntent#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#value Lexv2ModelsIntent#value}
   */
   readonly value: string;
 }
@@ -2045,7 +2045,7 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2058,7 +2058,7 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
 }
 export interface Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureResponseMessageGroupMessageSsmlMessage {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#value Lexv2ModelsIntent#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#value Lexv2ModelsIntent#value}
   */
   readonly value: string;
 }
@@ -2158,7 +2158,7 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2173,25 +2173,25 @@ export interface Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecifi
   /**
   * custom_payload block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#custom_payload Lexv2ModelsIntent#custom_payload}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#custom_payload Lexv2ModelsIntent#custom_payload}
   */
   readonly customPayload?: Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureResponseMessageGroupMessageCustomPayload[] | cdktn.IResolvable;
   /**
   * image_response_card block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#image_response_card Lexv2ModelsIntent#image_response_card}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#image_response_card Lexv2ModelsIntent#image_response_card}
   */
   readonly imageResponseCard?: Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureResponseMessageGroupMessageImageResponseCard[] | cdktn.IResolvable;
   /**
   * plain_text_message block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#plain_text_message Lexv2ModelsIntent#plain_text_message}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#plain_text_message Lexv2ModelsIntent#plain_text_message}
   */
   readonly plainTextMessage?: Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureResponseMessageGroupMessagePlainTextMessage[] | cdktn.IResolvable;
   /**
   * ssml_message block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#ssml_message Lexv2ModelsIntent#ssml_message}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#ssml_message Lexv2ModelsIntent#ssml_message}
   */
   readonly ssmlMessage?: Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureResponseMessageGroupMessageSsmlMessage[] | cdktn.IResolvable;
 }
@@ -2381,7 +2381,7 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2394,7 +2394,7 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
 }
 export interface Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureResponseMessageGroupVariationCustomPayload {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#value Lexv2ModelsIntent#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#value Lexv2ModelsIntent#value}
   */
   readonly value: string;
 }
@@ -2494,7 +2494,7 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2507,11 +2507,11 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
 }
 export interface Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureResponseMessageGroupVariationImageResponseCardButton {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#text Lexv2ModelsIntent#text}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#text Lexv2ModelsIntent#text}
   */
   readonly text: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#value Lexv2ModelsIntent#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#value Lexv2ModelsIntent#value}
   */
   readonly value: string;
 }
@@ -2637,7 +2637,7 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2650,21 +2650,21 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
 }
 export interface Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureResponseMessageGroupVariationImageResponseCard {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#image_url Lexv2ModelsIntent#image_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#image_url Lexv2ModelsIntent#image_url}
   */
   readonly imageUrl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#subtitle Lexv2ModelsIntent#subtitle}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#subtitle Lexv2ModelsIntent#subtitle}
   */
   readonly subtitle?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#title Lexv2ModelsIntent#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#title Lexv2ModelsIntent#title}
   */
   readonly title: string;
   /**
   * button block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#button Lexv2ModelsIntent#button}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#button Lexv2ModelsIntent#button}
   */
   readonly button?: Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureResponseMessageGroupVariationImageResponseCardButton[] | cdktn.IResolvable;
 }
@@ -2851,7 +2851,7 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2864,7 +2864,7 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
 }
 export interface Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureResponseMessageGroupVariationPlainTextMessage {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#value Lexv2ModelsIntent#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#value Lexv2ModelsIntent#value}
   */
   readonly value: string;
 }
@@ -2964,7 +2964,7 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2977,7 +2977,7 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
 }
 export interface Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureResponseMessageGroupVariationSsmlMessage {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#value Lexv2ModelsIntent#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#value Lexv2ModelsIntent#value}
   */
   readonly value: string;
 }
@@ -3077,7 +3077,7 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3092,25 +3092,25 @@ export interface Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecifi
   /**
   * custom_payload block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#custom_payload Lexv2ModelsIntent#custom_payload}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#custom_payload Lexv2ModelsIntent#custom_payload}
   */
   readonly customPayload?: Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureResponseMessageGroupVariationCustomPayload[] | cdktn.IResolvable;
   /**
   * image_response_card block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#image_response_card Lexv2ModelsIntent#image_response_card}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#image_response_card Lexv2ModelsIntent#image_response_card}
   */
   readonly imageResponseCard?: Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureResponseMessageGroupVariationImageResponseCard[] | cdktn.IResolvable;
   /**
   * plain_text_message block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#plain_text_message Lexv2ModelsIntent#plain_text_message}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#plain_text_message Lexv2ModelsIntent#plain_text_message}
   */
   readonly plainTextMessage?: Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureResponseMessageGroupVariationPlainTextMessage[] | cdktn.IResolvable;
   /**
   * ssml_message block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#ssml_message Lexv2ModelsIntent#ssml_message}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#ssml_message Lexv2ModelsIntent#ssml_message}
   */
   readonly ssmlMessage?: Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureResponseMessageGroupVariationSsmlMessage[] | cdktn.IResolvable;
 }
@@ -3300,7 +3300,7 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3315,13 +3315,13 @@ export interface Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecifi
   /**
   * message block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#message Lexv2ModelsIntent#message}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#message Lexv2ModelsIntent#message}
   */
   readonly message?: Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureResponseMessageGroupMessage[] | cdktn.IResolvable;
   /**
   * variation block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#variation Lexv2ModelsIntent#variation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#variation Lexv2ModelsIntent#variation}
   */
   readonly variation?: Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureResponseMessageGroupVariation[] | cdktn.IResolvable;
 }
@@ -3453,7 +3453,7 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3466,13 +3466,13 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
 }
 export interface Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureResponse {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#allow_interrupt Lexv2ModelsIntent#allow_interrupt}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#allow_interrupt Lexv2ModelsIntent#allow_interrupt}
   */
   readonly allowInterrupt?: boolean | cdktn.IResolvable;
   /**
   * message_group block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#message_group Lexv2ModelsIntent#message_group}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#message_group Lexv2ModelsIntent#message_group}
   */
   readonly messageGroup?: Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationFailureResponseMessageGroup[] | cdktn.IResolvable;
 }
@@ -3604,7 +3604,7 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3617,7 +3617,7 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
 }
 export interface Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessConditionalConditionalBranchCondition {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#expression_string Lexv2ModelsIntent#expression_string}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#expression_string Lexv2ModelsIntent#expression_string}
   */
   readonly expressionString: string;
 }
@@ -3717,7 +3717,7 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3730,15 +3730,15 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
 }
 export interface Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessConditionalConditionalBranchNextStepDialogAction {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#slot_to_elicit Lexv2ModelsIntent#slot_to_elicit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#slot_to_elicit Lexv2ModelsIntent#slot_to_elicit}
   */
   readonly slotToElicit?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#suppress_next_message Lexv2ModelsIntent#suppress_next_message}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#suppress_next_message Lexv2ModelsIntent#suppress_next_message}
   */
   readonly suppressNextMessage?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#type Lexv2ModelsIntent#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#type Lexv2ModelsIntent#type}
   */
   readonly type: string;
 }
@@ -3896,7 +3896,7 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3909,7 +3909,7 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
 }
 export interface Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessConditionalConditionalBranchNextStepIntentSlotValue {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#interpreted_value Lexv2ModelsIntent#interpreted_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#interpreted_value Lexv2ModelsIntent#interpreted_value}
   */
   readonly interpretedValue?: string;
 }
@@ -4012,7 +4012,7 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -4025,17 +4025,17 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
 }
 export interface Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessConditionalConditionalBranchNextStepIntentSlot {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#map_block_key Lexv2ModelsIntent#map_block_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#map_block_key Lexv2ModelsIntent#map_block_key}
   */
   readonly mapBlockKey: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#shape Lexv2ModelsIntent#shape}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#shape Lexv2ModelsIntent#shape}
   */
   readonly shape?: string;
   /**
   * value block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#value Lexv2ModelsIntent#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#value Lexv2ModelsIntent#value}
   */
   readonly value?: Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessConditionalConditionalBranchNextStepIntentSlotValue[] | cdktn.IResolvable;
 }
@@ -4193,7 +4193,7 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -4206,13 +4206,13 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
 }
 export interface Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessConditionalConditionalBranchNextStepIntent {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#name Lexv2ModelsIntent#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#name Lexv2ModelsIntent#name}
   */
   readonly name?: string;
   /**
   * slot block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#slot Lexv2ModelsIntent#slot}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#slot Lexv2ModelsIntent#slot}
   */
   readonly slot?: Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessConditionalConditionalBranchNextStepIntentSlot[] | cdktn.IResolvable;
 }
@@ -4344,7 +4344,7 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -4357,19 +4357,19 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
 }
 export interface Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessConditionalConditionalBranchNextStep {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#session_attributes Lexv2ModelsIntent#session_attributes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#session_attributes Lexv2ModelsIntent#session_attributes}
   */
   readonly sessionAttributes?: { [key: string]: string };
   /**
   * dialog_action block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#dialog_action Lexv2ModelsIntent#dialog_action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#dialog_action Lexv2ModelsIntent#dialog_action}
   */
   readonly dialogAction?: Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessConditionalConditionalBranchNextStepDialogAction[] | cdktn.IResolvable;
   /**
   * intent block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#intent Lexv2ModelsIntent#intent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#intent Lexv2ModelsIntent#intent}
   */
   readonly intent?: Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessConditionalConditionalBranchNextStepIntent[] | cdktn.IResolvable;
 }
@@ -4530,7 +4530,7 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -4543,7 +4543,7 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
 }
 export interface Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessConditionalConditionalBranchResponseMessageGroupMessageCustomPayload {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#value Lexv2ModelsIntent#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#value Lexv2ModelsIntent#value}
   */
   readonly value: string;
 }
@@ -4643,7 +4643,7 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -4656,11 +4656,11 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
 }
 export interface Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessConditionalConditionalBranchResponseMessageGroupMessageImageResponseCardButton {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#text Lexv2ModelsIntent#text}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#text Lexv2ModelsIntent#text}
   */
   readonly text: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#value Lexv2ModelsIntent#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#value Lexv2ModelsIntent#value}
   */
   readonly value: string;
 }
@@ -4786,7 +4786,7 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -4799,21 +4799,21 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
 }
 export interface Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessConditionalConditionalBranchResponseMessageGroupMessageImageResponseCard {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#image_url Lexv2ModelsIntent#image_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#image_url Lexv2ModelsIntent#image_url}
   */
   readonly imageUrl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#subtitle Lexv2ModelsIntent#subtitle}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#subtitle Lexv2ModelsIntent#subtitle}
   */
   readonly subtitle?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#title Lexv2ModelsIntent#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#title Lexv2ModelsIntent#title}
   */
   readonly title: string;
   /**
   * button block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#button Lexv2ModelsIntent#button}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#button Lexv2ModelsIntent#button}
   */
   readonly button?: Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessConditionalConditionalBranchResponseMessageGroupMessageImageResponseCardButton[] | cdktn.IResolvable;
 }
@@ -5000,7 +5000,7 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -5013,7 +5013,7 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
 }
 export interface Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessConditionalConditionalBranchResponseMessageGroupMessagePlainTextMessage {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#value Lexv2ModelsIntent#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#value Lexv2ModelsIntent#value}
   */
   readonly value: string;
 }
@@ -5113,7 +5113,7 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -5126,7 +5126,7 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
 }
 export interface Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessConditionalConditionalBranchResponseMessageGroupMessageSsmlMessage {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#value Lexv2ModelsIntent#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#value Lexv2ModelsIntent#value}
   */
   readonly value: string;
 }
@@ -5226,7 +5226,7 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -5241,25 +5241,25 @@ export interface Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecifi
   /**
   * custom_payload block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#custom_payload Lexv2ModelsIntent#custom_payload}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#custom_payload Lexv2ModelsIntent#custom_payload}
   */
   readonly customPayload?: Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessConditionalConditionalBranchResponseMessageGroupMessageCustomPayload[] | cdktn.IResolvable;
   /**
   * image_response_card block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#image_response_card Lexv2ModelsIntent#image_response_card}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#image_response_card Lexv2ModelsIntent#image_response_card}
   */
   readonly imageResponseCard?: Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessConditionalConditionalBranchResponseMessageGroupMessageImageResponseCard[] | cdktn.IResolvable;
   /**
   * plain_text_message block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#plain_text_message Lexv2ModelsIntent#plain_text_message}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#plain_text_message Lexv2ModelsIntent#plain_text_message}
   */
   readonly plainTextMessage?: Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessConditionalConditionalBranchResponseMessageGroupMessagePlainTextMessage[] | cdktn.IResolvable;
   /**
   * ssml_message block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#ssml_message Lexv2ModelsIntent#ssml_message}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#ssml_message Lexv2ModelsIntent#ssml_message}
   */
   readonly ssmlMessage?: Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessConditionalConditionalBranchResponseMessageGroupMessageSsmlMessage[] | cdktn.IResolvable;
 }
@@ -5449,7 +5449,7 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -5462,7 +5462,7 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
 }
 export interface Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessConditionalConditionalBranchResponseMessageGroupVariationCustomPayload {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#value Lexv2ModelsIntent#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#value Lexv2ModelsIntent#value}
   */
   readonly value: string;
 }
@@ -5562,7 +5562,7 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -5575,11 +5575,11 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
 }
 export interface Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessConditionalConditionalBranchResponseMessageGroupVariationImageResponseCardButton {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#text Lexv2ModelsIntent#text}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#text Lexv2ModelsIntent#text}
   */
   readonly text: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#value Lexv2ModelsIntent#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#value Lexv2ModelsIntent#value}
   */
   readonly value: string;
 }
@@ -5705,7 +5705,7 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -5718,21 +5718,21 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
 }
 export interface Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessConditionalConditionalBranchResponseMessageGroupVariationImageResponseCard {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#image_url Lexv2ModelsIntent#image_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#image_url Lexv2ModelsIntent#image_url}
   */
   readonly imageUrl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#subtitle Lexv2ModelsIntent#subtitle}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#subtitle Lexv2ModelsIntent#subtitle}
   */
   readonly subtitle?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#title Lexv2ModelsIntent#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#title Lexv2ModelsIntent#title}
   */
   readonly title: string;
   /**
   * button block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#button Lexv2ModelsIntent#button}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#button Lexv2ModelsIntent#button}
   */
   readonly button?: Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessConditionalConditionalBranchResponseMessageGroupVariationImageResponseCardButton[] | cdktn.IResolvable;
 }
@@ -5919,7 +5919,7 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -5932,7 +5932,7 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
 }
 export interface Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessConditionalConditionalBranchResponseMessageGroupVariationPlainTextMessage {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#value Lexv2ModelsIntent#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#value Lexv2ModelsIntent#value}
   */
   readonly value: string;
 }
@@ -6032,7 +6032,7 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -6045,7 +6045,7 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
 }
 export interface Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessConditionalConditionalBranchResponseMessageGroupVariationSsmlMessage {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#value Lexv2ModelsIntent#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#value Lexv2ModelsIntent#value}
   */
   readonly value: string;
 }
@@ -6145,7 +6145,7 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -6160,25 +6160,25 @@ export interface Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecifi
   /**
   * custom_payload block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#custom_payload Lexv2ModelsIntent#custom_payload}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#custom_payload Lexv2ModelsIntent#custom_payload}
   */
   readonly customPayload?: Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessConditionalConditionalBranchResponseMessageGroupVariationCustomPayload[] | cdktn.IResolvable;
   /**
   * image_response_card block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#image_response_card Lexv2ModelsIntent#image_response_card}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#image_response_card Lexv2ModelsIntent#image_response_card}
   */
   readonly imageResponseCard?: Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessConditionalConditionalBranchResponseMessageGroupVariationImageResponseCard[] | cdktn.IResolvable;
   /**
   * plain_text_message block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#plain_text_message Lexv2ModelsIntent#plain_text_message}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#plain_text_message Lexv2ModelsIntent#plain_text_message}
   */
   readonly plainTextMessage?: Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessConditionalConditionalBranchResponseMessageGroupVariationPlainTextMessage[] | cdktn.IResolvable;
   /**
   * ssml_message block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#ssml_message Lexv2ModelsIntent#ssml_message}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#ssml_message Lexv2ModelsIntent#ssml_message}
   */
   readonly ssmlMessage?: Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessConditionalConditionalBranchResponseMessageGroupVariationSsmlMessage[] | cdktn.IResolvable;
 }
@@ -6368,7 +6368,7 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -6383,13 +6383,13 @@ export interface Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecifi
   /**
   * message block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#message Lexv2ModelsIntent#message}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#message Lexv2ModelsIntent#message}
   */
   readonly message?: Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessConditionalConditionalBranchResponseMessageGroupMessage[] | cdktn.IResolvable;
   /**
   * variation block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#variation Lexv2ModelsIntent#variation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#variation Lexv2ModelsIntent#variation}
   */
   readonly variation?: Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessConditionalConditionalBranchResponseMessageGroupVariation[] | cdktn.IResolvable;
 }
@@ -6521,7 +6521,7 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -6534,13 +6534,13 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
 }
 export interface Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessConditionalConditionalBranchResponse {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#allow_interrupt Lexv2ModelsIntent#allow_interrupt}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#allow_interrupt Lexv2ModelsIntent#allow_interrupt}
   */
   readonly allowInterrupt?: boolean | cdktn.IResolvable;
   /**
   * message_group block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#message_group Lexv2ModelsIntent#message_group}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#message_group Lexv2ModelsIntent#message_group}
   */
   readonly messageGroup?: Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessConditionalConditionalBranchResponseMessageGroup[] | cdktn.IResolvable;
 }
@@ -6672,7 +6672,7 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -6685,25 +6685,25 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
 }
 export interface Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessConditionalConditionalBranch {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#name Lexv2ModelsIntent#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#name Lexv2ModelsIntent#name}
   */
   readonly name: string;
   /**
   * condition block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#condition Lexv2ModelsIntent#condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#condition Lexv2ModelsIntent#condition}
   */
   readonly condition?: Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessConditionalConditionalBranchCondition[] | cdktn.IResolvable;
   /**
   * next_step block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#next_step Lexv2ModelsIntent#next_step}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#next_step Lexv2ModelsIntent#next_step}
   */
   readonly nextStep?: Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessConditionalConditionalBranchNextStep[] | cdktn.IResolvable;
   /**
   * response block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#response Lexv2ModelsIntent#response}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#response Lexv2ModelsIntent#response}
   */
   readonly response?: Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessConditionalConditionalBranchResponse[] | cdktn.IResolvable;
 }
@@ -6890,7 +6890,7 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -6903,15 +6903,15 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
 }
 export interface Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessConditionalDefaultBranchNextStepDialogAction {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#slot_to_elicit Lexv2ModelsIntent#slot_to_elicit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#slot_to_elicit Lexv2ModelsIntent#slot_to_elicit}
   */
   readonly slotToElicit?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#suppress_next_message Lexv2ModelsIntent#suppress_next_message}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#suppress_next_message Lexv2ModelsIntent#suppress_next_message}
   */
   readonly suppressNextMessage?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#type Lexv2ModelsIntent#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#type Lexv2ModelsIntent#type}
   */
   readonly type: string;
 }
@@ -7069,7 +7069,7 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -7082,7 +7082,7 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
 }
 export interface Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessConditionalDefaultBranchNextStepIntentSlotValue {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#interpreted_value Lexv2ModelsIntent#interpreted_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#interpreted_value Lexv2ModelsIntent#interpreted_value}
   */
   readonly interpretedValue?: string;
 }
@@ -7185,7 +7185,7 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -7198,17 +7198,17 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
 }
 export interface Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessConditionalDefaultBranchNextStepIntentSlot {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#map_block_key Lexv2ModelsIntent#map_block_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#map_block_key Lexv2ModelsIntent#map_block_key}
   */
   readonly mapBlockKey: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#shape Lexv2ModelsIntent#shape}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#shape Lexv2ModelsIntent#shape}
   */
   readonly shape?: string;
   /**
   * value block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#value Lexv2ModelsIntent#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#value Lexv2ModelsIntent#value}
   */
   readonly value?: Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessConditionalDefaultBranchNextStepIntentSlotValue[] | cdktn.IResolvable;
 }
@@ -7366,7 +7366,7 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -7379,13 +7379,13 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
 }
 export interface Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessConditionalDefaultBranchNextStepIntent {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#name Lexv2ModelsIntent#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#name Lexv2ModelsIntent#name}
   */
   readonly name?: string;
   /**
   * slot block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#slot Lexv2ModelsIntent#slot}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#slot Lexv2ModelsIntent#slot}
   */
   readonly slot?: Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessConditionalDefaultBranchNextStepIntentSlot[] | cdktn.IResolvable;
 }
@@ -7517,7 +7517,7 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -7530,19 +7530,19 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
 }
 export interface Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessConditionalDefaultBranchNextStep {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#session_attributes Lexv2ModelsIntent#session_attributes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#session_attributes Lexv2ModelsIntent#session_attributes}
   */
   readonly sessionAttributes?: { [key: string]: string };
   /**
   * dialog_action block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#dialog_action Lexv2ModelsIntent#dialog_action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#dialog_action Lexv2ModelsIntent#dialog_action}
   */
   readonly dialogAction?: Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessConditionalDefaultBranchNextStepDialogAction[] | cdktn.IResolvable;
   /**
   * intent block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#intent Lexv2ModelsIntent#intent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#intent Lexv2ModelsIntent#intent}
   */
   readonly intent?: Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessConditionalDefaultBranchNextStepIntent[] | cdktn.IResolvable;
 }
@@ -7703,7 +7703,7 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -7716,7 +7716,7 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
 }
 export interface Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessConditionalDefaultBranchResponseMessageGroupMessageCustomPayload {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#value Lexv2ModelsIntent#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#value Lexv2ModelsIntent#value}
   */
   readonly value: string;
 }
@@ -7816,7 +7816,7 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -7829,11 +7829,11 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
 }
 export interface Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessConditionalDefaultBranchResponseMessageGroupMessageImageResponseCardButton {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#text Lexv2ModelsIntent#text}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#text Lexv2ModelsIntent#text}
   */
   readonly text: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#value Lexv2ModelsIntent#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#value Lexv2ModelsIntent#value}
   */
   readonly value: string;
 }
@@ -7959,7 +7959,7 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -7972,21 +7972,21 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
 }
 export interface Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessConditionalDefaultBranchResponseMessageGroupMessageImageResponseCard {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#image_url Lexv2ModelsIntent#image_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#image_url Lexv2ModelsIntent#image_url}
   */
   readonly imageUrl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#subtitle Lexv2ModelsIntent#subtitle}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#subtitle Lexv2ModelsIntent#subtitle}
   */
   readonly subtitle?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#title Lexv2ModelsIntent#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#title Lexv2ModelsIntent#title}
   */
   readonly title: string;
   /**
   * button block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#button Lexv2ModelsIntent#button}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#button Lexv2ModelsIntent#button}
   */
   readonly button?: Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessConditionalDefaultBranchResponseMessageGroupMessageImageResponseCardButton[] | cdktn.IResolvable;
 }
@@ -8173,7 +8173,7 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -8186,7 +8186,7 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
 }
 export interface Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessConditionalDefaultBranchResponseMessageGroupMessagePlainTextMessage {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#value Lexv2ModelsIntent#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#value Lexv2ModelsIntent#value}
   */
   readonly value: string;
 }
@@ -8286,7 +8286,7 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -8299,7 +8299,7 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
 }
 export interface Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessConditionalDefaultBranchResponseMessageGroupMessageSsmlMessage {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#value Lexv2ModelsIntent#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#value Lexv2ModelsIntent#value}
   */
   readonly value: string;
 }
@@ -8399,7 +8399,7 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -8414,25 +8414,25 @@ export interface Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecifi
   /**
   * custom_payload block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#custom_payload Lexv2ModelsIntent#custom_payload}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#custom_payload Lexv2ModelsIntent#custom_payload}
   */
   readonly customPayload?: Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessConditionalDefaultBranchResponseMessageGroupMessageCustomPayload[] | cdktn.IResolvable;
   /**
   * image_response_card block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#image_response_card Lexv2ModelsIntent#image_response_card}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#image_response_card Lexv2ModelsIntent#image_response_card}
   */
   readonly imageResponseCard?: Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessConditionalDefaultBranchResponseMessageGroupMessageImageResponseCard[] | cdktn.IResolvable;
   /**
   * plain_text_message block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#plain_text_message Lexv2ModelsIntent#plain_text_message}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#plain_text_message Lexv2ModelsIntent#plain_text_message}
   */
   readonly plainTextMessage?: Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessConditionalDefaultBranchResponseMessageGroupMessagePlainTextMessage[] | cdktn.IResolvable;
   /**
   * ssml_message block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#ssml_message Lexv2ModelsIntent#ssml_message}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#ssml_message Lexv2ModelsIntent#ssml_message}
   */
   readonly ssmlMessage?: Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessConditionalDefaultBranchResponseMessageGroupMessageSsmlMessage[] | cdktn.IResolvable;
 }
@@ -8622,7 +8622,7 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -8635,7 +8635,7 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
 }
 export interface Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessConditionalDefaultBranchResponseMessageGroupVariationCustomPayload {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#value Lexv2ModelsIntent#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#value Lexv2ModelsIntent#value}
   */
   readonly value: string;
 }
@@ -8735,7 +8735,7 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -8748,11 +8748,11 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
 }
 export interface Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessConditionalDefaultBranchResponseMessageGroupVariationImageResponseCardButton {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#text Lexv2ModelsIntent#text}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#text Lexv2ModelsIntent#text}
   */
   readonly text: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#value Lexv2ModelsIntent#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#value Lexv2ModelsIntent#value}
   */
   readonly value: string;
 }
@@ -8878,7 +8878,7 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -8891,21 +8891,21 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
 }
 export interface Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessConditionalDefaultBranchResponseMessageGroupVariationImageResponseCard {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#image_url Lexv2ModelsIntent#image_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#image_url Lexv2ModelsIntent#image_url}
   */
   readonly imageUrl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#subtitle Lexv2ModelsIntent#subtitle}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#subtitle Lexv2ModelsIntent#subtitle}
   */
   readonly subtitle?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#title Lexv2ModelsIntent#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#title Lexv2ModelsIntent#title}
   */
   readonly title: string;
   /**
   * button block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#button Lexv2ModelsIntent#button}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#button Lexv2ModelsIntent#button}
   */
   readonly button?: Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessConditionalDefaultBranchResponseMessageGroupVariationImageResponseCardButton[] | cdktn.IResolvable;
 }
@@ -9092,7 +9092,7 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -9105,7 +9105,7 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
 }
 export interface Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessConditionalDefaultBranchResponseMessageGroupVariationPlainTextMessage {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#value Lexv2ModelsIntent#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#value Lexv2ModelsIntent#value}
   */
   readonly value: string;
 }
@@ -9205,7 +9205,7 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -9218,7 +9218,7 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
 }
 export interface Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessConditionalDefaultBranchResponseMessageGroupVariationSsmlMessage {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#value Lexv2ModelsIntent#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#value Lexv2ModelsIntent#value}
   */
   readonly value: string;
 }
@@ -9318,7 +9318,7 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -9333,25 +9333,25 @@ export interface Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecifi
   /**
   * custom_payload block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#custom_payload Lexv2ModelsIntent#custom_payload}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#custom_payload Lexv2ModelsIntent#custom_payload}
   */
   readonly customPayload?: Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessConditionalDefaultBranchResponseMessageGroupVariationCustomPayload[] | cdktn.IResolvable;
   /**
   * image_response_card block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#image_response_card Lexv2ModelsIntent#image_response_card}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#image_response_card Lexv2ModelsIntent#image_response_card}
   */
   readonly imageResponseCard?: Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessConditionalDefaultBranchResponseMessageGroupVariationImageResponseCard[] | cdktn.IResolvable;
   /**
   * plain_text_message block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#plain_text_message Lexv2ModelsIntent#plain_text_message}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#plain_text_message Lexv2ModelsIntent#plain_text_message}
   */
   readonly plainTextMessage?: Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessConditionalDefaultBranchResponseMessageGroupVariationPlainTextMessage[] | cdktn.IResolvable;
   /**
   * ssml_message block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#ssml_message Lexv2ModelsIntent#ssml_message}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#ssml_message Lexv2ModelsIntent#ssml_message}
   */
   readonly ssmlMessage?: Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessConditionalDefaultBranchResponseMessageGroupVariationSsmlMessage[] | cdktn.IResolvable;
 }
@@ -9541,7 +9541,7 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -9556,13 +9556,13 @@ export interface Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecifi
   /**
   * message block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#message Lexv2ModelsIntent#message}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#message Lexv2ModelsIntent#message}
   */
   readonly message?: Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessConditionalDefaultBranchResponseMessageGroupMessage[] | cdktn.IResolvable;
   /**
   * variation block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#variation Lexv2ModelsIntent#variation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#variation Lexv2ModelsIntent#variation}
   */
   readonly variation?: Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessConditionalDefaultBranchResponseMessageGroupVariation[] | cdktn.IResolvable;
 }
@@ -9694,7 +9694,7 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -9707,13 +9707,13 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
 }
 export interface Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessConditionalDefaultBranchResponse {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#allow_interrupt Lexv2ModelsIntent#allow_interrupt}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#allow_interrupt Lexv2ModelsIntent#allow_interrupt}
   */
   readonly allowInterrupt?: boolean | cdktn.IResolvable;
   /**
   * message_group block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#message_group Lexv2ModelsIntent#message_group}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#message_group Lexv2ModelsIntent#message_group}
   */
   readonly messageGroup?: Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessConditionalDefaultBranchResponseMessageGroup[] | cdktn.IResolvable;
 }
@@ -9845,7 +9845,7 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -9860,13 +9860,13 @@ export interface Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecifi
   /**
   * next_step block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#next_step Lexv2ModelsIntent#next_step}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#next_step Lexv2ModelsIntent#next_step}
   */
   readonly nextStep?: Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessConditionalDefaultBranchNextStep[] | cdktn.IResolvable;
   /**
   * response block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#response Lexv2ModelsIntent#response}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#response Lexv2ModelsIntent#response}
   */
   readonly response?: Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessConditionalDefaultBranchResponse[] | cdktn.IResolvable;
 }
@@ -9998,7 +9998,7 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -10011,19 +10011,19 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
 }
 export interface Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessConditional {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#active Lexv2ModelsIntent#active}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#active Lexv2ModelsIntent#active}
   */
   readonly active: boolean | cdktn.IResolvable;
   /**
   * conditional_branch block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#conditional_branch Lexv2ModelsIntent#conditional_branch}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#conditional_branch Lexv2ModelsIntent#conditional_branch}
   */
   readonly conditionalBranch?: Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessConditionalConditionalBranch[] | cdktn.IResolvable;
   /**
   * default_branch block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#default_branch Lexv2ModelsIntent#default_branch}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#default_branch Lexv2ModelsIntent#default_branch}
   */
   readonly defaultBranch?: Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessConditionalDefaultBranch[] | cdktn.IResolvable;
 }
@@ -10181,7 +10181,7 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -10194,15 +10194,15 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
 }
 export interface Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessNextStepDialogAction {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#slot_to_elicit Lexv2ModelsIntent#slot_to_elicit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#slot_to_elicit Lexv2ModelsIntent#slot_to_elicit}
   */
   readonly slotToElicit?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#suppress_next_message Lexv2ModelsIntent#suppress_next_message}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#suppress_next_message Lexv2ModelsIntent#suppress_next_message}
   */
   readonly suppressNextMessage?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#type Lexv2ModelsIntent#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#type Lexv2ModelsIntent#type}
   */
   readonly type: string;
 }
@@ -10360,7 +10360,7 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -10373,7 +10373,7 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
 }
 export interface Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessNextStepIntentSlotValue {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#interpreted_value Lexv2ModelsIntent#interpreted_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#interpreted_value Lexv2ModelsIntent#interpreted_value}
   */
   readonly interpretedValue?: string;
 }
@@ -10476,7 +10476,7 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -10489,17 +10489,17 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
 }
 export interface Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessNextStepIntentSlot {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#map_block_key Lexv2ModelsIntent#map_block_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#map_block_key Lexv2ModelsIntent#map_block_key}
   */
   readonly mapBlockKey: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#shape Lexv2ModelsIntent#shape}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#shape Lexv2ModelsIntent#shape}
   */
   readonly shape?: string;
   /**
   * value block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#value Lexv2ModelsIntent#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#value Lexv2ModelsIntent#value}
   */
   readonly value?: Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessNextStepIntentSlotValue[] | cdktn.IResolvable;
 }
@@ -10657,7 +10657,7 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -10670,13 +10670,13 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
 }
 export interface Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessNextStepIntent {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#name Lexv2ModelsIntent#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#name Lexv2ModelsIntent#name}
   */
   readonly name?: string;
   /**
   * slot block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#slot Lexv2ModelsIntent#slot}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#slot Lexv2ModelsIntent#slot}
   */
   readonly slot?: Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessNextStepIntentSlot[] | cdktn.IResolvable;
 }
@@ -10808,7 +10808,7 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -10821,19 +10821,19 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
 }
 export interface Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessNextStep {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#session_attributes Lexv2ModelsIntent#session_attributes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#session_attributes Lexv2ModelsIntent#session_attributes}
   */
   readonly sessionAttributes?: { [key: string]: string };
   /**
   * dialog_action block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#dialog_action Lexv2ModelsIntent#dialog_action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#dialog_action Lexv2ModelsIntent#dialog_action}
   */
   readonly dialogAction?: Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessNextStepDialogAction[] | cdktn.IResolvable;
   /**
   * intent block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#intent Lexv2ModelsIntent#intent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#intent Lexv2ModelsIntent#intent}
   */
   readonly intent?: Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessNextStepIntent[] | cdktn.IResolvable;
 }
@@ -10994,7 +10994,7 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -11007,7 +11007,7 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
 }
 export interface Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessResponseMessageGroupMessageCustomPayload {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#value Lexv2ModelsIntent#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#value Lexv2ModelsIntent#value}
   */
   readonly value: string;
 }
@@ -11107,7 +11107,7 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -11120,11 +11120,11 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
 }
 export interface Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessResponseMessageGroupMessageImageResponseCardButton {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#text Lexv2ModelsIntent#text}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#text Lexv2ModelsIntent#text}
   */
   readonly text: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#value Lexv2ModelsIntent#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#value Lexv2ModelsIntent#value}
   */
   readonly value: string;
 }
@@ -11250,7 +11250,7 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -11263,21 +11263,21 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
 }
 export interface Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessResponseMessageGroupMessageImageResponseCard {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#image_url Lexv2ModelsIntent#image_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#image_url Lexv2ModelsIntent#image_url}
   */
   readonly imageUrl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#subtitle Lexv2ModelsIntent#subtitle}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#subtitle Lexv2ModelsIntent#subtitle}
   */
   readonly subtitle?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#title Lexv2ModelsIntent#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#title Lexv2ModelsIntent#title}
   */
   readonly title: string;
   /**
   * button block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#button Lexv2ModelsIntent#button}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#button Lexv2ModelsIntent#button}
   */
   readonly button?: Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessResponseMessageGroupMessageImageResponseCardButton[] | cdktn.IResolvable;
 }
@@ -11464,7 +11464,7 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -11477,7 +11477,7 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
 }
 export interface Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessResponseMessageGroupMessagePlainTextMessage {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#value Lexv2ModelsIntent#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#value Lexv2ModelsIntent#value}
   */
   readonly value: string;
 }
@@ -11577,7 +11577,7 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -11590,7 +11590,7 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
 }
 export interface Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessResponseMessageGroupMessageSsmlMessage {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#value Lexv2ModelsIntent#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#value Lexv2ModelsIntent#value}
   */
   readonly value: string;
 }
@@ -11690,7 +11690,7 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -11705,25 +11705,25 @@ export interface Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecifi
   /**
   * custom_payload block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#custom_payload Lexv2ModelsIntent#custom_payload}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#custom_payload Lexv2ModelsIntent#custom_payload}
   */
   readonly customPayload?: Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessResponseMessageGroupMessageCustomPayload[] | cdktn.IResolvable;
   /**
   * image_response_card block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#image_response_card Lexv2ModelsIntent#image_response_card}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#image_response_card Lexv2ModelsIntent#image_response_card}
   */
   readonly imageResponseCard?: Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessResponseMessageGroupMessageImageResponseCard[] | cdktn.IResolvable;
   /**
   * plain_text_message block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#plain_text_message Lexv2ModelsIntent#plain_text_message}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#plain_text_message Lexv2ModelsIntent#plain_text_message}
   */
   readonly plainTextMessage?: Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessResponseMessageGroupMessagePlainTextMessage[] | cdktn.IResolvable;
   /**
   * ssml_message block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#ssml_message Lexv2ModelsIntent#ssml_message}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#ssml_message Lexv2ModelsIntent#ssml_message}
   */
   readonly ssmlMessage?: Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessResponseMessageGroupMessageSsmlMessage[] | cdktn.IResolvable;
 }
@@ -11913,7 +11913,7 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -11926,7 +11926,7 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
 }
 export interface Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessResponseMessageGroupVariationCustomPayload {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#value Lexv2ModelsIntent#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#value Lexv2ModelsIntent#value}
   */
   readonly value: string;
 }
@@ -12026,7 +12026,7 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -12039,11 +12039,11 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
 }
 export interface Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessResponseMessageGroupVariationImageResponseCardButton {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#text Lexv2ModelsIntent#text}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#text Lexv2ModelsIntent#text}
   */
   readonly text: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#value Lexv2ModelsIntent#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#value Lexv2ModelsIntent#value}
   */
   readonly value: string;
 }
@@ -12169,7 +12169,7 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -12182,21 +12182,21 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
 }
 export interface Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessResponseMessageGroupVariationImageResponseCard {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#image_url Lexv2ModelsIntent#image_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#image_url Lexv2ModelsIntent#image_url}
   */
   readonly imageUrl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#subtitle Lexv2ModelsIntent#subtitle}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#subtitle Lexv2ModelsIntent#subtitle}
   */
   readonly subtitle?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#title Lexv2ModelsIntent#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#title Lexv2ModelsIntent#title}
   */
   readonly title: string;
   /**
   * button block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#button Lexv2ModelsIntent#button}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#button Lexv2ModelsIntent#button}
   */
   readonly button?: Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessResponseMessageGroupVariationImageResponseCardButton[] | cdktn.IResolvable;
 }
@@ -12383,7 +12383,7 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -12396,7 +12396,7 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
 }
 export interface Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessResponseMessageGroupVariationPlainTextMessage {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#value Lexv2ModelsIntent#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#value Lexv2ModelsIntent#value}
   */
   readonly value: string;
 }
@@ -12496,7 +12496,7 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -12509,7 +12509,7 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
 }
 export interface Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessResponseMessageGroupVariationSsmlMessage {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#value Lexv2ModelsIntent#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#value Lexv2ModelsIntent#value}
   */
   readonly value: string;
 }
@@ -12609,7 +12609,7 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -12624,25 +12624,25 @@ export interface Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecifi
   /**
   * custom_payload block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#custom_payload Lexv2ModelsIntent#custom_payload}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#custom_payload Lexv2ModelsIntent#custom_payload}
   */
   readonly customPayload?: Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessResponseMessageGroupVariationCustomPayload[] | cdktn.IResolvable;
   /**
   * image_response_card block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#image_response_card Lexv2ModelsIntent#image_response_card}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#image_response_card Lexv2ModelsIntent#image_response_card}
   */
   readonly imageResponseCard?: Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessResponseMessageGroupVariationImageResponseCard[] | cdktn.IResolvable;
   /**
   * plain_text_message block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#plain_text_message Lexv2ModelsIntent#plain_text_message}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#plain_text_message Lexv2ModelsIntent#plain_text_message}
   */
   readonly plainTextMessage?: Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessResponseMessageGroupVariationPlainTextMessage[] | cdktn.IResolvable;
   /**
   * ssml_message block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#ssml_message Lexv2ModelsIntent#ssml_message}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#ssml_message Lexv2ModelsIntent#ssml_message}
   */
   readonly ssmlMessage?: Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessResponseMessageGroupVariationSsmlMessage[] | cdktn.IResolvable;
 }
@@ -12832,7 +12832,7 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -12847,13 +12847,13 @@ export interface Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecifi
   /**
   * message block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#message Lexv2ModelsIntent#message}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#message Lexv2ModelsIntent#message}
   */
   readonly message?: Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessResponseMessageGroupMessage[] | cdktn.IResolvable;
   /**
   * variation block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#variation Lexv2ModelsIntent#variation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#variation Lexv2ModelsIntent#variation}
   */
   readonly variation?: Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessResponseMessageGroupVariation[] | cdktn.IResolvable;
 }
@@ -12985,7 +12985,7 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -12998,13 +12998,13 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
 }
 export interface Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessResponse {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#allow_interrupt Lexv2ModelsIntent#allow_interrupt}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#allow_interrupt Lexv2ModelsIntent#allow_interrupt}
   */
   readonly allowInterrupt?: boolean | cdktn.IResolvable;
   /**
   * message_group block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#message_group Lexv2ModelsIntent#message_group}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#message_group Lexv2ModelsIntent#message_group}
   */
   readonly messageGroup?: Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessResponseMessageGroup[] | cdktn.IResolvable;
 }
@@ -13136,7 +13136,7 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -13149,7 +13149,7 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
 }
 export interface Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutConditionalConditionalBranchCondition {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#expression_string Lexv2ModelsIntent#expression_string}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#expression_string Lexv2ModelsIntent#expression_string}
   */
   readonly expressionString: string;
 }
@@ -13249,7 +13249,7 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -13262,15 +13262,15 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
 }
 export interface Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutConditionalConditionalBranchNextStepDialogAction {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#slot_to_elicit Lexv2ModelsIntent#slot_to_elicit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#slot_to_elicit Lexv2ModelsIntent#slot_to_elicit}
   */
   readonly slotToElicit?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#suppress_next_message Lexv2ModelsIntent#suppress_next_message}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#suppress_next_message Lexv2ModelsIntent#suppress_next_message}
   */
   readonly suppressNextMessage?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#type Lexv2ModelsIntent#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#type Lexv2ModelsIntent#type}
   */
   readonly type: string;
 }
@@ -13428,7 +13428,7 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -13441,7 +13441,7 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
 }
 export interface Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutConditionalConditionalBranchNextStepIntentSlotValue {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#interpreted_value Lexv2ModelsIntent#interpreted_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#interpreted_value Lexv2ModelsIntent#interpreted_value}
   */
   readonly interpretedValue?: string;
 }
@@ -13544,7 +13544,7 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -13557,17 +13557,17 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
 }
 export interface Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutConditionalConditionalBranchNextStepIntentSlot {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#map_block_key Lexv2ModelsIntent#map_block_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#map_block_key Lexv2ModelsIntent#map_block_key}
   */
   readonly mapBlockKey: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#shape Lexv2ModelsIntent#shape}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#shape Lexv2ModelsIntent#shape}
   */
   readonly shape?: string;
   /**
   * value block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#value Lexv2ModelsIntent#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#value Lexv2ModelsIntent#value}
   */
   readonly value?: Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutConditionalConditionalBranchNextStepIntentSlotValue[] | cdktn.IResolvable;
 }
@@ -13725,7 +13725,7 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -13738,13 +13738,13 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
 }
 export interface Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutConditionalConditionalBranchNextStepIntent {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#name Lexv2ModelsIntent#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#name Lexv2ModelsIntent#name}
   */
   readonly name?: string;
   /**
   * slot block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#slot Lexv2ModelsIntent#slot}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#slot Lexv2ModelsIntent#slot}
   */
   readonly slot?: Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutConditionalConditionalBranchNextStepIntentSlot[] | cdktn.IResolvable;
 }
@@ -13876,7 +13876,7 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -13889,19 +13889,19 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
 }
 export interface Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutConditionalConditionalBranchNextStep {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#session_attributes Lexv2ModelsIntent#session_attributes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#session_attributes Lexv2ModelsIntent#session_attributes}
   */
   readonly sessionAttributes?: { [key: string]: string };
   /**
   * dialog_action block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#dialog_action Lexv2ModelsIntent#dialog_action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#dialog_action Lexv2ModelsIntent#dialog_action}
   */
   readonly dialogAction?: Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutConditionalConditionalBranchNextStepDialogAction[] | cdktn.IResolvable;
   /**
   * intent block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#intent Lexv2ModelsIntent#intent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#intent Lexv2ModelsIntent#intent}
   */
   readonly intent?: Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutConditionalConditionalBranchNextStepIntent[] | cdktn.IResolvable;
 }
@@ -14062,7 +14062,7 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -14075,7 +14075,7 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
 }
 export interface Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutConditionalConditionalBranchResponseMessageGroupMessageCustomPayload {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#value Lexv2ModelsIntent#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#value Lexv2ModelsIntent#value}
   */
   readonly value: string;
 }
@@ -14175,7 +14175,7 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -14188,11 +14188,11 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
 }
 export interface Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutConditionalConditionalBranchResponseMessageGroupMessageImageResponseCardButton {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#text Lexv2ModelsIntent#text}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#text Lexv2ModelsIntent#text}
   */
   readonly text: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#value Lexv2ModelsIntent#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#value Lexv2ModelsIntent#value}
   */
   readonly value: string;
 }
@@ -14318,7 +14318,7 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -14331,21 +14331,21 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
 }
 export interface Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutConditionalConditionalBranchResponseMessageGroupMessageImageResponseCard {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#image_url Lexv2ModelsIntent#image_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#image_url Lexv2ModelsIntent#image_url}
   */
   readonly imageUrl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#subtitle Lexv2ModelsIntent#subtitle}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#subtitle Lexv2ModelsIntent#subtitle}
   */
   readonly subtitle?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#title Lexv2ModelsIntent#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#title Lexv2ModelsIntent#title}
   */
   readonly title: string;
   /**
   * button block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#button Lexv2ModelsIntent#button}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#button Lexv2ModelsIntent#button}
   */
   readonly button?: Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutConditionalConditionalBranchResponseMessageGroupMessageImageResponseCardButton[] | cdktn.IResolvable;
 }
@@ -14532,7 +14532,7 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -14545,7 +14545,7 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
 }
 export interface Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutConditionalConditionalBranchResponseMessageGroupMessagePlainTextMessage {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#value Lexv2ModelsIntent#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#value Lexv2ModelsIntent#value}
   */
   readonly value: string;
 }
@@ -14645,7 +14645,7 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -14658,7 +14658,7 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
 }
 export interface Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutConditionalConditionalBranchResponseMessageGroupMessageSsmlMessage {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#value Lexv2ModelsIntent#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#value Lexv2ModelsIntent#value}
   */
   readonly value: string;
 }
@@ -14758,7 +14758,7 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -14773,25 +14773,25 @@ export interface Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecifi
   /**
   * custom_payload block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#custom_payload Lexv2ModelsIntent#custom_payload}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#custom_payload Lexv2ModelsIntent#custom_payload}
   */
   readonly customPayload?: Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutConditionalConditionalBranchResponseMessageGroupMessageCustomPayload[] | cdktn.IResolvable;
   /**
   * image_response_card block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#image_response_card Lexv2ModelsIntent#image_response_card}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#image_response_card Lexv2ModelsIntent#image_response_card}
   */
   readonly imageResponseCard?: Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutConditionalConditionalBranchResponseMessageGroupMessageImageResponseCard[] | cdktn.IResolvable;
   /**
   * plain_text_message block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#plain_text_message Lexv2ModelsIntent#plain_text_message}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#plain_text_message Lexv2ModelsIntent#plain_text_message}
   */
   readonly plainTextMessage?: Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutConditionalConditionalBranchResponseMessageGroupMessagePlainTextMessage[] | cdktn.IResolvable;
   /**
   * ssml_message block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#ssml_message Lexv2ModelsIntent#ssml_message}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#ssml_message Lexv2ModelsIntent#ssml_message}
   */
   readonly ssmlMessage?: Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutConditionalConditionalBranchResponseMessageGroupMessageSsmlMessage[] | cdktn.IResolvable;
 }
@@ -14981,7 +14981,7 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -14994,7 +14994,7 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
 }
 export interface Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutConditionalConditionalBranchResponseMessageGroupVariationCustomPayload {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#value Lexv2ModelsIntent#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#value Lexv2ModelsIntent#value}
   */
   readonly value: string;
 }
@@ -15094,7 +15094,7 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -15107,11 +15107,11 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
 }
 export interface Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutConditionalConditionalBranchResponseMessageGroupVariationImageResponseCardButton {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#text Lexv2ModelsIntent#text}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#text Lexv2ModelsIntent#text}
   */
   readonly text: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#value Lexv2ModelsIntent#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#value Lexv2ModelsIntent#value}
   */
   readonly value: string;
 }
@@ -15237,7 +15237,7 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -15250,21 +15250,21 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
 }
 export interface Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutConditionalConditionalBranchResponseMessageGroupVariationImageResponseCard {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#image_url Lexv2ModelsIntent#image_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#image_url Lexv2ModelsIntent#image_url}
   */
   readonly imageUrl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#subtitle Lexv2ModelsIntent#subtitle}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#subtitle Lexv2ModelsIntent#subtitle}
   */
   readonly subtitle?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#title Lexv2ModelsIntent#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#title Lexv2ModelsIntent#title}
   */
   readonly title: string;
   /**
   * button block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#button Lexv2ModelsIntent#button}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#button Lexv2ModelsIntent#button}
   */
   readonly button?: Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutConditionalConditionalBranchResponseMessageGroupVariationImageResponseCardButton[] | cdktn.IResolvable;
 }
@@ -15451,7 +15451,7 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -15464,7 +15464,7 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
 }
 export interface Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutConditionalConditionalBranchResponseMessageGroupVariationPlainTextMessage {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/lexv2models_intent#value Lexv2ModelsIntent#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/lexv2models_intent#value Lexv2ModelsIntent#value}
   */
   readonly value: string;
 }
@@ -15564,7 +15564,7 @@ export class Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificati
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 

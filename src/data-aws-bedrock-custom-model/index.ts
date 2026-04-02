@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/data-sources/bedrock_custom_model
+// https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/data-sources/bedrock_custom_model
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,13 +13,13 @@ import * as cdktn from 'cdktn';
 
 export interface DataAwsBedrockCustomModelConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/data-sources/bedrock_custom_model#model_id DataAwsBedrockCustomModel#model_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/data-sources/bedrock_custom_model#model_id DataAwsBedrockCustomModel#model_id}
   */
   readonly modelId: string;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/data-sources/bedrock_custom_model#region DataAwsBedrockCustomModel#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/data-sources/bedrock_custom_model#region DataAwsBedrockCustomModel#region}
   */
   readonly region?: string;
 }
@@ -87,7 +87,7 @@ export class DataAwsBedrockCustomModelOutputDataConfigList extends cdktn.Complex
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -162,7 +162,7 @@ export class DataAwsBedrockCustomModelTrainingDataConfigList extends cdktn.Compl
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -237,7 +237,7 @@ export class DataAwsBedrockCustomModelTrainingMetricsList extends cdktn.ComplexL
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -312,7 +312,7 @@ export class DataAwsBedrockCustomModelValidationDataConfigValidatorList extends 
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -388,7 +388,7 @@ export class DataAwsBedrockCustomModelValidationDataConfigList extends cdktn.Com
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -463,7 +463,7 @@ export class DataAwsBedrockCustomModelValidationMetricsList extends cdktn.Comple
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -476,7 +476,7 @@ export class DataAwsBedrockCustomModelValidationMetricsList extends cdktn.Comple
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/data-sources/bedrock_custom_model aws_bedrock_custom_model}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/data-sources/bedrock_custom_model aws_bedrock_custom_model}
 */
 export class DataAwsBedrockCustomModel extends cdktn.TerraformDataSource {
 
@@ -492,7 +492,7 @@ export class DataAwsBedrockCustomModel extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataAwsBedrockCustomModel resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsBedrockCustomModel to import
-  * @param importFromId The id of the existing DataAwsBedrockCustomModel that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/data-sources/bedrock_custom_model#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsBedrockCustomModel that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/data-sources/bedrock_custom_model#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsBedrockCustomModel to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -504,7 +504,7 @@ export class DataAwsBedrockCustomModel extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/data-sources/bedrock_custom_model aws_bedrock_custom_model} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/data-sources/bedrock_custom_model aws_bedrock_custom_model} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -515,7 +515,7 @@ export class DataAwsBedrockCustomModel extends cdktn.TerraformDataSource {
       terraformResourceType: 'aws_bedrock_custom_model',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.38.0',
+        providerVersion: '6.39.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

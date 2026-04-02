@@ -1,3 +1,3 @@
 # `aws_ram_permission`
 
-Refer to the Terraform Registry for docs: [`aws_ram_permission`](https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/ram_permission).
+Refer to the Terraform Registry for docs: [`aws_ram_permission`](https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/ram_permission).

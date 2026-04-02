@@ -1,3 +1,3 @@
 # `aws_ssmcontacts_plan`
 
-Refer to the Terraform Registry for docs: [`aws_ssmcontacts_plan`](https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/ssmcontacts_plan).
+Refer to the Terraform Registry for docs: [`aws_ssmcontacts_plan`](https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/ssmcontacts_plan).

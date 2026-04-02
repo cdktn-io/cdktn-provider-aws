@@ -4,7 +4,7 @@
 
 ### TransferWebApp <a name="TransferWebApp" id="@cdktn/provider-aws.transferWebApp.TransferWebApp"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/transfer_web_app aws_transfer_web_app}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/transfer_web_app aws_transfer_web_app}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.transferWebApp.TransferWebApp.Initializer"></a>
 
@@ -577,7 +577,7 @@ The construct id used in the generated config for the TransferWebApp to import.
 
 The id of the existing TransferWebApp that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/transfer_web_app#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/transfer_web_app#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -980,13 +980,13 @@ const transferWebAppConfig: transferWebApp.TransferWebAppConfig = { ... }
 | <code><a href="#@cdktn/provider-aws.transferWebApp.TransferWebAppConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.transferWebApp.TransferWebAppConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.transferWebApp.TransferWebAppConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.transferWebApp.TransferWebAppConfig.property.accessEndpoint">accessEndpoint</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/transfer_web_app#access_endpoint TransferWebApp#access_endpoint}. |
+| <code><a href="#@cdktn/provider-aws.transferWebApp.TransferWebAppConfig.property.accessEndpoint">accessEndpoint</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/transfer_web_app#access_endpoint TransferWebApp#access_endpoint}. |
 | <code><a href="#@cdktn/provider-aws.transferWebApp.TransferWebAppConfig.property.endpointDetails">endpointDetails</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.transferWebApp.TransferWebAppEndpointDetails">TransferWebAppEndpointDetails</a>[]</code> | endpoint_details block. |
 | <code><a href="#@cdktn/provider-aws.transferWebApp.TransferWebAppConfig.property.identityProviderDetails">identityProviderDetails</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.transferWebApp.TransferWebAppIdentityProviderDetails">TransferWebAppIdentityProviderDetails</a>[]</code> | identity_provider_details block. |
 | <code><a href="#@cdktn/provider-aws.transferWebApp.TransferWebAppConfig.property.region">region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.transferWebApp.TransferWebAppConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/transfer_web_app#tags TransferWebApp#tags}. |
-| <code><a href="#@cdktn/provider-aws.transferWebApp.TransferWebAppConfig.property.webAppEndpointPolicy">webAppEndpointPolicy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/transfer_web_app#web_app_endpoint_policy TransferWebApp#web_app_endpoint_policy}. |
-| <code><a href="#@cdktn/provider-aws.transferWebApp.TransferWebAppConfig.property.webAppUnits">webAppUnits</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.transferWebApp.TransferWebAppWebAppUnits">TransferWebAppWebAppUnits</a>[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/transfer_web_app#web_app_units TransferWebApp#web_app_units}. |
+| <code><a href="#@cdktn/provider-aws.transferWebApp.TransferWebAppConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/transfer_web_app#tags TransferWebApp#tags}. |
+| <code><a href="#@cdktn/provider-aws.transferWebApp.TransferWebAppConfig.property.webAppEndpointPolicy">webAppEndpointPolicy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/transfer_web_app#web_app_endpoint_policy TransferWebApp#web_app_endpoint_policy}. |
+| <code><a href="#@cdktn/provider-aws.transferWebApp.TransferWebAppConfig.property.webAppUnits">webAppUnits</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.transferWebApp.TransferWebAppWebAppUnits">TransferWebAppWebAppUnits</a>[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/transfer_web_app#web_app_units TransferWebApp#web_app_units}. |
 
 ---
 
@@ -1068,7 +1068,7 @@ public readonly accessEndpoint: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/transfer_web_app#access_endpoint TransferWebApp#access_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/transfer_web_app#access_endpoint TransferWebApp#access_endpoint}.
 
 ---
 
@@ -1082,7 +1082,7 @@ public readonly endpointDetails: IResolvable | TransferWebAppEndpointDetails[];
 
 endpoint_details block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/transfer_web_app#endpoint_details TransferWebApp#endpoint_details}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/transfer_web_app#endpoint_details TransferWebApp#endpoint_details}
 
 ---
 
@@ -1096,7 +1096,7 @@ public readonly identityProviderDetails: IResolvable | TransferWebAppIdentityPro
 
 identity_provider_details block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/transfer_web_app#identity_provider_details TransferWebApp#identity_provider_details}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/transfer_web_app#identity_provider_details TransferWebApp#identity_provider_details}
 
 ---
 
@@ -1110,7 +1110,7 @@ public readonly region: string;
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/transfer_web_app#region TransferWebApp#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/transfer_web_app#region TransferWebApp#region}
 
 ---
 
@@ -1122,7 +1122,7 @@ public readonly tags: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/transfer_web_app#tags TransferWebApp#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/transfer_web_app#tags TransferWebApp#tags}.
 
 ---
 
@@ -1134,7 +1134,7 @@ public readonly webAppEndpointPolicy: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/transfer_web_app#web_app_endpoint_policy TransferWebApp#web_app_endpoint_policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/transfer_web_app#web_app_endpoint_policy TransferWebApp#web_app_endpoint_policy}.
 
 ---
 
@@ -1146,7 +1146,7 @@ public readonly webAppUnits: IResolvable | TransferWebAppWebAppUnits[];
 
 - *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.transferWebApp.TransferWebAppWebAppUnits">TransferWebAppWebAppUnits</a>[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/transfer_web_app#web_app_units TransferWebApp#web_app_units}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/transfer_web_app#web_app_units TransferWebApp#web_app_units}.
 
 ---
 
@@ -1178,7 +1178,7 @@ public readonly vpc: IResolvable | TransferWebAppEndpointDetailsVpc[];
 
 vpc block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/transfer_web_app#vpc TransferWebApp#vpc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/transfer_web_app#vpc TransferWebApp#vpc}
 
 ---
 
@@ -1196,9 +1196,9 @@ const transferWebAppEndpointDetailsVpc: transferWebApp.TransferWebAppEndpointDet
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.transferWebApp.TransferWebAppEndpointDetailsVpc.property.subnetIds">subnetIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/transfer_web_app#subnet_ids TransferWebApp#subnet_ids}. |
-| <code><a href="#@cdktn/provider-aws.transferWebApp.TransferWebAppEndpointDetailsVpc.property.vpcId">vpcId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/transfer_web_app#vpc_id TransferWebApp#vpc_id}. |
-| <code><a href="#@cdktn/provider-aws.transferWebApp.TransferWebAppEndpointDetailsVpc.property.securityGroupIds">securityGroupIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/transfer_web_app#security_group_ids TransferWebApp#security_group_ids}. |
+| <code><a href="#@cdktn/provider-aws.transferWebApp.TransferWebAppEndpointDetailsVpc.property.subnetIds">subnetIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/transfer_web_app#subnet_ids TransferWebApp#subnet_ids}. |
+| <code><a href="#@cdktn/provider-aws.transferWebApp.TransferWebAppEndpointDetailsVpc.property.vpcId">vpcId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/transfer_web_app#vpc_id TransferWebApp#vpc_id}. |
+| <code><a href="#@cdktn/provider-aws.transferWebApp.TransferWebAppEndpointDetailsVpc.property.securityGroupIds">securityGroupIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/transfer_web_app#security_group_ids TransferWebApp#security_group_ids}. |
 
 ---
 
@@ -1210,7 +1210,7 @@ public readonly subnetIds: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/transfer_web_app#subnet_ids TransferWebApp#subnet_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/transfer_web_app#subnet_ids TransferWebApp#subnet_ids}.
 
 ---
 
@@ -1222,7 +1222,7 @@ public readonly vpcId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/transfer_web_app#vpc_id TransferWebApp#vpc_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/transfer_web_app#vpc_id TransferWebApp#vpc_id}.
 
 ---
 
@@ -1234,7 +1234,7 @@ public readonly securityGroupIds: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/transfer_web_app#security_group_ids TransferWebApp#security_group_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/transfer_web_app#security_group_ids TransferWebApp#security_group_ids}.
 
 ---
 
@@ -1266,7 +1266,7 @@ public readonly identityCenterConfig: IResolvable | TransferWebAppIdentityProvid
 
 identity_center_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/transfer_web_app#identity_center_config TransferWebApp#identity_center_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/transfer_web_app#identity_center_config TransferWebApp#identity_center_config}
 
 ---
 
@@ -1284,8 +1284,8 @@ const transferWebAppIdentityProviderDetailsIdentityCenterConfig: transferWebApp.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.transferWebApp.TransferWebAppIdentityProviderDetailsIdentityCenterConfig.property.instanceArn">instanceArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/transfer_web_app#instance_arn TransferWebApp#instance_arn}. |
-| <code><a href="#@cdktn/provider-aws.transferWebApp.TransferWebAppIdentityProviderDetailsIdentityCenterConfig.property.role">role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/transfer_web_app#role TransferWebApp#role}. |
+| <code><a href="#@cdktn/provider-aws.transferWebApp.TransferWebAppIdentityProviderDetailsIdentityCenterConfig.property.instanceArn">instanceArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/transfer_web_app#instance_arn TransferWebApp#instance_arn}. |
+| <code><a href="#@cdktn/provider-aws.transferWebApp.TransferWebAppIdentityProviderDetailsIdentityCenterConfig.property.role">role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/transfer_web_app#role TransferWebApp#role}. |
 
 ---
 
@@ -1297,7 +1297,7 @@ public readonly instanceArn: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/transfer_web_app#instance_arn TransferWebApp#instance_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/transfer_web_app#instance_arn TransferWebApp#instance_arn}.
 
 ---
 
@@ -1309,7 +1309,7 @@ public readonly role: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/transfer_web_app#role TransferWebApp#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/transfer_web_app#role TransferWebApp#role}.
 
 ---
 
@@ -1327,7 +1327,7 @@ const transferWebAppWebAppUnits: transferWebApp.TransferWebAppWebAppUnits = { ..
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.transferWebApp.TransferWebAppWebAppUnits.property.provisioned">provisioned</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/transfer_web_app#provisioned TransferWebApp#provisioned}. |
+| <code><a href="#@cdktn/provider-aws.transferWebApp.TransferWebAppWebAppUnits.property.provisioned">provisioned</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/transfer_web_app#provisioned TransferWebApp#provisioned}. |
 
 ---
 
@@ -1339,7 +1339,7 @@ public readonly provisioned: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/transfer_web_app#provisioned TransferWebApp#provisioned}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/transfer_web_app#provisioned TransferWebApp#provisioned}.
 
 ---
 

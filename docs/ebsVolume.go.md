@@ -4,7 +4,7 @@
 
 ### EbsVolume <a name="EbsVolume" id="@cdktn/provider-aws.ebsVolume.EbsVolume"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/ebs_volume aws_ebs_volume}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/ebs_volume aws_ebs_volume}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ebsVolume.EbsVolume.Initializer"></a>
 
@@ -614,7 +614,7 @@ The construct id used in the generated config for the EbsVolume to import.
 
 The id of the existing EbsVolume that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/ebs_volume#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/ebs_volume#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1251,23 +1251,23 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/ebsvolume"
 | <code><a href="#@cdktn/provider-aws.ebsVolume.EbsVolumeConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.ebsVolume.EbsVolumeConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.ebsVolume.EbsVolumeConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.ebsVolume.EbsVolumeConfig.property.availabilityZone">AvailabilityZone</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/ebs_volume#availability_zone EbsVolume#availability_zone}. |
-| <code><a href="#@cdktn/provider-aws.ebsVolume.EbsVolumeConfig.property.encrypted">Encrypted</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/ebs_volume#encrypted EbsVolume#encrypted}. |
-| <code><a href="#@cdktn/provider-aws.ebsVolume.EbsVolumeConfig.property.finalSnapshot">FinalSnapshot</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/ebs_volume#final_snapshot EbsVolume#final_snapshot}. |
-| <code><a href="#@cdktn/provider-aws.ebsVolume.EbsVolumeConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/ebs_volume#id EbsVolume#id}. |
-| <code><a href="#@cdktn/provider-aws.ebsVolume.EbsVolumeConfig.property.iops">Iops</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/ebs_volume#iops EbsVolume#iops}. |
-| <code><a href="#@cdktn/provider-aws.ebsVolume.EbsVolumeConfig.property.kmsKeyId">KmsKeyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/ebs_volume#kms_key_id EbsVolume#kms_key_id}. |
-| <code><a href="#@cdktn/provider-aws.ebsVolume.EbsVolumeConfig.property.multiAttachEnabled">MultiAttachEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/ebs_volume#multi_attach_enabled EbsVolume#multi_attach_enabled}. |
-| <code><a href="#@cdktn/provider-aws.ebsVolume.EbsVolumeConfig.property.outpostArn">OutpostArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/ebs_volume#outpost_arn EbsVolume#outpost_arn}. |
+| <code><a href="#@cdktn/provider-aws.ebsVolume.EbsVolumeConfig.property.availabilityZone">AvailabilityZone</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/ebs_volume#availability_zone EbsVolume#availability_zone}. |
+| <code><a href="#@cdktn/provider-aws.ebsVolume.EbsVolumeConfig.property.encrypted">Encrypted</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/ebs_volume#encrypted EbsVolume#encrypted}. |
+| <code><a href="#@cdktn/provider-aws.ebsVolume.EbsVolumeConfig.property.finalSnapshot">FinalSnapshot</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/ebs_volume#final_snapshot EbsVolume#final_snapshot}. |
+| <code><a href="#@cdktn/provider-aws.ebsVolume.EbsVolumeConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/ebs_volume#id EbsVolume#id}. |
+| <code><a href="#@cdktn/provider-aws.ebsVolume.EbsVolumeConfig.property.iops">Iops</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/ebs_volume#iops EbsVolume#iops}. |
+| <code><a href="#@cdktn/provider-aws.ebsVolume.EbsVolumeConfig.property.kmsKeyId">KmsKeyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/ebs_volume#kms_key_id EbsVolume#kms_key_id}. |
+| <code><a href="#@cdktn/provider-aws.ebsVolume.EbsVolumeConfig.property.multiAttachEnabled">MultiAttachEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/ebs_volume#multi_attach_enabled EbsVolume#multi_attach_enabled}. |
+| <code><a href="#@cdktn/provider-aws.ebsVolume.EbsVolumeConfig.property.outpostArn">OutpostArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/ebs_volume#outpost_arn EbsVolume#outpost_arn}. |
 | <code><a href="#@cdktn/provider-aws.ebsVolume.EbsVolumeConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.ebsVolume.EbsVolumeConfig.property.size">Size</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/ebs_volume#size EbsVolume#size}. |
-| <code><a href="#@cdktn/provider-aws.ebsVolume.EbsVolumeConfig.property.snapshotId">SnapshotId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/ebs_volume#snapshot_id EbsVolume#snapshot_id}. |
-| <code><a href="#@cdktn/provider-aws.ebsVolume.EbsVolumeConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/ebs_volume#tags EbsVolume#tags}. |
-| <code><a href="#@cdktn/provider-aws.ebsVolume.EbsVolumeConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/ebs_volume#tags_all EbsVolume#tags_all}. |
-| <code><a href="#@cdktn/provider-aws.ebsVolume.EbsVolumeConfig.property.throughput">Throughput</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/ebs_volume#throughput EbsVolume#throughput}. |
+| <code><a href="#@cdktn/provider-aws.ebsVolume.EbsVolumeConfig.property.size">Size</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/ebs_volume#size EbsVolume#size}. |
+| <code><a href="#@cdktn/provider-aws.ebsVolume.EbsVolumeConfig.property.snapshotId">SnapshotId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/ebs_volume#snapshot_id EbsVolume#snapshot_id}. |
+| <code><a href="#@cdktn/provider-aws.ebsVolume.EbsVolumeConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/ebs_volume#tags EbsVolume#tags}. |
+| <code><a href="#@cdktn/provider-aws.ebsVolume.EbsVolumeConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/ebs_volume#tags_all EbsVolume#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.ebsVolume.EbsVolumeConfig.property.throughput">Throughput</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/ebs_volume#throughput EbsVolume#throughput}. |
 | <code><a href="#@cdktn/provider-aws.ebsVolume.EbsVolumeConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.ebsVolume.EbsVolumeTimeouts">EbsVolumeTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktn/provider-aws.ebsVolume.EbsVolumeConfig.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/ebs_volume#type EbsVolume#type}. |
-| <code><a href="#@cdktn/provider-aws.ebsVolume.EbsVolumeConfig.property.volumeInitializationRate">VolumeInitializationRate</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/ebs_volume#volume_initialization_rate EbsVolume#volume_initialization_rate}. |
+| <code><a href="#@cdktn/provider-aws.ebsVolume.EbsVolumeConfig.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/ebs_volume#type EbsVolume#type}. |
+| <code><a href="#@cdktn/provider-aws.ebsVolume.EbsVolumeConfig.property.volumeInitializationRate">VolumeInitializationRate</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/ebs_volume#volume_initialization_rate EbsVolume#volume_initialization_rate}. |
 
 ---
 
@@ -1349,7 +1349,7 @@ AvailabilityZone *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/ebs_volume#availability_zone EbsVolume#availability_zone}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/ebs_volume#availability_zone EbsVolume#availability_zone}.
 
 ---
 
@@ -1361,7 +1361,7 @@ Encrypted interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/ebs_volume#encrypted EbsVolume#encrypted}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/ebs_volume#encrypted EbsVolume#encrypted}.
 
 ---
 
@@ -1373,7 +1373,7 @@ FinalSnapshot interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/ebs_volume#final_snapshot EbsVolume#final_snapshot}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/ebs_volume#final_snapshot EbsVolume#final_snapshot}.
 
 ---
 
@@ -1385,7 +1385,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/ebs_volume#id EbsVolume#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/ebs_volume#id EbsVolume#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1400,7 +1400,7 @@ Iops *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/ebs_volume#iops EbsVolume#iops}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/ebs_volume#iops EbsVolume#iops}.
 
 ---
 
@@ -1412,7 +1412,7 @@ KmsKeyId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/ebs_volume#kms_key_id EbsVolume#kms_key_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/ebs_volume#kms_key_id EbsVolume#kms_key_id}.
 
 ---
 
@@ -1424,7 +1424,7 @@ MultiAttachEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/ebs_volume#multi_attach_enabled EbsVolume#multi_attach_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/ebs_volume#multi_attach_enabled EbsVolume#multi_attach_enabled}.
 
 ---
 
@@ -1436,7 +1436,7 @@ OutpostArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/ebs_volume#outpost_arn EbsVolume#outpost_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/ebs_volume#outpost_arn EbsVolume#outpost_arn}.
 
 ---
 
@@ -1450,7 +1450,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/ebs_volume#region EbsVolume#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/ebs_volume#region EbsVolume#region}
 
 ---
 
@@ -1462,7 +1462,7 @@ Size *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/ebs_volume#size EbsVolume#size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/ebs_volume#size EbsVolume#size}.
 
 ---
 
@@ -1474,7 +1474,7 @@ SnapshotId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/ebs_volume#snapshot_id EbsVolume#snapshot_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/ebs_volume#snapshot_id EbsVolume#snapshot_id}.
 
 ---
 
@@ -1486,7 +1486,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/ebs_volume#tags EbsVolume#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/ebs_volume#tags EbsVolume#tags}.
 
 ---
 
@@ -1498,7 +1498,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/ebs_volume#tags_all EbsVolume#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/ebs_volume#tags_all EbsVolume#tags_all}.
 
 ---
 
@@ -1510,7 +1510,7 @@ Throughput *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/ebs_volume#throughput EbsVolume#throughput}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/ebs_volume#throughput EbsVolume#throughput}.
 
 ---
 
@@ -1524,7 +1524,7 @@ Timeouts EbsVolumeTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/ebs_volume#timeouts EbsVolume#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/ebs_volume#timeouts EbsVolume#timeouts}
 
 ---
 
@@ -1536,7 +1536,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/ebs_volume#type EbsVolume#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/ebs_volume#type EbsVolume#type}.
 
 ---
 
@@ -1548,7 +1548,7 @@ VolumeInitializationRate *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/ebs_volume#volume_initialization_rate EbsVolume#volume_initialization_rate}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/ebs_volume#volume_initialization_rate EbsVolume#volume_initialization_rate}.
 
 ---
 
@@ -1570,9 +1570,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/ebsvolume"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.ebsVolume.EbsVolumeTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/ebs_volume#create EbsVolume#create}. |
-| <code><a href="#@cdktn/provider-aws.ebsVolume.EbsVolumeTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/ebs_volume#delete EbsVolume#delete}. |
-| <code><a href="#@cdktn/provider-aws.ebsVolume.EbsVolumeTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/ebs_volume#update EbsVolume#update}. |
+| <code><a href="#@cdktn/provider-aws.ebsVolume.EbsVolumeTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/ebs_volume#create EbsVolume#create}. |
+| <code><a href="#@cdktn/provider-aws.ebsVolume.EbsVolumeTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/ebs_volume#delete EbsVolume#delete}. |
+| <code><a href="#@cdktn/provider-aws.ebsVolume.EbsVolumeTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/ebs_volume#update EbsVolume#update}. |
 
 ---
 
@@ -1584,7 +1584,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/ebs_volume#create EbsVolume#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/ebs_volume#create EbsVolume#create}.
 
 ---
 
@@ -1596,7 +1596,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/ebs_volume#delete EbsVolume#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/ebs_volume#delete EbsVolume#delete}.
 
 ---
 
@@ -1608,7 +1608,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/ebs_volume#update EbsVolume#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/ebs_volume#update EbsVolume#update}.
 
 ---
 
