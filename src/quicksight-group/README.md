@@ -1,3 +1,3 @@
 # `aws_quicksight_group`
 
-Refer to the Terraform Registry for docs: [`aws_quicksight_group`](https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/quicksight_group).
+Refer to the Terraform Registry for docs: [`aws_quicksight_group`](https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/quicksight_group).

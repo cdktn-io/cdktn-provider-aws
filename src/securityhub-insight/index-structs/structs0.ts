@@ -6,11 +6,11 @@
 import * as cdktn from 'cdktn';
 export interface SecurityhubInsightFiltersAwsAccountId {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -136,7 +136,7 @@ export class SecurityhubInsightFiltersAwsAccountIdList extends cdktn.ComplexList
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -149,11 +149,11 @@ export class SecurityhubInsightFiltersAwsAccountIdList extends cdktn.ComplexList
 }
 export interface SecurityhubInsightFiltersAwsAccountName {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -279,7 +279,7 @@ export class SecurityhubInsightFiltersAwsAccountNameList extends cdktn.ComplexLi
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -292,11 +292,11 @@ export class SecurityhubInsightFiltersAwsAccountNameList extends cdktn.ComplexLi
 }
 export interface SecurityhubInsightFiltersCompanyName {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -422,7 +422,7 @@ export class SecurityhubInsightFiltersCompanyNameList extends cdktn.ComplexList 
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -435,11 +435,11 @@ export class SecurityhubInsightFiltersCompanyNameList extends cdktn.ComplexList 
 }
 export interface SecurityhubInsightFiltersComplianceAssociatedStandardsId {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -565,7 +565,7 @@ export class SecurityhubInsightFiltersComplianceAssociatedStandardsIdList extend
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -578,11 +578,11 @@ export class SecurityhubInsightFiltersComplianceAssociatedStandardsIdList extend
 }
 export interface SecurityhubInsightFiltersComplianceSecurityControlId {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -708,7 +708,7 @@ export class SecurityhubInsightFiltersComplianceSecurityControlIdList extends cd
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -721,11 +721,11 @@ export class SecurityhubInsightFiltersComplianceSecurityControlIdList extends cd
 }
 export interface SecurityhubInsightFiltersComplianceSecurityControlParametersName {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -851,7 +851,7 @@ export class SecurityhubInsightFiltersComplianceSecurityControlParametersNameLis
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -864,11 +864,11 @@ export class SecurityhubInsightFiltersComplianceSecurityControlParametersNameLis
 }
 export interface SecurityhubInsightFiltersComplianceSecurityControlParametersValue {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -994,7 +994,7 @@ export class SecurityhubInsightFiltersComplianceSecurityControlParametersValueLi
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1007,11 +1007,11 @@ export class SecurityhubInsightFiltersComplianceSecurityControlParametersValueLi
 }
 export interface SecurityhubInsightFiltersComplianceStatus {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -1137,7 +1137,7 @@ export class SecurityhubInsightFiltersComplianceStatusList extends cdktn.Complex
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1150,15 +1150,15 @@ export class SecurityhubInsightFiltersComplianceStatusList extends cdktn.Complex
 }
 export interface SecurityhubInsightFiltersConfidence {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#eq SecurityhubInsight#eq}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#eq SecurityhubInsight#eq}
   */
   readonly eq?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#gte SecurityhubInsight#gte}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#gte SecurityhubInsight#gte}
   */
   readonly gte?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#lte SecurityhubInsight#lte}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#lte SecurityhubInsight#lte}
   */
   readonly lte?: string;
 }
@@ -1319,7 +1319,7 @@ export class SecurityhubInsightFiltersConfidenceList extends cdktn.ComplexList {
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1332,11 +1332,11 @@ export class SecurityhubInsightFiltersConfidenceList extends cdktn.ComplexList {
 }
 export interface SecurityhubInsightFiltersCreatedAtDateRange {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}
   */
   readonly unit: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: number;
 }
@@ -1443,17 +1443,17 @@ export class SecurityhubInsightFiltersCreatedAtDateRangeOutputReference extends 
 }
 export interface SecurityhubInsightFiltersCreatedAt {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#end SecurityhubInsight#end}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#end SecurityhubInsight#end}
   */
   readonly end?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#start SecurityhubInsight#start}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#start SecurityhubInsight#start}
   */
   readonly start?: string;
   /**
   * date_range block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#date_range SecurityhubInsight#date_range}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#date_range SecurityhubInsight#date_range}
   */
   readonly dateRange?: SecurityhubInsightFiltersCreatedAtDateRange;
 }
@@ -1614,7 +1614,7 @@ export class SecurityhubInsightFiltersCreatedAtList extends cdktn.ComplexList {
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1627,15 +1627,15 @@ export class SecurityhubInsightFiltersCreatedAtList extends cdktn.ComplexList {
 }
 export interface SecurityhubInsightFiltersCriticality {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#eq SecurityhubInsight#eq}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#eq SecurityhubInsight#eq}
   */
   readonly eq?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#gte SecurityhubInsight#gte}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#gte SecurityhubInsight#gte}
   */
   readonly gte?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#lte SecurityhubInsight#lte}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#lte SecurityhubInsight#lte}
   */
   readonly lte?: string;
 }
@@ -1796,7 +1796,7 @@ export class SecurityhubInsightFiltersCriticalityList extends cdktn.ComplexList 
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1809,11 +1809,11 @@ export class SecurityhubInsightFiltersCriticalityList extends cdktn.ComplexList 
 }
 export interface SecurityhubInsightFiltersDescription {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -1939,7 +1939,7 @@ export class SecurityhubInsightFiltersDescriptionList extends cdktn.ComplexList 
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1952,15 +1952,15 @@ export class SecurityhubInsightFiltersDescriptionList extends cdktn.ComplexList 
 }
 export interface SecurityhubInsightFiltersFindingProviderFieldsConfidence {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#eq SecurityhubInsight#eq}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#eq SecurityhubInsight#eq}
   */
   readonly eq?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#gte SecurityhubInsight#gte}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#gte SecurityhubInsight#gte}
   */
   readonly gte?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#lte SecurityhubInsight#lte}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#lte SecurityhubInsight#lte}
   */
   readonly lte?: string;
 }
@@ -2121,7 +2121,7 @@ export class SecurityhubInsightFiltersFindingProviderFieldsConfidenceList extend
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2134,15 +2134,15 @@ export class SecurityhubInsightFiltersFindingProviderFieldsConfidenceList extend
 }
 export interface SecurityhubInsightFiltersFindingProviderFieldsCriticality {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#eq SecurityhubInsight#eq}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#eq SecurityhubInsight#eq}
   */
   readonly eq?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#gte SecurityhubInsight#gte}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#gte SecurityhubInsight#gte}
   */
   readonly gte?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#lte SecurityhubInsight#lte}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#lte SecurityhubInsight#lte}
   */
   readonly lte?: string;
 }
@@ -2303,7 +2303,7 @@ export class SecurityhubInsightFiltersFindingProviderFieldsCriticalityList exten
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2316,11 +2316,11 @@ export class SecurityhubInsightFiltersFindingProviderFieldsCriticalityList exten
 }
 export interface SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -2446,7 +2446,7 @@ export class SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsIdList
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2459,11 +2459,11 @@ export class SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsIdList
 }
 export interface SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -2589,7 +2589,7 @@ export class SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProduc
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2602,11 +2602,11 @@ export class SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProduc
 }
 export interface SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -2732,7 +2732,7 @@ export class SecurityhubInsightFiltersFindingProviderFieldsSeverityLabelList ext
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2745,11 +2745,11 @@ export class SecurityhubInsightFiltersFindingProviderFieldsSeverityLabelList ext
 }
 export interface SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -2875,7 +2875,7 @@ export class SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginalList 
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2888,11 +2888,11 @@ export class SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginalList 
 }
 export interface SecurityhubInsightFiltersFindingProviderFieldsTypes {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -3018,7 +3018,7 @@ export class SecurityhubInsightFiltersFindingProviderFieldsTypesList extends cdk
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3031,11 +3031,11 @@ export class SecurityhubInsightFiltersFindingProviderFieldsTypesList extends cdk
 }
 export interface SecurityhubInsightFiltersFirstObservedAtDateRange {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}
   */
   readonly unit: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: number;
 }
@@ -3142,17 +3142,17 @@ export class SecurityhubInsightFiltersFirstObservedAtDateRangeOutputReference ex
 }
 export interface SecurityhubInsightFiltersFirstObservedAt {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#end SecurityhubInsight#end}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#end SecurityhubInsight#end}
   */
   readonly end?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#start SecurityhubInsight#start}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#start SecurityhubInsight#start}
   */
   readonly start?: string;
   /**
   * date_range block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#date_range SecurityhubInsight#date_range}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#date_range SecurityhubInsight#date_range}
   */
   readonly dateRange?: SecurityhubInsightFiltersFirstObservedAtDateRange;
 }
@@ -3313,7 +3313,7 @@ export class SecurityhubInsightFiltersFirstObservedAtList extends cdktn.ComplexL
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3326,11 +3326,11 @@ export class SecurityhubInsightFiltersFirstObservedAtList extends cdktn.ComplexL
 }
 export interface SecurityhubInsightFiltersGeneratorId {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -3456,7 +3456,7 @@ export class SecurityhubInsightFiltersGeneratorIdList extends cdktn.ComplexList 
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3469,11 +3469,11 @@ export class SecurityhubInsightFiltersGeneratorIdList extends cdktn.ComplexList 
 }
 export interface SecurityhubInsightFiltersId {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -3599,7 +3599,7 @@ export class SecurityhubInsightFiltersIdList extends cdktn.ComplexList {
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3612,7 +3612,7 @@ export class SecurityhubInsightFiltersIdList extends cdktn.ComplexList {
 }
 export interface SecurityhubInsightFiltersKeyword {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -3712,7 +3712,7 @@ export class SecurityhubInsightFiltersKeywordList extends cdktn.ComplexList {
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3725,11 +3725,11 @@ export class SecurityhubInsightFiltersKeywordList extends cdktn.ComplexList {
 }
 export interface SecurityhubInsightFiltersLastObservedAtDateRange {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}
   */
   readonly unit: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: number;
 }
@@ -3836,17 +3836,17 @@ export class SecurityhubInsightFiltersLastObservedAtDateRangeOutputReference ext
 }
 export interface SecurityhubInsightFiltersLastObservedAt {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#end SecurityhubInsight#end}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#end SecurityhubInsight#end}
   */
   readonly end?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#start SecurityhubInsight#start}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#start SecurityhubInsight#start}
   */
   readonly start?: string;
   /**
   * date_range block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#date_range SecurityhubInsight#date_range}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#date_range SecurityhubInsight#date_range}
   */
   readonly dateRange?: SecurityhubInsightFiltersLastObservedAtDateRange;
 }
@@ -4007,7 +4007,7 @@ export class SecurityhubInsightFiltersLastObservedAtList extends cdktn.ComplexLi
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -4020,11 +4020,11 @@ export class SecurityhubInsightFiltersLastObservedAtList extends cdktn.ComplexLi
 }
 export interface SecurityhubInsightFiltersMalwareName {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -4150,7 +4150,7 @@ export class SecurityhubInsightFiltersMalwareNameList extends cdktn.ComplexList 
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -4163,11 +4163,11 @@ export class SecurityhubInsightFiltersMalwareNameList extends cdktn.ComplexList 
 }
 export interface SecurityhubInsightFiltersMalwarePath {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -4293,7 +4293,7 @@ export class SecurityhubInsightFiltersMalwarePathList extends cdktn.ComplexList 
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -4306,11 +4306,11 @@ export class SecurityhubInsightFiltersMalwarePathList extends cdktn.ComplexList 
 }
 export interface SecurityhubInsightFiltersMalwareState {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -4436,7 +4436,7 @@ export class SecurityhubInsightFiltersMalwareStateList extends cdktn.ComplexList
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -4449,11 +4449,11 @@ export class SecurityhubInsightFiltersMalwareStateList extends cdktn.ComplexList
 }
 export interface SecurityhubInsightFiltersMalwareType {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -4579,7 +4579,7 @@ export class SecurityhubInsightFiltersMalwareTypeList extends cdktn.ComplexList 
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -4592,11 +4592,11 @@ export class SecurityhubInsightFiltersMalwareTypeList extends cdktn.ComplexList 
 }
 export interface SecurityhubInsightFiltersNetworkDestinationDomain {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -4722,7 +4722,7 @@ export class SecurityhubInsightFiltersNetworkDestinationDomainList extends cdktn
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -4735,7 +4735,7 @@ export class SecurityhubInsightFiltersNetworkDestinationDomainList extends cdktn
 }
 export interface SecurityhubInsightFiltersNetworkDestinationIpv4 {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#cidr SecurityhubInsight#cidr}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#cidr SecurityhubInsight#cidr}
   */
   readonly cidr: string;
 }
@@ -4835,7 +4835,7 @@ export class SecurityhubInsightFiltersNetworkDestinationIpv4List extends cdktn.C
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -4848,7 +4848,7 @@ export class SecurityhubInsightFiltersNetworkDestinationIpv4List extends cdktn.C
 }
 export interface SecurityhubInsightFiltersNetworkDestinationIpv6 {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#cidr SecurityhubInsight#cidr}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#cidr SecurityhubInsight#cidr}
   */
   readonly cidr: string;
 }
@@ -4948,7 +4948,7 @@ export class SecurityhubInsightFiltersNetworkDestinationIpv6List extends cdktn.C
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -4961,15 +4961,15 @@ export class SecurityhubInsightFiltersNetworkDestinationIpv6List extends cdktn.C
 }
 export interface SecurityhubInsightFiltersNetworkDestinationPort {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#eq SecurityhubInsight#eq}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#eq SecurityhubInsight#eq}
   */
   readonly eq?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#gte SecurityhubInsight#gte}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#gte SecurityhubInsight#gte}
   */
   readonly gte?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#lte SecurityhubInsight#lte}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#lte SecurityhubInsight#lte}
   */
   readonly lte?: string;
 }
@@ -5130,7 +5130,7 @@ export class SecurityhubInsightFiltersNetworkDestinationPortList extends cdktn.C
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -5143,11 +5143,11 @@ export class SecurityhubInsightFiltersNetworkDestinationPortList extends cdktn.C
 }
 export interface SecurityhubInsightFiltersNetworkDirection {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -5273,7 +5273,7 @@ export class SecurityhubInsightFiltersNetworkDirectionList extends cdktn.Complex
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -5286,11 +5286,11 @@ export class SecurityhubInsightFiltersNetworkDirectionList extends cdktn.Complex
 }
 export interface SecurityhubInsightFiltersNetworkProtocol {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -5416,7 +5416,7 @@ export class SecurityhubInsightFiltersNetworkProtocolList extends cdktn.ComplexL
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -5429,11 +5429,11 @@ export class SecurityhubInsightFiltersNetworkProtocolList extends cdktn.ComplexL
 }
 export interface SecurityhubInsightFiltersNetworkSourceDomain {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -5559,7 +5559,7 @@ export class SecurityhubInsightFiltersNetworkSourceDomainList extends cdktn.Comp
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -5572,7 +5572,7 @@ export class SecurityhubInsightFiltersNetworkSourceDomainList extends cdktn.Comp
 }
 export interface SecurityhubInsightFiltersNetworkSourceIpv4 {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#cidr SecurityhubInsight#cidr}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#cidr SecurityhubInsight#cidr}
   */
   readonly cidr: string;
 }
@@ -5672,7 +5672,7 @@ export class SecurityhubInsightFiltersNetworkSourceIpv4List extends cdktn.Comple
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -5685,7 +5685,7 @@ export class SecurityhubInsightFiltersNetworkSourceIpv4List extends cdktn.Comple
 }
 export interface SecurityhubInsightFiltersNetworkSourceIpv6 {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#cidr SecurityhubInsight#cidr}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#cidr SecurityhubInsight#cidr}
   */
   readonly cidr: string;
 }
@@ -5785,7 +5785,7 @@ export class SecurityhubInsightFiltersNetworkSourceIpv6List extends cdktn.Comple
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -5798,11 +5798,11 @@ export class SecurityhubInsightFiltersNetworkSourceIpv6List extends cdktn.Comple
 }
 export interface SecurityhubInsightFiltersNetworkSourceMac {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -5928,7 +5928,7 @@ export class SecurityhubInsightFiltersNetworkSourceMacList extends cdktn.Complex
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -5941,15 +5941,15 @@ export class SecurityhubInsightFiltersNetworkSourceMacList extends cdktn.Complex
 }
 export interface SecurityhubInsightFiltersNetworkSourcePort {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#eq SecurityhubInsight#eq}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#eq SecurityhubInsight#eq}
   */
   readonly eq?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#gte SecurityhubInsight#gte}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#gte SecurityhubInsight#gte}
   */
   readonly gte?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#lte SecurityhubInsight#lte}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#lte SecurityhubInsight#lte}
   */
   readonly lte?: string;
 }
@@ -6110,7 +6110,7 @@ export class SecurityhubInsightFiltersNetworkSourcePortList extends cdktn.Comple
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -6123,11 +6123,11 @@ export class SecurityhubInsightFiltersNetworkSourcePortList extends cdktn.Comple
 }
 export interface SecurityhubInsightFiltersNoteText {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -6253,7 +6253,7 @@ export class SecurityhubInsightFiltersNoteTextList extends cdktn.ComplexList {
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -6266,11 +6266,11 @@ export class SecurityhubInsightFiltersNoteTextList extends cdktn.ComplexList {
 }
 export interface SecurityhubInsightFiltersNoteUpdatedAtDateRange {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}
   */
   readonly unit: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: number;
 }
@@ -6377,17 +6377,17 @@ export class SecurityhubInsightFiltersNoteUpdatedAtDateRangeOutputReference exte
 }
 export interface SecurityhubInsightFiltersNoteUpdatedAt {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#end SecurityhubInsight#end}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#end SecurityhubInsight#end}
   */
   readonly end?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#start SecurityhubInsight#start}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#start SecurityhubInsight#start}
   */
   readonly start?: string;
   /**
   * date_range block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#date_range SecurityhubInsight#date_range}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#date_range SecurityhubInsight#date_range}
   */
   readonly dateRange?: SecurityhubInsightFiltersNoteUpdatedAtDateRange;
 }
@@ -6548,7 +6548,7 @@ export class SecurityhubInsightFiltersNoteUpdatedAtList extends cdktn.ComplexLis
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -6561,11 +6561,11 @@ export class SecurityhubInsightFiltersNoteUpdatedAtList extends cdktn.ComplexLis
 }
 export interface SecurityhubInsightFiltersNoteUpdatedBy {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -6691,7 +6691,7 @@ export class SecurityhubInsightFiltersNoteUpdatedByList extends cdktn.ComplexLis
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -6704,11 +6704,11 @@ export class SecurityhubInsightFiltersNoteUpdatedByList extends cdktn.ComplexLis
 }
 export interface SecurityhubInsightFiltersProcessLaunchedAtDateRange {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}
   */
   readonly unit: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: number;
 }
@@ -6815,17 +6815,17 @@ export class SecurityhubInsightFiltersProcessLaunchedAtDateRangeOutputReference 
 }
 export interface SecurityhubInsightFiltersProcessLaunchedAt {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#end SecurityhubInsight#end}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#end SecurityhubInsight#end}
   */
   readonly end?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#start SecurityhubInsight#start}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#start SecurityhubInsight#start}
   */
   readonly start?: string;
   /**
   * date_range block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#date_range SecurityhubInsight#date_range}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#date_range SecurityhubInsight#date_range}
   */
   readonly dateRange?: SecurityhubInsightFiltersProcessLaunchedAtDateRange;
 }
@@ -6986,7 +6986,7 @@ export class SecurityhubInsightFiltersProcessLaunchedAtList extends cdktn.Comple
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -6999,11 +6999,11 @@ export class SecurityhubInsightFiltersProcessLaunchedAtList extends cdktn.Comple
 }
 export interface SecurityhubInsightFiltersProcessName {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -7129,7 +7129,7 @@ export class SecurityhubInsightFiltersProcessNameList extends cdktn.ComplexList 
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -7142,15 +7142,15 @@ export class SecurityhubInsightFiltersProcessNameList extends cdktn.ComplexList 
 }
 export interface SecurityhubInsightFiltersProcessParentPid {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#eq SecurityhubInsight#eq}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#eq SecurityhubInsight#eq}
   */
   readonly eq?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#gte SecurityhubInsight#gte}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#gte SecurityhubInsight#gte}
   */
   readonly gte?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#lte SecurityhubInsight#lte}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#lte SecurityhubInsight#lte}
   */
   readonly lte?: string;
 }
@@ -7311,7 +7311,7 @@ export class SecurityhubInsightFiltersProcessParentPidList extends cdktn.Complex
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -7324,11 +7324,11 @@ export class SecurityhubInsightFiltersProcessParentPidList extends cdktn.Complex
 }
 export interface SecurityhubInsightFiltersProcessPath {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -7454,7 +7454,7 @@ export class SecurityhubInsightFiltersProcessPathList extends cdktn.ComplexList 
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -7467,15 +7467,15 @@ export class SecurityhubInsightFiltersProcessPathList extends cdktn.ComplexList 
 }
 export interface SecurityhubInsightFiltersProcessPid {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#eq SecurityhubInsight#eq}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#eq SecurityhubInsight#eq}
   */
   readonly eq?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#gte SecurityhubInsight#gte}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#gte SecurityhubInsight#gte}
   */
   readonly gte?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#lte SecurityhubInsight#lte}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#lte SecurityhubInsight#lte}
   */
   readonly lte?: string;
 }
@@ -7636,7 +7636,7 @@ export class SecurityhubInsightFiltersProcessPidList extends cdktn.ComplexList {
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -7649,11 +7649,11 @@ export class SecurityhubInsightFiltersProcessPidList extends cdktn.ComplexList {
 }
 export interface SecurityhubInsightFiltersProcessTerminatedAtDateRange {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}
   */
   readonly unit: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: number;
 }
@@ -7760,17 +7760,17 @@ export class SecurityhubInsightFiltersProcessTerminatedAtDateRangeOutputReferenc
 }
 export interface SecurityhubInsightFiltersProcessTerminatedAt {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#end SecurityhubInsight#end}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#end SecurityhubInsight#end}
   */
   readonly end?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#start SecurityhubInsight#start}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#start SecurityhubInsight#start}
   */
   readonly start?: string;
   /**
   * date_range block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#date_range SecurityhubInsight#date_range}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#date_range SecurityhubInsight#date_range}
   */
   readonly dateRange?: SecurityhubInsightFiltersProcessTerminatedAtDateRange;
 }
@@ -7931,7 +7931,7 @@ export class SecurityhubInsightFiltersProcessTerminatedAtList extends cdktn.Comp
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -7944,11 +7944,11 @@ export class SecurityhubInsightFiltersProcessTerminatedAtList extends cdktn.Comp
 }
 export interface SecurityhubInsightFiltersProductArn {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -8074,7 +8074,7 @@ export class SecurityhubInsightFiltersProductArnList extends cdktn.ComplexList {
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -8087,15 +8087,15 @@ export class SecurityhubInsightFiltersProductArnList extends cdktn.ComplexList {
 }
 export interface SecurityhubInsightFiltersProductFields {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#key SecurityhubInsight#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#key SecurityhubInsight#key}
   */
   readonly key: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -8247,7 +8247,7 @@ export class SecurityhubInsightFiltersProductFieldsList extends cdktn.ComplexLis
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -8260,11 +8260,11 @@ export class SecurityhubInsightFiltersProductFieldsList extends cdktn.ComplexLis
 }
 export interface SecurityhubInsightFiltersProductName {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -8390,7 +8390,7 @@ export class SecurityhubInsightFiltersProductNameList extends cdktn.ComplexList 
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -8403,11 +8403,11 @@ export class SecurityhubInsightFiltersProductNameList extends cdktn.ComplexList 
 }
 export interface SecurityhubInsightFiltersRecommendationText {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -8533,7 +8533,7 @@ export class SecurityhubInsightFiltersRecommendationTextList extends cdktn.Compl
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -8546,11 +8546,11 @@ export class SecurityhubInsightFiltersRecommendationTextList extends cdktn.Compl
 }
 export interface SecurityhubInsightFiltersRecordState {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -8676,7 +8676,7 @@ export class SecurityhubInsightFiltersRecordStateList extends cdktn.ComplexList 
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -8689,11 +8689,11 @@ export class SecurityhubInsightFiltersRecordStateList extends cdktn.ComplexList 
 }
 export interface SecurityhubInsightFiltersRelatedFindingsId {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -8819,7 +8819,7 @@ export class SecurityhubInsightFiltersRelatedFindingsIdList extends cdktn.Comple
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -8832,11 +8832,11 @@ export class SecurityhubInsightFiltersRelatedFindingsIdList extends cdktn.Comple
 }
 export interface SecurityhubInsightFiltersRelatedFindingsProductArn {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -8962,7 +8962,7 @@ export class SecurityhubInsightFiltersRelatedFindingsProductArnList extends cdkt
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -8975,11 +8975,11 @@ export class SecurityhubInsightFiltersRelatedFindingsProductArnList extends cdkt
 }
 export interface SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -9105,7 +9105,7 @@ export class SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileAr
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -9118,11 +9118,11 @@ export class SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileAr
 }
 export interface SecurityhubInsightFiltersResourceAwsEc2InstanceImageId {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -9248,7 +9248,7 @@ export class SecurityhubInsightFiltersResourceAwsEc2InstanceImageIdList extends 
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -9261,7 +9261,7 @@ export class SecurityhubInsightFiltersResourceAwsEc2InstanceImageIdList extends 
 }
 export interface SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#cidr SecurityhubInsight#cidr}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#cidr SecurityhubInsight#cidr}
   */
   readonly cidr: string;
 }
@@ -9361,7 +9361,7 @@ export class SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4AddressesList ex
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -9374,7 +9374,7 @@ export class SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4AddressesList ex
 }
 export interface SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#cidr SecurityhubInsight#cidr}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#cidr SecurityhubInsight#cidr}
   */
   readonly cidr: string;
 }
@@ -9474,7 +9474,7 @@ export class SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6AddressesList ex
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -9487,11 +9487,11 @@ export class SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6AddressesList ex
 }
 export interface SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -9617,7 +9617,7 @@ export class SecurityhubInsightFiltersResourceAwsEc2InstanceKeyNameList extends 
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -9630,11 +9630,11 @@ export class SecurityhubInsightFiltersResourceAwsEc2InstanceKeyNameList extends 
 }
 export interface SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtDateRange {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}
   */
   readonly unit: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: number;
 }
@@ -9741,17 +9741,17 @@ export class SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtDateRangeO
 }
 export interface SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#end SecurityhubInsight#end}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#end SecurityhubInsight#end}
   */
   readonly end?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#start SecurityhubInsight#start}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#start SecurityhubInsight#start}
   */
   readonly start?: string;
   /**
   * date_range block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#date_range SecurityhubInsight#date_range}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#date_range SecurityhubInsight#date_range}
   */
   readonly dateRange?: SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtDateRange;
 }
@@ -9912,7 +9912,7 @@ export class SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtList exten
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -9925,11 +9925,11 @@ export class SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtList exten
 }
 export interface SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -10055,7 +10055,7 @@ export class SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetIdList extends
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -10068,11 +10068,11 @@ export class SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetIdList extends
 }
 export interface SecurityhubInsightFiltersResourceAwsEc2InstanceType {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -10198,7 +10198,7 @@ export class SecurityhubInsightFiltersResourceAwsEc2InstanceTypeList extends cdk
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -10211,11 +10211,11 @@ export class SecurityhubInsightFiltersResourceAwsEc2InstanceTypeList extends cdk
 }
 export interface SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -10341,7 +10341,7 @@ export class SecurityhubInsightFiltersResourceAwsEc2InstanceVpcIdList extends cd
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -10354,11 +10354,11 @@ export class SecurityhubInsightFiltersResourceAwsEc2InstanceVpcIdList extends cd
 }
 export interface SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtDateRange {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}
   */
   readonly unit: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: number;
 }
@@ -10465,17 +10465,17 @@ export class SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtDateRangeO
 }
 export interface SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#end SecurityhubInsight#end}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#end SecurityhubInsight#end}
   */
   readonly end?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#start SecurityhubInsight#start}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#start SecurityhubInsight#start}
   */
   readonly start?: string;
   /**
   * date_range block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#date_range SecurityhubInsight#date_range}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#date_range SecurityhubInsight#date_range}
   */
   readonly dateRange?: SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtDateRange;
 }
@@ -10636,7 +10636,7 @@ export class SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtList exten
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -10649,11 +10649,11 @@ export class SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtList exten
 }
 export interface SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -10779,7 +10779,7 @@ export class SecurityhubInsightFiltersResourceAwsIamAccessKeyStatusList extends 
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -10792,11 +10792,11 @@ export class SecurityhubInsightFiltersResourceAwsIamAccessKeyStatusList extends 
 }
 export interface SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -10922,7 +10922,7 @@ export class SecurityhubInsightFiltersResourceAwsIamAccessKeyUserNameList extend
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -10935,11 +10935,11 @@ export class SecurityhubInsightFiltersResourceAwsIamAccessKeyUserNameList extend
 }
 export interface SecurityhubInsightFiltersResourceAwsS3BucketOwnerId {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -11065,7 +11065,7 @@ export class SecurityhubInsightFiltersResourceAwsS3BucketOwnerIdList extends cdk
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -11078,11 +11078,11 @@ export class SecurityhubInsightFiltersResourceAwsS3BucketOwnerIdList extends cdk
 }
 export interface SecurityhubInsightFiltersResourceAwsS3BucketOwnerName {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -11208,7 +11208,7 @@ export class SecurityhubInsightFiltersResourceAwsS3BucketOwnerNameList extends c
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -11221,11 +11221,11 @@ export class SecurityhubInsightFiltersResourceAwsS3BucketOwnerNameList extends c
 }
 export interface SecurityhubInsightFiltersResourceContainerImageId {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -11351,7 +11351,7 @@ export class SecurityhubInsightFiltersResourceContainerImageIdList extends cdktn
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -11364,11 +11364,11 @@ export class SecurityhubInsightFiltersResourceContainerImageIdList extends cdktn
 }
 export interface SecurityhubInsightFiltersResourceContainerImageName {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -11494,7 +11494,7 @@ export class SecurityhubInsightFiltersResourceContainerImageNameList extends cdk
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -11507,11 +11507,11 @@ export class SecurityhubInsightFiltersResourceContainerImageNameList extends cdk
 }
 export interface SecurityhubInsightFiltersResourceContainerLaunchedAtDateRange {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}
   */
   readonly unit: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: number;
 }
@@ -11618,17 +11618,17 @@ export class SecurityhubInsightFiltersResourceContainerLaunchedAtDateRangeOutput
 }
 export interface SecurityhubInsightFiltersResourceContainerLaunchedAt {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#end SecurityhubInsight#end}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#end SecurityhubInsight#end}
   */
   readonly end?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#start SecurityhubInsight#start}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#start SecurityhubInsight#start}
   */
   readonly start?: string;
   /**
   * date_range block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#date_range SecurityhubInsight#date_range}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#date_range SecurityhubInsight#date_range}
   */
   readonly dateRange?: SecurityhubInsightFiltersResourceContainerLaunchedAtDateRange;
 }
@@ -11789,7 +11789,7 @@ export class SecurityhubInsightFiltersResourceContainerLaunchedAtList extends cd
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -11802,11 +11802,11 @@ export class SecurityhubInsightFiltersResourceContainerLaunchedAtList extends cd
 }
 export interface SecurityhubInsightFiltersResourceContainerName {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -11932,7 +11932,7 @@ export class SecurityhubInsightFiltersResourceContainerNameList extends cdktn.Co
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -11945,15 +11945,15 @@ export class SecurityhubInsightFiltersResourceContainerNameList extends cdktn.Co
 }
 export interface SecurityhubInsightFiltersResourceDetailsOther {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#key SecurityhubInsight#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#key SecurityhubInsight#key}
   */
   readonly key: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -12105,7 +12105,7 @@ export class SecurityhubInsightFiltersResourceDetailsOtherList extends cdktn.Com
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -12118,11 +12118,11 @@ export class SecurityhubInsightFiltersResourceDetailsOtherList extends cdktn.Com
 }
 export interface SecurityhubInsightFiltersResourceId {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -12248,7 +12248,7 @@ export class SecurityhubInsightFiltersResourceIdList extends cdktn.ComplexList {
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -12261,11 +12261,11 @@ export class SecurityhubInsightFiltersResourceIdList extends cdktn.ComplexList {
 }
 export interface SecurityhubInsightFiltersResourcePartition {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -12391,7 +12391,7 @@ export class SecurityhubInsightFiltersResourcePartitionList extends cdktn.Comple
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -12404,11 +12404,11 @@ export class SecurityhubInsightFiltersResourcePartitionList extends cdktn.Comple
 }
 export interface SecurityhubInsightFiltersResourceRegion {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -12534,7 +12534,7 @@ export class SecurityhubInsightFiltersResourceRegionList extends cdktn.ComplexLi
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -12547,15 +12547,15 @@ export class SecurityhubInsightFiltersResourceRegionList extends cdktn.ComplexLi
 }
 export interface SecurityhubInsightFiltersResourceTags {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#key SecurityhubInsight#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#key SecurityhubInsight#key}
   */
   readonly key: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -12707,7 +12707,7 @@ export class SecurityhubInsightFiltersResourceTagsList extends cdktn.ComplexList
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -12720,11 +12720,11 @@ export class SecurityhubInsightFiltersResourceTagsList extends cdktn.ComplexList
 }
 export interface SecurityhubInsightFiltersResourceType {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -12850,7 +12850,7 @@ export class SecurityhubInsightFiltersResourceTypeList extends cdktn.ComplexList
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -12863,11 +12863,11 @@ export class SecurityhubInsightFiltersResourceTypeList extends cdktn.ComplexList
 }
 export interface SecurityhubInsightFiltersSeverityLabel {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -12993,7 +12993,7 @@ export class SecurityhubInsightFiltersSeverityLabelList extends cdktn.ComplexLis
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -13006,11 +13006,11 @@ export class SecurityhubInsightFiltersSeverityLabelList extends cdktn.ComplexLis
 }
 export interface SecurityhubInsightFiltersSourceUrl {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -13136,7 +13136,7 @@ export class SecurityhubInsightFiltersSourceUrlList extends cdktn.ComplexList {
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -13149,11 +13149,11 @@ export class SecurityhubInsightFiltersSourceUrlList extends cdktn.ComplexList {
 }
 export interface SecurityhubInsightFiltersThreatIntelIndicatorCategory {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -13279,7 +13279,7 @@ export class SecurityhubInsightFiltersThreatIntelIndicatorCategoryList extends c
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -13292,11 +13292,11 @@ export class SecurityhubInsightFiltersThreatIntelIndicatorCategoryList extends c
 }
 export interface SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAtDateRange {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}
   */
   readonly unit: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: number;
 }
@@ -13403,17 +13403,17 @@ export class SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAtDateRang
 }
 export interface SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#end SecurityhubInsight#end}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#end SecurityhubInsight#end}
   */
   readonly end?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#start SecurityhubInsight#start}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#start SecurityhubInsight#start}
   */
   readonly start?: string;
   /**
   * date_range block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#date_range SecurityhubInsight#date_range}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#date_range SecurityhubInsight#date_range}
   */
   readonly dateRange?: SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAtDateRange;
 }
@@ -13574,7 +13574,7 @@ export class SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAtList ext
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -13587,11 +13587,11 @@ export class SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAtList ext
 }
 export interface SecurityhubInsightFiltersThreatIntelIndicatorSource {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -13717,7 +13717,7 @@ export class SecurityhubInsightFiltersThreatIntelIndicatorSourceList extends cdk
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -13730,11 +13730,11 @@ export class SecurityhubInsightFiltersThreatIntelIndicatorSourceList extends cdk
 }
 export interface SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -13860,7 +13860,7 @@ export class SecurityhubInsightFiltersThreatIntelIndicatorSourceUrlList extends 
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -13873,11 +13873,11 @@ export class SecurityhubInsightFiltersThreatIntelIndicatorSourceUrlList extends 
 }
 export interface SecurityhubInsightFiltersThreatIntelIndicatorType {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -14003,7 +14003,7 @@ export class SecurityhubInsightFiltersThreatIntelIndicatorTypeList extends cdktn
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -14016,11 +14016,11 @@ export class SecurityhubInsightFiltersThreatIntelIndicatorTypeList extends cdktn
 }
 export interface SecurityhubInsightFiltersThreatIntelIndicatorValue {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -14146,7 +14146,7 @@ export class SecurityhubInsightFiltersThreatIntelIndicatorValueList extends cdkt
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -14159,11 +14159,11 @@ export class SecurityhubInsightFiltersThreatIntelIndicatorValueList extends cdkt
 }
 export interface SecurityhubInsightFiltersTitle {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -14289,7 +14289,7 @@ export class SecurityhubInsightFiltersTitleList extends cdktn.ComplexList {
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -14302,11 +14302,11 @@ export class SecurityhubInsightFiltersTitleList extends cdktn.ComplexList {
 }
 export interface SecurityhubInsightFiltersType {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -14432,7 +14432,7 @@ export class SecurityhubInsightFiltersTypeList extends cdktn.ComplexList {
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -14445,11 +14445,11 @@ export class SecurityhubInsightFiltersTypeList extends cdktn.ComplexList {
 }
 export interface SecurityhubInsightFiltersUpdatedAtDateRange {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#unit SecurityhubInsight#unit}
   */
   readonly unit: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: number;
 }
@@ -14556,17 +14556,17 @@ export class SecurityhubInsightFiltersUpdatedAtDateRangeOutputReference extends 
 }
 export interface SecurityhubInsightFiltersUpdatedAt {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#end SecurityhubInsight#end}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#end SecurityhubInsight#end}
   */
   readonly end?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#start SecurityhubInsight#start}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#start SecurityhubInsight#start}
   */
   readonly start?: string;
   /**
   * date_range block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#date_range SecurityhubInsight#date_range}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#date_range SecurityhubInsight#date_range}
   */
   readonly dateRange?: SecurityhubInsightFiltersUpdatedAtDateRange;
 }
@@ -14727,7 +14727,7 @@ export class SecurityhubInsightFiltersUpdatedAtList extends cdktn.ComplexList {
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -14740,15 +14740,15 @@ export class SecurityhubInsightFiltersUpdatedAtList extends cdktn.ComplexList {
 }
 export interface SecurityhubInsightFiltersUserDefinedValues {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#comparison SecurityhubInsight#comparison}
   */
   readonly comparison: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#key SecurityhubInsight#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#key SecurityhubInsight#key}
   */
   readonly key: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/securityhub_insight#value SecurityhubInsight#value}
   */
   readonly value: string;
 }
@@ -14900,7 +14900,7 @@ export class SecurityhubInsightFiltersUserDefinedValuesList extends cdktn.Comple
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 

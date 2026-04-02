@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/data-sources/dynamodb_backups
+// https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/data-sources/dynamodb_backups
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,25 +13,25 @@ import * as cdktn from 'cdktn';
 
 export interface DataAwsDynamodbBackupsConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/data-sources/dynamodb_backups#backup_type DataAwsDynamodbBackups#backup_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/data-sources/dynamodb_backups#backup_type DataAwsDynamodbBackups#backup_type}
   */
   readonly backupType?: string;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/data-sources/dynamodb_backups#region DataAwsDynamodbBackups#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/data-sources/dynamodb_backups#region DataAwsDynamodbBackups#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/data-sources/dynamodb_backups#table_name DataAwsDynamodbBackups#table_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/data-sources/dynamodb_backups#table_name DataAwsDynamodbBackups#table_name}
   */
   readonly tableName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/data-sources/dynamodb_backups#time_range_lower_bound DataAwsDynamodbBackups#time_range_lower_bound}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/data-sources/dynamodb_backups#time_range_lower_bound DataAwsDynamodbBackups#time_range_lower_bound}
   */
   readonly timeRangeLowerBound?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/data-sources/dynamodb_backups#time_range_upper_bound DataAwsDynamodbBackups#time_range_upper_bound}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/data-sources/dynamodb_backups#time_range_upper_bound DataAwsDynamodbBackups#time_range_upper_bound}
   */
   readonly timeRangeUpperBound?: string;
 }
@@ -144,7 +144,7 @@ export class DataAwsDynamodbBackupsBackupSummariesList extends cdktn.ComplexList
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -157,7 +157,7 @@ export class DataAwsDynamodbBackupsBackupSummariesList extends cdktn.ComplexList
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/data-sources/dynamodb_backups aws_dynamodb_backups}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/data-sources/dynamodb_backups aws_dynamodb_backups}
 */
 export class DataAwsDynamodbBackups extends cdktn.TerraformDataSource {
 
@@ -173,7 +173,7 @@ export class DataAwsDynamodbBackups extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataAwsDynamodbBackups resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsDynamodbBackups to import
-  * @param importFromId The id of the existing DataAwsDynamodbBackups that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/data-sources/dynamodb_backups#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsDynamodbBackups that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/data-sources/dynamodb_backups#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsDynamodbBackups to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -185,7 +185,7 @@ export class DataAwsDynamodbBackups extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/data-sources/dynamodb_backups aws_dynamodb_backups} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/data-sources/dynamodb_backups aws_dynamodb_backups} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -196,7 +196,7 @@ export class DataAwsDynamodbBackups extends cdktn.TerraformDataSource {
       terraformResourceType: 'aws_dynamodb_backups',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.38.0',
+        providerVersion: '6.39.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

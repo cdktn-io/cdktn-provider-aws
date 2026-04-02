@@ -1,3 +1,3 @@
 # `aws_waf_ipset`
 
-Refer to the Terraform Registry for docs: [`aws_waf_ipset`](https://registry.terraform.io/providers/hashicorp/aws/6.38.0/docs/resources/waf_ipset).
+Refer to the Terraform Registry for docs: [`aws_waf_ipset`](https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/waf_ipset).

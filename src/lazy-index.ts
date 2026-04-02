@@ -1048,6 +1048,7 @@ Object.defineProperty(exports, 'opensearchserverlessSecurityConfig', { get: func
 Object.defineProperty(exports, 'opensearchserverlessSecurityPolicy', { get: function () { return require('./opensearchserverless-security-policy'); } });
 Object.defineProperty(exports, 'opensearchserverlessVpcEndpoint', { get: function () { return require('./opensearchserverless-vpc-endpoint'); } });
 Object.defineProperty(exports, 'organizationsAccount', { get: function () { return require('./organizations-account'); } });
+Object.defineProperty(exports, 'organizationsAwsServiceAccess', { get: function () { return require('./organizations-aws-service-access'); } });
 Object.defineProperty(exports, 'organizationsDelegatedAdministrator', { get: function () { return require('./organizations-delegated-administrator'); } });
 Object.defineProperty(exports, 'organizationsOrganization', { get: function () { return require('./organizations-organization'); } });
 Object.defineProperty(exports, 'organizationsOrganizationalUnit', { get: function () { return require('./organizations-organizational-unit'); } });
@@ -1306,6 +1307,7 @@ Object.defineProperty(exports, 'sagemakerProject', { get: function () { return r
 Object.defineProperty(exports, 'sagemakerServicecatalogPortfolioStatus', { get: function () { return require('./sagemaker-servicecatalog-portfolio-status'); } });
 Object.defineProperty(exports, 'sagemakerSpace', { get: function () { return require('./sagemaker-space'); } });
 Object.defineProperty(exports, 'sagemakerStudioLifecycleConfig', { get: function () { return require('./sagemaker-studio-lifecycle-config'); } });
+Object.defineProperty(exports, 'sagemakerTrainingJob', { get: function () { return require('./sagemaker-training-job'); } });
 Object.defineProperty(exports, 'sagemakerUserProfile', { get: function () { return require('./sagemaker-user-profile'); } });
 Object.defineProperty(exports, 'sagemakerWorkforce', { get: function () { return require('./sagemaker-workforce'); } });
 Object.defineProperty(exports, 'sagemakerWorkteam', { get: function () { return require('./sagemaker-workteam'); } });
@@ -1493,6 +1495,7 @@ Object.defineProperty(exports, 'transferUser', { get: function () { return requi
 Object.defineProperty(exports, 'transferWebApp', { get: function () { return require('./transfer-web-app'); } });
 Object.defineProperty(exports, 'transferWebAppCustomization', { get: function () { return require('./transfer-web-app-customization'); } });
 Object.defineProperty(exports, 'transferWorkflow', { get: function () { return require('./transfer-workflow'); } });
+Object.defineProperty(exports, 'uxcAccountCustomizations', { get: function () { return require('./uxc-account-customizations'); } });
 Object.defineProperty(exports, 'verifiedaccessEndpoint', { get: function () { return require('./verifiedaccess-endpoint'); } });
 Object.defineProperty(exports, 'verifiedaccessGroup', { get: function () { return require('./verifiedaccess-group'); } });
 Object.defineProperty(exports, 'verifiedaccessInstance', { get: function () { return require('./verifiedaccess-instance'); } });
@@ -1603,7 +1606,9 @@ Object.defineProperty(exports, 'wafv2WebAclRule', { get: function () { return re
 Object.defineProperty(exports, 'wafv2WebAclRuleGroupAssociation', { get: function () { return require('./wafv2-web-acl-rule-group-association'); } });
 Object.defineProperty(exports, 'workmailDefaultDomain', { get: function () { return require('./workmail-default-domain'); } });
 Object.defineProperty(exports, 'workmailDomain', { get: function () { return require('./workmail-domain'); } });
+Object.defineProperty(exports, 'workmailGroup', { get: function () { return require('./workmail-group'); } });
 Object.defineProperty(exports, 'workmailOrganization', { get: function () { return require('./workmail-organization'); } });
+Object.defineProperty(exports, 'workmailUser', { get: function () { return require('./workmail-user'); } });
 Object.defineProperty(exports, 'workspacesConnectionAlias', { get: function () { return require('./workspaces-connection-alias'); } });
 Object.defineProperty(exports, 'workspacesDirectory', { get: function () { return require('./workspaces-directory'); } });
 Object.defineProperty(exports, 'workspacesIpGroup', { get: function () { return require('./workspaces-ip-group'); } });
@@ -1917,6 +1922,8 @@ Object.defineProperty(exports, 'dataAwsIamPolicy', { get: function () { return r
 Object.defineProperty(exports, 'dataAwsIamPolicyDocument', { get: function () { return require('./data-aws-iam-policy-document'); } });
 Object.defineProperty(exports, 'dataAwsIamPrincipalPolicySimulation', { get: function () { return require('./data-aws-iam-principal-policy-simulation'); } });
 Object.defineProperty(exports, 'dataAwsIamRole', { get: function () { return require('./data-aws-iam-role'); } });
+Object.defineProperty(exports, 'dataAwsIamRolePolicies', { get: function () { return require('./data-aws-iam-role-policies'); } });
+Object.defineProperty(exports, 'dataAwsIamRolePolicyAttachments', { get: function () { return require('./data-aws-iam-role-policy-attachments'); } });
 Object.defineProperty(exports, 'dataAwsIamRoles', { get: function () { return require('./data-aws-iam-roles'); } });
 Object.defineProperty(exports, 'dataAwsIamSamlProvider', { get: function () { return require('./data-aws-iam-saml-provider'); } });
 Object.defineProperty(exports, 'dataAwsIamServerCertificate', { get: function () { return require('./data-aws-iam-server-certificate'); } });
@@ -2032,6 +2039,7 @@ Object.defineProperty(exports, 'dataAwsNetworkfirewallFirewallPolicy', { get: fu
 Object.defineProperty(exports, 'dataAwsNetworkfirewallResourcePolicy', { get: function () { return require('./data-aws-networkfirewall-resource-policy'); } });
 Object.defineProperty(exports, 'dataAwsNetworkmanagerConnection', { get: function () { return require('./data-aws-networkmanager-connection'); } });
 Object.defineProperty(exports, 'dataAwsNetworkmanagerConnections', { get: function () { return require('./data-aws-networkmanager-connections'); } });
+Object.defineProperty(exports, 'dataAwsNetworkmanagerCoreNetwork', { get: function () { return require('./data-aws-networkmanager-core-network'); } });
 Object.defineProperty(exports, 'dataAwsNetworkmanagerCoreNetworkPolicyDocument', { get: function () { return require('./data-aws-networkmanager-core-network-policy-document'); } });
 Object.defineProperty(exports, 'dataAwsNetworkmanagerDevice', { get: function () { return require('./data-aws-networkmanager-device'); } });
 Object.defineProperty(exports, 'dataAwsNetworkmanagerDevices', { get: function () { return require('./data-aws-networkmanager-devices'); } });
@@ -2235,6 +2243,7 @@ Object.defineProperty(exports, 'dataAwsTimestreamwriteDatabase', { get: function
 Object.defineProperty(exports, 'dataAwsTimestreamwriteTable', { get: function () { return require('./data-aws-timestreamwrite-table'); } });
 Object.defineProperty(exports, 'dataAwsTransferConnector', { get: function () { return require('./data-aws-transfer-connector'); } });
 Object.defineProperty(exports, 'dataAwsTransferServer', { get: function () { return require('./data-aws-transfer-server'); } });
+Object.defineProperty(exports, 'dataAwsUxcServices', { get: function () { return require('./data-aws-uxc-services'); } });
 Object.defineProperty(exports, 'dataAwsVerifiedpermissionsPolicyStore', { get: function () { return require('./data-aws-verifiedpermissions-policy-store'); } });
 Object.defineProperty(exports, 'dataAwsVpc', { get: function () { return require('./data-aws-vpc'); } });
 Object.defineProperty(exports, 'dataAwsVpcDhcpOptions', { get: function () { return require('./data-aws-vpc-dhcp-options'); } });
