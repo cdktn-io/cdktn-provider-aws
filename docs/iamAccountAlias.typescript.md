@@ -4,7 +4,7 @@
 
 ### IamAccountAlias <a name="IamAccountAlias" id="@cdktn/provider-aws.iamAccountAlias.IamAccountAlias"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/iam_account_alias aws_iam_account_alias}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/iam_account_alias aws_iam_account_alias}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.iamAccountAlias.IamAccountAlias.Initializer"></a>
 
@@ -496,7 +496,7 @@ The construct id used in the generated config for the IamAccountAlias to import.
 
 The id of the existing IamAccountAlias that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/iam_account_alias#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/iam_account_alias#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -756,8 +756,8 @@ const iamAccountAliasConfig: iamAccountAlias.IamAccountAliasConfig = { ... }
 | <code><a href="#@cdktn/provider-aws.iamAccountAlias.IamAccountAliasConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iamAccountAlias.IamAccountAliasConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iamAccountAlias.IamAccountAliasConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.iamAccountAlias.IamAccountAliasConfig.property.accountAlias">accountAlias</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/iam_account_alias#account_alias IamAccountAlias#account_alias}. |
-| <code><a href="#@cdktn/provider-aws.iamAccountAlias.IamAccountAliasConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/iam_account_alias#id IamAccountAlias#id}. |
+| <code><a href="#@cdktn/provider-aws.iamAccountAlias.IamAccountAliasConfig.property.accountAlias">accountAlias</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/iam_account_alias#account_alias IamAccountAlias#account_alias}. |
+| <code><a href="#@cdktn/provider-aws.iamAccountAlias.IamAccountAliasConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/iam_account_alias#id IamAccountAlias#id}. |
 
 ---
 
@@ -839,7 +839,7 @@ public readonly accountAlias: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/iam_account_alias#account_alias IamAccountAlias#account_alias}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/iam_account_alias#account_alias IamAccountAlias#account_alias}.
 
 ---
 
@@ -851,7 +851,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/iam_account_alias#id IamAccountAlias#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/iam_account_alias#id IamAccountAlias#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

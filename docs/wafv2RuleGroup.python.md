@@ -4,7 +4,7 @@
 
 ### Wafv2RuleGroup <a name="Wafv2RuleGroup" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroup"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_rule_group aws_wafv2_rule_group}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_rule_group aws_wafv2_rule_group}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroup.Initializer"></a>
 
@@ -48,19 +48,19 @@ wafv2RuleGroup.Wafv2RuleGroup(
 | <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroup.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroup.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroup.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroup.Initializer.parameter.capacity">capacity</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_rule_group#capacity Wafv2RuleGroup#capacity}. |
-| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroup.Initializer.parameter.scope">scope</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_rule_group#scope Wafv2RuleGroup#scope}. |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroup.Initializer.parameter.capacity">capacity</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_rule_group#capacity Wafv2RuleGroup#capacity}. |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroup.Initializer.parameter.scope">scope</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_rule_group#scope Wafv2RuleGroup#scope}. |
 | <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroup.Initializer.parameter.visibilityConfig">visibility_config</a></code> | <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupVisibilityConfig">Wafv2RuleGroupVisibilityConfig</a></code> | visibility_config block. |
 | <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroup.Initializer.parameter.customResponseBody">custom_response_body</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupCustomResponseBody">Wafv2RuleGroupCustomResponseBody</a>]</code> | custom_response_body block. |
-| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroup.Initializer.parameter.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_rule_group#description Wafv2RuleGroup#description}. |
-| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroup.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_rule_group#id Wafv2RuleGroup#id}. |
-| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroup.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_rule_group#name Wafv2RuleGroup#name}. |
-| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroup.Initializer.parameter.namePrefix">name_prefix</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_rule_group#name_prefix Wafv2RuleGroup#name_prefix}. |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroup.Initializer.parameter.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_rule_group#description Wafv2RuleGroup#description}. |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroup.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_rule_group#id Wafv2RuleGroup#id}. |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroup.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_rule_group#name Wafv2RuleGroup#name}. |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroup.Initializer.parameter.namePrefix">name_prefix</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_rule_group#name_prefix Wafv2RuleGroup#name_prefix}. |
 | <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroup.Initializer.parameter.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroup.Initializer.parameter.rule">rule</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRule">Wafv2RuleGroupRule</a>]</code> | rule block. |
-| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroup.Initializer.parameter.rulesJson">rules_json</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_rule_group#rules_json Wafv2RuleGroup#rules_json}. |
-| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroup.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_rule_group#tags Wafv2RuleGroup#tags}. |
-| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroup.Initializer.parameter.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_rule_group#tags_all Wafv2RuleGroup#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroup.Initializer.parameter.rulesJson">rules_json</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_rule_group#rules_json Wafv2RuleGroup#rules_json}. |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroup.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_rule_group#tags Wafv2RuleGroup#tags}. |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroup.Initializer.parameter.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_rule_group#tags_all Wafv2RuleGroup#tags_all}. |
 
 ---
 
@@ -128,7 +128,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_rule_group#capacity Wafv2RuleGroup#capacity}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_rule_group#capacity Wafv2RuleGroup#capacity}.
 
 ---
 
@@ -136,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_rule_group#scope Wafv2RuleGroup#scope}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_rule_group#scope Wafv2RuleGroup#scope}.
 
 ---
 
@@ -146,7 +146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 visibility_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_rule_group#visibility_config Wafv2RuleGroup#visibility_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_rule_group#visibility_config Wafv2RuleGroup#visibility_config}
 
 ---
 
@@ -156,7 +156,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 custom_response_body block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_rule_group#custom_response_body Wafv2RuleGroup#custom_response_body}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_rule_group#custom_response_body Wafv2RuleGroup#custom_response_body}
 
 ---
 
@@ -164,7 +164,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_rule_group#description Wafv2RuleGroup#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_rule_group#description Wafv2RuleGroup#description}.
 
 ---
 
@@ -172,7 +172,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_rule_group#id Wafv2RuleGroup#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_rule_group#id Wafv2RuleGroup#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -183,7 +183,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_rule_group#name Wafv2RuleGroup#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_rule_group#name Wafv2RuleGroup#name}.
 
 ---
 
@@ -191,7 +191,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_rule_group#name_prefix Wafv2RuleGroup#name_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_rule_group#name_prefix Wafv2RuleGroup#name_prefix}.
 
 ---
 
@@ -201,7 +201,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_rule_group#region Wafv2RuleGroup#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_rule_group#region Wafv2RuleGroup#region}
 
 ---
 
@@ -211,7 +211,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_rule_group#rule Wafv2RuleGroup#rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_rule_group#rule Wafv2RuleGroup#rule}
 
 ---
 
@@ -219,7 +219,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_rule_group#rules_json Wafv2RuleGroup#rules_json}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_rule_group#rules_json Wafv2RuleGroup#rules_json}.
 
 ---
 
@@ -227,7 +227,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_rule_group#tags Wafv2RuleGroup#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_rule_group#tags Wafv2RuleGroup#tags}.
 
 ---
 
@@ -235,7 +235,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_rule_group#tags_all Wafv2RuleGroup#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_rule_group#tags_all Wafv2RuleGroup#tags_all}.
 
 ---
 
@@ -673,7 +673,7 @@ def put_visibility_config(
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_rule_group#cloudwatch_metrics_enabled Wafv2RuleGroup#cloudwatch_metrics_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_rule_group#cloudwatch_metrics_enabled Wafv2RuleGroup#cloudwatch_metrics_enabled}.
 
 ---
 
@@ -681,7 +681,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_rule_group#metric_name Wafv2RuleGroup#metric_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_rule_group#metric_name Wafv2RuleGroup#metric_name}.
 
 ---
 
@@ -689,7 +689,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_rule_group#sampled_requests_enabled Wafv2RuleGroup#sampled_requests_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_rule_group#sampled_requests_enabled Wafv2RuleGroup#sampled_requests_enabled}.
 
 ---
 
@@ -867,7 +867,7 @@ The construct id used in the generated config for the Wafv2RuleGroup to import.
 
 The id of the existing Wafv2RuleGroup that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_rule_group#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_rule_group#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1412,19 +1412,19 @@ wafv2RuleGroup.Wafv2RuleGroupConfig(
 | <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupConfig.property.capacity">capacity</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_rule_group#capacity Wafv2RuleGroup#capacity}. |
-| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupConfig.property.scope">scope</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_rule_group#scope Wafv2RuleGroup#scope}. |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupConfig.property.capacity">capacity</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_rule_group#capacity Wafv2RuleGroup#capacity}. |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupConfig.property.scope">scope</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_rule_group#scope Wafv2RuleGroup#scope}. |
 | <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupConfig.property.visibilityConfig">visibility_config</a></code> | <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupVisibilityConfig">Wafv2RuleGroupVisibilityConfig</a></code> | visibility_config block. |
 | <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupConfig.property.customResponseBody">custom_response_body</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupCustomResponseBody">Wafv2RuleGroupCustomResponseBody</a>]</code> | custom_response_body block. |
-| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupConfig.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_rule_group#description Wafv2RuleGroup#description}. |
-| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_rule_group#id Wafv2RuleGroup#id}. |
-| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_rule_group#name Wafv2RuleGroup#name}. |
-| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupConfig.property.namePrefix">name_prefix</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_rule_group#name_prefix Wafv2RuleGroup#name_prefix}. |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupConfig.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_rule_group#description Wafv2RuleGroup#description}. |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_rule_group#id Wafv2RuleGroup#id}. |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_rule_group#name Wafv2RuleGroup#name}. |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupConfig.property.namePrefix">name_prefix</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_rule_group#name_prefix Wafv2RuleGroup#name_prefix}. |
 | <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupConfig.property.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupConfig.property.rule">rule</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRule">Wafv2RuleGroupRule</a>]</code> | rule block. |
-| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupConfig.property.rulesJson">rules_json</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_rule_group#rules_json Wafv2RuleGroup#rules_json}. |
-| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_rule_group#tags Wafv2RuleGroup#tags}. |
-| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupConfig.property.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_rule_group#tags_all Wafv2RuleGroup#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupConfig.property.rulesJson">rules_json</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_rule_group#rules_json Wafv2RuleGroup#rules_json}. |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_rule_group#tags Wafv2RuleGroup#tags}. |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupConfig.property.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_rule_group#tags_all Wafv2RuleGroup#tags_all}. |
 
 ---
 
@@ -1506,7 +1506,7 @@ capacity: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_rule_group#capacity Wafv2RuleGroup#capacity}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_rule_group#capacity Wafv2RuleGroup#capacity}.
 
 ---
 
@@ -1518,7 +1518,7 @@ scope: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_rule_group#scope Wafv2RuleGroup#scope}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_rule_group#scope Wafv2RuleGroup#scope}.
 
 ---
 
@@ -1532,7 +1532,7 @@ visibility_config: Wafv2RuleGroupVisibilityConfig
 
 visibility_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_rule_group#visibility_config Wafv2RuleGroup#visibility_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_rule_group#visibility_config Wafv2RuleGroup#visibility_config}
 
 ---
 
@@ -1546,7 +1546,7 @@ custom_response_body: IResolvable | typing.List[Wafv2RuleGroupCustomResponseBody
 
 custom_response_body block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_rule_group#custom_response_body Wafv2RuleGroup#custom_response_body}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_rule_group#custom_response_body Wafv2RuleGroup#custom_response_body}
 
 ---
 
@@ -1558,7 +1558,7 @@ description: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_rule_group#description Wafv2RuleGroup#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_rule_group#description Wafv2RuleGroup#description}.
 
 ---
 
@@ -1570,7 +1570,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_rule_group#id Wafv2RuleGroup#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_rule_group#id Wafv2RuleGroup#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1585,7 +1585,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_rule_group#name Wafv2RuleGroup#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_rule_group#name Wafv2RuleGroup#name}.
 
 ---
 
@@ -1597,7 +1597,7 @@ name_prefix: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_rule_group#name_prefix Wafv2RuleGroup#name_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_rule_group#name_prefix Wafv2RuleGroup#name_prefix}.
 
 ---
 
@@ -1611,7 +1611,7 @@ region: str
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_rule_group#region Wafv2RuleGroup#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_rule_group#region Wafv2RuleGroup#region}
 
 ---
 
@@ -1625,7 +1625,7 @@ rule: IResolvable | typing.List[Wafv2RuleGroupRule]
 
 rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_rule_group#rule Wafv2RuleGroup#rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_rule_group#rule Wafv2RuleGroup#rule}
 
 ---
 
@@ -1637,7 +1637,7 @@ rules_json: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_rule_group#rules_json Wafv2RuleGroup#rules_json}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_rule_group#rules_json Wafv2RuleGroup#rules_json}.
 
 ---
 
@@ -1649,7 +1649,7 @@ tags: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_rule_group#tags Wafv2RuleGroup#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_rule_group#tags Wafv2RuleGroup#tags}.
 
 ---
 
@@ -1661,7 +1661,7 @@ tags_all: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_rule_group#tags_all Wafv2RuleGroup#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_rule_group#tags_all Wafv2RuleGroup#tags_all}.
 
 ---
 
@@ -1683,9 +1683,9 @@ wafv2RuleGroup.Wafv2RuleGroupCustomResponseBody(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupCustomResponseBody.property.content">content</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_rule_group#content Wafv2RuleGroup#content}. |
-| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupCustomResponseBody.property.contentType">content_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_rule_group#content_type Wafv2RuleGroup#content_type}. |
-| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupCustomResponseBody.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_rule_group#key Wafv2RuleGroup#key}. |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupCustomResponseBody.property.content">content</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_rule_group#content Wafv2RuleGroup#content}. |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupCustomResponseBody.property.contentType">content_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_rule_group#content_type Wafv2RuleGroup#content_type}. |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupCustomResponseBody.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_rule_group#key Wafv2RuleGroup#key}. |
 
 ---
 
@@ -1697,7 +1697,7 @@ content: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_rule_group#content Wafv2RuleGroup#content}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_rule_group#content Wafv2RuleGroup#content}.
 
 ---
 
@@ -1709,7 +1709,7 @@ content_type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_rule_group#content_type Wafv2RuleGroup#content_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_rule_group#content_type Wafv2RuleGroup#content_type}.
 
 ---
 
@@ -1721,7 +1721,7 @@ key: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_rule_group#key Wafv2RuleGroup#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_rule_group#key Wafv2RuleGroup#key}.
 
 ---
 
@@ -1748,8 +1748,8 @@ wafv2RuleGroup.Wafv2RuleGroupRule(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRule.property.action">action</a></code> | <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleAction">Wafv2RuleGroupRuleAction</a></code> | action block. |
-| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRule.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_rule_group#name Wafv2RuleGroup#name}. |
-| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRule.property.priority">priority</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_rule_group#priority Wafv2RuleGroup#priority}. |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRule.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_rule_group#name Wafv2RuleGroup#name}. |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRule.property.priority">priority</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_rule_group#priority Wafv2RuleGroup#priority}. |
 | <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRule.property.visibilityConfig">visibility_config</a></code> | <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleVisibilityConfig">Wafv2RuleGroupRuleVisibilityConfig</a></code> | visibility_config block. |
 | <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRule.property.captchaConfig">captcha_config</a></code> | <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleCaptchaConfig">Wafv2RuleGroupRuleCaptchaConfig</a></code> | captcha_config block. |
 | <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRule.property.ruleLabel">rule_label</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleRuleLabel">Wafv2RuleGroupRuleRuleLabel</a>]</code> | rule_label block. |
@@ -1767,7 +1767,7 @@ action: Wafv2RuleGroupRuleAction
 
 action block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_rule_group#action Wafv2RuleGroup#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_rule_group#action Wafv2RuleGroup#action}
 
 ---
 
@@ -1779,7 +1779,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_rule_group#name Wafv2RuleGroup#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_rule_group#name Wafv2RuleGroup#name}.
 
 ---
 
@@ -1791,7 +1791,7 @@ priority: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_rule_group#priority Wafv2RuleGroup#priority}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_rule_group#priority Wafv2RuleGroup#priority}.
 
 ---
 
@@ -1805,7 +1805,7 @@ visibility_config: Wafv2RuleGroupRuleVisibilityConfig
 
 visibility_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_rule_group#visibility_config Wafv2RuleGroup#visibility_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_rule_group#visibility_config Wafv2RuleGroup#visibility_config}
 
 ---
 
@@ -1819,7 +1819,7 @@ captcha_config: Wafv2RuleGroupRuleCaptchaConfig
 
 captcha_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_rule_group#captcha_config Wafv2RuleGroup#captcha_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_rule_group#captcha_config Wafv2RuleGroup#captcha_config}
 
 ---
 
@@ -1833,7 +1833,7 @@ rule_label: IResolvable | typing.List[Wafv2RuleGroupRuleRuleLabel]
 
 rule_label block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_rule_group#rule_label Wafv2RuleGroup#rule_label}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_rule_group#rule_label Wafv2RuleGroup#rule_label}
 
 ---
 
@@ -1847,7 +1847,7 @@ statement: typing.Any
 
 statement block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_rule_group#statement Wafv2RuleGroup#statement}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_rule_group#statement Wafv2RuleGroup#statement}
 
 ---
 
@@ -1889,7 +1889,7 @@ allow: Wafv2RuleGroupRuleActionAllow
 
 allow block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_rule_group#allow Wafv2RuleGroup#allow}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_rule_group#allow Wafv2RuleGroup#allow}
 
 ---
 
@@ -1903,7 +1903,7 @@ block: Wafv2RuleGroupRuleActionBlock
 
 block block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_rule_group#block Wafv2RuleGroup#block}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_rule_group#block Wafv2RuleGroup#block}
 
 ---
 
@@ -1917,7 +1917,7 @@ captcha: Wafv2RuleGroupRuleActionCaptcha
 
 captcha block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_rule_group#captcha Wafv2RuleGroup#captcha}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_rule_group#captcha Wafv2RuleGroup#captcha}
 
 ---
 
@@ -1931,7 +1931,7 @@ challenge: Wafv2RuleGroupRuleActionChallenge
 
 challenge block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_rule_group#challenge Wafv2RuleGroup#challenge}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_rule_group#challenge Wafv2RuleGroup#challenge}
 
 ---
 
@@ -1945,7 +1945,7 @@ count: Wafv2RuleGroupRuleActionCount
 
 count block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_rule_group#count Wafv2RuleGroup#count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_rule_group#count Wafv2RuleGroup#count}
 
 ---
 
@@ -1979,7 +1979,7 @@ custom_request_handling: Wafv2RuleGroupRuleActionAllowCustomRequestHandling
 
 custom_request_handling block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_rule_group#custom_request_handling Wafv2RuleGroup#custom_request_handling}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_rule_group#custom_request_handling Wafv2RuleGroup#custom_request_handling}
 
 ---
 
@@ -2013,7 +2013,7 @@ insert_header: IResolvable | typing.List[Wafv2RuleGroupRuleActionAllowCustomRequ
 
 insert_header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_rule_group#insert_header Wafv2RuleGroup#insert_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_rule_group#insert_header Wafv2RuleGroup#insert_header}
 
 ---
 
@@ -2034,8 +2034,8 @@ wafv2RuleGroup.Wafv2RuleGroupRuleActionAllowCustomRequestHandlingInsertHeader(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionAllowCustomRequestHandlingInsertHeader.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_rule_group#name Wafv2RuleGroup#name}. |
-| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionAllowCustomRequestHandlingInsertHeader.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_rule_group#value Wafv2RuleGroup#value}. |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionAllowCustomRequestHandlingInsertHeader.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_rule_group#name Wafv2RuleGroup#name}. |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionAllowCustomRequestHandlingInsertHeader.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_rule_group#value Wafv2RuleGroup#value}. |
 
 ---
 
@@ -2047,7 +2047,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_rule_group#name Wafv2RuleGroup#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_rule_group#name Wafv2RuleGroup#name}.
 
 ---
 
@@ -2059,7 +2059,7 @@ value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_rule_group#value Wafv2RuleGroup#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_rule_group#value Wafv2RuleGroup#value}.
 
 ---
 
@@ -2093,7 +2093,7 @@ custom_response: Wafv2RuleGroupRuleActionBlockCustomResponse
 
 custom_response block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_rule_group#custom_response Wafv2RuleGroup#custom_response}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_rule_group#custom_response Wafv2RuleGroup#custom_response}
 
 ---
 
@@ -2115,8 +2115,8 @@ wafv2RuleGroup.Wafv2RuleGroupRuleActionBlockCustomResponse(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionBlockCustomResponse.property.responseCode">response_code</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_rule_group#response_code Wafv2RuleGroup#response_code}. |
-| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionBlockCustomResponse.property.customResponseBodyKey">custom_response_body_key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_rule_group#custom_response_body_key Wafv2RuleGroup#custom_response_body_key}. |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionBlockCustomResponse.property.responseCode">response_code</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_rule_group#response_code Wafv2RuleGroup#response_code}. |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionBlockCustomResponse.property.customResponseBodyKey">custom_response_body_key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_rule_group#custom_response_body_key Wafv2RuleGroup#custom_response_body_key}. |
 | <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionBlockCustomResponse.property.responseHeader">response_header</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionBlockCustomResponseResponseHeader">Wafv2RuleGroupRuleActionBlockCustomResponseResponseHeader</a>]</code> | response_header block. |
 
 ---
@@ -2129,7 +2129,7 @@ response_code: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_rule_group#response_code Wafv2RuleGroup#response_code}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_rule_group#response_code Wafv2RuleGroup#response_code}.
 
 ---
 
@@ -2141,7 +2141,7 @@ custom_response_body_key: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_rule_group#custom_response_body_key Wafv2RuleGroup#custom_response_body_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_rule_group#custom_response_body_key Wafv2RuleGroup#custom_response_body_key}.
 
 ---
 
@@ -2155,7 +2155,7 @@ response_header: IResolvable | typing.List[Wafv2RuleGroupRuleActionBlockCustomRe
 
 response_header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_rule_group#response_header Wafv2RuleGroup#response_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_rule_group#response_header Wafv2RuleGroup#response_header}
 
 ---
 
@@ -2176,8 +2176,8 @@ wafv2RuleGroup.Wafv2RuleGroupRuleActionBlockCustomResponseResponseHeader(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionBlockCustomResponseResponseHeader.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_rule_group#name Wafv2RuleGroup#name}. |
-| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionBlockCustomResponseResponseHeader.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_rule_group#value Wafv2RuleGroup#value}. |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionBlockCustomResponseResponseHeader.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_rule_group#name Wafv2RuleGroup#name}. |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionBlockCustomResponseResponseHeader.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_rule_group#value Wafv2RuleGroup#value}. |
 
 ---
 
@@ -2189,7 +2189,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_rule_group#name Wafv2RuleGroup#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_rule_group#name Wafv2RuleGroup#name}.
 
 ---
 
@@ -2201,7 +2201,7 @@ value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_rule_group#value Wafv2RuleGroup#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_rule_group#value Wafv2RuleGroup#value}.
 
 ---
 
@@ -2235,7 +2235,7 @@ custom_request_handling: Wafv2RuleGroupRuleActionCaptchaCustomRequestHandling
 
 custom_request_handling block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_rule_group#custom_request_handling Wafv2RuleGroup#custom_request_handling}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_rule_group#custom_request_handling Wafv2RuleGroup#custom_request_handling}
 
 ---
 
@@ -2269,7 +2269,7 @@ insert_header: IResolvable | typing.List[Wafv2RuleGroupRuleActionCaptchaCustomRe
 
 insert_header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_rule_group#insert_header Wafv2RuleGroup#insert_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_rule_group#insert_header Wafv2RuleGroup#insert_header}
 
 ---
 
@@ -2290,8 +2290,8 @@ wafv2RuleGroup.Wafv2RuleGroupRuleActionCaptchaCustomRequestHandlingInsertHeader(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionCaptchaCustomRequestHandlingInsertHeader.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_rule_group#name Wafv2RuleGroup#name}. |
-| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionCaptchaCustomRequestHandlingInsertHeader.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_rule_group#value Wafv2RuleGroup#value}. |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionCaptchaCustomRequestHandlingInsertHeader.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_rule_group#name Wafv2RuleGroup#name}. |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionCaptchaCustomRequestHandlingInsertHeader.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_rule_group#value Wafv2RuleGroup#value}. |
 
 ---
 
@@ -2303,7 +2303,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_rule_group#name Wafv2RuleGroup#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_rule_group#name Wafv2RuleGroup#name}.
 
 ---
 
@@ -2315,7 +2315,7 @@ value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_rule_group#value Wafv2RuleGroup#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_rule_group#value Wafv2RuleGroup#value}.
 
 ---
 
@@ -2349,7 +2349,7 @@ custom_request_handling: Wafv2RuleGroupRuleActionChallengeCustomRequestHandling
 
 custom_request_handling block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_rule_group#custom_request_handling Wafv2RuleGroup#custom_request_handling}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_rule_group#custom_request_handling Wafv2RuleGroup#custom_request_handling}
 
 ---
 
@@ -2383,7 +2383,7 @@ insert_header: IResolvable | typing.List[Wafv2RuleGroupRuleActionChallengeCustom
 
 insert_header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_rule_group#insert_header Wafv2RuleGroup#insert_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_rule_group#insert_header Wafv2RuleGroup#insert_header}
 
 ---
 
@@ -2404,8 +2404,8 @@ wafv2RuleGroup.Wafv2RuleGroupRuleActionChallengeCustomRequestHandlingInsertHeade
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionChallengeCustomRequestHandlingInsertHeader.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_rule_group#name Wafv2RuleGroup#name}. |
-| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionChallengeCustomRequestHandlingInsertHeader.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_rule_group#value Wafv2RuleGroup#value}. |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionChallengeCustomRequestHandlingInsertHeader.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_rule_group#name Wafv2RuleGroup#name}. |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionChallengeCustomRequestHandlingInsertHeader.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_rule_group#value Wafv2RuleGroup#value}. |
 
 ---
 
@@ -2417,7 +2417,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_rule_group#name Wafv2RuleGroup#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_rule_group#name Wafv2RuleGroup#name}.
 
 ---
 
@@ -2429,7 +2429,7 @@ value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_rule_group#value Wafv2RuleGroup#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_rule_group#value Wafv2RuleGroup#value}.
 
 ---
 
@@ -2463,7 +2463,7 @@ custom_request_handling: Wafv2RuleGroupRuleActionCountCustomRequestHandling
 
 custom_request_handling block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_rule_group#custom_request_handling Wafv2RuleGroup#custom_request_handling}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_rule_group#custom_request_handling Wafv2RuleGroup#custom_request_handling}
 
 ---
 
@@ -2497,7 +2497,7 @@ insert_header: IResolvable | typing.List[Wafv2RuleGroupRuleActionCountCustomRequ
 
 insert_header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_rule_group#insert_header Wafv2RuleGroup#insert_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_rule_group#insert_header Wafv2RuleGroup#insert_header}
 
 ---
 
@@ -2518,8 +2518,8 @@ wafv2RuleGroup.Wafv2RuleGroupRuleActionCountCustomRequestHandlingInsertHeader(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionCountCustomRequestHandlingInsertHeader.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_rule_group#name Wafv2RuleGroup#name}. |
-| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionCountCustomRequestHandlingInsertHeader.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_rule_group#value Wafv2RuleGroup#value}. |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionCountCustomRequestHandlingInsertHeader.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_rule_group#name Wafv2RuleGroup#name}. |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionCountCustomRequestHandlingInsertHeader.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_rule_group#value Wafv2RuleGroup#value}. |
 
 ---
 
@@ -2531,7 +2531,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_rule_group#name Wafv2RuleGroup#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_rule_group#name Wafv2RuleGroup#name}.
 
 ---
 
@@ -2543,7 +2543,7 @@ value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_rule_group#value Wafv2RuleGroup#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_rule_group#value Wafv2RuleGroup#value}.
 
 ---
 
@@ -2577,7 +2577,7 @@ immunity_time_property: Wafv2RuleGroupRuleCaptchaConfigImmunityTimeProperty
 
 immunity_time_property block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_rule_group#immunity_time_property Wafv2RuleGroup#immunity_time_property}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_rule_group#immunity_time_property Wafv2RuleGroup#immunity_time_property}
 
 ---
 
@@ -2597,7 +2597,7 @@ wafv2RuleGroup.Wafv2RuleGroupRuleCaptchaConfigImmunityTimeProperty(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleCaptchaConfigImmunityTimeProperty.property.immunityTime">immunity_time</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_rule_group#immunity_time Wafv2RuleGroup#immunity_time}. |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleCaptchaConfigImmunityTimeProperty.property.immunityTime">immunity_time</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_rule_group#immunity_time Wafv2RuleGroup#immunity_time}. |
 
 ---
 
@@ -2609,7 +2609,7 @@ immunity_time: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_rule_group#immunity_time Wafv2RuleGroup#immunity_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_rule_group#immunity_time Wafv2RuleGroup#immunity_time}.
 
 ---
 
@@ -2629,7 +2629,7 @@ wafv2RuleGroup.Wafv2RuleGroupRuleRuleLabel(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleRuleLabel.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_rule_group#name Wafv2RuleGroup#name}. |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleRuleLabel.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_rule_group#name Wafv2RuleGroup#name}. |
 
 ---
 
@@ -2641,7 +2641,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_rule_group#name Wafv2RuleGroup#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_rule_group#name Wafv2RuleGroup#name}.
 
 ---
 
@@ -2663,9 +2663,9 @@ wafv2RuleGroup.Wafv2RuleGroupRuleVisibilityConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleVisibilityConfig.property.cloudwatchMetricsEnabled">cloudwatch_metrics_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_rule_group#cloudwatch_metrics_enabled Wafv2RuleGroup#cloudwatch_metrics_enabled}. |
-| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleVisibilityConfig.property.metricName">metric_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_rule_group#metric_name Wafv2RuleGroup#metric_name}. |
-| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleVisibilityConfig.property.sampledRequestsEnabled">sampled_requests_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_rule_group#sampled_requests_enabled Wafv2RuleGroup#sampled_requests_enabled}. |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleVisibilityConfig.property.cloudwatchMetricsEnabled">cloudwatch_metrics_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_rule_group#cloudwatch_metrics_enabled Wafv2RuleGroup#cloudwatch_metrics_enabled}. |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleVisibilityConfig.property.metricName">metric_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_rule_group#metric_name Wafv2RuleGroup#metric_name}. |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleVisibilityConfig.property.sampledRequestsEnabled">sampled_requests_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_rule_group#sampled_requests_enabled Wafv2RuleGroup#sampled_requests_enabled}. |
 
 ---
 
@@ -2677,7 +2677,7 @@ cloudwatch_metrics_enabled: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_rule_group#cloudwatch_metrics_enabled Wafv2RuleGroup#cloudwatch_metrics_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_rule_group#cloudwatch_metrics_enabled Wafv2RuleGroup#cloudwatch_metrics_enabled}.
 
 ---
 
@@ -2689,7 +2689,7 @@ metric_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_rule_group#metric_name Wafv2RuleGroup#metric_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_rule_group#metric_name Wafv2RuleGroup#metric_name}.
 
 ---
 
@@ -2701,7 +2701,7 @@ sampled_requests_enabled: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_rule_group#sampled_requests_enabled Wafv2RuleGroup#sampled_requests_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_rule_group#sampled_requests_enabled Wafv2RuleGroup#sampled_requests_enabled}.
 
 ---
 
@@ -2723,9 +2723,9 @@ wafv2RuleGroup.Wafv2RuleGroupVisibilityConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupVisibilityConfig.property.cloudwatchMetricsEnabled">cloudwatch_metrics_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_rule_group#cloudwatch_metrics_enabled Wafv2RuleGroup#cloudwatch_metrics_enabled}. |
-| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupVisibilityConfig.property.metricName">metric_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_rule_group#metric_name Wafv2RuleGroup#metric_name}. |
-| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupVisibilityConfig.property.sampledRequestsEnabled">sampled_requests_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_rule_group#sampled_requests_enabled Wafv2RuleGroup#sampled_requests_enabled}. |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupVisibilityConfig.property.cloudwatchMetricsEnabled">cloudwatch_metrics_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_rule_group#cloudwatch_metrics_enabled Wafv2RuleGroup#cloudwatch_metrics_enabled}. |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupVisibilityConfig.property.metricName">metric_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_rule_group#metric_name Wafv2RuleGroup#metric_name}. |
+| <code><a href="#@cdktn/provider-aws.wafv2RuleGroup.Wafv2RuleGroupVisibilityConfig.property.sampledRequestsEnabled">sampled_requests_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_rule_group#sampled_requests_enabled Wafv2RuleGroup#sampled_requests_enabled}. |
 
 ---
 
@@ -2737,7 +2737,7 @@ cloudwatch_metrics_enabled: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_rule_group#cloudwatch_metrics_enabled Wafv2RuleGroup#cloudwatch_metrics_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_rule_group#cloudwatch_metrics_enabled Wafv2RuleGroup#cloudwatch_metrics_enabled}.
 
 ---
 
@@ -2749,7 +2749,7 @@ metric_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_rule_group#metric_name Wafv2RuleGroup#metric_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_rule_group#metric_name Wafv2RuleGroup#metric_name}.
 
 ---
 
@@ -2761,7 +2761,7 @@ sampled_requests_enabled: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_rule_group#sampled_requests_enabled Wafv2RuleGroup#sampled_requests_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_rule_group#sampled_requests_enabled Wafv2RuleGroup#sampled_requests_enabled}.
 
 ---
 
@@ -4360,7 +4360,7 @@ def put_custom_request_handling(
 
 insert_header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_rule_group#insert_header Wafv2RuleGroup#insert_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_rule_group#insert_header Wafv2RuleGroup#insert_header}
 
 ---
 
@@ -5559,7 +5559,7 @@ def put_custom_response(
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_rule_group#response_code Wafv2RuleGroup#response_code}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_rule_group#response_code Wafv2RuleGroup#response_code}.
 
 ---
 
@@ -5567,7 +5567,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_rule_group#custom_response_body_key Wafv2RuleGroup#custom_response_body_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_rule_group#custom_response_body_key Wafv2RuleGroup#custom_response_body_key}.
 
 ---
 
@@ -5577,7 +5577,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 response_header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_rule_group#response_header Wafv2RuleGroup#response_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_rule_group#response_header Wafv2RuleGroup#response_header}
 
 ---
 
@@ -6718,7 +6718,7 @@ def put_custom_request_handling(
 
 insert_header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_rule_group#insert_header Wafv2RuleGroup#insert_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_rule_group#insert_header Wafv2RuleGroup#insert_header}
 
 ---
 
@@ -7859,7 +7859,7 @@ def put_custom_request_handling(
 
 insert_header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_rule_group#insert_header Wafv2RuleGroup#insert_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_rule_group#insert_header Wafv2RuleGroup#insert_header}
 
 ---
 
@@ -9000,7 +9000,7 @@ def put_custom_request_handling(
 
 insert_header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_rule_group#insert_header Wafv2RuleGroup#insert_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_rule_group#insert_header Wafv2RuleGroup#insert_header}
 
 ---
 
@@ -9330,7 +9330,7 @@ def put_allow(
 
 custom_request_handling block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_rule_group#custom_request_handling Wafv2RuleGroup#custom_request_handling}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_rule_group#custom_request_handling Wafv2RuleGroup#custom_request_handling}
 
 ---
 
@@ -9348,7 +9348,7 @@ def put_block(
 
 custom_response block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_rule_group#custom_response Wafv2RuleGroup#custom_response}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_rule_group#custom_response Wafv2RuleGroup#custom_response}
 
 ---
 
@@ -9366,7 +9366,7 @@ def put_captcha(
 
 custom_request_handling block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_rule_group#custom_request_handling Wafv2RuleGroup#custom_request_handling}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_rule_group#custom_request_handling Wafv2RuleGroup#custom_request_handling}
 
 ---
 
@@ -9384,7 +9384,7 @@ def put_challenge(
 
 custom_request_handling block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_rule_group#custom_request_handling Wafv2RuleGroup#custom_request_handling}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_rule_group#custom_request_handling Wafv2RuleGroup#custom_request_handling}
 
 ---
 
@@ -9402,7 +9402,7 @@ def put_count(
 
 custom_request_handling block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_rule_group#custom_request_handling Wafv2RuleGroup#custom_request_handling}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_rule_group#custom_request_handling Wafv2RuleGroup#custom_request_handling}
 
 ---
 
@@ -10137,7 +10137,7 @@ def put_immunity_time_property(
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_rule_group#immunity_time Wafv2RuleGroup#immunity_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_rule_group#immunity_time Wafv2RuleGroup#immunity_time}.
 
 ---
 
@@ -10658,7 +10658,7 @@ def put_action(
 
 allow block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_rule_group#allow Wafv2RuleGroup#allow}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_rule_group#allow Wafv2RuleGroup#allow}
 
 ---
 
@@ -10668,7 +10668,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 block block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_rule_group#block Wafv2RuleGroup#block}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_rule_group#block Wafv2RuleGroup#block}
 
 ---
 
@@ -10678,7 +10678,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 captcha block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_rule_group#captcha Wafv2RuleGroup#captcha}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_rule_group#captcha Wafv2RuleGroup#captcha}
 
 ---
 
@@ -10688,7 +10688,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 challenge block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_rule_group#challenge Wafv2RuleGroup#challenge}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_rule_group#challenge Wafv2RuleGroup#challenge}
 
 ---
 
@@ -10698,7 +10698,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 count block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_rule_group#count Wafv2RuleGroup#count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_rule_group#count Wafv2RuleGroup#count}
 
 ---
 
@@ -10716,7 +10716,7 @@ def put_captcha_config(
 
 immunity_time_property block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_rule_group#immunity_time_property Wafv2RuleGroup#immunity_time_property}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_rule_group#immunity_time_property Wafv2RuleGroup#immunity_time_property}
 
 ---
 
@@ -10748,7 +10748,7 @@ def put_visibility_config(
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_rule_group#cloudwatch_metrics_enabled Wafv2RuleGroup#cloudwatch_metrics_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_rule_group#cloudwatch_metrics_enabled Wafv2RuleGroup#cloudwatch_metrics_enabled}.
 
 ---
 
@@ -10756,7 +10756,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_rule_group#metric_name Wafv2RuleGroup#metric_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_rule_group#metric_name Wafv2RuleGroup#metric_name}.
 
 ---
 
@@ -10764,7 +10764,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_rule_group#sampled_requests_enabled Wafv2RuleGroup#sampled_requests_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_rule_group#sampled_requests_enabled Wafv2RuleGroup#sampled_requests_enabled}.
 
 ---
 

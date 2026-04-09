@@ -4,7 +4,7 @@
 
 ### RamResourceShareAssociationsExclusive <a name="RamResourceShareAssociationsExclusive" id="@cdktn/provider-aws.ramResourceShareAssociationsExclusive.RamResourceShareAssociationsExclusive"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/ram_resource_share_associations_exclusive aws_ram_resource_share_associations_exclusive}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/ram_resource_share_associations_exclusive aws_ram_resource_share_associations_exclusive}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ramResourceShareAssociationsExclusive.RamResourceShareAssociationsExclusive.Initializer"></a>
 
@@ -517,7 +517,7 @@ The construct id used in the generated config for the RamResourceShareAssociatio
 
 The id of the existing RamResourceShareAssociationsExclusive that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/ram_resource_share_associations_exclusive#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/ram_resource_share_associations_exclusive#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -856,11 +856,11 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/ramresourceshareassoci
 | <code><a href="#@cdktn/provider-aws.ramResourceShareAssociationsExclusive.RamResourceShareAssociationsExclusiveConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.ramResourceShareAssociationsExclusive.RamResourceShareAssociationsExclusiveConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.ramResourceShareAssociationsExclusive.RamResourceShareAssociationsExclusiveConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.ramResourceShareAssociationsExclusive.RamResourceShareAssociationsExclusiveConfig.property.resourceShareArn">ResourceShareArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/ram_resource_share_associations_exclusive#resource_share_arn RamResourceShareAssociationsExclusive#resource_share_arn}. |
-| <code><a href="#@cdktn/provider-aws.ramResourceShareAssociationsExclusive.RamResourceShareAssociationsExclusiveConfig.property.principals">Principals</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/ram_resource_share_associations_exclusive#principals RamResourceShareAssociationsExclusive#principals}. |
+| <code><a href="#@cdktn/provider-aws.ramResourceShareAssociationsExclusive.RamResourceShareAssociationsExclusiveConfig.property.resourceShareArn">ResourceShareArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/ram_resource_share_associations_exclusive#resource_share_arn RamResourceShareAssociationsExclusive#resource_share_arn}. |
+| <code><a href="#@cdktn/provider-aws.ramResourceShareAssociationsExclusive.RamResourceShareAssociationsExclusiveConfig.property.principals">Principals</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/ram_resource_share_associations_exclusive#principals RamResourceShareAssociationsExclusive#principals}. |
 | <code><a href="#@cdktn/provider-aws.ramResourceShareAssociationsExclusive.RamResourceShareAssociationsExclusiveConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.ramResourceShareAssociationsExclusive.RamResourceShareAssociationsExclusiveConfig.property.resourceArns">ResourceArns</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/ram_resource_share_associations_exclusive#resource_arns RamResourceShareAssociationsExclusive#resource_arns}. |
-| <code><a href="#@cdktn/provider-aws.ramResourceShareAssociationsExclusive.RamResourceShareAssociationsExclusiveConfig.property.sources">Sources</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/ram_resource_share_associations_exclusive#sources RamResourceShareAssociationsExclusive#sources}. |
+| <code><a href="#@cdktn/provider-aws.ramResourceShareAssociationsExclusive.RamResourceShareAssociationsExclusiveConfig.property.resourceArns">ResourceArns</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/ram_resource_share_associations_exclusive#resource_arns RamResourceShareAssociationsExclusive#resource_arns}. |
+| <code><a href="#@cdktn/provider-aws.ramResourceShareAssociationsExclusive.RamResourceShareAssociationsExclusiveConfig.property.sources">Sources</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/ram_resource_share_associations_exclusive#sources RamResourceShareAssociationsExclusive#sources}. |
 
 ---
 
@@ -942,7 +942,7 @@ ResourceShareArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/ram_resource_share_associations_exclusive#resource_share_arn RamResourceShareAssociationsExclusive#resource_share_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/ram_resource_share_associations_exclusive#resource_share_arn RamResourceShareAssociationsExclusive#resource_share_arn}.
 
 ---
 
@@ -954,7 +954,7 @@ Principals *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/ram_resource_share_associations_exclusive#principals RamResourceShareAssociationsExclusive#principals}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/ram_resource_share_associations_exclusive#principals RamResourceShareAssociationsExclusive#principals}.
 
 ---
 
@@ -968,7 +968,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/ram_resource_share_associations_exclusive#region RamResourceShareAssociationsExclusive#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/ram_resource_share_associations_exclusive#region RamResourceShareAssociationsExclusive#region}
 
 ---
 
@@ -980,7 +980,7 @@ ResourceArns *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/ram_resource_share_associations_exclusive#resource_arns RamResourceShareAssociationsExclusive#resource_arns}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/ram_resource_share_associations_exclusive#resource_arns RamResourceShareAssociationsExclusive#resource_arns}.
 
 ---
 
@@ -992,7 +992,7 @@ Sources *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/ram_resource_share_associations_exclusive#sources RamResourceShareAssociationsExclusive#sources}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/ram_resource_share_associations_exclusive#sources RamResourceShareAssociationsExclusive#sources}.
 
 ---
 

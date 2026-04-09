@@ -4,7 +4,7 @@
 
 ### OpensearchserverlessCollection <a name="OpensearchserverlessCollection" id="@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollection"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/opensearchserverless_collection aws_opensearchserverless_collection}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearchserverless_collection aws_opensearchserverless_collection}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollection.Initializer"></a>
 
@@ -22,7 +22,9 @@ opensearchserverlessCollection.OpensearchserverlessCollection(
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   name: str,
+  collection_group_name: str = None,
   description: str = None,
+  encryption_config: IResolvable | typing.List[OpensearchserverlessCollectionEncryptionConfig] = None,
   region: str = None,
   standby_replicas: str = None,
   tags: typing.Mapping[str] = None,
@@ -43,10 +45,12 @@ opensearchserverlessCollection.OpensearchserverlessCollection(
 | <code><a href="#@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollection.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollection.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollection.Initializer.parameter.name">name</a></code> | <code>str</code> | Name of the collection. |
+| <code><a href="#@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollection.Initializer.parameter.collectionGroupName">collection_group_name</a></code> | <code>str</code> | Name of the collection group to associate with this collection. |
 | <code><a href="#@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollection.Initializer.parameter.description">description</a></code> | <code>str</code> | Description of the collection. |
+| <code><a href="#@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollection.Initializer.parameter.encryptionConfig">encryption_config</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollectionEncryptionConfig">OpensearchserverlessCollectionEncryptionConfig</a>]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearchserverless_collection#encryption_config OpensearchserverlessCollection#encryption_config}. |
 | <code><a href="#@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollection.Initializer.parameter.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollection.Initializer.parameter.standbyReplicas">standby_replicas</a></code> | <code>str</code> | Indicates whether standby replicas should be used for a collection. One of `ENABLED` or `DISABLED`. Defaults to `ENABLED`. |
-| <code><a href="#@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollection.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/opensearchserverless_collection#tags OpensearchserverlessCollection#tags}. |
+| <code><a href="#@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollection.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearchserverless_collection#tags OpensearchserverlessCollection#tags}. |
 | <code><a href="#@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollection.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollectionTimeouts">OpensearchserverlessCollectionTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollection.Initializer.parameter.type">type</a></code> | <code>str</code> | Type of collection. One of `SEARCH`, `TIMESERIES`, or `VECTORSEARCH`. Defaults to `TIMESERIES`. |
 
@@ -118,7 +122,17 @@ Must be unique amongst siblings in the same scope
 
 Name of the collection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/opensearchserverless_collection#name OpensearchserverlessCollection#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearchserverless_collection#name OpensearchserverlessCollection#name}
+
+---
+
+##### `collection_group_name`<sup>Optional</sup> <a name="collection_group_name" id="@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollection.Initializer.parameter.collectionGroupName"></a>
+
+- *Type:* str
+
+Name of the collection group to associate with this collection.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearchserverless_collection#collection_group_name OpensearchserverlessCollection#collection_group_name}
 
 ---
 
@@ -128,7 +142,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Description of the collection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/opensearchserverless_collection#description OpensearchserverlessCollection#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearchserverless_collection#description OpensearchserverlessCollection#description}
+
+---
+
+##### `encryption_config`<sup>Optional</sup> <a name="encryption_config" id="@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollection.Initializer.parameter.encryptionConfig"></a>
+
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollectionEncryptionConfig">OpensearchserverlessCollectionEncryptionConfig</a>]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearchserverless_collection#encryption_config OpensearchserverlessCollection#encryption_config}.
 
 ---
 
@@ -138,7 +160,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/opensearchserverless_collection#region OpensearchserverlessCollection#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearchserverless_collection#region OpensearchserverlessCollection#region}
 
 ---
 
@@ -148,7 +170,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Indicates whether standby replicas should be used for a collection. One of `ENABLED` or `DISABLED`. Defaults to `ENABLED`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/opensearchserverless_collection#standby_replicas OpensearchserverlessCollection#standby_replicas}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearchserverless_collection#standby_replicas OpensearchserverlessCollection#standby_replicas}
 
 ---
 
@@ -156,7 +178,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/opensearchserverless_collection#tags OpensearchserverlessCollection#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearchserverless_collection#tags OpensearchserverlessCollection#tags}.
 
 ---
 
@@ -166,7 +188,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/opensearchserverless_collection#timeouts OpensearchserverlessCollection#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearchserverless_collection#timeouts OpensearchserverlessCollection#timeouts}
 
 ---
 
@@ -176,7 +198,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Type of collection. One of `SEARCH`, `TIMESERIES`, or `VECTORSEARCH`. Defaults to `TIMESERIES`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/opensearchserverless_collection#type OpensearchserverlessCollection#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearchserverless_collection#type OpensearchserverlessCollection#type}
 
 ---
 
@@ -208,8 +230,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollection.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollection.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollection.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollection.putEncryptionConfig">put_encryption_config</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollection.putTimeouts">put_timeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollection.resetCollectionGroupName">reset_collection_group_name</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollection.resetDescription">reset_description</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollection.resetEncryptionConfig">reset_encryption_config</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollection.resetRegion">reset_region</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollection.resetStandbyReplicas">reset_standby_replicas</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollection.resetTags">reset_tags</a></code> | *No description.* |
@@ -566,6 +591,20 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `put_encryption_config` <a name="put_encryption_config" id="@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollection.putEncryptionConfig"></a>
+
+```python
+def put_encryption_config(
+  value: IResolvable | typing.List[OpensearchserverlessCollectionEncryptionConfig]
+) -> None
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollection.putEncryptionConfig.parameter.value"></a>
+
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollectionEncryptionConfig">OpensearchserverlessCollectionEncryptionConfig</a>]
+
+---
+
 ##### `put_timeouts` <a name="put_timeouts" id="@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollection.putTimeouts"></a>
 
 ```python
@@ -581,7 +620,7 @@ def put_timeouts(
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/opensearchserverless_collection#create OpensearchserverlessCollection#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearchserverless_collection#create OpensearchserverlessCollection#create}
 
 ---
 
@@ -591,14 +630,26 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/opensearchserverless_collection#delete OpensearchserverlessCollection#delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearchserverless_collection#delete OpensearchserverlessCollection#delete}
 
 ---
+
+##### `reset_collection_group_name` <a name="reset_collection_group_name" id="@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollection.resetCollectionGroupName"></a>
+
+```python
+def reset_collection_group_name() -> None
+```
 
 ##### `reset_description` <a name="reset_description" id="@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollection.resetDescription"></a>
 
 ```python
 def reset_description() -> None
+```
+
+##### `reset_encryption_config` <a name="reset_encryption_config" id="@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollection.resetEncryptionConfig"></a>
+
+```python
+def reset_encryption_config() -> None
 ```
 
 ##### `reset_region` <a name="reset_region" id="@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollection.resetRegion"></a>
@@ -745,7 +796,7 @@ The construct id used in the generated config for the OpensearchserverlessCollec
 
 The id of the existing OpensearchserverlessCollection that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/opensearchserverless_collection#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearchserverless_collection#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -778,17 +829,21 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0
 | <code><a href="#@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollection.property.arn">arn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollection.property.collectionEndpoint">collection_endpoint</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollection.property.dashboardEndpoint">dashboard_endpoint</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollection.property.encryptionConfig">encryption_config</a></code> | <code><a href="#@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollectionEncryptionConfigList">OpensearchserverlessCollectionEncryptionConfigList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollection.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollection.property.kmsKeyArn">kms_key_arn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollection.property.tagsAll">tags_all</a></code> | <code>cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollection.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollectionTimeoutsOutputReference">OpensearchserverlessCollectionTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollection.property.collectionGroupNameInput">collection_group_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollection.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollection.property.encryptionConfigInput">encryption_config_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollectionEncryptionConfig">OpensearchserverlessCollectionEncryptionConfig</a>]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollection.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollection.property.regionInput">region_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollection.property.standbyReplicasInput">standby_replicas_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollection.property.tagsInput">tags_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollection.property.timeoutsInput">timeouts_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollectionTimeouts">OpensearchserverlessCollectionTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollection.property.typeInput">type_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollection.property.collectionGroupName">collection_group_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollection.property.description">description</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollection.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollection.property.region">region</a></code> | <code>str</code> | *No description.* |
@@ -970,6 +1025,16 @@ dashboard_endpoint: str
 
 ---
 
+##### `encryption_config`<sup>Required</sup> <a name="encryption_config" id="@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollection.property.encryptionConfig"></a>
+
+```python
+encryption_config: OpensearchserverlessCollectionEncryptionConfigList
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollectionEncryptionConfigList">OpensearchserverlessCollectionEncryptionConfigList</a>
+
+---
+
 ##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollection.property.id"></a>
 
 ```python
@@ -1010,6 +1075,16 @@ timeouts: OpensearchserverlessCollectionTimeoutsOutputReference
 
 ---
 
+##### `collection_group_name_input`<sup>Optional</sup> <a name="collection_group_name_input" id="@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollection.property.collectionGroupNameInput"></a>
+
+```python
+collection_group_name_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `description_input`<sup>Optional</sup> <a name="description_input" id="@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollection.property.descriptionInput"></a>
 
 ```python
@@ -1017,6 +1092,16 @@ description_input: str
 ```
 
 - *Type:* str
+
+---
+
+##### `encryption_config_input`<sup>Optional</sup> <a name="encryption_config_input" id="@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollection.property.encryptionConfigInput"></a>
+
+```python
+encryption_config_input: IResolvable | typing.List[OpensearchserverlessCollectionEncryptionConfig]
+```
+
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollectionEncryptionConfig">OpensearchserverlessCollectionEncryptionConfig</a>]
 
 ---
 
@@ -1074,6 +1159,16 @@ timeouts_input: IResolvable | OpensearchserverlessCollectionTimeouts
 
 ```python
 type_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `collection_group_name`<sup>Required</sup> <a name="collection_group_name" id="@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollection.property.collectionGroupName"></a>
+
+```python
+collection_group_name: str
 ```
 
 - *Type:* str
@@ -1176,7 +1271,9 @@ opensearchserverlessCollection.OpensearchserverlessCollectionConfig(
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   name: str,
+  collection_group_name: str = None,
   description: str = None,
+  encryption_config: IResolvable | typing.List[OpensearchserverlessCollectionEncryptionConfig] = None,
   region: str = None,
   standby_replicas: str = None,
   tags: typing.Mapping[str] = None,
@@ -1197,10 +1294,12 @@ opensearchserverlessCollection.OpensearchserverlessCollectionConfig(
 | <code><a href="#@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollectionConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollectionConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollectionConfig.property.name">name</a></code> | <code>str</code> | Name of the collection. |
+| <code><a href="#@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollectionConfig.property.collectionGroupName">collection_group_name</a></code> | <code>str</code> | Name of the collection group to associate with this collection. |
 | <code><a href="#@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollectionConfig.property.description">description</a></code> | <code>str</code> | Description of the collection. |
+| <code><a href="#@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollectionConfig.property.encryptionConfig">encryption_config</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollectionEncryptionConfig">OpensearchserverlessCollectionEncryptionConfig</a>]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearchserverless_collection#encryption_config OpensearchserverlessCollection#encryption_config}. |
 | <code><a href="#@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollectionConfig.property.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollectionConfig.property.standbyReplicas">standby_replicas</a></code> | <code>str</code> | Indicates whether standby replicas should be used for a collection. One of `ENABLED` or `DISABLED`. Defaults to `ENABLED`. |
-| <code><a href="#@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollectionConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/opensearchserverless_collection#tags OpensearchserverlessCollection#tags}. |
+| <code><a href="#@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollectionConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearchserverless_collection#tags OpensearchserverlessCollection#tags}. |
 | <code><a href="#@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollectionConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollectionTimeouts">OpensearchserverlessCollectionTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollectionConfig.property.type">type</a></code> | <code>str</code> | Type of collection. One of `SEARCH`, `TIMESERIES`, or `VECTORSEARCH`. Defaults to `TIMESERIES`. |
 
@@ -1286,7 +1385,21 @@ name: str
 
 Name of the collection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/opensearchserverless_collection#name OpensearchserverlessCollection#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearchserverless_collection#name OpensearchserverlessCollection#name}
+
+---
+
+##### `collection_group_name`<sup>Optional</sup> <a name="collection_group_name" id="@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollectionConfig.property.collectionGroupName"></a>
+
+```python
+collection_group_name: str
+```
+
+- *Type:* str
+
+Name of the collection group to associate with this collection.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearchserverless_collection#collection_group_name OpensearchserverlessCollection#collection_group_name}
 
 ---
 
@@ -1300,7 +1413,19 @@ description: str
 
 Description of the collection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/opensearchserverless_collection#description OpensearchserverlessCollection#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearchserverless_collection#description OpensearchserverlessCollection#description}
+
+---
+
+##### `encryption_config`<sup>Optional</sup> <a name="encryption_config" id="@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollectionConfig.property.encryptionConfig"></a>
+
+```python
+encryption_config: IResolvable | typing.List[OpensearchserverlessCollectionEncryptionConfig]
+```
+
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollectionEncryptionConfig">OpensearchserverlessCollectionEncryptionConfig</a>]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearchserverless_collection#encryption_config OpensearchserverlessCollection#encryption_config}.
 
 ---
 
@@ -1314,7 +1439,7 @@ region: str
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/opensearchserverless_collection#region OpensearchserverlessCollection#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearchserverless_collection#region OpensearchserverlessCollection#region}
 
 ---
 
@@ -1328,7 +1453,7 @@ standby_replicas: str
 
 Indicates whether standby replicas should be used for a collection. One of `ENABLED` or `DISABLED`. Defaults to `ENABLED`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/opensearchserverless_collection#standby_replicas OpensearchserverlessCollection#standby_replicas}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearchserverless_collection#standby_replicas OpensearchserverlessCollection#standby_replicas}
 
 ---
 
@@ -1340,7 +1465,7 @@ tags: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/opensearchserverless_collection#tags OpensearchserverlessCollection#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearchserverless_collection#tags OpensearchserverlessCollection#tags}.
 
 ---
 
@@ -1354,7 +1479,7 @@ timeouts: OpensearchserverlessCollectionTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/opensearchserverless_collection#timeouts OpensearchserverlessCollection#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearchserverless_collection#timeouts OpensearchserverlessCollection#timeouts}
 
 ---
 
@@ -1368,7 +1493,53 @@ type: str
 
 Type of collection. One of `SEARCH`, `TIMESERIES`, or `VECTORSEARCH`. Defaults to `TIMESERIES`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/opensearchserverless_collection#type OpensearchserverlessCollection#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearchserverless_collection#type OpensearchserverlessCollection#type}
+
+---
+
+### OpensearchserverlessCollectionEncryptionConfig <a name="OpensearchserverlessCollectionEncryptionConfig" id="@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollectionEncryptionConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollectionEncryptionConfig.Initializer"></a>
+
+```python
+from cdktn_provider_aws import opensearchserverless_collection
+
+opensearchserverlessCollection.OpensearchserverlessCollectionEncryptionConfig(
+  aws_owned_key: bool | IResolvable = None,
+  kms_key_arn: str = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollectionEncryptionConfig.property.awsOwnedKey">aws_owned_key</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearchserverless_collection#aws_owned_key OpensearchserverlessCollection#aws_owned_key}. |
+| <code><a href="#@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollectionEncryptionConfig.property.kmsKeyArn">kms_key_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearchserverless_collection#kms_key_arn OpensearchserverlessCollection#kms_key_arn}. |
+
+---
+
+##### `aws_owned_key`<sup>Optional</sup> <a name="aws_owned_key" id="@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollectionEncryptionConfig.property.awsOwnedKey"></a>
+
+```python
+aws_owned_key: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearchserverless_collection#aws_owned_key OpensearchserverlessCollection#aws_owned_key}.
+
+---
+
+##### `kms_key_arn`<sup>Optional</sup> <a name="kms_key_arn" id="@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollectionEncryptionConfig.property.kmsKeyArn"></a>
+
+```python
+kms_key_arn: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearchserverless_collection#kms_key_arn OpensearchserverlessCollection#kms_key_arn}.
 
 ---
 
@@ -1404,7 +1575,7 @@ create: str
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/opensearchserverless_collection#create OpensearchserverlessCollection#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearchserverless_collection#create OpensearchserverlessCollection#create}
 
 ---
 
@@ -1418,11 +1589,533 @@ delete: str
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/opensearchserverless_collection#delete OpensearchserverlessCollection#delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearchserverless_collection#delete OpensearchserverlessCollection#delete}
 
 ---
 
 ## Classes <a name="Classes" id="Classes"></a>
+
+### OpensearchserverlessCollectionEncryptionConfigList <a name="OpensearchserverlessCollectionEncryptionConfigList" id="@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollectionEncryptionConfigList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollectionEncryptionConfigList.Initializer"></a>
+
+```python
+from cdktn_provider_aws import opensearchserverless_collection
+
+opensearchserverlessCollection.OpensearchserverlessCollectionEncryptionConfigList(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  wraps_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollectionEncryptionConfigList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollectionEncryptionConfigList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollectionEncryptionConfigList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollectionEncryptionConfigList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollectionEncryptionConfigList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollectionEncryptionConfigList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollectionEncryptionConfigList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollectionEncryptionConfigList.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollectionEncryptionConfigList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollectionEncryptionConfigList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollectionEncryptionConfigList.get">get</a></code> | *No description.* |
+
+---
+
+##### `all_with_map_key` <a name="all_with_map_key" id="@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollectionEncryptionConfigList.allWithMapKey"></a>
+
+```python
+def all_with_map_key(
+  map_key_attribute_name: str
+) -> DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollectionEncryptionConfigList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* str
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollectionEncryptionConfigList.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollectionEncryptionConfigList.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollectionEncryptionConfigList.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollectionEncryptionConfigList.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollectionEncryptionConfigList.get"></a>
+
+```python
+def get(
+  index: typing.Union[int, float]
+) -> OpensearchserverlessCollectionEncryptionConfigOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollectionEncryptionConfigList.get.parameter.index"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollectionEncryptionConfigList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollectionEncryptionConfigList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollectionEncryptionConfigList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollectionEncryptionConfig">OpensearchserverlessCollectionEncryptionConfig</a>]</code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollectionEncryptionConfigList.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollectionEncryptionConfigList.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollectionEncryptionConfigList.property.internalValue"></a>
+
+```python
+internal_value: IResolvable | typing.List[OpensearchserverlessCollectionEncryptionConfig]
+```
+
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollectionEncryptionConfig">OpensearchserverlessCollectionEncryptionConfig</a>]
+
+---
+
+
+### OpensearchserverlessCollectionEncryptionConfigOutputReference <a name="OpensearchserverlessCollectionEncryptionConfigOutputReference" id="@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollectionEncryptionConfigOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollectionEncryptionConfigOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_aws import opensearchserverless_collection
+
+opensearchserverlessCollection.OpensearchserverlessCollectionEncryptionConfigOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  complex_object_index: typing.Union[int, float],
+  complex_object_is_from_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollectionEncryptionConfigOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollectionEncryptionConfigOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollectionEncryptionConfigOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollectionEncryptionConfigOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollectionEncryptionConfigOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollectionEncryptionConfigOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollectionEncryptionConfigOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of this item in the list.
+
+---
+
+##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollectionEncryptionConfigOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollectionEncryptionConfigOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollectionEncryptionConfigOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollectionEncryptionConfigOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollectionEncryptionConfigOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollectionEncryptionConfigOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollectionEncryptionConfigOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollectionEncryptionConfigOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollectionEncryptionConfigOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollectionEncryptionConfigOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollectionEncryptionConfigOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollectionEncryptionConfigOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollectionEncryptionConfigOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollectionEncryptionConfigOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollectionEncryptionConfigOutputReference.resetAwsOwnedKey">reset_aws_owned_key</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollectionEncryptionConfigOutputReference.resetKmsKeyArn">reset_kms_key_arn</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollectionEncryptionConfigOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollectionEncryptionConfigOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollectionEncryptionConfigOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollectionEncryptionConfigOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollectionEncryptionConfigOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollectionEncryptionConfigOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollectionEncryptionConfigOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollectionEncryptionConfigOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollectionEncryptionConfigOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollectionEncryptionConfigOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollectionEncryptionConfigOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollectionEncryptionConfigOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollectionEncryptionConfigOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollectionEncryptionConfigOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollectionEncryptionConfigOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollectionEncryptionConfigOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollectionEncryptionConfigOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollectionEncryptionConfigOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollectionEncryptionConfigOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollectionEncryptionConfigOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollectionEncryptionConfigOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollectionEncryptionConfigOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollectionEncryptionConfigOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollectionEncryptionConfigOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `reset_aws_owned_key` <a name="reset_aws_owned_key" id="@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollectionEncryptionConfigOutputReference.resetAwsOwnedKey"></a>
+
+```python
+def reset_aws_owned_key() -> None
+```
+
+##### `reset_kms_key_arn` <a name="reset_kms_key_arn" id="@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollectionEncryptionConfigOutputReference.resetKmsKeyArn"></a>
+
+```python
+def reset_kms_key_arn() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollectionEncryptionConfigOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollectionEncryptionConfigOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollectionEncryptionConfigOutputReference.property.awsOwnedKeyInput">aws_owned_key_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollectionEncryptionConfigOutputReference.property.kmsKeyArnInput">kms_key_arn_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollectionEncryptionConfigOutputReference.property.awsOwnedKey">aws_owned_key</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollectionEncryptionConfigOutputReference.property.kmsKeyArn">kms_key_arn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollectionEncryptionConfigOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollectionEncryptionConfig">OpensearchserverlessCollectionEncryptionConfig</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollectionEncryptionConfigOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollectionEncryptionConfigOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `aws_owned_key_input`<sup>Optional</sup> <a name="aws_owned_key_input" id="@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollectionEncryptionConfigOutputReference.property.awsOwnedKeyInput"></a>
+
+```python
+aws_owned_key_input: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `kms_key_arn_input`<sup>Optional</sup> <a name="kms_key_arn_input" id="@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollectionEncryptionConfigOutputReference.property.kmsKeyArnInput"></a>
+
+```python
+kms_key_arn_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `aws_owned_key`<sup>Required</sup> <a name="aws_owned_key" id="@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollectionEncryptionConfigOutputReference.property.awsOwnedKey"></a>
+
+```python
+aws_owned_key: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `kms_key_arn`<sup>Required</sup> <a name="kms_key_arn" id="@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollectionEncryptionConfigOutputReference.property.kmsKeyArn"></a>
+
+```python
+kms_key_arn: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollectionEncryptionConfigOutputReference.property.internalValue"></a>
+
+```python
+internal_value: IResolvable | OpensearchserverlessCollectionEncryptionConfig
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollectionEncryptionConfig">OpensearchserverlessCollectionEncryptionConfig</a>
+
+---
+
 
 ### OpensearchserverlessCollectionTimeoutsOutputReference <a name="OpensearchserverlessCollectionTimeoutsOutputReference" id="@cdktn/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollectionTimeoutsOutputReference"></a>
 

@@ -4,7 +4,7 @@
 
 ### ControltowerLandingZone <a name="ControltowerLandingZone" id="@cdktn/provider-aws.controltowerLandingZone.ControltowerLandingZone"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/controltower_landing_zone aws_controltower_landing_zone}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/controltower_landing_zone aws_controltower_landing_zone}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.controltowerLandingZone.ControltowerLandingZone.Initializer"></a>
 
@@ -25,6 +25,7 @@ controltowerLandingZone.ControltowerLandingZone(
   version: str,
   id: str = None,
   region: str = None,
+  remediation_types: typing.List[str] = None,
   tags: typing.Mapping[str] = None,
   tags_all: typing.Mapping[str] = None,
   timeouts: ControltowerLandingZoneTimeouts = None
@@ -42,12 +43,13 @@ controltowerLandingZone.ControltowerLandingZone(
 | <code><a href="#@cdktn/provider-aws.controltowerLandingZone.ControltowerLandingZone.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.controltowerLandingZone.ControltowerLandingZone.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.controltowerLandingZone.ControltowerLandingZone.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.controltowerLandingZone.ControltowerLandingZone.Initializer.parameter.manifestJson">manifest_json</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/controltower_landing_zone#manifest_json ControltowerLandingZone#manifest_json}. |
-| <code><a href="#@cdktn/provider-aws.controltowerLandingZone.ControltowerLandingZone.Initializer.parameter.version">version</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/controltower_landing_zone#version ControltowerLandingZone#version}. |
-| <code><a href="#@cdktn/provider-aws.controltowerLandingZone.ControltowerLandingZone.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/controltower_landing_zone#id ControltowerLandingZone#id}. |
+| <code><a href="#@cdktn/provider-aws.controltowerLandingZone.ControltowerLandingZone.Initializer.parameter.manifestJson">manifest_json</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/controltower_landing_zone#manifest_json ControltowerLandingZone#manifest_json}. |
+| <code><a href="#@cdktn/provider-aws.controltowerLandingZone.ControltowerLandingZone.Initializer.parameter.version">version</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/controltower_landing_zone#version ControltowerLandingZone#version}. |
+| <code><a href="#@cdktn/provider-aws.controltowerLandingZone.ControltowerLandingZone.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/controltower_landing_zone#id ControltowerLandingZone#id}. |
 | <code><a href="#@cdktn/provider-aws.controltowerLandingZone.ControltowerLandingZone.Initializer.parameter.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.controltowerLandingZone.ControltowerLandingZone.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/controltower_landing_zone#tags ControltowerLandingZone#tags}. |
-| <code><a href="#@cdktn/provider-aws.controltowerLandingZone.ControltowerLandingZone.Initializer.parameter.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/controltower_landing_zone#tags_all ControltowerLandingZone#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.controltowerLandingZone.ControltowerLandingZone.Initializer.parameter.remediationTypes">remediation_types</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/controltower_landing_zone#remediation_types ControltowerLandingZone#remediation_types}. |
+| <code><a href="#@cdktn/provider-aws.controltowerLandingZone.ControltowerLandingZone.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/controltower_landing_zone#tags ControltowerLandingZone#tags}. |
+| <code><a href="#@cdktn/provider-aws.controltowerLandingZone.ControltowerLandingZone.Initializer.parameter.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/controltower_landing_zone#tags_all ControltowerLandingZone#tags_all}. |
 | <code><a href="#@cdktn/provider-aws.controltowerLandingZone.ControltowerLandingZone.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-aws.controltowerLandingZone.ControltowerLandingZoneTimeouts">ControltowerLandingZoneTimeouts</a></code> | timeouts block. |
 
 ---
@@ -116,7 +118,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/controltower_landing_zone#manifest_json ControltowerLandingZone#manifest_json}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/controltower_landing_zone#manifest_json ControltowerLandingZone#manifest_json}.
 
 ---
 
@@ -124,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/controltower_landing_zone#version ControltowerLandingZone#version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/controltower_landing_zone#version ControltowerLandingZone#version}.
 
 ---
 
@@ -132,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/controltower_landing_zone#id ControltowerLandingZone#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/controltower_landing_zone#id ControltowerLandingZone#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -145,7 +147,15 @@ If you experience problems setting this value it might not be settable. Please t
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/controltower_landing_zone#region ControltowerLandingZone#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/controltower_landing_zone#region ControltowerLandingZone#region}
+
+---
+
+##### `remediation_types`<sup>Optional</sup> <a name="remediation_types" id="@cdktn/provider-aws.controltowerLandingZone.ControltowerLandingZone.Initializer.parameter.remediationTypes"></a>
+
+- *Type:* typing.List[str]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/controltower_landing_zone#remediation_types ControltowerLandingZone#remediation_types}.
 
 ---
 
@@ -153,7 +163,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/controltower_landing_zone#tags ControltowerLandingZone#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/controltower_landing_zone#tags ControltowerLandingZone#tags}.
 
 ---
 
@@ -161,7 +171,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/controltower_landing_zone#tags_all ControltowerLandingZone#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/controltower_landing_zone#tags_all ControltowerLandingZone#tags_all}.
 
 ---
 
@@ -171,7 +181,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/controltower_landing_zone#timeouts ControltowerLandingZone#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/controltower_landing_zone#timeouts ControltowerLandingZone#timeouts}
 
 ---
 
@@ -206,6 +216,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-aws.controltowerLandingZone.ControltowerLandingZone.putTimeouts">put_timeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.controltowerLandingZone.ControltowerLandingZone.resetId">reset_id</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.controltowerLandingZone.ControltowerLandingZone.resetRegion">reset_region</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.controltowerLandingZone.ControltowerLandingZone.resetRemediationTypes">reset_remediation_types</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.controltowerLandingZone.ControltowerLandingZone.resetTags">reset_tags</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.controltowerLandingZone.ControltowerLandingZone.resetTagsAll">reset_tags_all</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.controltowerLandingZone.ControltowerLandingZone.resetTimeouts">reset_timeouts</a></code> | *No description.* |
@@ -574,7 +585,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/controltower_landing_zone#create ControltowerLandingZone#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/controltower_landing_zone#create ControltowerLandingZone#create}.
 
 ---
 
@@ -582,7 +593,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/controltower_landing_zone#delete ControltowerLandingZone#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/controltower_landing_zone#delete ControltowerLandingZone#delete}.
 
 ---
 
@@ -590,7 +601,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/controltower_landing_zone#update ControltowerLandingZone#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/controltower_landing_zone#update ControltowerLandingZone#update}.
 
 ---
 
@@ -604,6 +615,12 @@ def reset_id() -> None
 
 ```python
 def reset_region() -> None
+```
+
+##### `reset_remediation_types` <a name="reset_remediation_types" id="@cdktn/provider-aws.controltowerLandingZone.ControltowerLandingZone.resetRemediationTypes"></a>
+
+```python
+def reset_remediation_types() -> None
 ```
 
 ##### `reset_tags` <a name="reset_tags" id="@cdktn/provider-aws.controltowerLandingZone.ControltowerLandingZone.resetTags"></a>
@@ -738,7 +755,7 @@ The construct id used in the generated config for the ControltowerLandingZone to
 
 The id of the existing ControltowerLandingZone that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/controltower_landing_zone#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/controltower_landing_zone#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -775,6 +792,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0
 | <code><a href="#@cdktn/provider-aws.controltowerLandingZone.ControltowerLandingZone.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.controltowerLandingZone.ControltowerLandingZone.property.manifestJsonInput">manifest_json_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.controltowerLandingZone.ControltowerLandingZone.property.regionInput">region_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.controltowerLandingZone.ControltowerLandingZone.property.remediationTypesInput">remediation_types_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.controltowerLandingZone.ControltowerLandingZone.property.tagsAllInput">tags_all_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.controltowerLandingZone.ControltowerLandingZone.property.tagsInput">tags_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.controltowerLandingZone.ControltowerLandingZone.property.timeoutsInput">timeouts_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.controltowerLandingZone.ControltowerLandingZoneTimeouts">ControltowerLandingZoneTimeouts</a></code> | *No description.* |
@@ -782,6 +800,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0
 | <code><a href="#@cdktn/provider-aws.controltowerLandingZone.ControltowerLandingZone.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.controltowerLandingZone.ControltowerLandingZone.property.manifestJson">manifest_json</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.controltowerLandingZone.ControltowerLandingZone.property.region">region</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.controltowerLandingZone.ControltowerLandingZone.property.remediationTypes">remediation_types</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.controltowerLandingZone.ControltowerLandingZone.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.controltowerLandingZone.ControltowerLandingZone.property.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.controltowerLandingZone.ControltowerLandingZone.property.version">version</a></code> | <code>str</code> | *No description.* |
@@ -1000,6 +1019,16 @@ region_input: str
 
 ---
 
+##### `remediation_types_input`<sup>Optional</sup> <a name="remediation_types_input" id="@cdktn/provider-aws.controltowerLandingZone.ControltowerLandingZone.property.remediationTypesInput"></a>
+
+```python
+remediation_types_input: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
 ##### `tags_all_input`<sup>Optional</sup> <a name="tags_all_input" id="@cdktn/provider-aws.controltowerLandingZone.ControltowerLandingZone.property.tagsAllInput"></a>
 
 ```python
@@ -1067,6 +1096,16 @@ region: str
 ```
 
 - *Type:* str
+
+---
+
+##### `remediation_types`<sup>Required</sup> <a name="remediation_types" id="@cdktn/provider-aws.controltowerLandingZone.ControltowerLandingZone.property.remediationTypes"></a>
+
+```python
+remediation_types: typing.List[str]
+```
+
+- *Type:* typing.List[str]
 
 ---
 
@@ -1139,6 +1178,7 @@ controltowerLandingZone.ControltowerLandingZoneConfig(
   version: str,
   id: str = None,
   region: str = None,
+  remediation_types: typing.List[str] = None,
   tags: typing.Mapping[str] = None,
   tags_all: typing.Mapping[str] = None,
   timeouts: ControltowerLandingZoneTimeouts = None
@@ -1156,12 +1196,13 @@ controltowerLandingZone.ControltowerLandingZoneConfig(
 | <code><a href="#@cdktn/provider-aws.controltowerLandingZone.ControltowerLandingZoneConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.controltowerLandingZone.ControltowerLandingZoneConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.controltowerLandingZone.ControltowerLandingZoneConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.controltowerLandingZone.ControltowerLandingZoneConfig.property.manifestJson">manifest_json</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/controltower_landing_zone#manifest_json ControltowerLandingZone#manifest_json}. |
-| <code><a href="#@cdktn/provider-aws.controltowerLandingZone.ControltowerLandingZoneConfig.property.version">version</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/controltower_landing_zone#version ControltowerLandingZone#version}. |
-| <code><a href="#@cdktn/provider-aws.controltowerLandingZone.ControltowerLandingZoneConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/controltower_landing_zone#id ControltowerLandingZone#id}. |
+| <code><a href="#@cdktn/provider-aws.controltowerLandingZone.ControltowerLandingZoneConfig.property.manifestJson">manifest_json</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/controltower_landing_zone#manifest_json ControltowerLandingZone#manifest_json}. |
+| <code><a href="#@cdktn/provider-aws.controltowerLandingZone.ControltowerLandingZoneConfig.property.version">version</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/controltower_landing_zone#version ControltowerLandingZone#version}. |
+| <code><a href="#@cdktn/provider-aws.controltowerLandingZone.ControltowerLandingZoneConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/controltower_landing_zone#id ControltowerLandingZone#id}. |
 | <code><a href="#@cdktn/provider-aws.controltowerLandingZone.ControltowerLandingZoneConfig.property.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.controltowerLandingZone.ControltowerLandingZoneConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/controltower_landing_zone#tags ControltowerLandingZone#tags}. |
-| <code><a href="#@cdktn/provider-aws.controltowerLandingZone.ControltowerLandingZoneConfig.property.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/controltower_landing_zone#tags_all ControltowerLandingZone#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.controltowerLandingZone.ControltowerLandingZoneConfig.property.remediationTypes">remediation_types</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/controltower_landing_zone#remediation_types ControltowerLandingZone#remediation_types}. |
+| <code><a href="#@cdktn/provider-aws.controltowerLandingZone.ControltowerLandingZoneConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/controltower_landing_zone#tags ControltowerLandingZone#tags}. |
+| <code><a href="#@cdktn/provider-aws.controltowerLandingZone.ControltowerLandingZoneConfig.property.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/controltower_landing_zone#tags_all ControltowerLandingZone#tags_all}. |
 | <code><a href="#@cdktn/provider-aws.controltowerLandingZone.ControltowerLandingZoneConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-aws.controltowerLandingZone.ControltowerLandingZoneTimeouts">ControltowerLandingZoneTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1244,7 +1285,7 @@ manifest_json: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/controltower_landing_zone#manifest_json ControltowerLandingZone#manifest_json}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/controltower_landing_zone#manifest_json ControltowerLandingZone#manifest_json}.
 
 ---
 
@@ -1256,7 +1297,7 @@ version: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/controltower_landing_zone#version ControltowerLandingZone#version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/controltower_landing_zone#version ControltowerLandingZone#version}.
 
 ---
 
@@ -1268,7 +1309,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/controltower_landing_zone#id ControltowerLandingZone#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/controltower_landing_zone#id ControltowerLandingZone#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1285,7 +1326,19 @@ region: str
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/controltower_landing_zone#region ControltowerLandingZone#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/controltower_landing_zone#region ControltowerLandingZone#region}
+
+---
+
+##### `remediation_types`<sup>Optional</sup> <a name="remediation_types" id="@cdktn/provider-aws.controltowerLandingZone.ControltowerLandingZoneConfig.property.remediationTypes"></a>
+
+```python
+remediation_types: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/controltower_landing_zone#remediation_types ControltowerLandingZone#remediation_types}.
 
 ---
 
@@ -1297,7 +1350,7 @@ tags: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/controltower_landing_zone#tags ControltowerLandingZone#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/controltower_landing_zone#tags ControltowerLandingZone#tags}.
 
 ---
 
@@ -1309,7 +1362,7 @@ tags_all: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/controltower_landing_zone#tags_all ControltowerLandingZone#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/controltower_landing_zone#tags_all ControltowerLandingZone#tags_all}.
 
 ---
 
@@ -1323,7 +1376,7 @@ timeouts: ControltowerLandingZoneTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/controltower_landing_zone#timeouts ControltowerLandingZone#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/controltower_landing_zone#timeouts ControltowerLandingZone#timeouts}
 
 ---
 
@@ -1356,9 +1409,9 @@ controltowerLandingZone.ControltowerLandingZoneTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.controltowerLandingZone.ControltowerLandingZoneTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/controltower_landing_zone#create ControltowerLandingZone#create}. |
-| <code><a href="#@cdktn/provider-aws.controltowerLandingZone.ControltowerLandingZoneTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/controltower_landing_zone#delete ControltowerLandingZone#delete}. |
-| <code><a href="#@cdktn/provider-aws.controltowerLandingZone.ControltowerLandingZoneTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/controltower_landing_zone#update ControltowerLandingZone#update}. |
+| <code><a href="#@cdktn/provider-aws.controltowerLandingZone.ControltowerLandingZoneTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/controltower_landing_zone#create ControltowerLandingZone#create}. |
+| <code><a href="#@cdktn/provider-aws.controltowerLandingZone.ControltowerLandingZoneTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/controltower_landing_zone#delete ControltowerLandingZone#delete}. |
+| <code><a href="#@cdktn/provider-aws.controltowerLandingZone.ControltowerLandingZoneTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/controltower_landing_zone#update ControltowerLandingZone#update}. |
 
 ---
 
@@ -1370,7 +1423,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/controltower_landing_zone#create ControltowerLandingZone#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/controltower_landing_zone#create ControltowerLandingZone#create}.
 
 ---
 
@@ -1382,7 +1435,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/controltower_landing_zone#delete ControltowerLandingZone#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/controltower_landing_zone#delete ControltowerLandingZone#delete}.
 
 ---
 
@@ -1394,7 +1447,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/controltower_landing_zone#update ControltowerLandingZone#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/controltower_landing_zone#update ControltowerLandingZone#update}.
 
 ---
 

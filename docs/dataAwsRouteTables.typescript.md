@@ -4,7 +4,7 @@
 
 ### DataAwsRouteTables <a name="DataAwsRouteTables" id="@cdktn/provider-aws.dataAwsRouteTables.DataAwsRouteTables"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/data-sources/route_tables aws_route_tables}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/data-sources/route_tables aws_route_tables}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsRouteTables.DataAwsRouteTables.Initializer"></a>
 
@@ -455,7 +455,7 @@ The construct id used in the generated config for the DataAwsRouteTables to impo
 
 The id of the existing DataAwsRouteTables that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/data-sources/route_tables#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/data-sources/route_tables#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -793,11 +793,11 @@ const dataAwsRouteTablesConfig: dataAwsRouteTables.DataAwsRouteTablesConfig = { 
 | <code><a href="#@cdktn/provider-aws.dataAwsRouteTables.DataAwsRouteTablesConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsRouteTables.DataAwsRouteTablesConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsRouteTables.DataAwsRouteTablesConfig.property.filter">filter</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.dataAwsRouteTables.DataAwsRouteTablesFilter">DataAwsRouteTablesFilter</a>[]</code> | filter block. |
-| <code><a href="#@cdktn/provider-aws.dataAwsRouteTables.DataAwsRouteTablesConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/data-sources/route_tables#id DataAwsRouteTables#id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsRouteTables.DataAwsRouteTablesConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/data-sources/route_tables#id DataAwsRouteTables#id}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsRouteTables.DataAwsRouteTablesConfig.property.region">region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.dataAwsRouteTables.DataAwsRouteTablesConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/data-sources/route_tables#tags DataAwsRouteTables#tags}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsRouteTables.DataAwsRouteTablesConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/data-sources/route_tables#tags DataAwsRouteTables#tags}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsRouteTables.DataAwsRouteTablesConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-aws.dataAwsRouteTables.DataAwsRouteTablesTimeouts">DataAwsRouteTablesTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktn/provider-aws.dataAwsRouteTables.DataAwsRouteTablesConfig.property.vpcId">vpcId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/data-sources/route_tables#vpc_id DataAwsRouteTables#vpc_id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsRouteTables.DataAwsRouteTablesConfig.property.vpcId">vpcId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/data-sources/route_tables#vpc_id DataAwsRouteTables#vpc_id}. |
 
 ---
 
@@ -881,7 +881,7 @@ public readonly filter: IResolvable | DataAwsRouteTablesFilter[];
 
 filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/data-sources/route_tables#filter DataAwsRouteTables#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/data-sources/route_tables#filter DataAwsRouteTables#filter}
 
 ---
 
@@ -893,7 +893,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/data-sources/route_tables#id DataAwsRouteTables#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/data-sources/route_tables#id DataAwsRouteTables#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -910,7 +910,7 @@ public readonly region: string;
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/data-sources/route_tables#region DataAwsRouteTables#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/data-sources/route_tables#region DataAwsRouteTables#region}
 
 ---
 
@@ -922,7 +922,7 @@ public readonly tags: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/data-sources/route_tables#tags DataAwsRouteTables#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/data-sources/route_tables#tags DataAwsRouteTables#tags}.
 
 ---
 
@@ -936,7 +936,7 @@ public readonly timeouts: DataAwsRouteTablesTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/data-sources/route_tables#timeouts DataAwsRouteTables#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/data-sources/route_tables#timeouts DataAwsRouteTables#timeouts}
 
 ---
 
@@ -948,7 +948,7 @@ public readonly vpcId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/data-sources/route_tables#vpc_id DataAwsRouteTables#vpc_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/data-sources/route_tables#vpc_id DataAwsRouteTables#vpc_id}.
 
 ---
 
@@ -966,8 +966,8 @@ const dataAwsRouteTablesFilter: dataAwsRouteTables.DataAwsRouteTablesFilter = { 
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.dataAwsRouteTables.DataAwsRouteTablesFilter.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/data-sources/route_tables#name DataAwsRouteTables#name}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsRouteTables.DataAwsRouteTablesFilter.property.values">values</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/data-sources/route_tables#values DataAwsRouteTables#values}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsRouteTables.DataAwsRouteTablesFilter.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/data-sources/route_tables#name DataAwsRouteTables#name}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsRouteTables.DataAwsRouteTablesFilter.property.values">values</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/data-sources/route_tables#values DataAwsRouteTables#values}. |
 
 ---
 
@@ -979,7 +979,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/data-sources/route_tables#name DataAwsRouteTables#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/data-sources/route_tables#name DataAwsRouteTables#name}.
 
 ---
 
@@ -991,7 +991,7 @@ public readonly values: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/data-sources/route_tables#values DataAwsRouteTables#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/data-sources/route_tables#values DataAwsRouteTables#values}.
 
 ---
 
@@ -1009,7 +1009,7 @@ const dataAwsRouteTablesTimeouts: dataAwsRouteTables.DataAwsRouteTablesTimeouts 
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.dataAwsRouteTables.DataAwsRouteTablesTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/data-sources/route_tables#read DataAwsRouteTables#read}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsRouteTables.DataAwsRouteTablesTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/data-sources/route_tables#read DataAwsRouteTables#read}. |
 
 ---
 
@@ -1021,7 +1021,7 @@ public readonly read: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/data-sources/route_tables#read DataAwsRouteTables#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/data-sources/route_tables#read DataAwsRouteTables#read}.
 
 ---
 

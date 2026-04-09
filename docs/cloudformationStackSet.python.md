@@ -4,7 +4,7 @@
 
 ### CloudformationStackSet <a name="CloudformationStackSet" id="@cdktn/provider-aws.cloudformationStackSet.CloudformationStackSet"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/cloudformation_stack_set aws_cloudformation_stack_set}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/cloudformation_stack_set aws_cloudformation_stack_set}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudformationStackSet.CloudformationStackSet.Initializer"></a>
 
@@ -53,23 +53,23 @@ cloudformationStackSet.CloudformationStackSet(
 | <code><a href="#@cdktn/provider-aws.cloudformationStackSet.CloudformationStackSet.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudformationStackSet.CloudformationStackSet.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudformationStackSet.CloudformationStackSet.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudformationStackSet.CloudformationStackSet.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/cloudformation_stack_set#name CloudformationStackSet#name}. |
-| <code><a href="#@cdktn/provider-aws.cloudformationStackSet.CloudformationStackSet.Initializer.parameter.administrationRoleArn">administration_role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/cloudformation_stack_set#administration_role_arn CloudformationStackSet#administration_role_arn}. |
+| <code><a href="#@cdktn/provider-aws.cloudformationStackSet.CloudformationStackSet.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/cloudformation_stack_set#name CloudformationStackSet#name}. |
+| <code><a href="#@cdktn/provider-aws.cloudformationStackSet.CloudformationStackSet.Initializer.parameter.administrationRoleArn">administration_role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/cloudformation_stack_set#administration_role_arn CloudformationStackSet#administration_role_arn}. |
 | <code><a href="#@cdktn/provider-aws.cloudformationStackSet.CloudformationStackSet.Initializer.parameter.autoDeployment">auto_deployment</a></code> | <code><a href="#@cdktn/provider-aws.cloudformationStackSet.CloudformationStackSetAutoDeployment">CloudformationStackSetAutoDeployment</a></code> | auto_deployment block. |
-| <code><a href="#@cdktn/provider-aws.cloudformationStackSet.CloudformationStackSet.Initializer.parameter.callAs">call_as</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/cloudformation_stack_set#call_as CloudformationStackSet#call_as}. |
-| <code><a href="#@cdktn/provider-aws.cloudformationStackSet.CloudformationStackSet.Initializer.parameter.capabilities">capabilities</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/cloudformation_stack_set#capabilities CloudformationStackSet#capabilities}. |
-| <code><a href="#@cdktn/provider-aws.cloudformationStackSet.CloudformationStackSet.Initializer.parameter.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/cloudformation_stack_set#description CloudformationStackSet#description}. |
-| <code><a href="#@cdktn/provider-aws.cloudformationStackSet.CloudformationStackSet.Initializer.parameter.executionRoleName">execution_role_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/cloudformation_stack_set#execution_role_name CloudformationStackSet#execution_role_name}. |
-| <code><a href="#@cdktn/provider-aws.cloudformationStackSet.CloudformationStackSet.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/cloudformation_stack_set#id CloudformationStackSet#id}. |
+| <code><a href="#@cdktn/provider-aws.cloudformationStackSet.CloudformationStackSet.Initializer.parameter.callAs">call_as</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/cloudformation_stack_set#call_as CloudformationStackSet#call_as}. |
+| <code><a href="#@cdktn/provider-aws.cloudformationStackSet.CloudformationStackSet.Initializer.parameter.capabilities">capabilities</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/cloudformation_stack_set#capabilities CloudformationStackSet#capabilities}. |
+| <code><a href="#@cdktn/provider-aws.cloudformationStackSet.CloudformationStackSet.Initializer.parameter.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/cloudformation_stack_set#description CloudformationStackSet#description}. |
+| <code><a href="#@cdktn/provider-aws.cloudformationStackSet.CloudformationStackSet.Initializer.parameter.executionRoleName">execution_role_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/cloudformation_stack_set#execution_role_name CloudformationStackSet#execution_role_name}. |
+| <code><a href="#@cdktn/provider-aws.cloudformationStackSet.CloudformationStackSet.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/cloudformation_stack_set#id CloudformationStackSet#id}. |
 | <code><a href="#@cdktn/provider-aws.cloudformationStackSet.CloudformationStackSet.Initializer.parameter.managedExecution">managed_execution</a></code> | <code><a href="#@cdktn/provider-aws.cloudformationStackSet.CloudformationStackSetManagedExecution">CloudformationStackSetManagedExecution</a></code> | managed_execution block. |
 | <code><a href="#@cdktn/provider-aws.cloudformationStackSet.CloudformationStackSet.Initializer.parameter.operationPreferences">operation_preferences</a></code> | <code><a href="#@cdktn/provider-aws.cloudformationStackSet.CloudformationStackSetOperationPreferences">CloudformationStackSetOperationPreferences</a></code> | operation_preferences block. |
-| <code><a href="#@cdktn/provider-aws.cloudformationStackSet.CloudformationStackSet.Initializer.parameter.parameters">parameters</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/cloudformation_stack_set#parameters CloudformationStackSet#parameters}. |
-| <code><a href="#@cdktn/provider-aws.cloudformationStackSet.CloudformationStackSet.Initializer.parameter.permissionModel">permission_model</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/cloudformation_stack_set#permission_model CloudformationStackSet#permission_model}. |
+| <code><a href="#@cdktn/provider-aws.cloudformationStackSet.CloudformationStackSet.Initializer.parameter.parameters">parameters</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/cloudformation_stack_set#parameters CloudformationStackSet#parameters}. |
+| <code><a href="#@cdktn/provider-aws.cloudformationStackSet.CloudformationStackSet.Initializer.parameter.permissionModel">permission_model</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/cloudformation_stack_set#permission_model CloudformationStackSet#permission_model}. |
 | <code><a href="#@cdktn/provider-aws.cloudformationStackSet.CloudformationStackSet.Initializer.parameter.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.cloudformationStackSet.CloudformationStackSet.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/cloudformation_stack_set#tags CloudformationStackSet#tags}. |
-| <code><a href="#@cdktn/provider-aws.cloudformationStackSet.CloudformationStackSet.Initializer.parameter.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/cloudformation_stack_set#tags_all CloudformationStackSet#tags_all}. |
-| <code><a href="#@cdktn/provider-aws.cloudformationStackSet.CloudformationStackSet.Initializer.parameter.templateBody">template_body</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/cloudformation_stack_set#template_body CloudformationStackSet#template_body}. |
-| <code><a href="#@cdktn/provider-aws.cloudformationStackSet.CloudformationStackSet.Initializer.parameter.templateUrl">template_url</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/cloudformation_stack_set#template_url CloudformationStackSet#template_url}. |
+| <code><a href="#@cdktn/provider-aws.cloudformationStackSet.CloudformationStackSet.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/cloudformation_stack_set#tags CloudformationStackSet#tags}. |
+| <code><a href="#@cdktn/provider-aws.cloudformationStackSet.CloudformationStackSet.Initializer.parameter.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/cloudformation_stack_set#tags_all CloudformationStackSet#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.cloudformationStackSet.CloudformationStackSet.Initializer.parameter.templateBody">template_body</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/cloudformation_stack_set#template_body CloudformationStackSet#template_body}. |
+| <code><a href="#@cdktn/provider-aws.cloudformationStackSet.CloudformationStackSet.Initializer.parameter.templateUrl">template_url</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/cloudformation_stack_set#template_url CloudformationStackSet#template_url}. |
 | <code><a href="#@cdktn/provider-aws.cloudformationStackSet.CloudformationStackSet.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-aws.cloudformationStackSet.CloudformationStackSetTimeouts">CloudformationStackSetTimeouts</a></code> | timeouts block. |
 
 ---
@@ -138,7 +138,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/cloudformation_stack_set#name CloudformationStackSet#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/cloudformation_stack_set#name CloudformationStackSet#name}.
 
 ---
 
@@ -146,7 +146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/cloudformation_stack_set#administration_role_arn CloudformationStackSet#administration_role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/cloudformation_stack_set#administration_role_arn CloudformationStackSet#administration_role_arn}.
 
 ---
 
@@ -156,7 +156,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 auto_deployment block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/cloudformation_stack_set#auto_deployment CloudformationStackSet#auto_deployment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/cloudformation_stack_set#auto_deployment CloudformationStackSet#auto_deployment}
 
 ---
 
@@ -164,7 +164,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/cloudformation_stack_set#call_as CloudformationStackSet#call_as}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/cloudformation_stack_set#call_as CloudformationStackSet#call_as}.
 
 ---
 
@@ -172,7 +172,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/cloudformation_stack_set#capabilities CloudformationStackSet#capabilities}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/cloudformation_stack_set#capabilities CloudformationStackSet#capabilities}.
 
 ---
 
@@ -180,7 +180,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/cloudformation_stack_set#description CloudformationStackSet#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/cloudformation_stack_set#description CloudformationStackSet#description}.
 
 ---
 
@@ -188,7 +188,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/cloudformation_stack_set#execution_role_name CloudformationStackSet#execution_role_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/cloudformation_stack_set#execution_role_name CloudformationStackSet#execution_role_name}.
 
 ---
 
@@ -196,7 +196,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/cloudformation_stack_set#id CloudformationStackSet#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/cloudformation_stack_set#id CloudformationStackSet#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -209,7 +209,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 managed_execution block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/cloudformation_stack_set#managed_execution CloudformationStackSet#managed_execution}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/cloudformation_stack_set#managed_execution CloudformationStackSet#managed_execution}
 
 ---
 
@@ -219,7 +219,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 operation_preferences block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/cloudformation_stack_set#operation_preferences CloudformationStackSet#operation_preferences}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/cloudformation_stack_set#operation_preferences CloudformationStackSet#operation_preferences}
 
 ---
 
@@ -227,7 +227,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/cloudformation_stack_set#parameters CloudformationStackSet#parameters}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/cloudformation_stack_set#parameters CloudformationStackSet#parameters}.
 
 ---
 
@@ -235,7 +235,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/cloudformation_stack_set#permission_model CloudformationStackSet#permission_model}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/cloudformation_stack_set#permission_model CloudformationStackSet#permission_model}.
 
 ---
 
@@ -245,7 +245,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/cloudformation_stack_set#region CloudformationStackSet#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/cloudformation_stack_set#region CloudformationStackSet#region}
 
 ---
 
@@ -253,7 +253,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/cloudformation_stack_set#tags CloudformationStackSet#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/cloudformation_stack_set#tags CloudformationStackSet#tags}.
 
 ---
 
@@ -261,7 +261,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/cloudformation_stack_set#tags_all CloudformationStackSet#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/cloudformation_stack_set#tags_all CloudformationStackSet#tags_all}.
 
 ---
 
@@ -269,7 +269,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/cloudformation_stack_set#template_body CloudformationStackSet#template_body}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/cloudformation_stack_set#template_body CloudformationStackSet#template_body}.
 
 ---
 
@@ -277,7 +277,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/cloudformation_stack_set#template_url CloudformationStackSet#template_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/cloudformation_stack_set#template_url CloudformationStackSet#template_url}.
 
 ---
 
@@ -287,7 +287,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/cloudformation_stack_set#timeouts CloudformationStackSet#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/cloudformation_stack_set#timeouts CloudformationStackSet#timeouts}
 
 ---
 
@@ -695,16 +695,25 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ```python
 def put_auto_deployment(
+  depends_on_stack_sets: typing.List[str] = None,
   enabled: bool | IResolvable = None,
   retain_stacks_on_account_removal: bool | IResolvable = None
 ) -> None
 ```
 
+###### `depends_on_stack_sets`<sup>Optional</sup> <a name="depends_on_stack_sets" id="@cdktn/provider-aws.cloudformationStackSet.CloudformationStackSet.putAutoDeployment.parameter.dependsOnStackSets"></a>
+
+- *Type:* typing.List[str]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/cloudformation_stack_set#depends_on_stack_sets CloudformationStackSet#depends_on_stack_sets}.
+
+---
+
 ###### `enabled`<sup>Optional</sup> <a name="enabled" id="@cdktn/provider-aws.cloudformationStackSet.CloudformationStackSet.putAutoDeployment.parameter.enabled"></a>
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/cloudformation_stack_set#enabled CloudformationStackSet#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/cloudformation_stack_set#enabled CloudformationStackSet#enabled}.
 
 ---
 
@@ -712,7 +721,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/cloudformation_stack_set#retain_stacks_on_account_removal CloudformationStackSet#retain_stacks_on_account_removal}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/cloudformation_stack_set#retain_stacks_on_account_removal CloudformationStackSet#retain_stacks_on_account_removal}.
 
 ---
 
@@ -728,7 +737,7 @@ def put_managed_execution(
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/cloudformation_stack_set#active CloudformationStackSet#active}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/cloudformation_stack_set#active CloudformationStackSet#active}.
 
 ---
 
@@ -749,7 +758,7 @@ def put_operation_preferences(
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/cloudformation_stack_set#failure_tolerance_count CloudformationStackSet#failure_tolerance_count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/cloudformation_stack_set#failure_tolerance_count CloudformationStackSet#failure_tolerance_count}.
 
 ---
 
@@ -757,7 +766,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/cloudformation_stack_set#failure_tolerance_percentage CloudformationStackSet#failure_tolerance_percentage}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/cloudformation_stack_set#failure_tolerance_percentage CloudformationStackSet#failure_tolerance_percentage}.
 
 ---
 
@@ -765,7 +774,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/cloudformation_stack_set#max_concurrent_count CloudformationStackSet#max_concurrent_count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/cloudformation_stack_set#max_concurrent_count CloudformationStackSet#max_concurrent_count}.
 
 ---
 
@@ -773,7 +782,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/cloudformation_stack_set#max_concurrent_percentage CloudformationStackSet#max_concurrent_percentage}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/cloudformation_stack_set#max_concurrent_percentage CloudformationStackSet#max_concurrent_percentage}.
 
 ---
 
@@ -781,7 +790,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/cloudformation_stack_set#region_concurrency_type CloudformationStackSet#region_concurrency_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/cloudformation_stack_set#region_concurrency_type CloudformationStackSet#region_concurrency_type}.
 
 ---
 
@@ -789,7 +798,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/cloudformation_stack_set#region_order CloudformationStackSet#region_order}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/cloudformation_stack_set#region_order CloudformationStackSet#region_order}.
 
 ---
 
@@ -805,7 +814,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/cloudformation_stack_set#update CloudformationStackSet#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/cloudformation_stack_set#update CloudformationStackSet#update}.
 
 ---
 
@@ -1025,7 +1034,7 @@ The construct id used in the generated config for the CloudformationStackSet to 
 
 The id of the existing CloudformationStackSet that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/cloudformation_stack_set#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/cloudformation_stack_set#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1646,6 +1655,7 @@ tfResourceType: str
 from cdktn_provider_aws import cloudformation_stack_set
 
 cloudformationStackSet.CloudformationStackSetAutoDeployment(
+  depends_on_stack_sets: typing.List[str] = None,
   enabled: bool | IResolvable = None,
   retain_stacks_on_account_removal: bool | IResolvable = None
 )
@@ -1655,8 +1665,21 @@ cloudformationStackSet.CloudformationStackSetAutoDeployment(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudformationStackSet.CloudformationStackSetAutoDeployment.property.enabled">enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/cloudformation_stack_set#enabled CloudformationStackSet#enabled}. |
-| <code><a href="#@cdktn/provider-aws.cloudformationStackSet.CloudformationStackSetAutoDeployment.property.retainStacksOnAccountRemoval">retain_stacks_on_account_removal</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/cloudformation_stack_set#retain_stacks_on_account_removal CloudformationStackSet#retain_stacks_on_account_removal}. |
+| <code><a href="#@cdktn/provider-aws.cloudformationStackSet.CloudformationStackSetAutoDeployment.property.dependsOnStackSets">depends_on_stack_sets</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/cloudformation_stack_set#depends_on_stack_sets CloudformationStackSet#depends_on_stack_sets}. |
+| <code><a href="#@cdktn/provider-aws.cloudformationStackSet.CloudformationStackSetAutoDeployment.property.enabled">enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/cloudformation_stack_set#enabled CloudformationStackSet#enabled}. |
+| <code><a href="#@cdktn/provider-aws.cloudformationStackSet.CloudformationStackSetAutoDeployment.property.retainStacksOnAccountRemoval">retain_stacks_on_account_removal</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/cloudformation_stack_set#retain_stacks_on_account_removal CloudformationStackSet#retain_stacks_on_account_removal}. |
+
+---
+
+##### `depends_on_stack_sets`<sup>Optional</sup> <a name="depends_on_stack_sets" id="@cdktn/provider-aws.cloudformationStackSet.CloudformationStackSetAutoDeployment.property.dependsOnStackSets"></a>
+
+```python
+depends_on_stack_sets: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/cloudformation_stack_set#depends_on_stack_sets CloudformationStackSet#depends_on_stack_sets}.
 
 ---
 
@@ -1668,7 +1691,7 @@ enabled: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/cloudformation_stack_set#enabled CloudformationStackSet#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/cloudformation_stack_set#enabled CloudformationStackSet#enabled}.
 
 ---
 
@@ -1680,7 +1703,7 @@ retain_stacks_on_account_removal: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/cloudformation_stack_set#retain_stacks_on_account_removal CloudformationStackSet#retain_stacks_on_account_removal}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/cloudformation_stack_set#retain_stacks_on_account_removal CloudformationStackSet#retain_stacks_on_account_removal}.
 
 ---
 
@@ -1731,23 +1754,23 @@ cloudformationStackSet.CloudformationStackSetConfig(
 | <code><a href="#@cdktn/provider-aws.cloudformationStackSet.CloudformationStackSetConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudformationStackSet.CloudformationStackSetConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudformationStackSet.CloudformationStackSetConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudformationStackSet.CloudformationStackSetConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/cloudformation_stack_set#name CloudformationStackSet#name}. |
-| <code><a href="#@cdktn/provider-aws.cloudformationStackSet.CloudformationStackSetConfig.property.administrationRoleArn">administration_role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/cloudformation_stack_set#administration_role_arn CloudformationStackSet#administration_role_arn}. |
+| <code><a href="#@cdktn/provider-aws.cloudformationStackSet.CloudformationStackSetConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/cloudformation_stack_set#name CloudformationStackSet#name}. |
+| <code><a href="#@cdktn/provider-aws.cloudformationStackSet.CloudformationStackSetConfig.property.administrationRoleArn">administration_role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/cloudformation_stack_set#administration_role_arn CloudformationStackSet#administration_role_arn}. |
 | <code><a href="#@cdktn/provider-aws.cloudformationStackSet.CloudformationStackSetConfig.property.autoDeployment">auto_deployment</a></code> | <code><a href="#@cdktn/provider-aws.cloudformationStackSet.CloudformationStackSetAutoDeployment">CloudformationStackSetAutoDeployment</a></code> | auto_deployment block. |
-| <code><a href="#@cdktn/provider-aws.cloudformationStackSet.CloudformationStackSetConfig.property.callAs">call_as</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/cloudformation_stack_set#call_as CloudformationStackSet#call_as}. |
-| <code><a href="#@cdktn/provider-aws.cloudformationStackSet.CloudformationStackSetConfig.property.capabilities">capabilities</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/cloudformation_stack_set#capabilities CloudformationStackSet#capabilities}. |
-| <code><a href="#@cdktn/provider-aws.cloudformationStackSet.CloudformationStackSetConfig.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/cloudformation_stack_set#description CloudformationStackSet#description}. |
-| <code><a href="#@cdktn/provider-aws.cloudformationStackSet.CloudformationStackSetConfig.property.executionRoleName">execution_role_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/cloudformation_stack_set#execution_role_name CloudformationStackSet#execution_role_name}. |
-| <code><a href="#@cdktn/provider-aws.cloudformationStackSet.CloudformationStackSetConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/cloudformation_stack_set#id CloudformationStackSet#id}. |
+| <code><a href="#@cdktn/provider-aws.cloudformationStackSet.CloudformationStackSetConfig.property.callAs">call_as</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/cloudformation_stack_set#call_as CloudformationStackSet#call_as}. |
+| <code><a href="#@cdktn/provider-aws.cloudformationStackSet.CloudformationStackSetConfig.property.capabilities">capabilities</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/cloudformation_stack_set#capabilities CloudformationStackSet#capabilities}. |
+| <code><a href="#@cdktn/provider-aws.cloudformationStackSet.CloudformationStackSetConfig.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/cloudformation_stack_set#description CloudformationStackSet#description}. |
+| <code><a href="#@cdktn/provider-aws.cloudformationStackSet.CloudformationStackSetConfig.property.executionRoleName">execution_role_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/cloudformation_stack_set#execution_role_name CloudformationStackSet#execution_role_name}. |
+| <code><a href="#@cdktn/provider-aws.cloudformationStackSet.CloudformationStackSetConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/cloudformation_stack_set#id CloudformationStackSet#id}. |
 | <code><a href="#@cdktn/provider-aws.cloudformationStackSet.CloudformationStackSetConfig.property.managedExecution">managed_execution</a></code> | <code><a href="#@cdktn/provider-aws.cloudformationStackSet.CloudformationStackSetManagedExecution">CloudformationStackSetManagedExecution</a></code> | managed_execution block. |
 | <code><a href="#@cdktn/provider-aws.cloudformationStackSet.CloudformationStackSetConfig.property.operationPreferences">operation_preferences</a></code> | <code><a href="#@cdktn/provider-aws.cloudformationStackSet.CloudformationStackSetOperationPreferences">CloudformationStackSetOperationPreferences</a></code> | operation_preferences block. |
-| <code><a href="#@cdktn/provider-aws.cloudformationStackSet.CloudformationStackSetConfig.property.parameters">parameters</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/cloudformation_stack_set#parameters CloudformationStackSet#parameters}. |
-| <code><a href="#@cdktn/provider-aws.cloudformationStackSet.CloudformationStackSetConfig.property.permissionModel">permission_model</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/cloudformation_stack_set#permission_model CloudformationStackSet#permission_model}. |
+| <code><a href="#@cdktn/provider-aws.cloudformationStackSet.CloudformationStackSetConfig.property.parameters">parameters</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/cloudformation_stack_set#parameters CloudformationStackSet#parameters}. |
+| <code><a href="#@cdktn/provider-aws.cloudformationStackSet.CloudformationStackSetConfig.property.permissionModel">permission_model</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/cloudformation_stack_set#permission_model CloudformationStackSet#permission_model}. |
 | <code><a href="#@cdktn/provider-aws.cloudformationStackSet.CloudformationStackSetConfig.property.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.cloudformationStackSet.CloudformationStackSetConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/cloudformation_stack_set#tags CloudformationStackSet#tags}. |
-| <code><a href="#@cdktn/provider-aws.cloudformationStackSet.CloudformationStackSetConfig.property.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/cloudformation_stack_set#tags_all CloudformationStackSet#tags_all}. |
-| <code><a href="#@cdktn/provider-aws.cloudformationStackSet.CloudformationStackSetConfig.property.templateBody">template_body</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/cloudformation_stack_set#template_body CloudformationStackSet#template_body}. |
-| <code><a href="#@cdktn/provider-aws.cloudformationStackSet.CloudformationStackSetConfig.property.templateUrl">template_url</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/cloudformation_stack_set#template_url CloudformationStackSet#template_url}. |
+| <code><a href="#@cdktn/provider-aws.cloudformationStackSet.CloudformationStackSetConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/cloudformation_stack_set#tags CloudformationStackSet#tags}. |
+| <code><a href="#@cdktn/provider-aws.cloudformationStackSet.CloudformationStackSetConfig.property.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/cloudformation_stack_set#tags_all CloudformationStackSet#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.cloudformationStackSet.CloudformationStackSetConfig.property.templateBody">template_body</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/cloudformation_stack_set#template_body CloudformationStackSet#template_body}. |
+| <code><a href="#@cdktn/provider-aws.cloudformationStackSet.CloudformationStackSetConfig.property.templateUrl">template_url</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/cloudformation_stack_set#template_url CloudformationStackSet#template_url}. |
 | <code><a href="#@cdktn/provider-aws.cloudformationStackSet.CloudformationStackSetConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-aws.cloudformationStackSet.CloudformationStackSetTimeouts">CloudformationStackSetTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1830,7 +1853,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/cloudformation_stack_set#name CloudformationStackSet#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/cloudformation_stack_set#name CloudformationStackSet#name}.
 
 ---
 
@@ -1842,7 +1865,7 @@ administration_role_arn: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/cloudformation_stack_set#administration_role_arn CloudformationStackSet#administration_role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/cloudformation_stack_set#administration_role_arn CloudformationStackSet#administration_role_arn}.
 
 ---
 
@@ -1856,7 +1879,7 @@ auto_deployment: CloudformationStackSetAutoDeployment
 
 auto_deployment block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/cloudformation_stack_set#auto_deployment CloudformationStackSet#auto_deployment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/cloudformation_stack_set#auto_deployment CloudformationStackSet#auto_deployment}
 
 ---
 
@@ -1868,7 +1891,7 @@ call_as: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/cloudformation_stack_set#call_as CloudformationStackSet#call_as}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/cloudformation_stack_set#call_as CloudformationStackSet#call_as}.
 
 ---
 
@@ -1880,7 +1903,7 @@ capabilities: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/cloudformation_stack_set#capabilities CloudformationStackSet#capabilities}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/cloudformation_stack_set#capabilities CloudformationStackSet#capabilities}.
 
 ---
 
@@ -1892,7 +1915,7 @@ description: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/cloudformation_stack_set#description CloudformationStackSet#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/cloudformation_stack_set#description CloudformationStackSet#description}.
 
 ---
 
@@ -1904,7 +1927,7 @@ execution_role_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/cloudformation_stack_set#execution_role_name CloudformationStackSet#execution_role_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/cloudformation_stack_set#execution_role_name CloudformationStackSet#execution_role_name}.
 
 ---
 
@@ -1916,7 +1939,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/cloudformation_stack_set#id CloudformationStackSet#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/cloudformation_stack_set#id CloudformationStackSet#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1933,7 +1956,7 @@ managed_execution: CloudformationStackSetManagedExecution
 
 managed_execution block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/cloudformation_stack_set#managed_execution CloudformationStackSet#managed_execution}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/cloudformation_stack_set#managed_execution CloudformationStackSet#managed_execution}
 
 ---
 
@@ -1947,7 +1970,7 @@ operation_preferences: CloudformationStackSetOperationPreferences
 
 operation_preferences block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/cloudformation_stack_set#operation_preferences CloudformationStackSet#operation_preferences}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/cloudformation_stack_set#operation_preferences CloudformationStackSet#operation_preferences}
 
 ---
 
@@ -1959,7 +1982,7 @@ parameters: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/cloudformation_stack_set#parameters CloudformationStackSet#parameters}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/cloudformation_stack_set#parameters CloudformationStackSet#parameters}.
 
 ---
 
@@ -1971,7 +1994,7 @@ permission_model: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/cloudformation_stack_set#permission_model CloudformationStackSet#permission_model}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/cloudformation_stack_set#permission_model CloudformationStackSet#permission_model}.
 
 ---
 
@@ -1985,7 +2008,7 @@ region: str
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/cloudformation_stack_set#region CloudformationStackSet#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/cloudformation_stack_set#region CloudformationStackSet#region}
 
 ---
 
@@ -1997,7 +2020,7 @@ tags: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/cloudformation_stack_set#tags CloudformationStackSet#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/cloudformation_stack_set#tags CloudformationStackSet#tags}.
 
 ---
 
@@ -2009,7 +2032,7 @@ tags_all: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/cloudformation_stack_set#tags_all CloudformationStackSet#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/cloudformation_stack_set#tags_all CloudformationStackSet#tags_all}.
 
 ---
 
@@ -2021,7 +2044,7 @@ template_body: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/cloudformation_stack_set#template_body CloudformationStackSet#template_body}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/cloudformation_stack_set#template_body CloudformationStackSet#template_body}.
 
 ---
 
@@ -2033,7 +2056,7 @@ template_url: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/cloudformation_stack_set#template_url CloudformationStackSet#template_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/cloudformation_stack_set#template_url CloudformationStackSet#template_url}.
 
 ---
 
@@ -2047,7 +2070,7 @@ timeouts: CloudformationStackSetTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/cloudformation_stack_set#timeouts CloudformationStackSet#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/cloudformation_stack_set#timeouts CloudformationStackSet#timeouts}
 
 ---
 
@@ -2067,7 +2090,7 @@ cloudformationStackSet.CloudformationStackSetManagedExecution(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudformationStackSet.CloudformationStackSetManagedExecution.property.active">active</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/cloudformation_stack_set#active CloudformationStackSet#active}. |
+| <code><a href="#@cdktn/provider-aws.cloudformationStackSet.CloudformationStackSetManagedExecution.property.active">active</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/cloudformation_stack_set#active CloudformationStackSet#active}. |
 
 ---
 
@@ -2079,7 +2102,7 @@ active: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/cloudformation_stack_set#active CloudformationStackSet#active}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/cloudformation_stack_set#active CloudformationStackSet#active}.
 
 ---
 
@@ -2104,12 +2127,12 @@ cloudformationStackSet.CloudformationStackSetOperationPreferences(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudformationStackSet.CloudformationStackSetOperationPreferences.property.failureToleranceCount">failure_tolerance_count</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/cloudformation_stack_set#failure_tolerance_count CloudformationStackSet#failure_tolerance_count}. |
-| <code><a href="#@cdktn/provider-aws.cloudformationStackSet.CloudformationStackSetOperationPreferences.property.failureTolerancePercentage">failure_tolerance_percentage</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/cloudformation_stack_set#failure_tolerance_percentage CloudformationStackSet#failure_tolerance_percentage}. |
-| <code><a href="#@cdktn/provider-aws.cloudformationStackSet.CloudformationStackSetOperationPreferences.property.maxConcurrentCount">max_concurrent_count</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/cloudformation_stack_set#max_concurrent_count CloudformationStackSet#max_concurrent_count}. |
-| <code><a href="#@cdktn/provider-aws.cloudformationStackSet.CloudformationStackSetOperationPreferences.property.maxConcurrentPercentage">max_concurrent_percentage</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/cloudformation_stack_set#max_concurrent_percentage CloudformationStackSet#max_concurrent_percentage}. |
-| <code><a href="#@cdktn/provider-aws.cloudformationStackSet.CloudformationStackSetOperationPreferences.property.regionConcurrencyType">region_concurrency_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/cloudformation_stack_set#region_concurrency_type CloudformationStackSet#region_concurrency_type}. |
-| <code><a href="#@cdktn/provider-aws.cloudformationStackSet.CloudformationStackSetOperationPreferences.property.regionOrder">region_order</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/cloudformation_stack_set#region_order CloudformationStackSet#region_order}. |
+| <code><a href="#@cdktn/provider-aws.cloudformationStackSet.CloudformationStackSetOperationPreferences.property.failureToleranceCount">failure_tolerance_count</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/cloudformation_stack_set#failure_tolerance_count CloudformationStackSet#failure_tolerance_count}. |
+| <code><a href="#@cdktn/provider-aws.cloudformationStackSet.CloudformationStackSetOperationPreferences.property.failureTolerancePercentage">failure_tolerance_percentage</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/cloudformation_stack_set#failure_tolerance_percentage CloudformationStackSet#failure_tolerance_percentage}. |
+| <code><a href="#@cdktn/provider-aws.cloudformationStackSet.CloudformationStackSetOperationPreferences.property.maxConcurrentCount">max_concurrent_count</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/cloudformation_stack_set#max_concurrent_count CloudformationStackSet#max_concurrent_count}. |
+| <code><a href="#@cdktn/provider-aws.cloudformationStackSet.CloudformationStackSetOperationPreferences.property.maxConcurrentPercentage">max_concurrent_percentage</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/cloudformation_stack_set#max_concurrent_percentage CloudformationStackSet#max_concurrent_percentage}. |
+| <code><a href="#@cdktn/provider-aws.cloudformationStackSet.CloudformationStackSetOperationPreferences.property.regionConcurrencyType">region_concurrency_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/cloudformation_stack_set#region_concurrency_type CloudformationStackSet#region_concurrency_type}. |
+| <code><a href="#@cdktn/provider-aws.cloudformationStackSet.CloudformationStackSetOperationPreferences.property.regionOrder">region_order</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/cloudformation_stack_set#region_order CloudformationStackSet#region_order}. |
 
 ---
 
@@ -2121,7 +2144,7 @@ failure_tolerance_count: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/cloudformation_stack_set#failure_tolerance_count CloudformationStackSet#failure_tolerance_count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/cloudformation_stack_set#failure_tolerance_count CloudformationStackSet#failure_tolerance_count}.
 
 ---
 
@@ -2133,7 +2156,7 @@ failure_tolerance_percentage: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/cloudformation_stack_set#failure_tolerance_percentage CloudformationStackSet#failure_tolerance_percentage}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/cloudformation_stack_set#failure_tolerance_percentage CloudformationStackSet#failure_tolerance_percentage}.
 
 ---
 
@@ -2145,7 +2168,7 @@ max_concurrent_count: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/cloudformation_stack_set#max_concurrent_count CloudformationStackSet#max_concurrent_count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/cloudformation_stack_set#max_concurrent_count CloudformationStackSet#max_concurrent_count}.
 
 ---
 
@@ -2157,7 +2180,7 @@ max_concurrent_percentage: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/cloudformation_stack_set#max_concurrent_percentage CloudformationStackSet#max_concurrent_percentage}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/cloudformation_stack_set#max_concurrent_percentage CloudformationStackSet#max_concurrent_percentage}.
 
 ---
 
@@ -2169,7 +2192,7 @@ region_concurrency_type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/cloudformation_stack_set#region_concurrency_type CloudformationStackSet#region_concurrency_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/cloudformation_stack_set#region_concurrency_type CloudformationStackSet#region_concurrency_type}.
 
 ---
 
@@ -2181,7 +2204,7 @@ region_order: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/cloudformation_stack_set#region_order CloudformationStackSet#region_order}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/cloudformation_stack_set#region_order CloudformationStackSet#region_order}.
 
 ---
 
@@ -2201,7 +2224,7 @@ cloudformationStackSet.CloudformationStackSetTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudformationStackSet.CloudformationStackSetTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/cloudformation_stack_set#update CloudformationStackSet#update}. |
+| <code><a href="#@cdktn/provider-aws.cloudformationStackSet.CloudformationStackSetTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/cloudformation_stack_set#update CloudformationStackSet#update}. |
 
 ---
 
@@ -2213,7 +2236,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/cloudformation_stack_set#update CloudformationStackSet#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/cloudformation_stack_set#update CloudformationStackSet#update}.
 
 ---
 
@@ -2272,6 +2295,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-aws.cloudformationStackSet.CloudformationStackSetAutoDeploymentOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudformationStackSet.CloudformationStackSetAutoDeploymentOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-aws.cloudformationStackSet.CloudformationStackSetAutoDeploymentOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.cloudformationStackSet.CloudformationStackSetAutoDeploymentOutputReference.resetDependsOnStackSets">reset_depends_on_stack_sets</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudformationStackSet.CloudformationStackSetAutoDeploymentOutputReference.resetEnabled">reset_enabled</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudformationStackSet.CloudformationStackSetAutoDeploymentOutputReference.resetRetainStacksOnAccountRemoval">reset_retain_stacks_on_account_removal</a></code> | *No description.* |
 
@@ -2449,6 +2473,12 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
+##### `reset_depends_on_stack_sets` <a name="reset_depends_on_stack_sets" id="@cdktn/provider-aws.cloudformationStackSet.CloudformationStackSetAutoDeploymentOutputReference.resetDependsOnStackSets"></a>
+
+```python
+def reset_depends_on_stack_sets() -> None
+```
+
 ##### `reset_enabled` <a name="reset_enabled" id="@cdktn/provider-aws.cloudformationStackSet.CloudformationStackSetAutoDeploymentOutputReference.resetEnabled"></a>
 
 ```python
@@ -2468,8 +2498,10 @@ def reset_retain_stacks_on_account_removal() -> None
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.cloudformationStackSet.CloudformationStackSetAutoDeploymentOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.cloudformationStackSet.CloudformationStackSetAutoDeploymentOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudformationStackSet.CloudformationStackSetAutoDeploymentOutputReference.property.dependsOnStackSetsInput">depends_on_stack_sets_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudformationStackSet.CloudformationStackSetAutoDeploymentOutputReference.property.enabledInput">enabled_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudformationStackSet.CloudformationStackSetAutoDeploymentOutputReference.property.retainStacksOnAccountRemovalInput">retain_stacks_on_account_removal_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudformationStackSet.CloudformationStackSetAutoDeploymentOutputReference.property.dependsOnStackSets">depends_on_stack_sets</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudformationStackSet.CloudformationStackSetAutoDeploymentOutputReference.property.enabled">enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudformationStackSet.CloudformationStackSetAutoDeploymentOutputReference.property.retainStacksOnAccountRemoval">retain_stacks_on_account_removal</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudformationStackSet.CloudformationStackSetAutoDeploymentOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-aws.cloudformationStackSet.CloudformationStackSetAutoDeployment">CloudformationStackSetAutoDeployment</a></code> | *No description.* |
@@ -2500,6 +2532,16 @@ fqn: str
 
 ---
 
+##### `depends_on_stack_sets_input`<sup>Optional</sup> <a name="depends_on_stack_sets_input" id="@cdktn/provider-aws.cloudformationStackSet.CloudformationStackSetAutoDeploymentOutputReference.property.dependsOnStackSetsInput"></a>
+
+```python
+depends_on_stack_sets_input: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
 ##### `enabled_input`<sup>Optional</sup> <a name="enabled_input" id="@cdktn/provider-aws.cloudformationStackSet.CloudformationStackSetAutoDeploymentOutputReference.property.enabledInput"></a>
 
 ```python
@@ -2517,6 +2559,16 @@ retain_stacks_on_account_removal_input: bool | IResolvable
 ```
 
 - *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `depends_on_stack_sets`<sup>Required</sup> <a name="depends_on_stack_sets" id="@cdktn/provider-aws.cloudformationStackSet.CloudformationStackSetAutoDeploymentOutputReference.property.dependsOnStackSets"></a>
+
+```python
+depends_on_stack_sets: typing.List[str]
+```
+
+- *Type:* typing.List[str]
 
 ---
 

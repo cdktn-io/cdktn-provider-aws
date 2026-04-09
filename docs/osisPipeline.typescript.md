@@ -4,7 +4,7 @@
 
 ### OsisPipeline <a name="OsisPipeline" id="@cdktn/provider-aws.osisPipeline.OsisPipeline"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/osis_pipeline aws_osis_pipeline}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/osis_pipeline aws_osis_pipeline}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.osisPipeline.OsisPipeline.Initializer"></a>
 
@@ -610,7 +610,7 @@ The construct id used in the generated config for the OsisPipeline to import.
 
 The id of the existing OsisPipeline that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/osis_pipeline#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/osis_pipeline#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1127,7 +1127,7 @@ const osisPipelineBufferOptions: osisPipeline.OsisPipelineBufferOptions = { ... 
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.osisPipeline.OsisPipelineBufferOptions.property.persistentBufferEnabled">persistentBufferEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/osis_pipeline#persistent_buffer_enabled OsisPipeline#persistent_buffer_enabled}. |
+| <code><a href="#@cdktn/provider-aws.osisPipeline.OsisPipelineBufferOptions.property.persistentBufferEnabled">persistentBufferEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/osis_pipeline#persistent_buffer_enabled OsisPipeline#persistent_buffer_enabled}. |
 
 ---
 
@@ -1139,7 +1139,7 @@ public readonly persistentBufferEnabled: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/osis_pipeline#persistent_buffer_enabled OsisPipeline#persistent_buffer_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/osis_pipeline#persistent_buffer_enabled OsisPipeline#persistent_buffer_enabled}.
 
 ---
 
@@ -1164,16 +1164,16 @@ const osisPipelineConfig: osisPipeline.OsisPipelineConfig = { ... }
 | <code><a href="#@cdktn/provider-aws.osisPipeline.OsisPipelineConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.osisPipeline.OsisPipelineConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.osisPipeline.OsisPipelineConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.osisPipeline.OsisPipelineConfig.property.maxUnits">maxUnits</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/osis_pipeline#max_units OsisPipeline#max_units}. |
-| <code><a href="#@cdktn/provider-aws.osisPipeline.OsisPipelineConfig.property.minUnits">minUnits</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/osis_pipeline#min_units OsisPipeline#min_units}. |
-| <code><a href="#@cdktn/provider-aws.osisPipeline.OsisPipelineConfig.property.pipelineConfigurationBody">pipelineConfigurationBody</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/osis_pipeline#pipeline_configuration_body OsisPipeline#pipeline_configuration_body}. |
-| <code><a href="#@cdktn/provider-aws.osisPipeline.OsisPipelineConfig.property.pipelineName">pipelineName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/osis_pipeline#pipeline_name OsisPipeline#pipeline_name}. |
+| <code><a href="#@cdktn/provider-aws.osisPipeline.OsisPipelineConfig.property.maxUnits">maxUnits</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/osis_pipeline#max_units OsisPipeline#max_units}. |
+| <code><a href="#@cdktn/provider-aws.osisPipeline.OsisPipelineConfig.property.minUnits">minUnits</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/osis_pipeline#min_units OsisPipeline#min_units}. |
+| <code><a href="#@cdktn/provider-aws.osisPipeline.OsisPipelineConfig.property.pipelineConfigurationBody">pipelineConfigurationBody</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/osis_pipeline#pipeline_configuration_body OsisPipeline#pipeline_configuration_body}. |
+| <code><a href="#@cdktn/provider-aws.osisPipeline.OsisPipelineConfig.property.pipelineName">pipelineName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/osis_pipeline#pipeline_name OsisPipeline#pipeline_name}. |
 | <code><a href="#@cdktn/provider-aws.osisPipeline.OsisPipelineConfig.property.bufferOptions">bufferOptions</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.osisPipeline.OsisPipelineBufferOptions">OsisPipelineBufferOptions</a>[]</code> | buffer_options block. |
 | <code><a href="#@cdktn/provider-aws.osisPipeline.OsisPipelineConfig.property.encryptionAtRestOptions">encryptionAtRestOptions</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.osisPipeline.OsisPipelineEncryptionAtRestOptions">OsisPipelineEncryptionAtRestOptions</a>[]</code> | encryption_at_rest_options block. |
 | <code><a href="#@cdktn/provider-aws.osisPipeline.OsisPipelineConfig.property.logPublishingOptions">logPublishingOptions</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.osisPipeline.OsisPipelineLogPublishingOptions">OsisPipelineLogPublishingOptions</a>[]</code> | log_publishing_options block. |
-| <code><a href="#@cdktn/provider-aws.osisPipeline.OsisPipelineConfig.property.pipelineRoleArn">pipelineRoleArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/osis_pipeline#pipeline_role_arn OsisPipeline#pipeline_role_arn}. |
+| <code><a href="#@cdktn/provider-aws.osisPipeline.OsisPipelineConfig.property.pipelineRoleArn">pipelineRoleArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/osis_pipeline#pipeline_role_arn OsisPipeline#pipeline_role_arn}. |
 | <code><a href="#@cdktn/provider-aws.osisPipeline.OsisPipelineConfig.property.region">region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.osisPipeline.OsisPipelineConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/osis_pipeline#tags OsisPipeline#tags}. |
+| <code><a href="#@cdktn/provider-aws.osisPipeline.OsisPipelineConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/osis_pipeline#tags OsisPipeline#tags}. |
 | <code><a href="#@cdktn/provider-aws.osisPipeline.OsisPipelineConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-aws.osisPipeline.OsisPipelineTimeouts">OsisPipelineTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-aws.osisPipeline.OsisPipelineConfig.property.vpcOptions">vpcOptions</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.osisPipeline.OsisPipelineVpcOptions">OsisPipelineVpcOptions</a>[]</code> | vpc_options block. |
 
@@ -1257,7 +1257,7 @@ public readonly maxUnits: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/osis_pipeline#max_units OsisPipeline#max_units}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/osis_pipeline#max_units OsisPipeline#max_units}.
 
 ---
 
@@ -1269,7 +1269,7 @@ public readonly minUnits: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/osis_pipeline#min_units OsisPipeline#min_units}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/osis_pipeline#min_units OsisPipeline#min_units}.
 
 ---
 
@@ -1281,7 +1281,7 @@ public readonly pipelineConfigurationBody: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/osis_pipeline#pipeline_configuration_body OsisPipeline#pipeline_configuration_body}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/osis_pipeline#pipeline_configuration_body OsisPipeline#pipeline_configuration_body}.
 
 ---
 
@@ -1293,7 +1293,7 @@ public readonly pipelineName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/osis_pipeline#pipeline_name OsisPipeline#pipeline_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/osis_pipeline#pipeline_name OsisPipeline#pipeline_name}.
 
 ---
 
@@ -1307,7 +1307,7 @@ public readonly bufferOptions: IResolvable | OsisPipelineBufferOptions[];
 
 buffer_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/osis_pipeline#buffer_options OsisPipeline#buffer_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/osis_pipeline#buffer_options OsisPipeline#buffer_options}
 
 ---
 
@@ -1321,7 +1321,7 @@ public readonly encryptionAtRestOptions: IResolvable | OsisPipelineEncryptionAtR
 
 encryption_at_rest_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/osis_pipeline#encryption_at_rest_options OsisPipeline#encryption_at_rest_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/osis_pipeline#encryption_at_rest_options OsisPipeline#encryption_at_rest_options}
 
 ---
 
@@ -1335,7 +1335,7 @@ public readonly logPublishingOptions: IResolvable | OsisPipelineLogPublishingOpt
 
 log_publishing_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/osis_pipeline#log_publishing_options OsisPipeline#log_publishing_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/osis_pipeline#log_publishing_options OsisPipeline#log_publishing_options}
 
 ---
 
@@ -1347,7 +1347,7 @@ public readonly pipelineRoleArn: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/osis_pipeline#pipeline_role_arn OsisPipeline#pipeline_role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/osis_pipeline#pipeline_role_arn OsisPipeline#pipeline_role_arn}.
 
 ---
 
@@ -1361,7 +1361,7 @@ public readonly region: string;
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/osis_pipeline#region OsisPipeline#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/osis_pipeline#region OsisPipeline#region}
 
 ---
 
@@ -1373,7 +1373,7 @@ public readonly tags: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/osis_pipeline#tags OsisPipeline#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/osis_pipeline#tags OsisPipeline#tags}.
 
 ---
 
@@ -1387,7 +1387,7 @@ public readonly timeouts: OsisPipelineTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/osis_pipeline#timeouts OsisPipeline#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/osis_pipeline#timeouts OsisPipeline#timeouts}
 
 ---
 
@@ -1401,7 +1401,7 @@ public readonly vpcOptions: IResolvable | OsisPipelineVpcOptions[];
 
 vpc_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/osis_pipeline#vpc_options OsisPipeline#vpc_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/osis_pipeline#vpc_options OsisPipeline#vpc_options}
 
 ---
 
@@ -1419,7 +1419,7 @@ const osisPipelineEncryptionAtRestOptions: osisPipeline.OsisPipelineEncryptionAt
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.osisPipeline.OsisPipelineEncryptionAtRestOptions.property.kmsKeyArn">kmsKeyArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/osis_pipeline#kms_key_arn OsisPipeline#kms_key_arn}. |
+| <code><a href="#@cdktn/provider-aws.osisPipeline.OsisPipelineEncryptionAtRestOptions.property.kmsKeyArn">kmsKeyArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/osis_pipeline#kms_key_arn OsisPipeline#kms_key_arn}. |
 
 ---
 
@@ -1431,7 +1431,7 @@ public readonly kmsKeyArn: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/osis_pipeline#kms_key_arn OsisPipeline#kms_key_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/osis_pipeline#kms_key_arn OsisPipeline#kms_key_arn}.
 
 ---
 
@@ -1450,7 +1450,7 @@ const osisPipelineLogPublishingOptions: osisPipeline.OsisPipelineLogPublishingOp
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.osisPipeline.OsisPipelineLogPublishingOptions.property.cloudwatchLogDestination">cloudwatchLogDestination</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.osisPipeline.OsisPipelineLogPublishingOptionsCloudwatchLogDestination">OsisPipelineLogPublishingOptionsCloudwatchLogDestination</a>[]</code> | cloudwatch_log_destination block. |
-| <code><a href="#@cdktn/provider-aws.osisPipeline.OsisPipelineLogPublishingOptions.property.isLoggingEnabled">isLoggingEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/osis_pipeline#is_logging_enabled OsisPipeline#is_logging_enabled}. |
+| <code><a href="#@cdktn/provider-aws.osisPipeline.OsisPipelineLogPublishingOptions.property.isLoggingEnabled">isLoggingEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/osis_pipeline#is_logging_enabled OsisPipeline#is_logging_enabled}. |
 
 ---
 
@@ -1464,7 +1464,7 @@ public readonly cloudwatchLogDestination: IResolvable | OsisPipelineLogPublishin
 
 cloudwatch_log_destination block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/osis_pipeline#cloudwatch_log_destination OsisPipeline#cloudwatch_log_destination}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/osis_pipeline#cloudwatch_log_destination OsisPipeline#cloudwatch_log_destination}
 
 ---
 
@@ -1476,7 +1476,7 @@ public readonly isLoggingEnabled: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/osis_pipeline#is_logging_enabled OsisPipeline#is_logging_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/osis_pipeline#is_logging_enabled OsisPipeline#is_logging_enabled}.
 
 ---
 
@@ -1494,7 +1494,7 @@ const osisPipelineLogPublishingOptionsCloudwatchLogDestination: osisPipeline.Osi
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.osisPipeline.OsisPipelineLogPublishingOptionsCloudwatchLogDestination.property.logGroup">logGroup</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/osis_pipeline#log_group OsisPipeline#log_group}. |
+| <code><a href="#@cdktn/provider-aws.osisPipeline.OsisPipelineLogPublishingOptionsCloudwatchLogDestination.property.logGroup">logGroup</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/osis_pipeline#log_group OsisPipeline#log_group}. |
 
 ---
 
@@ -1506,7 +1506,7 @@ public readonly logGroup: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/osis_pipeline#log_group OsisPipeline#log_group}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/osis_pipeline#log_group OsisPipeline#log_group}.
 
 ---
 
@@ -1540,7 +1540,7 @@ public readonly create: string;
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/osis_pipeline#create OsisPipeline#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/osis_pipeline#create OsisPipeline#create}
 
 ---
 
@@ -1554,7 +1554,7 @@ public readonly delete: string;
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/osis_pipeline#delete OsisPipeline#delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/osis_pipeline#delete OsisPipeline#delete}
 
 ---
 
@@ -1568,7 +1568,7 @@ public readonly update: string;
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/osis_pipeline#update OsisPipeline#update}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/osis_pipeline#update OsisPipeline#update}
 
 ---
 
@@ -1586,9 +1586,9 @@ const osisPipelineVpcOptions: osisPipeline.OsisPipelineVpcOptions = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.osisPipeline.OsisPipelineVpcOptions.property.subnetIds">subnetIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/osis_pipeline#subnet_ids OsisPipeline#subnet_ids}. |
-| <code><a href="#@cdktn/provider-aws.osisPipeline.OsisPipelineVpcOptions.property.securityGroupIds">securityGroupIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/osis_pipeline#security_group_ids OsisPipeline#security_group_ids}. |
-| <code><a href="#@cdktn/provider-aws.osisPipeline.OsisPipelineVpcOptions.property.vpcEndpointManagement">vpcEndpointManagement</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/osis_pipeline#vpc_endpoint_management OsisPipeline#vpc_endpoint_management}. |
+| <code><a href="#@cdktn/provider-aws.osisPipeline.OsisPipelineVpcOptions.property.subnetIds">subnetIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/osis_pipeline#subnet_ids OsisPipeline#subnet_ids}. |
+| <code><a href="#@cdktn/provider-aws.osisPipeline.OsisPipelineVpcOptions.property.securityGroupIds">securityGroupIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/osis_pipeline#security_group_ids OsisPipeline#security_group_ids}. |
+| <code><a href="#@cdktn/provider-aws.osisPipeline.OsisPipelineVpcOptions.property.vpcEndpointManagement">vpcEndpointManagement</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/osis_pipeline#vpc_endpoint_management OsisPipeline#vpc_endpoint_management}. |
 
 ---
 
@@ -1600,7 +1600,7 @@ public readonly subnetIds: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/osis_pipeline#subnet_ids OsisPipeline#subnet_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/osis_pipeline#subnet_ids OsisPipeline#subnet_ids}.
 
 ---
 
@@ -1612,7 +1612,7 @@ public readonly securityGroupIds: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/osis_pipeline#security_group_ids OsisPipeline#security_group_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/osis_pipeline#security_group_ids OsisPipeline#security_group_ids}.
 
 ---
 
@@ -1624,7 +1624,7 @@ public readonly vpcEndpointManagement: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/osis_pipeline#vpc_endpoint_management OsisPipeline#vpc_endpoint_management}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/osis_pipeline#vpc_endpoint_management OsisPipeline#vpc_endpoint_management}.
 
 ---
 
