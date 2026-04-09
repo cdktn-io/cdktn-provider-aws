@@ -4,7 +4,7 @@
 
 ### CloudformationType <a name="CloudformationType" id="@cdktn/provider-aws.cloudformationType.CloudformationType"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/cloudformation_type aws_cloudformation_type}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/cloudformation_type aws_cloudformation_type}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudformationType.CloudformationType.Initializer"></a>
 
@@ -42,13 +42,13 @@ cloudformationType.CloudformationType(
 | <code><a href="#@cdktn/provider-aws.cloudformationType.CloudformationType.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudformationType.CloudformationType.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudformationType.CloudformationType.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudformationType.CloudformationType.Initializer.parameter.schemaHandlerPackage">schema_handler_package</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/cloudformation_type#schema_handler_package CloudformationType#schema_handler_package}. |
-| <code><a href="#@cdktn/provider-aws.cloudformationType.CloudformationType.Initializer.parameter.typeName">type_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/cloudformation_type#type_name CloudformationType#type_name}. |
-| <code><a href="#@cdktn/provider-aws.cloudformationType.CloudformationType.Initializer.parameter.executionRoleArn">execution_role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/cloudformation_type#execution_role_arn CloudformationType#execution_role_arn}. |
-| <code><a href="#@cdktn/provider-aws.cloudformationType.CloudformationType.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/cloudformation_type#id CloudformationType#id}. |
+| <code><a href="#@cdktn/provider-aws.cloudformationType.CloudformationType.Initializer.parameter.schemaHandlerPackage">schema_handler_package</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/cloudformation_type#schema_handler_package CloudformationType#schema_handler_package}. |
+| <code><a href="#@cdktn/provider-aws.cloudformationType.CloudformationType.Initializer.parameter.typeName">type_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/cloudformation_type#type_name CloudformationType#type_name}. |
+| <code><a href="#@cdktn/provider-aws.cloudformationType.CloudformationType.Initializer.parameter.executionRoleArn">execution_role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/cloudformation_type#execution_role_arn CloudformationType#execution_role_arn}. |
+| <code><a href="#@cdktn/provider-aws.cloudformationType.CloudformationType.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/cloudformation_type#id CloudformationType#id}. |
 | <code><a href="#@cdktn/provider-aws.cloudformationType.CloudformationType.Initializer.parameter.loggingConfig">logging_config</a></code> | <code><a href="#@cdktn/provider-aws.cloudformationType.CloudformationTypeLoggingConfig">CloudformationTypeLoggingConfig</a></code> | logging_config block. |
 | <code><a href="#@cdktn/provider-aws.cloudformationType.CloudformationType.Initializer.parameter.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.cloudformationType.CloudformationType.Initializer.parameter.type">type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/cloudformation_type#type CloudformationType#type}. |
+| <code><a href="#@cdktn/provider-aws.cloudformationType.CloudformationType.Initializer.parameter.type">type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/cloudformation_type#type CloudformationType#type}. |
 
 ---
 
@@ -116,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/cloudformation_type#schema_handler_package CloudformationType#schema_handler_package}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/cloudformation_type#schema_handler_package CloudformationType#schema_handler_package}.
 
 ---
 
@@ -124,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/cloudformation_type#type_name CloudformationType#type_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/cloudformation_type#type_name CloudformationType#type_name}.
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/cloudformation_type#execution_role_arn CloudformationType#execution_role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/cloudformation_type#execution_role_arn CloudformationType#execution_role_arn}.
 
 ---
 
@@ -140,7 +140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/cloudformation_type#id CloudformationType#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/cloudformation_type#id CloudformationType#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -153,7 +153,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 logging_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/cloudformation_type#logging_config CloudformationType#logging_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/cloudformation_type#logging_config CloudformationType#logging_config}
 
 ---
 
@@ -163,7 +163,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/cloudformation_type#region CloudformationType#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/cloudformation_type#region CloudformationType#region}
 
 ---
 
@@ -171,7 +171,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/cloudformation_type#type CloudformationType#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/cloudformation_type#type CloudformationType#type}.
 
 ---
 
@@ -573,7 +573,7 @@ def put_logging_config(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/cloudformation_type#log_group_name CloudformationType#log_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/cloudformation_type#log_group_name CloudformationType#log_group_name}.
 
 ---
 
@@ -581,7 +581,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/cloudformation_type#log_role_arn CloudformationType#log_role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/cloudformation_type#log_role_arn CloudformationType#log_role_arn}.
 
 ---
 
@@ -729,7 +729,7 @@ The construct id used in the generated config for the CloudformationType to impo
 
 The id of the existing CloudformationType that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/cloudformation_type#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/cloudformation_type#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1246,13 +1246,13 @@ cloudformationType.CloudformationTypeConfig(
 | <code><a href="#@cdktn/provider-aws.cloudformationType.CloudformationTypeConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudformationType.CloudformationTypeConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudformationType.CloudformationTypeConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudformationType.CloudformationTypeConfig.property.schemaHandlerPackage">schema_handler_package</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/cloudformation_type#schema_handler_package CloudformationType#schema_handler_package}. |
-| <code><a href="#@cdktn/provider-aws.cloudformationType.CloudformationTypeConfig.property.typeName">type_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/cloudformation_type#type_name CloudformationType#type_name}. |
-| <code><a href="#@cdktn/provider-aws.cloudformationType.CloudformationTypeConfig.property.executionRoleArn">execution_role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/cloudformation_type#execution_role_arn CloudformationType#execution_role_arn}. |
-| <code><a href="#@cdktn/provider-aws.cloudformationType.CloudformationTypeConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/cloudformation_type#id CloudformationType#id}. |
+| <code><a href="#@cdktn/provider-aws.cloudformationType.CloudformationTypeConfig.property.schemaHandlerPackage">schema_handler_package</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/cloudformation_type#schema_handler_package CloudformationType#schema_handler_package}. |
+| <code><a href="#@cdktn/provider-aws.cloudformationType.CloudformationTypeConfig.property.typeName">type_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/cloudformation_type#type_name CloudformationType#type_name}. |
+| <code><a href="#@cdktn/provider-aws.cloudformationType.CloudformationTypeConfig.property.executionRoleArn">execution_role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/cloudformation_type#execution_role_arn CloudformationType#execution_role_arn}. |
+| <code><a href="#@cdktn/provider-aws.cloudformationType.CloudformationTypeConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/cloudformation_type#id CloudformationType#id}. |
 | <code><a href="#@cdktn/provider-aws.cloudformationType.CloudformationTypeConfig.property.loggingConfig">logging_config</a></code> | <code><a href="#@cdktn/provider-aws.cloudformationType.CloudformationTypeLoggingConfig">CloudformationTypeLoggingConfig</a></code> | logging_config block. |
 | <code><a href="#@cdktn/provider-aws.cloudformationType.CloudformationTypeConfig.property.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.cloudformationType.CloudformationTypeConfig.property.type">type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/cloudformation_type#type CloudformationType#type}. |
+| <code><a href="#@cdktn/provider-aws.cloudformationType.CloudformationTypeConfig.property.type">type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/cloudformation_type#type CloudformationType#type}. |
 
 ---
 
@@ -1334,7 +1334,7 @@ schema_handler_package: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/cloudformation_type#schema_handler_package CloudformationType#schema_handler_package}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/cloudformation_type#schema_handler_package CloudformationType#schema_handler_package}.
 
 ---
 
@@ -1346,7 +1346,7 @@ type_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/cloudformation_type#type_name CloudformationType#type_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/cloudformation_type#type_name CloudformationType#type_name}.
 
 ---
 
@@ -1358,7 +1358,7 @@ execution_role_arn: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/cloudformation_type#execution_role_arn CloudformationType#execution_role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/cloudformation_type#execution_role_arn CloudformationType#execution_role_arn}.
 
 ---
 
@@ -1370,7 +1370,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/cloudformation_type#id CloudformationType#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/cloudformation_type#id CloudformationType#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1387,7 +1387,7 @@ logging_config: CloudformationTypeLoggingConfig
 
 logging_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/cloudformation_type#logging_config CloudformationType#logging_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/cloudformation_type#logging_config CloudformationType#logging_config}
 
 ---
 
@@ -1401,7 +1401,7 @@ region: str
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/cloudformation_type#region CloudformationType#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/cloudformation_type#region CloudformationType#region}
 
 ---
 
@@ -1413,7 +1413,7 @@ type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/cloudformation_type#type CloudformationType#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/cloudformation_type#type CloudformationType#type}.
 
 ---
 
@@ -1434,8 +1434,8 @@ cloudformationType.CloudformationTypeLoggingConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudformationType.CloudformationTypeLoggingConfig.property.logGroupName">log_group_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/cloudformation_type#log_group_name CloudformationType#log_group_name}. |
-| <code><a href="#@cdktn/provider-aws.cloudformationType.CloudformationTypeLoggingConfig.property.logRoleArn">log_role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/cloudformation_type#log_role_arn CloudformationType#log_role_arn}. |
+| <code><a href="#@cdktn/provider-aws.cloudformationType.CloudformationTypeLoggingConfig.property.logGroupName">log_group_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/cloudformation_type#log_group_name CloudformationType#log_group_name}. |
+| <code><a href="#@cdktn/provider-aws.cloudformationType.CloudformationTypeLoggingConfig.property.logRoleArn">log_role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/cloudformation_type#log_role_arn CloudformationType#log_role_arn}. |
 
 ---
 
@@ -1447,7 +1447,7 @@ log_group_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/cloudformation_type#log_group_name CloudformationType#log_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/cloudformation_type#log_group_name CloudformationType#log_group_name}.
 
 ---
 
@@ -1459,7 +1459,7 @@ log_role_arn: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/cloudformation_type#log_role_arn CloudformationType#log_role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/cloudformation_type#log_role_arn CloudformationType#log_role_arn}.
 
 ---
 

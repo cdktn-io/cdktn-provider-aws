@@ -1,3 +1,3 @@
 # `aws_bedrockagentcore_token_vault_cmk`
 
-Refer to the Terraform Registry for docs: [`aws_bedrockagentcore_token_vault_cmk`](https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/bedrockagentcore_token_vault_cmk).
+Refer to the Terraform Registry for docs: [`aws_bedrockagentcore_token_vault_cmk`](https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/bedrockagentcore_token_vault_cmk).

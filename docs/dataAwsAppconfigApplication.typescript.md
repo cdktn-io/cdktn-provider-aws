@@ -4,7 +4,7 @@
 
 ### DataAwsAppconfigApplication <a name="DataAwsAppconfigApplication" id="@cdktn/provider-aws.dataAwsAppconfigApplication.DataAwsAppconfigApplication"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/data-sources/appconfig_application aws_appconfig_application}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/data-sources/appconfig_application aws_appconfig_application}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAppconfigApplication.DataAwsAppconfigApplication.Initializer"></a>
 
@@ -408,7 +408,7 @@ The construct id used in the generated config for the DataAwsAppconfigApplicatio
 
 The id of the existing DataAwsAppconfigApplication that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/data-sources/appconfig_application#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/data-sources/appconfig_application#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -690,8 +690,8 @@ const dataAwsAppconfigApplicationConfig: dataAwsAppconfigApplication.DataAwsAppc
 | <code><a href="#@cdktn/provider-aws.dataAwsAppconfigApplication.DataAwsAppconfigApplicationConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsAppconfigApplication.DataAwsAppconfigApplicationConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsAppconfigApplication.DataAwsAppconfigApplicationConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dataAwsAppconfigApplication.DataAwsAppconfigApplicationConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/data-sources/appconfig_application#id DataAwsAppconfigApplication#id}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsAppconfigApplication.DataAwsAppconfigApplicationConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/data-sources/appconfig_application#name DataAwsAppconfigApplication#name}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsAppconfigApplication.DataAwsAppconfigApplicationConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/data-sources/appconfig_application#id DataAwsAppconfigApplication#id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsAppconfigApplication.DataAwsAppconfigApplicationConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/data-sources/appconfig_application#name DataAwsAppconfigApplication#name}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsAppconfigApplication.DataAwsAppconfigApplicationConfig.property.region">region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -774,7 +774,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/data-sources/appconfig_application#id DataAwsAppconfigApplication#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/data-sources/appconfig_application#id DataAwsAppconfigApplication#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -789,7 +789,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/data-sources/appconfig_application#name DataAwsAppconfigApplication#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/data-sources/appconfig_application#name DataAwsAppconfigApplication#name}.
 
 ---
 
@@ -803,7 +803,7 @@ public readonly region: string;
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/data-sources/appconfig_application#region DataAwsAppconfigApplication#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/data-sources/appconfig_application#region DataAwsAppconfigApplication#region}
 
 ---
 
