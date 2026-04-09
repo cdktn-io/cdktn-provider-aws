@@ -44,79 +44,79 @@ export interface Wafv2WebAclRuleAConfig extends cdktn.TerraformMetaArguments {
   /**
   * Rule name, unique within the Web ACL.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_web_acl_rule#name Wafv2WebAclRuleA#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_web_acl_rule#name Wafv2WebAclRuleA#name}
   */
   readonly name: string;
   /**
   * Rule priority. Rules with lower priority are evaluated first.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_web_acl_rule#priority Wafv2WebAclRuleA#priority}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_web_acl_rule#priority Wafv2WebAclRuleA#priority}
   */
   readonly priority: number;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_web_acl_rule#region Wafv2WebAclRuleA#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_web_acl_rule#region Wafv2WebAclRuleA#region}
   */
   readonly region?: string;
   /**
   * ARN of the Web ACL to add the rule to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_web_acl_rule#web_acl_arn Wafv2WebAclRuleA#web_acl_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_web_acl_rule#web_acl_arn Wafv2WebAclRuleA#web_acl_arn}
   */
   readonly webAclArn: string;
   /**
   * action block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_web_acl_rule#action Wafv2WebAclRuleA#action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_web_acl_rule#action Wafv2WebAclRuleA#action}
   */
   readonly action?: Wafv2WebAclRuleActionA[] | cdktn.IResolvable;
   /**
   * captcha_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_web_acl_rule#captcha_config Wafv2WebAclRuleA#captcha_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_web_acl_rule#captcha_config Wafv2WebAclRuleA#captcha_config}
   */
   readonly captchaConfig?: Wafv2WebAclRuleCaptchaConfigA[] | cdktn.IResolvable;
   /**
   * challenge_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_web_acl_rule#challenge_config Wafv2WebAclRuleA#challenge_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_web_acl_rule#challenge_config Wafv2WebAclRuleA#challenge_config}
   */
   readonly challengeConfig?: Wafv2WebAclRuleChallengeConfigA[] | cdktn.IResolvable;
   /**
   * override_action block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_web_acl_rule#override_action Wafv2WebAclRuleA#override_action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_web_acl_rule#override_action Wafv2WebAclRuleA#override_action}
   */
   readonly overrideAction?: Wafv2WebAclRuleOverrideActionA[] | cdktn.IResolvable;
   /**
   * rule_label block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_web_acl_rule#rule_label Wafv2WebAclRuleA#rule_label}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_web_acl_rule#rule_label Wafv2WebAclRuleA#rule_label}
   */
   readonly ruleLabel?: Wafv2WebAclRuleRuleLabelA[] | cdktn.IResolvable;
   /**
   * statement block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_web_acl_rule#statement Wafv2WebAclRuleA#statement}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_web_acl_rule#statement Wafv2WebAclRuleA#statement}
   */
   readonly statement?: Wafv2WebAclRuleStatement[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_web_acl_rule#timeouts Wafv2WebAclRuleA#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_web_acl_rule#timeouts Wafv2WebAclRuleA#timeouts}
   */
   readonly timeouts?: Wafv2WebAclRuleTimeouts;
   /**
   * visibility_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_web_acl_rule#visibility_config Wafv2WebAclRuleA#visibility_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_web_acl_rule#visibility_config Wafv2WebAclRuleA#visibility_config}
   */
   readonly visibilityConfig?: Wafv2WebAclRuleVisibilityConfigA[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_web_acl_rule aws_wafv2_web_acl_rule}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_web_acl_rule aws_wafv2_web_acl_rule}
 */
 export class Wafv2WebAclRuleA extends cdktn.TerraformResource {
 
@@ -132,7 +132,7 @@ export class Wafv2WebAclRuleA extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a Wafv2WebAclRuleA resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Wafv2WebAclRuleA to import
-  * @param importFromId The id of the existing Wafv2WebAclRuleA that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_web_acl_rule#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Wafv2WebAclRuleA that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_web_acl_rule#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Wafv2WebAclRuleA to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -144,7 +144,7 @@ export class Wafv2WebAclRuleA extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/wafv2_web_acl_rule aws_wafv2_web_acl_rule} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/wafv2_web_acl_rule aws_wafv2_web_acl_rule} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -155,7 +155,7 @@ export class Wafv2WebAclRuleA extends cdktn.TerraformResource {
       terraformResourceType: 'aws_wafv2_web_acl_rule',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.39.0',
+        providerVersion: '6.40.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

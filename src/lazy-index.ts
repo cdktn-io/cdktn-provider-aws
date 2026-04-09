@@ -1043,6 +1043,7 @@ Object.defineProperty(exports, 'opensearchPackageAssociation', { get: function (
 Object.defineProperty(exports, 'opensearchVpcEndpoint', { get: function () { return require('./opensearch-vpc-endpoint'); } });
 Object.defineProperty(exports, 'opensearchserverlessAccessPolicy', { get: function () { return require('./opensearchserverless-access-policy'); } });
 Object.defineProperty(exports, 'opensearchserverlessCollection', { get: function () { return require('./opensearchserverless-collection'); } });
+Object.defineProperty(exports, 'opensearchserverlessCollectionGroup', { get: function () { return require('./opensearchserverless-collection-group'); } });
 Object.defineProperty(exports, 'opensearchserverlessLifecyclePolicy', { get: function () { return require('./opensearchserverless-lifecycle-policy'); } });
 Object.defineProperty(exports, 'opensearchserverlessSecurityConfig', { get: function () { return require('./opensearchserverless-security-config'); } });
 Object.defineProperty(exports, 'opensearchserverlessSecurityPolicy', { get: function () { return require('./opensearchserverless-security-policy'); } });
@@ -1264,6 +1265,11 @@ Object.defineProperty(exports, 's3ControlMultiRegionAccessPointPolicy', { get: f
 Object.defineProperty(exports, 's3ControlObjectLambdaAccessPoint', { get: function () { return require('./s3control-object-lambda-access-point'); } });
 Object.defineProperty(exports, 's3ControlObjectLambdaAccessPointPolicy', { get: function () { return require('./s3control-object-lambda-access-point-policy'); } });
 Object.defineProperty(exports, 's3ControlStorageLensConfiguration', { get: function () { return require('./s3control-storage-lens-configuration'); } });
+Object.defineProperty(exports, 's3FilesAccessPoint', { get: function () { return require('./s3files-access-point'); } });
+Object.defineProperty(exports, 's3FilesFileSystem', { get: function () { return require('./s3files-file-system'); } });
+Object.defineProperty(exports, 's3FilesFileSystemPolicy', { get: function () { return require('./s3files-file-system-policy'); } });
+Object.defineProperty(exports, 's3FilesMountTarget', { get: function () { return require('./s3files-mount-target'); } });
+Object.defineProperty(exports, 's3FilesSynchronizationConfiguration', { get: function () { return require('./s3files-synchronization-configuration'); } });
 Object.defineProperty(exports, 's3OutpostsEndpoint', { get: function () { return require('./s3outposts-endpoint'); } });
 Object.defineProperty(exports, 's3TablesNamespace', { get: function () { return require('./s3tables-namespace'); } });
 Object.defineProperty(exports, 's3TablesTable', { get: function () { return require('./s3tables-table'); } });
@@ -1367,6 +1373,7 @@ Object.defineProperty(exports, 'servicecatalogTagOptionResourceAssociation', { g
 Object.defineProperty(exports, 'servicecatalogappregistryApplication', { get: function () { return require('./servicecatalogappregistry-application'); } });
 Object.defineProperty(exports, 'servicecatalogappregistryAttributeGroup', { get: function () { return require('./servicecatalogappregistry-attribute-group'); } });
 Object.defineProperty(exports, 'servicecatalogappregistryAttributeGroupAssociation', { get: function () { return require('./servicecatalogappregistry-attribute-group-association'); } });
+Object.defineProperty(exports, 'servicequotasAutoManagement', { get: function () { return require('./servicequotas-auto-management'); } });
 Object.defineProperty(exports, 'servicequotasServiceQuota', { get: function () { return require('./servicequotas-service-quota'); } });
 Object.defineProperty(exports, 'servicequotasTemplate', { get: function () { return require('./servicequotas-template'); } });
 Object.defineProperty(exports, 'servicequotasTemplateAssociation', { get: function () { return require('./servicequotas-template-association'); } });
@@ -2072,6 +2079,8 @@ Object.defineProperty(exports, 'dataAwsOdbNetworks', { get: function () { return
 Object.defineProperty(exports, 'dataAwsOpensearchDomain', { get: function () { return require('./data-aws-opensearch-domain'); } });
 Object.defineProperty(exports, 'dataAwsOpensearchserverlessAccessPolicy', { get: function () { return require('./data-aws-opensearchserverless-access-policy'); } });
 Object.defineProperty(exports, 'dataAwsOpensearchserverlessCollection', { get: function () { return require('./data-aws-opensearchserverless-collection'); } });
+Object.defineProperty(exports, 'dataAwsOpensearchserverlessCollectionGroup', { get: function () { return require('./data-aws-opensearchserverless-collection-group'); } });
+Object.defineProperty(exports, 'dataAwsOpensearchserverlessCollectionGroups', { get: function () { return require('./data-aws-opensearchserverless-collection-groups'); } });
 Object.defineProperty(exports, 'dataAwsOpensearchserverlessLifecyclePolicy', { get: function () { return require('./data-aws-opensearchserverless-lifecycle-policy'); } });
 Object.defineProperty(exports, 'dataAwsOpensearchserverlessSecurityConfig', { get: function () { return require('./data-aws-opensearchserverless-security-config'); } });
 Object.defineProperty(exports, 'dataAwsOpensearchserverlessSecurityPolicy', { get: function () { return require('./data-aws-opensearchserverless-security-policy'); } });
@@ -2166,6 +2175,10 @@ Object.defineProperty(exports, 'dataAwsS3Objects', { get: function () { return r
 Object.defineProperty(exports, 'dataAwsS3ControlAccessPoints', { get: function () { return require('./data-aws-s3control-access-points'); } });
 Object.defineProperty(exports, 'dataAwsS3ControlMultiRegionAccessPoint', { get: function () { return require('./data-aws-s3control-multi-region-access-point'); } });
 Object.defineProperty(exports, 'dataAwsS3ControlMultiRegionAccessPoints', { get: function () { return require('./data-aws-s3control-multi-region-access-points'); } });
+Object.defineProperty(exports, 'dataAwsS3FilesAccessPoint', { get: function () { return require('./data-aws-s3files-access-point'); } });
+Object.defineProperty(exports, 'dataAwsS3FilesFileSystem', { get: function () { return require('./data-aws-s3files-file-system'); } });
+Object.defineProperty(exports, 'dataAwsS3FilesFileSystems', { get: function () { return require('./data-aws-s3files-file-systems'); } });
+Object.defineProperty(exports, 'dataAwsS3FilesMountTarget', { get: function () { return require('./data-aws-s3files-mount-target'); } });
 Object.defineProperty(exports, 'dataAwsSagemakerPrebuiltEcrImage', { get: function () { return require('./data-aws-sagemaker-prebuilt-ecr-image'); } });
 Object.defineProperty(exports, 'dataAwsSavingsplansOfferings', { get: function () { return require('./data-aws-savingsplans-offerings'); } });
 Object.defineProperty(exports, 'dataAwsSavingsplansSavingsPlan', { get: function () { return require('./data-aws-savingsplans-savings-plan'); } });

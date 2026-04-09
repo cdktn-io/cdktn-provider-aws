@@ -1,3 +1,3 @@
 # `aws_ses_event_destination`
 
-Refer to the Terraform Registry for docs: [`aws_ses_event_destination`](https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/ses_event_destination).
+Refer to the Terraform Registry for docs: [`aws_ses_event_destination`](https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/ses_event_destination).
