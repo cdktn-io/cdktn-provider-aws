@@ -4,7 +4,7 @@
 
 ### DirectoryServiceDirectory <a name="DirectoryServiceDirectory" id="@cdktn/provider-aws.directoryServiceDirectory.DirectoryServiceDirectory"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/directory_service_directory aws_directory_service_directory}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/directory_service_directory aws_directory_service_directory}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.directoryServiceDirectory.DirectoryServiceDirectory.Initializer"></a>
 
@@ -28,6 +28,7 @@ directoryServiceDirectory.DirectoryServiceDirectory(
   description: str = None,
   desired_number_of_domain_controllers: typing.Union[int, float] = None,
   edition: str = None,
+  enable_directory_data_access: bool | IResolvable = None,
   enable_sso: bool | IResolvable = None,
   id: str = None,
   region: str = None,
@@ -52,22 +53,23 @@ directoryServiceDirectory.DirectoryServiceDirectory(
 | <code><a href="#@cdktn/provider-aws.directoryServiceDirectory.DirectoryServiceDirectory.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.directoryServiceDirectory.DirectoryServiceDirectory.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.directoryServiceDirectory.DirectoryServiceDirectory.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.directoryServiceDirectory.DirectoryServiceDirectory.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/directory_service_directory#name DirectoryServiceDirectory#name}. |
-| <code><a href="#@cdktn/provider-aws.directoryServiceDirectory.DirectoryServiceDirectory.Initializer.parameter.password">password</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/directory_service_directory#password DirectoryServiceDirectory#password}. |
-| <code><a href="#@cdktn/provider-aws.directoryServiceDirectory.DirectoryServiceDirectory.Initializer.parameter.alias">alias</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/directory_service_directory#alias DirectoryServiceDirectory#alias}. |
+| <code><a href="#@cdktn/provider-aws.directoryServiceDirectory.DirectoryServiceDirectory.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/directory_service_directory#name DirectoryServiceDirectory#name}. |
+| <code><a href="#@cdktn/provider-aws.directoryServiceDirectory.DirectoryServiceDirectory.Initializer.parameter.password">password</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/directory_service_directory#password DirectoryServiceDirectory#password}. |
+| <code><a href="#@cdktn/provider-aws.directoryServiceDirectory.DirectoryServiceDirectory.Initializer.parameter.alias">alias</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/directory_service_directory#alias DirectoryServiceDirectory#alias}. |
 | <code><a href="#@cdktn/provider-aws.directoryServiceDirectory.DirectoryServiceDirectory.Initializer.parameter.connectSettings">connect_settings</a></code> | <code><a href="#@cdktn/provider-aws.directoryServiceDirectory.DirectoryServiceDirectoryConnectSettings">DirectoryServiceDirectoryConnectSettings</a></code> | connect_settings block. |
-| <code><a href="#@cdktn/provider-aws.directoryServiceDirectory.DirectoryServiceDirectory.Initializer.parameter.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/directory_service_directory#description DirectoryServiceDirectory#description}. |
-| <code><a href="#@cdktn/provider-aws.directoryServiceDirectory.DirectoryServiceDirectory.Initializer.parameter.desiredNumberOfDomainControllers">desired_number_of_domain_controllers</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/directory_service_directory#desired_number_of_domain_controllers DirectoryServiceDirectory#desired_number_of_domain_controllers}. |
-| <code><a href="#@cdktn/provider-aws.directoryServiceDirectory.DirectoryServiceDirectory.Initializer.parameter.edition">edition</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/directory_service_directory#edition DirectoryServiceDirectory#edition}. |
-| <code><a href="#@cdktn/provider-aws.directoryServiceDirectory.DirectoryServiceDirectory.Initializer.parameter.enableSso">enable_sso</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/directory_service_directory#enable_sso DirectoryServiceDirectory#enable_sso}. |
-| <code><a href="#@cdktn/provider-aws.directoryServiceDirectory.DirectoryServiceDirectory.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/directory_service_directory#id DirectoryServiceDirectory#id}. |
+| <code><a href="#@cdktn/provider-aws.directoryServiceDirectory.DirectoryServiceDirectory.Initializer.parameter.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/directory_service_directory#description DirectoryServiceDirectory#description}. |
+| <code><a href="#@cdktn/provider-aws.directoryServiceDirectory.DirectoryServiceDirectory.Initializer.parameter.desiredNumberOfDomainControllers">desired_number_of_domain_controllers</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/directory_service_directory#desired_number_of_domain_controllers DirectoryServiceDirectory#desired_number_of_domain_controllers}. |
+| <code><a href="#@cdktn/provider-aws.directoryServiceDirectory.DirectoryServiceDirectory.Initializer.parameter.edition">edition</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/directory_service_directory#edition DirectoryServiceDirectory#edition}. |
+| <code><a href="#@cdktn/provider-aws.directoryServiceDirectory.DirectoryServiceDirectory.Initializer.parameter.enableDirectoryDataAccess">enable_directory_data_access</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/directory_service_directory#enable_directory_data_access DirectoryServiceDirectory#enable_directory_data_access}. |
+| <code><a href="#@cdktn/provider-aws.directoryServiceDirectory.DirectoryServiceDirectory.Initializer.parameter.enableSso">enable_sso</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/directory_service_directory#enable_sso DirectoryServiceDirectory#enable_sso}. |
+| <code><a href="#@cdktn/provider-aws.directoryServiceDirectory.DirectoryServiceDirectory.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/directory_service_directory#id DirectoryServiceDirectory#id}. |
 | <code><a href="#@cdktn/provider-aws.directoryServiceDirectory.DirectoryServiceDirectory.Initializer.parameter.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.directoryServiceDirectory.DirectoryServiceDirectory.Initializer.parameter.shortName">short_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/directory_service_directory#short_name DirectoryServiceDirectory#short_name}. |
-| <code><a href="#@cdktn/provider-aws.directoryServiceDirectory.DirectoryServiceDirectory.Initializer.parameter.size">size</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/directory_service_directory#size DirectoryServiceDirectory#size}. |
-| <code><a href="#@cdktn/provider-aws.directoryServiceDirectory.DirectoryServiceDirectory.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/directory_service_directory#tags DirectoryServiceDirectory#tags}. |
-| <code><a href="#@cdktn/provider-aws.directoryServiceDirectory.DirectoryServiceDirectory.Initializer.parameter.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/directory_service_directory#tags_all DirectoryServiceDirectory#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.directoryServiceDirectory.DirectoryServiceDirectory.Initializer.parameter.shortName">short_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/directory_service_directory#short_name DirectoryServiceDirectory#short_name}. |
+| <code><a href="#@cdktn/provider-aws.directoryServiceDirectory.DirectoryServiceDirectory.Initializer.parameter.size">size</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/directory_service_directory#size DirectoryServiceDirectory#size}. |
+| <code><a href="#@cdktn/provider-aws.directoryServiceDirectory.DirectoryServiceDirectory.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/directory_service_directory#tags DirectoryServiceDirectory#tags}. |
+| <code><a href="#@cdktn/provider-aws.directoryServiceDirectory.DirectoryServiceDirectory.Initializer.parameter.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/directory_service_directory#tags_all DirectoryServiceDirectory#tags_all}. |
 | <code><a href="#@cdktn/provider-aws.directoryServiceDirectory.DirectoryServiceDirectory.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-aws.directoryServiceDirectory.DirectoryServiceDirectoryTimeouts">DirectoryServiceDirectoryTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktn/provider-aws.directoryServiceDirectory.DirectoryServiceDirectory.Initializer.parameter.type">type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/directory_service_directory#type DirectoryServiceDirectory#type}. |
+| <code><a href="#@cdktn/provider-aws.directoryServiceDirectory.DirectoryServiceDirectory.Initializer.parameter.type">type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/directory_service_directory#type DirectoryServiceDirectory#type}. |
 | <code><a href="#@cdktn/provider-aws.directoryServiceDirectory.DirectoryServiceDirectory.Initializer.parameter.vpcSettings">vpc_settings</a></code> | <code><a href="#@cdktn/provider-aws.directoryServiceDirectory.DirectoryServiceDirectoryVpcSettings">DirectoryServiceDirectoryVpcSettings</a></code> | vpc_settings block. |
 
 ---
@@ -136,7 +138,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/directory_service_directory#name DirectoryServiceDirectory#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/directory_service_directory#name DirectoryServiceDirectory#name}.
 
 ---
 
@@ -144,7 +146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/directory_service_directory#password DirectoryServiceDirectory#password}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/directory_service_directory#password DirectoryServiceDirectory#password}.
 
 ---
 
@@ -152,7 +154,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/directory_service_directory#alias DirectoryServiceDirectory#alias}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/directory_service_directory#alias DirectoryServiceDirectory#alias}.
 
 ---
 
@@ -162,7 +164,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 connect_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/directory_service_directory#connect_settings DirectoryServiceDirectory#connect_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/directory_service_directory#connect_settings DirectoryServiceDirectory#connect_settings}
 
 ---
 
@@ -170,7 +172,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/directory_service_directory#description DirectoryServiceDirectory#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/directory_service_directory#description DirectoryServiceDirectory#description}.
 
 ---
 
@@ -178,7 +180,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/directory_service_directory#desired_number_of_domain_controllers DirectoryServiceDirectory#desired_number_of_domain_controllers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/directory_service_directory#desired_number_of_domain_controllers DirectoryServiceDirectory#desired_number_of_domain_controllers}.
 
 ---
 
@@ -186,7 +188,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/directory_service_directory#edition DirectoryServiceDirectory#edition}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/directory_service_directory#edition DirectoryServiceDirectory#edition}.
+
+---
+
+##### `enable_directory_data_access`<sup>Optional</sup> <a name="enable_directory_data_access" id="@cdktn/provider-aws.directoryServiceDirectory.DirectoryServiceDirectory.Initializer.parameter.enableDirectoryDataAccess"></a>
+
+- *Type:* bool | cdktn.IResolvable
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/directory_service_directory#enable_directory_data_access DirectoryServiceDirectory#enable_directory_data_access}.
 
 ---
 
@@ -194,7 +204,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/directory_service_directory#enable_sso DirectoryServiceDirectory#enable_sso}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/directory_service_directory#enable_sso DirectoryServiceDirectory#enable_sso}.
 
 ---
 
@@ -202,7 +212,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/directory_service_directory#id DirectoryServiceDirectory#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/directory_service_directory#id DirectoryServiceDirectory#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -215,7 +225,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/directory_service_directory#region DirectoryServiceDirectory#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/directory_service_directory#region DirectoryServiceDirectory#region}
 
 ---
 
@@ -223,7 +233,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/directory_service_directory#short_name DirectoryServiceDirectory#short_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/directory_service_directory#short_name DirectoryServiceDirectory#short_name}.
 
 ---
 
@@ -231,7 +241,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/directory_service_directory#size DirectoryServiceDirectory#size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/directory_service_directory#size DirectoryServiceDirectory#size}.
 
 ---
 
@@ -239,7 +249,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/directory_service_directory#tags DirectoryServiceDirectory#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/directory_service_directory#tags DirectoryServiceDirectory#tags}.
 
 ---
 
@@ -247,7 +257,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/directory_service_directory#tags_all DirectoryServiceDirectory#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/directory_service_directory#tags_all DirectoryServiceDirectory#tags_all}.
 
 ---
 
@@ -257,7 +267,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/directory_service_directory#timeouts DirectoryServiceDirectory#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/directory_service_directory#timeouts DirectoryServiceDirectory#timeouts}
 
 ---
 
@@ -265,7 +275,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/directory_service_directory#type DirectoryServiceDirectory#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/directory_service_directory#type DirectoryServiceDirectory#type}.
 
 ---
 
@@ -275,7 +285,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 vpc_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/directory_service_directory#vpc_settings DirectoryServiceDirectory#vpc_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/directory_service_directory#vpc_settings DirectoryServiceDirectory#vpc_settings}
 
 ---
 
@@ -315,6 +325,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-aws.directoryServiceDirectory.DirectoryServiceDirectory.resetDescription">reset_description</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.directoryServiceDirectory.DirectoryServiceDirectory.resetDesiredNumberOfDomainControllers">reset_desired_number_of_domain_controllers</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.directoryServiceDirectory.DirectoryServiceDirectory.resetEdition">reset_edition</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.directoryServiceDirectory.DirectoryServiceDirectory.resetEnableDirectoryDataAccess">reset_enable_directory_data_access</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.directoryServiceDirectory.DirectoryServiceDirectory.resetEnableSso">reset_enable_sso</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.directoryServiceDirectory.DirectoryServiceDirectory.resetId">reset_id</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.directoryServiceDirectory.DirectoryServiceDirectory.resetRegion">reset_region</a></code> | *No description.* |
@@ -691,7 +702,7 @@ def put_connect_settings(
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/directory_service_directory#customer_dns_ips DirectoryServiceDirectory#customer_dns_ips}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/directory_service_directory#customer_dns_ips DirectoryServiceDirectory#customer_dns_ips}.
 
 ---
 
@@ -699,7 +710,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/directory_service_directory#customer_username DirectoryServiceDirectory#customer_username}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/directory_service_directory#customer_username DirectoryServiceDirectory#customer_username}.
 
 ---
 
@@ -707,7 +718,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/directory_service_directory#subnet_ids DirectoryServiceDirectory#subnet_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/directory_service_directory#subnet_ids DirectoryServiceDirectory#subnet_ids}.
 
 ---
 
@@ -715,7 +726,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/directory_service_directory#vpc_id DirectoryServiceDirectory#vpc_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/directory_service_directory#vpc_id DirectoryServiceDirectory#vpc_id}.
 
 ---
 
@@ -733,7 +744,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/directory_service_directory#create DirectoryServiceDirectory#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/directory_service_directory#create DirectoryServiceDirectory#create}.
 
 ---
 
@@ -741,7 +752,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/directory_service_directory#delete DirectoryServiceDirectory#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/directory_service_directory#delete DirectoryServiceDirectory#delete}.
 
 ---
 
@@ -749,7 +760,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/directory_service_directory#update DirectoryServiceDirectory#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/directory_service_directory#update DirectoryServiceDirectory#update}.
 
 ---
 
@@ -766,7 +777,7 @@ def put_vpc_settings(
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/directory_service_directory#subnet_ids DirectoryServiceDirectory#subnet_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/directory_service_directory#subnet_ids DirectoryServiceDirectory#subnet_ids}.
 
 ---
 
@@ -774,7 +785,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/directory_service_directory#vpc_id DirectoryServiceDirectory#vpc_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/directory_service_directory#vpc_id DirectoryServiceDirectory#vpc_id}.
 
 ---
 
@@ -806,6 +817,12 @@ def reset_desired_number_of_domain_controllers() -> None
 
 ```python
 def reset_edition() -> None
+```
+
+##### `reset_enable_directory_data_access` <a name="reset_enable_directory_data_access" id="@cdktn/provider-aws.directoryServiceDirectory.DirectoryServiceDirectory.resetEnableDirectoryDataAccess"></a>
+
+```python
+def reset_enable_directory_data_access() -> None
 ```
 
 ##### `reset_enable_sso` <a name="reset_enable_sso" id="@cdktn/provider-aws.directoryServiceDirectory.DirectoryServiceDirectory.resetEnableSso"></a>
@@ -982,7 +999,7 @@ The construct id used in the generated config for the DirectoryServiceDirectory 
 
 The id of the existing DirectoryServiceDirectory that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/directory_service_directory#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/directory_service_directory#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1023,6 +1040,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0
 | <code><a href="#@cdktn/provider-aws.directoryServiceDirectory.DirectoryServiceDirectory.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.directoryServiceDirectory.DirectoryServiceDirectory.property.desiredNumberOfDomainControllersInput">desired_number_of_domain_controllers_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.directoryServiceDirectory.DirectoryServiceDirectory.property.editionInput">edition_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.directoryServiceDirectory.DirectoryServiceDirectory.property.enableDirectoryDataAccessInput">enable_directory_data_access_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.directoryServiceDirectory.DirectoryServiceDirectory.property.enableSsoInput">enable_sso_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.directoryServiceDirectory.DirectoryServiceDirectory.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.directoryServiceDirectory.DirectoryServiceDirectory.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
@@ -1039,6 +1057,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0
 | <code><a href="#@cdktn/provider-aws.directoryServiceDirectory.DirectoryServiceDirectory.property.description">description</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.directoryServiceDirectory.DirectoryServiceDirectory.property.desiredNumberOfDomainControllers">desired_number_of_domain_controllers</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.directoryServiceDirectory.DirectoryServiceDirectory.property.edition">edition</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.directoryServiceDirectory.DirectoryServiceDirectory.property.enableDirectoryDataAccess">enable_directory_data_access</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.directoryServiceDirectory.DirectoryServiceDirectory.property.enableSso">enable_sso</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.directoryServiceDirectory.DirectoryServiceDirectory.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.directoryServiceDirectory.DirectoryServiceDirectory.property.name">name</a></code> | <code>str</code> | *No description.* |
@@ -1304,6 +1323,16 @@ edition_input: str
 
 ---
 
+##### `enable_directory_data_access_input`<sup>Optional</sup> <a name="enable_directory_data_access_input" id="@cdktn/provider-aws.directoryServiceDirectory.DirectoryServiceDirectory.property.enableDirectoryDataAccessInput"></a>
+
+```python
+enable_directory_data_access_input: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
 ##### `enable_sso_input`<sup>Optional</sup> <a name="enable_sso_input" id="@cdktn/provider-aws.directoryServiceDirectory.DirectoryServiceDirectory.property.enableSsoInput"></a>
 
 ```python
@@ -1464,6 +1493,16 @@ edition: str
 
 ---
 
+##### `enable_directory_data_access`<sup>Required</sup> <a name="enable_directory_data_access" id="@cdktn/provider-aws.directoryServiceDirectory.DirectoryServiceDirectory.property.enableDirectoryDataAccess"></a>
+
+```python
+enable_directory_data_access: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
 ##### `enable_sso`<sup>Required</sup> <a name="enable_sso" id="@cdktn/provider-aws.directoryServiceDirectory.DirectoryServiceDirectory.property.enableSso"></a>
 
 ```python
@@ -1606,6 +1645,7 @@ directoryServiceDirectory.DirectoryServiceDirectoryConfig(
   description: str = None,
   desired_number_of_domain_controllers: typing.Union[int, float] = None,
   edition: str = None,
+  enable_directory_data_access: bool | IResolvable = None,
   enable_sso: bool | IResolvable = None,
   id: str = None,
   region: str = None,
@@ -1630,22 +1670,23 @@ directoryServiceDirectory.DirectoryServiceDirectoryConfig(
 | <code><a href="#@cdktn/provider-aws.directoryServiceDirectory.DirectoryServiceDirectoryConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.directoryServiceDirectory.DirectoryServiceDirectoryConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.directoryServiceDirectory.DirectoryServiceDirectoryConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.directoryServiceDirectory.DirectoryServiceDirectoryConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/directory_service_directory#name DirectoryServiceDirectory#name}. |
-| <code><a href="#@cdktn/provider-aws.directoryServiceDirectory.DirectoryServiceDirectoryConfig.property.password">password</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/directory_service_directory#password DirectoryServiceDirectory#password}. |
-| <code><a href="#@cdktn/provider-aws.directoryServiceDirectory.DirectoryServiceDirectoryConfig.property.alias">alias</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/directory_service_directory#alias DirectoryServiceDirectory#alias}. |
+| <code><a href="#@cdktn/provider-aws.directoryServiceDirectory.DirectoryServiceDirectoryConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/directory_service_directory#name DirectoryServiceDirectory#name}. |
+| <code><a href="#@cdktn/provider-aws.directoryServiceDirectory.DirectoryServiceDirectoryConfig.property.password">password</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/directory_service_directory#password DirectoryServiceDirectory#password}. |
+| <code><a href="#@cdktn/provider-aws.directoryServiceDirectory.DirectoryServiceDirectoryConfig.property.alias">alias</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/directory_service_directory#alias DirectoryServiceDirectory#alias}. |
 | <code><a href="#@cdktn/provider-aws.directoryServiceDirectory.DirectoryServiceDirectoryConfig.property.connectSettings">connect_settings</a></code> | <code><a href="#@cdktn/provider-aws.directoryServiceDirectory.DirectoryServiceDirectoryConnectSettings">DirectoryServiceDirectoryConnectSettings</a></code> | connect_settings block. |
-| <code><a href="#@cdktn/provider-aws.directoryServiceDirectory.DirectoryServiceDirectoryConfig.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/directory_service_directory#description DirectoryServiceDirectory#description}. |
-| <code><a href="#@cdktn/provider-aws.directoryServiceDirectory.DirectoryServiceDirectoryConfig.property.desiredNumberOfDomainControllers">desired_number_of_domain_controllers</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/directory_service_directory#desired_number_of_domain_controllers DirectoryServiceDirectory#desired_number_of_domain_controllers}. |
-| <code><a href="#@cdktn/provider-aws.directoryServiceDirectory.DirectoryServiceDirectoryConfig.property.edition">edition</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/directory_service_directory#edition DirectoryServiceDirectory#edition}. |
-| <code><a href="#@cdktn/provider-aws.directoryServiceDirectory.DirectoryServiceDirectoryConfig.property.enableSso">enable_sso</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/directory_service_directory#enable_sso DirectoryServiceDirectory#enable_sso}. |
-| <code><a href="#@cdktn/provider-aws.directoryServiceDirectory.DirectoryServiceDirectoryConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/directory_service_directory#id DirectoryServiceDirectory#id}. |
+| <code><a href="#@cdktn/provider-aws.directoryServiceDirectory.DirectoryServiceDirectoryConfig.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/directory_service_directory#description DirectoryServiceDirectory#description}. |
+| <code><a href="#@cdktn/provider-aws.directoryServiceDirectory.DirectoryServiceDirectoryConfig.property.desiredNumberOfDomainControllers">desired_number_of_domain_controllers</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/directory_service_directory#desired_number_of_domain_controllers DirectoryServiceDirectory#desired_number_of_domain_controllers}. |
+| <code><a href="#@cdktn/provider-aws.directoryServiceDirectory.DirectoryServiceDirectoryConfig.property.edition">edition</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/directory_service_directory#edition DirectoryServiceDirectory#edition}. |
+| <code><a href="#@cdktn/provider-aws.directoryServiceDirectory.DirectoryServiceDirectoryConfig.property.enableDirectoryDataAccess">enable_directory_data_access</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/directory_service_directory#enable_directory_data_access DirectoryServiceDirectory#enable_directory_data_access}. |
+| <code><a href="#@cdktn/provider-aws.directoryServiceDirectory.DirectoryServiceDirectoryConfig.property.enableSso">enable_sso</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/directory_service_directory#enable_sso DirectoryServiceDirectory#enable_sso}. |
+| <code><a href="#@cdktn/provider-aws.directoryServiceDirectory.DirectoryServiceDirectoryConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/directory_service_directory#id DirectoryServiceDirectory#id}. |
 | <code><a href="#@cdktn/provider-aws.directoryServiceDirectory.DirectoryServiceDirectoryConfig.property.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.directoryServiceDirectory.DirectoryServiceDirectoryConfig.property.shortName">short_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/directory_service_directory#short_name DirectoryServiceDirectory#short_name}. |
-| <code><a href="#@cdktn/provider-aws.directoryServiceDirectory.DirectoryServiceDirectoryConfig.property.size">size</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/directory_service_directory#size DirectoryServiceDirectory#size}. |
-| <code><a href="#@cdktn/provider-aws.directoryServiceDirectory.DirectoryServiceDirectoryConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/directory_service_directory#tags DirectoryServiceDirectory#tags}. |
-| <code><a href="#@cdktn/provider-aws.directoryServiceDirectory.DirectoryServiceDirectoryConfig.property.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/directory_service_directory#tags_all DirectoryServiceDirectory#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.directoryServiceDirectory.DirectoryServiceDirectoryConfig.property.shortName">short_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/directory_service_directory#short_name DirectoryServiceDirectory#short_name}. |
+| <code><a href="#@cdktn/provider-aws.directoryServiceDirectory.DirectoryServiceDirectoryConfig.property.size">size</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/directory_service_directory#size DirectoryServiceDirectory#size}. |
+| <code><a href="#@cdktn/provider-aws.directoryServiceDirectory.DirectoryServiceDirectoryConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/directory_service_directory#tags DirectoryServiceDirectory#tags}. |
+| <code><a href="#@cdktn/provider-aws.directoryServiceDirectory.DirectoryServiceDirectoryConfig.property.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/directory_service_directory#tags_all DirectoryServiceDirectory#tags_all}. |
 | <code><a href="#@cdktn/provider-aws.directoryServiceDirectory.DirectoryServiceDirectoryConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-aws.directoryServiceDirectory.DirectoryServiceDirectoryTimeouts">DirectoryServiceDirectoryTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktn/provider-aws.directoryServiceDirectory.DirectoryServiceDirectoryConfig.property.type">type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/directory_service_directory#type DirectoryServiceDirectory#type}. |
+| <code><a href="#@cdktn/provider-aws.directoryServiceDirectory.DirectoryServiceDirectoryConfig.property.type">type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/directory_service_directory#type DirectoryServiceDirectory#type}. |
 | <code><a href="#@cdktn/provider-aws.directoryServiceDirectory.DirectoryServiceDirectoryConfig.property.vpcSettings">vpc_settings</a></code> | <code><a href="#@cdktn/provider-aws.directoryServiceDirectory.DirectoryServiceDirectoryVpcSettings">DirectoryServiceDirectoryVpcSettings</a></code> | vpc_settings block. |
 
 ---
@@ -1728,7 +1769,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/directory_service_directory#name DirectoryServiceDirectory#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/directory_service_directory#name DirectoryServiceDirectory#name}.
 
 ---
 
@@ -1740,7 +1781,7 @@ password: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/directory_service_directory#password DirectoryServiceDirectory#password}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/directory_service_directory#password DirectoryServiceDirectory#password}.
 
 ---
 
@@ -1752,7 +1793,7 @@ alias: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/directory_service_directory#alias DirectoryServiceDirectory#alias}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/directory_service_directory#alias DirectoryServiceDirectory#alias}.
 
 ---
 
@@ -1766,7 +1807,7 @@ connect_settings: DirectoryServiceDirectoryConnectSettings
 
 connect_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/directory_service_directory#connect_settings DirectoryServiceDirectory#connect_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/directory_service_directory#connect_settings DirectoryServiceDirectory#connect_settings}
 
 ---
 
@@ -1778,7 +1819,7 @@ description: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/directory_service_directory#description DirectoryServiceDirectory#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/directory_service_directory#description DirectoryServiceDirectory#description}.
 
 ---
 
@@ -1790,7 +1831,7 @@ desired_number_of_domain_controllers: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/directory_service_directory#desired_number_of_domain_controllers DirectoryServiceDirectory#desired_number_of_domain_controllers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/directory_service_directory#desired_number_of_domain_controllers DirectoryServiceDirectory#desired_number_of_domain_controllers}.
 
 ---
 
@@ -1802,7 +1843,19 @@ edition: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/directory_service_directory#edition DirectoryServiceDirectory#edition}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/directory_service_directory#edition DirectoryServiceDirectory#edition}.
+
+---
+
+##### `enable_directory_data_access`<sup>Optional</sup> <a name="enable_directory_data_access" id="@cdktn/provider-aws.directoryServiceDirectory.DirectoryServiceDirectoryConfig.property.enableDirectoryDataAccess"></a>
+
+```python
+enable_directory_data_access: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/directory_service_directory#enable_directory_data_access DirectoryServiceDirectory#enable_directory_data_access}.
 
 ---
 
@@ -1814,7 +1867,7 @@ enable_sso: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/directory_service_directory#enable_sso DirectoryServiceDirectory#enable_sso}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/directory_service_directory#enable_sso DirectoryServiceDirectory#enable_sso}.
 
 ---
 
@@ -1826,7 +1879,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/directory_service_directory#id DirectoryServiceDirectory#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/directory_service_directory#id DirectoryServiceDirectory#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1843,7 +1896,7 @@ region: str
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/directory_service_directory#region DirectoryServiceDirectory#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/directory_service_directory#region DirectoryServiceDirectory#region}
 
 ---
 
@@ -1855,7 +1908,7 @@ short_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/directory_service_directory#short_name DirectoryServiceDirectory#short_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/directory_service_directory#short_name DirectoryServiceDirectory#short_name}.
 
 ---
 
@@ -1867,7 +1920,7 @@ size: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/directory_service_directory#size DirectoryServiceDirectory#size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/directory_service_directory#size DirectoryServiceDirectory#size}.
 
 ---
 
@@ -1879,7 +1932,7 @@ tags: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/directory_service_directory#tags DirectoryServiceDirectory#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/directory_service_directory#tags DirectoryServiceDirectory#tags}.
 
 ---
 
@@ -1891,7 +1944,7 @@ tags_all: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/directory_service_directory#tags_all DirectoryServiceDirectory#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/directory_service_directory#tags_all DirectoryServiceDirectory#tags_all}.
 
 ---
 
@@ -1905,7 +1958,7 @@ timeouts: DirectoryServiceDirectoryTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/directory_service_directory#timeouts DirectoryServiceDirectory#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/directory_service_directory#timeouts DirectoryServiceDirectory#timeouts}
 
 ---
 
@@ -1917,7 +1970,7 @@ type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/directory_service_directory#type DirectoryServiceDirectory#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/directory_service_directory#type DirectoryServiceDirectory#type}.
 
 ---
 
@@ -1931,7 +1984,7 @@ vpc_settings: DirectoryServiceDirectoryVpcSettings
 
 vpc_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/directory_service_directory#vpc_settings DirectoryServiceDirectory#vpc_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/directory_service_directory#vpc_settings DirectoryServiceDirectory#vpc_settings}
 
 ---
 
@@ -1954,10 +2007,10 @@ directoryServiceDirectory.DirectoryServiceDirectoryConnectSettings(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.directoryServiceDirectory.DirectoryServiceDirectoryConnectSettings.property.customerDnsIps">customer_dns_ips</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/directory_service_directory#customer_dns_ips DirectoryServiceDirectory#customer_dns_ips}. |
-| <code><a href="#@cdktn/provider-aws.directoryServiceDirectory.DirectoryServiceDirectoryConnectSettings.property.customerUsername">customer_username</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/directory_service_directory#customer_username DirectoryServiceDirectory#customer_username}. |
-| <code><a href="#@cdktn/provider-aws.directoryServiceDirectory.DirectoryServiceDirectoryConnectSettings.property.subnetIds">subnet_ids</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/directory_service_directory#subnet_ids DirectoryServiceDirectory#subnet_ids}. |
-| <code><a href="#@cdktn/provider-aws.directoryServiceDirectory.DirectoryServiceDirectoryConnectSettings.property.vpcId">vpc_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/directory_service_directory#vpc_id DirectoryServiceDirectory#vpc_id}. |
+| <code><a href="#@cdktn/provider-aws.directoryServiceDirectory.DirectoryServiceDirectoryConnectSettings.property.customerDnsIps">customer_dns_ips</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/directory_service_directory#customer_dns_ips DirectoryServiceDirectory#customer_dns_ips}. |
+| <code><a href="#@cdktn/provider-aws.directoryServiceDirectory.DirectoryServiceDirectoryConnectSettings.property.customerUsername">customer_username</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/directory_service_directory#customer_username DirectoryServiceDirectory#customer_username}. |
+| <code><a href="#@cdktn/provider-aws.directoryServiceDirectory.DirectoryServiceDirectoryConnectSettings.property.subnetIds">subnet_ids</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/directory_service_directory#subnet_ids DirectoryServiceDirectory#subnet_ids}. |
+| <code><a href="#@cdktn/provider-aws.directoryServiceDirectory.DirectoryServiceDirectoryConnectSettings.property.vpcId">vpc_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/directory_service_directory#vpc_id DirectoryServiceDirectory#vpc_id}. |
 
 ---
 
@@ -1969,7 +2022,7 @@ customer_dns_ips: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/directory_service_directory#customer_dns_ips DirectoryServiceDirectory#customer_dns_ips}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/directory_service_directory#customer_dns_ips DirectoryServiceDirectory#customer_dns_ips}.
 
 ---
 
@@ -1981,7 +2034,7 @@ customer_username: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/directory_service_directory#customer_username DirectoryServiceDirectory#customer_username}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/directory_service_directory#customer_username DirectoryServiceDirectory#customer_username}.
 
 ---
 
@@ -1993,7 +2046,7 @@ subnet_ids: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/directory_service_directory#subnet_ids DirectoryServiceDirectory#subnet_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/directory_service_directory#subnet_ids DirectoryServiceDirectory#subnet_ids}.
 
 ---
 
@@ -2005,7 +2058,7 @@ vpc_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/directory_service_directory#vpc_id DirectoryServiceDirectory#vpc_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/directory_service_directory#vpc_id DirectoryServiceDirectory#vpc_id}.
 
 ---
 
@@ -2027,9 +2080,9 @@ directoryServiceDirectory.DirectoryServiceDirectoryTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.directoryServiceDirectory.DirectoryServiceDirectoryTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/directory_service_directory#create DirectoryServiceDirectory#create}. |
-| <code><a href="#@cdktn/provider-aws.directoryServiceDirectory.DirectoryServiceDirectoryTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/directory_service_directory#delete DirectoryServiceDirectory#delete}. |
-| <code><a href="#@cdktn/provider-aws.directoryServiceDirectory.DirectoryServiceDirectoryTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/directory_service_directory#update DirectoryServiceDirectory#update}. |
+| <code><a href="#@cdktn/provider-aws.directoryServiceDirectory.DirectoryServiceDirectoryTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/directory_service_directory#create DirectoryServiceDirectory#create}. |
+| <code><a href="#@cdktn/provider-aws.directoryServiceDirectory.DirectoryServiceDirectoryTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/directory_service_directory#delete DirectoryServiceDirectory#delete}. |
+| <code><a href="#@cdktn/provider-aws.directoryServiceDirectory.DirectoryServiceDirectoryTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/directory_service_directory#update DirectoryServiceDirectory#update}. |
 
 ---
 
@@ -2041,7 +2094,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/directory_service_directory#create DirectoryServiceDirectory#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/directory_service_directory#create DirectoryServiceDirectory#create}.
 
 ---
 
@@ -2053,7 +2106,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/directory_service_directory#delete DirectoryServiceDirectory#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/directory_service_directory#delete DirectoryServiceDirectory#delete}.
 
 ---
 
@@ -2065,7 +2118,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/directory_service_directory#update DirectoryServiceDirectory#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/directory_service_directory#update DirectoryServiceDirectory#update}.
 
 ---
 
@@ -2086,8 +2139,8 @@ directoryServiceDirectory.DirectoryServiceDirectoryVpcSettings(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.directoryServiceDirectory.DirectoryServiceDirectoryVpcSettings.property.subnetIds">subnet_ids</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/directory_service_directory#subnet_ids DirectoryServiceDirectory#subnet_ids}. |
-| <code><a href="#@cdktn/provider-aws.directoryServiceDirectory.DirectoryServiceDirectoryVpcSettings.property.vpcId">vpc_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/directory_service_directory#vpc_id DirectoryServiceDirectory#vpc_id}. |
+| <code><a href="#@cdktn/provider-aws.directoryServiceDirectory.DirectoryServiceDirectoryVpcSettings.property.subnetIds">subnet_ids</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/directory_service_directory#subnet_ids DirectoryServiceDirectory#subnet_ids}. |
+| <code><a href="#@cdktn/provider-aws.directoryServiceDirectory.DirectoryServiceDirectoryVpcSettings.property.vpcId">vpc_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/directory_service_directory#vpc_id DirectoryServiceDirectory#vpc_id}. |
 
 ---
 
@@ -2099,7 +2152,7 @@ subnet_ids: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/directory_service_directory#subnet_ids DirectoryServiceDirectory#subnet_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/directory_service_directory#subnet_ids DirectoryServiceDirectory#subnet_ids}.
 
 ---
 
@@ -2111,7 +2164,7 @@ vpc_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/directory_service_directory#vpc_id DirectoryServiceDirectory#vpc_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/directory_service_directory#vpc_id DirectoryServiceDirectory#vpc_id}.
 
 ---
 

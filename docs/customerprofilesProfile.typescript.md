@@ -4,7 +4,7 @@
 
 ### CustomerprofilesProfile <a name="CustomerprofilesProfile" id="@cdktn/provider-aws.customerprofilesProfile.CustomerprofilesProfile"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/customerprofiles_profile aws_customerprofiles_profile}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/customerprofiles_profile aws_customerprofiles_profile}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.customerprofilesProfile.CustomerprofilesProfile.Initializer"></a>
 
@@ -702,7 +702,7 @@ The construct id used in the generated config for the CustomerprofilesProfile to
 
 The id of the existing CustomerprofilesProfile that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/customerprofiles_profile#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/customerprofiles_profile#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1439,16 +1439,16 @@ const customerprofilesProfileAddress: customerprofilesProfile.CustomerprofilesPr
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.customerprofilesProfile.CustomerprofilesProfileAddress.property.address1">address1</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/customerprofiles_profile#address_1 CustomerprofilesProfile#address_1}. |
-| <code><a href="#@cdktn/provider-aws.customerprofilesProfile.CustomerprofilesProfileAddress.property.address2">address2</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/customerprofiles_profile#address_2 CustomerprofilesProfile#address_2}. |
-| <code><a href="#@cdktn/provider-aws.customerprofilesProfile.CustomerprofilesProfileAddress.property.address3">address3</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/customerprofiles_profile#address_3 CustomerprofilesProfile#address_3}. |
-| <code><a href="#@cdktn/provider-aws.customerprofilesProfile.CustomerprofilesProfileAddress.property.address4">address4</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/customerprofiles_profile#address_4 CustomerprofilesProfile#address_4}. |
-| <code><a href="#@cdktn/provider-aws.customerprofilesProfile.CustomerprofilesProfileAddress.property.city">city</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/customerprofiles_profile#city CustomerprofilesProfile#city}. |
-| <code><a href="#@cdktn/provider-aws.customerprofilesProfile.CustomerprofilesProfileAddress.property.country">country</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/customerprofiles_profile#country CustomerprofilesProfile#country}. |
-| <code><a href="#@cdktn/provider-aws.customerprofilesProfile.CustomerprofilesProfileAddress.property.county">county</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/customerprofiles_profile#county CustomerprofilesProfile#county}. |
-| <code><a href="#@cdktn/provider-aws.customerprofilesProfile.CustomerprofilesProfileAddress.property.postalCode">postalCode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/customerprofiles_profile#postal_code CustomerprofilesProfile#postal_code}. |
-| <code><a href="#@cdktn/provider-aws.customerprofilesProfile.CustomerprofilesProfileAddress.property.province">province</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/customerprofiles_profile#province CustomerprofilesProfile#province}. |
-| <code><a href="#@cdktn/provider-aws.customerprofilesProfile.CustomerprofilesProfileAddress.property.state">state</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/customerprofiles_profile#state CustomerprofilesProfile#state}. |
+| <code><a href="#@cdktn/provider-aws.customerprofilesProfile.CustomerprofilesProfileAddress.property.address1">address1</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/customerprofiles_profile#address_1 CustomerprofilesProfile#address_1}. |
+| <code><a href="#@cdktn/provider-aws.customerprofilesProfile.CustomerprofilesProfileAddress.property.address2">address2</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/customerprofiles_profile#address_2 CustomerprofilesProfile#address_2}. |
+| <code><a href="#@cdktn/provider-aws.customerprofilesProfile.CustomerprofilesProfileAddress.property.address3">address3</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/customerprofiles_profile#address_3 CustomerprofilesProfile#address_3}. |
+| <code><a href="#@cdktn/provider-aws.customerprofilesProfile.CustomerprofilesProfileAddress.property.address4">address4</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/customerprofiles_profile#address_4 CustomerprofilesProfile#address_4}. |
+| <code><a href="#@cdktn/provider-aws.customerprofilesProfile.CustomerprofilesProfileAddress.property.city">city</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/customerprofiles_profile#city CustomerprofilesProfile#city}. |
+| <code><a href="#@cdktn/provider-aws.customerprofilesProfile.CustomerprofilesProfileAddress.property.country">country</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/customerprofiles_profile#country CustomerprofilesProfile#country}. |
+| <code><a href="#@cdktn/provider-aws.customerprofilesProfile.CustomerprofilesProfileAddress.property.county">county</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/customerprofiles_profile#county CustomerprofilesProfile#county}. |
+| <code><a href="#@cdktn/provider-aws.customerprofilesProfile.CustomerprofilesProfileAddress.property.postalCode">postalCode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/customerprofiles_profile#postal_code CustomerprofilesProfile#postal_code}. |
+| <code><a href="#@cdktn/provider-aws.customerprofilesProfile.CustomerprofilesProfileAddress.property.province">province</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/customerprofiles_profile#province CustomerprofilesProfile#province}. |
+| <code><a href="#@cdktn/provider-aws.customerprofilesProfile.CustomerprofilesProfileAddress.property.state">state</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/customerprofiles_profile#state CustomerprofilesProfile#state}. |
 
 ---
 
@@ -1460,7 +1460,7 @@ public readonly address1: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/customerprofiles_profile#address_1 CustomerprofilesProfile#address_1}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/customerprofiles_profile#address_1 CustomerprofilesProfile#address_1}.
 
 ---
 
@@ -1472,7 +1472,7 @@ public readonly address2: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/customerprofiles_profile#address_2 CustomerprofilesProfile#address_2}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/customerprofiles_profile#address_2 CustomerprofilesProfile#address_2}.
 
 ---
 
@@ -1484,7 +1484,7 @@ public readonly address3: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/customerprofiles_profile#address_3 CustomerprofilesProfile#address_3}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/customerprofiles_profile#address_3 CustomerprofilesProfile#address_3}.
 
 ---
 
@@ -1496,7 +1496,7 @@ public readonly address4: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/customerprofiles_profile#address_4 CustomerprofilesProfile#address_4}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/customerprofiles_profile#address_4 CustomerprofilesProfile#address_4}.
 
 ---
 
@@ -1508,7 +1508,7 @@ public readonly city: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/customerprofiles_profile#city CustomerprofilesProfile#city}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/customerprofiles_profile#city CustomerprofilesProfile#city}.
 
 ---
 
@@ -1520,7 +1520,7 @@ public readonly country: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/customerprofiles_profile#country CustomerprofilesProfile#country}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/customerprofiles_profile#country CustomerprofilesProfile#country}.
 
 ---
 
@@ -1532,7 +1532,7 @@ public readonly county: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/customerprofiles_profile#county CustomerprofilesProfile#county}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/customerprofiles_profile#county CustomerprofilesProfile#county}.
 
 ---
 
@@ -1544,7 +1544,7 @@ public readonly postalCode: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/customerprofiles_profile#postal_code CustomerprofilesProfile#postal_code}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/customerprofiles_profile#postal_code CustomerprofilesProfile#postal_code}.
 
 ---
 
@@ -1556,7 +1556,7 @@ public readonly province: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/customerprofiles_profile#province CustomerprofilesProfile#province}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/customerprofiles_profile#province CustomerprofilesProfile#province}.
 
 ---
 
@@ -1568,7 +1568,7 @@ public readonly state: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/customerprofiles_profile#state CustomerprofilesProfile#state}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/customerprofiles_profile#state CustomerprofilesProfile#state}.
 
 ---
 
@@ -1586,16 +1586,16 @@ const customerprofilesProfileBillingAddress: customerprofilesProfile.Customerpro
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.customerprofilesProfile.CustomerprofilesProfileBillingAddress.property.address1">address1</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/customerprofiles_profile#address_1 CustomerprofilesProfile#address_1}. |
-| <code><a href="#@cdktn/provider-aws.customerprofilesProfile.CustomerprofilesProfileBillingAddress.property.address2">address2</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/customerprofiles_profile#address_2 CustomerprofilesProfile#address_2}. |
-| <code><a href="#@cdktn/provider-aws.customerprofilesProfile.CustomerprofilesProfileBillingAddress.property.address3">address3</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/customerprofiles_profile#address_3 CustomerprofilesProfile#address_3}. |
-| <code><a href="#@cdktn/provider-aws.customerprofilesProfile.CustomerprofilesProfileBillingAddress.property.address4">address4</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/customerprofiles_profile#address_4 CustomerprofilesProfile#address_4}. |
-| <code><a href="#@cdktn/provider-aws.customerprofilesProfile.CustomerprofilesProfileBillingAddress.property.city">city</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/customerprofiles_profile#city CustomerprofilesProfile#city}. |
-| <code><a href="#@cdktn/provider-aws.customerprofilesProfile.CustomerprofilesProfileBillingAddress.property.country">country</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/customerprofiles_profile#country CustomerprofilesProfile#country}. |
-| <code><a href="#@cdktn/provider-aws.customerprofilesProfile.CustomerprofilesProfileBillingAddress.property.county">county</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/customerprofiles_profile#county CustomerprofilesProfile#county}. |
-| <code><a href="#@cdktn/provider-aws.customerprofilesProfile.CustomerprofilesProfileBillingAddress.property.postalCode">postalCode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/customerprofiles_profile#postal_code CustomerprofilesProfile#postal_code}. |
-| <code><a href="#@cdktn/provider-aws.customerprofilesProfile.CustomerprofilesProfileBillingAddress.property.province">province</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/customerprofiles_profile#province CustomerprofilesProfile#province}. |
-| <code><a href="#@cdktn/provider-aws.customerprofilesProfile.CustomerprofilesProfileBillingAddress.property.state">state</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/customerprofiles_profile#state CustomerprofilesProfile#state}. |
+| <code><a href="#@cdktn/provider-aws.customerprofilesProfile.CustomerprofilesProfileBillingAddress.property.address1">address1</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/customerprofiles_profile#address_1 CustomerprofilesProfile#address_1}. |
+| <code><a href="#@cdktn/provider-aws.customerprofilesProfile.CustomerprofilesProfileBillingAddress.property.address2">address2</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/customerprofiles_profile#address_2 CustomerprofilesProfile#address_2}. |
+| <code><a href="#@cdktn/provider-aws.customerprofilesProfile.CustomerprofilesProfileBillingAddress.property.address3">address3</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/customerprofiles_profile#address_3 CustomerprofilesProfile#address_3}. |
+| <code><a href="#@cdktn/provider-aws.customerprofilesProfile.CustomerprofilesProfileBillingAddress.property.address4">address4</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/customerprofiles_profile#address_4 CustomerprofilesProfile#address_4}. |
+| <code><a href="#@cdktn/provider-aws.customerprofilesProfile.CustomerprofilesProfileBillingAddress.property.city">city</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/customerprofiles_profile#city CustomerprofilesProfile#city}. |
+| <code><a href="#@cdktn/provider-aws.customerprofilesProfile.CustomerprofilesProfileBillingAddress.property.country">country</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/customerprofiles_profile#country CustomerprofilesProfile#country}. |
+| <code><a href="#@cdktn/provider-aws.customerprofilesProfile.CustomerprofilesProfileBillingAddress.property.county">county</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/customerprofiles_profile#county CustomerprofilesProfile#county}. |
+| <code><a href="#@cdktn/provider-aws.customerprofilesProfile.CustomerprofilesProfileBillingAddress.property.postalCode">postalCode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/customerprofiles_profile#postal_code CustomerprofilesProfile#postal_code}. |
+| <code><a href="#@cdktn/provider-aws.customerprofilesProfile.CustomerprofilesProfileBillingAddress.property.province">province</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/customerprofiles_profile#province CustomerprofilesProfile#province}. |
+| <code><a href="#@cdktn/provider-aws.customerprofilesProfile.CustomerprofilesProfileBillingAddress.property.state">state</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/customerprofiles_profile#state CustomerprofilesProfile#state}. |
 
 ---
 
@@ -1607,7 +1607,7 @@ public readonly address1: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/customerprofiles_profile#address_1 CustomerprofilesProfile#address_1}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/customerprofiles_profile#address_1 CustomerprofilesProfile#address_1}.
 
 ---
 
@@ -1619,7 +1619,7 @@ public readonly address2: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/customerprofiles_profile#address_2 CustomerprofilesProfile#address_2}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/customerprofiles_profile#address_2 CustomerprofilesProfile#address_2}.
 
 ---
 
@@ -1631,7 +1631,7 @@ public readonly address3: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/customerprofiles_profile#address_3 CustomerprofilesProfile#address_3}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/customerprofiles_profile#address_3 CustomerprofilesProfile#address_3}.
 
 ---
 
@@ -1643,7 +1643,7 @@ public readonly address4: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/customerprofiles_profile#address_4 CustomerprofilesProfile#address_4}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/customerprofiles_profile#address_4 CustomerprofilesProfile#address_4}.
 
 ---
 
@@ -1655,7 +1655,7 @@ public readonly city: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/customerprofiles_profile#city CustomerprofilesProfile#city}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/customerprofiles_profile#city CustomerprofilesProfile#city}.
 
 ---
 
@@ -1667,7 +1667,7 @@ public readonly country: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/customerprofiles_profile#country CustomerprofilesProfile#country}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/customerprofiles_profile#country CustomerprofilesProfile#country}.
 
 ---
 
@@ -1679,7 +1679,7 @@ public readonly county: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/customerprofiles_profile#county CustomerprofilesProfile#county}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/customerprofiles_profile#county CustomerprofilesProfile#county}.
 
 ---
 
@@ -1691,7 +1691,7 @@ public readonly postalCode: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/customerprofiles_profile#postal_code CustomerprofilesProfile#postal_code}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/customerprofiles_profile#postal_code CustomerprofilesProfile#postal_code}.
 
 ---
 
@@ -1703,7 +1703,7 @@ public readonly province: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/customerprofiles_profile#province CustomerprofilesProfile#province}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/customerprofiles_profile#province CustomerprofilesProfile#province}.
 
 ---
 
@@ -1715,7 +1715,7 @@ public readonly state: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/customerprofiles_profile#state CustomerprofilesProfile#state}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/customerprofiles_profile#state CustomerprofilesProfile#state}.
 
 ---
 
@@ -1740,28 +1740,28 @@ const customerprofilesProfileConfig: customerprofilesProfile.CustomerprofilesPro
 | <code><a href="#@cdktn/provider-aws.customerprofilesProfile.CustomerprofilesProfileConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.customerprofilesProfile.CustomerprofilesProfileConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.customerprofilesProfile.CustomerprofilesProfileConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.customerprofilesProfile.CustomerprofilesProfileConfig.property.domainName">domainName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/customerprofiles_profile#domain_name CustomerprofilesProfile#domain_name}. |
-| <code><a href="#@cdktn/provider-aws.customerprofilesProfile.CustomerprofilesProfileConfig.property.accountNumber">accountNumber</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/customerprofiles_profile#account_number CustomerprofilesProfile#account_number}. |
-| <code><a href="#@cdktn/provider-aws.customerprofilesProfile.CustomerprofilesProfileConfig.property.additionalInformation">additionalInformation</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/customerprofiles_profile#additional_information CustomerprofilesProfile#additional_information}. |
+| <code><a href="#@cdktn/provider-aws.customerprofilesProfile.CustomerprofilesProfileConfig.property.domainName">domainName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/customerprofiles_profile#domain_name CustomerprofilesProfile#domain_name}. |
+| <code><a href="#@cdktn/provider-aws.customerprofilesProfile.CustomerprofilesProfileConfig.property.accountNumber">accountNumber</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/customerprofiles_profile#account_number CustomerprofilesProfile#account_number}. |
+| <code><a href="#@cdktn/provider-aws.customerprofilesProfile.CustomerprofilesProfileConfig.property.additionalInformation">additionalInformation</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/customerprofiles_profile#additional_information CustomerprofilesProfile#additional_information}. |
 | <code><a href="#@cdktn/provider-aws.customerprofilesProfile.CustomerprofilesProfileConfig.property.address">address</a></code> | <code><a href="#@cdktn/provider-aws.customerprofilesProfile.CustomerprofilesProfileAddress">CustomerprofilesProfileAddress</a></code> | address block. |
-| <code><a href="#@cdktn/provider-aws.customerprofilesProfile.CustomerprofilesProfileConfig.property.attributes">attributes</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/customerprofiles_profile#attributes CustomerprofilesProfile#attributes}. |
+| <code><a href="#@cdktn/provider-aws.customerprofilesProfile.CustomerprofilesProfileConfig.property.attributes">attributes</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/customerprofiles_profile#attributes CustomerprofilesProfile#attributes}. |
 | <code><a href="#@cdktn/provider-aws.customerprofilesProfile.CustomerprofilesProfileConfig.property.billingAddress">billingAddress</a></code> | <code><a href="#@cdktn/provider-aws.customerprofilesProfile.CustomerprofilesProfileBillingAddress">CustomerprofilesProfileBillingAddress</a></code> | billing_address block. |
-| <code><a href="#@cdktn/provider-aws.customerprofilesProfile.CustomerprofilesProfileConfig.property.birthDate">birthDate</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/customerprofiles_profile#birth_date CustomerprofilesProfile#birth_date}. |
-| <code><a href="#@cdktn/provider-aws.customerprofilesProfile.CustomerprofilesProfileConfig.property.businessEmailAddress">businessEmailAddress</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/customerprofiles_profile#business_email_address CustomerprofilesProfile#business_email_address}. |
-| <code><a href="#@cdktn/provider-aws.customerprofilesProfile.CustomerprofilesProfileConfig.property.businessName">businessName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/customerprofiles_profile#business_name CustomerprofilesProfile#business_name}. |
-| <code><a href="#@cdktn/provider-aws.customerprofilesProfile.CustomerprofilesProfileConfig.property.businessPhoneNumber">businessPhoneNumber</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/customerprofiles_profile#business_phone_number CustomerprofilesProfile#business_phone_number}. |
-| <code><a href="#@cdktn/provider-aws.customerprofilesProfile.CustomerprofilesProfileConfig.property.emailAddress">emailAddress</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/customerprofiles_profile#email_address CustomerprofilesProfile#email_address}. |
-| <code><a href="#@cdktn/provider-aws.customerprofilesProfile.CustomerprofilesProfileConfig.property.firstName">firstName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/customerprofiles_profile#first_name CustomerprofilesProfile#first_name}. |
-| <code><a href="#@cdktn/provider-aws.customerprofilesProfile.CustomerprofilesProfileConfig.property.genderString">genderString</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/customerprofiles_profile#gender_string CustomerprofilesProfile#gender_string}. |
-| <code><a href="#@cdktn/provider-aws.customerprofilesProfile.CustomerprofilesProfileConfig.property.homePhoneNumber">homePhoneNumber</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/customerprofiles_profile#home_phone_number CustomerprofilesProfile#home_phone_number}. |
-| <code><a href="#@cdktn/provider-aws.customerprofilesProfile.CustomerprofilesProfileConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/customerprofiles_profile#id CustomerprofilesProfile#id}. |
-| <code><a href="#@cdktn/provider-aws.customerprofilesProfile.CustomerprofilesProfileConfig.property.lastName">lastName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/customerprofiles_profile#last_name CustomerprofilesProfile#last_name}. |
+| <code><a href="#@cdktn/provider-aws.customerprofilesProfile.CustomerprofilesProfileConfig.property.birthDate">birthDate</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/customerprofiles_profile#birth_date CustomerprofilesProfile#birth_date}. |
+| <code><a href="#@cdktn/provider-aws.customerprofilesProfile.CustomerprofilesProfileConfig.property.businessEmailAddress">businessEmailAddress</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/customerprofiles_profile#business_email_address CustomerprofilesProfile#business_email_address}. |
+| <code><a href="#@cdktn/provider-aws.customerprofilesProfile.CustomerprofilesProfileConfig.property.businessName">businessName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/customerprofiles_profile#business_name CustomerprofilesProfile#business_name}. |
+| <code><a href="#@cdktn/provider-aws.customerprofilesProfile.CustomerprofilesProfileConfig.property.businessPhoneNumber">businessPhoneNumber</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/customerprofiles_profile#business_phone_number CustomerprofilesProfile#business_phone_number}. |
+| <code><a href="#@cdktn/provider-aws.customerprofilesProfile.CustomerprofilesProfileConfig.property.emailAddress">emailAddress</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/customerprofiles_profile#email_address CustomerprofilesProfile#email_address}. |
+| <code><a href="#@cdktn/provider-aws.customerprofilesProfile.CustomerprofilesProfileConfig.property.firstName">firstName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/customerprofiles_profile#first_name CustomerprofilesProfile#first_name}. |
+| <code><a href="#@cdktn/provider-aws.customerprofilesProfile.CustomerprofilesProfileConfig.property.genderString">genderString</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/customerprofiles_profile#gender_string CustomerprofilesProfile#gender_string}. |
+| <code><a href="#@cdktn/provider-aws.customerprofilesProfile.CustomerprofilesProfileConfig.property.homePhoneNumber">homePhoneNumber</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/customerprofiles_profile#home_phone_number CustomerprofilesProfile#home_phone_number}. |
+| <code><a href="#@cdktn/provider-aws.customerprofilesProfile.CustomerprofilesProfileConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/customerprofiles_profile#id CustomerprofilesProfile#id}. |
+| <code><a href="#@cdktn/provider-aws.customerprofilesProfile.CustomerprofilesProfileConfig.property.lastName">lastName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/customerprofiles_profile#last_name CustomerprofilesProfile#last_name}. |
 | <code><a href="#@cdktn/provider-aws.customerprofilesProfile.CustomerprofilesProfileConfig.property.mailingAddress">mailingAddress</a></code> | <code><a href="#@cdktn/provider-aws.customerprofilesProfile.CustomerprofilesProfileMailingAddress">CustomerprofilesProfileMailingAddress</a></code> | mailing_address block. |
-| <code><a href="#@cdktn/provider-aws.customerprofilesProfile.CustomerprofilesProfileConfig.property.middleName">middleName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/customerprofiles_profile#middle_name CustomerprofilesProfile#middle_name}. |
-| <code><a href="#@cdktn/provider-aws.customerprofilesProfile.CustomerprofilesProfileConfig.property.mobilePhoneNumber">mobilePhoneNumber</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/customerprofiles_profile#mobile_phone_number CustomerprofilesProfile#mobile_phone_number}. |
-| <code><a href="#@cdktn/provider-aws.customerprofilesProfile.CustomerprofilesProfileConfig.property.partyTypeString">partyTypeString</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/customerprofiles_profile#party_type_string CustomerprofilesProfile#party_type_string}. |
-| <code><a href="#@cdktn/provider-aws.customerprofilesProfile.CustomerprofilesProfileConfig.property.personalEmailAddress">personalEmailAddress</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/customerprofiles_profile#personal_email_address CustomerprofilesProfile#personal_email_address}. |
-| <code><a href="#@cdktn/provider-aws.customerprofilesProfile.CustomerprofilesProfileConfig.property.phoneNumber">phoneNumber</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/customerprofiles_profile#phone_number CustomerprofilesProfile#phone_number}. |
+| <code><a href="#@cdktn/provider-aws.customerprofilesProfile.CustomerprofilesProfileConfig.property.middleName">middleName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/customerprofiles_profile#middle_name CustomerprofilesProfile#middle_name}. |
+| <code><a href="#@cdktn/provider-aws.customerprofilesProfile.CustomerprofilesProfileConfig.property.mobilePhoneNumber">mobilePhoneNumber</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/customerprofiles_profile#mobile_phone_number CustomerprofilesProfile#mobile_phone_number}. |
+| <code><a href="#@cdktn/provider-aws.customerprofilesProfile.CustomerprofilesProfileConfig.property.partyTypeString">partyTypeString</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/customerprofiles_profile#party_type_string CustomerprofilesProfile#party_type_string}. |
+| <code><a href="#@cdktn/provider-aws.customerprofilesProfile.CustomerprofilesProfileConfig.property.personalEmailAddress">personalEmailAddress</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/customerprofiles_profile#personal_email_address CustomerprofilesProfile#personal_email_address}. |
+| <code><a href="#@cdktn/provider-aws.customerprofilesProfile.CustomerprofilesProfileConfig.property.phoneNumber">phoneNumber</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/customerprofiles_profile#phone_number CustomerprofilesProfile#phone_number}. |
 | <code><a href="#@cdktn/provider-aws.customerprofilesProfile.CustomerprofilesProfileConfig.property.region">region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktn/provider-aws.customerprofilesProfile.CustomerprofilesProfileConfig.property.shippingAddress">shippingAddress</a></code> | <code><a href="#@cdktn/provider-aws.customerprofilesProfile.CustomerprofilesProfileShippingAddress">CustomerprofilesProfileShippingAddress</a></code> | shipping_address block. |
 
@@ -1845,7 +1845,7 @@ public readonly domainName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/customerprofiles_profile#domain_name CustomerprofilesProfile#domain_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/customerprofiles_profile#domain_name CustomerprofilesProfile#domain_name}.
 
 ---
 
@@ -1857,7 +1857,7 @@ public readonly accountNumber: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/customerprofiles_profile#account_number CustomerprofilesProfile#account_number}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/customerprofiles_profile#account_number CustomerprofilesProfile#account_number}.
 
 ---
 
@@ -1869,7 +1869,7 @@ public readonly additionalInformation: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/customerprofiles_profile#additional_information CustomerprofilesProfile#additional_information}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/customerprofiles_profile#additional_information CustomerprofilesProfile#additional_information}.
 
 ---
 
@@ -1883,7 +1883,7 @@ public readonly address: CustomerprofilesProfileAddress;
 
 address block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/customerprofiles_profile#address CustomerprofilesProfile#address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/customerprofiles_profile#address CustomerprofilesProfile#address}
 
 ---
 
@@ -1895,7 +1895,7 @@ public readonly attributes: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/customerprofiles_profile#attributes CustomerprofilesProfile#attributes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/customerprofiles_profile#attributes CustomerprofilesProfile#attributes}.
 
 ---
 
@@ -1909,7 +1909,7 @@ public readonly billingAddress: CustomerprofilesProfileBillingAddress;
 
 billing_address block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/customerprofiles_profile#billing_address CustomerprofilesProfile#billing_address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/customerprofiles_profile#billing_address CustomerprofilesProfile#billing_address}
 
 ---
 
@@ -1921,7 +1921,7 @@ public readonly birthDate: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/customerprofiles_profile#birth_date CustomerprofilesProfile#birth_date}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/customerprofiles_profile#birth_date CustomerprofilesProfile#birth_date}.
 
 ---
 
@@ -1933,7 +1933,7 @@ public readonly businessEmailAddress: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/customerprofiles_profile#business_email_address CustomerprofilesProfile#business_email_address}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/customerprofiles_profile#business_email_address CustomerprofilesProfile#business_email_address}.
 
 ---
 
@@ -1945,7 +1945,7 @@ public readonly businessName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/customerprofiles_profile#business_name CustomerprofilesProfile#business_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/customerprofiles_profile#business_name CustomerprofilesProfile#business_name}.
 
 ---
 
@@ -1957,7 +1957,7 @@ public readonly businessPhoneNumber: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/customerprofiles_profile#business_phone_number CustomerprofilesProfile#business_phone_number}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/customerprofiles_profile#business_phone_number CustomerprofilesProfile#business_phone_number}.
 
 ---
 
@@ -1969,7 +1969,7 @@ public readonly emailAddress: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/customerprofiles_profile#email_address CustomerprofilesProfile#email_address}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/customerprofiles_profile#email_address CustomerprofilesProfile#email_address}.
 
 ---
 
@@ -1981,7 +1981,7 @@ public readonly firstName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/customerprofiles_profile#first_name CustomerprofilesProfile#first_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/customerprofiles_profile#first_name CustomerprofilesProfile#first_name}.
 
 ---
 
@@ -1993,7 +1993,7 @@ public readonly genderString: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/customerprofiles_profile#gender_string CustomerprofilesProfile#gender_string}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/customerprofiles_profile#gender_string CustomerprofilesProfile#gender_string}.
 
 ---
 
@@ -2005,7 +2005,7 @@ public readonly homePhoneNumber: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/customerprofiles_profile#home_phone_number CustomerprofilesProfile#home_phone_number}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/customerprofiles_profile#home_phone_number CustomerprofilesProfile#home_phone_number}.
 
 ---
 
@@ -2017,7 +2017,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/customerprofiles_profile#id CustomerprofilesProfile#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/customerprofiles_profile#id CustomerprofilesProfile#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2032,7 +2032,7 @@ public readonly lastName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/customerprofiles_profile#last_name CustomerprofilesProfile#last_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/customerprofiles_profile#last_name CustomerprofilesProfile#last_name}.
 
 ---
 
@@ -2046,7 +2046,7 @@ public readonly mailingAddress: CustomerprofilesProfileMailingAddress;
 
 mailing_address block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/customerprofiles_profile#mailing_address CustomerprofilesProfile#mailing_address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/customerprofiles_profile#mailing_address CustomerprofilesProfile#mailing_address}
 
 ---
 
@@ -2058,7 +2058,7 @@ public readonly middleName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/customerprofiles_profile#middle_name CustomerprofilesProfile#middle_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/customerprofiles_profile#middle_name CustomerprofilesProfile#middle_name}.
 
 ---
 
@@ -2070,7 +2070,7 @@ public readonly mobilePhoneNumber: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/customerprofiles_profile#mobile_phone_number CustomerprofilesProfile#mobile_phone_number}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/customerprofiles_profile#mobile_phone_number CustomerprofilesProfile#mobile_phone_number}.
 
 ---
 
@@ -2082,7 +2082,7 @@ public readonly partyTypeString: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/customerprofiles_profile#party_type_string CustomerprofilesProfile#party_type_string}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/customerprofiles_profile#party_type_string CustomerprofilesProfile#party_type_string}.
 
 ---
 
@@ -2094,7 +2094,7 @@ public readonly personalEmailAddress: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/customerprofiles_profile#personal_email_address CustomerprofilesProfile#personal_email_address}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/customerprofiles_profile#personal_email_address CustomerprofilesProfile#personal_email_address}.
 
 ---
 
@@ -2106,7 +2106,7 @@ public readonly phoneNumber: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/customerprofiles_profile#phone_number CustomerprofilesProfile#phone_number}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/customerprofiles_profile#phone_number CustomerprofilesProfile#phone_number}.
 
 ---
 
@@ -2120,7 +2120,7 @@ public readonly region: string;
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/customerprofiles_profile#region CustomerprofilesProfile#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/customerprofiles_profile#region CustomerprofilesProfile#region}
 
 ---
 
@@ -2134,7 +2134,7 @@ public readonly shippingAddress: CustomerprofilesProfileShippingAddress;
 
 shipping_address block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/customerprofiles_profile#shipping_address CustomerprofilesProfile#shipping_address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/customerprofiles_profile#shipping_address CustomerprofilesProfile#shipping_address}
 
 ---
 
@@ -2152,16 +2152,16 @@ const customerprofilesProfileMailingAddress: customerprofilesProfile.Customerpro
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.customerprofilesProfile.CustomerprofilesProfileMailingAddress.property.address1">address1</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/customerprofiles_profile#address_1 CustomerprofilesProfile#address_1}. |
-| <code><a href="#@cdktn/provider-aws.customerprofilesProfile.CustomerprofilesProfileMailingAddress.property.address2">address2</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/customerprofiles_profile#address_2 CustomerprofilesProfile#address_2}. |
-| <code><a href="#@cdktn/provider-aws.customerprofilesProfile.CustomerprofilesProfileMailingAddress.property.address3">address3</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/customerprofiles_profile#address_3 CustomerprofilesProfile#address_3}. |
-| <code><a href="#@cdktn/provider-aws.customerprofilesProfile.CustomerprofilesProfileMailingAddress.property.address4">address4</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/customerprofiles_profile#address_4 CustomerprofilesProfile#address_4}. |
-| <code><a href="#@cdktn/provider-aws.customerprofilesProfile.CustomerprofilesProfileMailingAddress.property.city">city</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/customerprofiles_profile#city CustomerprofilesProfile#city}. |
-| <code><a href="#@cdktn/provider-aws.customerprofilesProfile.CustomerprofilesProfileMailingAddress.property.country">country</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/customerprofiles_profile#country CustomerprofilesProfile#country}. |
-| <code><a href="#@cdktn/provider-aws.customerprofilesProfile.CustomerprofilesProfileMailingAddress.property.county">county</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/customerprofiles_profile#county CustomerprofilesProfile#county}. |
-| <code><a href="#@cdktn/provider-aws.customerprofilesProfile.CustomerprofilesProfileMailingAddress.property.postalCode">postalCode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/customerprofiles_profile#postal_code CustomerprofilesProfile#postal_code}. |
-| <code><a href="#@cdktn/provider-aws.customerprofilesProfile.CustomerprofilesProfileMailingAddress.property.province">province</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/customerprofiles_profile#province CustomerprofilesProfile#province}. |
-| <code><a href="#@cdktn/provider-aws.customerprofilesProfile.CustomerprofilesProfileMailingAddress.property.state">state</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/customerprofiles_profile#state CustomerprofilesProfile#state}. |
+| <code><a href="#@cdktn/provider-aws.customerprofilesProfile.CustomerprofilesProfileMailingAddress.property.address1">address1</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/customerprofiles_profile#address_1 CustomerprofilesProfile#address_1}. |
+| <code><a href="#@cdktn/provider-aws.customerprofilesProfile.CustomerprofilesProfileMailingAddress.property.address2">address2</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/customerprofiles_profile#address_2 CustomerprofilesProfile#address_2}. |
+| <code><a href="#@cdktn/provider-aws.customerprofilesProfile.CustomerprofilesProfileMailingAddress.property.address3">address3</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/customerprofiles_profile#address_3 CustomerprofilesProfile#address_3}. |
+| <code><a href="#@cdktn/provider-aws.customerprofilesProfile.CustomerprofilesProfileMailingAddress.property.address4">address4</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/customerprofiles_profile#address_4 CustomerprofilesProfile#address_4}. |
+| <code><a href="#@cdktn/provider-aws.customerprofilesProfile.CustomerprofilesProfileMailingAddress.property.city">city</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/customerprofiles_profile#city CustomerprofilesProfile#city}. |
+| <code><a href="#@cdktn/provider-aws.customerprofilesProfile.CustomerprofilesProfileMailingAddress.property.country">country</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/customerprofiles_profile#country CustomerprofilesProfile#country}. |
+| <code><a href="#@cdktn/provider-aws.customerprofilesProfile.CustomerprofilesProfileMailingAddress.property.county">county</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/customerprofiles_profile#county CustomerprofilesProfile#county}. |
+| <code><a href="#@cdktn/provider-aws.customerprofilesProfile.CustomerprofilesProfileMailingAddress.property.postalCode">postalCode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/customerprofiles_profile#postal_code CustomerprofilesProfile#postal_code}. |
+| <code><a href="#@cdktn/provider-aws.customerprofilesProfile.CustomerprofilesProfileMailingAddress.property.province">province</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/customerprofiles_profile#province CustomerprofilesProfile#province}. |
+| <code><a href="#@cdktn/provider-aws.customerprofilesProfile.CustomerprofilesProfileMailingAddress.property.state">state</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/customerprofiles_profile#state CustomerprofilesProfile#state}. |
 
 ---
 
@@ -2173,7 +2173,7 @@ public readonly address1: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/customerprofiles_profile#address_1 CustomerprofilesProfile#address_1}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/customerprofiles_profile#address_1 CustomerprofilesProfile#address_1}.
 
 ---
 
@@ -2185,7 +2185,7 @@ public readonly address2: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/customerprofiles_profile#address_2 CustomerprofilesProfile#address_2}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/customerprofiles_profile#address_2 CustomerprofilesProfile#address_2}.
 
 ---
 
@@ -2197,7 +2197,7 @@ public readonly address3: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/customerprofiles_profile#address_3 CustomerprofilesProfile#address_3}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/customerprofiles_profile#address_3 CustomerprofilesProfile#address_3}.
 
 ---
 
@@ -2209,7 +2209,7 @@ public readonly address4: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/customerprofiles_profile#address_4 CustomerprofilesProfile#address_4}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/customerprofiles_profile#address_4 CustomerprofilesProfile#address_4}.
 
 ---
 
@@ -2221,7 +2221,7 @@ public readonly city: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/customerprofiles_profile#city CustomerprofilesProfile#city}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/customerprofiles_profile#city CustomerprofilesProfile#city}.
 
 ---
 
@@ -2233,7 +2233,7 @@ public readonly country: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/customerprofiles_profile#country CustomerprofilesProfile#country}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/customerprofiles_profile#country CustomerprofilesProfile#country}.
 
 ---
 
@@ -2245,7 +2245,7 @@ public readonly county: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/customerprofiles_profile#county CustomerprofilesProfile#county}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/customerprofiles_profile#county CustomerprofilesProfile#county}.
 
 ---
 
@@ -2257,7 +2257,7 @@ public readonly postalCode: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/customerprofiles_profile#postal_code CustomerprofilesProfile#postal_code}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/customerprofiles_profile#postal_code CustomerprofilesProfile#postal_code}.
 
 ---
 
@@ -2269,7 +2269,7 @@ public readonly province: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/customerprofiles_profile#province CustomerprofilesProfile#province}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/customerprofiles_profile#province CustomerprofilesProfile#province}.
 
 ---
 
@@ -2281,7 +2281,7 @@ public readonly state: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/customerprofiles_profile#state CustomerprofilesProfile#state}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/customerprofiles_profile#state CustomerprofilesProfile#state}.
 
 ---
 
@@ -2299,16 +2299,16 @@ const customerprofilesProfileShippingAddress: customerprofilesProfile.Customerpr
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.customerprofilesProfile.CustomerprofilesProfileShippingAddress.property.address1">address1</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/customerprofiles_profile#address_1 CustomerprofilesProfile#address_1}. |
-| <code><a href="#@cdktn/provider-aws.customerprofilesProfile.CustomerprofilesProfileShippingAddress.property.address2">address2</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/customerprofiles_profile#address_2 CustomerprofilesProfile#address_2}. |
-| <code><a href="#@cdktn/provider-aws.customerprofilesProfile.CustomerprofilesProfileShippingAddress.property.address3">address3</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/customerprofiles_profile#address_3 CustomerprofilesProfile#address_3}. |
-| <code><a href="#@cdktn/provider-aws.customerprofilesProfile.CustomerprofilesProfileShippingAddress.property.address4">address4</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/customerprofiles_profile#address_4 CustomerprofilesProfile#address_4}. |
-| <code><a href="#@cdktn/provider-aws.customerprofilesProfile.CustomerprofilesProfileShippingAddress.property.city">city</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/customerprofiles_profile#city CustomerprofilesProfile#city}. |
-| <code><a href="#@cdktn/provider-aws.customerprofilesProfile.CustomerprofilesProfileShippingAddress.property.country">country</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/customerprofiles_profile#country CustomerprofilesProfile#country}. |
-| <code><a href="#@cdktn/provider-aws.customerprofilesProfile.CustomerprofilesProfileShippingAddress.property.county">county</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/customerprofiles_profile#county CustomerprofilesProfile#county}. |
-| <code><a href="#@cdktn/provider-aws.customerprofilesProfile.CustomerprofilesProfileShippingAddress.property.postalCode">postalCode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/customerprofiles_profile#postal_code CustomerprofilesProfile#postal_code}. |
-| <code><a href="#@cdktn/provider-aws.customerprofilesProfile.CustomerprofilesProfileShippingAddress.property.province">province</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/customerprofiles_profile#province CustomerprofilesProfile#province}. |
-| <code><a href="#@cdktn/provider-aws.customerprofilesProfile.CustomerprofilesProfileShippingAddress.property.state">state</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/customerprofiles_profile#state CustomerprofilesProfile#state}. |
+| <code><a href="#@cdktn/provider-aws.customerprofilesProfile.CustomerprofilesProfileShippingAddress.property.address1">address1</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/customerprofiles_profile#address_1 CustomerprofilesProfile#address_1}. |
+| <code><a href="#@cdktn/provider-aws.customerprofilesProfile.CustomerprofilesProfileShippingAddress.property.address2">address2</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/customerprofiles_profile#address_2 CustomerprofilesProfile#address_2}. |
+| <code><a href="#@cdktn/provider-aws.customerprofilesProfile.CustomerprofilesProfileShippingAddress.property.address3">address3</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/customerprofiles_profile#address_3 CustomerprofilesProfile#address_3}. |
+| <code><a href="#@cdktn/provider-aws.customerprofilesProfile.CustomerprofilesProfileShippingAddress.property.address4">address4</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/customerprofiles_profile#address_4 CustomerprofilesProfile#address_4}. |
+| <code><a href="#@cdktn/provider-aws.customerprofilesProfile.CustomerprofilesProfileShippingAddress.property.city">city</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/customerprofiles_profile#city CustomerprofilesProfile#city}. |
+| <code><a href="#@cdktn/provider-aws.customerprofilesProfile.CustomerprofilesProfileShippingAddress.property.country">country</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/customerprofiles_profile#country CustomerprofilesProfile#country}. |
+| <code><a href="#@cdktn/provider-aws.customerprofilesProfile.CustomerprofilesProfileShippingAddress.property.county">county</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/customerprofiles_profile#county CustomerprofilesProfile#county}. |
+| <code><a href="#@cdktn/provider-aws.customerprofilesProfile.CustomerprofilesProfileShippingAddress.property.postalCode">postalCode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/customerprofiles_profile#postal_code CustomerprofilesProfile#postal_code}. |
+| <code><a href="#@cdktn/provider-aws.customerprofilesProfile.CustomerprofilesProfileShippingAddress.property.province">province</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/customerprofiles_profile#province CustomerprofilesProfile#province}. |
+| <code><a href="#@cdktn/provider-aws.customerprofilesProfile.CustomerprofilesProfileShippingAddress.property.state">state</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/customerprofiles_profile#state CustomerprofilesProfile#state}. |
 
 ---
 
@@ -2320,7 +2320,7 @@ public readonly address1: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/customerprofiles_profile#address_1 CustomerprofilesProfile#address_1}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/customerprofiles_profile#address_1 CustomerprofilesProfile#address_1}.
 
 ---
 
@@ -2332,7 +2332,7 @@ public readonly address2: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/customerprofiles_profile#address_2 CustomerprofilesProfile#address_2}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/customerprofiles_profile#address_2 CustomerprofilesProfile#address_2}.
 
 ---
 
@@ -2344,7 +2344,7 @@ public readonly address3: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/customerprofiles_profile#address_3 CustomerprofilesProfile#address_3}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/customerprofiles_profile#address_3 CustomerprofilesProfile#address_3}.
 
 ---
 
@@ -2356,7 +2356,7 @@ public readonly address4: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/customerprofiles_profile#address_4 CustomerprofilesProfile#address_4}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/customerprofiles_profile#address_4 CustomerprofilesProfile#address_4}.
 
 ---
 
@@ -2368,7 +2368,7 @@ public readonly city: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/customerprofiles_profile#city CustomerprofilesProfile#city}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/customerprofiles_profile#city CustomerprofilesProfile#city}.
 
 ---
 
@@ -2380,7 +2380,7 @@ public readonly country: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/customerprofiles_profile#country CustomerprofilesProfile#country}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/customerprofiles_profile#country CustomerprofilesProfile#country}.
 
 ---
 
@@ -2392,7 +2392,7 @@ public readonly county: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/customerprofiles_profile#county CustomerprofilesProfile#county}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/customerprofiles_profile#county CustomerprofilesProfile#county}.
 
 ---
 
@@ -2404,7 +2404,7 @@ public readonly postalCode: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/customerprofiles_profile#postal_code CustomerprofilesProfile#postal_code}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/customerprofiles_profile#postal_code CustomerprofilesProfile#postal_code}.
 
 ---
 
@@ -2416,7 +2416,7 @@ public readonly province: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/customerprofiles_profile#province CustomerprofilesProfile#province}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/customerprofiles_profile#province CustomerprofilesProfile#province}.
 
 ---
 
@@ -2428,7 +2428,7 @@ public readonly state: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/customerprofiles_profile#state CustomerprofilesProfile#state}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/customerprofiles_profile#state CustomerprofilesProfile#state}.
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### DataAwsEcsTaskDefinition <a name="DataAwsEcsTaskDefinition" id="@cdktn/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinition"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/data-sources/ecs_task_definition aws_ecs_task_definition}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/data-sources/ecs_task_definition aws_ecs_task_definition}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinition.Initializer"></a>
 
@@ -401,7 +401,7 @@ The construct id used in the generated config for the DataAwsEcsTaskDefinition t
 
 The id of the existing DataAwsEcsTaskDefinition that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/data-sources/ecs_task_definition#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/data-sources/ecs_task_definition#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -881,8 +881,8 @@ const dataAwsEcsTaskDefinitionConfig: dataAwsEcsTaskDefinition.DataAwsEcsTaskDef
 | <code><a href="#@cdktn/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinitionConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinitionConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinitionConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinitionConfig.property.taskDefinition">taskDefinition</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/data-sources/ecs_task_definition#task_definition DataAwsEcsTaskDefinition#task_definition}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinitionConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/data-sources/ecs_task_definition#id DataAwsEcsTaskDefinition#id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinitionConfig.property.taskDefinition">taskDefinition</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/data-sources/ecs_task_definition#task_definition DataAwsEcsTaskDefinition#task_definition}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinitionConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/data-sources/ecs_task_definition#id DataAwsEcsTaskDefinition#id}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinitionConfig.property.region">region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -965,7 +965,7 @@ public readonly taskDefinition: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/data-sources/ecs_task_definition#task_definition DataAwsEcsTaskDefinition#task_definition}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/data-sources/ecs_task_definition#task_definition DataAwsEcsTaskDefinition#task_definition}.
 
 ---
 
@@ -977,7 +977,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/data-sources/ecs_task_definition#id DataAwsEcsTaskDefinition#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/data-sources/ecs_task_definition#id DataAwsEcsTaskDefinition#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -994,7 +994,7 @@ public readonly region: string;
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/data-sources/ecs_task_definition#region DataAwsEcsTaskDefinition#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/data-sources/ecs_task_definition#region DataAwsEcsTaskDefinition#region}
 
 ---
 
@@ -1105,6 +1105,17 @@ const dataAwsEcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfiguration: dat
 import { dataAwsEcsTaskDefinition } from '@cdktn/provider-aws'
 
 const dataAwsEcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfigurationAuthorizationConfig: dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfigurationAuthorizationConfig = { ... }
+```
+
+
+### DataAwsEcsTaskDefinitionVolumeS3FilesVolumeConfiguration <a name="DataAwsEcsTaskDefinitionVolumeS3FilesVolumeConfiguration" id="@cdktn/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinitionVolumeS3FilesVolumeConfiguration"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinitionVolumeS3FilesVolumeConfiguration.Initializer"></a>
+
+```typescript
+import { dataAwsEcsTaskDefinition } from '@cdktn/provider-aws'
+
+const dataAwsEcsTaskDefinitionVolumeS3FilesVolumeConfiguration: dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinitionVolumeS3FilesVolumeConfiguration = { ... }
 ```
 
 
@@ -5512,6 +5523,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinitionVolumeOutputReference.property.fsxWindowsFileServerVolumeConfiguration">fsxWindowsFileServerVolumeConfiguration</a></code> | <code><a href="#@cdktn/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfigurationList">DataAwsEcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfigurationList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinitionVolumeOutputReference.property.hostPath">hostPath</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinitionVolumeOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinitionVolumeOutputReference.property.s3FilesVolumeConfiguration">s3FilesVolumeConfiguration</a></code> | <code><a href="#@cdktn/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinitionVolumeS3FilesVolumeConfigurationList">DataAwsEcsTaskDefinitionVolumeS3FilesVolumeConfigurationList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinitionVolumeOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinitionVolume">DataAwsEcsTaskDefinitionVolume</a></code> | *No description.* |
 
 ---
@@ -5600,6 +5612,16 @@ public readonly name: string;
 
 ---
 
+##### `s3FilesVolumeConfiguration`<sup>Required</sup> <a name="s3FilesVolumeConfiguration" id="@cdktn/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinitionVolumeOutputReference.property.s3FilesVolumeConfiguration"></a>
+
+```typescript
+public readonly s3FilesVolumeConfiguration: DataAwsEcsTaskDefinitionVolumeS3FilesVolumeConfigurationList;
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinitionVolumeS3FilesVolumeConfigurationList">DataAwsEcsTaskDefinitionVolumeS3FilesVolumeConfigurationList</a>
+
+---
+
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinitionVolumeOutputReference.property.internalValue"></a>
 
 ```typescript
@@ -5607,6 +5629,466 @@ public readonly internalValue: DataAwsEcsTaskDefinitionVolume;
 ```
 
 - *Type:* <a href="#@cdktn/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinitionVolume">DataAwsEcsTaskDefinitionVolume</a>
+
+---
+
+
+### DataAwsEcsTaskDefinitionVolumeS3FilesVolumeConfigurationList <a name="DataAwsEcsTaskDefinitionVolumeS3FilesVolumeConfigurationList" id="@cdktn/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinitionVolumeS3FilesVolumeConfigurationList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinitionVolumeS3FilesVolumeConfigurationList.Initializer"></a>
+
+```typescript
+import { dataAwsEcsTaskDefinition } from '@cdktn/provider-aws'
+
+new dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinitionVolumeS3FilesVolumeConfigurationList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinitionVolumeS3FilesVolumeConfigurationList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinitionVolumeS3FilesVolumeConfigurationList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinitionVolumeS3FilesVolumeConfigurationList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinitionVolumeS3FilesVolumeConfigurationList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinitionVolumeS3FilesVolumeConfigurationList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinitionVolumeS3FilesVolumeConfigurationList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinitionVolumeS3FilesVolumeConfigurationList.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinitionVolumeS3FilesVolumeConfigurationList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinitionVolumeS3FilesVolumeConfigurationList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinitionVolumeS3FilesVolumeConfigurationList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinitionVolumeS3FilesVolumeConfigurationList.get">get</a></code> | *No description.* |
+
+---
+
+##### `allWithMapKey` <a name="allWithMapKey" id="@cdktn/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinitionVolumeS3FilesVolumeConfigurationList.allWithMapKey"></a>
+
+```typescript
+public allWithMapKey(mapKeyAttributeName: string): DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinitionVolumeS3FilesVolumeConfigurationList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* string
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinitionVolumeS3FilesVolumeConfigurationList.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinitionVolumeS3FilesVolumeConfigurationList.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinitionVolumeS3FilesVolumeConfigurationList.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinitionVolumeS3FilesVolumeConfigurationList.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinitionVolumeS3FilesVolumeConfigurationList.get"></a>
+
+```typescript
+public get(index: number): DataAwsEcsTaskDefinitionVolumeS3FilesVolumeConfigurationOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinitionVolumeS3FilesVolumeConfigurationList.get.parameter.index"></a>
+
+- *Type:* number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinitionVolumeS3FilesVolumeConfigurationList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinitionVolumeS3FilesVolumeConfigurationList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinitionVolumeS3FilesVolumeConfigurationList.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinitionVolumeS3FilesVolumeConfigurationList.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+
+### DataAwsEcsTaskDefinitionVolumeS3FilesVolumeConfigurationOutputReference <a name="DataAwsEcsTaskDefinitionVolumeS3FilesVolumeConfigurationOutputReference" id="@cdktn/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinitionVolumeS3FilesVolumeConfigurationOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinitionVolumeS3FilesVolumeConfigurationOutputReference.Initializer"></a>
+
+```typescript
+import { dataAwsEcsTaskDefinition } from '@cdktn/provider-aws'
+
+new dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinitionVolumeS3FilesVolumeConfigurationOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinitionVolumeS3FilesVolumeConfigurationOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinitionVolumeS3FilesVolumeConfigurationOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinitionVolumeS3FilesVolumeConfigurationOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinitionVolumeS3FilesVolumeConfigurationOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinitionVolumeS3FilesVolumeConfigurationOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinitionVolumeS3FilesVolumeConfigurationOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinitionVolumeS3FilesVolumeConfigurationOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinitionVolumeS3FilesVolumeConfigurationOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinitionVolumeS3FilesVolumeConfigurationOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinitionVolumeS3FilesVolumeConfigurationOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinitionVolumeS3FilesVolumeConfigurationOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinitionVolumeS3FilesVolumeConfigurationOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinitionVolumeS3FilesVolumeConfigurationOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinitionVolumeS3FilesVolumeConfigurationOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinitionVolumeS3FilesVolumeConfigurationOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinitionVolumeS3FilesVolumeConfigurationOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinitionVolumeS3FilesVolumeConfigurationOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinitionVolumeS3FilesVolumeConfigurationOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinitionVolumeS3FilesVolumeConfigurationOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinitionVolumeS3FilesVolumeConfigurationOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinitionVolumeS3FilesVolumeConfigurationOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinitionVolumeS3FilesVolumeConfigurationOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinitionVolumeS3FilesVolumeConfigurationOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinitionVolumeS3FilesVolumeConfigurationOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinitionVolumeS3FilesVolumeConfigurationOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinitionVolumeS3FilesVolumeConfigurationOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinitionVolumeS3FilesVolumeConfigurationOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinitionVolumeS3FilesVolumeConfigurationOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinitionVolumeS3FilesVolumeConfigurationOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinitionVolumeS3FilesVolumeConfigurationOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinitionVolumeS3FilesVolumeConfigurationOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinitionVolumeS3FilesVolumeConfigurationOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinitionVolumeS3FilesVolumeConfigurationOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinitionVolumeS3FilesVolumeConfigurationOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinitionVolumeS3FilesVolumeConfigurationOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinitionVolumeS3FilesVolumeConfigurationOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinitionVolumeS3FilesVolumeConfigurationOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinitionVolumeS3FilesVolumeConfigurationOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinitionVolumeS3FilesVolumeConfigurationOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinitionVolumeS3FilesVolumeConfigurationOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinitionVolumeS3FilesVolumeConfigurationOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinitionVolumeS3FilesVolumeConfigurationOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinitionVolumeS3FilesVolumeConfigurationOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinitionVolumeS3FilesVolumeConfigurationOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinitionVolumeS3FilesVolumeConfigurationOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinitionVolumeS3FilesVolumeConfigurationOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinitionVolumeS3FilesVolumeConfigurationOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinitionVolumeS3FilesVolumeConfigurationOutputReference.property.accessPointArn">accessPointArn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinitionVolumeS3FilesVolumeConfigurationOutputReference.property.fileSystemArn">fileSystemArn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinitionVolumeS3FilesVolumeConfigurationOutputReference.property.rootDirectory">rootDirectory</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinitionVolumeS3FilesVolumeConfigurationOutputReference.property.transitEncryptionPort">transitEncryptionPort</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinitionVolumeS3FilesVolumeConfigurationOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinitionVolumeS3FilesVolumeConfiguration">DataAwsEcsTaskDefinitionVolumeS3FilesVolumeConfiguration</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinitionVolumeS3FilesVolumeConfigurationOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinitionVolumeS3FilesVolumeConfigurationOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `accessPointArn`<sup>Required</sup> <a name="accessPointArn" id="@cdktn/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinitionVolumeS3FilesVolumeConfigurationOutputReference.property.accessPointArn"></a>
+
+```typescript
+public readonly accessPointArn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `fileSystemArn`<sup>Required</sup> <a name="fileSystemArn" id="@cdktn/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinitionVolumeS3FilesVolumeConfigurationOutputReference.property.fileSystemArn"></a>
+
+```typescript
+public readonly fileSystemArn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `rootDirectory`<sup>Required</sup> <a name="rootDirectory" id="@cdktn/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinitionVolumeS3FilesVolumeConfigurationOutputReference.property.rootDirectory"></a>
+
+```typescript
+public readonly rootDirectory: string;
+```
+
+- *Type:* string
+
+---
+
+##### `transitEncryptionPort`<sup>Required</sup> <a name="transitEncryptionPort" id="@cdktn/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinitionVolumeS3FilesVolumeConfigurationOutputReference.property.transitEncryptionPort"></a>
+
+```typescript
+public readonly transitEncryptionPort: number;
+```
+
+- *Type:* number
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinitionVolumeS3FilesVolumeConfigurationOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: DataAwsEcsTaskDefinitionVolumeS3FilesVolumeConfiguration;
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinitionVolumeS3FilesVolumeConfiguration">DataAwsEcsTaskDefinitionVolumeS3FilesVolumeConfiguration</a>
 
 ---
 

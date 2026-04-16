@@ -4,7 +4,7 @@
 
 ### AuditmanagerFramework <a name="AuditmanagerFramework" id="@cdktn/provider-aws.auditmanagerFramework.AuditmanagerFramework"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/auditmanager_framework aws_auditmanager_framework}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/auditmanager_framework aws_auditmanager_framework}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.auditmanagerFramework.AuditmanagerFramework.Initializer"></a>
 
@@ -41,12 +41,12 @@ auditmanagerFramework.AuditmanagerFramework(
 | <code><a href="#@cdktn/provider-aws.auditmanagerFramework.AuditmanagerFramework.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.auditmanagerFramework.AuditmanagerFramework.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.auditmanagerFramework.AuditmanagerFramework.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.auditmanagerFramework.AuditmanagerFramework.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/auditmanager_framework#name AuditmanagerFramework#name}. |
-| <code><a href="#@cdktn/provider-aws.auditmanagerFramework.AuditmanagerFramework.Initializer.parameter.complianceType">compliance_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/auditmanager_framework#compliance_type AuditmanagerFramework#compliance_type}. |
+| <code><a href="#@cdktn/provider-aws.auditmanagerFramework.AuditmanagerFramework.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/auditmanager_framework#name AuditmanagerFramework#name}. |
+| <code><a href="#@cdktn/provider-aws.auditmanagerFramework.AuditmanagerFramework.Initializer.parameter.complianceType">compliance_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/auditmanager_framework#compliance_type AuditmanagerFramework#compliance_type}. |
 | <code><a href="#@cdktn/provider-aws.auditmanagerFramework.AuditmanagerFramework.Initializer.parameter.controlSets">control_sets</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.auditmanagerFramework.AuditmanagerFrameworkControlSets">AuditmanagerFrameworkControlSets</a>]</code> | control_sets block. |
-| <code><a href="#@cdktn/provider-aws.auditmanagerFramework.AuditmanagerFramework.Initializer.parameter.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/auditmanager_framework#description AuditmanagerFramework#description}. |
+| <code><a href="#@cdktn/provider-aws.auditmanagerFramework.AuditmanagerFramework.Initializer.parameter.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/auditmanager_framework#description AuditmanagerFramework#description}. |
 | <code><a href="#@cdktn/provider-aws.auditmanagerFramework.AuditmanagerFramework.Initializer.parameter.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.auditmanagerFramework.AuditmanagerFramework.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/auditmanager_framework#tags AuditmanagerFramework#tags}. |
+| <code><a href="#@cdktn/provider-aws.auditmanagerFramework.AuditmanagerFramework.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/auditmanager_framework#tags AuditmanagerFramework#tags}. |
 
 ---
 
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/auditmanager_framework#name AuditmanagerFramework#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/auditmanager_framework#name AuditmanagerFramework#name}.
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/auditmanager_framework#compliance_type AuditmanagerFramework#compliance_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/auditmanager_framework#compliance_type AuditmanagerFramework#compliance_type}.
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 control_sets block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/auditmanager_framework#control_sets AuditmanagerFramework#control_sets}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/auditmanager_framework#control_sets AuditmanagerFramework#control_sets}
 
 ---
 
@@ -140,7 +140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/auditmanager_framework#description AuditmanagerFramework#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/auditmanager_framework#description AuditmanagerFramework#description}.
 
 ---
 
@@ -150,7 +150,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/auditmanager_framework#region AuditmanagerFramework#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/auditmanager_framework#region AuditmanagerFramework#region}
 
 ---
 
@@ -158,7 +158,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/auditmanager_framework#tags AuditmanagerFramework#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/auditmanager_framework#tags AuditmanagerFramework#tags}.
 
 ---
 
@@ -705,7 +705,7 @@ The construct id used in the generated config for the AuditmanagerFramework to i
 
 The id of the existing AuditmanagerFramework that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/auditmanager_framework#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/auditmanager_framework#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1111,12 +1111,12 @@ auditmanagerFramework.AuditmanagerFrameworkConfig(
 | <code><a href="#@cdktn/provider-aws.auditmanagerFramework.AuditmanagerFrameworkConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.auditmanagerFramework.AuditmanagerFrameworkConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.auditmanagerFramework.AuditmanagerFrameworkConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.auditmanagerFramework.AuditmanagerFrameworkConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/auditmanager_framework#name AuditmanagerFramework#name}. |
-| <code><a href="#@cdktn/provider-aws.auditmanagerFramework.AuditmanagerFrameworkConfig.property.complianceType">compliance_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/auditmanager_framework#compliance_type AuditmanagerFramework#compliance_type}. |
+| <code><a href="#@cdktn/provider-aws.auditmanagerFramework.AuditmanagerFrameworkConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/auditmanager_framework#name AuditmanagerFramework#name}. |
+| <code><a href="#@cdktn/provider-aws.auditmanagerFramework.AuditmanagerFrameworkConfig.property.complianceType">compliance_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/auditmanager_framework#compliance_type AuditmanagerFramework#compliance_type}. |
 | <code><a href="#@cdktn/provider-aws.auditmanagerFramework.AuditmanagerFrameworkConfig.property.controlSets">control_sets</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.auditmanagerFramework.AuditmanagerFrameworkControlSets">AuditmanagerFrameworkControlSets</a>]</code> | control_sets block. |
-| <code><a href="#@cdktn/provider-aws.auditmanagerFramework.AuditmanagerFrameworkConfig.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/auditmanager_framework#description AuditmanagerFramework#description}. |
+| <code><a href="#@cdktn/provider-aws.auditmanagerFramework.AuditmanagerFrameworkConfig.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/auditmanager_framework#description AuditmanagerFramework#description}. |
 | <code><a href="#@cdktn/provider-aws.auditmanagerFramework.AuditmanagerFrameworkConfig.property.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.auditmanagerFramework.AuditmanagerFrameworkConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/auditmanager_framework#tags AuditmanagerFramework#tags}. |
+| <code><a href="#@cdktn/provider-aws.auditmanagerFramework.AuditmanagerFrameworkConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/auditmanager_framework#tags AuditmanagerFramework#tags}. |
 
 ---
 
@@ -1198,7 +1198,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/auditmanager_framework#name AuditmanagerFramework#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/auditmanager_framework#name AuditmanagerFramework#name}.
 
 ---
 
@@ -1210,7 +1210,7 @@ compliance_type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/auditmanager_framework#compliance_type AuditmanagerFramework#compliance_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/auditmanager_framework#compliance_type AuditmanagerFramework#compliance_type}.
 
 ---
 
@@ -1224,7 +1224,7 @@ control_sets: IResolvable | typing.List[AuditmanagerFrameworkControlSets]
 
 control_sets block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/auditmanager_framework#control_sets AuditmanagerFramework#control_sets}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/auditmanager_framework#control_sets AuditmanagerFramework#control_sets}
 
 ---
 
@@ -1236,7 +1236,7 @@ description: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/auditmanager_framework#description AuditmanagerFramework#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/auditmanager_framework#description AuditmanagerFramework#description}.
 
 ---
 
@@ -1250,7 +1250,7 @@ region: str
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/auditmanager_framework#region AuditmanagerFramework#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/auditmanager_framework#region AuditmanagerFramework#region}
 
 ---
 
@@ -1262,7 +1262,7 @@ tags: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/auditmanager_framework#tags AuditmanagerFramework#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/auditmanager_framework#tags AuditmanagerFramework#tags}.
 
 ---
 
@@ -1283,7 +1283,7 @@ auditmanagerFramework.AuditmanagerFrameworkControlSets(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.auditmanagerFramework.AuditmanagerFrameworkControlSets.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/auditmanager_framework#name AuditmanagerFramework#name}. |
+| <code><a href="#@cdktn/provider-aws.auditmanagerFramework.AuditmanagerFrameworkControlSets.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/auditmanager_framework#name AuditmanagerFramework#name}. |
 | <code><a href="#@cdktn/provider-aws.auditmanagerFramework.AuditmanagerFrameworkControlSets.property.controls">controls</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.auditmanagerFramework.AuditmanagerFrameworkControlSetsControls">AuditmanagerFrameworkControlSetsControls</a>]</code> | controls block. |
 
 ---
@@ -1296,7 +1296,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/auditmanager_framework#name AuditmanagerFramework#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/auditmanager_framework#name AuditmanagerFramework#name}.
 
 ---
 
@@ -1310,7 +1310,7 @@ controls: IResolvable | typing.List[AuditmanagerFrameworkControlSetsControls]
 
 controls block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/auditmanager_framework#controls AuditmanagerFramework#controls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/auditmanager_framework#controls AuditmanagerFramework#controls}
 
 ---
 
@@ -1330,7 +1330,7 @@ auditmanagerFramework.AuditmanagerFrameworkControlSetsControls(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.auditmanagerFramework.AuditmanagerFrameworkControlSetsControls.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/auditmanager_framework#id AuditmanagerFramework#id}. |
+| <code><a href="#@cdktn/provider-aws.auditmanagerFramework.AuditmanagerFrameworkControlSetsControls.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/auditmanager_framework#id AuditmanagerFramework#id}. |
 
 ---
 
@@ -1342,7 +1342,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/auditmanager_framework#id AuditmanagerFramework#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/auditmanager_framework#id AuditmanagerFramework#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

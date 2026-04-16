@@ -4,7 +4,7 @@
 
 ### OpensearchDomain <a name="OpensearchDomain" id="@cdktn/provider-aws.opensearchDomain.OpensearchDomain"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain aws_opensearch_domain}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain aws_opensearch_domain}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.opensearchDomain.OpensearchDomain.Initializer"></a>
 
@@ -79,6 +79,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomain.putAutoTuneOptions">PutAutoTuneOptions</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomain.putClusterConfig">PutClusterConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomain.putCognitoOptions">PutCognitoOptions</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomain.putDeploymentStrategyOptions">PutDeploymentStrategyOptions</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomain.putDomainEndpointOptions">PutDomainEndpointOptions</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomain.putEbsOptions">PutEbsOptions</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomain.putEncryptAtRest">PutEncryptAtRest</a></code> | *No description.* |
@@ -97,6 +98,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomain.resetAutoTuneOptions">ResetAutoTuneOptions</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomain.resetClusterConfig">ResetClusterConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomain.resetCognitoOptions">ResetCognitoOptions</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomain.resetDeploymentStrategyOptions">ResetDeploymentStrategyOptions</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomain.resetDomainEndpointOptions">ResetDomainEndpointOptions</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomain.resetEbsOptions">ResetEbsOptions</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomain.resetEncryptAtRest">ResetEncryptAtRest</a></code> | *No description.* |
@@ -486,6 +488,18 @@ func PutCognitoOptions(value OpensearchDomainCognitoOptions)
 
 ---
 
+##### `PutDeploymentStrategyOptions` <a name="PutDeploymentStrategyOptions" id="@cdktn/provider-aws.opensearchDomain.OpensearchDomain.putDeploymentStrategyOptions"></a>
+
+```go
+func PutDeploymentStrategyOptions(value OpensearchDomainDeploymentStrategyOptions)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.opensearchDomain.OpensearchDomain.putDeploymentStrategyOptions.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainDeploymentStrategyOptions">OpensearchDomainDeploymentStrategyOptions</a>
+
+---
+
 ##### `PutDomainEndpointOptions` <a name="PutDomainEndpointOptions" id="@cdktn/provider-aws.opensearchDomain.OpensearchDomain.putDomainEndpointOptions"></a>
 
 ```go
@@ -658,6 +672,12 @@ func ResetClusterConfig()
 
 ```go
 func ResetCognitoOptions()
+```
+
+##### `ResetDeploymentStrategyOptions` <a name="ResetDeploymentStrategyOptions" id="@cdktn/provider-aws.opensearchDomain.OpensearchDomain.resetDeploymentStrategyOptions"></a>
+
+```go
+func ResetDeploymentStrategyOptions()
 ```
 
 ##### `ResetDomainEndpointOptions` <a name="ResetDomainEndpointOptions" id="@cdktn/provider-aws.opensearchDomain.OpensearchDomain.resetDomainEndpointOptions"></a>
@@ -865,7 +885,7 @@ The construct id used in the generated config for the OpensearchDomain to import
 
 The id of the existing OpensearchDomain that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -903,6 +923,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0
 | <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomain.property.cognitoOptions">CognitoOptions</a></code> | <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainCognitoOptionsOutputReference">OpensearchDomainCognitoOptionsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomain.property.dashboardEndpoint">DashboardEndpoint</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomain.property.dashboardEndpointV2">DashboardEndpointV2</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomain.property.deploymentStrategyOptions">DeploymentStrategyOptions</a></code> | <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainDeploymentStrategyOptionsOutputReference">OpensearchDomainDeploymentStrategyOptionsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomain.property.domainEndpointOptions">DomainEndpointOptions</a></code> | <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainDomainEndpointOptionsOutputReference">OpensearchDomainDomainEndpointOptionsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomain.property.domainEndpointV2HostedZoneId">DomainEndpointV2HostedZoneId</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomain.property.domainId">DomainId</a></code> | <code>*string</code> | *No description.* |
@@ -925,6 +946,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0
 | <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomain.property.autoTuneOptionsInput">AutoTuneOptionsInput</a></code> | <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainAutoTuneOptions">OpensearchDomainAutoTuneOptions</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomain.property.clusterConfigInput">ClusterConfigInput</a></code> | <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainClusterConfig">OpensearchDomainClusterConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomain.property.cognitoOptionsInput">CognitoOptionsInput</a></code> | <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainCognitoOptions">OpensearchDomainCognitoOptions</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomain.property.deploymentStrategyOptionsInput">DeploymentStrategyOptionsInput</a></code> | <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainDeploymentStrategyOptions">OpensearchDomainDeploymentStrategyOptions</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomain.property.domainEndpointOptionsInput">DomainEndpointOptionsInput</a></code> | <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainDomainEndpointOptions">OpensearchDomainDomainEndpointOptions</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomain.property.domainNameInput">DomainNameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomain.property.ebsOptionsInput">EbsOptionsInput</a></code> | <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainEbsOptions">OpensearchDomainEbsOptions</a></code> | *No description.* |
@@ -1177,6 +1199,16 @@ func DashboardEndpointV2() *string
 
 ---
 
+##### `DeploymentStrategyOptions`<sup>Required</sup> <a name="DeploymentStrategyOptions" id="@cdktn/provider-aws.opensearchDomain.OpensearchDomain.property.deploymentStrategyOptions"></a>
+
+```go
+func DeploymentStrategyOptions() OpensearchDomainDeploymentStrategyOptionsOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainDeploymentStrategyOptionsOutputReference">OpensearchDomainDeploymentStrategyOptionsOutputReference</a>
+
+---
+
 ##### `DomainEndpointOptions`<sup>Required</sup> <a name="DomainEndpointOptions" id="@cdktn/provider-aws.opensearchDomain.OpensearchDomain.property.domainEndpointOptions"></a>
 
 ```go
@@ -1394,6 +1426,16 @@ func CognitoOptionsInput() OpensearchDomainCognitoOptions
 ```
 
 - *Type:* <a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainCognitoOptions">OpensearchDomainCognitoOptions</a>
+
+---
+
+##### `DeploymentStrategyOptionsInput`<sup>Optional</sup> <a name="DeploymentStrategyOptionsInput" id="@cdktn/provider-aws.opensearchDomain.OpensearchDomain.property.deploymentStrategyOptionsInput"></a>
+
+```go
+func DeploymentStrategyOptionsInput() OpensearchDomainDeploymentStrategyOptions
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainDeploymentStrategyOptions">OpensearchDomainDeploymentStrategyOptions</a>
 
 ---
 
@@ -1707,9 +1749,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/opensearchdomain"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainAdvancedSecurityOptions.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#enabled OpensearchDomain#enabled}. |
-| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainAdvancedSecurityOptions.property.anonymousAuthEnabled">AnonymousAuthEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#anonymous_auth_enabled OpensearchDomain#anonymous_auth_enabled}. |
-| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainAdvancedSecurityOptions.property.internalUserDatabaseEnabled">InternalUserDatabaseEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#internal_user_database_enabled OpensearchDomain#internal_user_database_enabled}. |
+| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainAdvancedSecurityOptions.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#enabled OpensearchDomain#enabled}. |
+| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainAdvancedSecurityOptions.property.anonymousAuthEnabled">AnonymousAuthEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#anonymous_auth_enabled OpensearchDomain#anonymous_auth_enabled}. |
+| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainAdvancedSecurityOptions.property.internalUserDatabaseEnabled">InternalUserDatabaseEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#internal_user_database_enabled OpensearchDomain#internal_user_database_enabled}. |
 | <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainAdvancedSecurityOptions.property.jwtOptions">JwtOptions</a></code> | <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainAdvancedSecurityOptionsJwtOptions">OpensearchDomainAdvancedSecurityOptionsJwtOptions</a></code> | jwt_options block. |
 | <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainAdvancedSecurityOptions.property.masterUserOptions">MasterUserOptions</a></code> | <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainAdvancedSecurityOptionsMasterUserOptions">OpensearchDomainAdvancedSecurityOptionsMasterUserOptions</a></code> | master_user_options block. |
 
@@ -1723,7 +1765,7 @@ Enabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#enabled OpensearchDomain#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#enabled OpensearchDomain#enabled}.
 
 ---
 
@@ -1735,7 +1777,7 @@ AnonymousAuthEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#anonymous_auth_enabled OpensearchDomain#anonymous_auth_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#anonymous_auth_enabled OpensearchDomain#anonymous_auth_enabled}.
 
 ---
 
@@ -1747,7 +1789,7 @@ InternalUserDatabaseEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#internal_user_database_enabled OpensearchDomain#internal_user_database_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#internal_user_database_enabled OpensearchDomain#internal_user_database_enabled}.
 
 ---
 
@@ -1761,7 +1803,7 @@ JwtOptions OpensearchDomainAdvancedSecurityOptionsJwtOptions
 
 jwt_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#jwt_options OpensearchDomain#jwt_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#jwt_options OpensearchDomain#jwt_options}
 
 ---
 
@@ -1775,7 +1817,7 @@ MasterUserOptions OpensearchDomainAdvancedSecurityOptionsMasterUserOptions
 
 master_user_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#master_user_options OpensearchDomain#master_user_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#master_user_options OpensearchDomain#master_user_options}
 
 ---
 
@@ -1798,10 +1840,10 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/opensearchdomain"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainAdvancedSecurityOptionsJwtOptions.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#enabled OpensearchDomain#enabled}. |
-| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainAdvancedSecurityOptionsJwtOptions.property.publicKey">PublicKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#public_key OpensearchDomain#public_key}. |
-| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainAdvancedSecurityOptionsJwtOptions.property.rolesKey">RolesKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#roles_key OpensearchDomain#roles_key}. |
-| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainAdvancedSecurityOptionsJwtOptions.property.subjectKey">SubjectKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#subject_key OpensearchDomain#subject_key}. |
+| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainAdvancedSecurityOptionsJwtOptions.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#enabled OpensearchDomain#enabled}. |
+| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainAdvancedSecurityOptionsJwtOptions.property.publicKey">PublicKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#public_key OpensearchDomain#public_key}. |
+| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainAdvancedSecurityOptionsJwtOptions.property.rolesKey">RolesKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#roles_key OpensearchDomain#roles_key}. |
+| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainAdvancedSecurityOptionsJwtOptions.property.subjectKey">SubjectKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#subject_key OpensearchDomain#subject_key}. |
 
 ---
 
@@ -1813,7 +1855,7 @@ Enabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#enabled OpensearchDomain#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#enabled OpensearchDomain#enabled}.
 
 ---
 
@@ -1825,7 +1867,7 @@ PublicKey *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#public_key OpensearchDomain#public_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#public_key OpensearchDomain#public_key}.
 
 ---
 
@@ -1837,7 +1879,7 @@ RolesKey *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#roles_key OpensearchDomain#roles_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#roles_key OpensearchDomain#roles_key}.
 
 ---
 
@@ -1849,7 +1891,7 @@ SubjectKey *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#subject_key OpensearchDomain#subject_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#subject_key OpensearchDomain#subject_key}.
 
 ---
 
@@ -1871,9 +1913,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/opensearchdomain"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainAdvancedSecurityOptionsMasterUserOptions.property.masterUserArn">MasterUserArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#master_user_arn OpensearchDomain#master_user_arn}. |
-| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainAdvancedSecurityOptionsMasterUserOptions.property.masterUserName">MasterUserName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#master_user_name OpensearchDomain#master_user_name}. |
-| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainAdvancedSecurityOptionsMasterUserOptions.property.masterUserPassword">MasterUserPassword</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#master_user_password OpensearchDomain#master_user_password}. |
+| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainAdvancedSecurityOptionsMasterUserOptions.property.masterUserArn">MasterUserArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#master_user_arn OpensearchDomain#master_user_arn}. |
+| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainAdvancedSecurityOptionsMasterUserOptions.property.masterUserName">MasterUserName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#master_user_name OpensearchDomain#master_user_name}. |
+| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainAdvancedSecurityOptionsMasterUserOptions.property.masterUserPassword">MasterUserPassword</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#master_user_password OpensearchDomain#master_user_password}. |
 
 ---
 
@@ -1885,7 +1927,7 @@ MasterUserArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#master_user_arn OpensearchDomain#master_user_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#master_user_arn OpensearchDomain#master_user_arn}.
 
 ---
 
@@ -1897,7 +1939,7 @@ MasterUserName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#master_user_name OpensearchDomain#master_user_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#master_user_name OpensearchDomain#master_user_name}.
 
 ---
 
@@ -1909,7 +1951,7 @@ MasterUserPassword *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#master_user_password OpensearchDomain#master_user_password}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#master_user_password OpensearchDomain#master_user_password}.
 
 ---
 
@@ -1947,7 +1989,7 @@ NaturalLanguageQueryGenerationOptions OpensearchDomainAimlOptionsNaturalLanguage
 
 natural_language_query_generation_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#natural_language_query_generation_options OpensearchDomain#natural_language_query_generation_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#natural_language_query_generation_options OpensearchDomain#natural_language_query_generation_options}
 
 ---
 
@@ -1961,7 +2003,7 @@ S3VectorsEngine OpensearchDomainAimlOptionsS3VectorsEngine
 
 s3_vectors_engine block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#s3_vectors_engine OpensearchDomain#s3_vectors_engine}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#s3_vectors_engine OpensearchDomain#s3_vectors_engine}
 
 ---
 
@@ -1975,7 +2017,7 @@ ServerlessVectorAcceleration OpensearchDomainAimlOptionsServerlessVectorAccelera
 
 serverless_vector_acceleration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#serverless_vector_acceleration OpensearchDomain#serverless_vector_acceleration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#serverless_vector_acceleration OpensearchDomain#serverless_vector_acceleration}
 
 ---
 
@@ -1995,7 +2037,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/opensearchdomain"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainAimlOptionsNaturalLanguageQueryGenerationOptions.property.desiredState">DesiredState</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#desired_state OpensearchDomain#desired_state}. |
+| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainAimlOptionsNaturalLanguageQueryGenerationOptions.property.desiredState">DesiredState</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#desired_state OpensearchDomain#desired_state}. |
 
 ---
 
@@ -2007,7 +2049,7 @@ DesiredState *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#desired_state OpensearchDomain#desired_state}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#desired_state OpensearchDomain#desired_state}.
 
 ---
 
@@ -2027,7 +2069,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/opensearchdomain"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainAimlOptionsS3VectorsEngine.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#enabled OpensearchDomain#enabled}. |
+| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainAimlOptionsS3VectorsEngine.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#enabled OpensearchDomain#enabled}. |
 
 ---
 
@@ -2039,7 +2081,7 @@ Enabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#enabled OpensearchDomain#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#enabled OpensearchDomain#enabled}.
 
 ---
 
@@ -2059,7 +2101,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/opensearchdomain"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainAimlOptionsServerlessVectorAcceleration.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#enabled OpensearchDomain#enabled}. |
+| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainAimlOptionsServerlessVectorAcceleration.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#enabled OpensearchDomain#enabled}. |
 
 ---
 
@@ -2071,7 +2113,7 @@ Enabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#enabled OpensearchDomain#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#enabled OpensearchDomain#enabled}.
 
 ---
 
@@ -2094,10 +2136,10 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/opensearchdomain"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainAutoTuneOptions.property.desiredState">DesiredState</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#desired_state OpensearchDomain#desired_state}. |
+| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainAutoTuneOptions.property.desiredState">DesiredState</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#desired_state OpensearchDomain#desired_state}. |
 | <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainAutoTuneOptions.property.maintenanceSchedule">MaintenanceSchedule</a></code> | <code>interface{}</code> | maintenance_schedule block. |
-| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainAutoTuneOptions.property.rollbackOnDisable">RollbackOnDisable</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#rollback_on_disable OpensearchDomain#rollback_on_disable}. |
-| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainAutoTuneOptions.property.useOffPeakWindow">UseOffPeakWindow</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#use_off_peak_window OpensearchDomain#use_off_peak_window}. |
+| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainAutoTuneOptions.property.rollbackOnDisable">RollbackOnDisable</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#rollback_on_disable OpensearchDomain#rollback_on_disable}. |
+| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainAutoTuneOptions.property.useOffPeakWindow">UseOffPeakWindow</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#use_off_peak_window OpensearchDomain#use_off_peak_window}. |
 
 ---
 
@@ -2109,7 +2151,7 @@ DesiredState *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#desired_state OpensearchDomain#desired_state}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#desired_state OpensearchDomain#desired_state}.
 
 ---
 
@@ -2123,7 +2165,7 @@ MaintenanceSchedule interface{}
 
 maintenance_schedule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#maintenance_schedule OpensearchDomain#maintenance_schedule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#maintenance_schedule OpensearchDomain#maintenance_schedule}
 
 ---
 
@@ -2135,7 +2177,7 @@ RollbackOnDisable *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#rollback_on_disable OpensearchDomain#rollback_on_disable}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#rollback_on_disable OpensearchDomain#rollback_on_disable}.
 
 ---
 
@@ -2147,7 +2189,7 @@ UseOffPeakWindow interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#use_off_peak_window OpensearchDomain#use_off_peak_window}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#use_off_peak_window OpensearchDomain#use_off_peak_window}.
 
 ---
 
@@ -2169,9 +2211,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/opensearchdomain"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainAutoTuneOptionsMaintenanceSchedule.property.cronExpressionForRecurrence">CronExpressionForRecurrence</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#cron_expression_for_recurrence OpensearchDomain#cron_expression_for_recurrence}. |
+| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainAutoTuneOptionsMaintenanceSchedule.property.cronExpressionForRecurrence">CronExpressionForRecurrence</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#cron_expression_for_recurrence OpensearchDomain#cron_expression_for_recurrence}. |
 | <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainAutoTuneOptionsMaintenanceSchedule.property.duration">Duration</a></code> | <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainAutoTuneOptionsMaintenanceScheduleDuration">OpensearchDomainAutoTuneOptionsMaintenanceScheduleDuration</a></code> | duration block. |
-| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainAutoTuneOptionsMaintenanceSchedule.property.startAt">StartAt</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#start_at OpensearchDomain#start_at}. |
+| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainAutoTuneOptionsMaintenanceSchedule.property.startAt">StartAt</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#start_at OpensearchDomain#start_at}. |
 
 ---
 
@@ -2183,7 +2225,7 @@ CronExpressionForRecurrence *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#cron_expression_for_recurrence OpensearchDomain#cron_expression_for_recurrence}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#cron_expression_for_recurrence OpensearchDomain#cron_expression_for_recurrence}.
 
 ---
 
@@ -2197,7 +2239,7 @@ Duration OpensearchDomainAutoTuneOptionsMaintenanceScheduleDuration
 
 duration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#duration OpensearchDomain#duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#duration OpensearchDomain#duration}
 
 ---
 
@@ -2209,7 +2251,7 @@ StartAt *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#start_at OpensearchDomain#start_at}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#start_at OpensearchDomain#start_at}.
 
 ---
 
@@ -2230,8 +2272,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/opensearchdomain"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainAutoTuneOptionsMaintenanceScheduleDuration.property.unit">Unit</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#unit OpensearchDomain#unit}. |
-| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainAutoTuneOptionsMaintenanceScheduleDuration.property.value">Value</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#value OpensearchDomain#value}. |
+| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainAutoTuneOptionsMaintenanceScheduleDuration.property.unit">Unit</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#unit OpensearchDomain#unit}. |
+| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainAutoTuneOptionsMaintenanceScheduleDuration.property.value">Value</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#value OpensearchDomain#value}. |
 
 ---
 
@@ -2243,7 +2285,7 @@ Unit *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#unit OpensearchDomain#unit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#unit OpensearchDomain#unit}.
 
 ---
 
@@ -2255,7 +2297,7 @@ Value *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#value OpensearchDomain#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#value OpensearchDomain#value}.
 
 ---
 
@@ -2288,18 +2330,18 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/opensearchdomain"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainClusterConfig.property.coldStorageOptions">ColdStorageOptions</a></code> | <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainClusterConfigColdStorageOptions">OpensearchDomainClusterConfigColdStorageOptions</a></code> | cold_storage_options block. |
-| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainClusterConfig.property.dedicatedMasterCount">DedicatedMasterCount</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#dedicated_master_count OpensearchDomain#dedicated_master_count}. |
-| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainClusterConfig.property.dedicatedMasterEnabled">DedicatedMasterEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#dedicated_master_enabled OpensearchDomain#dedicated_master_enabled}. |
-| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainClusterConfig.property.dedicatedMasterType">DedicatedMasterType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#dedicated_master_type OpensearchDomain#dedicated_master_type}. |
-| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainClusterConfig.property.instanceCount">InstanceCount</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#instance_count OpensearchDomain#instance_count}. |
-| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainClusterConfig.property.instanceType">InstanceType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#instance_type OpensearchDomain#instance_type}. |
-| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainClusterConfig.property.multiAzWithStandbyEnabled">MultiAzWithStandbyEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#multi_az_with_standby_enabled OpensearchDomain#multi_az_with_standby_enabled}. |
+| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainClusterConfig.property.dedicatedMasterCount">DedicatedMasterCount</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#dedicated_master_count OpensearchDomain#dedicated_master_count}. |
+| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainClusterConfig.property.dedicatedMasterEnabled">DedicatedMasterEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#dedicated_master_enabled OpensearchDomain#dedicated_master_enabled}. |
+| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainClusterConfig.property.dedicatedMasterType">DedicatedMasterType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#dedicated_master_type OpensearchDomain#dedicated_master_type}. |
+| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainClusterConfig.property.instanceCount">InstanceCount</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#instance_count OpensearchDomain#instance_count}. |
+| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainClusterConfig.property.instanceType">InstanceType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#instance_type OpensearchDomain#instance_type}. |
+| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainClusterConfig.property.multiAzWithStandbyEnabled">MultiAzWithStandbyEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#multi_az_with_standby_enabled OpensearchDomain#multi_az_with_standby_enabled}. |
 | <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainClusterConfig.property.nodeOptions">NodeOptions</a></code> | <code>interface{}</code> | node_options block. |
-| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainClusterConfig.property.warmCount">WarmCount</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#warm_count OpensearchDomain#warm_count}. |
-| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainClusterConfig.property.warmEnabled">WarmEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#warm_enabled OpensearchDomain#warm_enabled}. |
-| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainClusterConfig.property.warmType">WarmType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#warm_type OpensearchDomain#warm_type}. |
+| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainClusterConfig.property.warmCount">WarmCount</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#warm_count OpensearchDomain#warm_count}. |
+| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainClusterConfig.property.warmEnabled">WarmEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#warm_enabled OpensearchDomain#warm_enabled}. |
+| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainClusterConfig.property.warmType">WarmType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#warm_type OpensearchDomain#warm_type}. |
 | <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainClusterConfig.property.zoneAwarenessConfig">ZoneAwarenessConfig</a></code> | <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainClusterConfigZoneAwarenessConfig">OpensearchDomainClusterConfigZoneAwarenessConfig</a></code> | zone_awareness_config block. |
-| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainClusterConfig.property.zoneAwarenessEnabled">ZoneAwarenessEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#zone_awareness_enabled OpensearchDomain#zone_awareness_enabled}. |
+| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainClusterConfig.property.zoneAwarenessEnabled">ZoneAwarenessEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#zone_awareness_enabled OpensearchDomain#zone_awareness_enabled}. |
 
 ---
 
@@ -2313,7 +2355,7 @@ ColdStorageOptions OpensearchDomainClusterConfigColdStorageOptions
 
 cold_storage_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#cold_storage_options OpensearchDomain#cold_storage_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#cold_storage_options OpensearchDomain#cold_storage_options}
 
 ---
 
@@ -2325,7 +2367,7 @@ DedicatedMasterCount *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#dedicated_master_count OpensearchDomain#dedicated_master_count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#dedicated_master_count OpensearchDomain#dedicated_master_count}.
 
 ---
 
@@ -2337,7 +2379,7 @@ DedicatedMasterEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#dedicated_master_enabled OpensearchDomain#dedicated_master_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#dedicated_master_enabled OpensearchDomain#dedicated_master_enabled}.
 
 ---
 
@@ -2349,7 +2391,7 @@ DedicatedMasterType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#dedicated_master_type OpensearchDomain#dedicated_master_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#dedicated_master_type OpensearchDomain#dedicated_master_type}.
 
 ---
 
@@ -2361,7 +2403,7 @@ InstanceCount *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#instance_count OpensearchDomain#instance_count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#instance_count OpensearchDomain#instance_count}.
 
 ---
 
@@ -2373,7 +2415,7 @@ InstanceType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#instance_type OpensearchDomain#instance_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#instance_type OpensearchDomain#instance_type}.
 
 ---
 
@@ -2385,7 +2427,7 @@ MultiAzWithStandbyEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#multi_az_with_standby_enabled OpensearchDomain#multi_az_with_standby_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#multi_az_with_standby_enabled OpensearchDomain#multi_az_with_standby_enabled}.
 
 ---
 
@@ -2399,7 +2441,7 @@ NodeOptions interface{}
 
 node_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#node_options OpensearchDomain#node_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#node_options OpensearchDomain#node_options}
 
 ---
 
@@ -2411,7 +2453,7 @@ WarmCount *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#warm_count OpensearchDomain#warm_count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#warm_count OpensearchDomain#warm_count}.
 
 ---
 
@@ -2423,7 +2465,7 @@ WarmEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#warm_enabled OpensearchDomain#warm_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#warm_enabled OpensearchDomain#warm_enabled}.
 
 ---
 
@@ -2435,7 +2477,7 @@ WarmType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#warm_type OpensearchDomain#warm_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#warm_type OpensearchDomain#warm_type}.
 
 ---
 
@@ -2449,7 +2491,7 @@ ZoneAwarenessConfig OpensearchDomainClusterConfigZoneAwarenessConfig
 
 zone_awareness_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#zone_awareness_config OpensearchDomain#zone_awareness_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#zone_awareness_config OpensearchDomain#zone_awareness_config}
 
 ---
 
@@ -2461,7 +2503,7 @@ ZoneAwarenessEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#zone_awareness_enabled OpensearchDomain#zone_awareness_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#zone_awareness_enabled OpensearchDomain#zone_awareness_enabled}.
 
 ---
 
@@ -2481,7 +2523,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/opensearchdomain"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainClusterConfigColdStorageOptions.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#enabled OpensearchDomain#enabled}. |
+| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainClusterConfigColdStorageOptions.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#enabled OpensearchDomain#enabled}. |
 
 ---
 
@@ -2493,7 +2535,7 @@ Enabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#enabled OpensearchDomain#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#enabled OpensearchDomain#enabled}.
 
 ---
 
@@ -2515,7 +2557,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/opensearchdomain"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainClusterConfigNodeOptions.property.nodeConfig">NodeConfig</a></code> | <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainClusterConfigNodeOptionsNodeConfig">OpensearchDomainClusterConfigNodeOptionsNodeConfig</a></code> | node_config block. |
-| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainClusterConfigNodeOptions.property.nodeType">NodeType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#node_type OpensearchDomain#node_type}. |
+| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainClusterConfigNodeOptions.property.nodeType">NodeType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#node_type OpensearchDomain#node_type}. |
 
 ---
 
@@ -2529,7 +2571,7 @@ NodeConfig OpensearchDomainClusterConfigNodeOptionsNodeConfig
 
 node_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#node_config OpensearchDomain#node_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#node_config OpensearchDomain#node_config}
 
 ---
 
@@ -2541,7 +2583,7 @@ NodeType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#node_type OpensearchDomain#node_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#node_type OpensearchDomain#node_type}.
 
 ---
 
@@ -2563,9 +2605,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/opensearchdomain"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainClusterConfigNodeOptionsNodeConfig.property.count">Count</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#count OpensearchDomain#count}. |
-| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainClusterConfigNodeOptionsNodeConfig.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#enabled OpensearchDomain#enabled}. |
-| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainClusterConfigNodeOptionsNodeConfig.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#type OpensearchDomain#type}. |
+| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainClusterConfigNodeOptionsNodeConfig.property.count">Count</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#count OpensearchDomain#count}. |
+| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainClusterConfigNodeOptionsNodeConfig.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#enabled OpensearchDomain#enabled}. |
+| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainClusterConfigNodeOptionsNodeConfig.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#type OpensearchDomain#type}. |
 
 ---
 
@@ -2577,7 +2619,7 @@ Count *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#count OpensearchDomain#count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#count OpensearchDomain#count}.
 
 ---
 
@@ -2589,7 +2631,7 @@ Enabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#enabled OpensearchDomain#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#enabled OpensearchDomain#enabled}.
 
 ---
 
@@ -2601,7 +2643,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#type OpensearchDomain#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#type OpensearchDomain#type}.
 
 ---
 
@@ -2621,7 +2663,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/opensearchdomain"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainClusterConfigZoneAwarenessConfig.property.availabilityZoneCount">AvailabilityZoneCount</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#availability_zone_count OpensearchDomain#availability_zone_count}. |
+| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainClusterConfigZoneAwarenessConfig.property.availabilityZoneCount">AvailabilityZoneCount</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#availability_zone_count OpensearchDomain#availability_zone_count}. |
 
 ---
 
@@ -2633,7 +2675,7 @@ AvailabilityZoneCount *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#availability_zone_count OpensearchDomain#availability_zone_count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#availability_zone_count OpensearchDomain#availability_zone_count}.
 
 ---
 
@@ -2656,10 +2698,10 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/opensearchdomain"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainCognitoOptions.property.identityPoolId">IdentityPoolId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#identity_pool_id OpensearchDomain#identity_pool_id}. |
-| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainCognitoOptions.property.roleArn">RoleArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#role_arn OpensearchDomain#role_arn}. |
-| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainCognitoOptions.property.userPoolId">UserPoolId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#user_pool_id OpensearchDomain#user_pool_id}. |
-| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainCognitoOptions.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#enabled OpensearchDomain#enabled}. |
+| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainCognitoOptions.property.identityPoolId">IdentityPoolId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#identity_pool_id OpensearchDomain#identity_pool_id}. |
+| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainCognitoOptions.property.roleArn">RoleArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#role_arn OpensearchDomain#role_arn}. |
+| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainCognitoOptions.property.userPoolId">UserPoolId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#user_pool_id OpensearchDomain#user_pool_id}. |
+| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainCognitoOptions.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#enabled OpensearchDomain#enabled}. |
 
 ---
 
@@ -2671,7 +2713,7 @@ IdentityPoolId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#identity_pool_id OpensearchDomain#identity_pool_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#identity_pool_id OpensearchDomain#identity_pool_id}.
 
 ---
 
@@ -2683,7 +2725,7 @@ RoleArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#role_arn OpensearchDomain#role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#role_arn OpensearchDomain#role_arn}.
 
 ---
 
@@ -2695,7 +2737,7 @@ UserPoolId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#user_pool_id OpensearchDomain#user_pool_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#user_pool_id OpensearchDomain#user_pool_id}.
 
 ---
 
@@ -2707,7 +2749,7 @@ Enabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#enabled OpensearchDomain#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#enabled OpensearchDomain#enabled}.
 
 ---
 
@@ -2734,6 +2776,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/opensearchdomain"
 	AutoTuneOptions: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.opensearchDomain.OpensearchDomainAutoTuneOptions,
 	ClusterConfig: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.opensearchDomain.OpensearchDomainClusterConfig,
 	CognitoOptions: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.opensearchDomain.OpensearchDomainCognitoOptions,
+	DeploymentStrategyOptions: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.opensearchDomain.OpensearchDomainDeploymentStrategyOptions,
 	DomainEndpointOptions: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.opensearchDomain.OpensearchDomainDomainEndpointOptions,
 	EbsOptions: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.opensearchDomain.OpensearchDomainEbsOptions,
 	EncryptAtRest: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.opensearchDomain.OpensearchDomainEncryptAtRest,
@@ -2765,29 +2808,30 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/opensearchdomain"
 | <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainConfig.property.domainName">DomainName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#domain_name OpensearchDomain#domain_name}. |
-| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainConfig.property.accessPolicies">AccessPolicies</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#access_policies OpensearchDomain#access_policies}. |
-| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainConfig.property.advancedOptions">AdvancedOptions</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#advanced_options OpensearchDomain#advanced_options}. |
+| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainConfig.property.domainName">DomainName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#domain_name OpensearchDomain#domain_name}. |
+| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainConfig.property.accessPolicies">AccessPolicies</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#access_policies OpensearchDomain#access_policies}. |
+| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainConfig.property.advancedOptions">AdvancedOptions</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#advanced_options OpensearchDomain#advanced_options}. |
 | <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainConfig.property.advancedSecurityOptions">AdvancedSecurityOptions</a></code> | <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainAdvancedSecurityOptions">OpensearchDomainAdvancedSecurityOptions</a></code> | advanced_security_options block. |
 | <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainConfig.property.aimlOptions">AimlOptions</a></code> | <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainAimlOptions">OpensearchDomainAimlOptions</a></code> | aiml_options block. |
 | <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainConfig.property.autoTuneOptions">AutoTuneOptions</a></code> | <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainAutoTuneOptions">OpensearchDomainAutoTuneOptions</a></code> | auto_tune_options block. |
 | <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainConfig.property.clusterConfig">ClusterConfig</a></code> | <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainClusterConfig">OpensearchDomainClusterConfig</a></code> | cluster_config block. |
 | <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainConfig.property.cognitoOptions">CognitoOptions</a></code> | <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainCognitoOptions">OpensearchDomainCognitoOptions</a></code> | cognito_options block. |
+| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainConfig.property.deploymentStrategyOptions">DeploymentStrategyOptions</a></code> | <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainDeploymentStrategyOptions">OpensearchDomainDeploymentStrategyOptions</a></code> | deployment_strategy_options block. |
 | <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainConfig.property.domainEndpointOptions">DomainEndpointOptions</a></code> | <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainDomainEndpointOptions">OpensearchDomainDomainEndpointOptions</a></code> | domain_endpoint_options block. |
 | <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainConfig.property.ebsOptions">EbsOptions</a></code> | <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainEbsOptions">OpensearchDomainEbsOptions</a></code> | ebs_options block. |
 | <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainConfig.property.encryptAtRest">EncryptAtRest</a></code> | <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainEncryptAtRest">OpensearchDomainEncryptAtRest</a></code> | encrypt_at_rest block. |
-| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainConfig.property.engineVersion">EngineVersion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#engine_version OpensearchDomain#engine_version}. |
-| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#id OpensearchDomain#id}. |
+| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainConfig.property.engineVersion">EngineVersion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#engine_version OpensearchDomain#engine_version}. |
+| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#id OpensearchDomain#id}. |
 | <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainConfig.property.identityCenterOptions">IdentityCenterOptions</a></code> | <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainIdentityCenterOptions">OpensearchDomainIdentityCenterOptions</a></code> | identity_center_options block. |
-| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainConfig.property.ipAddressType">IpAddressType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#ip_address_type OpensearchDomain#ip_address_type}. |
+| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainConfig.property.ipAddressType">IpAddressType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#ip_address_type OpensearchDomain#ip_address_type}. |
 | <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainConfig.property.logPublishingOptions">LogPublishingOptions</a></code> | <code>interface{}</code> | log_publishing_options block. |
 | <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainConfig.property.nodeToNodeEncryption">NodeToNodeEncryption</a></code> | <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainNodeToNodeEncryption">OpensearchDomainNodeToNodeEncryption</a></code> | node_to_node_encryption block. |
 | <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainConfig.property.offPeakWindowOptions">OffPeakWindowOptions</a></code> | <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainOffPeakWindowOptions">OpensearchDomainOffPeakWindowOptions</a></code> | off_peak_window_options block. |
 | <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainConfig.property.snapshotOptions">SnapshotOptions</a></code> | <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainSnapshotOptions">OpensearchDomainSnapshotOptions</a></code> | snapshot_options block. |
 | <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainConfig.property.softwareUpdateOptions">SoftwareUpdateOptions</a></code> | <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainSoftwareUpdateOptions">OpensearchDomainSoftwareUpdateOptions</a></code> | software_update_options block. |
-| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#tags OpensearchDomain#tags}. |
-| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#tags_all OpensearchDomain#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#tags OpensearchDomain#tags}. |
+| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#tags_all OpensearchDomain#tags_all}. |
 | <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainTimeouts">OpensearchDomainTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainConfig.property.vpcOptions">VpcOptions</a></code> | <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainVpcOptions">OpensearchDomainVpcOptions</a></code> | vpc_options block. |
 
@@ -2871,7 +2915,7 @@ DomainName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#domain_name OpensearchDomain#domain_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#domain_name OpensearchDomain#domain_name}.
 
 ---
 
@@ -2883,7 +2927,7 @@ AccessPolicies *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#access_policies OpensearchDomain#access_policies}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#access_policies OpensearchDomain#access_policies}.
 
 ---
 
@@ -2895,7 +2939,7 @@ AdvancedOptions *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#advanced_options OpensearchDomain#advanced_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#advanced_options OpensearchDomain#advanced_options}.
 
 ---
 
@@ -2909,7 +2953,7 @@ AdvancedSecurityOptions OpensearchDomainAdvancedSecurityOptions
 
 advanced_security_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#advanced_security_options OpensearchDomain#advanced_security_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#advanced_security_options OpensearchDomain#advanced_security_options}
 
 ---
 
@@ -2923,7 +2967,7 @@ AimlOptions OpensearchDomainAimlOptions
 
 aiml_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#aiml_options OpensearchDomain#aiml_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#aiml_options OpensearchDomain#aiml_options}
 
 ---
 
@@ -2937,7 +2981,7 @@ AutoTuneOptions OpensearchDomainAutoTuneOptions
 
 auto_tune_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#auto_tune_options OpensearchDomain#auto_tune_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#auto_tune_options OpensearchDomain#auto_tune_options}
 
 ---
 
@@ -2951,7 +2995,7 @@ ClusterConfig OpensearchDomainClusterConfig
 
 cluster_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#cluster_config OpensearchDomain#cluster_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#cluster_config OpensearchDomain#cluster_config}
 
 ---
 
@@ -2965,7 +3009,21 @@ CognitoOptions OpensearchDomainCognitoOptions
 
 cognito_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#cognito_options OpensearchDomain#cognito_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#cognito_options OpensearchDomain#cognito_options}
+
+---
+
+##### `DeploymentStrategyOptions`<sup>Optional</sup> <a name="DeploymentStrategyOptions" id="@cdktn/provider-aws.opensearchDomain.OpensearchDomainConfig.property.deploymentStrategyOptions"></a>
+
+```go
+DeploymentStrategyOptions OpensearchDomainDeploymentStrategyOptions
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainDeploymentStrategyOptions">OpensearchDomainDeploymentStrategyOptions</a>
+
+deployment_strategy_options block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#deployment_strategy_options OpensearchDomain#deployment_strategy_options}
 
 ---
 
@@ -2979,7 +3037,7 @@ DomainEndpointOptions OpensearchDomainDomainEndpointOptions
 
 domain_endpoint_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#domain_endpoint_options OpensearchDomain#domain_endpoint_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#domain_endpoint_options OpensearchDomain#domain_endpoint_options}
 
 ---
 
@@ -2993,7 +3051,7 @@ EbsOptions OpensearchDomainEbsOptions
 
 ebs_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#ebs_options OpensearchDomain#ebs_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#ebs_options OpensearchDomain#ebs_options}
 
 ---
 
@@ -3007,7 +3065,7 @@ EncryptAtRest OpensearchDomainEncryptAtRest
 
 encrypt_at_rest block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#encrypt_at_rest OpensearchDomain#encrypt_at_rest}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#encrypt_at_rest OpensearchDomain#encrypt_at_rest}
 
 ---
 
@@ -3019,7 +3077,7 @@ EngineVersion *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#engine_version OpensearchDomain#engine_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#engine_version OpensearchDomain#engine_version}.
 
 ---
 
@@ -3031,7 +3089,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#id OpensearchDomain#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#id OpensearchDomain#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -3048,7 +3106,7 @@ IdentityCenterOptions OpensearchDomainIdentityCenterOptions
 
 identity_center_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#identity_center_options OpensearchDomain#identity_center_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#identity_center_options OpensearchDomain#identity_center_options}
 
 ---
 
@@ -3060,7 +3118,7 @@ IpAddressType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#ip_address_type OpensearchDomain#ip_address_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#ip_address_type OpensearchDomain#ip_address_type}.
 
 ---
 
@@ -3074,7 +3132,7 @@ LogPublishingOptions interface{}
 
 log_publishing_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#log_publishing_options OpensearchDomain#log_publishing_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#log_publishing_options OpensearchDomain#log_publishing_options}
 
 ---
 
@@ -3088,7 +3146,7 @@ NodeToNodeEncryption OpensearchDomainNodeToNodeEncryption
 
 node_to_node_encryption block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#node_to_node_encryption OpensearchDomain#node_to_node_encryption}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#node_to_node_encryption OpensearchDomain#node_to_node_encryption}
 
 ---
 
@@ -3102,7 +3160,7 @@ OffPeakWindowOptions OpensearchDomainOffPeakWindowOptions
 
 off_peak_window_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#off_peak_window_options OpensearchDomain#off_peak_window_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#off_peak_window_options OpensearchDomain#off_peak_window_options}
 
 ---
 
@@ -3116,7 +3174,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#region OpensearchDomain#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#region OpensearchDomain#region}
 
 ---
 
@@ -3130,7 +3188,7 @@ SnapshotOptions OpensearchDomainSnapshotOptions
 
 snapshot_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#snapshot_options OpensearchDomain#snapshot_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#snapshot_options OpensearchDomain#snapshot_options}
 
 ---
 
@@ -3144,7 +3202,7 @@ SoftwareUpdateOptions OpensearchDomainSoftwareUpdateOptions
 
 software_update_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#software_update_options OpensearchDomain#software_update_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#software_update_options OpensearchDomain#software_update_options}
 
 ---
 
@@ -3156,7 +3214,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#tags OpensearchDomain#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#tags OpensearchDomain#tags}.
 
 ---
 
@@ -3168,7 +3226,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#tags_all OpensearchDomain#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#tags_all OpensearchDomain#tags_all}.
 
 ---
 
@@ -3182,7 +3240,7 @@ Timeouts OpensearchDomainTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#timeouts OpensearchDomain#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#timeouts OpensearchDomain#timeouts}
 
 ---
 
@@ -3196,7 +3254,39 @@ VpcOptions OpensearchDomainVpcOptions
 
 vpc_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#vpc_options OpensearchDomain#vpc_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#vpc_options OpensearchDomain#vpc_options}
+
+---
+
+### OpensearchDomainDeploymentStrategyOptions <a name="OpensearchDomainDeploymentStrategyOptions" id="@cdktn/provider-aws.opensearchDomain.OpensearchDomainDeploymentStrategyOptions"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.opensearchDomain.OpensearchDomainDeploymentStrategyOptions.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/opensearchdomain"
+
+&opensearchdomain.OpensearchDomainDeploymentStrategyOptions {
+	DeploymentStrategy: *string,
+}
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainDeploymentStrategyOptions.property.deploymentStrategy">DeploymentStrategy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#deployment_strategy OpensearchDomain#deployment_strategy}. |
+
+---
+
+##### `DeploymentStrategy`<sup>Required</sup> <a name="DeploymentStrategy" id="@cdktn/provider-aws.opensearchDomain.OpensearchDomainDeploymentStrategyOptions.property.deploymentStrategy"></a>
+
+```go
+DeploymentStrategy *string
+```
+
+- *Type:* *string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#deployment_strategy OpensearchDomain#deployment_strategy}.
 
 ---
 
@@ -3220,11 +3310,11 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/opensearchdomain"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainDomainEndpointOptions.property.customEndpoint">CustomEndpoint</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#custom_endpoint OpensearchDomain#custom_endpoint}. |
-| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainDomainEndpointOptions.property.customEndpointCertificateArn">CustomEndpointCertificateArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#custom_endpoint_certificate_arn OpensearchDomain#custom_endpoint_certificate_arn}. |
-| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainDomainEndpointOptions.property.customEndpointEnabled">CustomEndpointEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#custom_endpoint_enabled OpensearchDomain#custom_endpoint_enabled}. |
-| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainDomainEndpointOptions.property.enforceHttps">EnforceHttps</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#enforce_https OpensearchDomain#enforce_https}. |
-| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainDomainEndpointOptions.property.tlsSecurityPolicy">TlsSecurityPolicy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#tls_security_policy OpensearchDomain#tls_security_policy}. |
+| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainDomainEndpointOptions.property.customEndpoint">CustomEndpoint</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#custom_endpoint OpensearchDomain#custom_endpoint}. |
+| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainDomainEndpointOptions.property.customEndpointCertificateArn">CustomEndpointCertificateArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#custom_endpoint_certificate_arn OpensearchDomain#custom_endpoint_certificate_arn}. |
+| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainDomainEndpointOptions.property.customEndpointEnabled">CustomEndpointEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#custom_endpoint_enabled OpensearchDomain#custom_endpoint_enabled}. |
+| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainDomainEndpointOptions.property.enforceHttps">EnforceHttps</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#enforce_https OpensearchDomain#enforce_https}. |
+| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainDomainEndpointOptions.property.tlsSecurityPolicy">TlsSecurityPolicy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#tls_security_policy OpensearchDomain#tls_security_policy}. |
 
 ---
 
@@ -3236,7 +3326,7 @@ CustomEndpoint *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#custom_endpoint OpensearchDomain#custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#custom_endpoint OpensearchDomain#custom_endpoint}.
 
 ---
 
@@ -3248,7 +3338,7 @@ CustomEndpointCertificateArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#custom_endpoint_certificate_arn OpensearchDomain#custom_endpoint_certificate_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#custom_endpoint_certificate_arn OpensearchDomain#custom_endpoint_certificate_arn}.
 
 ---
 
@@ -3260,7 +3350,7 @@ CustomEndpointEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#custom_endpoint_enabled OpensearchDomain#custom_endpoint_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#custom_endpoint_enabled OpensearchDomain#custom_endpoint_enabled}.
 
 ---
 
@@ -3272,7 +3362,7 @@ EnforceHttps interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#enforce_https OpensearchDomain#enforce_https}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#enforce_https OpensearchDomain#enforce_https}.
 
 ---
 
@@ -3284,7 +3374,7 @@ TlsSecurityPolicy *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#tls_security_policy OpensearchDomain#tls_security_policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#tls_security_policy OpensearchDomain#tls_security_policy}.
 
 ---
 
@@ -3308,11 +3398,11 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/opensearchdomain"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainEbsOptions.property.ebsEnabled">EbsEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#ebs_enabled OpensearchDomain#ebs_enabled}. |
-| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainEbsOptions.property.iops">Iops</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#iops OpensearchDomain#iops}. |
-| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainEbsOptions.property.throughput">Throughput</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#throughput OpensearchDomain#throughput}. |
-| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainEbsOptions.property.volumeSize">VolumeSize</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#volume_size OpensearchDomain#volume_size}. |
-| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainEbsOptions.property.volumeType">VolumeType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#volume_type OpensearchDomain#volume_type}. |
+| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainEbsOptions.property.ebsEnabled">EbsEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#ebs_enabled OpensearchDomain#ebs_enabled}. |
+| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainEbsOptions.property.iops">Iops</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#iops OpensearchDomain#iops}. |
+| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainEbsOptions.property.throughput">Throughput</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#throughput OpensearchDomain#throughput}. |
+| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainEbsOptions.property.volumeSize">VolumeSize</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#volume_size OpensearchDomain#volume_size}. |
+| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainEbsOptions.property.volumeType">VolumeType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#volume_type OpensearchDomain#volume_type}. |
 
 ---
 
@@ -3324,7 +3414,7 @@ EbsEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#ebs_enabled OpensearchDomain#ebs_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#ebs_enabled OpensearchDomain#ebs_enabled}.
 
 ---
 
@@ -3336,7 +3426,7 @@ Iops *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#iops OpensearchDomain#iops}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#iops OpensearchDomain#iops}.
 
 ---
 
@@ -3348,7 +3438,7 @@ Throughput *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#throughput OpensearchDomain#throughput}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#throughput OpensearchDomain#throughput}.
 
 ---
 
@@ -3360,7 +3450,7 @@ VolumeSize *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#volume_size OpensearchDomain#volume_size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#volume_size OpensearchDomain#volume_size}.
 
 ---
 
@@ -3372,7 +3462,7 @@ VolumeType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#volume_type OpensearchDomain#volume_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#volume_type OpensearchDomain#volume_type}.
 
 ---
 
@@ -3393,8 +3483,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/opensearchdomain"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainEncryptAtRest.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#enabled OpensearchDomain#enabled}. |
-| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainEncryptAtRest.property.kmsKeyId">KmsKeyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#kms_key_id OpensearchDomain#kms_key_id}. |
+| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainEncryptAtRest.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#enabled OpensearchDomain#enabled}. |
+| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainEncryptAtRest.property.kmsKeyId">KmsKeyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#kms_key_id OpensearchDomain#kms_key_id}. |
 
 ---
 
@@ -3406,7 +3496,7 @@ Enabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#enabled OpensearchDomain#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#enabled OpensearchDomain#enabled}.
 
 ---
 
@@ -3418,7 +3508,7 @@ KmsKeyId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#kms_key_id OpensearchDomain#kms_key_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#kms_key_id OpensearchDomain#kms_key_id}.
 
 ---
 
@@ -3441,10 +3531,10 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/opensearchdomain"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainIdentityCenterOptions.property.enabledApiAccess">EnabledApiAccess</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#enabled_api_access OpensearchDomain#enabled_api_access}. |
-| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainIdentityCenterOptions.property.identityCenterInstanceArn">IdentityCenterInstanceArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#identity_center_instance_arn OpensearchDomain#identity_center_instance_arn}. |
-| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainIdentityCenterOptions.property.rolesKey">RolesKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#roles_key OpensearchDomain#roles_key}. |
-| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainIdentityCenterOptions.property.subjectKey">SubjectKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#subject_key OpensearchDomain#subject_key}. |
+| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainIdentityCenterOptions.property.enabledApiAccess">EnabledApiAccess</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#enabled_api_access OpensearchDomain#enabled_api_access}. |
+| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainIdentityCenterOptions.property.identityCenterInstanceArn">IdentityCenterInstanceArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#identity_center_instance_arn OpensearchDomain#identity_center_instance_arn}. |
+| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainIdentityCenterOptions.property.rolesKey">RolesKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#roles_key OpensearchDomain#roles_key}. |
+| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainIdentityCenterOptions.property.subjectKey">SubjectKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#subject_key OpensearchDomain#subject_key}. |
 
 ---
 
@@ -3456,7 +3546,7 @@ EnabledApiAccess interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#enabled_api_access OpensearchDomain#enabled_api_access}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#enabled_api_access OpensearchDomain#enabled_api_access}.
 
 ---
 
@@ -3468,7 +3558,7 @@ IdentityCenterInstanceArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#identity_center_instance_arn OpensearchDomain#identity_center_instance_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#identity_center_instance_arn OpensearchDomain#identity_center_instance_arn}.
 
 ---
 
@@ -3480,7 +3570,7 @@ RolesKey *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#roles_key OpensearchDomain#roles_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#roles_key OpensearchDomain#roles_key}.
 
 ---
 
@@ -3492,7 +3582,7 @@ SubjectKey *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#subject_key OpensearchDomain#subject_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#subject_key OpensearchDomain#subject_key}.
 
 ---
 
@@ -3514,9 +3604,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/opensearchdomain"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainLogPublishingOptions.property.cloudwatchLogGroupArn">CloudwatchLogGroupArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#cloudwatch_log_group_arn OpensearchDomain#cloudwatch_log_group_arn}. |
-| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainLogPublishingOptions.property.logType">LogType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#log_type OpensearchDomain#log_type}. |
-| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainLogPublishingOptions.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#enabled OpensearchDomain#enabled}. |
+| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainLogPublishingOptions.property.cloudwatchLogGroupArn">CloudwatchLogGroupArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#cloudwatch_log_group_arn OpensearchDomain#cloudwatch_log_group_arn}. |
+| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainLogPublishingOptions.property.logType">LogType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#log_type OpensearchDomain#log_type}. |
+| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainLogPublishingOptions.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#enabled OpensearchDomain#enabled}. |
 
 ---
 
@@ -3528,7 +3618,7 @@ CloudwatchLogGroupArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#cloudwatch_log_group_arn OpensearchDomain#cloudwatch_log_group_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#cloudwatch_log_group_arn OpensearchDomain#cloudwatch_log_group_arn}.
 
 ---
 
@@ -3540,7 +3630,7 @@ LogType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#log_type OpensearchDomain#log_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#log_type OpensearchDomain#log_type}.
 
 ---
 
@@ -3552,7 +3642,7 @@ Enabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#enabled OpensearchDomain#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#enabled OpensearchDomain#enabled}.
 
 ---
 
@@ -3572,7 +3662,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/opensearchdomain"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainNodeToNodeEncryption.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#enabled OpensearchDomain#enabled}. |
+| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainNodeToNodeEncryption.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#enabled OpensearchDomain#enabled}. |
 
 ---
 
@@ -3584,7 +3674,7 @@ Enabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#enabled OpensearchDomain#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#enabled OpensearchDomain#enabled}.
 
 ---
 
@@ -3605,7 +3695,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/opensearchdomain"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainOffPeakWindowOptions.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#enabled OpensearchDomain#enabled}. |
+| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainOffPeakWindowOptions.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#enabled OpensearchDomain#enabled}. |
 | <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainOffPeakWindowOptions.property.offPeakWindow">OffPeakWindow</a></code> | <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainOffPeakWindowOptionsOffPeakWindow">OpensearchDomainOffPeakWindowOptionsOffPeakWindow</a></code> | off_peak_window block. |
 
 ---
@@ -3618,7 +3708,7 @@ Enabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#enabled OpensearchDomain#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#enabled OpensearchDomain#enabled}.
 
 ---
 
@@ -3632,7 +3722,7 @@ OffPeakWindow OpensearchDomainOffPeakWindowOptionsOffPeakWindow
 
 off_peak_window block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#off_peak_window OpensearchDomain#off_peak_window}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#off_peak_window OpensearchDomain#off_peak_window}
 
 ---
 
@@ -3666,7 +3756,7 @@ WindowStartTime OpensearchDomainOffPeakWindowOptionsOffPeakWindowWindowStartTime
 
 window_start_time block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#window_start_time OpensearchDomain#window_start_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#window_start_time OpensearchDomain#window_start_time}
 
 ---
 
@@ -3687,8 +3777,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/opensearchdomain"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainOffPeakWindowOptionsOffPeakWindowWindowStartTime.property.hours">Hours</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#hours OpensearchDomain#hours}. |
-| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainOffPeakWindowOptionsOffPeakWindowWindowStartTime.property.minutes">Minutes</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#minutes OpensearchDomain#minutes}. |
+| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainOffPeakWindowOptionsOffPeakWindowWindowStartTime.property.hours">Hours</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#hours OpensearchDomain#hours}. |
+| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainOffPeakWindowOptionsOffPeakWindowWindowStartTime.property.minutes">Minutes</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#minutes OpensearchDomain#minutes}. |
 
 ---
 
@@ -3700,7 +3790,7 @@ Hours *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#hours OpensearchDomain#hours}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#hours OpensearchDomain#hours}.
 
 ---
 
@@ -3712,7 +3802,7 @@ Minutes *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#minutes OpensearchDomain#minutes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#minutes OpensearchDomain#minutes}.
 
 ---
 
@@ -3732,7 +3822,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/opensearchdomain"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainSnapshotOptions.property.automatedSnapshotStartHour">AutomatedSnapshotStartHour</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#automated_snapshot_start_hour OpensearchDomain#automated_snapshot_start_hour}. |
+| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainSnapshotOptions.property.automatedSnapshotStartHour">AutomatedSnapshotStartHour</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#automated_snapshot_start_hour OpensearchDomain#automated_snapshot_start_hour}. |
 
 ---
 
@@ -3744,7 +3834,7 @@ AutomatedSnapshotStartHour *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#automated_snapshot_start_hour OpensearchDomain#automated_snapshot_start_hour}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#automated_snapshot_start_hour OpensearchDomain#automated_snapshot_start_hour}.
 
 ---
 
@@ -3764,7 +3854,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/opensearchdomain"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainSoftwareUpdateOptions.property.autoSoftwareUpdateEnabled">AutoSoftwareUpdateEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#auto_software_update_enabled OpensearchDomain#auto_software_update_enabled}. |
+| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainSoftwareUpdateOptions.property.autoSoftwareUpdateEnabled">AutoSoftwareUpdateEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#auto_software_update_enabled OpensearchDomain#auto_software_update_enabled}. |
 
 ---
 
@@ -3776,7 +3866,7 @@ AutoSoftwareUpdateEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#auto_software_update_enabled OpensearchDomain#auto_software_update_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#auto_software_update_enabled OpensearchDomain#auto_software_update_enabled}.
 
 ---
 
@@ -3798,9 +3888,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/opensearchdomain"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#create OpensearchDomain#create}. |
-| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#delete OpensearchDomain#delete}. |
-| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#update OpensearchDomain#update}. |
+| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#create OpensearchDomain#create}. |
+| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#delete OpensearchDomain#delete}. |
+| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#update OpensearchDomain#update}. |
 
 ---
 
@@ -3812,7 +3902,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#create OpensearchDomain#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#create OpensearchDomain#create}.
 
 ---
 
@@ -3824,7 +3914,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#delete OpensearchDomain#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#delete OpensearchDomain#delete}.
 
 ---
 
@@ -3836,7 +3926,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#update OpensearchDomain#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#update OpensearchDomain#update}.
 
 ---
 
@@ -3857,8 +3947,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/opensearchdomain"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainVpcOptions.property.securityGroupIds">SecurityGroupIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#security_group_ids OpensearchDomain#security_group_ids}. |
-| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainVpcOptions.property.subnetIds">SubnetIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#subnet_ids OpensearchDomain#subnet_ids}. |
+| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainVpcOptions.property.securityGroupIds">SecurityGroupIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#security_group_ids OpensearchDomain#security_group_ids}. |
+| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainVpcOptions.property.subnetIds">SubnetIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#subnet_ids OpensearchDomain#subnet_ids}. |
 
 ---
 
@@ -3870,7 +3960,7 @@ SecurityGroupIds *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#security_group_ids OpensearchDomain#security_group_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#security_group_ids OpensearchDomain#security_group_ids}.
 
 ---
 
@@ -3882,7 +3972,7 @@ SubnetIds *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/opensearch_domain#subnet_ids OpensearchDomain#subnet_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/opensearch_domain#subnet_ids OpensearchDomain#subnet_ids}.
 
 ---
 
@@ -9776,6 +9866,277 @@ func InternalValue() OpensearchDomainCognitoOptions
 ```
 
 - *Type:* <a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainCognitoOptions">OpensearchDomainCognitoOptions</a>
+
+---
+
+
+### OpensearchDomainDeploymentStrategyOptionsOutputReference <a name="OpensearchDomainDeploymentStrategyOptionsOutputReference" id="@cdktn/provider-aws.opensearchDomain.OpensearchDomainDeploymentStrategyOptionsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.opensearchDomain.OpensearchDomainDeploymentStrategyOptionsOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/opensearchdomain"
+
+opensearchdomain.NewOpensearchDomainDeploymentStrategyOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OpensearchDomainDeploymentStrategyOptionsOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainDeploymentStrategyOptionsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainDeploymentStrategyOptionsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.opensearchDomain.OpensearchDomainDeploymentStrategyOptionsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.opensearchDomain.OpensearchDomainDeploymentStrategyOptionsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainDeploymentStrategyOptionsOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainDeploymentStrategyOptionsOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainDeploymentStrategyOptionsOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainDeploymentStrategyOptionsOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainDeploymentStrategyOptionsOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainDeploymentStrategyOptionsOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainDeploymentStrategyOptionsOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainDeploymentStrategyOptionsOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainDeploymentStrategyOptionsOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainDeploymentStrategyOptionsOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainDeploymentStrategyOptionsOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainDeploymentStrategyOptionsOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainDeploymentStrategyOptionsOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-aws.opensearchDomain.OpensearchDomainDeploymentStrategyOptionsOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-aws.opensearchDomain.OpensearchDomainDeploymentStrategyOptionsOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.opensearchDomain.OpensearchDomainDeploymentStrategyOptionsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-aws.opensearchDomain.OpensearchDomainDeploymentStrategyOptionsOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.opensearchDomain.OpensearchDomainDeploymentStrategyOptionsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-aws.opensearchDomain.OpensearchDomainDeploymentStrategyOptionsOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.opensearchDomain.OpensearchDomainDeploymentStrategyOptionsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-aws.opensearchDomain.OpensearchDomainDeploymentStrategyOptionsOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.opensearchDomain.OpensearchDomainDeploymentStrategyOptionsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-aws.opensearchDomain.OpensearchDomainDeploymentStrategyOptionsOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.opensearchDomain.OpensearchDomainDeploymentStrategyOptionsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-aws.opensearchDomain.OpensearchDomainDeploymentStrategyOptionsOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.opensearchDomain.OpensearchDomainDeploymentStrategyOptionsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-aws.opensearchDomain.OpensearchDomainDeploymentStrategyOptionsOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.opensearchDomain.OpensearchDomainDeploymentStrategyOptionsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-aws.opensearchDomain.OpensearchDomainDeploymentStrategyOptionsOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.opensearchDomain.OpensearchDomainDeploymentStrategyOptionsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-aws.opensearchDomain.OpensearchDomainDeploymentStrategyOptionsOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.opensearchDomain.OpensearchDomainDeploymentStrategyOptionsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-aws.opensearchDomain.OpensearchDomainDeploymentStrategyOptionsOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-aws.opensearchDomain.OpensearchDomainDeploymentStrategyOptionsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-aws.opensearchDomain.OpensearchDomainDeploymentStrategyOptionsOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.opensearchDomain.OpensearchDomainDeploymentStrategyOptionsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-aws.opensearchDomain.OpensearchDomainDeploymentStrategyOptionsOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainDeploymentStrategyOptionsOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainDeploymentStrategyOptionsOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainDeploymentStrategyOptionsOutputReference.property.deploymentStrategyInput">DeploymentStrategyInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainDeploymentStrategyOptionsOutputReference.property.deploymentStrategy">DeploymentStrategy</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainDeploymentStrategyOptionsOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainDeploymentStrategyOptions">OpensearchDomainDeploymentStrategyOptions</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-aws.opensearchDomain.OpensearchDomainDeploymentStrategyOptionsOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-aws.opensearchDomain.OpensearchDomainDeploymentStrategyOptionsOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `DeploymentStrategyInput`<sup>Optional</sup> <a name="DeploymentStrategyInput" id="@cdktn/provider-aws.opensearchDomain.OpensearchDomainDeploymentStrategyOptionsOutputReference.property.deploymentStrategyInput"></a>
+
+```go
+func DeploymentStrategyInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `DeploymentStrategy`<sup>Required</sup> <a name="DeploymentStrategy" id="@cdktn/provider-aws.opensearchDomain.OpensearchDomainDeploymentStrategyOptionsOutputReference.property.deploymentStrategy"></a>
+
+```go
+func DeploymentStrategy() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-aws.opensearchDomain.OpensearchDomainDeploymentStrategyOptionsOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() OpensearchDomainDeploymentStrategyOptions
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.opensearchDomain.OpensearchDomainDeploymentStrategyOptions">OpensearchDomainDeploymentStrategyOptions</a>
 
 ---
 

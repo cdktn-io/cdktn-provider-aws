@@ -4,7 +4,7 @@
 
 ### ImagebuilderComponent <a name="ImagebuilderComponent" id="@cdktn/provider-aws.imagebuilderComponent.ImagebuilderComponent"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/imagebuilder_component aws_imagebuilder_component}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/imagebuilder_component aws_imagebuilder_component}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.imagebuilderComponent.ImagebuilderComponent.Initializer"></a>
 
@@ -566,7 +566,7 @@ The construct id used in the generated config for the ImagebuilderComponent to i
 
 The id of the existing ImagebuilderComponent that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/imagebuilder_component#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/imagebuilder_component#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1167,20 +1167,20 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/imagebuildercomponent"
 | <code><a href="#@cdktn/provider-aws.imagebuilderComponent.ImagebuilderComponentConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.imagebuilderComponent.ImagebuilderComponentConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.imagebuilderComponent.ImagebuilderComponentConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.imagebuilderComponent.ImagebuilderComponentConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/imagebuilder_component#name ImagebuilderComponent#name}. |
-| <code><a href="#@cdktn/provider-aws.imagebuilderComponent.ImagebuilderComponentConfig.property.platform">Platform</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/imagebuilder_component#platform ImagebuilderComponent#platform}. |
-| <code><a href="#@cdktn/provider-aws.imagebuilderComponent.ImagebuilderComponentConfig.property.version">Version</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/imagebuilder_component#version ImagebuilderComponent#version}. |
-| <code><a href="#@cdktn/provider-aws.imagebuilderComponent.ImagebuilderComponentConfig.property.changeDescription">ChangeDescription</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/imagebuilder_component#change_description ImagebuilderComponent#change_description}. |
-| <code><a href="#@cdktn/provider-aws.imagebuilderComponent.ImagebuilderComponentConfig.property.data">Data</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/imagebuilder_component#data ImagebuilderComponent#data}. |
-| <code><a href="#@cdktn/provider-aws.imagebuilderComponent.ImagebuilderComponentConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/imagebuilder_component#description ImagebuilderComponent#description}. |
-| <code><a href="#@cdktn/provider-aws.imagebuilderComponent.ImagebuilderComponentConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/imagebuilder_component#id ImagebuilderComponent#id}. |
-| <code><a href="#@cdktn/provider-aws.imagebuilderComponent.ImagebuilderComponentConfig.property.kmsKeyId">KmsKeyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/imagebuilder_component#kms_key_id ImagebuilderComponent#kms_key_id}. |
+| <code><a href="#@cdktn/provider-aws.imagebuilderComponent.ImagebuilderComponentConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/imagebuilder_component#name ImagebuilderComponent#name}. |
+| <code><a href="#@cdktn/provider-aws.imagebuilderComponent.ImagebuilderComponentConfig.property.platform">Platform</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/imagebuilder_component#platform ImagebuilderComponent#platform}. |
+| <code><a href="#@cdktn/provider-aws.imagebuilderComponent.ImagebuilderComponentConfig.property.version">Version</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/imagebuilder_component#version ImagebuilderComponent#version}. |
+| <code><a href="#@cdktn/provider-aws.imagebuilderComponent.ImagebuilderComponentConfig.property.changeDescription">ChangeDescription</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/imagebuilder_component#change_description ImagebuilderComponent#change_description}. |
+| <code><a href="#@cdktn/provider-aws.imagebuilderComponent.ImagebuilderComponentConfig.property.data">Data</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/imagebuilder_component#data ImagebuilderComponent#data}. |
+| <code><a href="#@cdktn/provider-aws.imagebuilderComponent.ImagebuilderComponentConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/imagebuilder_component#description ImagebuilderComponent#description}. |
+| <code><a href="#@cdktn/provider-aws.imagebuilderComponent.ImagebuilderComponentConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/imagebuilder_component#id ImagebuilderComponent#id}. |
+| <code><a href="#@cdktn/provider-aws.imagebuilderComponent.ImagebuilderComponentConfig.property.kmsKeyId">KmsKeyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/imagebuilder_component#kms_key_id ImagebuilderComponent#kms_key_id}. |
 | <code><a href="#@cdktn/provider-aws.imagebuilderComponent.ImagebuilderComponentConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.imagebuilderComponent.ImagebuilderComponentConfig.property.skipDestroy">SkipDestroy</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/imagebuilder_component#skip_destroy ImagebuilderComponent#skip_destroy}. |
-| <code><a href="#@cdktn/provider-aws.imagebuilderComponent.ImagebuilderComponentConfig.property.supportedOsVersions">SupportedOsVersions</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/imagebuilder_component#supported_os_versions ImagebuilderComponent#supported_os_versions}. |
-| <code><a href="#@cdktn/provider-aws.imagebuilderComponent.ImagebuilderComponentConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/imagebuilder_component#tags ImagebuilderComponent#tags}. |
-| <code><a href="#@cdktn/provider-aws.imagebuilderComponent.ImagebuilderComponentConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/imagebuilder_component#tags_all ImagebuilderComponent#tags_all}. |
-| <code><a href="#@cdktn/provider-aws.imagebuilderComponent.ImagebuilderComponentConfig.property.uri">Uri</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/imagebuilder_component#uri ImagebuilderComponent#uri}. |
+| <code><a href="#@cdktn/provider-aws.imagebuilderComponent.ImagebuilderComponentConfig.property.skipDestroy">SkipDestroy</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/imagebuilder_component#skip_destroy ImagebuilderComponent#skip_destroy}. |
+| <code><a href="#@cdktn/provider-aws.imagebuilderComponent.ImagebuilderComponentConfig.property.supportedOsVersions">SupportedOsVersions</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/imagebuilder_component#supported_os_versions ImagebuilderComponent#supported_os_versions}. |
+| <code><a href="#@cdktn/provider-aws.imagebuilderComponent.ImagebuilderComponentConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/imagebuilder_component#tags ImagebuilderComponent#tags}. |
+| <code><a href="#@cdktn/provider-aws.imagebuilderComponent.ImagebuilderComponentConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/imagebuilder_component#tags_all ImagebuilderComponent#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.imagebuilderComponent.ImagebuilderComponentConfig.property.uri">Uri</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/imagebuilder_component#uri ImagebuilderComponent#uri}. |
 
 ---
 
@@ -1262,7 +1262,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/imagebuilder_component#name ImagebuilderComponent#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/imagebuilder_component#name ImagebuilderComponent#name}.
 
 ---
 
@@ -1274,7 +1274,7 @@ Platform *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/imagebuilder_component#platform ImagebuilderComponent#platform}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/imagebuilder_component#platform ImagebuilderComponent#platform}.
 
 ---
 
@@ -1286,7 +1286,7 @@ Version *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/imagebuilder_component#version ImagebuilderComponent#version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/imagebuilder_component#version ImagebuilderComponent#version}.
 
 ---
 
@@ -1298,7 +1298,7 @@ ChangeDescription *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/imagebuilder_component#change_description ImagebuilderComponent#change_description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/imagebuilder_component#change_description ImagebuilderComponent#change_description}.
 
 ---
 
@@ -1310,7 +1310,7 @@ Data *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/imagebuilder_component#data ImagebuilderComponent#data}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/imagebuilder_component#data ImagebuilderComponent#data}.
 
 ---
 
@@ -1322,7 +1322,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/imagebuilder_component#description ImagebuilderComponent#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/imagebuilder_component#description ImagebuilderComponent#description}.
 
 ---
 
@@ -1334,7 +1334,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/imagebuilder_component#id ImagebuilderComponent#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/imagebuilder_component#id ImagebuilderComponent#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1349,7 +1349,7 @@ KmsKeyId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/imagebuilder_component#kms_key_id ImagebuilderComponent#kms_key_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/imagebuilder_component#kms_key_id ImagebuilderComponent#kms_key_id}.
 
 ---
 
@@ -1363,7 +1363,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/imagebuilder_component#region ImagebuilderComponent#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/imagebuilder_component#region ImagebuilderComponent#region}
 
 ---
 
@@ -1375,7 +1375,7 @@ SkipDestroy interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/imagebuilder_component#skip_destroy ImagebuilderComponent#skip_destroy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/imagebuilder_component#skip_destroy ImagebuilderComponent#skip_destroy}.
 
 ---
 
@@ -1387,7 +1387,7 @@ SupportedOsVersions *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/imagebuilder_component#supported_os_versions ImagebuilderComponent#supported_os_versions}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/imagebuilder_component#supported_os_versions ImagebuilderComponent#supported_os_versions}.
 
 ---
 
@@ -1399,7 +1399,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/imagebuilder_component#tags ImagebuilderComponent#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/imagebuilder_component#tags ImagebuilderComponent#tags}.
 
 ---
 
@@ -1411,7 +1411,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/imagebuilder_component#tags_all ImagebuilderComponent#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/imagebuilder_component#tags_all ImagebuilderComponent#tags_all}.
 
 ---
 
@@ -1423,7 +1423,7 @@ Uri *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/imagebuilder_component#uri ImagebuilderComponent#uri}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/imagebuilder_component#uri ImagebuilderComponent#uri}.
 
 ---
 

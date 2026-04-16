@@ -4,7 +4,7 @@
 
 ### DataAwsS3FilesFileSystems <a name="DataAwsS3FilesFileSystems" id="@cdktn/provider-aws.dataAwsS3FilesFileSystems.DataAwsS3FilesFileSystems"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/data-sources/s3files_file_systems aws_s3files_file_systems}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/data-sources/s3files_file_systems aws_s3files_file_systems}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsS3FilesFileSystems.DataAwsS3FilesFileSystems.Initializer"></a>
 
@@ -414,7 +414,7 @@ The construct id used in the generated config for the DataAwsS3FilesFileSystems 
 
 The id of the existing DataAwsS3FilesFileSystems that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/data-sources/s3files_file_systems#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/data-sources/s3files_file_systems#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -747,7 +747,7 @@ FileSystems interface{}
 
 file_systems block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/data-sources/s3files_file_systems#file_systems DataAwsS3FilesFileSystems#file_systems}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/data-sources/s3files_file_systems#file_systems DataAwsS3FilesFileSystems#file_systems}
 
 ---
 
@@ -761,7 +761,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/data-sources/s3files_file_systems#region DataAwsS3FilesFileSystems#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/data-sources/s3files_file_systems#region DataAwsS3FilesFileSystems#region}
 
 ---
 
