@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/route53_cidr_location
+// https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/route53_cidr_location
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,21 +13,21 @@ import * as cdktn from 'cdktn';
 
 export interface Route53CidrLocationConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/route53_cidr_location#cidr_blocks Route53CidrLocation#cidr_blocks}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/route53_cidr_location#cidr_blocks Route53CidrLocation#cidr_blocks}
   */
   readonly cidrBlocks: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/route53_cidr_location#cidr_collection_id Route53CidrLocation#cidr_collection_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/route53_cidr_location#cidr_collection_id Route53CidrLocation#cidr_collection_id}
   */
   readonly cidrCollectionId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/route53_cidr_location#name Route53CidrLocation#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/route53_cidr_location#name Route53CidrLocation#name}
   */
   readonly name: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/route53_cidr_location aws_route53_cidr_location}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/route53_cidr_location aws_route53_cidr_location}
 */
 export class Route53CidrLocation extends cdktn.TerraformResource {
 
@@ -43,7 +43,7 @@ export class Route53CidrLocation extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a Route53CidrLocation resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Route53CidrLocation to import
-  * @param importFromId The id of the existing Route53CidrLocation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/route53_cidr_location#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Route53CidrLocation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/route53_cidr_location#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Route53CidrLocation to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -55,7 +55,7 @@ export class Route53CidrLocation extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/route53_cidr_location aws_route53_cidr_location} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/route53_cidr_location aws_route53_cidr_location} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -66,7 +66,7 @@ export class Route53CidrLocation extends cdktn.TerraformResource {
       terraformResourceType: 'aws_route53_cidr_location',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.40.0',
+        providerVersion: '6.41.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

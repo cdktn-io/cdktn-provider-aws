@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/data-sources/ecs_task_definition
+// https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/data-sources/ecs_task_definition
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktn from 'cdktn';
 
 export interface DataAwsEcsTaskDefinitionConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/data-sources/ecs_task_definition#id DataAwsEcsTaskDefinition#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/data-sources/ecs_task_definition#id DataAwsEcsTaskDefinition#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,11 +22,11 @@ export interface DataAwsEcsTaskDefinitionConfig extends cdktn.TerraformMetaArgum
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/data-sources/ecs_task_definition#region DataAwsEcsTaskDefinition#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/data-sources/ecs_task_definition#region DataAwsEcsTaskDefinition#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/data-sources/ecs_task_definition#task_definition DataAwsEcsTaskDefinition#task_definition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/data-sources/ecs_task_definition#task_definition DataAwsEcsTaskDefinition#task_definition}
   */
   readonly taskDefinition: string;
 }
@@ -790,6 +790,96 @@ export class DataAwsEcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfigurati
     return new DataAwsEcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfigurationOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface DataAwsEcsTaskDefinitionVolumeS3FilesVolumeConfiguration {
+}
+
+export function dataAwsEcsTaskDefinitionVolumeS3FilesVolumeConfigurationToTerraform(struct?: DataAwsEcsTaskDefinitionVolumeS3FilesVolumeConfiguration): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function dataAwsEcsTaskDefinitionVolumeS3FilesVolumeConfigurationToHclTerraform(struct?: DataAwsEcsTaskDefinitionVolumeS3FilesVolumeConfiguration): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataAwsEcsTaskDefinitionVolumeS3FilesVolumeConfigurationOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsEcsTaskDefinitionVolumeS3FilesVolumeConfiguration | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsEcsTaskDefinitionVolumeS3FilesVolumeConfiguration | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // access_point_arn - computed: true, optional: false, required: false
+  public get accessPointArn() {
+    return this.getStringAttribute('access_point_arn');
+  }
+
+  // file_system_arn - computed: true, optional: false, required: false
+  public get fileSystemArn() {
+    return this.getStringAttribute('file_system_arn');
+  }
+
+  // root_directory - computed: true, optional: false, required: false
+  public get rootDirectory() {
+    return this.getStringAttribute('root_directory');
+  }
+
+  // transit_encryption_port - computed: true, optional: false, required: false
+  public get transitEncryptionPort() {
+    return this.getNumberAttribute('transit_encryption_port');
+  }
+}
+
+export class DataAwsEcsTaskDefinitionVolumeS3FilesVolumeConfigurationList extends cdktn.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsEcsTaskDefinitionVolumeS3FilesVolumeConfigurationOutputReference {
+    return new DataAwsEcsTaskDefinitionVolumeS3FilesVolumeConfigurationOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface DataAwsEcsTaskDefinitionVolume {
 }
 
@@ -873,6 +963,12 @@ export class DataAwsEcsTaskDefinitionVolumeOutputReference extends cdktn.Complex
   public get name() {
     return this.getStringAttribute('name');
   }
+
+  // s3files_volume_configuration - computed: true, optional: false, required: false
+  private _s3FilesVolumeConfiguration = new DataAwsEcsTaskDefinitionVolumeS3FilesVolumeConfigurationList(this, "s3files_volume_configuration", false);
+  public get s3FilesVolumeConfiguration() {
+    return this._s3FilesVolumeConfiguration;
+  }
 }
 
 export class DataAwsEcsTaskDefinitionVolumeList extends cdktn.ComplexList {
@@ -895,7 +991,7 @@ export class DataAwsEcsTaskDefinitionVolumeList extends cdktn.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/data-sources/ecs_task_definition aws_ecs_task_definition}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/data-sources/ecs_task_definition aws_ecs_task_definition}
 */
 export class DataAwsEcsTaskDefinition extends cdktn.TerraformDataSource {
 
@@ -911,7 +1007,7 @@ export class DataAwsEcsTaskDefinition extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataAwsEcsTaskDefinition resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsEcsTaskDefinition to import
-  * @param importFromId The id of the existing DataAwsEcsTaskDefinition that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/data-sources/ecs_task_definition#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsEcsTaskDefinition that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/data-sources/ecs_task_definition#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsEcsTaskDefinition to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -923,7 +1019,7 @@ export class DataAwsEcsTaskDefinition extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/data-sources/ecs_task_definition aws_ecs_task_definition} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/data-sources/ecs_task_definition aws_ecs_task_definition} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -934,7 +1030,7 @@ export class DataAwsEcsTaskDefinition extends cdktn.TerraformDataSource {
       terraformResourceType: 'aws_ecs_task_definition',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.40.0',
+        providerVersion: '6.41.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
