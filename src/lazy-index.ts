@@ -259,6 +259,7 @@ Object.defineProperty(exports, 'cloudsearchDomainServiceAccessPolicy', { get: fu
 Object.defineProperty(exports, 'cloudtrail', { get: function () { return require('./cloudtrail'); } });
 Object.defineProperty(exports, 'cloudtrailEventDataStore', { get: function () { return require('./cloudtrail-event-data-store'); } });
 Object.defineProperty(exports, 'cloudtrailOrganizationDelegatedAdminAccount', { get: function () { return require('./cloudtrail-organization-delegated-admin-account'); } });
+Object.defineProperty(exports, 'cloudwatchAlarmMuteRule', { get: function () { return require('./cloudwatch-alarm-mute-rule'); } });
 Object.defineProperty(exports, 'cloudwatchCompositeAlarm', { get: function () { return require('./cloudwatch-composite-alarm'); } });
 Object.defineProperty(exports, 'cloudwatchContributorInsightRule', { get: function () { return require('./cloudwatch-contributor-insight-rule'); } });
 Object.defineProperty(exports, 'cloudwatchContributorManagedInsightRule', { get: function () { return require('./cloudwatch-contributor-managed-insight-rule'); } });

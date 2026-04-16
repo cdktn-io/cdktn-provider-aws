@@ -259,6 +259,7 @@ The following submodules are available:
 - [cloudtrail](./cloudtrail.typescript.md)
 - [cloudtrailEventDataStore](./cloudtrailEventDataStore.typescript.md)
 - [cloudtrailOrganizationDelegatedAdminAccount](./cloudtrailOrganizationDelegatedAdminAccount.typescript.md)
+- [cloudwatchAlarmMuteRule](./cloudwatchAlarmMuteRule.typescript.md)
 - [cloudwatchCompositeAlarm](./cloudwatchCompositeAlarm.typescript.md)
 - [cloudwatchContributorInsightRule](./cloudwatchContributorInsightRule.typescript.md)
 - [cloudwatchContributorManagedInsightRule](./cloudwatchContributorManagedInsightRule.typescript.md)

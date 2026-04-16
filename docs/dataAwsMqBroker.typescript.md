@@ -4,7 +4,7 @@
 
 ### DataAwsMqBroker <a name="DataAwsMqBroker" id="@cdktn/provider-aws.dataAwsMqBroker.DataAwsMqBroker"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/data-sources/mq_broker aws_mq_broker}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/data-sources/mq_broker aws_mq_broker}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsMqBroker.DataAwsMqBroker.Initializer"></a>
 
@@ -422,7 +422,7 @@ The construct id used in the generated config for the DataAwsMqBroker to import.
 
 The id of the existing DataAwsMqBroker that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/data-sources/mq_broker#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/data-sources/mq_broker#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -924,11 +924,11 @@ const dataAwsMqBrokerConfig: dataAwsMqBroker.DataAwsMqBrokerConfig = { ... }
 | <code><a href="#@cdktn/provider-aws.dataAwsMqBroker.DataAwsMqBrokerConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsMqBroker.DataAwsMqBrokerConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsMqBroker.DataAwsMqBrokerConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dataAwsMqBroker.DataAwsMqBrokerConfig.property.brokerId">brokerId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/data-sources/mq_broker#broker_id DataAwsMqBroker#broker_id}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsMqBroker.DataAwsMqBrokerConfig.property.brokerName">brokerName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/data-sources/mq_broker#broker_name DataAwsMqBroker#broker_name}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsMqBroker.DataAwsMqBrokerConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/data-sources/mq_broker#id DataAwsMqBroker#id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsMqBroker.DataAwsMqBrokerConfig.property.brokerId">brokerId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/data-sources/mq_broker#broker_id DataAwsMqBroker#broker_id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsMqBroker.DataAwsMqBrokerConfig.property.brokerName">brokerName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/data-sources/mq_broker#broker_name DataAwsMqBroker#broker_name}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsMqBroker.DataAwsMqBrokerConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/data-sources/mq_broker#id DataAwsMqBroker#id}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsMqBroker.DataAwsMqBrokerConfig.property.region">region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.dataAwsMqBroker.DataAwsMqBrokerConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/data-sources/mq_broker#tags DataAwsMqBroker#tags}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsMqBroker.DataAwsMqBrokerConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/data-sources/mq_broker#tags DataAwsMqBroker#tags}. |
 
 ---
 
@@ -1010,7 +1010,7 @@ public readonly brokerId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/data-sources/mq_broker#broker_id DataAwsMqBroker#broker_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/data-sources/mq_broker#broker_id DataAwsMqBroker#broker_id}.
 
 ---
 
@@ -1022,7 +1022,7 @@ public readonly brokerName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/data-sources/mq_broker#broker_name DataAwsMqBroker#broker_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/data-sources/mq_broker#broker_name DataAwsMqBroker#broker_name}.
 
 ---
 
@@ -1034,7 +1034,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/data-sources/mq_broker#id DataAwsMqBroker#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/data-sources/mq_broker#id DataAwsMqBroker#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1051,7 +1051,7 @@ public readonly region: string;
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/data-sources/mq_broker#region DataAwsMqBroker#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/data-sources/mq_broker#region DataAwsMqBroker#region}
 
 ---
 
@@ -1063,7 +1063,7 @@ public readonly tags: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/data-sources/mq_broker#tags DataAwsMqBroker#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/data-sources/mq_broker#tags DataAwsMqBroker#tags}.
 
 ---
 

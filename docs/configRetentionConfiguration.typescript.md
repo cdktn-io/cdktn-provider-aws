@@ -4,7 +4,7 @@
 
 ### ConfigRetentionConfiguration <a name="ConfigRetentionConfiguration" id="@cdktn/provider-aws.configRetentionConfiguration.ConfigRetentionConfiguration"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/config_retention_configuration aws_config_retention_configuration}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/config_retention_configuration aws_config_retention_configuration}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.configRetentionConfiguration.ConfigRetentionConfiguration.Initializer"></a>
 
@@ -496,7 +496,7 @@ The construct id used in the generated config for the ConfigRetentionConfigurati
 
 The id of the existing ConfigRetentionConfiguration that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/config_retention_configuration#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/config_retention_configuration#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -778,7 +778,7 @@ const configRetentionConfigurationConfig: configRetentionConfiguration.ConfigRet
 | <code><a href="#@cdktn/provider-aws.configRetentionConfiguration.ConfigRetentionConfigurationConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.configRetentionConfiguration.ConfigRetentionConfigurationConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.configRetentionConfiguration.ConfigRetentionConfigurationConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.configRetentionConfiguration.ConfigRetentionConfigurationConfig.property.retentionPeriodInDays">retentionPeriodInDays</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/config_retention_configuration#retention_period_in_days ConfigRetentionConfiguration#retention_period_in_days}. |
+| <code><a href="#@cdktn/provider-aws.configRetentionConfiguration.ConfigRetentionConfigurationConfig.property.retentionPeriodInDays">retentionPeriodInDays</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/config_retention_configuration#retention_period_in_days ConfigRetentionConfiguration#retention_period_in_days}. |
 | <code><a href="#@cdktn/provider-aws.configRetentionConfiguration.ConfigRetentionConfigurationConfig.property.region">region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -861,7 +861,7 @@ public readonly retentionPeriodInDays: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/config_retention_configuration#retention_period_in_days ConfigRetentionConfiguration#retention_period_in_days}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/config_retention_configuration#retention_period_in_days ConfigRetentionConfiguration#retention_period_in_days}.
 
 ---
 
@@ -875,7 +875,7 @@ public readonly region: string;
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/config_retention_configuration#region ConfigRetentionConfiguration#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/config_retention_configuration#region ConfigRetentionConfiguration#region}
 
 ---
 

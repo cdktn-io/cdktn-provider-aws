@@ -259,6 +259,7 @@ The following submodules are available:
 - [cloudtrail](./cloudtrail.go.md)
 - [cloudtrailEventDataStore](./cloudtrailEventDataStore.go.md)
 - [cloudtrailOrganizationDelegatedAdminAccount](./cloudtrailOrganizationDelegatedAdminAccount.go.md)
+- [cloudwatchAlarmMuteRule](./cloudwatchAlarmMuteRule.go.md)
 - [cloudwatchCompositeAlarm](./cloudwatchCompositeAlarm.go.md)
 - [cloudwatchContributorInsightRule](./cloudwatchContributorInsightRule.go.md)
 - [cloudwatchContributorManagedInsightRule](./cloudwatchContributorManagedInsightRule.go.md)

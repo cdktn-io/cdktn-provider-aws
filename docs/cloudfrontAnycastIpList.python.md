@@ -4,7 +4,7 @@
 
 ### CloudfrontAnycastIpList <a name="CloudfrontAnycastIpList" id="@cdktn/provider-aws.cloudfrontAnycastIpList.CloudfrontAnycastIpList"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/cloudfront_anycast_ip_list aws_cloudfront_anycast_ip_list}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/cloudfront_anycast_ip_list aws_cloudfront_anycast_ip_list}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontAnycastIpList.CloudfrontAnycastIpList.Initializer"></a>
 
@@ -39,9 +39,9 @@ cloudfrontAnycastIpList.CloudfrontAnycastIpList(
 | <code><a href="#@cdktn/provider-aws.cloudfrontAnycastIpList.CloudfrontAnycastIpList.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontAnycastIpList.CloudfrontAnycastIpList.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontAnycastIpList.CloudfrontAnycastIpList.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudfrontAnycastIpList.CloudfrontAnycastIpList.Initializer.parameter.ipCount">ip_count</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/cloudfront_anycast_ip_list#ip_count CloudfrontAnycastIpList#ip_count}. |
-| <code><a href="#@cdktn/provider-aws.cloudfrontAnycastIpList.CloudfrontAnycastIpList.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/cloudfront_anycast_ip_list#name CloudfrontAnycastIpList#name}. |
-| <code><a href="#@cdktn/provider-aws.cloudfrontAnycastIpList.CloudfrontAnycastIpList.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/cloudfront_anycast_ip_list#tags CloudfrontAnycastIpList#tags}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontAnycastIpList.CloudfrontAnycastIpList.Initializer.parameter.ipCount">ip_count</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/cloudfront_anycast_ip_list#ip_count CloudfrontAnycastIpList#ip_count}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontAnycastIpList.CloudfrontAnycastIpList.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/cloudfront_anycast_ip_list#name CloudfrontAnycastIpList#name}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontAnycastIpList.CloudfrontAnycastIpList.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/cloudfront_anycast_ip_list#tags CloudfrontAnycastIpList#tags}. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontAnycastIpList.CloudfrontAnycastIpList.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-aws.cloudfrontAnycastIpList.CloudfrontAnycastIpListTimeouts">CloudfrontAnycastIpListTimeouts</a></code> | timeouts block. |
 
 ---
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/cloudfront_anycast_ip_list#ip_count CloudfrontAnycastIpList#ip_count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/cloudfront_anycast_ip_list#ip_count CloudfrontAnycastIpList#ip_count}.
 
 ---
 
@@ -118,7 +118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/cloudfront_anycast_ip_list#name CloudfrontAnycastIpList#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/cloudfront_anycast_ip_list#name CloudfrontAnycastIpList#name}.
 
 ---
 
@@ -126,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/cloudfront_anycast_ip_list#tags CloudfrontAnycastIpList#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/cloudfront_anycast_ip_list#tags CloudfrontAnycastIpList#tags}.
 
 ---
 
@@ -136,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/cloudfront_anycast_ip_list#timeouts CloudfrontAnycastIpList#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/cloudfront_anycast_ip_list#timeouts CloudfrontAnycastIpList#timeouts}
 
 ---
 
@@ -536,7 +536,7 @@ def put_timeouts(
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/cloudfront_anycast_ip_list#create CloudfrontAnycastIpList#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/cloudfront_anycast_ip_list#create CloudfrontAnycastIpList#create}
 
 ---
 
@@ -666,7 +666,7 @@ The construct id used in the generated config for the CloudfrontAnycastIpList to
 
 The id of the existing CloudfrontAnycastIpList that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/cloudfront_anycast_ip_list#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/cloudfront_anycast_ip_list#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1037,9 +1037,9 @@ cloudfrontAnycastIpList.CloudfrontAnycastIpListConfig(
 | <code><a href="#@cdktn/provider-aws.cloudfrontAnycastIpList.CloudfrontAnycastIpListConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontAnycastIpList.CloudfrontAnycastIpListConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontAnycastIpList.CloudfrontAnycastIpListConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudfrontAnycastIpList.CloudfrontAnycastIpListConfig.property.ipCount">ip_count</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/cloudfront_anycast_ip_list#ip_count CloudfrontAnycastIpList#ip_count}. |
-| <code><a href="#@cdktn/provider-aws.cloudfrontAnycastIpList.CloudfrontAnycastIpListConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/cloudfront_anycast_ip_list#name CloudfrontAnycastIpList#name}. |
-| <code><a href="#@cdktn/provider-aws.cloudfrontAnycastIpList.CloudfrontAnycastIpListConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/cloudfront_anycast_ip_list#tags CloudfrontAnycastIpList#tags}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontAnycastIpList.CloudfrontAnycastIpListConfig.property.ipCount">ip_count</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/cloudfront_anycast_ip_list#ip_count CloudfrontAnycastIpList#ip_count}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontAnycastIpList.CloudfrontAnycastIpListConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/cloudfront_anycast_ip_list#name CloudfrontAnycastIpList#name}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontAnycastIpList.CloudfrontAnycastIpListConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/cloudfront_anycast_ip_list#tags CloudfrontAnycastIpList#tags}. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontAnycastIpList.CloudfrontAnycastIpListConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-aws.cloudfrontAnycastIpList.CloudfrontAnycastIpListTimeouts">CloudfrontAnycastIpListTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1122,7 +1122,7 @@ ip_count: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/cloudfront_anycast_ip_list#ip_count CloudfrontAnycastIpList#ip_count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/cloudfront_anycast_ip_list#ip_count CloudfrontAnycastIpList#ip_count}.
 
 ---
 
@@ -1134,7 +1134,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/cloudfront_anycast_ip_list#name CloudfrontAnycastIpList#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/cloudfront_anycast_ip_list#name CloudfrontAnycastIpList#name}.
 
 ---
 
@@ -1146,7 +1146,7 @@ tags: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/cloudfront_anycast_ip_list#tags CloudfrontAnycastIpList#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/cloudfront_anycast_ip_list#tags CloudfrontAnycastIpList#tags}.
 
 ---
 
@@ -1160,7 +1160,7 @@ timeouts: CloudfrontAnycastIpListTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/cloudfront_anycast_ip_list#timeouts CloudfrontAnycastIpList#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/cloudfront_anycast_ip_list#timeouts CloudfrontAnycastIpList#timeouts}
 
 ---
 
@@ -1194,7 +1194,7 @@ create: str
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/cloudfront_anycast_ip_list#create CloudfrontAnycastIpList#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/cloudfront_anycast_ip_list#create CloudfrontAnycastIpList#create}
 
 ---
 

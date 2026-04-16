@@ -259,6 +259,7 @@ export * as cloudsearchDomainServiceAccessPolicy from './cloudsearch-domain-serv
 export * as cloudtrail from './cloudtrail';
 export * as cloudtrailEventDataStore from './cloudtrail-event-data-store';
 export * as cloudtrailOrganizationDelegatedAdminAccount from './cloudtrail-organization-delegated-admin-account';
+export * as cloudwatchAlarmMuteRule from './cloudwatch-alarm-mute-rule';
 export * as cloudwatchCompositeAlarm from './cloudwatch-composite-alarm';
 export * as cloudwatchContributorInsightRule from './cloudwatch-contributor-insight-rule';
 export * as cloudwatchContributorManagedInsightRule from './cloudwatch-contributor-managed-insight-rule';

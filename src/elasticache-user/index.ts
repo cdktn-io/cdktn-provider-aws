@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/elasticache_user
+// https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/elasticache_user
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,70 +13,78 @@ import * as cdktn from 'cdktn';
 
 export interface ElasticacheUserConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/elasticache_user#access_string ElasticacheUser#access_string}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/elasticache_user#access_string ElasticacheUser#access_string}
   */
   readonly accessString: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/elasticache_user#engine ElasticacheUser#engine}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/elasticache_user#engine ElasticacheUser#engine}
   */
   readonly engine: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/elasticache_user#id ElasticacheUser#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/elasticache_user#id ElasticacheUser#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/elasticache_user#no_password_required ElasticacheUser#no_password_required}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/elasticache_user#no_password_required ElasticacheUser#no_password_required}
   */
   readonly noPasswordRequired?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/elasticache_user#passwords ElasticacheUser#passwords}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/elasticache_user#passwords ElasticacheUser#passwords}
   */
   readonly passwords?: string[];
   /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/elasticache_user#passwords_wo ElasticacheUser#passwords_wo}
+  */
+  readonly passwordsWo?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/elasticache_user#passwords_wo_version ElasticacheUser#passwords_wo_version}
+  */
+  readonly passwordsWoVersion?: number;
+  /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/elasticache_user#region ElasticacheUser#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/elasticache_user#region ElasticacheUser#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/elasticache_user#tags ElasticacheUser#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/elasticache_user#tags ElasticacheUser#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/elasticache_user#tags_all ElasticacheUser#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/elasticache_user#tags_all ElasticacheUser#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/elasticache_user#user_id ElasticacheUser#user_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/elasticache_user#user_id ElasticacheUser#user_id}
   */
   readonly userId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/elasticache_user#user_name ElasticacheUser#user_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/elasticache_user#user_name ElasticacheUser#user_name}
   */
   readonly userName: string;
   /**
   * authentication_mode block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/elasticache_user#authentication_mode ElasticacheUser#authentication_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/elasticache_user#authentication_mode ElasticacheUser#authentication_mode}
   */
   readonly authenticationMode?: ElasticacheUserAuthenticationMode;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/elasticache_user#timeouts ElasticacheUser#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/elasticache_user#timeouts ElasticacheUser#timeouts}
   */
   readonly timeouts?: ElasticacheUserTimeouts;
 }
 export interface ElasticacheUserAuthenticationMode {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/elasticache_user#passwords ElasticacheUser#passwords}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/elasticache_user#passwords ElasticacheUser#passwords}
   */
   readonly passwords?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/elasticache_user#type ElasticacheUser#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/elasticache_user#type ElasticacheUser#type}
   */
   readonly type: string;
 }
@@ -191,19 +199,19 @@ export class ElasticacheUserAuthenticationModeOutputReference extends cdktn.Comp
 }
 export interface ElasticacheUserTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/elasticache_user#create ElasticacheUser#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/elasticache_user#create ElasticacheUser#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/elasticache_user#delete ElasticacheUser#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/elasticache_user#delete ElasticacheUser#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/elasticache_user#read ElasticacheUser#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/elasticache_user#read ElasticacheUser#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/elasticache_user#update ElasticacheUser#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/elasticache_user#update ElasticacheUser#update}
   */
   readonly update?: string;
 }
@@ -384,7 +392,7 @@ export class ElasticacheUserTimeoutsOutputReference extends cdktn.ComplexObject 
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/elasticache_user aws_elasticache_user}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/elasticache_user aws_elasticache_user}
 */
 export class ElasticacheUser extends cdktn.TerraformResource {
 
@@ -400,7 +408,7 @@ export class ElasticacheUser extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a ElasticacheUser resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ElasticacheUser to import
-  * @param importFromId The id of the existing ElasticacheUser that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/elasticache_user#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ElasticacheUser that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/elasticache_user#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ElasticacheUser to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -412,7 +420,7 @@ export class ElasticacheUser extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/elasticache_user aws_elasticache_user} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/elasticache_user aws_elasticache_user} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -423,7 +431,7 @@ export class ElasticacheUser extends cdktn.TerraformResource {
       terraformResourceType: 'aws_elasticache_user',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.40.0',
+        providerVersion: '6.41.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
@@ -439,6 +447,8 @@ export class ElasticacheUser extends cdktn.TerraformResource {
     this._id = config.id;
     this._noPasswordRequired = config.noPasswordRequired;
     this._passwords = config.passwords;
+    this._passwordsWo = config.passwordsWo;
+    this._passwordsWoVersion = config.passwordsWoVersion;
     this._region = config.region;
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
@@ -529,6 +539,38 @@ export class ElasticacheUser extends cdktn.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get passwordsInput() {
     return this._passwords;
+  }
+
+  // passwords_wo - computed: false, optional: true, required: false
+  private _passwordsWo?: string; 
+  public get passwordsWo() {
+    return this.getStringAttribute('passwords_wo');
+  }
+  public set passwordsWo(value: string) {
+    this._passwordsWo = value;
+  }
+  public resetPasswordsWo() {
+    this._passwordsWo = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get passwordsWoInput() {
+    return this._passwordsWo;
+  }
+
+  // passwords_wo_version - computed: false, optional: true, required: false
+  private _passwordsWoVersion?: number; 
+  public get passwordsWoVersion() {
+    return this.getNumberAttribute('passwords_wo_version');
+  }
+  public set passwordsWoVersion(value: number) {
+    this._passwordsWoVersion = value;
+  }
+  public resetPasswordsWoVersion() {
+    this._passwordsWoVersion = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get passwordsWoVersionInput() {
+    return this._passwordsWoVersion;
   }
 
   // region - computed: true, optional: true, required: false
@@ -648,6 +690,8 @@ export class ElasticacheUser extends cdktn.TerraformResource {
       id: cdktn.stringToTerraform(this._id),
       no_password_required: cdktn.booleanToTerraform(this._noPasswordRequired),
       passwords: cdktn.listMapper(cdktn.stringToTerraform, false)(this._passwords),
+      passwords_wo: cdktn.stringToTerraform(this._passwordsWo),
+      passwords_wo_version: cdktn.numberToTerraform(this._passwordsWoVersion),
       region: cdktn.stringToTerraform(this._region),
       tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
       tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
@@ -689,6 +733,18 @@ export class ElasticacheUser extends cdktn.TerraformResource {
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
+      },
+      passwords_wo: {
+        value: cdktn.stringToHclTerraform(this._passwordsWo),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      passwords_wo_version: {
+        value: cdktn.numberToHclTerraform(this._passwordsWoVersion),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
       },
       region: {
         value: cdktn.stringToHclTerraform(this._region),

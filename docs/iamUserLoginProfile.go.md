@@ -4,7 +4,7 @@
 
 ### IamUserLoginProfile <a name="IamUserLoginProfile" id="@cdktn/provider-aws.iamUserLoginProfile.IamUserLoginProfile"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/iam_user_login_profile aws_iam_user_login_profile}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/iam_user_login_profile aws_iam_user_login_profile}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.iamUserLoginProfile.IamUserLoginProfile.Initializer"></a>
 
@@ -517,7 +517,7 @@ The construct id used in the generated config for the IamUserLoginProfile to imp
 
 The id of the existing IamUserLoginProfile that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/iam_user_login_profile#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/iam_user_login_profile#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -889,11 +889,11 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/iamuserloginprofile"
 | <code><a href="#@cdktn/provider-aws.iamUserLoginProfile.IamUserLoginProfileConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iamUserLoginProfile.IamUserLoginProfileConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iamUserLoginProfile.IamUserLoginProfileConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.iamUserLoginProfile.IamUserLoginProfileConfig.property.user">User</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/iam_user_login_profile#user IamUserLoginProfile#user}. |
-| <code><a href="#@cdktn/provider-aws.iamUserLoginProfile.IamUserLoginProfileConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/iam_user_login_profile#id IamUserLoginProfile#id}. |
-| <code><a href="#@cdktn/provider-aws.iamUserLoginProfile.IamUserLoginProfileConfig.property.passwordLength">PasswordLength</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/iam_user_login_profile#password_length IamUserLoginProfile#password_length}. |
-| <code><a href="#@cdktn/provider-aws.iamUserLoginProfile.IamUserLoginProfileConfig.property.passwordResetRequired">PasswordResetRequired</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/iam_user_login_profile#password_reset_required IamUserLoginProfile#password_reset_required}. |
-| <code><a href="#@cdktn/provider-aws.iamUserLoginProfile.IamUserLoginProfileConfig.property.pgpKey">PgpKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/iam_user_login_profile#pgp_key IamUserLoginProfile#pgp_key}. |
+| <code><a href="#@cdktn/provider-aws.iamUserLoginProfile.IamUserLoginProfileConfig.property.user">User</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/iam_user_login_profile#user IamUserLoginProfile#user}. |
+| <code><a href="#@cdktn/provider-aws.iamUserLoginProfile.IamUserLoginProfileConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/iam_user_login_profile#id IamUserLoginProfile#id}. |
+| <code><a href="#@cdktn/provider-aws.iamUserLoginProfile.IamUserLoginProfileConfig.property.passwordLength">PasswordLength</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/iam_user_login_profile#password_length IamUserLoginProfile#password_length}. |
+| <code><a href="#@cdktn/provider-aws.iamUserLoginProfile.IamUserLoginProfileConfig.property.passwordResetRequired">PasswordResetRequired</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/iam_user_login_profile#password_reset_required IamUserLoginProfile#password_reset_required}. |
+| <code><a href="#@cdktn/provider-aws.iamUserLoginProfile.IamUserLoginProfileConfig.property.pgpKey">PgpKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/iam_user_login_profile#pgp_key IamUserLoginProfile#pgp_key}. |
 
 ---
 
@@ -975,7 +975,7 @@ User *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/iam_user_login_profile#user IamUserLoginProfile#user}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/iam_user_login_profile#user IamUserLoginProfile#user}.
 
 ---
 
@@ -987,7 +987,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/iam_user_login_profile#id IamUserLoginProfile#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/iam_user_login_profile#id IamUserLoginProfile#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1002,7 +1002,7 @@ PasswordLength *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/iam_user_login_profile#password_length IamUserLoginProfile#password_length}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/iam_user_login_profile#password_length IamUserLoginProfile#password_length}.
 
 ---
 
@@ -1014,7 +1014,7 @@ PasswordResetRequired interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/iam_user_login_profile#password_reset_required IamUserLoginProfile#password_reset_required}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/iam_user_login_profile#password_reset_required IamUserLoginProfile#password_reset_required}.
 
 ---
 
@@ -1026,7 +1026,7 @@ PgpKey *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/iam_user_login_profile#pgp_key IamUserLoginProfile#pgp_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/iam_user_login_profile#pgp_key IamUserLoginProfile#pgp_key}.
 
 ---
 

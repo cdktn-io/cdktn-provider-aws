@@ -4,7 +4,7 @@
 
 ### NotificationsEventRule <a name="NotificationsEventRule" id="@cdktn/provider-aws.notificationsEventRule.NotificationsEventRule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/notifications_event_rule aws_notifications_event_rule}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/notifications_event_rule aws_notifications_event_rule}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.notificationsEventRule.NotificationsEventRule.Initializer"></a>
 
@@ -496,7 +496,7 @@ The construct id used in the generated config for the NotificationsEventRule to 
 
 The id of the existing NotificationsEventRule that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/notifications_event_rule#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/notifications_event_rule#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -846,11 +846,11 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/notificationseventrule
 | <code><a href="#@cdktn/provider-aws.notificationsEventRule.NotificationsEventRuleConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.notificationsEventRule.NotificationsEventRuleConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.notificationsEventRule.NotificationsEventRuleConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.notificationsEventRule.NotificationsEventRuleConfig.property.eventType">EventType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/notifications_event_rule#event_type NotificationsEventRule#event_type}. |
-| <code><a href="#@cdktn/provider-aws.notificationsEventRule.NotificationsEventRuleConfig.property.notificationConfigurationArn">NotificationConfigurationArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/notifications_event_rule#notification_configuration_arn NotificationsEventRule#notification_configuration_arn}. |
-| <code><a href="#@cdktn/provider-aws.notificationsEventRule.NotificationsEventRuleConfig.property.regions">Regions</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/notifications_event_rule#regions NotificationsEventRule#regions}. |
-| <code><a href="#@cdktn/provider-aws.notificationsEventRule.NotificationsEventRuleConfig.property.source">Source</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/notifications_event_rule#source NotificationsEventRule#source}. |
-| <code><a href="#@cdktn/provider-aws.notificationsEventRule.NotificationsEventRuleConfig.property.eventPattern">EventPattern</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/notifications_event_rule#event_pattern NotificationsEventRule#event_pattern}. |
+| <code><a href="#@cdktn/provider-aws.notificationsEventRule.NotificationsEventRuleConfig.property.eventType">EventType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/notifications_event_rule#event_type NotificationsEventRule#event_type}. |
+| <code><a href="#@cdktn/provider-aws.notificationsEventRule.NotificationsEventRuleConfig.property.notificationConfigurationArn">NotificationConfigurationArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/notifications_event_rule#notification_configuration_arn NotificationsEventRule#notification_configuration_arn}. |
+| <code><a href="#@cdktn/provider-aws.notificationsEventRule.NotificationsEventRuleConfig.property.regions">Regions</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/notifications_event_rule#regions NotificationsEventRule#regions}. |
+| <code><a href="#@cdktn/provider-aws.notificationsEventRule.NotificationsEventRuleConfig.property.source">Source</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/notifications_event_rule#source NotificationsEventRule#source}. |
+| <code><a href="#@cdktn/provider-aws.notificationsEventRule.NotificationsEventRuleConfig.property.eventPattern">EventPattern</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/notifications_event_rule#event_pattern NotificationsEventRule#event_pattern}. |
 
 ---
 
@@ -932,7 +932,7 @@ EventType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/notifications_event_rule#event_type NotificationsEventRule#event_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/notifications_event_rule#event_type NotificationsEventRule#event_type}.
 
 ---
 
@@ -944,7 +944,7 @@ NotificationConfigurationArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/notifications_event_rule#notification_configuration_arn NotificationsEventRule#notification_configuration_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/notifications_event_rule#notification_configuration_arn NotificationsEventRule#notification_configuration_arn}.
 
 ---
 
@@ -956,7 +956,7 @@ Regions *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/notifications_event_rule#regions NotificationsEventRule#regions}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/notifications_event_rule#regions NotificationsEventRule#regions}.
 
 ---
 
@@ -968,7 +968,7 @@ Source *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/notifications_event_rule#source NotificationsEventRule#source}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/notifications_event_rule#source NotificationsEventRule#source}.
 
 ---
 
@@ -980,7 +980,7 @@ EventPattern *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/notifications_event_rule#event_pattern NotificationsEventRule#event_pattern}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/notifications_event_rule#event_pattern NotificationsEventRule#event_pattern}.
 
 ---
 

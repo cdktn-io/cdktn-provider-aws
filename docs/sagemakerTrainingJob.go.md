@@ -4,7 +4,7 @@
 
 ### SagemakerTrainingJob <a name="SagemakerTrainingJob" id="@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJob"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job aws_sagemaker_training_job}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job aws_sagemaker_training_job}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJob.Initializer"></a>
 
@@ -972,7 +972,7 @@ The construct id used in the generated config for the SagemakerTrainingJob to im
 
 The id of the existing SagemakerTrainingJob that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1917,13 +1917,13 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/sagemakertrainingjob"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobAlgorithmSpecification.property.algorithmName">AlgorithmName</a></code> | <code>*string</code> | Name or ARN of a SageMaker algorithm resource. Exactly one of `algorithm_name` or `training_image` must be set. |
-| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobAlgorithmSpecification.property.containerArguments">ContainerArguments</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#container_arguments SagemakerTrainingJob#container_arguments}. |
-| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobAlgorithmSpecification.property.containerEntrypoint">ContainerEntrypoint</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#container_entrypoint SagemakerTrainingJob#container_entrypoint}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobAlgorithmSpecification.property.containerArguments">ContainerArguments</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#container_arguments SagemakerTrainingJob#container_arguments}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobAlgorithmSpecification.property.containerEntrypoint">ContainerEntrypoint</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#container_entrypoint SagemakerTrainingJob#container_entrypoint}. |
 | <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobAlgorithmSpecification.property.enableSagemakerMetricsTimeSeries">EnableSagemakerMetricsTimeSeries</a></code> | <code>interface{}</code> | Whether SageMaker AI should publish time-series metrics. |
 | <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobAlgorithmSpecification.property.metricDefinitions">MetricDefinitions</a></code> | <code>interface{}</code> | metric_definitions block. |
 | <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobAlgorithmSpecification.property.trainingImage">TrainingImage</a></code> | <code>*string</code> | Registry path of the training image. |
 | <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobAlgorithmSpecification.property.trainingImageConfig">TrainingImageConfig</a></code> | <code>interface{}</code> | training_image_config block. |
-| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobAlgorithmSpecification.property.trainingInputMode">TrainingInputMode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#training_input_mode SagemakerTrainingJob#training_input_mode}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobAlgorithmSpecification.property.trainingInputMode">TrainingInputMode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#training_input_mode SagemakerTrainingJob#training_input_mode}. |
 
 ---
 
@@ -1937,7 +1937,7 @@ AlgorithmName *string
 
 Name or ARN of a SageMaker algorithm resource. Exactly one of `algorithm_name` or `training_image` must be set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#algorithm_name SagemakerTrainingJob#algorithm_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#algorithm_name SagemakerTrainingJob#algorithm_name}
 
 ---
 
@@ -1949,7 +1949,7 @@ ContainerArguments *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#container_arguments SagemakerTrainingJob#container_arguments}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#container_arguments SagemakerTrainingJob#container_arguments}.
 
 ---
 
@@ -1961,7 +1961,7 @@ ContainerEntrypoint *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#container_entrypoint SagemakerTrainingJob#container_entrypoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#container_entrypoint SagemakerTrainingJob#container_entrypoint}.
 
 ---
 
@@ -1977,7 +1977,7 @@ Whether SageMaker AI should publish time-series metrics.
 
 SageMaker enables this automatically for built-in algorithms, supported prebuilt images, and jobs with explicit `metric_definitions`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#enable_sagemaker_metrics_time_series SagemakerTrainingJob#enable_sagemaker_metrics_time_series}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#enable_sagemaker_metrics_time_series SagemakerTrainingJob#enable_sagemaker_metrics_time_series}
 
 ---
 
@@ -1991,7 +1991,7 @@ MetricDefinitions interface{}
 
 metric_definitions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#metric_definitions SagemakerTrainingJob#metric_definitions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#metric_definitions SagemakerTrainingJob#metric_definitions}
 
 ---
 
@@ -2007,7 +2007,7 @@ Registry path of the training image.
 
 Exactly one of `algorithm_name` or `training_image` must be set. Use `metric_definitions` only when you need to extract custom metrics from your own training container logs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#training_image SagemakerTrainingJob#training_image}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#training_image SagemakerTrainingJob#training_image}
 
 ---
 
@@ -2021,7 +2021,7 @@ TrainingImageConfig interface{}
 
 training_image_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#training_image_config SagemakerTrainingJob#training_image_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#training_image_config SagemakerTrainingJob#training_image_config}
 
 ---
 
@@ -2033,7 +2033,7 @@ TrainingInputMode *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#training_input_mode SagemakerTrainingJob#training_input_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#training_input_mode SagemakerTrainingJob#training_input_mode}.
 
 ---
 
@@ -2054,8 +2054,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/sagemakertrainingjob"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobAlgorithmSpecificationMetricDefinitions.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#name SagemakerTrainingJob#name}. |
-| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobAlgorithmSpecificationMetricDefinitions.property.regex">Regex</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#regex SagemakerTrainingJob#regex}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobAlgorithmSpecificationMetricDefinitions.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#name SagemakerTrainingJob#name}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobAlgorithmSpecificationMetricDefinitions.property.regex">Regex</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#regex SagemakerTrainingJob#regex}. |
 
 ---
 
@@ -2067,7 +2067,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#name SagemakerTrainingJob#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#name SagemakerTrainingJob#name}.
 
 ---
 
@@ -2079,7 +2079,7 @@ Regex *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#regex SagemakerTrainingJob#regex}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#regex SagemakerTrainingJob#regex}.
 
 ---
 
@@ -2100,7 +2100,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/sagemakertrainingjob"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobAlgorithmSpecificationTrainingImageConfig.property.trainingRepositoryAccessMode">TrainingRepositoryAccessMode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#training_repository_access_mode SagemakerTrainingJob#training_repository_access_mode}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobAlgorithmSpecificationTrainingImageConfig.property.trainingRepositoryAccessMode">TrainingRepositoryAccessMode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#training_repository_access_mode SagemakerTrainingJob#training_repository_access_mode}. |
 | <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobAlgorithmSpecificationTrainingImageConfig.property.trainingRepositoryAuthConfig">TrainingRepositoryAuthConfig</a></code> | <code>interface{}</code> | training_repository_auth_config block. |
 
 ---
@@ -2113,7 +2113,7 @@ TrainingRepositoryAccessMode *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#training_repository_access_mode SagemakerTrainingJob#training_repository_access_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#training_repository_access_mode SagemakerTrainingJob#training_repository_access_mode}.
 
 ---
 
@@ -2127,7 +2127,7 @@ TrainingRepositoryAuthConfig interface{}
 
 training_repository_auth_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#training_repository_auth_config SagemakerTrainingJob#training_repository_auth_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#training_repository_auth_config SagemakerTrainingJob#training_repository_auth_config}
 
 ---
 
@@ -2147,7 +2147,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/sagemakertrainingjob"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobAlgorithmSpecificationTrainingImageConfigTrainingRepositoryAuthConfig.property.trainingRepositoryCredentialsProviderArn">TrainingRepositoryCredentialsProviderArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#training_repository_credentials_provider_arn SagemakerTrainingJob#training_repository_credentials_provider_arn}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobAlgorithmSpecificationTrainingImageConfigTrainingRepositoryAuthConfig.property.trainingRepositoryCredentialsProviderArn">TrainingRepositoryCredentialsProviderArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#training_repository_credentials_provider_arn SagemakerTrainingJob#training_repository_credentials_provider_arn}. |
 
 ---
 
@@ -2159,7 +2159,7 @@ TrainingRepositoryCredentialsProviderArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#training_repository_credentials_provider_arn SagemakerTrainingJob#training_repository_credentials_provider_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#training_repository_credentials_provider_arn SagemakerTrainingJob#training_repository_credentials_provider_arn}.
 
 ---
 
@@ -2180,8 +2180,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/sagemakertrainingjob"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobCheckpointConfig.property.s3Uri">S3Uri</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#s3_uri SagemakerTrainingJob#s3_uri}. |
-| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobCheckpointConfig.property.localPath">LocalPath</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#local_path SagemakerTrainingJob#local_path}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobCheckpointConfig.property.s3Uri">S3Uri</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#s3_uri SagemakerTrainingJob#s3_uri}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobCheckpointConfig.property.localPath">LocalPath</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#local_path SagemakerTrainingJob#local_path}. |
 
 ---
 
@@ -2193,7 +2193,7 @@ S3Uri *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#s3_uri SagemakerTrainingJob#s3_uri}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#s3_uri SagemakerTrainingJob#s3_uri}.
 
 ---
 
@@ -2205,7 +2205,7 @@ LocalPath *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#local_path SagemakerTrainingJob#local_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#local_path SagemakerTrainingJob#local_path}.
 
 ---
 
@@ -2270,20 +2270,20 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/sagemakertrainingjob"
 | <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobConfig.property.roleArn">RoleArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#role_arn SagemakerTrainingJob#role_arn}. |
-| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobConfig.property.trainingJobName">TrainingJobName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#training_job_name SagemakerTrainingJob#training_job_name}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobConfig.property.roleArn">RoleArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#role_arn SagemakerTrainingJob#role_arn}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobConfig.property.trainingJobName">TrainingJobName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#training_job_name SagemakerTrainingJob#training_job_name}. |
 | <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobConfig.property.algorithmSpecification">AlgorithmSpecification</a></code> | <code>interface{}</code> | algorithm_specification block. |
 | <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobConfig.property.checkpointConfig">CheckpointConfig</a></code> | <code>interface{}</code> | checkpoint_config block. |
 | <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobConfig.property.debugHookConfig">DebugHookConfig</a></code> | <code>interface{}</code> | debug_hook_config block. |
 | <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobConfig.property.debugRuleConfigurations">DebugRuleConfigurations</a></code> | <code>interface{}</code> | debug_rule_configurations block. |
 | <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobConfig.property.deleteModelPackagesOnDestroy">DeleteModelPackagesOnDestroy</a></code> | <code>interface{}</code> | Whether to delete model packages in the configured model package group when destroying the training job. |
 | <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobConfig.property.deleteVpcEnisOnDestroy">DeleteVpcEnisOnDestroy</a></code> | <code>interface{}</code> | Whether to delete detached VPC ENIs that SageMaker may leave behind when destroying the training job. |
-| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobConfig.property.enableInterContainerTrafficEncryption">EnableInterContainerTrafficEncryption</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#enable_inter_container_traffic_encryption SagemakerTrainingJob#enable_inter_container_traffic_encryption}. |
-| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobConfig.property.enableManagedSpotTraining">EnableManagedSpotTraining</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#enable_managed_spot_training SagemakerTrainingJob#enable_managed_spot_training}. |
-| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobConfig.property.enableNetworkIsolation">EnableNetworkIsolation</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#enable_network_isolation SagemakerTrainingJob#enable_network_isolation}. |
-| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobConfig.property.environment">Environment</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#environment SagemakerTrainingJob#environment}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobConfig.property.enableInterContainerTrafficEncryption">EnableInterContainerTrafficEncryption</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#enable_inter_container_traffic_encryption SagemakerTrainingJob#enable_inter_container_traffic_encryption}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobConfig.property.enableManagedSpotTraining">EnableManagedSpotTraining</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#enable_managed_spot_training SagemakerTrainingJob#enable_managed_spot_training}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobConfig.property.enableNetworkIsolation">EnableNetworkIsolation</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#enable_network_isolation SagemakerTrainingJob#enable_network_isolation}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobConfig.property.environment">Environment</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#environment SagemakerTrainingJob#environment}. |
 | <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobConfig.property.experimentConfig">ExperimentConfig</a></code> | <code>interface{}</code> | experiment_config block. |
-| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobConfig.property.hyperParameters">HyperParameters</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#hyper_parameters SagemakerTrainingJob#hyper_parameters}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobConfig.property.hyperParameters">HyperParameters</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#hyper_parameters SagemakerTrainingJob#hyper_parameters}. |
 | <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobConfig.property.infraCheckConfig">InfraCheckConfig</a></code> | <code>interface{}</code> | infra_check_config block. |
 | <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobConfig.property.inputDataConfig">InputDataConfig</a></code> | <code>interface{}</code> | input_data_config block. |
 | <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobConfig.property.mlflowConfig">MlflowConfig</a></code> | <code>interface{}</code> | mlflow_config block. |
@@ -2298,7 +2298,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/sagemakertrainingjob"
 | <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobConfig.property.serverlessJobConfig">ServerlessJobConfig</a></code> | <code>interface{}</code> | serverless_job_config block. |
 | <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobConfig.property.sessionChainingConfig">SessionChainingConfig</a></code> | <code>interface{}</code> | session_chaining_config block. |
 | <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobConfig.property.stoppingCondition">StoppingCondition</a></code> | <code>interface{}</code> | stopping_condition block. |
-| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#tags SagemakerTrainingJob#tags}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#tags SagemakerTrainingJob#tags}. |
 | <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobConfig.property.tensorBoardOutputConfig">TensorBoardOutputConfig</a></code> | <code>interface{}</code> | tensor_board_output_config block. |
 | <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobTimeouts">SagemakerTrainingJobTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobConfig.property.vpcConfig">VpcConfig</a></code> | <code>interface{}</code> | vpc_config block. |
@@ -2383,7 +2383,7 @@ RoleArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#role_arn SagemakerTrainingJob#role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#role_arn SagemakerTrainingJob#role_arn}.
 
 ---
 
@@ -2395,7 +2395,7 @@ TrainingJobName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#training_job_name SagemakerTrainingJob#training_job_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#training_job_name SagemakerTrainingJob#training_job_name}.
 
 ---
 
@@ -2409,7 +2409,7 @@ AlgorithmSpecification interface{}
 
 algorithm_specification block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#algorithm_specification SagemakerTrainingJob#algorithm_specification}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#algorithm_specification SagemakerTrainingJob#algorithm_specification}
 
 ---
 
@@ -2423,7 +2423,7 @@ CheckpointConfig interface{}
 
 checkpoint_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#checkpoint_config SagemakerTrainingJob#checkpoint_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#checkpoint_config SagemakerTrainingJob#checkpoint_config}
 
 ---
 
@@ -2437,7 +2437,7 @@ DebugHookConfig interface{}
 
 debug_hook_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#debug_hook_config SagemakerTrainingJob#debug_hook_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#debug_hook_config SagemakerTrainingJob#debug_hook_config}
 
 ---
 
@@ -2451,7 +2451,7 @@ DebugRuleConfigurations interface{}
 
 debug_rule_configurations block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#debug_rule_configurations SagemakerTrainingJob#debug_rule_configurations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#debug_rule_configurations SagemakerTrainingJob#debug_rule_configurations}
 
 ---
 
@@ -2465,7 +2465,7 @@ DeleteModelPackagesOnDestroy interface{}
 
 Whether to delete model packages in the configured model package group when destroying the training job.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#delete_model_packages_on_destroy SagemakerTrainingJob#delete_model_packages_on_destroy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#delete_model_packages_on_destroy SagemakerTrainingJob#delete_model_packages_on_destroy}
 
 ---
 
@@ -2479,7 +2479,7 @@ DeleteVpcEnisOnDestroy interface{}
 
 Whether to delete detached VPC ENIs that SageMaker may leave behind when destroying the training job.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#delete_vpc_enis_on_destroy SagemakerTrainingJob#delete_vpc_enis_on_destroy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#delete_vpc_enis_on_destroy SagemakerTrainingJob#delete_vpc_enis_on_destroy}
 
 ---
 
@@ -2491,7 +2491,7 @@ EnableInterContainerTrafficEncryption interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#enable_inter_container_traffic_encryption SagemakerTrainingJob#enable_inter_container_traffic_encryption}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#enable_inter_container_traffic_encryption SagemakerTrainingJob#enable_inter_container_traffic_encryption}.
 
 ---
 
@@ -2503,7 +2503,7 @@ EnableManagedSpotTraining interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#enable_managed_spot_training SagemakerTrainingJob#enable_managed_spot_training}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#enable_managed_spot_training SagemakerTrainingJob#enable_managed_spot_training}.
 
 ---
 
@@ -2515,7 +2515,7 @@ EnableNetworkIsolation interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#enable_network_isolation SagemakerTrainingJob#enable_network_isolation}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#enable_network_isolation SagemakerTrainingJob#enable_network_isolation}.
 
 ---
 
@@ -2527,7 +2527,7 @@ Environment *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#environment SagemakerTrainingJob#environment}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#environment SagemakerTrainingJob#environment}.
 
 ---
 
@@ -2541,7 +2541,7 @@ ExperimentConfig interface{}
 
 experiment_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#experiment_config SagemakerTrainingJob#experiment_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#experiment_config SagemakerTrainingJob#experiment_config}
 
 ---
 
@@ -2553,7 +2553,7 @@ HyperParameters *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#hyper_parameters SagemakerTrainingJob#hyper_parameters}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#hyper_parameters SagemakerTrainingJob#hyper_parameters}.
 
 ---
 
@@ -2567,7 +2567,7 @@ InfraCheckConfig interface{}
 
 infra_check_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#infra_check_config SagemakerTrainingJob#infra_check_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#infra_check_config SagemakerTrainingJob#infra_check_config}
 
 ---
 
@@ -2581,7 +2581,7 @@ InputDataConfig interface{}
 
 input_data_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#input_data_config SagemakerTrainingJob#input_data_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#input_data_config SagemakerTrainingJob#input_data_config}
 
 ---
 
@@ -2595,7 +2595,7 @@ MlflowConfig interface{}
 
 mlflow_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#mlflow_config SagemakerTrainingJob#mlflow_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#mlflow_config SagemakerTrainingJob#mlflow_config}
 
 ---
 
@@ -2609,7 +2609,7 @@ ModelPackageConfig interface{}
 
 model_package_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#model_package_config SagemakerTrainingJob#model_package_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#model_package_config SagemakerTrainingJob#model_package_config}
 
 ---
 
@@ -2623,7 +2623,7 @@ OutputDataConfig interface{}
 
 output_data_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#output_data_config SagemakerTrainingJob#output_data_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#output_data_config SagemakerTrainingJob#output_data_config}
 
 ---
 
@@ -2637,7 +2637,7 @@ ProfilerConfig interface{}
 
 profiler_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#profiler_config SagemakerTrainingJob#profiler_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#profiler_config SagemakerTrainingJob#profiler_config}
 
 ---
 
@@ -2651,7 +2651,7 @@ ProfilerRuleConfigurations interface{}
 
 profiler_rule_configurations block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#profiler_rule_configurations SagemakerTrainingJob#profiler_rule_configurations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#profiler_rule_configurations SagemakerTrainingJob#profiler_rule_configurations}
 
 ---
 
@@ -2665,7 +2665,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#region SagemakerTrainingJob#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#region SagemakerTrainingJob#region}
 
 ---
 
@@ -2679,7 +2679,7 @@ RemoteDebugConfig interface{}
 
 remote_debug_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#remote_debug_config SagemakerTrainingJob#remote_debug_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#remote_debug_config SagemakerTrainingJob#remote_debug_config}
 
 ---
 
@@ -2693,7 +2693,7 @@ ResourceConfig interface{}
 
 resource_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#resource_config SagemakerTrainingJob#resource_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#resource_config SagemakerTrainingJob#resource_config}
 
 ---
 
@@ -2707,7 +2707,7 @@ RetryStrategy interface{}
 
 retry_strategy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#retry_strategy SagemakerTrainingJob#retry_strategy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#retry_strategy SagemakerTrainingJob#retry_strategy}
 
 ---
 
@@ -2721,7 +2721,7 @@ ServerlessJobConfig interface{}
 
 serverless_job_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#serverless_job_config SagemakerTrainingJob#serverless_job_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#serverless_job_config SagemakerTrainingJob#serverless_job_config}
 
 ---
 
@@ -2735,7 +2735,7 @@ SessionChainingConfig interface{}
 
 session_chaining_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#session_chaining_config SagemakerTrainingJob#session_chaining_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#session_chaining_config SagemakerTrainingJob#session_chaining_config}
 
 ---
 
@@ -2749,7 +2749,7 @@ StoppingCondition interface{}
 
 stopping_condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#stopping_condition SagemakerTrainingJob#stopping_condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#stopping_condition SagemakerTrainingJob#stopping_condition}
 
 ---
 
@@ -2761,7 +2761,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#tags SagemakerTrainingJob#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#tags SagemakerTrainingJob#tags}.
 
 ---
 
@@ -2775,7 +2775,7 @@ TensorBoardOutputConfig interface{}
 
 tensor_board_output_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#tensor_board_output_config SagemakerTrainingJob#tensor_board_output_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#tensor_board_output_config SagemakerTrainingJob#tensor_board_output_config}
 
 ---
 
@@ -2789,7 +2789,7 @@ Timeouts SagemakerTrainingJobTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#timeouts SagemakerTrainingJob#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#timeouts SagemakerTrainingJob#timeouts}
 
 ---
 
@@ -2803,7 +2803,7 @@ VpcConfig interface{}
 
 vpc_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#vpc_config SagemakerTrainingJob#vpc_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#vpc_config SagemakerTrainingJob#vpc_config}
 
 ---
 
@@ -2826,10 +2826,10 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/sagemakertrainingjob"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobDebugHookConfig.property.s3OutputPath">S3OutputPath</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#s3_output_path SagemakerTrainingJob#s3_output_path}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobDebugHookConfig.property.s3OutputPath">S3OutputPath</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#s3_output_path SagemakerTrainingJob#s3_output_path}. |
 | <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobDebugHookConfig.property.collectionConfigurations">CollectionConfigurations</a></code> | <code>interface{}</code> | collection_configurations block. |
-| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobDebugHookConfig.property.hookParameters">HookParameters</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#hook_parameters SagemakerTrainingJob#hook_parameters}. |
-| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobDebugHookConfig.property.localPath">LocalPath</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#local_path SagemakerTrainingJob#local_path}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobDebugHookConfig.property.hookParameters">HookParameters</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#hook_parameters SagemakerTrainingJob#hook_parameters}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobDebugHookConfig.property.localPath">LocalPath</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#local_path SagemakerTrainingJob#local_path}. |
 
 ---
 
@@ -2841,7 +2841,7 @@ S3OutputPath *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#s3_output_path SagemakerTrainingJob#s3_output_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#s3_output_path SagemakerTrainingJob#s3_output_path}.
 
 ---
 
@@ -2855,7 +2855,7 @@ CollectionConfigurations interface{}
 
 collection_configurations block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#collection_configurations SagemakerTrainingJob#collection_configurations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#collection_configurations SagemakerTrainingJob#collection_configurations}
 
 ---
 
@@ -2867,7 +2867,7 @@ HookParameters *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#hook_parameters SagemakerTrainingJob#hook_parameters}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#hook_parameters SagemakerTrainingJob#hook_parameters}.
 
 ---
 
@@ -2879,7 +2879,7 @@ LocalPath *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#local_path SagemakerTrainingJob#local_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#local_path SagemakerTrainingJob#local_path}.
 
 ---
 
@@ -2900,8 +2900,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/sagemakertrainingjob"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobDebugHookConfigCollectionConfigurations.property.collectionName">CollectionName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#collection_name SagemakerTrainingJob#collection_name}. |
-| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobDebugHookConfigCollectionConfigurations.property.collectionParameters">CollectionParameters</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#collection_parameters SagemakerTrainingJob#collection_parameters}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobDebugHookConfigCollectionConfigurations.property.collectionName">CollectionName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#collection_name SagemakerTrainingJob#collection_name}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobDebugHookConfigCollectionConfigurations.property.collectionParameters">CollectionParameters</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#collection_parameters SagemakerTrainingJob#collection_parameters}. |
 
 ---
 
@@ -2913,7 +2913,7 @@ CollectionName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#collection_name SagemakerTrainingJob#collection_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#collection_name SagemakerTrainingJob#collection_name}.
 
 ---
 
@@ -2925,7 +2925,7 @@ CollectionParameters *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#collection_parameters SagemakerTrainingJob#collection_parameters}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#collection_parameters SagemakerTrainingJob#collection_parameters}.
 
 ---
 
@@ -2951,13 +2951,13 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/sagemakertrainingjob"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobDebugRuleConfigurations.property.ruleConfigurationName">RuleConfigurationName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#rule_configuration_name SagemakerTrainingJob#rule_configuration_name}. |
-| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobDebugRuleConfigurations.property.ruleEvaluatorImage">RuleEvaluatorImage</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#rule_evaluator_image SagemakerTrainingJob#rule_evaluator_image}. |
-| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobDebugRuleConfigurations.property.instanceType">InstanceType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#instance_type SagemakerTrainingJob#instance_type}. |
-| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobDebugRuleConfigurations.property.localPath">LocalPath</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#local_path SagemakerTrainingJob#local_path}. |
-| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobDebugRuleConfigurations.property.ruleParameters">RuleParameters</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#rule_parameters SagemakerTrainingJob#rule_parameters}. |
-| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobDebugRuleConfigurations.property.s3OutputPath">S3OutputPath</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#s3_output_path SagemakerTrainingJob#s3_output_path}. |
-| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobDebugRuleConfigurations.property.volumeSizeInGb">VolumeSizeInGb</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#volume_size_in_gb SagemakerTrainingJob#volume_size_in_gb}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobDebugRuleConfigurations.property.ruleConfigurationName">RuleConfigurationName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#rule_configuration_name SagemakerTrainingJob#rule_configuration_name}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobDebugRuleConfigurations.property.ruleEvaluatorImage">RuleEvaluatorImage</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#rule_evaluator_image SagemakerTrainingJob#rule_evaluator_image}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobDebugRuleConfigurations.property.instanceType">InstanceType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#instance_type SagemakerTrainingJob#instance_type}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobDebugRuleConfigurations.property.localPath">LocalPath</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#local_path SagemakerTrainingJob#local_path}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobDebugRuleConfigurations.property.ruleParameters">RuleParameters</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#rule_parameters SagemakerTrainingJob#rule_parameters}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobDebugRuleConfigurations.property.s3OutputPath">S3OutputPath</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#s3_output_path SagemakerTrainingJob#s3_output_path}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobDebugRuleConfigurations.property.volumeSizeInGb">VolumeSizeInGb</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#volume_size_in_gb SagemakerTrainingJob#volume_size_in_gb}. |
 
 ---
 
@@ -2969,7 +2969,7 @@ RuleConfigurationName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#rule_configuration_name SagemakerTrainingJob#rule_configuration_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#rule_configuration_name SagemakerTrainingJob#rule_configuration_name}.
 
 ---
 
@@ -2981,7 +2981,7 @@ RuleEvaluatorImage *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#rule_evaluator_image SagemakerTrainingJob#rule_evaluator_image}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#rule_evaluator_image SagemakerTrainingJob#rule_evaluator_image}.
 
 ---
 
@@ -2993,7 +2993,7 @@ InstanceType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#instance_type SagemakerTrainingJob#instance_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#instance_type SagemakerTrainingJob#instance_type}.
 
 ---
 
@@ -3005,7 +3005,7 @@ LocalPath *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#local_path SagemakerTrainingJob#local_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#local_path SagemakerTrainingJob#local_path}.
 
 ---
 
@@ -3017,7 +3017,7 @@ RuleParameters *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#rule_parameters SagemakerTrainingJob#rule_parameters}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#rule_parameters SagemakerTrainingJob#rule_parameters}.
 
 ---
 
@@ -3029,7 +3029,7 @@ S3OutputPath *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#s3_output_path SagemakerTrainingJob#s3_output_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#s3_output_path SagemakerTrainingJob#s3_output_path}.
 
 ---
 
@@ -3041,7 +3041,7 @@ VolumeSizeInGb *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#volume_size_in_gb SagemakerTrainingJob#volume_size_in_gb}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#volume_size_in_gb SagemakerTrainingJob#volume_size_in_gb}.
 
 ---
 
@@ -3064,10 +3064,10 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/sagemakertrainingjob"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobExperimentConfig.property.experimentName">ExperimentName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#experiment_name SagemakerTrainingJob#experiment_name}. |
-| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobExperimentConfig.property.runName">RunName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#run_name SagemakerTrainingJob#run_name}. |
-| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobExperimentConfig.property.trialComponentDisplayName">TrialComponentDisplayName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#trial_component_display_name SagemakerTrainingJob#trial_component_display_name}. |
-| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobExperimentConfig.property.trialName">TrialName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#trial_name SagemakerTrainingJob#trial_name}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobExperimentConfig.property.experimentName">ExperimentName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#experiment_name SagemakerTrainingJob#experiment_name}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobExperimentConfig.property.runName">RunName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#run_name SagemakerTrainingJob#run_name}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobExperimentConfig.property.trialComponentDisplayName">TrialComponentDisplayName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#trial_component_display_name SagemakerTrainingJob#trial_component_display_name}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobExperimentConfig.property.trialName">TrialName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#trial_name SagemakerTrainingJob#trial_name}. |
 
 ---
 
@@ -3079,7 +3079,7 @@ ExperimentName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#experiment_name SagemakerTrainingJob#experiment_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#experiment_name SagemakerTrainingJob#experiment_name}.
 
 ---
 
@@ -3091,7 +3091,7 @@ RunName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#run_name SagemakerTrainingJob#run_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#run_name SagemakerTrainingJob#run_name}.
 
 ---
 
@@ -3103,7 +3103,7 @@ TrialComponentDisplayName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#trial_component_display_name SagemakerTrainingJob#trial_component_display_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#trial_component_display_name SagemakerTrainingJob#trial_component_display_name}.
 
 ---
 
@@ -3115,7 +3115,7 @@ TrialName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#trial_name SagemakerTrainingJob#trial_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#trial_name SagemakerTrainingJob#trial_name}.
 
 ---
 
@@ -3135,7 +3135,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/sagemakertrainingjob"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobInfraCheckConfig.property.enableInfraCheck">EnableInfraCheck</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#enable_infra_check SagemakerTrainingJob#enable_infra_check}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobInfraCheckConfig.property.enableInfraCheck">EnableInfraCheck</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#enable_infra_check SagemakerTrainingJob#enable_infra_check}. |
 
 ---
 
@@ -3147,7 +3147,7 @@ EnableInfraCheck interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#enable_infra_check SagemakerTrainingJob#enable_infra_check}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#enable_infra_check SagemakerTrainingJob#enable_infra_check}.
 
 ---
 
@@ -3173,12 +3173,12 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/sagemakertrainingjob"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobInputDataConfig.property.channelName">ChannelName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#channel_name SagemakerTrainingJob#channel_name}. |
-| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobInputDataConfig.property.compressionType">CompressionType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#compression_type SagemakerTrainingJob#compression_type}. |
-| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobInputDataConfig.property.contentType">ContentType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#content_type SagemakerTrainingJob#content_type}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobInputDataConfig.property.channelName">ChannelName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#channel_name SagemakerTrainingJob#channel_name}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobInputDataConfig.property.compressionType">CompressionType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#compression_type SagemakerTrainingJob#compression_type}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobInputDataConfig.property.contentType">ContentType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#content_type SagemakerTrainingJob#content_type}. |
 | <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobInputDataConfig.property.dataSource">DataSource</a></code> | <code>interface{}</code> | data_source block. |
-| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobInputDataConfig.property.inputMode">InputMode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#input_mode SagemakerTrainingJob#input_mode}. |
-| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobInputDataConfig.property.recordWrapperType">RecordWrapperType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#record_wrapper_type SagemakerTrainingJob#record_wrapper_type}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobInputDataConfig.property.inputMode">InputMode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#input_mode SagemakerTrainingJob#input_mode}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobInputDataConfig.property.recordWrapperType">RecordWrapperType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#record_wrapper_type SagemakerTrainingJob#record_wrapper_type}. |
 | <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobInputDataConfig.property.shuffleConfig">ShuffleConfig</a></code> | <code>interface{}</code> | shuffle_config block. |
 
 ---
@@ -3191,7 +3191,7 @@ ChannelName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#channel_name SagemakerTrainingJob#channel_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#channel_name SagemakerTrainingJob#channel_name}.
 
 ---
 
@@ -3203,7 +3203,7 @@ CompressionType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#compression_type SagemakerTrainingJob#compression_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#compression_type SagemakerTrainingJob#compression_type}.
 
 ---
 
@@ -3215,7 +3215,7 @@ ContentType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#content_type SagemakerTrainingJob#content_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#content_type SagemakerTrainingJob#content_type}.
 
 ---
 
@@ -3229,7 +3229,7 @@ DataSource interface{}
 
 data_source block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#data_source SagemakerTrainingJob#data_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#data_source SagemakerTrainingJob#data_source}
 
 ---
 
@@ -3241,7 +3241,7 @@ InputMode *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#input_mode SagemakerTrainingJob#input_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#input_mode SagemakerTrainingJob#input_mode}.
 
 ---
 
@@ -3253,7 +3253,7 @@ RecordWrapperType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#record_wrapper_type SagemakerTrainingJob#record_wrapper_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#record_wrapper_type SagemakerTrainingJob#record_wrapper_type}.
 
 ---
 
@@ -3267,7 +3267,7 @@ ShuffleConfig interface{}
 
 shuffle_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#shuffle_config SagemakerTrainingJob#shuffle_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#shuffle_config SagemakerTrainingJob#shuffle_config}
 
 ---
 
@@ -3303,7 +3303,7 @@ FileSystemDataSource interface{}
 
 file_system_data_source block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#file_system_data_source SagemakerTrainingJob#file_system_data_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#file_system_data_source SagemakerTrainingJob#file_system_data_source}
 
 ---
 
@@ -3317,7 +3317,7 @@ S3DataSource interface{}
 
 s3_data_source block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#s3_data_source SagemakerTrainingJob#s3_data_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#s3_data_source SagemakerTrainingJob#s3_data_source}
 
 ---
 
@@ -3340,10 +3340,10 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/sagemakertrainingjob"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobInputDataConfigDataSourceFileSystemDataSource.property.directoryPath">DirectoryPath</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#directory_path SagemakerTrainingJob#directory_path}. |
-| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobInputDataConfigDataSourceFileSystemDataSource.property.fileSystemAccessMode">FileSystemAccessMode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#file_system_access_mode SagemakerTrainingJob#file_system_access_mode}. |
-| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobInputDataConfigDataSourceFileSystemDataSource.property.fileSystemId">FileSystemId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#file_system_id SagemakerTrainingJob#file_system_id}. |
-| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobInputDataConfigDataSourceFileSystemDataSource.property.fileSystemType">FileSystemType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#file_system_type SagemakerTrainingJob#file_system_type}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobInputDataConfigDataSourceFileSystemDataSource.property.directoryPath">DirectoryPath</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#directory_path SagemakerTrainingJob#directory_path}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobInputDataConfigDataSourceFileSystemDataSource.property.fileSystemAccessMode">FileSystemAccessMode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#file_system_access_mode SagemakerTrainingJob#file_system_access_mode}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobInputDataConfigDataSourceFileSystemDataSource.property.fileSystemId">FileSystemId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#file_system_id SagemakerTrainingJob#file_system_id}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobInputDataConfigDataSourceFileSystemDataSource.property.fileSystemType">FileSystemType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#file_system_type SagemakerTrainingJob#file_system_type}. |
 
 ---
 
@@ -3355,7 +3355,7 @@ DirectoryPath *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#directory_path SagemakerTrainingJob#directory_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#directory_path SagemakerTrainingJob#directory_path}.
 
 ---
 
@@ -3367,7 +3367,7 @@ FileSystemAccessMode *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#file_system_access_mode SagemakerTrainingJob#file_system_access_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#file_system_access_mode SagemakerTrainingJob#file_system_access_mode}.
 
 ---
 
@@ -3379,7 +3379,7 @@ FileSystemId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#file_system_id SagemakerTrainingJob#file_system_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#file_system_id SagemakerTrainingJob#file_system_id}.
 
 ---
 
@@ -3391,7 +3391,7 @@ FileSystemType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#file_system_type SagemakerTrainingJob#file_system_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#file_system_type SagemakerTrainingJob#file_system_type}.
 
 ---
 
@@ -3417,13 +3417,13 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/sagemakertrainingjob"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobInputDataConfigDataSourceS3DataSource.property.s3DataType">S3DataType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#s3_data_type SagemakerTrainingJob#s3_data_type}. |
-| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobInputDataConfigDataSourceS3DataSource.property.s3Uri">S3Uri</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#s3_uri SagemakerTrainingJob#s3_uri}. |
-| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobInputDataConfigDataSourceS3DataSource.property.attributeNames">AttributeNames</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#attribute_names SagemakerTrainingJob#attribute_names}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobInputDataConfigDataSourceS3DataSource.property.s3DataType">S3DataType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#s3_data_type SagemakerTrainingJob#s3_data_type}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobInputDataConfigDataSourceS3DataSource.property.s3Uri">S3Uri</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#s3_uri SagemakerTrainingJob#s3_uri}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobInputDataConfigDataSourceS3DataSource.property.attributeNames">AttributeNames</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#attribute_names SagemakerTrainingJob#attribute_names}. |
 | <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobInputDataConfigDataSourceS3DataSource.property.hubAccessConfig">HubAccessConfig</a></code> | <code>interface{}</code> | hub_access_config block. |
-| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobInputDataConfigDataSourceS3DataSource.property.instanceGroupNames">InstanceGroupNames</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#instance_group_names SagemakerTrainingJob#instance_group_names}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobInputDataConfigDataSourceS3DataSource.property.instanceGroupNames">InstanceGroupNames</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#instance_group_names SagemakerTrainingJob#instance_group_names}. |
 | <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobInputDataConfigDataSourceS3DataSource.property.modelAccessConfig">ModelAccessConfig</a></code> | <code>interface{}</code> | model_access_config block. |
-| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobInputDataConfigDataSourceS3DataSource.property.s3DataDistributionType">S3DataDistributionType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#s3_data_distribution_type SagemakerTrainingJob#s3_data_distribution_type}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobInputDataConfigDataSourceS3DataSource.property.s3DataDistributionType">S3DataDistributionType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#s3_data_distribution_type SagemakerTrainingJob#s3_data_distribution_type}. |
 
 ---
 
@@ -3435,7 +3435,7 @@ S3DataType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#s3_data_type SagemakerTrainingJob#s3_data_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#s3_data_type SagemakerTrainingJob#s3_data_type}.
 
 ---
 
@@ -3447,7 +3447,7 @@ S3Uri *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#s3_uri SagemakerTrainingJob#s3_uri}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#s3_uri SagemakerTrainingJob#s3_uri}.
 
 ---
 
@@ -3459,7 +3459,7 @@ AttributeNames *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#attribute_names SagemakerTrainingJob#attribute_names}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#attribute_names SagemakerTrainingJob#attribute_names}.
 
 ---
 
@@ -3473,7 +3473,7 @@ HubAccessConfig interface{}
 
 hub_access_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#hub_access_config SagemakerTrainingJob#hub_access_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#hub_access_config SagemakerTrainingJob#hub_access_config}
 
 ---
 
@@ -3485,7 +3485,7 @@ InstanceGroupNames *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#instance_group_names SagemakerTrainingJob#instance_group_names}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#instance_group_names SagemakerTrainingJob#instance_group_names}.
 
 ---
 
@@ -3499,7 +3499,7 @@ ModelAccessConfig interface{}
 
 model_access_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#model_access_config SagemakerTrainingJob#model_access_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#model_access_config SagemakerTrainingJob#model_access_config}
 
 ---
 
@@ -3511,7 +3511,7 @@ S3DataDistributionType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#s3_data_distribution_type SagemakerTrainingJob#s3_data_distribution_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#s3_data_distribution_type SagemakerTrainingJob#s3_data_distribution_type}.
 
 ---
 
@@ -3531,7 +3531,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/sagemakertrainingjob"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobInputDataConfigDataSourceS3DataSourceHubAccessConfig.property.hubContentArn">HubContentArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#hub_content_arn SagemakerTrainingJob#hub_content_arn}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobInputDataConfigDataSourceS3DataSourceHubAccessConfig.property.hubContentArn">HubContentArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#hub_content_arn SagemakerTrainingJob#hub_content_arn}. |
 
 ---
 
@@ -3543,7 +3543,7 @@ HubContentArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#hub_content_arn SagemakerTrainingJob#hub_content_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#hub_content_arn SagemakerTrainingJob#hub_content_arn}.
 
 ---
 
@@ -3563,7 +3563,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/sagemakertrainingjob"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobInputDataConfigDataSourceS3DataSourceModelAccessConfig.property.acceptEula">AcceptEula</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#accept_eula SagemakerTrainingJob#accept_eula}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobInputDataConfigDataSourceS3DataSourceModelAccessConfig.property.acceptEula">AcceptEula</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#accept_eula SagemakerTrainingJob#accept_eula}. |
 
 ---
 
@@ -3575,7 +3575,7 @@ AcceptEula interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#accept_eula SagemakerTrainingJob#accept_eula}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#accept_eula SagemakerTrainingJob#accept_eula}.
 
 ---
 
@@ -3595,7 +3595,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/sagemakertrainingjob"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobInputDataConfigShuffleConfig.property.seed">Seed</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#seed SagemakerTrainingJob#seed}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobInputDataConfigShuffleConfig.property.seed">Seed</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#seed SagemakerTrainingJob#seed}. |
 
 ---
 
@@ -3607,7 +3607,7 @@ Seed *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#seed SagemakerTrainingJob#seed}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#seed SagemakerTrainingJob#seed}.
 
 ---
 
@@ -3629,9 +3629,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/sagemakertrainingjob"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobMlflowConfig.property.mlflowResourceArn">MlflowResourceArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#mlflow_resource_arn SagemakerTrainingJob#mlflow_resource_arn}. |
-| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobMlflowConfig.property.mlflowExperimentName">MlflowExperimentName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#mlflow_experiment_name SagemakerTrainingJob#mlflow_experiment_name}. |
-| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobMlflowConfig.property.mlflowRunName">MlflowRunName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#mlflow_run_name SagemakerTrainingJob#mlflow_run_name}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobMlflowConfig.property.mlflowResourceArn">MlflowResourceArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#mlflow_resource_arn SagemakerTrainingJob#mlflow_resource_arn}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobMlflowConfig.property.mlflowExperimentName">MlflowExperimentName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#mlflow_experiment_name SagemakerTrainingJob#mlflow_experiment_name}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobMlflowConfig.property.mlflowRunName">MlflowRunName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#mlflow_run_name SagemakerTrainingJob#mlflow_run_name}. |
 
 ---
 
@@ -3643,7 +3643,7 @@ MlflowResourceArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#mlflow_resource_arn SagemakerTrainingJob#mlflow_resource_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#mlflow_resource_arn SagemakerTrainingJob#mlflow_resource_arn}.
 
 ---
 
@@ -3655,7 +3655,7 @@ MlflowExperimentName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#mlflow_experiment_name SagemakerTrainingJob#mlflow_experiment_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#mlflow_experiment_name SagemakerTrainingJob#mlflow_experiment_name}.
 
 ---
 
@@ -3667,7 +3667,7 @@ MlflowRunName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#mlflow_run_name SagemakerTrainingJob#mlflow_run_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#mlflow_run_name SagemakerTrainingJob#mlflow_run_name}.
 
 ---
 
@@ -3688,8 +3688,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/sagemakertrainingjob"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobModelPackageConfig.property.modelPackageGroupArn">ModelPackageGroupArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#model_package_group_arn SagemakerTrainingJob#model_package_group_arn}. |
-| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobModelPackageConfig.property.sourceModelPackageArn">SourceModelPackageArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#source_model_package_arn SagemakerTrainingJob#source_model_package_arn}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobModelPackageConfig.property.modelPackageGroupArn">ModelPackageGroupArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#model_package_group_arn SagemakerTrainingJob#model_package_group_arn}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobModelPackageConfig.property.sourceModelPackageArn">SourceModelPackageArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#source_model_package_arn SagemakerTrainingJob#source_model_package_arn}. |
 
 ---
 
@@ -3701,7 +3701,7 @@ ModelPackageGroupArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#model_package_group_arn SagemakerTrainingJob#model_package_group_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#model_package_group_arn SagemakerTrainingJob#model_package_group_arn}.
 
 ---
 
@@ -3713,7 +3713,7 @@ SourceModelPackageArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#source_model_package_arn SagemakerTrainingJob#source_model_package_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#source_model_package_arn SagemakerTrainingJob#source_model_package_arn}.
 
 ---
 
@@ -3735,9 +3735,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/sagemakertrainingjob"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobOutputDataConfig.property.s3OutputPath">S3OutputPath</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#s3_output_path SagemakerTrainingJob#s3_output_path}. |
-| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobOutputDataConfig.property.compressionType">CompressionType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#compression_type SagemakerTrainingJob#compression_type}. |
-| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobOutputDataConfig.property.kmsKeyId">KmsKeyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#kms_key_id SagemakerTrainingJob#kms_key_id}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobOutputDataConfig.property.s3OutputPath">S3OutputPath</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#s3_output_path SagemakerTrainingJob#s3_output_path}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobOutputDataConfig.property.compressionType">CompressionType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#compression_type SagemakerTrainingJob#compression_type}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobOutputDataConfig.property.kmsKeyId">KmsKeyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#kms_key_id SagemakerTrainingJob#kms_key_id}. |
 
 ---
 
@@ -3749,7 +3749,7 @@ S3OutputPath *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#s3_output_path SagemakerTrainingJob#s3_output_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#s3_output_path SagemakerTrainingJob#s3_output_path}.
 
 ---
 
@@ -3761,7 +3761,7 @@ CompressionType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#compression_type SagemakerTrainingJob#compression_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#compression_type SagemakerTrainingJob#compression_type}.
 
 ---
 
@@ -3773,7 +3773,7 @@ KmsKeyId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#kms_key_id SagemakerTrainingJob#kms_key_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#kms_key_id SagemakerTrainingJob#kms_key_id}.
 
 ---
 
@@ -3796,10 +3796,10 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/sagemakertrainingjob"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobProfilerConfig.property.disableProfiler">DisableProfiler</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#disable_profiler SagemakerTrainingJob#disable_profiler}. |
-| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobProfilerConfig.property.profilingIntervalInMilliseconds">ProfilingIntervalInMilliseconds</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#profiling_interval_in_milliseconds SagemakerTrainingJob#profiling_interval_in_milliseconds}. |
-| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobProfilerConfig.property.profilingParameters">ProfilingParameters</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#profiling_parameters SagemakerTrainingJob#profiling_parameters}. |
-| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobProfilerConfig.property.s3OutputPath">S3OutputPath</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#s3_output_path SagemakerTrainingJob#s3_output_path}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobProfilerConfig.property.disableProfiler">DisableProfiler</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#disable_profiler SagemakerTrainingJob#disable_profiler}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobProfilerConfig.property.profilingIntervalInMilliseconds">ProfilingIntervalInMilliseconds</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#profiling_interval_in_milliseconds SagemakerTrainingJob#profiling_interval_in_milliseconds}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobProfilerConfig.property.profilingParameters">ProfilingParameters</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#profiling_parameters SagemakerTrainingJob#profiling_parameters}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobProfilerConfig.property.s3OutputPath">S3OutputPath</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#s3_output_path SagemakerTrainingJob#s3_output_path}. |
 
 ---
 
@@ -3811,7 +3811,7 @@ DisableProfiler interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#disable_profiler SagemakerTrainingJob#disable_profiler}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#disable_profiler SagemakerTrainingJob#disable_profiler}.
 
 ---
 
@@ -3823,7 +3823,7 @@ ProfilingIntervalInMilliseconds *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#profiling_interval_in_milliseconds SagemakerTrainingJob#profiling_interval_in_milliseconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#profiling_interval_in_milliseconds SagemakerTrainingJob#profiling_interval_in_milliseconds}.
 
 ---
 
@@ -3835,7 +3835,7 @@ ProfilingParameters *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#profiling_parameters SagemakerTrainingJob#profiling_parameters}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#profiling_parameters SagemakerTrainingJob#profiling_parameters}.
 
 ---
 
@@ -3847,7 +3847,7 @@ S3OutputPath *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#s3_output_path SagemakerTrainingJob#s3_output_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#s3_output_path SagemakerTrainingJob#s3_output_path}.
 
 ---
 
@@ -3873,13 +3873,13 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/sagemakertrainingjob"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobProfilerRuleConfigurations.property.ruleConfigurationName">RuleConfigurationName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#rule_configuration_name SagemakerTrainingJob#rule_configuration_name}. |
-| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobProfilerRuleConfigurations.property.ruleEvaluatorImage">RuleEvaluatorImage</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#rule_evaluator_image SagemakerTrainingJob#rule_evaluator_image}. |
-| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobProfilerRuleConfigurations.property.instanceType">InstanceType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#instance_type SagemakerTrainingJob#instance_type}. |
-| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobProfilerRuleConfigurations.property.localPath">LocalPath</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#local_path SagemakerTrainingJob#local_path}. |
-| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobProfilerRuleConfigurations.property.ruleParameters">RuleParameters</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#rule_parameters SagemakerTrainingJob#rule_parameters}. |
-| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobProfilerRuleConfigurations.property.s3OutputPath">S3OutputPath</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#s3_output_path SagemakerTrainingJob#s3_output_path}. |
-| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobProfilerRuleConfigurations.property.volumeSizeInGb">VolumeSizeInGb</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#volume_size_in_gb SagemakerTrainingJob#volume_size_in_gb}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobProfilerRuleConfigurations.property.ruleConfigurationName">RuleConfigurationName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#rule_configuration_name SagemakerTrainingJob#rule_configuration_name}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobProfilerRuleConfigurations.property.ruleEvaluatorImage">RuleEvaluatorImage</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#rule_evaluator_image SagemakerTrainingJob#rule_evaluator_image}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobProfilerRuleConfigurations.property.instanceType">InstanceType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#instance_type SagemakerTrainingJob#instance_type}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobProfilerRuleConfigurations.property.localPath">LocalPath</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#local_path SagemakerTrainingJob#local_path}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobProfilerRuleConfigurations.property.ruleParameters">RuleParameters</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#rule_parameters SagemakerTrainingJob#rule_parameters}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobProfilerRuleConfigurations.property.s3OutputPath">S3OutputPath</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#s3_output_path SagemakerTrainingJob#s3_output_path}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobProfilerRuleConfigurations.property.volumeSizeInGb">VolumeSizeInGb</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#volume_size_in_gb SagemakerTrainingJob#volume_size_in_gb}. |
 
 ---
 
@@ -3891,7 +3891,7 @@ RuleConfigurationName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#rule_configuration_name SagemakerTrainingJob#rule_configuration_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#rule_configuration_name SagemakerTrainingJob#rule_configuration_name}.
 
 ---
 
@@ -3903,7 +3903,7 @@ RuleEvaluatorImage *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#rule_evaluator_image SagemakerTrainingJob#rule_evaluator_image}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#rule_evaluator_image SagemakerTrainingJob#rule_evaluator_image}.
 
 ---
 
@@ -3915,7 +3915,7 @@ InstanceType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#instance_type SagemakerTrainingJob#instance_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#instance_type SagemakerTrainingJob#instance_type}.
 
 ---
 
@@ -3927,7 +3927,7 @@ LocalPath *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#local_path SagemakerTrainingJob#local_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#local_path SagemakerTrainingJob#local_path}.
 
 ---
 
@@ -3939,7 +3939,7 @@ RuleParameters *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#rule_parameters SagemakerTrainingJob#rule_parameters}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#rule_parameters SagemakerTrainingJob#rule_parameters}.
 
 ---
 
@@ -3951,7 +3951,7 @@ S3OutputPath *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#s3_output_path SagemakerTrainingJob#s3_output_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#s3_output_path SagemakerTrainingJob#s3_output_path}.
 
 ---
 
@@ -3963,7 +3963,7 @@ VolumeSizeInGb *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#volume_size_in_gb SagemakerTrainingJob#volume_size_in_gb}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#volume_size_in_gb SagemakerTrainingJob#volume_size_in_gb}.
 
 ---
 
@@ -3983,7 +3983,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/sagemakertrainingjob"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobRemoteDebugConfig.property.enableRemoteDebug">EnableRemoteDebug</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#enable_remote_debug SagemakerTrainingJob#enable_remote_debug}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobRemoteDebugConfig.property.enableRemoteDebug">EnableRemoteDebug</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#enable_remote_debug SagemakerTrainingJob#enable_remote_debug}. |
 
 ---
 
@@ -3995,7 +3995,7 @@ EnableRemoteDebug interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#enable_remote_debug SagemakerTrainingJob#enable_remote_debug}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#enable_remote_debug SagemakerTrainingJob#enable_remote_debug}.
 
 ---
 
@@ -4022,14 +4022,14 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/sagemakertrainingjob"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobResourceConfig.property.instanceCount">InstanceCount</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#instance_count SagemakerTrainingJob#instance_count}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobResourceConfig.property.instanceCount">InstanceCount</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#instance_count SagemakerTrainingJob#instance_count}. |
 | <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobResourceConfig.property.instanceGroups">InstanceGroups</a></code> | <code>interface{}</code> | instance_groups block. |
 | <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobResourceConfig.property.instancePlacementConfig">InstancePlacementConfig</a></code> | <code>interface{}</code> | instance_placement_config block. |
-| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobResourceConfig.property.instanceType">InstanceType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#instance_type SagemakerTrainingJob#instance_type}. |
-| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobResourceConfig.property.keepAlivePeriodInSeconds">KeepAlivePeriodInSeconds</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#keep_alive_period_in_seconds SagemakerTrainingJob#keep_alive_period_in_seconds}. |
-| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobResourceConfig.property.trainingPlanArn">TrainingPlanArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#training_plan_arn SagemakerTrainingJob#training_plan_arn}. |
-| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobResourceConfig.property.volumeKmsKeyId">VolumeKmsKeyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#volume_kms_key_id SagemakerTrainingJob#volume_kms_key_id}. |
-| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobResourceConfig.property.volumeSizeInGb">VolumeSizeInGb</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#volume_size_in_gb SagemakerTrainingJob#volume_size_in_gb}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobResourceConfig.property.instanceType">InstanceType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#instance_type SagemakerTrainingJob#instance_type}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobResourceConfig.property.keepAlivePeriodInSeconds">KeepAlivePeriodInSeconds</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#keep_alive_period_in_seconds SagemakerTrainingJob#keep_alive_period_in_seconds}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobResourceConfig.property.trainingPlanArn">TrainingPlanArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#training_plan_arn SagemakerTrainingJob#training_plan_arn}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobResourceConfig.property.volumeKmsKeyId">VolumeKmsKeyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#volume_kms_key_id SagemakerTrainingJob#volume_kms_key_id}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobResourceConfig.property.volumeSizeInGb">VolumeSizeInGb</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#volume_size_in_gb SagemakerTrainingJob#volume_size_in_gb}. |
 
 ---
 
@@ -4041,7 +4041,7 @@ InstanceCount *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#instance_count SagemakerTrainingJob#instance_count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#instance_count SagemakerTrainingJob#instance_count}.
 
 ---
 
@@ -4055,7 +4055,7 @@ InstanceGroups interface{}
 
 instance_groups block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#instance_groups SagemakerTrainingJob#instance_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#instance_groups SagemakerTrainingJob#instance_groups}
 
 ---
 
@@ -4069,7 +4069,7 @@ InstancePlacementConfig interface{}
 
 instance_placement_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#instance_placement_config SagemakerTrainingJob#instance_placement_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#instance_placement_config SagemakerTrainingJob#instance_placement_config}
 
 ---
 
@@ -4081,7 +4081,7 @@ InstanceType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#instance_type SagemakerTrainingJob#instance_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#instance_type SagemakerTrainingJob#instance_type}.
 
 ---
 
@@ -4093,7 +4093,7 @@ KeepAlivePeriodInSeconds *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#keep_alive_period_in_seconds SagemakerTrainingJob#keep_alive_period_in_seconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#keep_alive_period_in_seconds SagemakerTrainingJob#keep_alive_period_in_seconds}.
 
 ---
 
@@ -4105,7 +4105,7 @@ TrainingPlanArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#training_plan_arn SagemakerTrainingJob#training_plan_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#training_plan_arn SagemakerTrainingJob#training_plan_arn}.
 
 ---
 
@@ -4117,7 +4117,7 @@ VolumeKmsKeyId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#volume_kms_key_id SagemakerTrainingJob#volume_kms_key_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#volume_kms_key_id SagemakerTrainingJob#volume_kms_key_id}.
 
 ---
 
@@ -4129,7 +4129,7 @@ VolumeSizeInGb *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#volume_size_in_gb SagemakerTrainingJob#volume_size_in_gb}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#volume_size_in_gb SagemakerTrainingJob#volume_size_in_gb}.
 
 ---
 
@@ -4151,9 +4151,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/sagemakertrainingjob"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobResourceConfigInstanceGroups.property.instanceCount">InstanceCount</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#instance_count SagemakerTrainingJob#instance_count}. |
-| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobResourceConfigInstanceGroups.property.instanceGroupName">InstanceGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#instance_group_name SagemakerTrainingJob#instance_group_name}. |
-| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobResourceConfigInstanceGroups.property.instanceType">InstanceType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#instance_type SagemakerTrainingJob#instance_type}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobResourceConfigInstanceGroups.property.instanceCount">InstanceCount</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#instance_count SagemakerTrainingJob#instance_count}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobResourceConfigInstanceGroups.property.instanceGroupName">InstanceGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#instance_group_name SagemakerTrainingJob#instance_group_name}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobResourceConfigInstanceGroups.property.instanceType">InstanceType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#instance_type SagemakerTrainingJob#instance_type}. |
 
 ---
 
@@ -4165,7 +4165,7 @@ InstanceCount *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#instance_count SagemakerTrainingJob#instance_count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#instance_count SagemakerTrainingJob#instance_count}.
 
 ---
 
@@ -4177,7 +4177,7 @@ InstanceGroupName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#instance_group_name SagemakerTrainingJob#instance_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#instance_group_name SagemakerTrainingJob#instance_group_name}.
 
 ---
 
@@ -4189,7 +4189,7 @@ InstanceType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#instance_type SagemakerTrainingJob#instance_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#instance_type SagemakerTrainingJob#instance_type}.
 
 ---
 
@@ -4210,7 +4210,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/sagemakertrainingjob"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobResourceConfigInstancePlacementConfig.property.enableMultipleJobs">EnableMultipleJobs</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#enable_multiple_jobs SagemakerTrainingJob#enable_multiple_jobs}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobResourceConfigInstancePlacementConfig.property.enableMultipleJobs">EnableMultipleJobs</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#enable_multiple_jobs SagemakerTrainingJob#enable_multiple_jobs}. |
 | <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobResourceConfigInstancePlacementConfig.property.placementSpecifications">PlacementSpecifications</a></code> | <code>interface{}</code> | placement_specifications block. |
 
 ---
@@ -4223,7 +4223,7 @@ EnableMultipleJobs interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#enable_multiple_jobs SagemakerTrainingJob#enable_multiple_jobs}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#enable_multiple_jobs SagemakerTrainingJob#enable_multiple_jobs}.
 
 ---
 
@@ -4237,7 +4237,7 @@ PlacementSpecifications interface{}
 
 placement_specifications block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#placement_specifications SagemakerTrainingJob#placement_specifications}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#placement_specifications SagemakerTrainingJob#placement_specifications}
 
 ---
 
@@ -4258,8 +4258,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/sagemakertrainingjob"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobResourceConfigInstancePlacementConfigPlacementSpecifications.property.instanceCount">InstanceCount</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#instance_count SagemakerTrainingJob#instance_count}. |
-| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobResourceConfigInstancePlacementConfigPlacementSpecifications.property.ultraServerId">UltraServerId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#ultra_server_id SagemakerTrainingJob#ultra_server_id}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobResourceConfigInstancePlacementConfigPlacementSpecifications.property.instanceCount">InstanceCount</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#instance_count SagemakerTrainingJob#instance_count}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobResourceConfigInstancePlacementConfigPlacementSpecifications.property.ultraServerId">UltraServerId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#ultra_server_id SagemakerTrainingJob#ultra_server_id}. |
 
 ---
 
@@ -4271,7 +4271,7 @@ InstanceCount *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#instance_count SagemakerTrainingJob#instance_count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#instance_count SagemakerTrainingJob#instance_count}.
 
 ---
 
@@ -4283,7 +4283,7 @@ UltraServerId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#ultra_server_id SagemakerTrainingJob#ultra_server_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#ultra_server_id SagemakerTrainingJob#ultra_server_id}.
 
 ---
 
@@ -4303,7 +4303,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/sagemakertrainingjob"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobRetryStrategy.property.maximumRetryAttempts">MaximumRetryAttempts</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#maximum_retry_attempts SagemakerTrainingJob#maximum_retry_attempts}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobRetryStrategy.property.maximumRetryAttempts">MaximumRetryAttempts</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#maximum_retry_attempts SagemakerTrainingJob#maximum_retry_attempts}. |
 
 ---
 
@@ -4315,7 +4315,7 @@ MaximumRetryAttempts *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#maximum_retry_attempts SagemakerTrainingJob#maximum_retry_attempts}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#maximum_retry_attempts SagemakerTrainingJob#maximum_retry_attempts}.
 
 ---
 
@@ -4342,12 +4342,12 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/sagemakertrainingjob"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobServerlessJobConfig.property.baseModelArn">BaseModelArn</a></code> | <code>*string</code> | Base model ARN in SageMaker Public Hub. SageMaker always selects the latest version of the provided model. |
-| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobServerlessJobConfig.property.jobType">JobType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#job_type SagemakerTrainingJob#job_type}. |
-| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobServerlessJobConfig.property.acceptEula">AcceptEula</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#accept_eula SagemakerTrainingJob#accept_eula}. |
-| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobServerlessJobConfig.property.customizationTechnique">CustomizationTechnique</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#customization_technique SagemakerTrainingJob#customization_technique}. |
-| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobServerlessJobConfig.property.evaluationType">EvaluationType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#evaluation_type SagemakerTrainingJob#evaluation_type}. |
-| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobServerlessJobConfig.property.evaluatorArn">EvaluatorArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#evaluator_arn SagemakerTrainingJob#evaluator_arn}. |
-| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobServerlessJobConfig.property.peft">Peft</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#peft SagemakerTrainingJob#peft}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobServerlessJobConfig.property.jobType">JobType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#job_type SagemakerTrainingJob#job_type}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobServerlessJobConfig.property.acceptEula">AcceptEula</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#accept_eula SagemakerTrainingJob#accept_eula}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobServerlessJobConfig.property.customizationTechnique">CustomizationTechnique</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#customization_technique SagemakerTrainingJob#customization_technique}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobServerlessJobConfig.property.evaluationType">EvaluationType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#evaluation_type SagemakerTrainingJob#evaluation_type}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobServerlessJobConfig.property.evaluatorArn">EvaluatorArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#evaluator_arn SagemakerTrainingJob#evaluator_arn}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobServerlessJobConfig.property.peft">Peft</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#peft SagemakerTrainingJob#peft}. |
 
 ---
 
@@ -4361,7 +4361,7 @@ BaseModelArn *string
 
 Base model ARN in SageMaker Public Hub. SageMaker always selects the latest version of the provided model.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#base_model_arn SagemakerTrainingJob#base_model_arn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#base_model_arn SagemakerTrainingJob#base_model_arn}
 
 ---
 
@@ -4373,7 +4373,7 @@ JobType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#job_type SagemakerTrainingJob#job_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#job_type SagemakerTrainingJob#job_type}.
 
 ---
 
@@ -4385,7 +4385,7 @@ AcceptEula interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#accept_eula SagemakerTrainingJob#accept_eula}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#accept_eula SagemakerTrainingJob#accept_eula}.
 
 ---
 
@@ -4397,7 +4397,7 @@ CustomizationTechnique *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#customization_technique SagemakerTrainingJob#customization_technique}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#customization_technique SagemakerTrainingJob#customization_technique}.
 
 ---
 
@@ -4409,7 +4409,7 @@ EvaluationType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#evaluation_type SagemakerTrainingJob#evaluation_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#evaluation_type SagemakerTrainingJob#evaluation_type}.
 
 ---
 
@@ -4421,7 +4421,7 @@ EvaluatorArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#evaluator_arn SagemakerTrainingJob#evaluator_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#evaluator_arn SagemakerTrainingJob#evaluator_arn}.
 
 ---
 
@@ -4433,7 +4433,7 @@ Peft *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#peft SagemakerTrainingJob#peft}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#peft SagemakerTrainingJob#peft}.
 
 ---
 
@@ -4453,7 +4453,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/sagemakertrainingjob"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobSessionChainingConfig.property.enableSessionTagChaining">EnableSessionTagChaining</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#enable_session_tag_chaining SagemakerTrainingJob#enable_session_tag_chaining}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobSessionChainingConfig.property.enableSessionTagChaining">EnableSessionTagChaining</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#enable_session_tag_chaining SagemakerTrainingJob#enable_session_tag_chaining}. |
 
 ---
 
@@ -4465,7 +4465,7 @@ EnableSessionTagChaining interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#enable_session_tag_chaining SagemakerTrainingJob#enable_session_tag_chaining}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#enable_session_tag_chaining SagemakerTrainingJob#enable_session_tag_chaining}.
 
 ---
 
@@ -4487,9 +4487,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/sagemakertrainingjob"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobStoppingCondition.property.maxPendingTimeInSeconds">MaxPendingTimeInSeconds</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#max_pending_time_in_seconds SagemakerTrainingJob#max_pending_time_in_seconds}. |
-| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobStoppingCondition.property.maxRuntimeInSeconds">MaxRuntimeInSeconds</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#max_runtime_in_seconds SagemakerTrainingJob#max_runtime_in_seconds}. |
-| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobStoppingCondition.property.maxWaitTimeInSeconds">MaxWaitTimeInSeconds</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#max_wait_time_in_seconds SagemakerTrainingJob#max_wait_time_in_seconds}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobStoppingCondition.property.maxPendingTimeInSeconds">MaxPendingTimeInSeconds</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#max_pending_time_in_seconds SagemakerTrainingJob#max_pending_time_in_seconds}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobStoppingCondition.property.maxRuntimeInSeconds">MaxRuntimeInSeconds</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#max_runtime_in_seconds SagemakerTrainingJob#max_runtime_in_seconds}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobStoppingCondition.property.maxWaitTimeInSeconds">MaxWaitTimeInSeconds</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#max_wait_time_in_seconds SagemakerTrainingJob#max_wait_time_in_seconds}. |
 
 ---
 
@@ -4501,7 +4501,7 @@ MaxPendingTimeInSeconds *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#max_pending_time_in_seconds SagemakerTrainingJob#max_pending_time_in_seconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#max_pending_time_in_seconds SagemakerTrainingJob#max_pending_time_in_seconds}.
 
 ---
 
@@ -4513,7 +4513,7 @@ MaxRuntimeInSeconds *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#max_runtime_in_seconds SagemakerTrainingJob#max_runtime_in_seconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#max_runtime_in_seconds SagemakerTrainingJob#max_runtime_in_seconds}.
 
 ---
 
@@ -4525,7 +4525,7 @@ MaxWaitTimeInSeconds *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#max_wait_time_in_seconds SagemakerTrainingJob#max_wait_time_in_seconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#max_wait_time_in_seconds SagemakerTrainingJob#max_wait_time_in_seconds}.
 
 ---
 
@@ -4546,8 +4546,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/sagemakertrainingjob"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobTensorBoardOutputConfig.property.s3OutputPath">S3OutputPath</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#s3_output_path SagemakerTrainingJob#s3_output_path}. |
-| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobTensorBoardOutputConfig.property.localPath">LocalPath</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#local_path SagemakerTrainingJob#local_path}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobTensorBoardOutputConfig.property.s3OutputPath">S3OutputPath</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#s3_output_path SagemakerTrainingJob#s3_output_path}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobTensorBoardOutputConfig.property.localPath">LocalPath</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#local_path SagemakerTrainingJob#local_path}. |
 
 ---
 
@@ -4559,7 +4559,7 @@ S3OutputPath *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#s3_output_path SagemakerTrainingJob#s3_output_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#s3_output_path SagemakerTrainingJob#s3_output_path}.
 
 ---
 
@@ -4571,7 +4571,7 @@ LocalPath *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#local_path SagemakerTrainingJob#local_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#local_path SagemakerTrainingJob#local_path}.
 
 ---
 
@@ -4609,7 +4609,7 @@ Create *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#create SagemakerTrainingJob#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#create SagemakerTrainingJob#create}
 
 ---
 
@@ -4623,7 +4623,7 @@ Delete *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#delete SagemakerTrainingJob#delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#delete SagemakerTrainingJob#delete}
 
 ---
 
@@ -4637,7 +4637,7 @@ Update *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#update SagemakerTrainingJob#update}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#update SagemakerTrainingJob#update}
 
 ---
 
@@ -4658,8 +4658,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/sagemakertrainingjob"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobVpcConfig.property.securityGroupIds">SecurityGroupIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#security_group_ids SagemakerTrainingJob#security_group_ids}. |
-| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobVpcConfig.property.subnets">Subnets</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#subnets SagemakerTrainingJob#subnets}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobVpcConfig.property.securityGroupIds">SecurityGroupIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#security_group_ids SagemakerTrainingJob#security_group_ids}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerTrainingJob.SagemakerTrainingJobVpcConfig.property.subnets">Subnets</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#subnets SagemakerTrainingJob#subnets}. |
 
 ---
 
@@ -4671,7 +4671,7 @@ SecurityGroupIds *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#security_group_ids SagemakerTrainingJob#security_group_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#security_group_ids SagemakerTrainingJob#security_group_ids}.
 
 ---
 
@@ -4683,7 +4683,7 @@ Subnets *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/sagemaker_training_job#subnets SagemakerTrainingJob#subnets}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/sagemaker_training_job#subnets SagemakerTrainingJob#subnets}.
 
 ---
 
