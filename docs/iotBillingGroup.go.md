@@ -4,7 +4,7 @@
 
 ### IotBillingGroup <a name="IotBillingGroup" id="@cdktn/provider-aws.iotBillingGroup.IotBillingGroup"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/iot_billing_group aws_iot_billing_group}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/iot_billing_group aws_iot_billing_group}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.iotBillingGroup.IotBillingGroup.Initializer"></a>
 
@@ -523,7 +523,7 @@ The construct id used in the generated config for the IotBillingGroup to import.
 
 The id of the existing IotBillingGroup that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/iot_billing_group#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/iot_billing_group#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -894,10 +894,10 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/iotbillinggroup"
 | <code><a href="#@cdktn/provider-aws.iotBillingGroup.IotBillingGroupConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iotBillingGroup.IotBillingGroupConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iotBillingGroup.IotBillingGroupConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.iotBillingGroup.IotBillingGroupConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/iot_billing_group#name IotBillingGroup#name}. |
+| <code><a href="#@cdktn/provider-aws.iotBillingGroup.IotBillingGroupConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/iot_billing_group#name IotBillingGroup#name}. |
 | <code><a href="#@cdktn/provider-aws.iotBillingGroup.IotBillingGroupConfig.property.properties">Properties</a></code> | <code>interface{}</code> | properties block. |
 | <code><a href="#@cdktn/provider-aws.iotBillingGroup.IotBillingGroupConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.iotBillingGroup.IotBillingGroupConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/iot_billing_group#tags IotBillingGroup#tags}. |
+| <code><a href="#@cdktn/provider-aws.iotBillingGroup.IotBillingGroupConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/iot_billing_group#tags IotBillingGroup#tags}. |
 
 ---
 
@@ -979,7 +979,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/iot_billing_group#name IotBillingGroup#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/iot_billing_group#name IotBillingGroup#name}.
 
 ---
 
@@ -993,7 +993,7 @@ Properties interface{}
 
 properties block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/iot_billing_group#properties IotBillingGroup#properties}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/iot_billing_group#properties IotBillingGroup#properties}
 
 ---
 
@@ -1007,7 +1007,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/iot_billing_group#region IotBillingGroup#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/iot_billing_group#region IotBillingGroup#region}
 
 ---
 
@@ -1019,7 +1019,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/iot_billing_group#tags IotBillingGroup#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/iot_billing_group#tags IotBillingGroup#tags}.
 
 ---
 
@@ -1052,7 +1052,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/iotbillinggroup"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.iotBillingGroup.IotBillingGroupProperties.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/iot_billing_group#description IotBillingGroup#description}. |
+| <code><a href="#@cdktn/provider-aws.iotBillingGroup.IotBillingGroupProperties.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/iot_billing_group#description IotBillingGroup#description}. |
 
 ---
 
@@ -1064,7 +1064,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/iot_billing_group#description IotBillingGroup#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/iot_billing_group#description IotBillingGroup#description}.
 
 ---
 

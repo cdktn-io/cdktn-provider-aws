@@ -4,7 +4,7 @@
 
 ### SchemasRegistry <a name="SchemasRegistry" id="@cdktn/provider-aws.schemasRegistry.SchemasRegistry"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/schemas_registry aws_schemas_registry}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/schemas_registry aws_schemas_registry}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.schemasRegistry.SchemasRegistry.Initializer"></a>
 
@@ -524,7 +524,7 @@ The construct id used in the generated config for the SchemasRegistry to import.
 
 The id of the existing SchemasRegistry that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/schemas_registry#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/schemas_registry#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -897,12 +897,12 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/schemasregistry"
 | <code><a href="#@cdktn/provider-aws.schemasRegistry.SchemasRegistryConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.schemasRegistry.SchemasRegistryConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.schemasRegistry.SchemasRegistryConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.schemasRegistry.SchemasRegistryConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/schemas_registry#name SchemasRegistry#name}. |
-| <code><a href="#@cdktn/provider-aws.schemasRegistry.SchemasRegistryConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/schemas_registry#description SchemasRegistry#description}. |
-| <code><a href="#@cdktn/provider-aws.schemasRegistry.SchemasRegistryConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/schemas_registry#id SchemasRegistry#id}. |
+| <code><a href="#@cdktn/provider-aws.schemasRegistry.SchemasRegistryConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/schemas_registry#name SchemasRegistry#name}. |
+| <code><a href="#@cdktn/provider-aws.schemasRegistry.SchemasRegistryConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/schemas_registry#description SchemasRegistry#description}. |
+| <code><a href="#@cdktn/provider-aws.schemasRegistry.SchemasRegistryConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/schemas_registry#id SchemasRegistry#id}. |
 | <code><a href="#@cdktn/provider-aws.schemasRegistry.SchemasRegistryConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.schemasRegistry.SchemasRegistryConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/schemas_registry#tags SchemasRegistry#tags}. |
-| <code><a href="#@cdktn/provider-aws.schemasRegistry.SchemasRegistryConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/schemas_registry#tags_all SchemasRegistry#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.schemasRegistry.SchemasRegistryConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/schemas_registry#tags SchemasRegistry#tags}. |
+| <code><a href="#@cdktn/provider-aws.schemasRegistry.SchemasRegistryConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/schemas_registry#tags_all SchemasRegistry#tags_all}. |
 
 ---
 
@@ -984,7 +984,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/schemas_registry#name SchemasRegistry#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/schemas_registry#name SchemasRegistry#name}.
 
 ---
 
@@ -996,7 +996,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/schemas_registry#description SchemasRegistry#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/schemas_registry#description SchemasRegistry#description}.
 
 ---
 
@@ -1008,7 +1008,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/schemas_registry#id SchemasRegistry#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/schemas_registry#id SchemasRegistry#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1025,7 +1025,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/schemas_registry#region SchemasRegistry#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/schemas_registry#region SchemasRegistry#region}
 
 ---
 
@@ -1037,7 +1037,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/schemas_registry#tags SchemasRegistry#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/schemas_registry#tags SchemasRegistry#tags}.
 
 ---
 
@@ -1049,7 +1049,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/schemas_registry#tags_all SchemasRegistry#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/schemas_registry#tags_all SchemasRegistry#tags_all}.
 
 ---
 

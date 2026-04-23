@@ -4,7 +4,7 @@
 
 ### IamOrganizationsFeatures <a name="IamOrganizationsFeatures" id="@cdktn/provider-aws.iamOrganizationsFeatures.IamOrganizationsFeatures"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/iam_organizations_features aws_iam_organizations_features}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/iam_organizations_features aws_iam_organizations_features}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.iamOrganizationsFeatures.IamOrganizationsFeatures.Initializer"></a>
 
@@ -36,7 +36,7 @@ iamOrganizationsFeatures.IamOrganizationsFeatures(
 | <code><a href="#@cdktn/provider-aws.iamOrganizationsFeatures.IamOrganizationsFeatures.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iamOrganizationsFeatures.IamOrganizationsFeatures.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iamOrganizationsFeatures.IamOrganizationsFeatures.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.iamOrganizationsFeatures.IamOrganizationsFeatures.Initializer.parameter.enabledFeatures">enabled_features</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/iam_organizations_features#enabled_features IamOrganizationsFeatures#enabled_features}. |
+| <code><a href="#@cdktn/provider-aws.iamOrganizationsFeatures.IamOrganizationsFeatures.Initializer.parameter.enabledFeatures">enabled_features</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/iam_organizations_features#enabled_features IamOrganizationsFeatures#enabled_features}. |
 
 ---
 
@@ -104,7 +104,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/iam_organizations_features#enabled_features IamOrganizationsFeatures#enabled_features}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/iam_organizations_features#enabled_features IamOrganizationsFeatures#enabled_features}.
 
 ---
 
@@ -601,7 +601,7 @@ The construct id used in the generated config for the IamOrganizationsFeatures t
 
 The id of the existing IamOrganizationsFeatures that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/iam_organizations_features#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/iam_organizations_features#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -859,7 +859,7 @@ iamOrganizationsFeatures.IamOrganizationsFeaturesConfig(
 | <code><a href="#@cdktn/provider-aws.iamOrganizationsFeatures.IamOrganizationsFeaturesConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iamOrganizationsFeatures.IamOrganizationsFeaturesConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iamOrganizationsFeatures.IamOrganizationsFeaturesConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.iamOrganizationsFeatures.IamOrganizationsFeaturesConfig.property.enabledFeatures">enabled_features</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/iam_organizations_features#enabled_features IamOrganizationsFeatures#enabled_features}. |
+| <code><a href="#@cdktn/provider-aws.iamOrganizationsFeatures.IamOrganizationsFeaturesConfig.property.enabledFeatures">enabled_features</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/iam_organizations_features#enabled_features IamOrganizationsFeatures#enabled_features}. |
 
 ---
 
@@ -941,7 +941,7 @@ enabled_features: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/iam_organizations_features#enabled_features IamOrganizationsFeatures#enabled_features}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/iam_organizations_features#enabled_features IamOrganizationsFeatures#enabled_features}.
 
 ---
 

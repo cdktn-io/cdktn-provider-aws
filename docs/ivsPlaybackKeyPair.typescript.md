@@ -4,7 +4,7 @@
 
 ### IvsPlaybackKeyPair <a name="IvsPlaybackKeyPair" id="@cdktn/provider-aws.ivsPlaybackKeyPair.IvsPlaybackKeyPair"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/ivs_playback_key_pair aws_ivs_playback_key_pair}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/ivs_playback_key_pair aws_ivs_playback_key_pair}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ivsPlaybackKeyPair.IvsPlaybackKeyPair.Initializer"></a>
 
@@ -544,7 +544,7 @@ The construct id used in the generated config for the IvsPlaybackKeyPair to impo
 
 The id of the existing IvsPlaybackKeyPair that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/ivs_playback_key_pair#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/ivs_playback_key_pair#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -936,12 +936,12 @@ const ivsPlaybackKeyPairConfig: ivsPlaybackKeyPair.IvsPlaybackKeyPairConfig = { 
 | <code><a href="#@cdktn/provider-aws.ivsPlaybackKeyPair.IvsPlaybackKeyPairConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.ivsPlaybackKeyPair.IvsPlaybackKeyPairConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.ivsPlaybackKeyPair.IvsPlaybackKeyPairConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.ivsPlaybackKeyPair.IvsPlaybackKeyPairConfig.property.publicKey">publicKey</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/ivs_playback_key_pair#public_key IvsPlaybackKeyPair#public_key}. |
-| <code><a href="#@cdktn/provider-aws.ivsPlaybackKeyPair.IvsPlaybackKeyPairConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/ivs_playback_key_pair#id IvsPlaybackKeyPair#id}. |
-| <code><a href="#@cdktn/provider-aws.ivsPlaybackKeyPair.IvsPlaybackKeyPairConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/ivs_playback_key_pair#name IvsPlaybackKeyPair#name}. |
+| <code><a href="#@cdktn/provider-aws.ivsPlaybackKeyPair.IvsPlaybackKeyPairConfig.property.publicKey">publicKey</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/ivs_playback_key_pair#public_key IvsPlaybackKeyPair#public_key}. |
+| <code><a href="#@cdktn/provider-aws.ivsPlaybackKeyPair.IvsPlaybackKeyPairConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/ivs_playback_key_pair#id IvsPlaybackKeyPair#id}. |
+| <code><a href="#@cdktn/provider-aws.ivsPlaybackKeyPair.IvsPlaybackKeyPairConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/ivs_playback_key_pair#name IvsPlaybackKeyPair#name}. |
 | <code><a href="#@cdktn/provider-aws.ivsPlaybackKeyPair.IvsPlaybackKeyPairConfig.property.region">region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.ivsPlaybackKeyPair.IvsPlaybackKeyPairConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/ivs_playback_key_pair#tags IvsPlaybackKeyPair#tags}. |
-| <code><a href="#@cdktn/provider-aws.ivsPlaybackKeyPair.IvsPlaybackKeyPairConfig.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/ivs_playback_key_pair#tags_all IvsPlaybackKeyPair#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.ivsPlaybackKeyPair.IvsPlaybackKeyPairConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/ivs_playback_key_pair#tags IvsPlaybackKeyPair#tags}. |
+| <code><a href="#@cdktn/provider-aws.ivsPlaybackKeyPair.IvsPlaybackKeyPairConfig.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/ivs_playback_key_pair#tags_all IvsPlaybackKeyPair#tags_all}. |
 | <code><a href="#@cdktn/provider-aws.ivsPlaybackKeyPair.IvsPlaybackKeyPairConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-aws.ivsPlaybackKeyPair.IvsPlaybackKeyPairTimeouts">IvsPlaybackKeyPairTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1024,7 +1024,7 @@ public readonly publicKey: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/ivs_playback_key_pair#public_key IvsPlaybackKeyPair#public_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/ivs_playback_key_pair#public_key IvsPlaybackKeyPair#public_key}.
 
 ---
 
@@ -1036,7 +1036,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/ivs_playback_key_pair#id IvsPlaybackKeyPair#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/ivs_playback_key_pair#id IvsPlaybackKeyPair#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1051,7 +1051,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/ivs_playback_key_pair#name IvsPlaybackKeyPair#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/ivs_playback_key_pair#name IvsPlaybackKeyPair#name}.
 
 ---
 
@@ -1065,7 +1065,7 @@ public readonly region: string;
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/ivs_playback_key_pair#region IvsPlaybackKeyPair#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/ivs_playback_key_pair#region IvsPlaybackKeyPair#region}
 
 ---
 
@@ -1077,7 +1077,7 @@ public readonly tags: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/ivs_playback_key_pair#tags IvsPlaybackKeyPair#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/ivs_playback_key_pair#tags IvsPlaybackKeyPair#tags}.
 
 ---
 
@@ -1089,7 +1089,7 @@ public readonly tagsAll: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/ivs_playback_key_pair#tags_all IvsPlaybackKeyPair#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/ivs_playback_key_pair#tags_all IvsPlaybackKeyPair#tags_all}.
 
 ---
 
@@ -1103,7 +1103,7 @@ public readonly timeouts: IvsPlaybackKeyPairTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/ivs_playback_key_pair#timeouts IvsPlaybackKeyPair#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/ivs_playback_key_pair#timeouts IvsPlaybackKeyPair#timeouts}
 
 ---
 
@@ -1121,8 +1121,8 @@ const ivsPlaybackKeyPairTimeouts: ivsPlaybackKeyPair.IvsPlaybackKeyPairTimeouts 
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.ivsPlaybackKeyPair.IvsPlaybackKeyPairTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/ivs_playback_key_pair#create IvsPlaybackKeyPair#create}. |
-| <code><a href="#@cdktn/provider-aws.ivsPlaybackKeyPair.IvsPlaybackKeyPairTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/ivs_playback_key_pair#delete IvsPlaybackKeyPair#delete}. |
+| <code><a href="#@cdktn/provider-aws.ivsPlaybackKeyPair.IvsPlaybackKeyPairTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/ivs_playback_key_pair#create IvsPlaybackKeyPair#create}. |
+| <code><a href="#@cdktn/provider-aws.ivsPlaybackKeyPair.IvsPlaybackKeyPairTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/ivs_playback_key_pair#delete IvsPlaybackKeyPair#delete}. |
 
 ---
 
@@ -1134,7 +1134,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/ivs_playback_key_pair#create IvsPlaybackKeyPair#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/ivs_playback_key_pair#create IvsPlaybackKeyPair#create}.
 
 ---
 
@@ -1146,7 +1146,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/ivs_playback_key_pair#delete IvsPlaybackKeyPair#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/ivs_playback_key_pair#delete IvsPlaybackKeyPair#delete}.
 
 ---
 

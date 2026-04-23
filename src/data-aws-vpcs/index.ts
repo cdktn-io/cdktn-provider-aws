@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/data-sources/vpcs
+// https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/data-sources/vpcs
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktn from 'cdktn';
 
 export interface DataAwsVpcsConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/data-sources/vpcs#id DataAwsVpcs#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/data-sources/vpcs#id DataAwsVpcs#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,33 +22,33 @@ export interface DataAwsVpcsConfig extends cdktn.TerraformMetaArguments {
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/data-sources/vpcs#region DataAwsVpcs#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/data-sources/vpcs#region DataAwsVpcs#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/data-sources/vpcs#tags DataAwsVpcs#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/data-sources/vpcs#tags DataAwsVpcs#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
   * filter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/data-sources/vpcs#filter DataAwsVpcs#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/data-sources/vpcs#filter DataAwsVpcs#filter}
   */
   readonly filter?: DataAwsVpcsFilter[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/data-sources/vpcs#timeouts DataAwsVpcs#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/data-sources/vpcs#timeouts DataAwsVpcs#timeouts}
   */
   readonly timeouts?: DataAwsVpcsTimeouts;
 }
 export interface DataAwsVpcsFilter {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/data-sources/vpcs#name DataAwsVpcs#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/data-sources/vpcs#name DataAwsVpcs#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/data-sources/vpcs#values DataAwsVpcs#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/data-sources/vpcs#values DataAwsVpcs#values}
   */
   readonly values: string[];
 }
@@ -187,7 +187,7 @@ export class DataAwsVpcsFilterList extends cdktn.ComplexList {
 }
 export interface DataAwsVpcsTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/data-sources/vpcs#read DataAwsVpcs#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/data-sources/vpcs#read DataAwsVpcs#read}
   */
   readonly read?: string;
 }
@@ -281,7 +281,7 @@ export class DataAwsVpcsTimeoutsOutputReference extends cdktn.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/data-sources/vpcs aws_vpcs}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/data-sources/vpcs aws_vpcs}
 */
 export class DataAwsVpcs extends cdktn.TerraformDataSource {
 
@@ -297,7 +297,7 @@ export class DataAwsVpcs extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataAwsVpcs resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsVpcs to import
-  * @param importFromId The id of the existing DataAwsVpcs that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/data-sources/vpcs#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsVpcs that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/data-sources/vpcs#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsVpcs to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -309,7 +309,7 @@ export class DataAwsVpcs extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/data-sources/vpcs aws_vpcs} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/data-sources/vpcs aws_vpcs} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -320,7 +320,7 @@ export class DataAwsVpcs extends cdktn.TerraformDataSource {
       terraformResourceType: 'aws_vpcs',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.41.0',
+        providerVersion: '6.42.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

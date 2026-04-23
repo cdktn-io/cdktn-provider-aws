@@ -4,7 +4,7 @@
 
 ### ApiGatewayClientCertificate <a name="ApiGatewayClientCertificate" id="@cdktn/provider-aws.apiGatewayClientCertificate.ApiGatewayClientCertificate"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/api_gateway_client_certificate aws_api_gateway_client_certificate}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/api_gateway_client_certificate aws_api_gateway_client_certificate}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.apiGatewayClientCertificate.ApiGatewayClientCertificate.Initializer"></a>
 
@@ -524,7 +524,7 @@ The construct id used in the generated config for the ApiGatewayClientCertificat
 
 The id of the existing ApiGatewayClientCertificate that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/api_gateway_client_certificate#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/api_gateway_client_certificate#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -894,11 +894,11 @@ const apiGatewayClientCertificateConfig: apiGatewayClientCertificate.ApiGatewayC
 | <code><a href="#@cdktn/provider-aws.apiGatewayClientCertificate.ApiGatewayClientCertificateConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.apiGatewayClientCertificate.ApiGatewayClientCertificateConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.apiGatewayClientCertificate.ApiGatewayClientCertificateConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.apiGatewayClientCertificate.ApiGatewayClientCertificateConfig.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/api_gateway_client_certificate#description ApiGatewayClientCertificate#description}. |
-| <code><a href="#@cdktn/provider-aws.apiGatewayClientCertificate.ApiGatewayClientCertificateConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/api_gateway_client_certificate#id ApiGatewayClientCertificate#id}. |
+| <code><a href="#@cdktn/provider-aws.apiGatewayClientCertificate.ApiGatewayClientCertificateConfig.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/api_gateway_client_certificate#description ApiGatewayClientCertificate#description}. |
+| <code><a href="#@cdktn/provider-aws.apiGatewayClientCertificate.ApiGatewayClientCertificateConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/api_gateway_client_certificate#id ApiGatewayClientCertificate#id}. |
 | <code><a href="#@cdktn/provider-aws.apiGatewayClientCertificate.ApiGatewayClientCertificateConfig.property.region">region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.apiGatewayClientCertificate.ApiGatewayClientCertificateConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/api_gateway_client_certificate#tags ApiGatewayClientCertificate#tags}. |
-| <code><a href="#@cdktn/provider-aws.apiGatewayClientCertificate.ApiGatewayClientCertificateConfig.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/api_gateway_client_certificate#tags_all ApiGatewayClientCertificate#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.apiGatewayClientCertificate.ApiGatewayClientCertificateConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/api_gateway_client_certificate#tags ApiGatewayClientCertificate#tags}. |
+| <code><a href="#@cdktn/provider-aws.apiGatewayClientCertificate.ApiGatewayClientCertificateConfig.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/api_gateway_client_certificate#tags_all ApiGatewayClientCertificate#tags_all}. |
 
 ---
 
@@ -980,7 +980,7 @@ public readonly description: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/api_gateway_client_certificate#description ApiGatewayClientCertificate#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/api_gateway_client_certificate#description ApiGatewayClientCertificate#description}.
 
 ---
 
@@ -992,7 +992,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/api_gateway_client_certificate#id ApiGatewayClientCertificate#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/api_gateway_client_certificate#id ApiGatewayClientCertificate#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1009,7 +1009,7 @@ public readonly region: string;
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/api_gateway_client_certificate#region ApiGatewayClientCertificate#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/api_gateway_client_certificate#region ApiGatewayClientCertificate#region}
 
 ---
 
@@ -1021,7 +1021,7 @@ public readonly tags: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/api_gateway_client_certificate#tags ApiGatewayClientCertificate#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/api_gateway_client_certificate#tags ApiGatewayClientCertificate#tags}.
 
 ---
 
@@ -1033,7 +1033,7 @@ public readonly tagsAll: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/api_gateway_client_certificate#tags_all ApiGatewayClientCertificate#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/api_gateway_client_certificate#tags_all ApiGatewayClientCertificate#tags_all}.
 
 ---
 

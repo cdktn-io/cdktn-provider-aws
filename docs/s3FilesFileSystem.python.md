@@ -4,7 +4,7 @@
 
 ### S3FilesFileSystem <a name="S3FilesFileSystem" id="@cdktn/provider-aws.s3FilesFileSystem.S3FilesFileSystem"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/s3files_file_system aws_s3files_file_system}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/s3files_file_system aws_s3files_file_system}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3FilesFileSystem.S3FilesFileSystem.Initializer"></a>
 
@@ -23,6 +23,7 @@ s3FilesFileSystem.S3FilesFileSystem(
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   bucket: str,
   role_arn: str,
+  accept_bucket_warning: bool | IResolvable = None,
   kms_key_id: str = None,
   prefix: str = None,
   region: str = None,
@@ -44,10 +45,11 @@ s3FilesFileSystem.S3FilesFileSystem(
 | <code><a href="#@cdktn/provider-aws.s3FilesFileSystem.S3FilesFileSystem.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.s3FilesFileSystem.S3FilesFileSystem.Initializer.parameter.bucket">bucket</a></code> | <code>str</code> | S3 bucket ARN. |
 | <code><a href="#@cdktn/provider-aws.s3FilesFileSystem.S3FilesFileSystem.Initializer.parameter.roleArn">role_arn</a></code> | <code>str</code> | IAM role ARN for S3 access. |
+| <code><a href="#@cdktn/provider-aws.s3FilesFileSystem.S3FilesFileSystem.Initializer.parameter.acceptBucketWarning">accept_bucket_warning</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/s3files_file_system#accept_bucket_warning S3FilesFileSystem#accept_bucket_warning}. |
 | <code><a href="#@cdktn/provider-aws.s3FilesFileSystem.S3FilesFileSystem.Initializer.parameter.kmsKeyId">kms_key_id</a></code> | <code>str</code> | KMS key ID for encryption. |
 | <code><a href="#@cdktn/provider-aws.s3FilesFileSystem.S3FilesFileSystem.Initializer.parameter.prefix">prefix</a></code> | <code>str</code> | S3 bucket prefix. |
 | <code><a href="#@cdktn/provider-aws.s3FilesFileSystem.S3FilesFileSystem.Initializer.parameter.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.s3FilesFileSystem.S3FilesFileSystem.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/s3files_file_system#tags S3FilesFileSystem#tags}. |
+| <code><a href="#@cdktn/provider-aws.s3FilesFileSystem.S3FilesFileSystem.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/s3files_file_system#tags S3FilesFileSystem#tags}. |
 | <code><a href="#@cdktn/provider-aws.s3FilesFileSystem.S3FilesFileSystem.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-aws.s3FilesFileSystem.S3FilesFileSystemTimeouts">S3FilesFileSystemTimeouts</a></code> | timeouts block. |
 
 ---
@@ -118,7 +120,7 @@ Must be unique amongst siblings in the same scope
 
 S3 bucket ARN.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/s3files_file_system#bucket S3FilesFileSystem#bucket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/s3files_file_system#bucket S3FilesFileSystem#bucket}
 
 ---
 
@@ -128,7 +130,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 IAM role ARN for S3 access.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/s3files_file_system#role_arn S3FilesFileSystem#role_arn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/s3files_file_system#role_arn S3FilesFileSystem#role_arn}
+
+---
+
+##### `accept_bucket_warning`<sup>Optional</sup> <a name="accept_bucket_warning" id="@cdktn/provider-aws.s3FilesFileSystem.S3FilesFileSystem.Initializer.parameter.acceptBucketWarning"></a>
+
+- *Type:* bool | cdktn.IResolvable
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/s3files_file_system#accept_bucket_warning S3FilesFileSystem#accept_bucket_warning}.
 
 ---
 
@@ -138,7 +148,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 KMS key ID for encryption.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/s3files_file_system#kms_key_id S3FilesFileSystem#kms_key_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/s3files_file_system#kms_key_id S3FilesFileSystem#kms_key_id}
 
 ---
 
@@ -148,7 +158,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 S3 bucket prefix.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/s3files_file_system#prefix S3FilesFileSystem#prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/s3files_file_system#prefix S3FilesFileSystem#prefix}
 
 ---
 
@@ -158,7 +168,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/s3files_file_system#region S3FilesFileSystem#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/s3files_file_system#region S3FilesFileSystem#region}
 
 ---
 
@@ -166,7 +176,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/s3files_file_system#tags S3FilesFileSystem#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/s3files_file_system#tags S3FilesFileSystem#tags}.
 
 ---
 
@@ -176,7 +186,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/s3files_file_system#timeouts S3FilesFileSystem#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/s3files_file_system#timeouts S3FilesFileSystem#timeouts}
 
 ---
 
@@ -209,6 +219,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-aws.s3FilesFileSystem.S3FilesFileSystem.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-aws.s3FilesFileSystem.S3FilesFileSystem.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-aws.s3FilesFileSystem.S3FilesFileSystem.putTimeouts">put_timeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3FilesFileSystem.S3FilesFileSystem.resetAcceptBucketWarning">reset_accept_bucket_warning</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.s3FilesFileSystem.S3FilesFileSystem.resetKmsKeyId">reset_kms_key_id</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.s3FilesFileSystem.S3FilesFileSystem.resetPrefix">reset_prefix</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.s3FilesFileSystem.S3FilesFileSystem.resetRegion">reset_region</a></code> | *No description.* |
@@ -580,7 +591,7 @@ def put_timeouts(
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/s3files_file_system#create S3FilesFileSystem#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/s3files_file_system#create S3FilesFileSystem#create}
 
 ---
 
@@ -590,9 +601,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/s3files_file_system#delete S3FilesFileSystem#delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/s3files_file_system#delete S3FilesFileSystem#delete}
 
 ---
+
+##### `reset_accept_bucket_warning` <a name="reset_accept_bucket_warning" id="@cdktn/provider-aws.s3FilesFileSystem.S3FilesFileSystem.resetAcceptBucketWarning"></a>
+
+```python
+def reset_accept_bucket_warning() -> None
+```
 
 ##### `reset_kms_key_id` <a name="reset_kms_key_id" id="@cdktn/provider-aws.s3FilesFileSystem.S3FilesFileSystem.resetKmsKeyId"></a>
 
@@ -738,7 +755,7 @@ The construct id used in the generated config for the S3FilesFileSystem to impor
 
 The id of the existing S3FilesFileSystem that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/s3files_file_system#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/s3files_file_system#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -777,6 +794,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0
 | <code><a href="#@cdktn/provider-aws.s3FilesFileSystem.S3FilesFileSystem.property.statusMessage">status_message</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.s3FilesFileSystem.S3FilesFileSystem.property.tagsAll">tags_all</a></code> | <code>cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.s3FilesFileSystem.S3FilesFileSystem.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-aws.s3FilesFileSystem.S3FilesFileSystemTimeoutsOutputReference">S3FilesFileSystemTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3FilesFileSystem.S3FilesFileSystem.property.acceptBucketWarningInput">accept_bucket_warning_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.s3FilesFileSystem.S3FilesFileSystem.property.bucketInput">bucket_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.s3FilesFileSystem.S3FilesFileSystem.property.kmsKeyIdInput">kms_key_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.s3FilesFileSystem.S3FilesFileSystem.property.prefixInput">prefix_input</a></code> | <code>str</code> | *No description.* |
@@ -784,6 +802,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0
 | <code><a href="#@cdktn/provider-aws.s3FilesFileSystem.S3FilesFileSystem.property.roleArnInput">role_arn_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.s3FilesFileSystem.S3FilesFileSystem.property.tagsInput">tags_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.s3FilesFileSystem.S3FilesFileSystem.property.timeoutsInput">timeouts_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.s3FilesFileSystem.S3FilesFileSystemTimeouts">S3FilesFileSystemTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3FilesFileSystem.S3FilesFileSystem.property.acceptBucketWarning">accept_bucket_warning</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.s3FilesFileSystem.S3FilesFileSystem.property.bucket">bucket</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.s3FilesFileSystem.S3FilesFileSystem.property.kmsKeyId">kms_key_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.s3FilesFileSystem.S3FilesFileSystem.property.prefix">prefix</a></code> | <code>str</code> | *No description.* |
@@ -1025,6 +1044,16 @@ timeouts: S3FilesFileSystemTimeoutsOutputReference
 
 ---
 
+##### `accept_bucket_warning_input`<sup>Optional</sup> <a name="accept_bucket_warning_input" id="@cdktn/provider-aws.s3FilesFileSystem.S3FilesFileSystem.property.acceptBucketWarningInput"></a>
+
+```python
+accept_bucket_warning_input: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
 ##### `bucket_input`<sup>Optional</sup> <a name="bucket_input" id="@cdktn/provider-aws.s3FilesFileSystem.S3FilesFileSystem.property.bucketInput"></a>
 
 ```python
@@ -1092,6 +1121,16 @@ timeouts_input: IResolvable | S3FilesFileSystemTimeouts
 ```
 
 - *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.s3FilesFileSystem.S3FilesFileSystemTimeouts">S3FilesFileSystemTimeouts</a>
+
+---
+
+##### `accept_bucket_warning`<sup>Required</sup> <a name="accept_bucket_warning" id="@cdktn/provider-aws.s3FilesFileSystem.S3FilesFileSystem.property.acceptBucketWarning"></a>
+
+```python
+accept_bucket_warning: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -1192,6 +1231,7 @@ s3FilesFileSystem.S3FilesFileSystemConfig(
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   bucket: str,
   role_arn: str,
+  accept_bucket_warning: bool | IResolvable = None,
   kms_key_id: str = None,
   prefix: str = None,
   region: str = None,
@@ -1213,10 +1253,11 @@ s3FilesFileSystem.S3FilesFileSystemConfig(
 | <code><a href="#@cdktn/provider-aws.s3FilesFileSystem.S3FilesFileSystemConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.s3FilesFileSystem.S3FilesFileSystemConfig.property.bucket">bucket</a></code> | <code>str</code> | S3 bucket ARN. |
 | <code><a href="#@cdktn/provider-aws.s3FilesFileSystem.S3FilesFileSystemConfig.property.roleArn">role_arn</a></code> | <code>str</code> | IAM role ARN for S3 access. |
+| <code><a href="#@cdktn/provider-aws.s3FilesFileSystem.S3FilesFileSystemConfig.property.acceptBucketWarning">accept_bucket_warning</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/s3files_file_system#accept_bucket_warning S3FilesFileSystem#accept_bucket_warning}. |
 | <code><a href="#@cdktn/provider-aws.s3FilesFileSystem.S3FilesFileSystemConfig.property.kmsKeyId">kms_key_id</a></code> | <code>str</code> | KMS key ID for encryption. |
 | <code><a href="#@cdktn/provider-aws.s3FilesFileSystem.S3FilesFileSystemConfig.property.prefix">prefix</a></code> | <code>str</code> | S3 bucket prefix. |
 | <code><a href="#@cdktn/provider-aws.s3FilesFileSystem.S3FilesFileSystemConfig.property.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.s3FilesFileSystem.S3FilesFileSystemConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/s3files_file_system#tags S3FilesFileSystem#tags}. |
+| <code><a href="#@cdktn/provider-aws.s3FilesFileSystem.S3FilesFileSystemConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/s3files_file_system#tags S3FilesFileSystem#tags}. |
 | <code><a href="#@cdktn/provider-aws.s3FilesFileSystem.S3FilesFileSystemConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-aws.s3FilesFileSystem.S3FilesFileSystemTimeouts">S3FilesFileSystemTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1301,7 +1342,7 @@ bucket: str
 
 S3 bucket ARN.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/s3files_file_system#bucket S3FilesFileSystem#bucket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/s3files_file_system#bucket S3FilesFileSystem#bucket}
 
 ---
 
@@ -1315,7 +1356,19 @@ role_arn: str
 
 IAM role ARN for S3 access.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/s3files_file_system#role_arn S3FilesFileSystem#role_arn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/s3files_file_system#role_arn S3FilesFileSystem#role_arn}
+
+---
+
+##### `accept_bucket_warning`<sup>Optional</sup> <a name="accept_bucket_warning" id="@cdktn/provider-aws.s3FilesFileSystem.S3FilesFileSystemConfig.property.acceptBucketWarning"></a>
+
+```python
+accept_bucket_warning: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/s3files_file_system#accept_bucket_warning S3FilesFileSystem#accept_bucket_warning}.
 
 ---
 
@@ -1329,7 +1382,7 @@ kms_key_id: str
 
 KMS key ID for encryption.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/s3files_file_system#kms_key_id S3FilesFileSystem#kms_key_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/s3files_file_system#kms_key_id S3FilesFileSystem#kms_key_id}
 
 ---
 
@@ -1343,7 +1396,7 @@ prefix: str
 
 S3 bucket prefix.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/s3files_file_system#prefix S3FilesFileSystem#prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/s3files_file_system#prefix S3FilesFileSystem#prefix}
 
 ---
 
@@ -1357,7 +1410,7 @@ region: str
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/s3files_file_system#region S3FilesFileSystem#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/s3files_file_system#region S3FilesFileSystem#region}
 
 ---
 
@@ -1369,7 +1422,7 @@ tags: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/s3files_file_system#tags S3FilesFileSystem#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/s3files_file_system#tags S3FilesFileSystem#tags}.
 
 ---
 
@@ -1383,7 +1436,7 @@ timeouts: S3FilesFileSystemTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/s3files_file_system#timeouts S3FilesFileSystem#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/s3files_file_system#timeouts S3FilesFileSystem#timeouts}
 
 ---
 
@@ -1419,7 +1472,7 @@ create: str
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/s3files_file_system#create S3FilesFileSystem#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/s3files_file_system#create S3FilesFileSystem#create}
 
 ---
 
@@ -1433,7 +1486,7 @@ delete: str
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/s3files_file_system#delete S3FilesFileSystem#delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/s3files_file_system#delete S3FilesFileSystem#delete}
 
 ---
 
