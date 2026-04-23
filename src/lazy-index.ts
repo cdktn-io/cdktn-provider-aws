@@ -291,6 +291,7 @@ Object.defineProperty(exports, 'cloudwatchLogSubscriptionFilter', { get: functio
 Object.defineProperty(exports, 'cloudwatchLogTransformer', { get: function () { return require('./cloudwatch-log-transformer'); } });
 Object.defineProperty(exports, 'cloudwatchMetricAlarm', { get: function () { return require('./cloudwatch-metric-alarm'); } });
 Object.defineProperty(exports, 'cloudwatchMetricStream', { get: function () { return require('./cloudwatch-metric-stream'); } });
+Object.defineProperty(exports, 'cloudwatchOtelEnrichment', { get: function () { return require('./cloudwatch-otel-enrichment'); } });
 Object.defineProperty(exports, 'cloudwatchQueryDefinition', { get: function () { return require('./cloudwatch-query-definition'); } });
 Object.defineProperty(exports, 'codeartifactDomain', { get: function () { return require('./codeartifact-domain'); } });
 Object.defineProperty(exports, 'codeartifactDomainPermissionsPolicy', { get: function () { return require('./codeartifact-domain-permissions-policy'); } });
@@ -513,6 +514,7 @@ Object.defineProperty(exports, 'ebsSnapshotBlockPublicAccess', { get: function (
 Object.defineProperty(exports, 'ebsSnapshotCopy', { get: function () { return require('./ebs-snapshot-copy'); } });
 Object.defineProperty(exports, 'ebsSnapshotImport', { get: function () { return require('./ebs-snapshot-import'); } });
 Object.defineProperty(exports, 'ebsVolume', { get: function () { return require('./ebs-volume'); } });
+Object.defineProperty(exports, 'ebsVolumeCopy', { get: function () { return require('./ebs-volume-copy'); } });
 Object.defineProperty(exports, 'ec2AllowedImagesSettings', { get: function () { return require('./ec2-allowed-images-settings'); } });
 Object.defineProperty(exports, 'ec2AvailabilityZoneGroup', { get: function () { return require('./ec2-availability-zone-group'); } });
 Object.defineProperty(exports, 'ec2CapacityBlockReservation', { get: function () { return require('./ec2-capacity-block-reservation'); } });
@@ -1296,6 +1298,7 @@ Object.defineProperty(exports, 'sagemakerFeatureGroup', { get: function () { ret
 Object.defineProperty(exports, 'sagemakerFlowDefinition', { get: function () { return require('./sagemaker-flow-definition'); } });
 Object.defineProperty(exports, 'sagemakerHub', { get: function () { return require('./sagemaker-hub'); } });
 Object.defineProperty(exports, 'sagemakerHumanTaskUi', { get: function () { return require('./sagemaker-human-task-ui'); } });
+Object.defineProperty(exports, 'sagemakerHyperParameterTuningJob', { get: function () { return require('./sagemaker-hyper-parameter-tuning-job'); } });
 Object.defineProperty(exports, 'sagemakerImage', { get: function () { return require('./sagemaker-image'); } });
 Object.defineProperty(exports, 'sagemakerImageVersion', { get: function () { return require('./sagemaker-image-version'); } });
 Object.defineProperty(exports, 'sagemakerLabelingJob', { get: function () { return require('./sagemaker-labeling-job'); } });
@@ -1838,6 +1841,8 @@ Object.defineProperty(exports, 'dataAwsEc2NetworkInsightsPath', { get: function 
 Object.defineProperty(exports, 'dataAwsEc2PublicIpv4Pool', { get: function () { return require('./data-aws-ec2-public-ipv4-pool'); } });
 Object.defineProperty(exports, 'dataAwsEc2PublicIpv4Pools', { get: function () { return require('./data-aws-ec2-public-ipv4-pools'); } });
 Object.defineProperty(exports, 'dataAwsEc2SerialConsoleAccess', { get: function () { return require('./data-aws-ec2-serial-console-access'); } });
+Object.defineProperty(exports, 'dataAwsEc2ServiceLinkVirtualInterface', { get: function () { return require('./data-aws-ec2-service-link-virtual-interface'); } });
+Object.defineProperty(exports, 'dataAwsEc2ServiceLinkVirtualInterfaces', { get: function () { return require('./data-aws-ec2-service-link-virtual-interfaces'); } });
 Object.defineProperty(exports, 'dataAwsEc2SpotPrice', { get: function () { return require('./data-aws-ec2-spot-price'); } });
 Object.defineProperty(exports, 'dataAwsEc2TransitGateway', { get: function () { return require('./data-aws-ec2-transit-gateway'); } });
 Object.defineProperty(exports, 'dataAwsEc2TransitGatewayAttachment', { get: function () { return require('./data-aws-ec2-transit-gateway-attachment'); } });

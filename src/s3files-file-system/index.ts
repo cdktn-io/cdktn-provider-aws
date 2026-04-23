@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/s3files_file_system
+// https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/s3files_file_system
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,43 +13,47 @@ import * as cdktn from 'cdktn';
 
 export interface S3FilesFileSystemConfig extends cdktn.TerraformMetaArguments {
   /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/s3files_file_system#accept_bucket_warning S3FilesFileSystem#accept_bucket_warning}
+  */
+  readonly acceptBucketWarning?: boolean | cdktn.IResolvable;
+  /**
   * S3 bucket ARN
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/s3files_file_system#bucket S3FilesFileSystem#bucket}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/s3files_file_system#bucket S3FilesFileSystem#bucket}
   */
   readonly bucket: string;
   /**
   * KMS key ID for encryption
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/s3files_file_system#kms_key_id S3FilesFileSystem#kms_key_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/s3files_file_system#kms_key_id S3FilesFileSystem#kms_key_id}
   */
   readonly kmsKeyId?: string;
   /**
   * S3 bucket prefix
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/s3files_file_system#prefix S3FilesFileSystem#prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/s3files_file_system#prefix S3FilesFileSystem#prefix}
   */
   readonly prefix?: string;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/s3files_file_system#region S3FilesFileSystem#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/s3files_file_system#region S3FilesFileSystem#region}
   */
   readonly region?: string;
   /**
   * IAM role ARN for S3 access
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/s3files_file_system#role_arn S3FilesFileSystem#role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/s3files_file_system#role_arn S3FilesFileSystem#role_arn}
   */
   readonly roleArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/s3files_file_system#tags S3FilesFileSystem#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/s3files_file_system#tags S3FilesFileSystem#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/s3files_file_system#timeouts S3FilesFileSystem#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/s3files_file_system#timeouts S3FilesFileSystem#timeouts}
   */
   readonly timeouts?: S3FilesFileSystemTimeouts;
 }
@@ -57,13 +61,13 @@ export interface S3FilesFileSystemTimeouts {
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/s3files_file_system#create S3FilesFileSystem#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/s3files_file_system#create S3FilesFileSystem#create}
   */
   readonly create?: string;
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/s3files_file_system#delete S3FilesFileSystem#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/s3files_file_system#delete S3FilesFileSystem#delete}
   */
   readonly delete?: string;
 }
@@ -186,7 +190,7 @@ export class S3FilesFileSystemTimeoutsOutputReference extends cdktn.ComplexObjec
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/s3files_file_system aws_s3files_file_system}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/s3files_file_system aws_s3files_file_system}
 */
 export class S3FilesFileSystem extends cdktn.TerraformResource {
 
@@ -202,7 +206,7 @@ export class S3FilesFileSystem extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a S3FilesFileSystem resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the S3FilesFileSystem to import
-  * @param importFromId The id of the existing S3FilesFileSystem that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/s3files_file_system#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing S3FilesFileSystem that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/s3files_file_system#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the S3FilesFileSystem to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -214,7 +218,7 @@ export class S3FilesFileSystem extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/s3files_file_system aws_s3files_file_system} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/s3files_file_system aws_s3files_file_system} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -225,7 +229,7 @@ export class S3FilesFileSystem extends cdktn.TerraformResource {
       terraformResourceType: 'aws_s3files_file_system',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.41.0',
+        providerVersion: '6.42.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
@@ -236,6 +240,7 @@ export class S3FilesFileSystem extends cdktn.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
+    this._acceptBucketWarning = config.acceptBucketWarning;
     this._bucket = config.bucket;
     this._kmsKeyId = config.kmsKeyId;
     this._prefix = config.prefix;
@@ -248,6 +253,22 @@ export class S3FilesFileSystem extends cdktn.TerraformResource {
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // accept_bucket_warning - computed: false, optional: true, required: false
+  private _acceptBucketWarning?: boolean | cdktn.IResolvable; 
+  public get acceptBucketWarning() {
+    return this.getBooleanAttribute('accept_bucket_warning');
+  }
+  public set acceptBucketWarning(value: boolean | cdktn.IResolvable) {
+    this._acceptBucketWarning = value;
+  }
+  public resetAcceptBucketWarning() {
+    this._acceptBucketWarning = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get acceptBucketWarningInput() {
+    return this._acceptBucketWarning;
+  }
 
   // arn - computed: true, optional: false, required: false
   public get arn() {
@@ -402,6 +423,7 @@ export class S3FilesFileSystem extends cdktn.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      accept_bucket_warning: cdktn.booleanToTerraform(this._acceptBucketWarning),
       bucket: cdktn.stringToTerraform(this._bucket),
       kms_key_id: cdktn.stringToTerraform(this._kmsKeyId),
       prefix: cdktn.stringToTerraform(this._prefix),
@@ -414,6 +436,12 @@ export class S3FilesFileSystem extends cdktn.TerraformResource {
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
+      accept_bucket_warning: {
+        value: cdktn.booleanToHclTerraform(this._acceptBucketWarning),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
       bucket: {
         value: cdktn.stringToHclTerraform(this._bucket),
         isBlock: false,

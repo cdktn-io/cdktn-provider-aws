@@ -291,6 +291,7 @@ export * as cloudwatchLogSubscriptionFilter from './cloudwatch-log-subscription-
 export * as cloudwatchLogTransformer from './cloudwatch-log-transformer';
 export * as cloudwatchMetricAlarm from './cloudwatch-metric-alarm';
 export * as cloudwatchMetricStream from './cloudwatch-metric-stream';
+export * as cloudwatchOtelEnrichment from './cloudwatch-otel-enrichment';
 export * as cloudwatchQueryDefinition from './cloudwatch-query-definition';
 export * as codeartifactDomain from './codeartifact-domain';
 export * as codeartifactDomainPermissionsPolicy from './codeartifact-domain-permissions-policy';
@@ -513,6 +514,7 @@ export * as ebsSnapshotBlockPublicAccess from './ebs-snapshot-block-public-acces
 export * as ebsSnapshotCopy from './ebs-snapshot-copy';
 export * as ebsSnapshotImport from './ebs-snapshot-import';
 export * as ebsVolume from './ebs-volume';
+export * as ebsVolumeCopy from './ebs-volume-copy';
 export * as ec2AllowedImagesSettings from './ec2-allowed-images-settings';
 export * as ec2AvailabilityZoneGroup from './ec2-availability-zone-group';
 export * as ec2CapacityBlockReservation from './ec2-capacity-block-reservation';
@@ -1296,6 +1298,7 @@ export * as sagemakerFeatureGroup from './sagemaker-feature-group';
 export * as sagemakerFlowDefinition from './sagemaker-flow-definition';
 export * as sagemakerHub from './sagemaker-hub';
 export * as sagemakerHumanTaskUi from './sagemaker-human-task-ui';
+export * as sagemakerHyperParameterTuningJob from './sagemaker-hyper-parameter-tuning-job';
 export * as sagemakerImage from './sagemaker-image';
 export * as sagemakerImageVersion from './sagemaker-image-version';
 export * as sagemakerLabelingJob from './sagemaker-labeling-job';
@@ -1838,6 +1841,8 @@ export * as dataAwsEc2NetworkInsightsPath from './data-aws-ec2-network-insights-
 export * as dataAwsEc2PublicIpv4Pool from './data-aws-ec2-public-ipv4-pool';
 export * as dataAwsEc2PublicIpv4Pools from './data-aws-ec2-public-ipv4-pools';
 export * as dataAwsEc2SerialConsoleAccess from './data-aws-ec2-serial-console-access';
+export * as dataAwsEc2ServiceLinkVirtualInterface from './data-aws-ec2-service-link-virtual-interface';
+export * as dataAwsEc2ServiceLinkVirtualInterfaces from './data-aws-ec2-service-link-virtual-interfaces';
 export * as dataAwsEc2SpotPrice from './data-aws-ec2-spot-price';
 export * as dataAwsEc2TransitGateway from './data-aws-ec2-transit-gateway';
 export * as dataAwsEc2TransitGatewayAttachment from './data-aws-ec2-transit-gateway-attachment';

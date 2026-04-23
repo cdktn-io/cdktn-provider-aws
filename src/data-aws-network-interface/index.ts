@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/data-sources/network_interface
+// https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/data-sources/network_interface
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktn from 'cdktn';
 
 export interface DataAwsNetworkInterfaceConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/data-sources/network_interface#id DataAwsNetworkInterface#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/data-sources/network_interface#id DataAwsNetworkInterface#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,23 +22,23 @@ export interface DataAwsNetworkInterfaceConfig extends cdktn.TerraformMetaArgume
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/data-sources/network_interface#region DataAwsNetworkInterface#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/data-sources/network_interface#region DataAwsNetworkInterface#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/data-sources/network_interface#tags DataAwsNetworkInterface#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/data-sources/network_interface#tags DataAwsNetworkInterface#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
   * filter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/data-sources/network_interface#filter DataAwsNetworkInterface#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/data-sources/network_interface#filter DataAwsNetworkInterface#filter}
   */
   readonly filter?: DataAwsNetworkInterfaceFilter[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/data-sources/network_interface#timeouts DataAwsNetworkInterface#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/data-sources/network_interface#timeouts DataAwsNetworkInterface#timeouts}
   */
   readonly timeouts?: DataAwsNetworkInterfaceTimeouts;
 }
@@ -242,13 +242,169 @@ export class DataAwsNetworkInterfaceAttachmentList extends cdktn.ComplexList {
     return new DataAwsNetworkInterfaceAttachmentOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface DataAwsNetworkInterfaceEnaSrdSpecificationEnaSrdUdpSpecification {
+}
+
+export function dataAwsNetworkInterfaceEnaSrdSpecificationEnaSrdUdpSpecificationToTerraform(struct?: DataAwsNetworkInterfaceEnaSrdSpecificationEnaSrdUdpSpecification): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function dataAwsNetworkInterfaceEnaSrdSpecificationEnaSrdUdpSpecificationToHclTerraform(struct?: DataAwsNetworkInterfaceEnaSrdSpecificationEnaSrdUdpSpecification): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataAwsNetworkInterfaceEnaSrdSpecificationEnaSrdUdpSpecificationOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsNetworkInterfaceEnaSrdSpecificationEnaSrdUdpSpecification | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsNetworkInterfaceEnaSrdSpecificationEnaSrdUdpSpecification | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // ena_srd_udp_enabled - computed: true, optional: false, required: false
+  public get enaSrdUdpEnabled() {
+    return this.getBooleanAttribute('ena_srd_udp_enabled');
+  }
+}
+
+export class DataAwsNetworkInterfaceEnaSrdSpecificationEnaSrdUdpSpecificationList extends cdktn.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsNetworkInterfaceEnaSrdSpecificationEnaSrdUdpSpecificationOutputReference {
+    return new DataAwsNetworkInterfaceEnaSrdSpecificationEnaSrdUdpSpecificationOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataAwsNetworkInterfaceEnaSrdSpecification {
+}
+
+export function dataAwsNetworkInterfaceEnaSrdSpecificationToTerraform(struct?: DataAwsNetworkInterfaceEnaSrdSpecification): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function dataAwsNetworkInterfaceEnaSrdSpecificationToHclTerraform(struct?: DataAwsNetworkInterfaceEnaSrdSpecification): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataAwsNetworkInterfaceEnaSrdSpecificationOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsNetworkInterfaceEnaSrdSpecification | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsNetworkInterfaceEnaSrdSpecification | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // ena_srd_enabled - computed: true, optional: false, required: false
+  public get enaSrdEnabled() {
+    return this.getBooleanAttribute('ena_srd_enabled');
+  }
+
+  // ena_srd_udp_specification - computed: true, optional: false, required: false
+  private _enaSrdUdpSpecification = new DataAwsNetworkInterfaceEnaSrdSpecificationEnaSrdUdpSpecificationList(this, "ena_srd_udp_specification", false);
+  public get enaSrdUdpSpecification() {
+    return this._enaSrdUdpSpecification;
+  }
+}
+
+export class DataAwsNetworkInterfaceEnaSrdSpecificationList extends cdktn.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsNetworkInterfaceEnaSrdSpecificationOutputReference {
+    return new DataAwsNetworkInterfaceEnaSrdSpecificationOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface DataAwsNetworkInterfaceFilter {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/data-sources/network_interface#name DataAwsNetworkInterface#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/data-sources/network_interface#name DataAwsNetworkInterface#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/data-sources/network_interface#values DataAwsNetworkInterface#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/data-sources/network_interface#values DataAwsNetworkInterface#values}
   */
   readonly values: string[];
 }
@@ -387,7 +543,7 @@ export class DataAwsNetworkInterfaceFilterList extends cdktn.ComplexList {
 }
 export interface DataAwsNetworkInterfaceTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/data-sources/network_interface#read DataAwsNetworkInterface#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/data-sources/network_interface#read DataAwsNetworkInterface#read}
   */
   readonly read?: string;
 }
@@ -481,7 +637,7 @@ export class DataAwsNetworkInterfaceTimeoutsOutputReference extends cdktn.Comple
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/data-sources/network_interface aws_network_interface}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/data-sources/network_interface aws_network_interface}
 */
 export class DataAwsNetworkInterface extends cdktn.TerraformDataSource {
 
@@ -497,7 +653,7 @@ export class DataAwsNetworkInterface extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataAwsNetworkInterface resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsNetworkInterface to import
-  * @param importFromId The id of the existing DataAwsNetworkInterface that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/data-sources/network_interface#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsNetworkInterface that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/data-sources/network_interface#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsNetworkInterface to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -509,7 +665,7 @@ export class DataAwsNetworkInterface extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/data-sources/network_interface aws_network_interface} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/data-sources/network_interface aws_network_interface} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -520,7 +676,7 @@ export class DataAwsNetworkInterface extends cdktn.TerraformDataSource {
       terraformResourceType: 'aws_network_interface',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.41.0',
+        providerVersion: '6.42.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
@@ -567,6 +723,12 @@ export class DataAwsNetworkInterface extends cdktn.TerraformDataSource {
   // description - computed: true, optional: false, required: false
   public get description() {
     return this.getStringAttribute('description');
+  }
+
+  // ena_srd_specification - computed: true, optional: false, required: false
+  private _enaSrdSpecification = new DataAwsNetworkInterfaceEnaSrdSpecificationList(this, "ena_srd_specification", false);
+  public get enaSrdSpecification() {
+    return this._enaSrdSpecification;
   }
 
   // id - computed: true, optional: true, required: false

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/mq_configuration
+// https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/mq_configuration
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,54 +13,58 @@ import * as cdktn from 'cdktn';
 
 export interface MqConfigurationConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/mq_configuration#authentication_strategy MqConfiguration#authentication_strategy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/mq_configuration#authentication_strategy MqConfiguration#authentication_strategy}
   */
   readonly authenticationStrategy?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/mq_configuration#data MqConfiguration#data}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/mq_configuration#data MqConfiguration#data}
   */
   readonly data: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/mq_configuration#description MqConfiguration#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/mq_configuration#description MqConfiguration#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/mq_configuration#engine_type MqConfiguration#engine_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/mq_configuration#engine_type MqConfiguration#engine_type}
   */
   readonly engineType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/mq_configuration#engine_version MqConfiguration#engine_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/mq_configuration#engine_version MqConfiguration#engine_version}
   */
   readonly engineVersion: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/mq_configuration#id MqConfiguration#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/mq_configuration#id MqConfiguration#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/mq_configuration#name MqConfiguration#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/mq_configuration#name MqConfiguration#name}
   */
   readonly name: string;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/mq_configuration#region MqConfiguration#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/mq_configuration#region MqConfiguration#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/mq_configuration#tags MqConfiguration#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/mq_configuration#skip_destroy MqConfiguration#skip_destroy}
+  */
+  readonly skipDestroy?: boolean | cdktn.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/mq_configuration#tags MqConfiguration#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/mq_configuration#tags_all MqConfiguration#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/mq_configuration#tags_all MqConfiguration#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/mq_configuration aws_mq_configuration}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/mq_configuration aws_mq_configuration}
 */
 export class MqConfiguration extends cdktn.TerraformResource {
 
@@ -76,7 +80,7 @@ export class MqConfiguration extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a MqConfiguration resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the MqConfiguration to import
-  * @param importFromId The id of the existing MqConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/mq_configuration#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing MqConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/mq_configuration#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the MqConfiguration to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -88,7 +92,7 @@ export class MqConfiguration extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/mq_configuration aws_mq_configuration} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/mq_configuration aws_mq_configuration} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -99,7 +103,7 @@ export class MqConfiguration extends cdktn.TerraformResource {
       terraformResourceType: 'aws_mq_configuration',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.41.0',
+        providerVersion: '6.42.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
@@ -118,6 +122,7 @@ export class MqConfiguration extends cdktn.TerraformResource {
     this._id = config.id;
     this._name = config.name;
     this._region = config.region;
+    this._skipDestroy = config.skipDestroy;
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
   }
@@ -252,6 +257,22 @@ export class MqConfiguration extends cdktn.TerraformResource {
     return this._region;
   }
 
+  // skip_destroy - computed: false, optional: true, required: false
+  private _skipDestroy?: boolean | cdktn.IResolvable; 
+  public get skipDestroy() {
+    return this.getBooleanAttribute('skip_destroy');
+  }
+  public set skipDestroy(value: boolean | cdktn.IResolvable) {
+    this._skipDestroy = value;
+  }
+  public resetSkipDestroy() {
+    this._skipDestroy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get skipDestroyInput() {
+    return this._skipDestroy;
+  }
+
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string }; 
   public get tags() {
@@ -298,6 +319,7 @@ export class MqConfiguration extends cdktn.TerraformResource {
       id: cdktn.stringToTerraform(this._id),
       name: cdktn.stringToTerraform(this._name),
       region: cdktn.stringToTerraform(this._region),
+      skip_destroy: cdktn.booleanToTerraform(this._skipDestroy),
       tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
       tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
     };
@@ -352,6 +374,12 @@ export class MqConfiguration extends cdktn.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      skip_destroy: {
+        value: cdktn.booleanToHclTerraform(this._skipDestroy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
       },
       tags: {
         value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
