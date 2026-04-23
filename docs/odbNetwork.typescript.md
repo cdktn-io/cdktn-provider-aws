@@ -4,7 +4,7 @@
 
 ### OdbNetwork <a name="OdbNetwork" id="@cdktn/provider-aws.odbNetwork.OdbNetwork"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/odb_network aws_odb_network}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/odb_network aws_odb_network}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.odbNetwork.OdbNetwork.Initializer"></a>
 
@@ -76,6 +76,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetwork.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetwork.putTimeouts">putTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetwork.resetAvailabilityZone">resetAvailabilityZone</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetwork.resetCrossRegionS3RestoreSourcesAccess">resetCrossRegionS3RestoreSourcesAccess</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetwork.resetCustomDomainName">resetCustomDomainName</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetwork.resetDefaultDnsPrefix">resetDefaultDnsPrefix</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetwork.resetDeleteAssociatedResources">resetDeleteAssociatedResources</a></code> | *No description.* |
@@ -417,6 +418,12 @@ public putTimeouts(value: OdbNetworkTimeouts): void
 public resetAvailabilityZone(): void
 ```
 
+##### `resetCrossRegionS3RestoreSourcesAccess` <a name="resetCrossRegionS3RestoreSourcesAccess" id="@cdktn/provider-aws.odbNetwork.OdbNetwork.resetCrossRegionS3RestoreSourcesAccess"></a>
+
+```typescript
+public resetCrossRegionS3RestoreSourcesAccess(): void
+```
+
 ##### `resetCustomDomainName` <a name="resetCustomDomainName" id="@cdktn/provider-aws.odbNetwork.OdbNetwork.resetCustomDomainName"></a>
 
 ```typescript
@@ -586,7 +593,7 @@ The construct id used in the generated config for the OdbNetwork to import.
 
 The id of the existing OdbNetwork that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/odb_network#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/odb_network#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -636,6 +643,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0
 | <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetwork.property.availabilityZoneInput">availabilityZoneInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetwork.property.backupSubnetCidrInput">backupSubnetCidrInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetwork.property.clientSubnetCidrInput">clientSubnetCidrInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetwork.property.crossRegionS3RestoreSourcesAccessInput">crossRegionS3RestoreSourcesAccessInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetwork.property.customDomainNameInput">customDomainNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetwork.property.defaultDnsPrefixInput">defaultDnsPrefixInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetwork.property.deleteAssociatedResourcesInput">deleteAssociatedResourcesInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
@@ -654,6 +662,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0
 | <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetwork.property.availabilityZoneId">availabilityZoneId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetwork.property.backupSubnetCidr">backupSubnetCidr</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetwork.property.clientSubnetCidr">clientSubnetCidr</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetwork.property.crossRegionS3RestoreSourcesAccess">crossRegionS3RestoreSourcesAccess</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetwork.property.customDomainName">customDomainName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetwork.property.defaultDnsPrefix">defaultDnsPrefix</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetwork.property.deleteAssociatedResources">deleteAssociatedResources</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
@@ -1012,6 +1021,16 @@ public readonly clientSubnetCidrInput: string;
 
 ---
 
+##### `crossRegionS3RestoreSourcesAccessInput`<sup>Optional</sup> <a name="crossRegionS3RestoreSourcesAccessInput" id="@cdktn/provider-aws.odbNetwork.OdbNetwork.property.crossRegionS3RestoreSourcesAccessInput"></a>
+
+```typescript
+public readonly crossRegionS3RestoreSourcesAccessInput: string[];
+```
+
+- *Type:* string[]
+
+---
+
 ##### `customDomainNameInput`<sup>Optional</sup> <a name="customDomainNameInput" id="@cdktn/provider-aws.odbNetwork.OdbNetwork.property.customDomainNameInput"></a>
 
 ```typescript
@@ -1189,6 +1208,16 @@ public readonly clientSubnetCidr: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `crossRegionS3RestoreSourcesAccess`<sup>Required</sup> <a name="crossRegionS3RestoreSourcesAccess" id="@cdktn/provider-aws.odbNetwork.OdbNetwork.property.crossRegionS3RestoreSourcesAccess"></a>
+
+```typescript
+public readonly crossRegionS3RestoreSourcesAccess: string[];
+```
+
+- *Type:* string[]
 
 ---
 
@@ -1370,6 +1399,7 @@ const odbNetworkConfig: odbNetwork.OdbNetworkConfig = { ... }
 | <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkConfig.property.s3Access">s3Access</a></code> | <code>string</code> | Specifies the configuration for Amazon S3 access from the ODB network. |
 | <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkConfig.property.zeroEtlAccess">zeroEtlAccess</a></code> | <code>string</code> | Specifies the configuration for Zero-ETL access from the ODB network. |
 | <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkConfig.property.availabilityZone">availabilityZone</a></code> | <code>string</code> | The name of the Availability Zone (AZ) where the odb network is located. |
+| <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkConfig.property.crossRegionS3RestoreSourcesAccess">crossRegionS3RestoreSourcesAccess</a></code> | <code>string[]</code> | The list of regions enabled for cross-region restore in the ODB network. |
 | <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkConfig.property.customDomainName">customDomainName</a></code> | <code>string</code> | The name of the custom domain that the network is located. custom_domain_name and default_dns_prefix both can't be given. |
 | <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkConfig.property.defaultDnsPrefix">defaultDnsPrefix</a></code> | <code>string</code> | The default DNS prefix for the network resource. Changing this will force terraform to create new resource. |
 | <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkConfig.property.deleteAssociatedResources">deleteAssociatedResources</a></code> | <code>boolean \| cdktn.IResolvable</code> | If set to true deletes associated OCI resources. Default false. |
@@ -1379,7 +1409,7 @@ const odbNetworkConfig: odbNetwork.OdbNetworkConfig = { ... }
 | <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkConfig.property.s3PolicyDocument">s3PolicyDocument</a></code> | <code>string</code> | Specifies the endpoint policy for Amazon S3 access from the ODB network. |
 | <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkConfig.property.stsAccess">stsAccess</a></code> | <code>string</code> | Specifies the configuration for Amazon STS access from the ODB network. |
 | <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkConfig.property.stsPolicyDocument">stsPolicyDocument</a></code> | <code>string</code> | Specifies the endpoint policy for Amazon STS access from the ODB network. |
-| <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/odb_network#tags OdbNetwork#tags}. |
+| <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/odb_network#tags OdbNetwork#tags}. |
 | <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkTimeouts">OdbNetworkTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1466,7 +1496,7 @@ The AZ ID of the AZ where the ODB network is located.
 
 Changing this will force terraform to create new resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/odb_network#availability_zone_id OdbNetwork#availability_zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/odb_network#availability_zone_id OdbNetwork#availability_zone_id}
 
 ---
 
@@ -1491,7 +1521,7 @@ Changing this will force terraform to create new resource.
 	   - 224.0.0.0 - 239.255.255.255
 	   - 240.0.0.0 - 255.255.255.255
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/odb_network#backup_subnet_cidr OdbNetwork#backup_subnet_cidr}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/odb_network#backup_subnet_cidr OdbNetwork#backup_subnet_cidr}
 
 ---
 
@@ -1516,7 +1546,7 @@ Changing this will force terraform to create new resource.
    	- 224.0.0.0 - 239.255.255.255
    	- 240.0.0.0 - 255.255.255.255
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/odb_network#client_subnet_cidr OdbNetwork#client_subnet_cidr}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/odb_network#client_subnet_cidr OdbNetwork#client_subnet_cidr}
 
 ---
 
@@ -1530,7 +1560,7 @@ public readonly displayName: string;
 
 The user-friendly name for the odb network. Changing this will force terraform to create a new resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/odb_network#display_name OdbNetwork#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/odb_network#display_name OdbNetwork#display_name}
 
 ---
 
@@ -1544,7 +1574,7 @@ public readonly s3Access: string;
 
 Specifies the configuration for Amazon S3 access from the ODB network.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/odb_network#s3_access OdbNetwork#s3_access}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/odb_network#s3_access OdbNetwork#s3_access}
 
 ---
 
@@ -1558,7 +1588,7 @@ public readonly zeroEtlAccess: string;
 
 Specifies the configuration for Zero-ETL access from the ODB network.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/odb_network#zero_etl_access OdbNetwork#zero_etl_access}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/odb_network#zero_etl_access OdbNetwork#zero_etl_access}
 
 ---
 
@@ -1574,7 +1604,21 @@ The name of the Availability Zone (AZ) where the odb network is located.
 
 Changing this will force terraform to create new resource
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/odb_network#availability_zone OdbNetwork#availability_zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/odb_network#availability_zone OdbNetwork#availability_zone}
+
+---
+
+##### `crossRegionS3RestoreSourcesAccess`<sup>Optional</sup> <a name="crossRegionS3RestoreSourcesAccess" id="@cdktn/provider-aws.odbNetwork.OdbNetworkConfig.property.crossRegionS3RestoreSourcesAccess"></a>
+
+```typescript
+public readonly crossRegionS3RestoreSourcesAccess: string[];
+```
+
+- *Type:* string[]
+
+The list of regions enabled for cross-region restore in the ODB network.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/odb_network#cross_region_s3_restore_sources_access OdbNetwork#cross_region_s3_restore_sources_access}
 
 ---
 
@@ -1588,7 +1632,7 @@ public readonly customDomainName: string;
 
 The name of the custom domain that the network is located. custom_domain_name and default_dns_prefix both can't be given.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/odb_network#custom_domain_name OdbNetwork#custom_domain_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/odb_network#custom_domain_name OdbNetwork#custom_domain_name}
 
 ---
 
@@ -1602,7 +1646,7 @@ public readonly defaultDnsPrefix: string;
 
 The default DNS prefix for the network resource. Changing this will force terraform to create new resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/odb_network#default_dns_prefix OdbNetwork#default_dns_prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/odb_network#default_dns_prefix OdbNetwork#default_dns_prefix}
 
 ---
 
@@ -1616,7 +1660,7 @@ public readonly deleteAssociatedResources: boolean | IResolvable;
 
 If set to true deletes associated OCI resources. Default false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/odb_network#delete_associated_resources OdbNetwork#delete_associated_resources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/odb_network#delete_associated_resources OdbNetwork#delete_associated_resources}
 
 ---
 
@@ -1630,7 +1674,7 @@ public readonly kmsAccess: string;
 
 Specifies the configuration for Amazon KMS access from the ODB network.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/odb_network#kms_access OdbNetwork#kms_access}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/odb_network#kms_access OdbNetwork#kms_access}
 
 ---
 
@@ -1644,7 +1688,7 @@ public readonly kmsPolicyDocument: string;
 
 Specifies the endpoint policy for Amazon KMS access from the ODB network.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/odb_network#kms_policy_document OdbNetwork#kms_policy_document}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/odb_network#kms_policy_document OdbNetwork#kms_policy_document}
 
 ---
 
@@ -1658,7 +1702,7 @@ public readonly region: string;
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/odb_network#region OdbNetwork#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/odb_network#region OdbNetwork#region}
 
 ---
 
@@ -1672,7 +1716,7 @@ public readonly s3PolicyDocument: string;
 
 Specifies the endpoint policy for Amazon S3 access from the ODB network.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/odb_network#s3_policy_document OdbNetwork#s3_policy_document}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/odb_network#s3_policy_document OdbNetwork#s3_policy_document}
 
 ---
 
@@ -1686,7 +1730,7 @@ public readonly stsAccess: string;
 
 Specifies the configuration for Amazon STS access from the ODB network.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/odb_network#sts_access OdbNetwork#sts_access}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/odb_network#sts_access OdbNetwork#sts_access}
 
 ---
 
@@ -1700,7 +1744,7 @@ public readonly stsPolicyDocument: string;
 
 Specifies the endpoint policy for Amazon STS access from the ODB network.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/odb_network#sts_policy_document OdbNetwork#sts_policy_document}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/odb_network#sts_policy_document OdbNetwork#sts_policy_document}
 
 ---
 
@@ -1712,7 +1756,7 @@ public readonly tags: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/odb_network#tags OdbNetwork#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/odb_network#tags OdbNetwork#tags}.
 
 ---
 
@@ -1726,7 +1770,7 @@ public readonly timeouts: OdbNetworkTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/odb_network#timeouts OdbNetwork#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/odb_network#timeouts OdbNetwork#timeouts}
 
 ---
 
@@ -1738,6 +1782,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 import { odbNetwork } from '@cdktn/provider-aws'
 
 const odbNetworkManagedServices: odbNetwork.OdbNetworkManagedServices = { ... }
+```
+
+
+### OdbNetworkManagedServicesCrossRegionS3RestoreSourcesAccess <a name="OdbNetworkManagedServicesCrossRegionS3RestoreSourcesAccess" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesCrossRegionS3RestoreSourcesAccess"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesCrossRegionS3RestoreSourcesAccess.Initializer"></a>
+
+```typescript
+import { odbNetwork } from '@cdktn/provider-aws'
+
+const odbNetworkManagedServicesCrossRegionS3RestoreSourcesAccess: odbNetwork.OdbNetworkManagedServicesCrossRegionS3RestoreSourcesAccess = { ... }
 ```
 
 
@@ -1848,7 +1903,7 @@ public readonly create: string;
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/odb_network#create OdbNetwork#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/odb_network#create OdbNetwork#create}
 
 ---
 
@@ -1862,7 +1917,7 @@ public readonly delete: string;
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/odb_network#delete OdbNetwork#delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/odb_network#delete OdbNetwork#delete}
 
 ---
 
@@ -1876,11 +1931,460 @@ public readonly update: string;
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/odb_network#update OdbNetwork#update}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/odb_network#update OdbNetwork#update}
 
 ---
 
 ## Classes <a name="Classes" id="Classes"></a>
+
+### OdbNetworkManagedServicesCrossRegionS3RestoreSourcesAccessList <a name="OdbNetworkManagedServicesCrossRegionS3RestoreSourcesAccessList" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesCrossRegionS3RestoreSourcesAccessList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesCrossRegionS3RestoreSourcesAccessList.Initializer"></a>
+
+```typescript
+import { odbNetwork } from '@cdktn/provider-aws'
+
+new odbNetwork.OdbNetworkManagedServicesCrossRegionS3RestoreSourcesAccessList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesCrossRegionS3RestoreSourcesAccessList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesCrossRegionS3RestoreSourcesAccessList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesCrossRegionS3RestoreSourcesAccessList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesCrossRegionS3RestoreSourcesAccessList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesCrossRegionS3RestoreSourcesAccessList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesCrossRegionS3RestoreSourcesAccessList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesCrossRegionS3RestoreSourcesAccessList.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesCrossRegionS3RestoreSourcesAccessList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesCrossRegionS3RestoreSourcesAccessList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesCrossRegionS3RestoreSourcesAccessList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesCrossRegionS3RestoreSourcesAccessList.get">get</a></code> | *No description.* |
+
+---
+
+##### `allWithMapKey` <a name="allWithMapKey" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesCrossRegionS3RestoreSourcesAccessList.allWithMapKey"></a>
+
+```typescript
+public allWithMapKey(mapKeyAttributeName: string): DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesCrossRegionS3RestoreSourcesAccessList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* string
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesCrossRegionS3RestoreSourcesAccessList.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesCrossRegionS3RestoreSourcesAccessList.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesCrossRegionS3RestoreSourcesAccessList.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesCrossRegionS3RestoreSourcesAccessList.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesCrossRegionS3RestoreSourcesAccessList.get"></a>
+
+```typescript
+public get(index: number): OdbNetworkManagedServicesCrossRegionS3RestoreSourcesAccessOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesCrossRegionS3RestoreSourcesAccessList.get.parameter.index"></a>
+
+- *Type:* number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesCrossRegionS3RestoreSourcesAccessList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesCrossRegionS3RestoreSourcesAccessList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesCrossRegionS3RestoreSourcesAccessList.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesCrossRegionS3RestoreSourcesAccessList.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+
+### OdbNetworkManagedServicesCrossRegionS3RestoreSourcesAccessOutputReference <a name="OdbNetworkManagedServicesCrossRegionS3RestoreSourcesAccessOutputReference" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesCrossRegionS3RestoreSourcesAccessOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesCrossRegionS3RestoreSourcesAccessOutputReference.Initializer"></a>
+
+```typescript
+import { odbNetwork } from '@cdktn/provider-aws'
+
+new odbNetwork.OdbNetworkManagedServicesCrossRegionS3RestoreSourcesAccessOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesCrossRegionS3RestoreSourcesAccessOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesCrossRegionS3RestoreSourcesAccessOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesCrossRegionS3RestoreSourcesAccessOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesCrossRegionS3RestoreSourcesAccessOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesCrossRegionS3RestoreSourcesAccessOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesCrossRegionS3RestoreSourcesAccessOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesCrossRegionS3RestoreSourcesAccessOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesCrossRegionS3RestoreSourcesAccessOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesCrossRegionS3RestoreSourcesAccessOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesCrossRegionS3RestoreSourcesAccessOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesCrossRegionS3RestoreSourcesAccessOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesCrossRegionS3RestoreSourcesAccessOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesCrossRegionS3RestoreSourcesAccessOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesCrossRegionS3RestoreSourcesAccessOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesCrossRegionS3RestoreSourcesAccessOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesCrossRegionS3RestoreSourcesAccessOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesCrossRegionS3RestoreSourcesAccessOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesCrossRegionS3RestoreSourcesAccessOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesCrossRegionS3RestoreSourcesAccessOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesCrossRegionS3RestoreSourcesAccessOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesCrossRegionS3RestoreSourcesAccessOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesCrossRegionS3RestoreSourcesAccessOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesCrossRegionS3RestoreSourcesAccessOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesCrossRegionS3RestoreSourcesAccessOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesCrossRegionS3RestoreSourcesAccessOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesCrossRegionS3RestoreSourcesAccessOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesCrossRegionS3RestoreSourcesAccessOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesCrossRegionS3RestoreSourcesAccessOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesCrossRegionS3RestoreSourcesAccessOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesCrossRegionS3RestoreSourcesAccessOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesCrossRegionS3RestoreSourcesAccessOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesCrossRegionS3RestoreSourcesAccessOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesCrossRegionS3RestoreSourcesAccessOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesCrossRegionS3RestoreSourcesAccessOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesCrossRegionS3RestoreSourcesAccessOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesCrossRegionS3RestoreSourcesAccessOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesCrossRegionS3RestoreSourcesAccessOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesCrossRegionS3RestoreSourcesAccessOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesCrossRegionS3RestoreSourcesAccessOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesCrossRegionS3RestoreSourcesAccessOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesCrossRegionS3RestoreSourcesAccessOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesCrossRegionS3RestoreSourcesAccessOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesCrossRegionS3RestoreSourcesAccessOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesCrossRegionS3RestoreSourcesAccessOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesCrossRegionS3RestoreSourcesAccessOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesCrossRegionS3RestoreSourcesAccessOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesCrossRegionS3RestoreSourcesAccessOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesCrossRegionS3RestoreSourcesAccessOutputReference.property.ipv4Addresses">ipv4Addresses</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesCrossRegionS3RestoreSourcesAccessOutputReference.property.region">region</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesCrossRegionS3RestoreSourcesAccessOutputReference.property.status">status</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesCrossRegionS3RestoreSourcesAccessOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesCrossRegionS3RestoreSourcesAccess">OdbNetworkManagedServicesCrossRegionS3RestoreSourcesAccess</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesCrossRegionS3RestoreSourcesAccessOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesCrossRegionS3RestoreSourcesAccessOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `ipv4Addresses`<sup>Required</sup> <a name="ipv4Addresses" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesCrossRegionS3RestoreSourcesAccessOutputReference.property.ipv4Addresses"></a>
+
+```typescript
+public readonly ipv4Addresses: string[];
+```
+
+- *Type:* string[]
+
+---
+
+##### `region`<sup>Required</sup> <a name="region" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesCrossRegionS3RestoreSourcesAccessOutputReference.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+---
+
+##### `status`<sup>Required</sup> <a name="status" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesCrossRegionS3RestoreSourcesAccessOutputReference.property.status"></a>
+
+```typescript
+public readonly status: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesCrossRegionS3RestoreSourcesAccessOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: OdbNetworkManagedServicesCrossRegionS3RestoreSourcesAccess;
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesCrossRegionS3RestoreSourcesAccess">OdbNetworkManagedServicesCrossRegionS3RestoreSourcesAccess</a>
+
+---
+
 
 ### OdbNetworkManagedServicesKmsAccessList <a name="OdbNetworkManagedServicesKmsAccessList" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesKmsAccessList"></a>
 
@@ -3157,6 +3661,7 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesOutputReference.property.crossRegionS3RestoreSourcesAccess">crossRegionS3RestoreSourcesAccess</a></code> | <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesCrossRegionS3RestoreSourcesAccessList">OdbNetworkManagedServicesCrossRegionS3RestoreSourcesAccessList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesOutputReference.property.kmsAccess">kmsAccess</a></code> | <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesKmsAccessList">OdbNetworkManagedServicesKmsAccessList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesOutputReference.property.managedS3BackupAccess">managedS3BackupAccess</a></code> | <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesManagedS3BackupAccessList">OdbNetworkManagedServicesManagedS3BackupAccessList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesOutputReference.property.managedServiceIpv4Cidrs">managedServiceIpv4Cidrs</a></code> | <code>string[]</code> | *No description.* |
@@ -3191,6 +3696,16 @@ public readonly fqn: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `crossRegionS3RestoreSourcesAccess`<sup>Required</sup> <a name="crossRegionS3RestoreSourcesAccess" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesOutputReference.property.crossRegionS3RestoreSourcesAccess"></a>
+
+```typescript
+public readonly crossRegionS3RestoreSourcesAccess: OdbNetworkManagedServicesCrossRegionS3RestoreSourcesAccessList;
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesCrossRegionS3RestoreSourcesAccessList">OdbNetworkManagedServicesCrossRegionS3RestoreSourcesAccessList</a>
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### EksAddon <a name="EksAddon" id="@cdktn/provider-aws.eksAddon.EksAddon"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/eks_addon aws_eks_addon}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/eks_addon aws_eks_addon}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.eksAddon.EksAddon.Initializer"></a>
 
@@ -74,11 +74,13 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-aws.eksAddon.EksAddon.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktn/provider-aws.eksAddon.EksAddon.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-aws.eksAddon.EksAddon.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-aws.eksAddon.EksAddon.putNamespaceConfig">putNamespaceConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.eksAddon.EksAddon.putPodIdentityAssociation">putPodIdentityAssociation</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.eksAddon.EksAddon.putTimeouts">putTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.eksAddon.EksAddon.resetAddonVersion">resetAddonVersion</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.eksAddon.EksAddon.resetConfigurationValues">resetConfigurationValues</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.eksAddon.EksAddon.resetId">resetId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksAddon.EksAddon.resetNamespaceConfig">resetNamespaceConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.eksAddon.EksAddon.resetPodIdentityAssociation">resetPodIdentityAssociation</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.eksAddon.EksAddon.resetPreserve">resetPreserve</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.eksAddon.EksAddon.resetRegion">resetRegion</a></code> | *No description.* |
@@ -400,6 +402,18 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `putNamespaceConfig` <a name="putNamespaceConfig" id="@cdktn/provider-aws.eksAddon.EksAddon.putNamespaceConfig"></a>
+
+```typescript
+public putNamespaceConfig(value: EksAddonNamespaceConfig): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.eksAddon.EksAddon.putNamespaceConfig.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-aws.eksAddon.EksAddonNamespaceConfig">EksAddonNamespaceConfig</a>
+
+---
+
 ##### `putPodIdentityAssociation` <a name="putPodIdentityAssociation" id="@cdktn/provider-aws.eksAddon.EksAddon.putPodIdentityAssociation"></a>
 
 ```typescript
@@ -440,6 +454,12 @@ public resetConfigurationValues(): void
 
 ```typescript
 public resetId(): void
+```
+
+##### `resetNamespaceConfig` <a name="resetNamespaceConfig" id="@cdktn/provider-aws.eksAddon.EksAddon.resetNamespaceConfig"></a>
+
+```typescript
+public resetNamespaceConfig(): void
 ```
 
 ##### `resetPodIdentityAssociation` <a name="resetPodIdentityAssociation" id="@cdktn/provider-aws.eksAddon.EksAddon.resetPodIdentityAssociation"></a>
@@ -599,7 +619,7 @@ The construct id used in the generated config for the EksAddon to import.
 
 The id of the existing EksAddon that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/eks_addon#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/eks_addon#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -632,6 +652,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0
 | <code><a href="#@cdktn/provider-aws.eksAddon.EksAddon.property.arn">arn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.eksAddon.EksAddon.property.createdAt">createdAt</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.eksAddon.EksAddon.property.modifiedAt">modifiedAt</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksAddon.EksAddon.property.namespaceConfig">namespaceConfig</a></code> | <code><a href="#@cdktn/provider-aws.eksAddon.EksAddonNamespaceConfigOutputReference">EksAddonNamespaceConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.eksAddon.EksAddon.property.podIdentityAssociation">podIdentityAssociation</a></code> | <code><a href="#@cdktn/provider-aws.eksAddon.EksAddonPodIdentityAssociationList">EksAddonPodIdentityAssociationList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.eksAddon.EksAddon.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-aws.eksAddon.EksAddonTimeoutsOutputReference">EksAddonTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.eksAddon.EksAddon.property.addonNameInput">addonNameInput</a></code> | <code>string</code> | *No description.* |
@@ -639,6 +660,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0
 | <code><a href="#@cdktn/provider-aws.eksAddon.EksAddon.property.clusterNameInput">clusterNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.eksAddon.EksAddon.property.configurationValuesInput">configurationValuesInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.eksAddon.EksAddon.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksAddon.EksAddon.property.namespaceConfigInput">namespaceConfigInput</a></code> | <code><a href="#@cdktn/provider-aws.eksAddon.EksAddonNamespaceConfig">EksAddonNamespaceConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.eksAddon.EksAddon.property.podIdentityAssociationInput">podIdentityAssociationInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.eksAddon.EksAddonPodIdentityAssociation">EksAddonPodIdentityAssociation</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.eksAddon.EksAddon.property.preserveInput">preserveInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.eksAddon.EksAddon.property.regionInput">regionInput</a></code> | <code>string</code> | *No description.* |
@@ -835,6 +857,16 @@ public readonly modifiedAt: string;
 
 ---
 
+##### `namespaceConfig`<sup>Required</sup> <a name="namespaceConfig" id="@cdktn/provider-aws.eksAddon.EksAddon.property.namespaceConfig"></a>
+
+```typescript
+public readonly namespaceConfig: EksAddonNamespaceConfigOutputReference;
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.eksAddon.EksAddonNamespaceConfigOutputReference">EksAddonNamespaceConfigOutputReference</a>
+
+---
+
 ##### `podIdentityAssociation`<sup>Required</sup> <a name="podIdentityAssociation" id="@cdktn/provider-aws.eksAddon.EksAddon.property.podIdentityAssociation"></a>
 
 ```typescript
@@ -902,6 +934,16 @@ public readonly idInput: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `namespaceConfigInput`<sup>Optional</sup> <a name="namespaceConfigInput" id="@cdktn/provider-aws.eksAddon.EksAddon.property.namespaceConfigInput"></a>
+
+```typescript
+public readonly namespaceConfigInput: EksAddonNamespaceConfig;
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.eksAddon.EksAddonNamespaceConfig">EksAddonNamespaceConfig</a>
 
 ---
 
@@ -1156,19 +1198,20 @@ const eksAddonConfig: eksAddon.EksAddonConfig = { ... }
 | <code><a href="#@cdktn/provider-aws.eksAddon.EksAddonConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.eksAddon.EksAddonConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.eksAddon.EksAddonConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.eksAddon.EksAddonConfig.property.addonName">addonName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/eks_addon#addon_name EksAddon#addon_name}. |
-| <code><a href="#@cdktn/provider-aws.eksAddon.EksAddonConfig.property.clusterName">clusterName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/eks_addon#cluster_name EksAddon#cluster_name}. |
-| <code><a href="#@cdktn/provider-aws.eksAddon.EksAddonConfig.property.addonVersion">addonVersion</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/eks_addon#addon_version EksAddon#addon_version}. |
-| <code><a href="#@cdktn/provider-aws.eksAddon.EksAddonConfig.property.configurationValues">configurationValues</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/eks_addon#configuration_values EksAddon#configuration_values}. |
-| <code><a href="#@cdktn/provider-aws.eksAddon.EksAddonConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/eks_addon#id EksAddon#id}. |
+| <code><a href="#@cdktn/provider-aws.eksAddon.EksAddonConfig.property.addonName">addonName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/eks_addon#addon_name EksAddon#addon_name}. |
+| <code><a href="#@cdktn/provider-aws.eksAddon.EksAddonConfig.property.clusterName">clusterName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/eks_addon#cluster_name EksAddon#cluster_name}. |
+| <code><a href="#@cdktn/provider-aws.eksAddon.EksAddonConfig.property.addonVersion">addonVersion</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/eks_addon#addon_version EksAddon#addon_version}. |
+| <code><a href="#@cdktn/provider-aws.eksAddon.EksAddonConfig.property.configurationValues">configurationValues</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/eks_addon#configuration_values EksAddon#configuration_values}. |
+| <code><a href="#@cdktn/provider-aws.eksAddon.EksAddonConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/eks_addon#id EksAddon#id}. |
+| <code><a href="#@cdktn/provider-aws.eksAddon.EksAddonConfig.property.namespaceConfig">namespaceConfig</a></code> | <code><a href="#@cdktn/provider-aws.eksAddon.EksAddonNamespaceConfig">EksAddonNamespaceConfig</a></code> | namespace_config block. |
 | <code><a href="#@cdktn/provider-aws.eksAddon.EksAddonConfig.property.podIdentityAssociation">podIdentityAssociation</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.eksAddon.EksAddonPodIdentityAssociation">EksAddonPodIdentityAssociation</a>[]</code> | pod_identity_association block. |
-| <code><a href="#@cdktn/provider-aws.eksAddon.EksAddonConfig.property.preserve">preserve</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/eks_addon#preserve EksAddon#preserve}. |
+| <code><a href="#@cdktn/provider-aws.eksAddon.EksAddonConfig.property.preserve">preserve</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/eks_addon#preserve EksAddon#preserve}. |
 | <code><a href="#@cdktn/provider-aws.eksAddon.EksAddonConfig.property.region">region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.eksAddon.EksAddonConfig.property.resolveConflictsOnCreate">resolveConflictsOnCreate</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/eks_addon#resolve_conflicts_on_create EksAddon#resolve_conflicts_on_create}. |
-| <code><a href="#@cdktn/provider-aws.eksAddon.EksAddonConfig.property.resolveConflictsOnUpdate">resolveConflictsOnUpdate</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/eks_addon#resolve_conflicts_on_update EksAddon#resolve_conflicts_on_update}. |
-| <code><a href="#@cdktn/provider-aws.eksAddon.EksAddonConfig.property.serviceAccountRoleArn">serviceAccountRoleArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/eks_addon#service_account_role_arn EksAddon#service_account_role_arn}. |
-| <code><a href="#@cdktn/provider-aws.eksAddon.EksAddonConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/eks_addon#tags EksAddon#tags}. |
-| <code><a href="#@cdktn/provider-aws.eksAddon.EksAddonConfig.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/eks_addon#tags_all EksAddon#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.eksAddon.EksAddonConfig.property.resolveConflictsOnCreate">resolveConflictsOnCreate</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/eks_addon#resolve_conflicts_on_create EksAddon#resolve_conflicts_on_create}. |
+| <code><a href="#@cdktn/provider-aws.eksAddon.EksAddonConfig.property.resolveConflictsOnUpdate">resolveConflictsOnUpdate</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/eks_addon#resolve_conflicts_on_update EksAddon#resolve_conflicts_on_update}. |
+| <code><a href="#@cdktn/provider-aws.eksAddon.EksAddonConfig.property.serviceAccountRoleArn">serviceAccountRoleArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/eks_addon#service_account_role_arn EksAddon#service_account_role_arn}. |
+| <code><a href="#@cdktn/provider-aws.eksAddon.EksAddonConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/eks_addon#tags EksAddon#tags}. |
+| <code><a href="#@cdktn/provider-aws.eksAddon.EksAddonConfig.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/eks_addon#tags_all EksAddon#tags_all}. |
 | <code><a href="#@cdktn/provider-aws.eksAddon.EksAddonConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-aws.eksAddon.EksAddonTimeouts">EksAddonTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1251,7 +1294,7 @@ public readonly addonName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/eks_addon#addon_name EksAddon#addon_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/eks_addon#addon_name EksAddon#addon_name}.
 
 ---
 
@@ -1263,7 +1306,7 @@ public readonly clusterName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/eks_addon#cluster_name EksAddon#cluster_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/eks_addon#cluster_name EksAddon#cluster_name}.
 
 ---
 
@@ -1275,7 +1318,7 @@ public readonly addonVersion: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/eks_addon#addon_version EksAddon#addon_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/eks_addon#addon_version EksAddon#addon_version}.
 
 ---
 
@@ -1287,7 +1330,7 @@ public readonly configurationValues: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/eks_addon#configuration_values EksAddon#configuration_values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/eks_addon#configuration_values EksAddon#configuration_values}.
 
 ---
 
@@ -1299,10 +1342,24 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/eks_addon#id EksAddon#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/eks_addon#id EksAddon#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `namespaceConfig`<sup>Optional</sup> <a name="namespaceConfig" id="@cdktn/provider-aws.eksAddon.EksAddonConfig.property.namespaceConfig"></a>
+
+```typescript
+public readonly namespaceConfig: EksAddonNamespaceConfig;
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.eksAddon.EksAddonNamespaceConfig">EksAddonNamespaceConfig</a>
+
+namespace_config block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/eks_addon#namespace_config EksAddon#namespace_config}
 
 ---
 
@@ -1316,7 +1373,7 @@ public readonly podIdentityAssociation: IResolvable | EksAddonPodIdentityAssocia
 
 pod_identity_association block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/eks_addon#pod_identity_association EksAddon#pod_identity_association}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/eks_addon#pod_identity_association EksAddon#pod_identity_association}
 
 ---
 
@@ -1328,7 +1385,7 @@ public readonly preserve: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/eks_addon#preserve EksAddon#preserve}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/eks_addon#preserve EksAddon#preserve}.
 
 ---
 
@@ -1342,7 +1399,7 @@ public readonly region: string;
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/eks_addon#region EksAddon#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/eks_addon#region EksAddon#region}
 
 ---
 
@@ -1354,7 +1411,7 @@ public readonly resolveConflictsOnCreate: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/eks_addon#resolve_conflicts_on_create EksAddon#resolve_conflicts_on_create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/eks_addon#resolve_conflicts_on_create EksAddon#resolve_conflicts_on_create}.
 
 ---
 
@@ -1366,7 +1423,7 @@ public readonly resolveConflictsOnUpdate: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/eks_addon#resolve_conflicts_on_update EksAddon#resolve_conflicts_on_update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/eks_addon#resolve_conflicts_on_update EksAddon#resolve_conflicts_on_update}.
 
 ---
 
@@ -1378,7 +1435,7 @@ public readonly serviceAccountRoleArn: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/eks_addon#service_account_role_arn EksAddon#service_account_role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/eks_addon#service_account_role_arn EksAddon#service_account_role_arn}.
 
 ---
 
@@ -1390,7 +1447,7 @@ public readonly tags: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/eks_addon#tags EksAddon#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/eks_addon#tags EksAddon#tags}.
 
 ---
 
@@ -1402,7 +1459,7 @@ public readonly tagsAll: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/eks_addon#tags_all EksAddon#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/eks_addon#tags_all EksAddon#tags_all}.
 
 ---
 
@@ -1416,7 +1473,37 @@ public readonly timeouts: EksAddonTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/eks_addon#timeouts EksAddon#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/eks_addon#timeouts EksAddon#timeouts}
+
+---
+
+### EksAddonNamespaceConfig <a name="EksAddonNamespaceConfig" id="@cdktn/provider-aws.eksAddon.EksAddonNamespaceConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.eksAddon.EksAddonNamespaceConfig.Initializer"></a>
+
+```typescript
+import { eksAddon } from '@cdktn/provider-aws'
+
+const eksAddonNamespaceConfig: eksAddon.EksAddonNamespaceConfig = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.eksAddon.EksAddonNamespaceConfig.property.namespace">namespace</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/eks_addon#namespace EksAddon#namespace}. |
+
+---
+
+##### `namespace`<sup>Optional</sup> <a name="namespace" id="@cdktn/provider-aws.eksAddon.EksAddonNamespaceConfig.property.namespace"></a>
+
+```typescript
+public readonly namespace: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/eks_addon#namespace EksAddon#namespace}.
 
 ---
 
@@ -1434,8 +1521,8 @@ const eksAddonPodIdentityAssociation: eksAddon.EksAddonPodIdentityAssociation = 
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.eksAddon.EksAddonPodIdentityAssociation.property.roleArn">roleArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/eks_addon#role_arn EksAddon#role_arn}. |
-| <code><a href="#@cdktn/provider-aws.eksAddon.EksAddonPodIdentityAssociation.property.serviceAccount">serviceAccount</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/eks_addon#service_account EksAddon#service_account}. |
+| <code><a href="#@cdktn/provider-aws.eksAddon.EksAddonPodIdentityAssociation.property.roleArn">roleArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/eks_addon#role_arn EksAddon#role_arn}. |
+| <code><a href="#@cdktn/provider-aws.eksAddon.EksAddonPodIdentityAssociation.property.serviceAccount">serviceAccount</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/eks_addon#service_account EksAddon#service_account}. |
 
 ---
 
@@ -1447,7 +1534,7 @@ public readonly roleArn: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/eks_addon#role_arn EksAddon#role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/eks_addon#role_arn EksAddon#role_arn}.
 
 ---
 
@@ -1459,7 +1546,7 @@ public readonly serviceAccount: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/eks_addon#service_account EksAddon#service_account}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/eks_addon#service_account EksAddon#service_account}.
 
 ---
 
@@ -1477,9 +1564,9 @@ const eksAddonTimeouts: eksAddon.EksAddonTimeouts = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.eksAddon.EksAddonTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/eks_addon#create EksAddon#create}. |
-| <code><a href="#@cdktn/provider-aws.eksAddon.EksAddonTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/eks_addon#delete EksAddon#delete}. |
-| <code><a href="#@cdktn/provider-aws.eksAddon.EksAddonTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/eks_addon#update EksAddon#update}. |
+| <code><a href="#@cdktn/provider-aws.eksAddon.EksAddonTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/eks_addon#create EksAddon#create}. |
+| <code><a href="#@cdktn/provider-aws.eksAddon.EksAddonTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/eks_addon#delete EksAddon#delete}. |
+| <code><a href="#@cdktn/provider-aws.eksAddon.EksAddonTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/eks_addon#update EksAddon#update}. |
 
 ---
 
@@ -1491,7 +1578,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/eks_addon#create EksAddon#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/eks_addon#create EksAddon#create}.
 
 ---
 
@@ -1503,7 +1590,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/eks_addon#delete EksAddon#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/eks_addon#delete EksAddon#delete}.
 
 ---
 
@@ -1515,11 +1602,289 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/eks_addon#update EksAddon#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/eks_addon#update EksAddon#update}.
 
 ---
 
 ## Classes <a name="Classes" id="Classes"></a>
+
+### EksAddonNamespaceConfigOutputReference <a name="EksAddonNamespaceConfigOutputReference" id="@cdktn/provider-aws.eksAddon.EksAddonNamespaceConfigOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.eksAddon.EksAddonNamespaceConfigOutputReference.Initializer"></a>
+
+```typescript
+import { eksAddon } from '@cdktn/provider-aws'
+
+new eksAddon.EksAddonNamespaceConfigOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.eksAddon.EksAddonNamespaceConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.eksAddon.EksAddonNamespaceConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.eksAddon.EksAddonNamespaceConfigOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.eksAddon.EksAddonNamespaceConfigOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-aws.eksAddon.EksAddonNamespaceConfigOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksAddon.EksAddonNamespaceConfigOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksAddon.EksAddonNamespaceConfigOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksAddon.EksAddonNamespaceConfigOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksAddon.EksAddonNamespaceConfigOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksAddon.EksAddonNamespaceConfigOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksAddon.EksAddonNamespaceConfigOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksAddon.EksAddonNamespaceConfigOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksAddon.EksAddonNamespaceConfigOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksAddon.EksAddonNamespaceConfigOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksAddon.EksAddonNamespaceConfigOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksAddon.EksAddonNamespaceConfigOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.eksAddon.EksAddonNamespaceConfigOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.eksAddon.EksAddonNamespaceConfigOutputReference.resetNamespace">resetNamespace</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-aws.eksAddon.EksAddonNamespaceConfigOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-aws.eksAddon.EksAddonNamespaceConfigOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.eksAddon.EksAddonNamespaceConfigOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-aws.eksAddon.EksAddonNamespaceConfigOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.eksAddon.EksAddonNamespaceConfigOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-aws.eksAddon.EksAddonNamespaceConfigOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.eksAddon.EksAddonNamespaceConfigOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-aws.eksAddon.EksAddonNamespaceConfigOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.eksAddon.EksAddonNamespaceConfigOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-aws.eksAddon.EksAddonNamespaceConfigOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.eksAddon.EksAddonNamespaceConfigOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-aws.eksAddon.EksAddonNamespaceConfigOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.eksAddon.EksAddonNamespaceConfigOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-aws.eksAddon.EksAddonNamespaceConfigOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.eksAddon.EksAddonNamespaceConfigOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-aws.eksAddon.EksAddonNamespaceConfigOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.eksAddon.EksAddonNamespaceConfigOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-aws.eksAddon.EksAddonNamespaceConfigOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.eksAddon.EksAddonNamespaceConfigOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-aws.eksAddon.EksAddonNamespaceConfigOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-aws.eksAddon.EksAddonNamespaceConfigOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-aws.eksAddon.EksAddonNamespaceConfigOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.eksAddon.EksAddonNamespaceConfigOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-aws.eksAddon.EksAddonNamespaceConfigOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetNamespace` <a name="resetNamespace" id="@cdktn/provider-aws.eksAddon.EksAddonNamespaceConfigOutputReference.resetNamespace"></a>
+
+```typescript
+public resetNamespace(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.eksAddon.EksAddonNamespaceConfigOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.eksAddon.EksAddonNamespaceConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksAddon.EksAddonNamespaceConfigOutputReference.property.namespaceInput">namespaceInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksAddon.EksAddonNamespaceConfigOutputReference.property.namespace">namespace</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eksAddon.EksAddonNamespaceConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-aws.eksAddon.EksAddonNamespaceConfig">EksAddonNamespaceConfig</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-aws.eksAddon.EksAddonNamespaceConfigOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.eksAddon.EksAddonNamespaceConfigOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `namespaceInput`<sup>Optional</sup> <a name="namespaceInput" id="@cdktn/provider-aws.eksAddon.EksAddonNamespaceConfigOutputReference.property.namespaceInput"></a>
+
+```typescript
+public readonly namespaceInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `namespace`<sup>Required</sup> <a name="namespace" id="@cdktn/provider-aws.eksAddon.EksAddonNamespaceConfigOutputReference.property.namespace"></a>
+
+```typescript
+public readonly namespace: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-aws.eksAddon.EksAddonNamespaceConfigOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: EksAddonNamespaceConfig;
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.eksAddon.EksAddonNamespaceConfig">EksAddonNamespaceConfig</a>
+
+---
+
 
 ### EksAddonPodIdentityAssociationList <a name="EksAddonPodIdentityAssociationList" id="@cdktn/provider-aws.eksAddon.EksAddonPodIdentityAssociationList"></a>
 

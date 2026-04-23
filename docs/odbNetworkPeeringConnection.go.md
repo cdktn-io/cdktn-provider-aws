@@ -4,7 +4,7 @@
 
 ### OdbNetworkPeeringConnection <a name="OdbNetworkPeeringConnection" id="@cdktn/provider-aws.odbNetworkPeeringConnection.OdbNetworkPeeringConnection"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/odb_network_peering_connection aws_odb_network_peering_connection}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/odb_network_peering_connection aws_odb_network_peering_connection}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.odbNetworkPeeringConnection.OdbNetworkPeeringConnection.Initializer"></a>
 
@@ -77,6 +77,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-aws.odbNetworkPeeringConnection.OdbNetworkPeeringConnection.putTimeouts">PutTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.odbNetworkPeeringConnection.OdbNetworkPeeringConnection.resetOdbNetworkArn">ResetOdbNetworkArn</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.odbNetworkPeeringConnection.OdbNetworkPeeringConnection.resetOdbNetworkId">ResetOdbNetworkId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.odbNetworkPeeringConnection.OdbNetworkPeeringConnection.resetPeerNetworkCidrs">ResetPeerNetworkCidrs</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.odbNetworkPeeringConnection.OdbNetworkPeeringConnection.resetRegion">ResetRegion</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.odbNetworkPeeringConnection.OdbNetworkPeeringConnection.resetTags">ResetTags</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.odbNetworkPeeringConnection.OdbNetworkPeeringConnection.resetTimeouts">ResetTimeouts</a></code> | *No description.* |
@@ -416,6 +417,12 @@ func ResetOdbNetworkArn()
 func ResetOdbNetworkId()
 ```
 
+##### `ResetPeerNetworkCidrs` <a name="ResetPeerNetworkCidrs" id="@cdktn/provider-aws.odbNetworkPeeringConnection.OdbNetworkPeeringConnection.resetPeerNetworkCidrs"></a>
+
+```go
+func ResetPeerNetworkCidrs()
+```
+
 ##### `ResetRegion` <a name="ResetRegion" id="@cdktn/provider-aws.odbNetworkPeeringConnection.OdbNetworkPeeringConnection.resetRegion"></a>
 
 ```go
@@ -537,7 +544,7 @@ The construct id used in the generated config for the OdbNetworkPeeringConnectio
 
 The id of the existing OdbNetworkPeeringConnection that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/odb_network_peering_connection#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/odb_network_peering_connection#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -580,6 +587,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0
 | <code><a href="#@cdktn/provider-aws.odbNetworkPeeringConnection.OdbNetworkPeeringConnection.property.displayNameInput">DisplayNameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.odbNetworkPeeringConnection.OdbNetworkPeeringConnection.property.odbNetworkArnInput">OdbNetworkArnInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.odbNetworkPeeringConnection.OdbNetworkPeeringConnection.property.odbNetworkIdInput">OdbNetworkIdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.odbNetworkPeeringConnection.OdbNetworkPeeringConnection.property.peerNetworkCidrsInput">PeerNetworkCidrsInput</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.odbNetworkPeeringConnection.OdbNetworkPeeringConnection.property.peerNetworkIdInput">PeerNetworkIdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.odbNetworkPeeringConnection.OdbNetworkPeeringConnection.property.regionInput">RegionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.odbNetworkPeeringConnection.OdbNetworkPeeringConnection.property.tagsInput">TagsInput</a></code> | <code>*map[string]*string</code> | *No description.* |
@@ -587,6 +595,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0
 | <code><a href="#@cdktn/provider-aws.odbNetworkPeeringConnection.OdbNetworkPeeringConnection.property.displayName">DisplayName</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.odbNetworkPeeringConnection.OdbNetworkPeeringConnection.property.odbNetworkArn">OdbNetworkArn</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.odbNetworkPeeringConnection.OdbNetworkPeeringConnection.property.odbNetworkId">OdbNetworkId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.odbNetworkPeeringConnection.OdbNetworkPeeringConnection.property.peerNetworkCidrs">PeerNetworkCidrs</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.odbNetworkPeeringConnection.OdbNetworkPeeringConnection.property.peerNetworkId">PeerNetworkId</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.odbNetworkPeeringConnection.OdbNetworkPeeringConnection.property.region">Region</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.odbNetworkPeeringConnection.OdbNetworkPeeringConnection.property.tags">Tags</a></code> | <code>*map[string]*string</code> | *No description.* |
@@ -865,6 +874,16 @@ func OdbNetworkIdInput() *string
 
 ---
 
+##### `PeerNetworkCidrsInput`<sup>Optional</sup> <a name="PeerNetworkCidrsInput" id="@cdktn/provider-aws.odbNetworkPeeringConnection.OdbNetworkPeeringConnection.property.peerNetworkCidrsInput"></a>
+
+```go
+func PeerNetworkCidrsInput() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
 ##### `PeerNetworkIdInput`<sup>Optional</sup> <a name="PeerNetworkIdInput" id="@cdktn/provider-aws.odbNetworkPeeringConnection.OdbNetworkPeeringConnection.property.peerNetworkIdInput"></a>
 
 ```go
@@ -932,6 +951,16 @@ func OdbNetworkId() *string
 ```
 
 - *Type:* *string
+
+---
+
+##### `PeerNetworkCidrs`<sup>Required</sup> <a name="PeerNetworkCidrs" id="@cdktn/provider-aws.odbNetworkPeeringConnection.OdbNetworkPeeringConnection.property.peerNetworkCidrs"></a>
+
+```go
+func PeerNetworkCidrs() *[]*string
+```
+
+- *Type:* *[]*string
 
 ---
 
@@ -1004,6 +1033,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/odbnetworkpeeringconne
 	PeerNetworkId: *string,
 	OdbNetworkArn: *string,
 	OdbNetworkId: *string,
+	PeerNetworkCidrs: *[]*string,
 	Region: *string,
 	Tags: *map[string]*string,
 	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.odbNetworkPeeringConnection.OdbNetworkPeeringConnectionTimeouts,
@@ -1025,8 +1055,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/odbnetworkpeeringconne
 | <code><a href="#@cdktn/provider-aws.odbNetworkPeeringConnection.OdbNetworkPeeringConnectionConfig.property.peerNetworkId">PeerNetworkId</a></code> | <code>*string</code> | Required field. The unique identifier of the ODB peering connection. Changing this will force terraform to create new resource. |
 | <code><a href="#@cdktn/provider-aws.odbNetworkPeeringConnection.OdbNetworkPeeringConnectionConfig.property.odbNetworkArn">OdbNetworkArn</a></code> | <code>*string</code> | ARN of the odb network peering connection. |
 | <code><a href="#@cdktn/provider-aws.odbNetworkPeeringConnection.OdbNetworkPeeringConnectionConfig.property.odbNetworkId">OdbNetworkId</a></code> | <code>*string</code> | Required field. |
+| <code><a href="#@cdktn/provider-aws.odbNetworkPeeringConnection.OdbNetworkPeeringConnectionConfig.property.peerNetworkCidrs">PeerNetworkCidrs</a></code> | <code>*[]*string</code> | List of peered network cidrs. |
 | <code><a href="#@cdktn/provider-aws.odbNetworkPeeringConnection.OdbNetworkPeeringConnectionConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.odbNetworkPeeringConnection.OdbNetworkPeeringConnectionConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/odb_network_peering_connection#tags OdbNetworkPeeringConnection#tags}. |
+| <code><a href="#@cdktn/provider-aws.odbNetworkPeeringConnection.OdbNetworkPeeringConnectionConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/odb_network_peering_connection#tags OdbNetworkPeeringConnection#tags}. |
 | <code><a href="#@cdktn/provider-aws.odbNetworkPeeringConnection.OdbNetworkPeeringConnectionConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.odbNetworkPeeringConnection.OdbNetworkPeeringConnectionTimeouts">OdbNetworkPeeringConnectionTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1111,7 +1142,7 @@ DisplayName *string
 
 Display name of the odb network peering connection. Changing this will force terraform to create new resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/odb_network_peering_connection#display_name OdbNetworkPeeringConnection#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/odb_network_peering_connection#display_name OdbNetworkPeeringConnection#display_name}
 
 ---
 
@@ -1125,7 +1156,7 @@ PeerNetworkId *string
 
 Required field. The unique identifier of the ODB peering connection. Changing this will force terraform to create new resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/odb_network_peering_connection#peer_network_id OdbNetworkPeeringConnection#peer_network_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/odb_network_peering_connection#peer_network_id OdbNetworkPeeringConnection#peer_network_id}
 
 ---
 
@@ -1139,7 +1170,7 @@ OdbNetworkArn *string
 
 ARN of the odb network peering connection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/odb_network_peering_connection#odb_network_arn OdbNetworkPeeringConnection#odb_network_arn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/odb_network_peering_connection#odb_network_arn OdbNetworkPeeringConnection#odb_network_arn}
 
 ---
 
@@ -1155,7 +1186,21 @@ Required field.
 
 The unique identifier of the ODB network that initiates the peering connection. A sample ID is odbpcx-abcdefgh12345678. Changing this will force terraform to create new resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/odb_network_peering_connection#odb_network_id OdbNetworkPeeringConnection#odb_network_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/odb_network_peering_connection#odb_network_id OdbNetworkPeeringConnection#odb_network_id}
+
+---
+
+##### `PeerNetworkCidrs`<sup>Optional</sup> <a name="PeerNetworkCidrs" id="@cdktn/provider-aws.odbNetworkPeeringConnection.OdbNetworkPeeringConnectionConfig.property.peerNetworkCidrs"></a>
+
+```go
+PeerNetworkCidrs *[]*string
+```
+
+- *Type:* *[]*string
+
+List of peered network cidrs.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/odb_network_peering_connection#peer_network_cidrs OdbNetworkPeeringConnection#peer_network_cidrs}
 
 ---
 
@@ -1169,7 +1214,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/odb_network_peering_connection#region OdbNetworkPeeringConnection#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/odb_network_peering_connection#region OdbNetworkPeeringConnection#region}
 
 ---
 
@@ -1181,7 +1226,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/odb_network_peering_connection#tags OdbNetworkPeeringConnection#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/odb_network_peering_connection#tags OdbNetworkPeeringConnection#tags}.
 
 ---
 
@@ -1195,7 +1240,7 @@ Timeouts OdbNetworkPeeringConnectionTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/odb_network_peering_connection#timeouts OdbNetworkPeeringConnection#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/odb_network_peering_connection#timeouts OdbNetworkPeeringConnection#timeouts}
 
 ---
 
@@ -1233,7 +1278,7 @@ Create *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/odb_network_peering_connection#create OdbNetworkPeeringConnection#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/odb_network_peering_connection#create OdbNetworkPeeringConnection#create}
 
 ---
 
@@ -1247,7 +1292,7 @@ Delete *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/odb_network_peering_connection#delete OdbNetworkPeeringConnection#delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/odb_network_peering_connection#delete OdbNetworkPeeringConnection#delete}
 
 ---
 
@@ -1261,7 +1306,7 @@ Update *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/odb_network_peering_connection#update OdbNetworkPeeringConnection#update}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/odb_network_peering_connection#update OdbNetworkPeeringConnection#update}
 
 ---
 

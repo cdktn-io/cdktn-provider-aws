@@ -4,7 +4,7 @@
 
 ### WafGeoMatchSet <a name="WafGeoMatchSet" id="@cdktn/provider-aws.wafGeoMatchSet.WafGeoMatchSet"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/waf_geo_match_set aws_waf_geo_match_set}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/waf_geo_match_set aws_waf_geo_match_set}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafGeoMatchSet.WafGeoMatchSet.Initializer"></a>
 
@@ -516,7 +516,7 @@ The construct id used in the generated config for the WafGeoMatchSet to import.
 
 The id of the existing WafGeoMatchSet that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/waf_geo_match_set#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/waf_geo_match_set#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -820,9 +820,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/wafgeomatchset"
 | <code><a href="#@cdktn/provider-aws.wafGeoMatchSet.WafGeoMatchSetConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.wafGeoMatchSet.WafGeoMatchSetConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.wafGeoMatchSet.WafGeoMatchSetConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.wafGeoMatchSet.WafGeoMatchSetConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/waf_geo_match_set#name WafGeoMatchSet#name}. |
+| <code><a href="#@cdktn/provider-aws.wafGeoMatchSet.WafGeoMatchSetConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/waf_geo_match_set#name WafGeoMatchSet#name}. |
 | <code><a href="#@cdktn/provider-aws.wafGeoMatchSet.WafGeoMatchSetConfig.property.geoMatchConstraint">GeoMatchConstraint</a></code> | <code>interface{}</code> | geo_match_constraint block. |
-| <code><a href="#@cdktn/provider-aws.wafGeoMatchSet.WafGeoMatchSetConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/waf_geo_match_set#id WafGeoMatchSet#id}. |
+| <code><a href="#@cdktn/provider-aws.wafGeoMatchSet.WafGeoMatchSetConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/waf_geo_match_set#id WafGeoMatchSet#id}. |
 
 ---
 
@@ -904,7 +904,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/waf_geo_match_set#name WafGeoMatchSet#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/waf_geo_match_set#name WafGeoMatchSet#name}.
 
 ---
 
@@ -918,7 +918,7 @@ GeoMatchConstraint interface{}
 
 geo_match_constraint block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/waf_geo_match_set#geo_match_constraint WafGeoMatchSet#geo_match_constraint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/waf_geo_match_set#geo_match_constraint WafGeoMatchSet#geo_match_constraint}
 
 ---
 
@@ -930,7 +930,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/waf_geo_match_set#id WafGeoMatchSet#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/waf_geo_match_set#id WafGeoMatchSet#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -954,8 +954,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/wafgeomatchset"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.wafGeoMatchSet.WafGeoMatchSetGeoMatchConstraint.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/waf_geo_match_set#type WafGeoMatchSet#type}. |
-| <code><a href="#@cdktn/provider-aws.wafGeoMatchSet.WafGeoMatchSetGeoMatchConstraint.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/waf_geo_match_set#value WafGeoMatchSet#value}. |
+| <code><a href="#@cdktn/provider-aws.wafGeoMatchSet.WafGeoMatchSetGeoMatchConstraint.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/waf_geo_match_set#type WafGeoMatchSet#type}. |
+| <code><a href="#@cdktn/provider-aws.wafGeoMatchSet.WafGeoMatchSetGeoMatchConstraint.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/waf_geo_match_set#value WafGeoMatchSet#value}. |
 
 ---
 
@@ -967,7 +967,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/waf_geo_match_set#type WafGeoMatchSet#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/waf_geo_match_set#type WafGeoMatchSet#type}.
 
 ---
 
@@ -979,7 +979,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/waf_geo_match_set#value WafGeoMatchSet#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/waf_geo_match_set#value WafGeoMatchSet#value}.
 
 ---
 

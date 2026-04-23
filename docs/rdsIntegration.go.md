@@ -4,7 +4,7 @@
 
 ### RdsIntegration <a name="RdsIntegration" id="@cdktn/provider-aws.rdsIntegration.RdsIntegration"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/rds_integration aws_rds_integration}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/rds_integration aws_rds_integration}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.rdsIntegration.RdsIntegration.Initializer"></a>
 
@@ -544,7 +544,7 @@ The construct id used in the generated config for the RdsIntegration to import.
 
 The id of the existing RdsIntegration that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/rds_integration#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/rds_integration#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -576,6 +576,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0
 | <code><a href="#@cdktn/provider-aws.rdsIntegration.RdsIntegration.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.rdsIntegration.RdsIntegration.property.arn">Arn</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.rdsIntegration.RdsIntegration.property.id">Id</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.rdsIntegration.RdsIntegration.property.integrationIdentifier">IntegrationIdentifier</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.rdsIntegration.RdsIntegration.property.tagsAll">TagsAll</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.rdsIntegration.RdsIntegration.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.rdsIntegration.RdsIntegrationTimeoutsOutputReference">RdsIntegrationTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.rdsIntegration.RdsIntegration.property.additionalEncryptionContextInput">AdditionalEncryptionContextInput</a></code> | <code>*map[string]*string</code> | *No description.* |
@@ -754,6 +755,16 @@ func Arn() *string
 
 ```go
 func Id() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `IntegrationIdentifier`<sup>Required</sup> <a name="IntegrationIdentifier" id="@cdktn/provider-aws.rdsIntegration.RdsIntegration.property.integrationIdentifier"></a>
+
+```go
+func IntegrationIdentifier() *string
 ```
 
 - *Type:* *string
@@ -1008,14 +1019,14 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/rdsintegration"
 | <code><a href="#@cdktn/provider-aws.rdsIntegration.RdsIntegrationConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.rdsIntegration.RdsIntegrationConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.rdsIntegration.RdsIntegrationConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.rdsIntegration.RdsIntegrationConfig.property.integrationName">IntegrationName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/rds_integration#integration_name RdsIntegration#integration_name}. |
-| <code><a href="#@cdktn/provider-aws.rdsIntegration.RdsIntegrationConfig.property.sourceArn">SourceArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/rds_integration#source_arn RdsIntegration#source_arn}. |
-| <code><a href="#@cdktn/provider-aws.rdsIntegration.RdsIntegrationConfig.property.targetArn">TargetArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/rds_integration#target_arn RdsIntegration#target_arn}. |
-| <code><a href="#@cdktn/provider-aws.rdsIntegration.RdsIntegrationConfig.property.additionalEncryptionContext">AdditionalEncryptionContext</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/rds_integration#additional_encryption_context RdsIntegration#additional_encryption_context}. |
-| <code><a href="#@cdktn/provider-aws.rdsIntegration.RdsIntegrationConfig.property.dataFilter">DataFilter</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/rds_integration#data_filter RdsIntegration#data_filter}. |
-| <code><a href="#@cdktn/provider-aws.rdsIntegration.RdsIntegrationConfig.property.kmsKeyId">KmsKeyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/rds_integration#kms_key_id RdsIntegration#kms_key_id}. |
+| <code><a href="#@cdktn/provider-aws.rdsIntegration.RdsIntegrationConfig.property.integrationName">IntegrationName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/rds_integration#integration_name RdsIntegration#integration_name}. |
+| <code><a href="#@cdktn/provider-aws.rdsIntegration.RdsIntegrationConfig.property.sourceArn">SourceArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/rds_integration#source_arn RdsIntegration#source_arn}. |
+| <code><a href="#@cdktn/provider-aws.rdsIntegration.RdsIntegrationConfig.property.targetArn">TargetArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/rds_integration#target_arn RdsIntegration#target_arn}. |
+| <code><a href="#@cdktn/provider-aws.rdsIntegration.RdsIntegrationConfig.property.additionalEncryptionContext">AdditionalEncryptionContext</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/rds_integration#additional_encryption_context RdsIntegration#additional_encryption_context}. |
+| <code><a href="#@cdktn/provider-aws.rdsIntegration.RdsIntegrationConfig.property.dataFilter">DataFilter</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/rds_integration#data_filter RdsIntegration#data_filter}. |
+| <code><a href="#@cdktn/provider-aws.rdsIntegration.RdsIntegrationConfig.property.kmsKeyId">KmsKeyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/rds_integration#kms_key_id RdsIntegration#kms_key_id}. |
 | <code><a href="#@cdktn/provider-aws.rdsIntegration.RdsIntegrationConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.rdsIntegration.RdsIntegrationConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/rds_integration#tags RdsIntegration#tags}. |
+| <code><a href="#@cdktn/provider-aws.rdsIntegration.RdsIntegrationConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/rds_integration#tags RdsIntegration#tags}. |
 | <code><a href="#@cdktn/provider-aws.rdsIntegration.RdsIntegrationConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.rdsIntegration.RdsIntegrationTimeouts">RdsIntegrationTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1098,7 +1109,7 @@ IntegrationName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/rds_integration#integration_name RdsIntegration#integration_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/rds_integration#integration_name RdsIntegration#integration_name}.
 
 ---
 
@@ -1110,7 +1121,7 @@ SourceArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/rds_integration#source_arn RdsIntegration#source_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/rds_integration#source_arn RdsIntegration#source_arn}.
 
 ---
 
@@ -1122,7 +1133,7 @@ TargetArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/rds_integration#target_arn RdsIntegration#target_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/rds_integration#target_arn RdsIntegration#target_arn}.
 
 ---
 
@@ -1134,7 +1145,7 @@ AdditionalEncryptionContext *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/rds_integration#additional_encryption_context RdsIntegration#additional_encryption_context}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/rds_integration#additional_encryption_context RdsIntegration#additional_encryption_context}.
 
 ---
 
@@ -1146,7 +1157,7 @@ DataFilter *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/rds_integration#data_filter RdsIntegration#data_filter}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/rds_integration#data_filter RdsIntegration#data_filter}.
 
 ---
 
@@ -1158,7 +1169,7 @@ KmsKeyId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/rds_integration#kms_key_id RdsIntegration#kms_key_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/rds_integration#kms_key_id RdsIntegration#kms_key_id}.
 
 ---
 
@@ -1172,7 +1183,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/rds_integration#region RdsIntegration#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/rds_integration#region RdsIntegration#region}
 
 ---
 
@@ -1184,7 +1195,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/rds_integration#tags RdsIntegration#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/rds_integration#tags RdsIntegration#tags}.
 
 ---
 
@@ -1198,7 +1209,7 @@ Timeouts RdsIntegrationTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/rds_integration#timeouts RdsIntegration#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/rds_integration#timeouts RdsIntegration#timeouts}
 
 ---
 
@@ -1212,6 +1223,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/rdsintegration"
 &rdsintegration.RdsIntegrationTimeouts {
 	Create: *string,
 	Delete: *string,
+	Update: *string,
 }
 ```
 
@@ -1221,6 +1233,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/rdsintegration"
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.rdsIntegration.RdsIntegrationTimeouts.property.create">Create</a></code> | <code>*string</code> | A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). |
 | <code><a href="#@cdktn/provider-aws.rdsIntegration.RdsIntegrationTimeouts.property.delete">Delete</a></code> | <code>*string</code> | A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs. |
+| <code><a href="#@cdktn/provider-aws.rdsIntegration.RdsIntegrationTimeouts.property.update">Update</a></code> | <code>*string</code> | A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). |
 
 ---
 
@@ -1234,7 +1247,7 @@ Create *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/rds_integration#create RdsIntegration#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/rds_integration#create RdsIntegration#create}
 
 ---
 
@@ -1248,7 +1261,21 @@ Delete *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/rds_integration#delete RdsIntegration#delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/rds_integration#delete RdsIntegration#delete}
+
+---
+
+##### `Update`<sup>Optional</sup> <a name="Update" id="@cdktn/provider-aws.rdsIntegration.RdsIntegrationTimeouts.property.update"></a>
+
+```go
+Update *string
+```
+
+- *Type:* *string
+
+A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/rds_integration#update RdsIntegration#update}
 
 ---
 
@@ -1306,6 +1333,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-aws.rdsIntegration.RdsIntegrationTimeoutsOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktn/provider-aws.rdsIntegration.RdsIntegrationTimeoutsOutputReference.resetCreate">ResetCreate</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.rdsIntegration.RdsIntegrationTimeoutsOutputReference.resetDelete">ResetDelete</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.rdsIntegration.RdsIntegrationTimeoutsOutputReference.resetUpdate">ResetUpdate</a></code> | *No description.* |
 
 ---
 
@@ -1471,6 +1499,12 @@ func ResetCreate()
 func ResetDelete()
 ```
 
+##### `ResetUpdate` <a name="ResetUpdate" id="@cdktn/provider-aws.rdsIntegration.RdsIntegrationTimeoutsOutputReference.resetUpdate"></a>
+
+```go
+func ResetUpdate()
+```
+
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -1480,8 +1514,10 @@ func ResetDelete()
 | <code><a href="#@cdktn/provider-aws.rdsIntegration.RdsIntegrationTimeoutsOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.rdsIntegration.RdsIntegrationTimeoutsOutputReference.property.createInput">CreateInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.rdsIntegration.RdsIntegrationTimeoutsOutputReference.property.deleteInput">DeleteInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.rdsIntegration.RdsIntegrationTimeoutsOutputReference.property.updateInput">UpdateInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.rdsIntegration.RdsIntegrationTimeoutsOutputReference.property.create">Create</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.rdsIntegration.RdsIntegrationTimeoutsOutputReference.property.delete">Delete</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.rdsIntegration.RdsIntegrationTimeoutsOutputReference.property.update">Update</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.rdsIntegration.RdsIntegrationTimeoutsOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
 
 ---
@@ -1530,6 +1566,16 @@ func DeleteInput() *string
 
 ---
 
+##### `UpdateInput`<sup>Optional</sup> <a name="UpdateInput" id="@cdktn/provider-aws.rdsIntegration.RdsIntegrationTimeoutsOutputReference.property.updateInput"></a>
+
+```go
+func UpdateInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `Create`<sup>Required</sup> <a name="Create" id="@cdktn/provider-aws.rdsIntegration.RdsIntegrationTimeoutsOutputReference.property.create"></a>
 
 ```go
@@ -1544,6 +1590,16 @@ func Create() *string
 
 ```go
 func Delete() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Update`<sup>Required</sup> <a name="Update" id="@cdktn/provider-aws.rdsIntegration.RdsIntegrationTimeoutsOutputReference.property.update"></a>
+
+```go
+func Update() *string
 ```
 
 - *Type:* *string
