@@ -4,7 +4,7 @@
 
 ### WorkmailDomain <a name="WorkmailDomain" id="@cdktn/provider-aws.workmailDomain.WorkmailDomain"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/workmail_domain aws_workmail_domain}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/workmail_domain aws_workmail_domain}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.workmailDomain.WorkmailDomain.Initializer"></a>
 
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 Mail domain name to register.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/workmail_domain#domain_name WorkmailDomain#domain_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/workmail_domain#domain_name WorkmailDomain#domain_name}
 
 ---
 
@@ -120,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Identifier of the WorkMail organization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/workmail_domain#organization_id WorkmailDomain#organization_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/workmail_domain#organization_id WorkmailDomain#organization_id}
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/workmail_domain#region WorkmailDomain#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/workmail_domain#region WorkmailDomain#region}
 
 ---
 
@@ -634,7 +634,7 @@ The construct id used in the generated config for the WorkmailDomain to import.
 
 The id of the existing WorkmailDomain that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/workmail_domain#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/workmail_domain#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1068,7 +1068,7 @@ domain_name: str
 
 Mail domain name to register.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/workmail_domain#domain_name WorkmailDomain#domain_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/workmail_domain#domain_name WorkmailDomain#domain_name}
 
 ---
 
@@ -1082,7 +1082,7 @@ organization_id: str
 
 Identifier of the WorkMail organization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/workmail_domain#organization_id WorkmailDomain#organization_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/workmail_domain#organization_id WorkmailDomain#organization_id}
 
 ---
 
@@ -1096,7 +1096,7 @@ region: str
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/workmail_domain#region WorkmailDomain#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/workmail_domain#region WorkmailDomain#region}
 
 ---
 

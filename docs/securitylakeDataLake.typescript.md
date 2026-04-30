@@ -4,7 +4,7 @@
 
 ### SecuritylakeDataLake <a name="SecuritylakeDataLake" id="@cdktn/provider-aws.securitylakeDataLake.SecuritylakeDataLake"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/securitylake_data_lake aws_securitylake_data_lake}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/securitylake_data_lake aws_securitylake_data_lake}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securitylakeDataLake.SecuritylakeDataLake.Initializer"></a>
 
@@ -543,7 +543,7 @@ The construct id used in the generated config for the SecuritylakeDataLake to im
 
 The id of the existing SecuritylakeDataLake that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/securitylake_data_lake#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/securitylake_data_lake#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -913,10 +913,10 @@ const securitylakeDataLakeConfig: securitylakeDataLake.SecuritylakeDataLakeConfi
 | <code><a href="#@cdktn/provider-aws.securitylakeDataLake.SecuritylakeDataLakeConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securitylakeDataLake.SecuritylakeDataLakeConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securitylakeDataLake.SecuritylakeDataLakeConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securitylakeDataLake.SecuritylakeDataLakeConfig.property.metaStoreManagerRoleArn">metaStoreManagerRoleArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/securitylake_data_lake#meta_store_manager_role_arn SecuritylakeDataLake#meta_store_manager_role_arn}. |
+| <code><a href="#@cdktn/provider-aws.securitylakeDataLake.SecuritylakeDataLakeConfig.property.metaStoreManagerRoleArn">metaStoreManagerRoleArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/securitylake_data_lake#meta_store_manager_role_arn SecuritylakeDataLake#meta_store_manager_role_arn}. |
 | <code><a href="#@cdktn/provider-aws.securitylakeDataLake.SecuritylakeDataLakeConfig.property.configuration">configuration</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securitylakeDataLake.SecuritylakeDataLakeConfiguration">SecuritylakeDataLakeConfiguration</a>[]</code> | configuration block. |
 | <code><a href="#@cdktn/provider-aws.securitylakeDataLake.SecuritylakeDataLakeConfig.property.region">region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.securitylakeDataLake.SecuritylakeDataLakeConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/securitylake_data_lake#tags SecuritylakeDataLake#tags}. |
+| <code><a href="#@cdktn/provider-aws.securitylakeDataLake.SecuritylakeDataLakeConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/securitylake_data_lake#tags SecuritylakeDataLake#tags}. |
 | <code><a href="#@cdktn/provider-aws.securitylakeDataLake.SecuritylakeDataLakeConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-aws.securitylakeDataLake.SecuritylakeDataLakeTimeouts">SecuritylakeDataLakeTimeouts</a></code> | timeouts block. |
 
 ---
@@ -999,7 +999,7 @@ public readonly metaStoreManagerRoleArn: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/securitylake_data_lake#meta_store_manager_role_arn SecuritylakeDataLake#meta_store_manager_role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/securitylake_data_lake#meta_store_manager_role_arn SecuritylakeDataLake#meta_store_manager_role_arn}.
 
 ---
 
@@ -1013,7 +1013,7 @@ public readonly configuration: IResolvable | SecuritylakeDataLakeConfiguration[]
 
 configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/securitylake_data_lake#configuration SecuritylakeDataLake#configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/securitylake_data_lake#configuration SecuritylakeDataLake#configuration}
 
 ---
 
@@ -1027,7 +1027,7 @@ public readonly region: string;
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/securitylake_data_lake#region SecuritylakeDataLake#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/securitylake_data_lake#region SecuritylakeDataLake#region}
 
 ---
 
@@ -1039,7 +1039,7 @@ public readonly tags: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/securitylake_data_lake#tags SecuritylakeDataLake#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/securitylake_data_lake#tags SecuritylakeDataLake#tags}.
 
 ---
 
@@ -1053,7 +1053,7 @@ public readonly timeouts: SecuritylakeDataLakeTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/securitylake_data_lake#timeouts SecuritylakeDataLake#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/securitylake_data_lake#timeouts SecuritylakeDataLake#timeouts}
 
 ---
 
@@ -1071,8 +1071,8 @@ const securitylakeDataLakeConfiguration: securitylakeDataLake.SecuritylakeDataLa
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securitylakeDataLake.SecuritylakeDataLakeConfiguration.property.region">region</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/securitylake_data_lake#region SecuritylakeDataLake#region}. |
-| <code><a href="#@cdktn/provider-aws.securitylakeDataLake.SecuritylakeDataLakeConfiguration.property.encryptionConfiguration">encryptionConfiguration</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securitylakeDataLake.SecuritylakeDataLakeConfigurationEncryptionConfiguration">SecuritylakeDataLakeConfigurationEncryptionConfiguration</a>[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/securitylake_data_lake#encryption_configuration SecuritylakeDataLake#encryption_configuration}. |
+| <code><a href="#@cdktn/provider-aws.securitylakeDataLake.SecuritylakeDataLakeConfiguration.property.region">region</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/securitylake_data_lake#region SecuritylakeDataLake#region}. |
+| <code><a href="#@cdktn/provider-aws.securitylakeDataLake.SecuritylakeDataLakeConfiguration.property.encryptionConfiguration">encryptionConfiguration</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securitylakeDataLake.SecuritylakeDataLakeConfigurationEncryptionConfiguration">SecuritylakeDataLakeConfigurationEncryptionConfiguration</a>[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/securitylake_data_lake#encryption_configuration SecuritylakeDataLake#encryption_configuration}. |
 | <code><a href="#@cdktn/provider-aws.securitylakeDataLake.SecuritylakeDataLakeConfiguration.property.lifecycleConfiguration">lifecycleConfiguration</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securitylakeDataLake.SecuritylakeDataLakeConfigurationLifecycleConfiguration">SecuritylakeDataLakeConfigurationLifecycleConfiguration</a>[]</code> | lifecycle_configuration block. |
 | <code><a href="#@cdktn/provider-aws.securitylakeDataLake.SecuritylakeDataLakeConfiguration.property.replicationConfiguration">replicationConfiguration</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.securitylakeDataLake.SecuritylakeDataLakeConfigurationReplicationConfiguration">SecuritylakeDataLakeConfigurationReplicationConfiguration</a>[]</code> | replication_configuration block. |
 
@@ -1086,7 +1086,7 @@ public readonly region: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/securitylake_data_lake#region SecuritylakeDataLake#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/securitylake_data_lake#region SecuritylakeDataLake#region}.
 
 ---
 
@@ -1098,7 +1098,7 @@ public readonly encryptionConfiguration: IResolvable | SecuritylakeDataLakeConfi
 
 - *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.securitylakeDataLake.SecuritylakeDataLakeConfigurationEncryptionConfiguration">SecuritylakeDataLakeConfigurationEncryptionConfiguration</a>[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/securitylake_data_lake#encryption_configuration SecuritylakeDataLake#encryption_configuration}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/securitylake_data_lake#encryption_configuration SecuritylakeDataLake#encryption_configuration}.
 
 ---
 
@@ -1112,7 +1112,7 @@ public readonly lifecycleConfiguration: IResolvable | SecuritylakeDataLakeConfig
 
 lifecycle_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/securitylake_data_lake#lifecycle_configuration SecuritylakeDataLake#lifecycle_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/securitylake_data_lake#lifecycle_configuration SecuritylakeDataLake#lifecycle_configuration}
 
 ---
 
@@ -1126,7 +1126,7 @@ public readonly replicationConfiguration: IResolvable | SecuritylakeDataLakeConf
 
 replication_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/securitylake_data_lake#replication_configuration SecuritylakeDataLake#replication_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/securitylake_data_lake#replication_configuration SecuritylakeDataLake#replication_configuration}
 
 ---
 
@@ -1144,7 +1144,7 @@ const securitylakeDataLakeConfigurationEncryptionConfiguration: securitylakeData
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securitylakeDataLake.SecuritylakeDataLakeConfigurationEncryptionConfiguration.property.kmsKeyId">kmsKeyId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/securitylake_data_lake#kms_key_id SecuritylakeDataLake#kms_key_id}. |
+| <code><a href="#@cdktn/provider-aws.securitylakeDataLake.SecuritylakeDataLakeConfigurationEncryptionConfiguration.property.kmsKeyId">kmsKeyId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/securitylake_data_lake#kms_key_id SecuritylakeDataLake#kms_key_id}. |
 
 ---
 
@@ -1156,7 +1156,7 @@ public readonly kmsKeyId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/securitylake_data_lake#kms_key_id SecuritylakeDataLake#kms_key_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/securitylake_data_lake#kms_key_id SecuritylakeDataLake#kms_key_id}.
 
 ---
 
@@ -1189,7 +1189,7 @@ public readonly expiration: IResolvable | SecuritylakeDataLakeConfigurationLifec
 
 expiration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/securitylake_data_lake#expiration SecuritylakeDataLake#expiration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/securitylake_data_lake#expiration SecuritylakeDataLake#expiration}
 
 ---
 
@@ -1203,7 +1203,7 @@ public readonly transition: IResolvable | SecuritylakeDataLakeConfigurationLifec
 
 transition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/securitylake_data_lake#transition SecuritylakeDataLake#transition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/securitylake_data_lake#transition SecuritylakeDataLake#transition}
 
 ---
 
@@ -1221,7 +1221,7 @@ const securitylakeDataLakeConfigurationLifecycleConfigurationExpiration: securit
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securitylakeDataLake.SecuritylakeDataLakeConfigurationLifecycleConfigurationExpiration.property.days">days</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/securitylake_data_lake#days SecuritylakeDataLake#days}. |
+| <code><a href="#@cdktn/provider-aws.securitylakeDataLake.SecuritylakeDataLakeConfigurationLifecycleConfigurationExpiration.property.days">days</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/securitylake_data_lake#days SecuritylakeDataLake#days}. |
 
 ---
 
@@ -1233,7 +1233,7 @@ public readonly days: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/securitylake_data_lake#days SecuritylakeDataLake#days}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/securitylake_data_lake#days SecuritylakeDataLake#days}.
 
 ---
 
@@ -1251,8 +1251,8 @@ const securitylakeDataLakeConfigurationLifecycleConfigurationTransition: securit
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securitylakeDataLake.SecuritylakeDataLakeConfigurationLifecycleConfigurationTransition.property.days">days</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/securitylake_data_lake#days SecuritylakeDataLake#days}. |
-| <code><a href="#@cdktn/provider-aws.securitylakeDataLake.SecuritylakeDataLakeConfigurationLifecycleConfigurationTransition.property.storageClass">storageClass</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/securitylake_data_lake#storage_class SecuritylakeDataLake#storage_class}. |
+| <code><a href="#@cdktn/provider-aws.securitylakeDataLake.SecuritylakeDataLakeConfigurationLifecycleConfigurationTransition.property.days">days</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/securitylake_data_lake#days SecuritylakeDataLake#days}. |
+| <code><a href="#@cdktn/provider-aws.securitylakeDataLake.SecuritylakeDataLakeConfigurationLifecycleConfigurationTransition.property.storageClass">storageClass</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/securitylake_data_lake#storage_class SecuritylakeDataLake#storage_class}. |
 
 ---
 
@@ -1264,7 +1264,7 @@ public readonly days: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/securitylake_data_lake#days SecuritylakeDataLake#days}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/securitylake_data_lake#days SecuritylakeDataLake#days}.
 
 ---
 
@@ -1276,7 +1276,7 @@ public readonly storageClass: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/securitylake_data_lake#storage_class SecuritylakeDataLake#storage_class}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/securitylake_data_lake#storage_class SecuritylakeDataLake#storage_class}.
 
 ---
 
@@ -1294,8 +1294,8 @@ const securitylakeDataLakeConfigurationReplicationConfiguration: securitylakeDat
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securitylakeDataLake.SecuritylakeDataLakeConfigurationReplicationConfiguration.property.regions">regions</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/securitylake_data_lake#regions SecuritylakeDataLake#regions}. |
-| <code><a href="#@cdktn/provider-aws.securitylakeDataLake.SecuritylakeDataLakeConfigurationReplicationConfiguration.property.roleArn">roleArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/securitylake_data_lake#role_arn SecuritylakeDataLake#role_arn}. |
+| <code><a href="#@cdktn/provider-aws.securitylakeDataLake.SecuritylakeDataLakeConfigurationReplicationConfiguration.property.regions">regions</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/securitylake_data_lake#regions SecuritylakeDataLake#regions}. |
+| <code><a href="#@cdktn/provider-aws.securitylakeDataLake.SecuritylakeDataLakeConfigurationReplicationConfiguration.property.roleArn">roleArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/securitylake_data_lake#role_arn SecuritylakeDataLake#role_arn}. |
 
 ---
 
@@ -1307,7 +1307,7 @@ public readonly regions: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/securitylake_data_lake#regions SecuritylakeDataLake#regions}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/securitylake_data_lake#regions SecuritylakeDataLake#regions}.
 
 ---
 
@@ -1319,7 +1319,7 @@ public readonly roleArn: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/securitylake_data_lake#role_arn SecuritylakeDataLake#role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/securitylake_data_lake#role_arn SecuritylakeDataLake#role_arn}.
 
 ---
 
@@ -1353,7 +1353,7 @@ public readonly create: string;
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/securitylake_data_lake#create SecuritylakeDataLake#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/securitylake_data_lake#create SecuritylakeDataLake#create}
 
 ---
 
@@ -1367,7 +1367,7 @@ public readonly delete: string;
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/securitylake_data_lake#delete SecuritylakeDataLake#delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/securitylake_data_lake#delete SecuritylakeDataLake#delete}
 
 ---
 
@@ -1381,7 +1381,7 @@ public readonly update: string;
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/securitylake_data_lake#update SecuritylakeDataLake#update}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/securitylake_data_lake#update SecuritylakeDataLake#update}
 
 ---
 

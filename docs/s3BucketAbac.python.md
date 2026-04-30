@@ -4,7 +4,7 @@
 
 ### S3BucketAbac <a name="S3BucketAbac" id="@cdktn/provider-aws.s3BucketAbac.S3BucketAbac"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/s3_bucket_abac aws_s3_bucket_abac}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/s3_bucket_abac aws_s3_bucket_abac}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3BucketAbac.S3BucketAbac.Initializer"></a>
 
@@ -39,9 +39,9 @@ s3BucketAbac.S3BucketAbac(
 | <code><a href="#@cdktn/provider-aws.s3BucketAbac.S3BucketAbac.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.s3BucketAbac.S3BucketAbac.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.s3BucketAbac.S3BucketAbac.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.s3BucketAbac.S3BucketAbac.Initializer.parameter.bucket">bucket</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/s3_bucket_abac#bucket S3BucketAbac#bucket}. |
+| <code><a href="#@cdktn/provider-aws.s3BucketAbac.S3BucketAbac.Initializer.parameter.bucket">bucket</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/s3_bucket_abac#bucket S3BucketAbac#bucket}. |
 | <code><a href="#@cdktn/provider-aws.s3BucketAbac.S3BucketAbac.Initializer.parameter.abacStatus">abac_status</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.s3BucketAbac.S3BucketAbacAbacStatus">S3BucketAbacAbacStatus</a>]</code> | abac_status block. |
-| <code><a href="#@cdktn/provider-aws.s3BucketAbac.S3BucketAbac.Initializer.parameter.expectedBucketOwner">expected_bucket_owner</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/s3_bucket_abac#expected_bucket_owner S3BucketAbac#expected_bucket_owner}. |
+| <code><a href="#@cdktn/provider-aws.s3BucketAbac.S3BucketAbac.Initializer.parameter.expectedBucketOwner">expected_bucket_owner</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/s3_bucket_abac#expected_bucket_owner S3BucketAbac#expected_bucket_owner}. |
 | <code><a href="#@cdktn/provider-aws.s3BucketAbac.S3BucketAbac.Initializer.parameter.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/s3_bucket_abac#bucket S3BucketAbac#bucket}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/s3_bucket_abac#bucket S3BucketAbac#bucket}.
 
 ---
 
@@ -120,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 abac_status block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/s3_bucket_abac#abac_status S3BucketAbac#abac_status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/s3_bucket_abac#abac_status S3BucketAbac#abac_status}
 
 ---
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/s3_bucket_abac#expected_bucket_owner S3BucketAbac#expected_bucket_owner}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/s3_bucket_abac#expected_bucket_owner S3BucketAbac#expected_bucket_owner}.
 
 ---
 
@@ -138,7 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/s3_bucket_abac#region S3BucketAbac#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/s3_bucket_abac#region S3BucketAbac#region}
 
 ---
 
@@ -671,7 +671,7 @@ The construct id used in the generated config for the S3BucketAbac to import.
 
 The id of the existing S3BucketAbac that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/s3_bucket_abac#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/s3_bucket_abac#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -970,7 +970,7 @@ s3BucketAbac.S3BucketAbacAbacStatus(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.s3BucketAbac.S3BucketAbacAbacStatus.property.status">status</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/s3_bucket_abac#status S3BucketAbac#status}. |
+| <code><a href="#@cdktn/provider-aws.s3BucketAbac.S3BucketAbacAbacStatus.property.status">status</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/s3_bucket_abac#status S3BucketAbac#status}. |
 
 ---
 
@@ -982,7 +982,7 @@ status: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/s3_bucket_abac#status S3BucketAbac#status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/s3_bucket_abac#status S3BucketAbac#status}.
 
 ---
 
@@ -1019,9 +1019,9 @@ s3BucketAbac.S3BucketAbacConfig(
 | <code><a href="#@cdktn/provider-aws.s3BucketAbac.S3BucketAbacConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.s3BucketAbac.S3BucketAbacConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.s3BucketAbac.S3BucketAbacConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.s3BucketAbac.S3BucketAbacConfig.property.bucket">bucket</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/s3_bucket_abac#bucket S3BucketAbac#bucket}. |
+| <code><a href="#@cdktn/provider-aws.s3BucketAbac.S3BucketAbacConfig.property.bucket">bucket</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/s3_bucket_abac#bucket S3BucketAbac#bucket}. |
 | <code><a href="#@cdktn/provider-aws.s3BucketAbac.S3BucketAbacConfig.property.abacStatus">abac_status</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.s3BucketAbac.S3BucketAbacAbacStatus">S3BucketAbacAbacStatus</a>]</code> | abac_status block. |
-| <code><a href="#@cdktn/provider-aws.s3BucketAbac.S3BucketAbacConfig.property.expectedBucketOwner">expected_bucket_owner</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/s3_bucket_abac#expected_bucket_owner S3BucketAbac#expected_bucket_owner}. |
+| <code><a href="#@cdktn/provider-aws.s3BucketAbac.S3BucketAbacConfig.property.expectedBucketOwner">expected_bucket_owner</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/s3_bucket_abac#expected_bucket_owner S3BucketAbac#expected_bucket_owner}. |
 | <code><a href="#@cdktn/provider-aws.s3BucketAbac.S3BucketAbacConfig.property.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -1104,7 +1104,7 @@ bucket: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/s3_bucket_abac#bucket S3BucketAbac#bucket}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/s3_bucket_abac#bucket S3BucketAbac#bucket}.
 
 ---
 
@@ -1118,7 +1118,7 @@ abac_status: IResolvable | typing.List[S3BucketAbacAbacStatus]
 
 abac_status block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/s3_bucket_abac#abac_status S3BucketAbac#abac_status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/s3_bucket_abac#abac_status S3BucketAbac#abac_status}
 
 ---
 
@@ -1130,7 +1130,7 @@ expected_bucket_owner: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/s3_bucket_abac#expected_bucket_owner S3BucketAbac#expected_bucket_owner}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/s3_bucket_abac#expected_bucket_owner S3BucketAbac#expected_bucket_owner}.
 
 ---
 
@@ -1144,7 +1144,7 @@ region: str
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/s3_bucket_abac#region S3BucketAbac#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/s3_bucket_abac#region S3BucketAbac#region}
 
 ---
 
