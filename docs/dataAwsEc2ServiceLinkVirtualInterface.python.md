@@ -4,7 +4,7 @@
 
 ### DataAwsEc2ServiceLinkVirtualInterface <a name="DataAwsEc2ServiceLinkVirtualInterface" id="@cdktn/provider-aws.dataAwsEc2ServiceLinkVirtualInterface.DataAwsEc2ServiceLinkVirtualInterface"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/data-sources/ec2_service_link_virtual_interface aws_ec2_service_link_virtual_interface}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/data-sources/ec2_service_link_virtual_interface aws_ec2_service_link_virtual_interface}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEc2ServiceLinkVirtualInterface.DataAwsEc2ServiceLinkVirtualInterface.Initializer"></a>
 
@@ -39,7 +39,7 @@ dataAwsEc2ServiceLinkVirtualInterface.DataAwsEc2ServiceLinkVirtualInterface(
 | <code><a href="#@cdktn/provider-aws.dataAwsEc2ServiceLinkVirtualInterface.DataAwsEc2ServiceLinkVirtualInterface.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsEc2ServiceLinkVirtualInterface.DataAwsEc2ServiceLinkVirtualInterface.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsEc2ServiceLinkVirtualInterface.DataAwsEc2ServiceLinkVirtualInterface.Initializer.parameter.filter">filter</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.dataAwsEc2ServiceLinkVirtualInterface.DataAwsEc2ServiceLinkVirtualInterfaceFilter">DataAwsEc2ServiceLinkVirtualInterfaceFilter</a>]</code> | filter block. |
-| <code><a href="#@cdktn/provider-aws.dataAwsEc2ServiceLinkVirtualInterface.DataAwsEc2ServiceLinkVirtualInterface.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/data-sources/ec2_service_link_virtual_interface#id DataAwsEc2ServiceLinkVirtualInterface#id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsEc2ServiceLinkVirtualInterface.DataAwsEc2ServiceLinkVirtualInterface.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/data-sources/ec2_service_link_virtual_interface#id DataAwsEc2ServiceLinkVirtualInterface#id}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsEc2ServiceLinkVirtualInterface.DataAwsEc2ServiceLinkVirtualInterface.Initializer.parameter.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/data-sources/ec2_service_link_virtual_interface#filter DataAwsEc2ServiceLinkVirtualInterface#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/data-sources/ec2_service_link_virtual_interface#filter DataAwsEc2ServiceLinkVirtualInterface#filter}
 
 ---
 
@@ -118,7 +118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/data-sources/ec2_service_link_virtual_interface#id DataAwsEc2ServiceLinkVirtualInterface#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/data-sources/ec2_service_link_virtual_interface#id DataAwsEc2ServiceLinkVirtualInterface#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -131,7 +131,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/data-sources/ec2_service_link_virtual_interface#region DataAwsEc2ServiceLinkVirtualInterface#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/data-sources/ec2_service_link_virtual_interface#region DataAwsEc2ServiceLinkVirtualInterface#region}
 
 ---
 
@@ -550,7 +550,7 @@ The construct id used in the generated config for the DataAwsEc2ServiceLinkVirtu
 
 The id of the existing DataAwsEc2ServiceLinkVirtualInterface that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/data-sources/ec2_service_link_virtual_interface#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/data-sources/ec2_service_link_virtual_interface#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -943,7 +943,7 @@ dataAwsEc2ServiceLinkVirtualInterface.DataAwsEc2ServiceLinkVirtualInterfaceConfi
 | <code><a href="#@cdktn/provider-aws.dataAwsEc2ServiceLinkVirtualInterface.DataAwsEc2ServiceLinkVirtualInterfaceConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsEc2ServiceLinkVirtualInterface.DataAwsEc2ServiceLinkVirtualInterfaceConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsEc2ServiceLinkVirtualInterface.DataAwsEc2ServiceLinkVirtualInterfaceConfig.property.filter">filter</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.dataAwsEc2ServiceLinkVirtualInterface.DataAwsEc2ServiceLinkVirtualInterfaceFilter">DataAwsEc2ServiceLinkVirtualInterfaceFilter</a>]</code> | filter block. |
-| <code><a href="#@cdktn/provider-aws.dataAwsEc2ServiceLinkVirtualInterface.DataAwsEc2ServiceLinkVirtualInterfaceConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/data-sources/ec2_service_link_virtual_interface#id DataAwsEc2ServiceLinkVirtualInterface#id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsEc2ServiceLinkVirtualInterface.DataAwsEc2ServiceLinkVirtualInterfaceConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/data-sources/ec2_service_link_virtual_interface#id DataAwsEc2ServiceLinkVirtualInterface#id}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsEc2ServiceLinkVirtualInterface.DataAwsEc2ServiceLinkVirtualInterfaceConfig.property.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -1028,7 +1028,7 @@ filter: IResolvable | typing.List[DataAwsEc2ServiceLinkVirtualInterfaceFilter]
 
 filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/data-sources/ec2_service_link_virtual_interface#filter DataAwsEc2ServiceLinkVirtualInterface#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/data-sources/ec2_service_link_virtual_interface#filter DataAwsEc2ServiceLinkVirtualInterface#filter}
 
 ---
 
@@ -1040,7 +1040,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/data-sources/ec2_service_link_virtual_interface#id DataAwsEc2ServiceLinkVirtualInterface#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/data-sources/ec2_service_link_virtual_interface#id DataAwsEc2ServiceLinkVirtualInterface#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1057,7 +1057,7 @@ region: str
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/data-sources/ec2_service_link_virtual_interface#region DataAwsEc2ServiceLinkVirtualInterface#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/data-sources/ec2_service_link_virtual_interface#region DataAwsEc2ServiceLinkVirtualInterface#region}
 
 ---
 
@@ -1078,8 +1078,8 @@ dataAwsEc2ServiceLinkVirtualInterface.DataAwsEc2ServiceLinkVirtualInterfaceFilte
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.dataAwsEc2ServiceLinkVirtualInterface.DataAwsEc2ServiceLinkVirtualInterfaceFilter.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/data-sources/ec2_service_link_virtual_interface#name DataAwsEc2ServiceLinkVirtualInterface#name}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsEc2ServiceLinkVirtualInterface.DataAwsEc2ServiceLinkVirtualInterfaceFilter.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/data-sources/ec2_service_link_virtual_interface#values DataAwsEc2ServiceLinkVirtualInterface#values}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsEc2ServiceLinkVirtualInterface.DataAwsEc2ServiceLinkVirtualInterfaceFilter.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/data-sources/ec2_service_link_virtual_interface#name DataAwsEc2ServiceLinkVirtualInterface#name}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsEc2ServiceLinkVirtualInterface.DataAwsEc2ServiceLinkVirtualInterfaceFilter.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/data-sources/ec2_service_link_virtual_interface#values DataAwsEc2ServiceLinkVirtualInterface#values}. |
 
 ---
 
@@ -1091,7 +1091,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/data-sources/ec2_service_link_virtual_interface#name DataAwsEc2ServiceLinkVirtualInterface#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/data-sources/ec2_service_link_virtual_interface#name DataAwsEc2ServiceLinkVirtualInterface#name}.
 
 ---
 
@@ -1103,7 +1103,7 @@ values: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/data-sources/ec2_service_link_virtual_interface#values DataAwsEc2ServiceLinkVirtualInterface#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/data-sources/ec2_service_link_virtual_interface#values DataAwsEc2ServiceLinkVirtualInterface#values}.
 
 ---
 

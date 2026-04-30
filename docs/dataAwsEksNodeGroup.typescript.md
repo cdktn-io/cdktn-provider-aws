@@ -4,7 +4,7 @@
 
 ### DataAwsEksNodeGroup <a name="DataAwsEksNodeGroup" id="@cdktn/provider-aws.dataAwsEksNodeGroup.DataAwsEksNodeGroup"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/data-sources/eks_node_group aws_eks_node_group}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/data-sources/eks_node_group aws_eks_node_group}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEksNodeGroup.DataAwsEksNodeGroup.Initializer"></a>
 
@@ -408,7 +408,7 @@ The construct id used in the generated config for the DataAwsEksNodeGroup to imp
 
 The id of the existing DataAwsEksNodeGroup that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/data-sources/eks_node_group#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/data-sources/eks_node_group#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -899,11 +899,11 @@ const dataAwsEksNodeGroupConfig: dataAwsEksNodeGroup.DataAwsEksNodeGroupConfig =
 | <code><a href="#@cdktn/provider-aws.dataAwsEksNodeGroup.DataAwsEksNodeGroupConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsEksNodeGroup.DataAwsEksNodeGroupConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsEksNodeGroup.DataAwsEksNodeGroupConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dataAwsEksNodeGroup.DataAwsEksNodeGroupConfig.property.clusterName">clusterName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/data-sources/eks_node_group#cluster_name DataAwsEksNodeGroup#cluster_name}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsEksNodeGroup.DataAwsEksNodeGroupConfig.property.nodeGroupName">nodeGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/data-sources/eks_node_group#node_group_name DataAwsEksNodeGroup#node_group_name}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsEksNodeGroup.DataAwsEksNodeGroupConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/data-sources/eks_node_group#id DataAwsEksNodeGroup#id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsEksNodeGroup.DataAwsEksNodeGroupConfig.property.clusterName">clusterName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/data-sources/eks_node_group#cluster_name DataAwsEksNodeGroup#cluster_name}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsEksNodeGroup.DataAwsEksNodeGroupConfig.property.nodeGroupName">nodeGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/data-sources/eks_node_group#node_group_name DataAwsEksNodeGroup#node_group_name}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsEksNodeGroup.DataAwsEksNodeGroupConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/data-sources/eks_node_group#id DataAwsEksNodeGroup#id}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsEksNodeGroup.DataAwsEksNodeGroupConfig.property.region">region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.dataAwsEksNodeGroup.DataAwsEksNodeGroupConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/data-sources/eks_node_group#tags DataAwsEksNodeGroup#tags}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsEksNodeGroup.DataAwsEksNodeGroupConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/data-sources/eks_node_group#tags DataAwsEksNodeGroup#tags}. |
 
 ---
 
@@ -985,7 +985,7 @@ public readonly clusterName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/data-sources/eks_node_group#cluster_name DataAwsEksNodeGroup#cluster_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/data-sources/eks_node_group#cluster_name DataAwsEksNodeGroup#cluster_name}.
 
 ---
 
@@ -997,7 +997,7 @@ public readonly nodeGroupName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/data-sources/eks_node_group#node_group_name DataAwsEksNodeGroup#node_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/data-sources/eks_node_group#node_group_name DataAwsEksNodeGroup#node_group_name}.
 
 ---
 
@@ -1009,7 +1009,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/data-sources/eks_node_group#id DataAwsEksNodeGroup#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/data-sources/eks_node_group#id DataAwsEksNodeGroup#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1026,7 +1026,7 @@ public readonly region: string;
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/data-sources/eks_node_group#region DataAwsEksNodeGroup#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/data-sources/eks_node_group#region DataAwsEksNodeGroup#region}
 
 ---
 
@@ -1038,7 +1038,7 @@ public readonly tags: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/data-sources/eks_node_group#tags DataAwsEksNodeGroup#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/data-sources/eks_node_group#tags DataAwsEksNodeGroup#tags}.
 
 ---
 

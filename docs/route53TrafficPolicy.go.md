@@ -4,7 +4,7 @@
 
 ### Route53TrafficPolicy <a name="Route53TrafficPolicy" id="@cdktn/provider-aws.route53TrafficPolicy.Route53TrafficPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/route53_traffic_policy aws_route53_traffic_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/route53_traffic_policy aws_route53_traffic_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.route53TrafficPolicy.Route53TrafficPolicy.Initializer"></a>
 
@@ -503,7 +503,7 @@ The construct id used in the generated config for the Route53TrafficPolicy to im
 
 The id of the existing Route53TrafficPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/route53_traffic_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/route53_traffic_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -852,10 +852,10 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/route53trafficpolicy"
 | <code><a href="#@cdktn/provider-aws.route53TrafficPolicy.Route53TrafficPolicyConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.route53TrafficPolicy.Route53TrafficPolicyConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.route53TrafficPolicy.Route53TrafficPolicyConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.route53TrafficPolicy.Route53TrafficPolicyConfig.property.document">Document</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/route53_traffic_policy#document Route53TrafficPolicy#document}. |
-| <code><a href="#@cdktn/provider-aws.route53TrafficPolicy.Route53TrafficPolicyConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/route53_traffic_policy#name Route53TrafficPolicy#name}. |
-| <code><a href="#@cdktn/provider-aws.route53TrafficPolicy.Route53TrafficPolicyConfig.property.comment">Comment</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/route53_traffic_policy#comment Route53TrafficPolicy#comment}. |
-| <code><a href="#@cdktn/provider-aws.route53TrafficPolicy.Route53TrafficPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/route53_traffic_policy#id Route53TrafficPolicy#id}. |
+| <code><a href="#@cdktn/provider-aws.route53TrafficPolicy.Route53TrafficPolicyConfig.property.document">Document</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/route53_traffic_policy#document Route53TrafficPolicy#document}. |
+| <code><a href="#@cdktn/provider-aws.route53TrafficPolicy.Route53TrafficPolicyConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/route53_traffic_policy#name Route53TrafficPolicy#name}. |
+| <code><a href="#@cdktn/provider-aws.route53TrafficPolicy.Route53TrafficPolicyConfig.property.comment">Comment</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/route53_traffic_policy#comment Route53TrafficPolicy#comment}. |
+| <code><a href="#@cdktn/provider-aws.route53TrafficPolicy.Route53TrafficPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/route53_traffic_policy#id Route53TrafficPolicy#id}. |
 
 ---
 
@@ -937,7 +937,7 @@ Document *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/route53_traffic_policy#document Route53TrafficPolicy#document}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/route53_traffic_policy#document Route53TrafficPolicy#document}.
 
 ---
 
@@ -949,7 +949,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/route53_traffic_policy#name Route53TrafficPolicy#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/route53_traffic_policy#name Route53TrafficPolicy#name}.
 
 ---
 
@@ -961,7 +961,7 @@ Comment *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/route53_traffic_policy#comment Route53TrafficPolicy#comment}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/route53_traffic_policy#comment Route53TrafficPolicy#comment}.
 
 ---
 
@@ -973,7 +973,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.42.0/docs/resources/route53_traffic_policy#id Route53TrafficPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/route53_traffic_policy#id Route53TrafficPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
