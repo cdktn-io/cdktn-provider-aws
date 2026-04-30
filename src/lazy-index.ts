@@ -128,6 +128,7 @@ Object.defineProperty(exports, 'appsyncResolver', { get: function () { return re
 Object.defineProperty(exports, 'appsyncSourceApiAssociation', { get: function () { return require('./appsync-source-api-association'); } });
 Object.defineProperty(exports, 'appsyncType', { get: function () { return require('./appsync-type'); } });
 Object.defineProperty(exports, 'arcregionswitchPlan', { get: function () { return require('./arcregionswitch-plan'); } });
+Object.defineProperty(exports, 'arczonalshiftAutoshiftObserverNotificationStatus', { get: function () { return require('./arczonalshift-autoshift-observer-notification-status'); } });
 Object.defineProperty(exports, 'athenaCapacityReservation', { get: function () { return require('./athena-capacity-reservation'); } });
 Object.defineProperty(exports, 'athenaDataCatalog', { get: function () { return require('./athena-data-catalog'); } });
 Object.defineProperty(exports, 'athenaDatabase', { get: function () { return require('./athena-database'); } });
@@ -535,6 +536,7 @@ Object.defineProperty(exports, 'ec2LocalGatewayRoute', { get: function () { retu
 Object.defineProperty(exports, 'ec2LocalGatewayRouteTableVpcAssociation', { get: function () { return require('./ec2-local-gateway-route-table-vpc-association'); } });
 Object.defineProperty(exports, 'ec2ManagedPrefixList', { get: function () { return require('./ec2-managed-prefix-list'); } });
 Object.defineProperty(exports, 'ec2ManagedPrefixListEntry', { get: function () { return require('./ec2-managed-prefix-list-entry'); } });
+Object.defineProperty(exports, 'ec2NetworkInsightsAccessScope', { get: function () { return require('./ec2-network-insights-access-scope'); } });
 Object.defineProperty(exports, 'ec2NetworkInsightsAnalysis', { get: function () { return require('./ec2-network-insights-analysis'); } });
 Object.defineProperty(exports, 'ec2NetworkInsightsPath', { get: function () { return require('./ec2-network-insights-path'); } });
 Object.defineProperty(exports, 'ec2SecondaryNetwork', { get: function () { return require('./ec2-secondary-network'); } });
@@ -1336,6 +1338,7 @@ Object.defineProperty(exports, 'secretsmanagerTag', { get: function () { return 
 Object.defineProperty(exports, 'securityGroup', { get: function () { return require('./security-group'); } });
 Object.defineProperty(exports, 'securityGroupRule', { get: function () { return require('./security-group-rule'); } });
 Object.defineProperty(exports, 'securityhubAccount', { get: function () { return require('./securityhub-account'); } });
+Object.defineProperty(exports, 'securityhubAccountV2', { get: function () { return require('./securityhub-account-v2'); } });
 Object.defineProperty(exports, 'securityhubActionTarget', { get: function () { return require('./securityhub-action-target'); } });
 Object.defineProperty(exports, 'securityhubAutomationRule', { get: function () { return require('./securityhub-automation-rule'); } });
 Object.defineProperty(exports, 'securityhubConfigurationPolicy', { get: function () { return require('./securityhub-configuration-policy'); } });
@@ -2196,6 +2199,8 @@ Object.defineProperty(exports, 'dataAwsSecretsmanagerSecretVersions', { get: fun
 Object.defineProperty(exports, 'dataAwsSecretsmanagerSecrets', { get: function () { return require('./data-aws-secretsmanager-secrets'); } });
 Object.defineProperty(exports, 'dataAwsSecurityGroup', { get: function () { return require('./data-aws-security-group'); } });
 Object.defineProperty(exports, 'dataAwsSecurityGroups', { get: function () { return require('./data-aws-security-groups'); } });
+Object.defineProperty(exports, 'dataAwsSecurityhubEnabledStandards', { get: function () { return require('./data-aws-securityhub-enabled-standards'); } });
+Object.defineProperty(exports, 'dataAwsSecurityhubSecurityControls', { get: function () { return require('./data-aws-securityhub-security-controls'); } });
 Object.defineProperty(exports, 'dataAwsSecurityhubStandardsControlAssociations', { get: function () { return require('./data-aws-securityhub-standards-control-associations'); } });
 Object.defineProperty(exports, 'dataAwsServerlessapplicationrepositoryApplication', { get: function () { return require('./data-aws-serverlessapplicationrepository-application'); } });
 Object.defineProperty(exports, 'dataAwsService', { get: function () { return require('./data-aws-service'); } });
