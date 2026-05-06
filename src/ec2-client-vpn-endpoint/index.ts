@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/ec2_client_vpn_endpoint
+// https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/ec2_client_vpn_endpoint
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,27 +13,27 @@ import * as cdktn from 'cdktn';
 
 export interface Ec2ClientVpnEndpointConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/ec2_client_vpn_endpoint#client_cidr_block Ec2ClientVpnEndpoint#client_cidr_block}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/ec2_client_vpn_endpoint#client_cidr_block Ec2ClientVpnEndpoint#client_cidr_block}
   */
   readonly clientCidrBlock?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/ec2_client_vpn_endpoint#description Ec2ClientVpnEndpoint#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/ec2_client_vpn_endpoint#description Ec2ClientVpnEndpoint#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/ec2_client_vpn_endpoint#disconnect_on_session_timeout Ec2ClientVpnEndpoint#disconnect_on_session_timeout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/ec2_client_vpn_endpoint#disconnect_on_session_timeout Ec2ClientVpnEndpoint#disconnect_on_session_timeout}
   */
   readonly disconnectOnSessionTimeout?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/ec2_client_vpn_endpoint#dns_servers Ec2ClientVpnEndpoint#dns_servers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/ec2_client_vpn_endpoint#dns_servers Ec2ClientVpnEndpoint#dns_servers}
   */
   readonly dnsServers?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/ec2_client_vpn_endpoint#endpoint_ip_address_type Ec2ClientVpnEndpoint#endpoint_ip_address_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/ec2_client_vpn_endpoint#endpoint_ip_address_type Ec2ClientVpnEndpoint#endpoint_ip_address_type}
   */
   readonly endpointIpAddressType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/ec2_client_vpn_endpoint#id Ec2ClientVpnEndpoint#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/ec2_client_vpn_endpoint#id Ec2ClientVpnEndpoint#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -42,103 +42,109 @@ export interface Ec2ClientVpnEndpointConfig extends cdktn.TerraformMetaArguments
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/ec2_client_vpn_endpoint#region Ec2ClientVpnEndpoint#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/ec2_client_vpn_endpoint#region Ec2ClientVpnEndpoint#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/ec2_client_vpn_endpoint#security_group_ids Ec2ClientVpnEndpoint#security_group_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/ec2_client_vpn_endpoint#security_group_ids Ec2ClientVpnEndpoint#security_group_ids}
   */
   readonly securityGroupIds?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/ec2_client_vpn_endpoint#self_service_portal Ec2ClientVpnEndpoint#self_service_portal}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/ec2_client_vpn_endpoint#self_service_portal Ec2ClientVpnEndpoint#self_service_portal}
   */
   readonly selfServicePortal?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/ec2_client_vpn_endpoint#server_certificate_arn Ec2ClientVpnEndpoint#server_certificate_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/ec2_client_vpn_endpoint#server_certificate_arn Ec2ClientVpnEndpoint#server_certificate_arn}
   */
   readonly serverCertificateArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/ec2_client_vpn_endpoint#session_timeout_hours Ec2ClientVpnEndpoint#session_timeout_hours}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/ec2_client_vpn_endpoint#session_timeout_hours Ec2ClientVpnEndpoint#session_timeout_hours}
   */
   readonly sessionTimeoutHours?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/ec2_client_vpn_endpoint#split_tunnel Ec2ClientVpnEndpoint#split_tunnel}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/ec2_client_vpn_endpoint#split_tunnel Ec2ClientVpnEndpoint#split_tunnel}
   */
   readonly splitTunnel?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/ec2_client_vpn_endpoint#tags Ec2ClientVpnEndpoint#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/ec2_client_vpn_endpoint#tags Ec2ClientVpnEndpoint#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/ec2_client_vpn_endpoint#tags_all Ec2ClientVpnEndpoint#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/ec2_client_vpn_endpoint#tags_all Ec2ClientVpnEndpoint#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/ec2_client_vpn_endpoint#traffic_ip_address_type Ec2ClientVpnEndpoint#traffic_ip_address_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/ec2_client_vpn_endpoint#traffic_ip_address_type Ec2ClientVpnEndpoint#traffic_ip_address_type}
   */
   readonly trafficIpAddressType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/ec2_client_vpn_endpoint#transport_protocol Ec2ClientVpnEndpoint#transport_protocol}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/ec2_client_vpn_endpoint#transport_protocol Ec2ClientVpnEndpoint#transport_protocol}
   */
   readonly transportProtocol?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/ec2_client_vpn_endpoint#vpc_id Ec2ClientVpnEndpoint#vpc_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/ec2_client_vpn_endpoint#vpc_id Ec2ClientVpnEndpoint#vpc_id}
   */
   readonly vpcId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/ec2_client_vpn_endpoint#vpn_port Ec2ClientVpnEndpoint#vpn_port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/ec2_client_vpn_endpoint#vpn_port Ec2ClientVpnEndpoint#vpn_port}
   */
   readonly vpnPort?: number;
   /**
   * authentication_options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/ec2_client_vpn_endpoint#authentication_options Ec2ClientVpnEndpoint#authentication_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/ec2_client_vpn_endpoint#authentication_options Ec2ClientVpnEndpoint#authentication_options}
   */
   readonly authenticationOptions: Ec2ClientVpnEndpointAuthenticationOptions[] | cdktn.IResolvable;
   /**
   * client_connect_options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/ec2_client_vpn_endpoint#client_connect_options Ec2ClientVpnEndpoint#client_connect_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/ec2_client_vpn_endpoint#client_connect_options Ec2ClientVpnEndpoint#client_connect_options}
   */
   readonly clientConnectOptions?: Ec2ClientVpnEndpointClientConnectOptions;
   /**
   * client_login_banner_options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/ec2_client_vpn_endpoint#client_login_banner_options Ec2ClientVpnEndpoint#client_login_banner_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/ec2_client_vpn_endpoint#client_login_banner_options Ec2ClientVpnEndpoint#client_login_banner_options}
   */
   readonly clientLoginBannerOptions?: Ec2ClientVpnEndpointClientLoginBannerOptions;
   /**
   * client_route_enforcement_options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/ec2_client_vpn_endpoint#client_route_enforcement_options Ec2ClientVpnEndpoint#client_route_enforcement_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/ec2_client_vpn_endpoint#client_route_enforcement_options Ec2ClientVpnEndpoint#client_route_enforcement_options}
   */
   readonly clientRouteEnforcementOptions?: Ec2ClientVpnEndpointClientRouteEnforcementOptions;
   /**
   * connection_log_options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/ec2_client_vpn_endpoint#connection_log_options Ec2ClientVpnEndpoint#connection_log_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/ec2_client_vpn_endpoint#connection_log_options Ec2ClientVpnEndpoint#connection_log_options}
   */
   readonly connectionLogOptions: Ec2ClientVpnEndpointConnectionLogOptions;
+  /**
+  * transit_gateway_configuration block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/ec2_client_vpn_endpoint#transit_gateway_configuration Ec2ClientVpnEndpoint#transit_gateway_configuration}
+  */
+  readonly transitGatewayConfiguration?: Ec2ClientVpnEndpointTransitGatewayConfiguration;
 }
 export interface Ec2ClientVpnEndpointAuthenticationOptions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/ec2_client_vpn_endpoint#active_directory_id Ec2ClientVpnEndpoint#active_directory_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/ec2_client_vpn_endpoint#active_directory_id Ec2ClientVpnEndpoint#active_directory_id}
   */
   readonly activeDirectoryId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/ec2_client_vpn_endpoint#root_certificate_chain_arn Ec2ClientVpnEndpoint#root_certificate_chain_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/ec2_client_vpn_endpoint#root_certificate_chain_arn Ec2ClientVpnEndpoint#root_certificate_chain_arn}
   */
   readonly rootCertificateChainArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/ec2_client_vpn_endpoint#saml_provider_arn Ec2ClientVpnEndpoint#saml_provider_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/ec2_client_vpn_endpoint#saml_provider_arn Ec2ClientVpnEndpoint#saml_provider_arn}
   */
   readonly samlProviderArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/ec2_client_vpn_endpoint#self_service_saml_provider_arn Ec2ClientVpnEndpoint#self_service_saml_provider_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/ec2_client_vpn_endpoint#self_service_saml_provider_arn Ec2ClientVpnEndpoint#self_service_saml_provider_arn}
   */
   readonly selfServiceSamlProviderArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/ec2_client_vpn_endpoint#type Ec2ClientVpnEndpoint#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/ec2_client_vpn_endpoint#type Ec2ClientVpnEndpoint#type}
   */
   readonly type: string;
 }
@@ -367,11 +373,11 @@ export class Ec2ClientVpnEndpointAuthenticationOptionsList extends cdktn.Complex
 }
 export interface Ec2ClientVpnEndpointClientConnectOptions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/ec2_client_vpn_endpoint#enabled Ec2ClientVpnEndpoint#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/ec2_client_vpn_endpoint#enabled Ec2ClientVpnEndpoint#enabled}
   */
   readonly enabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/ec2_client_vpn_endpoint#lambda_function_arn Ec2ClientVpnEndpoint#lambda_function_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/ec2_client_vpn_endpoint#lambda_function_arn Ec2ClientVpnEndpoint#lambda_function_arn}
   */
   readonly lambdaFunctionArn?: string;
 }
@@ -484,11 +490,11 @@ export class Ec2ClientVpnEndpointClientConnectOptionsOutputReference extends cdk
 }
 export interface Ec2ClientVpnEndpointClientLoginBannerOptions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/ec2_client_vpn_endpoint#banner_text Ec2ClientVpnEndpoint#banner_text}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/ec2_client_vpn_endpoint#banner_text Ec2ClientVpnEndpoint#banner_text}
   */
   readonly bannerText?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/ec2_client_vpn_endpoint#enabled Ec2ClientVpnEndpoint#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/ec2_client_vpn_endpoint#enabled Ec2ClientVpnEndpoint#enabled}
   */
   readonly enabled?: boolean | cdktn.IResolvable;
 }
@@ -601,7 +607,7 @@ export class Ec2ClientVpnEndpointClientLoginBannerOptionsOutputReference extends
 }
 export interface Ec2ClientVpnEndpointClientRouteEnforcementOptions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/ec2_client_vpn_endpoint#enforced Ec2ClientVpnEndpoint#enforced}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/ec2_client_vpn_endpoint#enforced Ec2ClientVpnEndpoint#enforced}
   */
   readonly enforced?: boolean | cdktn.IResolvable;
 }
@@ -685,15 +691,15 @@ export class Ec2ClientVpnEndpointClientRouteEnforcementOptionsOutputReference ex
 }
 export interface Ec2ClientVpnEndpointConnectionLogOptions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/ec2_client_vpn_endpoint#cloudwatch_log_group Ec2ClientVpnEndpoint#cloudwatch_log_group}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/ec2_client_vpn_endpoint#cloudwatch_log_group Ec2ClientVpnEndpoint#cloudwatch_log_group}
   */
   readonly cloudwatchLogGroup?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/ec2_client_vpn_endpoint#cloudwatch_log_stream Ec2ClientVpnEndpoint#cloudwatch_log_stream}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/ec2_client_vpn_endpoint#cloudwatch_log_stream Ec2ClientVpnEndpoint#cloudwatch_log_stream}
   */
   readonly cloudwatchLogStream?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/ec2_client_vpn_endpoint#enabled Ec2ClientVpnEndpoint#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/ec2_client_vpn_endpoint#enabled Ec2ClientVpnEndpoint#enabled}
   */
   readonly enabled: boolean | cdktn.IResolvable;
 }
@@ -830,9 +836,164 @@ export class Ec2ClientVpnEndpointConnectionLogOptionsOutputReference extends cdk
     return this._enabled;
   }
 }
+export interface Ec2ClientVpnEndpointTransitGatewayConfiguration {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/ec2_client_vpn_endpoint#availability_zone_ids Ec2ClientVpnEndpoint#availability_zone_ids}
+  */
+  readonly availabilityZoneIds?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/ec2_client_vpn_endpoint#availability_zones Ec2ClientVpnEndpoint#availability_zones}
+  */
+  readonly availabilityZones?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/ec2_client_vpn_endpoint#transit_gateway_id Ec2ClientVpnEndpoint#transit_gateway_id}
+  */
+  readonly transitGatewayId?: string;
+}
+
+export function ec2ClientVpnEndpointTransitGatewayConfigurationToTerraform(struct?: Ec2ClientVpnEndpointTransitGatewayConfigurationOutputReference | Ec2ClientVpnEndpointTransitGatewayConfiguration): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    availability_zone_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.availabilityZoneIds),
+    availability_zones: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.availabilityZones),
+    transit_gateway_id: cdktn.stringToTerraform(struct!.transitGatewayId),
+  }
+}
+
+
+export function ec2ClientVpnEndpointTransitGatewayConfigurationToHclTerraform(struct?: Ec2ClientVpnEndpointTransitGatewayConfigurationOutputReference | Ec2ClientVpnEndpointTransitGatewayConfiguration): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    availability_zone_ids: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.availabilityZoneIds),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    availability_zones: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.availabilityZones),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    transit_gateway_id: {
+      value: cdktn.stringToHclTerraform(struct!.transitGatewayId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class Ec2ClientVpnEndpointTransitGatewayConfigurationOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): Ec2ClientVpnEndpointTransitGatewayConfiguration | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._availabilityZoneIds !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.availabilityZoneIds = this._availabilityZoneIds;
+    }
+    if (this._availabilityZones !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.availabilityZones = this._availabilityZones;
+    }
+    if (this._transitGatewayId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.transitGatewayId = this._transitGatewayId;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: Ec2ClientVpnEndpointTransitGatewayConfiguration | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._availabilityZoneIds = undefined;
+      this._availabilityZones = undefined;
+      this._transitGatewayId = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._availabilityZoneIds = value.availabilityZoneIds;
+      this._availabilityZones = value.availabilityZones;
+      this._transitGatewayId = value.transitGatewayId;
+    }
+  }
+
+  // availability_zone_ids - computed: true, optional: true, required: false
+  private _availabilityZoneIds?: string[]; 
+  public get availabilityZoneIds() {
+    return cdktn.Fn.tolist(this.getListAttribute('availability_zone_ids'));
+  }
+  public set availabilityZoneIds(value: string[]) {
+    this._availabilityZoneIds = value;
+  }
+  public resetAvailabilityZoneIds() {
+    this._availabilityZoneIds = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get availabilityZoneIdsInput() {
+    return this._availabilityZoneIds;
+  }
+
+  // availability_zones - computed: false, optional: true, required: false
+  private _availabilityZones?: string[]; 
+  public get availabilityZones() {
+    return cdktn.Fn.tolist(this.getListAttribute('availability_zones'));
+  }
+  public set availabilityZones(value: string[]) {
+    this._availabilityZones = value;
+  }
+  public resetAvailabilityZones() {
+    this._availabilityZones = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get availabilityZonesInput() {
+    return this._availabilityZones;
+  }
+
+  // transit_gateway_attachment_id - computed: true, optional: false, required: false
+  public get transitGatewayAttachmentId() {
+    return this.getStringAttribute('transit_gateway_attachment_id');
+  }
+
+  // transit_gateway_id - computed: false, optional: true, required: false
+  private _transitGatewayId?: string; 
+  public get transitGatewayId() {
+    return this.getStringAttribute('transit_gateway_id');
+  }
+  public set transitGatewayId(value: string) {
+    this._transitGatewayId = value;
+  }
+  public resetTransitGatewayId() {
+    this._transitGatewayId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get transitGatewayIdInput() {
+    return this._transitGatewayId;
+  }
+}
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/ec2_client_vpn_endpoint aws_ec2_client_vpn_endpoint}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/ec2_client_vpn_endpoint aws_ec2_client_vpn_endpoint}
 */
 export class Ec2ClientVpnEndpoint extends cdktn.TerraformResource {
 
@@ -848,7 +1009,7 @@ export class Ec2ClientVpnEndpoint extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a Ec2ClientVpnEndpoint resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Ec2ClientVpnEndpoint to import
-  * @param importFromId The id of the existing Ec2ClientVpnEndpoint that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/ec2_client_vpn_endpoint#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Ec2ClientVpnEndpoint that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/ec2_client_vpn_endpoint#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Ec2ClientVpnEndpoint to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -860,7 +1021,7 @@ export class Ec2ClientVpnEndpoint extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/ec2_client_vpn_endpoint aws_ec2_client_vpn_endpoint} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/ec2_client_vpn_endpoint aws_ec2_client_vpn_endpoint} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -871,7 +1032,7 @@ export class Ec2ClientVpnEndpoint extends cdktn.TerraformResource {
       terraformResourceType: 'aws_ec2_client_vpn_endpoint',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.43.0',
+        providerVersion: '6.44.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
@@ -905,6 +1066,7 @@ export class Ec2ClientVpnEndpoint extends cdktn.TerraformResource {
     this._clientLoginBannerOptions.internalValue = config.clientLoginBannerOptions;
     this._clientRouteEnforcementOptions.internalValue = config.clientRouteEnforcementOptions;
     this._connectionLogOptions.internalValue = config.connectionLogOptions;
+    this._transitGatewayConfiguration.internalValue = config.transitGatewayConfiguration;
   }
 
   // ==========
@@ -1285,6 +1447,22 @@ export class Ec2ClientVpnEndpoint extends cdktn.TerraformResource {
     return this._connectionLogOptions.internalValue;
   }
 
+  // transit_gateway_configuration - computed: false, optional: true, required: false
+  private _transitGatewayConfiguration = new Ec2ClientVpnEndpointTransitGatewayConfigurationOutputReference(this, "transit_gateway_configuration");
+  public get transitGatewayConfiguration() {
+    return this._transitGatewayConfiguration;
+  }
+  public putTransitGatewayConfiguration(value: Ec2ClientVpnEndpointTransitGatewayConfiguration) {
+    this._transitGatewayConfiguration.internalValue = value;
+  }
+  public resetTransitGatewayConfiguration() {
+    this._transitGatewayConfiguration.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get transitGatewayConfigurationInput() {
+    return this._transitGatewayConfiguration.internalValue;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -1314,6 +1492,7 @@ export class Ec2ClientVpnEndpoint extends cdktn.TerraformResource {
       client_login_banner_options: ec2ClientVpnEndpointClientLoginBannerOptionsToTerraform(this._clientLoginBannerOptions.internalValue),
       client_route_enforcement_options: ec2ClientVpnEndpointClientRouteEnforcementOptionsToTerraform(this._clientRouteEnforcementOptions.internalValue),
       connection_log_options: ec2ClientVpnEndpointConnectionLogOptionsToTerraform(this._connectionLogOptions.internalValue),
+      transit_gateway_configuration: ec2ClientVpnEndpointTransitGatewayConfigurationToTerraform(this._transitGatewayConfiguration.internalValue),
     };
   }
 
@@ -1456,6 +1635,12 @@ export class Ec2ClientVpnEndpoint extends cdktn.TerraformResource {
         isBlock: true,
         type: "list",
         storageClassType: "Ec2ClientVpnEndpointConnectionLogOptionsList",
+      },
+      transit_gateway_configuration: {
+        value: ec2ClientVpnEndpointTransitGatewayConfigurationToHclTerraform(this._transitGatewayConfiguration.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "Ec2ClientVpnEndpointTransitGatewayConfigurationList",
       },
     };
 

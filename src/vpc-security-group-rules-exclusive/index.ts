@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/vpc_security_group_rules_exclusive
+// https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/vpc_security_group_rules_exclusive
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,27 +13,27 @@ import * as cdktn from 'cdktn';
 
 export interface VpcSecurityGroupRulesExclusiveConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/vpc_security_group_rules_exclusive#egress_rule_ids VpcSecurityGroupRulesExclusive#egress_rule_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/vpc_security_group_rules_exclusive#egress_rule_ids VpcSecurityGroupRulesExclusive#egress_rule_ids}
   */
   readonly egressRuleIds: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/vpc_security_group_rules_exclusive#ingress_rule_ids VpcSecurityGroupRulesExclusive#ingress_rule_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/vpc_security_group_rules_exclusive#ingress_rule_ids VpcSecurityGroupRulesExclusive#ingress_rule_ids}
   */
   readonly ingressRuleIds: string[];
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/vpc_security_group_rules_exclusive#region VpcSecurityGroupRulesExclusive#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/vpc_security_group_rules_exclusive#region VpcSecurityGroupRulesExclusive#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/vpc_security_group_rules_exclusive#security_group_id VpcSecurityGroupRulesExclusive#security_group_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/vpc_security_group_rules_exclusive#security_group_id VpcSecurityGroupRulesExclusive#security_group_id}
   */
   readonly securityGroupId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/vpc_security_group_rules_exclusive aws_vpc_security_group_rules_exclusive}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/vpc_security_group_rules_exclusive aws_vpc_security_group_rules_exclusive}
 */
 export class VpcSecurityGroupRulesExclusive extends cdktn.TerraformResource {
 
@@ -49,7 +49,7 @@ export class VpcSecurityGroupRulesExclusive extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a VpcSecurityGroupRulesExclusive resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the VpcSecurityGroupRulesExclusive to import
-  * @param importFromId The id of the existing VpcSecurityGroupRulesExclusive that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/vpc_security_group_rules_exclusive#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing VpcSecurityGroupRulesExclusive that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/vpc_security_group_rules_exclusive#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the VpcSecurityGroupRulesExclusive to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -61,7 +61,7 @@ export class VpcSecurityGroupRulesExclusive extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/vpc_security_group_rules_exclusive aws_vpc_security_group_rules_exclusive} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/vpc_security_group_rules_exclusive aws_vpc_security_group_rules_exclusive} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -72,7 +72,7 @@ export class VpcSecurityGroupRulesExclusive extends cdktn.TerraformResource {
       terraformResourceType: 'aws_vpc_security_group_rules_exclusive',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.43.0',
+        providerVersion: '6.44.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

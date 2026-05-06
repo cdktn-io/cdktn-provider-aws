@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/fsx_windows_file_system
+// https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/fsx_windows_file_system
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,130 +13,130 @@ import * as cdktn from 'cdktn';
 
 export interface FsxWindowsFileSystemConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/fsx_windows_file_system#active_directory_id FsxWindowsFileSystem#active_directory_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/fsx_windows_file_system#active_directory_id FsxWindowsFileSystem#active_directory_id}
   */
   readonly activeDirectoryId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/fsx_windows_file_system#aliases FsxWindowsFileSystem#aliases}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/fsx_windows_file_system#aliases FsxWindowsFileSystem#aliases}
   */
   readonly aliases?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/fsx_windows_file_system#automatic_backup_retention_days FsxWindowsFileSystem#automatic_backup_retention_days}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/fsx_windows_file_system#automatic_backup_retention_days FsxWindowsFileSystem#automatic_backup_retention_days}
   */
   readonly automaticBackupRetentionDays?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/fsx_windows_file_system#backup_id FsxWindowsFileSystem#backup_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/fsx_windows_file_system#backup_id FsxWindowsFileSystem#backup_id}
   */
   readonly backupId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/fsx_windows_file_system#copy_tags_to_backups FsxWindowsFileSystem#copy_tags_to_backups}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/fsx_windows_file_system#copy_tags_to_backups FsxWindowsFileSystem#copy_tags_to_backups}
   */
   readonly copyTagsToBackups?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/fsx_windows_file_system#daily_automatic_backup_start_time FsxWindowsFileSystem#daily_automatic_backup_start_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/fsx_windows_file_system#daily_automatic_backup_start_time FsxWindowsFileSystem#daily_automatic_backup_start_time}
   */
   readonly dailyAutomaticBackupStartTime?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/fsx_windows_file_system#deployment_type FsxWindowsFileSystem#deployment_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/fsx_windows_file_system#deployment_type FsxWindowsFileSystem#deployment_type}
   */
   readonly deploymentType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/fsx_windows_file_system#final_backup_tags FsxWindowsFileSystem#final_backup_tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/fsx_windows_file_system#final_backup_tags FsxWindowsFileSystem#final_backup_tags}
   */
   readonly finalBackupTags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/fsx_windows_file_system#id FsxWindowsFileSystem#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/fsx_windows_file_system#id FsxWindowsFileSystem#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/fsx_windows_file_system#kms_key_id FsxWindowsFileSystem#kms_key_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/fsx_windows_file_system#kms_key_id FsxWindowsFileSystem#kms_key_id}
   */
   readonly kmsKeyId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/fsx_windows_file_system#preferred_subnet_id FsxWindowsFileSystem#preferred_subnet_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/fsx_windows_file_system#preferred_subnet_id FsxWindowsFileSystem#preferred_subnet_id}
   */
   readonly preferredSubnetId?: string;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/fsx_windows_file_system#region FsxWindowsFileSystem#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/fsx_windows_file_system#region FsxWindowsFileSystem#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/fsx_windows_file_system#security_group_ids FsxWindowsFileSystem#security_group_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/fsx_windows_file_system#security_group_ids FsxWindowsFileSystem#security_group_ids}
   */
   readonly securityGroupIds?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/fsx_windows_file_system#skip_final_backup FsxWindowsFileSystem#skip_final_backup}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/fsx_windows_file_system#skip_final_backup FsxWindowsFileSystem#skip_final_backup}
   */
   readonly skipFinalBackup?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/fsx_windows_file_system#storage_capacity FsxWindowsFileSystem#storage_capacity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/fsx_windows_file_system#storage_capacity FsxWindowsFileSystem#storage_capacity}
   */
   readonly storageCapacity?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/fsx_windows_file_system#storage_type FsxWindowsFileSystem#storage_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/fsx_windows_file_system#storage_type FsxWindowsFileSystem#storage_type}
   */
   readonly storageType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/fsx_windows_file_system#subnet_ids FsxWindowsFileSystem#subnet_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/fsx_windows_file_system#subnet_ids FsxWindowsFileSystem#subnet_ids}
   */
   readonly subnetIds: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/fsx_windows_file_system#tags FsxWindowsFileSystem#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/fsx_windows_file_system#tags FsxWindowsFileSystem#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/fsx_windows_file_system#tags_all FsxWindowsFileSystem#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/fsx_windows_file_system#tags_all FsxWindowsFileSystem#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/fsx_windows_file_system#throughput_capacity FsxWindowsFileSystem#throughput_capacity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/fsx_windows_file_system#throughput_capacity FsxWindowsFileSystem#throughput_capacity}
   */
   readonly throughputCapacity: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/fsx_windows_file_system#weekly_maintenance_start_time FsxWindowsFileSystem#weekly_maintenance_start_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/fsx_windows_file_system#weekly_maintenance_start_time FsxWindowsFileSystem#weekly_maintenance_start_time}
   */
   readonly weeklyMaintenanceStartTime?: string;
   /**
   * audit_log_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/fsx_windows_file_system#audit_log_configuration FsxWindowsFileSystem#audit_log_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/fsx_windows_file_system#audit_log_configuration FsxWindowsFileSystem#audit_log_configuration}
   */
   readonly auditLogConfiguration?: FsxWindowsFileSystemAuditLogConfiguration;
   /**
   * disk_iops_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/fsx_windows_file_system#disk_iops_configuration FsxWindowsFileSystem#disk_iops_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/fsx_windows_file_system#disk_iops_configuration FsxWindowsFileSystem#disk_iops_configuration}
   */
   readonly diskIopsConfiguration?: FsxWindowsFileSystemDiskIopsConfiguration;
   /**
   * self_managed_active_directory block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/fsx_windows_file_system#self_managed_active_directory FsxWindowsFileSystem#self_managed_active_directory}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/fsx_windows_file_system#self_managed_active_directory FsxWindowsFileSystem#self_managed_active_directory}
   */
   readonly selfManagedActiveDirectory?: FsxWindowsFileSystemSelfManagedActiveDirectory;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/fsx_windows_file_system#timeouts FsxWindowsFileSystem#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/fsx_windows_file_system#timeouts FsxWindowsFileSystem#timeouts}
   */
   readonly timeouts?: FsxWindowsFileSystemTimeouts;
 }
 export interface FsxWindowsFileSystemAuditLogConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/fsx_windows_file_system#audit_log_destination FsxWindowsFileSystem#audit_log_destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/fsx_windows_file_system#audit_log_destination FsxWindowsFileSystem#audit_log_destination}
   */
   readonly auditLogDestination?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/fsx_windows_file_system#file_access_audit_log_level FsxWindowsFileSystem#file_access_audit_log_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/fsx_windows_file_system#file_access_audit_log_level FsxWindowsFileSystem#file_access_audit_log_level}
   */
   readonly fileAccessAuditLogLevel?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/fsx_windows_file_system#file_share_access_audit_log_level FsxWindowsFileSystem#file_share_access_audit_log_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/fsx_windows_file_system#file_share_access_audit_log_level FsxWindowsFileSystem#file_share_access_audit_log_level}
   */
   readonly fileShareAccessAuditLogLevel?: string;
 }
@@ -278,11 +278,11 @@ export class FsxWindowsFileSystemAuditLogConfigurationOutputReference extends cd
 }
 export interface FsxWindowsFileSystemDiskIopsConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/fsx_windows_file_system#iops FsxWindowsFileSystem#iops}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/fsx_windows_file_system#iops FsxWindowsFileSystem#iops}
   */
   readonly iops?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/fsx_windows_file_system#mode FsxWindowsFileSystem#mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/fsx_windows_file_system#mode FsxWindowsFileSystem#mode}
   */
   readonly mode?: string;
 }
@@ -395,31 +395,39 @@ export class FsxWindowsFileSystemDiskIopsConfigurationOutputReference extends cd
 }
 export interface FsxWindowsFileSystemSelfManagedActiveDirectory {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/fsx_windows_file_system#dns_ips FsxWindowsFileSystem#dns_ips}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/fsx_windows_file_system#dns_ips FsxWindowsFileSystem#dns_ips}
   */
   readonly dnsIps: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/fsx_windows_file_system#domain_join_service_account_secret FsxWindowsFileSystem#domain_join_service_account_secret}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/fsx_windows_file_system#domain_join_service_account_secret FsxWindowsFileSystem#domain_join_service_account_secret}
   */
   readonly domainJoinServiceAccountSecret?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/fsx_windows_file_system#domain_name FsxWindowsFileSystem#domain_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/fsx_windows_file_system#domain_name FsxWindowsFileSystem#domain_name}
   */
   readonly domainName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/fsx_windows_file_system#file_system_administrators_group FsxWindowsFileSystem#file_system_administrators_group}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/fsx_windows_file_system#file_system_administrators_group FsxWindowsFileSystem#file_system_administrators_group}
   */
   readonly fileSystemAdministratorsGroup?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/fsx_windows_file_system#organizational_unit_distinguished_name FsxWindowsFileSystem#organizational_unit_distinguished_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/fsx_windows_file_system#organizational_unit_distinguished_name FsxWindowsFileSystem#organizational_unit_distinguished_name}
   */
   readonly organizationalUnitDistinguishedName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/fsx_windows_file_system#password FsxWindowsFileSystem#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/fsx_windows_file_system#password FsxWindowsFileSystem#password}
   */
   readonly password?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/fsx_windows_file_system#username FsxWindowsFileSystem#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/fsx_windows_file_system#password_wo FsxWindowsFileSystem#password_wo}
+  */
+  readonly passwordWo?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/fsx_windows_file_system#password_wo_version FsxWindowsFileSystem#password_wo_version}
+  */
+  readonly passwordWoVersion?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/fsx_windows_file_system#username FsxWindowsFileSystem#username}
   */
   readonly username?: string;
 }
@@ -436,6 +444,8 @@ export function fsxWindowsFileSystemSelfManagedActiveDirectoryToTerraform(struct
     file_system_administrators_group: cdktn.stringToTerraform(struct!.fileSystemAdministratorsGroup),
     organizational_unit_distinguished_name: cdktn.stringToTerraform(struct!.organizationalUnitDistinguishedName),
     password: cdktn.stringToTerraform(struct!.password),
+    password_wo: cdktn.stringToTerraform(struct!.passwordWo),
+    password_wo_version: cdktn.numberToTerraform(struct!.passwordWoVersion),
     username: cdktn.stringToTerraform(struct!.username),
   }
 }
@@ -482,6 +492,18 @@ export function fsxWindowsFileSystemSelfManagedActiveDirectoryToHclTerraform(str
       isBlock: false,
       type: "simple",
       storageClassType: "string",
+    },
+    password_wo: {
+      value: cdktn.stringToHclTerraform(struct!.passwordWo),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    password_wo_version: {
+      value: cdktn.numberToHclTerraform(struct!.passwordWoVersion),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
     },
     username: {
       value: cdktn.stringToHclTerraform(struct!.username),
@@ -533,6 +555,14 @@ export class FsxWindowsFileSystemSelfManagedActiveDirectoryOutputReference exten
       hasAnyValues = true;
       internalValueResult.password = this._password;
     }
+    if (this._passwordWo !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.passwordWo = this._passwordWo;
+    }
+    if (this._passwordWoVersion !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.passwordWoVersion = this._passwordWoVersion;
+    }
     if (this._username !== undefined) {
       hasAnyValues = true;
       internalValueResult.username = this._username;
@@ -549,6 +579,8 @@ export class FsxWindowsFileSystemSelfManagedActiveDirectoryOutputReference exten
       this._fileSystemAdministratorsGroup = undefined;
       this._organizationalUnitDistinguishedName = undefined;
       this._password = undefined;
+      this._passwordWo = undefined;
+      this._passwordWoVersion = undefined;
       this._username = undefined;
     }
     else {
@@ -559,6 +591,8 @@ export class FsxWindowsFileSystemSelfManagedActiveDirectoryOutputReference exten
       this._fileSystemAdministratorsGroup = value.fileSystemAdministratorsGroup;
       this._organizationalUnitDistinguishedName = value.organizationalUnitDistinguishedName;
       this._password = value.password;
+      this._passwordWo = value.passwordWo;
+      this._passwordWoVersion = value.passwordWoVersion;
       this._username = value.username;
     }
   }
@@ -653,6 +687,38 @@ export class FsxWindowsFileSystemSelfManagedActiveDirectoryOutputReference exten
     return this._password;
   }
 
+  // password_wo - computed: false, optional: true, required: false
+  private _passwordWo?: string; 
+  public get passwordWo() {
+    return this.getStringAttribute('password_wo');
+  }
+  public set passwordWo(value: string) {
+    this._passwordWo = value;
+  }
+  public resetPasswordWo() {
+    this._passwordWo = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get passwordWoInput() {
+    return this._passwordWo;
+  }
+
+  // password_wo_version - computed: false, optional: true, required: false
+  private _passwordWoVersion?: number; 
+  public get passwordWoVersion() {
+    return this.getNumberAttribute('password_wo_version');
+  }
+  public set passwordWoVersion(value: number) {
+    this._passwordWoVersion = value;
+  }
+  public resetPasswordWoVersion() {
+    this._passwordWoVersion = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get passwordWoVersionInput() {
+    return this._passwordWoVersion;
+  }
+
   // username - computed: true, optional: true, required: false
   private _username?: string; 
   public get username() {
@@ -671,15 +737,15 @@ export class FsxWindowsFileSystemSelfManagedActiveDirectoryOutputReference exten
 }
 export interface FsxWindowsFileSystemTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/fsx_windows_file_system#create FsxWindowsFileSystem#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/fsx_windows_file_system#create FsxWindowsFileSystem#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/fsx_windows_file_system#delete FsxWindowsFileSystem#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/fsx_windows_file_system#delete FsxWindowsFileSystem#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/fsx_windows_file_system#update FsxWindowsFileSystem#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/fsx_windows_file_system#update FsxWindowsFileSystem#update}
   */
   readonly update?: string;
 }
@@ -831,7 +897,7 @@ export class FsxWindowsFileSystemTimeoutsOutputReference extends cdktn.ComplexOb
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/fsx_windows_file_system aws_fsx_windows_file_system}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/fsx_windows_file_system aws_fsx_windows_file_system}
 */
 export class FsxWindowsFileSystem extends cdktn.TerraformResource {
 
@@ -847,7 +913,7 @@ export class FsxWindowsFileSystem extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a FsxWindowsFileSystem resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the FsxWindowsFileSystem to import
-  * @param importFromId The id of the existing FsxWindowsFileSystem that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/fsx_windows_file_system#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing FsxWindowsFileSystem that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/fsx_windows_file_system#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the FsxWindowsFileSystem to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -859,7 +925,7 @@ export class FsxWindowsFileSystem extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/fsx_windows_file_system aws_fsx_windows_file_system} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/fsx_windows_file_system aws_fsx_windows_file_system} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -870,7 +936,7 @@ export class FsxWindowsFileSystem extends cdktn.TerraformResource {
       terraformResourceType: 'aws_fsx_windows_file_system',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.43.0',
+        providerVersion: '6.44.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
