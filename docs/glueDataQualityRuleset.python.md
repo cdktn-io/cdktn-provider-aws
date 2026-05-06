@@ -4,7 +4,7 @@
 
 ### GlueDataQualityRuleset <a name="GlueDataQualityRuleset" id="@cdktn/provider-aws.glueDataQualityRuleset.GlueDataQualityRuleset"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/glue_data_quality_ruleset aws_glue_data_quality_ruleset}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/glue_data_quality_ruleset aws_glue_data_quality_ruleset}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.glueDataQualityRuleset.GlueDataQualityRuleset.Initializer"></a>
 
@@ -43,13 +43,13 @@ glueDataQualityRuleset.GlueDataQualityRuleset(
 | <code><a href="#@cdktn/provider-aws.glueDataQualityRuleset.GlueDataQualityRuleset.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.glueDataQualityRuleset.GlueDataQualityRuleset.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.glueDataQualityRuleset.GlueDataQualityRuleset.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.glueDataQualityRuleset.GlueDataQualityRuleset.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/glue_data_quality_ruleset#name GlueDataQualityRuleset#name}. |
-| <code><a href="#@cdktn/provider-aws.glueDataQualityRuleset.GlueDataQualityRuleset.Initializer.parameter.ruleset">ruleset</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/glue_data_quality_ruleset#ruleset GlueDataQualityRuleset#ruleset}. |
-| <code><a href="#@cdktn/provider-aws.glueDataQualityRuleset.GlueDataQualityRuleset.Initializer.parameter.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/glue_data_quality_ruleset#description GlueDataQualityRuleset#description}. |
-| <code><a href="#@cdktn/provider-aws.glueDataQualityRuleset.GlueDataQualityRuleset.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/glue_data_quality_ruleset#id GlueDataQualityRuleset#id}. |
+| <code><a href="#@cdktn/provider-aws.glueDataQualityRuleset.GlueDataQualityRuleset.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/glue_data_quality_ruleset#name GlueDataQualityRuleset#name}. |
+| <code><a href="#@cdktn/provider-aws.glueDataQualityRuleset.GlueDataQualityRuleset.Initializer.parameter.ruleset">ruleset</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/glue_data_quality_ruleset#ruleset GlueDataQualityRuleset#ruleset}. |
+| <code><a href="#@cdktn/provider-aws.glueDataQualityRuleset.GlueDataQualityRuleset.Initializer.parameter.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/glue_data_quality_ruleset#description GlueDataQualityRuleset#description}. |
+| <code><a href="#@cdktn/provider-aws.glueDataQualityRuleset.GlueDataQualityRuleset.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/glue_data_quality_ruleset#id GlueDataQualityRuleset#id}. |
 | <code><a href="#@cdktn/provider-aws.glueDataQualityRuleset.GlueDataQualityRuleset.Initializer.parameter.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.glueDataQualityRuleset.GlueDataQualityRuleset.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/glue_data_quality_ruleset#tags GlueDataQualityRuleset#tags}. |
-| <code><a href="#@cdktn/provider-aws.glueDataQualityRuleset.GlueDataQualityRuleset.Initializer.parameter.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/glue_data_quality_ruleset#tags_all GlueDataQualityRuleset#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.glueDataQualityRuleset.GlueDataQualityRuleset.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/glue_data_quality_ruleset#tags GlueDataQualityRuleset#tags}. |
+| <code><a href="#@cdktn/provider-aws.glueDataQualityRuleset.GlueDataQualityRuleset.Initializer.parameter.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/glue_data_quality_ruleset#tags_all GlueDataQualityRuleset#tags_all}. |
 | <code><a href="#@cdktn/provider-aws.glueDataQualityRuleset.GlueDataQualityRuleset.Initializer.parameter.targetTable">target_table</a></code> | <code><a href="#@cdktn/provider-aws.glueDataQualityRuleset.GlueDataQualityRulesetTargetTable">GlueDataQualityRulesetTargetTable</a></code> | target_table block. |
 
 ---
@@ -118,7 +118,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/glue_data_quality_ruleset#name GlueDataQualityRuleset#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/glue_data_quality_ruleset#name GlueDataQualityRuleset#name}.
 
 ---
 
@@ -126,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/glue_data_quality_ruleset#ruleset GlueDataQualityRuleset#ruleset}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/glue_data_quality_ruleset#ruleset GlueDataQualityRuleset#ruleset}.
 
 ---
 
@@ -134,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/glue_data_quality_ruleset#description GlueDataQualityRuleset#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/glue_data_quality_ruleset#description GlueDataQualityRuleset#description}.
 
 ---
 
@@ -142,7 +142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/glue_data_quality_ruleset#id GlueDataQualityRuleset#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/glue_data_quality_ruleset#id GlueDataQualityRuleset#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -155,7 +155,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/glue_data_quality_ruleset#region GlueDataQualityRuleset#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/glue_data_quality_ruleset#region GlueDataQualityRuleset#region}
 
 ---
 
@@ -163,7 +163,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/glue_data_quality_ruleset#tags GlueDataQualityRuleset#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/glue_data_quality_ruleset#tags GlueDataQualityRuleset#tags}.
 
 ---
 
@@ -171,7 +171,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/glue_data_quality_ruleset#tags_all GlueDataQualityRuleset#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/glue_data_quality_ruleset#tags_all GlueDataQualityRuleset#tags_all}.
 
 ---
 
@@ -181,7 +181,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 target_table block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/glue_data_quality_ruleset#target_table GlueDataQualityRuleset#target_table}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/glue_data_quality_ruleset#target_table GlueDataQualityRuleset#target_table}
 
 ---
 
@@ -585,7 +585,7 @@ def put_target_table(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/glue_data_quality_ruleset#database_name GlueDataQualityRuleset#database_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/glue_data_quality_ruleset#database_name GlueDataQualityRuleset#database_name}.
 
 ---
 
@@ -593,7 +593,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/glue_data_quality_ruleset#table_name GlueDataQualityRuleset#table_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/glue_data_quality_ruleset#table_name GlueDataQualityRuleset#table_name}.
 
 ---
 
@@ -601,7 +601,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/glue_data_quality_ruleset#catalog_id GlueDataQualityRuleset#catalog_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/glue_data_quality_ruleset#catalog_id GlueDataQualityRuleset#catalog_id}.
 
 ---
 
@@ -755,7 +755,7 @@ The construct id used in the generated config for the GlueDataQualityRuleset to 
 
 The id of the existing GlueDataQualityRuleset that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/glue_data_quality_ruleset#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/glue_data_quality_ruleset#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1207,13 +1207,13 @@ glueDataQualityRuleset.GlueDataQualityRulesetConfig(
 | <code><a href="#@cdktn/provider-aws.glueDataQualityRuleset.GlueDataQualityRulesetConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.glueDataQualityRuleset.GlueDataQualityRulesetConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.glueDataQualityRuleset.GlueDataQualityRulesetConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.glueDataQualityRuleset.GlueDataQualityRulesetConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/glue_data_quality_ruleset#name GlueDataQualityRuleset#name}. |
-| <code><a href="#@cdktn/provider-aws.glueDataQualityRuleset.GlueDataQualityRulesetConfig.property.ruleset">ruleset</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/glue_data_quality_ruleset#ruleset GlueDataQualityRuleset#ruleset}. |
-| <code><a href="#@cdktn/provider-aws.glueDataQualityRuleset.GlueDataQualityRulesetConfig.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/glue_data_quality_ruleset#description GlueDataQualityRuleset#description}. |
-| <code><a href="#@cdktn/provider-aws.glueDataQualityRuleset.GlueDataQualityRulesetConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/glue_data_quality_ruleset#id GlueDataQualityRuleset#id}. |
+| <code><a href="#@cdktn/provider-aws.glueDataQualityRuleset.GlueDataQualityRulesetConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/glue_data_quality_ruleset#name GlueDataQualityRuleset#name}. |
+| <code><a href="#@cdktn/provider-aws.glueDataQualityRuleset.GlueDataQualityRulesetConfig.property.ruleset">ruleset</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/glue_data_quality_ruleset#ruleset GlueDataQualityRuleset#ruleset}. |
+| <code><a href="#@cdktn/provider-aws.glueDataQualityRuleset.GlueDataQualityRulesetConfig.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/glue_data_quality_ruleset#description GlueDataQualityRuleset#description}. |
+| <code><a href="#@cdktn/provider-aws.glueDataQualityRuleset.GlueDataQualityRulesetConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/glue_data_quality_ruleset#id GlueDataQualityRuleset#id}. |
 | <code><a href="#@cdktn/provider-aws.glueDataQualityRuleset.GlueDataQualityRulesetConfig.property.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.glueDataQualityRuleset.GlueDataQualityRulesetConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/glue_data_quality_ruleset#tags GlueDataQualityRuleset#tags}. |
-| <code><a href="#@cdktn/provider-aws.glueDataQualityRuleset.GlueDataQualityRulesetConfig.property.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/glue_data_quality_ruleset#tags_all GlueDataQualityRuleset#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.glueDataQualityRuleset.GlueDataQualityRulesetConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/glue_data_quality_ruleset#tags GlueDataQualityRuleset#tags}. |
+| <code><a href="#@cdktn/provider-aws.glueDataQualityRuleset.GlueDataQualityRulesetConfig.property.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/glue_data_quality_ruleset#tags_all GlueDataQualityRuleset#tags_all}. |
 | <code><a href="#@cdktn/provider-aws.glueDataQualityRuleset.GlueDataQualityRulesetConfig.property.targetTable">target_table</a></code> | <code><a href="#@cdktn/provider-aws.glueDataQualityRuleset.GlueDataQualityRulesetTargetTable">GlueDataQualityRulesetTargetTable</a></code> | target_table block. |
 
 ---
@@ -1296,7 +1296,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/glue_data_quality_ruleset#name GlueDataQualityRuleset#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/glue_data_quality_ruleset#name GlueDataQualityRuleset#name}.
 
 ---
 
@@ -1308,7 +1308,7 @@ ruleset: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/glue_data_quality_ruleset#ruleset GlueDataQualityRuleset#ruleset}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/glue_data_quality_ruleset#ruleset GlueDataQualityRuleset#ruleset}.
 
 ---
 
@@ -1320,7 +1320,7 @@ description: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/glue_data_quality_ruleset#description GlueDataQualityRuleset#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/glue_data_quality_ruleset#description GlueDataQualityRuleset#description}.
 
 ---
 
@@ -1332,7 +1332,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/glue_data_quality_ruleset#id GlueDataQualityRuleset#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/glue_data_quality_ruleset#id GlueDataQualityRuleset#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1349,7 +1349,7 @@ region: str
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/glue_data_quality_ruleset#region GlueDataQualityRuleset#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/glue_data_quality_ruleset#region GlueDataQualityRuleset#region}
 
 ---
 
@@ -1361,7 +1361,7 @@ tags: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/glue_data_quality_ruleset#tags GlueDataQualityRuleset#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/glue_data_quality_ruleset#tags GlueDataQualityRuleset#tags}.
 
 ---
 
@@ -1373,7 +1373,7 @@ tags_all: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/glue_data_quality_ruleset#tags_all GlueDataQualityRuleset#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/glue_data_quality_ruleset#tags_all GlueDataQualityRuleset#tags_all}.
 
 ---
 
@@ -1387,7 +1387,7 @@ target_table: GlueDataQualityRulesetTargetTable
 
 target_table block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/glue_data_quality_ruleset#target_table GlueDataQualityRuleset#target_table}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/glue_data_quality_ruleset#target_table GlueDataQualityRuleset#target_table}
 
 ---
 
@@ -1409,9 +1409,9 @@ glueDataQualityRuleset.GlueDataQualityRulesetTargetTable(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.glueDataQualityRuleset.GlueDataQualityRulesetTargetTable.property.databaseName">database_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/glue_data_quality_ruleset#database_name GlueDataQualityRuleset#database_name}. |
-| <code><a href="#@cdktn/provider-aws.glueDataQualityRuleset.GlueDataQualityRulesetTargetTable.property.tableName">table_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/glue_data_quality_ruleset#table_name GlueDataQualityRuleset#table_name}. |
-| <code><a href="#@cdktn/provider-aws.glueDataQualityRuleset.GlueDataQualityRulesetTargetTable.property.catalogId">catalog_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/glue_data_quality_ruleset#catalog_id GlueDataQualityRuleset#catalog_id}. |
+| <code><a href="#@cdktn/provider-aws.glueDataQualityRuleset.GlueDataQualityRulesetTargetTable.property.databaseName">database_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/glue_data_quality_ruleset#database_name GlueDataQualityRuleset#database_name}. |
+| <code><a href="#@cdktn/provider-aws.glueDataQualityRuleset.GlueDataQualityRulesetTargetTable.property.tableName">table_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/glue_data_quality_ruleset#table_name GlueDataQualityRuleset#table_name}. |
+| <code><a href="#@cdktn/provider-aws.glueDataQualityRuleset.GlueDataQualityRulesetTargetTable.property.catalogId">catalog_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/glue_data_quality_ruleset#catalog_id GlueDataQualityRuleset#catalog_id}. |
 
 ---
 
@@ -1423,7 +1423,7 @@ database_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/glue_data_quality_ruleset#database_name GlueDataQualityRuleset#database_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/glue_data_quality_ruleset#database_name GlueDataQualityRuleset#database_name}.
 
 ---
 
@@ -1435,7 +1435,7 @@ table_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/glue_data_quality_ruleset#table_name GlueDataQualityRuleset#table_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/glue_data_quality_ruleset#table_name GlueDataQualityRuleset#table_name}.
 
 ---
 
@@ -1447,7 +1447,7 @@ catalog_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/glue_data_quality_ruleset#catalog_id GlueDataQualityRuleset#catalog_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/glue_data_quality_ruleset#catalog_id GlueDataQualityRuleset#catalog_id}.
 
 ---
 

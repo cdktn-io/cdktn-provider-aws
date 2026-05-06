@@ -4,7 +4,7 @@
 
 ### CloudwatchLogDeliverySource <a name="CloudwatchLogDeliverySource" id="@cdktn/provider-aws.cloudwatchLogDeliverySource.CloudwatchLogDeliverySource"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/cloudwatch_log_delivery_source aws_cloudwatch_log_delivery_source}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/cloudwatch_log_delivery_source aws_cloudwatch_log_delivery_source}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudwatchLogDeliverySource.CloudwatchLogDeliverySource.Initializer"></a>
 
@@ -40,11 +40,11 @@ cloudwatchLogDeliverySource.CloudwatchLogDeliverySource(
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogDeliverySource.CloudwatchLogDeliverySource.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogDeliverySource.CloudwatchLogDeliverySource.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogDeliverySource.CloudwatchLogDeliverySource.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogDeliverySource.CloudwatchLogDeliverySource.Initializer.parameter.logType">log_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/cloudwatch_log_delivery_source#log_type CloudwatchLogDeliverySource#log_type}. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogDeliverySource.CloudwatchLogDeliverySource.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/cloudwatch_log_delivery_source#name CloudwatchLogDeliverySource#name}. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogDeliverySource.CloudwatchLogDeliverySource.Initializer.parameter.resourceArn">resource_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/cloudwatch_log_delivery_source#resource_arn CloudwatchLogDeliverySource#resource_arn}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogDeliverySource.CloudwatchLogDeliverySource.Initializer.parameter.logType">log_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/cloudwatch_log_delivery_source#log_type CloudwatchLogDeliverySource#log_type}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogDeliverySource.CloudwatchLogDeliverySource.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/cloudwatch_log_delivery_source#name CloudwatchLogDeliverySource#name}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogDeliverySource.CloudwatchLogDeliverySource.Initializer.parameter.resourceArn">resource_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/cloudwatch_log_delivery_source#resource_arn CloudwatchLogDeliverySource#resource_arn}. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogDeliverySource.CloudwatchLogDeliverySource.Initializer.parameter.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogDeliverySource.CloudwatchLogDeliverySource.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/cloudwatch_log_delivery_source#tags CloudwatchLogDeliverySource#tags}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogDeliverySource.CloudwatchLogDeliverySource.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/cloudwatch_log_delivery_source#tags CloudwatchLogDeliverySource#tags}. |
 
 ---
 
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/cloudwatch_log_delivery_source#log_type CloudwatchLogDeliverySource#log_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/cloudwatch_log_delivery_source#log_type CloudwatchLogDeliverySource#log_type}.
 
 ---
 
@@ -120,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/cloudwatch_log_delivery_source#name CloudwatchLogDeliverySource#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/cloudwatch_log_delivery_source#name CloudwatchLogDeliverySource#name}.
 
 ---
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/cloudwatch_log_delivery_source#resource_arn CloudwatchLogDeliverySource#resource_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/cloudwatch_log_delivery_source#resource_arn CloudwatchLogDeliverySource#resource_arn}.
 
 ---
 
@@ -138,7 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/cloudwatch_log_delivery_source#region CloudwatchLogDeliverySource#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/cloudwatch_log_delivery_source#region CloudwatchLogDeliverySource#region}
 
 ---
 
@@ -146,7 +146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/cloudwatch_log_delivery_source#tags CloudwatchLogDeliverySource#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/cloudwatch_log_delivery_source#tags CloudwatchLogDeliverySource#tags}.
 
 ---
 
@@ -657,7 +657,7 @@ The construct id used in the generated config for the CloudwatchLogDeliverySourc
 
 The id of the existing CloudwatchLogDeliverySource that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/cloudwatch_log_delivery_source#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/cloudwatch_log_delivery_source#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1029,11 +1029,11 @@ cloudwatchLogDeliverySource.CloudwatchLogDeliverySourceConfig(
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogDeliverySource.CloudwatchLogDeliverySourceConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogDeliverySource.CloudwatchLogDeliverySourceConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogDeliverySource.CloudwatchLogDeliverySourceConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogDeliverySource.CloudwatchLogDeliverySourceConfig.property.logType">log_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/cloudwatch_log_delivery_source#log_type CloudwatchLogDeliverySource#log_type}. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogDeliverySource.CloudwatchLogDeliverySourceConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/cloudwatch_log_delivery_source#name CloudwatchLogDeliverySource#name}. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogDeliverySource.CloudwatchLogDeliverySourceConfig.property.resourceArn">resource_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/cloudwatch_log_delivery_source#resource_arn CloudwatchLogDeliverySource#resource_arn}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogDeliverySource.CloudwatchLogDeliverySourceConfig.property.logType">log_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/cloudwatch_log_delivery_source#log_type CloudwatchLogDeliverySource#log_type}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogDeliverySource.CloudwatchLogDeliverySourceConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/cloudwatch_log_delivery_source#name CloudwatchLogDeliverySource#name}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogDeliverySource.CloudwatchLogDeliverySourceConfig.property.resourceArn">resource_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/cloudwatch_log_delivery_source#resource_arn CloudwatchLogDeliverySource#resource_arn}. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogDeliverySource.CloudwatchLogDeliverySourceConfig.property.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogDeliverySource.CloudwatchLogDeliverySourceConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/cloudwatch_log_delivery_source#tags CloudwatchLogDeliverySource#tags}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogDeliverySource.CloudwatchLogDeliverySourceConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/cloudwatch_log_delivery_source#tags CloudwatchLogDeliverySource#tags}. |
 
 ---
 
@@ -1115,7 +1115,7 @@ log_type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/cloudwatch_log_delivery_source#log_type CloudwatchLogDeliverySource#log_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/cloudwatch_log_delivery_source#log_type CloudwatchLogDeliverySource#log_type}.
 
 ---
 
@@ -1127,7 +1127,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/cloudwatch_log_delivery_source#name CloudwatchLogDeliverySource#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/cloudwatch_log_delivery_source#name CloudwatchLogDeliverySource#name}.
 
 ---
 
@@ -1139,7 +1139,7 @@ resource_arn: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/cloudwatch_log_delivery_source#resource_arn CloudwatchLogDeliverySource#resource_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/cloudwatch_log_delivery_source#resource_arn CloudwatchLogDeliverySource#resource_arn}.
 
 ---
 
@@ -1153,7 +1153,7 @@ region: str
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/cloudwatch_log_delivery_source#region CloudwatchLogDeliverySource#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/cloudwatch_log_delivery_source#region CloudwatchLogDeliverySource#region}
 
 ---
 
@@ -1165,7 +1165,7 @@ tags: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/resources/cloudwatch_log_delivery_source#tags CloudwatchLogDeliverySource#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/cloudwatch_log_delivery_source#tags CloudwatchLogDeliverySource#tags}.
 
 ---
 
