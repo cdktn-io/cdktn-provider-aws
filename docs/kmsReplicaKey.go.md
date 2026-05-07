@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.kmsReplicaKey.KmsReplicaKey.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/kmsreplicakey"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/kmsreplicakey"
 
 kmsreplicakey.NewKmsReplicaKey(scope Construct, id *string, config KmsReplicaKeyConfig) KmsReplicaKey
 ```
@@ -463,7 +463,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.kmsReplicaKey.KmsReplicaKey.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/kmsreplicakey"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/kmsreplicakey"
 
 kmsreplicakey.KmsReplicaKey_IsConstruct(x interface{}) *bool
 ```
@@ -495,7 +495,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.kmsReplicaKey.KmsReplicaKey.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/kmsreplicakey"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/kmsreplicakey"
 
 kmsreplicakey.KmsReplicaKey_IsTerraformElement(x interface{}) *bool
 ```
@@ -509,7 +509,7 @@ kmsreplicakey.KmsReplicaKey_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.kmsReplicaKey.KmsReplicaKey.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/kmsreplicakey"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/kmsreplicakey"
 
 kmsreplicakey.KmsReplicaKey_IsTerraformResource(x interface{}) *bool
 ```
@@ -523,7 +523,7 @@ kmsreplicakey.KmsReplicaKey_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.kmsReplicaKey.KmsReplicaKey.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/kmsreplicakey"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/kmsreplicakey"
 
 kmsreplicakey.KmsReplicaKey_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1027,7 +1027,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.kmsReplicaKey.KmsReplicaKeyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/kmsreplicakey"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/kmsreplicakey"
 
 &kmsreplicakey.KmsReplicaKeyConfig {
 	Connection: interface{},

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsOdbDbSystemShapes.DataAwsOdbDbSystemShapes.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsodbdbsystemshapes"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsodbdbsystemshapes"
 
 dataawsodbdbsystemshapes.NewDataAwsOdbDbSystemShapes(scope Construct, id *string, config DataAwsOdbDbSystemShapesConfig) DataAwsOdbDbSystemShapes
 ```
@@ -312,7 +312,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsOdbDbSystemShapes.DataAwsOdbDbSystemShapes.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsodbdbsystemshapes"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsodbdbsystemshapes"
 
 dataawsodbdbsystemshapes.DataAwsOdbDbSystemShapes_IsConstruct(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsOdbDbSystemShapes.DataAwsOdbDbSystemShapes.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsodbdbsystemshapes"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsodbdbsystemshapes"
 
 dataawsodbdbsystemshapes.DataAwsOdbDbSystemShapes_IsTerraformElement(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ dataawsodbdbsystemshapes.DataAwsOdbDbSystemShapes_IsTerraformElement(x interface
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsOdbDbSystemShapes.DataAwsOdbDbSystemShapes.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsodbdbsystemshapes"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsodbdbsystemshapes"
 
 dataawsodbdbsystemshapes.DataAwsOdbDbSystemShapes_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -372,7 +372,7 @@ dataawsodbdbsystemshapes.DataAwsOdbDbSystemShapes_IsTerraformDataSource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsOdbDbSystemShapes.DataAwsOdbDbSystemShapes.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsodbdbsystemshapes"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsodbdbsystemshapes"
 
 dataawsodbdbsystemshapes.DataAwsOdbDbSystemShapes_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -634,7 +634,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsOdbDbSystemShapes.DataAwsOdbDbSystemShapesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsodbdbsystemshapes"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsodbdbsystemshapes"
 
 &dataawsodbdbsystemshapes.DataAwsOdbDbSystemShapesConfig {
 	Connection: interface{},
@@ -768,7 +768,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsOdbDbSystemShapes.DataAwsOdbDbSystemShapesDbSystemShapes.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsodbdbsystemshapes"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsodbdbsystemshapes"
 
 &dataawsodbdbsystemshapes.DataAwsOdbDbSystemShapesDbSystemShapes {
 
@@ -783,7 +783,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsodbdbsystemshap
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsOdbDbSystemShapes.DataAwsOdbDbSystemShapesDbSystemShapesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsodbdbsystemshapes"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsodbdbsystemshapes"
 
 dataawsodbdbsystemshapes.NewDataAwsOdbDbSystemShapesDbSystemShapesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsOdbDbSystemShapesDbSystemShapesList
 ```
@@ -932,7 +932,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsOdbDbSystemShapes.DataAwsOdbDbSystemShapesDbSystemShapesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsodbdbsystemshapes"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsodbdbsystemshapes"
 
 dataawsodbdbsystemshapes.NewDataAwsOdbDbSystemShapesDbSystemShapesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsOdbDbSystemShapesDbSystemShapesOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.prometheusAlertManagerDefinition.PrometheusAlertManagerDefinition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/prometheusalertmanagerdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/prometheusalertmanagerdefinition"
 
 prometheusalertmanagerdefinition.NewPrometheusAlertManagerDefinition(scope Construct, id *string, config PrometheusAlertManagerDefinitionConfig) PrometheusAlertManagerDefinition
 ```
@@ -414,7 +414,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.prometheusAlertManagerDefinition.PrometheusAlertManagerDefinition.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/prometheusalertmanagerdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/prometheusalertmanagerdefinition"
 
 prometheusalertmanagerdefinition.PrometheusAlertManagerDefinition_IsConstruct(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.prometheusAlertManagerDefinition.PrometheusAlertManagerDefinition.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/prometheusalertmanagerdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/prometheusalertmanagerdefinition"
 
 prometheusalertmanagerdefinition.PrometheusAlertManagerDefinition_IsTerraformElement(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ prometheusalertmanagerdefinition.PrometheusAlertManagerDefinition_IsTerraformEle
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.prometheusAlertManagerDefinition.PrometheusAlertManagerDefinition.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/prometheusalertmanagerdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/prometheusalertmanagerdefinition"
 
 prometheusalertmanagerdefinition.PrometheusAlertManagerDefinition_IsTerraformResource(x interface{}) *bool
 ```
@@ -474,7 +474,7 @@ prometheusalertmanagerdefinition.PrometheusAlertManagerDefinition_IsTerraformRes
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.prometheusAlertManagerDefinition.PrometheusAlertManagerDefinition.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/prometheusalertmanagerdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/prometheusalertmanagerdefinition"
 
 prometheusalertmanagerdefinition.PrometheusAlertManagerDefinition_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -791,7 +791,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.prometheusAlertManagerDefinition.PrometheusAlertManagerDefinitionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/prometheusalertmanagerdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/prometheusalertmanagerdefinition"
 
 &prometheusalertmanagerdefinition.PrometheusAlertManagerDefinitionConfig {
 	Connection: interface{},

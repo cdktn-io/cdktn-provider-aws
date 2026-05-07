@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.amiFromInstance.AmiFromInstance.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/amifrominstance"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/amifrominstance"
 
 amifrominstance.NewAmiFromInstance(scope Construct, id *string, config AmiFromInstanceConfig) AmiFromInstance
 ```
@@ -509,7 +509,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.amiFromInstance.AmiFromInstance.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/amifrominstance"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/amifrominstance"
 
 amifrominstance.AmiFromInstance_IsConstruct(x interface{}) *bool
 ```
@@ -541,7 +541,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.amiFromInstance.AmiFromInstance.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/amifrominstance"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/amifrominstance"
 
 amifrominstance.AmiFromInstance_IsTerraformElement(x interface{}) *bool
 ```
@@ -555,7 +555,7 @@ amifrominstance.AmiFromInstance_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.amiFromInstance.AmiFromInstance.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/amifrominstance"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/amifrominstance"
 
 amifrominstance.AmiFromInstance_IsTerraformResource(x interface{}) *bool
 ```
@@ -569,7 +569,7 @@ amifrominstance.AmiFromInstance_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.amiFromInstance.AmiFromInstance.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/amifrominstance"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/amifrominstance"
 
 amifrominstance.AmiFromInstance_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1326,7 +1326,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.amiFromInstance.AmiFromInstanceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/amifrominstance"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/amifrominstance"
 
 &amifrominstance.AmiFromInstanceConfig {
 	Connection: interface{},
@@ -1347,7 +1347,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/amifrominstance"
 	SnapshotWithoutReboot: interface{},
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.amiFromInstance.AmiFromInstanceTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.amiFromInstance.AmiFromInstanceTimeouts,
 }
 ```
 
@@ -1607,7 +1607,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.amiFromInstance.AmiFromInstanceEbsBlockDevice.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/amifrominstance"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/amifrominstance"
 
 &amifrominstance.AmiFromInstanceEbsBlockDevice {
 
@@ -1620,7 +1620,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/amifrominstance"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.amiFromInstance.AmiFromInstanceEphemeralBlockDevice.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/amifrominstance"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/amifrominstance"
 
 &amifrominstance.AmiFromInstanceEphemeralBlockDevice {
 
@@ -1633,7 +1633,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/amifrominstance"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.amiFromInstance.AmiFromInstanceTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/amifrominstance"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/amifrominstance"
 
 &amifrominstance.AmiFromInstanceTimeouts {
 	Create: *string,
@@ -1695,7 +1695,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.amiFromInstance.AmiFromInstanceEbsBlockDeviceList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/amifrominstance"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/amifrominstance"
 
 amifrominstance.NewAmiFromInstanceEbsBlockDeviceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AmiFromInstanceEbsBlockDeviceList
 ```
@@ -1855,7 +1855,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.amiFromInstance.AmiFromInstanceEbsBlockDeviceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/amifrominstance"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/amifrominstance"
 
 amifrominstance.NewAmiFromInstanceEbsBlockDeviceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AmiFromInstanceEbsBlockDeviceOutputReference
 ```
@@ -2221,7 +2221,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.amiFromInstance.AmiFromInstanceEphemeralBlockDeviceList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/amifrominstance"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/amifrominstance"
 
 amifrominstance.NewAmiFromInstanceEphemeralBlockDeviceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AmiFromInstanceEphemeralBlockDeviceList
 ```
@@ -2381,7 +2381,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.amiFromInstance.AmiFromInstanceEphemeralBlockDeviceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/amifrominstance"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/amifrominstance"
 
 amifrominstance.NewAmiFromInstanceEphemeralBlockDeviceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AmiFromInstanceEphemeralBlockDeviceOutputReference
 ```
@@ -2670,7 +2670,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.amiFromInstance.AmiFromInstanceTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/amifrominstance"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/amifrominstance"
 
 amifrominstance.NewAmiFromInstanceTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AmiFromInstanceTimeoutsOutputReference
 ```

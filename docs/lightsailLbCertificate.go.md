@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lightsailLbCertificate.LightsailLbCertificate.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lightsaillbcertificate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lightsaillbcertificate"
 
 lightsaillbcertificate.NewLightsailLbCertificate(scope Construct, id *string, config LightsailLbCertificateConfig) LightsailLbCertificate
 ```
@@ -428,7 +428,7 @@ func ResetSubjectAlternativeNames()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.lightsailLbCertificate.LightsailLbCertificate.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lightsaillbcertificate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lightsaillbcertificate"
 
 lightsaillbcertificate.LightsailLbCertificate_IsConstruct(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.lightsailLbCertificate.LightsailLbCertificate.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lightsaillbcertificate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lightsaillbcertificate"
 
 lightsaillbcertificate.LightsailLbCertificate_IsTerraformElement(x interface{}) *bool
 ```
@@ -474,7 +474,7 @@ lightsaillbcertificate.LightsailLbCertificate_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.lightsailLbCertificate.LightsailLbCertificate.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lightsaillbcertificate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lightsaillbcertificate"
 
 lightsaillbcertificate.LightsailLbCertificate_IsTerraformResource(x interface{}) *bool
 ```
@@ -488,7 +488,7 @@ lightsaillbcertificate.LightsailLbCertificate_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.lightsailLbCertificate.LightsailLbCertificate.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lightsaillbcertificate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lightsaillbcertificate"
 
 lightsaillbcertificate.LightsailLbCertificate_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -893,7 +893,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.lightsailLbCertificate.LightsailLbCertificateConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lightsaillbcertificate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lightsaillbcertificate"
 
 &lightsaillbcertificate.LightsailLbCertificateConfig {
 	Connection: interface{},
@@ -1084,7 +1084,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.lightsailLbCertificate.LightsailLbCertificateDomainValidationRecords.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lightsaillbcertificate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lightsaillbcertificate"
 
 &lightsaillbcertificate.LightsailLbCertificateDomainValidationRecords {
 
@@ -1099,7 +1099,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lightsaillbcertificate
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lightsailLbCertificate.LightsailLbCertificateDomainValidationRecordsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lightsaillbcertificate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lightsaillbcertificate"
 
 lightsaillbcertificate.NewLightsailLbCertificateDomainValidationRecordsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LightsailLbCertificateDomainValidationRecordsList
 ```
@@ -1248,7 +1248,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lightsailLbCertificate.LightsailLbCertificateDomainValidationRecordsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lightsaillbcertificate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lightsaillbcertificate"
 
 lightsaillbcertificate.NewLightsailLbCertificateDomainValidationRecordsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LightsailLbCertificateDomainValidationRecordsOutputReference
 ```

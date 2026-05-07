@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsGlueRegistry.DataAwsGlueRegistry.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsglueregistry"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsglueregistry"
 
 dataawsglueregistry.NewDataAwsGlueRegistry(scope Construct, id *string, config DataAwsGlueRegistryConfig) DataAwsGlueRegistry
 ```
@@ -305,7 +305,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsGlueRegistry.DataAwsGlueRegistry.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsglueregistry"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsglueregistry"
 
 dataawsglueregistry.DataAwsGlueRegistry_IsConstruct(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsGlueRegistry.DataAwsGlueRegistry.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsglueregistry"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsglueregistry"
 
 dataawsglueregistry.DataAwsGlueRegistry_IsTerraformElement(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ dataawsglueregistry.DataAwsGlueRegistry_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsGlueRegistry.DataAwsGlueRegistry.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsglueregistry"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsglueregistry"
 
 dataawsglueregistry.DataAwsGlueRegistry_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ dataawsglueregistry.DataAwsGlueRegistry_IsTerraformDataSource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsGlueRegistry.DataAwsGlueRegistry.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsglueregistry"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsglueregistry"
 
 dataawsglueregistry.DataAwsGlueRegistry_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -638,7 +638,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsGlueRegistry.DataAwsGlueRegistryConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsglueregistry"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsglueregistry"
 
 &dataawsglueregistry.DataAwsGlueRegistryConfig {
 	Connection: interface{},

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAppmeshVirtualGateway.DataAwsAppmeshVirtualGateway.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappmeshvirtualgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsappmeshvirtualgateway"
 
 dataawsappmeshvirtualgateway.NewDataAwsAppmeshVirtualGateway(scope Construct, id *string, config DataAwsAppmeshVirtualGatewayConfig) DataAwsAppmeshVirtualGateway
 ```
@@ -319,7 +319,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsAppmeshVirtualGateway.DataAwsAppmeshVirtualGateway.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappmeshvirtualgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsappmeshvirtualgateway"
 
 dataawsappmeshvirtualgateway.DataAwsAppmeshVirtualGateway_IsConstruct(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsAppmeshVirtualGateway.DataAwsAppmeshVirtualGateway.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappmeshvirtualgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsappmeshvirtualgateway"
 
 dataawsappmeshvirtualgateway.DataAwsAppmeshVirtualGateway_IsTerraformElement(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ dataawsappmeshvirtualgateway.DataAwsAppmeshVirtualGateway_IsTerraformElement(x i
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsAppmeshVirtualGateway.DataAwsAppmeshVirtualGateway.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappmeshvirtualgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsappmeshvirtualgateway"
 
 dataawsappmeshvirtualgateway.DataAwsAppmeshVirtualGateway_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -379,7 +379,7 @@ dataawsappmeshvirtualgateway.DataAwsAppmeshVirtualGateway_IsTerraformDataSource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsAppmeshVirtualGateway.DataAwsAppmeshVirtualGateway.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappmeshvirtualgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsappmeshvirtualgateway"
 
 dataawsappmeshvirtualgateway.DataAwsAppmeshVirtualGateway_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -762,7 +762,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsAppmeshVirtualGateway.DataAwsAppmeshVirtualGatewayConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappmeshvirtualgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsappmeshvirtualgateway"
 
 &dataawsappmeshvirtualgateway.DataAwsAppmeshVirtualGatewayConfig {
 	Connection: interface{},
@@ -939,7 +939,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsAppmeshVirtualGateway.DataAwsAppmeshVirtualGatewaySpec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappmeshvirtualgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsappmeshvirtualgateway"
 
 &dataawsappmeshvirtualgateway.DataAwsAppmeshVirtualGatewaySpec {
 
@@ -952,7 +952,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappmeshvirtualg
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsAppmeshVirtualGateway.DataAwsAppmeshVirtualGatewaySpecBackendDefaults.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappmeshvirtualgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsappmeshvirtualgateway"
 
 &dataawsappmeshvirtualgateway.DataAwsAppmeshVirtualGatewaySpecBackendDefaults {
 
@@ -965,7 +965,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappmeshvirtualg
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsAppmeshVirtualGateway.DataAwsAppmeshVirtualGatewaySpecBackendDefaultsClientPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappmeshvirtualgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsappmeshvirtualgateway"
 
 &dataawsappmeshvirtualgateway.DataAwsAppmeshVirtualGatewaySpecBackendDefaultsClientPolicy {
 
@@ -978,7 +978,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappmeshvirtualg
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsAppmeshVirtualGateway.DataAwsAppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTls.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappmeshvirtualgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsappmeshvirtualgateway"
 
 &dataawsappmeshvirtualgateway.DataAwsAppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTls {
 
@@ -991,7 +991,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappmeshvirtualg
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsAppmeshVirtualGateway.DataAwsAppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsCertificate.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappmeshvirtualgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsappmeshvirtualgateway"
 
 &dataawsappmeshvirtualgateway.DataAwsAppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsCertificate {
 
@@ -1004,7 +1004,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappmeshvirtualg
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsAppmeshVirtualGateway.DataAwsAppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsCertificateFile.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappmeshvirtualgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsappmeshvirtualgateway"
 
 &dataawsappmeshvirtualgateway.DataAwsAppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsCertificateFile {
 
@@ -1017,7 +1017,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappmeshvirtualg
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsAppmeshVirtualGateway.DataAwsAppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsCertificateSds.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappmeshvirtualgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsappmeshvirtualgateway"
 
 &dataawsappmeshvirtualgateway.DataAwsAppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsCertificateSds {
 
@@ -1030,7 +1030,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappmeshvirtualg
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsAppmeshVirtualGateway.DataAwsAppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappmeshvirtualgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsappmeshvirtualgateway"
 
 &dataawsappmeshvirtualgateway.DataAwsAppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidation {
 
@@ -1043,7 +1043,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappmeshvirtualg
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsAppmeshVirtualGateway.DataAwsAppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNames.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappmeshvirtualgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsappmeshvirtualgateway"
 
 &dataawsappmeshvirtualgateway.DataAwsAppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNames {
 
@@ -1056,7 +1056,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappmeshvirtualg
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsAppmeshVirtualGateway.DataAwsAppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNamesMatch.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappmeshvirtualgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsappmeshvirtualgateway"
 
 &dataawsappmeshvirtualgateway.DataAwsAppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNamesMatch {
 
@@ -1069,7 +1069,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappmeshvirtualg
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsAppmeshVirtualGateway.DataAwsAppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrust.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappmeshvirtualgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsappmeshvirtualgateway"
 
 &dataawsappmeshvirtualgateway.DataAwsAppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrust {
 
@@ -1082,7 +1082,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappmeshvirtualg
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsAppmeshVirtualGateway.DataAwsAppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustAcm.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappmeshvirtualgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsappmeshvirtualgateway"
 
 &dataawsappmeshvirtualgateway.DataAwsAppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustAcm {
 
@@ -1095,7 +1095,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappmeshvirtualg
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsAppmeshVirtualGateway.DataAwsAppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustFile.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappmeshvirtualgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsappmeshvirtualgateway"
 
 &dataawsappmeshvirtualgateway.DataAwsAppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustFile {
 
@@ -1108,7 +1108,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappmeshvirtualg
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsAppmeshVirtualGateway.DataAwsAppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustSds.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappmeshvirtualgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsappmeshvirtualgateway"
 
 &dataawsappmeshvirtualgateway.DataAwsAppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustSds {
 
@@ -1121,7 +1121,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappmeshvirtualg
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsAppmeshVirtualGateway.DataAwsAppmeshVirtualGatewaySpecListener.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappmeshvirtualgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsappmeshvirtualgateway"
 
 &dataawsappmeshvirtualgateway.DataAwsAppmeshVirtualGatewaySpecListener {
 
@@ -1134,7 +1134,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappmeshvirtualg
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsAppmeshVirtualGateway.DataAwsAppmeshVirtualGatewaySpecListenerConnectionPool.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappmeshvirtualgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsappmeshvirtualgateway"
 
 &dataawsappmeshvirtualgateway.DataAwsAppmeshVirtualGatewaySpecListenerConnectionPool {
 
@@ -1147,7 +1147,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappmeshvirtualg
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsAppmeshVirtualGateway.DataAwsAppmeshVirtualGatewaySpecListenerConnectionPoolGrpc.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappmeshvirtualgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsappmeshvirtualgateway"
 
 &dataawsappmeshvirtualgateway.DataAwsAppmeshVirtualGatewaySpecListenerConnectionPoolGrpc {
 
@@ -1160,7 +1160,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappmeshvirtualg
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsAppmeshVirtualGateway.DataAwsAppmeshVirtualGatewaySpecListenerConnectionPoolHttp.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappmeshvirtualgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsappmeshvirtualgateway"
 
 &dataawsappmeshvirtualgateway.DataAwsAppmeshVirtualGatewaySpecListenerConnectionPoolHttp {
 
@@ -1173,7 +1173,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappmeshvirtualg
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsAppmeshVirtualGateway.DataAwsAppmeshVirtualGatewaySpecListenerConnectionPoolHttp2.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappmeshvirtualgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsappmeshvirtualgateway"
 
 &dataawsappmeshvirtualgateway.DataAwsAppmeshVirtualGatewaySpecListenerConnectionPoolHttp2 {
 
@@ -1186,7 +1186,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappmeshvirtualg
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsAppmeshVirtualGateway.DataAwsAppmeshVirtualGatewaySpecListenerHealthCheck.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappmeshvirtualgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsappmeshvirtualgateway"
 
 &dataawsappmeshvirtualgateway.DataAwsAppmeshVirtualGatewaySpecListenerHealthCheck {
 
@@ -1199,7 +1199,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappmeshvirtualg
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsAppmeshVirtualGateway.DataAwsAppmeshVirtualGatewaySpecListenerPortMapping.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappmeshvirtualgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsappmeshvirtualgateway"
 
 &dataawsappmeshvirtualgateway.DataAwsAppmeshVirtualGatewaySpecListenerPortMapping {
 
@@ -1212,7 +1212,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappmeshvirtualg
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsAppmeshVirtualGateway.DataAwsAppmeshVirtualGatewaySpecListenerTls.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappmeshvirtualgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsappmeshvirtualgateway"
 
 &dataawsappmeshvirtualgateway.DataAwsAppmeshVirtualGatewaySpecListenerTls {
 
@@ -1225,7 +1225,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappmeshvirtualg
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsAppmeshVirtualGateway.DataAwsAppmeshVirtualGatewaySpecListenerTlsCertificate.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappmeshvirtualgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsappmeshvirtualgateway"
 
 &dataawsappmeshvirtualgateway.DataAwsAppmeshVirtualGatewaySpecListenerTlsCertificate {
 
@@ -1238,7 +1238,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappmeshvirtualg
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsAppmeshVirtualGateway.DataAwsAppmeshVirtualGatewaySpecListenerTlsCertificateAcm.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappmeshvirtualgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsappmeshvirtualgateway"
 
 &dataawsappmeshvirtualgateway.DataAwsAppmeshVirtualGatewaySpecListenerTlsCertificateAcm {
 
@@ -1251,7 +1251,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappmeshvirtualg
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsAppmeshVirtualGateway.DataAwsAppmeshVirtualGatewaySpecListenerTlsCertificateFile.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappmeshvirtualgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsappmeshvirtualgateway"
 
 &dataawsappmeshvirtualgateway.DataAwsAppmeshVirtualGatewaySpecListenerTlsCertificateFile {
 
@@ -1264,7 +1264,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappmeshvirtualg
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsAppmeshVirtualGateway.DataAwsAppmeshVirtualGatewaySpecListenerTlsCertificateSds.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappmeshvirtualgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsappmeshvirtualgateway"
 
 &dataawsappmeshvirtualgateway.DataAwsAppmeshVirtualGatewaySpecListenerTlsCertificateSds {
 
@@ -1277,7 +1277,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappmeshvirtualg
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsAppmeshVirtualGateway.DataAwsAppmeshVirtualGatewaySpecListenerTlsValidation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappmeshvirtualgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsappmeshvirtualgateway"
 
 &dataawsappmeshvirtualgateway.DataAwsAppmeshVirtualGatewaySpecListenerTlsValidation {
 
@@ -1290,7 +1290,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappmeshvirtualg
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsAppmeshVirtualGateway.DataAwsAppmeshVirtualGatewaySpecListenerTlsValidationSubjectAlternativeNames.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappmeshvirtualgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsappmeshvirtualgateway"
 
 &dataawsappmeshvirtualgateway.DataAwsAppmeshVirtualGatewaySpecListenerTlsValidationSubjectAlternativeNames {
 
@@ -1303,7 +1303,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappmeshvirtualg
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsAppmeshVirtualGateway.DataAwsAppmeshVirtualGatewaySpecListenerTlsValidationSubjectAlternativeNamesMatch.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappmeshvirtualgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsappmeshvirtualgateway"
 
 &dataawsappmeshvirtualgateway.DataAwsAppmeshVirtualGatewaySpecListenerTlsValidationSubjectAlternativeNamesMatch {
 
@@ -1316,7 +1316,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappmeshvirtualg
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsAppmeshVirtualGateway.DataAwsAppmeshVirtualGatewaySpecListenerTlsValidationTrust.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappmeshvirtualgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsappmeshvirtualgateway"
 
 &dataawsappmeshvirtualgateway.DataAwsAppmeshVirtualGatewaySpecListenerTlsValidationTrust {
 
@@ -1329,7 +1329,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappmeshvirtualg
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsAppmeshVirtualGateway.DataAwsAppmeshVirtualGatewaySpecListenerTlsValidationTrustFile.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappmeshvirtualgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsappmeshvirtualgateway"
 
 &dataawsappmeshvirtualgateway.DataAwsAppmeshVirtualGatewaySpecListenerTlsValidationTrustFile {
 
@@ -1342,7 +1342,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappmeshvirtualg
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsAppmeshVirtualGateway.DataAwsAppmeshVirtualGatewaySpecListenerTlsValidationTrustSds.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappmeshvirtualgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsappmeshvirtualgateway"
 
 &dataawsappmeshvirtualgateway.DataAwsAppmeshVirtualGatewaySpecListenerTlsValidationTrustSds {
 
@@ -1355,7 +1355,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappmeshvirtualg
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsAppmeshVirtualGateway.DataAwsAppmeshVirtualGatewaySpecLogging.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappmeshvirtualgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsappmeshvirtualgateway"
 
 &dataawsappmeshvirtualgateway.DataAwsAppmeshVirtualGatewaySpecLogging {
 
@@ -1368,7 +1368,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappmeshvirtualg
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsAppmeshVirtualGateway.DataAwsAppmeshVirtualGatewaySpecLoggingAccessLog.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappmeshvirtualgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsappmeshvirtualgateway"
 
 &dataawsappmeshvirtualgateway.DataAwsAppmeshVirtualGatewaySpecLoggingAccessLog {
 
@@ -1381,7 +1381,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappmeshvirtualg
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsAppmeshVirtualGateway.DataAwsAppmeshVirtualGatewaySpecLoggingAccessLogFile.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappmeshvirtualgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsappmeshvirtualgateway"
 
 &dataawsappmeshvirtualgateway.DataAwsAppmeshVirtualGatewaySpecLoggingAccessLogFile {
 
@@ -1394,7 +1394,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappmeshvirtualg
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsAppmeshVirtualGateway.DataAwsAppmeshVirtualGatewaySpecLoggingAccessLogFileFormat.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappmeshvirtualgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsappmeshvirtualgateway"
 
 &dataawsappmeshvirtualgateway.DataAwsAppmeshVirtualGatewaySpecLoggingAccessLogFileFormat {
 
@@ -1407,7 +1407,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappmeshvirtualg
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsAppmeshVirtualGateway.DataAwsAppmeshVirtualGatewaySpecLoggingAccessLogFileFormatJson.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappmeshvirtualgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsappmeshvirtualgateway"
 
 &dataawsappmeshvirtualgateway.DataAwsAppmeshVirtualGatewaySpecLoggingAccessLogFileFormatJson {
 
@@ -1422,7 +1422,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappmeshvirtualg
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAppmeshVirtualGateway.DataAwsAppmeshVirtualGatewaySpecBackendDefaultsClientPolicyList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappmeshvirtualgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsappmeshvirtualgateway"
 
 dataawsappmeshvirtualgateway.NewDataAwsAppmeshVirtualGatewaySpecBackendDefaultsClientPolicyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAppmeshVirtualGatewaySpecBackendDefaultsClientPolicyList
 ```
@@ -1571,7 +1571,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAppmeshVirtualGateway.DataAwsAppmeshVirtualGatewaySpecBackendDefaultsClientPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappmeshvirtualgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsappmeshvirtualgateway"
 
 dataawsappmeshvirtualgateway.NewDataAwsAppmeshVirtualGatewaySpecBackendDefaultsClientPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAppmeshVirtualGatewaySpecBackendDefaultsClientPolicyOutputReference
 ```
@@ -1849,7 +1849,7 @@ func InternalValue() DataAwsAppmeshVirtualGatewaySpecBackendDefaultsClientPolicy
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAppmeshVirtualGateway.DataAwsAppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsCertificateFileList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappmeshvirtualgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsappmeshvirtualgateway"
 
 dataawsappmeshvirtualgateway.NewDataAwsAppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsCertificateFileList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsCertificateFileList
 ```
@@ -1998,7 +1998,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAppmeshVirtualGateway.DataAwsAppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsCertificateFileOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappmeshvirtualgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsappmeshvirtualgateway"
 
 dataawsappmeshvirtualgateway.NewDataAwsAppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsCertificateFileOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsCertificateFileOutputReference
 ```
@@ -2287,7 +2287,7 @@ func InternalValue() DataAwsAppmeshVirtualGatewaySpecBackendDefaultsClientPolicy
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAppmeshVirtualGateway.DataAwsAppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsCertificateList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappmeshvirtualgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsappmeshvirtualgateway"
 
 dataawsappmeshvirtualgateway.NewDataAwsAppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsCertificateList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsCertificateList
 ```
@@ -2436,7 +2436,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAppmeshVirtualGateway.DataAwsAppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsCertificateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappmeshvirtualgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsappmeshvirtualgateway"
 
 dataawsappmeshvirtualgateway.NewDataAwsAppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsCertificateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsCertificateOutputReference
 ```
@@ -2725,7 +2725,7 @@ func InternalValue() DataAwsAppmeshVirtualGatewaySpecBackendDefaultsClientPolicy
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAppmeshVirtualGateway.DataAwsAppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsCertificateSdsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappmeshvirtualgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsappmeshvirtualgateway"
 
 dataawsappmeshvirtualgateway.NewDataAwsAppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsCertificateSdsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsCertificateSdsList
 ```
@@ -2874,7 +2874,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAppmeshVirtualGateway.DataAwsAppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsCertificateSdsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappmeshvirtualgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsappmeshvirtualgateway"
 
 dataawsappmeshvirtualgateway.NewDataAwsAppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsCertificateSdsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsCertificateSdsOutputReference
 ```
@@ -3152,7 +3152,7 @@ func InternalValue() DataAwsAppmeshVirtualGatewaySpecBackendDefaultsClientPolicy
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAppmeshVirtualGateway.DataAwsAppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappmeshvirtualgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsappmeshvirtualgateway"
 
 dataawsappmeshvirtualgateway.NewDataAwsAppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsList
 ```
@@ -3301,7 +3301,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAppmeshVirtualGateway.DataAwsAppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappmeshvirtualgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsappmeshvirtualgateway"
 
 dataawsappmeshvirtualgateway.NewDataAwsAppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsOutputReference
 ```
@@ -3612,7 +3612,7 @@ func InternalValue() DataAwsAppmeshVirtualGatewaySpecBackendDefaultsClientPolicy
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAppmeshVirtualGateway.DataAwsAppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappmeshvirtualgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsappmeshvirtualgateway"
 
 dataawsappmeshvirtualgateway.NewDataAwsAppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationList
 ```
@@ -3761,7 +3761,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAppmeshVirtualGateway.DataAwsAppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappmeshvirtualgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsappmeshvirtualgateway"
 
 dataawsappmeshvirtualgateway.NewDataAwsAppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationOutputReference
 ```
@@ -4050,7 +4050,7 @@ func InternalValue() DataAwsAppmeshVirtualGatewaySpecBackendDefaultsClientPolicy
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAppmeshVirtualGateway.DataAwsAppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNamesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappmeshvirtualgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsappmeshvirtualgateway"
 
 dataawsappmeshvirtualgateway.NewDataAwsAppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNamesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNamesList
 ```
@@ -4199,7 +4199,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAppmeshVirtualGateway.DataAwsAppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNamesMatchList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappmeshvirtualgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsappmeshvirtualgateway"
 
 dataawsappmeshvirtualgateway.NewDataAwsAppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNamesMatchList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNamesMatchList
 ```
@@ -4348,7 +4348,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAppmeshVirtualGateway.DataAwsAppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNamesMatchOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappmeshvirtualgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsappmeshvirtualgateway"
 
 dataawsappmeshvirtualgateway.NewDataAwsAppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNamesMatchOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNamesMatchOutputReference
 ```
@@ -4626,7 +4626,7 @@ func InternalValue() DataAwsAppmeshVirtualGatewaySpecBackendDefaultsClientPolicy
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAppmeshVirtualGateway.DataAwsAppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNamesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappmeshvirtualgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsappmeshvirtualgateway"
 
 dataawsappmeshvirtualgateway.NewDataAwsAppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNamesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNamesOutputReference
 ```
@@ -4904,7 +4904,7 @@ func InternalValue() DataAwsAppmeshVirtualGatewaySpecBackendDefaultsClientPolicy
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAppmeshVirtualGateway.DataAwsAppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustAcmList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappmeshvirtualgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsappmeshvirtualgateway"
 
 dataawsappmeshvirtualgateway.NewDataAwsAppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustAcmList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustAcmList
 ```
@@ -5053,7 +5053,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAppmeshVirtualGateway.DataAwsAppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustAcmOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappmeshvirtualgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsappmeshvirtualgateway"
 
 dataawsappmeshvirtualgateway.NewDataAwsAppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustAcmOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustAcmOutputReference
 ```
@@ -5331,7 +5331,7 @@ func InternalValue() DataAwsAppmeshVirtualGatewaySpecBackendDefaultsClientPolicy
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAppmeshVirtualGateway.DataAwsAppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustFileList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappmeshvirtualgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsappmeshvirtualgateway"
 
 dataawsappmeshvirtualgateway.NewDataAwsAppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustFileList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustFileList
 ```
@@ -5480,7 +5480,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAppmeshVirtualGateway.DataAwsAppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustFileOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappmeshvirtualgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsappmeshvirtualgateway"
 
 dataawsappmeshvirtualgateway.NewDataAwsAppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustFileOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustFileOutputReference
 ```
@@ -5758,7 +5758,7 @@ func InternalValue() DataAwsAppmeshVirtualGatewaySpecBackendDefaultsClientPolicy
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAppmeshVirtualGateway.DataAwsAppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappmeshvirtualgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsappmeshvirtualgateway"
 
 dataawsappmeshvirtualgateway.NewDataAwsAppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustList
 ```
@@ -5907,7 +5907,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAppmeshVirtualGateway.DataAwsAppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappmeshvirtualgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsappmeshvirtualgateway"
 
 dataawsappmeshvirtualgateway.NewDataAwsAppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustOutputReference
 ```
@@ -6207,7 +6207,7 @@ func InternalValue() DataAwsAppmeshVirtualGatewaySpecBackendDefaultsClientPolicy
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAppmeshVirtualGateway.DataAwsAppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustSdsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappmeshvirtualgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsappmeshvirtualgateway"
 
 dataawsappmeshvirtualgateway.NewDataAwsAppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustSdsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustSdsList
 ```
@@ -6356,7 +6356,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAppmeshVirtualGateway.DataAwsAppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustSdsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappmeshvirtualgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsappmeshvirtualgateway"
 
 dataawsappmeshvirtualgateway.NewDataAwsAppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustSdsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustSdsOutputReference
 ```
@@ -6634,7 +6634,7 @@ func InternalValue() DataAwsAppmeshVirtualGatewaySpecBackendDefaultsClientPolicy
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAppmeshVirtualGateway.DataAwsAppmeshVirtualGatewaySpecBackendDefaultsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappmeshvirtualgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsappmeshvirtualgateway"
 
 dataawsappmeshvirtualgateway.NewDataAwsAppmeshVirtualGatewaySpecBackendDefaultsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAppmeshVirtualGatewaySpecBackendDefaultsList
 ```
@@ -6783,7 +6783,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAppmeshVirtualGateway.DataAwsAppmeshVirtualGatewaySpecBackendDefaultsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappmeshvirtualgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsappmeshvirtualgateway"
 
 dataawsappmeshvirtualgateway.NewDataAwsAppmeshVirtualGatewaySpecBackendDefaultsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAppmeshVirtualGatewaySpecBackendDefaultsOutputReference
 ```
@@ -7061,7 +7061,7 @@ func InternalValue() DataAwsAppmeshVirtualGatewaySpecBackendDefaults
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAppmeshVirtualGateway.DataAwsAppmeshVirtualGatewaySpecList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappmeshvirtualgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsappmeshvirtualgateway"
 
 dataawsappmeshvirtualgateway.NewDataAwsAppmeshVirtualGatewaySpecList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAppmeshVirtualGatewaySpecList
 ```
@@ -7210,7 +7210,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAppmeshVirtualGateway.DataAwsAppmeshVirtualGatewaySpecListenerConnectionPoolGrpcList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappmeshvirtualgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsappmeshvirtualgateway"
 
 dataawsappmeshvirtualgateway.NewDataAwsAppmeshVirtualGatewaySpecListenerConnectionPoolGrpcList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAppmeshVirtualGatewaySpecListenerConnectionPoolGrpcList
 ```
@@ -7359,7 +7359,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAppmeshVirtualGateway.DataAwsAppmeshVirtualGatewaySpecListenerConnectionPoolGrpcOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappmeshvirtualgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsappmeshvirtualgateway"
 
 dataawsappmeshvirtualgateway.NewDataAwsAppmeshVirtualGatewaySpecListenerConnectionPoolGrpcOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAppmeshVirtualGatewaySpecListenerConnectionPoolGrpcOutputReference
 ```
@@ -7637,7 +7637,7 @@ func InternalValue() DataAwsAppmeshVirtualGatewaySpecListenerConnectionPoolGrpc
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAppmeshVirtualGateway.DataAwsAppmeshVirtualGatewaySpecListenerConnectionPoolHttp2List.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappmeshvirtualgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsappmeshvirtualgateway"
 
 dataawsappmeshvirtualgateway.NewDataAwsAppmeshVirtualGatewaySpecListenerConnectionPoolHttp2List(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAppmeshVirtualGatewaySpecListenerConnectionPoolHttp2List
 ```
@@ -7786,7 +7786,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAppmeshVirtualGateway.DataAwsAppmeshVirtualGatewaySpecListenerConnectionPoolHttp2OutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappmeshvirtualgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsappmeshvirtualgateway"
 
 dataawsappmeshvirtualgateway.NewDataAwsAppmeshVirtualGatewaySpecListenerConnectionPoolHttp2OutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAppmeshVirtualGatewaySpecListenerConnectionPoolHttp2OutputReference
 ```
@@ -8064,7 +8064,7 @@ func InternalValue() DataAwsAppmeshVirtualGatewaySpecListenerConnectionPoolHttp2
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAppmeshVirtualGateway.DataAwsAppmeshVirtualGatewaySpecListenerConnectionPoolHttpList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappmeshvirtualgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsappmeshvirtualgateway"
 
 dataawsappmeshvirtualgateway.NewDataAwsAppmeshVirtualGatewaySpecListenerConnectionPoolHttpList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAppmeshVirtualGatewaySpecListenerConnectionPoolHttpList
 ```
@@ -8213,7 +8213,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAppmeshVirtualGateway.DataAwsAppmeshVirtualGatewaySpecListenerConnectionPoolHttpOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappmeshvirtualgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsappmeshvirtualgateway"
 
 dataawsappmeshvirtualgateway.NewDataAwsAppmeshVirtualGatewaySpecListenerConnectionPoolHttpOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAppmeshVirtualGatewaySpecListenerConnectionPoolHttpOutputReference
 ```
@@ -8502,7 +8502,7 @@ func InternalValue() DataAwsAppmeshVirtualGatewaySpecListenerConnectionPoolHttp
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAppmeshVirtualGateway.DataAwsAppmeshVirtualGatewaySpecListenerConnectionPoolList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappmeshvirtualgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsappmeshvirtualgateway"
 
 dataawsappmeshvirtualgateway.NewDataAwsAppmeshVirtualGatewaySpecListenerConnectionPoolList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAppmeshVirtualGatewaySpecListenerConnectionPoolList
 ```
@@ -8651,7 +8651,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAppmeshVirtualGateway.DataAwsAppmeshVirtualGatewaySpecListenerConnectionPoolOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappmeshvirtualgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsappmeshvirtualgateway"
 
 dataawsappmeshvirtualgateway.NewDataAwsAppmeshVirtualGatewaySpecListenerConnectionPoolOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAppmeshVirtualGatewaySpecListenerConnectionPoolOutputReference
 ```
@@ -8951,7 +8951,7 @@ func InternalValue() DataAwsAppmeshVirtualGatewaySpecListenerConnectionPool
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAppmeshVirtualGateway.DataAwsAppmeshVirtualGatewaySpecListenerHealthCheckList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappmeshvirtualgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsappmeshvirtualgateway"
 
 dataawsappmeshvirtualgateway.NewDataAwsAppmeshVirtualGatewaySpecListenerHealthCheckList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAppmeshVirtualGatewaySpecListenerHealthCheckList
 ```
@@ -9100,7 +9100,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAppmeshVirtualGateway.DataAwsAppmeshVirtualGatewaySpecListenerHealthCheckOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappmeshvirtualgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsappmeshvirtualgateway"
 
 dataawsappmeshvirtualgateway.NewDataAwsAppmeshVirtualGatewaySpecListenerHealthCheckOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAppmeshVirtualGatewaySpecListenerHealthCheckOutputReference
 ```
@@ -9444,7 +9444,7 @@ func InternalValue() DataAwsAppmeshVirtualGatewaySpecListenerHealthCheck
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAppmeshVirtualGateway.DataAwsAppmeshVirtualGatewaySpecListenerList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappmeshvirtualgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsappmeshvirtualgateway"
 
 dataawsappmeshvirtualgateway.NewDataAwsAppmeshVirtualGatewaySpecListenerList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAppmeshVirtualGatewaySpecListenerList
 ```
@@ -9593,7 +9593,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAppmeshVirtualGateway.DataAwsAppmeshVirtualGatewaySpecListenerOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappmeshvirtualgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsappmeshvirtualgateway"
 
 dataawsappmeshvirtualgateway.NewDataAwsAppmeshVirtualGatewaySpecListenerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAppmeshVirtualGatewaySpecListenerOutputReference
 ```
@@ -9904,7 +9904,7 @@ func InternalValue() DataAwsAppmeshVirtualGatewaySpecListener
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAppmeshVirtualGateway.DataAwsAppmeshVirtualGatewaySpecListenerPortMappingList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappmeshvirtualgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsappmeshvirtualgateway"
 
 dataawsappmeshvirtualgateway.NewDataAwsAppmeshVirtualGatewaySpecListenerPortMappingList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAppmeshVirtualGatewaySpecListenerPortMappingList
 ```
@@ -10053,7 +10053,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAppmeshVirtualGateway.DataAwsAppmeshVirtualGatewaySpecListenerPortMappingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappmeshvirtualgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsappmeshvirtualgateway"
 
 dataawsappmeshvirtualgateway.NewDataAwsAppmeshVirtualGatewaySpecListenerPortMappingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAppmeshVirtualGatewaySpecListenerPortMappingOutputReference
 ```
@@ -10342,7 +10342,7 @@ func InternalValue() DataAwsAppmeshVirtualGatewaySpecListenerPortMapping
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAppmeshVirtualGateway.DataAwsAppmeshVirtualGatewaySpecListenerTlsCertificateAcmList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappmeshvirtualgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsappmeshvirtualgateway"
 
 dataawsappmeshvirtualgateway.NewDataAwsAppmeshVirtualGatewaySpecListenerTlsCertificateAcmList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAppmeshVirtualGatewaySpecListenerTlsCertificateAcmList
 ```
@@ -10491,7 +10491,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAppmeshVirtualGateway.DataAwsAppmeshVirtualGatewaySpecListenerTlsCertificateAcmOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappmeshvirtualgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsappmeshvirtualgateway"
 
 dataawsappmeshvirtualgateway.NewDataAwsAppmeshVirtualGatewaySpecListenerTlsCertificateAcmOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAppmeshVirtualGatewaySpecListenerTlsCertificateAcmOutputReference
 ```
@@ -10769,7 +10769,7 @@ func InternalValue() DataAwsAppmeshVirtualGatewaySpecListenerTlsCertificateAcm
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAppmeshVirtualGateway.DataAwsAppmeshVirtualGatewaySpecListenerTlsCertificateFileList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappmeshvirtualgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsappmeshvirtualgateway"
 
 dataawsappmeshvirtualgateway.NewDataAwsAppmeshVirtualGatewaySpecListenerTlsCertificateFileList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAppmeshVirtualGatewaySpecListenerTlsCertificateFileList
 ```
@@ -10918,7 +10918,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAppmeshVirtualGateway.DataAwsAppmeshVirtualGatewaySpecListenerTlsCertificateFileOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappmeshvirtualgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsappmeshvirtualgateway"
 
 dataawsappmeshvirtualgateway.NewDataAwsAppmeshVirtualGatewaySpecListenerTlsCertificateFileOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAppmeshVirtualGatewaySpecListenerTlsCertificateFileOutputReference
 ```
@@ -11207,7 +11207,7 @@ func InternalValue() DataAwsAppmeshVirtualGatewaySpecListenerTlsCertificateFile
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAppmeshVirtualGateway.DataAwsAppmeshVirtualGatewaySpecListenerTlsCertificateList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappmeshvirtualgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsappmeshvirtualgateway"
 
 dataawsappmeshvirtualgateway.NewDataAwsAppmeshVirtualGatewaySpecListenerTlsCertificateList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAppmeshVirtualGatewaySpecListenerTlsCertificateList
 ```
@@ -11356,7 +11356,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAppmeshVirtualGateway.DataAwsAppmeshVirtualGatewaySpecListenerTlsCertificateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappmeshvirtualgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsappmeshvirtualgateway"
 
 dataawsappmeshvirtualgateway.NewDataAwsAppmeshVirtualGatewaySpecListenerTlsCertificateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAppmeshVirtualGatewaySpecListenerTlsCertificateOutputReference
 ```
@@ -11656,7 +11656,7 @@ func InternalValue() DataAwsAppmeshVirtualGatewaySpecListenerTlsCertificate
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAppmeshVirtualGateway.DataAwsAppmeshVirtualGatewaySpecListenerTlsCertificateSdsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappmeshvirtualgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsappmeshvirtualgateway"
 
 dataawsappmeshvirtualgateway.NewDataAwsAppmeshVirtualGatewaySpecListenerTlsCertificateSdsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAppmeshVirtualGatewaySpecListenerTlsCertificateSdsList
 ```
@@ -11805,7 +11805,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAppmeshVirtualGateway.DataAwsAppmeshVirtualGatewaySpecListenerTlsCertificateSdsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappmeshvirtualgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsappmeshvirtualgateway"
 
 dataawsappmeshvirtualgateway.NewDataAwsAppmeshVirtualGatewaySpecListenerTlsCertificateSdsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAppmeshVirtualGatewaySpecListenerTlsCertificateSdsOutputReference
 ```
@@ -12083,7 +12083,7 @@ func InternalValue() DataAwsAppmeshVirtualGatewaySpecListenerTlsCertificateSds
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAppmeshVirtualGateway.DataAwsAppmeshVirtualGatewaySpecListenerTlsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappmeshvirtualgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsappmeshvirtualgateway"
 
 dataawsappmeshvirtualgateway.NewDataAwsAppmeshVirtualGatewaySpecListenerTlsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAppmeshVirtualGatewaySpecListenerTlsList
 ```
@@ -12232,7 +12232,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAppmeshVirtualGateway.DataAwsAppmeshVirtualGatewaySpecListenerTlsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappmeshvirtualgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsappmeshvirtualgateway"
 
 dataawsappmeshvirtualgateway.NewDataAwsAppmeshVirtualGatewaySpecListenerTlsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAppmeshVirtualGatewaySpecListenerTlsOutputReference
 ```
@@ -12532,7 +12532,7 @@ func InternalValue() DataAwsAppmeshVirtualGatewaySpecListenerTls
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAppmeshVirtualGateway.DataAwsAppmeshVirtualGatewaySpecListenerTlsValidationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappmeshvirtualgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsappmeshvirtualgateway"
 
 dataawsappmeshvirtualgateway.NewDataAwsAppmeshVirtualGatewaySpecListenerTlsValidationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAppmeshVirtualGatewaySpecListenerTlsValidationList
 ```
@@ -12681,7 +12681,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAppmeshVirtualGateway.DataAwsAppmeshVirtualGatewaySpecListenerTlsValidationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappmeshvirtualgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsappmeshvirtualgateway"
 
 dataawsappmeshvirtualgateway.NewDataAwsAppmeshVirtualGatewaySpecListenerTlsValidationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAppmeshVirtualGatewaySpecListenerTlsValidationOutputReference
 ```
@@ -12970,7 +12970,7 @@ func InternalValue() DataAwsAppmeshVirtualGatewaySpecListenerTlsValidation
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAppmeshVirtualGateway.DataAwsAppmeshVirtualGatewaySpecListenerTlsValidationSubjectAlternativeNamesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappmeshvirtualgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsappmeshvirtualgateway"
 
 dataawsappmeshvirtualgateway.NewDataAwsAppmeshVirtualGatewaySpecListenerTlsValidationSubjectAlternativeNamesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAppmeshVirtualGatewaySpecListenerTlsValidationSubjectAlternativeNamesList
 ```
@@ -13119,7 +13119,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAppmeshVirtualGateway.DataAwsAppmeshVirtualGatewaySpecListenerTlsValidationSubjectAlternativeNamesMatchList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappmeshvirtualgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsappmeshvirtualgateway"
 
 dataawsappmeshvirtualgateway.NewDataAwsAppmeshVirtualGatewaySpecListenerTlsValidationSubjectAlternativeNamesMatchList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAppmeshVirtualGatewaySpecListenerTlsValidationSubjectAlternativeNamesMatchList
 ```
@@ -13268,7 +13268,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAppmeshVirtualGateway.DataAwsAppmeshVirtualGatewaySpecListenerTlsValidationSubjectAlternativeNamesMatchOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappmeshvirtualgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsappmeshvirtualgateway"
 
 dataawsappmeshvirtualgateway.NewDataAwsAppmeshVirtualGatewaySpecListenerTlsValidationSubjectAlternativeNamesMatchOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAppmeshVirtualGatewaySpecListenerTlsValidationSubjectAlternativeNamesMatchOutputReference
 ```
@@ -13546,7 +13546,7 @@ func InternalValue() DataAwsAppmeshVirtualGatewaySpecListenerTlsValidationSubjec
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAppmeshVirtualGateway.DataAwsAppmeshVirtualGatewaySpecListenerTlsValidationSubjectAlternativeNamesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappmeshvirtualgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsappmeshvirtualgateway"
 
 dataawsappmeshvirtualgateway.NewDataAwsAppmeshVirtualGatewaySpecListenerTlsValidationSubjectAlternativeNamesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAppmeshVirtualGatewaySpecListenerTlsValidationSubjectAlternativeNamesOutputReference
 ```
@@ -13824,7 +13824,7 @@ func InternalValue() DataAwsAppmeshVirtualGatewaySpecListenerTlsValidationSubjec
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAppmeshVirtualGateway.DataAwsAppmeshVirtualGatewaySpecListenerTlsValidationTrustFileList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappmeshvirtualgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsappmeshvirtualgateway"
 
 dataawsappmeshvirtualgateway.NewDataAwsAppmeshVirtualGatewaySpecListenerTlsValidationTrustFileList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAppmeshVirtualGatewaySpecListenerTlsValidationTrustFileList
 ```
@@ -13973,7 +13973,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAppmeshVirtualGateway.DataAwsAppmeshVirtualGatewaySpecListenerTlsValidationTrustFileOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappmeshvirtualgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsappmeshvirtualgateway"
 
 dataawsappmeshvirtualgateway.NewDataAwsAppmeshVirtualGatewaySpecListenerTlsValidationTrustFileOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAppmeshVirtualGatewaySpecListenerTlsValidationTrustFileOutputReference
 ```
@@ -14251,7 +14251,7 @@ func InternalValue() DataAwsAppmeshVirtualGatewaySpecListenerTlsValidationTrustF
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAppmeshVirtualGateway.DataAwsAppmeshVirtualGatewaySpecListenerTlsValidationTrustList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappmeshvirtualgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsappmeshvirtualgateway"
 
 dataawsappmeshvirtualgateway.NewDataAwsAppmeshVirtualGatewaySpecListenerTlsValidationTrustList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAppmeshVirtualGatewaySpecListenerTlsValidationTrustList
 ```
@@ -14400,7 +14400,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAppmeshVirtualGateway.DataAwsAppmeshVirtualGatewaySpecListenerTlsValidationTrustOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappmeshvirtualgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsappmeshvirtualgateway"
 
 dataawsappmeshvirtualgateway.NewDataAwsAppmeshVirtualGatewaySpecListenerTlsValidationTrustOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAppmeshVirtualGatewaySpecListenerTlsValidationTrustOutputReference
 ```
@@ -14689,7 +14689,7 @@ func InternalValue() DataAwsAppmeshVirtualGatewaySpecListenerTlsValidationTrust
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAppmeshVirtualGateway.DataAwsAppmeshVirtualGatewaySpecListenerTlsValidationTrustSdsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappmeshvirtualgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsappmeshvirtualgateway"
 
 dataawsappmeshvirtualgateway.NewDataAwsAppmeshVirtualGatewaySpecListenerTlsValidationTrustSdsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAppmeshVirtualGatewaySpecListenerTlsValidationTrustSdsList
 ```
@@ -14838,7 +14838,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAppmeshVirtualGateway.DataAwsAppmeshVirtualGatewaySpecListenerTlsValidationTrustSdsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappmeshvirtualgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsappmeshvirtualgateway"
 
 dataawsappmeshvirtualgateway.NewDataAwsAppmeshVirtualGatewaySpecListenerTlsValidationTrustSdsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAppmeshVirtualGatewaySpecListenerTlsValidationTrustSdsOutputReference
 ```
@@ -15116,7 +15116,7 @@ func InternalValue() DataAwsAppmeshVirtualGatewaySpecListenerTlsValidationTrustS
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAppmeshVirtualGateway.DataAwsAppmeshVirtualGatewaySpecLoggingAccessLogFileFormatJsonList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappmeshvirtualgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsappmeshvirtualgateway"
 
 dataawsappmeshvirtualgateway.NewDataAwsAppmeshVirtualGatewaySpecLoggingAccessLogFileFormatJsonList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAppmeshVirtualGatewaySpecLoggingAccessLogFileFormatJsonList
 ```
@@ -15265,7 +15265,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAppmeshVirtualGateway.DataAwsAppmeshVirtualGatewaySpecLoggingAccessLogFileFormatJsonOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappmeshvirtualgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsappmeshvirtualgateway"
 
 dataawsappmeshvirtualgateway.NewDataAwsAppmeshVirtualGatewaySpecLoggingAccessLogFileFormatJsonOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAppmeshVirtualGatewaySpecLoggingAccessLogFileFormatJsonOutputReference
 ```
@@ -15554,7 +15554,7 @@ func InternalValue() DataAwsAppmeshVirtualGatewaySpecLoggingAccessLogFileFormatJ
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAppmeshVirtualGateway.DataAwsAppmeshVirtualGatewaySpecLoggingAccessLogFileFormatList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappmeshvirtualgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsappmeshvirtualgateway"
 
 dataawsappmeshvirtualgateway.NewDataAwsAppmeshVirtualGatewaySpecLoggingAccessLogFileFormatList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAppmeshVirtualGatewaySpecLoggingAccessLogFileFormatList
 ```
@@ -15703,7 +15703,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAppmeshVirtualGateway.DataAwsAppmeshVirtualGatewaySpecLoggingAccessLogFileFormatOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappmeshvirtualgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsappmeshvirtualgateway"
 
 dataawsappmeshvirtualgateway.NewDataAwsAppmeshVirtualGatewaySpecLoggingAccessLogFileFormatOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAppmeshVirtualGatewaySpecLoggingAccessLogFileFormatOutputReference
 ```
@@ -15992,7 +15992,7 @@ func InternalValue() DataAwsAppmeshVirtualGatewaySpecLoggingAccessLogFileFormat
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAppmeshVirtualGateway.DataAwsAppmeshVirtualGatewaySpecLoggingAccessLogFileList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappmeshvirtualgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsappmeshvirtualgateway"
 
 dataawsappmeshvirtualgateway.NewDataAwsAppmeshVirtualGatewaySpecLoggingAccessLogFileList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAppmeshVirtualGatewaySpecLoggingAccessLogFileList
 ```
@@ -16141,7 +16141,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAppmeshVirtualGateway.DataAwsAppmeshVirtualGatewaySpecLoggingAccessLogFileOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappmeshvirtualgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsappmeshvirtualgateway"
 
 dataawsappmeshvirtualgateway.NewDataAwsAppmeshVirtualGatewaySpecLoggingAccessLogFileOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAppmeshVirtualGatewaySpecLoggingAccessLogFileOutputReference
 ```
@@ -16430,7 +16430,7 @@ func InternalValue() DataAwsAppmeshVirtualGatewaySpecLoggingAccessLogFile
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAppmeshVirtualGateway.DataAwsAppmeshVirtualGatewaySpecLoggingAccessLogList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappmeshvirtualgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsappmeshvirtualgateway"
 
 dataawsappmeshvirtualgateway.NewDataAwsAppmeshVirtualGatewaySpecLoggingAccessLogList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAppmeshVirtualGatewaySpecLoggingAccessLogList
 ```
@@ -16579,7 +16579,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAppmeshVirtualGateway.DataAwsAppmeshVirtualGatewaySpecLoggingAccessLogOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappmeshvirtualgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsappmeshvirtualgateway"
 
 dataawsappmeshvirtualgateway.NewDataAwsAppmeshVirtualGatewaySpecLoggingAccessLogOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAppmeshVirtualGatewaySpecLoggingAccessLogOutputReference
 ```
@@ -16857,7 +16857,7 @@ func InternalValue() DataAwsAppmeshVirtualGatewaySpecLoggingAccessLog
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAppmeshVirtualGateway.DataAwsAppmeshVirtualGatewaySpecLoggingList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappmeshvirtualgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsappmeshvirtualgateway"
 
 dataawsappmeshvirtualgateway.NewDataAwsAppmeshVirtualGatewaySpecLoggingList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAppmeshVirtualGatewaySpecLoggingList
 ```
@@ -17006,7 +17006,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAppmeshVirtualGateway.DataAwsAppmeshVirtualGatewaySpecLoggingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappmeshvirtualgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsappmeshvirtualgateway"
 
 dataawsappmeshvirtualgateway.NewDataAwsAppmeshVirtualGatewaySpecLoggingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAppmeshVirtualGatewaySpecLoggingOutputReference
 ```
@@ -17284,7 +17284,7 @@ func InternalValue() DataAwsAppmeshVirtualGatewaySpecLogging
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAppmeshVirtualGateway.DataAwsAppmeshVirtualGatewaySpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappmeshvirtualgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsappmeshvirtualgateway"
 
 dataawsappmeshvirtualgateway.NewDataAwsAppmeshVirtualGatewaySpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAppmeshVirtualGatewaySpecOutputReference
 ```

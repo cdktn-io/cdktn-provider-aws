@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3ControlBucket.S3ControlBucket.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/s3controlbucket"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3controlbucket"
 
 s3controlbucket.NewS3ControlBucket(scope Construct, id *string, config S3ControlBucketConfig) S3ControlBucket
 ```
@@ -428,7 +428,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.s3ControlBucket.S3ControlBucket.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/s3controlbucket"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3controlbucket"
 
 s3controlbucket.S3ControlBucket_IsConstruct(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.s3ControlBucket.S3ControlBucket.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/s3controlbucket"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3controlbucket"
 
 s3controlbucket.S3ControlBucket_IsTerraformElement(x interface{}) *bool
 ```
@@ -474,7 +474,7 @@ s3controlbucket.S3ControlBucket_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.s3ControlBucket.S3ControlBucket.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/s3controlbucket"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3controlbucket"
 
 s3controlbucket.S3ControlBucket_IsTerraformResource(x interface{}) *bool
 ```
@@ -488,7 +488,7 @@ s3controlbucket.S3ControlBucket_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.s3ControlBucket.S3ControlBucket.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/s3controlbucket"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3controlbucket"
 
 s3controlbucket.S3ControlBucket_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -882,7 +882,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.s3ControlBucket.S3ControlBucketConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/s3controlbucket"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3controlbucket"
 
 &s3controlbucket.S3ControlBucketConfig {
 	Connection: interface{},

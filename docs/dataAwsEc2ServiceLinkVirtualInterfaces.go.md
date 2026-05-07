@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEc2ServiceLinkVirtualInterfaces.DataAwsEc2ServiceLinkVirtualInterfaces.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsec2servicelinkvirtualinterfaces"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsec2servicelinkvirtualinterfaces"
 
 dataawsec2servicelinkvirtualinterfaces.NewDataAwsEc2ServiceLinkVirtualInterfaces(scope Construct, id *string, config DataAwsEc2ServiceLinkVirtualInterfacesConfig) DataAwsEc2ServiceLinkVirtualInterfaces
 ```
@@ -332,7 +332,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsEc2ServiceLinkVirtualInterfaces.DataAwsEc2ServiceLinkVirtualInterfaces.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsec2servicelinkvirtualinterfaces"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsec2servicelinkvirtualinterfaces"
 
 dataawsec2servicelinkvirtualinterfaces.DataAwsEc2ServiceLinkVirtualInterfaces_IsConstruct(x interface{}) *bool
 ```
@@ -364,7 +364,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsEc2ServiceLinkVirtualInterfaces.DataAwsEc2ServiceLinkVirtualInterfaces.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsec2servicelinkvirtualinterfaces"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsec2servicelinkvirtualinterfaces"
 
 dataawsec2servicelinkvirtualinterfaces.DataAwsEc2ServiceLinkVirtualInterfaces_IsTerraformElement(x interface{}) *bool
 ```
@@ -378,7 +378,7 @@ dataawsec2servicelinkvirtualinterfaces.DataAwsEc2ServiceLinkVirtualInterfaces_Is
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsEc2ServiceLinkVirtualInterfaces.DataAwsEc2ServiceLinkVirtualInterfaces.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsec2servicelinkvirtualinterfaces"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsec2servicelinkvirtualinterfaces"
 
 dataawsec2servicelinkvirtualinterfaces.DataAwsEc2ServiceLinkVirtualInterfaces_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -392,7 +392,7 @@ dataawsec2servicelinkvirtualinterfaces.DataAwsEc2ServiceLinkVirtualInterfaces_Is
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsEc2ServiceLinkVirtualInterfaces.DataAwsEc2ServiceLinkVirtualInterfaces.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsec2servicelinkvirtualinterfaces"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsec2servicelinkvirtualinterfaces"
 
 dataawsec2servicelinkvirtualinterfaces.DataAwsEc2ServiceLinkVirtualInterfaces_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -676,7 +676,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsEc2ServiceLinkVirtualInterfaces.DataAwsEc2ServiceLinkVirtualInterfacesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsec2servicelinkvirtualinterfaces"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsec2servicelinkvirtualinterfaces"
 
 &dataawsec2servicelinkvirtualinterfaces.DataAwsEc2ServiceLinkVirtualInterfacesConfig {
 	Connection: interface{},
@@ -824,7 +824,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsEc2ServiceLinkVirtualInterfaces.DataAwsEc2ServiceLinkVirtualInterfacesFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsec2servicelinkvirtualinterfaces"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsec2servicelinkvirtualinterfaces"
 
 &dataawsec2servicelinkvirtualinterfaces.DataAwsEc2ServiceLinkVirtualInterfacesFilter {
 	Name: *string,
@@ -872,7 +872,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEc2ServiceLinkVirtualInterfaces.DataAwsEc2ServiceLinkVirtualInterfacesFilterList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsec2servicelinkvirtualinterfaces"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsec2servicelinkvirtualinterfaces"
 
 dataawsec2servicelinkvirtualinterfaces.NewDataAwsEc2ServiceLinkVirtualInterfacesFilterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEc2ServiceLinkVirtualInterfacesFilterList
 ```
@@ -1032,7 +1032,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEc2ServiceLinkVirtualInterfaces.DataAwsEc2ServiceLinkVirtualInterfacesFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsec2servicelinkvirtualinterfaces"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsec2servicelinkvirtualinterfaces"
 
 dataawsec2servicelinkvirtualinterfaces.NewDataAwsEc2ServiceLinkVirtualInterfacesFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEc2ServiceLinkVirtualInterfacesFilterOutputReference
 ```

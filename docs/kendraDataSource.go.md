@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.kendraDataSource.KendraDataSource.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/kendradatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/kendradatasource"
 
 kendradatasource.NewKendraDataSource(scope Construct, id *string, config KendraDataSourceConfig) KendraDataSource
 ```
@@ -516,7 +516,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.kendraDataSource.KendraDataSource.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/kendradatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/kendradatasource"
 
 kendradatasource.KendraDataSource_IsConstruct(x interface{}) *bool
 ```
@@ -548,7 +548,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.kendraDataSource.KendraDataSource.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/kendradatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/kendradatasource"
 
 kendradatasource.KendraDataSource_IsTerraformElement(x interface{}) *bool
 ```
@@ -562,7 +562,7 @@ kendradatasource.KendraDataSource_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.kendraDataSource.KendraDataSource.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/kendradatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/kendradatasource"
 
 kendradatasource.KendraDataSource_IsTerraformResource(x interface{}) *bool
 ```
@@ -576,7 +576,7 @@ kendradatasource.KendraDataSource_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.kendraDataSource.KendraDataSource.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/kendradatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/kendradatasource"
 
 kendradatasource.KendraDataSource_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1179,7 +1179,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.kendraDataSource.KendraDataSourceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/kendradatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/kendradatasource"
 
 &kendradatasource.KendraDataSourceConfig {
 	Connection: interface{},
@@ -1192,8 +1192,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/kendradatasource"
 	IndexId: *string,
 	Name: *string,
 	Type: *string,
-	Configuration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.kendraDataSource.KendraDataSourceConfiguration,
-	CustomDocumentEnrichmentConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.kendraDataSource.KendraDataSourceCustomDocumentEnrichmentConfiguration,
+	Configuration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.kendraDataSource.KendraDataSourceConfiguration,
+	CustomDocumentEnrichmentConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.kendraDataSource.KendraDataSourceCustomDocumentEnrichmentConfiguration,
 	Description: *string,
 	Id: *string,
 	LanguageCode: *string,
@@ -1202,7 +1202,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/kendradatasource"
 	Schedule: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.kendraDataSource.KendraDataSourceTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.kendraDataSource.KendraDataSourceTimeouts,
 }
 ```
 
@@ -1488,12 +1488,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.kendraDataSource.KendraDataSourceConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/kendradatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/kendradatasource"
 
 &kendradatasource.KendraDataSourceConfiguration {
-	S3Configuration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.kendraDataSource.KendraDataSourceConfigurationS3Configuration,
-	TemplateConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.kendraDataSource.KendraDataSourceConfigurationTemplateConfiguration,
-	WebCrawlerConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.kendraDataSource.KendraDataSourceConfigurationWebCrawlerConfiguration,
+	S3Configuration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.kendraDataSource.KendraDataSourceConfigurationS3Configuration,
+	TemplateConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.kendraDataSource.KendraDataSourceConfigurationTemplateConfiguration,
+	WebCrawlerConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.kendraDataSource.KendraDataSourceConfigurationWebCrawlerConfiguration,
 }
 ```
 
@@ -1554,12 +1554,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.kendraDataSource.KendraDataSourceConfigurationS3Configuration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/kendradatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/kendradatasource"
 
 &kendradatasource.KendraDataSourceConfigurationS3Configuration {
 	BucketName: *string,
-	AccessControlListConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.kendraDataSource.KendraDataSourceConfigurationS3ConfigurationAccessControlListConfiguration,
-	DocumentsMetadataConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.kendraDataSource.KendraDataSourceConfigurationS3ConfigurationDocumentsMetadataConfiguration,
+	AccessControlListConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.kendraDataSource.KendraDataSourceConfigurationS3ConfigurationAccessControlListConfiguration,
+	DocumentsMetadataConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.kendraDataSource.KendraDataSourceConfigurationS3ConfigurationDocumentsMetadataConfiguration,
 	ExclusionPatterns: *[]*string,
 	InclusionPatterns: *[]*string,
 	InclusionPrefixes: *[]*string,
@@ -1660,7 +1660,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.kendraDataSource.KendraDataSourceConfigurationS3ConfigurationAccessControlListConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/kendradatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/kendradatasource"
 
 &kendradatasource.KendraDataSourceConfigurationS3ConfigurationAccessControlListConfiguration {
 	KeyPath: *string,
@@ -1692,7 +1692,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.kendraDataSource.KendraDataSourceConfigurationS3ConfigurationDocumentsMetadataConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/kendradatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/kendradatasource"
 
 &kendradatasource.KendraDataSourceConfigurationS3ConfigurationDocumentsMetadataConfiguration {
 	S3Prefix: *string,
@@ -1724,7 +1724,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.kendraDataSource.KendraDataSourceConfigurationTemplateConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/kendradatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/kendradatasource"
 
 &kendradatasource.KendraDataSourceConfigurationTemplateConfiguration {
 	Template: *string,
@@ -1756,16 +1756,16 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.kendraDataSource.KendraDataSourceConfigurationWebCrawlerConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/kendradatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/kendradatasource"
 
 &kendradatasource.KendraDataSourceConfigurationWebCrawlerConfiguration {
-	Urls: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.kendraDataSource.KendraDataSourceConfigurationWebCrawlerConfigurationUrls,
-	AuthenticationConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.kendraDataSource.KendraDataSourceConfigurationWebCrawlerConfigurationAuthenticationConfiguration,
+	Urls: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.kendraDataSource.KendraDataSourceConfigurationWebCrawlerConfigurationUrls,
+	AuthenticationConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.kendraDataSource.KendraDataSourceConfigurationWebCrawlerConfigurationAuthenticationConfiguration,
 	CrawlDepth: *f64,
 	MaxContentSizePerPageInMegaBytes: *f64,
 	MaxLinksPerPage: *f64,
 	MaxUrlsPerMinuteCrawlRate: *f64,
-	ProxyConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.kendraDataSource.KendraDataSourceConfigurationWebCrawlerConfigurationProxyConfiguration,
+	ProxyConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.kendraDataSource.KendraDataSourceConfigurationWebCrawlerConfigurationProxyConfiguration,
 	UrlExclusionPatterns: *[]*string,
 	UrlInclusionPatterns: *[]*string,
 }
@@ -1906,7 +1906,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.kendraDataSource.KendraDataSourceConfigurationWebCrawlerConfigurationAuthenticationConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/kendradatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/kendradatasource"
 
 &kendradatasource.KendraDataSourceConfigurationWebCrawlerConfigurationAuthenticationConfiguration {
 	BasicAuthentication: interface{},
@@ -1940,7 +1940,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.kendraDataSource.KendraDataSourceConfigurationWebCrawlerConfigurationAuthenticationConfigurationBasicAuthentication.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/kendradatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/kendradatasource"
 
 &kendradatasource.KendraDataSourceConfigurationWebCrawlerConfigurationAuthenticationConfigurationBasicAuthentication {
 	Credentials: *string,
@@ -2000,7 +2000,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.kendraDataSource.KendraDataSourceConfigurationWebCrawlerConfigurationProxyConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/kendradatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/kendradatasource"
 
 &kendradatasource.KendraDataSourceConfigurationWebCrawlerConfigurationProxyConfiguration {
 	Host: *string,
@@ -2060,11 +2060,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.kendraDataSource.KendraDataSourceConfigurationWebCrawlerConfigurationUrls.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/kendradatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/kendradatasource"
 
 &kendradatasource.KendraDataSourceConfigurationWebCrawlerConfigurationUrls {
-	SeedUrlConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.kendraDataSource.KendraDataSourceConfigurationWebCrawlerConfigurationUrlsSeedUrlConfiguration,
-	SiteMapsConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.kendraDataSource.KendraDataSourceConfigurationWebCrawlerConfigurationUrlsSiteMapsConfiguration,
+	SeedUrlConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.kendraDataSource.KendraDataSourceConfigurationWebCrawlerConfigurationUrlsSeedUrlConfiguration,
+	SiteMapsConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.kendraDataSource.KendraDataSourceConfigurationWebCrawlerConfigurationUrlsSiteMapsConfiguration,
 }
 ```
 
@@ -2110,7 +2110,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.kendraDataSource.KendraDataSourceConfigurationWebCrawlerConfigurationUrlsSeedUrlConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/kendradatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/kendradatasource"
 
 &kendradatasource.KendraDataSourceConfigurationWebCrawlerConfigurationUrlsSeedUrlConfiguration {
 	SeedUrls: *[]*string,
@@ -2156,7 +2156,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.kendraDataSource.KendraDataSourceConfigurationWebCrawlerConfigurationUrlsSiteMapsConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/kendradatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/kendradatasource"
 
 &kendradatasource.KendraDataSourceConfigurationWebCrawlerConfigurationUrlsSiteMapsConfiguration {
 	SiteMaps: *[]*string,
@@ -2188,12 +2188,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.kendraDataSource.KendraDataSourceCustomDocumentEnrichmentConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/kendradatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/kendradatasource"
 
 &kendradatasource.KendraDataSourceCustomDocumentEnrichmentConfiguration {
 	InlineConfigurations: interface{},
-	PostExtractionHookConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.kendraDataSource.KendraDataSourceCustomDocumentEnrichmentConfigurationPostExtractionHookConfiguration,
-	PreExtractionHookConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.kendraDataSource.KendraDataSourceCustomDocumentEnrichmentConfigurationPreExtractionHookConfiguration,
+	PostExtractionHookConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.kendraDataSource.KendraDataSourceCustomDocumentEnrichmentConfigurationPostExtractionHookConfiguration,
+	PreExtractionHookConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.kendraDataSource.KendraDataSourceCustomDocumentEnrichmentConfigurationPreExtractionHookConfiguration,
 	RoleArn: *string,
 }
 ```
@@ -2268,12 +2268,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.kendraDataSource.KendraDataSourceCustomDocumentEnrichmentConfigurationInlineConfigurations.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/kendradatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/kendradatasource"
 
 &kendradatasource.KendraDataSourceCustomDocumentEnrichmentConfigurationInlineConfigurations {
-	Condition: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.kendraDataSource.KendraDataSourceCustomDocumentEnrichmentConfigurationInlineConfigurationsCondition,
+	Condition: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.kendraDataSource.KendraDataSourceCustomDocumentEnrichmentConfigurationInlineConfigurationsCondition,
 	DocumentContentDeletion: interface{},
-	Target: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.kendraDataSource.KendraDataSourceCustomDocumentEnrichmentConfigurationInlineConfigurationsTarget,
+	Target: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.kendraDataSource.KendraDataSourceCustomDocumentEnrichmentConfigurationInlineConfigurationsTarget,
 }
 ```
 
@@ -2332,12 +2332,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.kendraDataSource.KendraDataSourceCustomDocumentEnrichmentConfigurationInlineConfigurationsCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/kendradatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/kendradatasource"
 
 &kendradatasource.KendraDataSourceCustomDocumentEnrichmentConfigurationInlineConfigurationsCondition {
 	ConditionDocumentAttributeKey: *string,
 	Operator: *string,
-	ConditionOnValue: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.kendraDataSource.KendraDataSourceCustomDocumentEnrichmentConfigurationInlineConfigurationsConditionConditionOnValue,
+	ConditionOnValue: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.kendraDataSource.KendraDataSourceCustomDocumentEnrichmentConfigurationInlineConfigurationsConditionConditionOnValue,
 }
 ```
 
@@ -2394,7 +2394,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.kendraDataSource.KendraDataSourceCustomDocumentEnrichmentConfigurationInlineConfigurationsConditionConditionOnValue.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/kendradatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/kendradatasource"
 
 &kendradatasource.KendraDataSourceCustomDocumentEnrichmentConfigurationInlineConfigurationsConditionConditionOnValue {
 	DateValue: *string,
@@ -2468,11 +2468,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.kendraDataSource.KendraDataSourceCustomDocumentEnrichmentConfigurationInlineConfigurationsTarget.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/kendradatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/kendradatasource"
 
 &kendradatasource.KendraDataSourceCustomDocumentEnrichmentConfigurationInlineConfigurationsTarget {
 	TargetDocumentAttributeKey: *string,
-	TargetDocumentAttributeValue: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.kendraDataSource.KendraDataSourceCustomDocumentEnrichmentConfigurationInlineConfigurationsTargetTargetDocumentAttributeValue,
+	TargetDocumentAttributeValue: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.kendraDataSource.KendraDataSourceCustomDocumentEnrichmentConfigurationInlineConfigurationsTargetTargetDocumentAttributeValue,
 	TargetDocumentAttributeValueDeletion: interface{},
 }
 ```
@@ -2530,7 +2530,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.kendraDataSource.KendraDataSourceCustomDocumentEnrichmentConfigurationInlineConfigurationsTargetTargetDocumentAttributeValue.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/kendradatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/kendradatasource"
 
 &kendradatasource.KendraDataSourceCustomDocumentEnrichmentConfigurationInlineConfigurationsTargetTargetDocumentAttributeValue {
 	DateValue: *string,
@@ -2604,12 +2604,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.kendraDataSource.KendraDataSourceCustomDocumentEnrichmentConfigurationPostExtractionHookConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/kendradatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/kendradatasource"
 
 &kendradatasource.KendraDataSourceCustomDocumentEnrichmentConfigurationPostExtractionHookConfiguration {
 	LambdaArn: *string,
 	S3Bucket: *string,
-	InvocationCondition: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.kendraDataSource.KendraDataSourceCustomDocumentEnrichmentConfigurationPostExtractionHookConfigurationInvocationCondition,
+	InvocationCondition: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.kendraDataSource.KendraDataSourceCustomDocumentEnrichmentConfigurationPostExtractionHookConfigurationInvocationCondition,
 }
 ```
 
@@ -2666,12 +2666,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.kendraDataSource.KendraDataSourceCustomDocumentEnrichmentConfigurationPostExtractionHookConfigurationInvocationCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/kendradatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/kendradatasource"
 
 &kendradatasource.KendraDataSourceCustomDocumentEnrichmentConfigurationPostExtractionHookConfigurationInvocationCondition {
 	ConditionDocumentAttributeKey: *string,
 	Operator: *string,
-	ConditionOnValue: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.kendraDataSource.KendraDataSourceCustomDocumentEnrichmentConfigurationPostExtractionHookConfigurationInvocationConditionConditionOnValue,
+	ConditionOnValue: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.kendraDataSource.KendraDataSourceCustomDocumentEnrichmentConfigurationPostExtractionHookConfigurationInvocationConditionConditionOnValue,
 }
 ```
 
@@ -2728,7 +2728,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.kendraDataSource.KendraDataSourceCustomDocumentEnrichmentConfigurationPostExtractionHookConfigurationInvocationConditionConditionOnValue.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/kendradatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/kendradatasource"
 
 &kendradatasource.KendraDataSourceCustomDocumentEnrichmentConfigurationPostExtractionHookConfigurationInvocationConditionConditionOnValue {
 	DateValue: *string,
@@ -2802,12 +2802,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.kendraDataSource.KendraDataSourceCustomDocumentEnrichmentConfigurationPreExtractionHookConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/kendradatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/kendradatasource"
 
 &kendradatasource.KendraDataSourceCustomDocumentEnrichmentConfigurationPreExtractionHookConfiguration {
 	LambdaArn: *string,
 	S3Bucket: *string,
-	InvocationCondition: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.kendraDataSource.KendraDataSourceCustomDocumentEnrichmentConfigurationPreExtractionHookConfigurationInvocationCondition,
+	InvocationCondition: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.kendraDataSource.KendraDataSourceCustomDocumentEnrichmentConfigurationPreExtractionHookConfigurationInvocationCondition,
 }
 ```
 
@@ -2864,12 +2864,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.kendraDataSource.KendraDataSourceCustomDocumentEnrichmentConfigurationPreExtractionHookConfigurationInvocationCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/kendradatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/kendradatasource"
 
 &kendradatasource.KendraDataSourceCustomDocumentEnrichmentConfigurationPreExtractionHookConfigurationInvocationCondition {
 	ConditionDocumentAttributeKey: *string,
 	Operator: *string,
-	ConditionOnValue: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.kendraDataSource.KendraDataSourceCustomDocumentEnrichmentConfigurationPreExtractionHookConfigurationInvocationConditionConditionOnValue,
+	ConditionOnValue: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.kendraDataSource.KendraDataSourceCustomDocumentEnrichmentConfigurationPreExtractionHookConfigurationInvocationConditionConditionOnValue,
 }
 ```
 
@@ -2926,7 +2926,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.kendraDataSource.KendraDataSourceCustomDocumentEnrichmentConfigurationPreExtractionHookConfigurationInvocationConditionConditionOnValue.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/kendradatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/kendradatasource"
 
 &kendradatasource.KendraDataSourceCustomDocumentEnrichmentConfigurationPreExtractionHookConfigurationInvocationConditionConditionOnValue {
 	DateValue: *string,
@@ -3000,7 +3000,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.kendraDataSource.KendraDataSourceTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/kendradatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/kendradatasource"
 
 &kendradatasource.KendraDataSourceTimeouts {
 	Create: *string,
@@ -3062,7 +3062,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.kendraDataSource.KendraDataSourceConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/kendradatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/kendradatasource"
 
 kendradatasource.NewKendraDataSourceConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KendraDataSourceConfigurationOutputReference
 ```
@@ -3437,7 +3437,7 @@ func InternalValue() KendraDataSourceConfiguration
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.kendraDataSource.KendraDataSourceConfigurationS3ConfigurationAccessControlListConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/kendradatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/kendradatasource"
 
 kendradatasource.NewKendraDataSourceConfigurationS3ConfigurationAccessControlListConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KendraDataSourceConfigurationS3ConfigurationAccessControlListConfigurationOutputReference
 ```
@@ -3715,7 +3715,7 @@ func InternalValue() KendraDataSourceConfigurationS3ConfigurationAccessControlLi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.kendraDataSource.KendraDataSourceConfigurationS3ConfigurationDocumentsMetadataConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/kendradatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/kendradatasource"
 
 kendradatasource.NewKendraDataSourceConfigurationS3ConfigurationDocumentsMetadataConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KendraDataSourceConfigurationS3ConfigurationDocumentsMetadataConfigurationOutputReference
 ```
@@ -3993,7 +3993,7 @@ func InternalValue() KendraDataSourceConfigurationS3ConfigurationDocumentsMetada
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.kendraDataSource.KendraDataSourceConfigurationS3ConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/kendradatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/kendradatasource"
 
 kendradatasource.NewKendraDataSourceConfigurationS3ConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KendraDataSourceConfigurationS3ConfigurationOutputReference
 ```
@@ -4435,7 +4435,7 @@ func InternalValue() KendraDataSourceConfigurationS3Configuration
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.kendraDataSource.KendraDataSourceConfigurationTemplateConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/kendradatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/kendradatasource"
 
 kendradatasource.NewKendraDataSourceConfigurationTemplateConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KendraDataSourceConfigurationTemplateConfigurationOutputReference
 ```
@@ -4706,7 +4706,7 @@ func InternalValue() KendraDataSourceConfigurationTemplateConfiguration
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.kendraDataSource.KendraDataSourceConfigurationWebCrawlerConfigurationAuthenticationConfigurationBasicAuthenticationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/kendradatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/kendradatasource"
 
 kendradatasource.NewKendraDataSourceConfigurationWebCrawlerConfigurationAuthenticationConfigurationBasicAuthenticationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) KendraDataSourceConfigurationWebCrawlerConfigurationAuthenticationConfigurationBasicAuthenticationList
 ```
@@ -4866,7 +4866,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.kendraDataSource.KendraDataSourceConfigurationWebCrawlerConfigurationAuthenticationConfigurationBasicAuthenticationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/kendradatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/kendradatasource"
 
 kendradatasource.NewKendraDataSourceConfigurationWebCrawlerConfigurationAuthenticationConfigurationBasicAuthenticationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) KendraDataSourceConfigurationWebCrawlerConfigurationAuthenticationConfigurationBasicAuthenticationOutputReference
 ```
@@ -5199,7 +5199,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.kendraDataSource.KendraDataSourceConfigurationWebCrawlerConfigurationAuthenticationConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/kendradatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/kendradatasource"
 
 kendradatasource.NewKendraDataSourceConfigurationWebCrawlerConfigurationAuthenticationConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KendraDataSourceConfigurationWebCrawlerConfigurationAuthenticationConfigurationOutputReference
 ```
@@ -5490,7 +5490,7 @@ func InternalValue() KendraDataSourceConfigurationWebCrawlerConfigurationAuthent
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.kendraDataSource.KendraDataSourceConfigurationWebCrawlerConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/kendradatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/kendradatasource"
 
 kendradatasource.NewKendraDataSourceConfigurationWebCrawlerConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KendraDataSourceConfigurationWebCrawlerConfigurationOutputReference
 ```
@@ -6032,7 +6032,7 @@ func InternalValue() KendraDataSourceConfigurationWebCrawlerConfiguration
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.kendraDataSource.KendraDataSourceConfigurationWebCrawlerConfigurationProxyConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/kendradatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/kendradatasource"
 
 kendradatasource.NewKendraDataSourceConfigurationWebCrawlerConfigurationProxyConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KendraDataSourceConfigurationWebCrawlerConfigurationProxyConfigurationOutputReference
 ```
@@ -6354,7 +6354,7 @@ func InternalValue() KendraDataSourceConfigurationWebCrawlerConfigurationProxyCo
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.kendraDataSource.KendraDataSourceConfigurationWebCrawlerConfigurationUrlsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/kendradatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/kendradatasource"
 
 kendradatasource.NewKendraDataSourceConfigurationWebCrawlerConfigurationUrlsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KendraDataSourceConfigurationWebCrawlerConfigurationUrlsOutputReference
 ```
@@ -6687,7 +6687,7 @@ func InternalValue() KendraDataSourceConfigurationWebCrawlerConfigurationUrls
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.kendraDataSource.KendraDataSourceConfigurationWebCrawlerConfigurationUrlsSeedUrlConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/kendradatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/kendradatasource"
 
 kendradatasource.NewKendraDataSourceConfigurationWebCrawlerConfigurationUrlsSeedUrlConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KendraDataSourceConfigurationWebCrawlerConfigurationUrlsSeedUrlConfigurationOutputReference
 ```
@@ -6987,7 +6987,7 @@ func InternalValue() KendraDataSourceConfigurationWebCrawlerConfigurationUrlsSee
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.kendraDataSource.KendraDataSourceConfigurationWebCrawlerConfigurationUrlsSiteMapsConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/kendradatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/kendradatasource"
 
 kendradatasource.NewKendraDataSourceConfigurationWebCrawlerConfigurationUrlsSiteMapsConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KendraDataSourceConfigurationWebCrawlerConfigurationUrlsSiteMapsConfigurationOutputReference
 ```
@@ -7258,7 +7258,7 @@ func InternalValue() KendraDataSourceConfigurationWebCrawlerConfigurationUrlsSit
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.kendraDataSource.KendraDataSourceCustomDocumentEnrichmentConfigurationInlineConfigurationsConditionConditionOnValueOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/kendradatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/kendradatasource"
 
 kendradatasource.NewKendraDataSourceCustomDocumentEnrichmentConfigurationInlineConfigurationsConditionConditionOnValueOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KendraDataSourceCustomDocumentEnrichmentConfigurationInlineConfigurationsConditionConditionOnValueOutputReference
 ```
@@ -7623,7 +7623,7 @@ func InternalValue() KendraDataSourceCustomDocumentEnrichmentConfigurationInline
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.kendraDataSource.KendraDataSourceCustomDocumentEnrichmentConfigurationInlineConfigurationsConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/kendradatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/kendradatasource"
 
 kendradatasource.NewKendraDataSourceCustomDocumentEnrichmentConfigurationInlineConfigurationsConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KendraDataSourceCustomDocumentEnrichmentConfigurationInlineConfigurationsConditionOutputReference
 ```
@@ -7958,7 +7958,7 @@ func InternalValue() KendraDataSourceCustomDocumentEnrichmentConfigurationInline
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.kendraDataSource.KendraDataSourceCustomDocumentEnrichmentConfigurationInlineConfigurationsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/kendradatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/kendradatasource"
 
 kendradatasource.NewKendraDataSourceCustomDocumentEnrichmentConfigurationInlineConfigurationsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) KendraDataSourceCustomDocumentEnrichmentConfigurationInlineConfigurationsList
 ```
@@ -8118,7 +8118,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.kendraDataSource.KendraDataSourceCustomDocumentEnrichmentConfigurationInlineConfigurationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/kendradatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/kendradatasource"
 
 kendradatasource.NewKendraDataSourceCustomDocumentEnrichmentConfigurationInlineConfigurationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) KendraDataSourceCustomDocumentEnrichmentConfigurationInlineConfigurationsOutputReference
 ```
@@ -8498,7 +8498,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.kendraDataSource.KendraDataSourceCustomDocumentEnrichmentConfigurationInlineConfigurationsTargetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/kendradatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/kendradatasource"
 
 kendradatasource.NewKendraDataSourceCustomDocumentEnrichmentConfigurationInlineConfigurationsTargetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KendraDataSourceCustomDocumentEnrichmentConfigurationInlineConfigurationsTargetOutputReference
 ```
@@ -8847,7 +8847,7 @@ func InternalValue() KendraDataSourceCustomDocumentEnrichmentConfigurationInline
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.kendraDataSource.KendraDataSourceCustomDocumentEnrichmentConfigurationInlineConfigurationsTargetTargetDocumentAttributeValueOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/kendradatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/kendradatasource"
 
 kendradatasource.NewKendraDataSourceCustomDocumentEnrichmentConfigurationInlineConfigurationsTargetTargetDocumentAttributeValueOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KendraDataSourceCustomDocumentEnrichmentConfigurationInlineConfigurationsTargetTargetDocumentAttributeValueOutputReference
 ```
@@ -9212,7 +9212,7 @@ func InternalValue() KendraDataSourceCustomDocumentEnrichmentConfigurationInline
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.kendraDataSource.KendraDataSourceCustomDocumentEnrichmentConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/kendradatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/kendradatasource"
 
 kendradatasource.NewKendraDataSourceCustomDocumentEnrichmentConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KendraDataSourceCustomDocumentEnrichmentConfigurationOutputReference
 ```
@@ -9616,7 +9616,7 @@ func InternalValue() KendraDataSourceCustomDocumentEnrichmentConfiguration
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.kendraDataSource.KendraDataSourceCustomDocumentEnrichmentConfigurationPostExtractionHookConfigurationInvocationConditionConditionOnValueOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/kendradatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/kendradatasource"
 
 kendradatasource.NewKendraDataSourceCustomDocumentEnrichmentConfigurationPostExtractionHookConfigurationInvocationConditionConditionOnValueOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KendraDataSourceCustomDocumentEnrichmentConfigurationPostExtractionHookConfigurationInvocationConditionConditionOnValueOutputReference
 ```
@@ -9981,7 +9981,7 @@ func InternalValue() KendraDataSourceCustomDocumentEnrichmentConfigurationPostEx
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.kendraDataSource.KendraDataSourceCustomDocumentEnrichmentConfigurationPostExtractionHookConfigurationInvocationConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/kendradatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/kendradatasource"
 
 kendradatasource.NewKendraDataSourceCustomDocumentEnrichmentConfigurationPostExtractionHookConfigurationInvocationConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KendraDataSourceCustomDocumentEnrichmentConfigurationPostExtractionHookConfigurationInvocationConditionOutputReference
 ```
@@ -10316,7 +10316,7 @@ func InternalValue() KendraDataSourceCustomDocumentEnrichmentConfigurationPostEx
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.kendraDataSource.KendraDataSourceCustomDocumentEnrichmentConfigurationPostExtractionHookConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/kendradatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/kendradatasource"
 
 kendradatasource.NewKendraDataSourceCustomDocumentEnrichmentConfigurationPostExtractionHookConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KendraDataSourceCustomDocumentEnrichmentConfigurationPostExtractionHookConfigurationOutputReference
 ```
@@ -10651,7 +10651,7 @@ func InternalValue() KendraDataSourceCustomDocumentEnrichmentConfigurationPostEx
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.kendraDataSource.KendraDataSourceCustomDocumentEnrichmentConfigurationPreExtractionHookConfigurationInvocationConditionConditionOnValueOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/kendradatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/kendradatasource"
 
 kendradatasource.NewKendraDataSourceCustomDocumentEnrichmentConfigurationPreExtractionHookConfigurationInvocationConditionConditionOnValueOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KendraDataSourceCustomDocumentEnrichmentConfigurationPreExtractionHookConfigurationInvocationConditionConditionOnValueOutputReference
 ```
@@ -11016,7 +11016,7 @@ func InternalValue() KendraDataSourceCustomDocumentEnrichmentConfigurationPreExt
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.kendraDataSource.KendraDataSourceCustomDocumentEnrichmentConfigurationPreExtractionHookConfigurationInvocationConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/kendradatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/kendradatasource"
 
 kendradatasource.NewKendraDataSourceCustomDocumentEnrichmentConfigurationPreExtractionHookConfigurationInvocationConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KendraDataSourceCustomDocumentEnrichmentConfigurationPreExtractionHookConfigurationInvocationConditionOutputReference
 ```
@@ -11351,7 +11351,7 @@ func InternalValue() KendraDataSourceCustomDocumentEnrichmentConfigurationPreExt
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.kendraDataSource.KendraDataSourceCustomDocumentEnrichmentConfigurationPreExtractionHookConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/kendradatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/kendradatasource"
 
 kendradatasource.NewKendraDataSourceCustomDocumentEnrichmentConfigurationPreExtractionHookConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KendraDataSourceCustomDocumentEnrichmentConfigurationPreExtractionHookConfigurationOutputReference
 ```
@@ -11686,7 +11686,7 @@ func InternalValue() KendraDataSourceCustomDocumentEnrichmentConfigurationPreExt
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.kendraDataSource.KendraDataSourceTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/kendradatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/kendradatasource"
 
 kendradatasource.NewKendraDataSourceTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KendraDataSourceTimeoutsOutputReference
 ```

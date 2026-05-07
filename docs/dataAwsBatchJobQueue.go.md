@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsBatchJobQueue.DataAwsBatchJobQueue.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsbatchjobqueue"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsbatchjobqueue"
 
 dataawsbatchjobqueue.NewDataAwsBatchJobQueue(scope Construct, id *string, config DataAwsBatchJobQueueConfig) DataAwsBatchJobQueue
 ```
@@ -319,7 +319,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsBatchJobQueue.DataAwsBatchJobQueue.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsbatchjobqueue"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsbatchjobqueue"
 
 dataawsbatchjobqueue.DataAwsBatchJobQueue_IsConstruct(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsBatchJobQueue.DataAwsBatchJobQueue.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsbatchjobqueue"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsbatchjobqueue"
 
 dataawsbatchjobqueue.DataAwsBatchJobQueue_IsTerraformElement(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ dataawsbatchjobqueue.DataAwsBatchJobQueue_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsBatchJobQueue.DataAwsBatchJobQueue.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsbatchjobqueue"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsbatchjobqueue"
 
 dataawsbatchjobqueue.DataAwsBatchJobQueue_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -379,7 +379,7 @@ dataawsbatchjobqueue.DataAwsBatchJobQueue_IsTerraformDataSource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsBatchJobQueue.DataAwsBatchJobQueue.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsbatchjobqueue"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsbatchjobqueue"
 
 dataawsbatchjobqueue.DataAwsBatchJobQueue_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -762,7 +762,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsBatchJobQueue.DataAwsBatchJobQueueComputeEnvironmentOrder.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsbatchjobqueue"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsbatchjobqueue"
 
 &dataawsbatchjobqueue.DataAwsBatchJobQueueComputeEnvironmentOrder {
 
@@ -775,7 +775,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsbatchjobqueue"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsBatchJobQueue.DataAwsBatchJobQueueConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsbatchjobqueue"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsbatchjobqueue"
 
 &dataawsbatchjobqueue.DataAwsBatchJobQueueConfig {
 	Connection: interface{},
@@ -938,7 +938,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsBatchJobQueue.DataAwsBatchJobQueueJobStateTimeLimitAction.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsbatchjobqueue"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsbatchjobqueue"
 
 &dataawsbatchjobqueue.DataAwsBatchJobQueueJobStateTimeLimitAction {
 
@@ -953,7 +953,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsbatchjobqueue"
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsBatchJobQueue.DataAwsBatchJobQueueComputeEnvironmentOrderList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsbatchjobqueue"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsbatchjobqueue"
 
 dataawsbatchjobqueue.NewDataAwsBatchJobQueueComputeEnvironmentOrderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsBatchJobQueueComputeEnvironmentOrderList
 ```
@@ -1102,7 +1102,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsBatchJobQueue.DataAwsBatchJobQueueComputeEnvironmentOrderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsbatchjobqueue"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsbatchjobqueue"
 
 dataawsbatchjobqueue.NewDataAwsBatchJobQueueComputeEnvironmentOrderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsBatchJobQueueComputeEnvironmentOrderOutputReference
 ```
@@ -1391,7 +1391,7 @@ func InternalValue() DataAwsBatchJobQueueComputeEnvironmentOrder
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsBatchJobQueue.DataAwsBatchJobQueueJobStateTimeLimitActionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsbatchjobqueue"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsbatchjobqueue"
 
 dataawsbatchjobqueue.NewDataAwsBatchJobQueueJobStateTimeLimitActionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsBatchJobQueueJobStateTimeLimitActionList
 ```
@@ -1540,7 +1540,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsBatchJobQueue.DataAwsBatchJobQueueJobStateTimeLimitActionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsbatchjobqueue"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsbatchjobqueue"
 
 dataawsbatchjobqueue.NewDataAwsBatchJobQueueJobStateTimeLimitActionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsBatchJobQueueJobStateTimeLimitActionOutputReference
 ```

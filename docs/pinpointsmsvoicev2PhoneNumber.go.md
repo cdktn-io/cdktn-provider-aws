@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.pinpointsmsvoicev2PhoneNumber.Pinpointsmsvoicev2PhoneNumber.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/pinpointsmsvoicev2phonenumber"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/pinpointsmsvoicev2phonenumber"
 
 pinpointsmsvoicev2phonenumber.NewPinpointsmsvoicev2PhoneNumber(scope Construct, id *string, config Pinpointsmsvoicev2PhoneNumberConfig) Pinpointsmsvoicev2PhoneNumber
 ```
@@ -483,7 +483,7 @@ func ResetTwoWayChannelRole()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.pinpointsmsvoicev2PhoneNumber.Pinpointsmsvoicev2PhoneNumber.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/pinpointsmsvoicev2phonenumber"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/pinpointsmsvoicev2phonenumber"
 
 pinpointsmsvoicev2phonenumber.Pinpointsmsvoicev2PhoneNumber_IsConstruct(x interface{}) *bool
 ```
@@ -515,7 +515,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.pinpointsmsvoicev2PhoneNumber.Pinpointsmsvoicev2PhoneNumber.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/pinpointsmsvoicev2phonenumber"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/pinpointsmsvoicev2phonenumber"
 
 pinpointsmsvoicev2phonenumber.Pinpointsmsvoicev2PhoneNumber_IsTerraformElement(x interface{}) *bool
 ```
@@ -529,7 +529,7 @@ pinpointsmsvoicev2phonenumber.Pinpointsmsvoicev2PhoneNumber_IsTerraformElement(x
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.pinpointsmsvoicev2PhoneNumber.Pinpointsmsvoicev2PhoneNumber.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/pinpointsmsvoicev2phonenumber"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/pinpointsmsvoicev2phonenumber"
 
 pinpointsmsvoicev2phonenumber.Pinpointsmsvoicev2PhoneNumber_IsTerraformResource(x interface{}) *bool
 ```
@@ -543,7 +543,7 @@ pinpointsmsvoicev2phonenumber.Pinpointsmsvoicev2PhoneNumber_IsTerraformResource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.pinpointsmsvoicev2PhoneNumber.Pinpointsmsvoicev2PhoneNumber.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/pinpointsmsvoicev2phonenumber"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/pinpointsmsvoicev2phonenumber"
 
 pinpointsmsvoicev2phonenumber.Pinpointsmsvoicev2PhoneNumber_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1135,7 +1135,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.pinpointsmsvoicev2PhoneNumber.Pinpointsmsvoicev2PhoneNumberConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/pinpointsmsvoicev2phonenumber"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/pinpointsmsvoicev2phonenumber"
 
 &pinpointsmsvoicev2phonenumber.Pinpointsmsvoicev2PhoneNumberConfig {
 	Connection: interface{},
@@ -1155,7 +1155,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/pinpointsmsvoicev2phon
 	RegistrationId: *string,
 	SelfManagedOptOutsEnabled: interface{},
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.pinpointsmsvoicev2PhoneNumber.Pinpointsmsvoicev2PhoneNumberTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.pinpointsmsvoicev2PhoneNumber.Pinpointsmsvoicev2PhoneNumberTimeouts,
 	TwoWayChannelArn: *string,
 	TwoWayChannelEnabled: interface{},
 	TwoWayChannelRole: *string,
@@ -1437,7 +1437,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.pinpointsmsvoicev2PhoneNumber.Pinpointsmsvoicev2PhoneNumberTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/pinpointsmsvoicev2phonenumber"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/pinpointsmsvoicev2phonenumber"
 
 &pinpointsmsvoicev2phonenumber.Pinpointsmsvoicev2PhoneNumberTimeouts {
 	Create: *string,
@@ -1505,7 +1505,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.pinpointsmsvoicev2PhoneNumber.Pinpointsmsvoicev2PhoneNumberTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/pinpointsmsvoicev2phonenumber"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/pinpointsmsvoicev2phonenumber"
 
 pinpointsmsvoicev2phonenumber.NewPinpointsmsvoicev2PhoneNumberTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Pinpointsmsvoicev2PhoneNumberTimeoutsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lightsailContainerService.LightsailContainerService.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lightsailcontainerservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lightsailcontainerservice"
 
 lightsailcontainerservice.NewLightsailContainerService(scope Construct, id *string, config LightsailContainerServiceConfig) LightsailContainerService
 ```
@@ -495,7 +495,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.lightsailContainerService.LightsailContainerService.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lightsailcontainerservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lightsailcontainerservice"
 
 lightsailcontainerservice.LightsailContainerService_IsConstruct(x interface{}) *bool
 ```
@@ -527,7 +527,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.lightsailContainerService.LightsailContainerService.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lightsailcontainerservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lightsailcontainerservice"
 
 lightsailcontainerservice.LightsailContainerService_IsTerraformElement(x interface{}) *bool
 ```
@@ -541,7 +541,7 @@ lightsailcontainerservice.LightsailContainerService_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.lightsailContainerService.LightsailContainerService.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lightsailcontainerservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lightsailcontainerservice"
 
 lightsailcontainerservice.LightsailContainerService_IsTerraformResource(x interface{}) *bool
 ```
@@ -555,7 +555,7 @@ lightsailcontainerservice.LightsailContainerService_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.lightsailContainerService.LightsailContainerService.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lightsailcontainerservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lightsailcontainerservice"
 
 lightsailcontainerservice.LightsailContainerService_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1125,7 +1125,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.lightsailContainerService.LightsailContainerServiceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lightsailcontainerservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lightsailcontainerservice"
 
 &lightsailcontainerservice.LightsailContainerServiceConfig {
 	Connection: interface{},
@@ -1140,12 +1140,12 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lightsailcontainerserv
 	Scale: *f64,
 	Id: *string,
 	IsDisabled: interface{},
-	PrivateRegistryAccess: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.lightsailContainerService.LightsailContainerServicePrivateRegistryAccess,
-	PublicDomainNames: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.lightsailContainerService.LightsailContainerServicePublicDomainNames,
+	PrivateRegistryAccess: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.lightsailContainerService.LightsailContainerServicePrivateRegistryAccess,
+	PublicDomainNames: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.lightsailContainerService.LightsailContainerServicePublicDomainNames,
 	Region: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.lightsailContainerService.LightsailContainerServiceTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.lightsailContainerService.LightsailContainerServiceTimeouts,
 }
 ```
 
@@ -1392,10 +1392,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.lightsailContainerService.LightsailContainerServicePrivateRegistryAccess.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lightsailcontainerservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lightsailcontainerservice"
 
 &lightsailcontainerservice.LightsailContainerServicePrivateRegistryAccess {
-	EcrImagePullerRole: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.lightsailContainerService.LightsailContainerServicePrivateRegistryAccessEcrImagePullerRole,
+	EcrImagePullerRole: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.lightsailContainerService.LightsailContainerServicePrivateRegistryAccessEcrImagePullerRole,
 }
 ```
 
@@ -1426,7 +1426,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.lightsailContainerService.LightsailContainerServicePrivateRegistryAccessEcrImagePullerRole.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lightsailcontainerservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lightsailcontainerservice"
 
 &lightsailcontainerservice.LightsailContainerServicePrivateRegistryAccessEcrImagePullerRole {
 	IsActive: interface{},
@@ -1458,7 +1458,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.lightsailContainerService.LightsailContainerServicePublicDomainNames.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lightsailcontainerservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lightsailcontainerservice"
 
 &lightsailcontainerservice.LightsailContainerServicePublicDomainNames {
 	Certificate: interface{},
@@ -1492,7 +1492,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.lightsailContainerService.LightsailContainerServicePublicDomainNamesCertificate.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lightsailcontainerservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lightsailcontainerservice"
 
 &lightsailcontainerservice.LightsailContainerServicePublicDomainNamesCertificate {
 	CertificateName: *string,
@@ -1538,7 +1538,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.lightsailContainerService.LightsailContainerServiceTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lightsailcontainerservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lightsailcontainerservice"
 
 &lightsailcontainerservice.LightsailContainerServiceTimeouts {
 	Create: *string,
@@ -1600,7 +1600,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lightsailContainerService.LightsailContainerServicePrivateRegistryAccessEcrImagePullerRoleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lightsailcontainerservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lightsailcontainerservice"
 
 lightsailcontainerservice.NewLightsailContainerServicePrivateRegistryAccessEcrImagePullerRoleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LightsailContainerServicePrivateRegistryAccessEcrImagePullerRoleOutputReference
 ```
@@ -1889,7 +1889,7 @@ func InternalValue() LightsailContainerServicePrivateRegistryAccessEcrImagePulle
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lightsailContainerService.LightsailContainerServicePrivateRegistryAccessOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lightsailcontainerservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lightsailcontainerservice"
 
 lightsailcontainerservice.NewLightsailContainerServicePrivateRegistryAccessOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LightsailContainerServicePrivateRegistryAccessOutputReference
 ```
@@ -2180,7 +2180,7 @@ func InternalValue() LightsailContainerServicePrivateRegistryAccess
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lightsailContainerService.LightsailContainerServicePublicDomainNamesCertificateList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lightsailcontainerservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lightsailcontainerservice"
 
 lightsailcontainerservice.NewLightsailContainerServicePublicDomainNamesCertificateList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LightsailContainerServicePublicDomainNamesCertificateList
 ```
@@ -2340,7 +2340,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lightsailContainerService.LightsailContainerServicePublicDomainNamesCertificateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lightsailcontainerservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lightsailcontainerservice"
 
 lightsailcontainerservice.NewLightsailContainerServicePublicDomainNamesCertificateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LightsailContainerServicePublicDomainNamesCertificateOutputReference
 ```
@@ -2651,7 +2651,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lightsailContainerService.LightsailContainerServicePublicDomainNamesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lightsailcontainerservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lightsailcontainerservice"
 
 lightsailcontainerservice.NewLightsailContainerServicePublicDomainNamesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LightsailContainerServicePublicDomainNamesOutputReference
 ```
@@ -2935,7 +2935,7 @@ func InternalValue() LightsailContainerServicePublicDomainNames
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lightsailContainerService.LightsailContainerServiceTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lightsailcontainerservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lightsailcontainerservice"
 
 lightsailcontainerservice.NewLightsailContainerServiceTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LightsailContainerServiceTimeoutsOutputReference
 ```

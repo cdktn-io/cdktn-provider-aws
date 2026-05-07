@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreCodeInterpreter.BedrockagentcoreCodeInterpreter.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/bedrockagentcorecodeinterpreter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcorecodeinterpreter"
 
 bedrockagentcorecodeinterpreter.NewBedrockagentcoreCodeInterpreter(scope Construct, id *string, config BedrockagentcoreCodeInterpreterConfig) BedrockagentcoreCodeInterpreter
 ```
@@ -468,7 +468,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.bedrockagentcoreCodeInterpreter.BedrockagentcoreCodeInterpreter.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/bedrockagentcorecodeinterpreter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcorecodeinterpreter"
 
 bedrockagentcorecodeinterpreter.BedrockagentcoreCodeInterpreter_IsConstruct(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.bedrockagentcoreCodeInterpreter.BedrockagentcoreCodeInterpreter.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/bedrockagentcorecodeinterpreter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcorecodeinterpreter"
 
 bedrockagentcorecodeinterpreter.BedrockagentcoreCodeInterpreter_IsTerraformElement(x interface{}) *bool
 ```
@@ -514,7 +514,7 @@ bedrockagentcorecodeinterpreter.BedrockagentcoreCodeInterpreter_IsTerraformEleme
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.bedrockagentcoreCodeInterpreter.BedrockagentcoreCodeInterpreter.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/bedrockagentcorecodeinterpreter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcorecodeinterpreter"
 
 bedrockagentcorecodeinterpreter.BedrockagentcoreCodeInterpreter_IsTerraformResource(x interface{}) *bool
 ```
@@ -528,7 +528,7 @@ bedrockagentcorecodeinterpreter.BedrockagentcoreCodeInterpreter_IsTerraformResou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.bedrockagentcoreCodeInterpreter.BedrockagentcoreCodeInterpreter.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/bedrockagentcorecodeinterpreter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcorecodeinterpreter"
 
 bedrockagentcorecodeinterpreter.BedrockagentcoreCodeInterpreter_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -944,7 +944,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentcoreCodeInterpreter.BedrockagentcoreCodeInterpreterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/bedrockagentcorecodeinterpreter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcorecodeinterpreter"
 
 &bedrockagentcorecodeinterpreter.BedrockagentcoreCodeInterpreterConfig {
 	Connection: interface{},
@@ -960,7 +960,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/bedrockagentcorecodein
 	NetworkConfiguration: interface{},
 	Region: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.bedrockagentcoreCodeInterpreter.BedrockagentcoreCodeInterpreterTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.bedrockagentcoreCodeInterpreter.BedrockagentcoreCodeInterpreterTimeouts,
 }
 ```
 
@@ -1150,7 +1150,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentcoreCodeInterpreter.BedrockagentcoreCodeInterpreterNetworkConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/bedrockagentcorecodeinterpreter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcorecodeinterpreter"
 
 &bedrockagentcorecodeinterpreter.BedrockagentcoreCodeInterpreterNetworkConfiguration {
 	NetworkMode: *string,
@@ -1198,7 +1198,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentcoreCodeInterpreter.BedrockagentcoreCodeInterpreterNetworkConfigurationVpcConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/bedrockagentcorecodeinterpreter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcorecodeinterpreter"
 
 &bedrockagentcorecodeinterpreter.BedrockagentcoreCodeInterpreterNetworkConfigurationVpcConfig {
 	SecurityGroups: *[]*string,
@@ -1244,7 +1244,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentcoreCodeInterpreter.BedrockagentcoreCodeInterpreterTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/bedrockagentcorecodeinterpreter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcorecodeinterpreter"
 
 &bedrockagentcorecodeinterpreter.BedrockagentcoreCodeInterpreterTimeouts {
 	Create: *string,
@@ -1296,7 +1296,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreCodeInterpreter.BedrockagentcoreCodeInterpreterNetworkConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/bedrockagentcorecodeinterpreter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcorecodeinterpreter"
 
 bedrockagentcorecodeinterpreter.NewBedrockagentcoreCodeInterpreterNetworkConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentcoreCodeInterpreterNetworkConfigurationList
 ```
@@ -1456,7 +1456,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreCodeInterpreter.BedrockagentcoreCodeInterpreterNetworkConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/bedrockagentcorecodeinterpreter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcorecodeinterpreter"
 
 bedrockagentcorecodeinterpreter.NewBedrockagentcoreCodeInterpreterNetworkConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentcoreCodeInterpreterNetworkConfigurationOutputReference
 ```
@@ -1787,7 +1787,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreCodeInterpreter.BedrockagentcoreCodeInterpreterNetworkConfigurationVpcConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/bedrockagentcorecodeinterpreter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcorecodeinterpreter"
 
 bedrockagentcorecodeinterpreter.NewBedrockagentcoreCodeInterpreterNetworkConfigurationVpcConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentcoreCodeInterpreterNetworkConfigurationVpcConfigList
 ```
@@ -1947,7 +1947,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreCodeInterpreter.BedrockagentcoreCodeInterpreterNetworkConfigurationVpcConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/bedrockagentcorecodeinterpreter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcorecodeinterpreter"
 
 bedrockagentcorecodeinterpreter.NewBedrockagentcoreCodeInterpreterNetworkConfigurationVpcConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentcoreCodeInterpreterNetworkConfigurationVpcConfigOutputReference
 ```
@@ -2258,7 +2258,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreCodeInterpreter.BedrockagentcoreCodeInterpreterTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/bedrockagentcorecodeinterpreter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bedrockagentcorecodeinterpreter"
 
 bedrockagentcorecodeinterpreter.NewBedrockagentcoreCodeInterpreterTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BedrockagentcoreCodeInterpreterTimeoutsOutputReference
 ```

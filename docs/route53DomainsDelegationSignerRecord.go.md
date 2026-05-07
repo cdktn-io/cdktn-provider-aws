@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.route53DomainsDelegationSignerRecord.Route53DomainsDelegationSignerRecord.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/route53domainsdelegationsignerrecord"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/route53domainsdelegationsignerrecord"
 
 route53domainsdelegationsignerrecord.NewRoute53DomainsDelegationSignerRecord(scope Construct, id *string, config Route53DomainsDelegationSignerRecordConfig) Route53DomainsDelegationSignerRecord
 ```
@@ -440,7 +440,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.route53DomainsDelegationSignerRecord.Route53DomainsDelegationSignerRecord.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/route53domainsdelegationsignerrecord"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/route53domainsdelegationsignerrecord"
 
 route53domainsdelegationsignerrecord.Route53DomainsDelegationSignerRecord_IsConstruct(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.route53DomainsDelegationSignerRecord.Route53DomainsDelegationSignerRecord.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/route53domainsdelegationsignerrecord"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/route53domainsdelegationsignerrecord"
 
 route53domainsdelegationsignerrecord.Route53DomainsDelegationSignerRecord_IsTerraformElement(x interface{}) *bool
 ```
@@ -486,7 +486,7 @@ route53domainsdelegationsignerrecord.Route53DomainsDelegationSignerRecord_IsTerr
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.route53DomainsDelegationSignerRecord.Route53DomainsDelegationSignerRecord.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/route53domainsdelegationsignerrecord"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/route53domainsdelegationsignerrecord"
 
 route53domainsdelegationsignerrecord.Route53DomainsDelegationSignerRecord_IsTerraformResource(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ route53domainsdelegationsignerrecord.Route53DomainsDelegationSignerRecord_IsTerr
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.route53DomainsDelegationSignerRecord.Route53DomainsDelegationSignerRecord.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/route53domainsdelegationsignerrecord"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/route53domainsdelegationsignerrecord"
 
 route53domainsdelegationsignerrecord.Route53DomainsDelegationSignerRecord_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -817,7 +817,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.route53DomainsDelegationSignerRecord.Route53DomainsDelegationSignerRecordConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/route53domainsdelegationsignerrecord"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/route53domainsdelegationsignerrecord"
 
 &route53domainsdelegationsignerrecord.Route53DomainsDelegationSignerRecordConfig {
 	Connection: interface{},
@@ -829,7 +829,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/route53domainsdelegati
 	Provisioners: *[]interface{},
 	DomainName: *string,
 	SigningAttributes: interface{},
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.route53DomainsDelegationSignerRecord.Route53DomainsDelegationSignerRecordTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.route53DomainsDelegationSignerRecord.Route53DomainsDelegationSignerRecordTimeouts,
 }
 ```
 
@@ -965,7 +965,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.route53DomainsDelegationSignerRecord.Route53DomainsDelegationSignerRecordSigningAttributes.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/route53domainsdelegationsignerrecord"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/route53domainsdelegationsignerrecord"
 
 &route53domainsdelegationsignerrecord.Route53DomainsDelegationSignerRecordSigningAttributes {
 	Algorithm: *f64,
@@ -1025,7 +1025,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.route53DomainsDelegationSignerRecord.Route53DomainsDelegationSignerRecordTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/route53domainsdelegationsignerrecord"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/route53domainsdelegationsignerrecord"
 
 &route53domainsdelegationsignerrecord.Route53DomainsDelegationSignerRecordTimeouts {
 	Create: *string,
@@ -1077,7 +1077,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.route53DomainsDelegationSignerRecord.Route53DomainsDelegationSignerRecordSigningAttributesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/route53domainsdelegationsignerrecord"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/route53domainsdelegationsignerrecord"
 
 route53domainsdelegationsignerrecord.NewRoute53DomainsDelegationSignerRecordSigningAttributesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Route53DomainsDelegationSignerRecordSigningAttributesList
 ```
@@ -1237,7 +1237,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.route53DomainsDelegationSignerRecord.Route53DomainsDelegationSignerRecordSigningAttributesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/route53domainsdelegationsignerrecord"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/route53domainsdelegationsignerrecord"
 
 route53domainsdelegationsignerrecord.NewRoute53DomainsDelegationSignerRecordSigningAttributesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Route53DomainsDelegationSignerRecordSigningAttributesOutputReference
 ```
@@ -1570,7 +1570,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.route53DomainsDelegationSignerRecord.Route53DomainsDelegationSignerRecordTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/route53domainsdelegationsignerrecord"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/route53domainsdelegationsignerrecord"
 
 route53domainsdelegationsignerrecord.NewRoute53DomainsDelegationSignerRecordTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Route53DomainsDelegationSignerRecordTimeoutsOutputReference
 ```

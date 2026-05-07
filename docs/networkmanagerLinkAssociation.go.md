@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.networkmanagerLinkAssociation.NetworkmanagerLinkAssociation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/networkmanagerlinkassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkmanagerlinkassociation"
 
 networkmanagerlinkassociation.NewNetworkmanagerLinkAssociation(scope Construct, id *string, config NetworkmanagerLinkAssociationConfig) NetworkmanagerLinkAssociation
 ```
@@ -427,7 +427,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.networkmanagerLinkAssociation.NetworkmanagerLinkAssociation.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/networkmanagerlinkassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkmanagerlinkassociation"
 
 networkmanagerlinkassociation.NetworkmanagerLinkAssociation_IsConstruct(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.networkmanagerLinkAssociation.NetworkmanagerLinkAssociation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/networkmanagerlinkassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkmanagerlinkassociation"
 
 networkmanagerlinkassociation.NetworkmanagerLinkAssociation_IsTerraformElement(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ networkmanagerlinkassociation.NetworkmanagerLinkAssociation_IsTerraformElement(x
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.networkmanagerLinkAssociation.NetworkmanagerLinkAssociation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/networkmanagerlinkassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkmanagerlinkassociation"
 
 networkmanagerlinkassociation.NetworkmanagerLinkAssociation_IsTerraformResource(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ networkmanagerlinkassociation.NetworkmanagerLinkAssociation_IsTerraformResource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.networkmanagerLinkAssociation.NetworkmanagerLinkAssociation.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/networkmanagerlinkassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkmanagerlinkassociation"
 
 networkmanagerlinkassociation.NetworkmanagerLinkAssociation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -826,7 +826,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.networkmanagerLinkAssociation.NetworkmanagerLinkAssociationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/networkmanagerlinkassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkmanagerlinkassociation"
 
 &networkmanagerlinkassociation.NetworkmanagerLinkAssociationConfig {
 	Connection: interface{},
@@ -840,7 +840,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/networkmanagerlinkasso
 	GlobalNetworkId: *string,
 	LinkId: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.networkmanagerLinkAssociation.NetworkmanagerLinkAssociationTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.networkmanagerLinkAssociation.NetworkmanagerLinkAssociationTimeouts,
 }
 ```
 
@@ -1003,7 +1003,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.networkmanagerLinkAssociation.NetworkmanagerLinkAssociationTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/networkmanagerlinkassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkmanagerlinkassociation"
 
 &networkmanagerlinkassociation.NetworkmanagerLinkAssociationTimeouts {
 	Create: *string,
@@ -1051,7 +1051,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.networkmanagerLinkAssociation.NetworkmanagerLinkAssociationTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/networkmanagerlinkassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkmanagerlinkassociation"
 
 networkmanagerlinkassociation.NewNetworkmanagerLinkAssociationTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NetworkmanagerLinkAssociationTimeoutsOutputReference
 ```

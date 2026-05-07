@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsResourcegroupstaggingapiRequiredTags.DataAwsResourcegroupstaggingapiRequiredTags.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsresourcegroupstaggingapirequiredtags"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsresourcegroupstaggingapirequiredtags"
 
 dataawsresourcegroupstaggingapirequiredtags.NewDataAwsResourcegroupstaggingapiRequiredTags(scope Construct, id *string, config DataAwsResourcegroupstaggingapiRequiredTagsConfig) DataAwsResourcegroupstaggingapiRequiredTags
 ```
@@ -305,7 +305,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsResourcegroupstaggingapiRequiredTags.DataAwsResourcegroupstaggingapiRequiredTags.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsresourcegroupstaggingapirequiredtags"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsresourcegroupstaggingapirequiredtags"
 
 dataawsresourcegroupstaggingapirequiredtags.DataAwsResourcegroupstaggingapiRequiredTags_IsConstruct(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsResourcegroupstaggingapiRequiredTags.DataAwsResourcegroupstaggingapiRequiredTags.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsresourcegroupstaggingapirequiredtags"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsresourcegroupstaggingapirequiredtags"
 
 dataawsresourcegroupstaggingapirequiredtags.DataAwsResourcegroupstaggingapiRequiredTags_IsTerraformElement(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ dataawsresourcegroupstaggingapirequiredtags.DataAwsResourcegroupstaggingapiRequi
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsResourcegroupstaggingapiRequiredTags.DataAwsResourcegroupstaggingapiRequiredTags.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsresourcegroupstaggingapirequiredtags"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsresourcegroupstaggingapirequiredtags"
 
 dataawsresourcegroupstaggingapirequiredtags.DataAwsResourcegroupstaggingapiRequiredTags_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ dataawsresourcegroupstaggingapirequiredtags.DataAwsResourcegroupstaggingapiRequi
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsResourcegroupstaggingapiRequiredTags.DataAwsResourcegroupstaggingapiRequiredTags.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsresourcegroupstaggingapirequiredtags"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsresourcegroupstaggingapirequiredtags"
 
 dataawsresourcegroupstaggingapirequiredtags.DataAwsResourcegroupstaggingapiRequiredTags_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -605,7 +605,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsResourcegroupstaggingapiRequiredTags.DataAwsResourcegroupstaggingapiRequiredTagsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsresourcegroupstaggingapirequiredtags"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsresourcegroupstaggingapirequiredtags"
 
 &dataawsresourcegroupstaggingapirequiredtags.DataAwsResourcegroupstaggingapiRequiredTagsConfig {
 	Connection: interface{},
@@ -723,7 +723,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsResourcegroupstaggingapiRequiredTags.DataAwsResourcegroupstaggingapiRequiredTagsRequiredTags.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsresourcegroupstaggingapirequiredtags"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsresourcegroupstaggingapirequiredtags"
 
 &dataawsresourcegroupstaggingapirequiredtags.DataAwsResourcegroupstaggingapiRequiredTagsRequiredTags {
 
@@ -738,7 +738,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsresourcegroupst
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsResourcegroupstaggingapiRequiredTags.DataAwsResourcegroupstaggingapiRequiredTagsRequiredTagsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsresourcegroupstaggingapirequiredtags"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsresourcegroupstaggingapirequiredtags"
 
 dataawsresourcegroupstaggingapirequiredtags.NewDataAwsResourcegroupstaggingapiRequiredTagsRequiredTagsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsResourcegroupstaggingapiRequiredTagsRequiredTagsList
 ```
@@ -887,7 +887,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsResourcegroupstaggingapiRequiredTags.DataAwsResourcegroupstaggingapiRequiredTagsRequiredTagsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsresourcegroupstaggingapirequiredtags"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsresourcegroupstaggingapirequiredtags"
 
 dataawsresourcegroupstaggingapirequiredtags.NewDataAwsResourcegroupstaggingapiRequiredTagsRequiredTagsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsResourcegroupstaggingapiRequiredTagsRequiredTagsOutputReference
 ```

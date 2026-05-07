@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsS3ControlMultiRegionAccessPoints.DataAwsS3ControlMultiRegionAccessPoints.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawss3controlmultiregionaccesspoints"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawss3controlmultiregionaccesspoints"
 
 dataawss3controlmultiregionaccesspoints.NewDataAwsS3ControlMultiRegionAccessPoints(scope Construct, id *string, config DataAwsS3ControlMultiRegionAccessPointsConfig) DataAwsS3ControlMultiRegionAccessPoints
 ```
@@ -312,7 +312,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsS3ControlMultiRegionAccessPoints.DataAwsS3ControlMultiRegionAccessPoints.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawss3controlmultiregionaccesspoints"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawss3controlmultiregionaccesspoints"
 
 dataawss3controlmultiregionaccesspoints.DataAwsS3ControlMultiRegionAccessPoints_IsConstruct(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsS3ControlMultiRegionAccessPoints.DataAwsS3ControlMultiRegionAccessPoints.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawss3controlmultiregionaccesspoints"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawss3controlmultiregionaccesspoints"
 
 dataawss3controlmultiregionaccesspoints.DataAwsS3ControlMultiRegionAccessPoints_IsTerraformElement(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ dataawss3controlmultiregionaccesspoints.DataAwsS3ControlMultiRegionAccessPoints_
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsS3ControlMultiRegionAccessPoints.DataAwsS3ControlMultiRegionAccessPoints.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawss3controlmultiregionaccesspoints"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawss3controlmultiregionaccesspoints"
 
 dataawss3controlmultiregionaccesspoints.DataAwsS3ControlMultiRegionAccessPoints_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -372,7 +372,7 @@ dataawss3controlmultiregionaccesspoints.DataAwsS3ControlMultiRegionAccessPoints_
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsS3ControlMultiRegionAccessPoints.DataAwsS3ControlMultiRegionAccessPoints.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawss3controlmultiregionaccesspoints"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawss3controlmultiregionaccesspoints"
 
 dataawss3controlmultiregionaccesspoints.DataAwsS3ControlMultiRegionAccessPoints_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -634,7 +634,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsS3ControlMultiRegionAccessPoints.DataAwsS3ControlMultiRegionAccessPointsAccessPoints.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawss3controlmultiregionaccesspoints"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawss3controlmultiregionaccesspoints"
 
 &dataawss3controlmultiregionaccesspoints.DataAwsS3ControlMultiRegionAccessPointsAccessPoints {
 
@@ -647,7 +647,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawss3controlmultir
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsS3ControlMultiRegionAccessPoints.DataAwsS3ControlMultiRegionAccessPointsAccessPointsPublicAccessBlock.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawss3controlmultiregionaccesspoints"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawss3controlmultiregionaccesspoints"
 
 &dataawss3controlmultiregionaccesspoints.DataAwsS3ControlMultiRegionAccessPointsAccessPointsPublicAccessBlock {
 
@@ -660,7 +660,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawss3controlmultir
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsS3ControlMultiRegionAccessPoints.DataAwsS3ControlMultiRegionAccessPointsAccessPointsRegions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawss3controlmultiregionaccesspoints"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawss3controlmultiregionaccesspoints"
 
 &dataawss3controlmultiregionaccesspoints.DataAwsS3ControlMultiRegionAccessPointsAccessPointsRegions {
 
@@ -673,7 +673,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawss3controlmultir
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsS3ControlMultiRegionAccessPoints.DataAwsS3ControlMultiRegionAccessPointsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawss3controlmultiregionaccesspoints"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawss3controlmultiregionaccesspoints"
 
 &dataawss3controlmultiregionaccesspoints.DataAwsS3ControlMultiRegionAccessPointsConfig {
 	Connection: interface{},
@@ -807,7 +807,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsS3ControlMultiRegionAccessPoints.DataAwsS3ControlMultiRegionAccessPointsAccessPointsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawss3controlmultiregionaccesspoints"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawss3controlmultiregionaccesspoints"
 
 dataawss3controlmultiregionaccesspoints.NewDataAwsS3ControlMultiRegionAccessPointsAccessPointsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsS3ControlMultiRegionAccessPointsAccessPointsList
 ```
@@ -956,7 +956,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsS3ControlMultiRegionAccessPoints.DataAwsS3ControlMultiRegionAccessPointsAccessPointsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawss3controlmultiregionaccesspoints"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawss3controlmultiregionaccesspoints"
 
 dataawss3controlmultiregionaccesspoints.NewDataAwsS3ControlMultiRegionAccessPointsAccessPointsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsS3ControlMultiRegionAccessPointsAccessPointsOutputReference
 ```
@@ -1289,7 +1289,7 @@ func InternalValue() DataAwsS3ControlMultiRegionAccessPointsAccessPoints
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsS3ControlMultiRegionAccessPoints.DataAwsS3ControlMultiRegionAccessPointsAccessPointsPublicAccessBlockList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawss3controlmultiregionaccesspoints"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawss3controlmultiregionaccesspoints"
 
 dataawss3controlmultiregionaccesspoints.NewDataAwsS3ControlMultiRegionAccessPointsAccessPointsPublicAccessBlockList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsS3ControlMultiRegionAccessPointsAccessPointsPublicAccessBlockList
 ```
@@ -1438,7 +1438,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsS3ControlMultiRegionAccessPoints.DataAwsS3ControlMultiRegionAccessPointsAccessPointsPublicAccessBlockOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawss3controlmultiregionaccesspoints"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawss3controlmultiregionaccesspoints"
 
 dataawss3controlmultiregionaccesspoints.NewDataAwsS3ControlMultiRegionAccessPointsAccessPointsPublicAccessBlockOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsS3ControlMultiRegionAccessPointsAccessPointsPublicAccessBlockOutputReference
 ```
@@ -1749,7 +1749,7 @@ func InternalValue() DataAwsS3ControlMultiRegionAccessPointsAccessPointsPublicAc
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsS3ControlMultiRegionAccessPoints.DataAwsS3ControlMultiRegionAccessPointsAccessPointsRegionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawss3controlmultiregionaccesspoints"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawss3controlmultiregionaccesspoints"
 
 dataawss3controlmultiregionaccesspoints.NewDataAwsS3ControlMultiRegionAccessPointsAccessPointsRegionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsS3ControlMultiRegionAccessPointsAccessPointsRegionsList
 ```
@@ -1898,7 +1898,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsS3ControlMultiRegionAccessPoints.DataAwsS3ControlMultiRegionAccessPointsAccessPointsRegionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawss3controlmultiregionaccesspoints"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawss3controlmultiregionaccesspoints"
 
 dataawss3controlmultiregionaccesspoints.NewDataAwsS3ControlMultiRegionAccessPointsAccessPointsRegionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsS3ControlMultiRegionAccessPointsAccessPointsRegionsOutputReference
 ```

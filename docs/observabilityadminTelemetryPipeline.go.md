@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.observabilityadminTelemetryPipeline.ObservabilityadminTelemetryPipeline.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/observabilityadmintelemetrypipeline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/observabilityadmintelemetrypipeline"
 
 observabilityadmintelemetrypipeline.NewObservabilityadminTelemetryPipeline(scope Construct, id *string, config ObservabilityadminTelemetryPipelineConfig) ObservabilityadminTelemetryPipeline
 ```
@@ -454,7 +454,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.observabilityadminTelemetryPipeline.ObservabilityadminTelemetryPipeline.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/observabilityadmintelemetrypipeline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/observabilityadmintelemetrypipeline"
 
 observabilityadmintelemetrypipeline.ObservabilityadminTelemetryPipeline_IsConstruct(x interface{}) *bool
 ```
@@ -486,7 +486,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.observabilityadminTelemetryPipeline.ObservabilityadminTelemetryPipeline.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/observabilityadmintelemetrypipeline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/observabilityadmintelemetrypipeline"
 
 observabilityadmintelemetrypipeline.ObservabilityadminTelemetryPipeline_IsTerraformElement(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ observabilityadmintelemetrypipeline.ObservabilityadminTelemetryPipeline_IsTerraf
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.observabilityadminTelemetryPipeline.ObservabilityadminTelemetryPipeline.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/observabilityadmintelemetrypipeline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/observabilityadmintelemetrypipeline"
 
 observabilityadmintelemetrypipeline.ObservabilityadminTelemetryPipeline_IsTerraformResource(x interface{}) *bool
 ```
@@ -514,7 +514,7 @@ observabilityadmintelemetrypipeline.ObservabilityadminTelemetryPipeline_IsTerraf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.observabilityadminTelemetryPipeline.ObservabilityadminTelemetryPipeline.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/observabilityadmintelemetrypipeline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/observabilityadmintelemetrypipeline"
 
 observabilityadmintelemetrypipeline.ObservabilityadminTelemetryPipeline_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -875,7 +875,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.observabilityadminTelemetryPipeline.ObservabilityadminTelemetryPipelineConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/observabilityadmintelemetrypipeline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/observabilityadmintelemetrypipeline"
 
 &observabilityadmintelemetrypipeline.ObservabilityadminTelemetryPipelineConfig {
 	Connection: interface{},
@@ -889,7 +889,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/observabilityadmintele
 	Configuration: interface{},
 	Region: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.observabilityadminTelemetryPipeline.ObservabilityadminTelemetryPipelineTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.observabilityadminTelemetryPipeline.ObservabilityadminTelemetryPipelineTimeouts,
 }
 ```
 
@@ -1053,7 +1053,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.observabilityadminTelemetryPipeline.ObservabilityadminTelemetryPipelineConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/observabilityadmintelemetrypipeline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/observabilityadmintelemetrypipeline"
 
 &observabilityadmintelemetrypipeline.ObservabilityadminTelemetryPipelineConfiguration {
 	Body: *string,
@@ -1085,7 +1085,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.observabilityadminTelemetryPipeline.ObservabilityadminTelemetryPipelineTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/observabilityadmintelemetrypipeline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/observabilityadmintelemetrypipeline"
 
 &observabilityadmintelemetrypipeline.ObservabilityadminTelemetryPipelineTimeouts {
 	Create: *string,
@@ -1153,7 +1153,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.observabilityadminTelemetryPipeline.ObservabilityadminTelemetryPipelineConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/observabilityadmintelemetrypipeline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/observabilityadmintelemetrypipeline"
 
 observabilityadmintelemetrypipeline.NewObservabilityadminTelemetryPipelineConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityadminTelemetryPipelineConfigurationList
 ```
@@ -1313,7 +1313,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.observabilityadminTelemetryPipeline.ObservabilityadminTelemetryPipelineConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/observabilityadmintelemetrypipeline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/observabilityadmintelemetrypipeline"
 
 observabilityadmintelemetrypipeline.NewObservabilityadminTelemetryPipelineConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityadminTelemetryPipelineConfigurationOutputReference
 ```
@@ -1602,7 +1602,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.observabilityadminTelemetryPipeline.ObservabilityadminTelemetryPipelineTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/observabilityadmintelemetrypipeline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/observabilityadmintelemetrypipeline"
 
 observabilityadmintelemetrypipeline.NewObservabilityadminTelemetryPipelineTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ObservabilityadminTelemetryPipelineTimeoutsOutputReference
 ```

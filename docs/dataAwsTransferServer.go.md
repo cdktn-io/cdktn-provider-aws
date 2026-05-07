@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsTransferServer.DataAwsTransferServer.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawstransferserver"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawstransferserver"
 
 dataawstransferserver.NewDataAwsTransferServer(scope Construct, id *string, config DataAwsTransferServerConfig) DataAwsTransferServer
 ```
@@ -319,7 +319,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsTransferServer.DataAwsTransferServer.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawstransferserver"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawstransferserver"
 
 dataawstransferserver.DataAwsTransferServer_IsConstruct(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsTransferServer.DataAwsTransferServer.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawstransferserver"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawstransferserver"
 
 dataawstransferserver.DataAwsTransferServer_IsTerraformElement(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ dataawstransferserver.DataAwsTransferServer_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsTransferServer.DataAwsTransferServer.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawstransferserver"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawstransferserver"
 
 dataawstransferserver.DataAwsTransferServer_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -379,7 +379,7 @@ dataawstransferserver.DataAwsTransferServer_IsTerraformDataSource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsTransferServer.DataAwsTransferServer.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawstransferserver"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawstransferserver"
 
 dataawstransferserver.DataAwsTransferServer_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -806,7 +806,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsTransferServer.DataAwsTransferServerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawstransferserver"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawstransferserver"
 
 &dataawstransferserver.DataAwsTransferServerConfig {
 	Connection: interface{},

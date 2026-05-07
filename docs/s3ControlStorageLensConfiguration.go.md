@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3ControlStorageLensConfiguration.S3ControlStorageLensConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/s3controlstoragelensconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3controlstoragelensconfiguration"
 
 s3controlstoragelensconfiguration.NewS3ControlStorageLensConfiguration(scope Construct, id *string, config S3ControlStorageLensConfigurationConfig) S3ControlStorageLensConfiguration
 ```
@@ -448,7 +448,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.s3ControlStorageLensConfiguration.S3ControlStorageLensConfiguration.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/s3controlstoragelensconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3controlstoragelensconfiguration"
 
 s3controlstoragelensconfiguration.S3ControlStorageLensConfiguration_IsConstruct(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.s3ControlStorageLensConfiguration.S3ControlStorageLensConfiguration.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/s3controlstoragelensconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3controlstoragelensconfiguration"
 
 s3controlstoragelensconfiguration.S3ControlStorageLensConfiguration_IsTerraformElement(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ s3controlstoragelensconfiguration.S3ControlStorageLensConfiguration_IsTerraformE
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.s3ControlStorageLensConfiguration.S3ControlStorageLensConfiguration.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/s3controlstoragelensconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3controlstoragelensconfiguration"
 
 s3controlstoragelensconfiguration.S3ControlStorageLensConfiguration_IsTerraformResource(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ s3controlstoragelensconfiguration.S3ControlStorageLensConfiguration_IsTerraformR
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.s3ControlStorageLensConfiguration.S3ControlStorageLensConfiguration.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/s3controlstoragelensconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3controlstoragelensconfiguration"
 
 s3controlstoragelensconfiguration.S3ControlStorageLensConfiguration_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -902,7 +902,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/s3controlstoragelensconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3controlstoragelensconfiguration"
 
 &s3controlstoragelensconfiguration.S3ControlStorageLensConfigurationConfig {
 	Connection: interface{},
@@ -913,7 +913,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/s3controlstoragelensco
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	ConfigId: *string,
-	StorageLensConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfiguration,
+	StorageLensConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfiguration,
 	AccountId: *string,
 	Id: *string,
 	Region: *string,
@@ -1109,16 +1109,16 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/s3controlstoragelensconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3controlstoragelensconfiguration"
 
 &s3controlstoragelensconfiguration.S3ControlStorageLensConfigurationStorageLensConfiguration {
-	AccountLevel: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationAccountLevel,
+	AccountLevel: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationAccountLevel,
 	Enabled: interface{},
-	AwsOrg: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationAwsOrg,
-	DataExport: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationDataExport,
-	Exclude: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationExclude,
-	ExpandedPrefixesDataExport: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationExpandedPrefixesDataExport,
-	Include: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationInclude,
+	AwsOrg: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationAwsOrg,
+	DataExport: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationDataExport,
+	Exclude: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationExclude,
+	ExpandedPrefixesDataExport: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationExpandedPrefixesDataExport,
+	Include: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationInclude,
 	PrefixDelimiter: *string,
 }
 ```
@@ -1251,15 +1251,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationAccountLevel.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/s3controlstoragelensconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3controlstoragelensconfiguration"
 
 &s3controlstoragelensconfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationAccountLevel {
-	BucketLevel: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelBucketLevel,
-	ActivityMetrics: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelActivityMetrics,
-	AdvancedCostOptimizationMetrics: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelAdvancedCostOptimizationMetrics,
-	AdvancedDataProtectionMetrics: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelAdvancedDataProtectionMetrics,
-	AdvancedPerformanceMetrics: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelAdvancedPerformanceMetrics,
-	DetailedStatusCodeMetrics: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelDetailedStatusCodeMetrics,
+	BucketLevel: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelBucketLevel,
+	ActivityMetrics: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelActivityMetrics,
+	AdvancedCostOptimizationMetrics: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelAdvancedCostOptimizationMetrics,
+	AdvancedDataProtectionMetrics: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelAdvancedDataProtectionMetrics,
+	AdvancedPerformanceMetrics: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelAdvancedPerformanceMetrics,
+	DetailedStatusCodeMetrics: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelDetailedStatusCodeMetrics,
 }
 ```
 
@@ -1365,7 +1365,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelActivityMetrics.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/s3controlstoragelensconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3controlstoragelensconfiguration"
 
 &s3controlstoragelensconfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelActivityMetrics {
 	Enabled: interface{},
@@ -1397,7 +1397,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelAdvancedCostOptimizationMetrics.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/s3controlstoragelensconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3controlstoragelensconfiguration"
 
 &s3controlstoragelensconfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelAdvancedCostOptimizationMetrics {
 	Enabled: interface{},
@@ -1429,7 +1429,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelAdvancedDataProtectionMetrics.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/s3controlstoragelensconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3controlstoragelensconfiguration"
 
 &s3controlstoragelensconfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelAdvancedDataProtectionMetrics {
 	Enabled: interface{},
@@ -1461,7 +1461,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelAdvancedPerformanceMetrics.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/s3controlstoragelensconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3controlstoragelensconfiguration"
 
 &s3controlstoragelensconfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelAdvancedPerformanceMetrics {
 	Enabled: interface{},
@@ -1493,15 +1493,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelBucketLevel.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/s3controlstoragelensconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3controlstoragelensconfiguration"
 
 &s3controlstoragelensconfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelBucketLevel {
-	ActivityMetrics: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelBucketLevelActivityMetrics,
-	AdvancedCostOptimizationMetrics: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelBucketLevelAdvancedCostOptimizationMetrics,
-	AdvancedDataProtectionMetrics: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelBucketLevelAdvancedDataProtectionMetrics,
-	AdvancedPerformanceMetrics: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelBucketLevelAdvancedPerformanceMetrics,
-	DetailedStatusCodeMetrics: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelBucketLevelDetailedStatusCodeMetrics,
-	PrefixLevel: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelBucketLevelPrefixLevel,
+	ActivityMetrics: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelBucketLevelActivityMetrics,
+	AdvancedCostOptimizationMetrics: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelBucketLevelAdvancedCostOptimizationMetrics,
+	AdvancedDataProtectionMetrics: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelBucketLevelAdvancedDataProtectionMetrics,
+	AdvancedPerformanceMetrics: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelBucketLevelAdvancedPerformanceMetrics,
+	DetailedStatusCodeMetrics: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelBucketLevelDetailedStatusCodeMetrics,
+	PrefixLevel: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelBucketLevelPrefixLevel,
 }
 ```
 
@@ -1607,7 +1607,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelBucketLevelActivityMetrics.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/s3controlstoragelensconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3controlstoragelensconfiguration"
 
 &s3controlstoragelensconfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelBucketLevelActivityMetrics {
 	Enabled: interface{},
@@ -1639,7 +1639,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelBucketLevelAdvancedCostOptimizationMetrics.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/s3controlstoragelensconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3controlstoragelensconfiguration"
 
 &s3controlstoragelensconfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelBucketLevelAdvancedCostOptimizationMetrics {
 	Enabled: interface{},
@@ -1671,7 +1671,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelBucketLevelAdvancedDataProtectionMetrics.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/s3controlstoragelensconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3controlstoragelensconfiguration"
 
 &s3controlstoragelensconfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelBucketLevelAdvancedDataProtectionMetrics {
 	Enabled: interface{},
@@ -1703,7 +1703,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelBucketLevelAdvancedPerformanceMetrics.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/s3controlstoragelensconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3controlstoragelensconfiguration"
 
 &s3controlstoragelensconfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelBucketLevelAdvancedPerformanceMetrics {
 	Enabled: interface{},
@@ -1735,7 +1735,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelBucketLevelDetailedStatusCodeMetrics.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/s3controlstoragelensconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3controlstoragelensconfiguration"
 
 &s3controlstoragelensconfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelBucketLevelDetailedStatusCodeMetrics {
 	Enabled: interface{},
@@ -1767,10 +1767,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelBucketLevelPrefixLevel.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/s3controlstoragelensconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3controlstoragelensconfiguration"
 
 &s3controlstoragelensconfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelBucketLevelPrefixLevel {
-	StorageMetrics: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelBucketLevelPrefixLevelStorageMetrics,
+	StorageMetrics: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelBucketLevelPrefixLevelStorageMetrics,
 }
 ```
 
@@ -1801,11 +1801,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelBucketLevelPrefixLevelStorageMetrics.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/s3controlstoragelensconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3controlstoragelensconfiguration"
 
 &s3controlstoragelensconfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelBucketLevelPrefixLevelStorageMetrics {
 	Enabled: interface{},
-	SelectionCriteria: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelBucketLevelPrefixLevelStorageMetricsSelectionCriteria,
+	SelectionCriteria: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelBucketLevelPrefixLevelStorageMetricsSelectionCriteria,
 }
 ```
 
@@ -1849,7 +1849,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelBucketLevelPrefixLevelStorageMetricsSelectionCriteria.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/s3controlstoragelensconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3controlstoragelensconfiguration"
 
 &s3controlstoragelensconfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelBucketLevelPrefixLevelStorageMetricsSelectionCriteria {
 	Delimiter: *string,
@@ -1909,7 +1909,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelDetailedStatusCodeMetrics.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/s3controlstoragelensconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3controlstoragelensconfiguration"
 
 &s3controlstoragelensconfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelDetailedStatusCodeMetrics {
 	Enabled: interface{},
@@ -1941,7 +1941,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationAwsOrg.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/s3controlstoragelensconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3controlstoragelensconfiguration"
 
 &s3controlstoragelensconfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationAwsOrg {
 	Arn: *string,
@@ -1973,12 +1973,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationDataExport.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/s3controlstoragelensconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3controlstoragelensconfiguration"
 
 &s3controlstoragelensconfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationDataExport {
-	CloudWatchMetrics: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationDataExportCloudWatchMetrics,
-	S3BucketDestination: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationDataExportS3BucketDestination,
-	StorageLensTableDestination: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationDataExportStorageLensTableDestination,
+	CloudWatchMetrics: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationDataExportCloudWatchMetrics,
+	S3BucketDestination: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationDataExportS3BucketDestination,
+	StorageLensTableDestination: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationDataExportStorageLensTableDestination,
 }
 ```
 
@@ -2039,7 +2039,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationDataExportCloudWatchMetrics.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/s3controlstoragelensconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3controlstoragelensconfiguration"
 
 &s3controlstoragelensconfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationDataExportCloudWatchMetrics {
 	Enabled: interface{},
@@ -2071,14 +2071,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationDataExportS3BucketDestination.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/s3controlstoragelensconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3controlstoragelensconfiguration"
 
 &s3controlstoragelensconfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationDataExportS3BucketDestination {
 	AccountId: *string,
 	Arn: *string,
 	Format: *string,
 	OutputSchemaVersion: *string,
-	Encryption: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationDataExportS3BucketDestinationEncryption,
+	Encryption: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationDataExportS3BucketDestinationEncryption,
 	Prefix: *string,
 }
 ```
@@ -2175,10 +2175,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationDataExportS3BucketDestinationEncryption.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/s3controlstoragelensconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3controlstoragelensconfiguration"
 
 &s3controlstoragelensconfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationDataExportS3BucketDestinationEncryption {
-	SseKms: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationDataExportS3BucketDestinationEncryptionSseKms,
+	SseKms: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationDataExportS3BucketDestinationEncryptionSseKms,
 	SseS3: interface{},
 }
 ```
@@ -2225,7 +2225,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationDataExportS3BucketDestinationEncryptionSseKms.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/s3controlstoragelensconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3controlstoragelensconfiguration"
 
 &s3controlstoragelensconfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationDataExportS3BucketDestinationEncryptionSseKms {
 	KeyId: *string,
@@ -2257,7 +2257,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationDataExportS3BucketDestinationEncryptionSseS3.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/s3controlstoragelensconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3controlstoragelensconfiguration"
 
 &s3controlstoragelensconfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationDataExportS3BucketDestinationEncryptionSseS3 {
 
@@ -2270,11 +2270,11 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/s3controlstoragelensco
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationDataExportStorageLensTableDestination.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/s3controlstoragelensconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3controlstoragelensconfiguration"
 
 &s3controlstoragelensconfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationDataExportStorageLensTableDestination {
 	Enabled: interface{},
-	Encryption: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationDataExportStorageLensTableDestinationEncryption,
+	Encryption: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationDataExportStorageLensTableDestinationEncryption,
 }
 ```
 
@@ -2318,10 +2318,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationDataExportStorageLensTableDestinationEncryption.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/s3controlstoragelensconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3controlstoragelensconfiguration"
 
 &s3controlstoragelensconfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationDataExportStorageLensTableDestinationEncryption {
-	SseKms: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationDataExportStorageLensTableDestinationEncryptionSseKms,
+	SseKms: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationDataExportStorageLensTableDestinationEncryptionSseKms,
 	SseS3: interface{},
 }
 ```
@@ -2368,7 +2368,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationDataExportStorageLensTableDestinationEncryptionSseKms.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/s3controlstoragelensconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3controlstoragelensconfiguration"
 
 &s3controlstoragelensconfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationDataExportStorageLensTableDestinationEncryptionSseKms {
 	KeyId: *string,
@@ -2400,7 +2400,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationDataExportStorageLensTableDestinationEncryptionSseS3.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/s3controlstoragelensconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3controlstoragelensconfiguration"
 
 &s3controlstoragelensconfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationDataExportStorageLensTableDestinationEncryptionSseS3 {
 
@@ -2413,7 +2413,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/s3controlstoragelensco
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationExclude.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/s3controlstoragelensconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3controlstoragelensconfiguration"
 
 &s3controlstoragelensconfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationExclude {
 	Buckets: *[]*string,
@@ -2459,11 +2459,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationExpandedPrefixesDataExport.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/s3controlstoragelensconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3controlstoragelensconfiguration"
 
 &s3controlstoragelensconfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationExpandedPrefixesDataExport {
-	S3BucketDestination: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationExpandedPrefixesDataExportS3BucketDestination,
-	StorageLensTableDestination: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationExpandedPrefixesDataExportStorageLensTableDestination,
+	S3BucketDestination: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationExpandedPrefixesDataExportS3BucketDestination,
+	StorageLensTableDestination: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationExpandedPrefixesDataExportStorageLensTableDestination,
 }
 ```
 
@@ -2509,14 +2509,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationExpandedPrefixesDataExportS3BucketDestination.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/s3controlstoragelensconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3controlstoragelensconfiguration"
 
 &s3controlstoragelensconfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationExpandedPrefixesDataExportS3BucketDestination {
 	AccountId: *string,
 	Arn: *string,
 	Format: *string,
 	OutputSchemaVersion: *string,
-	Encryption: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationExpandedPrefixesDataExportS3BucketDestinationEncryption,
+	Encryption: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationExpandedPrefixesDataExportS3BucketDestinationEncryption,
 	Prefix: *string,
 }
 ```
@@ -2613,10 +2613,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationExpandedPrefixesDataExportS3BucketDestinationEncryption.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/s3controlstoragelensconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3controlstoragelensconfiguration"
 
 &s3controlstoragelensconfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationExpandedPrefixesDataExportS3BucketDestinationEncryption {
-	SseKms: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationExpandedPrefixesDataExportS3BucketDestinationEncryptionSseKms,
+	SseKms: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationExpandedPrefixesDataExportS3BucketDestinationEncryptionSseKms,
 	SseS3: interface{},
 }
 ```
@@ -2663,7 +2663,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationExpandedPrefixesDataExportS3BucketDestinationEncryptionSseKms.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/s3controlstoragelensconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3controlstoragelensconfiguration"
 
 &s3controlstoragelensconfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationExpandedPrefixesDataExportS3BucketDestinationEncryptionSseKms {
 	KeyId: *string,
@@ -2695,7 +2695,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationExpandedPrefixesDataExportS3BucketDestinationEncryptionSseS3.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/s3controlstoragelensconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3controlstoragelensconfiguration"
 
 &s3controlstoragelensconfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationExpandedPrefixesDataExportS3BucketDestinationEncryptionSseS3 {
 
@@ -2708,11 +2708,11 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/s3controlstoragelensco
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationExpandedPrefixesDataExportStorageLensTableDestination.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/s3controlstoragelensconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3controlstoragelensconfiguration"
 
 &s3controlstoragelensconfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationExpandedPrefixesDataExportStorageLensTableDestination {
 	Enabled: interface{},
-	Encryption: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationExpandedPrefixesDataExportStorageLensTableDestinationEncryption,
+	Encryption: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationExpandedPrefixesDataExportStorageLensTableDestinationEncryption,
 }
 ```
 
@@ -2756,10 +2756,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationExpandedPrefixesDataExportStorageLensTableDestinationEncryption.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/s3controlstoragelensconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3controlstoragelensconfiguration"
 
 &s3controlstoragelensconfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationExpandedPrefixesDataExportStorageLensTableDestinationEncryption {
-	SseKms: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationExpandedPrefixesDataExportStorageLensTableDestinationEncryptionSseKms,
+	SseKms: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationExpandedPrefixesDataExportStorageLensTableDestinationEncryptionSseKms,
 	SseS3: interface{},
 }
 ```
@@ -2806,7 +2806,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationExpandedPrefixesDataExportStorageLensTableDestinationEncryptionSseKms.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/s3controlstoragelensconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3controlstoragelensconfiguration"
 
 &s3controlstoragelensconfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationExpandedPrefixesDataExportStorageLensTableDestinationEncryptionSseKms {
 	KeyId: *string,
@@ -2838,7 +2838,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationExpandedPrefixesDataExportStorageLensTableDestinationEncryptionSseS3.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/s3controlstoragelensconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3controlstoragelensconfiguration"
 
 &s3controlstoragelensconfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationExpandedPrefixesDataExportStorageLensTableDestinationEncryptionSseS3 {
 
@@ -2851,7 +2851,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/s3controlstoragelensco
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationInclude.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/s3controlstoragelensconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3controlstoragelensconfiguration"
 
 &s3controlstoragelensconfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationInclude {
 	Buckets: *[]*string,
@@ -2899,7 +2899,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelActivityMetricsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/s3controlstoragelensconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3controlstoragelensconfiguration"
 
 s3controlstoragelensconfiguration.NewS3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelActivityMetricsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelActivityMetricsOutputReference
 ```
@@ -3177,7 +3177,7 @@ func InternalValue() S3ControlStorageLensConfigurationStorageLensConfigurationAc
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelAdvancedCostOptimizationMetricsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/s3controlstoragelensconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3controlstoragelensconfiguration"
 
 s3controlstoragelensconfiguration.NewS3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelAdvancedCostOptimizationMetricsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelAdvancedCostOptimizationMetricsOutputReference
 ```
@@ -3455,7 +3455,7 @@ func InternalValue() S3ControlStorageLensConfigurationStorageLensConfigurationAc
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelAdvancedDataProtectionMetricsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/s3controlstoragelensconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3controlstoragelensconfiguration"
 
 s3controlstoragelensconfiguration.NewS3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelAdvancedDataProtectionMetricsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelAdvancedDataProtectionMetricsOutputReference
 ```
@@ -3733,7 +3733,7 @@ func InternalValue() S3ControlStorageLensConfigurationStorageLensConfigurationAc
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelAdvancedPerformanceMetricsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/s3controlstoragelensconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3controlstoragelensconfiguration"
 
 s3controlstoragelensconfiguration.NewS3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelAdvancedPerformanceMetricsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelAdvancedPerformanceMetricsOutputReference
 ```
@@ -4011,7 +4011,7 @@ func InternalValue() S3ControlStorageLensConfigurationStorageLensConfigurationAc
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelBucketLevelActivityMetricsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/s3controlstoragelensconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3controlstoragelensconfiguration"
 
 s3controlstoragelensconfiguration.NewS3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelBucketLevelActivityMetricsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelBucketLevelActivityMetricsOutputReference
 ```
@@ -4289,7 +4289,7 @@ func InternalValue() S3ControlStorageLensConfigurationStorageLensConfigurationAc
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelBucketLevelAdvancedCostOptimizationMetricsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/s3controlstoragelensconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3controlstoragelensconfiguration"
 
 s3controlstoragelensconfiguration.NewS3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelBucketLevelAdvancedCostOptimizationMetricsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelBucketLevelAdvancedCostOptimizationMetricsOutputReference
 ```
@@ -4567,7 +4567,7 @@ func InternalValue() S3ControlStorageLensConfigurationStorageLensConfigurationAc
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelBucketLevelAdvancedDataProtectionMetricsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/s3controlstoragelensconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3controlstoragelensconfiguration"
 
 s3controlstoragelensconfiguration.NewS3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelBucketLevelAdvancedDataProtectionMetricsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelBucketLevelAdvancedDataProtectionMetricsOutputReference
 ```
@@ -4845,7 +4845,7 @@ func InternalValue() S3ControlStorageLensConfigurationStorageLensConfigurationAc
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelBucketLevelAdvancedPerformanceMetricsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/s3controlstoragelensconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3controlstoragelensconfiguration"
 
 s3controlstoragelensconfiguration.NewS3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelBucketLevelAdvancedPerformanceMetricsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelBucketLevelAdvancedPerformanceMetricsOutputReference
 ```
@@ -5123,7 +5123,7 @@ func InternalValue() S3ControlStorageLensConfigurationStorageLensConfigurationAc
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelBucketLevelDetailedStatusCodeMetricsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/s3controlstoragelensconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3controlstoragelensconfiguration"
 
 s3controlstoragelensconfiguration.NewS3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelBucketLevelDetailedStatusCodeMetricsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelBucketLevelDetailedStatusCodeMetricsOutputReference
 ```
@@ -5401,7 +5401,7 @@ func InternalValue() S3ControlStorageLensConfigurationStorageLensConfigurationAc
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelBucketLevelOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/s3controlstoragelensconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3controlstoragelensconfiguration"
 
 s3controlstoragelensconfiguration.NewS3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelBucketLevelOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelBucketLevelOutputReference
 ```
@@ -5902,7 +5902,7 @@ func InternalValue() S3ControlStorageLensConfigurationStorageLensConfigurationAc
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelBucketLevelPrefixLevelOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/s3controlstoragelensconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3controlstoragelensconfiguration"
 
 s3controlstoragelensconfiguration.NewS3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelBucketLevelPrefixLevelOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelBucketLevelPrefixLevelOutputReference
 ```
@@ -6186,7 +6186,7 @@ func InternalValue() S3ControlStorageLensConfigurationStorageLensConfigurationAc
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelBucketLevelPrefixLevelStorageMetricsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/s3controlstoragelensconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3controlstoragelensconfiguration"
 
 s3controlstoragelensconfiguration.NewS3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelBucketLevelPrefixLevelStorageMetricsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelBucketLevelPrefixLevelStorageMetricsOutputReference
 ```
@@ -6506,7 +6506,7 @@ func InternalValue() S3ControlStorageLensConfigurationStorageLensConfigurationAc
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelBucketLevelPrefixLevelStorageMetricsSelectionCriteriaOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/s3controlstoragelensconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3controlstoragelensconfiguration"
 
 s3controlstoragelensconfiguration.NewS3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelBucketLevelPrefixLevelStorageMetricsSelectionCriteriaOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelBucketLevelPrefixLevelStorageMetricsSelectionCriteriaOutputReference
 ```
@@ -6842,7 +6842,7 @@ func InternalValue() S3ControlStorageLensConfigurationStorageLensConfigurationAc
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelDetailedStatusCodeMetricsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/s3controlstoragelensconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3controlstoragelensconfiguration"
 
 s3controlstoragelensconfiguration.NewS3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelDetailedStatusCodeMetricsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelDetailedStatusCodeMetricsOutputReference
 ```
@@ -7120,7 +7120,7 @@ func InternalValue() S3ControlStorageLensConfigurationStorageLensConfigurationAc
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/s3controlstoragelensconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3controlstoragelensconfiguration"
 
 s3controlstoragelensconfiguration.NewS3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelOutputReference
 ```
@@ -7614,7 +7614,7 @@ func InternalValue() S3ControlStorageLensConfigurationStorageLensConfigurationAc
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationAwsOrgOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/s3controlstoragelensconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3controlstoragelensconfiguration"
 
 s3controlstoragelensconfiguration.NewS3ControlStorageLensConfigurationStorageLensConfigurationAwsOrgOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3ControlStorageLensConfigurationStorageLensConfigurationAwsOrgOutputReference
 ```
@@ -7885,7 +7885,7 @@ func InternalValue() S3ControlStorageLensConfigurationStorageLensConfigurationAw
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationDataExportCloudWatchMetricsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/s3controlstoragelensconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3controlstoragelensconfiguration"
 
 s3controlstoragelensconfiguration.NewS3ControlStorageLensConfigurationStorageLensConfigurationDataExportCloudWatchMetricsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3ControlStorageLensConfigurationStorageLensConfigurationDataExportCloudWatchMetricsOutputReference
 ```
@@ -8156,7 +8156,7 @@ func InternalValue() S3ControlStorageLensConfigurationStorageLensConfigurationDa
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationDataExportOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/s3controlstoragelensconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3controlstoragelensconfiguration"
 
 s3controlstoragelensconfiguration.NewS3ControlStorageLensConfigurationStorageLensConfigurationDataExportOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3ControlStorageLensConfigurationStorageLensConfigurationDataExportOutputReference
 ```
@@ -8531,7 +8531,7 @@ func InternalValue() S3ControlStorageLensConfigurationStorageLensConfigurationDa
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationDataExportS3BucketDestinationEncryptionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/s3controlstoragelensconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3controlstoragelensconfiguration"
 
 s3controlstoragelensconfiguration.NewS3ControlStorageLensConfigurationStorageLensConfigurationDataExportS3BucketDestinationEncryptionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3ControlStorageLensConfigurationStorageLensConfigurationDataExportS3BucketDestinationEncryptionOutputReference
 ```
@@ -8864,7 +8864,7 @@ func InternalValue() S3ControlStorageLensConfigurationStorageLensConfigurationDa
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationDataExportS3BucketDestinationEncryptionSseKmsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/s3controlstoragelensconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3controlstoragelensconfiguration"
 
 s3controlstoragelensconfiguration.NewS3ControlStorageLensConfigurationStorageLensConfigurationDataExportS3BucketDestinationEncryptionSseKmsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3ControlStorageLensConfigurationStorageLensConfigurationDataExportS3BucketDestinationEncryptionSseKmsOutputReference
 ```
@@ -9135,7 +9135,7 @@ func InternalValue() S3ControlStorageLensConfigurationStorageLensConfigurationDa
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationDataExportS3BucketDestinationEncryptionSseS3List.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/s3controlstoragelensconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3controlstoragelensconfiguration"
 
 s3controlstoragelensconfiguration.NewS3ControlStorageLensConfigurationStorageLensConfigurationDataExportS3BucketDestinationEncryptionSseS3List(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) S3ControlStorageLensConfigurationStorageLensConfigurationDataExportS3BucketDestinationEncryptionSseS3List
 ```
@@ -9295,7 +9295,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationDataExportS3BucketDestinationEncryptionSseS3OutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/s3controlstoragelensconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3controlstoragelensconfiguration"
 
 s3controlstoragelensconfiguration.NewS3ControlStorageLensConfigurationStorageLensConfigurationDataExportS3BucketDestinationEncryptionSseS3OutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) S3ControlStorageLensConfigurationStorageLensConfigurationDataExportS3BucketDestinationEncryptionSseS3OutputReference
 ```
@@ -9562,7 +9562,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationDataExportS3BucketDestinationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/s3controlstoragelensconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3controlstoragelensconfiguration"
 
 s3controlstoragelensconfiguration.NewS3ControlStorageLensConfigurationStorageLensConfigurationDataExportS3BucketDestinationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3ControlStorageLensConfigurationStorageLensConfigurationDataExportS3BucketDestinationOutputReference
 ```
@@ -9970,7 +9970,7 @@ func InternalValue() S3ControlStorageLensConfigurationStorageLensConfigurationDa
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationDataExportStorageLensTableDestinationEncryptionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/s3controlstoragelensconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3controlstoragelensconfiguration"
 
 s3controlstoragelensconfiguration.NewS3ControlStorageLensConfigurationStorageLensConfigurationDataExportStorageLensTableDestinationEncryptionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3ControlStorageLensConfigurationStorageLensConfigurationDataExportStorageLensTableDestinationEncryptionOutputReference
 ```
@@ -10303,7 +10303,7 @@ func InternalValue() S3ControlStorageLensConfigurationStorageLensConfigurationDa
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationDataExportStorageLensTableDestinationEncryptionSseKmsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/s3controlstoragelensconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3controlstoragelensconfiguration"
 
 s3controlstoragelensconfiguration.NewS3ControlStorageLensConfigurationStorageLensConfigurationDataExportStorageLensTableDestinationEncryptionSseKmsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3ControlStorageLensConfigurationStorageLensConfigurationDataExportStorageLensTableDestinationEncryptionSseKmsOutputReference
 ```
@@ -10574,7 +10574,7 @@ func InternalValue() S3ControlStorageLensConfigurationStorageLensConfigurationDa
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationDataExportStorageLensTableDestinationEncryptionSseS3List.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/s3controlstoragelensconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3controlstoragelensconfiguration"
 
 s3controlstoragelensconfiguration.NewS3ControlStorageLensConfigurationStorageLensConfigurationDataExportStorageLensTableDestinationEncryptionSseS3List(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) S3ControlStorageLensConfigurationStorageLensConfigurationDataExportStorageLensTableDestinationEncryptionSseS3List
 ```
@@ -10734,7 +10734,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationDataExportStorageLensTableDestinationEncryptionSseS3OutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/s3controlstoragelensconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3controlstoragelensconfiguration"
 
 s3controlstoragelensconfiguration.NewS3ControlStorageLensConfigurationStorageLensConfigurationDataExportStorageLensTableDestinationEncryptionSseS3OutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) S3ControlStorageLensConfigurationStorageLensConfigurationDataExportStorageLensTableDestinationEncryptionSseS3OutputReference
 ```
@@ -11001,7 +11001,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationDataExportStorageLensTableDestinationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/s3controlstoragelensconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3controlstoragelensconfiguration"
 
 s3controlstoragelensconfiguration.NewS3ControlStorageLensConfigurationStorageLensConfigurationDataExportStorageLensTableDestinationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3ControlStorageLensConfigurationStorageLensConfigurationDataExportStorageLensTableDestinationOutputReference
 ```
@@ -11314,7 +11314,7 @@ func InternalValue() S3ControlStorageLensConfigurationStorageLensConfigurationDa
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationExcludeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/s3controlstoragelensconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3controlstoragelensconfiguration"
 
 s3controlstoragelensconfiguration.NewS3ControlStorageLensConfigurationStorageLensConfigurationExcludeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3ControlStorageLensConfigurationStorageLensConfigurationExcludeOutputReference
 ```
@@ -11621,7 +11621,7 @@ func InternalValue() S3ControlStorageLensConfigurationStorageLensConfigurationEx
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationExpandedPrefixesDataExportOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/s3controlstoragelensconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3controlstoragelensconfiguration"
 
 s3controlstoragelensconfiguration.NewS3ControlStorageLensConfigurationStorageLensConfigurationExpandedPrefixesDataExportOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3ControlStorageLensConfigurationStorageLensConfigurationExpandedPrefixesDataExportOutputReference
 ```
@@ -11954,7 +11954,7 @@ func InternalValue() S3ControlStorageLensConfigurationStorageLensConfigurationEx
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationExpandedPrefixesDataExportS3BucketDestinationEncryptionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/s3controlstoragelensconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3controlstoragelensconfiguration"
 
 s3controlstoragelensconfiguration.NewS3ControlStorageLensConfigurationStorageLensConfigurationExpandedPrefixesDataExportS3BucketDestinationEncryptionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3ControlStorageLensConfigurationStorageLensConfigurationExpandedPrefixesDataExportS3BucketDestinationEncryptionOutputReference
 ```
@@ -12287,7 +12287,7 @@ func InternalValue() S3ControlStorageLensConfigurationStorageLensConfigurationEx
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationExpandedPrefixesDataExportS3BucketDestinationEncryptionSseKmsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/s3controlstoragelensconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3controlstoragelensconfiguration"
 
 s3controlstoragelensconfiguration.NewS3ControlStorageLensConfigurationStorageLensConfigurationExpandedPrefixesDataExportS3BucketDestinationEncryptionSseKmsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3ControlStorageLensConfigurationStorageLensConfigurationExpandedPrefixesDataExportS3BucketDestinationEncryptionSseKmsOutputReference
 ```
@@ -12558,7 +12558,7 @@ func InternalValue() S3ControlStorageLensConfigurationStorageLensConfigurationEx
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationExpandedPrefixesDataExportS3BucketDestinationEncryptionSseS3List.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/s3controlstoragelensconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3controlstoragelensconfiguration"
 
 s3controlstoragelensconfiguration.NewS3ControlStorageLensConfigurationStorageLensConfigurationExpandedPrefixesDataExportS3BucketDestinationEncryptionSseS3List(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) S3ControlStorageLensConfigurationStorageLensConfigurationExpandedPrefixesDataExportS3BucketDestinationEncryptionSseS3List
 ```
@@ -12718,7 +12718,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationExpandedPrefixesDataExportS3BucketDestinationEncryptionSseS3OutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/s3controlstoragelensconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3controlstoragelensconfiguration"
 
 s3controlstoragelensconfiguration.NewS3ControlStorageLensConfigurationStorageLensConfigurationExpandedPrefixesDataExportS3BucketDestinationEncryptionSseS3OutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) S3ControlStorageLensConfigurationStorageLensConfigurationExpandedPrefixesDataExportS3BucketDestinationEncryptionSseS3OutputReference
 ```
@@ -12985,7 +12985,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationExpandedPrefixesDataExportS3BucketDestinationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/s3controlstoragelensconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3controlstoragelensconfiguration"
 
 s3controlstoragelensconfiguration.NewS3ControlStorageLensConfigurationStorageLensConfigurationExpandedPrefixesDataExportS3BucketDestinationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3ControlStorageLensConfigurationStorageLensConfigurationExpandedPrefixesDataExportS3BucketDestinationOutputReference
 ```
@@ -13393,7 +13393,7 @@ func InternalValue() S3ControlStorageLensConfigurationStorageLensConfigurationEx
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationExpandedPrefixesDataExportStorageLensTableDestinationEncryptionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/s3controlstoragelensconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3controlstoragelensconfiguration"
 
 s3controlstoragelensconfiguration.NewS3ControlStorageLensConfigurationStorageLensConfigurationExpandedPrefixesDataExportStorageLensTableDestinationEncryptionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3ControlStorageLensConfigurationStorageLensConfigurationExpandedPrefixesDataExportStorageLensTableDestinationEncryptionOutputReference
 ```
@@ -13726,7 +13726,7 @@ func InternalValue() S3ControlStorageLensConfigurationStorageLensConfigurationEx
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationExpandedPrefixesDataExportStorageLensTableDestinationEncryptionSseKmsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/s3controlstoragelensconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3controlstoragelensconfiguration"
 
 s3controlstoragelensconfiguration.NewS3ControlStorageLensConfigurationStorageLensConfigurationExpandedPrefixesDataExportStorageLensTableDestinationEncryptionSseKmsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3ControlStorageLensConfigurationStorageLensConfigurationExpandedPrefixesDataExportStorageLensTableDestinationEncryptionSseKmsOutputReference
 ```
@@ -13997,7 +13997,7 @@ func InternalValue() S3ControlStorageLensConfigurationStorageLensConfigurationEx
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationExpandedPrefixesDataExportStorageLensTableDestinationEncryptionSseS3List.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/s3controlstoragelensconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3controlstoragelensconfiguration"
 
 s3controlstoragelensconfiguration.NewS3ControlStorageLensConfigurationStorageLensConfigurationExpandedPrefixesDataExportStorageLensTableDestinationEncryptionSseS3List(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) S3ControlStorageLensConfigurationStorageLensConfigurationExpandedPrefixesDataExportStorageLensTableDestinationEncryptionSseS3List
 ```
@@ -14157,7 +14157,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationExpandedPrefixesDataExportStorageLensTableDestinationEncryptionSseS3OutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/s3controlstoragelensconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3controlstoragelensconfiguration"
 
 s3controlstoragelensconfiguration.NewS3ControlStorageLensConfigurationStorageLensConfigurationExpandedPrefixesDataExportStorageLensTableDestinationEncryptionSseS3OutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) S3ControlStorageLensConfigurationStorageLensConfigurationExpandedPrefixesDataExportStorageLensTableDestinationEncryptionSseS3OutputReference
 ```
@@ -14424,7 +14424,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationExpandedPrefixesDataExportStorageLensTableDestinationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/s3controlstoragelensconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3controlstoragelensconfiguration"
 
 s3controlstoragelensconfiguration.NewS3ControlStorageLensConfigurationStorageLensConfigurationExpandedPrefixesDataExportStorageLensTableDestinationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3ControlStorageLensConfigurationStorageLensConfigurationExpandedPrefixesDataExportStorageLensTableDestinationOutputReference
 ```
@@ -14737,7 +14737,7 @@ func InternalValue() S3ControlStorageLensConfigurationStorageLensConfigurationEx
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationIncludeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/s3controlstoragelensconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3controlstoragelensconfiguration"
 
 s3controlstoragelensconfiguration.NewS3ControlStorageLensConfigurationStorageLensConfigurationIncludeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3ControlStorageLensConfigurationStorageLensConfigurationIncludeOutputReference
 ```
@@ -15044,7 +15044,7 @@ func InternalValue() S3ControlStorageLensConfigurationStorageLensConfigurationIn
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/s3controlstoragelensconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3controlstoragelensconfiguration"
 
 s3controlstoragelensconfiguration.NewS3ControlStorageLensConfigurationStorageLensConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3ControlStorageLensConfigurationStorageLensConfigurationOutputReference
 ```

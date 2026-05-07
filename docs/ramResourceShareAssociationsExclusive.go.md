@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ramResourceShareAssociationsExclusive.RamResourceShareAssociationsExclusive.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/ramresourceshareassociationsexclusive"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ramresourceshareassociationsexclusive"
 
 ramresourceshareassociationsexclusive.NewRamResourceShareAssociationsExclusive(scope Construct, id *string, config RamResourceShareAssociationsExclusiveConfig) RamResourceShareAssociationsExclusive
 ```
@@ -428,7 +428,7 @@ func ResetSources()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.ramResourceShareAssociationsExclusive.RamResourceShareAssociationsExclusive.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/ramresourceshareassociationsexclusive"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ramresourceshareassociationsexclusive"
 
 ramresourceshareassociationsexclusive.RamResourceShareAssociationsExclusive_IsConstruct(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.ramResourceShareAssociationsExclusive.RamResourceShareAssociationsExclusive.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/ramresourceshareassociationsexclusive"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ramresourceshareassociationsexclusive"
 
 ramresourceshareassociationsexclusive.RamResourceShareAssociationsExclusive_IsTerraformElement(x interface{}) *bool
 ```
@@ -474,7 +474,7 @@ ramresourceshareassociationsexclusive.RamResourceShareAssociationsExclusive_IsTe
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.ramResourceShareAssociationsExclusive.RamResourceShareAssociationsExclusive.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/ramresourceshareassociationsexclusive"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ramresourceshareassociationsexclusive"
 
 ramresourceshareassociationsexclusive.RamResourceShareAssociationsExclusive_IsTerraformResource(x interface{}) *bool
 ```
@@ -488,7 +488,7 @@ ramresourceshareassociationsexclusive.RamResourceShareAssociationsExclusive_IsTe
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.ramResourceShareAssociationsExclusive.RamResourceShareAssociationsExclusive.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/ramresourceshareassociationsexclusive"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ramresourceshareassociationsexclusive"
 
 ramresourceshareassociationsexclusive.RamResourceShareAssociationsExclusive_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -827,7 +827,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ramResourceShareAssociationsExclusive.RamResourceShareAssociationsExclusiveConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/ramresourceshareassociationsexclusive"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ramresourceshareassociationsexclusive"
 
 &ramresourceshareassociationsexclusive.RamResourceShareAssociationsExclusiveConfig {
 	Connection: interface{},

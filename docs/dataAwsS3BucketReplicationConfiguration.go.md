@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsS3BucketReplicationConfiguration.DataAwsS3BucketReplicationConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawss3bucketreplicationconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawss3bucketreplicationconfiguration"
 
 dataawss3bucketreplicationconfiguration.NewDataAwsS3BucketReplicationConfiguration(scope Construct, id *string, config DataAwsS3BucketReplicationConfigurationConfig) DataAwsS3BucketReplicationConfiguration
 ```
@@ -305,7 +305,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsS3BucketReplicationConfiguration.DataAwsS3BucketReplicationConfiguration.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawss3bucketreplicationconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawss3bucketreplicationconfiguration"
 
 dataawss3bucketreplicationconfiguration.DataAwsS3BucketReplicationConfiguration_IsConstruct(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsS3BucketReplicationConfiguration.DataAwsS3BucketReplicationConfiguration.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawss3bucketreplicationconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawss3bucketreplicationconfiguration"
 
 dataawss3bucketreplicationconfiguration.DataAwsS3BucketReplicationConfiguration_IsTerraformElement(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ dataawss3bucketreplicationconfiguration.DataAwsS3BucketReplicationConfiguration_
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsS3BucketReplicationConfiguration.DataAwsS3BucketReplicationConfiguration.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawss3bucketreplicationconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawss3bucketreplicationconfiguration"
 
 dataawss3bucketreplicationconfiguration.DataAwsS3BucketReplicationConfiguration_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ dataawss3bucketreplicationconfiguration.DataAwsS3BucketReplicationConfiguration_
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsS3BucketReplicationConfiguration.DataAwsS3BucketReplicationConfiguration.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawss3bucketreplicationconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawss3bucketreplicationconfiguration"
 
 dataawss3bucketreplicationconfiguration.DataAwsS3BucketReplicationConfiguration_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -638,7 +638,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsS3BucketReplicationConfiguration.DataAwsS3BucketReplicationConfigurationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawss3bucketreplicationconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawss3bucketreplicationconfiguration"
 
 &dataawss3bucketreplicationconfiguration.DataAwsS3BucketReplicationConfigurationConfig {
 	Connection: interface{},
@@ -770,7 +770,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsS3BucketReplicationConfiguration.DataAwsS3BucketReplicationConfigurationRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawss3bucketreplicationconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawss3bucketreplicationconfiguration"
 
 &dataawss3bucketreplicationconfiguration.DataAwsS3BucketReplicationConfigurationRule {
 
@@ -783,7 +783,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawss3bucketreplica
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsS3BucketReplicationConfiguration.DataAwsS3BucketReplicationConfigurationRuleDeleteMarkerReplication.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawss3bucketreplicationconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawss3bucketreplicationconfiguration"
 
 &dataawss3bucketreplicationconfiguration.DataAwsS3BucketReplicationConfigurationRuleDeleteMarkerReplication {
 
@@ -796,7 +796,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawss3bucketreplica
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsS3BucketReplicationConfiguration.DataAwsS3BucketReplicationConfigurationRuleDestination.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawss3bucketreplicationconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawss3bucketreplicationconfiguration"
 
 &dataawss3bucketreplicationconfiguration.DataAwsS3BucketReplicationConfigurationRuleDestination {
 
@@ -809,7 +809,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawss3bucketreplica
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsS3BucketReplicationConfiguration.DataAwsS3BucketReplicationConfigurationRuleDestinationAccessControlTranslation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawss3bucketreplicationconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawss3bucketreplicationconfiguration"
 
 &dataawss3bucketreplicationconfiguration.DataAwsS3BucketReplicationConfigurationRuleDestinationAccessControlTranslation {
 
@@ -822,7 +822,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawss3bucketreplica
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsS3BucketReplicationConfiguration.DataAwsS3BucketReplicationConfigurationRuleDestinationEncryptionConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawss3bucketreplicationconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawss3bucketreplicationconfiguration"
 
 &dataawss3bucketreplicationconfiguration.DataAwsS3BucketReplicationConfigurationRuleDestinationEncryptionConfiguration {
 
@@ -835,7 +835,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawss3bucketreplica
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsS3BucketReplicationConfiguration.DataAwsS3BucketReplicationConfigurationRuleDestinationMetrics.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawss3bucketreplicationconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawss3bucketreplicationconfiguration"
 
 &dataawss3bucketreplicationconfiguration.DataAwsS3BucketReplicationConfigurationRuleDestinationMetrics {
 
@@ -848,7 +848,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawss3bucketreplica
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsS3BucketReplicationConfiguration.DataAwsS3BucketReplicationConfigurationRuleDestinationMetricsEventThreshold.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawss3bucketreplicationconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawss3bucketreplicationconfiguration"
 
 &dataawss3bucketreplicationconfiguration.DataAwsS3BucketReplicationConfigurationRuleDestinationMetricsEventThreshold {
 
@@ -861,7 +861,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawss3bucketreplica
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsS3BucketReplicationConfiguration.DataAwsS3BucketReplicationConfigurationRuleDestinationReplicationTime.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawss3bucketreplicationconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawss3bucketreplicationconfiguration"
 
 &dataawss3bucketreplicationconfiguration.DataAwsS3BucketReplicationConfigurationRuleDestinationReplicationTime {
 
@@ -874,7 +874,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawss3bucketreplica
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsS3BucketReplicationConfiguration.DataAwsS3BucketReplicationConfigurationRuleDestinationReplicationTimeTime.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawss3bucketreplicationconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawss3bucketreplicationconfiguration"
 
 &dataawss3bucketreplicationconfiguration.DataAwsS3BucketReplicationConfigurationRuleDestinationReplicationTimeTime {
 
@@ -887,7 +887,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawss3bucketreplica
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsS3BucketReplicationConfiguration.DataAwsS3BucketReplicationConfigurationRuleExistingObjectReplication.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawss3bucketreplicationconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawss3bucketreplicationconfiguration"
 
 &dataawss3bucketreplicationconfiguration.DataAwsS3BucketReplicationConfigurationRuleExistingObjectReplication {
 
@@ -900,7 +900,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawss3bucketreplica
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsS3BucketReplicationConfiguration.DataAwsS3BucketReplicationConfigurationRuleFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawss3bucketreplicationconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawss3bucketreplicationconfiguration"
 
 &dataawss3bucketreplicationconfiguration.DataAwsS3BucketReplicationConfigurationRuleFilter {
 
@@ -913,7 +913,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawss3bucketreplica
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsS3BucketReplicationConfiguration.DataAwsS3BucketReplicationConfigurationRuleFilterAnd.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawss3bucketreplicationconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawss3bucketreplicationconfiguration"
 
 &dataawss3bucketreplicationconfiguration.DataAwsS3BucketReplicationConfigurationRuleFilterAnd {
 
@@ -926,7 +926,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawss3bucketreplica
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsS3BucketReplicationConfiguration.DataAwsS3BucketReplicationConfigurationRuleFilterAndTag.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawss3bucketreplicationconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawss3bucketreplicationconfiguration"
 
 &dataawss3bucketreplicationconfiguration.DataAwsS3BucketReplicationConfigurationRuleFilterAndTag {
 
@@ -939,7 +939,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawss3bucketreplica
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsS3BucketReplicationConfiguration.DataAwsS3BucketReplicationConfigurationRuleFilterTag.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawss3bucketreplicationconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawss3bucketreplicationconfiguration"
 
 &dataawss3bucketreplicationconfiguration.DataAwsS3BucketReplicationConfigurationRuleFilterTag {
 
@@ -952,7 +952,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawss3bucketreplica
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsS3BucketReplicationConfiguration.DataAwsS3BucketReplicationConfigurationRuleSourceSelectionCriteria.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawss3bucketreplicationconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawss3bucketreplicationconfiguration"
 
 &dataawss3bucketreplicationconfiguration.DataAwsS3BucketReplicationConfigurationRuleSourceSelectionCriteria {
 
@@ -965,7 +965,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawss3bucketreplica
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsS3BucketReplicationConfiguration.DataAwsS3BucketReplicationConfigurationRuleSourceSelectionCriteriaReplicaModifications.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawss3bucketreplicationconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawss3bucketreplicationconfiguration"
 
 &dataawss3bucketreplicationconfiguration.DataAwsS3BucketReplicationConfigurationRuleSourceSelectionCriteriaReplicaModifications {
 
@@ -978,7 +978,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawss3bucketreplica
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsS3BucketReplicationConfiguration.DataAwsS3BucketReplicationConfigurationRuleSourceSelectionCriteriaSseKmsEncryptedObjects.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawss3bucketreplicationconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawss3bucketreplicationconfiguration"
 
 &dataawss3bucketreplicationconfiguration.DataAwsS3BucketReplicationConfigurationRuleSourceSelectionCriteriaSseKmsEncryptedObjects {
 
@@ -993,7 +993,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawss3bucketreplica
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsS3BucketReplicationConfiguration.DataAwsS3BucketReplicationConfigurationRuleDeleteMarkerReplicationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawss3bucketreplicationconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawss3bucketreplicationconfiguration"
 
 dataawss3bucketreplicationconfiguration.NewDataAwsS3BucketReplicationConfigurationRuleDeleteMarkerReplicationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsS3BucketReplicationConfigurationRuleDeleteMarkerReplicationList
 ```
@@ -1142,7 +1142,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsS3BucketReplicationConfiguration.DataAwsS3BucketReplicationConfigurationRuleDeleteMarkerReplicationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawss3bucketreplicationconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawss3bucketreplicationconfiguration"
 
 dataawss3bucketreplicationconfiguration.NewDataAwsS3BucketReplicationConfigurationRuleDeleteMarkerReplicationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsS3BucketReplicationConfigurationRuleDeleteMarkerReplicationOutputReference
 ```
@@ -1420,7 +1420,7 @@ func InternalValue() DataAwsS3BucketReplicationConfigurationRuleDeleteMarkerRepl
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsS3BucketReplicationConfiguration.DataAwsS3BucketReplicationConfigurationRuleDestinationAccessControlTranslationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawss3bucketreplicationconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawss3bucketreplicationconfiguration"
 
 dataawss3bucketreplicationconfiguration.NewDataAwsS3BucketReplicationConfigurationRuleDestinationAccessControlTranslationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsS3BucketReplicationConfigurationRuleDestinationAccessControlTranslationList
 ```
@@ -1569,7 +1569,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsS3BucketReplicationConfiguration.DataAwsS3BucketReplicationConfigurationRuleDestinationAccessControlTranslationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawss3bucketreplicationconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawss3bucketreplicationconfiguration"
 
 dataawss3bucketreplicationconfiguration.NewDataAwsS3BucketReplicationConfigurationRuleDestinationAccessControlTranslationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsS3BucketReplicationConfigurationRuleDestinationAccessControlTranslationOutputReference
 ```
@@ -1847,7 +1847,7 @@ func InternalValue() DataAwsS3BucketReplicationConfigurationRuleDestinationAcces
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsS3BucketReplicationConfiguration.DataAwsS3BucketReplicationConfigurationRuleDestinationEncryptionConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawss3bucketreplicationconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawss3bucketreplicationconfiguration"
 
 dataawss3bucketreplicationconfiguration.NewDataAwsS3BucketReplicationConfigurationRuleDestinationEncryptionConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsS3BucketReplicationConfigurationRuleDestinationEncryptionConfigurationList
 ```
@@ -1996,7 +1996,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsS3BucketReplicationConfiguration.DataAwsS3BucketReplicationConfigurationRuleDestinationEncryptionConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawss3bucketreplicationconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawss3bucketreplicationconfiguration"
 
 dataawss3bucketreplicationconfiguration.NewDataAwsS3BucketReplicationConfigurationRuleDestinationEncryptionConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsS3BucketReplicationConfigurationRuleDestinationEncryptionConfigurationOutputReference
 ```
@@ -2274,7 +2274,7 @@ func InternalValue() DataAwsS3BucketReplicationConfigurationRuleDestinationEncry
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsS3BucketReplicationConfiguration.DataAwsS3BucketReplicationConfigurationRuleDestinationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawss3bucketreplicationconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawss3bucketreplicationconfiguration"
 
 dataawss3bucketreplicationconfiguration.NewDataAwsS3BucketReplicationConfigurationRuleDestinationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsS3BucketReplicationConfigurationRuleDestinationList
 ```
@@ -2423,7 +2423,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsS3BucketReplicationConfiguration.DataAwsS3BucketReplicationConfigurationRuleDestinationMetricsEventThresholdList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawss3bucketreplicationconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawss3bucketreplicationconfiguration"
 
 dataawss3bucketreplicationconfiguration.NewDataAwsS3BucketReplicationConfigurationRuleDestinationMetricsEventThresholdList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsS3BucketReplicationConfigurationRuleDestinationMetricsEventThresholdList
 ```
@@ -2572,7 +2572,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsS3BucketReplicationConfiguration.DataAwsS3BucketReplicationConfigurationRuleDestinationMetricsEventThresholdOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawss3bucketreplicationconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawss3bucketreplicationconfiguration"
 
 dataawss3bucketreplicationconfiguration.NewDataAwsS3BucketReplicationConfigurationRuleDestinationMetricsEventThresholdOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsS3BucketReplicationConfigurationRuleDestinationMetricsEventThresholdOutputReference
 ```
@@ -2850,7 +2850,7 @@ func InternalValue() DataAwsS3BucketReplicationConfigurationRuleDestinationMetri
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsS3BucketReplicationConfiguration.DataAwsS3BucketReplicationConfigurationRuleDestinationMetricsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawss3bucketreplicationconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawss3bucketreplicationconfiguration"
 
 dataawss3bucketreplicationconfiguration.NewDataAwsS3BucketReplicationConfigurationRuleDestinationMetricsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsS3BucketReplicationConfigurationRuleDestinationMetricsList
 ```
@@ -2999,7 +2999,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsS3BucketReplicationConfiguration.DataAwsS3BucketReplicationConfigurationRuleDestinationMetricsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawss3bucketreplicationconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawss3bucketreplicationconfiguration"
 
 dataawss3bucketreplicationconfiguration.NewDataAwsS3BucketReplicationConfigurationRuleDestinationMetricsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsS3BucketReplicationConfigurationRuleDestinationMetricsOutputReference
 ```
@@ -3288,7 +3288,7 @@ func InternalValue() DataAwsS3BucketReplicationConfigurationRuleDestinationMetri
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsS3BucketReplicationConfiguration.DataAwsS3BucketReplicationConfigurationRuleDestinationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawss3bucketreplicationconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawss3bucketreplicationconfiguration"
 
 dataawss3bucketreplicationconfiguration.NewDataAwsS3BucketReplicationConfigurationRuleDestinationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsS3BucketReplicationConfigurationRuleDestinationOutputReference
 ```
@@ -3632,7 +3632,7 @@ func InternalValue() DataAwsS3BucketReplicationConfigurationRuleDestination
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsS3BucketReplicationConfiguration.DataAwsS3BucketReplicationConfigurationRuleDestinationReplicationTimeList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawss3bucketreplicationconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawss3bucketreplicationconfiguration"
 
 dataawss3bucketreplicationconfiguration.NewDataAwsS3BucketReplicationConfigurationRuleDestinationReplicationTimeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsS3BucketReplicationConfigurationRuleDestinationReplicationTimeList
 ```
@@ -3781,7 +3781,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsS3BucketReplicationConfiguration.DataAwsS3BucketReplicationConfigurationRuleDestinationReplicationTimeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawss3bucketreplicationconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawss3bucketreplicationconfiguration"
 
 dataawss3bucketreplicationconfiguration.NewDataAwsS3BucketReplicationConfigurationRuleDestinationReplicationTimeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsS3BucketReplicationConfigurationRuleDestinationReplicationTimeOutputReference
 ```
@@ -4070,7 +4070,7 @@ func InternalValue() DataAwsS3BucketReplicationConfigurationRuleDestinationRepli
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsS3BucketReplicationConfiguration.DataAwsS3BucketReplicationConfigurationRuleDestinationReplicationTimeTimeList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawss3bucketreplicationconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawss3bucketreplicationconfiguration"
 
 dataawss3bucketreplicationconfiguration.NewDataAwsS3BucketReplicationConfigurationRuleDestinationReplicationTimeTimeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsS3BucketReplicationConfigurationRuleDestinationReplicationTimeTimeList
 ```
@@ -4219,7 +4219,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsS3BucketReplicationConfiguration.DataAwsS3BucketReplicationConfigurationRuleDestinationReplicationTimeTimeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawss3bucketreplicationconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawss3bucketreplicationconfiguration"
 
 dataawss3bucketreplicationconfiguration.NewDataAwsS3BucketReplicationConfigurationRuleDestinationReplicationTimeTimeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsS3BucketReplicationConfigurationRuleDestinationReplicationTimeTimeOutputReference
 ```
@@ -4497,7 +4497,7 @@ func InternalValue() DataAwsS3BucketReplicationConfigurationRuleDestinationRepli
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsS3BucketReplicationConfiguration.DataAwsS3BucketReplicationConfigurationRuleExistingObjectReplicationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawss3bucketreplicationconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawss3bucketreplicationconfiguration"
 
 dataawss3bucketreplicationconfiguration.NewDataAwsS3BucketReplicationConfigurationRuleExistingObjectReplicationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsS3BucketReplicationConfigurationRuleExistingObjectReplicationList
 ```
@@ -4646,7 +4646,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsS3BucketReplicationConfiguration.DataAwsS3BucketReplicationConfigurationRuleExistingObjectReplicationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawss3bucketreplicationconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawss3bucketreplicationconfiguration"
 
 dataawss3bucketreplicationconfiguration.NewDataAwsS3BucketReplicationConfigurationRuleExistingObjectReplicationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsS3BucketReplicationConfigurationRuleExistingObjectReplicationOutputReference
 ```
@@ -4924,7 +4924,7 @@ func InternalValue() DataAwsS3BucketReplicationConfigurationRuleExistingObjectRe
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsS3BucketReplicationConfiguration.DataAwsS3BucketReplicationConfigurationRuleFilterAndList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawss3bucketreplicationconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawss3bucketreplicationconfiguration"
 
 dataawss3bucketreplicationconfiguration.NewDataAwsS3BucketReplicationConfigurationRuleFilterAndList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsS3BucketReplicationConfigurationRuleFilterAndList
 ```
@@ -5073,7 +5073,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsS3BucketReplicationConfiguration.DataAwsS3BucketReplicationConfigurationRuleFilterAndOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawss3bucketreplicationconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawss3bucketreplicationconfiguration"
 
 dataawss3bucketreplicationconfiguration.NewDataAwsS3BucketReplicationConfigurationRuleFilterAndOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsS3BucketReplicationConfigurationRuleFilterAndOutputReference
 ```
@@ -5362,7 +5362,7 @@ func InternalValue() DataAwsS3BucketReplicationConfigurationRuleFilterAnd
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsS3BucketReplicationConfiguration.DataAwsS3BucketReplicationConfigurationRuleFilterAndTagList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawss3bucketreplicationconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawss3bucketreplicationconfiguration"
 
 dataawss3bucketreplicationconfiguration.NewDataAwsS3BucketReplicationConfigurationRuleFilterAndTagList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsS3BucketReplicationConfigurationRuleFilterAndTagList
 ```
@@ -5511,7 +5511,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsS3BucketReplicationConfiguration.DataAwsS3BucketReplicationConfigurationRuleFilterAndTagOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawss3bucketreplicationconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawss3bucketreplicationconfiguration"
 
 dataawss3bucketreplicationconfiguration.NewDataAwsS3BucketReplicationConfigurationRuleFilterAndTagOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsS3BucketReplicationConfigurationRuleFilterAndTagOutputReference
 ```
@@ -5800,7 +5800,7 @@ func InternalValue() DataAwsS3BucketReplicationConfigurationRuleFilterAndTag
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsS3BucketReplicationConfiguration.DataAwsS3BucketReplicationConfigurationRuleFilterList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawss3bucketreplicationconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawss3bucketreplicationconfiguration"
 
 dataawss3bucketreplicationconfiguration.NewDataAwsS3BucketReplicationConfigurationRuleFilterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsS3BucketReplicationConfigurationRuleFilterList
 ```
@@ -5949,7 +5949,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsS3BucketReplicationConfiguration.DataAwsS3BucketReplicationConfigurationRuleFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawss3bucketreplicationconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawss3bucketreplicationconfiguration"
 
 dataawss3bucketreplicationconfiguration.NewDataAwsS3BucketReplicationConfigurationRuleFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsS3BucketReplicationConfigurationRuleFilterOutputReference
 ```
@@ -6249,7 +6249,7 @@ func InternalValue() DataAwsS3BucketReplicationConfigurationRuleFilter
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsS3BucketReplicationConfiguration.DataAwsS3BucketReplicationConfigurationRuleFilterTagList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawss3bucketreplicationconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawss3bucketreplicationconfiguration"
 
 dataawss3bucketreplicationconfiguration.NewDataAwsS3BucketReplicationConfigurationRuleFilterTagList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsS3BucketReplicationConfigurationRuleFilterTagList
 ```
@@ -6398,7 +6398,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsS3BucketReplicationConfiguration.DataAwsS3BucketReplicationConfigurationRuleFilterTagOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawss3bucketreplicationconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawss3bucketreplicationconfiguration"
 
 dataawss3bucketreplicationconfiguration.NewDataAwsS3BucketReplicationConfigurationRuleFilterTagOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsS3BucketReplicationConfigurationRuleFilterTagOutputReference
 ```
@@ -6687,7 +6687,7 @@ func InternalValue() DataAwsS3BucketReplicationConfigurationRuleFilterTag
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsS3BucketReplicationConfiguration.DataAwsS3BucketReplicationConfigurationRuleList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawss3bucketreplicationconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawss3bucketreplicationconfiguration"
 
 dataawss3bucketreplicationconfiguration.NewDataAwsS3BucketReplicationConfigurationRuleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsS3BucketReplicationConfigurationRuleList
 ```
@@ -6836,7 +6836,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsS3BucketReplicationConfiguration.DataAwsS3BucketReplicationConfigurationRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawss3bucketreplicationconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawss3bucketreplicationconfiguration"
 
 dataawss3bucketreplicationconfiguration.NewDataAwsS3BucketReplicationConfigurationRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsS3BucketReplicationConfigurationRuleOutputReference
 ```
@@ -7202,7 +7202,7 @@ func InternalValue() DataAwsS3BucketReplicationConfigurationRule
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsS3BucketReplicationConfiguration.DataAwsS3BucketReplicationConfigurationRuleSourceSelectionCriteriaList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawss3bucketreplicationconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawss3bucketreplicationconfiguration"
 
 dataawss3bucketreplicationconfiguration.NewDataAwsS3BucketReplicationConfigurationRuleSourceSelectionCriteriaList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsS3BucketReplicationConfigurationRuleSourceSelectionCriteriaList
 ```
@@ -7351,7 +7351,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsS3BucketReplicationConfiguration.DataAwsS3BucketReplicationConfigurationRuleSourceSelectionCriteriaOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawss3bucketreplicationconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawss3bucketreplicationconfiguration"
 
 dataawss3bucketreplicationconfiguration.NewDataAwsS3BucketReplicationConfigurationRuleSourceSelectionCriteriaOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsS3BucketReplicationConfigurationRuleSourceSelectionCriteriaOutputReference
 ```
@@ -7640,7 +7640,7 @@ func InternalValue() DataAwsS3BucketReplicationConfigurationRuleSourceSelectionC
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsS3BucketReplicationConfiguration.DataAwsS3BucketReplicationConfigurationRuleSourceSelectionCriteriaReplicaModificationsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawss3bucketreplicationconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawss3bucketreplicationconfiguration"
 
 dataawss3bucketreplicationconfiguration.NewDataAwsS3BucketReplicationConfigurationRuleSourceSelectionCriteriaReplicaModificationsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsS3BucketReplicationConfigurationRuleSourceSelectionCriteriaReplicaModificationsList
 ```
@@ -7789,7 +7789,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsS3BucketReplicationConfiguration.DataAwsS3BucketReplicationConfigurationRuleSourceSelectionCriteriaReplicaModificationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawss3bucketreplicationconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawss3bucketreplicationconfiguration"
 
 dataawss3bucketreplicationconfiguration.NewDataAwsS3BucketReplicationConfigurationRuleSourceSelectionCriteriaReplicaModificationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsS3BucketReplicationConfigurationRuleSourceSelectionCriteriaReplicaModificationsOutputReference
 ```
@@ -8067,7 +8067,7 @@ func InternalValue() DataAwsS3BucketReplicationConfigurationRuleSourceSelectionC
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsS3BucketReplicationConfiguration.DataAwsS3BucketReplicationConfigurationRuleSourceSelectionCriteriaSseKmsEncryptedObjectsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawss3bucketreplicationconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawss3bucketreplicationconfiguration"
 
 dataawss3bucketreplicationconfiguration.NewDataAwsS3BucketReplicationConfigurationRuleSourceSelectionCriteriaSseKmsEncryptedObjectsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsS3BucketReplicationConfigurationRuleSourceSelectionCriteriaSseKmsEncryptedObjectsList
 ```
@@ -8216,7 +8216,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsS3BucketReplicationConfiguration.DataAwsS3BucketReplicationConfigurationRuleSourceSelectionCriteriaSseKmsEncryptedObjectsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawss3bucketreplicationconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawss3bucketreplicationconfiguration"
 
 dataawss3bucketreplicationconfiguration.NewDataAwsS3BucketReplicationConfigurationRuleSourceSelectionCriteriaSseKmsEncryptedObjectsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsS3BucketReplicationConfigurationRuleSourceSelectionCriteriaSseKmsEncryptedObjectsOutputReference
 ```

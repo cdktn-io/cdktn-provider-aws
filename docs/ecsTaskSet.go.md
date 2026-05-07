@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ecsTaskSet.EcsTaskSet.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/ecstaskset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecstaskset"
 
 ecstaskset.NewEcsTaskSet(scope Construct, id *string, config EcsTaskSetConfig) EcsTaskSet
 ```
@@ -570,7 +570,7 @@ func ResetWaitUntilStableTimeout()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.ecsTaskSet.EcsTaskSet.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/ecstaskset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecstaskset"
 
 ecstaskset.EcsTaskSet_IsConstruct(x interface{}) *bool
 ```
@@ -602,7 +602,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.ecsTaskSet.EcsTaskSet.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/ecstaskset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecstaskset"
 
 ecstaskset.EcsTaskSet_IsTerraformElement(x interface{}) *bool
 ```
@@ -616,7 +616,7 @@ ecstaskset.EcsTaskSet_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.ecsTaskSet.EcsTaskSet.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/ecstaskset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecstaskset"
 
 ecstaskset.EcsTaskSet_IsTerraformResource(x interface{}) *bool
 ```
@@ -630,7 +630,7 @@ ecstaskset.EcsTaskSet_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.ecsTaskSet.EcsTaskSet.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/ecstaskset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecstaskset"
 
 ecstaskset.EcsTaskSet_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1299,7 +1299,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ecsTaskSet.EcsTaskSetCapacityProviderStrategy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/ecstaskset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecstaskset"
 
 &ecstaskset.EcsTaskSetCapacityProviderStrategy {
 	CapacityProvider: *string,
@@ -1359,7 +1359,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ecsTaskSet.EcsTaskSetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/ecstaskset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecstaskset"
 
 &ecstaskset.EcsTaskSetConfig {
 	Connection: interface{},
@@ -1378,11 +1378,11 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/ecstaskset"
 	Id: *string,
 	LaunchType: *string,
 	LoadBalancer: interface{},
-	NetworkConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.ecsTaskSet.EcsTaskSetNetworkConfiguration,
+	NetworkConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.ecsTaskSet.EcsTaskSetNetworkConfiguration,
 	PlatformVersion: *string,
 	Region: *string,
-	Scale: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.ecsTaskSet.EcsTaskSetScale,
-	ServiceRegistries: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.ecsTaskSet.EcsTaskSetServiceRegistries,
+	Scale: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.ecsTaskSet.EcsTaskSetScale,
+	ServiceRegistries: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.ecsTaskSet.EcsTaskSetServiceRegistries,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
 	WaitUntilStable: interface{},
@@ -1728,7 +1728,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ecsTaskSet.EcsTaskSetLoadBalancer.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/ecstaskset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecstaskset"
 
 &ecstaskset.EcsTaskSetLoadBalancer {
 	ContainerName: *string,
@@ -1802,7 +1802,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ecsTaskSet.EcsTaskSetNetworkConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/ecstaskset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecstaskset"
 
 &ecstaskset.EcsTaskSetNetworkConfiguration {
 	Subnets: *[]*string,
@@ -1862,7 +1862,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ecsTaskSet.EcsTaskSetScale.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/ecstaskset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecstaskset"
 
 &ecstaskset.EcsTaskSetScale {
 	Unit: *string,
@@ -1908,7 +1908,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ecsTaskSet.EcsTaskSetServiceRegistries.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/ecstaskset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecstaskset"
 
 &ecstaskset.EcsTaskSetServiceRegistries {
 	RegistryArn: *string,
@@ -1984,7 +1984,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ecsTaskSet.EcsTaskSetCapacityProviderStrategyList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/ecstaskset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecstaskset"
 
 ecstaskset.NewEcsTaskSetCapacityProviderStrategyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EcsTaskSetCapacityProviderStrategyList
 ```
@@ -2144,7 +2144,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ecsTaskSet.EcsTaskSetCapacityProviderStrategyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/ecstaskset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecstaskset"
 
 ecstaskset.NewEcsTaskSetCapacityProviderStrategyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EcsTaskSetCapacityProviderStrategyOutputReference
 ```
@@ -2484,7 +2484,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ecsTaskSet.EcsTaskSetLoadBalancerList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/ecstaskset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecstaskset"
 
 ecstaskset.NewEcsTaskSetLoadBalancerList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EcsTaskSetLoadBalancerList
 ```
@@ -2644,7 +2644,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ecsTaskSet.EcsTaskSetLoadBalancerOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/ecstaskset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecstaskset"
 
 ecstaskset.NewEcsTaskSetLoadBalancerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EcsTaskSetLoadBalancerOutputReference
 ```
@@ -3020,7 +3020,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ecsTaskSet.EcsTaskSetNetworkConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/ecstaskset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecstaskset"
 
 ecstaskset.NewEcsTaskSetNetworkConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EcsTaskSetNetworkConfigurationOutputReference
 ```
@@ -3349,7 +3349,7 @@ func InternalValue() EcsTaskSetNetworkConfiguration
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ecsTaskSet.EcsTaskSetScaleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/ecstaskset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecstaskset"
 
 ecstaskset.NewEcsTaskSetScaleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EcsTaskSetScaleOutputReference
 ```
@@ -3656,7 +3656,7 @@ func InternalValue() EcsTaskSetScale
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ecsTaskSet.EcsTaskSetServiceRegistriesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/ecstaskset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ecstaskset"
 
 ecstaskset.NewEcsTaskSetServiceRegistriesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EcsTaskSetServiceRegistriesOutputReference
 ```

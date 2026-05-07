@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ssoadminManagedPolicyAttachment.SsoadminManagedPolicyAttachment.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/ssoadminmanagedpolicyattachment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ssoadminmanagedpolicyattachment"
 
 ssoadminmanagedpolicyattachment.NewSsoadminManagedPolicyAttachment(scope Construct, id *string, config SsoadminManagedPolicyAttachmentConfig) SsoadminManagedPolicyAttachment
 ```
@@ -434,7 +434,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.ssoadminManagedPolicyAttachment.SsoadminManagedPolicyAttachment.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/ssoadminmanagedpolicyattachment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ssoadminmanagedpolicyattachment"
 
 ssoadminmanagedpolicyattachment.SsoadminManagedPolicyAttachment_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.ssoadminManagedPolicyAttachment.SsoadminManagedPolicyAttachment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/ssoadminmanagedpolicyattachment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ssoadminmanagedpolicyattachment"
 
 ssoadminmanagedpolicyattachment.SsoadminManagedPolicyAttachment_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ ssoadminmanagedpolicyattachment.SsoadminManagedPolicyAttachment_IsTerraformEleme
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.ssoadminManagedPolicyAttachment.SsoadminManagedPolicyAttachment.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/ssoadminmanagedpolicyattachment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ssoadminmanagedpolicyattachment"
 
 ssoadminmanagedpolicyattachment.SsoadminManagedPolicyAttachment_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ ssoadminmanagedpolicyattachment.SsoadminManagedPolicyAttachment_IsTerraformResou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.ssoadminManagedPolicyAttachment.SsoadminManagedPolicyAttachment.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/ssoadminmanagedpolicyattachment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ssoadminmanagedpolicyattachment"
 
 ssoadminmanagedpolicyattachment.SsoadminManagedPolicyAttachment_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -866,7 +866,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ssoadminManagedPolicyAttachment.SsoadminManagedPolicyAttachmentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/ssoadminmanagedpolicyattachment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ssoadminmanagedpolicyattachment"
 
 &ssoadminmanagedpolicyattachment.SsoadminManagedPolicyAttachmentConfig {
 	Connection: interface{},
@@ -881,7 +881,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/ssoadminmanagedpolicya
 	PermissionSetArn: *string,
 	Id: *string,
 	Region: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.ssoadminManagedPolicyAttachment.SsoadminManagedPolicyAttachmentTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.ssoadminManagedPolicyAttachment.SsoadminManagedPolicyAttachmentTimeouts,
 }
 ```
 
@@ -1059,7 +1059,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ssoadminManagedPolicyAttachment.SsoadminManagedPolicyAttachmentTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/ssoadminmanagedpolicyattachment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ssoadminmanagedpolicyattachment"
 
 &ssoadminmanagedpolicyattachment.SsoadminManagedPolicyAttachmentTimeouts {
 	Create: *string,
@@ -1107,7 +1107,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ssoadminManagedPolicyAttachment.SsoadminManagedPolicyAttachmentTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/ssoadminmanagedpolicyattachment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ssoadminmanagedpolicyattachment"
 
 ssoadminmanagedpolicyattachment.NewSsoadminManagedPolicyAttachmentTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SsoadminManagedPolicyAttachmentTimeoutsOutputReference
 ```

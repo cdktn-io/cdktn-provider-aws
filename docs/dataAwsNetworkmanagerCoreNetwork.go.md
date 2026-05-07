@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsNetworkmanagerCoreNetwork.DataAwsNetworkmanagerCoreNetwork.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsnetworkmanagercorenetwork"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsnetworkmanagercorenetwork"
 
 dataawsnetworkmanagercorenetwork.NewDataAwsNetworkmanagerCoreNetwork(scope Construct, id *string, config DataAwsNetworkmanagerCoreNetworkConfig) DataAwsNetworkmanagerCoreNetwork
 ```
@@ -298,7 +298,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsNetworkmanagerCoreNetwork.DataAwsNetworkmanagerCoreNetwork.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsnetworkmanagercorenetwork"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsnetworkmanagercorenetwork"
 
 dataawsnetworkmanagercorenetwork.DataAwsNetworkmanagerCoreNetwork_IsConstruct(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsNetworkmanagerCoreNetwork.DataAwsNetworkmanagerCoreNetwork.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsnetworkmanagercorenetwork"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsnetworkmanagercorenetwork"
 
 dataawsnetworkmanagercorenetwork.DataAwsNetworkmanagerCoreNetwork_IsTerraformElement(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ dataawsnetworkmanagercorenetwork.DataAwsNetworkmanagerCoreNetwork_IsTerraformEle
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsNetworkmanagerCoreNetwork.DataAwsNetworkmanagerCoreNetwork.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsnetworkmanagercorenetwork"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsnetworkmanagercorenetwork"
 
 dataawsnetworkmanagercorenetwork.DataAwsNetworkmanagerCoreNetwork_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ dataawsnetworkmanagercorenetwork.DataAwsNetworkmanagerCoreNetwork_IsTerraformDat
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsNetworkmanagerCoreNetwork.DataAwsNetworkmanagerCoreNetwork.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsnetworkmanagercorenetwork"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsnetworkmanagercorenetwork"
 
 dataawsnetworkmanagercorenetwork.DataAwsNetworkmanagerCoreNetwork_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -686,7 +686,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsNetworkmanagerCoreNetwork.DataAwsNetworkmanagerCoreNetworkConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsnetworkmanagercorenetwork"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsnetworkmanagercorenetwork"
 
 &dataawsnetworkmanagercorenetwork.DataAwsNetworkmanagerCoreNetworkConfig {
 	Connection: interface{},
@@ -802,7 +802,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsNetworkmanagerCoreNetwork.DataAwsNetworkmanagerCoreNetworkEdges.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsnetworkmanagercorenetwork"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsnetworkmanagercorenetwork"
 
 &dataawsnetworkmanagercorenetwork.DataAwsNetworkmanagerCoreNetworkEdges {
 
@@ -815,7 +815,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsnetworkmanagerc
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsNetworkmanagerCoreNetwork.DataAwsNetworkmanagerCoreNetworkNetworkFunctionGroups.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsnetworkmanagercorenetwork"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsnetworkmanagercorenetwork"
 
 &dataawsnetworkmanagercorenetwork.DataAwsNetworkmanagerCoreNetworkNetworkFunctionGroups {
 
@@ -828,7 +828,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsnetworkmanagerc
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsNetworkmanagerCoreNetwork.DataAwsNetworkmanagerCoreNetworkNetworkFunctionGroupsSegments.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsnetworkmanagercorenetwork"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsnetworkmanagercorenetwork"
 
 &dataawsnetworkmanagercorenetwork.DataAwsNetworkmanagerCoreNetworkNetworkFunctionGroupsSegments {
 
@@ -841,7 +841,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsnetworkmanagerc
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsNetworkmanagerCoreNetwork.DataAwsNetworkmanagerCoreNetworkSegments.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsnetworkmanagercorenetwork"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsnetworkmanagercorenetwork"
 
 &dataawsnetworkmanagercorenetwork.DataAwsNetworkmanagerCoreNetworkSegments {
 
@@ -856,7 +856,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsnetworkmanagerc
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsNetworkmanagerCoreNetwork.DataAwsNetworkmanagerCoreNetworkEdgesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsnetworkmanagercorenetwork"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsnetworkmanagercorenetwork"
 
 dataawsnetworkmanagercorenetwork.NewDataAwsNetworkmanagerCoreNetworkEdgesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsNetworkmanagerCoreNetworkEdgesList
 ```
@@ -1005,7 +1005,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsNetworkmanagerCoreNetwork.DataAwsNetworkmanagerCoreNetworkEdgesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsnetworkmanagercorenetwork"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsnetworkmanagercorenetwork"
 
 dataawsnetworkmanagercorenetwork.NewDataAwsNetworkmanagerCoreNetworkEdgesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsNetworkmanagerCoreNetworkEdgesOutputReference
 ```
@@ -1305,7 +1305,7 @@ func InternalValue() DataAwsNetworkmanagerCoreNetworkEdges
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsNetworkmanagerCoreNetwork.DataAwsNetworkmanagerCoreNetworkNetworkFunctionGroupsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsnetworkmanagercorenetwork"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsnetworkmanagercorenetwork"
 
 dataawsnetworkmanagercorenetwork.NewDataAwsNetworkmanagerCoreNetworkNetworkFunctionGroupsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsNetworkmanagerCoreNetworkNetworkFunctionGroupsList
 ```
@@ -1454,7 +1454,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsNetworkmanagerCoreNetwork.DataAwsNetworkmanagerCoreNetworkNetworkFunctionGroupsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsnetworkmanagercorenetwork"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsnetworkmanagercorenetwork"
 
 dataawsnetworkmanagercorenetwork.NewDataAwsNetworkmanagerCoreNetworkNetworkFunctionGroupsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsNetworkmanagerCoreNetworkNetworkFunctionGroupsOutputReference
 ```
@@ -1754,7 +1754,7 @@ func InternalValue() DataAwsNetworkmanagerCoreNetworkNetworkFunctionGroups
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsNetworkmanagerCoreNetwork.DataAwsNetworkmanagerCoreNetworkNetworkFunctionGroupsSegmentsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsnetworkmanagercorenetwork"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsnetworkmanagercorenetwork"
 
 dataawsnetworkmanagercorenetwork.NewDataAwsNetworkmanagerCoreNetworkNetworkFunctionGroupsSegmentsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsNetworkmanagerCoreNetworkNetworkFunctionGroupsSegmentsList
 ```
@@ -1903,7 +1903,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsNetworkmanagerCoreNetwork.DataAwsNetworkmanagerCoreNetworkNetworkFunctionGroupsSegmentsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsnetworkmanagercorenetwork"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsnetworkmanagercorenetwork"
 
 dataawsnetworkmanagercorenetwork.NewDataAwsNetworkmanagerCoreNetworkNetworkFunctionGroupsSegmentsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsNetworkmanagerCoreNetworkNetworkFunctionGroupsSegmentsOutputReference
 ```
@@ -2192,7 +2192,7 @@ func InternalValue() DataAwsNetworkmanagerCoreNetworkNetworkFunctionGroupsSegmen
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsNetworkmanagerCoreNetwork.DataAwsNetworkmanagerCoreNetworkSegmentsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsnetworkmanagercorenetwork"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsnetworkmanagercorenetwork"
 
 dataawsnetworkmanagercorenetwork.NewDataAwsNetworkmanagerCoreNetworkSegmentsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsNetworkmanagerCoreNetworkSegmentsList
 ```
@@ -2341,7 +2341,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsNetworkmanagerCoreNetwork.DataAwsNetworkmanagerCoreNetworkSegmentsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsnetworkmanagercorenetwork"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsnetworkmanagercorenetwork"
 
 dataawsnetworkmanagercorenetwork.NewDataAwsNetworkmanagerCoreNetworkSegmentsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsNetworkmanagerCoreNetworkSegmentsOutputReference
 ```

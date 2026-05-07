@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lambdaRuntimeManagementConfig.LambdaRuntimeManagementConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lambdaruntimemanagementconfig"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lambdaruntimemanagementconfig"
 
 lambdaruntimemanagementconfig.NewLambdaRuntimeManagementConfig(scope Construct, id *string, config LambdaRuntimeManagementConfigConfig) LambdaRuntimeManagementConfig
 ```
@@ -428,7 +428,7 @@ func ResetUpdateRuntimeOn()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.lambdaRuntimeManagementConfig.LambdaRuntimeManagementConfig.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lambdaruntimemanagementconfig"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lambdaruntimemanagementconfig"
 
 lambdaruntimemanagementconfig.LambdaRuntimeManagementConfig_IsConstruct(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.lambdaRuntimeManagementConfig.LambdaRuntimeManagementConfig.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lambdaruntimemanagementconfig"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lambdaruntimemanagementconfig"
 
 lambdaruntimemanagementconfig.LambdaRuntimeManagementConfig_IsTerraformElement(x interface{}) *bool
 ```
@@ -474,7 +474,7 @@ lambdaruntimemanagementconfig.LambdaRuntimeManagementConfig_IsTerraformElement(x
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.lambdaRuntimeManagementConfig.LambdaRuntimeManagementConfig.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lambdaruntimemanagementconfig"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lambdaruntimemanagementconfig"
 
 lambdaruntimemanagementconfig.LambdaRuntimeManagementConfig_IsTerraformResource(x interface{}) *bool
 ```
@@ -488,7 +488,7 @@ lambdaruntimemanagementconfig.LambdaRuntimeManagementConfig_IsTerraformResource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.lambdaRuntimeManagementConfig.LambdaRuntimeManagementConfig.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lambdaruntimemanagementconfig"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lambdaruntimemanagementconfig"
 
 lambdaruntimemanagementconfig.LambdaRuntimeManagementConfig_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -838,7 +838,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.lambdaRuntimeManagementConfig.LambdaRuntimeManagementConfigConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lambdaruntimemanagementconfig"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lambdaruntimemanagementconfig"
 
 &lambdaruntimemanagementconfig.LambdaRuntimeManagementConfigConfig {
 	Connection: interface{},

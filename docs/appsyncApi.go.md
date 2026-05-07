@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appsyncApi.AppsyncApi.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/appsyncapi"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/appsyncapi"
 
 appsyncapi.NewAppsyncApi(scope Construct, id *string, config AppsyncApiConfig) AppsyncApi
 ```
@@ -441,7 +441,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.appsyncApi.AppsyncApi.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/appsyncapi"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/appsyncapi"
 
 appsyncapi.AppsyncApi_IsConstruct(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.appsyncApi.AppsyncApi.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/appsyncapi"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/appsyncapi"
 
 appsyncapi.AppsyncApi_IsTerraformElement(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ appsyncapi.AppsyncApi_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.appsyncApi.AppsyncApi.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/appsyncapi"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/appsyncapi"
 
 appsyncapi.AppsyncApi_IsTerraformResource(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ appsyncapi.AppsyncApi_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.appsyncApi.AppsyncApi.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/appsyncapi"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/appsyncapi"
 
 appsyncapi.AppsyncApi_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -906,7 +906,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.appsyncApi.AppsyncApiConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/appsyncapi"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/appsyncapi"
 
 &appsyncapi.AppsyncApiConfig {
 	Connection: interface{},
@@ -1082,7 +1082,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.appsyncApi.AppsyncApiEventConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/appsyncapi"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/appsyncapi"
 
 &appsyncapi.AppsyncApiEventConfig {
 	AuthProvider: interface{},
@@ -1180,7 +1180,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.appsyncApi.AppsyncApiEventConfigAuthProvider.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/appsyncapi"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/appsyncapi"
 
 &appsyncapi.AppsyncApiEventConfigAuthProvider {
 	AuthType: *string,
@@ -1260,7 +1260,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.appsyncApi.AppsyncApiEventConfigAuthProviderCognitoConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/appsyncapi"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/appsyncapi"
 
 &appsyncapi.AppsyncApiEventConfigAuthProviderCognitoConfig {
 	AwsRegion: *string,
@@ -1320,7 +1320,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.appsyncApi.AppsyncApiEventConfigAuthProviderLambdaAuthorizerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/appsyncapi"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/appsyncapi"
 
 &appsyncapi.AppsyncApiEventConfigAuthProviderLambdaAuthorizerConfig {
 	AuthorizerUri: *string,
@@ -1380,7 +1380,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.appsyncApi.AppsyncApiEventConfigAuthProviderOpenidConnectConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/appsyncapi"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/appsyncapi"
 
 &appsyncapi.AppsyncApiEventConfigAuthProviderOpenidConnectConfig {
 	Issuer: *string,
@@ -1454,7 +1454,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.appsyncApi.AppsyncApiEventConfigConnectionAuthMode.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/appsyncapi"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/appsyncapi"
 
 &appsyncapi.AppsyncApiEventConfigConnectionAuthMode {
 	AuthType: *string,
@@ -1486,7 +1486,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.appsyncApi.AppsyncApiEventConfigDefaultPublishAuthMode.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/appsyncapi"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/appsyncapi"
 
 &appsyncapi.AppsyncApiEventConfigDefaultPublishAuthMode {
 	AuthType: *string,
@@ -1518,7 +1518,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.appsyncApi.AppsyncApiEventConfigDefaultSubscribeAuthMode.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/appsyncapi"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/appsyncapi"
 
 &appsyncapi.AppsyncApiEventConfigDefaultSubscribeAuthMode {
 	AuthType: *string,
@@ -1550,7 +1550,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.appsyncApi.AppsyncApiEventConfigLogConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/appsyncapi"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/appsyncapi"
 
 &appsyncapi.AppsyncApiEventConfigLogConfig {
 	CloudwatchLogsRoleArn: *string,
@@ -1598,7 +1598,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appsyncApi.AppsyncApiEventConfigAuthProviderCognitoConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/appsyncapi"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/appsyncapi"
 
 appsyncapi.NewAppsyncApiEventConfigAuthProviderCognitoConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppsyncApiEventConfigAuthProviderCognitoConfigList
 ```
@@ -1758,7 +1758,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appsyncApi.AppsyncApiEventConfigAuthProviderCognitoConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/appsyncapi"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/appsyncapi"
 
 appsyncapi.NewAppsyncApiEventConfigAuthProviderCognitoConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppsyncApiEventConfigAuthProviderCognitoConfigOutputReference
 ```
@@ -2098,7 +2098,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appsyncApi.AppsyncApiEventConfigAuthProviderLambdaAuthorizerConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/appsyncapi"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/appsyncapi"
 
 appsyncapi.NewAppsyncApiEventConfigAuthProviderLambdaAuthorizerConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppsyncApiEventConfigAuthProviderLambdaAuthorizerConfigList
 ```
@@ -2258,7 +2258,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appsyncApi.AppsyncApiEventConfigAuthProviderLambdaAuthorizerConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/appsyncapi"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/appsyncapi"
 
 appsyncapi.NewAppsyncApiEventConfigAuthProviderLambdaAuthorizerConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppsyncApiEventConfigAuthProviderLambdaAuthorizerConfigOutputReference
 ```
@@ -2605,7 +2605,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appsyncApi.AppsyncApiEventConfigAuthProviderList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/appsyncapi"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/appsyncapi"
 
 appsyncapi.NewAppsyncApiEventConfigAuthProviderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppsyncApiEventConfigAuthProviderList
 ```
@@ -2765,7 +2765,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appsyncApi.AppsyncApiEventConfigAuthProviderOpenidConnectConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/appsyncapi"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/appsyncapi"
 
 appsyncapi.NewAppsyncApiEventConfigAuthProviderOpenidConnectConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppsyncApiEventConfigAuthProviderOpenidConnectConfigList
 ```
@@ -2925,7 +2925,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appsyncApi.AppsyncApiEventConfigAuthProviderOpenidConnectConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/appsyncapi"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/appsyncapi"
 
 appsyncapi.NewAppsyncApiEventConfigAuthProviderOpenidConnectConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppsyncApiEventConfigAuthProviderOpenidConnectConfigOutputReference
 ```
@@ -3301,7 +3301,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appsyncApi.AppsyncApiEventConfigAuthProviderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/appsyncapi"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/appsyncapi"
 
 appsyncapi.NewAppsyncApiEventConfigAuthProviderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppsyncApiEventConfigAuthProviderOutputReference
 ```
@@ -3716,7 +3716,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appsyncApi.AppsyncApiEventConfigConnectionAuthModeList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/appsyncapi"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/appsyncapi"
 
 appsyncapi.NewAppsyncApiEventConfigConnectionAuthModeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppsyncApiEventConfigConnectionAuthModeList
 ```
@@ -3876,7 +3876,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appsyncApi.AppsyncApiEventConfigConnectionAuthModeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/appsyncapi"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/appsyncapi"
 
 appsyncapi.NewAppsyncApiEventConfigConnectionAuthModeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppsyncApiEventConfigConnectionAuthModeOutputReference
 ```
@@ -4165,7 +4165,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appsyncApi.AppsyncApiEventConfigDefaultPublishAuthModeList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/appsyncapi"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/appsyncapi"
 
 appsyncapi.NewAppsyncApiEventConfigDefaultPublishAuthModeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppsyncApiEventConfigDefaultPublishAuthModeList
 ```
@@ -4325,7 +4325,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appsyncApi.AppsyncApiEventConfigDefaultPublishAuthModeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/appsyncapi"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/appsyncapi"
 
 appsyncapi.NewAppsyncApiEventConfigDefaultPublishAuthModeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppsyncApiEventConfigDefaultPublishAuthModeOutputReference
 ```
@@ -4614,7 +4614,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appsyncApi.AppsyncApiEventConfigDefaultSubscribeAuthModeList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/appsyncapi"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/appsyncapi"
 
 appsyncapi.NewAppsyncApiEventConfigDefaultSubscribeAuthModeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppsyncApiEventConfigDefaultSubscribeAuthModeList
 ```
@@ -4774,7 +4774,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appsyncApi.AppsyncApiEventConfigDefaultSubscribeAuthModeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/appsyncapi"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/appsyncapi"
 
 appsyncapi.NewAppsyncApiEventConfigDefaultSubscribeAuthModeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppsyncApiEventConfigDefaultSubscribeAuthModeOutputReference
 ```
@@ -5063,7 +5063,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appsyncApi.AppsyncApiEventConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/appsyncapi"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/appsyncapi"
 
 appsyncapi.NewAppsyncApiEventConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppsyncApiEventConfigList
 ```
@@ -5223,7 +5223,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appsyncApi.AppsyncApiEventConfigLogConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/appsyncapi"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/appsyncapi"
 
 appsyncapi.NewAppsyncApiEventConfigLogConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppsyncApiEventConfigLogConfigList
 ```
@@ -5383,7 +5383,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appsyncApi.AppsyncApiEventConfigLogConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/appsyncapi"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/appsyncapi"
 
 appsyncapi.NewAppsyncApiEventConfigLogConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppsyncApiEventConfigLogConfigOutputReference
 ```
@@ -5694,7 +5694,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appsyncApi.AppsyncApiEventConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/appsyncapi"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/appsyncapi"
 
 appsyncapi.NewAppsyncApiEventConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppsyncApiEventConfigOutputReference
 ```

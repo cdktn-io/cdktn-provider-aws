@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lbTargetGroup.LbTargetGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lbtargetgroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lbtargetgroup"
 
 lbtargetgroup.NewLbTargetGroup(scope Construct, id *string, config LbTargetGroupConfig) LbTargetGroup
 ```
@@ -654,7 +654,7 @@ func ResetVpcId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.lbTargetGroup.LbTargetGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lbtargetgroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lbtargetgroup"
 
 lbtargetgroup.LbTargetGroup_IsConstruct(x interface{}) *bool
 ```
@@ -686,7 +686,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.lbTargetGroup.LbTargetGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lbtargetgroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lbtargetgroup"
 
 lbtargetgroup.LbTargetGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -700,7 +700,7 @@ lbtargetgroup.LbTargetGroup_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.lbTargetGroup.LbTargetGroup.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lbtargetgroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lbtargetgroup"
 
 lbtargetgroup.LbTargetGroup_IsTerraformResource(x interface{}) *bool
 ```
@@ -714,7 +714,7 @@ lbtargetgroup.LbTargetGroup_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.lbTargetGroup.LbTargetGroup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lbtargetgroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lbtargetgroup"
 
 lbtargetgroup.LbTargetGroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1570,7 +1570,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.lbTargetGroup.LbTargetGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lbtargetgroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lbtargetgroup"
 
 &lbtargetgroup.LbTargetGroupConfig {
 	Connection: interface{},
@@ -1582,7 +1582,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lbtargetgroup"
 	Provisioners: *[]interface{},
 	ConnectionTermination: interface{},
 	DeregistrationDelay: *string,
-	HealthCheck: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.lbTargetGroup.LbTargetGroupHealthCheck,
+	HealthCheck: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.lbTargetGroup.LbTargetGroupHealthCheck,
 	Id: *string,
 	IpAddressType: *string,
 	LambdaMultiValueHeadersEnabled: interface{},
@@ -1598,12 +1598,12 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lbtargetgroup"
 	ProxyProtocolV2: interface{},
 	Region: *string,
 	SlowStart: *f64,
-	Stickiness: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.lbTargetGroup.LbTargetGroupStickiness,
+	Stickiness: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.lbTargetGroup.LbTargetGroupStickiness,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
 	TargetControlPort: *f64,
 	TargetFailover: interface{},
-	TargetGroupHealth: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.lbTargetGroup.LbTargetGroupTargetGroupHealth,
+	TargetGroupHealth: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.lbTargetGroup.LbTargetGroupTargetGroupHealth,
 	TargetHealthState: interface{},
 	TargetType: *string,
 	VpcId: *string,
@@ -2065,7 +2065,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.lbTargetGroup.LbTargetGroupHealthCheck.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lbtargetgroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lbtargetgroup"
 
 &lbtargetgroup.LbTargetGroupHealthCheck {
 	Enabled: interface{},
@@ -2209,7 +2209,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.lbTargetGroup.LbTargetGroupStickiness.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lbtargetgroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lbtargetgroup"
 
 &lbtargetgroup.LbTargetGroupStickiness {
 	Type: *string,
@@ -2283,7 +2283,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.lbTargetGroup.LbTargetGroupTargetFailover.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lbtargetgroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lbtargetgroup"
 
 &lbtargetgroup.LbTargetGroupTargetFailover {
 	OnDeregistration: *string,
@@ -2329,11 +2329,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.lbTargetGroup.LbTargetGroupTargetGroupHealth.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lbtargetgroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lbtargetgroup"
 
 &lbtargetgroup.LbTargetGroupTargetGroupHealth {
-	DnsFailover: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.lbTargetGroup.LbTargetGroupTargetGroupHealthDnsFailover,
-	UnhealthyStateRouting: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.lbTargetGroup.LbTargetGroupTargetGroupHealthUnhealthyStateRouting,
+	DnsFailover: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.lbTargetGroup.LbTargetGroupTargetGroupHealthDnsFailover,
+	UnhealthyStateRouting: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.lbTargetGroup.LbTargetGroupTargetGroupHealthUnhealthyStateRouting,
 }
 ```
 
@@ -2379,7 +2379,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.lbTargetGroup.LbTargetGroupTargetGroupHealthDnsFailover.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lbtargetgroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lbtargetgroup"
 
 &lbtargetgroup.LbTargetGroupTargetGroupHealthDnsFailover {
 	MinimumHealthyTargetsCount: *string,
@@ -2425,7 +2425,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.lbTargetGroup.LbTargetGroupTargetGroupHealthUnhealthyStateRouting.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lbtargetgroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lbtargetgroup"
 
 &lbtargetgroup.LbTargetGroupTargetGroupHealthUnhealthyStateRouting {
 	MinimumHealthyTargetsCount: *f64,
@@ -2471,7 +2471,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.lbTargetGroup.LbTargetGroupTargetHealthState.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lbtargetgroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lbtargetgroup"
 
 &lbtargetgroup.LbTargetGroupTargetHealthState {
 	EnableUnhealthyConnectionTermination: interface{},
@@ -2519,7 +2519,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lbTargetGroup.LbTargetGroupHealthCheckOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lbtargetgroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lbtargetgroup"
 
 lbtargetgroup.NewLbTargetGroupHealthCheckOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LbTargetGroupHealthCheckOutputReference
 ```
@@ -3029,7 +3029,7 @@ func InternalValue() LbTargetGroupHealthCheck
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lbTargetGroup.LbTargetGroupStickinessOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lbtargetgroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lbtargetgroup"
 
 lbtargetgroup.NewLbTargetGroupStickinessOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LbTargetGroupStickinessOutputReference
 ```
@@ -3387,7 +3387,7 @@ func InternalValue() LbTargetGroupStickiness
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lbTargetGroup.LbTargetGroupTargetFailoverList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lbtargetgroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lbtargetgroup"
 
 lbtargetgroup.NewLbTargetGroupTargetFailoverList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LbTargetGroupTargetFailoverList
 ```
@@ -3547,7 +3547,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lbTargetGroup.LbTargetGroupTargetFailoverOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lbtargetgroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lbtargetgroup"
 
 lbtargetgroup.NewLbTargetGroupTargetFailoverOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LbTargetGroupTargetFailoverOutputReference
 ```
@@ -3858,7 +3858,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lbTargetGroup.LbTargetGroupTargetGroupHealthDnsFailoverOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lbtargetgroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lbtargetgroup"
 
 lbtargetgroup.NewLbTargetGroupTargetGroupHealthDnsFailoverOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LbTargetGroupTargetGroupHealthDnsFailoverOutputReference
 ```
@@ -4165,7 +4165,7 @@ func InternalValue() LbTargetGroupTargetGroupHealthDnsFailover
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lbTargetGroup.LbTargetGroupTargetGroupHealthOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lbtargetgroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lbtargetgroup"
 
 lbtargetgroup.NewLbTargetGroupTargetGroupHealthOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LbTargetGroupTargetGroupHealthOutputReference
 ```
@@ -4498,7 +4498,7 @@ func InternalValue() LbTargetGroupTargetGroupHealth
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lbTargetGroup.LbTargetGroupTargetGroupHealthUnhealthyStateRoutingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lbtargetgroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lbtargetgroup"
 
 lbtargetgroup.NewLbTargetGroupTargetGroupHealthUnhealthyStateRoutingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LbTargetGroupTargetGroupHealthUnhealthyStateRoutingOutputReference
 ```
@@ -4805,7 +4805,7 @@ func InternalValue() LbTargetGroupTargetGroupHealthUnhealthyStateRouting
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lbTargetGroup.LbTargetGroupTargetHealthStateList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lbtargetgroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lbtargetgroup"
 
 lbtargetgroup.NewLbTargetGroupTargetHealthStateList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LbTargetGroupTargetHealthStateList
 ```
@@ -4965,7 +4965,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lbTargetGroup.LbTargetGroupTargetHealthStateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lbtargetgroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lbtargetgroup"
 
 lbtargetgroup.NewLbTargetGroupTargetHealthStateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LbTargetGroupTargetHealthStateOutputReference
 ```

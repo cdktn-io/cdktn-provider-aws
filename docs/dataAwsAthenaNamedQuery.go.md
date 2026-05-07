@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAthenaNamedQuery.DataAwsAthenaNamedQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsathenanamedquery"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsathenanamedquery"
 
 dataawsathenanamedquery.NewDataAwsAthenaNamedQuery(scope Construct, id *string, config DataAwsAthenaNamedQueryConfig) DataAwsAthenaNamedQuery
 ```
@@ -319,7 +319,7 @@ func ResetWorkgroup()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsAthenaNamedQuery.DataAwsAthenaNamedQuery.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsathenanamedquery"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsathenanamedquery"
 
 dataawsathenanamedquery.DataAwsAthenaNamedQuery_IsConstruct(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsAthenaNamedQuery.DataAwsAthenaNamedQuery.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsathenanamedquery"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsathenanamedquery"
 
 dataawsathenanamedquery.DataAwsAthenaNamedQuery_IsTerraformElement(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ dataawsathenanamedquery.DataAwsAthenaNamedQuery_IsTerraformElement(x interface{}
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsAthenaNamedQuery.DataAwsAthenaNamedQuery.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsathenanamedquery"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsathenanamedquery"
 
 dataawsathenanamedquery.DataAwsAthenaNamedQuery_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -379,7 +379,7 @@ dataawsathenanamedquery.DataAwsAthenaNamedQuery_IsTerraformDataSource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsAthenaNamedQuery.DataAwsAthenaNamedQuery.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsathenanamedquery"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsathenanamedquery"
 
 dataawsathenanamedquery.DataAwsAthenaNamedQuery_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -707,7 +707,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsAthenaNamedQuery.DataAwsAthenaNamedQueryConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsathenanamedquery"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsathenanamedquery"
 
 &dataawsathenanamedquery.DataAwsAthenaNamedQueryConfig {
 	Connection: interface{},

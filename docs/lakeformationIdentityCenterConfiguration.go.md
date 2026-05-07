@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lakeformationIdentityCenterConfiguration.LakeformationIdentityCenterConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lakeformationidentitycenterconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lakeformationidentitycenterconfiguration"
 
 lakeformationidentitycenterconfiguration.NewLakeformationIdentityCenterConfiguration(scope Construct, id *string, config LakeformationIdentityCenterConfigurationConfig) LakeformationIdentityCenterConfiguration
 ```
@@ -414,7 +414,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.lakeformationIdentityCenterConfiguration.LakeformationIdentityCenterConfiguration.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lakeformationidentitycenterconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lakeformationidentitycenterconfiguration"
 
 lakeformationidentitycenterconfiguration.LakeformationIdentityCenterConfiguration_IsConstruct(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.lakeformationIdentityCenterConfiguration.LakeformationIdentityCenterConfiguration.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lakeformationidentitycenterconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lakeformationidentitycenterconfiguration"
 
 lakeformationidentitycenterconfiguration.LakeformationIdentityCenterConfiguration_IsTerraformElement(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ lakeformationidentitycenterconfiguration.LakeformationIdentityCenterConfiguratio
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.lakeformationIdentityCenterConfiguration.LakeformationIdentityCenterConfiguration.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lakeformationidentitycenterconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lakeformationidentitycenterconfiguration"
 
 lakeformationidentitycenterconfiguration.LakeformationIdentityCenterConfiguration_IsTerraformResource(x interface{}) *bool
 ```
@@ -474,7 +474,7 @@ lakeformationidentitycenterconfiguration.LakeformationIdentityCenterConfiguratio
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.lakeformationIdentityCenterConfiguration.LakeformationIdentityCenterConfiguration.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lakeformationidentitycenterconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lakeformationidentitycenterconfiguration"
 
 lakeformationidentitycenterconfiguration.LakeformationIdentityCenterConfiguration_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -791,7 +791,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.lakeformationIdentityCenterConfiguration.LakeformationIdentityCenterConfigurationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lakeformationidentitycenterconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lakeformationidentitycenterconfiguration"
 
 &lakeformationidentitycenterconfiguration.LakeformationIdentityCenterConfigurationConfig {
 	Connection: interface{},

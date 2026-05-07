@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.billingView.BillingView.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/billingview"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/billingview"
 
 billingview.NewBillingView(scope Construct, id *string, config BillingViewConfig) BillingView
 ```
@@ -461,7 +461,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.billingView.BillingView.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/billingview"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/billingview"
 
 billingview.BillingView_IsConstruct(x interface{}) *bool
 ```
@@ -493,7 +493,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.billingView.BillingView.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/billingview"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/billingview"
 
 billingview.BillingView_IsTerraformElement(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ billingview.BillingView_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.billingView.BillingView.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/billingview"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/billingview"
 
 billingview.BillingView_IsTerraformResource(x interface{}) *bool
 ```
@@ -521,7 +521,7 @@ billingview.BillingView_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.billingView.BillingView.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/billingview"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/billingview"
 
 billingview.BillingView_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -992,7 +992,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.billingView.BillingViewConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/billingview"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/billingview"
 
 &billingview.BillingViewConfig {
 	Connection: interface{},
@@ -1007,7 +1007,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/billingview"
 	Description: *string,
 	SourceViews: *[]*string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.billingView.BillingViewTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.billingView.BillingViewTimeouts,
 }
 ```
 
@@ -1182,7 +1182,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.billingView.BillingViewDataFilterExpression.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/billingview"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/billingview"
 
 &billingview.BillingViewDataFilterExpression {
 	Dimensions: interface{},
@@ -1248,7 +1248,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionDimensions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/billingview"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/billingview"
 
 &billingview.BillingViewDataFilterExpressionDimensions {
 	Key: *string,
@@ -1294,7 +1294,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionTags.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/billingview"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/billingview"
 
 &billingview.BillingViewDataFilterExpressionTags {
 	Key: *string,
@@ -1340,7 +1340,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionTimeRange.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/billingview"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/billingview"
 
 &billingview.BillingViewDataFilterExpressionTimeRange {
 	BeginDateInclusive: *string,
@@ -1386,7 +1386,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.billingView.BillingViewTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/billingview"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/billingview"
 
 &billingview.BillingViewTimeouts {
 	Create: *string,
@@ -1454,7 +1454,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionDimensionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/billingview"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/billingview"
 
 billingview.NewBillingViewDataFilterExpressionDimensionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BillingViewDataFilterExpressionDimensionsList
 ```
@@ -1614,7 +1614,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionDimensionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/billingview"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/billingview"
 
 billingview.NewBillingViewDataFilterExpressionDimensionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BillingViewDataFilterExpressionDimensionsOutputReference
 ```
@@ -1925,7 +1925,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/billingview"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/billingview"
 
 billingview.NewBillingViewDataFilterExpressionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BillingViewDataFilterExpressionList
 ```
@@ -2085,7 +2085,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/billingview"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/billingview"
 
 billingview.NewBillingViewDataFilterExpressionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BillingViewDataFilterExpressionOutputReference
 ```
@@ -2478,7 +2478,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionTagsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/billingview"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/billingview"
 
 billingview.NewBillingViewDataFilterExpressionTagsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BillingViewDataFilterExpressionTagsList
 ```
@@ -2638,7 +2638,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionTagsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/billingview"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/billingview"
 
 billingview.NewBillingViewDataFilterExpressionTagsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BillingViewDataFilterExpressionTagsOutputReference
 ```
@@ -2949,7 +2949,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionTimeRangeList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/billingview"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/billingview"
 
 billingview.NewBillingViewDataFilterExpressionTimeRangeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BillingViewDataFilterExpressionTimeRangeList
 ```
@@ -3109,7 +3109,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.billingView.BillingViewDataFilterExpressionTimeRangeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/billingview"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/billingview"
 
 billingview.NewBillingViewDataFilterExpressionTimeRangeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BillingViewDataFilterExpressionTimeRangeOutputReference
 ```
@@ -3420,7 +3420,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.billingView.BillingViewTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/billingview"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/billingview"
 
 billingview.NewBillingViewTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BillingViewTimeoutsOutputReference
 ```

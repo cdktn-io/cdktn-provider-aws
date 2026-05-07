@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsCloudfrontConnectionGroup.DataAwsCloudfrontConnectionGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawscloudfrontconnectiongroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscloudfrontconnectiongroup"
 
 dataawscloudfrontconnectiongroup.NewDataAwsCloudfrontConnectionGroup(scope Construct, id *string, config DataAwsCloudfrontConnectionGroupConfig) DataAwsCloudfrontConnectionGroup
 ```
@@ -312,7 +312,7 @@ func ResetRoutingEndpoint()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsCloudfrontConnectionGroup.DataAwsCloudfrontConnectionGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawscloudfrontconnectiongroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscloudfrontconnectiongroup"
 
 dataawscloudfrontconnectiongroup.DataAwsCloudfrontConnectionGroup_IsConstruct(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsCloudfrontConnectionGroup.DataAwsCloudfrontConnectionGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawscloudfrontconnectiongroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscloudfrontconnectiongroup"
 
 dataawscloudfrontconnectiongroup.DataAwsCloudfrontConnectionGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ dataawscloudfrontconnectiongroup.DataAwsCloudfrontConnectionGroup_IsTerraformEle
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsCloudfrontConnectionGroup.DataAwsCloudfrontConnectionGroup.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawscloudfrontconnectiongroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscloudfrontconnectiongroup"
 
 dataawscloudfrontconnectiongroup.DataAwsCloudfrontConnectionGroup_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -372,7 +372,7 @@ dataawscloudfrontconnectiongroup.DataAwsCloudfrontConnectionGroup_IsTerraformDat
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsCloudfrontConnectionGroup.DataAwsCloudfrontConnectionGroup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawscloudfrontconnectiongroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscloudfrontconnectiongroup"
 
 dataawscloudfrontconnectiongroup.DataAwsCloudfrontConnectionGroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -733,7 +733,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsCloudfrontConnectionGroup.DataAwsCloudfrontConnectionGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawscloudfrontconnectiongroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscloudfrontconnectiongroup"
 
 &dataawscloudfrontconnectiongroup.DataAwsCloudfrontConnectionGroupConfig {
 	Connection: interface{},

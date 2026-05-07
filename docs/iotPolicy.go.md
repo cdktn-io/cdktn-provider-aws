@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.iotPolicy.IotPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/iotpolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/iotpolicy"
 
 iotpolicy.NewIotPolicy(scope Construct, id *string, config IotPolicyConfig) IotPolicy
 ```
@@ -448,7 +448,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.iotPolicy.IotPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/iotpolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/iotpolicy"
 
 iotpolicy.IotPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.iotPolicy.IotPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/iotpolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/iotpolicy"
 
 iotpolicy.IotPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ iotpolicy.IotPolicy_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.iotPolicy.IotPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/iotpolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/iotpolicy"
 
 iotpolicy.IotPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ iotpolicy.IotPolicy_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.iotPolicy.IotPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/iotpolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/iotpolicy"
 
 iotpolicy.IotPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -913,7 +913,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.iotPolicy.IotPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/iotpolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/iotpolicy"
 
 &iotpolicy.IotPolicyConfig {
 	Connection: interface{},
@@ -929,7 +929,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/iotpolicy"
 	Region: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.iotPolicy.IotPolicyTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.iotPolicy.IotPolicyTimeouts,
 }
 ```
 
@@ -1120,7 +1120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.iotPolicy.IotPolicyTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/iotpolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/iotpolicy"
 
 &iotpolicy.IotPolicyTimeouts {
 	Delete: *string,
@@ -1168,7 +1168,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.iotPolicy.IotPolicyTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/iotpolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/iotpolicy"
 
 iotpolicy.NewIotPolicyTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IotPolicyTimeoutsOutputReference
 ```

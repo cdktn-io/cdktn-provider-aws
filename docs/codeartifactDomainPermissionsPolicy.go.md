@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.codeartifactDomainPermissionsPolicy.CodeartifactDomainPermissionsPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/codeartifactdomainpermissionspolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codeartifactdomainpermissionspolicy"
 
 codeartifactdomainpermissionspolicy.NewCodeartifactDomainPermissionsPolicy(scope Construct, id *string, config CodeartifactDomainPermissionsPolicyConfig) CodeartifactDomainPermissionsPolicy
 ```
@@ -435,7 +435,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.codeartifactDomainPermissionsPolicy.CodeartifactDomainPermissionsPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/codeartifactdomainpermissionspolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codeartifactdomainpermissionspolicy"
 
 codeartifactdomainpermissionspolicy.CodeartifactDomainPermissionsPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.codeartifactDomainPermissionsPolicy.CodeartifactDomainPermissionsPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/codeartifactdomainpermissionspolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codeartifactdomainpermissionspolicy"
 
 codeartifactdomainpermissionspolicy.CodeartifactDomainPermissionsPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -481,7 +481,7 @@ codeartifactdomainpermissionspolicy.CodeartifactDomainPermissionsPolicy_IsTerraf
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.codeartifactDomainPermissionsPolicy.CodeartifactDomainPermissionsPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/codeartifactdomainpermissionspolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codeartifactdomainpermissionspolicy"
 
 codeartifactdomainpermissionspolicy.CodeartifactDomainPermissionsPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -495,7 +495,7 @@ codeartifactdomainpermissionspolicy.CodeartifactDomainPermissionsPolicy_IsTerraf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.codeartifactDomainPermissionsPolicy.CodeartifactDomainPermissionsPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/codeartifactdomainpermissionspolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codeartifactdomainpermissionspolicy"
 
 codeartifactdomainpermissionspolicy.CodeartifactDomainPermissionsPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -867,7 +867,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.codeartifactDomainPermissionsPolicy.CodeartifactDomainPermissionsPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/codeartifactdomainpermissionspolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codeartifactdomainpermissionspolicy"
 
 &codeartifactdomainpermissionspolicy.CodeartifactDomainPermissionsPolicyConfig {
 	Connection: interface{},

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ec2TransitGatewayDefaultRouteTableAssociation.Ec2TransitGatewayDefaultRouteTableAssociation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/ec2transitgatewaydefaultroutetableassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ec2transitgatewaydefaultroutetableassociation"
 
 ec2transitgatewaydefaultroutetableassociation.NewEc2TransitGatewayDefaultRouteTableAssociation(scope Construct, id *string, config Ec2TransitGatewayDefaultRouteTableAssociationConfig) Ec2TransitGatewayDefaultRouteTableAssociation
 ```
@@ -427,7 +427,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.ec2TransitGatewayDefaultRouteTableAssociation.Ec2TransitGatewayDefaultRouteTableAssociation.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/ec2transitgatewaydefaultroutetableassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ec2transitgatewaydefaultroutetableassociation"
 
 ec2transitgatewaydefaultroutetableassociation.Ec2TransitGatewayDefaultRouteTableAssociation_IsConstruct(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.ec2TransitGatewayDefaultRouteTableAssociation.Ec2TransitGatewayDefaultRouteTableAssociation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/ec2transitgatewaydefaultroutetableassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ec2transitgatewaydefaultroutetableassociation"
 
 ec2transitgatewaydefaultroutetableassociation.Ec2TransitGatewayDefaultRouteTableAssociation_IsTerraformElement(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ ec2transitgatewaydefaultroutetableassociation.Ec2TransitGatewayDefaultRouteTable
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.ec2TransitGatewayDefaultRouteTableAssociation.Ec2TransitGatewayDefaultRouteTableAssociation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/ec2transitgatewaydefaultroutetableassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ec2transitgatewaydefaultroutetableassociation"
 
 ec2transitgatewaydefaultroutetableassociation.Ec2TransitGatewayDefaultRouteTableAssociation_IsTerraformResource(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ ec2transitgatewaydefaultroutetableassociation.Ec2TransitGatewayDefaultRouteTable
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.ec2TransitGatewayDefaultRouteTableAssociation.Ec2TransitGatewayDefaultRouteTableAssociation.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/ec2transitgatewaydefaultroutetableassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ec2transitgatewaydefaultroutetableassociation"
 
 ec2transitgatewaydefaultroutetableassociation.Ec2TransitGatewayDefaultRouteTableAssociation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -826,7 +826,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ec2TransitGatewayDefaultRouteTableAssociation.Ec2TransitGatewayDefaultRouteTableAssociationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/ec2transitgatewaydefaultroutetableassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ec2transitgatewaydefaultroutetableassociation"
 
 &ec2transitgatewaydefaultroutetableassociation.Ec2TransitGatewayDefaultRouteTableAssociationConfig {
 	Connection: interface{},
@@ -839,7 +839,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/ec2transitgatewaydefau
 	TransitGatewayId: *string,
 	TransitGatewayRouteTableId: *string,
 	Region: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.ec2TransitGatewayDefaultRouteTableAssociation.Ec2TransitGatewayDefaultRouteTableAssociationTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.ec2TransitGatewayDefaultRouteTableAssociation.Ec2TransitGatewayDefaultRouteTableAssociationTimeouts,
 }
 ```
 
@@ -988,7 +988,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ec2TransitGatewayDefaultRouteTableAssociation.Ec2TransitGatewayDefaultRouteTableAssociationTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/ec2transitgatewaydefaultroutetableassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ec2transitgatewaydefaultroutetableassociation"
 
 &ec2transitgatewaydefaultroutetableassociation.Ec2TransitGatewayDefaultRouteTableAssociationTimeouts {
 	Create: *string,
@@ -1056,7 +1056,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ec2TransitGatewayDefaultRouteTableAssociation.Ec2TransitGatewayDefaultRouteTableAssociationTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/ec2transitgatewaydefaultroutetableassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ec2transitgatewaydefaultroutetableassociation"
 
 ec2transitgatewaydefaultroutetableassociation.NewEc2TransitGatewayDefaultRouteTableAssociationTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Ec2TransitGatewayDefaultRouteTableAssociationTimeoutsOutputReference
 ```

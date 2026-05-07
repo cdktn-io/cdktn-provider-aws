@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.fsxOpenzfsFileSystem.FsxOpenzfsFileSystem.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/fsxopenzfsfilesystem"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/fsxopenzfsfilesystem"
 
 fsxopenzfsfilesystem.NewFsxOpenzfsFileSystem(scope Construct, id *string, config FsxOpenzfsFileSystemConfig) FsxOpenzfsFileSystem
 ```
@@ -620,7 +620,7 @@ func ResetWeeklyMaintenanceStartTime()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.fsxOpenzfsFileSystem.FsxOpenzfsFileSystem.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/fsxopenzfsfilesystem"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/fsxopenzfsfilesystem"
 
 fsxopenzfsfilesystem.FsxOpenzfsFileSystem_IsConstruct(x interface{}) *bool
 ```
@@ -652,7 +652,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.fsxOpenzfsFileSystem.FsxOpenzfsFileSystem.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/fsxopenzfsfilesystem"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/fsxopenzfsfilesystem"
 
 fsxopenzfsfilesystem.FsxOpenzfsFileSystem_IsTerraformElement(x interface{}) *bool
 ```
@@ -666,7 +666,7 @@ fsxopenzfsfilesystem.FsxOpenzfsFileSystem_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.fsxOpenzfsFileSystem.FsxOpenzfsFileSystem.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/fsxopenzfsfilesystem"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/fsxopenzfsfilesystem"
 
 fsxopenzfsfilesystem.FsxOpenzfsFileSystem_IsTerraformResource(x interface{}) *bool
 ```
@@ -680,7 +680,7 @@ fsxopenzfsfilesystem.FsxOpenzfsFileSystem_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.fsxOpenzfsFileSystem.FsxOpenzfsFileSystem.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/fsxopenzfsfilesystem"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/fsxopenzfsfilesystem"
 
 fsxopenzfsfilesystem.FsxOpenzfsFileSystem_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1580,7 +1580,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.fsxOpenzfsFileSystem.FsxOpenzfsFileSystemConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/fsxopenzfsfilesystem"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/fsxopenzfsfilesystem"
 
 &fsxopenzfsfilesystem.FsxOpenzfsFileSystemConfig {
 	Connection: interface{},
@@ -1599,15 +1599,15 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/fsxopenzfsfilesystem"
 	CopyTagsToVolumes: interface{},
 	DailyAutomaticBackupStartTime: *string,
 	DeleteOptions: *[]*string,
-	DiskIopsConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.fsxOpenzfsFileSystem.FsxOpenzfsFileSystemDiskIopsConfiguration,
+	DiskIopsConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.fsxOpenzfsFileSystem.FsxOpenzfsFileSystemDiskIopsConfiguration,
 	EndpointIpAddressRange: *string,
 	FinalBackupTags: *map[string]*string,
 	Id: *string,
 	KmsKeyId: *string,
 	PreferredSubnetId: *string,
-	ReadCacheConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.fsxOpenzfsFileSystem.FsxOpenzfsFileSystemReadCacheConfiguration,
+	ReadCacheConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.fsxOpenzfsFileSystem.FsxOpenzfsFileSystemReadCacheConfiguration,
 	Region: *string,
-	RootVolumeConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.fsxOpenzfsFileSystem.FsxOpenzfsFileSystemRootVolumeConfiguration,
+	RootVolumeConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.fsxOpenzfsFileSystem.FsxOpenzfsFileSystemRootVolumeConfiguration,
 	RouteTableIds: *[]*string,
 	SecurityGroupIds: *[]*string,
 	SkipFinalBackup: interface{},
@@ -1615,7 +1615,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/fsxopenzfsfilesystem"
 	StorageType: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.fsxOpenzfsFileSystem.FsxOpenzfsFileSystemTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.fsxOpenzfsFileSystem.FsxOpenzfsFileSystemTimeouts,
 	WeeklyMaintenanceStartTime: *string,
 }
 ```
@@ -2073,7 +2073,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.fsxOpenzfsFileSystem.FsxOpenzfsFileSystemDiskIopsConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/fsxopenzfsfilesystem"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/fsxopenzfsfilesystem"
 
 &fsxopenzfsfilesystem.FsxOpenzfsFileSystemDiskIopsConfiguration {
 	Iops: *f64,
@@ -2119,7 +2119,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.fsxOpenzfsFileSystem.FsxOpenzfsFileSystemReadCacheConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/fsxopenzfsfilesystem"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/fsxopenzfsfilesystem"
 
 &fsxopenzfsfilesystem.FsxOpenzfsFileSystemReadCacheConfiguration {
 	Size: *f64,
@@ -2165,12 +2165,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.fsxOpenzfsFileSystem.FsxOpenzfsFileSystemRootVolumeConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/fsxopenzfsfilesystem"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/fsxopenzfsfilesystem"
 
 &fsxopenzfsfilesystem.FsxOpenzfsFileSystemRootVolumeConfiguration {
 	CopyTagsToSnapshots: interface{},
 	DataCompressionType: *string,
-	NfsExports: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.fsxOpenzfsFileSystem.FsxOpenzfsFileSystemRootVolumeConfigurationNfsExports,
+	NfsExports: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.fsxOpenzfsFileSystem.FsxOpenzfsFileSystemRootVolumeConfigurationNfsExports,
 	ReadOnly: interface{},
 	RecordSizeKib: *f64,
 	UserAndGroupQuotas: interface{},
@@ -2271,7 +2271,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.fsxOpenzfsFileSystem.FsxOpenzfsFileSystemRootVolumeConfigurationNfsExports.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/fsxopenzfsfilesystem"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/fsxopenzfsfilesystem"
 
 &fsxopenzfsfilesystem.FsxOpenzfsFileSystemRootVolumeConfigurationNfsExports {
 	ClientConfigurations: interface{},
@@ -2305,7 +2305,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.fsxOpenzfsFileSystem.FsxOpenzfsFileSystemRootVolumeConfigurationNfsExportsClientConfigurations.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/fsxopenzfsfilesystem"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/fsxopenzfsfilesystem"
 
 &fsxopenzfsfilesystem.FsxOpenzfsFileSystemRootVolumeConfigurationNfsExportsClientConfigurations {
 	Clients: *string,
@@ -2351,7 +2351,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.fsxOpenzfsFileSystem.FsxOpenzfsFileSystemRootVolumeConfigurationUserAndGroupQuotas.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/fsxopenzfsfilesystem"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/fsxopenzfsfilesystem"
 
 &fsxopenzfsfilesystem.FsxOpenzfsFileSystemRootVolumeConfigurationUserAndGroupQuotas {
 	Id: *f64,
@@ -2414,7 +2414,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.fsxOpenzfsFileSystem.FsxOpenzfsFileSystemTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/fsxopenzfsfilesystem"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/fsxopenzfsfilesystem"
 
 &fsxopenzfsfilesystem.FsxOpenzfsFileSystemTimeouts {
 	Create: *string,
@@ -2476,7 +2476,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.fsxOpenzfsFileSystem.FsxOpenzfsFileSystemDiskIopsConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/fsxopenzfsfilesystem"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/fsxopenzfsfilesystem"
 
 fsxopenzfsfilesystem.NewFsxOpenzfsFileSystemDiskIopsConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FsxOpenzfsFileSystemDiskIopsConfigurationOutputReference
 ```
@@ -2783,7 +2783,7 @@ func InternalValue() FsxOpenzfsFileSystemDiskIopsConfiguration
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.fsxOpenzfsFileSystem.FsxOpenzfsFileSystemReadCacheConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/fsxopenzfsfilesystem"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/fsxopenzfsfilesystem"
 
 fsxopenzfsfilesystem.NewFsxOpenzfsFileSystemReadCacheConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FsxOpenzfsFileSystemReadCacheConfigurationOutputReference
 ```
@@ -3090,7 +3090,7 @@ func InternalValue() FsxOpenzfsFileSystemReadCacheConfiguration
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.fsxOpenzfsFileSystem.FsxOpenzfsFileSystemRootVolumeConfigurationNfsExportsClientConfigurationsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/fsxopenzfsfilesystem"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/fsxopenzfsfilesystem"
 
 fsxopenzfsfilesystem.NewFsxOpenzfsFileSystemRootVolumeConfigurationNfsExportsClientConfigurationsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FsxOpenzfsFileSystemRootVolumeConfigurationNfsExportsClientConfigurationsList
 ```
@@ -3250,7 +3250,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.fsxOpenzfsFileSystem.FsxOpenzfsFileSystemRootVolumeConfigurationNfsExportsClientConfigurationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/fsxopenzfsfilesystem"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/fsxopenzfsfilesystem"
 
 fsxopenzfsfilesystem.NewFsxOpenzfsFileSystemRootVolumeConfigurationNfsExportsClientConfigurationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FsxOpenzfsFileSystemRootVolumeConfigurationNfsExportsClientConfigurationsOutputReference
 ```
@@ -3561,7 +3561,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.fsxOpenzfsFileSystem.FsxOpenzfsFileSystemRootVolumeConfigurationNfsExportsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/fsxopenzfsfilesystem"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/fsxopenzfsfilesystem"
 
 fsxopenzfsfilesystem.NewFsxOpenzfsFileSystemRootVolumeConfigurationNfsExportsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FsxOpenzfsFileSystemRootVolumeConfigurationNfsExportsOutputReference
 ```
@@ -3845,7 +3845,7 @@ func InternalValue() FsxOpenzfsFileSystemRootVolumeConfigurationNfsExports
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.fsxOpenzfsFileSystem.FsxOpenzfsFileSystemRootVolumeConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/fsxopenzfsfilesystem"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/fsxopenzfsfilesystem"
 
 fsxopenzfsfilesystem.NewFsxOpenzfsFileSystemRootVolumeConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FsxOpenzfsFileSystemRootVolumeConfigurationOutputReference
 ```
@@ -4294,7 +4294,7 @@ func InternalValue() FsxOpenzfsFileSystemRootVolumeConfiguration
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.fsxOpenzfsFileSystem.FsxOpenzfsFileSystemRootVolumeConfigurationUserAndGroupQuotasList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/fsxopenzfsfilesystem"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/fsxopenzfsfilesystem"
 
 fsxopenzfsfilesystem.NewFsxOpenzfsFileSystemRootVolumeConfigurationUserAndGroupQuotasList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FsxOpenzfsFileSystemRootVolumeConfigurationUserAndGroupQuotasList
 ```
@@ -4454,7 +4454,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.fsxOpenzfsFileSystem.FsxOpenzfsFileSystemRootVolumeConfigurationUserAndGroupQuotasOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/fsxopenzfsfilesystem"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/fsxopenzfsfilesystem"
 
 fsxopenzfsfilesystem.NewFsxOpenzfsFileSystemRootVolumeConfigurationUserAndGroupQuotasOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FsxOpenzfsFileSystemRootVolumeConfigurationUserAndGroupQuotasOutputReference
 ```
@@ -4787,7 +4787,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.fsxOpenzfsFileSystem.FsxOpenzfsFileSystemTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/fsxopenzfsfilesystem"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/fsxopenzfsfilesystem"
 
 fsxopenzfsfilesystem.NewFsxOpenzfsFileSystemTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FsxOpenzfsFileSystemTimeoutsOutputReference
 ```

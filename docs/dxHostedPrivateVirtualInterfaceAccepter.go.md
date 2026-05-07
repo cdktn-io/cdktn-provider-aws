@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dxHostedPrivateVirtualInterfaceAccepter.DxHostedPrivateVirtualInterfaceAccepter.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dxhostedprivatevirtualinterfaceaccepter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dxhostedprivatevirtualinterfaceaccepter"
 
 dxhostedprivatevirtualinterfaceaccepter.NewDxHostedPrivateVirtualInterfaceAccepter(scope Construct, id *string, config DxHostedPrivateVirtualInterfaceAccepterConfig) DxHostedPrivateVirtualInterfaceAccepter
 ```
@@ -462,7 +462,7 @@ func ResetVpnGatewayId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dxHostedPrivateVirtualInterfaceAccepter.DxHostedPrivateVirtualInterfaceAccepter.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dxhostedprivatevirtualinterfaceaccepter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dxhostedprivatevirtualinterfaceaccepter"
 
 dxhostedprivatevirtualinterfaceaccepter.DxHostedPrivateVirtualInterfaceAccepter_IsConstruct(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dxHostedPrivateVirtualInterfaceAccepter.DxHostedPrivateVirtualInterfaceAccepter.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dxhostedprivatevirtualinterfaceaccepter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dxhostedprivatevirtualinterfaceaccepter"
 
 dxhostedprivatevirtualinterfaceaccepter.DxHostedPrivateVirtualInterfaceAccepter_IsTerraformElement(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ dxhostedprivatevirtualinterfaceaccepter.DxHostedPrivateVirtualInterfaceAccepter_
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.dxHostedPrivateVirtualInterfaceAccepter.DxHostedPrivateVirtualInterfaceAccepter.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dxhostedprivatevirtualinterfaceaccepter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dxhostedprivatevirtualinterfaceaccepter"
 
 dxhostedprivatevirtualinterfaceaccepter.DxHostedPrivateVirtualInterfaceAccepter_IsTerraformResource(x interface{}) *bool
 ```
@@ -522,7 +522,7 @@ dxhostedprivatevirtualinterfaceaccepter.DxHostedPrivateVirtualInterfaceAccepter_
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dxHostedPrivateVirtualInterfaceAccepter.DxHostedPrivateVirtualInterfaceAccepter.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dxhostedprivatevirtualinterfaceaccepter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dxhostedprivatevirtualinterfaceaccepter"
 
 dxhostedprivatevirtualinterfaceaccepter.DxHostedPrivateVirtualInterfaceAccepter_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -938,7 +938,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dxHostedPrivateVirtualInterfaceAccepter.DxHostedPrivateVirtualInterfaceAccepterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dxhostedprivatevirtualinterfaceaccepter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dxhostedprivatevirtualinterfaceaccepter"
 
 &dxhostedprivatevirtualinterfaceaccepter.DxHostedPrivateVirtualInterfaceAccepterConfig {
 	Connection: interface{},
@@ -954,7 +954,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dxhostedprivatevirtual
 	Region: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.dxHostedPrivateVirtualInterfaceAccepter.DxHostedPrivateVirtualInterfaceAccepterTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.dxHostedPrivateVirtualInterfaceAccepter.DxHostedPrivateVirtualInterfaceAccepterTimeouts,
 	VpnGatewayId: *string,
 }
 ```
@@ -1159,7 +1159,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dxHostedPrivateVirtualInterfaceAccepter.DxHostedPrivateVirtualInterfaceAccepterTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dxhostedprivatevirtualinterfaceaccepter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dxhostedprivatevirtualinterfaceaccepter"
 
 &dxhostedprivatevirtualinterfaceaccepter.DxHostedPrivateVirtualInterfaceAccepterTimeouts {
 	Create: *string,
@@ -1207,7 +1207,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dxHostedPrivateVirtualInterfaceAccepter.DxHostedPrivateVirtualInterfaceAccepterTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dxhostedprivatevirtualinterfaceaccepter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dxhostedprivatevirtualinterfaceaccepter"
 
 dxhostedprivatevirtualinterfaceaccepter.NewDxHostedPrivateVirtualInterfaceAccepterTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DxHostedPrivateVirtualInterfaceAccepterTimeoutsOutputReference
 ```

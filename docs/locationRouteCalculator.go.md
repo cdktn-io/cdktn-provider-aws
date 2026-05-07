@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.locationRouteCalculator.LocationRouteCalculator.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/locationroutecalculator"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/locationroutecalculator"
 
 locationroutecalculator.NewLocationRouteCalculator(scope Construct, id *string, config LocationRouteCalculatorConfig) LocationRouteCalculator
 ```
@@ -455,7 +455,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.locationRouteCalculator.LocationRouteCalculator.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/locationroutecalculator"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/locationroutecalculator"
 
 locationroutecalculator.LocationRouteCalculator_IsConstruct(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.locationRouteCalculator.LocationRouteCalculator.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/locationroutecalculator"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/locationroutecalculator"
 
 locationroutecalculator.LocationRouteCalculator_IsTerraformElement(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ locationroutecalculator.LocationRouteCalculator_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.locationRouteCalculator.LocationRouteCalculator.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/locationroutecalculator"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/locationroutecalculator"
 
 locationroutecalculator.LocationRouteCalculator_IsTerraformResource(x interface{}) *bool
 ```
@@ -515,7 +515,7 @@ locationroutecalculator.LocationRouteCalculator_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.locationRouteCalculator.LocationRouteCalculator.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/locationroutecalculator"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/locationroutecalculator"
 
 locationroutecalculator.LocationRouteCalculator_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -953,7 +953,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.locationRouteCalculator.LocationRouteCalculatorConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/locationroutecalculator"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/locationroutecalculator"
 
 &locationroutecalculator.LocationRouteCalculatorConfig {
 	Connection: interface{},
@@ -970,7 +970,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/locationroutecalculato
 	Region: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.locationRouteCalculator.LocationRouteCalculatorTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.locationRouteCalculator.LocationRouteCalculatorTimeouts,
 }
 ```
 
@@ -1174,7 +1174,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.locationRouteCalculator.LocationRouteCalculatorTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/locationroutecalculator"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/locationroutecalculator"
 
 &locationroutecalculator.LocationRouteCalculatorTimeouts {
 	Create: *string,
@@ -1236,7 +1236,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.locationRouteCalculator.LocationRouteCalculatorTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/locationroutecalculator"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/locationroutecalculator"
 
 locationroutecalculator.NewLocationRouteCalculatorTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LocationRouteCalculatorTimeoutsOutputReference
 ```

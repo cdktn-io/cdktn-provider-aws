@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsConnectContactFlowModule.DataAwsConnectContactFlowModule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsconnectcontactflowmodule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsconnectcontactflowmodule"
 
 dataawsconnectcontactflowmodule.NewDataAwsConnectContactFlowModule(scope Construct, id *string, config DataAwsConnectContactFlowModuleConfig) DataAwsConnectContactFlowModule
 ```
@@ -333,7 +333,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsConnectContactFlowModule.DataAwsConnectContactFlowModule.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsconnectcontactflowmodule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsconnectcontactflowmodule"
 
 dataawsconnectcontactflowmodule.DataAwsConnectContactFlowModule_IsConstruct(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsConnectContactFlowModule.DataAwsConnectContactFlowModule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsconnectcontactflowmodule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsconnectcontactflowmodule"
 
 dataawsconnectcontactflowmodule.DataAwsConnectContactFlowModule_IsTerraformElement(x interface{}) *bool
 ```
@@ -379,7 +379,7 @@ dataawsconnectcontactflowmodule.DataAwsConnectContactFlowModule_IsTerraformEleme
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsConnectContactFlowModule.DataAwsConnectContactFlowModule.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsconnectcontactflowmodule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsconnectcontactflowmodule"
 
 dataawsconnectcontactflowmodule.DataAwsConnectContactFlowModule_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -393,7 +393,7 @@ dataawsconnectcontactflowmodule.DataAwsConnectContactFlowModule_IsTerraformDataS
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsConnectContactFlowModule.DataAwsConnectContactFlowModule.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsconnectcontactflowmodule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsconnectcontactflowmodule"
 
 dataawsconnectcontactflowmodule.DataAwsConnectContactFlowModule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -787,7 +787,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsConnectContactFlowModule.DataAwsConnectContactFlowModuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsconnectcontactflowmodule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsconnectcontactflowmodule"
 
 &dataawsconnectcontactflowmodule.DataAwsConnectContactFlowModuleConfig {
 	Connection: interface{},

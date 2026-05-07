@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dynamodbTableReplica.DynamodbTableReplicaA.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dynamodbtablereplica"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dynamodbtablereplica"
 
 dynamodbtablereplica.NewDynamodbTableReplicaA(scope Construct, id *string, config DynamodbTableReplicaAConfig) DynamodbTableReplicaA
 ```
@@ -476,7 +476,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dynamodbTableReplica.DynamodbTableReplicaA.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dynamodbtablereplica"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dynamodbtablereplica"
 
 dynamodbtablereplica.DynamodbTableReplicaA_IsConstruct(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dynamodbTableReplica.DynamodbTableReplicaA.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dynamodbtablereplica"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dynamodbtablereplica"
 
 dynamodbtablereplica.DynamodbTableReplicaA_IsTerraformElement(x interface{}) *bool
 ```
@@ -522,7 +522,7 @@ dynamodbtablereplica.DynamodbTableReplicaA_IsTerraformElement(x interface{}) *bo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.dynamodbTableReplica.DynamodbTableReplicaA.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dynamodbtablereplica"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dynamodbtablereplica"
 
 dynamodbtablereplica.DynamodbTableReplicaA_IsTerraformResource(x interface{}) *bool
 ```
@@ -536,7 +536,7 @@ dynamodbtablereplica.DynamodbTableReplicaA_IsTerraformResource(x interface{}) *b
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dynamodbTableReplica.DynamodbTableReplicaA.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dynamodbtablereplica"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dynamodbtablereplica"
 
 dynamodbtablereplica.DynamodbTableReplicaA_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -996,7 +996,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dynamodbTableReplica.DynamodbTableReplicaAConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dynamodbtablereplica"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dynamodbtablereplica"
 
 &dynamodbtablereplica.DynamodbTableReplicaAConfig {
 	Connection: interface{},
@@ -1015,7 +1015,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dynamodbtablereplica"
 	TableClassOverride: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.dynamodbTableReplica.DynamodbTableReplicaTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.dynamodbTableReplica.DynamodbTableReplicaTimeouts,
 }
 ```
 
@@ -1245,7 +1245,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dynamodbTableReplica.DynamodbTableReplicaTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dynamodbtablereplica"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dynamodbtablereplica"
 
 &dynamodbtablereplica.DynamodbTableReplicaTimeouts {
 	Create: *string,
@@ -1307,7 +1307,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dynamodbTableReplica.DynamodbTableReplicaTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dynamodbtablereplica"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dynamodbtablereplica"
 
 dynamodbtablereplica.NewDynamodbTableReplicaTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DynamodbTableReplicaTimeoutsOutputReference
 ```

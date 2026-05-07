@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lambdaFunctionEventInvokeConfig.LambdaFunctionEventInvokeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lambdafunctioneventinvokeconfig"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lambdafunctioneventinvokeconfig"
 
 lambdafunctioneventinvokeconfig.NewLambdaFunctionEventInvokeConfig(scope Construct, id *string, config LambdaFunctionEventInvokeConfigConfig) LambdaFunctionEventInvokeConfig
 ```
@@ -455,7 +455,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.lambdaFunctionEventInvokeConfig.LambdaFunctionEventInvokeConfig.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lambdafunctioneventinvokeconfig"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lambdafunctioneventinvokeconfig"
 
 lambdafunctioneventinvokeconfig.LambdaFunctionEventInvokeConfig_IsConstruct(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.lambdaFunctionEventInvokeConfig.LambdaFunctionEventInvokeConfig.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lambdafunctioneventinvokeconfig"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lambdafunctioneventinvokeconfig"
 
 lambdafunctioneventinvokeconfig.LambdaFunctionEventInvokeConfig_IsTerraformElement(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ lambdafunctioneventinvokeconfig.LambdaFunctionEventInvokeConfig_IsTerraformEleme
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.lambdaFunctionEventInvokeConfig.LambdaFunctionEventInvokeConfig.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lambdafunctioneventinvokeconfig"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lambdafunctioneventinvokeconfig"
 
 lambdafunctioneventinvokeconfig.LambdaFunctionEventInvokeConfig_IsTerraformResource(x interface{}) *bool
 ```
@@ -515,7 +515,7 @@ lambdafunctioneventinvokeconfig.LambdaFunctionEventInvokeConfig_IsTerraformResou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.lambdaFunctionEventInvokeConfig.LambdaFunctionEventInvokeConfig.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lambdafunctioneventinvokeconfig"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lambdafunctioneventinvokeconfig"
 
 lambdafunctioneventinvokeconfig.LambdaFunctionEventInvokeConfig_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -898,7 +898,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.lambdaFunctionEventInvokeConfig.LambdaFunctionEventInvokeConfigConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lambdafunctioneventinvokeconfig"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lambdafunctioneventinvokeconfig"
 
 &lambdafunctioneventinvokeconfig.LambdaFunctionEventInvokeConfigConfig {
 	Connection: interface{},
@@ -909,7 +909,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lambdafunctioneventinv
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	FunctionName: *string,
-	DestinationConfig: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.lambdaFunctionEventInvokeConfig.LambdaFunctionEventInvokeConfigDestinationConfig,
+	DestinationConfig: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.lambdaFunctionEventInvokeConfig.LambdaFunctionEventInvokeConfigDestinationConfig,
 	Id: *string,
 	MaximumEventAgeInSeconds: *f64,
 	MaximumRetryAttempts: *f64,
@@ -1105,11 +1105,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.lambdaFunctionEventInvokeConfig.LambdaFunctionEventInvokeConfigDestinationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lambdafunctioneventinvokeconfig"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lambdafunctioneventinvokeconfig"
 
 &lambdafunctioneventinvokeconfig.LambdaFunctionEventInvokeConfigDestinationConfig {
-	OnFailure: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.lambdaFunctionEventInvokeConfig.LambdaFunctionEventInvokeConfigDestinationConfigOnFailure,
-	OnSuccess: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.lambdaFunctionEventInvokeConfig.LambdaFunctionEventInvokeConfigDestinationConfigOnSuccess,
+	OnFailure: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.lambdaFunctionEventInvokeConfig.LambdaFunctionEventInvokeConfigDestinationConfigOnFailure,
+	OnSuccess: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.lambdaFunctionEventInvokeConfig.LambdaFunctionEventInvokeConfigDestinationConfigOnSuccess,
 }
 ```
 
@@ -1155,7 +1155,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.lambdaFunctionEventInvokeConfig.LambdaFunctionEventInvokeConfigDestinationConfigOnFailure.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lambdafunctioneventinvokeconfig"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lambdafunctioneventinvokeconfig"
 
 &lambdafunctioneventinvokeconfig.LambdaFunctionEventInvokeConfigDestinationConfigOnFailure {
 	Destination: *string,
@@ -1187,7 +1187,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.lambdaFunctionEventInvokeConfig.LambdaFunctionEventInvokeConfigDestinationConfigOnSuccess.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lambdafunctioneventinvokeconfig"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lambdafunctioneventinvokeconfig"
 
 &lambdafunctioneventinvokeconfig.LambdaFunctionEventInvokeConfigDestinationConfigOnSuccess {
 	Destination: *string,
@@ -1221,7 +1221,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lambdaFunctionEventInvokeConfig.LambdaFunctionEventInvokeConfigDestinationConfigOnFailureOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lambdafunctioneventinvokeconfig"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lambdafunctioneventinvokeconfig"
 
 lambdafunctioneventinvokeconfig.NewLambdaFunctionEventInvokeConfigDestinationConfigOnFailureOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LambdaFunctionEventInvokeConfigDestinationConfigOnFailureOutputReference
 ```
@@ -1492,7 +1492,7 @@ func InternalValue() LambdaFunctionEventInvokeConfigDestinationConfigOnFailure
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lambdaFunctionEventInvokeConfig.LambdaFunctionEventInvokeConfigDestinationConfigOnSuccessOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lambdafunctioneventinvokeconfig"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lambdafunctioneventinvokeconfig"
 
 lambdafunctioneventinvokeconfig.NewLambdaFunctionEventInvokeConfigDestinationConfigOnSuccessOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LambdaFunctionEventInvokeConfigDestinationConfigOnSuccessOutputReference
 ```
@@ -1763,7 +1763,7 @@ func InternalValue() LambdaFunctionEventInvokeConfigDestinationConfigOnSuccess
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lambdaFunctionEventInvokeConfig.LambdaFunctionEventInvokeConfigDestinationConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lambdafunctioneventinvokeconfig"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lambdafunctioneventinvokeconfig"
 
 lambdafunctioneventinvokeconfig.NewLambdaFunctionEventInvokeConfigDestinationConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LambdaFunctionEventInvokeConfigDestinationConfigOutputReference
 ```

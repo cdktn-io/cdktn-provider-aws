@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ssoadminPermissionSet.SsoadminPermissionSet.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/ssoadminpermissionset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ssoadminpermissionset"
 
 ssoadminpermissionset.NewSsoadminPermissionSet(scope Construct, id *string, config SsoadminPermissionSetConfig) SsoadminPermissionSet
 ```
@@ -469,7 +469,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.ssoadminPermissionSet.SsoadminPermissionSet.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/ssoadminpermissionset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ssoadminpermissionset"
 
 ssoadminpermissionset.SsoadminPermissionSet_IsConstruct(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.ssoadminPermissionSet.SsoadminPermissionSet.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/ssoadminpermissionset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ssoadminpermissionset"
 
 ssoadminpermissionset.SsoadminPermissionSet_IsTerraformElement(x interface{}) *bool
 ```
@@ -515,7 +515,7 @@ ssoadminpermissionset.SsoadminPermissionSet_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.ssoadminPermissionSet.SsoadminPermissionSet.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/ssoadminpermissionset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ssoadminpermissionset"
 
 ssoadminpermissionset.SsoadminPermissionSet_IsTerraformResource(x interface{}) *bool
 ```
@@ -529,7 +529,7 @@ ssoadminpermissionset.SsoadminPermissionSet_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.ssoadminPermissionSet.SsoadminPermissionSet.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/ssoadminpermissionset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ssoadminpermissionset"
 
 ssoadminpermissionset.SsoadminPermissionSet_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1000,7 +1000,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ssoadminPermissionSet.SsoadminPermissionSetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/ssoadminpermissionset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ssoadminpermissionset"
 
 &ssoadminpermissionset.SsoadminPermissionSetConfig {
 	Connection: interface{},
@@ -1019,7 +1019,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/ssoadminpermissionset"
 	SessionDuration: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.ssoadminPermissionSet.SsoadminPermissionSetTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.ssoadminPermissionSet.SsoadminPermissionSetTimeouts,
 }
 ```
 
@@ -1249,7 +1249,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ssoadminPermissionSet.SsoadminPermissionSetTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/ssoadminpermissionset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ssoadminpermissionset"
 
 &ssoadminpermissionset.SsoadminPermissionSetTimeouts {
 	Update: *string,
@@ -1283,7 +1283,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ssoadminPermissionSet.SsoadminPermissionSetTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/ssoadminpermissionset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ssoadminpermissionset"
 
 ssoadminpermissionset.NewSsoadminPermissionSetTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SsoadminPermissionSetTimeoutsOutputReference
 ```

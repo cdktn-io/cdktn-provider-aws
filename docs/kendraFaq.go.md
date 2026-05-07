@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.kendraFaq.KendraFaq.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/kendrafaq"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/kendrafaq"
 
 kendrafaq.NewKendraFaq(scope Construct, id *string, config KendraFaqConfig) KendraFaq
 ```
@@ -482,7 +482,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.kendraFaq.KendraFaq.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/kendrafaq"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/kendrafaq"
 
 kendrafaq.KendraFaq_IsConstruct(x interface{}) *bool
 ```
@@ -514,7 +514,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.kendraFaq.KendraFaq.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/kendrafaq"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/kendrafaq"
 
 kendrafaq.KendraFaq_IsTerraformElement(x interface{}) *bool
 ```
@@ -528,7 +528,7 @@ kendrafaq.KendraFaq_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.kendraFaq.KendraFaq.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/kendrafaq"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/kendrafaq"
 
 kendrafaq.KendraFaq_IsTerraformResource(x interface{}) *bool
 ```
@@ -542,7 +542,7 @@ kendrafaq.KendraFaq_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.kendraFaq.KendraFaq.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/kendrafaq"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/kendrafaq"
 
 kendrafaq.KendraFaq_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1101,7 +1101,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.kendraFaq.KendraFaqConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/kendrafaq"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/kendrafaq"
 
 &kendrafaq.KendraFaqConfig {
 	Connection: interface{},
@@ -1114,7 +1114,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/kendrafaq"
 	IndexId: *string,
 	Name: *string,
 	RoleArn: *string,
-	S3Path: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.kendraFaq.KendraFaqS3Path,
+	S3Path: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.kendraFaq.KendraFaqS3Path,
 	Description: *string,
 	FileFormat: *string,
 	Id: *string,
@@ -1122,7 +1122,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/kendrafaq"
 	Region: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.kendraFaq.KendraFaqTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.kendraFaq.KendraFaqTimeouts,
 }
 ```
 
@@ -1380,7 +1380,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.kendraFaq.KendraFaqS3Path.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/kendrafaq"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/kendrafaq"
 
 &kendrafaq.KendraFaqS3Path {
 	Bucket: *string,
@@ -1426,7 +1426,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.kendraFaq.KendraFaqTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/kendrafaq"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/kendrafaq"
 
 &kendrafaq.KendraFaqTimeouts {
 	Create: *string,
@@ -1474,7 +1474,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.kendraFaq.KendraFaqS3PathOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/kendrafaq"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/kendrafaq"
 
 kendrafaq.NewKendraFaqS3PathOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KendraFaqS3PathOutputReference
 ```
@@ -1767,7 +1767,7 @@ func InternalValue() KendraFaqS3Path
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.kendraFaq.KendraFaqTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/kendrafaq"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/kendrafaq"
 
 kendrafaq.NewKendraFaqTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KendraFaqTimeoutsOutputReference
 ```

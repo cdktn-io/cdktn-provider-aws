@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3ControlAccessGrant.S3ControlAccessGrant.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/s3controlaccessgrant"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3controlaccessgrant"
 
 s3controlaccessgrant.NewS3ControlAccessGrant(scope Construct, id *string, config S3ControlAccessGrantConfig) S3ControlAccessGrant
 ```
@@ -468,7 +468,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.s3ControlAccessGrant.S3ControlAccessGrant.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/s3controlaccessgrant"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3controlaccessgrant"
 
 s3controlaccessgrant.S3ControlAccessGrant_IsConstruct(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.s3ControlAccessGrant.S3ControlAccessGrant.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/s3controlaccessgrant"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3controlaccessgrant"
 
 s3controlaccessgrant.S3ControlAccessGrant_IsTerraformElement(x interface{}) *bool
 ```
@@ -514,7 +514,7 @@ s3controlaccessgrant.S3ControlAccessGrant_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.s3ControlAccessGrant.S3ControlAccessGrant.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/s3controlaccessgrant"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3controlaccessgrant"
 
 s3controlaccessgrant.S3ControlAccessGrant_IsTerraformResource(x interface{}) *bool
 ```
@@ -528,7 +528,7 @@ s3controlaccessgrant.S3ControlAccessGrant_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.s3ControlAccessGrant.S3ControlAccessGrant.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/s3controlaccessgrant"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3controlaccessgrant"
 
 s3controlaccessgrant.S3ControlAccessGrant_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -988,7 +988,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.s3ControlAccessGrant.S3ControlAccessGrantAccessGrantsLocationConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/s3controlaccessgrant"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3controlaccessgrant"
 
 &s3controlaccessgrant.S3ControlAccessGrantAccessGrantsLocationConfiguration {
 	S3SubPrefix: *string,
@@ -1020,7 +1020,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.s3ControlAccessGrant.S3ControlAccessGrantConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/s3controlaccessgrant"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3controlaccessgrant"
 
 &s3controlaccessgrant.S3ControlAccessGrantConfig {
 	Connection: interface{},
@@ -1240,7 +1240,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.s3ControlAccessGrant.S3ControlAccessGrantGrantee.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/s3controlaccessgrant"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3controlaccessgrant"
 
 &s3controlaccessgrant.S3ControlAccessGrantGrantee {
 	GranteeIdentifier: *string,
@@ -1288,7 +1288,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3ControlAccessGrant.S3ControlAccessGrantAccessGrantsLocationConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/s3controlaccessgrant"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3controlaccessgrant"
 
 s3controlaccessgrant.NewS3ControlAccessGrantAccessGrantsLocationConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) S3ControlAccessGrantAccessGrantsLocationConfigurationList
 ```
@@ -1448,7 +1448,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3ControlAccessGrant.S3ControlAccessGrantAccessGrantsLocationConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/s3controlaccessgrant"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3controlaccessgrant"
 
 s3controlaccessgrant.NewS3ControlAccessGrantAccessGrantsLocationConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) S3ControlAccessGrantAccessGrantsLocationConfigurationOutputReference
 ```
@@ -1744,7 +1744,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3ControlAccessGrant.S3ControlAccessGrantGranteeList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/s3controlaccessgrant"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3controlaccessgrant"
 
 s3controlaccessgrant.NewS3ControlAccessGrantGranteeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) S3ControlAccessGrantGranteeList
 ```
@@ -1904,7 +1904,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3ControlAccessGrant.S3ControlAccessGrantGranteeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/s3controlaccessgrant"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3controlaccessgrant"
 
 s3controlaccessgrant.NewS3ControlAccessGrantGranteeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) S3ControlAccessGrantGranteeOutputReference
 ```

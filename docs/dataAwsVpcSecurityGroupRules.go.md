@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsVpcSecurityGroupRules.DataAwsVpcSecurityGroupRules.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsvpcsecuritygrouprules"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsvpcsecuritygrouprules"
 
 dataawsvpcsecuritygrouprules.NewDataAwsVpcSecurityGroupRules(scope Construct, id *string, config DataAwsVpcSecurityGroupRulesConfig) DataAwsVpcSecurityGroupRules
 ```
@@ -332,7 +332,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsVpcSecurityGroupRules.DataAwsVpcSecurityGroupRules.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsvpcsecuritygrouprules"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsvpcsecuritygrouprules"
 
 dataawsvpcsecuritygrouprules.DataAwsVpcSecurityGroupRules_IsConstruct(x interface{}) *bool
 ```
@@ -364,7 +364,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsVpcSecurityGroupRules.DataAwsVpcSecurityGroupRules.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsvpcsecuritygrouprules"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsvpcsecuritygrouprules"
 
 dataawsvpcsecuritygrouprules.DataAwsVpcSecurityGroupRules_IsTerraformElement(x interface{}) *bool
 ```
@@ -378,7 +378,7 @@ dataawsvpcsecuritygrouprules.DataAwsVpcSecurityGroupRules_IsTerraformElement(x i
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsVpcSecurityGroupRules.DataAwsVpcSecurityGroupRules.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsvpcsecuritygrouprules"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsvpcsecuritygrouprules"
 
 dataawsvpcsecuritygrouprules.DataAwsVpcSecurityGroupRules_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -392,7 +392,7 @@ dataawsvpcsecuritygrouprules.DataAwsVpcSecurityGroupRules_IsTerraformDataSource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsVpcSecurityGroupRules.DataAwsVpcSecurityGroupRules.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsvpcsecuritygrouprules"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsvpcsecuritygrouprules"
 
 dataawsvpcsecuritygrouprules.DataAwsVpcSecurityGroupRules_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -687,7 +687,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsVpcSecurityGroupRules.DataAwsVpcSecurityGroupRulesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsvpcsecuritygrouprules"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsvpcsecuritygrouprules"
 
 &dataawsvpcsecuritygrouprules.DataAwsVpcSecurityGroupRulesConfig {
 	Connection: interface{},
@@ -835,7 +835,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsVpcSecurityGroupRules.DataAwsVpcSecurityGroupRulesFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsvpcsecuritygrouprules"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsvpcsecuritygrouprules"
 
 &dataawsvpcsecuritygrouprules.DataAwsVpcSecurityGroupRulesFilter {
 	Name: *string,
@@ -883,7 +883,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsVpcSecurityGroupRules.DataAwsVpcSecurityGroupRulesFilterList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsvpcsecuritygrouprules"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsvpcsecuritygrouprules"
 
 dataawsvpcsecuritygrouprules.NewDataAwsVpcSecurityGroupRulesFilterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsVpcSecurityGroupRulesFilterList
 ```
@@ -1043,7 +1043,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsVpcSecurityGroupRules.DataAwsVpcSecurityGroupRulesFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsvpcsecuritygrouprules"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsvpcsecuritygrouprules"
 
 dataawsvpcsecuritygrouprules.NewDataAwsVpcSecurityGroupRulesFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsVpcSecurityGroupRulesFilterOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.pinpointApnsSandboxChannel.PinpointApnsSandboxChannel.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/pinpointapnssandboxchannel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/pinpointapnssandboxchannel"
 
 pinpointapnssandboxchannel.NewPinpointApnsSandboxChannel(scope Construct, id *string, config PinpointApnsSandboxChannelConfig) PinpointApnsSandboxChannel
 ```
@@ -470,7 +470,7 @@ func ResetTokenKeyId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.pinpointApnsSandboxChannel.PinpointApnsSandboxChannel.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/pinpointapnssandboxchannel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/pinpointapnssandboxchannel"
 
 pinpointapnssandboxchannel.PinpointApnsSandboxChannel_IsConstruct(x interface{}) *bool
 ```
@@ -502,7 +502,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.pinpointApnsSandboxChannel.PinpointApnsSandboxChannel.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/pinpointapnssandboxchannel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/pinpointapnssandboxchannel"
 
 pinpointapnssandboxchannel.PinpointApnsSandboxChannel_IsTerraformElement(x interface{}) *bool
 ```
@@ -516,7 +516,7 @@ pinpointapnssandboxchannel.PinpointApnsSandboxChannel_IsTerraformElement(x inter
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.pinpointApnsSandboxChannel.PinpointApnsSandboxChannel.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/pinpointapnssandboxchannel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/pinpointapnssandboxchannel"
 
 pinpointapnssandboxchannel.PinpointApnsSandboxChannel_IsTerraformResource(x interface{}) *bool
 ```
@@ -530,7 +530,7 @@ pinpointapnssandboxchannel.PinpointApnsSandboxChannel_IsTerraformResource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.pinpointApnsSandboxChannel.PinpointApnsSandboxChannel.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/pinpointapnssandboxchannel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/pinpointapnssandboxchannel"
 
 pinpointapnssandboxchannel.PinpointApnsSandboxChannel_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1001,7 +1001,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.pinpointApnsSandboxChannel.PinpointApnsSandboxChannelConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/pinpointapnssandboxchannel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/pinpointapnssandboxchannel"
 
 &pinpointapnssandboxchannel.PinpointApnsSandboxChannelConfig {
 	Connection: interface{},

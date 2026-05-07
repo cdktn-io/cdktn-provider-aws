@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsCloudwatchLogGroups.DataAwsCloudwatchLogGroups.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawscloudwatchloggroups"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscloudwatchloggroups"
 
 dataawscloudwatchloggroups.NewDataAwsCloudwatchLogGroups(scope Construct, id *string, config DataAwsCloudwatchLogGroupsConfig) DataAwsCloudwatchLogGroups
 ```
@@ -319,7 +319,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsCloudwatchLogGroups.DataAwsCloudwatchLogGroups.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawscloudwatchloggroups"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscloudwatchloggroups"
 
 dataawscloudwatchloggroups.DataAwsCloudwatchLogGroups_IsConstruct(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsCloudwatchLogGroups.DataAwsCloudwatchLogGroups.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawscloudwatchloggroups"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscloudwatchloggroups"
 
 dataawscloudwatchloggroups.DataAwsCloudwatchLogGroups_IsTerraformElement(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ dataawscloudwatchloggroups.DataAwsCloudwatchLogGroups_IsTerraformElement(x inter
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsCloudwatchLogGroups.DataAwsCloudwatchLogGroups.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawscloudwatchloggroups"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscloudwatchloggroups"
 
 dataawscloudwatchloggroups.DataAwsCloudwatchLogGroups_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -379,7 +379,7 @@ dataawscloudwatchloggroups.DataAwsCloudwatchLogGroups_IsTerraformDataSource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsCloudwatchLogGroups.DataAwsCloudwatchLogGroups.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawscloudwatchloggroups"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscloudwatchloggroups"
 
 dataawscloudwatchloggroups.DataAwsCloudwatchLogGroups_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -674,7 +674,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsCloudwatchLogGroups.DataAwsCloudwatchLogGroupsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawscloudwatchloggroups"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawscloudwatchloggroups"
 
 &dataawscloudwatchloggroups.DataAwsCloudwatchLogGroupsConfig {
 	Connection: interface{},

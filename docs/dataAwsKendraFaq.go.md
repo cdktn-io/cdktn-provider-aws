@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsKendraFaq.DataAwsKendraFaq.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawskendrafaq"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawskendrafaq"
 
 dataawskendrafaq.NewDataAwsKendraFaq(scope Construct, id *string, config DataAwsKendraFaqConfig) DataAwsKendraFaq
 ```
@@ -319,7 +319,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsKendraFaq.DataAwsKendraFaq.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawskendrafaq"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawskendrafaq"
 
 dataawskendrafaq.DataAwsKendraFaq_IsConstruct(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsKendraFaq.DataAwsKendraFaq.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawskendrafaq"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawskendrafaq"
 
 dataawskendrafaq.DataAwsKendraFaq_IsTerraformElement(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ dataawskendrafaq.DataAwsKendraFaq_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsKendraFaq.DataAwsKendraFaq.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawskendrafaq"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawskendrafaq"
 
 dataawskendrafaq.DataAwsKendraFaq_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -379,7 +379,7 @@ dataawskendrafaq.DataAwsKendraFaq_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsKendraFaq.DataAwsKendraFaq.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawskendrafaq"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawskendrafaq"
 
 dataawskendrafaq.DataAwsKendraFaq_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -817,7 +817,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsKendraFaq.DataAwsKendraFaqConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawskendrafaq"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawskendrafaq"
 
 &dataawskendrafaq.DataAwsKendraFaqConfig {
 	Connection: interface{},
@@ -994,7 +994,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsKendraFaq.DataAwsKendraFaqS3Path.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawskendrafaq"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawskendrafaq"
 
 &dataawskendrafaq.DataAwsKendraFaqS3Path {
 
@@ -1009,7 +1009,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawskendrafaq"
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsKendraFaq.DataAwsKendraFaqS3PathList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawskendrafaq"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawskendrafaq"
 
 dataawskendrafaq.NewDataAwsKendraFaqS3PathList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsKendraFaqS3PathList
 ```
@@ -1158,7 +1158,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsKendraFaq.DataAwsKendraFaqS3PathOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawskendrafaq"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawskendrafaq"
 
 dataawskendrafaq.NewDataAwsKendraFaqS3PathOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsKendraFaqS3PathOutputReference
 ```

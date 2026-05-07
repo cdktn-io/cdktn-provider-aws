@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3FilesFileSystem.S3FilesFileSystem.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/s3filesfilesystem"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3filesfilesystem"
 
 s3filesfilesystem.NewS3FilesFileSystem(scope Construct, id *string, config S3FilesFileSystemConfig) S3FilesFileSystem
 ```
@@ -455,7 +455,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.s3FilesFileSystem.S3FilesFileSystem.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/s3filesfilesystem"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3filesfilesystem"
 
 s3filesfilesystem.S3FilesFileSystem_IsConstruct(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.s3FilesFileSystem.S3FilesFileSystem.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/s3filesfilesystem"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3filesfilesystem"
 
 s3filesfilesystem.S3FilesFileSystem_IsTerraformElement(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ s3filesfilesystem.S3FilesFileSystem_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.s3FilesFileSystem.S3FilesFileSystem.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/s3filesfilesystem"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3filesfilesystem"
 
 s3filesfilesystem.S3FilesFileSystem_IsTerraformResource(x interface{}) *bool
 ```
@@ -515,7 +515,7 @@ s3filesfilesystem.S3FilesFileSystem_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.s3FilesFileSystem.S3FilesFileSystem.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/s3filesfilesystem"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3filesfilesystem"
 
 s3filesfilesystem.S3FilesFileSystem_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1008,7 +1008,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.s3FilesFileSystem.S3FilesFileSystemConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/s3filesfilesystem"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3filesfilesystem"
 
 &s3filesfilesystem.S3FilesFileSystemConfig {
 	Connection: interface{},
@@ -1025,7 +1025,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/s3filesfilesystem"
 	Prefix: *string,
 	Region: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.s3FilesFileSystem.S3FilesFileSystemTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.s3FilesFileSystem.S3FilesFileSystemTimeouts,
 }
 ```
 
@@ -1234,7 +1234,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.s3FilesFileSystem.S3FilesFileSystemTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/s3filesfilesystem"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3filesfilesystem"
 
 &s3filesfilesystem.S3FilesFileSystemTimeouts {
 	Create: *string,
@@ -1286,7 +1286,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3FilesFileSystem.S3FilesFileSystemTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/s3filesfilesystem"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3filesfilesystem"
 
 s3filesfilesystem.NewS3FilesFileSystemTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3FilesFileSystemTimeoutsOutputReference
 ```

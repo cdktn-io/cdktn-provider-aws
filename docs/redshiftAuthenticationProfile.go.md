@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.redshiftAuthenticationProfile.RedshiftAuthenticationProfile.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/redshiftauthenticationprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/redshiftauthenticationprofile"
 
 redshiftauthenticationprofile.NewRedshiftAuthenticationProfile(scope Construct, id *string, config RedshiftAuthenticationProfileConfig) RedshiftAuthenticationProfile
 ```
@@ -414,7 +414,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.redshiftAuthenticationProfile.RedshiftAuthenticationProfile.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/redshiftauthenticationprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/redshiftauthenticationprofile"
 
 redshiftauthenticationprofile.RedshiftAuthenticationProfile_IsConstruct(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.redshiftAuthenticationProfile.RedshiftAuthenticationProfile.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/redshiftauthenticationprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/redshiftauthenticationprofile"
 
 redshiftauthenticationprofile.RedshiftAuthenticationProfile_IsTerraformElement(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ redshiftauthenticationprofile.RedshiftAuthenticationProfile_IsTerraformElement(x
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.redshiftAuthenticationProfile.RedshiftAuthenticationProfile.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/redshiftauthenticationprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/redshiftauthenticationprofile"
 
 redshiftauthenticationprofile.RedshiftAuthenticationProfile_IsTerraformResource(x interface{}) *bool
 ```
@@ -474,7 +474,7 @@ redshiftauthenticationprofile.RedshiftAuthenticationProfile_IsTerraformResource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.redshiftAuthenticationProfile.RedshiftAuthenticationProfile.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/redshiftauthenticationprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/redshiftauthenticationprofile"
 
 redshiftauthenticationprofile.RedshiftAuthenticationProfile_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -791,7 +791,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.redshiftAuthenticationProfile.RedshiftAuthenticationProfileConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/redshiftauthenticationprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/redshiftauthenticationprofile"
 
 &redshiftauthenticationprofile.RedshiftAuthenticationProfileConfig {
 	Connection: interface{},

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.albListenerRule.AlbListenerRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/alblistenerrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/alblistenerrule"
 
 alblistenerrule.NewAlbListenerRule(scope Construct, id *string, config AlbListenerRuleConfig) AlbListenerRule
 ```
@@ -481,7 +481,7 @@ func ResetTransform()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.albListenerRule.AlbListenerRule.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/alblistenerrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/alblistenerrule"
 
 alblistenerrule.AlbListenerRule_IsConstruct(x interface{}) *bool
 ```
@@ -513,7 +513,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.albListenerRule.AlbListenerRule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/alblistenerrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/alblistenerrule"
 
 alblistenerrule.AlbListenerRule_IsTerraformElement(x interface{}) *bool
 ```
@@ -527,7 +527,7 @@ alblistenerrule.AlbListenerRule_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.albListenerRule.AlbListenerRule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/alblistenerrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/alblistenerrule"
 
 alblistenerrule.AlbListenerRule_IsTerraformResource(x interface{}) *bool
 ```
@@ -541,7 +541,7 @@ alblistenerrule.AlbListenerRule_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.albListenerRule.AlbListenerRule.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/alblistenerrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/alblistenerrule"
 
 alblistenerrule.AlbListenerRule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -979,17 +979,17 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.albListenerRule.AlbListenerRuleAction.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/alblistenerrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/alblistenerrule"
 
 &alblistenerrule.AlbListenerRuleAction {
 	Type: *string,
-	AuthenticateCognito: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.albListenerRule.AlbListenerRuleActionAuthenticateCognito,
-	AuthenticateOidc: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.albListenerRule.AlbListenerRuleActionAuthenticateOidc,
-	FixedResponse: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.albListenerRule.AlbListenerRuleActionFixedResponse,
-	Forward: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.albListenerRule.AlbListenerRuleActionForward,
-	JwtValidation: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.albListenerRule.AlbListenerRuleActionJwtValidation,
+	AuthenticateCognito: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.albListenerRule.AlbListenerRuleActionAuthenticateCognito,
+	AuthenticateOidc: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.albListenerRule.AlbListenerRuleActionAuthenticateOidc,
+	FixedResponse: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.albListenerRule.AlbListenerRuleActionFixedResponse,
+	Forward: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.albListenerRule.AlbListenerRuleActionForward,
+	JwtValidation: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.albListenerRule.AlbListenerRuleActionJwtValidation,
 	Order: *f64,
-	Redirect: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.albListenerRule.AlbListenerRuleActionRedirect,
+	Redirect: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.albListenerRule.AlbListenerRuleActionRedirect,
 	TargetGroupArn: *string,
 }
 ```
@@ -1135,7 +1135,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.albListenerRule.AlbListenerRuleActionAuthenticateCognito.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/alblistenerrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/alblistenerrule"
 
 &alblistenerrule.AlbListenerRuleActionAuthenticateCognito {
 	UserPoolArn: *string,
@@ -1265,7 +1265,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.albListenerRule.AlbListenerRuleActionAuthenticateOidc.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/alblistenerrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/alblistenerrule"
 
 &alblistenerrule.AlbListenerRuleActionAuthenticateOidc {
 	AuthorizationEndpoint: *string,
@@ -1437,7 +1437,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.albListenerRule.AlbListenerRuleActionFixedResponse.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/alblistenerrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/alblistenerrule"
 
 &alblistenerrule.AlbListenerRuleActionFixedResponse {
 	ContentType: *string,
@@ -1497,11 +1497,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.albListenerRule.AlbListenerRuleActionForward.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/alblistenerrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/alblistenerrule"
 
 &alblistenerrule.AlbListenerRuleActionForward {
 	TargetGroup: interface{},
-	Stickiness: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.albListenerRule.AlbListenerRuleActionForwardStickiness,
+	Stickiness: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.albListenerRule.AlbListenerRuleActionForwardStickiness,
 }
 ```
 
@@ -1547,7 +1547,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.albListenerRule.AlbListenerRuleActionForwardStickiness.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/alblistenerrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/alblistenerrule"
 
 &alblistenerrule.AlbListenerRuleActionForwardStickiness {
 	Duration: *f64,
@@ -1593,7 +1593,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.albListenerRule.AlbListenerRuleActionForwardTargetGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/alblistenerrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/alblistenerrule"
 
 &alblistenerrule.AlbListenerRuleActionForwardTargetGroup {
 	Arn: *string,
@@ -1639,7 +1639,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.albListenerRule.AlbListenerRuleActionJwtValidation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/alblistenerrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/alblistenerrule"
 
 &alblistenerrule.AlbListenerRuleActionJwtValidation {
 	Issuer: *string,
@@ -1701,7 +1701,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.albListenerRule.AlbListenerRuleActionJwtValidationAdditionalClaim.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/alblistenerrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/alblistenerrule"
 
 &alblistenerrule.AlbListenerRuleActionJwtValidationAdditionalClaim {
 	Format: *string,
@@ -1761,7 +1761,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.albListenerRule.AlbListenerRuleActionRedirect.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/alblistenerrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/alblistenerrule"
 
 &alblistenerrule.AlbListenerRuleActionRedirect {
 	StatusCode: *string,
@@ -1863,15 +1863,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.albListenerRule.AlbListenerRuleCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/alblistenerrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/alblistenerrule"
 
 &alblistenerrule.AlbListenerRuleCondition {
-	HostHeader: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.albListenerRule.AlbListenerRuleConditionHostHeader,
-	HttpHeader: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.albListenerRule.AlbListenerRuleConditionHttpHeader,
-	HttpRequestMethod: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.albListenerRule.AlbListenerRuleConditionHttpRequestMethod,
-	PathPattern: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.albListenerRule.AlbListenerRuleConditionPathPattern,
+	HostHeader: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.albListenerRule.AlbListenerRuleConditionHostHeader,
+	HttpHeader: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.albListenerRule.AlbListenerRuleConditionHttpHeader,
+	HttpRequestMethod: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.albListenerRule.AlbListenerRuleConditionHttpRequestMethod,
+	PathPattern: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.albListenerRule.AlbListenerRuleConditionPathPattern,
 	QueryString: interface{},
-	SourceIp: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.albListenerRule.AlbListenerRuleConditionSourceIp,
+	SourceIp: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.albListenerRule.AlbListenerRuleConditionSourceIp,
 }
 ```
 
@@ -1977,7 +1977,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.albListenerRule.AlbListenerRuleConditionHostHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/alblistenerrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/alblistenerrule"
 
 &alblistenerrule.AlbListenerRuleConditionHostHeader {
 	RegexValues: *[]*string,
@@ -2023,7 +2023,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.albListenerRule.AlbListenerRuleConditionHttpHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/alblistenerrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/alblistenerrule"
 
 &alblistenerrule.AlbListenerRuleConditionHttpHeader {
 	HttpHeaderName: *string,
@@ -2083,7 +2083,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.albListenerRule.AlbListenerRuleConditionHttpRequestMethod.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/alblistenerrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/alblistenerrule"
 
 &alblistenerrule.AlbListenerRuleConditionHttpRequestMethod {
 	Values: *[]*string,
@@ -2115,7 +2115,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.albListenerRule.AlbListenerRuleConditionPathPattern.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/alblistenerrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/alblistenerrule"
 
 &alblistenerrule.AlbListenerRuleConditionPathPattern {
 	RegexValues: *[]*string,
@@ -2161,7 +2161,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.albListenerRule.AlbListenerRuleConditionQueryString.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/alblistenerrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/alblistenerrule"
 
 &alblistenerrule.AlbListenerRuleConditionQueryString {
 	Value: *string,
@@ -2207,7 +2207,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.albListenerRule.AlbListenerRuleConditionSourceIp.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/alblistenerrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/alblistenerrule"
 
 &alblistenerrule.AlbListenerRuleConditionSourceIp {
 	Values: *[]*string,
@@ -2239,7 +2239,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.albListenerRule.AlbListenerRuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/alblistenerrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/alblistenerrule"
 
 &alblistenerrule.AlbListenerRuleConfig {
 	Connection: interface{},
@@ -2478,12 +2478,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.albListenerRule.AlbListenerRuleTransform.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/alblistenerrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/alblistenerrule"
 
 &alblistenerrule.AlbListenerRuleTransform {
 	Type: *string,
-	HostHeaderRewriteConfig: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.albListenerRule.AlbListenerRuleTransformHostHeaderRewriteConfig,
-	UrlRewriteConfig: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.albListenerRule.AlbListenerRuleTransformUrlRewriteConfig,
+	HostHeaderRewriteConfig: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.albListenerRule.AlbListenerRuleTransformHostHeaderRewriteConfig,
+	UrlRewriteConfig: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.albListenerRule.AlbListenerRuleTransformUrlRewriteConfig,
 }
 ```
 
@@ -2542,10 +2542,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.albListenerRule.AlbListenerRuleTransformHostHeaderRewriteConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/alblistenerrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/alblistenerrule"
 
 &alblistenerrule.AlbListenerRuleTransformHostHeaderRewriteConfig {
-	Rewrite: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.albListenerRule.AlbListenerRuleTransformHostHeaderRewriteConfigRewrite,
+	Rewrite: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.albListenerRule.AlbListenerRuleTransformHostHeaderRewriteConfigRewrite,
 }
 ```
 
@@ -2576,7 +2576,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.albListenerRule.AlbListenerRuleTransformHostHeaderRewriteConfigRewrite.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/alblistenerrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/alblistenerrule"
 
 &alblistenerrule.AlbListenerRuleTransformHostHeaderRewriteConfigRewrite {
 	Regex: *string,
@@ -2622,10 +2622,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.albListenerRule.AlbListenerRuleTransformUrlRewriteConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/alblistenerrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/alblistenerrule"
 
 &alblistenerrule.AlbListenerRuleTransformUrlRewriteConfig {
-	Rewrite: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.albListenerRule.AlbListenerRuleTransformUrlRewriteConfigRewrite,
+	Rewrite: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.albListenerRule.AlbListenerRuleTransformUrlRewriteConfigRewrite,
 }
 ```
 
@@ -2656,7 +2656,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.albListenerRule.AlbListenerRuleTransformUrlRewriteConfigRewrite.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/alblistenerrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/alblistenerrule"
 
 &alblistenerrule.AlbListenerRuleTransformUrlRewriteConfigRewrite {
 	Regex: *string,
@@ -2704,7 +2704,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.albListenerRule.AlbListenerRuleActionAuthenticateCognitoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/alblistenerrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/alblistenerrule"
 
 alblistenerrule.NewAlbListenerRuleActionAuthenticateCognitoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AlbListenerRuleActionAuthenticateCognitoOutputReference
 ```
@@ -3164,7 +3164,7 @@ func InternalValue() AlbListenerRuleActionAuthenticateCognito
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.albListenerRule.AlbListenerRuleActionAuthenticateOidcOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/alblistenerrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/alblistenerrule"
 
 alblistenerrule.NewAlbListenerRuleActionAuthenticateOidcOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AlbListenerRuleActionAuthenticateOidcOutputReference
 ```
@@ -3690,7 +3690,7 @@ func InternalValue() AlbListenerRuleActionAuthenticateOidc
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.albListenerRule.AlbListenerRuleActionFixedResponseOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/alblistenerrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/alblistenerrule"
 
 alblistenerrule.NewAlbListenerRuleActionFixedResponseOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AlbListenerRuleActionFixedResponseOutputReference
 ```
@@ -4019,7 +4019,7 @@ func InternalValue() AlbListenerRuleActionFixedResponse
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.albListenerRule.AlbListenerRuleActionForwardOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/alblistenerrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/alblistenerrule"
 
 alblistenerrule.NewAlbListenerRuleActionForwardOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AlbListenerRuleActionForwardOutputReference
 ```
@@ -4345,7 +4345,7 @@ func InternalValue() AlbListenerRuleActionForward
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.albListenerRule.AlbListenerRuleActionForwardStickinessOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/alblistenerrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/alblistenerrule"
 
 alblistenerrule.NewAlbListenerRuleActionForwardStickinessOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AlbListenerRuleActionForwardStickinessOutputReference
 ```
@@ -4645,7 +4645,7 @@ func InternalValue() AlbListenerRuleActionForwardStickiness
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.albListenerRule.AlbListenerRuleActionForwardTargetGroupList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/alblistenerrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/alblistenerrule"
 
 alblistenerrule.NewAlbListenerRuleActionForwardTargetGroupList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AlbListenerRuleActionForwardTargetGroupList
 ```
@@ -4805,7 +4805,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.albListenerRule.AlbListenerRuleActionForwardTargetGroupOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/alblistenerrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/alblistenerrule"
 
 alblistenerrule.NewAlbListenerRuleActionForwardTargetGroupOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AlbListenerRuleActionForwardTargetGroupOutputReference
 ```
@@ -5123,7 +5123,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.albListenerRule.AlbListenerRuleActionJwtValidationAdditionalClaimList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/alblistenerrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/alblistenerrule"
 
 alblistenerrule.NewAlbListenerRuleActionJwtValidationAdditionalClaimList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AlbListenerRuleActionJwtValidationAdditionalClaimList
 ```
@@ -5283,7 +5283,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.albListenerRule.AlbListenerRuleActionJwtValidationAdditionalClaimOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/alblistenerrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/alblistenerrule"
 
 alblistenerrule.NewAlbListenerRuleActionJwtValidationAdditionalClaimOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AlbListenerRuleActionJwtValidationAdditionalClaimOutputReference
 ```
@@ -5616,7 +5616,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.albListenerRule.AlbListenerRuleActionJwtValidationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/alblistenerrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/alblistenerrule"
 
 alblistenerrule.NewAlbListenerRuleActionJwtValidationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AlbListenerRuleActionJwtValidationOutputReference
 ```
@@ -5951,7 +5951,7 @@ func InternalValue() AlbListenerRuleActionJwtValidation
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.albListenerRule.AlbListenerRuleActionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/alblistenerrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/alblistenerrule"
 
 alblistenerrule.NewAlbListenerRuleActionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AlbListenerRuleActionList
 ```
@@ -6111,7 +6111,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.albListenerRule.AlbListenerRuleActionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/alblistenerrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/alblistenerrule"
 
 alblistenerrule.NewAlbListenerRuleActionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AlbListenerRuleActionOutputReference
 ```
@@ -6710,7 +6710,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.albListenerRule.AlbListenerRuleActionRedirectOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/alblistenerrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/alblistenerrule"
 
 alblistenerrule.NewAlbListenerRuleActionRedirectOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AlbListenerRuleActionRedirectOutputReference
 ```
@@ -7126,7 +7126,7 @@ func InternalValue() AlbListenerRuleActionRedirect
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.albListenerRule.AlbListenerRuleConditionHostHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/alblistenerrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/alblistenerrule"
 
 alblistenerrule.NewAlbListenerRuleConditionHostHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AlbListenerRuleConditionHostHeaderOutputReference
 ```
@@ -7433,7 +7433,7 @@ func InternalValue() AlbListenerRuleConditionHostHeader
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.albListenerRule.AlbListenerRuleConditionHttpHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/alblistenerrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/alblistenerrule"
 
 alblistenerrule.NewAlbListenerRuleConditionHttpHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AlbListenerRuleConditionHttpHeaderOutputReference
 ```
@@ -7762,7 +7762,7 @@ func InternalValue() AlbListenerRuleConditionHttpHeader
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.albListenerRule.AlbListenerRuleConditionHttpRequestMethodOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/alblistenerrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/alblistenerrule"
 
 alblistenerrule.NewAlbListenerRuleConditionHttpRequestMethodOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AlbListenerRuleConditionHttpRequestMethodOutputReference
 ```
@@ -8033,7 +8033,7 @@ func InternalValue() AlbListenerRuleConditionHttpRequestMethod
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.albListenerRule.AlbListenerRuleConditionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/alblistenerrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/alblistenerrule"
 
 alblistenerrule.NewAlbListenerRuleConditionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AlbListenerRuleConditionList
 ```
@@ -8193,7 +8193,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.albListenerRule.AlbListenerRuleConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/alblistenerrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/alblistenerrule"
 
 alblistenerrule.NewAlbListenerRuleConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AlbListenerRuleConditionOutputReference
 ```
@@ -8712,7 +8712,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.albListenerRule.AlbListenerRuleConditionPathPatternOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/alblistenerrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/alblistenerrule"
 
 alblistenerrule.NewAlbListenerRuleConditionPathPatternOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AlbListenerRuleConditionPathPatternOutputReference
 ```
@@ -9019,7 +9019,7 @@ func InternalValue() AlbListenerRuleConditionPathPattern
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.albListenerRule.AlbListenerRuleConditionQueryStringList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/alblistenerrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/alblistenerrule"
 
 alblistenerrule.NewAlbListenerRuleConditionQueryStringList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AlbListenerRuleConditionQueryStringList
 ```
@@ -9179,7 +9179,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.albListenerRule.AlbListenerRuleConditionQueryStringOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/alblistenerrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/alblistenerrule"
 
 alblistenerrule.NewAlbListenerRuleConditionQueryStringOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AlbListenerRuleConditionQueryStringOutputReference
 ```
@@ -9497,7 +9497,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.albListenerRule.AlbListenerRuleConditionSourceIpOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/alblistenerrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/alblistenerrule"
 
 alblistenerrule.NewAlbListenerRuleConditionSourceIpOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AlbListenerRuleConditionSourceIpOutputReference
 ```
@@ -9768,7 +9768,7 @@ func InternalValue() AlbListenerRuleConditionSourceIp
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.albListenerRule.AlbListenerRuleTransformHostHeaderRewriteConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/alblistenerrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/alblistenerrule"
 
 alblistenerrule.NewAlbListenerRuleTransformHostHeaderRewriteConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AlbListenerRuleTransformHostHeaderRewriteConfigOutputReference
 ```
@@ -10059,7 +10059,7 @@ func InternalValue() AlbListenerRuleTransformHostHeaderRewriteConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.albListenerRule.AlbListenerRuleTransformHostHeaderRewriteConfigRewriteOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/alblistenerrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/alblistenerrule"
 
 alblistenerrule.NewAlbListenerRuleTransformHostHeaderRewriteConfigRewriteOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AlbListenerRuleTransformHostHeaderRewriteConfigRewriteOutputReference
 ```
@@ -10352,7 +10352,7 @@ func InternalValue() AlbListenerRuleTransformHostHeaderRewriteConfigRewrite
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.albListenerRule.AlbListenerRuleTransformList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/alblistenerrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/alblistenerrule"
 
 alblistenerrule.NewAlbListenerRuleTransformList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AlbListenerRuleTransformList
 ```
@@ -10512,7 +10512,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.albListenerRule.AlbListenerRuleTransformOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/alblistenerrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/alblistenerrule"
 
 alblistenerrule.NewAlbListenerRuleTransformOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AlbListenerRuleTransformOutputReference
 ```
@@ -10885,7 +10885,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.albListenerRule.AlbListenerRuleTransformUrlRewriteConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/alblistenerrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/alblistenerrule"
 
 alblistenerrule.NewAlbListenerRuleTransformUrlRewriteConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AlbListenerRuleTransformUrlRewriteConfigOutputReference
 ```
@@ -11176,7 +11176,7 @@ func InternalValue() AlbListenerRuleTransformUrlRewriteConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.albListenerRule.AlbListenerRuleTransformUrlRewriteConfigRewriteOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/alblistenerrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/alblistenerrule"
 
 alblistenerrule.NewAlbListenerRuleTransformUrlRewriteConfigRewriteOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AlbListenerRuleTransformUrlRewriteConfigRewriteOutputReference
 ```

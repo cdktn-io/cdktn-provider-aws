@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.daxSubnetGroup.DaxSubnetGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/daxsubnetgroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/daxsubnetgroup"
 
 daxsubnetgroup.NewDaxSubnetGroup(scope Construct, id *string, config DaxSubnetGroupConfig) DaxSubnetGroup
 ```
@@ -421,7 +421,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.daxSubnetGroup.DaxSubnetGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/daxsubnetgroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/daxsubnetgroup"
 
 daxsubnetgroup.DaxSubnetGroup_IsConstruct(x interface{}) *bool
 ```
@@ -453,7 +453,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.daxSubnetGroup.DaxSubnetGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/daxsubnetgroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/daxsubnetgroup"
 
 daxsubnetgroup.DaxSubnetGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ daxsubnetgroup.DaxSubnetGroup_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.daxSubnetGroup.DaxSubnetGroup.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/daxsubnetgroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/daxsubnetgroup"
 
 daxsubnetgroup.DaxSubnetGroup_IsTerraformResource(x interface{}) *bool
 ```
@@ -481,7 +481,7 @@ daxsubnetgroup.DaxSubnetGroup_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.daxSubnetGroup.DaxSubnetGroup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/daxsubnetgroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/daxsubnetgroup"
 
 daxsubnetgroup.DaxSubnetGroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -831,7 +831,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.daxSubnetGroup.DaxSubnetGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/daxsubnetgroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/daxsubnetgroup"
 
 &daxsubnetgroup.DaxSubnetGroupConfig {
 	Connection: interface{},

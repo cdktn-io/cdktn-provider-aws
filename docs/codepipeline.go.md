@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.codepipeline.Codepipeline.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/codepipeline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codepipeline"
 
 codepipeline.NewCodepipeline(scope Construct, id *string, config CodepipelineConfig) Codepipeline
 ```
@@ -508,7 +508,7 @@ func ResetVariable()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.codepipeline.Codepipeline.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/codepipeline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codepipeline"
 
 codepipeline.Codepipeline_IsConstruct(x interface{}) *bool
 ```
@@ -540,7 +540,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.codepipeline.Codepipeline.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/codepipeline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codepipeline"
 
 codepipeline.Codepipeline_IsTerraformElement(x interface{}) *bool
 ```
@@ -554,7 +554,7 @@ codepipeline.Codepipeline_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.codepipeline.Codepipeline.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/codepipeline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codepipeline"
 
 codepipeline.Codepipeline_IsTerraformResource(x interface{}) *bool
 ```
@@ -568,7 +568,7 @@ codepipeline.Codepipeline_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.codepipeline.Codepipeline.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/codepipeline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codepipeline"
 
 codepipeline.Codepipeline_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1083,12 +1083,12 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.codepipeline.CodepipelineArtifactStore.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/codepipeline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codepipeline"
 
 &codepipeline.CodepipelineArtifactStore {
 	Location: *string,
 	Type: *string,
-	EncryptionKey: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.codepipeline.CodepipelineArtifactStoreEncryptionKey,
+	EncryptionKey: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.codepipeline.CodepipelineArtifactStoreEncryptionKey,
 	Region: *string,
 }
 ```
@@ -1159,7 +1159,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.codepipeline.CodepipelineArtifactStoreEncryptionKey.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/codepipeline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codepipeline"
 
 &codepipeline.CodepipelineArtifactStoreEncryptionKey {
 	Id: *string,
@@ -1208,7 +1208,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.codepipeline.CodepipelineConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/codepipeline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codepipeline"
 
 &codepipeline.CodepipelineConfig {
 	Connection: interface{},
@@ -1491,14 +1491,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.codepipeline.CodepipelineStage.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/codepipeline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codepipeline"
 
 &codepipeline.CodepipelineStage {
 	Action: interface{},
 	Name: *string,
-	BeforeEntry: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.codepipeline.CodepipelineStageBeforeEntry,
-	OnFailure: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.codepipeline.CodepipelineStageOnFailure,
-	OnSuccess: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.codepipeline.CodepipelineStageOnSuccess,
+	BeforeEntry: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.codepipeline.CodepipelineStageBeforeEntry,
+	OnFailure: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.codepipeline.CodepipelineStageOnFailure,
+	OnSuccess: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.codepipeline.CodepipelineStageOnSuccess,
 }
 ```
 
@@ -1587,7 +1587,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.codepipeline.CodepipelineStageAction.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/codepipeline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codepipeline"
 
 &codepipeline.CodepipelineStageAction {
 	Category: *string,
@@ -1787,10 +1787,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.codepipeline.CodepipelineStageBeforeEntry.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/codepipeline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codepipeline"
 
 &codepipeline.CodepipelineStageBeforeEntry {
-	Condition: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.codepipeline.CodepipelineStageBeforeEntryCondition,
+	Condition: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.codepipeline.CodepipelineStageBeforeEntryCondition,
 }
 ```
 
@@ -1821,7 +1821,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.codepipeline.CodepipelineStageBeforeEntryCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/codepipeline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codepipeline"
 
 &codepipeline.CodepipelineStageBeforeEntryCondition {
 	Rule: interface{},
@@ -1869,11 +1869,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.codepipeline.CodepipelineStageBeforeEntryConditionRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/codepipeline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codepipeline"
 
 &codepipeline.CodepipelineStageBeforeEntryConditionRule {
 	Name: *string,
-	RuleTypeId: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.codepipeline.CodepipelineStageBeforeEntryConditionRuleRuleTypeId,
+	RuleTypeId: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.codepipeline.CodepipelineStageBeforeEntryConditionRuleRuleTypeId,
 	Commands: *[]*string,
 	Configuration: *map[string]*string,
 	InputArtifacts: *[]*string,
@@ -2001,7 +2001,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.codepipeline.CodepipelineStageBeforeEntryConditionRuleRuleTypeId.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/codepipeline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codepipeline"
 
 &codepipeline.CodepipelineStageBeforeEntryConditionRuleRuleTypeId {
 	Category: *string,
@@ -2075,12 +2075,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.codepipeline.CodepipelineStageOnFailure.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/codepipeline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codepipeline"
 
 &codepipeline.CodepipelineStageOnFailure {
-	Condition: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.codepipeline.CodepipelineStageOnFailureCondition,
+	Condition: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.codepipeline.CodepipelineStageOnFailureCondition,
 	Result: *string,
-	RetryConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.codepipeline.CodepipelineStageOnFailureRetryConfiguration,
+	RetryConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.codepipeline.CodepipelineStageOnFailureRetryConfiguration,
 }
 ```
 
@@ -2139,7 +2139,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.codepipeline.CodepipelineStageOnFailureCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/codepipeline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codepipeline"
 
 &codepipeline.CodepipelineStageOnFailureCondition {
 	Rule: interface{},
@@ -2187,11 +2187,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.codepipeline.CodepipelineStageOnFailureConditionRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/codepipeline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codepipeline"
 
 &codepipeline.CodepipelineStageOnFailureConditionRule {
 	Name: *string,
-	RuleTypeId: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.codepipeline.CodepipelineStageOnFailureConditionRuleRuleTypeId,
+	RuleTypeId: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.codepipeline.CodepipelineStageOnFailureConditionRuleRuleTypeId,
 	Commands: *[]*string,
 	Configuration: *map[string]*string,
 	InputArtifacts: *[]*string,
@@ -2319,7 +2319,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.codepipeline.CodepipelineStageOnFailureConditionRuleRuleTypeId.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/codepipeline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codepipeline"
 
 &codepipeline.CodepipelineStageOnFailureConditionRuleRuleTypeId {
 	Category: *string,
@@ -2393,7 +2393,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.codepipeline.CodepipelineStageOnFailureRetryConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/codepipeline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codepipeline"
 
 &codepipeline.CodepipelineStageOnFailureRetryConfiguration {
 	RetryMode: *string,
@@ -2425,10 +2425,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.codepipeline.CodepipelineStageOnSuccess.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/codepipeline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codepipeline"
 
 &codepipeline.CodepipelineStageOnSuccess {
-	Condition: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.codepipeline.CodepipelineStageOnSuccessCondition,
+	Condition: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.codepipeline.CodepipelineStageOnSuccessCondition,
 }
 ```
 
@@ -2459,7 +2459,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.codepipeline.CodepipelineStageOnSuccessCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/codepipeline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codepipeline"
 
 &codepipeline.CodepipelineStageOnSuccessCondition {
 	Rule: interface{},
@@ -2507,11 +2507,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.codepipeline.CodepipelineStageOnSuccessConditionRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/codepipeline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codepipeline"
 
 &codepipeline.CodepipelineStageOnSuccessConditionRule {
 	Name: *string,
-	RuleTypeId: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.codepipeline.CodepipelineStageOnSuccessConditionRuleRuleTypeId,
+	RuleTypeId: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.codepipeline.CodepipelineStageOnSuccessConditionRuleRuleTypeId,
 	Commands: *[]*string,
 	Configuration: *map[string]*string,
 	InputArtifacts: *[]*string,
@@ -2639,7 +2639,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.codepipeline.CodepipelineStageOnSuccessConditionRuleRuleTypeId.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/codepipeline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codepipeline"
 
 &codepipeline.CodepipelineStageOnSuccessConditionRuleRuleTypeId {
 	Category: *string,
@@ -2713,10 +2713,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.codepipeline.CodepipelineTrigger.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/codepipeline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codepipeline"
 
 &codepipeline.CodepipelineTrigger {
-	GitConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.codepipeline.CodepipelineTriggerGitConfiguration,
+	GitConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.codepipeline.CodepipelineTriggerGitConfiguration,
 	ProviderType: *string,
 }
 ```
@@ -2761,7 +2761,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.codepipeline.CodepipelineTriggerAll.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/codepipeline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codepipeline"
 
 &codepipeline.CodepipelineTriggerAll {
 
@@ -2774,7 +2774,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/codepipeline"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.codepipeline.CodepipelineTriggerAllGitConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/codepipeline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codepipeline"
 
 &codepipeline.CodepipelineTriggerAllGitConfiguration {
 
@@ -2787,7 +2787,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/codepipeline"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.codepipeline.CodepipelineTriggerAllGitConfigurationPullRequest.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/codepipeline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codepipeline"
 
 &codepipeline.CodepipelineTriggerAllGitConfigurationPullRequest {
 
@@ -2800,7 +2800,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/codepipeline"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.codepipeline.CodepipelineTriggerAllGitConfigurationPullRequestBranches.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/codepipeline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codepipeline"
 
 &codepipeline.CodepipelineTriggerAllGitConfigurationPullRequestBranches {
 
@@ -2813,7 +2813,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/codepipeline"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.codepipeline.CodepipelineTriggerAllGitConfigurationPullRequestFilePaths.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/codepipeline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codepipeline"
 
 &codepipeline.CodepipelineTriggerAllGitConfigurationPullRequestFilePaths {
 
@@ -2826,7 +2826,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/codepipeline"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.codepipeline.CodepipelineTriggerAllGitConfigurationPush.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/codepipeline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codepipeline"
 
 &codepipeline.CodepipelineTriggerAllGitConfigurationPush {
 
@@ -2839,7 +2839,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/codepipeline"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.codepipeline.CodepipelineTriggerAllGitConfigurationPushBranches.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/codepipeline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codepipeline"
 
 &codepipeline.CodepipelineTriggerAllGitConfigurationPushBranches {
 
@@ -2852,7 +2852,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/codepipeline"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.codepipeline.CodepipelineTriggerAllGitConfigurationPushFilePaths.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/codepipeline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codepipeline"
 
 &codepipeline.CodepipelineTriggerAllGitConfigurationPushFilePaths {
 
@@ -2865,7 +2865,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/codepipeline"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.codepipeline.CodepipelineTriggerAllGitConfigurationPushTags.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/codepipeline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codepipeline"
 
 &codepipeline.CodepipelineTriggerAllGitConfigurationPushTags {
 
@@ -2878,7 +2878,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/codepipeline"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.codepipeline.CodepipelineTriggerGitConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/codepipeline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codepipeline"
 
 &codepipeline.CodepipelineTriggerGitConfiguration {
 	SourceActionName: *string,
@@ -2942,12 +2942,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.codepipeline.CodepipelineTriggerGitConfigurationPullRequest.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/codepipeline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codepipeline"
 
 &codepipeline.CodepipelineTriggerGitConfigurationPullRequest {
-	Branches: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.codepipeline.CodepipelineTriggerGitConfigurationPullRequestBranches,
+	Branches: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.codepipeline.CodepipelineTriggerGitConfigurationPullRequestBranches,
 	Events: *[]*string,
-	FilePaths: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.codepipeline.CodepipelineTriggerGitConfigurationPullRequestFilePaths,
+	FilePaths: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.codepipeline.CodepipelineTriggerGitConfigurationPullRequestFilePaths,
 }
 ```
 
@@ -3006,7 +3006,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.codepipeline.CodepipelineTriggerGitConfigurationPullRequestBranches.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/codepipeline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codepipeline"
 
 &codepipeline.CodepipelineTriggerGitConfigurationPullRequestBranches {
 	Excludes: *[]*string,
@@ -3052,7 +3052,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.codepipeline.CodepipelineTriggerGitConfigurationPullRequestFilePaths.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/codepipeline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codepipeline"
 
 &codepipeline.CodepipelineTriggerGitConfigurationPullRequestFilePaths {
 	Excludes: *[]*string,
@@ -3098,12 +3098,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.codepipeline.CodepipelineTriggerGitConfigurationPush.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/codepipeline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codepipeline"
 
 &codepipeline.CodepipelineTriggerGitConfigurationPush {
-	Branches: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.codepipeline.CodepipelineTriggerGitConfigurationPushBranches,
-	FilePaths: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.codepipeline.CodepipelineTriggerGitConfigurationPushFilePaths,
-	Tags: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.codepipeline.CodepipelineTriggerGitConfigurationPushTags,
+	Branches: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.codepipeline.CodepipelineTriggerGitConfigurationPushBranches,
+	FilePaths: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.codepipeline.CodepipelineTriggerGitConfigurationPushFilePaths,
+	Tags: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.codepipeline.CodepipelineTriggerGitConfigurationPushTags,
 }
 ```
 
@@ -3164,7 +3164,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.codepipeline.CodepipelineTriggerGitConfigurationPushBranches.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/codepipeline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codepipeline"
 
 &codepipeline.CodepipelineTriggerGitConfigurationPushBranches {
 	Excludes: *[]*string,
@@ -3210,7 +3210,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.codepipeline.CodepipelineTriggerGitConfigurationPushFilePaths.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/codepipeline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codepipeline"
 
 &codepipeline.CodepipelineTriggerGitConfigurationPushFilePaths {
 	Excludes: *[]*string,
@@ -3256,7 +3256,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.codepipeline.CodepipelineTriggerGitConfigurationPushTags.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/codepipeline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codepipeline"
 
 &codepipeline.CodepipelineTriggerGitConfigurationPushTags {
 	Excludes: *[]*string,
@@ -3302,7 +3302,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.codepipeline.CodepipelineVariable.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/codepipeline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codepipeline"
 
 &codepipeline.CodepipelineVariable {
 	Name: *string,
@@ -3364,7 +3364,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.codepipeline.CodepipelineArtifactStoreEncryptionKeyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/codepipeline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codepipeline"
 
 codepipeline.NewCodepipelineArtifactStoreEncryptionKeyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CodepipelineArtifactStoreEncryptionKeyOutputReference
 ```
@@ -3657,7 +3657,7 @@ func InternalValue() CodepipelineArtifactStoreEncryptionKey
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.codepipeline.CodepipelineArtifactStoreList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/codepipeline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codepipeline"
 
 codepipeline.NewCodepipelineArtifactStoreList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CodepipelineArtifactStoreList
 ```
@@ -3817,7 +3817,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.codepipeline.CodepipelineArtifactStoreOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/codepipeline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codepipeline"
 
 codepipeline.NewCodepipelineArtifactStoreOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CodepipelineArtifactStoreOutputReference
 ```
@@ -4199,7 +4199,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.codepipeline.CodepipelineStageActionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/codepipeline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codepipeline"
 
 codepipeline.NewCodepipelineStageActionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CodepipelineStageActionList
 ```
@@ -4359,7 +4359,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.codepipeline.CodepipelineStageActionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/codepipeline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codepipeline"
 
 codepipeline.NewCodepipelineStageActionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CodepipelineStageActionOutputReference
 ```
@@ -4968,7 +4968,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.codepipeline.CodepipelineStageBeforeEntryConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/codepipeline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codepipeline"
 
 codepipeline.NewCodepipelineStageBeforeEntryConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CodepipelineStageBeforeEntryConditionOutputReference
 ```
@@ -5281,7 +5281,7 @@ func InternalValue() CodepipelineStageBeforeEntryCondition
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.codepipeline.CodepipelineStageBeforeEntryConditionRuleList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/codepipeline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codepipeline"
 
 codepipeline.NewCodepipelineStageBeforeEntryConditionRuleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CodepipelineStageBeforeEntryConditionRuleList
 ```
@@ -5441,7 +5441,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.codepipeline.CodepipelineStageBeforeEntryConditionRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/codepipeline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codepipeline"
 
 codepipeline.NewCodepipelineStageBeforeEntryConditionRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CodepipelineStageBeforeEntryConditionRuleOutputReference
 ```
@@ -5939,7 +5939,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.codepipeline.CodepipelineStageBeforeEntryConditionRuleRuleTypeIdOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/codepipeline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codepipeline"
 
 codepipeline.NewCodepipelineStageBeforeEntryConditionRuleRuleTypeIdOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CodepipelineStageBeforeEntryConditionRuleRuleTypeIdOutputReference
 ```
@@ -6290,7 +6290,7 @@ func InternalValue() CodepipelineStageBeforeEntryConditionRuleRuleTypeId
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.codepipeline.CodepipelineStageBeforeEntryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/codepipeline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codepipeline"
 
 codepipeline.NewCodepipelineStageBeforeEntryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CodepipelineStageBeforeEntryOutputReference
 ```
@@ -6574,7 +6574,7 @@ func InternalValue() CodepipelineStageBeforeEntry
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.codepipeline.CodepipelineStageList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/codepipeline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codepipeline"
 
 codepipeline.NewCodepipelineStageList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CodepipelineStageList
 ```
@@ -6734,7 +6734,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.codepipeline.CodepipelineStageOnFailureConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/codepipeline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codepipeline"
 
 codepipeline.NewCodepipelineStageOnFailureConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CodepipelineStageOnFailureConditionOutputReference
 ```
@@ -7047,7 +7047,7 @@ func InternalValue() CodepipelineStageOnFailureCondition
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.codepipeline.CodepipelineStageOnFailureConditionRuleList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/codepipeline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codepipeline"
 
 codepipeline.NewCodepipelineStageOnFailureConditionRuleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CodepipelineStageOnFailureConditionRuleList
 ```
@@ -7207,7 +7207,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.codepipeline.CodepipelineStageOnFailureConditionRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/codepipeline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codepipeline"
 
 codepipeline.NewCodepipelineStageOnFailureConditionRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CodepipelineStageOnFailureConditionRuleOutputReference
 ```
@@ -7705,7 +7705,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.codepipeline.CodepipelineStageOnFailureConditionRuleRuleTypeIdOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/codepipeline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codepipeline"
 
 codepipeline.NewCodepipelineStageOnFailureConditionRuleRuleTypeIdOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CodepipelineStageOnFailureConditionRuleRuleTypeIdOutputReference
 ```
@@ -8056,7 +8056,7 @@ func InternalValue() CodepipelineStageOnFailureConditionRuleRuleTypeId
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.codepipeline.CodepipelineStageOnFailureOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/codepipeline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codepipeline"
 
 codepipeline.NewCodepipelineStageOnFailureOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CodepipelineStageOnFailureOutputReference
 ```
@@ -8418,7 +8418,7 @@ func InternalValue() CodepipelineStageOnFailure
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.codepipeline.CodepipelineStageOnFailureRetryConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/codepipeline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codepipeline"
 
 codepipeline.NewCodepipelineStageOnFailureRetryConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CodepipelineStageOnFailureRetryConfigurationOutputReference
 ```
@@ -8696,7 +8696,7 @@ func InternalValue() CodepipelineStageOnFailureRetryConfiguration
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.codepipeline.CodepipelineStageOnSuccessConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/codepipeline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codepipeline"
 
 codepipeline.NewCodepipelineStageOnSuccessConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CodepipelineStageOnSuccessConditionOutputReference
 ```
@@ -9009,7 +9009,7 @@ func InternalValue() CodepipelineStageOnSuccessCondition
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.codepipeline.CodepipelineStageOnSuccessConditionRuleList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/codepipeline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codepipeline"
 
 codepipeline.NewCodepipelineStageOnSuccessConditionRuleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CodepipelineStageOnSuccessConditionRuleList
 ```
@@ -9169,7 +9169,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.codepipeline.CodepipelineStageOnSuccessConditionRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/codepipeline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codepipeline"
 
 codepipeline.NewCodepipelineStageOnSuccessConditionRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CodepipelineStageOnSuccessConditionRuleOutputReference
 ```
@@ -9667,7 +9667,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.codepipeline.CodepipelineStageOnSuccessConditionRuleRuleTypeIdOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/codepipeline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codepipeline"
 
 codepipeline.NewCodepipelineStageOnSuccessConditionRuleRuleTypeIdOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CodepipelineStageOnSuccessConditionRuleRuleTypeIdOutputReference
 ```
@@ -10018,7 +10018,7 @@ func InternalValue() CodepipelineStageOnSuccessConditionRuleRuleTypeId
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.codepipeline.CodepipelineStageOnSuccessOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/codepipeline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codepipeline"
 
 codepipeline.NewCodepipelineStageOnSuccessOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CodepipelineStageOnSuccessOutputReference
 ```
@@ -10302,7 +10302,7 @@ func InternalValue() CodepipelineStageOnSuccess
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.codepipeline.CodepipelineStageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/codepipeline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codepipeline"
 
 codepipeline.NewCodepipelineStageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CodepipelineStageOutputReference
 ```
@@ -10752,7 +10752,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.codepipeline.CodepipelineTriggerAllGitConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/codepipeline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codepipeline"
 
 codepipeline.NewCodepipelineTriggerAllGitConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CodepipelineTriggerAllGitConfigurationList
 ```
@@ -10901,7 +10901,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.codepipeline.CodepipelineTriggerAllGitConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/codepipeline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codepipeline"
 
 codepipeline.NewCodepipelineTriggerAllGitConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CodepipelineTriggerAllGitConfigurationOutputReference
 ```
@@ -11201,7 +11201,7 @@ func InternalValue() CodepipelineTriggerAllGitConfiguration
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.codepipeline.CodepipelineTriggerAllGitConfigurationPullRequestBranchesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/codepipeline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codepipeline"
 
 codepipeline.NewCodepipelineTriggerAllGitConfigurationPullRequestBranchesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CodepipelineTriggerAllGitConfigurationPullRequestBranchesList
 ```
@@ -11350,7 +11350,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.codepipeline.CodepipelineTriggerAllGitConfigurationPullRequestBranchesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/codepipeline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codepipeline"
 
 codepipeline.NewCodepipelineTriggerAllGitConfigurationPullRequestBranchesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CodepipelineTriggerAllGitConfigurationPullRequestBranchesOutputReference
 ```
@@ -11639,7 +11639,7 @@ func InternalValue() CodepipelineTriggerAllGitConfigurationPullRequestBranches
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.codepipeline.CodepipelineTriggerAllGitConfigurationPullRequestFilePathsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/codepipeline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codepipeline"
 
 codepipeline.NewCodepipelineTriggerAllGitConfigurationPullRequestFilePathsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CodepipelineTriggerAllGitConfigurationPullRequestFilePathsList
 ```
@@ -11788,7 +11788,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.codepipeline.CodepipelineTriggerAllGitConfigurationPullRequestFilePathsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/codepipeline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codepipeline"
 
 codepipeline.NewCodepipelineTriggerAllGitConfigurationPullRequestFilePathsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CodepipelineTriggerAllGitConfigurationPullRequestFilePathsOutputReference
 ```
@@ -12077,7 +12077,7 @@ func InternalValue() CodepipelineTriggerAllGitConfigurationPullRequestFilePaths
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.codepipeline.CodepipelineTriggerAllGitConfigurationPullRequestList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/codepipeline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codepipeline"
 
 codepipeline.NewCodepipelineTriggerAllGitConfigurationPullRequestList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CodepipelineTriggerAllGitConfigurationPullRequestList
 ```
@@ -12226,7 +12226,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.codepipeline.CodepipelineTriggerAllGitConfigurationPullRequestOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/codepipeline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codepipeline"
 
 codepipeline.NewCodepipelineTriggerAllGitConfigurationPullRequestOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CodepipelineTriggerAllGitConfigurationPullRequestOutputReference
 ```
@@ -12526,7 +12526,7 @@ func InternalValue() CodepipelineTriggerAllGitConfigurationPullRequest
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.codepipeline.CodepipelineTriggerAllGitConfigurationPushBranchesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/codepipeline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codepipeline"
 
 codepipeline.NewCodepipelineTriggerAllGitConfigurationPushBranchesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CodepipelineTriggerAllGitConfigurationPushBranchesList
 ```
@@ -12675,7 +12675,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.codepipeline.CodepipelineTriggerAllGitConfigurationPushBranchesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/codepipeline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codepipeline"
 
 codepipeline.NewCodepipelineTriggerAllGitConfigurationPushBranchesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CodepipelineTriggerAllGitConfigurationPushBranchesOutputReference
 ```
@@ -12964,7 +12964,7 @@ func InternalValue() CodepipelineTriggerAllGitConfigurationPushBranches
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.codepipeline.CodepipelineTriggerAllGitConfigurationPushFilePathsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/codepipeline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codepipeline"
 
 codepipeline.NewCodepipelineTriggerAllGitConfigurationPushFilePathsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CodepipelineTriggerAllGitConfigurationPushFilePathsList
 ```
@@ -13113,7 +13113,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.codepipeline.CodepipelineTriggerAllGitConfigurationPushFilePathsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/codepipeline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codepipeline"
 
 codepipeline.NewCodepipelineTriggerAllGitConfigurationPushFilePathsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CodepipelineTriggerAllGitConfigurationPushFilePathsOutputReference
 ```
@@ -13402,7 +13402,7 @@ func InternalValue() CodepipelineTriggerAllGitConfigurationPushFilePaths
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.codepipeline.CodepipelineTriggerAllGitConfigurationPushList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/codepipeline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codepipeline"
 
 codepipeline.NewCodepipelineTriggerAllGitConfigurationPushList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CodepipelineTriggerAllGitConfigurationPushList
 ```
@@ -13551,7 +13551,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.codepipeline.CodepipelineTriggerAllGitConfigurationPushOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/codepipeline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codepipeline"
 
 codepipeline.NewCodepipelineTriggerAllGitConfigurationPushOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CodepipelineTriggerAllGitConfigurationPushOutputReference
 ```
@@ -13851,7 +13851,7 @@ func InternalValue() CodepipelineTriggerAllGitConfigurationPush
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.codepipeline.CodepipelineTriggerAllGitConfigurationPushTagsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/codepipeline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codepipeline"
 
 codepipeline.NewCodepipelineTriggerAllGitConfigurationPushTagsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CodepipelineTriggerAllGitConfigurationPushTagsList
 ```
@@ -14000,7 +14000,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.codepipeline.CodepipelineTriggerAllGitConfigurationPushTagsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/codepipeline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codepipeline"
 
 codepipeline.NewCodepipelineTriggerAllGitConfigurationPushTagsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CodepipelineTriggerAllGitConfigurationPushTagsOutputReference
 ```
@@ -14289,7 +14289,7 @@ func InternalValue() CodepipelineTriggerAllGitConfigurationPushTags
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.codepipeline.CodepipelineTriggerAllList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/codepipeline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codepipeline"
 
 codepipeline.NewCodepipelineTriggerAllList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CodepipelineTriggerAllList
 ```
@@ -14438,7 +14438,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.codepipeline.CodepipelineTriggerAllOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/codepipeline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codepipeline"
 
 codepipeline.NewCodepipelineTriggerAllOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CodepipelineTriggerAllOutputReference
 ```
@@ -14727,7 +14727,7 @@ func InternalValue() CodepipelineTriggerAll
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.codepipeline.CodepipelineTriggerGitConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/codepipeline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codepipeline"
 
 codepipeline.NewCodepipelineTriggerGitConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CodepipelineTriggerGitConfigurationOutputReference
 ```
@@ -15082,7 +15082,7 @@ func InternalValue() CodepipelineTriggerGitConfiguration
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.codepipeline.CodepipelineTriggerGitConfigurationPullRequestBranchesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/codepipeline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codepipeline"
 
 codepipeline.NewCodepipelineTriggerGitConfigurationPullRequestBranchesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CodepipelineTriggerGitConfigurationPullRequestBranchesOutputReference
 ```
@@ -15389,7 +15389,7 @@ func InternalValue() CodepipelineTriggerGitConfigurationPullRequestBranches
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.codepipeline.CodepipelineTriggerGitConfigurationPullRequestFilePathsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/codepipeline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codepipeline"
 
 codepipeline.NewCodepipelineTriggerGitConfigurationPullRequestFilePathsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CodepipelineTriggerGitConfigurationPullRequestFilePathsOutputReference
 ```
@@ -15696,7 +15696,7 @@ func InternalValue() CodepipelineTriggerGitConfigurationPullRequestFilePaths
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.codepipeline.CodepipelineTriggerGitConfigurationPullRequestList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/codepipeline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codepipeline"
 
 codepipeline.NewCodepipelineTriggerGitConfigurationPullRequestList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CodepipelineTriggerGitConfigurationPullRequestList
 ```
@@ -15856,7 +15856,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.codepipeline.CodepipelineTriggerGitConfigurationPullRequestOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/codepipeline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codepipeline"
 
 codepipeline.NewCodepipelineTriggerGitConfigurationPullRequestOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CodepipelineTriggerGitConfigurationPullRequestOutputReference
 ```
@@ -16236,7 +16236,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.codepipeline.CodepipelineTriggerGitConfigurationPushBranchesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/codepipeline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codepipeline"
 
 codepipeline.NewCodepipelineTriggerGitConfigurationPushBranchesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CodepipelineTriggerGitConfigurationPushBranchesOutputReference
 ```
@@ -16543,7 +16543,7 @@ func InternalValue() CodepipelineTriggerGitConfigurationPushBranches
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.codepipeline.CodepipelineTriggerGitConfigurationPushFilePathsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/codepipeline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codepipeline"
 
 codepipeline.NewCodepipelineTriggerGitConfigurationPushFilePathsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CodepipelineTriggerGitConfigurationPushFilePathsOutputReference
 ```
@@ -16850,7 +16850,7 @@ func InternalValue() CodepipelineTriggerGitConfigurationPushFilePaths
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.codepipeline.CodepipelineTriggerGitConfigurationPushList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/codepipeline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codepipeline"
 
 codepipeline.NewCodepipelineTriggerGitConfigurationPushList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CodepipelineTriggerGitConfigurationPushList
 ```
@@ -17010,7 +17010,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.codepipeline.CodepipelineTriggerGitConfigurationPushOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/codepipeline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codepipeline"
 
 codepipeline.NewCodepipelineTriggerGitConfigurationPushOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CodepipelineTriggerGitConfigurationPushOutputReference
 ```
@@ -17403,7 +17403,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.codepipeline.CodepipelineTriggerGitConfigurationPushTagsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/codepipeline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codepipeline"
 
 codepipeline.NewCodepipelineTriggerGitConfigurationPushTagsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CodepipelineTriggerGitConfigurationPushTagsOutputReference
 ```
@@ -17710,7 +17710,7 @@ func InternalValue() CodepipelineTriggerGitConfigurationPushTags
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.codepipeline.CodepipelineTriggerList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/codepipeline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codepipeline"
 
 codepipeline.NewCodepipelineTriggerList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CodepipelineTriggerList
 ```
@@ -17870,7 +17870,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.codepipeline.CodepipelineTriggerOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/codepipeline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codepipeline"
 
 codepipeline.NewCodepipelineTriggerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CodepipelineTriggerOutputReference
 ```
@@ -18194,7 +18194,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.codepipeline.CodepipelineVariableList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/codepipeline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codepipeline"
 
 codepipeline.NewCodepipelineVariableList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CodepipelineVariableList
 ```
@@ -18354,7 +18354,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.codepipeline.CodepipelineVariableOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/codepipeline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codepipeline"
 
 codepipeline.NewCodepipelineVariableOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CodepipelineVariableOutputReference
 ```

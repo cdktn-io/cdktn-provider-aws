@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.licensemanagerGrantAccepter.LicensemanagerGrantAccepter.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/licensemanagergrantaccepter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/licensemanagergrantaccepter"
 
 licensemanagergrantaccepter.NewLicensemanagerGrantAccepter(scope Construct, id *string, config LicensemanagerGrantAccepterConfig) LicensemanagerGrantAccepter
 ```
@@ -414,7 +414,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.licensemanagerGrantAccepter.LicensemanagerGrantAccepter.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/licensemanagergrantaccepter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/licensemanagergrantaccepter"
 
 licensemanagergrantaccepter.LicensemanagerGrantAccepter_IsConstruct(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.licensemanagerGrantAccepter.LicensemanagerGrantAccepter.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/licensemanagergrantaccepter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/licensemanagergrantaccepter"
 
 licensemanagergrantaccepter.LicensemanagerGrantAccepter_IsTerraformElement(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ licensemanagergrantaccepter.LicensemanagerGrantAccepter_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.licensemanagerGrantAccepter.LicensemanagerGrantAccepter.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/licensemanagergrantaccepter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/licensemanagergrantaccepter"
 
 licensemanagergrantaccepter.LicensemanagerGrantAccepter_IsTerraformResource(x interface{}) *bool
 ```
@@ -474,7 +474,7 @@ licensemanagergrantaccepter.LicensemanagerGrantAccepter_IsTerraformResource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.licensemanagerGrantAccepter.LicensemanagerGrantAccepter.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/licensemanagergrantaccepter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/licensemanagergrantaccepter"
 
 licensemanagergrantaccepter.LicensemanagerGrantAccepter_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -857,7 +857,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.licensemanagerGrantAccepter.LicensemanagerGrantAccepterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/licensemanagergrantaccepter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/licensemanagergrantaccepter"
 
 &licensemanagergrantaccepter.LicensemanagerGrantAccepterConfig {
 	Connection: interface{},

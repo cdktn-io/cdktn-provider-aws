@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.workspacesDirectory.WorkspacesDirectory.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/workspacesdirectory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/workspacesdirectory"
 
 workspacesdirectory.NewWorkspacesDirectory(scope Construct, id *string, config WorkspacesDirectoryConfig) WorkspacesDirectory
 ```
@@ -604,7 +604,7 @@ func ResetWorkspaceType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.workspacesDirectory.WorkspacesDirectory.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/workspacesdirectory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/workspacesdirectory"
 
 workspacesdirectory.WorkspacesDirectory_IsConstruct(x interface{}) *bool
 ```
@@ -636,7 +636,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.workspacesDirectory.WorkspacesDirectory.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/workspacesdirectory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/workspacesdirectory"
 
 workspacesdirectory.WorkspacesDirectory_IsTerraformElement(x interface{}) *bool
 ```
@@ -650,7 +650,7 @@ workspacesdirectory.WorkspacesDirectory_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.workspacesDirectory.WorkspacesDirectory.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/workspacesdirectory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/workspacesdirectory"
 
 workspacesdirectory.WorkspacesDirectory_IsTerraformResource(x interface{}) *bool
 ```
@@ -664,7 +664,7 @@ workspacesdirectory.WorkspacesDirectory_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.workspacesDirectory.WorkspacesDirectory.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/workspacesdirectory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/workspacesdirectory"
 
 workspacesdirectory.WorkspacesDirectory_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1377,7 +1377,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.workspacesDirectory.WorkspacesDirectoryActiveDirectoryConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/workspacesdirectory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/workspacesdirectory"
 
 &workspacesdirectory.WorkspacesDirectoryActiveDirectoryConfig {
 	DomainName: *string,
@@ -1423,7 +1423,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.workspacesDirectory.WorkspacesDirectoryCertificateBasedAuthProperties.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/workspacesdirectory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/workspacesdirectory"
 
 &workspacesdirectory.WorkspacesDirectoryCertificateBasedAuthProperties {
 	CertificateAuthorityArn: *string,
@@ -1469,7 +1469,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.workspacesDirectory.WorkspacesDirectoryConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/workspacesdirectory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/workspacesdirectory"
 
 &workspacesdirectory.WorkspacesDirectoryConfig {
 	Connection: interface{},
@@ -1479,21 +1479,21 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/workspacesdirectory"
 	Lifecycle: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle,
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
-	ActiveDirectoryConfig: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.workspacesDirectory.WorkspacesDirectoryActiveDirectoryConfig,
-	CertificateBasedAuthProperties: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.workspacesDirectory.WorkspacesDirectoryCertificateBasedAuthProperties,
+	ActiveDirectoryConfig: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.workspacesDirectory.WorkspacesDirectoryActiveDirectoryConfig,
+	CertificateBasedAuthProperties: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.workspacesDirectory.WorkspacesDirectoryCertificateBasedAuthProperties,
 	DirectoryId: *string,
 	Id: *string,
 	IpGroupIds: *[]*string,
 	Region: *string,
-	SamlProperties: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.workspacesDirectory.WorkspacesDirectorySamlProperties,
-	SelfServicePermissions: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.workspacesDirectory.WorkspacesDirectorySelfServicePermissions,
+	SamlProperties: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.workspacesDirectory.WorkspacesDirectorySamlProperties,
+	SelfServicePermissions: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.workspacesDirectory.WorkspacesDirectorySelfServicePermissions,
 	SubnetIds: *[]*string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
 	Tenancy: *string,
 	UserIdentityType: *string,
-	WorkspaceAccessProperties: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.workspacesDirectory.WorkspacesDirectoryWorkspaceAccessProperties,
-	WorkspaceCreationProperties: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.workspacesDirectory.WorkspacesDirectoryWorkspaceCreationProperties,
+	WorkspaceAccessProperties: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.workspacesDirectory.WorkspacesDirectoryWorkspaceAccessProperties,
+	WorkspaceCreationProperties: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.workspacesDirectory.WorkspacesDirectoryWorkspaceCreationProperties,
 	WorkspaceDirectoryDescription: *string,
 	WorkspaceDirectoryName: *string,
 	WorkspaceType: *string,
@@ -1840,7 +1840,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.workspacesDirectory.WorkspacesDirectorySamlProperties.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/workspacesdirectory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/workspacesdirectory"
 
 &workspacesdirectory.WorkspacesDirectorySamlProperties {
 	RelayStateParameterName: *string,
@@ -1900,7 +1900,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.workspacesDirectory.WorkspacesDirectorySelfServicePermissions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/workspacesdirectory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/workspacesdirectory"
 
 &workspacesdirectory.WorkspacesDirectorySelfServicePermissions {
 	ChangeComputeType: interface{},
@@ -1988,7 +1988,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.workspacesDirectory.WorkspacesDirectoryWorkspaceAccessProperties.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/workspacesdirectory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/workspacesdirectory"
 
 &workspacesdirectory.WorkspacesDirectoryWorkspaceAccessProperties {
 	DeviceTypeAndroid: *string,
@@ -2118,7 +2118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.workspacesDirectory.WorkspacesDirectoryWorkspaceCreationProperties.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/workspacesdirectory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/workspacesdirectory"
 
 &workspacesdirectory.WorkspacesDirectoryWorkspaceCreationProperties {
 	CustomSecurityGroupId: *string,
@@ -2208,7 +2208,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.workspacesDirectory.WorkspacesDirectoryActiveDirectoryConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/workspacesdirectory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/workspacesdirectory"
 
 workspacesdirectory.NewWorkspacesDirectoryActiveDirectoryConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WorkspacesDirectoryActiveDirectoryConfigOutputReference
 ```
@@ -2501,7 +2501,7 @@ func InternalValue() WorkspacesDirectoryActiveDirectoryConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.workspacesDirectory.WorkspacesDirectoryCertificateBasedAuthPropertiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/workspacesdirectory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/workspacesdirectory"
 
 workspacesdirectory.NewWorkspacesDirectoryCertificateBasedAuthPropertiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WorkspacesDirectoryCertificateBasedAuthPropertiesOutputReference
 ```
@@ -2808,7 +2808,7 @@ func InternalValue() WorkspacesDirectoryCertificateBasedAuthProperties
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.workspacesDirectory.WorkspacesDirectorySamlPropertiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/workspacesdirectory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/workspacesdirectory"
 
 workspacesdirectory.NewWorkspacesDirectorySamlPropertiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WorkspacesDirectorySamlPropertiesOutputReference
 ```
@@ -3144,7 +3144,7 @@ func InternalValue() WorkspacesDirectorySamlProperties
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.workspacesDirectory.WorkspacesDirectorySelfServicePermissionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/workspacesdirectory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/workspacesdirectory"
 
 workspacesdirectory.NewWorkspacesDirectorySelfServicePermissionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WorkspacesDirectorySelfServicePermissionsOutputReference
 ```
@@ -3538,7 +3538,7 @@ func InternalValue() WorkspacesDirectorySelfServicePermissions
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.workspacesDirectory.WorkspacesDirectoryWorkspaceAccessPropertiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/workspacesdirectory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/workspacesdirectory"
 
 workspacesdirectory.NewWorkspacesDirectoryWorkspaceAccessPropertiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WorkspacesDirectoryWorkspaceAccessPropertiesOutputReference
 ```
@@ -4019,7 +4019,7 @@ func InternalValue() WorkspacesDirectoryWorkspaceAccessProperties
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.workspacesDirectory.WorkspacesDirectoryWorkspaceCreationPropertiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/workspacesdirectory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/workspacesdirectory"
 
 workspacesdirectory.NewWorkspacesDirectoryWorkspaceCreationPropertiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WorkspacesDirectoryWorkspaceCreationPropertiesOutputReference
 ```

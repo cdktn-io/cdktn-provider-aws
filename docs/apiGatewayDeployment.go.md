@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.apiGatewayDeployment.ApiGatewayDeployment.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/apigatewaydeployment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/apigatewaydeployment"
 
 apigatewaydeployment.NewApiGatewayDeployment(scope Construct, id *string, config ApiGatewayDeploymentConfig) ApiGatewayDeployment
 ```
@@ -435,7 +435,7 @@ func ResetVariables()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.apiGatewayDeployment.ApiGatewayDeployment.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/apigatewaydeployment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/apigatewaydeployment"
 
 apigatewaydeployment.ApiGatewayDeployment_IsConstruct(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.apiGatewayDeployment.ApiGatewayDeployment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/apigatewaydeployment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/apigatewaydeployment"
 
 apigatewaydeployment.ApiGatewayDeployment_IsTerraformElement(x interface{}) *bool
 ```
@@ -481,7 +481,7 @@ apigatewaydeployment.ApiGatewayDeployment_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.apiGatewayDeployment.ApiGatewayDeployment.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/apigatewaydeployment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/apigatewaydeployment"
 
 apigatewaydeployment.ApiGatewayDeployment_IsTerraformResource(x interface{}) *bool
 ```
@@ -495,7 +495,7 @@ apigatewaydeployment.ApiGatewayDeployment_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.apiGatewayDeployment.ApiGatewayDeployment.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/apigatewaydeployment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/apigatewaydeployment"
 
 apigatewaydeployment.ApiGatewayDeployment_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -867,7 +867,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.apiGatewayDeployment.ApiGatewayDeploymentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/apigatewaydeployment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/apigatewaydeployment"
 
 &apigatewaydeployment.ApiGatewayDeploymentConfig {
 	Connection: interface{},

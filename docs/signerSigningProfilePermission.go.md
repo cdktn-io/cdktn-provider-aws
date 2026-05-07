@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.signerSigningProfilePermission.SignerSigningProfilePermission.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/signersigningprofilepermission"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/signersigningprofilepermission"
 
 signersigningprofilepermission.NewSignerSigningProfilePermission(scope Construct, id *string, config SignerSigningProfilePermissionConfig) SignerSigningProfilePermission
 ```
@@ -435,7 +435,7 @@ func ResetStatementIdPrefix()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.signerSigningProfilePermission.SignerSigningProfilePermission.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/signersigningprofilepermission"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/signersigningprofilepermission"
 
 signersigningprofilepermission.SignerSigningProfilePermission_IsConstruct(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.signerSigningProfilePermission.SignerSigningProfilePermission.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/signersigningprofilepermission"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/signersigningprofilepermission"
 
 signersigningprofilepermission.SignerSigningProfilePermission_IsTerraformElement(x interface{}) *bool
 ```
@@ -481,7 +481,7 @@ signersigningprofilepermission.SignerSigningProfilePermission_IsTerraformElement
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.signerSigningProfilePermission.SignerSigningProfilePermission.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/signersigningprofilepermission"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/signersigningprofilepermission"
 
 signersigningprofilepermission.SignerSigningProfilePermission_IsTerraformResource(x interface{}) *bool
 ```
@@ -495,7 +495,7 @@ signersigningprofilepermission.SignerSigningProfilePermission_IsTerraformResourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.signerSigningProfilePermission.SignerSigningProfilePermission.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/signersigningprofilepermission"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/signersigningprofilepermission"
 
 signersigningprofilepermission.SignerSigningProfilePermission_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -900,7 +900,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.signerSigningProfilePermission.SignerSigningProfilePermissionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/signersigningprofilepermission"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/signersigningprofilepermission"
 
 &signersigningprofilepermission.SignerSigningProfilePermissionConfig {
 	Connection: interface{},

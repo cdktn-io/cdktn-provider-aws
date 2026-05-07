@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lightsailLbStickinessPolicy.LightsailLbStickinessPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lightsaillbstickinesspolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lightsaillbstickinesspolicy"
 
 lightsaillbstickinesspolicy.NewLightsailLbStickinessPolicy(scope Construct, id *string, config LightsailLbStickinessPolicyConfig) LightsailLbStickinessPolicy
 ```
@@ -414,7 +414,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.lightsailLbStickinessPolicy.LightsailLbStickinessPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lightsaillbstickinesspolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lightsaillbstickinesspolicy"
 
 lightsaillbstickinesspolicy.LightsailLbStickinessPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.lightsailLbStickinessPolicy.LightsailLbStickinessPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lightsaillbstickinesspolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lightsaillbstickinesspolicy"
 
 lightsaillbstickinesspolicy.LightsailLbStickinessPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ lightsaillbstickinesspolicy.LightsailLbStickinessPolicy_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.lightsailLbStickinessPolicy.LightsailLbStickinessPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lightsaillbstickinesspolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lightsaillbstickinesspolicy"
 
 lightsaillbstickinesspolicy.LightsailLbStickinessPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -474,7 +474,7 @@ lightsaillbstickinesspolicy.LightsailLbStickinessPolicy_IsTerraformResource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.lightsailLbStickinessPolicy.LightsailLbStickinessPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lightsaillbstickinesspolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lightsaillbstickinesspolicy"
 
 lightsaillbstickinesspolicy.LightsailLbStickinessPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -813,7 +813,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.lightsailLbStickinessPolicy.LightsailLbStickinessPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lightsaillbstickinesspolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lightsaillbstickinesspolicy"
 
 &lightsaillbstickinesspolicy.LightsailLbStickinessPolicyConfig {
 	Connection: interface{},

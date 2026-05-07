@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.vpcSecurityGroupVpcAssociation.VpcSecurityGroupVpcAssociation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/vpcsecuritygroupvpcassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpcsecuritygroupvpcassociation"
 
 vpcsecuritygroupvpcassociation.NewVpcSecurityGroupVpcAssociation(scope Construct, id *string, config VpcSecurityGroupVpcAssociationConfig) VpcSecurityGroupVpcAssociation
 ```
@@ -427,7 +427,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.vpcSecurityGroupVpcAssociation.VpcSecurityGroupVpcAssociation.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/vpcsecuritygroupvpcassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpcsecuritygroupvpcassociation"
 
 vpcsecuritygroupvpcassociation.VpcSecurityGroupVpcAssociation_IsConstruct(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.vpcSecurityGroupVpcAssociation.VpcSecurityGroupVpcAssociation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/vpcsecuritygroupvpcassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpcsecuritygroupvpcassociation"
 
 vpcsecuritygroupvpcassociation.VpcSecurityGroupVpcAssociation_IsTerraformElement(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ vpcsecuritygroupvpcassociation.VpcSecurityGroupVpcAssociation_IsTerraformElement
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.vpcSecurityGroupVpcAssociation.VpcSecurityGroupVpcAssociation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/vpcsecuritygroupvpcassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpcsecuritygroupvpcassociation"
 
 vpcsecuritygroupvpcassociation.VpcSecurityGroupVpcAssociation_IsTerraformResource(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ vpcsecuritygroupvpcassociation.VpcSecurityGroupVpcAssociation_IsTerraformResourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.vpcSecurityGroupVpcAssociation.VpcSecurityGroupVpcAssociation.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/vpcsecuritygroupvpcassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpcsecuritygroupvpcassociation"
 
 vpcsecuritygroupvpcassociation.VpcSecurityGroupVpcAssociation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -815,7 +815,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.vpcSecurityGroupVpcAssociation.VpcSecurityGroupVpcAssociationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/vpcsecuritygroupvpcassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpcsecuritygroupvpcassociation"
 
 &vpcsecuritygroupvpcassociation.VpcSecurityGroupVpcAssociationConfig {
 	Connection: interface{},
@@ -828,7 +828,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/vpcsecuritygroupvpcass
 	SecurityGroupId: *string,
 	VpcId: *string,
 	Region: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.vpcSecurityGroupVpcAssociation.VpcSecurityGroupVpcAssociationTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.vpcSecurityGroupVpcAssociation.VpcSecurityGroupVpcAssociationTimeouts,
 }
 ```
 
@@ -977,7 +977,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.vpcSecurityGroupVpcAssociation.VpcSecurityGroupVpcAssociationTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/vpcsecuritygroupvpcassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpcsecuritygroupvpcassociation"
 
 &vpcsecuritygroupvpcassociation.VpcSecurityGroupVpcAssociationTimeouts {
 	Create: *string,
@@ -1029,7 +1029,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.vpcSecurityGroupVpcAssociation.VpcSecurityGroupVpcAssociationTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/vpcsecuritygroupvpcassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/vpcsecuritygroupvpcassociation"
 
 vpcsecuritygroupvpcassociation.NewVpcSecurityGroupVpcAssociationTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VpcSecurityGroupVpcAssociationTimeoutsOutputReference
 ```

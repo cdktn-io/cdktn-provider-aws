@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAppintegrationsEventIntegration.DataAwsAppintegrationsEventIntegration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappintegrationseventintegration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsappintegrationseventintegration"
 
 dataawsappintegrationseventintegration.NewDataAwsAppintegrationsEventIntegration(scope Construct, id *string, config DataAwsAppintegrationsEventIntegrationConfig) DataAwsAppintegrationsEventIntegration
 ```
@@ -319,7 +319,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsAppintegrationsEventIntegration.DataAwsAppintegrationsEventIntegration.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappintegrationseventintegration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsappintegrationseventintegration"
 
 dataawsappintegrationseventintegration.DataAwsAppintegrationsEventIntegration_IsConstruct(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsAppintegrationsEventIntegration.DataAwsAppintegrationsEventIntegration.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappintegrationseventintegration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsappintegrationseventintegration"
 
 dataawsappintegrationseventintegration.DataAwsAppintegrationsEventIntegration_IsTerraformElement(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ dataawsappintegrationseventintegration.DataAwsAppintegrationsEventIntegration_Is
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsAppintegrationsEventIntegration.DataAwsAppintegrationsEventIntegration.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappintegrationseventintegration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsappintegrationseventintegration"
 
 dataawsappintegrationseventintegration.DataAwsAppintegrationsEventIntegration_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -379,7 +379,7 @@ dataawsappintegrationseventintegration.DataAwsAppintegrationsEventIntegration_Is
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsAppintegrationsEventIntegration.DataAwsAppintegrationsEventIntegration.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappintegrationseventintegration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsappintegrationseventintegration"
 
 dataawsappintegrationseventintegration.DataAwsAppintegrationsEventIntegration_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -718,7 +718,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsAppintegrationsEventIntegration.DataAwsAppintegrationsEventIntegrationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappintegrationseventintegration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsappintegrationseventintegration"
 
 &dataawsappintegrationseventintegration.DataAwsAppintegrationsEventIntegrationConfig {
 	Connection: interface{},
@@ -881,7 +881,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsAppintegrationsEventIntegration.DataAwsAppintegrationsEventIntegrationEventFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappintegrationseventintegration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsappintegrationseventintegration"
 
 &dataawsappintegrationseventintegration.DataAwsAppintegrationsEventIntegrationEventFilter {
 
@@ -896,7 +896,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappintegrations
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAppintegrationsEventIntegration.DataAwsAppintegrationsEventIntegrationEventFilterList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappintegrationseventintegration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsappintegrationseventintegration"
 
 dataawsappintegrationseventintegration.NewDataAwsAppintegrationsEventIntegrationEventFilterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAppintegrationsEventIntegrationEventFilterList
 ```
@@ -1045,7 +1045,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAppintegrationsEventIntegration.DataAwsAppintegrationsEventIntegrationEventFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsappintegrationseventintegration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsappintegrationseventintegration"
 
 dataawsappintegrationseventintegration.NewDataAwsAppintegrationsEventIntegrationEventFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAppintegrationsEventIntegrationEventFilterOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.elasticacheUserGroupAssociation.ElasticacheUserGroupAssociation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/elasticacheusergroupassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/elasticacheusergroupassociation"
 
 elasticacheusergroupassociation.NewElasticacheUserGroupAssociation(scope Construct, id *string, config ElasticacheUserGroupAssociationConfig) ElasticacheUserGroupAssociation
 ```
@@ -434,7 +434,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.elasticacheUserGroupAssociation.ElasticacheUserGroupAssociation.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/elasticacheusergroupassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/elasticacheusergroupassociation"
 
 elasticacheusergroupassociation.ElasticacheUserGroupAssociation_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.elasticacheUserGroupAssociation.ElasticacheUserGroupAssociation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/elasticacheusergroupassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/elasticacheusergroupassociation"
 
 elasticacheusergroupassociation.ElasticacheUserGroupAssociation_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ elasticacheusergroupassociation.ElasticacheUserGroupAssociation_IsTerraformEleme
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.elasticacheUserGroupAssociation.ElasticacheUserGroupAssociation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/elasticacheusergroupassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/elasticacheusergroupassociation"
 
 elasticacheusergroupassociation.ElasticacheUserGroupAssociation_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ elasticacheusergroupassociation.ElasticacheUserGroupAssociation_IsTerraformResou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.elasticacheUserGroupAssociation.ElasticacheUserGroupAssociation.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/elasticacheusergroupassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/elasticacheusergroupassociation"
 
 elasticacheusergroupassociation.ElasticacheUserGroupAssociation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -833,7 +833,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.elasticacheUserGroupAssociation.ElasticacheUserGroupAssociationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/elasticacheusergroupassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/elasticacheusergroupassociation"
 
 &elasticacheusergroupassociation.ElasticacheUserGroupAssociationConfig {
 	Connection: interface{},
@@ -847,7 +847,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/elasticacheusergroupas
 	UserId: *string,
 	Id: *string,
 	Region: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.elasticacheUserGroupAssociation.ElasticacheUserGroupAssociationTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.elasticacheUserGroupAssociation.ElasticacheUserGroupAssociationTimeouts,
 }
 ```
 
@@ -1012,7 +1012,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.elasticacheUserGroupAssociation.ElasticacheUserGroupAssociationTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/elasticacheusergroupassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/elasticacheusergroupassociation"
 
 &elasticacheusergroupassociation.ElasticacheUserGroupAssociationTimeouts {
 	Create: *string,
@@ -1060,7 +1060,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.elasticacheUserGroupAssociation.ElasticacheUserGroupAssociationTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/elasticacheusergroupassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/elasticacheusergroupassociation"
 
 elasticacheusergroupassociation.NewElasticacheUserGroupAssociationTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ElasticacheUserGroupAssociationTimeoutsOutputReference
 ```

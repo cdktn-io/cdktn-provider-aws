@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dynamodbResourcePolicy.DynamodbResourcePolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dynamodbresourcepolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dynamodbresourcepolicy"
 
 dynamodbresourcepolicy.NewDynamodbResourcePolicy(scope Construct, id *string, config DynamodbResourcePolicyConfig) DynamodbResourcePolicy
 ```
@@ -414,7 +414,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dynamodbResourcePolicy.DynamodbResourcePolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dynamodbresourcepolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dynamodbresourcepolicy"
 
 dynamodbresourcepolicy.DynamodbResourcePolicy_IsConstruct(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dynamodbResourcePolicy.DynamodbResourcePolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dynamodbresourcepolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dynamodbresourcepolicy"
 
 dynamodbresourcepolicy.DynamodbResourcePolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ dynamodbresourcepolicy.DynamodbResourcePolicy_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.dynamodbResourcePolicy.DynamodbResourcePolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dynamodbresourcepolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dynamodbresourcepolicy"
 
 dynamodbresourcepolicy.DynamodbResourcePolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -474,7 +474,7 @@ dynamodbresourcepolicy.DynamodbResourcePolicy_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dynamodbResourcePolicy.DynamodbResourcePolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dynamodbresourcepolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dynamodbresourcepolicy"
 
 dynamodbresourcepolicy.DynamodbResourcePolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -813,7 +813,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dynamodbResourcePolicy.DynamodbResourcePolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dynamodbresourcepolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dynamodbresourcepolicy"
 
 &dynamodbresourcepolicy.DynamodbResourcePolicyConfig {
 	Connection: interface{},

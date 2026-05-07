@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubautomationrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRule(scope Construct, id *string, config SecurityhubAutomationRuleConfig) SecurityhubAutomationRule
 ```
@@ -468,7 +468,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubautomationrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubautomationrule"
 
 securityhubautomationrule.SecurityhubAutomationRule_IsConstruct(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubautomationrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubautomationrule"
 
 securityhubautomationrule.SecurityhubAutomationRule_IsTerraformElement(x interface{}) *bool
 ```
@@ -514,7 +514,7 @@ securityhubautomationrule.SecurityhubAutomationRule_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubautomationrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubautomationrule"
 
 securityhubautomationrule.SecurityhubAutomationRule_IsTerraformResource(x interface{}) *bool
 ```
@@ -528,7 +528,7 @@ securityhubautomationrule.SecurityhubAutomationRule_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubautomationrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubautomationrule"
 
 securityhubautomationrule.SecurityhubAutomationRule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -988,7 +988,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubautomationrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubautomationrule"
 
 &securityhubautomationrule.SecurityhubAutomationRuleActions {
 	FindingFieldsUpdate: interface{},
@@ -1036,7 +1036,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdate.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubautomationrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubautomationrule"
 
 &securityhubautomationrule.SecurityhubAutomationRuleActionsFindingFieldsUpdate {
 	Confidence: *f64,
@@ -1188,7 +1188,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateNote.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubautomationrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubautomationrule"
 
 &securityhubautomationrule.SecurityhubAutomationRuleActionsFindingFieldsUpdateNote {
 	Text: *string,
@@ -1234,7 +1234,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubautomationrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubautomationrule"
 
 &securityhubautomationrule.SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings {
 	Id: *string,
@@ -1283,7 +1283,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubautomationrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubautomationrule"
 
 &securityhubautomationrule.SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity {
 	Label: *string,
@@ -1329,7 +1329,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubautomationrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubautomationrule"
 
 &securityhubautomationrule.SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow {
 	Status: *string,
@@ -1361,7 +1361,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubautomationrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubautomationrule"
 
 &securityhubautomationrule.SecurityhubAutomationRuleConfig {
 	Connection: interface{},
@@ -1595,7 +1595,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubautomationrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubautomationrule"
 
 &securityhubautomationrule.SecurityhubAutomationRuleCriteria {
 	AwsAccountId: interface{},
@@ -2224,7 +2224,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountId.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubautomationrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubautomationrule"
 
 &securityhubautomationrule.SecurityhubAutomationRuleCriteriaAwsAccountId {
 	Comparison: *string,
@@ -2270,7 +2270,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountName.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubautomationrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubautomationrule"
 
 &securityhubautomationrule.SecurityhubAutomationRuleCriteriaAwsAccountName {
 	Comparison: *string,
@@ -2316,7 +2316,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCompanyName.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubautomationrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubautomationrule"
 
 &securityhubautomationrule.SecurityhubAutomationRuleCriteriaCompanyName {
 	Comparison: *string,
@@ -2362,7 +2362,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubautomationrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubautomationrule"
 
 &securityhubautomationrule.SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId {
 	Comparison: *string,
@@ -2408,7 +2408,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceSecurityControlId.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubautomationrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubautomationrule"
 
 &securityhubautomationrule.SecurityhubAutomationRuleCriteriaComplianceSecurityControlId {
 	Comparison: *string,
@@ -2454,7 +2454,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceStatus.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubautomationrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubautomationrule"
 
 &securityhubautomationrule.SecurityhubAutomationRuleCriteriaComplianceStatus {
 	Comparison: *string,
@@ -2500,7 +2500,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaConfidence.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubautomationrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubautomationrule"
 
 &securityhubautomationrule.SecurityhubAutomationRuleCriteriaConfidence {
 	Eq: *f64,
@@ -2588,7 +2588,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAt.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubautomationrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubautomationrule"
 
 &securityhubautomationrule.SecurityhubAutomationRuleCriteriaCreatedAt {
 	DateRange: interface{},
@@ -2650,7 +2650,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtDateRange.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubautomationrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubautomationrule"
 
 &securityhubautomationrule.SecurityhubAutomationRuleCriteriaCreatedAtDateRange {
 	Unit: *string,
@@ -2696,7 +2696,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCriticality.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubautomationrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubautomationrule"
 
 &securityhubautomationrule.SecurityhubAutomationRuleCriteriaCriticality {
 	Eq: *f64,
@@ -2784,7 +2784,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaDescription.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubautomationrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubautomationrule"
 
 &securityhubautomationrule.SecurityhubAutomationRuleCriteriaDescription {
 	Comparison: *string,
@@ -2830,7 +2830,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAt.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubautomationrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubautomationrule"
 
 &securityhubautomationrule.SecurityhubAutomationRuleCriteriaFirstObservedAt {
 	DateRange: interface{},
@@ -2892,7 +2892,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubautomationrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubautomationrule"
 
 &securityhubautomationrule.SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange {
 	Unit: *string,
@@ -2938,7 +2938,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaGeneratorId.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubautomationrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubautomationrule"
 
 &securityhubautomationrule.SecurityhubAutomationRuleCriteriaGeneratorId {
 	Comparison: *string,
@@ -2984,7 +2984,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaId.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubautomationrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubautomationrule"
 
 &securityhubautomationrule.SecurityhubAutomationRuleCriteriaId {
 	Comparison: *string,
@@ -3030,7 +3030,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAt.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubautomationrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubautomationrule"
 
 &securityhubautomationrule.SecurityhubAutomationRuleCriteriaLastObservedAt {
 	DateRange: interface{},
@@ -3092,7 +3092,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtDateRange.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubautomationrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubautomationrule"
 
 &securityhubautomationrule.SecurityhubAutomationRuleCriteriaLastObservedAtDateRange {
 	Unit: *string,
@@ -3138,7 +3138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteText.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubautomationrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubautomationrule"
 
 &securityhubautomationrule.SecurityhubAutomationRuleCriteriaNoteText {
 	Comparison: *string,
@@ -3184,7 +3184,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAt.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubautomationrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubautomationrule"
 
 &securityhubautomationrule.SecurityhubAutomationRuleCriteriaNoteUpdatedAt {
 	DateRange: interface{},
@@ -3246,7 +3246,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubautomationrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubautomationrule"
 
 &securityhubautomationrule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange {
 	Unit: *string,
@@ -3292,7 +3292,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedBy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubautomationrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubautomationrule"
 
 &securityhubautomationrule.SecurityhubAutomationRuleCriteriaNoteUpdatedBy {
 	Comparison: *string,
@@ -3338,7 +3338,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductArn.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubautomationrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubautomationrule"
 
 &securityhubautomationrule.SecurityhubAutomationRuleCriteriaProductArn {
 	Comparison: *string,
@@ -3384,7 +3384,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductName.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubautomationrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubautomationrule"
 
 &securityhubautomationrule.SecurityhubAutomationRuleCriteriaProductName {
 	Comparison: *string,
@@ -3430,7 +3430,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRecordState.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubautomationrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubautomationrule"
 
 &securityhubautomationrule.SecurityhubAutomationRuleCriteriaRecordState {
 	Comparison: *string,
@@ -3476,7 +3476,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsId.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubautomationrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubautomationrule"
 
 &securityhubautomationrule.SecurityhubAutomationRuleCriteriaRelatedFindingsId {
 	Comparison: *string,
@@ -3522,7 +3522,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubautomationrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubautomationrule"
 
 &securityhubautomationrule.SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn {
 	Comparison: *string,
@@ -3568,7 +3568,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationArn.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubautomationrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubautomationrule"
 
 &securityhubautomationrule.SecurityhubAutomationRuleCriteriaResourceApplicationArn {
 	Comparison: *string,
@@ -3614,7 +3614,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationName.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubautomationrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubautomationrule"
 
 &securityhubautomationrule.SecurityhubAutomationRuleCriteriaResourceApplicationName {
 	Comparison: *string,
@@ -3660,7 +3660,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceDetailsOther.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubautomationrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubautomationrule"
 
 &securityhubautomationrule.SecurityhubAutomationRuleCriteriaResourceDetailsOther {
 	Comparison: *string,
@@ -3720,7 +3720,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceId.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubautomationrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubautomationrule"
 
 &securityhubautomationrule.SecurityhubAutomationRuleCriteriaResourceId {
 	Comparison: *string,
@@ -3766,7 +3766,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourcePartition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubautomationrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubautomationrule"
 
 &securityhubautomationrule.SecurityhubAutomationRuleCriteriaResourcePartition {
 	Comparison: *string,
@@ -3812,7 +3812,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceRegion.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubautomationrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubautomationrule"
 
 &securityhubautomationrule.SecurityhubAutomationRuleCriteriaResourceRegion {
 	Comparison: *string,
@@ -3858,7 +3858,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTags.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubautomationrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubautomationrule"
 
 &securityhubautomationrule.SecurityhubAutomationRuleCriteriaResourceTags {
 	Comparison: *string,
@@ -3918,7 +3918,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceType.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubautomationrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubautomationrule"
 
 &securityhubautomationrule.SecurityhubAutomationRuleCriteriaResourceType {
 	Comparison: *string,
@@ -3964,7 +3964,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSeverityLabel.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubautomationrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubautomationrule"
 
 &securityhubautomationrule.SecurityhubAutomationRuleCriteriaSeverityLabel {
 	Comparison: *string,
@@ -4010,7 +4010,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSourceUrl.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubautomationrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubautomationrule"
 
 &securityhubautomationrule.SecurityhubAutomationRuleCriteriaSourceUrl {
 	Comparison: *string,
@@ -4056,7 +4056,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTitle.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubautomationrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubautomationrule"
 
 &securityhubautomationrule.SecurityhubAutomationRuleCriteriaTitle {
 	Comparison: *string,
@@ -4102,7 +4102,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaType.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubautomationrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubautomationrule"
 
 &securityhubautomationrule.SecurityhubAutomationRuleCriteriaType {
 	Comparison: *string,
@@ -4148,7 +4148,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAt.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubautomationrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubautomationrule"
 
 &securityhubautomationrule.SecurityhubAutomationRuleCriteriaUpdatedAt {
 	DateRange: interface{},
@@ -4210,7 +4210,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtDateRange.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubautomationrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubautomationrule"
 
 &securityhubautomationrule.SecurityhubAutomationRuleCriteriaUpdatedAtDateRange {
 	Unit: *string,
@@ -4256,7 +4256,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUserDefinedFields.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubautomationrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubautomationrule"
 
 &securityhubautomationrule.SecurityhubAutomationRuleCriteriaUserDefinedFields {
 	Comparison: *string,
@@ -4316,7 +4316,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaVerificationState.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubautomationrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubautomationrule"
 
 &securityhubautomationrule.SecurityhubAutomationRuleCriteriaVerificationState {
 	Comparison: *string,
@@ -4362,7 +4362,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaWorkflowStatus.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubautomationrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubautomationrule"
 
 &securityhubautomationrule.SecurityhubAutomationRuleCriteriaWorkflowStatus {
 	Comparison: *string,
@@ -4410,7 +4410,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubautomationrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleActionsFindingFieldsUpdateList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubAutomationRuleActionsFindingFieldsUpdateList
 ```
@@ -4570,7 +4570,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateNoteList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubautomationrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleActionsFindingFieldsUpdateNoteList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubAutomationRuleActionsFindingFieldsUpdateNoteList
 ```
@@ -4730,7 +4730,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateNoteOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubautomationrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleActionsFindingFieldsUpdateNoteOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubAutomationRuleActionsFindingFieldsUpdateNoteOutputReference
 ```
@@ -5041,7 +5041,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubautomationrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleActionsFindingFieldsUpdateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubAutomationRuleActionsFindingFieldsUpdateOutputReference
 ```
@@ -5621,7 +5621,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindingsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubautomationrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindingsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindingsList
 ```
@@ -5781,7 +5781,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubautomationrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindingsOutputReference
 ```
@@ -6092,7 +6092,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverityList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubautomationrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleActionsFindingFieldsUpdateSeverityList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverityList
 ```
@@ -6252,7 +6252,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubautomationrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleActionsFindingFieldsUpdateSeverityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverityOutputReference
 ```
@@ -6577,7 +6577,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflowList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubautomationrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflowList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflowList
 ```
@@ -6737,7 +6737,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflowOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubautomationrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflowOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflowOutputReference
 ```
@@ -7033,7 +7033,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubautomationrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleActionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubAutomationRuleActionsList
 ```
@@ -7193,7 +7193,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubautomationrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleActionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubAutomationRuleActionsOutputReference
 ```
@@ -7531,7 +7531,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountIdList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubautomationrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaAwsAccountIdList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubAutomationRuleCriteriaAwsAccountIdList
 ```
@@ -7691,7 +7691,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountIdOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubautomationrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaAwsAccountIdOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubAutomationRuleCriteriaAwsAccountIdOutputReference
 ```
@@ -8002,7 +8002,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountNameList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubautomationrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaAwsAccountNameList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubAutomationRuleCriteriaAwsAccountNameList
 ```
@@ -8162,7 +8162,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountNameOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubautomationrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaAwsAccountNameOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubAutomationRuleCriteriaAwsAccountNameOutputReference
 ```
@@ -8473,7 +8473,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCompanyNameList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubautomationrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaCompanyNameList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubAutomationRuleCriteriaCompanyNameList
 ```
@@ -8633,7 +8633,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCompanyNameOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubautomationrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaCompanyNameOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubAutomationRuleCriteriaCompanyNameOutputReference
 ```
@@ -8944,7 +8944,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsIdList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubautomationrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsIdList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsIdList
 ```
@@ -9104,7 +9104,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsIdOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubautomationrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsIdOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsIdOutputReference
 ```
@@ -9415,7 +9415,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceSecurityControlIdList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubautomationrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaComplianceSecurityControlIdList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubAutomationRuleCriteriaComplianceSecurityControlIdList
 ```
@@ -9575,7 +9575,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceSecurityControlIdOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubautomationrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaComplianceSecurityControlIdOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubAutomationRuleCriteriaComplianceSecurityControlIdOutputReference
 ```
@@ -9886,7 +9886,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceStatusList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubautomationrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaComplianceStatusList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubAutomationRuleCriteriaComplianceStatusList
 ```
@@ -10046,7 +10046,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceStatusOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubautomationrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaComplianceStatusOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubAutomationRuleCriteriaComplianceStatusOutputReference
 ```
@@ -10357,7 +10357,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaConfidenceList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubautomationrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaConfidenceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubAutomationRuleCriteriaConfidenceList
 ```
@@ -10517,7 +10517,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaConfidenceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubautomationrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaConfidenceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubAutomationRuleCriteriaConfidenceOutputReference
 ```
@@ -10929,7 +10929,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtDateRangeList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubautomationrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaCreatedAtDateRangeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubAutomationRuleCriteriaCreatedAtDateRangeList
 ```
@@ -11089,7 +11089,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtDateRangeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubautomationrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaCreatedAtDateRangeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubAutomationRuleCriteriaCreatedAtDateRangeOutputReference
 ```
@@ -11400,7 +11400,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubautomationrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaCreatedAtList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubAutomationRuleCriteriaCreatedAtList
 ```
@@ -11560,7 +11560,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubautomationrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaCreatedAtOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubAutomationRuleCriteriaCreatedAtOutputReference
 ```
@@ -11927,7 +11927,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCriticalityList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubautomationrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaCriticalityList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubAutomationRuleCriteriaCriticalityList
 ```
@@ -12087,7 +12087,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCriticalityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubautomationrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaCriticalityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubAutomationRuleCriteriaCriticalityOutputReference
 ```
@@ -12499,7 +12499,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaDescriptionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubautomationrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaDescriptionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubAutomationRuleCriteriaDescriptionList
 ```
@@ -12659,7 +12659,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaDescriptionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubautomationrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaDescriptionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubAutomationRuleCriteriaDescriptionOutputReference
 ```
@@ -12970,7 +12970,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtDateRangeList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubautomationrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaFirstObservedAtDateRangeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubAutomationRuleCriteriaFirstObservedAtDateRangeList
 ```
@@ -13130,7 +13130,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtDateRangeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubautomationrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaFirstObservedAtDateRangeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubAutomationRuleCriteriaFirstObservedAtDateRangeOutputReference
 ```
@@ -13441,7 +13441,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubautomationrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaFirstObservedAtList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubAutomationRuleCriteriaFirstObservedAtList
 ```
@@ -13601,7 +13601,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubautomationrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaFirstObservedAtOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubAutomationRuleCriteriaFirstObservedAtOutputReference
 ```
@@ -13968,7 +13968,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaGeneratorIdList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubautomationrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaGeneratorIdList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubAutomationRuleCriteriaGeneratorIdList
 ```
@@ -14128,7 +14128,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaGeneratorIdOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubautomationrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaGeneratorIdOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubAutomationRuleCriteriaGeneratorIdOutputReference
 ```
@@ -14439,7 +14439,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaIdList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubautomationrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaIdList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubAutomationRuleCriteriaIdList
 ```
@@ -14599,7 +14599,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaIdOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubautomationrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaIdOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubAutomationRuleCriteriaIdOutputReference
 ```
@@ -14910,7 +14910,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtDateRangeList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubautomationrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaLastObservedAtDateRangeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubAutomationRuleCriteriaLastObservedAtDateRangeList
 ```
@@ -15070,7 +15070,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtDateRangeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubautomationrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaLastObservedAtDateRangeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubAutomationRuleCriteriaLastObservedAtDateRangeOutputReference
 ```
@@ -15381,7 +15381,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubautomationrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaLastObservedAtList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubAutomationRuleCriteriaLastObservedAtList
 ```
@@ -15541,7 +15541,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubautomationrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaLastObservedAtOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubAutomationRuleCriteriaLastObservedAtOutputReference
 ```
@@ -15908,7 +15908,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubautomationrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubAutomationRuleCriteriaList
 ```
@@ -16068,7 +16068,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteTextList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubautomationrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaNoteTextList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubAutomationRuleCriteriaNoteTextList
 ```
@@ -16228,7 +16228,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteTextOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubautomationrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaNoteTextOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubAutomationRuleCriteriaNoteTextOutputReference
 ```
@@ -16539,7 +16539,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRangeList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubautomationrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRangeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRangeList
 ```
@@ -16699,7 +16699,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRangeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubautomationrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRangeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRangeOutputReference
 ```
@@ -17010,7 +17010,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubautomationrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaNoteUpdatedAtList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubAutomationRuleCriteriaNoteUpdatedAtList
 ```
@@ -17170,7 +17170,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubautomationrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaNoteUpdatedAtOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubAutomationRuleCriteriaNoteUpdatedAtOutputReference
 ```
@@ -17537,7 +17537,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedByList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubautomationrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaNoteUpdatedByList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubAutomationRuleCriteriaNoteUpdatedByList
 ```
@@ -17697,7 +17697,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedByOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubautomationrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaNoteUpdatedByOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubAutomationRuleCriteriaNoteUpdatedByOutputReference
 ```
@@ -18008,7 +18008,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubautomationrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubAutomationRuleCriteriaOutputReference
 ```
@@ -19871,7 +19871,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductArnList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubautomationrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaProductArnList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubAutomationRuleCriteriaProductArnList
 ```
@@ -20031,7 +20031,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductArnOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubautomationrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaProductArnOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubAutomationRuleCriteriaProductArnOutputReference
 ```
@@ -20342,7 +20342,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductNameList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubautomationrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaProductNameList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubAutomationRuleCriteriaProductNameList
 ```
@@ -20502,7 +20502,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductNameOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubautomationrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaProductNameOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubAutomationRuleCriteriaProductNameOutputReference
 ```
@@ -20813,7 +20813,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRecordStateList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubautomationrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaRecordStateList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubAutomationRuleCriteriaRecordStateList
 ```
@@ -20973,7 +20973,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRecordStateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubautomationrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaRecordStateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubAutomationRuleCriteriaRecordStateOutputReference
 ```
@@ -21284,7 +21284,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsIdList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubautomationrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaRelatedFindingsIdList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubAutomationRuleCriteriaRelatedFindingsIdList
 ```
@@ -21444,7 +21444,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsIdOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubautomationrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaRelatedFindingsIdOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubAutomationRuleCriteriaRelatedFindingsIdOutputReference
 ```
@@ -21755,7 +21755,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsProductArnList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubautomationrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaRelatedFindingsProductArnList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubAutomationRuleCriteriaRelatedFindingsProductArnList
 ```
@@ -21915,7 +21915,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsProductArnOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubautomationrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaRelatedFindingsProductArnOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubAutomationRuleCriteriaRelatedFindingsProductArnOutputReference
 ```
@@ -22226,7 +22226,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationArnList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubautomationrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaResourceApplicationArnList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubAutomationRuleCriteriaResourceApplicationArnList
 ```
@@ -22386,7 +22386,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationArnOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubautomationrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaResourceApplicationArnOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubAutomationRuleCriteriaResourceApplicationArnOutputReference
 ```
@@ -22697,7 +22697,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationNameList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubautomationrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaResourceApplicationNameList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubAutomationRuleCriteriaResourceApplicationNameList
 ```
@@ -22857,7 +22857,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationNameOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubautomationrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaResourceApplicationNameOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubAutomationRuleCriteriaResourceApplicationNameOutputReference
 ```
@@ -23168,7 +23168,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceDetailsOtherList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubautomationrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaResourceDetailsOtherList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubAutomationRuleCriteriaResourceDetailsOtherList
 ```
@@ -23328,7 +23328,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceDetailsOtherOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubautomationrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaResourceDetailsOtherOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubAutomationRuleCriteriaResourceDetailsOtherOutputReference
 ```
@@ -23661,7 +23661,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceIdList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubautomationrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaResourceIdList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubAutomationRuleCriteriaResourceIdList
 ```
@@ -23821,7 +23821,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceIdOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubautomationrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaResourceIdOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubAutomationRuleCriteriaResourceIdOutputReference
 ```
@@ -24132,7 +24132,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourcePartitionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubautomationrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaResourcePartitionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubAutomationRuleCriteriaResourcePartitionList
 ```
@@ -24292,7 +24292,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourcePartitionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubautomationrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaResourcePartitionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubAutomationRuleCriteriaResourcePartitionOutputReference
 ```
@@ -24603,7 +24603,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceRegionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubautomationrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaResourceRegionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubAutomationRuleCriteriaResourceRegionList
 ```
@@ -24763,7 +24763,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceRegionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubautomationrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaResourceRegionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubAutomationRuleCriteriaResourceRegionOutputReference
 ```
@@ -25074,7 +25074,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTagsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubautomationrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaResourceTagsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubAutomationRuleCriteriaResourceTagsList
 ```
@@ -25234,7 +25234,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTagsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubautomationrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaResourceTagsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubAutomationRuleCriteriaResourceTagsOutputReference
 ```
@@ -25567,7 +25567,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTypeList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubautomationrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaResourceTypeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubAutomationRuleCriteriaResourceTypeList
 ```
@@ -25727,7 +25727,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTypeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubautomationrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaResourceTypeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubAutomationRuleCriteriaResourceTypeOutputReference
 ```
@@ -26038,7 +26038,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSeverityLabelList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubautomationrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaSeverityLabelList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubAutomationRuleCriteriaSeverityLabelList
 ```
@@ -26198,7 +26198,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSeverityLabelOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubautomationrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaSeverityLabelOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubAutomationRuleCriteriaSeverityLabelOutputReference
 ```
@@ -26509,7 +26509,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSourceUrlList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubautomationrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaSourceUrlList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubAutomationRuleCriteriaSourceUrlList
 ```
@@ -26669,7 +26669,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSourceUrlOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubautomationrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaSourceUrlOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubAutomationRuleCriteriaSourceUrlOutputReference
 ```
@@ -26980,7 +26980,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTitleList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubautomationrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaTitleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubAutomationRuleCriteriaTitleList
 ```
@@ -27140,7 +27140,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTitleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubautomationrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaTitleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubAutomationRuleCriteriaTitleOutputReference
 ```
@@ -27451,7 +27451,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTypeList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubautomationrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaTypeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubAutomationRuleCriteriaTypeList
 ```
@@ -27611,7 +27611,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTypeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubautomationrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaTypeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubAutomationRuleCriteriaTypeOutputReference
 ```
@@ -27922,7 +27922,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtDateRangeList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubautomationrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaUpdatedAtDateRangeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubAutomationRuleCriteriaUpdatedAtDateRangeList
 ```
@@ -28082,7 +28082,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtDateRangeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubautomationrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaUpdatedAtDateRangeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubAutomationRuleCriteriaUpdatedAtDateRangeOutputReference
 ```
@@ -28393,7 +28393,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubautomationrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaUpdatedAtList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubAutomationRuleCriteriaUpdatedAtList
 ```
@@ -28553,7 +28553,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubautomationrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaUpdatedAtOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubAutomationRuleCriteriaUpdatedAtOutputReference
 ```
@@ -28920,7 +28920,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUserDefinedFieldsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubautomationrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaUserDefinedFieldsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubAutomationRuleCriteriaUserDefinedFieldsList
 ```
@@ -29080,7 +29080,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUserDefinedFieldsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubautomationrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaUserDefinedFieldsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubAutomationRuleCriteriaUserDefinedFieldsOutputReference
 ```
@@ -29413,7 +29413,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaVerificationStateList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubautomationrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaVerificationStateList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubAutomationRuleCriteriaVerificationStateList
 ```
@@ -29573,7 +29573,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaVerificationStateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubautomationrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaVerificationStateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubAutomationRuleCriteriaVerificationStateOutputReference
 ```
@@ -29884,7 +29884,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaWorkflowStatusList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubautomationrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaWorkflowStatusList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubAutomationRuleCriteriaWorkflowStatusList
 ```
@@ -30044,7 +30044,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaWorkflowStatusOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubautomationrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubautomationrule"
 
 securityhubautomationrule.NewSecurityhubAutomationRuleCriteriaWorkflowStatusOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubAutomationRuleCriteriaWorkflowStatusOutputReference
 ```

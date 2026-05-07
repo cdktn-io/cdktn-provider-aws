@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3ControlObjectLambdaAccessPointPolicy.S3ControlObjectLambdaAccessPointPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/s3controlobjectlambdaaccesspointpolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3controlobjectlambdaaccesspointpolicy"
 
 s3controlobjectlambdaaccesspointpolicy.NewS3ControlObjectLambdaAccessPointPolicy(scope Construct, id *string, config S3ControlObjectLambdaAccessPointPolicyConfig) S3ControlObjectLambdaAccessPointPolicy
 ```
@@ -421,7 +421,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.s3ControlObjectLambdaAccessPointPolicy.S3ControlObjectLambdaAccessPointPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/s3controlobjectlambdaaccesspointpolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3controlobjectlambdaaccesspointpolicy"
 
 s3controlobjectlambdaaccesspointpolicy.S3ControlObjectLambdaAccessPointPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -453,7 +453,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.s3ControlObjectLambdaAccessPointPolicy.S3ControlObjectLambdaAccessPointPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/s3controlobjectlambdaaccesspointpolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3controlobjectlambdaaccesspointpolicy"
 
 s3controlobjectlambdaaccesspointpolicy.S3ControlObjectLambdaAccessPointPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ s3controlobjectlambdaaccesspointpolicy.S3ControlObjectLambdaAccessPointPolicy_Is
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.s3ControlObjectLambdaAccessPointPolicy.S3ControlObjectLambdaAccessPointPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/s3controlobjectlambdaaccesspointpolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3controlobjectlambdaaccesspointpolicy"
 
 s3controlobjectlambdaaccesspointpolicy.S3ControlObjectLambdaAccessPointPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -481,7 +481,7 @@ s3controlobjectlambdaaccesspointpolicy.S3ControlObjectLambdaAccessPointPolicy_Is
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.s3ControlObjectLambdaAccessPointPolicy.S3ControlObjectLambdaAccessPointPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/s3controlobjectlambdaaccesspointpolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3controlobjectlambdaaccesspointpolicy"
 
 s3controlobjectlambdaaccesspointpolicy.S3ControlObjectLambdaAccessPointPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -831,7 +831,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.s3ControlObjectLambdaAccessPointPolicy.S3ControlObjectLambdaAccessPointPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/s3controlobjectlambdaaccesspointpolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/s3controlobjectlambdaaccesspointpolicy"
 
 &s3controlobjectlambdaaccesspointpolicy.S3ControlObjectLambdaAccessPointPolicyConfig {
 	Connection: interface{},

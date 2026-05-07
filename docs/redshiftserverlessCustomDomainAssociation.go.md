@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.redshiftserverlessCustomDomainAssociation.RedshiftserverlessCustomDomainAssociation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/redshiftserverlesscustomdomainassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/redshiftserverlesscustomdomainassociation"
 
 redshiftserverlesscustomdomainassociation.NewRedshiftserverlessCustomDomainAssociation(scope Construct, id *string, config RedshiftserverlessCustomDomainAssociationConfig) RedshiftserverlessCustomDomainAssociation
 ```
@@ -407,7 +407,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.redshiftserverlessCustomDomainAssociation.RedshiftserverlessCustomDomainAssociation.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/redshiftserverlesscustomdomainassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/redshiftserverlesscustomdomainassociation"
 
 redshiftserverlesscustomdomainassociation.RedshiftserverlessCustomDomainAssociation_IsConstruct(x interface{}) *bool
 ```
@@ -439,7 +439,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.redshiftserverlessCustomDomainAssociation.RedshiftserverlessCustomDomainAssociation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/redshiftserverlesscustomdomainassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/redshiftserverlesscustomdomainassociation"
 
 redshiftserverlesscustomdomainassociation.RedshiftserverlessCustomDomainAssociation_IsTerraformElement(x interface{}) *bool
 ```
@@ -453,7 +453,7 @@ redshiftserverlesscustomdomainassociation.RedshiftserverlessCustomDomainAssociat
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.redshiftserverlessCustomDomainAssociation.RedshiftserverlessCustomDomainAssociation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/redshiftserverlesscustomdomainassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/redshiftserverlesscustomdomainassociation"
 
 redshiftserverlesscustomdomainassociation.RedshiftserverlessCustomDomainAssociation_IsTerraformResource(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ redshiftserverlesscustomdomainassociation.RedshiftserverlessCustomDomainAssociat
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.redshiftserverlessCustomDomainAssociation.RedshiftserverlessCustomDomainAssociation.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/redshiftserverlesscustomdomainassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/redshiftserverlesscustomdomainassociation"
 
 redshiftserverlesscustomdomainassociation.RedshiftserverlessCustomDomainAssociation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -806,7 +806,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.redshiftserverlessCustomDomainAssociation.RedshiftserverlessCustomDomainAssociationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/redshiftserverlesscustomdomainassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/redshiftserverlesscustomdomainassociation"
 
 &redshiftserverlesscustomdomainassociation.RedshiftserverlessCustomDomainAssociationConfig {
 	Connection: interface{},

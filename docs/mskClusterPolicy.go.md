@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mskClusterPolicy.MskClusterPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/mskclusterpolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/mskclusterpolicy"
 
 mskclusterpolicy.NewMskClusterPolicy(scope Construct, id *string, config MskClusterPolicyConfig) MskClusterPolicy
 ```
@@ -414,7 +414,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.mskClusterPolicy.MskClusterPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/mskclusterpolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/mskclusterpolicy"
 
 mskclusterpolicy.MskClusterPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.mskClusterPolicy.MskClusterPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/mskclusterpolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/mskclusterpolicy"
 
 mskclusterpolicy.MskClusterPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ mskclusterpolicy.MskClusterPolicy_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.mskClusterPolicy.MskClusterPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/mskclusterpolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/mskclusterpolicy"
 
 mskclusterpolicy.MskClusterPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -474,7 +474,7 @@ mskclusterpolicy.MskClusterPolicy_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.mskClusterPolicy.MskClusterPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/mskclusterpolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/mskclusterpolicy"
 
 mskclusterpolicy.MskClusterPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -802,7 +802,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.mskClusterPolicy.MskClusterPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/mskclusterpolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/mskclusterpolicy"
 
 &mskclusterpolicy.MskClusterPolicyConfig {
 	Connection: interface{},

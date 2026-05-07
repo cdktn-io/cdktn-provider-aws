@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsImagebuilderImageRecipes.DataAwsImagebuilderImageRecipes.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsimagebuilderimagerecipes"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsimagebuilderimagerecipes"
 
 dataawsimagebuilderimagerecipes.NewDataAwsImagebuilderImageRecipes(scope Construct, id *string, config DataAwsImagebuilderImageRecipesConfig) DataAwsImagebuilderImageRecipes
 ```
@@ -339,7 +339,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsImagebuilderImageRecipes.DataAwsImagebuilderImageRecipes.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsimagebuilderimagerecipes"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsimagebuilderimagerecipes"
 
 dataawsimagebuilderimagerecipes.DataAwsImagebuilderImageRecipes_IsConstruct(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsImagebuilderImageRecipes.DataAwsImagebuilderImageRecipes.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsimagebuilderimagerecipes"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsimagebuilderimagerecipes"
 
 dataawsimagebuilderimagerecipes.DataAwsImagebuilderImageRecipes_IsTerraformElement(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ dataawsimagebuilderimagerecipes.DataAwsImagebuilderImageRecipes_IsTerraformEleme
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsImagebuilderImageRecipes.DataAwsImagebuilderImageRecipes.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsimagebuilderimagerecipes"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsimagebuilderimagerecipes"
 
 dataawsimagebuilderimagerecipes.DataAwsImagebuilderImageRecipes_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -399,7 +399,7 @@ dataawsimagebuilderimagerecipes.DataAwsImagebuilderImageRecipes_IsTerraformDataS
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsImagebuilderImageRecipes.DataAwsImagebuilderImageRecipes.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsimagebuilderimagerecipes"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsimagebuilderimagerecipes"
 
 dataawsimagebuilderimagerecipes.DataAwsImagebuilderImageRecipes_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -716,7 +716,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsImagebuilderImageRecipes.DataAwsImagebuilderImageRecipesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsimagebuilderimagerecipes"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsimagebuilderimagerecipes"
 
 &dataawsimagebuilderimagerecipes.DataAwsImagebuilderImageRecipesConfig {
 	Connection: interface{},
@@ -881,7 +881,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsImagebuilderImageRecipes.DataAwsImagebuilderImageRecipesFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsimagebuilderimagerecipes"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsimagebuilderimagerecipes"
 
 &dataawsimagebuilderimagerecipes.DataAwsImagebuilderImageRecipesFilter {
 	Name: *string,
@@ -929,7 +929,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsImagebuilderImageRecipes.DataAwsImagebuilderImageRecipesFilterList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsimagebuilderimagerecipes"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsimagebuilderimagerecipes"
 
 dataawsimagebuilderimagerecipes.NewDataAwsImagebuilderImageRecipesFilterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsImagebuilderImageRecipesFilterList
 ```
@@ -1089,7 +1089,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsImagebuilderImageRecipes.DataAwsImagebuilderImageRecipesFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsimagebuilderimagerecipes"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsimagebuilderimagerecipes"
 
 dataawsimagebuilderimagerecipes.NewDataAwsImagebuilderImageRecipesFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsImagebuilderImageRecipesFilterOutputReference
 ```

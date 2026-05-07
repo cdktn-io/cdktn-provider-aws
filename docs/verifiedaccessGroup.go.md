@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.verifiedaccessGroup.VerifiedaccessGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/verifiedaccessgroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/verifiedaccessgroup"
 
 verifiedaccessgroup.NewVerifiedaccessGroup(scope Construct, id *string, config VerifiedaccessGroupConfig) VerifiedaccessGroup
 ```
@@ -462,7 +462,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.verifiedaccessGroup.VerifiedaccessGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/verifiedaccessgroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/verifiedaccessgroup"
 
 verifiedaccessgroup.VerifiedaccessGroup_IsConstruct(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.verifiedaccessGroup.VerifiedaccessGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/verifiedaccessgroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/verifiedaccessgroup"
 
 verifiedaccessgroup.VerifiedaccessGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ verifiedaccessgroup.VerifiedaccessGroup_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.verifiedaccessGroup.VerifiedaccessGroup.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/verifiedaccessgroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/verifiedaccessgroup"
 
 verifiedaccessgroup.VerifiedaccessGroup_IsTerraformResource(x interface{}) *bool
 ```
@@ -522,7 +522,7 @@ verifiedaccessgroup.VerifiedaccessGroup_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.verifiedaccessGroup.VerifiedaccessGroup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/verifiedaccessgroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/verifiedaccessgroup"
 
 verifiedaccessgroup.VerifiedaccessGroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -993,7 +993,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.verifiedaccessGroup.VerifiedaccessGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/verifiedaccessgroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/verifiedaccessgroup"
 
 &verifiedaccessgroup.VerifiedaccessGroupConfig {
 	Connection: interface{},
@@ -1008,7 +1008,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/verifiedaccessgroup"
 	Id: *string,
 	PolicyDocument: *string,
 	Region: *string,
-	SseConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.verifiedaccessGroup.VerifiedaccessGroupSseConfiguration,
+	SseConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.verifiedaccessGroup.VerifiedaccessGroupSseConfiguration,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
 }
@@ -1214,7 +1214,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.verifiedaccessGroup.VerifiedaccessGroupSseConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/verifiedaccessgroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/verifiedaccessgroup"
 
 &verifiedaccessgroup.VerifiedaccessGroupSseConfiguration {
 	CustomerManagedKeyEnabled: interface{},
@@ -1262,7 +1262,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.verifiedaccessGroup.VerifiedaccessGroupSseConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/verifiedaccessgroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/verifiedaccessgroup"
 
 verifiedaccessgroup.NewVerifiedaccessGroupSseConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VerifiedaccessGroupSseConfigurationOutputReference
 ```

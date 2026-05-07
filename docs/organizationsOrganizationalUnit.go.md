@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.organizationsOrganizationalUnit.OrganizationsOrganizationalUnit.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/organizationsorganizationalunit"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/organizationsorganizationalunit"
 
 organizationsorganizationalunit.NewOrganizationsOrganizationalUnit(scope Construct, id *string, config OrganizationsOrganizationalUnitConfig) OrganizationsOrganizationalUnit
 ```
@@ -421,7 +421,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.organizationsOrganizationalUnit.OrganizationsOrganizationalUnit.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/organizationsorganizationalunit"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/organizationsorganizationalunit"
 
 organizationsorganizationalunit.OrganizationsOrganizationalUnit_IsConstruct(x interface{}) *bool
 ```
@@ -453,7 +453,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.organizationsOrganizationalUnit.OrganizationsOrganizationalUnit.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/organizationsorganizationalunit"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/organizationsorganizationalunit"
 
 organizationsorganizationalunit.OrganizationsOrganizationalUnit_IsTerraformElement(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ organizationsorganizationalunit.OrganizationsOrganizationalUnit_IsTerraformEleme
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.organizationsOrganizationalUnit.OrganizationsOrganizationalUnit.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/organizationsorganizationalunit"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/organizationsorganizationalunit"
 
 organizationsorganizationalunit.OrganizationsOrganizationalUnit_IsTerraformResource(x interface{}) *bool
 ```
@@ -481,7 +481,7 @@ organizationsorganizationalunit.OrganizationsOrganizationalUnit_IsTerraformResou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.organizationsOrganizationalUnit.OrganizationsOrganizationalUnit.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/organizationsorganizationalunit"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/organizationsorganizationalunit"
 
 organizationsorganizationalunit.OrganizationsOrganizationalUnit_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -842,7 +842,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.organizationsOrganizationalUnit.OrganizationsOrganizationalUnitAccounts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/organizationsorganizationalunit"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/organizationsorganizationalunit"
 
 &organizationsorganizationalunit.OrganizationsOrganizationalUnitAccounts {
 
@@ -855,7 +855,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/organizationsorganizat
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.organizationsOrganizationalUnit.OrganizationsOrganizationalUnitConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/organizationsorganizationalunit"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/organizationsorganizationalunit"
 
 &organizationsorganizationalunit.OrganizationsOrganizationalUnitConfig {
 	Connection: interface{},
@@ -1032,7 +1032,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.organizationsOrganizationalUnit.OrganizationsOrganizationalUnitAccountsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/organizationsorganizationalunit"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/organizationsorganizationalunit"
 
 organizationsorganizationalunit.NewOrganizationsOrganizationalUnitAccountsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OrganizationsOrganizationalUnitAccountsList
 ```
@@ -1181,7 +1181,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.organizationsOrganizationalUnit.OrganizationsOrganizationalUnitAccountsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/organizationsorganizationalunit"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/organizationsorganizationalunit"
 
 organizationsorganizationalunit.NewOrganizationsOrganizationalUnitAccountsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OrganizationsOrganizationalUnitAccountsOutputReference
 ```

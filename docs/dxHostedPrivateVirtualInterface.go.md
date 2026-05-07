@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dxHostedPrivateVirtualInterface.DxHostedPrivateVirtualInterface.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dxhostedprivatevirtualinterface"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dxhostedprivatevirtualinterface"
 
 dxhostedprivatevirtualinterface.NewDxHostedPrivateVirtualInterface(scope Construct, id *string, config DxHostedPrivateVirtualInterfaceConfig) DxHostedPrivateVirtualInterface
 ```
@@ -462,7 +462,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dxHostedPrivateVirtualInterface.DxHostedPrivateVirtualInterface.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dxhostedprivatevirtualinterface"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dxhostedprivatevirtualinterface"
 
 dxhostedprivatevirtualinterface.DxHostedPrivateVirtualInterface_IsConstruct(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dxHostedPrivateVirtualInterface.DxHostedPrivateVirtualInterface.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dxhostedprivatevirtualinterface"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dxhostedprivatevirtualinterface"
 
 dxhostedprivatevirtualinterface.DxHostedPrivateVirtualInterface_IsTerraformElement(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ dxhostedprivatevirtualinterface.DxHostedPrivateVirtualInterface_IsTerraformEleme
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.dxHostedPrivateVirtualInterface.DxHostedPrivateVirtualInterface.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dxhostedprivatevirtualinterface"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dxhostedprivatevirtualinterface"
 
 dxhostedprivatevirtualinterface.DxHostedPrivateVirtualInterface_IsTerraformResource(x interface{}) *bool
 ```
@@ -522,7 +522,7 @@ dxhostedprivatevirtualinterface.DxHostedPrivateVirtualInterface_IsTerraformResou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dxHostedPrivateVirtualInterface.DxHostedPrivateVirtualInterface.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dxhostedprivatevirtualinterface"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dxhostedprivatevirtualinterface"
 
 dxhostedprivatevirtualinterface.DxHostedPrivateVirtualInterface_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1081,7 +1081,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dxHostedPrivateVirtualInterface.DxHostedPrivateVirtualInterfaceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dxhostedprivatevirtualinterface"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dxhostedprivatevirtualinterface"
 
 &dxhostedprivatevirtualinterface.DxHostedPrivateVirtualInterfaceConfig {
 	Connection: interface{},
@@ -1103,7 +1103,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dxhostedprivatevirtual
 	Id: *string,
 	Mtu: *f64,
 	Region: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.dxHostedPrivateVirtualInterface.DxHostedPrivateVirtualInterfaceTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.dxHostedPrivateVirtualInterface.DxHostedPrivateVirtualInterfaceTimeouts,
 }
 ```
 
@@ -1372,7 +1372,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dxHostedPrivateVirtualInterface.DxHostedPrivateVirtualInterfaceTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dxhostedprivatevirtualinterface"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dxhostedprivatevirtualinterface"
 
 &dxhostedprivatevirtualinterface.DxHostedPrivateVirtualInterfaceTimeouts {
 	Create: *string,
@@ -1420,7 +1420,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dxHostedPrivateVirtualInterface.DxHostedPrivateVirtualInterfaceTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dxhostedprivatevirtualinterface"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dxhostedprivatevirtualinterface"
 
 dxhostedprivatevirtualinterface.NewDxHostedPrivateVirtualInterfaceTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DxHostedPrivateVirtualInterfaceTimeoutsOutputReference
 ```

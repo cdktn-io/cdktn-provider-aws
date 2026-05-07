@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsDbParameterGroup.DataAwsDbParameterGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsdbparametergroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsdbparametergroup"
 
 dataawsdbparametergroup.NewDataAwsDbParameterGroup(scope Construct, id *string, config DataAwsDbParameterGroupConfig) DataAwsDbParameterGroup
 ```
@@ -312,7 +312,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsDbParameterGroup.DataAwsDbParameterGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsdbparametergroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsdbparametergroup"
 
 dataawsdbparametergroup.DataAwsDbParameterGroup_IsConstruct(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsDbParameterGroup.DataAwsDbParameterGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsdbparametergroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsdbparametergroup"
 
 dataawsdbparametergroup.DataAwsDbParameterGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ dataawsdbparametergroup.DataAwsDbParameterGroup_IsTerraformElement(x interface{}
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsDbParameterGroup.DataAwsDbParameterGroup.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsdbparametergroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsdbparametergroup"
 
 dataawsdbparametergroup.DataAwsDbParameterGroup_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -372,7 +372,7 @@ dataawsdbparametergroup.DataAwsDbParameterGroup_IsTerraformDataSource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsDbParameterGroup.DataAwsDbParameterGroup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsdbparametergroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsdbparametergroup"
 
 dataawsdbparametergroup.DataAwsDbParameterGroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -678,7 +678,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsDbParameterGroup.DataAwsDbParameterGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsdbparametergroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsdbparametergroup"
 
 &dataawsdbparametergroup.DataAwsDbParameterGroupConfig {
 	Connection: interface{},

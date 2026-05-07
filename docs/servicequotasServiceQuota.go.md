@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.servicequotasServiceQuota.ServicequotasServiceQuota.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/servicequotasservicequota"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/servicequotasservicequota"
 
 servicequotasservicequota.NewServicequotasServiceQuota(scope Construct, id *string, config ServicequotasServiceQuotaConfig) ServicequotasServiceQuota
 ```
@@ -414,7 +414,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.servicequotasServiceQuota.ServicequotasServiceQuota.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/servicequotasservicequota"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/servicequotasservicequota"
 
 servicequotasservicequota.ServicequotasServiceQuota_IsConstruct(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.servicequotasServiceQuota.ServicequotasServiceQuota.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/servicequotasservicequota"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/servicequotasservicequota"
 
 servicequotasservicequota.ServicequotasServiceQuota_IsTerraformElement(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ servicequotasservicequota.ServicequotasServiceQuota_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.servicequotasServiceQuota.ServicequotasServiceQuota.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/servicequotasservicequota"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/servicequotasservicequota"
 
 servicequotasservicequota.ServicequotasServiceQuota_IsTerraformResource(x interface{}) *bool
 ```
@@ -474,7 +474,7 @@ servicequotasservicequota.ServicequotasServiceQuota_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.servicequotasServiceQuota.ServicequotasServiceQuota.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/servicequotasservicequota"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/servicequotasservicequota"
 
 servicequotasservicequota.ServicequotasServiceQuota_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -901,7 +901,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.servicequotasServiceQuota.ServicequotasServiceQuotaConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/servicequotasservicequota"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/servicequotasservicequota"
 
 &servicequotasservicequota.ServicequotasServiceQuotaConfig {
 	Connection: interface{},
@@ -1078,7 +1078,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.servicequotasServiceQuota.ServicequotasServiceQuotaUsageMetric.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/servicequotasservicequota"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/servicequotasservicequota"
 
 &servicequotasservicequota.ServicequotasServiceQuotaUsageMetric {
 
@@ -1091,7 +1091,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/servicequotasservicequ
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.servicequotasServiceQuota.ServicequotasServiceQuotaUsageMetricMetricDimensions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/servicequotasservicequota"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/servicequotasservicequota"
 
 &servicequotasservicequota.ServicequotasServiceQuotaUsageMetricMetricDimensions {
 
@@ -1106,7 +1106,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/servicequotasservicequ
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.servicequotasServiceQuota.ServicequotasServiceQuotaUsageMetricList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/servicequotasservicequota"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/servicequotasservicequota"
 
 servicequotasservicequota.NewServicequotasServiceQuotaUsageMetricList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ServicequotasServiceQuotaUsageMetricList
 ```
@@ -1255,7 +1255,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.servicequotasServiceQuota.ServicequotasServiceQuotaUsageMetricMetricDimensionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/servicequotasservicequota"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/servicequotasservicequota"
 
 servicequotasservicequota.NewServicequotasServiceQuotaUsageMetricMetricDimensionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ServicequotasServiceQuotaUsageMetricMetricDimensionsList
 ```
@@ -1404,7 +1404,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.servicequotasServiceQuota.ServicequotasServiceQuotaUsageMetricMetricDimensionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/servicequotasservicequota"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/servicequotasservicequota"
 
 servicequotasservicequota.NewServicequotasServiceQuotaUsageMetricMetricDimensionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ServicequotasServiceQuotaUsageMetricMetricDimensionsOutputReference
 ```
@@ -1715,7 +1715,7 @@ func InternalValue() ServicequotasServiceQuotaUsageMetricMetricDimensions
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.servicequotasServiceQuota.ServicequotasServiceQuotaUsageMetricOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/servicequotasservicequota"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/servicequotasservicequota"
 
 servicequotasservicequota.NewServicequotasServiceQuotaUsageMetricOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ServicequotasServiceQuotaUsageMetricOutputReference
 ```
