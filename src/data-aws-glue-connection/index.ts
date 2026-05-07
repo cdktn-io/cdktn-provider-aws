@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/data-sources/glue_connection
+// https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/data-sources/glue_connection
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktn from 'cdktn';
 
 export interface DataAwsGlueConnectionConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/data-sources/glue_connection#id DataAwsGlueConnection#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/data-sources/glue_connection#id DataAwsGlueConnection#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,13 +22,550 @@ export interface DataAwsGlueConnectionConfig extends cdktn.TerraformMetaArgument
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/data-sources/glue_connection#region DataAwsGlueConnection#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/data-sources/glue_connection#region DataAwsGlueConnection#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/data-sources/glue_connection#tags DataAwsGlueConnection#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/data-sources/glue_connection#tags DataAwsGlueConnection#tags}
   */
   readonly tags?: { [key: string]: string };
+}
+export interface DataAwsGlueConnectionAuthenticationConfigurationBasicAuthenticationCredentials {
+}
+
+export function dataAwsGlueConnectionAuthenticationConfigurationBasicAuthenticationCredentialsToTerraform(struct?: DataAwsGlueConnectionAuthenticationConfigurationBasicAuthenticationCredentials): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function dataAwsGlueConnectionAuthenticationConfigurationBasicAuthenticationCredentialsToHclTerraform(struct?: DataAwsGlueConnectionAuthenticationConfigurationBasicAuthenticationCredentials): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataAwsGlueConnectionAuthenticationConfigurationBasicAuthenticationCredentialsOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsGlueConnectionAuthenticationConfigurationBasicAuthenticationCredentials | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsGlueConnectionAuthenticationConfigurationBasicAuthenticationCredentials | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // password - computed: true, optional: false, required: false
+  public get password() {
+    return this.getStringAttribute('password');
+  }
+
+  // username - computed: true, optional: false, required: false
+  public get username() {
+    return this.getStringAttribute('username');
+  }
+}
+
+export class DataAwsGlueConnectionAuthenticationConfigurationBasicAuthenticationCredentialsList extends cdktn.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsGlueConnectionAuthenticationConfigurationBasicAuthenticationCredentialsOutputReference {
+    return new DataAwsGlueConnectionAuthenticationConfigurationBasicAuthenticationCredentialsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataAwsGlueConnectionAuthenticationConfigurationOauth2PropertiesAuthorizationCodeProperties {
+}
+
+export function dataAwsGlueConnectionAuthenticationConfigurationOauth2PropertiesAuthorizationCodePropertiesToTerraform(struct?: DataAwsGlueConnectionAuthenticationConfigurationOauth2PropertiesAuthorizationCodeProperties): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function dataAwsGlueConnectionAuthenticationConfigurationOauth2PropertiesAuthorizationCodePropertiesToHclTerraform(struct?: DataAwsGlueConnectionAuthenticationConfigurationOauth2PropertiesAuthorizationCodeProperties): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataAwsGlueConnectionAuthenticationConfigurationOauth2PropertiesAuthorizationCodePropertiesOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsGlueConnectionAuthenticationConfigurationOauth2PropertiesAuthorizationCodeProperties | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsGlueConnectionAuthenticationConfigurationOauth2PropertiesAuthorizationCodeProperties | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // authorization_code - computed: true, optional: false, required: false
+  public get authorizationCode() {
+    return this.getStringAttribute('authorization_code');
+  }
+
+  // redirect_uri - computed: true, optional: false, required: false
+  public get redirectUri() {
+    return this.getStringAttribute('redirect_uri');
+  }
+}
+
+export class DataAwsGlueConnectionAuthenticationConfigurationOauth2PropertiesAuthorizationCodePropertiesList extends cdktn.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsGlueConnectionAuthenticationConfigurationOauth2PropertiesAuthorizationCodePropertiesOutputReference {
+    return new DataAwsGlueConnectionAuthenticationConfigurationOauth2PropertiesAuthorizationCodePropertiesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataAwsGlueConnectionAuthenticationConfigurationOauth2PropertiesOauth2ClientApplication {
+}
+
+export function dataAwsGlueConnectionAuthenticationConfigurationOauth2PropertiesOauth2ClientApplicationToTerraform(struct?: DataAwsGlueConnectionAuthenticationConfigurationOauth2PropertiesOauth2ClientApplication): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function dataAwsGlueConnectionAuthenticationConfigurationOauth2PropertiesOauth2ClientApplicationToHclTerraform(struct?: DataAwsGlueConnectionAuthenticationConfigurationOauth2PropertiesOauth2ClientApplication): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataAwsGlueConnectionAuthenticationConfigurationOauth2PropertiesOauth2ClientApplicationOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsGlueConnectionAuthenticationConfigurationOauth2PropertiesOauth2ClientApplication | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsGlueConnectionAuthenticationConfigurationOauth2PropertiesOauth2ClientApplication | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // aws_managed_client_application_reference - computed: true, optional: false, required: false
+  public get awsManagedClientApplicationReference() {
+    return this.getStringAttribute('aws_managed_client_application_reference');
+  }
+
+  // user_managed_client_application_client_id - computed: true, optional: false, required: false
+  public get userManagedClientApplicationClientId() {
+    return this.getStringAttribute('user_managed_client_application_client_id');
+  }
+}
+
+export class DataAwsGlueConnectionAuthenticationConfigurationOauth2PropertiesOauth2ClientApplicationList extends cdktn.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsGlueConnectionAuthenticationConfigurationOauth2PropertiesOauth2ClientApplicationOutputReference {
+    return new DataAwsGlueConnectionAuthenticationConfigurationOauth2PropertiesOauth2ClientApplicationOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataAwsGlueConnectionAuthenticationConfigurationOauth2PropertiesOauth2Credentials {
+}
+
+export function dataAwsGlueConnectionAuthenticationConfigurationOauth2PropertiesOauth2CredentialsToTerraform(struct?: DataAwsGlueConnectionAuthenticationConfigurationOauth2PropertiesOauth2Credentials): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function dataAwsGlueConnectionAuthenticationConfigurationOauth2PropertiesOauth2CredentialsToHclTerraform(struct?: DataAwsGlueConnectionAuthenticationConfigurationOauth2PropertiesOauth2Credentials): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataAwsGlueConnectionAuthenticationConfigurationOauth2PropertiesOauth2CredentialsOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsGlueConnectionAuthenticationConfigurationOauth2PropertiesOauth2Credentials | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsGlueConnectionAuthenticationConfigurationOauth2PropertiesOauth2Credentials | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // access_token - computed: true, optional: false, required: false
+  public get accessToken() {
+    return this.getStringAttribute('access_token');
+  }
+
+  // jwt_token - computed: true, optional: false, required: false
+  public get jwtToken() {
+    return this.getStringAttribute('jwt_token');
+  }
+
+  // refresh_token - computed: true, optional: false, required: false
+  public get refreshToken() {
+    return this.getStringAttribute('refresh_token');
+  }
+
+  // user_managed_client_application_client_secret - computed: true, optional: false, required: false
+  public get userManagedClientApplicationClientSecret() {
+    return this.getStringAttribute('user_managed_client_application_client_secret');
+  }
+}
+
+export class DataAwsGlueConnectionAuthenticationConfigurationOauth2PropertiesOauth2CredentialsList extends cdktn.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsGlueConnectionAuthenticationConfigurationOauth2PropertiesOauth2CredentialsOutputReference {
+    return new DataAwsGlueConnectionAuthenticationConfigurationOauth2PropertiesOauth2CredentialsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataAwsGlueConnectionAuthenticationConfigurationOauth2Properties {
+}
+
+export function dataAwsGlueConnectionAuthenticationConfigurationOauth2PropertiesToTerraform(struct?: DataAwsGlueConnectionAuthenticationConfigurationOauth2Properties): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function dataAwsGlueConnectionAuthenticationConfigurationOauth2PropertiesToHclTerraform(struct?: DataAwsGlueConnectionAuthenticationConfigurationOauth2Properties): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataAwsGlueConnectionAuthenticationConfigurationOauth2PropertiesOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsGlueConnectionAuthenticationConfigurationOauth2Properties | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsGlueConnectionAuthenticationConfigurationOauth2Properties | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // authorization_code_properties - computed: true, optional: false, required: false
+  private _authorizationCodeProperties = new DataAwsGlueConnectionAuthenticationConfigurationOauth2PropertiesAuthorizationCodePropertiesList(this, "authorization_code_properties", false);
+  public get authorizationCodeProperties() {
+    return this._authorizationCodeProperties;
+  }
+
+  // oauth2_client_application - computed: true, optional: false, required: false
+  private _oauth2ClientApplication = new DataAwsGlueConnectionAuthenticationConfigurationOauth2PropertiesOauth2ClientApplicationList(this, "oauth2_client_application", false);
+  public get oauth2ClientApplication() {
+    return this._oauth2ClientApplication;
+  }
+
+  // oauth2_credentials - computed: true, optional: false, required: false
+  private _oauth2Credentials = new DataAwsGlueConnectionAuthenticationConfigurationOauth2PropertiesOauth2CredentialsList(this, "oauth2_credentials", false);
+  public get oauth2Credentials() {
+    return this._oauth2Credentials;
+  }
+
+  // oauth2_grant_type - computed: true, optional: false, required: false
+  public get oauth2GrantType() {
+    return this.getStringAttribute('oauth2_grant_type');
+  }
+
+  // token_url - computed: true, optional: false, required: false
+  public get tokenUrl() {
+    return this.getStringAttribute('token_url');
+  }
+
+  // token_url_parameters_map - computed: true, optional: false, required: false
+  private _tokenUrlParametersMap = new cdktn.StringMap(this, "token_url_parameters_map");
+  public get tokenUrlParametersMap() {
+    return this._tokenUrlParametersMap;
+  }
+}
+
+export class DataAwsGlueConnectionAuthenticationConfigurationOauth2PropertiesList extends cdktn.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsGlueConnectionAuthenticationConfigurationOauth2PropertiesOutputReference {
+    return new DataAwsGlueConnectionAuthenticationConfigurationOauth2PropertiesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataAwsGlueConnectionAuthenticationConfiguration {
+}
+
+export function dataAwsGlueConnectionAuthenticationConfigurationToTerraform(struct?: DataAwsGlueConnectionAuthenticationConfiguration): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function dataAwsGlueConnectionAuthenticationConfigurationToHclTerraform(struct?: DataAwsGlueConnectionAuthenticationConfiguration): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataAwsGlueConnectionAuthenticationConfigurationOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsGlueConnectionAuthenticationConfiguration | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsGlueConnectionAuthenticationConfiguration | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // authentication_type - computed: true, optional: false, required: false
+  public get authenticationType() {
+    return this.getStringAttribute('authentication_type');
+  }
+
+  // basic_authentication_credentials - computed: true, optional: false, required: false
+  private _basicAuthenticationCredentials = new DataAwsGlueConnectionAuthenticationConfigurationBasicAuthenticationCredentialsList(this, "basic_authentication_credentials", false);
+  public get basicAuthenticationCredentials() {
+    return this._basicAuthenticationCredentials;
+  }
+
+  // custom_authentication_credentials - computed: true, optional: false, required: false
+  private _customAuthenticationCredentials = new cdktn.StringMap(this, "custom_authentication_credentials");
+  public get customAuthenticationCredentials() {
+    return this._customAuthenticationCredentials;
+  }
+
+  // kms_key_arn - computed: true, optional: false, required: false
+  public get kmsKeyArn() {
+    return this.getStringAttribute('kms_key_arn');
+  }
+
+  // oauth2_properties - computed: true, optional: false, required: false
+  private _oauth2Properties = new DataAwsGlueConnectionAuthenticationConfigurationOauth2PropertiesList(this, "oauth2_properties", false);
+  public get oauth2Properties() {
+    return this._oauth2Properties;
+  }
+
+  // secret_arn - computed: true, optional: false, required: false
+  public get secretArn() {
+    return this.getStringAttribute('secret_arn');
+  }
+}
+
+export class DataAwsGlueConnectionAuthenticationConfigurationList extends cdktn.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsGlueConnectionAuthenticationConfigurationOutputReference {
+    return new DataAwsGlueConnectionAuthenticationConfigurationOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
 }
 export interface DataAwsGlueConnectionPhysicalConnectionRequirements {
 }
@@ -117,7 +654,7 @@ export class DataAwsGlueConnectionPhysicalConnectionRequirementsList extends cdk
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/data-sources/glue_connection aws_glue_connection}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/data-sources/glue_connection aws_glue_connection}
 */
 export class DataAwsGlueConnection extends cdktn.TerraformDataSource {
 
@@ -133,7 +670,7 @@ export class DataAwsGlueConnection extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataAwsGlueConnection resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsGlueConnection to import
-  * @param importFromId The id of the existing DataAwsGlueConnection that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/data-sources/glue_connection#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsGlueConnection that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/data-sources/glue_connection#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsGlueConnection to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -145,7 +682,7 @@ export class DataAwsGlueConnection extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/data-sources/glue_connection aws_glue_connection} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/data-sources/glue_connection aws_glue_connection} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -156,7 +693,7 @@ export class DataAwsGlueConnection extends cdktn.TerraformDataSource {
       terraformResourceType: 'aws_glue_connection',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.43.0',
+        providerVersion: '6.44.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
@@ -185,6 +722,12 @@ export class DataAwsGlueConnection extends cdktn.TerraformDataSource {
   private _athenaProperties = new cdktn.StringMap(this, "athena_properties");
   public get athenaProperties() {
     return this._athenaProperties;
+  }
+
+  // authentication_configuration - computed: true, optional: false, required: false
+  private _authenticationConfiguration = new DataAwsGlueConnectionAuthenticationConfigurationList(this, "authentication_configuration", false);
+  public get authenticationConfiguration() {
+    return this._authenticationConfiguration;
   }
 
   // catalog_id - computed: true, optional: false, required: false

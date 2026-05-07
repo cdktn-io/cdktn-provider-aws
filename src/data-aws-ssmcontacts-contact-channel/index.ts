@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/data-sources/ssmcontacts_contact_channel
+// https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/data-sources/ssmcontacts_contact_channel
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,11 +13,11 @@ import * as cdktn from 'cdktn';
 
 export interface DataAwsSsmcontactsContactChannelConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/data-sources/ssmcontacts_contact_channel#arn DataAwsSsmcontactsContactChannel#arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/data-sources/ssmcontacts_contact_channel#arn DataAwsSsmcontactsContactChannel#arn}
   */
   readonly arn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/data-sources/ssmcontacts_contact_channel#id DataAwsSsmcontactsContactChannel#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/data-sources/ssmcontacts_contact_channel#id DataAwsSsmcontactsContactChannel#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -26,7 +26,7 @@ export interface DataAwsSsmcontactsContactChannelConfig extends cdktn.TerraformM
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/data-sources/ssmcontacts_contact_channel#region DataAwsSsmcontactsContactChannel#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/data-sources/ssmcontacts_contact_channel#region DataAwsSsmcontactsContactChannel#region}
   */
   readonly region?: string;
 }
@@ -107,7 +107,7 @@ export class DataAwsSsmcontactsContactChannelDeliveryAddressList extends cdktn.C
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/data-sources/ssmcontacts_contact_channel aws_ssmcontacts_contact_channel}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/data-sources/ssmcontacts_contact_channel aws_ssmcontacts_contact_channel}
 */
 export class DataAwsSsmcontactsContactChannel extends cdktn.TerraformDataSource {
 
@@ -123,7 +123,7 @@ export class DataAwsSsmcontactsContactChannel extends cdktn.TerraformDataSource 
   * Generates CDKTN code for importing a DataAwsSsmcontactsContactChannel resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsSsmcontactsContactChannel to import
-  * @param importFromId The id of the existing DataAwsSsmcontactsContactChannel that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/data-sources/ssmcontacts_contact_channel#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsSsmcontactsContactChannel that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/data-sources/ssmcontacts_contact_channel#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsSsmcontactsContactChannel to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -135,7 +135,7 @@ export class DataAwsSsmcontactsContactChannel extends cdktn.TerraformDataSource 
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.43.0/docs/data-sources/ssmcontacts_contact_channel aws_ssmcontacts_contact_channel} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/data-sources/ssmcontacts_contact_channel aws_ssmcontacts_contact_channel} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -146,7 +146,7 @@ export class DataAwsSsmcontactsContactChannel extends cdktn.TerraformDataSource 
       terraformResourceType: 'aws_ssmcontacts_contact_channel',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.43.0',
+        providerVersion: '6.44.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
