@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lakeformationLfTagExpression.LakeformationLfTagExpression.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lakeformationlftagexpression"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lakeformationlftagexpression"
 
 lakeformationlftagexpression.NewLakeformationLfTagExpression(scope Construct, id *string, config LakeformationLfTagExpressionConfig) LakeformationLfTagExpression
 ```
@@ -441,7 +441,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.lakeformationLfTagExpression.LakeformationLfTagExpression.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lakeformationlftagexpression"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lakeformationlftagexpression"
 
 lakeformationlftagexpression.LakeformationLfTagExpression_IsConstruct(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.lakeformationLfTagExpression.LakeformationLfTagExpression.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lakeformationlftagexpression"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lakeformationlftagexpression"
 
 lakeformationlftagexpression.LakeformationLfTagExpression_IsTerraformElement(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ lakeformationlftagexpression.LakeformationLfTagExpression_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.lakeformationLfTagExpression.LakeformationLfTagExpression.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lakeformationlftagexpression"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lakeformationlftagexpression"
 
 lakeformationlftagexpression.LakeformationLfTagExpression_IsTerraformResource(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ lakeformationlftagexpression.LakeformationLfTagExpression_IsTerraformResource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.lakeformationLfTagExpression.LakeformationLfTagExpression.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lakeformationlftagexpression"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lakeformationlftagexpression"
 
 lakeformationlftagexpression.LakeformationLfTagExpression_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -840,7 +840,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.lakeformationLfTagExpression.LakeformationLfTagExpressionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lakeformationlftagexpression"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lakeformationlftagexpression"
 
 &lakeformationlftagexpression.LakeformationLfTagExpressionConfig {
 	Connection: interface{},
@@ -1022,7 +1022,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.lakeformationLfTagExpression.LakeformationLfTagExpressionExpression.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lakeformationlftagexpression"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lakeformationlftagexpression"
 
 &lakeformationlftagexpression.LakeformationLfTagExpressionExpression {
 	TagKey: *string,
@@ -1070,7 +1070,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lakeformationLfTagExpression.LakeformationLfTagExpressionExpressionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lakeformationlftagexpression"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lakeformationlftagexpression"
 
 lakeformationlftagexpression.NewLakeformationLfTagExpressionExpressionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LakeformationLfTagExpressionExpressionList
 ```
@@ -1230,7 +1230,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lakeformationLfTagExpression.LakeformationLfTagExpressionExpressionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/lakeformationlftagexpression"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/lakeformationlftagexpression"
 
 lakeformationlftagexpression.NewLakeformationLfTagExpressionExpressionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LakeformationLfTagExpressionExpressionOutputReference
 ```

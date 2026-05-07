@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.verifiedpermissionsIdentitySource.VerifiedpermissionsIdentitySource.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/verifiedpermissionsidentitysource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/verifiedpermissionsidentitysource"
 
 verifiedpermissionsidentitysource.NewVerifiedpermissionsIdentitySource(scope Construct, id *string, config VerifiedpermissionsIdentitySourceConfig) VerifiedpermissionsIdentitySource
 ```
@@ -434,7 +434,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.verifiedpermissionsIdentitySource.VerifiedpermissionsIdentitySource.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/verifiedpermissionsidentitysource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/verifiedpermissionsidentitysource"
 
 verifiedpermissionsidentitysource.VerifiedpermissionsIdentitySource_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.verifiedpermissionsIdentitySource.VerifiedpermissionsIdentitySource.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/verifiedpermissionsidentitysource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/verifiedpermissionsidentitysource"
 
 verifiedpermissionsidentitysource.VerifiedpermissionsIdentitySource_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ verifiedpermissionsidentitysource.VerifiedpermissionsIdentitySource_IsTerraformE
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.verifiedpermissionsIdentitySource.VerifiedpermissionsIdentitySource.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/verifiedpermissionsidentitysource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/verifiedpermissionsidentitysource"
 
 verifiedpermissionsidentitysource.VerifiedpermissionsIdentitySource_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ verifiedpermissionsidentitysource.VerifiedpermissionsIdentitySource_IsTerraformR
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.verifiedpermissionsIdentitySource.VerifiedpermissionsIdentitySource.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/verifiedpermissionsidentitysource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/verifiedpermissionsidentitysource"
 
 verifiedpermissionsidentitysource.VerifiedpermissionsIdentitySource_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -822,7 +822,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.verifiedpermissionsIdentitySource.VerifiedpermissionsIdentitySourceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/verifiedpermissionsidentitysource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/verifiedpermissionsidentitysource"
 
 &verifiedpermissionsidentitysource.VerifiedpermissionsIdentitySourceConfig {
 	Connection: interface{},
@@ -984,7 +984,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.verifiedpermissionsIdentitySource.VerifiedpermissionsIdentitySourceConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/verifiedpermissionsidentitysource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/verifiedpermissionsidentitysource"
 
 &verifiedpermissionsidentitysource.VerifiedpermissionsIdentitySourceConfiguration {
 	CognitoUserPoolConfiguration: interface{},
@@ -1034,7 +1034,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.verifiedpermissionsIdentitySource.VerifiedpermissionsIdentitySourceConfigurationCognitoUserPoolConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/verifiedpermissionsidentitysource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/verifiedpermissionsidentitysource"
 
 &verifiedpermissionsidentitysource.VerifiedpermissionsIdentitySourceConfigurationCognitoUserPoolConfiguration {
 	UserPoolArn: *string,
@@ -1096,7 +1096,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.verifiedpermissionsIdentitySource.VerifiedpermissionsIdentitySourceConfigurationCognitoUserPoolConfigurationGroupConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/verifiedpermissionsidentitysource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/verifiedpermissionsidentitysource"
 
 &verifiedpermissionsidentitysource.VerifiedpermissionsIdentitySourceConfigurationCognitoUserPoolConfigurationGroupConfiguration {
 	GroupEntityType: *string,
@@ -1128,7 +1128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.verifiedpermissionsIdentitySource.VerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/verifiedpermissionsidentitysource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/verifiedpermissionsidentitysource"
 
 &verifiedpermissionsidentitysource.VerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfiguration {
 	Issuer: *string,
@@ -1206,7 +1206,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.verifiedpermissionsIdentitySource.VerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationGroupConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/verifiedpermissionsidentitysource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/verifiedpermissionsidentitysource"
 
 &verifiedpermissionsidentitysource.VerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationGroupConfiguration {
 	GroupClaim: *string,
@@ -1252,7 +1252,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.verifiedpermissionsIdentitySource.VerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationTokenSelection.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/verifiedpermissionsidentitysource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/verifiedpermissionsidentitysource"
 
 &verifiedpermissionsidentitysource.VerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationTokenSelection {
 	AccessTokenOnly: interface{},
@@ -1302,7 +1302,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.verifiedpermissionsIdentitySource.VerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationTokenSelectionAccessTokenOnly.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/verifiedpermissionsidentitysource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/verifiedpermissionsidentitysource"
 
 &verifiedpermissionsidentitysource.VerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationTokenSelectionAccessTokenOnly {
 	Audiences: *[]*string,
@@ -1348,7 +1348,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.verifiedpermissionsIdentitySource.VerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationTokenSelectionIdentityTokenOnly.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/verifiedpermissionsidentitysource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/verifiedpermissionsidentitysource"
 
 &verifiedpermissionsidentitysource.VerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationTokenSelectionIdentityTokenOnly {
 	ClientIds: *[]*string,
@@ -1396,7 +1396,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.verifiedpermissionsIdentitySource.VerifiedpermissionsIdentitySourceConfigurationCognitoUserPoolConfigurationGroupConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/verifiedpermissionsidentitysource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/verifiedpermissionsidentitysource"
 
 verifiedpermissionsidentitysource.NewVerifiedpermissionsIdentitySourceConfigurationCognitoUserPoolConfigurationGroupConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) VerifiedpermissionsIdentitySourceConfigurationCognitoUserPoolConfigurationGroupConfigurationList
 ```
@@ -1556,7 +1556,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.verifiedpermissionsIdentitySource.VerifiedpermissionsIdentitySourceConfigurationCognitoUserPoolConfigurationGroupConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/verifiedpermissionsidentitysource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/verifiedpermissionsidentitysource"
 
 verifiedpermissionsidentitysource.NewVerifiedpermissionsIdentitySourceConfigurationCognitoUserPoolConfigurationGroupConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) VerifiedpermissionsIdentitySourceConfigurationCognitoUserPoolConfigurationGroupConfigurationOutputReference
 ```
@@ -1845,7 +1845,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.verifiedpermissionsIdentitySource.VerifiedpermissionsIdentitySourceConfigurationCognitoUserPoolConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/verifiedpermissionsidentitysource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/verifiedpermissionsidentitysource"
 
 verifiedpermissionsidentitysource.NewVerifiedpermissionsIdentitySourceConfigurationCognitoUserPoolConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) VerifiedpermissionsIdentitySourceConfigurationCognitoUserPoolConfigurationList
 ```
@@ -2005,7 +2005,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.verifiedpermissionsIdentitySource.VerifiedpermissionsIdentitySourceConfigurationCognitoUserPoolConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/verifiedpermissionsidentitysource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/verifiedpermissionsidentitysource"
 
 verifiedpermissionsidentitysource.NewVerifiedpermissionsIdentitySourceConfigurationCognitoUserPoolConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) VerifiedpermissionsIdentitySourceConfigurationCognitoUserPoolConfigurationOutputReference
 ```
@@ -2365,7 +2365,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.verifiedpermissionsIdentitySource.VerifiedpermissionsIdentitySourceConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/verifiedpermissionsidentitysource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/verifiedpermissionsidentitysource"
 
 verifiedpermissionsidentitysource.NewVerifiedpermissionsIdentitySourceConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) VerifiedpermissionsIdentitySourceConfigurationList
 ```
@@ -2525,7 +2525,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.verifiedpermissionsIdentitySource.VerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationGroupConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/verifiedpermissionsidentitysource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/verifiedpermissionsidentitysource"
 
 verifiedpermissionsidentitysource.NewVerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationGroupConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) VerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationGroupConfigurationList
 ```
@@ -2685,7 +2685,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.verifiedpermissionsIdentitySource.VerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationGroupConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/verifiedpermissionsidentitysource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/verifiedpermissionsidentitysource"
 
 verifiedpermissionsidentitysource.NewVerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationGroupConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) VerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationGroupConfigurationOutputReference
 ```
@@ -2996,7 +2996,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.verifiedpermissionsIdentitySource.VerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/verifiedpermissionsidentitysource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/verifiedpermissionsidentitysource"
 
 verifiedpermissionsidentitysource.NewVerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) VerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationList
 ```
@@ -3156,7 +3156,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.verifiedpermissionsIdentitySource.VerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/verifiedpermissionsidentitysource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/verifiedpermissionsidentitysource"
 
 verifiedpermissionsidentitysource.NewVerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) VerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationOutputReference
 ```
@@ -3558,7 +3558,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.verifiedpermissionsIdentitySource.VerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationTokenSelectionAccessTokenOnlyList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/verifiedpermissionsidentitysource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/verifiedpermissionsidentitysource"
 
 verifiedpermissionsidentitysource.NewVerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationTokenSelectionAccessTokenOnlyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) VerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationTokenSelectionAccessTokenOnlyList
 ```
@@ -3718,7 +3718,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.verifiedpermissionsIdentitySource.VerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationTokenSelectionAccessTokenOnlyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/verifiedpermissionsidentitysource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/verifiedpermissionsidentitysource"
 
 verifiedpermissionsidentitysource.NewVerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationTokenSelectionAccessTokenOnlyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) VerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationTokenSelectionAccessTokenOnlyOutputReference
 ```
@@ -4043,7 +4043,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.verifiedpermissionsIdentitySource.VerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationTokenSelectionIdentityTokenOnlyList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/verifiedpermissionsidentitysource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/verifiedpermissionsidentitysource"
 
 verifiedpermissionsidentitysource.NewVerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationTokenSelectionIdentityTokenOnlyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) VerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationTokenSelectionIdentityTokenOnlyList
 ```
@@ -4203,7 +4203,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.verifiedpermissionsIdentitySource.VerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationTokenSelectionIdentityTokenOnlyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/verifiedpermissionsidentitysource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/verifiedpermissionsidentitysource"
 
 verifiedpermissionsidentitysource.NewVerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationTokenSelectionIdentityTokenOnlyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) VerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationTokenSelectionIdentityTokenOnlyOutputReference
 ```
@@ -4528,7 +4528,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.verifiedpermissionsIdentitySource.VerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationTokenSelectionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/verifiedpermissionsidentitysource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/verifiedpermissionsidentitysource"
 
 verifiedpermissionsidentitysource.NewVerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationTokenSelectionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) VerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationTokenSelectionList
 ```
@@ -4688,7 +4688,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.verifiedpermissionsIdentitySource.VerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationTokenSelectionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/verifiedpermissionsidentitysource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/verifiedpermissionsidentitysource"
 
 verifiedpermissionsidentitysource.NewVerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationTokenSelectionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) VerifiedpermissionsIdentitySourceConfigurationOpenIdConnectConfigurationTokenSelectionOutputReference
 ```
@@ -5039,7 +5039,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.verifiedpermissionsIdentitySource.VerifiedpermissionsIdentitySourceConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/verifiedpermissionsidentitysource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/verifiedpermissionsidentitysource"
 
 verifiedpermissionsidentitysource.NewVerifiedpermissionsIdentitySourceConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) VerifiedpermissionsIdentitySourceConfigurationOutputReference
 ```

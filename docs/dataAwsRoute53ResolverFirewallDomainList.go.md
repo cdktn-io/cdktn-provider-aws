@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsRoute53ResolverFirewallDomainList.DataAwsRoute53ResolverFirewallDomainList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsroute53resolverfirewalldomainlist"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsroute53resolverfirewalldomainlist"
 
 dataawsroute53resolverfirewalldomainlist.NewDataAwsRoute53ResolverFirewallDomainList(scope Construct, id *string, config DataAwsRoute53ResolverFirewallDomainListConfig) DataAwsRoute53ResolverFirewallDomainList
 ```
@@ -312,7 +312,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsRoute53ResolverFirewallDomainList.DataAwsRoute53ResolverFirewallDomainList.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsroute53resolverfirewalldomainlist"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsroute53resolverfirewalldomainlist"
 
 dataawsroute53resolverfirewalldomainlist.DataAwsRoute53ResolverFirewallDomainList_IsConstruct(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsRoute53ResolverFirewallDomainList.DataAwsRoute53ResolverFirewallDomainList.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsroute53resolverfirewalldomainlist"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsroute53resolverfirewalldomainlist"
 
 dataawsroute53resolverfirewalldomainlist.DataAwsRoute53ResolverFirewallDomainList_IsTerraformElement(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ dataawsroute53resolverfirewalldomainlist.DataAwsRoute53ResolverFirewallDomainLis
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsRoute53ResolverFirewallDomainList.DataAwsRoute53ResolverFirewallDomainList.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsroute53resolverfirewalldomainlist"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsroute53resolverfirewalldomainlist"
 
 dataawsroute53resolverfirewalldomainlist.DataAwsRoute53ResolverFirewallDomainList_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -372,7 +372,7 @@ dataawsroute53resolverfirewalldomainlist.DataAwsRoute53ResolverFirewallDomainLis
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsRoute53ResolverFirewallDomainList.DataAwsRoute53ResolverFirewallDomainList.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsroute53resolverfirewalldomainlist"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsroute53resolverfirewalldomainlist"
 
 dataawsroute53resolverfirewalldomainlist.DataAwsRoute53ResolverFirewallDomainList_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -744,7 +744,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsRoute53ResolverFirewallDomainList.DataAwsRoute53ResolverFirewallDomainListConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsroute53resolverfirewalldomainlist"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsroute53resolverfirewalldomainlist"
 
 &dataawsroute53resolverfirewalldomainlist.DataAwsRoute53ResolverFirewallDomainListConfig {
 	Connection: interface{},

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsNeptuneEngineVersion.DataAwsNeptuneEngineVersion.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsneptuneengineversion"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsneptuneengineversion"
 
 dataawsneptuneengineversion.NewDataAwsNeptuneEngineVersion(scope Construct, id *string, config DataAwsNeptuneEngineVersionConfig) DataAwsNeptuneEngineVersion
 ```
@@ -382,7 +382,7 @@ func ResetVersion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsNeptuneEngineVersion.DataAwsNeptuneEngineVersion.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsneptuneengineversion"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsneptuneengineversion"
 
 dataawsneptuneengineversion.DataAwsNeptuneEngineVersion_IsConstruct(x interface{}) *bool
 ```
@@ -414,7 +414,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsNeptuneEngineVersion.DataAwsNeptuneEngineVersion.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsneptuneengineversion"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsneptuneengineversion"
 
 dataawsneptuneengineversion.DataAwsNeptuneEngineVersion_IsTerraformElement(x interface{}) *bool
 ```
@@ -428,7 +428,7 @@ dataawsneptuneengineversion.DataAwsNeptuneEngineVersion_IsTerraformElement(x int
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsNeptuneEngineVersion.DataAwsNeptuneEngineVersion.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsneptuneengineversion"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsneptuneengineversion"
 
 dataawsneptuneengineversion.DataAwsNeptuneEngineVersion_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -442,7 +442,7 @@ dataawsneptuneengineversion.DataAwsNeptuneEngineVersion_IsTerraformDataSource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsNeptuneEngineVersion.DataAwsNeptuneEngineVersion.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsneptuneengineversion"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsneptuneengineversion"
 
 dataawsneptuneengineversion.DataAwsNeptuneEngineVersion_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1056,7 +1056,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsNeptuneEngineVersion.DataAwsNeptuneEngineVersionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsneptuneengineversion"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsneptuneengineversion"
 
 &dataawsneptuneengineversion.DataAwsNeptuneEngineVersionConfig {
 	Connection: interface{},

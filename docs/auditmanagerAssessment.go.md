@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.auditmanagerAssessment.AuditmanagerAssessment.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/auditmanagerassessment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/auditmanagerassessment"
 
 auditmanagerassessment.NewAuditmanagerAssessment(scope Construct, id *string, config AuditmanagerAssessmentConfig) AuditmanagerAssessment
 ```
@@ -481,7 +481,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.auditmanagerAssessment.AuditmanagerAssessment.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/auditmanagerassessment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/auditmanagerassessment"
 
 auditmanagerassessment.AuditmanagerAssessment_IsConstruct(x interface{}) *bool
 ```
@@ -513,7 +513,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.auditmanagerAssessment.AuditmanagerAssessment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/auditmanagerassessment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/auditmanagerassessment"
 
 auditmanagerassessment.AuditmanagerAssessment_IsTerraformElement(x interface{}) *bool
 ```
@@ -527,7 +527,7 @@ auditmanagerassessment.AuditmanagerAssessment_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.auditmanagerAssessment.AuditmanagerAssessment.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/auditmanagerassessment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/auditmanagerassessment"
 
 auditmanagerassessment.AuditmanagerAssessment_IsTerraformResource(x interface{}) *bool
 ```
@@ -541,7 +541,7 @@ auditmanagerassessment.AuditmanagerAssessment_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.auditmanagerAssessment.AuditmanagerAssessment.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/auditmanagerassessment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/auditmanagerassessment"
 
 auditmanagerassessment.AuditmanagerAssessment_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1001,7 +1001,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.auditmanagerAssessment.AuditmanagerAssessmentAssessmentReportsDestination.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/auditmanagerassessment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/auditmanagerassessment"
 
 &auditmanagerassessment.AuditmanagerAssessmentAssessmentReportsDestination {
 	Destination: *string,
@@ -1047,7 +1047,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.auditmanagerAssessment.AuditmanagerAssessmentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/auditmanagerassessment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/auditmanagerassessment"
 
 &auditmanagerassessment.AuditmanagerAssessmentConfig {
 	Connection: interface{},
@@ -1269,7 +1269,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.auditmanagerAssessment.AuditmanagerAssessmentRoles.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/auditmanagerassessment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/auditmanagerassessment"
 
 &auditmanagerassessment.AuditmanagerAssessmentRoles {
 	RoleArn: *string,
@@ -1315,7 +1315,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.auditmanagerAssessment.AuditmanagerAssessmentRolesAll.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/auditmanagerassessment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/auditmanagerassessment"
 
 &auditmanagerassessment.AuditmanagerAssessmentRolesAll {
 
@@ -1328,7 +1328,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/auditmanagerassessment
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.auditmanagerAssessment.AuditmanagerAssessmentScope.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/auditmanagerassessment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/auditmanagerassessment"
 
 &auditmanagerassessment.AuditmanagerAssessmentScope {
 	AwsAccounts: interface{},
@@ -1378,7 +1378,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.auditmanagerAssessment.AuditmanagerAssessmentScopeAwsAccounts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/auditmanagerassessment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/auditmanagerassessment"
 
 &auditmanagerassessment.AuditmanagerAssessmentScopeAwsAccounts {
 	Id: *string,
@@ -1413,7 +1413,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.auditmanagerAssessment.AuditmanagerAssessmentScopeAwsServices.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/auditmanagerassessment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/auditmanagerassessment"
 
 &auditmanagerassessment.AuditmanagerAssessmentScopeAwsServices {
 	ServiceName: *string,
@@ -1447,7 +1447,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.auditmanagerAssessment.AuditmanagerAssessmentAssessmentReportsDestinationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/auditmanagerassessment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/auditmanagerassessment"
 
 auditmanagerassessment.NewAuditmanagerAssessmentAssessmentReportsDestinationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AuditmanagerAssessmentAssessmentReportsDestinationList
 ```
@@ -1607,7 +1607,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.auditmanagerAssessment.AuditmanagerAssessmentAssessmentReportsDestinationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/auditmanagerassessment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/auditmanagerassessment"
 
 auditmanagerassessment.NewAuditmanagerAssessmentAssessmentReportsDestinationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AuditmanagerAssessmentAssessmentReportsDestinationOutputReference
 ```
@@ -1918,7 +1918,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.auditmanagerAssessment.AuditmanagerAssessmentRolesAllList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/auditmanagerassessment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/auditmanagerassessment"
 
 auditmanagerassessment.NewAuditmanagerAssessmentRolesAllList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AuditmanagerAssessmentRolesAllList
 ```
@@ -2067,7 +2067,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.auditmanagerAssessment.AuditmanagerAssessmentRolesAllOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/auditmanagerassessment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/auditmanagerassessment"
 
 auditmanagerassessment.NewAuditmanagerAssessmentRolesAllOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AuditmanagerAssessmentRolesAllOutputReference
 ```
@@ -2356,7 +2356,7 @@ func InternalValue() AuditmanagerAssessmentRolesAll
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.auditmanagerAssessment.AuditmanagerAssessmentRolesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/auditmanagerassessment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/auditmanagerassessment"
 
 auditmanagerassessment.NewAuditmanagerAssessmentRolesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AuditmanagerAssessmentRolesList
 ```
@@ -2516,7 +2516,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.auditmanagerAssessment.AuditmanagerAssessmentRolesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/auditmanagerassessment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/auditmanagerassessment"
 
 auditmanagerassessment.NewAuditmanagerAssessmentRolesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AuditmanagerAssessmentRolesOutputReference
 ```
@@ -2827,7 +2827,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.auditmanagerAssessment.AuditmanagerAssessmentScopeAwsAccountsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/auditmanagerassessment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/auditmanagerassessment"
 
 auditmanagerassessment.NewAuditmanagerAssessmentScopeAwsAccountsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AuditmanagerAssessmentScopeAwsAccountsList
 ```
@@ -2987,7 +2987,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.auditmanagerAssessment.AuditmanagerAssessmentScopeAwsAccountsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/auditmanagerassessment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/auditmanagerassessment"
 
 auditmanagerassessment.NewAuditmanagerAssessmentScopeAwsAccountsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AuditmanagerAssessmentScopeAwsAccountsOutputReference
 ```
@@ -3276,7 +3276,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.auditmanagerAssessment.AuditmanagerAssessmentScopeAwsServicesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/auditmanagerassessment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/auditmanagerassessment"
 
 auditmanagerassessment.NewAuditmanagerAssessmentScopeAwsServicesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AuditmanagerAssessmentScopeAwsServicesList
 ```
@@ -3436,7 +3436,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.auditmanagerAssessment.AuditmanagerAssessmentScopeAwsServicesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/auditmanagerassessment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/auditmanagerassessment"
 
 auditmanagerassessment.NewAuditmanagerAssessmentScopeAwsServicesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AuditmanagerAssessmentScopeAwsServicesOutputReference
 ```
@@ -3725,7 +3725,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.auditmanagerAssessment.AuditmanagerAssessmentScopeList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/auditmanagerassessment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/auditmanagerassessment"
 
 auditmanagerassessment.NewAuditmanagerAssessmentScopeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AuditmanagerAssessmentScopeList
 ```
@@ -3885,7 +3885,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.auditmanagerAssessment.AuditmanagerAssessmentScopeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/auditmanagerassessment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/auditmanagerassessment"
 
 auditmanagerassessment.NewAuditmanagerAssessmentScopeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AuditmanagerAssessmentScopeOutputReference
 ```

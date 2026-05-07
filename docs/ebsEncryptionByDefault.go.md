@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ebsEncryptionByDefault.EbsEncryptionByDefault.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/ebsencryptionbydefault"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ebsencryptionbydefault"
 
 ebsencryptionbydefault.NewEbsEncryptionByDefault(scope Construct, id *string, config EbsEncryptionByDefaultConfig) EbsEncryptionByDefault
 ```
@@ -421,7 +421,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.ebsEncryptionByDefault.EbsEncryptionByDefault.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/ebsencryptionbydefault"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ebsencryptionbydefault"
 
 ebsencryptionbydefault.EbsEncryptionByDefault_IsConstruct(x interface{}) *bool
 ```
@@ -453,7 +453,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.ebsEncryptionByDefault.EbsEncryptionByDefault.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/ebsencryptionbydefault"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ebsencryptionbydefault"
 
 ebsencryptionbydefault.EbsEncryptionByDefault_IsTerraformElement(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ ebsencryptionbydefault.EbsEncryptionByDefault_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.ebsEncryptionByDefault.EbsEncryptionByDefault.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/ebsencryptionbydefault"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ebsencryptionbydefault"
 
 ebsencryptionbydefault.EbsEncryptionByDefault_IsTerraformResource(x interface{}) *bool
 ```
@@ -481,7 +481,7 @@ ebsencryptionbydefault.EbsEncryptionByDefault_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.ebsEncryptionByDefault.EbsEncryptionByDefault.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/ebsencryptionbydefault"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ebsencryptionbydefault"
 
 ebsencryptionbydefault.EbsEncryptionByDefault_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -776,7 +776,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ebsEncryptionByDefault.EbsEncryptionByDefaultConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/ebsencryptionbydefault"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ebsencryptionbydefault"
 
 &ebsencryptionbydefault.EbsEncryptionByDefaultConfig {
 	Connection: interface{},

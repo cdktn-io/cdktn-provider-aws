@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.eksAccessPolicyAssociation.EksAccessPolicyAssociation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/eksaccesspolicyassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/eksaccesspolicyassociation"
 
 eksaccesspolicyassociation.NewEksAccessPolicyAssociation(scope Construct, id *string, config EksAccessPolicyAssociationConfig) EksAccessPolicyAssociation
 ```
@@ -447,7 +447,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.eksAccessPolicyAssociation.EksAccessPolicyAssociation.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/eksaccesspolicyassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/eksaccesspolicyassociation"
 
 eksaccesspolicyassociation.EksAccessPolicyAssociation_IsConstruct(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.eksAccessPolicyAssociation.EksAccessPolicyAssociation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/eksaccesspolicyassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/eksaccesspolicyassociation"
 
 eksaccesspolicyassociation.EksAccessPolicyAssociation_IsTerraformElement(x interface{}) *bool
 ```
@@ -493,7 +493,7 @@ eksaccesspolicyassociation.EksAccessPolicyAssociation_IsTerraformElement(x inter
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.eksAccessPolicyAssociation.EksAccessPolicyAssociation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/eksaccesspolicyassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/eksaccesspolicyassociation"
 
 eksaccesspolicyassociation.EksAccessPolicyAssociation_IsTerraformResource(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ eksaccesspolicyassociation.EksAccessPolicyAssociation_IsTerraformResource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.eksAccessPolicyAssociation.EksAccessPolicyAssociation.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/eksaccesspolicyassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/eksaccesspolicyassociation"
 
 eksaccesspolicyassociation.EksAccessPolicyAssociation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -912,7 +912,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.eksAccessPolicyAssociation.EksAccessPolicyAssociationAccessScope.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/eksaccesspolicyassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/eksaccesspolicyassociation"
 
 &eksaccesspolicyassociation.EksAccessPolicyAssociationAccessScope {
 	Type: *string,
@@ -958,7 +958,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.eksAccessPolicyAssociation.EksAccessPolicyAssociationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/eksaccesspolicyassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/eksaccesspolicyassociation"
 
 &eksaccesspolicyassociation.EksAccessPolicyAssociationConfig {
 	Connection: interface{},
@@ -968,13 +968,13 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/eksaccesspolicyassocia
 	Lifecycle: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle,
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
-	AccessScope: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.eksAccessPolicyAssociation.EksAccessPolicyAssociationAccessScope,
+	AccessScope: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.eksAccessPolicyAssociation.EksAccessPolicyAssociationAccessScope,
 	ClusterName: *string,
 	PolicyArn: *string,
 	PrincipalArn: *string,
 	Id: *string,
 	Region: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.eksAccessPolicyAssociation.EksAccessPolicyAssociationTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.eksAccessPolicyAssociation.EksAccessPolicyAssociationTimeouts,
 }
 ```
 
@@ -1167,7 +1167,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.eksAccessPolicyAssociation.EksAccessPolicyAssociationTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/eksaccesspolicyassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/eksaccesspolicyassociation"
 
 &eksaccesspolicyassociation.EksAccessPolicyAssociationTimeouts {
 	Create: *string,
@@ -1215,7 +1215,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.eksAccessPolicyAssociation.EksAccessPolicyAssociationAccessScopeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/eksaccesspolicyassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/eksaccesspolicyassociation"
 
 eksaccesspolicyassociation.NewEksAccessPolicyAssociationAccessScopeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EksAccessPolicyAssociationAccessScopeOutputReference
 ```
@@ -1515,7 +1515,7 @@ func InternalValue() EksAccessPolicyAssociationAccessScope
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.eksAccessPolicyAssociation.EksAccessPolicyAssociationTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/eksaccesspolicyassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/eksaccesspolicyassociation"
 
 eksaccesspolicyassociation.NewEksAccessPolicyAssociationTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EksAccessPolicyAssociationTimeoutsOutputReference
 ```

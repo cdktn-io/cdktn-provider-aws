@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.notificationsOrganizationalUnitAssociation.NotificationsOrganizationalUnitAssociation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/notificationsorganizationalunitassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/notificationsorganizationalunitassociation"
 
 notificationsorganizationalunitassociation.NewNotificationsOrganizationalUnitAssociation(scope Construct, id *string, config NotificationsOrganizationalUnitAssociationConfig) NotificationsOrganizationalUnitAssociation
 ```
@@ -400,7 +400,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.notificationsOrganizationalUnitAssociation.NotificationsOrganizationalUnitAssociation.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/notificationsorganizationalunitassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/notificationsorganizationalunitassociation"
 
 notificationsorganizationalunitassociation.NotificationsOrganizationalUnitAssociation_IsConstruct(x interface{}) *bool
 ```
@@ -432,7 +432,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.notificationsOrganizationalUnitAssociation.NotificationsOrganizationalUnitAssociation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/notificationsorganizationalunitassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/notificationsorganizationalunitassociation"
 
 notificationsorganizationalunitassociation.NotificationsOrganizationalUnitAssociation_IsTerraformElement(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ notificationsorganizationalunitassociation.NotificationsOrganizationalUnitAssoci
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.notificationsOrganizationalUnitAssociation.NotificationsOrganizationalUnitAssociation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/notificationsorganizationalunitassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/notificationsorganizationalunitassociation"
 
 notificationsorganizationalunitassociation.NotificationsOrganizationalUnitAssociation_IsTerraformResource(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ notificationsorganizationalunitassociation.NotificationsOrganizationalUnitAssoci
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.notificationsOrganizationalUnitAssociation.NotificationsOrganizationalUnitAssociation.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/notificationsorganizationalunitassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/notificationsorganizationalunitassociation"
 
 notificationsorganizationalunitassociation.NotificationsOrganizationalUnitAssociation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -733,7 +733,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.notificationsOrganizationalUnitAssociation.NotificationsOrganizationalUnitAssociationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/notificationsorganizationalunitassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/notificationsorganizationalunitassociation"
 
 &notificationsorganizationalunitassociation.NotificationsOrganizationalUnitAssociationConfig {
 	Connection: interface{},

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.networkmanagerTransitGatewayRouteTableAttachment.NetworkmanagerTransitGatewayRouteTableAttachment.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/networkmanagertransitgatewayroutetableattachment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkmanagertransitgatewayroutetableattachment"
 
 networkmanagertransitgatewayroutetableattachment.NewNetworkmanagerTransitGatewayRouteTableAttachment(scope Construct, id *string, config NetworkmanagerTransitGatewayRouteTableAttachmentConfig) NetworkmanagerTransitGatewayRouteTableAttachment
 ```
@@ -448,7 +448,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.networkmanagerTransitGatewayRouteTableAttachment.NetworkmanagerTransitGatewayRouteTableAttachment.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/networkmanagertransitgatewayroutetableattachment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkmanagertransitgatewayroutetableattachment"
 
 networkmanagertransitgatewayroutetableattachment.NetworkmanagerTransitGatewayRouteTableAttachment_IsConstruct(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.networkmanagerTransitGatewayRouteTableAttachment.NetworkmanagerTransitGatewayRouteTableAttachment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/networkmanagertransitgatewayroutetableattachment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkmanagertransitgatewayroutetableattachment"
 
 networkmanagertransitgatewayroutetableattachment.NetworkmanagerTransitGatewayRouteTableAttachment_IsTerraformElement(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ networkmanagertransitgatewayroutetableattachment.NetworkmanagerTransitGatewayRou
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.networkmanagerTransitGatewayRouteTableAttachment.NetworkmanagerTransitGatewayRouteTableAttachment.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/networkmanagertransitgatewayroutetableattachment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkmanagertransitgatewayroutetableattachment"
 
 networkmanagertransitgatewayroutetableattachment.NetworkmanagerTransitGatewayRouteTableAttachment_IsTerraformResource(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ networkmanagertransitgatewayroutetableattachment.NetworkmanagerTransitGatewayRou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.networkmanagerTransitGatewayRouteTableAttachment.NetworkmanagerTransitGatewayRouteTableAttachment.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/networkmanagertransitgatewayroutetableattachment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkmanagertransitgatewayroutetableattachment"
 
 networkmanagertransitgatewayroutetableattachment.NetworkmanagerTransitGatewayRouteTableAttachment_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1001,7 +1001,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.networkmanagerTransitGatewayRouteTableAttachment.NetworkmanagerTransitGatewayRouteTableAttachmentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/networkmanagertransitgatewayroutetableattachment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkmanagertransitgatewayroutetableattachment"
 
 &networkmanagertransitgatewayroutetableattachment.NetworkmanagerTransitGatewayRouteTableAttachmentConfig {
 	Connection: interface{},
@@ -1017,7 +1017,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/networkmanagertransitg
 	RoutingPolicyLabel: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.networkmanagerTransitGatewayRouteTableAttachment.NetworkmanagerTransitGatewayRouteTableAttachmentTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.networkmanagerTransitGatewayRouteTableAttachment.NetworkmanagerTransitGatewayRouteTableAttachmentTimeouts,
 }
 ```
 
@@ -1206,7 +1206,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.networkmanagerTransitGatewayRouteTableAttachment.NetworkmanagerTransitGatewayRouteTableAttachmentTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/networkmanagertransitgatewayroutetableattachment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkmanagertransitgatewayroutetableattachment"
 
 &networkmanagertransitgatewayroutetableattachment.NetworkmanagerTransitGatewayRouteTableAttachmentTimeouts {
 	Create: *string,
@@ -1254,7 +1254,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.networkmanagerTransitGatewayRouteTableAttachment.NetworkmanagerTransitGatewayRouteTableAttachmentTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/networkmanagertransitgatewayroutetableattachment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/networkmanagertransitgatewayroutetableattachment"
 
 networkmanagertransitgatewayroutetableattachment.NewNetworkmanagerTransitGatewayRouteTableAttachmentTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NetworkmanagerTransitGatewayRouteTableAttachmentTimeoutsOutputReference
 ```

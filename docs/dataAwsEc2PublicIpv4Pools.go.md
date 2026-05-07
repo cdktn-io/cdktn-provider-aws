@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEc2PublicIpv4Pools.DataAwsEc2PublicIpv4Pools.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsec2publicipv4pools"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsec2publicipv4pools"
 
 dataawsec2publicipv4pools.NewDataAwsEc2PublicIpv4Pools(scope Construct, id *string, config DataAwsEc2PublicIpv4PoolsConfig) DataAwsEc2PublicIpv4Pools
 ```
@@ -339,7 +339,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsEc2PublicIpv4Pools.DataAwsEc2PublicIpv4Pools.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsec2publicipv4pools"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsec2publicipv4pools"
 
 dataawsec2publicipv4pools.DataAwsEc2PublicIpv4Pools_IsConstruct(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsEc2PublicIpv4Pools.DataAwsEc2PublicIpv4Pools.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsec2publicipv4pools"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsec2publicipv4pools"
 
 dataawsec2publicipv4pools.DataAwsEc2PublicIpv4Pools_IsTerraformElement(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ dataawsec2publicipv4pools.DataAwsEc2PublicIpv4Pools_IsTerraformElement(x interfa
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsEc2PublicIpv4Pools.DataAwsEc2PublicIpv4Pools.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsec2publicipv4pools"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsec2publicipv4pools"
 
 dataawsec2publicipv4pools.DataAwsEc2PublicIpv4Pools_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -399,7 +399,7 @@ dataawsec2publicipv4pools.DataAwsEc2PublicIpv4Pools_IsTerraformDataSource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsEc2PublicIpv4Pools.DataAwsEc2PublicIpv4Pools.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsec2publicipv4pools"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsec2publicipv4pools"
 
 dataawsec2publicipv4pools.DataAwsEc2PublicIpv4Pools_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -705,7 +705,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsEc2PublicIpv4Pools.DataAwsEc2PublicIpv4PoolsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsec2publicipv4pools"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsec2publicipv4pools"
 
 &dataawsec2publicipv4pools.DataAwsEc2PublicIpv4PoolsConfig {
 	Connection: interface{},
@@ -870,7 +870,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsEc2PublicIpv4Pools.DataAwsEc2PublicIpv4PoolsFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsec2publicipv4pools"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsec2publicipv4pools"
 
 &dataawsec2publicipv4pools.DataAwsEc2PublicIpv4PoolsFilter {
 	Name: *string,
@@ -918,7 +918,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEc2PublicIpv4Pools.DataAwsEc2PublicIpv4PoolsFilterList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsec2publicipv4pools"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsec2publicipv4pools"
 
 dataawsec2publicipv4pools.NewDataAwsEc2PublicIpv4PoolsFilterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEc2PublicIpv4PoolsFilterList
 ```
@@ -1078,7 +1078,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEc2PublicIpv4Pools.DataAwsEc2PublicIpv4PoolsFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsec2publicipv4pools"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsec2publicipv4pools"
 
 dataawsec2publicipv4pools.NewDataAwsEc2PublicIpv4PoolsFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEc2PublicIpv4PoolsFilterOutputReference
 ```

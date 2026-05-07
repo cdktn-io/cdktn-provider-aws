@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsArcregionswitchPlan.DataAwsArcregionswitchPlan.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsarcregionswitchplan"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsarcregionswitchplan"
 
 dataawsarcregionswitchplan.NewDataAwsArcregionswitchPlan(scope Construct, id *string, config DataAwsArcregionswitchPlanConfig) DataAwsArcregionswitchPlan
 ```
@@ -305,7 +305,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsArcregionswitchPlan.DataAwsArcregionswitchPlan.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsarcregionswitchplan"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsarcregionswitchplan"
 
 dataawsarcregionswitchplan.DataAwsArcregionswitchPlan_IsConstruct(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsArcregionswitchPlan.DataAwsArcregionswitchPlan.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsarcregionswitchplan"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsarcregionswitchplan"
 
 dataawsarcregionswitchplan.DataAwsArcregionswitchPlan_IsTerraformElement(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ dataawsarcregionswitchplan.DataAwsArcregionswitchPlan_IsTerraformElement(x inter
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsArcregionswitchPlan.DataAwsArcregionswitchPlan.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsarcregionswitchplan"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsarcregionswitchplan"
 
 dataawsarcregionswitchplan.DataAwsArcregionswitchPlan_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ dataawsarcregionswitchplan.DataAwsArcregionswitchPlan_IsTerraformDataSource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsArcregionswitchPlan.DataAwsArcregionswitchPlan.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsarcregionswitchplan"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsarcregionswitchplan"
 
 dataawsarcregionswitchplan.DataAwsArcregionswitchPlan_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -737,7 +737,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsArcregionswitchPlan.DataAwsArcregionswitchPlanConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsarcregionswitchplan"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsarcregionswitchplan"
 
 &dataawsarcregionswitchplan.DataAwsArcregionswitchPlanConfig {
 	Connection: interface{},

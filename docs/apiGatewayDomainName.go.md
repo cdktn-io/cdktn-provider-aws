@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.apiGatewayDomainName.ApiGatewayDomainName.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/apigatewaydomainname"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/apigatewaydomainname"
 
 apigatewaydomainname.NewApiGatewayDomainName(scope Construct, id *string, config ApiGatewayDomainNameConfig) ApiGatewayDomainName
 ```
@@ -572,7 +572,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.apiGatewayDomainName.ApiGatewayDomainName.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/apigatewaydomainname"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/apigatewaydomainname"
 
 apigatewaydomainname.ApiGatewayDomainName_IsConstruct(x interface{}) *bool
 ```
@@ -604,7 +604,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.apiGatewayDomainName.ApiGatewayDomainName.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/apigatewaydomainname"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/apigatewaydomainname"
 
 apigatewaydomainname.ApiGatewayDomainName_IsTerraformElement(x interface{}) *bool
 ```
@@ -618,7 +618,7 @@ apigatewaydomainname.ApiGatewayDomainName_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.apiGatewayDomainName.ApiGatewayDomainName.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/apigatewaydomainname"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/apigatewaydomainname"
 
 apigatewaydomainname.ApiGatewayDomainName_IsTerraformResource(x interface{}) *bool
 ```
@@ -632,7 +632,7 @@ apigatewaydomainname.ApiGatewayDomainName_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.apiGatewayDomainName.ApiGatewayDomainName.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/apigatewaydomainname"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/apigatewaydomainname"
 
 apigatewaydomainname.ApiGatewayDomainName_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1378,7 +1378,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.apiGatewayDomainName.ApiGatewayDomainNameConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/apigatewaydomainname"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/apigatewaydomainname"
 
 &apigatewaydomainname.ApiGatewayDomainNameConfig {
 	Connection: interface{},
@@ -1395,9 +1395,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/apigatewaydomainname"
 	CertificateName: *string,
 	CertificatePrivateKey: *string,
 	EndpointAccessMode: *string,
-	EndpointConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.apiGatewayDomainName.ApiGatewayDomainNameEndpointConfiguration,
+	EndpointConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.apiGatewayDomainName.ApiGatewayDomainNameEndpointConfiguration,
 	Id: *string,
-	MutualTlsAuthentication: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.apiGatewayDomainName.ApiGatewayDomainNameMutualTlsAuthentication,
+	MutualTlsAuthentication: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.apiGatewayDomainName.ApiGatewayDomainNameMutualTlsAuthentication,
 	OwnershipVerificationCertificateArn: *string,
 	Policy: *string,
 	Region: *string,
@@ -1407,7 +1407,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/apigatewaydomainname"
 	SecurityPolicy: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.apiGatewayDomainName.ApiGatewayDomainNameTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.apiGatewayDomainName.ApiGatewayDomainNameTimeouts,
 }
 ```
 
@@ -1771,7 +1771,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.apiGatewayDomainName.ApiGatewayDomainNameEndpointConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/apigatewaydomainname"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/apigatewaydomainname"
 
 &apigatewaydomainname.ApiGatewayDomainNameEndpointConfiguration {
 	Types: *[]*string,
@@ -1817,7 +1817,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.apiGatewayDomainName.ApiGatewayDomainNameMutualTlsAuthentication.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/apigatewaydomainname"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/apigatewaydomainname"
 
 &apigatewaydomainname.ApiGatewayDomainNameMutualTlsAuthentication {
 	TruststoreUri: *string,
@@ -1863,7 +1863,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.apiGatewayDomainName.ApiGatewayDomainNameTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/apigatewaydomainname"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/apigatewaydomainname"
 
 &apigatewaydomainname.ApiGatewayDomainNameTimeouts {
 	Create: *string,
@@ -1911,7 +1911,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.apiGatewayDomainName.ApiGatewayDomainNameEndpointConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/apigatewaydomainname"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/apigatewaydomainname"
 
 apigatewaydomainname.NewApiGatewayDomainNameEndpointConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApiGatewayDomainNameEndpointConfigurationOutputReference
 ```
@@ -2211,7 +2211,7 @@ func InternalValue() ApiGatewayDomainNameEndpointConfiguration
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.apiGatewayDomainName.ApiGatewayDomainNameMutualTlsAuthenticationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/apigatewaydomainname"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/apigatewaydomainname"
 
 apigatewaydomainname.NewApiGatewayDomainNameMutualTlsAuthenticationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApiGatewayDomainNameMutualTlsAuthenticationOutputReference
 ```
@@ -2511,7 +2511,7 @@ func InternalValue() ApiGatewayDomainNameMutualTlsAuthentication
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.apiGatewayDomainName.ApiGatewayDomainNameTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/apigatewaydomainname"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/apigatewaydomainname"
 
 apigatewaydomainname.NewApiGatewayDomainNameTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApiGatewayDomainNameTimeoutsOutputReference
 ```

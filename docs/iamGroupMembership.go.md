@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.iamGroupMembership.IamGroupMembership.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/iamgroupmembership"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/iamgroupmembership"
 
 iamgroupmembership.NewIamGroupMembership(scope Construct, id *string, config IamGroupMembershipConfig) IamGroupMembership
 ```
@@ -407,7 +407,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.iamGroupMembership.IamGroupMembership.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/iamgroupmembership"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/iamgroupmembership"
 
 iamgroupmembership.IamGroupMembership_IsConstruct(x interface{}) *bool
 ```
@@ -439,7 +439,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.iamGroupMembership.IamGroupMembership.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/iamgroupmembership"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/iamgroupmembership"
 
 iamgroupmembership.IamGroupMembership_IsTerraformElement(x interface{}) *bool
 ```
@@ -453,7 +453,7 @@ iamgroupmembership.IamGroupMembership_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.iamGroupMembership.IamGroupMembership.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/iamgroupmembership"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/iamgroupmembership"
 
 iamgroupmembership.IamGroupMembership_IsTerraformResource(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ iamgroupmembership.IamGroupMembership_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.iamGroupMembership.IamGroupMembership.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/iamgroupmembership"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/iamgroupmembership"
 
 iamgroupmembership.IamGroupMembership_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -784,7 +784,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.iamGroupMembership.IamGroupMembershipConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/iamgroupmembership"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/iamgroupmembership"
 
 &iamgroupmembership.IamGroupMembershipConfig {
 	Connection: interface{},

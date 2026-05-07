@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.directoryServiceDirectory.DirectoryServiceDirectory.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/directoryservicedirectory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/directoryservicedirectory"
 
 directoryservicedirectory.NewDirectoryServiceDirectory(scope Construct, id *string, config DirectoryServiceDirectoryConfig) DirectoryServiceDirectory
 ```
@@ -551,7 +551,7 @@ func ResetVpcSettings()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.directoryServiceDirectory.DirectoryServiceDirectory.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/directoryservicedirectory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/directoryservicedirectory"
 
 directoryservicedirectory.DirectoryServiceDirectory_IsConstruct(x interface{}) *bool
 ```
@@ -583,7 +583,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.directoryServiceDirectory.DirectoryServiceDirectory.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/directoryservicedirectory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/directoryservicedirectory"
 
 directoryservicedirectory.DirectoryServiceDirectory_IsTerraformElement(x interface{}) *bool
 ```
@@ -597,7 +597,7 @@ directoryservicedirectory.DirectoryServiceDirectory_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.directoryServiceDirectory.DirectoryServiceDirectory.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/directoryservicedirectory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/directoryservicedirectory"
 
 directoryservicedirectory.DirectoryServiceDirectory_IsTerraformResource(x interface{}) *bool
 ```
@@ -611,7 +611,7 @@ directoryservicedirectory.DirectoryServiceDirectory_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.directoryServiceDirectory.DirectoryServiceDirectory.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/directoryservicedirectory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/directoryservicedirectory"
 
 directoryservicedirectory.DirectoryServiceDirectory_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1269,7 +1269,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.directoryServiceDirectory.DirectoryServiceDirectoryConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/directoryservicedirectory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/directoryservicedirectory"
 
 &directoryservicedirectory.DirectoryServiceDirectoryConfig {
 	Connection: interface{},
@@ -1282,7 +1282,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/directoryservicedirect
 	Name: *string,
 	Password: *string,
 	Alias: *string,
-	ConnectSettings: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.directoryServiceDirectory.DirectoryServiceDirectoryConnectSettings,
+	ConnectSettings: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.directoryServiceDirectory.DirectoryServiceDirectoryConnectSettings,
 	Description: *string,
 	DesiredNumberOfDomainControllers: *f64,
 	Edition: *string,
@@ -1294,9 +1294,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/directoryservicedirect
 	Size: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.directoryServiceDirectory.DirectoryServiceDirectoryTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.directoryServiceDirectory.DirectoryServiceDirectoryTimeouts,
 	Type: *string,
-	VpcSettings: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.directoryServiceDirectory.DirectoryServiceDirectoryVpcSettings,
+	VpcSettings: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.directoryServiceDirectory.DirectoryServiceDirectoryVpcSettings,
 }
 ```
 
@@ -1634,7 +1634,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.directoryServiceDirectory.DirectoryServiceDirectoryConnectSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/directoryservicedirectory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/directoryservicedirectory"
 
 &directoryservicedirectory.DirectoryServiceDirectoryConnectSettings {
 	CustomerDnsIps: *[]*string,
@@ -1708,7 +1708,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.directoryServiceDirectory.DirectoryServiceDirectoryTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/directoryservicedirectory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/directoryservicedirectory"
 
 &directoryservicedirectory.DirectoryServiceDirectoryTimeouts {
 	Create: *string,
@@ -1768,7 +1768,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.directoryServiceDirectory.DirectoryServiceDirectoryVpcSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/directoryservicedirectory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/directoryservicedirectory"
 
 &directoryservicedirectory.DirectoryServiceDirectoryVpcSettings {
 	SubnetIds: *[]*string,
@@ -1816,7 +1816,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.directoryServiceDirectory.DirectoryServiceDirectoryConnectSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/directoryservicedirectory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/directoryservicedirectory"
 
 directoryservicedirectory.NewDirectoryServiceDirectoryConnectSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DirectoryServiceDirectoryConnectSettingsOutputReference
 ```
@@ -2175,7 +2175,7 @@ func InternalValue() DirectoryServiceDirectoryConnectSettings
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.directoryServiceDirectory.DirectoryServiceDirectoryTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/directoryservicedirectory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/directoryservicedirectory"
 
 directoryservicedirectory.NewDirectoryServiceDirectoryTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DirectoryServiceDirectoryTimeoutsOutputReference
 ```
@@ -2511,7 +2511,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.directoryServiceDirectory.DirectoryServiceDirectoryVpcSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/directoryservicedirectory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/directoryservicedirectory"
 
 directoryservicedirectory.NewDirectoryServiceDirectoryVpcSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DirectoryServiceDirectoryVpcSettingsOutputReference
 ```

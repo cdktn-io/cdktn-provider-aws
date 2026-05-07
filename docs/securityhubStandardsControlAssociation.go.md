@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securityhubStandardsControlAssociation.SecurityhubStandardsControlAssociation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubstandardscontrolassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubstandardscontrolassociation"
 
 securityhubstandardscontrolassociation.NewSecurityhubStandardsControlAssociation(scope Construct, id *string, config SecurityhubStandardsControlAssociationConfig) SecurityhubStandardsControlAssociation
 ```
@@ -414,7 +414,7 @@ func ResetUpdatedReason()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.securityhubStandardsControlAssociation.SecurityhubStandardsControlAssociation.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubstandardscontrolassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubstandardscontrolassociation"
 
 securityhubstandardscontrolassociation.SecurityhubStandardsControlAssociation_IsConstruct(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.securityhubStandardsControlAssociation.SecurityhubStandardsControlAssociation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubstandardscontrolassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubstandardscontrolassociation"
 
 securityhubstandardscontrolassociation.SecurityhubStandardsControlAssociation_IsTerraformElement(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ securityhubstandardscontrolassociation.SecurityhubStandardsControlAssociation_Is
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.securityhubStandardsControlAssociation.SecurityhubStandardsControlAssociation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubstandardscontrolassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubstandardscontrolassociation"
 
 securityhubstandardscontrolassociation.SecurityhubStandardsControlAssociation_IsTerraformResource(x interface{}) *bool
 ```
@@ -474,7 +474,7 @@ securityhubstandardscontrolassociation.SecurityhubStandardsControlAssociation_Is
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.securityhubStandardsControlAssociation.SecurityhubStandardsControlAssociation.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubstandardscontrolassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubstandardscontrolassociation"
 
 securityhubstandardscontrolassociation.SecurityhubStandardsControlAssociation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -824,7 +824,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.securityhubStandardsControlAssociation.SecurityhubStandardsControlAssociationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/securityhubstandardscontrolassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/securityhubstandardscontrolassociation"
 
 &securityhubstandardscontrolassociation.SecurityhubStandardsControlAssociationConfig {
 	Connection: interface{},

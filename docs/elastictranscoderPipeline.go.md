@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.elastictranscoderPipeline.ElastictranscoderPipeline.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/elastictranscoderpipeline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/elastictranscoderpipeline"
 
 elastictranscoderpipeline.NewElastictranscoderPipeline(scope Construct, id *string, config ElastictranscoderPipelineConfig) ElastictranscoderPipeline
 ```
@@ -535,7 +535,7 @@ func ResetThumbnailConfigPermissions()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.elastictranscoderPipeline.ElastictranscoderPipeline.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/elastictranscoderpipeline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/elastictranscoderpipeline"
 
 elastictranscoderpipeline.ElastictranscoderPipeline_IsConstruct(x interface{}) *bool
 ```
@@ -567,7 +567,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.elastictranscoderPipeline.ElastictranscoderPipeline.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/elastictranscoderpipeline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/elastictranscoderpipeline"
 
 elastictranscoderpipeline.ElastictranscoderPipeline_IsTerraformElement(x interface{}) *bool
 ```
@@ -581,7 +581,7 @@ elastictranscoderpipeline.ElastictranscoderPipeline_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.elastictranscoderPipeline.ElastictranscoderPipeline.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/elastictranscoderpipeline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/elastictranscoderpipeline"
 
 elastictranscoderpipeline.ElastictranscoderPipeline_IsTerraformResource(x interface{}) *bool
 ```
@@ -595,7 +595,7 @@ elastictranscoderpipeline.ElastictranscoderPipeline_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.elastictranscoderPipeline.ElastictranscoderPipeline.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/elastictranscoderpipeline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/elastictranscoderpipeline"
 
 elastictranscoderpipeline.ElastictranscoderPipeline_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1099,7 +1099,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.elastictranscoderPipeline.ElastictranscoderPipelineConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/elastictranscoderpipeline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/elastictranscoderpipeline"
 
 &elastictranscoderpipeline.ElastictranscoderPipelineConfig {
 	Connection: interface{},
@@ -1112,14 +1112,14 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/elastictranscoderpipel
 	InputBucket: *string,
 	Role: *string,
 	AwsKmsKeyArn: *string,
-	ContentConfig: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.elastictranscoderPipeline.ElastictranscoderPipelineContentConfig,
+	ContentConfig: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.elastictranscoderPipeline.ElastictranscoderPipelineContentConfig,
 	ContentConfigPermissions: interface{},
 	Id: *string,
 	Name: *string,
-	Notifications: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.elastictranscoderPipeline.ElastictranscoderPipelineNotifications,
+	Notifications: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.elastictranscoderPipeline.ElastictranscoderPipelineNotifications,
 	OutputBucket: *string,
 	Region: *string,
-	ThumbnailConfig: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.elastictranscoderPipeline.ElastictranscoderPipelineThumbnailConfig,
+	ThumbnailConfig: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.elastictranscoderPipeline.ElastictranscoderPipelineThumbnailConfig,
 	ThumbnailConfigPermissions: interface{},
 }
 ```
@@ -1384,7 +1384,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.elastictranscoderPipeline.ElastictranscoderPipelineContentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/elastictranscoderpipeline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/elastictranscoderpipeline"
 
 &elastictranscoderpipeline.ElastictranscoderPipelineContentConfig {
 	Bucket: *string,
@@ -1430,7 +1430,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.elastictranscoderPipeline.ElastictranscoderPipelineContentConfigPermissions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/elastictranscoderpipeline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/elastictranscoderpipeline"
 
 &elastictranscoderpipeline.ElastictranscoderPipelineContentConfigPermissions {
 	Access: *[]*string,
@@ -1490,7 +1490,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.elastictranscoderPipeline.ElastictranscoderPipelineNotifications.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/elastictranscoderpipeline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/elastictranscoderpipeline"
 
 &elastictranscoderpipeline.ElastictranscoderPipelineNotifications {
 	Completed: *string,
@@ -1564,7 +1564,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.elastictranscoderPipeline.ElastictranscoderPipelineThumbnailConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/elastictranscoderpipeline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/elastictranscoderpipeline"
 
 &elastictranscoderpipeline.ElastictranscoderPipelineThumbnailConfig {
 	Bucket: *string,
@@ -1610,7 +1610,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.elastictranscoderPipeline.ElastictranscoderPipelineThumbnailConfigPermissions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/elastictranscoderpipeline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/elastictranscoderpipeline"
 
 &elastictranscoderpipeline.ElastictranscoderPipelineThumbnailConfigPermissions {
 	Access: *[]*string,
@@ -1672,7 +1672,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.elastictranscoderPipeline.ElastictranscoderPipelineContentConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/elastictranscoderpipeline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/elastictranscoderpipeline"
 
 elastictranscoderpipeline.NewElastictranscoderPipelineContentConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ElastictranscoderPipelineContentConfigOutputReference
 ```
@@ -1979,7 +1979,7 @@ func InternalValue() ElastictranscoderPipelineContentConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.elastictranscoderPipeline.ElastictranscoderPipelineContentConfigPermissionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/elastictranscoderpipeline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/elastictranscoderpipeline"
 
 elastictranscoderpipeline.NewElastictranscoderPipelineContentConfigPermissionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ElastictranscoderPipelineContentConfigPermissionsList
 ```
@@ -2139,7 +2139,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.elastictranscoderPipeline.ElastictranscoderPipelineContentConfigPermissionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/elastictranscoderpipeline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/elastictranscoderpipeline"
 
 elastictranscoderpipeline.NewElastictranscoderPipelineContentConfigPermissionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ElastictranscoderPipelineContentConfigPermissionsOutputReference
 ```
@@ -2493,7 +2493,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.elastictranscoderPipeline.ElastictranscoderPipelineNotificationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/elastictranscoderpipeline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/elastictranscoderpipeline"
 
 elastictranscoderpipeline.NewElastictranscoderPipelineNotificationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ElastictranscoderPipelineNotificationsOutputReference
 ```
@@ -2858,7 +2858,7 @@ func InternalValue() ElastictranscoderPipelineNotifications
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.elastictranscoderPipeline.ElastictranscoderPipelineThumbnailConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/elastictranscoderpipeline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/elastictranscoderpipeline"
 
 elastictranscoderpipeline.NewElastictranscoderPipelineThumbnailConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ElastictranscoderPipelineThumbnailConfigOutputReference
 ```
@@ -3165,7 +3165,7 @@ func InternalValue() ElastictranscoderPipelineThumbnailConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.elastictranscoderPipeline.ElastictranscoderPipelineThumbnailConfigPermissionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/elastictranscoderpipeline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/elastictranscoderpipeline"
 
 elastictranscoderpipeline.NewElastictranscoderPipelineThumbnailConfigPermissionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ElastictranscoderPipelineThumbnailConfigPermissionsList
 ```
@@ -3325,7 +3325,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.elastictranscoderPipeline.ElastictranscoderPipelineThumbnailConfigPermissionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/elastictranscoderpipeline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/elastictranscoderpipeline"
 
 elastictranscoderpipeline.NewElastictranscoderPipelineThumbnailConfigPermissionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ElastictranscoderPipelineThumbnailConfigPermissionsOutputReference
 ```

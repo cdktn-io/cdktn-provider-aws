@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dynamodbtableexport"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dynamodbtableexport"
 
 dynamodbtableexport.NewDynamodbTableExport(scope Construct, id *string, config DynamodbTableExportConfig) DynamodbTableExport
 ```
@@ -503,7 +503,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dynamodbtableexport"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dynamodbtableexport"
 
 dynamodbtableexport.DynamodbTableExport_IsConstruct(x interface{}) *bool
 ```
@@ -535,7 +535,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dynamodbtableexport"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dynamodbtableexport"
 
 dynamodbtableexport.DynamodbTableExport_IsTerraformElement(x interface{}) *bool
 ```
@@ -549,7 +549,7 @@ dynamodbtableexport.DynamodbTableExport_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dynamodbtableexport"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dynamodbtableexport"
 
 dynamodbtableexport.DynamodbTableExport_IsTerraformResource(x interface{}) *bool
 ```
@@ -563,7 +563,7 @@ dynamodbtableexport.DynamodbTableExport_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dynamodbtableexport"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dynamodbtableexport"
 
 dynamodbtableexport.DynamodbTableExport_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1155,7 +1155,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dynamodbtableexport"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dynamodbtableexport"
 
 &dynamodbtableexport.DynamodbTableExportConfig {
 	Connection: interface{},
@@ -1171,13 +1171,13 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dynamodbtableexport"
 	ExportTime: *string,
 	ExportType: *string,
 	Id: *string,
-	IncrementalExportSpecification: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecification,
+	IncrementalExportSpecification: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecification,
 	Region: *string,
 	S3BucketOwner: *string,
 	S3Prefix: *string,
 	S3SseAlgorithm: *string,
 	S3SseKmsKeyId: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.dynamodbTableExport.DynamodbTableExportTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.dynamodbTableExport.DynamodbTableExportTimeouts,
 }
 ```
 
@@ -1448,7 +1448,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecification.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dynamodbtableexport"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dynamodbtableexport"
 
 &dynamodbtableexport.DynamodbTableExportIncrementalExportSpecification {
 	ExportFromTime: *string,
@@ -1508,7 +1508,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dynamodbtableexport"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dynamodbtableexport"
 
 &dynamodbtableexport.DynamodbTableExportTimeouts {
 	Create: *string,
@@ -1556,7 +1556,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecificationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dynamodbtableexport"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dynamodbtableexport"
 
 dynamodbtableexport.NewDynamodbTableExportIncrementalExportSpecificationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DynamodbTableExportIncrementalExportSpecificationOutputReference
 ```
@@ -1892,7 +1892,7 @@ func InternalValue() DynamodbTableExportIncrementalExportSpecification
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dynamodbtableexport"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dynamodbtableexport"
 
 dynamodbtableexport.NewDynamodbTableExportTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DynamodbTableExportTimeoutsOutputReference
 ```

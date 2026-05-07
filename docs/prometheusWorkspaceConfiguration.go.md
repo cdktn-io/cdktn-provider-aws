@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.prometheusWorkspaceConfiguration.PrometheusWorkspaceConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/prometheusworkspaceconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/prometheusworkspaceconfiguration"
 
 prometheusworkspaceconfiguration.NewPrometheusWorkspaceConfiguration(scope Construct, id *string, config PrometheusWorkspaceConfigurationConfig) PrometheusWorkspaceConfiguration
 ```
@@ -454,7 +454,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.prometheusWorkspaceConfiguration.PrometheusWorkspaceConfiguration.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/prometheusworkspaceconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/prometheusworkspaceconfiguration"
 
 prometheusworkspaceconfiguration.PrometheusWorkspaceConfiguration_IsConstruct(x interface{}) *bool
 ```
@@ -486,7 +486,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.prometheusWorkspaceConfiguration.PrometheusWorkspaceConfiguration.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/prometheusworkspaceconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/prometheusworkspaceconfiguration"
 
 prometheusworkspaceconfiguration.PrometheusWorkspaceConfiguration_IsTerraformElement(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ prometheusworkspaceconfiguration.PrometheusWorkspaceConfiguration_IsTerraformEle
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.prometheusWorkspaceConfiguration.PrometheusWorkspaceConfiguration.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/prometheusworkspaceconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/prometheusworkspaceconfiguration"
 
 prometheusworkspaceconfiguration.PrometheusWorkspaceConfiguration_IsTerraformResource(x interface{}) *bool
 ```
@@ -514,7 +514,7 @@ prometheusworkspaceconfiguration.PrometheusWorkspaceConfiguration_IsTerraformRes
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.prometheusWorkspaceConfiguration.PrometheusWorkspaceConfiguration.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/prometheusworkspaceconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/prometheusworkspaceconfiguration"
 
 prometheusworkspaceconfiguration.PrometheusWorkspaceConfiguration_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -853,7 +853,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.prometheusWorkspaceConfiguration.PrometheusWorkspaceConfigurationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/prometheusworkspaceconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/prometheusworkspaceconfiguration"
 
 &prometheusworkspaceconfiguration.PrometheusWorkspaceConfigurationConfig {
 	Connection: interface{},
@@ -867,7 +867,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/prometheusworkspacecon
 	LimitsPerLabelSet: interface{},
 	Region: *string,
 	RetentionPeriodInDays: *f64,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.prometheusWorkspaceConfiguration.PrometheusWorkspaceConfigurationTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.prometheusWorkspaceConfiguration.PrometheusWorkspaceConfigurationTimeouts,
 }
 ```
 
@@ -1031,7 +1031,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.prometheusWorkspaceConfiguration.PrometheusWorkspaceConfigurationLimitsPerLabelSet.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/prometheusworkspaceconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/prometheusworkspaceconfiguration"
 
 &prometheusworkspaceconfiguration.PrometheusWorkspaceConfigurationLimitsPerLabelSet {
 	LabelSet: *map[string]*string,
@@ -1079,7 +1079,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.prometheusWorkspaceConfiguration.PrometheusWorkspaceConfigurationLimitsPerLabelSetLimits.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/prometheusworkspaceconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/prometheusworkspaceconfiguration"
 
 &prometheusworkspaceconfiguration.PrometheusWorkspaceConfigurationLimitsPerLabelSetLimits {
 	MaxSeries: *f64,
@@ -1111,7 +1111,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.prometheusWorkspaceConfiguration.PrometheusWorkspaceConfigurationTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/prometheusworkspaceconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/prometheusworkspaceconfiguration"
 
 &prometheusworkspaceconfiguration.PrometheusWorkspaceConfigurationTimeouts {
 	Create: *string,
@@ -1163,7 +1163,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.prometheusWorkspaceConfiguration.PrometheusWorkspaceConfigurationLimitsPerLabelSetLimitsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/prometheusworkspaceconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/prometheusworkspaceconfiguration"
 
 prometheusworkspaceconfiguration.NewPrometheusWorkspaceConfigurationLimitsPerLabelSetLimitsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PrometheusWorkspaceConfigurationLimitsPerLabelSetLimitsList
 ```
@@ -1323,7 +1323,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.prometheusWorkspaceConfiguration.PrometheusWorkspaceConfigurationLimitsPerLabelSetLimitsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/prometheusworkspaceconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/prometheusworkspaceconfiguration"
 
 prometheusworkspaceconfiguration.NewPrometheusWorkspaceConfigurationLimitsPerLabelSetLimitsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PrometheusWorkspaceConfigurationLimitsPerLabelSetLimitsOutputReference
 ```
@@ -1612,7 +1612,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.prometheusWorkspaceConfiguration.PrometheusWorkspaceConfigurationLimitsPerLabelSetList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/prometheusworkspaceconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/prometheusworkspaceconfiguration"
 
 prometheusworkspaceconfiguration.NewPrometheusWorkspaceConfigurationLimitsPerLabelSetList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PrometheusWorkspaceConfigurationLimitsPerLabelSetList
 ```
@@ -1772,7 +1772,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.prometheusWorkspaceConfiguration.PrometheusWorkspaceConfigurationLimitsPerLabelSetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/prometheusworkspaceconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/prometheusworkspaceconfiguration"
 
 prometheusworkspaceconfiguration.NewPrometheusWorkspaceConfigurationLimitsPerLabelSetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PrometheusWorkspaceConfigurationLimitsPerLabelSetOutputReference
 ```
@@ -2103,7 +2103,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.prometheusWorkspaceConfiguration.PrometheusWorkspaceConfigurationTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/prometheusworkspaceconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/prometheusworkspaceconfiguration"
 
 prometheusworkspaceconfiguration.NewPrometheusWorkspaceConfigurationTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PrometheusWorkspaceConfigurationTimeoutsOutputReference
 ```

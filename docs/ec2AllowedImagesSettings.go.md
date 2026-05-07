@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ec2AllowedImagesSettings.Ec2AllowedImagesSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/ec2allowedimagessettings"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ec2allowedimagessettings"
 
 ec2allowedimagessettings.NewEc2AllowedImagesSettings(scope Construct, id *string, config Ec2AllowedImagesSettingsConfig) Ec2AllowedImagesSettings
 ```
@@ -427,7 +427,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.ec2AllowedImagesSettings.Ec2AllowedImagesSettings.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/ec2allowedimagessettings"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ec2allowedimagessettings"
 
 ec2allowedimagessettings.Ec2AllowedImagesSettings_IsConstruct(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.ec2AllowedImagesSettings.Ec2AllowedImagesSettings.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/ec2allowedimagessettings"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ec2allowedimagessettings"
 
 ec2allowedimagessettings.Ec2AllowedImagesSettings_IsTerraformElement(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ ec2allowedimagessettings.Ec2AllowedImagesSettings_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.ec2AllowedImagesSettings.Ec2AllowedImagesSettings.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/ec2allowedimagessettings"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ec2allowedimagessettings"
 
 ec2allowedimagessettings.Ec2AllowedImagesSettings_IsTerraformResource(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ ec2allowedimagessettings.Ec2AllowedImagesSettings_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.ec2AllowedImagesSettings.Ec2AllowedImagesSettings.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/ec2allowedimagessettings"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ec2allowedimagessettings"
 
 ec2allowedimagessettings.Ec2AllowedImagesSettings_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -782,7 +782,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ec2AllowedImagesSettings.Ec2AllowedImagesSettingsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/ec2allowedimagessettings"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ec2allowedimagessettings"
 
 &ec2allowedimagessettings.Ec2AllowedImagesSettingsConfig {
 	Connection: interface{},
@@ -930,7 +930,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ec2AllowedImagesSettings.Ec2AllowedImagesSettingsImageCriterion.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/ec2allowedimagessettings"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ec2allowedimagessettings"
 
 &ec2allowedimagessettings.Ec2AllowedImagesSettingsImageCriterion {
 	CreationDateCondition: interface{},
@@ -1022,7 +1022,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ec2AllowedImagesSettings.Ec2AllowedImagesSettingsImageCriterionCreationDateCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/ec2allowedimagessettings"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ec2allowedimagessettings"
 
 &ec2allowedimagessettings.Ec2AllowedImagesSettingsImageCriterionCreationDateCondition {
 	MaximumDaysSinceCreated: *f64,
@@ -1054,7 +1054,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ec2AllowedImagesSettings.Ec2AllowedImagesSettingsImageCriterionDeprecationTimeCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/ec2allowedimagessettings"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ec2allowedimagessettings"
 
 &ec2allowedimagessettings.Ec2AllowedImagesSettingsImageCriterionDeprecationTimeCondition {
 	MaximumDaysSinceDeprecated: *f64,
@@ -1088,7 +1088,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ec2AllowedImagesSettings.Ec2AllowedImagesSettingsImageCriterionCreationDateConditionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/ec2allowedimagessettings"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ec2allowedimagessettings"
 
 ec2allowedimagessettings.NewEc2AllowedImagesSettingsImageCriterionCreationDateConditionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Ec2AllowedImagesSettingsImageCriterionCreationDateConditionList
 ```
@@ -1248,7 +1248,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ec2AllowedImagesSettings.Ec2AllowedImagesSettingsImageCriterionCreationDateConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/ec2allowedimagessettings"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ec2allowedimagessettings"
 
 ec2allowedimagessettings.NewEc2AllowedImagesSettingsImageCriterionCreationDateConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Ec2AllowedImagesSettingsImageCriterionCreationDateConditionOutputReference
 ```
@@ -1544,7 +1544,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ec2AllowedImagesSettings.Ec2AllowedImagesSettingsImageCriterionDeprecationTimeConditionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/ec2allowedimagessettings"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ec2allowedimagessettings"
 
 ec2allowedimagessettings.NewEc2AllowedImagesSettingsImageCriterionDeprecationTimeConditionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Ec2AllowedImagesSettingsImageCriterionDeprecationTimeConditionList
 ```
@@ -1704,7 +1704,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ec2AllowedImagesSettings.Ec2AllowedImagesSettingsImageCriterionDeprecationTimeConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/ec2allowedimagessettings"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ec2allowedimagessettings"
 
 ec2allowedimagessettings.NewEc2AllowedImagesSettingsImageCriterionDeprecationTimeConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Ec2AllowedImagesSettingsImageCriterionDeprecationTimeConditionOutputReference
 ```
@@ -2000,7 +2000,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ec2AllowedImagesSettings.Ec2AllowedImagesSettingsImageCriterionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/ec2allowedimagessettings"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ec2allowedimagessettings"
 
 ec2allowedimagessettings.NewEc2AllowedImagesSettingsImageCriterionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Ec2AllowedImagesSettingsImageCriterionList
 ```
@@ -2160,7 +2160,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ec2AllowedImagesSettings.Ec2AllowedImagesSettingsImageCriterionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/ec2allowedimagessettings"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ec2allowedimagessettings"
 
 ec2allowedimagessettings.NewEc2AllowedImagesSettingsImageCriterionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Ec2AllowedImagesSettingsImageCriterionOutputReference
 ```

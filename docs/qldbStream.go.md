@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.qldbStream.QldbStream.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/qldbstream"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/qldbstream"
 
 qldbstream.NewQldbStream(scope Construct, id *string, config QldbStreamConfig) QldbStream
 ```
@@ -468,7 +468,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.qldbStream.QldbStream.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/qldbstream"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/qldbstream"
 
 qldbstream.QldbStream_IsConstruct(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.qldbStream.QldbStream.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/qldbstream"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/qldbstream"
 
 qldbstream.QldbStream_IsTerraformElement(x interface{}) *bool
 ```
@@ -514,7 +514,7 @@ qldbstream.QldbStream_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.qldbStream.QldbStream.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/qldbstream"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/qldbstream"
 
 qldbstream.QldbStream_IsTerraformResource(x interface{}) *bool
 ```
@@ -528,7 +528,7 @@ qldbstream.QldbStream_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.qldbStream.QldbStream.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/qldbstream"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/qldbstream"
 
 qldbstream.QldbStream_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1010,7 +1010,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.qldbStream.QldbStreamConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/qldbstream"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/qldbstream"
 
 &qldbstream.QldbStreamConfig {
 	Connection: interface{},
@@ -1021,7 +1021,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/qldbstream"
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	InclusiveStartTime: *string,
-	KinesisConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.qldbStream.QldbStreamKinesisConfiguration,
+	KinesisConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.qldbStream.QldbStreamKinesisConfiguration,
 	LedgerName: *string,
 	RoleArn: *string,
 	StreamName: *string,
@@ -1030,7 +1030,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/qldbstream"
 	Region: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.qldbStream.QldbStreamTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.qldbStream.QldbStreamTimeouts,
 }
 ```
 
@@ -1275,7 +1275,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.qldbStream.QldbStreamKinesisConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/qldbstream"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/qldbstream"
 
 &qldbstream.QldbStreamKinesisConfiguration {
 	StreamArn: *string,
@@ -1321,7 +1321,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.qldbStream.QldbStreamTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/qldbstream"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/qldbstream"
 
 &qldbstream.QldbStreamTimeouts {
 	Create: *string,
@@ -1369,7 +1369,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.qldbStream.QldbStreamKinesisConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/qldbstream"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/qldbstream"
 
 qldbstream.NewQldbStreamKinesisConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) QldbStreamKinesisConfigurationOutputReference
 ```
@@ -1669,7 +1669,7 @@ func InternalValue() QldbStreamKinesisConfiguration
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.qldbStream.QldbStreamTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/qldbstream"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/qldbstream"
 
 qldbstream.NewQldbStreamTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) QldbStreamTimeoutsOutputReference
 ```

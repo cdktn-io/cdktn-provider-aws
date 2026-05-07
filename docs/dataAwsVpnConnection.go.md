@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsVpnConnection.DataAwsVpnConnection.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsvpnconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsvpnconnection"
 
 dataawsvpnconnection.NewDataAwsVpnConnection(scope Construct, id *string, config DataAwsVpnConnectionConfig) DataAwsVpnConnection
 ```
@@ -332,7 +332,7 @@ func ResetVpnConnectionId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsVpnConnection.DataAwsVpnConnection.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsvpnconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsvpnconnection"
 
 dataawsvpnconnection.DataAwsVpnConnection_IsConstruct(x interface{}) *bool
 ```
@@ -364,7 +364,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsVpnConnection.DataAwsVpnConnection.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsvpnconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsvpnconnection"
 
 dataawsvpnconnection.DataAwsVpnConnection_IsTerraformElement(x interface{}) *bool
 ```
@@ -378,7 +378,7 @@ dataawsvpnconnection.DataAwsVpnConnection_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsVpnConnection.DataAwsVpnConnection.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsvpnconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsvpnconnection"
 
 dataawsvpnconnection.DataAwsVpnConnection_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -392,7 +392,7 @@ dataawsvpnconnection.DataAwsVpnConnection_IsTerraformDataSource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsVpnConnection.DataAwsVpnConnection.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsvpnconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsvpnconnection"
 
 dataawsvpnconnection.DataAwsVpnConnection_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -830,7 +830,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsVpnConnection.DataAwsVpnConnectionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsvpnconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsvpnconnection"
 
 &dataawsvpnconnection.DataAwsVpnConnectionConfig {
 	Connection: interface{},
@@ -978,7 +978,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsVpnConnection.DataAwsVpnConnectionFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsvpnconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsvpnconnection"
 
 &dataawsvpnconnection.DataAwsVpnConnectionFilter {
 	Name: *string,
@@ -1024,7 +1024,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsVpnConnection.DataAwsVpnConnectionRoutes.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsvpnconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsvpnconnection"
 
 &dataawsvpnconnection.DataAwsVpnConnectionRoutes {
 
@@ -1037,7 +1037,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsvpnconnection"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsVpnConnection.DataAwsVpnConnectionVgwTelemetries.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsvpnconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsvpnconnection"
 
 &dataawsvpnconnection.DataAwsVpnConnectionVgwTelemetries {
 
@@ -1052,7 +1052,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsvpnconnection"
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsVpnConnection.DataAwsVpnConnectionFilterList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsvpnconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsvpnconnection"
 
 dataawsvpnconnection.NewDataAwsVpnConnectionFilterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsVpnConnectionFilterList
 ```
@@ -1212,7 +1212,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsVpnConnection.DataAwsVpnConnectionFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsvpnconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsvpnconnection"
 
 dataawsvpnconnection.NewDataAwsVpnConnectionFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsVpnConnectionFilterOutputReference
 ```
@@ -1523,7 +1523,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsVpnConnection.DataAwsVpnConnectionRoutesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsvpnconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsvpnconnection"
 
 dataawsvpnconnection.NewDataAwsVpnConnectionRoutesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsVpnConnectionRoutesList
 ```
@@ -1672,7 +1672,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsVpnConnection.DataAwsVpnConnectionRoutesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsvpnconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsvpnconnection"
 
 dataawsvpnconnection.NewDataAwsVpnConnectionRoutesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsVpnConnectionRoutesOutputReference
 ```
@@ -1972,7 +1972,7 @@ func InternalValue() DataAwsVpnConnectionRoutes
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsVpnConnection.DataAwsVpnConnectionVgwTelemetriesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsvpnconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsvpnconnection"
 
 dataawsvpnconnection.NewDataAwsVpnConnectionVgwTelemetriesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsVpnConnectionVgwTelemetriesList
 ```
@@ -2121,7 +2121,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsVpnConnection.DataAwsVpnConnectionVgwTelemetriesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsvpnconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsvpnconnection"
 
 dataawsvpnconnection.NewDataAwsVpnConnectionVgwTelemetriesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsVpnConnectionVgwTelemetriesOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bcmdataexportsExport.BcmdataexportsExport.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/bcmdataexportsexport"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bcmdataexportsexport"
 
 bcmdataexportsexport.NewBcmdataexportsExport(scope Construct, id *string, config BcmdataexportsExportConfig) BcmdataexportsExport
 ```
@@ -447,7 +447,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.bcmdataexportsExport.BcmdataexportsExport.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/bcmdataexportsexport"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bcmdataexportsexport"
 
 bcmdataexportsexport.BcmdataexportsExport_IsConstruct(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.bcmdataexportsExport.BcmdataexportsExport.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/bcmdataexportsexport"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bcmdataexportsexport"
 
 bcmdataexportsexport.BcmdataexportsExport_IsTerraformElement(x interface{}) *bool
 ```
@@ -493,7 +493,7 @@ bcmdataexportsexport.BcmdataexportsExport_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.bcmdataexportsExport.BcmdataexportsExport.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/bcmdataexportsexport"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bcmdataexportsexport"
 
 bcmdataexportsexport.BcmdataexportsExport_IsTerraformResource(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ bcmdataexportsexport.BcmdataexportsExport_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.bcmdataexportsExport.BcmdataexportsExport.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/bcmdataexportsexport"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bcmdataexportsexport"
 
 bcmdataexportsexport.BcmdataexportsExport_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -835,7 +835,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bcmdataexportsExport.BcmdataexportsExportConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/bcmdataexportsexport"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bcmdataexportsexport"
 
 &bcmdataexportsexport.BcmdataexportsExportConfig {
 	Connection: interface{},
@@ -847,7 +847,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/bcmdataexportsexport"
 	Provisioners: *[]interface{},
 	Export: interface{},
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.bcmdataexportsExport.BcmdataexportsExportTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.bcmdataexportsExport.BcmdataexportsExportTimeouts,
 }
 ```
 
@@ -983,7 +983,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bcmdataexportsExport.BcmdataexportsExportExport.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/bcmdataexportsexport"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bcmdataexportsexport"
 
 &bcmdataexportsexport.BcmdataexportsExportExport {
 	Name: *string,
@@ -1077,7 +1077,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bcmdataexportsExport.BcmdataexportsExportExportDataQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/bcmdataexportsexport"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bcmdataexportsexport"
 
 &bcmdataexportsexport.BcmdataexportsExportExportDataQuery {
 	QueryStatement: *string,
@@ -1123,7 +1123,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bcmdataexportsExport.BcmdataexportsExportExportDestinationConfigurations.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/bcmdataexportsexport"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bcmdataexportsexport"
 
 &bcmdataexportsexport.BcmdataexportsExportExportDestinationConfigurations {
 	S3Destination: interface{},
@@ -1157,7 +1157,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bcmdataexportsExport.BcmdataexportsExportExportDestinationConfigurationsS3Destination.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/bcmdataexportsexport"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bcmdataexportsexport"
 
 &bcmdataexportsexport.BcmdataexportsExportExportDestinationConfigurationsS3Destination {
 	S3Bucket: *string,
@@ -1233,7 +1233,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bcmdataexportsExport.BcmdataexportsExportExportDestinationConfigurationsS3DestinationS3OutputConfigurations.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/bcmdataexportsexport"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bcmdataexportsexport"
 
 &bcmdataexportsexport.BcmdataexportsExportExportDestinationConfigurationsS3DestinationS3OutputConfigurations {
 	Compression: *string,
@@ -1307,7 +1307,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bcmdataexportsExport.BcmdataexportsExportExportRefreshCadence.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/bcmdataexportsexport"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bcmdataexportsexport"
 
 &bcmdataexportsexport.BcmdataexportsExportExportRefreshCadence {
 	Frequency: *string,
@@ -1339,7 +1339,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bcmdataexportsExport.BcmdataexportsExportTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/bcmdataexportsexport"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bcmdataexportsexport"
 
 &bcmdataexportsexport.BcmdataexportsExportTimeouts {
 	Create: *string,
@@ -1391,7 +1391,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bcmdataexportsExport.BcmdataexportsExportExportDataQueryList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/bcmdataexportsexport"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bcmdataexportsexport"
 
 bcmdataexportsexport.NewBcmdataexportsExportExportDataQueryList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BcmdataexportsExportExportDataQueryList
 ```
@@ -1551,7 +1551,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bcmdataexportsExport.BcmdataexportsExportExportDataQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/bcmdataexportsexport"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bcmdataexportsexport"
 
 bcmdataexportsexport.NewBcmdataexportsExportExportDataQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BcmdataexportsExportExportDataQueryOutputReference
 ```
@@ -1869,7 +1869,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bcmdataexportsExport.BcmdataexportsExportExportDestinationConfigurationsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/bcmdataexportsexport"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bcmdataexportsexport"
 
 bcmdataexportsexport.NewBcmdataexportsExportExportDestinationConfigurationsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BcmdataexportsExportExportDestinationConfigurationsList
 ```
@@ -2029,7 +2029,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bcmdataexportsExport.BcmdataexportsExportExportDestinationConfigurationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/bcmdataexportsexport"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bcmdataexportsexport"
 
 bcmdataexportsexport.NewBcmdataexportsExportExportDestinationConfigurationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BcmdataexportsExportExportDestinationConfigurationsOutputReference
 ```
@@ -2338,7 +2338,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bcmdataexportsExport.BcmdataexportsExportExportDestinationConfigurationsS3DestinationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/bcmdataexportsexport"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bcmdataexportsexport"
 
 bcmdataexportsexport.NewBcmdataexportsExportExportDestinationConfigurationsS3DestinationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BcmdataexportsExportExportDestinationConfigurationsS3DestinationList
 ```
@@ -2498,7 +2498,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bcmdataexportsExport.BcmdataexportsExportExportDestinationConfigurationsS3DestinationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/bcmdataexportsexport"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bcmdataexportsexport"
 
 bcmdataexportsexport.NewBcmdataexportsExportExportDestinationConfigurationsS3DestinationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BcmdataexportsExportExportDestinationConfigurationsS3DestinationOutputReference
 ```
@@ -2873,7 +2873,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bcmdataexportsExport.BcmdataexportsExportExportDestinationConfigurationsS3DestinationS3OutputConfigurationsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/bcmdataexportsexport"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bcmdataexportsexport"
 
 bcmdataexportsexport.NewBcmdataexportsExportExportDestinationConfigurationsS3DestinationS3OutputConfigurationsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BcmdataexportsExportExportDestinationConfigurationsS3DestinationS3OutputConfigurationsList
 ```
@@ -3033,7 +3033,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bcmdataexportsExport.BcmdataexportsExportExportDestinationConfigurationsS3DestinationS3OutputConfigurationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/bcmdataexportsexport"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bcmdataexportsexport"
 
 bcmdataexportsexport.NewBcmdataexportsExportExportDestinationConfigurationsS3DestinationS3OutputConfigurationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BcmdataexportsExportExportDestinationConfigurationsS3DestinationS3OutputConfigurationsOutputReference
 ```
@@ -3388,7 +3388,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bcmdataexportsExport.BcmdataexportsExportExportList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/bcmdataexportsexport"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bcmdataexportsexport"
 
 bcmdataexportsexport.NewBcmdataexportsExportExportList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BcmdataexportsExportExportList
 ```
@@ -3548,7 +3548,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bcmdataexportsExport.BcmdataexportsExportExportOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/bcmdataexportsexport"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bcmdataexportsexport"
 
 bcmdataexportsexport.NewBcmdataexportsExportExportOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BcmdataexportsExportExportOutputReference
 ```
@@ -4003,7 +4003,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bcmdataexportsExport.BcmdataexportsExportExportRefreshCadenceList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/bcmdataexportsexport"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bcmdataexportsexport"
 
 bcmdataexportsexport.NewBcmdataexportsExportExportRefreshCadenceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BcmdataexportsExportExportRefreshCadenceList
 ```
@@ -4163,7 +4163,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bcmdataexportsExport.BcmdataexportsExportExportRefreshCadenceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/bcmdataexportsexport"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bcmdataexportsexport"
 
 bcmdataexportsexport.NewBcmdataexportsExportExportRefreshCadenceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BcmdataexportsExportExportRefreshCadenceOutputReference
 ```
@@ -4452,7 +4452,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bcmdataexportsExport.BcmdataexportsExportTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/bcmdataexportsexport"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/bcmdataexportsexport"
 
 bcmdataexportsexport.NewBcmdataexportsExportTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BcmdataexportsExportTimeoutsOutputReference
 ```

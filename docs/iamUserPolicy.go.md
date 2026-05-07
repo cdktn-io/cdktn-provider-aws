@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.iamUserPolicy.IamUserPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/iamuserpolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/iamuserpolicy"
 
 iamuserpolicy.NewIamUserPolicy(scope Construct, id *string, config IamUserPolicyConfig) IamUserPolicy
 ```
@@ -421,7 +421,7 @@ func ResetNamePrefix()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.iamUserPolicy.IamUserPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/iamuserpolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/iamuserpolicy"
 
 iamuserpolicy.IamUserPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -453,7 +453,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.iamUserPolicy.IamUserPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/iamuserpolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/iamuserpolicy"
 
 iamuserpolicy.IamUserPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ iamuserpolicy.IamUserPolicy_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.iamUserPolicy.IamUserPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/iamuserpolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/iamuserpolicy"
 
 iamuserpolicy.IamUserPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -481,7 +481,7 @@ iamuserpolicy.IamUserPolicy_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.iamUserPolicy.IamUserPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/iamuserpolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/iamuserpolicy"
 
 iamuserpolicy.IamUserPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -820,7 +820,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.iamUserPolicy.IamUserPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/iamuserpolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/iamuserpolicy"
 
 &iamuserpolicy.IamUserPolicyConfig {
 	Connection: interface{},

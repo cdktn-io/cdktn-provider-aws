@@ -25,12 +25,12 @@
     },
     {
       "name": "cdktn-cli",
-      "version": "^0.22.0",
+      "version": "^0.23.0",
       "type": "build"
     },
     {
       "name": "cdktn",
-      "version": "^0.22.0",
+      "version": "^0.23.0",
       "type": "build"
     },
     {
@@ -40,7 +40,7 @@
     },
     {
       "name": "constructs",
-      "version": "^10.4.2",
+      "version": "^10.6.0",
       "type": "build"
     },
     {
@@ -63,12 +63,12 @@
     },
     {
       "name": "jsii-rosetta",
-      "version": "~5.8.0",
+      "version": "~5.9.0",
       "type": "build"
     },
     {
       "name": "jsii",
-      "version": "~5.8.0",
+      "version": "~5.9.0",
       "type": "build"
     },
     {
@@ -82,7 +82,7 @@
     },
     {
       "name": "typescript",
-      "version": "~5.8.0",
+      "version": "~5.9.0",
       "type": "build"
     },
     {
@@ -92,12 +92,12 @@
     },
     {
       "name": "cdktn",
-      "version": "^0.22.0",
+      "version": "^0.23.0",
       "type": "peer"
     },
     {
       "name": "constructs",
-      "version": "^10.4.2",
+      "version": "^10.6.0",
       "type": "peer"
     }
   ],

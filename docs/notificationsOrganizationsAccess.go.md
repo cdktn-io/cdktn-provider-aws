@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.notificationsOrganizationsAccess.NotificationsOrganizationsAccess.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/notificationsorganizationsaccess"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/notificationsorganizationsaccess"
 
 notificationsorganizationsaccess.NewNotificationsOrganizationsAccess(scope Construct, id *string, config NotificationsOrganizationsAccessConfig) NotificationsOrganizationsAccess
 ```
@@ -420,7 +420,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.notificationsOrganizationsAccess.NotificationsOrganizationsAccess.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/notificationsorganizationsaccess"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/notificationsorganizationsaccess"
 
 notificationsorganizationsaccess.NotificationsOrganizationsAccess_IsConstruct(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.notificationsOrganizationsAccess.NotificationsOrganizationsAccess.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/notificationsorganizationsaccess"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/notificationsorganizationsaccess"
 
 notificationsorganizationsaccess.NotificationsOrganizationsAccess_IsTerraformElement(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ notificationsorganizationsaccess.NotificationsOrganizationsAccess_IsTerraformEle
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.notificationsOrganizationsAccess.NotificationsOrganizationsAccess.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/notificationsorganizationsaccess"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/notificationsorganizationsaccess"
 
 notificationsorganizationsaccess.NotificationsOrganizationsAccess_IsTerraformResource(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ notificationsorganizationsaccess.NotificationsOrganizationsAccess_IsTerraformRes
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.notificationsOrganizationsAccess.NotificationsOrganizationsAccess.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/notificationsorganizationsaccess"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/notificationsorganizationsaccess"
 
 notificationsorganizationsaccess.NotificationsOrganizationsAccess_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -753,7 +753,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.notificationsOrganizationsAccess.NotificationsOrganizationsAccessConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/notificationsorganizationsaccess"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/notificationsorganizationsaccess"
 
 &notificationsorganizationsaccess.NotificationsOrganizationsAccessConfig {
 	Connection: interface{},
@@ -764,7 +764,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/notificationsorganizat
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	Enabled: interface{},
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.notificationsOrganizationsAccess.NotificationsOrganizationsAccessTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.notificationsOrganizationsAccess.NotificationsOrganizationsAccessTimeouts,
 }
 ```
 
@@ -885,7 +885,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.notificationsOrganizationsAccess.NotificationsOrganizationsAccessTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/notificationsorganizationsaccess"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/notificationsorganizationsaccess"
 
 &notificationsorganizationsaccess.NotificationsOrganizationsAccessTimeouts {
 	Create: *string,
@@ -953,7 +953,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.notificationsOrganizationsAccess.NotificationsOrganizationsAccessTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/notificationsorganizationsaccess"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/notificationsorganizationsaccess"
 
 notificationsorganizationsaccess.NewNotificationsOrganizationsAccessTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NotificationsOrganizationsAccessTimeoutsOutputReference
 ```

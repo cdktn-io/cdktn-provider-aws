@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cognitoIdentityPoolRolesAttachment.CognitoIdentityPoolRolesAttachment.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/cognitoidentitypoolrolesattachment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cognitoidentitypoolrolesattachment"
 
 cognitoidentitypoolrolesattachment.NewCognitoIdentityPoolRolesAttachment(scope Construct, id *string, config CognitoIdentityPoolRolesAttachmentConfig) CognitoIdentityPoolRolesAttachment
 ```
@@ -434,7 +434,7 @@ func ResetRoleMapping()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.cognitoIdentityPoolRolesAttachment.CognitoIdentityPoolRolesAttachment.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/cognitoidentitypoolrolesattachment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cognitoidentitypoolrolesattachment"
 
 cognitoidentitypoolrolesattachment.CognitoIdentityPoolRolesAttachment_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.cognitoIdentityPoolRolesAttachment.CognitoIdentityPoolRolesAttachment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/cognitoidentitypoolrolesattachment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cognitoidentitypoolrolesattachment"
 
 cognitoidentitypoolrolesattachment.CognitoIdentityPoolRolesAttachment_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ cognitoidentitypoolrolesattachment.CognitoIdentityPoolRolesAttachment_IsTerrafor
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.cognitoIdentityPoolRolesAttachment.CognitoIdentityPoolRolesAttachment.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/cognitoidentitypoolrolesattachment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cognitoidentitypoolrolesattachment"
 
 cognitoidentitypoolrolesattachment.CognitoIdentityPoolRolesAttachment_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ cognitoidentitypoolrolesattachment.CognitoIdentityPoolRolesAttachment_IsTerrafor
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.cognitoIdentityPoolRolesAttachment.CognitoIdentityPoolRolesAttachment.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/cognitoidentitypoolrolesattachment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cognitoidentitypoolrolesattachment"
 
 cognitoidentitypoolrolesattachment.CognitoIdentityPoolRolesAttachment_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -833,7 +833,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cognitoIdentityPoolRolesAttachment.CognitoIdentityPoolRolesAttachmentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/cognitoidentitypoolrolesattachment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cognitoidentitypoolrolesattachment"
 
 &cognitoidentitypoolrolesattachment.CognitoIdentityPoolRolesAttachmentConfig {
 	Connection: interface{},
@@ -1012,7 +1012,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cognitoIdentityPoolRolesAttachment.CognitoIdentityPoolRolesAttachmentRoleMapping.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/cognitoidentitypoolrolesattachment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cognitoidentitypoolrolesattachment"
 
 &cognitoidentitypoolrolesattachment.CognitoIdentityPoolRolesAttachmentRoleMapping {
 	IdentityProvider: *string,
@@ -1088,7 +1088,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cognitoIdentityPoolRolesAttachment.CognitoIdentityPoolRolesAttachmentRoleMappingMappingRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/cognitoidentitypoolrolesattachment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cognitoidentitypoolrolesattachment"
 
 &cognitoidentitypoolrolesattachment.CognitoIdentityPoolRolesAttachmentRoleMappingMappingRule {
 	Claim: *string,
@@ -1164,7 +1164,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cognitoIdentityPoolRolesAttachment.CognitoIdentityPoolRolesAttachmentRoleMappingList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/cognitoidentitypoolrolesattachment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cognitoidentitypoolrolesattachment"
 
 cognitoidentitypoolrolesattachment.NewCognitoIdentityPoolRolesAttachmentRoleMappingList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CognitoIdentityPoolRolesAttachmentRoleMappingList
 ```
@@ -1324,7 +1324,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cognitoIdentityPoolRolesAttachment.CognitoIdentityPoolRolesAttachmentRoleMappingMappingRuleList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/cognitoidentitypoolrolesattachment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cognitoidentitypoolrolesattachment"
 
 cognitoidentitypoolrolesattachment.NewCognitoIdentityPoolRolesAttachmentRoleMappingMappingRuleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CognitoIdentityPoolRolesAttachmentRoleMappingMappingRuleList
 ```
@@ -1484,7 +1484,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cognitoIdentityPoolRolesAttachment.CognitoIdentityPoolRolesAttachmentRoleMappingMappingRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/cognitoidentitypoolrolesattachment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cognitoidentitypoolrolesattachment"
 
 cognitoidentitypoolrolesattachment.NewCognitoIdentityPoolRolesAttachmentRoleMappingMappingRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CognitoIdentityPoolRolesAttachmentRoleMappingMappingRuleOutputReference
 ```
@@ -1839,7 +1839,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cognitoIdentityPoolRolesAttachment.CognitoIdentityPoolRolesAttachmentRoleMappingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/cognitoidentitypoolrolesattachment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cognitoidentitypoolrolesattachment"
 
 cognitoidentitypoolrolesattachment.NewCognitoIdentityPoolRolesAttachmentRoleMappingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CognitoIdentityPoolRolesAttachmentRoleMappingOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ec2SecondaryNetwork.Ec2SecondaryNetwork.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/ec2secondarynetwork"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ec2secondarynetwork"
 
 ec2secondarynetwork.NewEc2SecondaryNetwork(scope Construct, id *string, config Ec2SecondaryNetworkConfig) Ec2SecondaryNetwork
 ```
@@ -434,7 +434,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.ec2SecondaryNetwork.Ec2SecondaryNetwork.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/ec2secondarynetwork"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ec2secondarynetwork"
 
 ec2secondarynetwork.Ec2SecondaryNetwork_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.ec2SecondaryNetwork.Ec2SecondaryNetwork.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/ec2secondarynetwork"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ec2secondarynetwork"
 
 ec2secondarynetwork.Ec2SecondaryNetwork_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ ec2secondarynetwork.Ec2SecondaryNetwork_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.ec2SecondaryNetwork.Ec2SecondaryNetwork.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/ec2secondarynetwork"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ec2secondarynetwork"
 
 ec2secondarynetwork.Ec2SecondaryNetwork_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ ec2secondarynetwork.Ec2SecondaryNetwork_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.ec2SecondaryNetwork.Ec2SecondaryNetwork.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/ec2secondarynetwork"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ec2secondarynetwork"
 
 ec2secondarynetwork.Ec2SecondaryNetwork_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -910,7 +910,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ec2SecondaryNetwork.Ec2SecondaryNetworkConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/ec2secondarynetwork"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ec2secondarynetwork"
 
 &ec2secondarynetwork.Ec2SecondaryNetworkConfig {
 	Connection: interface{},
@@ -924,7 +924,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/ec2secondarynetwork"
 	NetworkType: *string,
 	Region: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.ec2SecondaryNetwork.Ec2SecondaryNetworkTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.ec2SecondaryNetwork.Ec2SecondaryNetworkTimeouts,
 }
 ```
 
@@ -1086,7 +1086,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ec2SecondaryNetwork.Ec2SecondaryNetworkIpv4CidrBlockAssociations.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/ec2secondarynetwork"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ec2secondarynetwork"
 
 &ec2secondarynetwork.Ec2SecondaryNetworkIpv4CidrBlockAssociations {
 
@@ -1099,7 +1099,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/ec2secondarynetwork"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ec2SecondaryNetwork.Ec2SecondaryNetworkTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/ec2secondarynetwork"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ec2secondarynetwork"
 
 &ec2secondarynetwork.Ec2SecondaryNetworkTimeouts {
 	Create: *string,
@@ -1167,7 +1167,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ec2SecondaryNetwork.Ec2SecondaryNetworkIpv4CidrBlockAssociationsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/ec2secondarynetwork"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ec2secondarynetwork"
 
 ec2secondarynetwork.NewEc2SecondaryNetworkIpv4CidrBlockAssociationsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Ec2SecondaryNetworkIpv4CidrBlockAssociationsList
 ```
@@ -1316,7 +1316,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ec2SecondaryNetwork.Ec2SecondaryNetworkIpv4CidrBlockAssociationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/ec2secondarynetwork"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ec2secondarynetwork"
 
 ec2secondarynetwork.NewEc2SecondaryNetworkIpv4CidrBlockAssociationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Ec2SecondaryNetworkIpv4CidrBlockAssociationsOutputReference
 ```
@@ -1616,7 +1616,7 @@ func InternalValue() Ec2SecondaryNetworkIpv4CidrBlockAssociations
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ec2SecondaryNetwork.Ec2SecondaryNetworkTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/ec2secondarynetwork"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ec2secondarynetwork"
 
 ec2secondarynetwork.NewEc2SecondaryNetworkTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Ec2SecondaryNetworkTimeoutsOutputReference
 ```

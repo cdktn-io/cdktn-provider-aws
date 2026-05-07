@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.globalacceleratorCrossAccountAttachment.GlobalacceleratorCrossAccountAttachment.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/globalacceleratorcrossaccountattachment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/globalacceleratorcrossaccountattachment"
 
 globalacceleratorcrossaccountattachment.NewGlobalacceleratorCrossAccountAttachment(scope Construct, id *string, config GlobalacceleratorCrossAccountAttachmentConfig) GlobalacceleratorCrossAccountAttachment
 ```
@@ -434,7 +434,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.globalacceleratorCrossAccountAttachment.GlobalacceleratorCrossAccountAttachment.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/globalacceleratorcrossaccountattachment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/globalacceleratorcrossaccountattachment"
 
 globalacceleratorcrossaccountattachment.GlobalacceleratorCrossAccountAttachment_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.globalacceleratorCrossAccountAttachment.GlobalacceleratorCrossAccountAttachment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/globalacceleratorcrossaccountattachment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/globalacceleratorcrossaccountattachment"
 
 globalacceleratorcrossaccountattachment.GlobalacceleratorCrossAccountAttachment_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ globalacceleratorcrossaccountattachment.GlobalacceleratorCrossAccountAttachment_
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.globalacceleratorCrossAccountAttachment.GlobalacceleratorCrossAccountAttachment.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/globalacceleratorcrossaccountattachment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/globalacceleratorcrossaccountattachment"
 
 globalacceleratorcrossaccountattachment.GlobalacceleratorCrossAccountAttachment_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ globalacceleratorcrossaccountattachment.GlobalacceleratorCrossAccountAttachment_
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.globalacceleratorCrossAccountAttachment.GlobalacceleratorCrossAccountAttachment.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/globalacceleratorcrossaccountattachment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/globalacceleratorcrossaccountattachment"
 
 globalacceleratorcrossaccountattachment.GlobalacceleratorCrossAccountAttachment_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -866,7 +866,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.globalacceleratorCrossAccountAttachment.GlobalacceleratorCrossAccountAttachmentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/globalacceleratorcrossaccountattachment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/globalacceleratorcrossaccountattachment"
 
 &globalacceleratorcrossaccountattachment.GlobalacceleratorCrossAccountAttachmentConfig {
 	Connection: interface{},
@@ -1026,7 +1026,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.globalacceleratorCrossAccountAttachment.GlobalacceleratorCrossAccountAttachmentResource.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/globalacceleratorcrossaccountattachment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/globalacceleratorcrossaccountattachment"
 
 &globalacceleratorcrossaccountattachment.GlobalacceleratorCrossAccountAttachmentResource {
 	CidrBlock: *string,
@@ -1088,7 +1088,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.globalacceleratorCrossAccountAttachment.GlobalacceleratorCrossAccountAttachmentResourceList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/globalacceleratorcrossaccountattachment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/globalacceleratorcrossaccountattachment"
 
 globalacceleratorcrossaccountattachment.NewGlobalacceleratorCrossAccountAttachmentResourceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GlobalacceleratorCrossAccountAttachmentResourceList
 ```
@@ -1248,7 +1248,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.globalacceleratorCrossAccountAttachment.GlobalacceleratorCrossAccountAttachmentResourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/globalacceleratorcrossaccountattachment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/globalacceleratorcrossaccountattachment"
 
 globalacceleratorcrossaccountattachment.NewGlobalacceleratorCrossAccountAttachmentResourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GlobalacceleratorCrossAccountAttachmentResourceOutputReference
 ```

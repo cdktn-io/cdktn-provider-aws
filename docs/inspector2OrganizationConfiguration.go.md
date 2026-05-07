@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.inspector2OrganizationConfiguration.Inspector2OrganizationConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/inspector2organizationconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2organizationconfiguration"
 
 inspector2organizationconfiguration.NewInspector2OrganizationConfiguration(scope Construct, id *string, config Inspector2OrganizationConfigurationConfig) Inspector2OrganizationConfiguration
 ```
@@ -447,7 +447,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.inspector2OrganizationConfiguration.Inspector2OrganizationConfiguration.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/inspector2organizationconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2organizationconfiguration"
 
 inspector2organizationconfiguration.Inspector2OrganizationConfiguration_IsConstruct(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.inspector2OrganizationConfiguration.Inspector2OrganizationConfiguration.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/inspector2organizationconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2organizationconfiguration"
 
 inspector2organizationconfiguration.Inspector2OrganizationConfiguration_IsTerraformElement(x interface{}) *bool
 ```
@@ -493,7 +493,7 @@ inspector2organizationconfiguration.Inspector2OrganizationConfiguration_IsTerraf
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.inspector2OrganizationConfiguration.Inspector2OrganizationConfiguration.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/inspector2organizationconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2organizationconfiguration"
 
 inspector2organizationconfiguration.Inspector2OrganizationConfiguration_IsTerraformResource(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ inspector2organizationconfiguration.Inspector2OrganizationConfiguration_IsTerraf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.inspector2OrganizationConfiguration.Inspector2OrganizationConfiguration.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/inspector2organizationconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2organizationconfiguration"
 
 inspector2organizationconfiguration.Inspector2OrganizationConfiguration_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -835,7 +835,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.inspector2OrganizationConfiguration.Inspector2OrganizationConfigurationAutoEnable.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/inspector2organizationconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2organizationconfiguration"
 
 &inspector2organizationconfiguration.Inspector2OrganizationConfigurationAutoEnable {
 	Ec2: interface{},
@@ -923,7 +923,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.inspector2OrganizationConfiguration.Inspector2OrganizationConfigurationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/inspector2organizationconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2organizationconfiguration"
 
 &inspector2organizationconfiguration.Inspector2OrganizationConfigurationConfig {
 	Connection: interface{},
@@ -933,10 +933,10 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/inspector2organization
 	Lifecycle: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle,
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
-	AutoEnable: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.inspector2OrganizationConfiguration.Inspector2OrganizationConfigurationAutoEnable,
+	AutoEnable: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.inspector2OrganizationConfiguration.Inspector2OrganizationConfigurationAutoEnable,
 	Id: *string,
 	Region: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.inspector2OrganizationConfiguration.Inspector2OrganizationConfigurationTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.inspector2OrganizationConfiguration.Inspector2OrganizationConfigurationTimeouts,
 }
 ```
 
@@ -1090,7 +1090,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.inspector2OrganizationConfiguration.Inspector2OrganizationConfigurationTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/inspector2organizationconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2organizationconfiguration"
 
 &inspector2organizationconfiguration.Inspector2OrganizationConfigurationTimeouts {
 	Create: *string,
@@ -1152,7 +1152,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.inspector2OrganizationConfiguration.Inspector2OrganizationConfigurationAutoEnableOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/inspector2organizationconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2organizationconfiguration"
 
 inspector2organizationconfiguration.NewInspector2OrganizationConfigurationAutoEnableOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Inspector2OrganizationConfigurationAutoEnableOutputReference
 ```
@@ -1532,7 +1532,7 @@ func InternalValue() Inspector2OrganizationConfigurationAutoEnable
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.inspector2OrganizationConfiguration.Inspector2OrganizationConfigurationTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/inspector2organizationconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspector2organizationconfiguration"
 
 inspector2organizationconfiguration.NewInspector2OrganizationConfigurationTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Inspector2OrganizationConfigurationTimeoutsOutputReference
 ```

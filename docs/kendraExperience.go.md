@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.kendraExperience.KendraExperience.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/kendraexperience"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/kendraexperience"
 
 kendraexperience.NewKendraExperience(scope Construct, id *string, config KendraExperienceConfig) KendraExperience
 ```
@@ -461,7 +461,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.kendraExperience.KendraExperience.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/kendraexperience"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/kendraexperience"
 
 kendraexperience.KendraExperience_IsConstruct(x interface{}) *bool
 ```
@@ -493,7 +493,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.kendraExperience.KendraExperience.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/kendraexperience"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/kendraexperience"
 
 kendraexperience.KendraExperience_IsTerraformElement(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ kendraexperience.KendraExperience_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.kendraExperience.KendraExperience.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/kendraexperience"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/kendraexperience"
 
 kendraexperience.KendraExperience_IsTerraformResource(x interface{}) *bool
 ```
@@ -521,7 +521,7 @@ kendraexperience.KendraExperience_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.kendraExperience.KendraExperience.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/kendraexperience"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/kendraexperience"
 
 kendraexperience.KendraExperience_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -970,7 +970,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.kendraExperience.KendraExperienceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/kendraexperience"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/kendraexperience"
 
 &kendraexperience.KendraExperienceConfig {
 	Connection: interface{},
@@ -983,11 +983,11 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/kendraexperience"
 	IndexId: *string,
 	Name: *string,
 	RoleArn: *string,
-	Configuration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.kendraExperience.KendraExperienceConfiguration,
+	Configuration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.kendraExperience.KendraExperienceConfiguration,
 	Description: *string,
 	Id: *string,
 	Region: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.kendraExperience.KendraExperienceTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.kendraExperience.KendraExperienceTimeouts,
 }
 ```
 
@@ -1193,11 +1193,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.kendraExperience.KendraExperienceConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/kendraexperience"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/kendraexperience"
 
 &kendraexperience.KendraExperienceConfiguration {
-	ContentSourceConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.kendraExperience.KendraExperienceConfigurationContentSourceConfiguration,
-	UserIdentityConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.kendraExperience.KendraExperienceConfigurationUserIdentityConfiguration,
+	ContentSourceConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.kendraExperience.KendraExperienceConfigurationContentSourceConfiguration,
+	UserIdentityConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.kendraExperience.KendraExperienceConfigurationUserIdentityConfiguration,
 }
 ```
 
@@ -1243,7 +1243,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.kendraExperience.KendraExperienceConfigurationContentSourceConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/kendraexperience"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/kendraexperience"
 
 &kendraexperience.KendraExperienceConfigurationContentSourceConfiguration {
 	DataSourceIds: *[]*string,
@@ -1303,7 +1303,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.kendraExperience.KendraExperienceConfigurationUserIdentityConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/kendraexperience"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/kendraexperience"
 
 &kendraexperience.KendraExperienceConfigurationUserIdentityConfiguration {
 	IdentityAttributeName: *string,
@@ -1335,7 +1335,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.kendraExperience.KendraExperienceEndpoints.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/kendraexperience"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/kendraexperience"
 
 &kendraexperience.KendraExperienceEndpoints {
 
@@ -1348,7 +1348,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/kendraexperience"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.kendraExperience.KendraExperienceTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/kendraexperience"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/kendraexperience"
 
 &kendraexperience.KendraExperienceTimeouts {
 	Create: *string,
@@ -1410,7 +1410,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.kendraExperience.KendraExperienceConfigurationContentSourceConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/kendraexperience"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/kendraexperience"
 
 kendraexperience.NewKendraExperienceConfigurationContentSourceConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KendraExperienceConfigurationContentSourceConfigurationOutputReference
 ```
@@ -1746,7 +1746,7 @@ func InternalValue() KendraExperienceConfigurationContentSourceConfiguration
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.kendraExperience.KendraExperienceConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/kendraexperience"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/kendraexperience"
 
 kendraexperience.NewKendraExperienceConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KendraExperienceConfigurationOutputReference
 ```
@@ -2079,7 +2079,7 @@ func InternalValue() KendraExperienceConfiguration
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.kendraExperience.KendraExperienceConfigurationUserIdentityConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/kendraexperience"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/kendraexperience"
 
 kendraexperience.NewKendraExperienceConfigurationUserIdentityConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KendraExperienceConfigurationUserIdentityConfigurationOutputReference
 ```
@@ -2350,7 +2350,7 @@ func InternalValue() KendraExperienceConfigurationUserIdentityConfiguration
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.kendraExperience.KendraExperienceEndpointsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/kendraexperience"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/kendraexperience"
 
 kendraexperience.NewKendraExperienceEndpointsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) KendraExperienceEndpointsList
 ```
@@ -2499,7 +2499,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.kendraExperience.KendraExperienceEndpointsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/kendraexperience"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/kendraexperience"
 
 kendraexperience.NewKendraExperienceEndpointsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) KendraExperienceEndpointsOutputReference
 ```
@@ -2788,7 +2788,7 @@ func InternalValue() KendraExperienceEndpoints
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.kendraExperience.KendraExperienceTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/kendraexperience"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/kendraexperience"
 
 kendraexperience.NewKendraExperienceTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KendraExperienceTimeoutsOutputReference
 ```

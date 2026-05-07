@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ceAnomalyMonitor.CeAnomalyMonitor.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/ceanomalymonitor"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ceanomalymonitor"
 
 ceanomalymonitor.NewCeAnomalyMonitor(scope Construct, id *string, config CeAnomalyMonitorConfig) CeAnomalyMonitor
 ```
@@ -435,7 +435,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.ceAnomalyMonitor.CeAnomalyMonitor.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/ceanomalymonitor"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ceanomalymonitor"
 
 ceanomalymonitor.CeAnomalyMonitor_IsConstruct(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.ceAnomalyMonitor.CeAnomalyMonitor.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/ceanomalymonitor"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ceanomalymonitor"
 
 ceanomalymonitor.CeAnomalyMonitor_IsTerraformElement(x interface{}) *bool
 ```
@@ -481,7 +481,7 @@ ceanomalymonitor.CeAnomalyMonitor_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.ceAnomalyMonitor.CeAnomalyMonitor.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/ceanomalymonitor"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ceanomalymonitor"
 
 ceanomalymonitor.CeAnomalyMonitor_IsTerraformResource(x interface{}) *bool
 ```
@@ -495,7 +495,7 @@ ceanomalymonitor.CeAnomalyMonitor_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.ceAnomalyMonitor.CeAnomalyMonitor.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/ceanomalymonitor"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ceanomalymonitor"
 
 ceanomalymonitor.CeAnomalyMonitor_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -889,7 +889,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ceAnomalyMonitor.CeAnomalyMonitorConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/ceanomalymonitor"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ceanomalymonitor"
 
 &ceanomalymonitor.CeAnomalyMonitorConfig {
 	Connection: interface{},

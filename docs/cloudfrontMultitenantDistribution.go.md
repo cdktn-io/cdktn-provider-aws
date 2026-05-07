@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistribution.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudfrontmultitenantdistribution"
 
 cloudfrontmultitenantdistribution.NewCloudfrontMultitenantDistribution(scope Construct, id *string, config CloudfrontMultitenantDistributionConfig) CloudfrontMultitenantDistribution
 ```
@@ -628,7 +628,7 @@ func ResetWebAclId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistribution.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudfrontmultitenantdistribution"
 
 cloudfrontmultitenantdistribution.CloudfrontMultitenantDistribution_IsConstruct(x interface{}) *bool
 ```
@@ -660,7 +660,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistribution.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudfrontmultitenantdistribution"
 
 cloudfrontmultitenantdistribution.CloudfrontMultitenantDistribution_IsTerraformElement(x interface{}) *bool
 ```
@@ -674,7 +674,7 @@ cloudfrontmultitenantdistribution.CloudfrontMultitenantDistribution_IsTerraformE
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistribution.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudfrontmultitenantdistribution"
 
 cloudfrontmultitenantdistribution.CloudfrontMultitenantDistribution_IsTerraformResource(x interface{}) *bool
 ```
@@ -688,7 +688,7 @@ cloudfrontmultitenantdistribution.CloudfrontMultitenantDistribution_IsTerraformR
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistribution.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudfrontmultitenantdistribution"
 
 cloudfrontmultitenantdistribution.CloudfrontMultitenantDistribution_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1379,7 +1379,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionActiveTrustedKeyGroups.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudfrontmultitenantdistribution"
 
 &cloudfrontmultitenantdistribution.CloudfrontMultitenantDistributionActiveTrustedKeyGroups {
 	Items: interface{},
@@ -1413,7 +1413,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionActiveTrustedKeyGroupsItems.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudfrontmultitenantdistribution"
 
 &cloudfrontmultitenantdistribution.CloudfrontMultitenantDistributionActiveTrustedKeyGroupsItems {
 
@@ -1426,7 +1426,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/cloudfrontmultitenantd
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehavior.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudfrontmultitenantdistribution"
 
 &cloudfrontmultitenantdistribution.CloudfrontMultitenantDistributionCacheBehavior {
 	PathPattern: *string,
@@ -1634,7 +1634,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorAllowedMethods.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudfrontmultitenantdistribution"
 
 &cloudfrontmultitenantdistribution.CloudfrontMultitenantDistributionCacheBehaviorAllowedMethods {
 	CachedMethods: *[]*string,
@@ -1680,7 +1680,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorFunctionAssociation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudfrontmultitenantdistribution"
 
 &cloudfrontmultitenantdistribution.CloudfrontMultitenantDistributionCacheBehaviorFunctionAssociation {
 	EventType: *string,
@@ -1726,7 +1726,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorLambdaFunctionAssociation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudfrontmultitenantdistribution"
 
 &cloudfrontmultitenantdistribution.CloudfrontMultitenantDistributionCacheBehaviorLambdaFunctionAssociation {
 	EventType: *string,
@@ -1786,7 +1786,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorTrustedKeyGroups.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudfrontmultitenantdistribution"
 
 &cloudfrontmultitenantdistribution.CloudfrontMultitenantDistributionCacheBehaviorTrustedKeyGroups {
 	Enabled: interface{},
@@ -1832,7 +1832,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudfrontmultitenantdistribution"
 
 &cloudfrontmultitenantdistribution.CloudfrontMultitenantDistributionConfig {
 	Connection: interface{},
@@ -1855,7 +1855,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/cloudfrontmultitenantd
 	Restrictions: interface{},
 	Tags: *map[string]*string,
 	TenantConfig: interface{},
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTimeouts,
 	ViewerCertificate: interface{},
 	WebAclId: *string,
 }
@@ -2178,7 +2178,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCustomErrorResponse.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudfrontmultitenantdistribution"
 
 &cloudfrontmultitenantdistribution.CloudfrontMultitenantDistributionCustomErrorResponse {
 	ErrorCode: *f64,
@@ -2252,7 +2252,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehavior.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudfrontmultitenantdistribution"
 
 &cloudfrontmultitenantdistribution.CloudfrontMultitenantDistributionDefaultCacheBehavior {
 	TargetOriginId: *string,
@@ -2446,7 +2446,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorAllowedMethods.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudfrontmultitenantdistribution"
 
 &cloudfrontmultitenantdistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorAllowedMethods {
 	CachedMethods: *[]*string,
@@ -2492,7 +2492,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorFunctionAssociation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudfrontmultitenantdistribution"
 
 &cloudfrontmultitenantdistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorFunctionAssociation {
 	EventType: *string,
@@ -2538,7 +2538,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorLambdaFunctionAssociation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudfrontmultitenantdistribution"
 
 &cloudfrontmultitenantdistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorLambdaFunctionAssociation {
 	EventType: *string,
@@ -2598,7 +2598,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorTrustedKeyGroups.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudfrontmultitenantdistribution"
 
 &cloudfrontmultitenantdistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorTrustedKeyGroups {
 	Enabled: interface{},
@@ -2644,7 +2644,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOrigin.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudfrontmultitenantdistribution"
 
 &cloudfrontmultitenantdistribution.CloudfrontMultitenantDistributionOrigin {
 	DomainName: *string,
@@ -2827,7 +2827,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginCustomHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudfrontmultitenantdistribution"
 
 &cloudfrontmultitenantdistribution.CloudfrontMultitenantDistributionOriginCustomHeader {
 	HeaderName: *string,
@@ -2873,7 +2873,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginCustomOriginConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudfrontmultitenantdistribution"
 
 &cloudfrontmultitenantdistribution.CloudfrontMultitenantDistributionOriginCustomOriginConfig {
 	HttpPort: *f64,
@@ -2989,7 +2989,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudfrontmultitenantdistribution"
 
 &cloudfrontmultitenantdistribution.CloudfrontMultitenantDistributionOriginGroup {
 	Id: *string,
@@ -3056,7 +3056,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroupFailoverCriteria.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudfrontmultitenantdistribution"
 
 &cloudfrontmultitenantdistribution.CloudfrontMultitenantDistributionOriginGroupFailoverCriteria {
 	StatusCodes: *[]*f64,
@@ -3088,7 +3088,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroupMember.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudfrontmultitenantdistribution"
 
 &cloudfrontmultitenantdistribution.CloudfrontMultitenantDistributionOriginGroupMember {
 	OriginId: *string,
@@ -3120,7 +3120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginOriginShield.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudfrontmultitenantdistribution"
 
 &cloudfrontmultitenantdistribution.CloudfrontMultitenantDistributionOriginOriginShield {
 	Enabled: interface{},
@@ -3166,7 +3166,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginVpcOriginConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudfrontmultitenantdistribution"
 
 &cloudfrontmultitenantdistribution.CloudfrontMultitenantDistributionOriginVpcOriginConfig {
 	VpcOriginId: *string,
@@ -3226,7 +3226,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionRestrictions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudfrontmultitenantdistribution"
 
 &cloudfrontmultitenantdistribution.CloudfrontMultitenantDistributionRestrictions {
 	GeoRestriction: interface{},
@@ -3260,7 +3260,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionRestrictionsGeoRestriction.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudfrontmultitenantdistribution"
 
 &cloudfrontmultitenantdistribution.CloudfrontMultitenantDistributionRestrictionsGeoRestriction {
 	RestrictionType: *string,
@@ -3306,7 +3306,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudfrontmultitenantdistribution"
 
 &cloudfrontmultitenantdistribution.CloudfrontMultitenantDistributionTenantConfig {
 	ParameterDefinition: interface{},
@@ -3340,7 +3340,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudfrontmultitenantdistribution"
 
 &cloudfrontmultitenantdistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinition {
 	Name: *string,
@@ -3388,7 +3388,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudfrontmultitenantdistribution"
 
 &cloudfrontmultitenantdistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinition {
 	StringSchema: interface{},
@@ -3422,7 +3422,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinitionStringSchema.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudfrontmultitenantdistribution"
 
 &cloudfrontmultitenantdistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinitionStringSchema {
 	Required: interface{},
@@ -3482,7 +3482,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudfrontmultitenantdistribution"
 
 &cloudfrontmultitenantdistribution.CloudfrontMultitenantDistributionTimeouts {
 	Create: *string,
@@ -3548,7 +3548,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionViewerCertificate.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudfrontmultitenantdistribution"
 
 &cloudfrontmultitenantdistribution.CloudfrontMultitenantDistributionViewerCertificate {
 	AcmCertificateArn: *string,
@@ -3624,7 +3624,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionActiveTrustedKeyGroupsItemsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudfrontmultitenantdistribution"
 
 cloudfrontmultitenantdistribution.NewCloudfrontMultitenantDistributionActiveTrustedKeyGroupsItemsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudfrontMultitenantDistributionActiveTrustedKeyGroupsItemsList
 ```
@@ -3784,7 +3784,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionActiveTrustedKeyGroupsItemsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudfrontmultitenantdistribution"
 
 cloudfrontmultitenantdistribution.NewCloudfrontMultitenantDistributionActiveTrustedKeyGroupsItemsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudfrontMultitenantDistributionActiveTrustedKeyGroupsItemsOutputReference
 ```
@@ -4073,7 +4073,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionActiveTrustedKeyGroupsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudfrontmultitenantdistribution"
 
 cloudfrontmultitenantdistribution.NewCloudfrontMultitenantDistributionActiveTrustedKeyGroupsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudfrontMultitenantDistributionActiveTrustedKeyGroupsList
 ```
@@ -4233,7 +4233,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionActiveTrustedKeyGroupsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudfrontmultitenantdistribution"
 
 cloudfrontmultitenantdistribution.NewCloudfrontMultitenantDistributionActiveTrustedKeyGroupsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudfrontMultitenantDistributionActiveTrustedKeyGroupsOutputReference
 ```
@@ -4553,7 +4553,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorAllowedMethodsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudfrontmultitenantdistribution"
 
 cloudfrontmultitenantdistribution.NewCloudfrontMultitenantDistributionCacheBehaviorAllowedMethodsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudfrontMultitenantDistributionCacheBehaviorAllowedMethodsList
 ```
@@ -4713,7 +4713,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorAllowedMethodsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudfrontmultitenantdistribution"
 
 cloudfrontmultitenantdistribution.NewCloudfrontMultitenantDistributionCacheBehaviorAllowedMethodsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudfrontMultitenantDistributionCacheBehaviorAllowedMethodsOutputReference
 ```
@@ -5024,7 +5024,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorFunctionAssociationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudfrontmultitenantdistribution"
 
 cloudfrontmultitenantdistribution.NewCloudfrontMultitenantDistributionCacheBehaviorFunctionAssociationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudfrontMultitenantDistributionCacheBehaviorFunctionAssociationList
 ```
@@ -5184,7 +5184,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorFunctionAssociationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudfrontmultitenantdistribution"
 
 cloudfrontmultitenantdistribution.NewCloudfrontMultitenantDistributionCacheBehaviorFunctionAssociationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudfrontMultitenantDistributionCacheBehaviorFunctionAssociationOutputReference
 ```
@@ -5495,7 +5495,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorLambdaFunctionAssociationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudfrontmultitenantdistribution"
 
 cloudfrontmultitenantdistribution.NewCloudfrontMultitenantDistributionCacheBehaviorLambdaFunctionAssociationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudfrontMultitenantDistributionCacheBehaviorLambdaFunctionAssociationList
 ```
@@ -5655,7 +5655,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorLambdaFunctionAssociationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudfrontmultitenantdistribution"
 
 cloudfrontmultitenantdistribution.NewCloudfrontMultitenantDistributionCacheBehaviorLambdaFunctionAssociationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudfrontMultitenantDistributionCacheBehaviorLambdaFunctionAssociationOutputReference
 ```
@@ -5995,7 +5995,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudfrontmultitenantdistribution"
 
 cloudfrontmultitenantdistribution.NewCloudfrontMultitenantDistributionCacheBehaviorList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudfrontMultitenantDistributionCacheBehaviorList
 ```
@@ -6155,7 +6155,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudfrontmultitenantdistribution"
 
 cloudfrontmultitenantdistribution.NewCloudfrontMultitenantDistributionCacheBehaviorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudfrontMultitenantDistributionCacheBehaviorOutputReference
 ```
@@ -6830,7 +6830,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorTrustedKeyGroupsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudfrontmultitenantdistribution"
 
 cloudfrontmultitenantdistribution.NewCloudfrontMultitenantDistributionCacheBehaviorTrustedKeyGroupsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudfrontMultitenantDistributionCacheBehaviorTrustedKeyGroupsList
 ```
@@ -6990,7 +6990,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorTrustedKeyGroupsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudfrontmultitenantdistribution"
 
 cloudfrontmultitenantdistribution.NewCloudfrontMultitenantDistributionCacheBehaviorTrustedKeyGroupsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudfrontMultitenantDistributionCacheBehaviorTrustedKeyGroupsOutputReference
 ```
@@ -7315,7 +7315,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCustomErrorResponseList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudfrontmultitenantdistribution"
 
 cloudfrontmultitenantdistribution.NewCloudfrontMultitenantDistributionCustomErrorResponseList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudfrontMultitenantDistributionCustomErrorResponseList
 ```
@@ -7475,7 +7475,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCustomErrorResponseOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudfrontmultitenantdistribution"
 
 cloudfrontmultitenantdistribution.NewCloudfrontMultitenantDistributionCustomErrorResponseOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudfrontMultitenantDistributionCustomErrorResponseOutputReference
 ```
@@ -7851,7 +7851,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorAllowedMethodsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudfrontmultitenantdistribution"
 
 cloudfrontmultitenantdistribution.NewCloudfrontMultitenantDistributionDefaultCacheBehaviorAllowedMethodsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudfrontMultitenantDistributionDefaultCacheBehaviorAllowedMethodsList
 ```
@@ -8011,7 +8011,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorAllowedMethodsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudfrontmultitenantdistribution"
 
 cloudfrontmultitenantdistribution.NewCloudfrontMultitenantDistributionDefaultCacheBehaviorAllowedMethodsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudfrontMultitenantDistributionDefaultCacheBehaviorAllowedMethodsOutputReference
 ```
@@ -8322,7 +8322,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorFunctionAssociationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudfrontmultitenantdistribution"
 
 cloudfrontmultitenantdistribution.NewCloudfrontMultitenantDistributionDefaultCacheBehaviorFunctionAssociationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudfrontMultitenantDistributionDefaultCacheBehaviorFunctionAssociationList
 ```
@@ -8482,7 +8482,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorFunctionAssociationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudfrontmultitenantdistribution"
 
 cloudfrontmultitenantdistribution.NewCloudfrontMultitenantDistributionDefaultCacheBehaviorFunctionAssociationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudfrontMultitenantDistributionDefaultCacheBehaviorFunctionAssociationOutputReference
 ```
@@ -8793,7 +8793,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorLambdaFunctionAssociationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudfrontmultitenantdistribution"
 
 cloudfrontmultitenantdistribution.NewCloudfrontMultitenantDistributionDefaultCacheBehaviorLambdaFunctionAssociationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudfrontMultitenantDistributionDefaultCacheBehaviorLambdaFunctionAssociationList
 ```
@@ -8953,7 +8953,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorLambdaFunctionAssociationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudfrontmultitenantdistribution"
 
 cloudfrontmultitenantdistribution.NewCloudfrontMultitenantDistributionDefaultCacheBehaviorLambdaFunctionAssociationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudfrontMultitenantDistributionDefaultCacheBehaviorLambdaFunctionAssociationOutputReference
 ```
@@ -9293,7 +9293,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudfrontmultitenantdistribution"
 
 cloudfrontmultitenantdistribution.NewCloudfrontMultitenantDistributionDefaultCacheBehaviorList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudfrontMultitenantDistributionDefaultCacheBehaviorList
 ```
@@ -9453,7 +9453,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudfrontmultitenantdistribution"
 
 cloudfrontmultitenantdistribution.NewCloudfrontMultitenantDistributionDefaultCacheBehaviorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudfrontMultitenantDistributionDefaultCacheBehaviorOutputReference
 ```
@@ -10106,7 +10106,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorTrustedKeyGroupsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudfrontmultitenantdistribution"
 
 cloudfrontmultitenantdistribution.NewCloudfrontMultitenantDistributionDefaultCacheBehaviorTrustedKeyGroupsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudfrontMultitenantDistributionDefaultCacheBehaviorTrustedKeyGroupsList
 ```
@@ -10266,7 +10266,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorTrustedKeyGroupsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudfrontmultitenantdistribution"
 
 cloudfrontmultitenantdistribution.NewCloudfrontMultitenantDistributionDefaultCacheBehaviorTrustedKeyGroupsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudfrontMultitenantDistributionDefaultCacheBehaviorTrustedKeyGroupsOutputReference
 ```
@@ -10591,7 +10591,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginCustomHeaderList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudfrontmultitenantdistribution"
 
 cloudfrontmultitenantdistribution.NewCloudfrontMultitenantDistributionOriginCustomHeaderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudfrontMultitenantDistributionOriginCustomHeaderList
 ```
@@ -10751,7 +10751,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginCustomHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudfrontmultitenantdistribution"
 
 cloudfrontmultitenantdistribution.NewCloudfrontMultitenantDistributionOriginCustomHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudfrontMultitenantDistributionOriginCustomHeaderOutputReference
 ```
@@ -11062,7 +11062,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginCustomOriginConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudfrontmultitenantdistribution"
 
 cloudfrontmultitenantdistribution.NewCloudfrontMultitenantDistributionOriginCustomOriginConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudfrontMultitenantDistributionOriginCustomOriginConfigList
 ```
@@ -11222,7 +11222,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginCustomOriginConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudfrontmultitenantdistribution"
 
 cloudfrontmultitenantdistribution.NewCloudfrontMultitenantDistributionOriginCustomOriginConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudfrontMultitenantDistributionOriginCustomOriginConfigOutputReference
 ```
@@ -11664,7 +11664,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroupFailoverCriteriaList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudfrontmultitenantdistribution"
 
 cloudfrontmultitenantdistribution.NewCloudfrontMultitenantDistributionOriginGroupFailoverCriteriaList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudfrontMultitenantDistributionOriginGroupFailoverCriteriaList
 ```
@@ -11824,7 +11824,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroupFailoverCriteriaOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudfrontmultitenantdistribution"
 
 cloudfrontmultitenantdistribution.NewCloudfrontMultitenantDistributionOriginGroupFailoverCriteriaOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudfrontMultitenantDistributionOriginGroupFailoverCriteriaOutputReference
 ```
@@ -12113,7 +12113,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroupList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudfrontmultitenantdistribution"
 
 cloudfrontmultitenantdistribution.NewCloudfrontMultitenantDistributionOriginGroupList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudfrontMultitenantDistributionOriginGroupList
 ```
@@ -12273,7 +12273,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroupMemberList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudfrontmultitenantdistribution"
 
 cloudfrontmultitenantdistribution.NewCloudfrontMultitenantDistributionOriginGroupMemberList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudfrontMultitenantDistributionOriginGroupMemberList
 ```
@@ -12433,7 +12433,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroupMemberOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudfrontmultitenantdistribution"
 
 cloudfrontmultitenantdistribution.NewCloudfrontMultitenantDistributionOriginGroupMemberOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudfrontMultitenantDistributionOriginGroupMemberOutputReference
 ```
@@ -12722,7 +12722,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroupOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudfrontmultitenantdistribution"
 
 cloudfrontmultitenantdistribution.NewCloudfrontMultitenantDistributionOriginGroupOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudfrontMultitenantDistributionOriginGroupOutputReference
 ```
@@ -13095,7 +13095,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudfrontmultitenantdistribution"
 
 cloudfrontmultitenantdistribution.NewCloudfrontMultitenantDistributionOriginList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudfrontMultitenantDistributionOriginList
 ```
@@ -13255,7 +13255,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginOriginShieldList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudfrontmultitenantdistribution"
 
 cloudfrontmultitenantdistribution.NewCloudfrontMultitenantDistributionOriginOriginShieldList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudfrontMultitenantDistributionOriginOriginShieldList
 ```
@@ -13415,7 +13415,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginOriginShieldOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudfrontmultitenantdistribution"
 
 cloudfrontmultitenantdistribution.NewCloudfrontMultitenantDistributionOriginOriginShieldOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudfrontMultitenantDistributionOriginOriginShieldOutputReference
 ```
@@ -13733,7 +13733,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudfrontmultitenantdistribution"
 
 cloudfrontmultitenantdistribution.NewCloudfrontMultitenantDistributionOriginOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudfrontMultitenantDistributionOriginOutputReference
 ```
@@ -14357,7 +14357,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginVpcOriginConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudfrontmultitenantdistribution"
 
 cloudfrontmultitenantdistribution.NewCloudfrontMultitenantDistributionOriginVpcOriginConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudfrontMultitenantDistributionOriginVpcOriginConfigList
 ```
@@ -14517,7 +14517,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginVpcOriginConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudfrontmultitenantdistribution"
 
 cloudfrontmultitenantdistribution.NewCloudfrontMultitenantDistributionOriginVpcOriginConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudfrontMultitenantDistributionOriginVpcOriginConfigOutputReference
 ```
@@ -14864,7 +14864,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionRestrictionsGeoRestrictionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudfrontmultitenantdistribution"
 
 cloudfrontmultitenantdistribution.NewCloudfrontMultitenantDistributionRestrictionsGeoRestrictionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudfrontMultitenantDistributionRestrictionsGeoRestrictionList
 ```
@@ -15024,7 +15024,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionRestrictionsGeoRestrictionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudfrontmultitenantdistribution"
 
 cloudfrontmultitenantdistribution.NewCloudfrontMultitenantDistributionRestrictionsGeoRestrictionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudfrontMultitenantDistributionRestrictionsGeoRestrictionOutputReference
 ```
@@ -15342,7 +15342,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionRestrictionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudfrontmultitenantdistribution"
 
 cloudfrontmultitenantdistribution.NewCloudfrontMultitenantDistributionRestrictionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudfrontMultitenantDistributionRestrictionsList
 ```
@@ -15502,7 +15502,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionRestrictionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudfrontmultitenantdistribution"
 
 cloudfrontmultitenantdistribution.NewCloudfrontMultitenantDistributionRestrictionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudfrontMultitenantDistributionRestrictionsOutputReference
 ```
@@ -15811,7 +15811,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudfrontmultitenantdistribution"
 
 cloudfrontmultitenantdistribution.NewCloudfrontMultitenantDistributionTenantConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudfrontMultitenantDistributionTenantConfigList
 ```
@@ -15971,7 +15971,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudfrontmultitenantdistribution"
 
 cloudfrontmultitenantdistribution.NewCloudfrontMultitenantDistributionTenantConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudfrontMultitenantDistributionTenantConfigOutputReference
 ```
@@ -16280,7 +16280,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinitionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudfrontmultitenantdistribution"
 
 cloudfrontmultitenantdistribution.NewCloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinitionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinitionList
 ```
@@ -16440,7 +16440,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinitionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudfrontmultitenantdistribution"
 
 cloudfrontmultitenantdistribution.NewCloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinitionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinitionOutputReference
 ```
@@ -16749,7 +16749,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinitionStringSchemaList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudfrontmultitenantdistribution"
 
 cloudfrontmultitenantdistribution.NewCloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinitionStringSchemaList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinitionStringSchemaList
 ```
@@ -16909,7 +16909,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinitionStringSchemaOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudfrontmultitenantdistribution"
 
 cloudfrontmultitenantdistribution.NewCloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinitionStringSchemaOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinitionStringSchemaOutputReference
 ```
@@ -17256,7 +17256,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinitionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudfrontmultitenantdistribution"
 
 cloudfrontmultitenantdistribution.NewCloudfrontMultitenantDistributionTenantConfigParameterDefinitionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudfrontMultitenantDistributionTenantConfigParameterDefinitionList
 ```
@@ -17416,7 +17416,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinitionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudfrontmultitenantdistribution"
 
 cloudfrontmultitenantdistribution.NewCloudfrontMultitenantDistributionTenantConfigParameterDefinitionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudfrontMultitenantDistributionTenantConfigParameterDefinitionOutputReference
 ```
@@ -17747,7 +17747,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudfrontmultitenantdistribution"
 
 cloudfrontmultitenantdistribution.NewCloudfrontMultitenantDistributionTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudfrontMultitenantDistributionTimeoutsOutputReference
 ```
@@ -18083,7 +18083,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionViewerCertificateList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudfrontmultitenantdistribution"
 
 cloudfrontmultitenantdistribution.NewCloudfrontMultitenantDistributionViewerCertificateList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudfrontMultitenantDistributionViewerCertificateList
 ```
@@ -18243,7 +18243,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionViewerCertificateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/cloudfrontmultitenantdistribution"
 
 cloudfrontmultitenantdistribution.NewCloudfrontMultitenantDistributionViewerCertificateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudfrontMultitenantDistributionViewerCertificateOutputReference
 ```

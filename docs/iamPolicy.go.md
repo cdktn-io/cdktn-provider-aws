@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.iamPolicy.IamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/iampolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/iampolicy"
 
 iampolicy.NewIamPolicy(scope Construct, id *string, config IamPolicyConfig) IamPolicy
 ```
@@ -456,7 +456,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.iamPolicy.IamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/iampolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/iampolicy"
 
 iampolicy.IamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -488,7 +488,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.iamPolicy.IamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/iampolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/iampolicy"
 
 iampolicy.IamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -502,7 +502,7 @@ iampolicy.IamPolicy_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.iamPolicy.IamPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/iampolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/iampolicy"
 
 iampolicy.IamPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -516,7 +516,7 @@ iampolicy.IamPolicy_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.iamPolicy.IamPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/iampolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/iampolicy"
 
 iampolicy.IamPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -976,7 +976,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.iamPolicy.IamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/iampolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/iampolicy"
 
 &iampolicy.IamPolicyConfig {
 	Connection: interface{},

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.glueCatalogTableOptimizer.GlueCatalogTableOptimizer.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/gluecatalogtableoptimizer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/gluecatalogtableoptimizer"
 
 gluecatalogtableoptimizer.NewGlueCatalogTableOptimizer(scope Construct, id *string, config GlueCatalogTableOptimizerConfig) GlueCatalogTableOptimizer
 ```
@@ -427,7 +427,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.glueCatalogTableOptimizer.GlueCatalogTableOptimizer.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/gluecatalogtableoptimizer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/gluecatalogtableoptimizer"
 
 gluecatalogtableoptimizer.GlueCatalogTableOptimizer_IsConstruct(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.glueCatalogTableOptimizer.GlueCatalogTableOptimizer.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/gluecatalogtableoptimizer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/gluecatalogtableoptimizer"
 
 gluecatalogtableoptimizer.GlueCatalogTableOptimizer_IsTerraformElement(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ gluecatalogtableoptimizer.GlueCatalogTableOptimizer_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.glueCatalogTableOptimizer.GlueCatalogTableOptimizer.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/gluecatalogtableoptimizer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/gluecatalogtableoptimizer"
 
 gluecatalogtableoptimizer.GlueCatalogTableOptimizer_IsTerraformResource(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ gluecatalogtableoptimizer.GlueCatalogTableOptimizer_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.glueCatalogTableOptimizer.GlueCatalogTableOptimizer.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/gluecatalogtableoptimizer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/gluecatalogtableoptimizer"
 
 gluecatalogtableoptimizer.GlueCatalogTableOptimizer_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -848,7 +848,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.glueCatalogTableOptimizer.GlueCatalogTableOptimizerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/gluecatalogtableoptimizer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/gluecatalogtableoptimizer"
 
 &gluecatalogtableoptimizer.GlueCatalogTableOptimizerConfig {
 	Connection: interface{},
@@ -1038,7 +1038,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.glueCatalogTableOptimizer.GlueCatalogTableOptimizerConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/gluecatalogtableoptimizer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/gluecatalogtableoptimizer"
 
 &gluecatalogtableoptimizer.GlueCatalogTableOptimizerConfiguration {
 	Enabled: interface{},
@@ -1116,7 +1116,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.glueCatalogTableOptimizer.GlueCatalogTableOptimizerConfigurationOrphanFileDeletionConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/gluecatalogtableoptimizer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/gluecatalogtableoptimizer"
 
 &gluecatalogtableoptimizer.GlueCatalogTableOptimizerConfigurationOrphanFileDeletionConfiguration {
 	IcebergConfiguration: interface{},
@@ -1150,7 +1150,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.glueCatalogTableOptimizer.GlueCatalogTableOptimizerConfigurationOrphanFileDeletionConfigurationIcebergConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/gluecatalogtableoptimizer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/gluecatalogtableoptimizer"
 
 &gluecatalogtableoptimizer.GlueCatalogTableOptimizerConfigurationOrphanFileDeletionConfigurationIcebergConfiguration {
 	Location: *string,
@@ -1210,7 +1210,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.glueCatalogTableOptimizer.GlueCatalogTableOptimizerConfigurationRetentionConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/gluecatalogtableoptimizer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/gluecatalogtableoptimizer"
 
 &gluecatalogtableoptimizer.GlueCatalogTableOptimizerConfigurationRetentionConfiguration {
 	IcebergConfiguration: interface{},
@@ -1244,7 +1244,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.glueCatalogTableOptimizer.GlueCatalogTableOptimizerConfigurationRetentionConfigurationIcebergConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/gluecatalogtableoptimizer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/gluecatalogtableoptimizer"
 
 &gluecatalogtableoptimizer.GlueCatalogTableOptimizerConfigurationRetentionConfigurationIcebergConfiguration {
 	CleanExpiredFiles: interface{},
@@ -1320,7 +1320,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.glueCatalogTableOptimizer.GlueCatalogTableOptimizerConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/gluecatalogtableoptimizer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/gluecatalogtableoptimizer"
 
 gluecatalogtableoptimizer.NewGlueCatalogTableOptimizerConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GlueCatalogTableOptimizerConfigurationList
 ```
@@ -1480,7 +1480,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.glueCatalogTableOptimizer.GlueCatalogTableOptimizerConfigurationOrphanFileDeletionConfigurationIcebergConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/gluecatalogtableoptimizer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/gluecatalogtableoptimizer"
 
 gluecatalogtableoptimizer.NewGlueCatalogTableOptimizerConfigurationOrphanFileDeletionConfigurationIcebergConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GlueCatalogTableOptimizerConfigurationOrphanFileDeletionConfigurationIcebergConfigurationList
 ```
@@ -1640,7 +1640,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.glueCatalogTableOptimizer.GlueCatalogTableOptimizerConfigurationOrphanFileDeletionConfigurationIcebergConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/gluecatalogtableoptimizer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/gluecatalogtableoptimizer"
 
 gluecatalogtableoptimizer.NewGlueCatalogTableOptimizerConfigurationOrphanFileDeletionConfigurationIcebergConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GlueCatalogTableOptimizerConfigurationOrphanFileDeletionConfigurationIcebergConfigurationOutputReference
 ```
@@ -1994,7 +1994,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.glueCatalogTableOptimizer.GlueCatalogTableOptimizerConfigurationOrphanFileDeletionConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/gluecatalogtableoptimizer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/gluecatalogtableoptimizer"
 
 gluecatalogtableoptimizer.NewGlueCatalogTableOptimizerConfigurationOrphanFileDeletionConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GlueCatalogTableOptimizerConfigurationOrphanFileDeletionConfigurationList
 ```
@@ -2154,7 +2154,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.glueCatalogTableOptimizer.GlueCatalogTableOptimizerConfigurationOrphanFileDeletionConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/gluecatalogtableoptimizer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/gluecatalogtableoptimizer"
 
 gluecatalogtableoptimizer.NewGlueCatalogTableOptimizerConfigurationOrphanFileDeletionConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GlueCatalogTableOptimizerConfigurationOrphanFileDeletionConfigurationOutputReference
 ```
@@ -2463,7 +2463,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.glueCatalogTableOptimizer.GlueCatalogTableOptimizerConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/gluecatalogtableoptimizer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/gluecatalogtableoptimizer"
 
 gluecatalogtableoptimizer.NewGlueCatalogTableOptimizerConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GlueCatalogTableOptimizerConfigurationOutputReference
 ```
@@ -2858,7 +2858,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.glueCatalogTableOptimizer.GlueCatalogTableOptimizerConfigurationRetentionConfigurationIcebergConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/gluecatalogtableoptimizer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/gluecatalogtableoptimizer"
 
 gluecatalogtableoptimizer.NewGlueCatalogTableOptimizerConfigurationRetentionConfigurationIcebergConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GlueCatalogTableOptimizerConfigurationRetentionConfigurationIcebergConfigurationList
 ```
@@ -3018,7 +3018,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.glueCatalogTableOptimizer.GlueCatalogTableOptimizerConfigurationRetentionConfigurationIcebergConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/gluecatalogtableoptimizer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/gluecatalogtableoptimizer"
 
 gluecatalogtableoptimizer.NewGlueCatalogTableOptimizerConfigurationRetentionConfigurationIcebergConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GlueCatalogTableOptimizerConfigurationRetentionConfigurationIcebergConfigurationOutputReference
 ```
@@ -3401,7 +3401,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.glueCatalogTableOptimizer.GlueCatalogTableOptimizerConfigurationRetentionConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/gluecatalogtableoptimizer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/gluecatalogtableoptimizer"
 
 gluecatalogtableoptimizer.NewGlueCatalogTableOptimizerConfigurationRetentionConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GlueCatalogTableOptimizerConfigurationRetentionConfigurationList
 ```
@@ -3561,7 +3561,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.glueCatalogTableOptimizer.GlueCatalogTableOptimizerConfigurationRetentionConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/gluecatalogtableoptimizer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/gluecatalogtableoptimizer"
 
 gluecatalogtableoptimizer.NewGlueCatalogTableOptimizerConfigurationRetentionConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GlueCatalogTableOptimizerConfigurationRetentionConfigurationOutputReference
 ```

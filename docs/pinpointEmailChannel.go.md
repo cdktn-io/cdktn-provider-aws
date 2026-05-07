@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.pinpointEmailChannel.PinpointEmailChannel.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/pinpointemailchannel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/pinpointemailchannel"
 
 pinpointemailchannel.NewPinpointEmailChannel(scope Construct, id *string, config PinpointEmailChannelConfig) PinpointEmailChannel
 ```
@@ -442,7 +442,7 @@ func ResetRoleArn()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.pinpointEmailChannel.PinpointEmailChannel.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/pinpointemailchannel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/pinpointemailchannel"
 
 pinpointemailchannel.PinpointEmailChannel_IsConstruct(x interface{}) *bool
 ```
@@ -474,7 +474,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.pinpointEmailChannel.PinpointEmailChannel.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/pinpointemailchannel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/pinpointemailchannel"
 
 pinpointemailchannel.PinpointEmailChannel_IsTerraformElement(x interface{}) *bool
 ```
@@ -488,7 +488,7 @@ pinpointemailchannel.PinpointEmailChannel_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.pinpointEmailChannel.PinpointEmailChannel.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/pinpointemailchannel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/pinpointemailchannel"
 
 pinpointemailchannel.PinpointEmailChannel_IsTerraformResource(x interface{}) *bool
 ```
@@ -502,7 +502,7 @@ pinpointemailchannel.PinpointEmailChannel_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.pinpointEmailChannel.PinpointEmailChannel.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/pinpointemailchannel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/pinpointemailchannel"
 
 pinpointemailchannel.PinpointEmailChannel_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -940,7 +940,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.pinpointEmailChannel.PinpointEmailChannelConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/pinpointemailchannel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/pinpointemailchannel"
 
 &pinpointemailchannel.PinpointEmailChannelConfig {
 	Connection: interface{},

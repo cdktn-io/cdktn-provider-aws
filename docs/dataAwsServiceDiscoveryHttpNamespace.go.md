@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsServiceDiscoveryHttpNamespace.DataAwsServiceDiscoveryHttpNamespace.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsservicediscoveryhttpnamespace"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsservicediscoveryhttpnamespace"
 
 dataawsservicediscoveryhttpnamespace.NewDataAwsServiceDiscoveryHttpNamespace(scope Construct, id *string, config DataAwsServiceDiscoveryHttpNamespaceConfig) DataAwsServiceDiscoveryHttpNamespace
 ```
@@ -319,7 +319,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsServiceDiscoveryHttpNamespace.DataAwsServiceDiscoveryHttpNamespace.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsservicediscoveryhttpnamespace"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsservicediscoveryhttpnamespace"
 
 dataawsservicediscoveryhttpnamespace.DataAwsServiceDiscoveryHttpNamespace_IsConstruct(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsServiceDiscoveryHttpNamespace.DataAwsServiceDiscoveryHttpNamespace.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsservicediscoveryhttpnamespace"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsservicediscoveryhttpnamespace"
 
 dataawsservicediscoveryhttpnamespace.DataAwsServiceDiscoveryHttpNamespace_IsTerraformElement(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ dataawsservicediscoveryhttpnamespace.DataAwsServiceDiscoveryHttpNamespace_IsTerr
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsServiceDiscoveryHttpNamespace.DataAwsServiceDiscoveryHttpNamespace.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsservicediscoveryhttpnamespace"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsservicediscoveryhttpnamespace"
 
 dataawsservicediscoveryhttpnamespace.DataAwsServiceDiscoveryHttpNamespace_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -379,7 +379,7 @@ dataawsservicediscoveryhttpnamespace.DataAwsServiceDiscoveryHttpNamespace_IsTerr
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsServiceDiscoveryHttpNamespace.DataAwsServiceDiscoveryHttpNamespace.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsservicediscoveryhttpnamespace"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsservicediscoveryhttpnamespace"
 
 dataawsservicediscoveryhttpnamespace.DataAwsServiceDiscoveryHttpNamespace_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -707,7 +707,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsServiceDiscoveryHttpNamespace.DataAwsServiceDiscoveryHttpNamespaceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsservicediscoveryhttpnamespace"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsservicediscoveryhttpnamespace"
 
 &dataawsservicediscoveryhttpnamespace.DataAwsServiceDiscoveryHttpNamespaceConfig {
 	Connection: interface{},

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.inspectorAssessmentTarget.InspectorAssessmentTarget.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/inspectorassessmenttarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspectorassessmenttarget"
 
 inspectorassessmenttarget.NewInspectorAssessmentTarget(scope Construct, id *string, config InspectorAssessmentTargetConfig) InspectorAssessmentTarget
 ```
@@ -421,7 +421,7 @@ func ResetResourceGroupArn()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.inspectorAssessmentTarget.InspectorAssessmentTarget.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/inspectorassessmenttarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspectorassessmenttarget"
 
 inspectorassessmenttarget.InspectorAssessmentTarget_IsConstruct(x interface{}) *bool
 ```
@@ -453,7 +453,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.inspectorAssessmentTarget.InspectorAssessmentTarget.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/inspectorassessmenttarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspectorassessmenttarget"
 
 inspectorassessmenttarget.InspectorAssessmentTarget_IsTerraformElement(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ inspectorassessmenttarget.InspectorAssessmentTarget_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.inspectorAssessmentTarget.InspectorAssessmentTarget.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/inspectorassessmenttarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspectorassessmenttarget"
 
 inspectorassessmenttarget.InspectorAssessmentTarget_IsTerraformResource(x interface{}) *bool
 ```
@@ -481,7 +481,7 @@ inspectorassessmenttarget.InspectorAssessmentTarget_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.inspectorAssessmentTarget.InspectorAssessmentTarget.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/inspectorassessmenttarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspectorassessmenttarget"
 
 inspectorassessmenttarget.InspectorAssessmentTarget_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -809,7 +809,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.inspectorAssessmentTarget.InspectorAssessmentTargetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/inspectorassessmenttarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/inspectorassessmenttarget"
 
 &inspectorassessmenttarget.InspectorAssessmentTargetConfig {
 	Connection: interface{},

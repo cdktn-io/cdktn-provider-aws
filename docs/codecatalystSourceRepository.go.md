@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.codecatalystSourceRepository.CodecatalystSourceRepository.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/codecatalystsourcerepository"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codecatalystsourcerepository"
 
 codecatalystsourcerepository.NewCodecatalystSourceRepository(scope Construct, id *string, config CodecatalystSourceRepositoryConfig) CodecatalystSourceRepository
 ```
@@ -441,7 +441,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.codecatalystSourceRepository.CodecatalystSourceRepository.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/codecatalystsourcerepository"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codecatalystsourcerepository"
 
 codecatalystsourcerepository.CodecatalystSourceRepository_IsConstruct(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.codecatalystSourceRepository.CodecatalystSourceRepository.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/codecatalystsourcerepository"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codecatalystsourcerepository"
 
 codecatalystsourcerepository.CodecatalystSourceRepository_IsTerraformElement(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ codecatalystsourcerepository.CodecatalystSourceRepository_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.codecatalystSourceRepository.CodecatalystSourceRepository.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/codecatalystsourcerepository"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codecatalystsourcerepository"
 
 codecatalystsourcerepository.CodecatalystSourceRepository_IsTerraformResource(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ codecatalystsourcerepository.CodecatalystSourceRepository_IsTerraformResource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.codecatalystSourceRepository.CodecatalystSourceRepository.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/codecatalystsourcerepository"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codecatalystsourcerepository"
 
 codecatalystsourcerepository.CodecatalystSourceRepository_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -884,7 +884,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.codecatalystSourceRepository.CodecatalystSourceRepositoryConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/codecatalystsourcerepository"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codecatalystsourcerepository"
 
 &codecatalystsourcerepository.CodecatalystSourceRepositoryConfig {
 	Connection: interface{},
@@ -900,7 +900,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/codecatalystsourcerepo
 	Description: *string,
 	Id: *string,
 	Region: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.codecatalystSourceRepository.CodecatalystSourceRepositoryTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.codecatalystSourceRepository.CodecatalystSourceRepositoryTimeouts,
 }
 ```
 
@@ -1091,7 +1091,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.codecatalystSourceRepository.CodecatalystSourceRepositoryTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/codecatalystsourcerepository"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codecatalystsourcerepository"
 
 &codecatalystsourcerepository.CodecatalystSourceRepositoryTimeouts {
 	Create: *string,
@@ -1153,7 +1153,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.codecatalystSourceRepository.CodecatalystSourceRepositoryTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/codecatalystsourcerepository"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codecatalystsourcerepository"
 
 codecatalystsourcerepository.NewCodecatalystSourceRepositoryTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CodecatalystSourceRepositoryTimeoutsOutputReference
 ```

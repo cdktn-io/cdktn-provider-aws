@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.directoryServiceSharedDirectory.DirectoryServiceSharedDirectory.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/directoryserviceshareddirectory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/directoryserviceshareddirectory"
 
 directoryserviceshareddirectory.NewDirectoryServiceSharedDirectory(scope Construct, id *string, config DirectoryServiceSharedDirectoryConfig) DirectoryServiceSharedDirectory
 ```
@@ -461,7 +461,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.directoryServiceSharedDirectory.DirectoryServiceSharedDirectory.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/directoryserviceshareddirectory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/directoryserviceshareddirectory"
 
 directoryserviceshareddirectory.DirectoryServiceSharedDirectory_IsConstruct(x interface{}) *bool
 ```
@@ -493,7 +493,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.directoryServiceSharedDirectory.DirectoryServiceSharedDirectory.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/directoryserviceshareddirectory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/directoryserviceshareddirectory"
 
 directoryserviceshareddirectory.DirectoryServiceSharedDirectory_IsTerraformElement(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ directoryserviceshareddirectory.DirectoryServiceSharedDirectory_IsTerraformEleme
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.directoryServiceSharedDirectory.DirectoryServiceSharedDirectory.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/directoryserviceshareddirectory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/directoryserviceshareddirectory"
 
 directoryserviceshareddirectory.DirectoryServiceSharedDirectory_IsTerraformResource(x interface{}) *bool
 ```
@@ -521,7 +521,7 @@ directoryserviceshareddirectory.DirectoryServiceSharedDirectory_IsTerraformResou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.directoryServiceSharedDirectory.DirectoryServiceSharedDirectory.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/directoryserviceshareddirectory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/directoryserviceshareddirectory"
 
 directoryserviceshareddirectory.DirectoryServiceSharedDirectory_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -915,7 +915,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.directoryServiceSharedDirectory.DirectoryServiceSharedDirectoryConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/directoryserviceshareddirectory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/directoryserviceshareddirectory"
 
 &directoryserviceshareddirectory.DirectoryServiceSharedDirectoryConfig {
 	Connection: interface{},
@@ -926,12 +926,12 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/directoryserviceshared
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	DirectoryId: *string,
-	Target: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.directoryServiceSharedDirectory.DirectoryServiceSharedDirectoryTarget,
+	Target: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.directoryServiceSharedDirectory.DirectoryServiceSharedDirectoryTarget,
 	Id: *string,
 	Method: *string,
 	Notes: *string,
 	Region: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.directoryServiceSharedDirectory.DirectoryServiceSharedDirectoryTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.directoryServiceSharedDirectory.DirectoryServiceSharedDirectoryTimeouts,
 }
 ```
 
@@ -1124,7 +1124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.directoryServiceSharedDirectory.DirectoryServiceSharedDirectoryTarget.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/directoryserviceshareddirectory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/directoryserviceshareddirectory"
 
 &directoryserviceshareddirectory.DirectoryServiceSharedDirectoryTarget {
 	Id: *string,
@@ -1173,7 +1173,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.directoryServiceSharedDirectory.DirectoryServiceSharedDirectoryTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/directoryserviceshareddirectory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/directoryserviceshareddirectory"
 
 &directoryserviceshareddirectory.DirectoryServiceSharedDirectoryTimeouts {
 	Delete: *string,
@@ -1207,7 +1207,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.directoryServiceSharedDirectory.DirectoryServiceSharedDirectoryTargetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/directoryserviceshareddirectory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/directoryserviceshareddirectory"
 
 directoryserviceshareddirectory.NewDirectoryServiceSharedDirectoryTargetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DirectoryServiceSharedDirectoryTargetOutputReference
 ```
@@ -1507,7 +1507,7 @@ func InternalValue() DirectoryServiceSharedDirectoryTarget
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.directoryServiceSharedDirectory.DirectoryServiceSharedDirectoryTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/directoryserviceshareddirectory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/directoryserviceshareddirectory"
 
 directoryserviceshareddirectory.NewDirectoryServiceSharedDirectoryTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DirectoryServiceSharedDirectoryTimeoutsOutputReference
 ```

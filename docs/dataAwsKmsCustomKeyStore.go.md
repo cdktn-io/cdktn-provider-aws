@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsKmsCustomKeyStore.DataAwsKmsCustomKeyStore.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawskmscustomkeystore"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawskmscustomkeystore"
 
 dataawskmscustomkeystore.NewDataAwsKmsCustomKeyStore(scope Construct, id *string, config DataAwsKmsCustomKeyStoreConfig) DataAwsKmsCustomKeyStore
 ```
@@ -326,7 +326,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsKmsCustomKeyStore.DataAwsKmsCustomKeyStore.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawskmscustomkeystore"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawskmscustomkeystore"
 
 dataawskmscustomkeystore.DataAwsKmsCustomKeyStore_IsConstruct(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsKmsCustomKeyStore.DataAwsKmsCustomKeyStore.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawskmscustomkeystore"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawskmscustomkeystore"
 
 dataawskmscustomkeystore.DataAwsKmsCustomKeyStore_IsTerraformElement(x interface{}) *bool
 ```
@@ -372,7 +372,7 @@ dataawskmscustomkeystore.DataAwsKmsCustomKeyStore_IsTerraformElement(x interface
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsKmsCustomKeyStore.DataAwsKmsCustomKeyStore.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawskmscustomkeystore"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawskmscustomkeystore"
 
 dataawskmscustomkeystore.DataAwsKmsCustomKeyStore_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -386,7 +386,7 @@ dataawskmscustomkeystore.DataAwsKmsCustomKeyStore_IsTerraformDataSource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsKmsCustomKeyStore.DataAwsKmsCustomKeyStore.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawskmscustomkeystore"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawskmscustomkeystore"
 
 dataawskmscustomkeystore.DataAwsKmsCustomKeyStore_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -725,7 +725,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsKmsCustomKeyStore.DataAwsKmsCustomKeyStoreConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawskmscustomkeystore"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawskmscustomkeystore"
 
 &dataawskmscustomkeystore.DataAwsKmsCustomKeyStoreConfig {
 	Connection: interface{},

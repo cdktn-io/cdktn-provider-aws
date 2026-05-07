@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranch.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/amplifybranch"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/amplifybranch"
 
 amplifybranch.NewAmplifyBranch(scope Construct, id *string, config AmplifyBranchConfig) AmplifyBranch
 ```
@@ -533,7 +533,7 @@ func ResetTtl()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranch.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/amplifybranch"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/amplifybranch"
 
 amplifybranch.AmplifyBranch_IsConstruct(x interface{}) *bool
 ```
@@ -565,7 +565,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranch.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/amplifybranch"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/amplifybranch"
 
 amplifybranch.AmplifyBranch_IsTerraformElement(x interface{}) *bool
 ```
@@ -579,7 +579,7 @@ amplifybranch.AmplifyBranch_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranch.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/amplifybranch"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/amplifybranch"
 
 amplifybranch.AmplifyBranch_IsTerraformResource(x interface{}) *bool
 ```
@@ -593,7 +593,7 @@ amplifybranch.AmplifyBranch_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranch.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/amplifybranch"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/amplifybranch"
 
 amplifybranch.AmplifyBranch_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1339,7 +1339,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranchConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/amplifybranch"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/amplifybranch"
 
 &amplifybranch.AmplifyBranchConfig {
 	Connection: interface{},

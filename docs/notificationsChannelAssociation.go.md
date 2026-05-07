@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.notificationsChannelAssociation.NotificationsChannelAssociation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/notificationschannelassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/notificationschannelassociation"
 
 notificationschannelassociation.NewNotificationsChannelAssociation(scope Construct, id *string, config NotificationsChannelAssociationConfig) NotificationsChannelAssociation
 ```
@@ -400,7 +400,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.notificationsChannelAssociation.NotificationsChannelAssociation.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/notificationschannelassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/notificationschannelassociation"
 
 notificationschannelassociation.NotificationsChannelAssociation_IsConstruct(x interface{}) *bool
 ```
@@ -432,7 +432,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.notificationsChannelAssociation.NotificationsChannelAssociation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/notificationschannelassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/notificationschannelassociation"
 
 notificationschannelassociation.NotificationsChannelAssociation_IsTerraformElement(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ notificationschannelassociation.NotificationsChannelAssociation_IsTerraformEleme
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.notificationsChannelAssociation.NotificationsChannelAssociation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/notificationschannelassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/notificationschannelassociation"
 
 notificationschannelassociation.NotificationsChannelAssociation_IsTerraformResource(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ notificationschannelassociation.NotificationsChannelAssociation_IsTerraformResou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.notificationsChannelAssociation.NotificationsChannelAssociation.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/notificationschannelassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/notificationschannelassociation"
 
 notificationschannelassociation.NotificationsChannelAssociation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -733,7 +733,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.notificationsChannelAssociation.NotificationsChannelAssociationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/notificationschannelassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/notificationschannelassociation"
 
 &notificationschannelassociation.NotificationsChannelAssociationConfig {
 	Connection: interface{},

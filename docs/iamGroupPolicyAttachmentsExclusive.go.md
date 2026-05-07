@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.iamGroupPolicyAttachmentsExclusive.IamGroupPolicyAttachmentsExclusive.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/iamgrouppolicyattachmentsexclusive"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/iamgrouppolicyattachmentsexclusive"
 
 iamgrouppolicyattachmentsexclusive.NewIamGroupPolicyAttachmentsExclusive(scope Construct, id *string, config IamGroupPolicyAttachmentsExclusiveConfig) IamGroupPolicyAttachmentsExclusive
 ```
@@ -400,7 +400,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.iamGroupPolicyAttachmentsExclusive.IamGroupPolicyAttachmentsExclusive.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/iamgrouppolicyattachmentsexclusive"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/iamgrouppolicyattachmentsexclusive"
 
 iamgrouppolicyattachmentsexclusive.IamGroupPolicyAttachmentsExclusive_IsConstruct(x interface{}) *bool
 ```
@@ -432,7 +432,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.iamGroupPolicyAttachmentsExclusive.IamGroupPolicyAttachmentsExclusive.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/iamgrouppolicyattachmentsexclusive"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/iamgrouppolicyattachmentsexclusive"
 
 iamgrouppolicyattachmentsexclusive.IamGroupPolicyAttachmentsExclusive_IsTerraformElement(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ iamgrouppolicyattachmentsexclusive.IamGroupPolicyAttachmentsExclusive_IsTerrafor
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.iamGroupPolicyAttachmentsExclusive.IamGroupPolicyAttachmentsExclusive.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/iamgrouppolicyattachmentsexclusive"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/iamgrouppolicyattachmentsexclusive"
 
 iamgrouppolicyattachmentsexclusive.IamGroupPolicyAttachmentsExclusive_IsTerraformResource(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ iamgrouppolicyattachmentsexclusive.IamGroupPolicyAttachmentsExclusive_IsTerrafor
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.iamGroupPolicyAttachmentsExclusive.IamGroupPolicyAttachmentsExclusive.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/iamgrouppolicyattachmentsexclusive"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/iamgrouppolicyattachmentsexclusive"
 
 iamgrouppolicyattachmentsexclusive.IamGroupPolicyAttachmentsExclusive_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -733,7 +733,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.iamGroupPolicyAttachmentsExclusive.IamGroupPolicyAttachmentsExclusiveConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/iamgrouppolicyattachmentsexclusive"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/iamgrouppolicyattachmentsexclusive"
 
 &iamgrouppolicyattachmentsexclusive.IamGroupPolicyAttachmentsExclusiveConfig {
 	Connection: interface{},

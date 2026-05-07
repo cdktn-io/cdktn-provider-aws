@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsServicePrincipal.DataAwsServicePrincipal.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsserviceprincipal"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsserviceprincipal"
 
 dataawsserviceprincipal.NewDataAwsServicePrincipal(scope Construct, id *string, config DataAwsServicePrincipalConfig) DataAwsServicePrincipal
 ```
@@ -305,7 +305,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsServicePrincipal.DataAwsServicePrincipal.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsserviceprincipal"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsserviceprincipal"
 
 dataawsserviceprincipal.DataAwsServicePrincipal_IsConstruct(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsServicePrincipal.DataAwsServicePrincipal.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsserviceprincipal"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsserviceprincipal"
 
 dataawsserviceprincipal.DataAwsServicePrincipal_IsTerraformElement(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ dataawsserviceprincipal.DataAwsServicePrincipal_IsTerraformElement(x interface{}
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsServicePrincipal.DataAwsServicePrincipal.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsserviceprincipal"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsserviceprincipal"
 
 dataawsserviceprincipal.DataAwsServicePrincipal_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ dataawsserviceprincipal.DataAwsServicePrincipal_IsTerraformDataSource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsServicePrincipal.DataAwsServicePrincipal.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsserviceprincipal"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsserviceprincipal"
 
 dataawsserviceprincipal.DataAwsServicePrincipal_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -649,7 +649,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsServicePrincipal.DataAwsServicePrincipalConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsserviceprincipal"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsserviceprincipal"
 
 &dataawsserviceprincipal.DataAwsServicePrincipalConfig {
 	Connection: interface{},

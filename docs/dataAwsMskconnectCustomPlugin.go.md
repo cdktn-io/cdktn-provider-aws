@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsMskconnectCustomPlugin.DataAwsMskconnectCustomPlugin.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsmskconnectcustomplugin"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsmskconnectcustomplugin"
 
 dataawsmskconnectcustomplugin.NewDataAwsMskconnectCustomPlugin(scope Construct, id *string, config DataAwsMskconnectCustomPluginConfig) DataAwsMskconnectCustomPlugin
 ```
@@ -319,7 +319,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsMskconnectCustomPlugin.DataAwsMskconnectCustomPlugin.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsmskconnectcustomplugin"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsmskconnectcustomplugin"
 
 dataawsmskconnectcustomplugin.DataAwsMskconnectCustomPlugin_IsConstruct(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsMskconnectCustomPlugin.DataAwsMskconnectCustomPlugin.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsmskconnectcustomplugin"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsmskconnectcustomplugin"
 
 dataawsmskconnectcustomplugin.DataAwsMskconnectCustomPlugin_IsTerraformElement(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ dataawsmskconnectcustomplugin.DataAwsMskconnectCustomPlugin_IsTerraformElement(x
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsMskconnectCustomPlugin.DataAwsMskconnectCustomPlugin.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsmskconnectcustomplugin"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsmskconnectcustomplugin"
 
 dataawsmskconnectcustomplugin.DataAwsMskconnectCustomPlugin_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -379,7 +379,7 @@ dataawsmskconnectcustomplugin.DataAwsMskconnectCustomPlugin_IsTerraformDataSourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsMskconnectCustomPlugin.DataAwsMskconnectCustomPlugin.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsmskconnectcustomplugin"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsmskconnectcustomplugin"
 
 dataawsmskconnectcustomplugin.DataAwsMskconnectCustomPlugin_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -718,7 +718,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsMskconnectCustomPlugin.DataAwsMskconnectCustomPluginConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsmskconnectcustomplugin"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsmskconnectcustomplugin"
 
 &dataawsmskconnectcustomplugin.DataAwsMskconnectCustomPluginConfig {
 	Connection: interface{},

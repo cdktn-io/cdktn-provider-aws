@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEcrPullThroughCacheRule.DataAwsEcrPullThroughCacheRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsecrpullthroughcacherule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsecrpullthroughcacherule"
 
 dataawsecrpullthroughcacherule.NewDataAwsEcrPullThroughCacheRule(scope Construct, id *string, config DataAwsEcrPullThroughCacheRuleConfig) DataAwsEcrPullThroughCacheRule
 ```
@@ -312,7 +312,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsEcrPullThroughCacheRule.DataAwsEcrPullThroughCacheRule.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsecrpullthroughcacherule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsecrpullthroughcacherule"
 
 dataawsecrpullthroughcacherule.DataAwsEcrPullThroughCacheRule_IsConstruct(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsEcrPullThroughCacheRule.DataAwsEcrPullThroughCacheRule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsecrpullthroughcacherule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsecrpullthroughcacherule"
 
 dataawsecrpullthroughcacherule.DataAwsEcrPullThroughCacheRule_IsTerraformElement(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ dataawsecrpullthroughcacherule.DataAwsEcrPullThroughCacheRule_IsTerraformElement
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsEcrPullThroughCacheRule.DataAwsEcrPullThroughCacheRule.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsecrpullthroughcacherule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsecrpullthroughcacherule"
 
 dataawsecrpullthroughcacherule.DataAwsEcrPullThroughCacheRule_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -372,7 +372,7 @@ dataawsecrpullthroughcacherule.DataAwsEcrPullThroughCacheRule_IsTerraformDataSou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsEcrPullThroughCacheRule.DataAwsEcrPullThroughCacheRule.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsecrpullthroughcacherule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsecrpullthroughcacherule"
 
 dataawsecrpullthroughcacherule.DataAwsEcrPullThroughCacheRule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -700,7 +700,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsEcrPullThroughCacheRule.DataAwsEcrPullThroughCacheRuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsecrpullthroughcacherule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsecrpullthroughcacherule"
 
 &dataawsecrpullthroughcacherule.DataAwsEcrPullThroughCacheRuleConfig {
 	Connection: interface{},

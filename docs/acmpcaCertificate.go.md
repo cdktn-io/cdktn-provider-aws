@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.acmpcaCertificate.AcmpcaCertificate.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/acmpcacertificate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/acmpcacertificate"
 
 acmpcacertificate.NewAcmpcaCertificate(scope Construct, id *string, config AcmpcaCertificateConfig) AcmpcaCertificate
 ```
@@ -441,7 +441,7 @@ func ResetTemplateArn()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.acmpcaCertificate.AcmpcaCertificate.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/acmpcacertificate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/acmpcacertificate"
 
 acmpcacertificate.AcmpcaCertificate_IsConstruct(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.acmpcaCertificate.AcmpcaCertificate.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/acmpcacertificate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/acmpcacertificate"
 
 acmpcacertificate.AcmpcaCertificate_IsTerraformElement(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ acmpcacertificate.AcmpcaCertificate_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.acmpcaCertificate.AcmpcaCertificate.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/acmpcacertificate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/acmpcacertificate"
 
 acmpcacertificate.AcmpcaCertificate_IsTerraformResource(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ acmpcacertificate.AcmpcaCertificate_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.acmpcaCertificate.AcmpcaCertificate.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/acmpcacertificate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/acmpcacertificate"
 
 acmpcacertificate.AcmpcaCertificate_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -939,7 +939,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.acmpcaCertificate.AcmpcaCertificateConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/acmpcacertificate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/acmpcacertificate"
 
 &acmpcacertificate.AcmpcaCertificateConfig {
 	Connection: interface{},
@@ -952,7 +952,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/acmpcacertificate"
 	CertificateAuthorityArn: *string,
 	CertificateSigningRequest: *string,
 	SigningAlgorithm: *string,
-	Validity: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.acmpcaCertificate.AcmpcaCertificateValidity,
+	Validity: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.acmpcaCertificate.AcmpcaCertificateValidity,
 	ApiPassthrough: *string,
 	Id: *string,
 	Region: *string,
@@ -1160,7 +1160,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.acmpcaCertificate.AcmpcaCertificateValidity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/acmpcacertificate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/acmpcacertificate"
 
 &acmpcacertificate.AcmpcaCertificateValidity {
 	Type: *string,
@@ -1208,7 +1208,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.acmpcaCertificate.AcmpcaCertificateValidityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/acmpcacertificate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/acmpcacertificate"
 
 acmpcacertificate.NewAcmpcaCertificateValidityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AcmpcaCertificateValidityOutputReference
 ```

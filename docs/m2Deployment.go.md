@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.m2Deployment.M2Deployment.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/m2deployment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/m2deployment"
 
 m2deployment.NewM2Deployment(scope Construct, id *string, config M2DeploymentConfig) M2Deployment
 ```
@@ -434,7 +434,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.m2Deployment.M2Deployment.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/m2deployment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/m2deployment"
 
 m2deployment.M2Deployment_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.m2Deployment.M2Deployment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/m2deployment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/m2deployment"
 
 m2deployment.M2Deployment_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ m2deployment.M2Deployment_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.m2Deployment.M2Deployment.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/m2deployment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/m2deployment"
 
 m2deployment.M2Deployment_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ m2deployment.M2Deployment_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.m2Deployment.M2Deployment.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/m2deployment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/m2deployment"
 
 m2deployment.M2Deployment_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -899,7 +899,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.m2Deployment.M2DeploymentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/m2deployment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/m2deployment"
 
 &m2deployment.M2DeploymentConfig {
 	Connection: interface{},
@@ -915,7 +915,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/m2deployment"
 	Start: interface{},
 	ForceStop: interface{},
 	Region: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.m2Deployment.M2DeploymentTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.m2Deployment.M2DeploymentTimeouts,
 }
 ```
 
@@ -1103,7 +1103,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.m2Deployment.M2DeploymentTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/m2deployment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/m2deployment"
 
 &m2deployment.M2DeploymentTimeouts {
 	Create: *string,
@@ -1171,7 +1171,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.m2Deployment.M2DeploymentTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/m2deployment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/m2deployment"
 
 m2deployment.NewM2DeploymentTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) M2DeploymentTimeoutsOutputReference
 ```

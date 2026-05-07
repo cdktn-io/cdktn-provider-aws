@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.codecommitApprovalRuleTemplate.CodecommitApprovalRuleTemplate.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/codecommitapprovalruletemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codecommitapprovalruletemplate"
 
 codecommitapprovalruletemplate.NewCodecommitApprovalRuleTemplate(scope Construct, id *string, config CodecommitApprovalRuleTemplateConfig) CodecommitApprovalRuleTemplate
 ```
@@ -421,7 +421,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.codecommitApprovalRuleTemplate.CodecommitApprovalRuleTemplate.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/codecommitapprovalruletemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codecommitapprovalruletemplate"
 
 codecommitapprovalruletemplate.CodecommitApprovalRuleTemplate_IsConstruct(x interface{}) *bool
 ```
@@ -453,7 +453,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.codecommitApprovalRuleTemplate.CodecommitApprovalRuleTemplate.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/codecommitapprovalruletemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codecommitapprovalruletemplate"
 
 codecommitapprovalruletemplate.CodecommitApprovalRuleTemplate_IsTerraformElement(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ codecommitapprovalruletemplate.CodecommitApprovalRuleTemplate_IsTerraformElement
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.codecommitApprovalRuleTemplate.CodecommitApprovalRuleTemplate.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/codecommitapprovalruletemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codecommitapprovalruletemplate"
 
 codecommitapprovalruletemplate.CodecommitApprovalRuleTemplate_IsTerraformResource(x interface{}) *bool
 ```
@@ -481,7 +481,7 @@ codecommitapprovalruletemplate.CodecommitApprovalRuleTemplate_IsTerraformResourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.codecommitApprovalRuleTemplate.CodecommitApprovalRuleTemplate.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/codecommitapprovalruletemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codecommitapprovalruletemplate"
 
 codecommitapprovalruletemplate.CodecommitApprovalRuleTemplate_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -875,7 +875,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.codecommitApprovalRuleTemplate.CodecommitApprovalRuleTemplateConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/codecommitapprovalruletemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/codecommitapprovalruletemplate"
 
 &codecommitapprovalruletemplate.CodecommitApprovalRuleTemplateConfig {
 	Connection: interface{},

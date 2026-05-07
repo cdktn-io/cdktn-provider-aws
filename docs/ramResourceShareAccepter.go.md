@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ramResourceShareAccepter.RamResourceShareAccepter.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/ramresourceshareaccepter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ramresourceshareaccepter"
 
 ramresourceshareaccepter.NewRamResourceShareAccepter(scope Construct, id *string, config RamResourceShareAccepterConfig) RamResourceShareAccepter
 ```
@@ -434,7 +434,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.ramResourceShareAccepter.RamResourceShareAccepter.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/ramresourceshareaccepter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ramresourceshareaccepter"
 
 ramresourceshareaccepter.RamResourceShareAccepter_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.ramResourceShareAccepter.RamResourceShareAccepter.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/ramresourceshareaccepter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ramresourceshareaccepter"
 
 ramresourceshareaccepter.RamResourceShareAccepter_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ ramresourceshareaccepter.RamResourceShareAccepter_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.ramResourceShareAccepter.RamResourceShareAccepter.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/ramresourceshareaccepter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ramresourceshareaccepter"
 
 ramresourceshareaccepter.RamResourceShareAccepter_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ ramresourceshareaccepter.RamResourceShareAccepter_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.ramResourceShareAccepter.RamResourceShareAccepter.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/ramresourceshareaccepter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ramresourceshareaccepter"
 
 ramresourceshareaccepter.RamResourceShareAccepter_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -888,7 +888,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ramResourceShareAccepter.RamResourceShareAccepterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/ramresourceshareaccepter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ramresourceshareaccepter"
 
 &ramresourceshareaccepter.RamResourceShareAccepterConfig {
 	Connection: interface{},
@@ -901,7 +901,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/ramresourceshareaccept
 	ShareArn: *string,
 	Id: *string,
 	Region: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.ramResourceShareAccepter.RamResourceShareAccepterTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.ramResourceShareAccepter.RamResourceShareAccepterTimeouts,
 }
 ```
 
@@ -1053,7 +1053,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ramResourceShareAccepter.RamResourceShareAccepterTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/ramresourceshareaccepter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ramresourceshareaccepter"
 
 &ramresourceshareaccepter.RamResourceShareAccepterTimeouts {
 	Create: *string,
@@ -1101,7 +1101,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ramResourceShareAccepter.RamResourceShareAccepterTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/ramresourceshareaccepter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/ramresourceshareaccepter"
 
 ramresourceshareaccepter.NewRamResourceShareAccepterTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RamResourceShareAccepterTimeoutsOutputReference
 ```

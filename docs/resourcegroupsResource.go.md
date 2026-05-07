@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.resourcegroupsResource.ResourcegroupsResource.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/resourcegroupsresource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/resourcegroupsresource"
 
 resourcegroupsresource.NewResourcegroupsResource(scope Construct, id *string, config ResourcegroupsResourceConfig) ResourcegroupsResource
 ```
@@ -434,7 +434,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.resourcegroupsResource.ResourcegroupsResource.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/resourcegroupsresource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/resourcegroupsresource"
 
 resourcegroupsresource.ResourcegroupsResource_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.resourcegroupsResource.ResourcegroupsResource.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/resourcegroupsresource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/resourcegroupsresource"
 
 resourcegroupsresource.ResourcegroupsResource_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ resourcegroupsresource.ResourcegroupsResource_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.resourcegroupsResource.ResourcegroupsResource.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/resourcegroupsresource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/resourcegroupsresource"
 
 resourcegroupsresource.ResourcegroupsResource_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ resourcegroupsresource.ResourcegroupsResource_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.resourcegroupsResource.ResourcegroupsResource.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/resourcegroupsresource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/resourcegroupsresource"
 
 resourcegroupsresource.ResourcegroupsResource_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -844,7 +844,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.resourcegroupsResource.ResourcegroupsResourceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/resourcegroupsresource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/resourcegroupsresource"
 
 &resourcegroupsresource.ResourcegroupsResourceConfig {
 	Connection: interface{},
@@ -858,7 +858,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/resourcegroupsresource
 	ResourceArn: *string,
 	Id: *string,
 	Region: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.resourcegroupsResource.ResourcegroupsResourceTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.resourcegroupsResource.ResourcegroupsResourceTimeouts,
 }
 ```
 
@@ -1023,7 +1023,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.resourcegroupsResource.ResourcegroupsResourceTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/resourcegroupsresource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/resourcegroupsresource"
 
 &resourcegroupsresource.ResourcegroupsResourceTimeouts {
 	Create: *string,
@@ -1071,7 +1071,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.resourcegroupsResource.ResourcegroupsResourceTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/resourcegroupsresource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/resourcegroupsresource"
 
 resourcegroupsresource.NewResourcegroupsResourceTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ResourcegroupsResourceTimeoutsOutputReference
 ```

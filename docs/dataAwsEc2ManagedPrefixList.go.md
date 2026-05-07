@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEc2ManagedPrefixList.DataAwsEc2ManagedPrefixList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsec2managedprefixlist"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsec2managedprefixlist"
 
 dataawsec2managedprefixlist.NewDataAwsEc2ManagedPrefixList(scope Construct, id *string, config DataAwsEc2ManagedPrefixListConfig) DataAwsEc2ManagedPrefixList
 ```
@@ -366,7 +366,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsEc2ManagedPrefixList.DataAwsEc2ManagedPrefixList.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsec2managedprefixlist"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsec2managedprefixlist"
 
 dataawsec2managedprefixlist.DataAwsEc2ManagedPrefixList_IsConstruct(x interface{}) *bool
 ```
@@ -398,7 +398,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsEc2ManagedPrefixList.DataAwsEc2ManagedPrefixList.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsec2managedprefixlist"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsec2managedprefixlist"
 
 dataawsec2managedprefixlist.DataAwsEc2ManagedPrefixList_IsTerraformElement(x interface{}) *bool
 ```
@@ -412,7 +412,7 @@ dataawsec2managedprefixlist.DataAwsEc2ManagedPrefixList_IsTerraformElement(x int
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsEc2ManagedPrefixList.DataAwsEc2ManagedPrefixList.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsec2managedprefixlist"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsec2managedprefixlist"
 
 dataawsec2managedprefixlist.DataAwsEc2ManagedPrefixList_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -426,7 +426,7 @@ dataawsec2managedprefixlist.DataAwsEc2ManagedPrefixList_IsTerraformDataSource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsEc2ManagedPrefixList.DataAwsEc2ManagedPrefixList.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsec2managedprefixlist"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsec2managedprefixlist"
 
 dataawsec2managedprefixlist.DataAwsEc2ManagedPrefixList_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -831,7 +831,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsEc2ManagedPrefixList.DataAwsEc2ManagedPrefixListConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsec2managedprefixlist"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsec2managedprefixlist"
 
 &dataawsec2managedprefixlist.DataAwsEc2ManagedPrefixListConfig {
 	Connection: interface{},
@@ -846,7 +846,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsec2managedprefi
 	Name: *string,
 	Region: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v23.dataAwsEc2ManagedPrefixList.DataAwsEc2ManagedPrefixListTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.dataAwsEc2ManagedPrefixList.DataAwsEc2ManagedPrefixListTimeouts,
 }
 ```
 
@@ -1026,7 +1026,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsEc2ManagedPrefixList.DataAwsEc2ManagedPrefixListEntries.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsec2managedprefixlist"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsec2managedprefixlist"
 
 &dataawsec2managedprefixlist.DataAwsEc2ManagedPrefixListEntries {
 
@@ -1039,7 +1039,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsec2managedprefi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsEc2ManagedPrefixList.DataAwsEc2ManagedPrefixListFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsec2managedprefixlist"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsec2managedprefixlist"
 
 &dataawsec2managedprefixlist.DataAwsEc2ManagedPrefixListFilter {
 	Name: *string,
@@ -1085,7 +1085,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsEc2ManagedPrefixList.DataAwsEc2ManagedPrefixListTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsec2managedprefixlist"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsec2managedprefixlist"
 
 &dataawsec2managedprefixlist.DataAwsEc2ManagedPrefixListTimeouts {
 	Read: *string,
@@ -1119,7 +1119,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEc2ManagedPrefixList.DataAwsEc2ManagedPrefixListEntriesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsec2managedprefixlist"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsec2managedprefixlist"
 
 dataawsec2managedprefixlist.NewDataAwsEc2ManagedPrefixListEntriesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEc2ManagedPrefixListEntriesList
 ```
@@ -1268,7 +1268,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEc2ManagedPrefixList.DataAwsEc2ManagedPrefixListEntriesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsec2managedprefixlist"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsec2managedprefixlist"
 
 dataawsec2managedprefixlist.NewDataAwsEc2ManagedPrefixListEntriesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEc2ManagedPrefixListEntriesOutputReference
 ```
@@ -1557,7 +1557,7 @@ func InternalValue() DataAwsEc2ManagedPrefixListEntries
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEc2ManagedPrefixList.DataAwsEc2ManagedPrefixListFilterList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsec2managedprefixlist"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsec2managedprefixlist"
 
 dataawsec2managedprefixlist.NewDataAwsEc2ManagedPrefixListFilterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEc2ManagedPrefixListFilterList
 ```
@@ -1717,7 +1717,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEc2ManagedPrefixList.DataAwsEc2ManagedPrefixListFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsec2managedprefixlist"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsec2managedprefixlist"
 
 dataawsec2managedprefixlist.NewDataAwsEc2ManagedPrefixListFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEc2ManagedPrefixListFilterOutputReference
 ```
@@ -2028,7 +2028,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEc2ManagedPrefixList.DataAwsEc2ManagedPrefixListTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawsec2managedprefixlist"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawsec2managedprefixlist"
 
 dataawsec2managedprefixlist.NewDataAwsEc2ManagedPrefixListTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAwsEc2ManagedPrefixListTimeoutsOutputReference
 ```

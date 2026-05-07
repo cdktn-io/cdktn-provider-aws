@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsElasticacheSubnetGroup.DataAwsElasticacheSubnetGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawselasticachesubnetgroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawselasticachesubnetgroup"
 
 dataawselasticachesubnetgroup.NewDataAwsElasticacheSubnetGroup(scope Construct, id *string, config DataAwsElasticacheSubnetGroupConfig) DataAwsElasticacheSubnetGroup
 ```
@@ -319,7 +319,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsElasticacheSubnetGroup.DataAwsElasticacheSubnetGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawselasticachesubnetgroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawselasticachesubnetgroup"
 
 dataawselasticachesubnetgroup.DataAwsElasticacheSubnetGroup_IsConstruct(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsElasticacheSubnetGroup.DataAwsElasticacheSubnetGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawselasticachesubnetgroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawselasticachesubnetgroup"
 
 dataawselasticachesubnetgroup.DataAwsElasticacheSubnetGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ dataawselasticachesubnetgroup.DataAwsElasticacheSubnetGroup_IsTerraformElement(x
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsElasticacheSubnetGroup.DataAwsElasticacheSubnetGroup.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawselasticachesubnetgroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawselasticachesubnetgroup"
 
 dataawselasticachesubnetgroup.DataAwsElasticacheSubnetGroup_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -379,7 +379,7 @@ dataawselasticachesubnetgroup.DataAwsElasticacheSubnetGroup_IsTerraformDataSourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsElasticacheSubnetGroup.DataAwsElasticacheSubnetGroup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawselasticachesubnetgroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawselasticachesubnetgroup"
 
 dataawselasticachesubnetgroup.DataAwsElasticacheSubnetGroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -718,7 +718,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsElasticacheSubnetGroup.DataAwsElasticacheSubnetGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/dataawselasticachesubnetgroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawselasticachesubnetgroup"
 
 &dataawselasticachesubnetgroup.DataAwsElasticacheSubnetGroupConfig {
 	Connection: interface{},

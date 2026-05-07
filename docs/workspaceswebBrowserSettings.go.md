@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.workspaceswebBrowserSettings.WorkspaceswebBrowserSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/workspaceswebbrowsersettings"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/workspaceswebbrowsersettings"
 
 workspaceswebbrowsersettings.NewWorkspaceswebBrowserSettings(scope Construct, id *string, config WorkspaceswebBrowserSettingsConfig) WorkspaceswebBrowserSettings
 ```
@@ -428,7 +428,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.workspaceswebBrowserSettings.WorkspaceswebBrowserSettings.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/workspaceswebbrowsersettings"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/workspaceswebbrowsersettings"
 
 workspaceswebbrowsersettings.WorkspaceswebBrowserSettings_IsConstruct(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.workspaceswebBrowserSettings.WorkspaceswebBrowserSettings.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/workspaceswebbrowsersettings"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/workspaceswebbrowsersettings"
 
 workspaceswebbrowsersettings.WorkspaceswebBrowserSettings_IsTerraformElement(x interface{}) *bool
 ```
@@ -474,7 +474,7 @@ workspaceswebbrowsersettings.WorkspaceswebBrowserSettings_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.workspaceswebBrowserSettings.WorkspaceswebBrowserSettings.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/workspaceswebbrowsersettings"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/workspaceswebbrowsersettings"
 
 workspaceswebbrowsersettings.WorkspaceswebBrowserSettings_IsTerraformResource(x interface{}) *bool
 ```
@@ -488,7 +488,7 @@ workspaceswebbrowsersettings.WorkspaceswebBrowserSettings_IsTerraformResource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.workspaceswebBrowserSettings.WorkspaceswebBrowserSettings.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/workspaceswebbrowsersettings"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/workspaceswebbrowsersettings"
 
 workspaceswebbrowsersettings.WorkspaceswebBrowserSettings_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -860,7 +860,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.workspaceswebBrowserSettings.WorkspaceswebBrowserSettingsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/workspaceswebbrowsersettings"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/workspaceswebbrowsersettings"
 
 &workspaceswebbrowsersettings.WorkspaceswebBrowserSettingsConfig {
 	Connection: interface{},

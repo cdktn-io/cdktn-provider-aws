@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.secretsmanagerSecretPolicy.SecretsmanagerSecretPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/secretsmanagersecretpolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/secretsmanagersecretpolicy"
 
 secretsmanagersecretpolicy.NewSecretsmanagerSecretPolicy(scope Construct, id *string, config SecretsmanagerSecretPolicyConfig) SecretsmanagerSecretPolicy
 ```
@@ -421,7 +421,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.secretsmanagerSecretPolicy.SecretsmanagerSecretPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/secretsmanagersecretpolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/secretsmanagersecretpolicy"
 
 secretsmanagersecretpolicy.SecretsmanagerSecretPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -453,7 +453,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.secretsmanagerSecretPolicy.SecretsmanagerSecretPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/secretsmanagersecretpolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/secretsmanagersecretpolicy"
 
 secretsmanagersecretpolicy.SecretsmanagerSecretPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ secretsmanagersecretpolicy.SecretsmanagerSecretPolicy_IsTerraformElement(x inter
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.secretsmanagerSecretPolicy.SecretsmanagerSecretPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/secretsmanagersecretpolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/secretsmanagersecretpolicy"
 
 secretsmanagersecretpolicy.SecretsmanagerSecretPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -481,7 +481,7 @@ secretsmanagersecretpolicy.SecretsmanagerSecretPolicy_IsTerraformResource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.secretsmanagerSecretPolicy.SecretsmanagerSecretPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/secretsmanagersecretpolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/secretsmanagersecretpolicy"
 
 secretsmanagersecretpolicy.SecretsmanagerSecretPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -820,7 +820,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.secretsmanagerSecretPolicy.SecretsmanagerSecretPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v23/secretsmanagersecretpolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/secretsmanagersecretpolicy"
 
 &secretsmanagersecretpolicy.SecretsmanagerSecretPolicyConfig {
 	Connection: interface{},
