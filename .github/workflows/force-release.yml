@@ -283,9 +283,18 @@ jobs:
         run: cp .repo/dist/go/*/README.md .repo/dist/go/README.md
       - name: Collect go Artifact
         run: mv .repo/dist dist
+      - name: Generate token
+        id: generate_token
+        uses: actions/create-github-app-token@f8d387b68d61c58ab83c6c016672934102569859
+        with:
+          app-id: ${{ secrets.PROJEN_APP_ID }}
+          private-key: ${{ secrets.PROJEN_APP_PRIVATE_KEY }}
+          owner: ${{ github.repository_owner }}
+          repositories: cdktn-provider-aws-go
+          permission-contents: write
       - name: Release
         env:
           GIT_USER_NAME: team-cdk-terrain
           GIT_USER_EMAIL: github-team-cdk-terrain@cdktn.io
-          GITHUB_TOKEN: ${{ secrets.GO_GITHUB_TOKEN }}
+          GITHUB_TOKEN: x-access-token:${{ steps.generate_token.outputs.token }}
         run: npx -p publib@latest publib-golang
