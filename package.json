@@ -20,6 +20,7 @@
     "package-all": "projen package-all",
     "package:dotnet": "projen package:dotnet",
     "package:go": "projen package:go",
+    "package:java": "projen package:java",
     "package:js": "projen package:js",
     "package:python": "projen package:python",
     "post-compile": "projen post-compile",
@@ -95,6 +96,13 @@
   "jsii": {
     "outdir": "dist",
     "targets": {
+      "java": {
+        "package": "io.cdktn.providers.aws",
+        "maven": {
+          "groupId": "io.cdktn",
+          "artifactId": "cdktn-provider-aws"
+        }
+      },
       "python": {
         "distName": "cdktn-provider-aws",
         "module": "cdktn_provider_aws"

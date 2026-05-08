@@ -114,7 +114,7 @@
       "description": "Generate documentation for the project",
       "steps": [
         {
-          "exec": "rm -rf docs && rm -f API.md && mkdir docs && jsii-docgen --split-by-submodule -l typescript -l python -l go && mv *.*.md docs && cd docs && ls ./ | xargs sed -i '150000,$ d' $1"
+          "exec": "rm -rf docs && rm -f API.md && mkdir docs && jsii-docgen --split-by-submodule -l typescript -l python -l java -l csharp -l go && mv *.*.md docs && cd docs && ls ./ | xargs sed -i '150000,$ d' $1"
         }
       ]
     },
@@ -184,6 +184,9 @@
           "spawn": "package:js"
         },
         {
+          "spawn": "package:java"
+        },
+        {
           "spawn": "package:python"
         },
         {
@@ -209,6 +212,15 @@
       "steps": [
         {
           "exec": "jsii-pacmak -v --target go"
+        }
+      ]
+    },
+    "package:java": {
+      "name": "package:java",
+      "description": "Create java language bindings",
+      "steps": [
+        {
+          "exec": "jsii-pacmak -v --target java"
         }
       ]
     },
