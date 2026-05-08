@@ -1,0 +1,1217 @@
+# `directoryServiceTrust` Submodule <a name="`directoryServiceTrust` Submodule" id="@cdktn/provider-aws.directoryServiceTrust"></a>
+
+## Constructs <a name="Constructs" id="Constructs"></a>
+
+### DirectoryServiceTrust <a name="DirectoryServiceTrust" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust"></a>
+
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/directory_service_trust aws_directory_service_trust}.
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Aws;
+
+new DirectoryServiceTrust(Construct Scope, string Id, DirectoryServiceTrustConfig Config);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.Initializer.parameter.scope">Scope</a></code> | <code>Constructs.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.Initializer.parameter.id">Id</a></code> | <code>string</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.Initializer.parameter.config">Config</a></code> | <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrustConfig">DirectoryServiceTrustConfig</a></code> | *No description.* |
+
+---
+
+##### `Scope`<sup>Required</sup> <a name="Scope" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.Initializer.parameter.scope"></a>
+
+- *Type:* Constructs.Construct
+
+The scope in which to define this construct.
+
+---
+
+##### `Id`<sup>Required</sup> <a name="Id" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.Initializer.parameter.id"></a>
+
+- *Type:* string
+
+The scoped construct ID.
+
+Must be unique amongst siblings in the same scope
+
+---
+
+##### `Config`<sup>Required</sup> <a name="Config" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.Initializer.parameter.config"></a>
+
+- *Type:* <a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrustConfig">DirectoryServiceTrustConfig</a>
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.toString">ToString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.with">With</a></code> | Applies one or more mixins to this construct. |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.addOverride">AddOverride</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.toMetadata">ToMetadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.hasResourceMove">HasResourceMove</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.importFrom">ImportFrom</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.moveFromId">MoveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.resetConditionalForwarderIpAddrs">ResetConditionalForwarderIpAddrs</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.resetDeleteAssociatedConditionalForwarder">ResetDeleteAssociatedConditionalForwarder</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.resetRegion">ResetRegion</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.resetSelectiveAuth">ResetSelectiveAuth</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.resetTrustType">ResetTrustType</a></code> | *No description.* |
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Returns a string representation of this construct.
+
+##### `With` <a name="With" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.with"></a>
+
+```csharp
+private IConstruct With(params IMixin[] Mixins)
+```
+
+Applies one or more mixins to this construct.
+
+Mixins are applied in order. The list of constructs is captured at the
+start of the call, so constructs added by a mixin will not be visited.
+Use multiple `with()` calls if subsequent mixins should apply to added
+constructs.
+
+###### `Mixins`<sup>Required</sup> <a name="Mixins" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.with.parameter.mixins"></a>
+
+- *Type:* params Constructs.IMixin[]
+
+The mixins to apply.
+
+---
+
+##### `AddOverride` <a name="AddOverride" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.addOverride"></a>
+
+```csharp
+private void AddOverride(string Path, object Value)
+```
+
+###### `Path`<sup>Required</sup> <a name="Path" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.addOverride.parameter.path"></a>
+
+- *Type:* string
+
+---
+
+###### `Value`<sup>Required</sup> <a name="Value" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.addOverride.parameter.value"></a>
+
+- *Type:* object
+
+---
+
+##### `OverrideLogicalId` <a name="OverrideLogicalId" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.overrideLogicalId"></a>
+
+```csharp
+private void OverrideLogicalId(string NewLogicalId)
+```
+
+Overrides the auto-generated logical ID with a specific ID.
+
+###### `NewLogicalId`<sup>Required</sup> <a name="NewLogicalId" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.overrideLogicalId.parameter.newLogicalId"></a>
+
+- *Type:* string
+
+The new logical ID to use for this stack element.
+
+---
+
+##### `ResetOverrideLogicalId` <a name="ResetOverrideLogicalId" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.resetOverrideLogicalId"></a>
+
+```csharp
+private void ResetOverrideLogicalId()
+```
+
+Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.toHclTerraform"></a>
+
+```csharp
+private object ToHclTerraform()
+```
+
+##### `ToMetadata` <a name="ToMetadata" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.toMetadata"></a>
+
+```csharp
+private object ToMetadata()
+```
+
+##### `ToTerraform` <a name="ToTerraform" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.toTerraform"></a>
+
+```csharp
+private object ToTerraform()
+```
+
+Adds this resource to the terraform JSON output.
+
+##### `AddMoveTarget` <a name="AddMoveTarget" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.addMoveTarget"></a>
+
+```csharp
+private void AddMoveTarget(string MoveTarget)
+```
+
+Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+
+###### `MoveTarget`<sup>Required</sup> <a name="MoveTarget" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.addMoveTarget.parameter.moveTarget"></a>
+
+- *Type:* string
+
+The string move target that will correspond to this resource.
+
+---
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.getAnyMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, object> GetAnyMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.getBooleanAttribute"></a>
+
+```csharp
+private IResolvable GetBooleanAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.getBooleanMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, bool> GetBooleanMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.getListAttribute"></a>
+
+```csharp
+private string[] GetListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.getNumberAttribute"></a>
+
+```csharp
+private double GetNumberAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.getNumberListAttribute"></a>
+
+```csharp
+private double[] GetNumberListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.getNumberMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, double> GetNumberMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.getStringAttribute"></a>
+
+```csharp
+private string GetStringAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.getStringMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, string> GetStringMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `HasResourceMove` <a name="HasResourceMove" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.hasResourceMove"></a>
+
+```csharp
+private TerraformResourceMoveByTarget|TerraformResourceMoveById HasResourceMove()
+```
+
+##### `ImportFrom` <a name="ImportFrom" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.importFrom"></a>
+
+```csharp
+private void ImportFrom(string Id, TerraformProvider Provider = null)
+```
+
+###### `Id`<sup>Required</sup> <a name="Id" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.importFrom.parameter.id"></a>
+
+- *Type:* string
+
+---
+
+###### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.importFrom.parameter.provider"></a>
+
+- *Type:* Io.Cdktn.TerraformProvider
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.interpolationForAttribute"></a>
+
+```csharp
+private IResolvable InterpolationForAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.interpolationForAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `MoveFromId` <a name="MoveFromId" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.moveFromId"></a>
+
+```csharp
+private void MoveFromId(string Id)
+```
+
+Move the resource corresponding to "id" to this resource.
+
+Note that the resource being moved from must be marked as moved using it's instance function.
+
+###### `Id`<sup>Required</sup> <a name="Id" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.moveFromId.parameter.id"></a>
+
+- *Type:* string
+
+Full id of resource being moved from, e.g. "aws_s3_bucket.example".
+
+---
+
+##### `MoveTo` <a name="MoveTo" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.moveTo"></a>
+
+```csharp
+private void MoveTo(string MoveTarget, string|double Index = null)
+```
+
+Moves this resource to the target resource given by moveTarget.
+
+###### `MoveTarget`<sup>Required</sup> <a name="MoveTarget" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.moveTo.parameter.moveTarget"></a>
+
+- *Type:* string
+
+The previously set user defined string set by .addMoveTarget() corresponding to the resource to move to.
+
+---
+
+###### `Index`<sup>Optional</sup> <a name="Index" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.moveTo.parameter.index"></a>
+
+- *Type:* string|double
+
+Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
+
+---
+
+##### `MoveToId` <a name="MoveToId" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.moveToId"></a>
+
+```csharp
+private void MoveToId(string Id)
+```
+
+Moves this resource to the resource corresponding to "id".
+
+###### `Id`<sup>Required</sup> <a name="Id" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.moveToId.parameter.id"></a>
+
+- *Type:* string
+
+Full id of resource to move to, e.g. "aws_s3_bucket.example".
+
+---
+
+##### `ResetConditionalForwarderIpAddrs` <a name="ResetConditionalForwarderIpAddrs" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.resetConditionalForwarderIpAddrs"></a>
+
+```csharp
+private void ResetConditionalForwarderIpAddrs()
+```
+
+##### `ResetDeleteAssociatedConditionalForwarder` <a name="ResetDeleteAssociatedConditionalForwarder" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.resetDeleteAssociatedConditionalForwarder"></a>
+
+```csharp
+private void ResetDeleteAssociatedConditionalForwarder()
+```
+
+##### `ResetRegion` <a name="ResetRegion" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.resetRegion"></a>
+
+```csharp
+private void ResetRegion()
+```
+
+##### `ResetSelectiveAuth` <a name="ResetSelectiveAuth" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.resetSelectiveAuth"></a>
+
+```csharp
+private void ResetSelectiveAuth()
+```
+
+##### `ResetTrustType` <a name="ResetTrustType" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.resetTrustType"></a>
+
+```csharp
+private void ResetTrustType()
+```
+
+#### Static Functions <a name="Static Functions" id="Static Functions"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.isTerraformResource">IsTerraformResource</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTN code for importing a DirectoryServiceTrust resource upon running "cdktn plan <stack-name>". |
+
+---
+
+##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.isConstruct"></a>
+
+```csharp
+using Io.Cdktn.Providers.Aws;
+
+DirectoryServiceTrust.IsConstruct(object X);
+```
+
+Checks if `x` is a construct.
+
+Use this method instead of `instanceof` to properly detect `Construct`
+instances, even when the construct library is symlinked.
+
+Explanation: in JavaScript, multiple copies of the `constructs` library on
+disk are seen as independent, completely different libraries. As a
+consequence, the class `Construct` in each copy of the `constructs` library
+is seen as a different class, and an instance of one class will not test as
+`instanceof` the other class. `npm install` will not create installations
+like this, but users may manually symlink construct libraries together or
+use a monorepo tool: in those cases, multiple copies of the `constructs`
+library can be accidentally installed, and `instanceof` will behave
+unpredictably. It is safest to avoid using `instanceof`, and using
+this type-testing method instead.
+
+###### `X`<sup>Required</sup> <a name="X" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.isConstruct.parameter.x"></a>
+
+- *Type:* object
+
+Any object.
+
+---
+
+##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.isTerraformElement"></a>
+
+```csharp
+using Io.Cdktn.Providers.Aws;
+
+DirectoryServiceTrust.IsTerraformElement(object X);
+```
+
+###### `X`<sup>Required</sup> <a name="X" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.isTerraformElement.parameter.x"></a>
+
+- *Type:* object
+
+---
+
+##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.isTerraformResource"></a>
+
+```csharp
+using Io.Cdktn.Providers.Aws;
+
+DirectoryServiceTrust.IsTerraformResource(object X);
+```
+
+###### `X`<sup>Required</sup> <a name="X" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.isTerraformResource.parameter.x"></a>
+
+- *Type:* object
+
+---
+
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.generateConfigForImport"></a>
+
+```csharp
+using Io.Cdktn.Providers.Aws;
+
+DirectoryServiceTrust.GenerateConfigForImport(Construct Scope, string ImportToId, string ImportFromId, TerraformProvider Provider = null);
+```
+
+Generates CDKTN code for importing a DirectoryServiceTrust resource upon running "cdktn plan <stack-name>".
+
+###### `Scope`<sup>Required</sup> <a name="Scope" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* Constructs.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `ImportToId`<sup>Required</sup> <a name="ImportToId" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* string
+
+The construct id used in the generated config for the DirectoryServiceTrust to import.
+
+---
+
+###### `ImportFromId`<sup>Required</sup> <a name="ImportFromId" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* string
+
+The id of the existing DirectoryServiceTrust that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/directory_service_trust#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* Io.Cdktn.TerraformProvider
+
+? Optional instance of the provider where the DirectoryServiceTrust to import is found.
+
+---
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.node">Node</a></code> | <code>Constructs.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.cdktfStack">CdktfStack</a></code> | <code>Io.Cdktn.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.friendlyUniqueId">FriendlyUniqueId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>System.Collections.Generic.IDictionary<string, object></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>Io.Cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.connection">Connection</a></code> | <code>Io.Cdktn.SSHProvisionerConnection\|Io.Cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.count">Count</a></code> | <code>double\|Io.Cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.forEach">ForEach</a></code> | <code>Io.Cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.createdDateTime">CreatedDateTime</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.id">Id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.lastUpdatedDateTime">LastUpdatedDateTime</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.stateLastUpdatedDateTime">StateLastUpdatedDateTime</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.trustState">TrustState</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.trustStateReason">TrustStateReason</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.conditionalForwarderIpAddrsInput">ConditionalForwarderIpAddrsInput</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.deleteAssociatedConditionalForwarderInput">DeleteAssociatedConditionalForwarderInput</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.directoryIdInput">DirectoryIdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.regionInput">RegionInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.remoteDomainNameInput">RemoteDomainNameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.selectiveAuthInput">SelectiveAuthInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.trustDirectionInput">TrustDirectionInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.trustPasswordInput">TrustPasswordInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.trustTypeInput">TrustTypeInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.conditionalForwarderIpAddrs">ConditionalForwarderIpAddrs</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.deleteAssociatedConditionalForwarder">DeleteAssociatedConditionalForwarder</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.directoryId">DirectoryId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.region">Region</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.remoteDomainName">RemoteDomainName</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.selectiveAuth">SelectiveAuth</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.trustDirection">TrustDirection</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.trustPassword">TrustPassword</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.trustType">TrustType</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `Node`<sup>Required</sup> <a name="Node" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.node"></a>
+
+```csharp
+public Node Node { get; }
+```
+
+- *Type:* Constructs.Node
+
+The tree node.
+
+---
+
+##### `CdktfStack`<sup>Required</sup> <a name="CdktfStack" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.cdktfStack"></a>
+
+```csharp
+public TerraformStack CdktfStack { get; }
+```
+
+- *Type:* Io.Cdktn.TerraformStack
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `FriendlyUniqueId`<sup>Required</sup> <a name="FriendlyUniqueId" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.friendlyUniqueId"></a>
+
+```csharp
+public string FriendlyUniqueId { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `TerraformMetaArguments`<sup>Required</sup> <a name="TerraformMetaArguments" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.terraformMetaArguments"></a>
+
+```csharp
+public System.Collections.Generic.IDictionary<string, object> TerraformMetaArguments { get; }
+```
+
+- *Type:* System.Collections.Generic.IDictionary<string, object>
+
+---
+
+##### `TerraformResourceType`<sup>Required</sup> <a name="TerraformResourceType" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.terraformResourceType"></a>
+
+```csharp
+public string TerraformResourceType { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `TerraformGeneratorMetadata`<sup>Optional</sup> <a name="TerraformGeneratorMetadata" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.terraformGeneratorMetadata"></a>
+
+```csharp
+public TerraformProviderGeneratorMetadata TerraformGeneratorMetadata { get; }
+```
+
+- *Type:* Io.Cdktn.TerraformProviderGeneratorMetadata
+
+---
+
+##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.connection"></a>
+
+```csharp
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; }
+```
+
+- *Type:* Io.Cdktn.SSHProvisionerConnection|Io.Cdktn.WinrmProvisionerConnection
+
+---
+
+##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.count"></a>
+
+```csharp
+public double|TerraformCount Count { get; }
+```
+
+- *Type:* double|Io.Cdktn.TerraformCount
+
+---
+
+##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.dependsOn"></a>
+
+```csharp
+public string[] DependsOn { get; }
+```
+
+- *Type:* string[]
+
+---
+
+##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.forEach"></a>
+
+```csharp
+public ITerraformIterator ForEach { get; }
+```
+
+- *Type:* Io.Cdktn.ITerraformIterator
+
+---
+
+##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.lifecycle"></a>
+
+```csharp
+public TerraformResourceLifecycle Lifecycle { get; }
+```
+
+- *Type:* Io.Cdktn.TerraformResourceLifecycle
+
+---
+
+##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.provider"></a>
+
+```csharp
+public TerraformProvider Provider { get; }
+```
+
+- *Type:* Io.Cdktn.TerraformProvider
+
+---
+
+##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.provisioners"></a>
+
+```csharp
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; }
+```
+
+- *Type:* Io.Cdktn.FileProvisioner|Io.Cdktn.LocalExecProvisioner|Io.Cdktn.RemoteExecProvisioner[]
+
+---
+
+##### `CreatedDateTime`<sup>Required</sup> <a name="CreatedDateTime" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.createdDateTime"></a>
+
+```csharp
+public string CreatedDateTime { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Id`<sup>Required</sup> <a name="Id" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.id"></a>
+
+```csharp
+public string Id { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `LastUpdatedDateTime`<sup>Required</sup> <a name="LastUpdatedDateTime" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.lastUpdatedDateTime"></a>
+
+```csharp
+public string LastUpdatedDateTime { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `StateLastUpdatedDateTime`<sup>Required</sup> <a name="StateLastUpdatedDateTime" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.stateLastUpdatedDateTime"></a>
+
+```csharp
+public string StateLastUpdatedDateTime { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `TrustState`<sup>Required</sup> <a name="TrustState" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.trustState"></a>
+
+```csharp
+public string TrustState { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `TrustStateReason`<sup>Required</sup> <a name="TrustStateReason" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.trustStateReason"></a>
+
+```csharp
+public string TrustStateReason { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `ConditionalForwarderIpAddrsInput`<sup>Optional</sup> <a name="ConditionalForwarderIpAddrsInput" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.conditionalForwarderIpAddrsInput"></a>
+
+```csharp
+public string[] ConditionalForwarderIpAddrsInput { get; }
+```
+
+- *Type:* string[]
+
+---
+
+##### `DeleteAssociatedConditionalForwarderInput`<sup>Optional</sup> <a name="DeleteAssociatedConditionalForwarderInput" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.deleteAssociatedConditionalForwarderInput"></a>
+
+```csharp
+public bool|IResolvable DeleteAssociatedConditionalForwarderInput { get; }
+```
+
+- *Type:* bool|Io.Cdktn.IResolvable
+
+---
+
+##### `DirectoryIdInput`<sup>Optional</sup> <a name="DirectoryIdInput" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.directoryIdInput"></a>
+
+```csharp
+public string DirectoryIdInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `RegionInput`<sup>Optional</sup> <a name="RegionInput" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.regionInput"></a>
+
+```csharp
+public string RegionInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `RemoteDomainNameInput`<sup>Optional</sup> <a name="RemoteDomainNameInput" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.remoteDomainNameInput"></a>
+
+```csharp
+public string RemoteDomainNameInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `SelectiveAuthInput`<sup>Optional</sup> <a name="SelectiveAuthInput" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.selectiveAuthInput"></a>
+
+```csharp
+public string SelectiveAuthInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `TrustDirectionInput`<sup>Optional</sup> <a name="TrustDirectionInput" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.trustDirectionInput"></a>
+
+```csharp
+public string TrustDirectionInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `TrustPasswordInput`<sup>Optional</sup> <a name="TrustPasswordInput" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.trustPasswordInput"></a>
+
+```csharp
+public string TrustPasswordInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `TrustTypeInput`<sup>Optional</sup> <a name="TrustTypeInput" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.trustTypeInput"></a>
+
+```csharp
+public string TrustTypeInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `ConditionalForwarderIpAddrs`<sup>Required</sup> <a name="ConditionalForwarderIpAddrs" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.conditionalForwarderIpAddrs"></a>
+
+```csharp
+public string[] ConditionalForwarderIpAddrs { get; }
+```
+
+- *Type:* string[]
+
+---
+
+##### `DeleteAssociatedConditionalForwarder`<sup>Required</sup> <a name="DeleteAssociatedConditionalForwarder" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.deleteAssociatedConditionalForwarder"></a>
+
+```csharp
+public bool|IResolvable DeleteAssociatedConditionalForwarder { get; }
+```
+
+- *Type:* bool|Io.Cdktn.IResolvable
+
+---
+
+##### `DirectoryId`<sup>Required</sup> <a name="DirectoryId" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.directoryId"></a>
+
+```csharp
+public string DirectoryId { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Region`<sup>Required</sup> <a name="Region" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.region"></a>
+
+```csharp
+public string Region { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `RemoteDomainName`<sup>Required</sup> <a name="RemoteDomainName" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.remoteDomainName"></a>
+
+```csharp
+public string RemoteDomainName { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `SelectiveAuth`<sup>Required</sup> <a name="SelectiveAuth" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.selectiveAuth"></a>
+
+```csharp
+public string SelectiveAuth { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `TrustDirection`<sup>Required</sup> <a name="TrustDirection" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.trustDirection"></a>
+
+```csharp
+public string TrustDirection { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `TrustPassword`<sup>Required</sup> <a name="TrustPassword" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.trustPassword"></a>
+
+```csharp
+public string TrustPassword { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `TrustType`<sup>Required</sup> <a name="TrustType" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.trustType"></a>
+
+```csharp
+public string TrustType { get; }
+```
+
+- *Type:* string
+
+---
+
+#### Constants <a name="Constants" id="Constants"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.tfResourceType">TfResourceType</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `TfResourceType`<sup>Required</sup> <a name="TfResourceType" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.tfResourceType"></a>
+
+```csharp
+public string TfResourceType { get; }
+```
+
+- *Type:* string
+
+---
+
+## Structs <a name="Structs" id="Structs"></a>
+
+### DirectoryServiceTrustConfig <a name="DirectoryServiceTrustConfig" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrustConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrustConfig.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Aws;
+
+new DirectoryServiceTrustConfig {
+    SSHProvisionerConnection|WinrmProvisionerConnection Connection = null,
+    double|TerraformCount Count = null,
+    ITerraformDependable[] DependsOn = null,
+    ITerraformIterator ForEach = null,
+    TerraformResourceLifecycle Lifecycle = null,
+    TerraformProvider Provider = null,
+    (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners = null,
+    string DirectoryId,
+    string RemoteDomainName,
+    string TrustDirection,
+    string TrustPassword,
+    string[] ConditionalForwarderIpAddrs = null,
+    bool|IResolvable DeleteAssociatedConditionalForwarder = null,
+    string Region = null,
+    string SelectiveAuth = null,
+    string TrustType = null
+};
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrustConfig.property.connection">Connection</a></code> | <code>Io.Cdktn.SSHProvisionerConnection\|Io.Cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrustConfig.property.count">Count</a></code> | <code>double\|Io.Cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrustConfig.property.dependsOn">DependsOn</a></code> | <code>Io.Cdktn.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrustConfig.property.forEach">ForEach</a></code> | <code>Io.Cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrustConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrustConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrustConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrustConfig.property.directoryId">DirectoryId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/directory_service_trust#directory_id DirectoryServiceTrust#directory_id}. |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrustConfig.property.remoteDomainName">RemoteDomainName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/directory_service_trust#remote_domain_name DirectoryServiceTrust#remote_domain_name}. |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrustConfig.property.trustDirection">TrustDirection</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/directory_service_trust#trust_direction DirectoryServiceTrust#trust_direction}. |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrustConfig.property.trustPassword">TrustPassword</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/directory_service_trust#trust_password DirectoryServiceTrust#trust_password}. |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrustConfig.property.conditionalForwarderIpAddrs">ConditionalForwarderIpAddrs</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/directory_service_trust#conditional_forwarder_ip_addrs DirectoryServiceTrust#conditional_forwarder_ip_addrs}. |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrustConfig.property.deleteAssociatedConditionalForwarder">DeleteAssociatedConditionalForwarder</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/directory_service_trust#delete_associated_conditional_forwarder DirectoryServiceTrust#delete_associated_conditional_forwarder}. |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrustConfig.property.region">Region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrustConfig.property.selectiveAuth">SelectiveAuth</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/directory_service_trust#selective_auth DirectoryServiceTrust#selective_auth}. |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrustConfig.property.trustType">TrustType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/directory_service_trust#trust_type DirectoryServiceTrust#trust_type}. |
+
+---
+
+##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrustConfig.property.connection"></a>
+
+```csharp
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; set; }
+```
+
+- *Type:* Io.Cdktn.SSHProvisionerConnection|Io.Cdktn.WinrmProvisionerConnection
+
+---
+
+##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrustConfig.property.count"></a>
+
+```csharp
+public double|TerraformCount Count { get; set; }
+```
+
+- *Type:* double|Io.Cdktn.TerraformCount
+
+---
+
+##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrustConfig.property.dependsOn"></a>
+
+```csharp
+public ITerraformDependable[] DependsOn { get; set; }
+```
+
+- *Type:* Io.Cdktn.ITerraformDependable[]
+
+---
+
+##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrustConfig.property.forEach"></a>
+
+```csharp
+public ITerraformIterator ForEach { get; set; }
+```
+
+- *Type:* Io.Cdktn.ITerraformIterator
+
+---
+
+##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrustConfig.property.lifecycle"></a>
+
+```csharp
+public TerraformResourceLifecycle Lifecycle { get; set; }
+```
+
+- *Type:* Io.Cdktn.TerraformResourceLifecycle
+
+---
+
+##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrustConfig.property.provider"></a>
+
+```csharp
+public TerraformProvider Provider { get; set; }
+```
+
+- *Type:* Io.Cdktn.TerraformProvider
+
+---
+
+##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrustConfig.property.provisioners"></a>
+
+```csharp
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; set; }
+```
+
+- *Type:* Io.Cdktn.FileProvisioner|Io.Cdktn.LocalExecProvisioner|Io.Cdktn.RemoteExecProvisioner[]
+
+---
+
+##### `DirectoryId`<sup>Required</sup> <a name="DirectoryId" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrustConfig.property.directoryId"></a>
+
+```csharp
+public string DirectoryId { get; set; }
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/directory_service_trust#directory_id DirectoryServiceTrust#directory_id}.
+
+---
+
+##### `RemoteDomainName`<sup>Required</sup> <a name="RemoteDomainName" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrustConfig.property.remoteDomainName"></a>
+
+```csharp
+public string RemoteDomainName { get; set; }
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/directory_service_trust#remote_domain_name DirectoryServiceTrust#remote_domain_name}.
+
+---
+
+##### `TrustDirection`<sup>Required</sup> <a name="TrustDirection" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrustConfig.property.trustDirection"></a>
+
+```csharp
+public string TrustDirection { get; set; }
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/directory_service_trust#trust_direction DirectoryServiceTrust#trust_direction}.
+
+---
+
+##### `TrustPassword`<sup>Required</sup> <a name="TrustPassword" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrustConfig.property.trustPassword"></a>
+
+```csharp
+public string TrustPassword { get; set; }
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/directory_service_trust#trust_password DirectoryServiceTrust#trust_password}.
+
+---
+
+##### `ConditionalForwarderIpAddrs`<sup>Optional</sup> <a name="ConditionalForwarderIpAddrs" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrustConfig.property.conditionalForwarderIpAddrs"></a>
+
+```csharp
+public string[] ConditionalForwarderIpAddrs { get; set; }
+```
+
+- *Type:* string[]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/directory_service_trust#conditional_forwarder_ip_addrs DirectoryServiceTrust#conditional_forwarder_ip_addrs}.
+
+---
+
+##### `DeleteAssociatedConditionalForwarder`<sup>Optional</sup> <a name="DeleteAssociatedConditionalForwarder" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrustConfig.property.deleteAssociatedConditionalForwarder"></a>
+
+```csharp
+public bool|IResolvable DeleteAssociatedConditionalForwarder { get; set; }
+```
+
+- *Type:* bool|Io.Cdktn.IResolvable
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/directory_service_trust#delete_associated_conditional_forwarder DirectoryServiceTrust#delete_associated_conditional_forwarder}.
+
+---
+
+##### `Region`<sup>Optional</sup> <a name="Region" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrustConfig.property.region"></a>
+
+```csharp
+public string Region { get; set; }
+```
+
+- *Type:* string
+
+Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/directory_service_trust#region DirectoryServiceTrust#region}
+
+---
+
+##### `SelectiveAuth`<sup>Optional</sup> <a name="SelectiveAuth" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrustConfig.property.selectiveAuth"></a>
+
+```csharp
+public string SelectiveAuth { get; set; }
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/directory_service_trust#selective_auth DirectoryServiceTrust#selective_auth}.
+
+---
+
+##### `TrustType`<sup>Optional</sup> <a name="TrustType" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrustConfig.property.trustType"></a>
+
+```csharp
+public string TrustType { get; set; }
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/directory_service_trust#trust_type DirectoryServiceTrust#trust_type}.
+
+---
+
+
+
