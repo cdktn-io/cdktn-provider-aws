@@ -5,7 +5,12 @@ on:
   push:
     branches:
       - main
-  workflow_dispatch: {}
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: Dry run (skip actual publishing)
+        required: false
+        type: boolean
 concurrency:
   group: ${{ github.workflow }}
   cancel-in-progress: false
@@ -114,6 +119,7 @@ jobs:
         run: cd dist && setfacl --restore=permissions-backup.acl
         continue-on-error: true
       - name: Release
+        if: ${{ !inputs.dry_run }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: errout=$(mktemp); gh release create $(cat dist/releasetag.txt) -R $GITHUB_REPOSITORY -F dist/changelog.md -t $(cat dist/releasetag.txt) --target $GITHUB_SHA 2> $errout && true; exitcode=$?; if [ $exitcode -ne 0 ] && ! grep -q "Release.tag_name already exists" $errout; then cat $errout; exit $exitcode; fi
@@ -169,6 +175,7 @@ jobs:
           NPM_DIST_TAG: latest
           NPM_REGISTRY: registry.npmjs.org
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          PUBLIB_DRYRUN: ${{ inputs.dry_run }}
         run: npx -p publib@latest publib-npm
       - name: Extract Version
         id: extract-version
@@ -228,6 +235,7 @@ jobs:
           MAVEN_GPG_PRIVATE_KEY_PASSPHRASE: ${{ secrets.MAVEN_GPG_PRIVATE_KEY_PASSPHRASE }}
           MAVEN_PASSWORD: ${{ secrets.MAVEN_PASSWORD }}
           MAVEN_USERNAME: ${{ secrets.MAVEN_USERNAME }}
+          PUBLIB_DRYRUN: ${{ inputs.dry_run }}
           MAVEN_OPTS: --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.lang.reflect=ALL-UNNAMED --add-opens=java.base/java.text=ALL-UNNAMED --add-opens=java.desktop/java.awt.font=ALL-UNNAMED
         run: npx -p publib@latest publib-maven
       - name: Extract Version
@@ -284,6 +292,7 @@ jobs:
         env:
           TWINE_USERNAME: ${{ secrets.TWINE_USERNAME }}
           TWINE_PASSWORD: ${{ secrets.TWINE_PASSWORD }}
+          PUBLIB_DRYRUN: ${{ inputs.dry_run }}
         run: npx -p publib@latest publib-pypi
       - name: Extract Version
         id: extract-version
@@ -338,6 +347,7 @@ jobs:
       - name: Release
         env:
           NUGET_API_KEY: ${{ secrets.NUGET_API_KEY }}
+          PUBLIB_DRYRUN: ${{ inputs.dry_run }}
         run: npx -p publib@latest publib-nuget
       - name: Extract Version
         id: extract-version
@@ -421,6 +431,7 @@ jobs:
           GIT_USER_NAME: team-cdk-terrain
           GIT_USER_EMAIL: github-team-cdk-terrain@cdktn.io
           GITHUB_TOKEN: x-access-token:${{ steps.generate_token.outputs.token }}
+          PUBLIB_DRYRUN: ${{ inputs.dry_run }}
         run: npx -p publib@latest publib-golang
       - name: Extract Version
         id: extract-version
