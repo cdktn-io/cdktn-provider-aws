@@ -4,7 +4,7 @@
 
 ### DaxParameterGroup <a name="DaxParameterGroup" id="@cdktn/provider-aws.daxParameterGroup.DaxParameterGroup"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/dax_parameter_group aws_dax_parameter_group}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/dax_parameter_group aws_dax_parameter_group}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.daxParameterGroup.DaxParameterGroup.Initializer"></a>
 
@@ -530,7 +530,7 @@ The construct id used in the generated config for the DaxParameterGroup to impor
 
 The id of the existing DaxParameterGroup that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/dax_parameter_group#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/dax_parameter_group#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -869,9 +869,9 @@ new DaxParameterGroupConfig {
 | <code><a href="#@cdktn/provider-aws.daxParameterGroup.DaxParameterGroupConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.daxParameterGroup.DaxParameterGroupConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.daxParameterGroup.DaxParameterGroupConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.daxParameterGroup.DaxParameterGroupConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/dax_parameter_group#name DaxParameterGroup#name}. |
-| <code><a href="#@cdktn/provider-aws.daxParameterGroup.DaxParameterGroupConfig.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/dax_parameter_group#description DaxParameterGroup#description}. |
-| <code><a href="#@cdktn/provider-aws.daxParameterGroup.DaxParameterGroupConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/dax_parameter_group#id DaxParameterGroup#id}. |
+| <code><a href="#@cdktn/provider-aws.daxParameterGroup.DaxParameterGroupConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/dax_parameter_group#name DaxParameterGroup#name}. |
+| <code><a href="#@cdktn/provider-aws.daxParameterGroup.DaxParameterGroupConfig.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/dax_parameter_group#description DaxParameterGroup#description}. |
+| <code><a href="#@cdktn/provider-aws.daxParameterGroup.DaxParameterGroupConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/dax_parameter_group#id DaxParameterGroup#id}. |
 | <code><a href="#@cdktn/provider-aws.daxParameterGroup.DaxParameterGroupConfig.property.parameters">Parameters</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-aws.daxParameterGroup.DaxParameterGroupParameters">DaxParameterGroupParameters</a>[]</code> | parameters block. |
 | <code><a href="#@cdktn/provider-aws.daxParameterGroup.DaxParameterGroupConfig.property.region">Region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
@@ -955,7 +955,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/dax_parameter_group#name DaxParameterGroup#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/dax_parameter_group#name DaxParameterGroup#name}.
 
 ---
 
@@ -967,7 +967,7 @@ public string Description { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/dax_parameter_group#description DaxParameterGroup#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/dax_parameter_group#description DaxParameterGroup#description}.
 
 ---
 
@@ -979,7 +979,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/dax_parameter_group#id DaxParameterGroup#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/dax_parameter_group#id DaxParameterGroup#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -996,7 +996,7 @@ public IResolvable|DaxParameterGroupParameters[] Parameters { get; set; }
 
 parameters block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/dax_parameter_group#parameters DaxParameterGroup#parameters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/dax_parameter_group#parameters DaxParameterGroup#parameters}
 
 ---
 
@@ -1010,7 +1010,7 @@ public string Region { get; set; }
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/dax_parameter_group#region DaxParameterGroup#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/dax_parameter_group#region DaxParameterGroup#region}
 
 ---
 
@@ -1031,8 +1031,8 @@ new DaxParameterGroupParameters {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.daxParameterGroup.DaxParameterGroupParameters.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/dax_parameter_group#name DaxParameterGroup#name}. |
-| <code><a href="#@cdktn/provider-aws.daxParameterGroup.DaxParameterGroupParameters.property.value">Value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/dax_parameter_group#value DaxParameterGroup#value}. |
+| <code><a href="#@cdktn/provider-aws.daxParameterGroup.DaxParameterGroupParameters.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/dax_parameter_group#name DaxParameterGroup#name}. |
+| <code><a href="#@cdktn/provider-aws.daxParameterGroup.DaxParameterGroupParameters.property.value">Value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/dax_parameter_group#value DaxParameterGroup#value}. |
 
 ---
 
@@ -1044,7 +1044,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/dax_parameter_group#name DaxParameterGroup#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/dax_parameter_group#name DaxParameterGroup#name}.
 
 ---
 
@@ -1056,7 +1056,7 @@ public string Value { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/dax_parameter_group#value DaxParameterGroup#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/dax_parameter_group#value DaxParameterGroup#value}.
 
 ---
 

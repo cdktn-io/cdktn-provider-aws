@@ -1,3 +1,3 @@
 # `aws_lambda_capacity_provider`
 
-Refer to the Terraform Registry for docs: [`aws_lambda_capacity_provider`](https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/lambda_capacity_provider).
+Refer to the Terraform Registry for docs: [`aws_lambda_capacity_provider`](https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/lambda_capacity_provider).

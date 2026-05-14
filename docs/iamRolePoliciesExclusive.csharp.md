@@ -4,7 +4,7 @@
 
 ### IamRolePoliciesExclusive <a name="IamRolePoliciesExclusive" id="@cdktn/provider-aws.iamRolePoliciesExclusive.IamRolePoliciesExclusive"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/iam_role_policies_exclusive aws_iam_role_policies_exclusive}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/iam_role_policies_exclusive aws_iam_role_policies_exclusive}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.iamRolePoliciesExclusive.IamRolePoliciesExclusive.Initializer"></a>
 
@@ -489,7 +489,7 @@ The construct id used in the generated config for the IamRolePoliciesExclusive t
 
 The id of the existing IamRolePoliciesExclusive that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/iam_role_policies_exclusive#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/iam_role_policies_exclusive#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -759,8 +759,8 @@ new IamRolePoliciesExclusiveConfig {
 | <code><a href="#@cdktn/provider-aws.iamRolePoliciesExclusive.IamRolePoliciesExclusiveConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iamRolePoliciesExclusive.IamRolePoliciesExclusiveConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iamRolePoliciesExclusive.IamRolePoliciesExclusiveConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.iamRolePoliciesExclusive.IamRolePoliciesExclusiveConfig.property.policyNames">PolicyNames</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/iam_role_policies_exclusive#policy_names IamRolePoliciesExclusive#policy_names}. |
-| <code><a href="#@cdktn/provider-aws.iamRolePoliciesExclusive.IamRolePoliciesExclusiveConfig.property.roleName">RoleName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/iam_role_policies_exclusive#role_name IamRolePoliciesExclusive#role_name}. |
+| <code><a href="#@cdktn/provider-aws.iamRolePoliciesExclusive.IamRolePoliciesExclusiveConfig.property.policyNames">PolicyNames</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/iam_role_policies_exclusive#policy_names IamRolePoliciesExclusive#policy_names}. |
+| <code><a href="#@cdktn/provider-aws.iamRolePoliciesExclusive.IamRolePoliciesExclusiveConfig.property.roleName">RoleName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/iam_role_policies_exclusive#role_name IamRolePoliciesExclusive#role_name}. |
 
 ---
 
@@ -842,7 +842,7 @@ public string[] PolicyNames { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/iam_role_policies_exclusive#policy_names IamRolePoliciesExclusive#policy_names}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/iam_role_policies_exclusive#policy_names IamRolePoliciesExclusive#policy_names}.
 
 ---
 
@@ -854,7 +854,7 @@ public string RoleName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/iam_role_policies_exclusive#role_name IamRolePoliciesExclusive#role_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/iam_role_policies_exclusive#role_name IamRolePoliciesExclusive#role_name}.
 
 ---
 

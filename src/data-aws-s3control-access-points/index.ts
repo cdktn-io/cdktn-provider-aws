@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/data-sources/s3control_access_points
+// https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/data-sources/s3control_access_points
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,25 +13,25 @@ import * as cdktn from 'cdktn';
 
 export interface DataAwsS3ControlAccessPointsConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/data-sources/s3control_access_points#account_id DataAwsS3ControlAccessPoints#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/data-sources/s3control_access_points#account_id DataAwsS3ControlAccessPoints#account_id}
   */
   readonly accountId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/data-sources/s3control_access_points#bucket DataAwsS3ControlAccessPoints#bucket}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/data-sources/s3control_access_points#bucket DataAwsS3ControlAccessPoints#bucket}
   */
   readonly bucket?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/data-sources/s3control_access_points#data_source_id DataAwsS3ControlAccessPoints#data_source_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/data-sources/s3control_access_points#data_source_id DataAwsS3ControlAccessPoints#data_source_id}
   */
   readonly dataSourceId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/data-sources/s3control_access_points#data_source_type DataAwsS3ControlAccessPoints#data_source_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/data-sources/s3control_access_points#data_source_type DataAwsS3ControlAccessPoints#data_source_type}
   */
   readonly dataSourceType?: string;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/data-sources/s3control_access_points#region DataAwsS3ControlAccessPoints#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/data-sources/s3control_access_points#region DataAwsS3ControlAccessPoints#region}
   */
   readonly region?: string;
 }
@@ -228,7 +228,7 @@ export class DataAwsS3ControlAccessPointsAccessPointsList extends cdktn.ComplexL
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/data-sources/s3control_access_points aws_s3control_access_points}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/data-sources/s3control_access_points aws_s3control_access_points}
 */
 export class DataAwsS3ControlAccessPoints extends cdktn.TerraformDataSource {
 
@@ -244,7 +244,7 @@ export class DataAwsS3ControlAccessPoints extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataAwsS3ControlAccessPoints resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsS3ControlAccessPoints to import
-  * @param importFromId The id of the existing DataAwsS3ControlAccessPoints that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/data-sources/s3control_access_points#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsS3ControlAccessPoints that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/data-sources/s3control_access_points#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsS3ControlAccessPoints to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -256,7 +256,7 @@ export class DataAwsS3ControlAccessPoints extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/data-sources/s3control_access_points aws_s3control_access_points} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/data-sources/s3control_access_points aws_s3control_access_points} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -267,7 +267,7 @@ export class DataAwsS3ControlAccessPoints extends cdktn.TerraformDataSource {
       terraformResourceType: 'aws_s3control_access_points',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.44.0',
+        providerVersion: '6.45.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

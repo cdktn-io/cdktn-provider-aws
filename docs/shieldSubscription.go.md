@@ -4,7 +4,7 @@
 
 ### ShieldSubscription <a name="ShieldSubscription" id="@cdktn/provider-aws.shieldSubscription.ShieldSubscription"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/shield_subscription aws_shield_subscription}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/shield_subscription aws_shield_subscription}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.shieldSubscription.ShieldSubscription.Initializer"></a>
 
@@ -503,7 +503,7 @@ The construct id used in the generated config for the ShieldSubscription to impo
 
 The id of the existing ShieldSubscription that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/shield_subscription#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/shield_subscription#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -785,7 +785,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/shieldsubscription"
 | <code><a href="#@cdktn/provider-aws.shieldSubscription.ShieldSubscriptionConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.shieldSubscription.ShieldSubscriptionConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.shieldSubscription.ShieldSubscriptionConfig.property.autoRenew">AutoRenew</a></code> | <code>*string</code> | Whether to automatically renew the subscription when it expires. |
-| <code><a href="#@cdktn/provider-aws.shieldSubscription.ShieldSubscriptionConfig.property.skipDestroy">SkipDestroy</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/shield_subscription#skip_destroy ShieldSubscription#skip_destroy}. |
+| <code><a href="#@cdktn/provider-aws.shieldSubscription.ShieldSubscriptionConfig.property.skipDestroy">SkipDestroy</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/shield_subscription#skip_destroy ShieldSubscription#skip_destroy}. |
 
 ---
 
@@ -869,7 +869,7 @@ AutoRenew *string
 
 Whether to automatically renew the subscription when it expires.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/shield_subscription#auto_renew ShieldSubscription#auto_renew}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/shield_subscription#auto_renew ShieldSubscription#auto_renew}
 
 ---
 
@@ -881,7 +881,7 @@ SkipDestroy interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/shield_subscription#skip_destroy ShieldSubscription#skip_destroy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/shield_subscription#skip_destroy ShieldSubscription#skip_destroy}.
 
 ---
 

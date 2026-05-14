@@ -4,7 +4,7 @@
 
 ### DataAwsConnectVocabulary <a name="DataAwsConnectVocabulary" id="@cdktn/provider-aws.dataAwsConnectVocabulary.DataAwsConnectVocabulary"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/data-sources/connect_vocabulary aws_connect_vocabulary}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/data-sources/connect_vocabulary aws_connect_vocabulary}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsConnectVocabulary.DataAwsConnectVocabulary.Initializer"></a>
 
@@ -422,7 +422,7 @@ The construct id used in the generated config for the DataAwsConnectVocabulary t
 
 The id of the existing DataAwsConnectVocabulary that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/data-sources/connect_vocabulary#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/data-sources/connect_vocabulary#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -814,12 +814,12 @@ const dataAwsConnectVocabularyConfig: dataAwsConnectVocabulary.DataAwsConnectVoc
 | <code><a href="#@cdktn/provider-aws.dataAwsConnectVocabulary.DataAwsConnectVocabularyConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsConnectVocabulary.DataAwsConnectVocabularyConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsConnectVocabulary.DataAwsConnectVocabularyConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dataAwsConnectVocabulary.DataAwsConnectVocabularyConfig.property.instanceId">instanceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/data-sources/connect_vocabulary#instance_id DataAwsConnectVocabulary#instance_id}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsConnectVocabulary.DataAwsConnectVocabularyConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/data-sources/connect_vocabulary#id DataAwsConnectVocabulary#id}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsConnectVocabulary.DataAwsConnectVocabularyConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/data-sources/connect_vocabulary#name DataAwsConnectVocabulary#name}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsConnectVocabulary.DataAwsConnectVocabularyConfig.property.instanceId">instanceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/data-sources/connect_vocabulary#instance_id DataAwsConnectVocabulary#instance_id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsConnectVocabulary.DataAwsConnectVocabularyConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/data-sources/connect_vocabulary#id DataAwsConnectVocabulary#id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsConnectVocabulary.DataAwsConnectVocabularyConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/data-sources/connect_vocabulary#name DataAwsConnectVocabulary#name}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsConnectVocabulary.DataAwsConnectVocabularyConfig.property.region">region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.dataAwsConnectVocabulary.DataAwsConnectVocabularyConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/data-sources/connect_vocabulary#tags DataAwsConnectVocabulary#tags}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsConnectVocabulary.DataAwsConnectVocabularyConfig.property.vocabularyId">vocabularyId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/data-sources/connect_vocabulary#vocabulary_id DataAwsConnectVocabulary#vocabulary_id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsConnectVocabulary.DataAwsConnectVocabularyConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/data-sources/connect_vocabulary#tags DataAwsConnectVocabulary#tags}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsConnectVocabulary.DataAwsConnectVocabularyConfig.property.vocabularyId">vocabularyId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/data-sources/connect_vocabulary#vocabulary_id DataAwsConnectVocabulary#vocabulary_id}. |
 
 ---
 
@@ -901,7 +901,7 @@ public readonly instanceId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/data-sources/connect_vocabulary#instance_id DataAwsConnectVocabulary#instance_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/data-sources/connect_vocabulary#instance_id DataAwsConnectVocabulary#instance_id}.
 
 ---
 
@@ -913,7 +913,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/data-sources/connect_vocabulary#id DataAwsConnectVocabulary#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/data-sources/connect_vocabulary#id DataAwsConnectVocabulary#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -928,7 +928,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/data-sources/connect_vocabulary#name DataAwsConnectVocabulary#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/data-sources/connect_vocabulary#name DataAwsConnectVocabulary#name}.
 
 ---
 
@@ -942,7 +942,7 @@ public readonly region: string;
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/data-sources/connect_vocabulary#region DataAwsConnectVocabulary#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/data-sources/connect_vocabulary#region DataAwsConnectVocabulary#region}
 
 ---
 
@@ -954,7 +954,7 @@ public readonly tags: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/data-sources/connect_vocabulary#tags DataAwsConnectVocabulary#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/data-sources/connect_vocabulary#tags DataAwsConnectVocabulary#tags}.
 
 ---
 
@@ -966,7 +966,7 @@ public readonly vocabularyId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/data-sources/connect_vocabulary#vocabulary_id DataAwsConnectVocabulary#vocabulary_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/data-sources/connect_vocabulary#vocabulary_id DataAwsConnectVocabulary#vocabulary_id}.
 
 ---
 
