@@ -4,7 +4,7 @@
 
 ### DataAwsAuditmanagerControl <a name="DataAwsAuditmanagerControl" id="@cdktn/provider-aws.dataAwsAuditmanagerControl.DataAwsAuditmanagerControl"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/data-sources/auditmanager_control aws_auditmanager_control}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/data-sources/auditmanager_control aws_auditmanager_control}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAuditmanagerControl.DataAwsAuditmanagerControl.Initializer"></a>
 
@@ -38,8 +38,8 @@ dataAwsAuditmanagerControl.DataAwsAuditmanagerControl(
 | <code><a href="#@cdktn/provider-aws.dataAwsAuditmanagerControl.DataAwsAuditmanagerControl.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsAuditmanagerControl.DataAwsAuditmanagerControl.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsAuditmanagerControl.DataAwsAuditmanagerControl.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dataAwsAuditmanagerControl.DataAwsAuditmanagerControl.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/data-sources/auditmanager_control#name DataAwsAuditmanagerControl#name}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsAuditmanagerControl.DataAwsAuditmanagerControl.Initializer.parameter.type">type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/data-sources/auditmanager_control#type DataAwsAuditmanagerControl#type}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsAuditmanagerControl.DataAwsAuditmanagerControl.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/data-sources/auditmanager_control#name DataAwsAuditmanagerControl#name}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsAuditmanagerControl.DataAwsAuditmanagerControl.Initializer.parameter.type">type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/data-sources/auditmanager_control#type DataAwsAuditmanagerControl#type}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsAuditmanagerControl.DataAwsAuditmanagerControl.Initializer.parameter.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -108,7 +108,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/data-sources/auditmanager_control#name DataAwsAuditmanagerControl#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/data-sources/auditmanager_control#name DataAwsAuditmanagerControl#name}.
 
 ---
 
@@ -116,7 +116,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/data-sources/auditmanager_control#type DataAwsAuditmanagerControl#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/data-sources/auditmanager_control#type DataAwsAuditmanagerControl#type}.
 
 ---
 
@@ -126,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/data-sources/auditmanager_control#region DataAwsAuditmanagerControl#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/data-sources/auditmanager_control#region DataAwsAuditmanagerControl#region}
 
 ---
 
@@ -516,7 +516,7 @@ The construct id used in the generated config for the DataAwsAuditmanagerControl
 
 The id of the existing DataAwsAuditmanagerControl that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/data-sources/auditmanager_control#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/data-sources/auditmanager_control#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -875,8 +875,8 @@ dataAwsAuditmanagerControl.DataAwsAuditmanagerControlConfig(
 | <code><a href="#@cdktn/provider-aws.dataAwsAuditmanagerControl.DataAwsAuditmanagerControlConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsAuditmanagerControl.DataAwsAuditmanagerControlConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsAuditmanagerControl.DataAwsAuditmanagerControlConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dataAwsAuditmanagerControl.DataAwsAuditmanagerControlConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/data-sources/auditmanager_control#name DataAwsAuditmanagerControl#name}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsAuditmanagerControl.DataAwsAuditmanagerControlConfig.property.type">type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/data-sources/auditmanager_control#type DataAwsAuditmanagerControl#type}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsAuditmanagerControl.DataAwsAuditmanagerControlConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/data-sources/auditmanager_control#name DataAwsAuditmanagerControl#name}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsAuditmanagerControl.DataAwsAuditmanagerControlConfig.property.type">type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/data-sources/auditmanager_control#type DataAwsAuditmanagerControl#type}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsAuditmanagerControl.DataAwsAuditmanagerControlConfig.property.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -959,7 +959,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/data-sources/auditmanager_control#name DataAwsAuditmanagerControl#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/data-sources/auditmanager_control#name DataAwsAuditmanagerControl#name}.
 
 ---
 
@@ -971,7 +971,7 @@ type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/data-sources/auditmanager_control#type DataAwsAuditmanagerControl#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/data-sources/auditmanager_control#type DataAwsAuditmanagerControl#type}.
 
 ---
 
@@ -985,7 +985,7 @@ region: str
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/data-sources/auditmanager_control#region DataAwsAuditmanagerControl#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/data-sources/auditmanager_control#region DataAwsAuditmanagerControl#region}
 
 ---
 

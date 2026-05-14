@@ -4,7 +4,7 @@
 
 ### ServicequotasAutoManagement <a name="ServicequotasAutoManagement" id="@cdktn/provider-aws.servicequotasAutoManagement.ServicequotasAutoManagement"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/servicequotas_auto_management aws_servicequotas_auto_management}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/servicequotas_auto_management aws_servicequotas_auto_management}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.servicequotasAutoManagement.ServicequotasAutoManagement.Initializer"></a>
 
@@ -510,7 +510,7 @@ The construct id used in the generated config for the ServicequotasAutoManagemen
 
 The id of the existing ServicequotasAutoManagement that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/servicequotas_auto_management#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/servicequotas_auto_management#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -860,10 +860,10 @@ new ServicequotasAutoManagementConfig {
 | <code><a href="#@cdktn/provider-aws.servicequotasAutoManagement.ServicequotasAutoManagementConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.servicequotasAutoManagement.ServicequotasAutoManagementConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.servicequotasAutoManagement.ServicequotasAutoManagementConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.servicequotasAutoManagement.ServicequotasAutoManagementConfig.property.optInLevel">OptInLevel</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/servicequotas_auto_management#opt_in_level ServicequotasAutoManagement#opt_in_level}. |
-| <code><a href="#@cdktn/provider-aws.servicequotasAutoManagement.ServicequotasAutoManagementConfig.property.optInType">OptInType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/servicequotas_auto_management#opt_in_type ServicequotasAutoManagement#opt_in_type}. |
-| <code><a href="#@cdktn/provider-aws.servicequotasAutoManagement.ServicequotasAutoManagementConfig.property.exclusionList">ExclusionList</a></code> | <code>Io.Cdktn.IResolvable\|System.Collections.Generic.IDictionary<string, string[]></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/servicequotas_auto_management#exclusion_list ServicequotasAutoManagement#exclusion_list}. |
-| <code><a href="#@cdktn/provider-aws.servicequotasAutoManagement.ServicequotasAutoManagementConfig.property.notificationArn">NotificationArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/servicequotas_auto_management#notification_arn ServicequotasAutoManagement#notification_arn}. |
+| <code><a href="#@cdktn/provider-aws.servicequotasAutoManagement.ServicequotasAutoManagementConfig.property.optInLevel">OptInLevel</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/servicequotas_auto_management#opt_in_level ServicequotasAutoManagement#opt_in_level}. |
+| <code><a href="#@cdktn/provider-aws.servicequotasAutoManagement.ServicequotasAutoManagementConfig.property.optInType">OptInType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/servicequotas_auto_management#opt_in_type ServicequotasAutoManagement#opt_in_type}. |
+| <code><a href="#@cdktn/provider-aws.servicequotasAutoManagement.ServicequotasAutoManagementConfig.property.exclusionList">ExclusionList</a></code> | <code>Io.Cdktn.IResolvable\|System.Collections.Generic.IDictionary<string, string[]></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/servicequotas_auto_management#exclusion_list ServicequotasAutoManagement#exclusion_list}. |
+| <code><a href="#@cdktn/provider-aws.servicequotasAutoManagement.ServicequotasAutoManagementConfig.property.notificationArn">NotificationArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/servicequotas_auto_management#notification_arn ServicequotasAutoManagement#notification_arn}. |
 | <code><a href="#@cdktn/provider-aws.servicequotasAutoManagement.ServicequotasAutoManagementConfig.property.region">Region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -946,7 +946,7 @@ public string OptInLevel { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/servicequotas_auto_management#opt_in_level ServicequotasAutoManagement#opt_in_level}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/servicequotas_auto_management#opt_in_level ServicequotasAutoManagement#opt_in_level}.
 
 ---
 
@@ -958,7 +958,7 @@ public string OptInType { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/servicequotas_auto_management#opt_in_type ServicequotasAutoManagement#opt_in_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/servicequotas_auto_management#opt_in_type ServicequotasAutoManagement#opt_in_type}.
 
 ---
 
@@ -970,7 +970,7 @@ public IResolvable|System.Collections.Generic.IDictionary<string, string[]> Excl
 
 - *Type:* Io.Cdktn.IResolvable|System.Collections.Generic.IDictionary<string, string[]>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/servicequotas_auto_management#exclusion_list ServicequotasAutoManagement#exclusion_list}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/servicequotas_auto_management#exclusion_list ServicequotasAutoManagement#exclusion_list}.
 
 ---
 
@@ -982,7 +982,7 @@ public string NotificationArn { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/servicequotas_auto_management#notification_arn ServicequotasAutoManagement#notification_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/servicequotas_auto_management#notification_arn ServicequotasAutoManagement#notification_arn}.
 
 ---
 
@@ -996,7 +996,7 @@ public string Region { get; set; }
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/servicequotas_auto_management#region ServicequotasAutoManagement#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/servicequotas_auto_management#region ServicequotasAutoManagement#region}
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### LightsailCertificate <a name="LightsailCertificate" id="@cdktn/provider-aws.lightsailCertificate.LightsailCertificate"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/lightsail_certificate aws_lightsail_certificate}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/lightsail_certificate aws_lightsail_certificate}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lightsailCertificate.LightsailCertificate.Initializer"></a>
 
@@ -531,7 +531,7 @@ The construct id used in the generated config for the LightsailCertificate to im
 
 The id of the existing LightsailCertificate that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/lightsail_certificate#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/lightsail_certificate#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -934,13 +934,13 @@ const lightsailCertificateConfig: lightsailCertificate.LightsailCertificateConfi
 | <code><a href="#@cdktn/provider-aws.lightsailCertificate.LightsailCertificateConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.lightsailCertificate.LightsailCertificateConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.lightsailCertificate.LightsailCertificateConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.lightsailCertificate.LightsailCertificateConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/lightsail_certificate#name LightsailCertificate#name}. |
-| <code><a href="#@cdktn/provider-aws.lightsailCertificate.LightsailCertificateConfig.property.domainName">domainName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/lightsail_certificate#domain_name LightsailCertificate#domain_name}. |
-| <code><a href="#@cdktn/provider-aws.lightsailCertificate.LightsailCertificateConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/lightsail_certificate#id LightsailCertificate#id}. |
+| <code><a href="#@cdktn/provider-aws.lightsailCertificate.LightsailCertificateConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/lightsail_certificate#name LightsailCertificate#name}. |
+| <code><a href="#@cdktn/provider-aws.lightsailCertificate.LightsailCertificateConfig.property.domainName">domainName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/lightsail_certificate#domain_name LightsailCertificate#domain_name}. |
+| <code><a href="#@cdktn/provider-aws.lightsailCertificate.LightsailCertificateConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/lightsail_certificate#id LightsailCertificate#id}. |
 | <code><a href="#@cdktn/provider-aws.lightsailCertificate.LightsailCertificateConfig.property.region">region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.lightsailCertificate.LightsailCertificateConfig.property.subjectAlternativeNames">subjectAlternativeNames</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/lightsail_certificate#subject_alternative_names LightsailCertificate#subject_alternative_names}. |
-| <code><a href="#@cdktn/provider-aws.lightsailCertificate.LightsailCertificateConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/lightsail_certificate#tags LightsailCertificate#tags}. |
-| <code><a href="#@cdktn/provider-aws.lightsailCertificate.LightsailCertificateConfig.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/lightsail_certificate#tags_all LightsailCertificate#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.lightsailCertificate.LightsailCertificateConfig.property.subjectAlternativeNames">subjectAlternativeNames</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/lightsail_certificate#subject_alternative_names LightsailCertificate#subject_alternative_names}. |
+| <code><a href="#@cdktn/provider-aws.lightsailCertificate.LightsailCertificateConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/lightsail_certificate#tags LightsailCertificate#tags}. |
+| <code><a href="#@cdktn/provider-aws.lightsailCertificate.LightsailCertificateConfig.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/lightsail_certificate#tags_all LightsailCertificate#tags_all}. |
 
 ---
 
@@ -1022,7 +1022,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/lightsail_certificate#name LightsailCertificate#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/lightsail_certificate#name LightsailCertificate#name}.
 
 ---
 
@@ -1034,7 +1034,7 @@ public readonly domainName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/lightsail_certificate#domain_name LightsailCertificate#domain_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/lightsail_certificate#domain_name LightsailCertificate#domain_name}.
 
 ---
 
@@ -1046,7 +1046,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/lightsail_certificate#id LightsailCertificate#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/lightsail_certificate#id LightsailCertificate#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1063,7 +1063,7 @@ public readonly region: string;
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/lightsail_certificate#region LightsailCertificate#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/lightsail_certificate#region LightsailCertificate#region}
 
 ---
 
@@ -1075,7 +1075,7 @@ public readonly subjectAlternativeNames: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/lightsail_certificate#subject_alternative_names LightsailCertificate#subject_alternative_names}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/lightsail_certificate#subject_alternative_names LightsailCertificate#subject_alternative_names}.
 
 ---
 
@@ -1087,7 +1087,7 @@ public readonly tags: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/lightsail_certificate#tags LightsailCertificate#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/lightsail_certificate#tags LightsailCertificate#tags}.
 
 ---
 
@@ -1099,7 +1099,7 @@ public readonly tagsAll: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/lightsail_certificate#tags_all LightsailCertificate#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/lightsail_certificate#tags_all LightsailCertificate#tags_all}.
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### ElasticsearchDomainPolicy <a name="ElasticsearchDomainPolicy" id="@cdktn/provider-aws.elasticsearchDomainPolicy.ElasticsearchDomainPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/elasticsearch_domain_policy aws_elasticsearch_domain_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/elasticsearch_domain_policy aws_elasticsearch_domain_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.elasticsearchDomainPolicy.ElasticsearchDomainPolicy.Initializer"></a>
 
@@ -523,7 +523,7 @@ The construct id used in the generated config for the ElasticsearchDomainPolicy 
 
 The id of the existing ElasticsearchDomainPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/elasticsearch_domain_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/elasticsearch_domain_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -862,9 +862,9 @@ new ElasticsearchDomainPolicyConfig {
 | <code><a href="#@cdktn/provider-aws.elasticsearchDomainPolicy.ElasticsearchDomainPolicyConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.elasticsearchDomainPolicy.ElasticsearchDomainPolicyConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.elasticsearchDomainPolicy.ElasticsearchDomainPolicyConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.elasticsearchDomainPolicy.ElasticsearchDomainPolicyConfig.property.accessPolicies">AccessPolicies</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/elasticsearch_domain_policy#access_policies ElasticsearchDomainPolicy#access_policies}. |
-| <code><a href="#@cdktn/provider-aws.elasticsearchDomainPolicy.ElasticsearchDomainPolicyConfig.property.domainName">DomainName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/elasticsearch_domain_policy#domain_name ElasticsearchDomainPolicy#domain_name}. |
-| <code><a href="#@cdktn/provider-aws.elasticsearchDomainPolicy.ElasticsearchDomainPolicyConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/elasticsearch_domain_policy#id ElasticsearchDomainPolicy#id}. |
+| <code><a href="#@cdktn/provider-aws.elasticsearchDomainPolicy.ElasticsearchDomainPolicyConfig.property.accessPolicies">AccessPolicies</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/elasticsearch_domain_policy#access_policies ElasticsearchDomainPolicy#access_policies}. |
+| <code><a href="#@cdktn/provider-aws.elasticsearchDomainPolicy.ElasticsearchDomainPolicyConfig.property.domainName">DomainName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/elasticsearch_domain_policy#domain_name ElasticsearchDomainPolicy#domain_name}. |
+| <code><a href="#@cdktn/provider-aws.elasticsearchDomainPolicy.ElasticsearchDomainPolicyConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/elasticsearch_domain_policy#id ElasticsearchDomainPolicy#id}. |
 | <code><a href="#@cdktn/provider-aws.elasticsearchDomainPolicy.ElasticsearchDomainPolicyConfig.property.region">Region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktn/provider-aws.elasticsearchDomainPolicy.ElasticsearchDomainPolicyConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.elasticsearchDomainPolicy.ElasticsearchDomainPolicyTimeouts">ElasticsearchDomainPolicyTimeouts</a></code> | timeouts block. |
 
@@ -948,7 +948,7 @@ public string AccessPolicies { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/elasticsearch_domain_policy#access_policies ElasticsearchDomainPolicy#access_policies}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/elasticsearch_domain_policy#access_policies ElasticsearchDomainPolicy#access_policies}.
 
 ---
 
@@ -960,7 +960,7 @@ public string DomainName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/elasticsearch_domain_policy#domain_name ElasticsearchDomainPolicy#domain_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/elasticsearch_domain_policy#domain_name ElasticsearchDomainPolicy#domain_name}.
 
 ---
 
@@ -972,7 +972,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/elasticsearch_domain_policy#id ElasticsearchDomainPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/elasticsearch_domain_policy#id ElasticsearchDomainPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -989,7 +989,7 @@ public string Region { get; set; }
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/elasticsearch_domain_policy#region ElasticsearchDomainPolicy#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/elasticsearch_domain_policy#region ElasticsearchDomainPolicy#region}
 
 ---
 
@@ -1003,7 +1003,7 @@ public ElasticsearchDomainPolicyTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/elasticsearch_domain_policy#timeouts ElasticsearchDomainPolicy#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/elasticsearch_domain_policy#timeouts ElasticsearchDomainPolicy#timeouts}
 
 ---
 
@@ -1024,8 +1024,8 @@ new ElasticsearchDomainPolicyTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.elasticsearchDomainPolicy.ElasticsearchDomainPolicyTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/elasticsearch_domain_policy#delete ElasticsearchDomainPolicy#delete}. |
-| <code><a href="#@cdktn/provider-aws.elasticsearchDomainPolicy.ElasticsearchDomainPolicyTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/elasticsearch_domain_policy#update ElasticsearchDomainPolicy#update}. |
+| <code><a href="#@cdktn/provider-aws.elasticsearchDomainPolicy.ElasticsearchDomainPolicyTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/elasticsearch_domain_policy#delete ElasticsearchDomainPolicy#delete}. |
+| <code><a href="#@cdktn/provider-aws.elasticsearchDomainPolicy.ElasticsearchDomainPolicyTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/elasticsearch_domain_policy#update ElasticsearchDomainPolicy#update}. |
 
 ---
 
@@ -1037,7 +1037,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/elasticsearch_domain_policy#delete ElasticsearchDomainPolicy#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/elasticsearch_domain_policy#delete ElasticsearchDomainPolicy#delete}.
 
 ---
 
@@ -1049,7 +1049,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/elasticsearch_domain_policy#update ElasticsearchDomainPolicy#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/elasticsearch_domain_policy#update ElasticsearchDomainPolicy#update}.
 
 ---
 

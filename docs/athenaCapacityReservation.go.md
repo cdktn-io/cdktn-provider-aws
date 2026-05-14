@@ -4,7 +4,7 @@
 
 ### AthenaCapacityReservation <a name="AthenaCapacityReservation" id="@cdktn/provider-aws.athenaCapacityReservation.AthenaCapacityReservation"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/athena_capacity_reservation aws_athena_capacity_reservation}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/athena_capacity_reservation aws_athena_capacity_reservation}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.athenaCapacityReservation.AthenaCapacityReservation.Initializer"></a>
 
@@ -523,7 +523,7 @@ The construct id used in the generated config for the AthenaCapacityReservation 
 
 The id of the existing AthenaCapacityReservation that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/athena_capacity_reservation#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/athena_capacity_reservation#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -906,10 +906,10 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/athenacapacityreservat
 | <code><a href="#@cdktn/provider-aws.athenaCapacityReservation.AthenaCapacityReservationConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.athenaCapacityReservation.AthenaCapacityReservationConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.athenaCapacityReservation.AthenaCapacityReservationConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.athenaCapacityReservation.AthenaCapacityReservationConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/athena_capacity_reservation#name AthenaCapacityReservation#name}. |
-| <code><a href="#@cdktn/provider-aws.athenaCapacityReservation.AthenaCapacityReservationConfig.property.targetDpus">TargetDpus</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/athena_capacity_reservation#target_dpus AthenaCapacityReservation#target_dpus}. |
+| <code><a href="#@cdktn/provider-aws.athenaCapacityReservation.AthenaCapacityReservationConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/athena_capacity_reservation#name AthenaCapacityReservation#name}. |
+| <code><a href="#@cdktn/provider-aws.athenaCapacityReservation.AthenaCapacityReservationConfig.property.targetDpus">TargetDpus</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/athena_capacity_reservation#target_dpus AthenaCapacityReservation#target_dpus}. |
 | <code><a href="#@cdktn/provider-aws.athenaCapacityReservation.AthenaCapacityReservationConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.athenaCapacityReservation.AthenaCapacityReservationConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/athena_capacity_reservation#tags AthenaCapacityReservation#tags}. |
+| <code><a href="#@cdktn/provider-aws.athenaCapacityReservation.AthenaCapacityReservationConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/athena_capacity_reservation#tags AthenaCapacityReservation#tags}. |
 | <code><a href="#@cdktn/provider-aws.athenaCapacityReservation.AthenaCapacityReservationConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.athenaCapacityReservation.AthenaCapacityReservationTimeouts">AthenaCapacityReservationTimeouts</a></code> | timeouts block. |
 
 ---
@@ -992,7 +992,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/athena_capacity_reservation#name AthenaCapacityReservation#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/athena_capacity_reservation#name AthenaCapacityReservation#name}.
 
 ---
 
@@ -1004,7 +1004,7 @@ TargetDpus *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/athena_capacity_reservation#target_dpus AthenaCapacityReservation#target_dpus}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/athena_capacity_reservation#target_dpus AthenaCapacityReservation#target_dpus}.
 
 ---
 
@@ -1018,7 +1018,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/athena_capacity_reservation#region AthenaCapacityReservation#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/athena_capacity_reservation#region AthenaCapacityReservation#region}
 
 ---
 
@@ -1030,7 +1030,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/athena_capacity_reservation#tags AthenaCapacityReservation#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/athena_capacity_reservation#tags AthenaCapacityReservation#tags}.
 
 ---
 
@@ -1044,7 +1044,7 @@ Timeouts AthenaCapacityReservationTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/athena_capacity_reservation#timeouts AthenaCapacityReservation#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/athena_capacity_reservation#timeouts AthenaCapacityReservation#timeouts}
 
 ---
 
@@ -1082,7 +1082,7 @@ Create *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/athena_capacity_reservation#create AthenaCapacityReservation#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/athena_capacity_reservation#create AthenaCapacityReservation#create}
 
 ---
 
@@ -1096,7 +1096,7 @@ Delete *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/athena_capacity_reservation#delete AthenaCapacityReservation#delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/athena_capacity_reservation#delete AthenaCapacityReservation#delete}
 
 ---
 
@@ -1110,7 +1110,7 @@ Update *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/athena_capacity_reservation#update AthenaCapacityReservation#update}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/athena_capacity_reservation#update AthenaCapacityReservation#update}
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### DataAwsWafSubscribedRuleGroup <a name="DataAwsWafSubscribedRuleGroup" id="@cdktn/provider-aws.dataAwsWafSubscribedRuleGroup.DataAwsWafSubscribedRuleGroup"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/data-sources/waf_subscribed_rule_group aws_waf_subscribed_rule_group}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/data-sources/waf_subscribed_rule_group aws_waf_subscribed_rule_group}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsWafSubscribedRuleGroup.DataAwsWafSubscribedRuleGroup.Initializer"></a>
 
@@ -408,7 +408,7 @@ The construct id used in the generated config for the DataAwsWafSubscribedRuleGr
 
 The id of the existing DataAwsWafSubscribedRuleGroup that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/data-sources/waf_subscribed_rule_group#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/data-sources/waf_subscribed_rule_group#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -679,9 +679,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawswafsubscribedru
 | <code><a href="#@cdktn/provider-aws.dataAwsWafSubscribedRuleGroup.DataAwsWafSubscribedRuleGroupConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsWafSubscribedRuleGroup.DataAwsWafSubscribedRuleGroupConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsWafSubscribedRuleGroup.DataAwsWafSubscribedRuleGroupConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dataAwsWafSubscribedRuleGroup.DataAwsWafSubscribedRuleGroupConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/data-sources/waf_subscribed_rule_group#id DataAwsWafSubscribedRuleGroup#id}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsWafSubscribedRuleGroup.DataAwsWafSubscribedRuleGroupConfig.property.metricName">MetricName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/data-sources/waf_subscribed_rule_group#metric_name DataAwsWafSubscribedRuleGroup#metric_name}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsWafSubscribedRuleGroup.DataAwsWafSubscribedRuleGroupConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/data-sources/waf_subscribed_rule_group#name DataAwsWafSubscribedRuleGroup#name}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsWafSubscribedRuleGroup.DataAwsWafSubscribedRuleGroupConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/data-sources/waf_subscribed_rule_group#id DataAwsWafSubscribedRuleGroup#id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsWafSubscribedRuleGroup.DataAwsWafSubscribedRuleGroupConfig.property.metricName">MetricName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/data-sources/waf_subscribed_rule_group#metric_name DataAwsWafSubscribedRuleGroup#metric_name}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsWafSubscribedRuleGroup.DataAwsWafSubscribedRuleGroupConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/data-sources/waf_subscribed_rule_group#name DataAwsWafSubscribedRuleGroup#name}. |
 
 ---
 
@@ -763,7 +763,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/data-sources/waf_subscribed_rule_group#id DataAwsWafSubscribedRuleGroup#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/data-sources/waf_subscribed_rule_group#id DataAwsWafSubscribedRuleGroup#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -778,7 +778,7 @@ MetricName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/data-sources/waf_subscribed_rule_group#metric_name DataAwsWafSubscribedRuleGroup#metric_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/data-sources/waf_subscribed_rule_group#metric_name DataAwsWafSubscribedRuleGroup#metric_name}.
 
 ---
 
@@ -790,7 +790,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/data-sources/waf_subscribed_rule_group#name DataAwsWafSubscribedRuleGroup#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/data-sources/waf_subscribed_rule_group#name DataAwsWafSubscribedRuleGroup#name}.
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### SecurityhubAutomationRule <a name="SecurityhubAutomationRule" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule aws_securityhub_automation_rule}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule aws_securityhub_automation_rule}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.Initializer"></a>
 
@@ -42,15 +42,15 @@ SecurityhubAutomationRule.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#description SecurityhubAutomationRule#description}. |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.Initializer.parameter.ruleName">ruleName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#rule_name SecurityhubAutomationRule#rule_name}. |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.Initializer.parameter.ruleOrder">ruleOrder</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#rule_order SecurityhubAutomationRule#rule_order}. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#description SecurityhubAutomationRule#description}. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.Initializer.parameter.ruleName">ruleName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#rule_name SecurityhubAutomationRule#rule_name}. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.Initializer.parameter.ruleOrder">ruleOrder</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#rule_order SecurityhubAutomationRule#rule_order}. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.Initializer.parameter.actions">actions</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActions">SecurityhubAutomationRuleActions</a>></code> | actions block. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.Initializer.parameter.criteria">criteria</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria">SecurityhubAutomationRuleCriteria</a>></code> | criteria block. |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.Initializer.parameter.isTerminal">isTerminal</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#is_terminal SecurityhubAutomationRule#is_terminal}. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.Initializer.parameter.isTerminal">isTerminal</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#is_terminal SecurityhubAutomationRule#is_terminal}. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.Initializer.parameter.region">region</a></code> | <code>java.lang.String</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.Initializer.parameter.ruleStatus">ruleStatus</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#rule_status SecurityhubAutomationRule#rule_status}. |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.Initializer.parameter.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#tags SecurityhubAutomationRule#tags}. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.Initializer.parameter.ruleStatus">ruleStatus</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#rule_status SecurityhubAutomationRule#rule_status}. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRule.Initializer.parameter.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#tags SecurityhubAutomationRule#tags}. |
 
 ---
 
@@ -118,7 +118,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#description SecurityhubAutomationRule#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#description SecurityhubAutomationRule#description}.
 
 ---
 
@@ -126,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#rule_name SecurityhubAutomationRule#rule_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#rule_name SecurityhubAutomationRule#rule_name}.
 
 ---
 
@@ -134,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#rule_order SecurityhubAutomationRule#rule_order}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#rule_order SecurityhubAutomationRule#rule_order}.
 
 ---
 
@@ -144,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 actions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#actions SecurityhubAutomationRule#actions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#actions SecurityhubAutomationRule#actions}
 
 ---
 
@@ -154,7 +154,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 criteria block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#criteria SecurityhubAutomationRule#criteria}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#criteria SecurityhubAutomationRule#criteria}
 
 ---
 
@@ -162,7 +162,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#is_terminal SecurityhubAutomationRule#is_terminal}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#is_terminal SecurityhubAutomationRule#is_terminal}.
 
 ---
 
@@ -172,7 +172,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#region SecurityhubAutomationRule#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#region SecurityhubAutomationRule#region}
 
 ---
 
@@ -180,7 +180,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#rule_status SecurityhubAutomationRule#rule_status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#rule_status SecurityhubAutomationRule#rule_status}.
 
 ---
 
@@ -188,7 +188,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#tags SecurityhubAutomationRule#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#tags SecurityhubAutomationRule#tags}.
 
 ---
 
@@ -705,7 +705,7 @@ The construct id used in the generated config for the SecurityhubAutomationRule 
 
 The id of the existing SecurityhubAutomationRule that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1149,7 +1149,7 @@ SecurityhubAutomationRuleActions.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActions.property.findingFieldsUpdate">findingFieldsUpdate</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdate">SecurityhubAutomationRuleActionsFindingFieldsUpdate</a>></code> | finding_fields_update block. |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActions.property.type">type</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#type SecurityhubAutomationRule#type}. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActions.property.type">type</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#type SecurityhubAutomationRule#type}. |
 
 ---
 
@@ -1163,7 +1163,7 @@ public IResolvable|java.util.List<SecurityhubAutomationRuleActionsFindingFieldsU
 
 finding_fields_update block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#finding_fields_update SecurityhubAutomationRule#finding_fields_update}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#finding_fields_update SecurityhubAutomationRule#finding_fields_update}
 
 ---
 
@@ -1175,7 +1175,7 @@ public java.lang.String getType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#type SecurityhubAutomationRule#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#type SecurityhubAutomationRule#type}.
 
 ---
 
@@ -1203,14 +1203,14 @@ SecurityhubAutomationRuleActionsFindingFieldsUpdate.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdate.property.confidence">confidence</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#confidence SecurityhubAutomationRule#confidence}. |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdate.property.criticality">criticality</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#criticality SecurityhubAutomationRule#criticality}. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdate.property.confidence">confidence</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#confidence SecurityhubAutomationRule#confidence}. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdate.property.criticality">criticality</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#criticality SecurityhubAutomationRule#criticality}. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdate.property.note">note</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateNote">SecurityhubAutomationRuleActionsFindingFieldsUpdateNote</a>></code> | note block. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdate.property.relatedFindings">relatedFindings</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings">SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings</a>></code> | related_findings block. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdate.property.severity">severity</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity">SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity</a>></code> | severity block. |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdate.property.types">types</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#types SecurityhubAutomationRule#types}. |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdate.property.userDefinedFields">userDefinedFields</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#user_defined_fields SecurityhubAutomationRule#user_defined_fields}. |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdate.property.verificationState">verificationState</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#verification_state SecurityhubAutomationRule#verification_state}. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdate.property.types">types</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#types SecurityhubAutomationRule#types}. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdate.property.userDefinedFields">userDefinedFields</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#user_defined_fields SecurityhubAutomationRule#user_defined_fields}. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdate.property.verificationState">verificationState</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#verification_state SecurityhubAutomationRule#verification_state}. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdate.property.workflow">workflow</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow">SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow</a>></code> | workflow block. |
 
 ---
@@ -1223,7 +1223,7 @@ public java.lang.Number getConfidence();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#confidence SecurityhubAutomationRule#confidence}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#confidence SecurityhubAutomationRule#confidence}.
 
 ---
 
@@ -1235,7 +1235,7 @@ public java.lang.Number getCriticality();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#criticality SecurityhubAutomationRule#criticality}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#criticality SecurityhubAutomationRule#criticality}.
 
 ---
 
@@ -1249,7 +1249,7 @@ public IResolvable|java.util.List<SecurityhubAutomationRuleActionsFindingFieldsU
 
 note block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#note SecurityhubAutomationRule#note}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#note SecurityhubAutomationRule#note}
 
 ---
 
@@ -1263,7 +1263,7 @@ public IResolvable|java.util.List<SecurityhubAutomationRuleActionsFindingFieldsU
 
 related_findings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#related_findings SecurityhubAutomationRule#related_findings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#related_findings SecurityhubAutomationRule#related_findings}
 
 ---
 
@@ -1277,7 +1277,7 @@ public IResolvable|java.util.List<SecurityhubAutomationRuleActionsFindingFieldsU
 
 severity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#severity SecurityhubAutomationRule#severity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#severity SecurityhubAutomationRule#severity}
 
 ---
 
@@ -1289,7 +1289,7 @@ public java.util.List<java.lang.String> getTypes();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#types SecurityhubAutomationRule#types}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#types SecurityhubAutomationRule#types}.
 
 ---
 
@@ -1301,7 +1301,7 @@ public java.util.Map<java.lang.String, java.lang.String> getUserDefinedFields();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#user_defined_fields SecurityhubAutomationRule#user_defined_fields}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#user_defined_fields SecurityhubAutomationRule#user_defined_fields}.
 
 ---
 
@@ -1313,7 +1313,7 @@ public java.lang.String getVerificationState();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#verification_state SecurityhubAutomationRule#verification_state}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#verification_state SecurityhubAutomationRule#verification_state}.
 
 ---
 
@@ -1327,7 +1327,7 @@ public IResolvable|java.util.List<SecurityhubAutomationRuleActionsFindingFieldsU
 
 workflow block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#workflow SecurityhubAutomationRule#workflow}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#workflow SecurityhubAutomationRule#workflow}
 
 ---
 
@@ -1348,8 +1348,8 @@ SecurityhubAutomationRuleActionsFindingFieldsUpdateNote.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateNote.property.text">text</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#text SecurityhubAutomationRule#text}. |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateNote.property.updatedBy">updatedBy</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#updated_by SecurityhubAutomationRule#updated_by}. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateNote.property.text">text</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#text SecurityhubAutomationRule#text}. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateNote.property.updatedBy">updatedBy</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#updated_by SecurityhubAutomationRule#updated_by}. |
 
 ---
 
@@ -1361,7 +1361,7 @@ public java.lang.String getText();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#text SecurityhubAutomationRule#text}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#text SecurityhubAutomationRule#text}.
 
 ---
 
@@ -1373,7 +1373,7 @@ public java.lang.String getUpdatedBy();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#updated_by SecurityhubAutomationRule#updated_by}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#updated_by SecurityhubAutomationRule#updated_by}.
 
 ---
 
@@ -1394,8 +1394,8 @@ SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#id SecurityhubAutomationRule#id}. |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings.property.productArn">productArn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#product_arn SecurityhubAutomationRule#product_arn}. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#id SecurityhubAutomationRule#id}. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateRelatedFindings.property.productArn">productArn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#product_arn SecurityhubAutomationRule#product_arn}. |
 
 ---
 
@@ -1407,7 +1407,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#id SecurityhubAutomationRule#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#id SecurityhubAutomationRule#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1422,7 +1422,7 @@ public java.lang.String getProductArn();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#product_arn SecurityhubAutomationRule#product_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#product_arn SecurityhubAutomationRule#product_arn}.
 
 ---
 
@@ -1443,8 +1443,8 @@ SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity.property.label">label</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#label SecurityhubAutomationRule#label}. |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity.property.product">product</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#product SecurityhubAutomationRule#product}. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity.property.label">label</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#label SecurityhubAutomationRule#label}. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateSeverity.property.product">product</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#product SecurityhubAutomationRule#product}. |
 
 ---
 
@@ -1456,7 +1456,7 @@ public java.lang.String getLabel();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#label SecurityhubAutomationRule#label}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#label SecurityhubAutomationRule#label}.
 
 ---
 
@@ -1468,7 +1468,7 @@ public java.lang.Number getProduct();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#product SecurityhubAutomationRule#product}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#product SecurityhubAutomationRule#product}.
 
 ---
 
@@ -1488,7 +1488,7 @@ SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow.property.status">status</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#status SecurityhubAutomationRule#status}. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow.property.status">status</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#status SecurityhubAutomationRule#status}. |
 
 ---
 
@@ -1500,7 +1500,7 @@ public java.lang.String getStatus();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#status SecurityhubAutomationRule#status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#status SecurityhubAutomationRule#status}.
 
 ---
 
@@ -1542,15 +1542,15 @@ SecurityhubAutomationRuleConfig.builder()
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleConfig.property.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleConfig.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#description SecurityhubAutomationRule#description}. |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleConfig.property.ruleName">ruleName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#rule_name SecurityhubAutomationRule#rule_name}. |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleConfig.property.ruleOrder">ruleOrder</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#rule_order SecurityhubAutomationRule#rule_order}. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleConfig.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#description SecurityhubAutomationRule#description}. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleConfig.property.ruleName">ruleName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#rule_name SecurityhubAutomationRule#rule_name}. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleConfig.property.ruleOrder">ruleOrder</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#rule_order SecurityhubAutomationRule#rule_order}. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleConfig.property.actions">actions</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleActions">SecurityhubAutomationRuleActions</a>></code> | actions block. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleConfig.property.criteria">criteria</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteria">SecurityhubAutomationRuleCriteria</a>></code> | criteria block. |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleConfig.property.isTerminal">isTerminal</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#is_terminal SecurityhubAutomationRule#is_terminal}. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleConfig.property.isTerminal">isTerminal</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#is_terminal SecurityhubAutomationRule#is_terminal}. |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleConfig.property.region">region</a></code> | <code>java.lang.String</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleConfig.property.ruleStatus">ruleStatus</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#rule_status SecurityhubAutomationRule#rule_status}. |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleConfig.property.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#tags SecurityhubAutomationRule#tags}. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleConfig.property.ruleStatus">ruleStatus</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#rule_status SecurityhubAutomationRule#rule_status}. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleConfig.property.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#tags SecurityhubAutomationRule#tags}. |
 
 ---
 
@@ -1632,7 +1632,7 @@ public java.lang.String getDescription();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#description SecurityhubAutomationRule#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#description SecurityhubAutomationRule#description}.
 
 ---
 
@@ -1644,7 +1644,7 @@ public java.lang.String getRuleName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#rule_name SecurityhubAutomationRule#rule_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#rule_name SecurityhubAutomationRule#rule_name}.
 
 ---
 
@@ -1656,7 +1656,7 @@ public java.lang.Number getRuleOrder();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#rule_order SecurityhubAutomationRule#rule_order}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#rule_order SecurityhubAutomationRule#rule_order}.
 
 ---
 
@@ -1670,7 +1670,7 @@ public IResolvable|java.util.List<SecurityhubAutomationRuleActions> getActions()
 
 actions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#actions SecurityhubAutomationRule#actions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#actions SecurityhubAutomationRule#actions}
 
 ---
 
@@ -1684,7 +1684,7 @@ public IResolvable|java.util.List<SecurityhubAutomationRuleCriteria> getCriteria
 
 criteria block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#criteria SecurityhubAutomationRule#criteria}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#criteria SecurityhubAutomationRule#criteria}
 
 ---
 
@@ -1696,7 +1696,7 @@ public java.lang.Boolean|IResolvable getIsTerminal();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#is_terminal SecurityhubAutomationRule#is_terminal}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#is_terminal SecurityhubAutomationRule#is_terminal}.
 
 ---
 
@@ -1710,7 +1710,7 @@ public java.lang.String getRegion();
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#region SecurityhubAutomationRule#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#region SecurityhubAutomationRule#region}
 
 ---
 
@@ -1722,7 +1722,7 @@ public java.lang.String getRuleStatus();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#rule_status SecurityhubAutomationRule#rule_status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#rule_status SecurityhubAutomationRule#rule_status}.
 
 ---
 
@@ -1734,7 +1734,7 @@ public java.util.Map<java.lang.String, java.lang.String> getTags();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#tags SecurityhubAutomationRule#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#tags SecurityhubAutomationRule#tags}.
 
 ---
 
@@ -1842,7 +1842,7 @@ public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaAwsAccountId>
 
 aws_account_id block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#aws_account_id SecurityhubAutomationRule#aws_account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#aws_account_id SecurityhubAutomationRule#aws_account_id}
 
 ---
 
@@ -1856,7 +1856,7 @@ public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaAwsAccountNam
 
 aws_account_name block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#aws_account_name SecurityhubAutomationRule#aws_account_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#aws_account_name SecurityhubAutomationRule#aws_account_name}
 
 ---
 
@@ -1870,7 +1870,7 @@ public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaCompanyName> 
 
 company_name block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#company_name SecurityhubAutomationRule#company_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#company_name SecurityhubAutomationRule#company_name}
 
 ---
 
@@ -1884,7 +1884,7 @@ public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaComplianceAss
 
 compliance_associated_standards_id block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#compliance_associated_standards_id SecurityhubAutomationRule#compliance_associated_standards_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#compliance_associated_standards_id SecurityhubAutomationRule#compliance_associated_standards_id}
 
 ---
 
@@ -1898,7 +1898,7 @@ public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaComplianceSec
 
 compliance_security_control_id block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#compliance_security_control_id SecurityhubAutomationRule#compliance_security_control_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#compliance_security_control_id SecurityhubAutomationRule#compliance_security_control_id}
 
 ---
 
@@ -1912,7 +1912,7 @@ public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaComplianceSta
 
 compliance_status block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#compliance_status SecurityhubAutomationRule#compliance_status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#compliance_status SecurityhubAutomationRule#compliance_status}
 
 ---
 
@@ -1926,7 +1926,7 @@ public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaConfidence> g
 
 confidence block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#confidence SecurityhubAutomationRule#confidence}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#confidence SecurityhubAutomationRule#confidence}
 
 ---
 
@@ -1940,7 +1940,7 @@ public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaCreatedAt> ge
 
 created_at block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#created_at SecurityhubAutomationRule#created_at}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#created_at SecurityhubAutomationRule#created_at}
 
 ---
 
@@ -1954,7 +1954,7 @@ public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaCriticality> 
 
 criticality block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#criticality SecurityhubAutomationRule#criticality}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#criticality SecurityhubAutomationRule#criticality}
 
 ---
 
@@ -1968,7 +1968,7 @@ public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaDescription> 
 
 description block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#description SecurityhubAutomationRule#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#description SecurityhubAutomationRule#description}
 
 ---
 
@@ -1982,7 +1982,7 @@ public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaFirstObserved
 
 first_observed_at block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#first_observed_at SecurityhubAutomationRule#first_observed_at}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#first_observed_at SecurityhubAutomationRule#first_observed_at}
 
 ---
 
@@ -1996,7 +1996,7 @@ public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaGeneratorId> 
 
 generator_id block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#generator_id SecurityhubAutomationRule#generator_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#generator_id SecurityhubAutomationRule#generator_id}
 
 ---
 
@@ -2010,7 +2010,7 @@ public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaId> getId();
 
 id block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#id SecurityhubAutomationRule#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#id SecurityhubAutomationRule#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2027,7 +2027,7 @@ public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaLastObservedA
 
 last_observed_at block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#last_observed_at SecurityhubAutomationRule#last_observed_at}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#last_observed_at SecurityhubAutomationRule#last_observed_at}
 
 ---
 
@@ -2041,7 +2041,7 @@ public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaNoteText> get
 
 note_text block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#note_text SecurityhubAutomationRule#note_text}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#note_text SecurityhubAutomationRule#note_text}
 
 ---
 
@@ -2055,7 +2055,7 @@ public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaNoteUpdatedAt
 
 note_updated_at block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#note_updated_at SecurityhubAutomationRule#note_updated_at}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#note_updated_at SecurityhubAutomationRule#note_updated_at}
 
 ---
 
@@ -2069,7 +2069,7 @@ public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaNoteUpdatedBy
 
 note_updated_by block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#note_updated_by SecurityhubAutomationRule#note_updated_by}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#note_updated_by SecurityhubAutomationRule#note_updated_by}
 
 ---
 
@@ -2083,7 +2083,7 @@ public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaProductArn> g
 
 product_arn block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#product_arn SecurityhubAutomationRule#product_arn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#product_arn SecurityhubAutomationRule#product_arn}
 
 ---
 
@@ -2097,7 +2097,7 @@ public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaProductName> 
 
 product_name block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#product_name SecurityhubAutomationRule#product_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#product_name SecurityhubAutomationRule#product_name}
 
 ---
 
@@ -2111,7 +2111,7 @@ public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaRecordState> 
 
 record_state block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#record_state SecurityhubAutomationRule#record_state}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#record_state SecurityhubAutomationRule#record_state}
 
 ---
 
@@ -2125,7 +2125,7 @@ public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaRelatedFindin
 
 related_findings_id block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#related_findings_id SecurityhubAutomationRule#related_findings_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#related_findings_id SecurityhubAutomationRule#related_findings_id}
 
 ---
 
@@ -2139,7 +2139,7 @@ public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaRelatedFindin
 
 related_findings_product_arn block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#related_findings_product_arn SecurityhubAutomationRule#related_findings_product_arn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#related_findings_product_arn SecurityhubAutomationRule#related_findings_product_arn}
 
 ---
 
@@ -2153,7 +2153,7 @@ public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaResourceAppli
 
 resource_application_arn block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#resource_application_arn SecurityhubAutomationRule#resource_application_arn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#resource_application_arn SecurityhubAutomationRule#resource_application_arn}
 
 ---
 
@@ -2167,7 +2167,7 @@ public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaResourceAppli
 
 resource_application_name block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#resource_application_name SecurityhubAutomationRule#resource_application_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#resource_application_name SecurityhubAutomationRule#resource_application_name}
 
 ---
 
@@ -2181,7 +2181,7 @@ public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaResourceDetai
 
 resource_details_other block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#resource_details_other SecurityhubAutomationRule#resource_details_other}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#resource_details_other SecurityhubAutomationRule#resource_details_other}
 
 ---
 
@@ -2195,7 +2195,7 @@ public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaResourceId> g
 
 resource_id block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#resource_id SecurityhubAutomationRule#resource_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#resource_id SecurityhubAutomationRule#resource_id}
 
 ---
 
@@ -2209,7 +2209,7 @@ public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaResourceParti
 
 resource_partition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#resource_partition SecurityhubAutomationRule#resource_partition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#resource_partition SecurityhubAutomationRule#resource_partition}
 
 ---
 
@@ -2223,7 +2223,7 @@ public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaResourceRegio
 
 resource_region block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#resource_region SecurityhubAutomationRule#resource_region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#resource_region SecurityhubAutomationRule#resource_region}
 
 ---
 
@@ -2237,7 +2237,7 @@ public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaResourceTags>
 
 resource_tags block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#resource_tags SecurityhubAutomationRule#resource_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#resource_tags SecurityhubAutomationRule#resource_tags}
 
 ---
 
@@ -2251,7 +2251,7 @@ public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaResourceType>
 
 resource_type block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#resource_type SecurityhubAutomationRule#resource_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#resource_type SecurityhubAutomationRule#resource_type}
 
 ---
 
@@ -2265,7 +2265,7 @@ public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaSeverityLabel
 
 severity_label block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#severity_label SecurityhubAutomationRule#severity_label}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#severity_label SecurityhubAutomationRule#severity_label}
 
 ---
 
@@ -2279,7 +2279,7 @@ public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaSourceUrl> ge
 
 source_url block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#source_url SecurityhubAutomationRule#source_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#source_url SecurityhubAutomationRule#source_url}
 
 ---
 
@@ -2293,7 +2293,7 @@ public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaTitle> getTit
 
 title block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#title SecurityhubAutomationRule#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#title SecurityhubAutomationRule#title}
 
 ---
 
@@ -2307,7 +2307,7 @@ public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaType> getType
 
 type block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#type SecurityhubAutomationRule#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#type SecurityhubAutomationRule#type}
 
 ---
 
@@ -2321,7 +2321,7 @@ public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaUpdatedAt> ge
 
 updated_at block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#updated_at SecurityhubAutomationRule#updated_at}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#updated_at SecurityhubAutomationRule#updated_at}
 
 ---
 
@@ -2335,7 +2335,7 @@ public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaUserDefinedFi
 
 user_defined_fields block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#user_defined_fields SecurityhubAutomationRule#user_defined_fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#user_defined_fields SecurityhubAutomationRule#user_defined_fields}
 
 ---
 
@@ -2349,7 +2349,7 @@ public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaVerificationS
 
 verification_state block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#verification_state SecurityhubAutomationRule#verification_state}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#verification_state SecurityhubAutomationRule#verification_state}
 
 ---
 
@@ -2363,7 +2363,7 @@ public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaWorkflowStatu
 
 workflow_status block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#workflow_status SecurityhubAutomationRule#workflow_status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#workflow_status SecurityhubAutomationRule#workflow_status}
 
 ---
 
@@ -2384,8 +2384,8 @@ SecurityhubAutomationRuleCriteriaAwsAccountId.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountId.property.comparison">comparison</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}. |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountId.property.value">value</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountId.property.comparison">comparison</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountId.property.value">value</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}. |
 
 ---
 
@@ -2397,7 +2397,7 @@ public java.lang.String getComparison();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}.
 
 ---
 
@@ -2409,7 +2409,7 @@ public java.lang.String getValue();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}.
 
 ---
 
@@ -2430,8 +2430,8 @@ SecurityhubAutomationRuleCriteriaAwsAccountName.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountName.property.comparison">comparison</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}. |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountName.property.value">value</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountName.property.comparison">comparison</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaAwsAccountName.property.value">value</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}. |
 
 ---
 
@@ -2443,7 +2443,7 @@ public java.lang.String getComparison();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}.
 
 ---
 
@@ -2455,7 +2455,7 @@ public java.lang.String getValue();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}.
 
 ---
 
@@ -2476,8 +2476,8 @@ SecurityhubAutomationRuleCriteriaCompanyName.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCompanyName.property.comparison">comparison</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}. |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCompanyName.property.value">value</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCompanyName.property.comparison">comparison</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCompanyName.property.value">value</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}. |
 
 ---
 
@@ -2489,7 +2489,7 @@ public java.lang.String getComparison();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}.
 
 ---
 
@@ -2501,7 +2501,7 @@ public java.lang.String getValue();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}.
 
 ---
 
@@ -2522,8 +2522,8 @@ SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId.property.comparison">comparison</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}. |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId.property.value">value</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId.property.comparison">comparison</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceAssociatedStandardsId.property.value">value</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}. |
 
 ---
 
@@ -2535,7 +2535,7 @@ public java.lang.String getComparison();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}.
 
 ---
 
@@ -2547,7 +2547,7 @@ public java.lang.String getValue();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}.
 
 ---
 
@@ -2568,8 +2568,8 @@ SecurityhubAutomationRuleCriteriaComplianceSecurityControlId.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceSecurityControlId.property.comparison">comparison</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}. |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceSecurityControlId.property.value">value</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceSecurityControlId.property.comparison">comparison</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceSecurityControlId.property.value">value</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}. |
 
 ---
 
@@ -2581,7 +2581,7 @@ public java.lang.String getComparison();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}.
 
 ---
 
@@ -2593,7 +2593,7 @@ public java.lang.String getValue();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}.
 
 ---
 
@@ -2614,8 +2614,8 @@ SecurityhubAutomationRuleCriteriaComplianceStatus.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceStatus.property.comparison">comparison</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}. |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceStatus.property.value">value</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceStatus.property.comparison">comparison</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaComplianceStatus.property.value">value</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}. |
 
 ---
 
@@ -2627,7 +2627,7 @@ public java.lang.String getComparison();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}.
 
 ---
 
@@ -2639,7 +2639,7 @@ public java.lang.String getValue();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}.
 
 ---
 
@@ -2663,11 +2663,11 @@ SecurityhubAutomationRuleCriteriaConfidence.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaConfidence.property.eq">eq</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#eq SecurityhubAutomationRule#eq}. |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaConfidence.property.gt">gt</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#gt SecurityhubAutomationRule#gt}. |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaConfidence.property.gte">gte</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#gte SecurityhubAutomationRule#gte}. |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaConfidence.property.lt">lt</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#lt SecurityhubAutomationRule#lt}. |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaConfidence.property.lte">lte</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#lte SecurityhubAutomationRule#lte}. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaConfidence.property.eq">eq</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#eq SecurityhubAutomationRule#eq}. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaConfidence.property.gt">gt</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#gt SecurityhubAutomationRule#gt}. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaConfidence.property.gte">gte</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#gte SecurityhubAutomationRule#gte}. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaConfidence.property.lt">lt</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#lt SecurityhubAutomationRule#lt}. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaConfidence.property.lte">lte</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#lte SecurityhubAutomationRule#lte}. |
 
 ---
 
@@ -2679,7 +2679,7 @@ public java.lang.Number getEq();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#eq SecurityhubAutomationRule#eq}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#eq SecurityhubAutomationRule#eq}.
 
 ---
 
@@ -2691,7 +2691,7 @@ public java.lang.Number getGt();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#gt SecurityhubAutomationRule#gt}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#gt SecurityhubAutomationRule#gt}.
 
 ---
 
@@ -2703,7 +2703,7 @@ public java.lang.Number getGte();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#gte SecurityhubAutomationRule#gte}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#gte SecurityhubAutomationRule#gte}.
 
 ---
 
@@ -2715,7 +2715,7 @@ public java.lang.Number getLt();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#lt SecurityhubAutomationRule#lt}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#lt SecurityhubAutomationRule#lt}.
 
 ---
 
@@ -2727,7 +2727,7 @@ public java.lang.Number getLte();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#lte SecurityhubAutomationRule#lte}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#lte SecurityhubAutomationRule#lte}.
 
 ---
 
@@ -2750,8 +2750,8 @@ SecurityhubAutomationRuleCriteriaCreatedAt.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAt.property.dateRange">dateRange</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtDateRange">SecurityhubAutomationRuleCriteriaCreatedAtDateRange</a>></code> | date_range block. |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAt.property.end">end</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#end SecurityhubAutomationRule#end}. |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAt.property.start">start</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#start SecurityhubAutomationRule#start}. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAt.property.end">end</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#end SecurityhubAutomationRule#end}. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAt.property.start">start</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#start SecurityhubAutomationRule#start}. |
 
 ---
 
@@ -2765,7 +2765,7 @@ public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaCreatedAtDate
 
 date_range block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#date_range SecurityhubAutomationRule#date_range}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#date_range SecurityhubAutomationRule#date_range}
 
 ---
 
@@ -2777,7 +2777,7 @@ public java.lang.String getEnd();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#end SecurityhubAutomationRule#end}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#end SecurityhubAutomationRule#end}.
 
 ---
 
@@ -2789,7 +2789,7 @@ public java.lang.String getStart();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#start SecurityhubAutomationRule#start}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#start SecurityhubAutomationRule#start}.
 
 ---
 
@@ -2810,8 +2810,8 @@ SecurityhubAutomationRuleCriteriaCreatedAtDateRange.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtDateRange.property.unit">unit</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#unit SecurityhubAutomationRule#unit}. |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtDateRange.property.value">value</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtDateRange.property.unit">unit</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#unit SecurityhubAutomationRule#unit}. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCreatedAtDateRange.property.value">value</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}. |
 
 ---
 
@@ -2823,7 +2823,7 @@ public java.lang.String getUnit();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#unit SecurityhubAutomationRule#unit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#unit SecurityhubAutomationRule#unit}.
 
 ---
 
@@ -2835,7 +2835,7 @@ public java.lang.Number getValue();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}.
 
 ---
 
@@ -2859,11 +2859,11 @@ SecurityhubAutomationRuleCriteriaCriticality.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCriticality.property.eq">eq</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#eq SecurityhubAutomationRule#eq}. |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCriticality.property.gt">gt</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#gt SecurityhubAutomationRule#gt}. |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCriticality.property.gte">gte</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#gte SecurityhubAutomationRule#gte}. |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCriticality.property.lt">lt</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#lt SecurityhubAutomationRule#lt}. |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCriticality.property.lte">lte</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#lte SecurityhubAutomationRule#lte}. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCriticality.property.eq">eq</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#eq SecurityhubAutomationRule#eq}. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCriticality.property.gt">gt</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#gt SecurityhubAutomationRule#gt}. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCriticality.property.gte">gte</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#gte SecurityhubAutomationRule#gte}. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCriticality.property.lt">lt</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#lt SecurityhubAutomationRule#lt}. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaCriticality.property.lte">lte</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#lte SecurityhubAutomationRule#lte}. |
 
 ---
 
@@ -2875,7 +2875,7 @@ public java.lang.Number getEq();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#eq SecurityhubAutomationRule#eq}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#eq SecurityhubAutomationRule#eq}.
 
 ---
 
@@ -2887,7 +2887,7 @@ public java.lang.Number getGt();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#gt SecurityhubAutomationRule#gt}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#gt SecurityhubAutomationRule#gt}.
 
 ---
 
@@ -2899,7 +2899,7 @@ public java.lang.Number getGte();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#gte SecurityhubAutomationRule#gte}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#gte SecurityhubAutomationRule#gte}.
 
 ---
 
@@ -2911,7 +2911,7 @@ public java.lang.Number getLt();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#lt SecurityhubAutomationRule#lt}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#lt SecurityhubAutomationRule#lt}.
 
 ---
 
@@ -2923,7 +2923,7 @@ public java.lang.Number getLte();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#lte SecurityhubAutomationRule#lte}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#lte SecurityhubAutomationRule#lte}.
 
 ---
 
@@ -2944,8 +2944,8 @@ SecurityhubAutomationRuleCriteriaDescription.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaDescription.property.comparison">comparison</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}. |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaDescription.property.value">value</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaDescription.property.comparison">comparison</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaDescription.property.value">value</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}. |
 
 ---
 
@@ -2957,7 +2957,7 @@ public java.lang.String getComparison();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}.
 
 ---
 
@@ -2969,7 +2969,7 @@ public java.lang.String getValue();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}.
 
 ---
 
@@ -2992,8 +2992,8 @@ SecurityhubAutomationRuleCriteriaFirstObservedAt.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAt.property.dateRange">dateRange</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange">SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange</a>></code> | date_range block. |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAt.property.end">end</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#end SecurityhubAutomationRule#end}. |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAt.property.start">start</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#start SecurityhubAutomationRule#start}. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAt.property.end">end</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#end SecurityhubAutomationRule#end}. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAt.property.start">start</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#start SecurityhubAutomationRule#start}. |
 
 ---
 
@@ -3007,7 +3007,7 @@ public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaFirstObserved
 
 date_range block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#date_range SecurityhubAutomationRule#date_range}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#date_range SecurityhubAutomationRule#date_range}
 
 ---
 
@@ -3019,7 +3019,7 @@ public java.lang.String getEnd();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#end SecurityhubAutomationRule#end}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#end SecurityhubAutomationRule#end}.
 
 ---
 
@@ -3031,7 +3031,7 @@ public java.lang.String getStart();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#start SecurityhubAutomationRule#start}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#start SecurityhubAutomationRule#start}.
 
 ---
 
@@ -3052,8 +3052,8 @@ SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange.property.unit">unit</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#unit SecurityhubAutomationRule#unit}. |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange.property.value">value</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange.property.unit">unit</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#unit SecurityhubAutomationRule#unit}. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaFirstObservedAtDateRange.property.value">value</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}. |
 
 ---
 
@@ -3065,7 +3065,7 @@ public java.lang.String getUnit();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#unit SecurityhubAutomationRule#unit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#unit SecurityhubAutomationRule#unit}.
 
 ---
 
@@ -3077,7 +3077,7 @@ public java.lang.Number getValue();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}.
 
 ---
 
@@ -3098,8 +3098,8 @@ SecurityhubAutomationRuleCriteriaGeneratorId.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaGeneratorId.property.comparison">comparison</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}. |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaGeneratorId.property.value">value</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaGeneratorId.property.comparison">comparison</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaGeneratorId.property.value">value</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}. |
 
 ---
 
@@ -3111,7 +3111,7 @@ public java.lang.String getComparison();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}.
 
 ---
 
@@ -3123,7 +3123,7 @@ public java.lang.String getValue();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}.
 
 ---
 
@@ -3144,8 +3144,8 @@ SecurityhubAutomationRuleCriteriaId.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaId.property.comparison">comparison</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}. |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaId.property.value">value</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaId.property.comparison">comparison</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaId.property.value">value</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}. |
 
 ---
 
@@ -3157,7 +3157,7 @@ public java.lang.String getComparison();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}.
 
 ---
 
@@ -3169,7 +3169,7 @@ public java.lang.String getValue();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}.
 
 ---
 
@@ -3192,8 +3192,8 @@ SecurityhubAutomationRuleCriteriaLastObservedAt.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAt.property.dateRange">dateRange</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtDateRange">SecurityhubAutomationRuleCriteriaLastObservedAtDateRange</a>></code> | date_range block. |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAt.property.end">end</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#end SecurityhubAutomationRule#end}. |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAt.property.start">start</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#start SecurityhubAutomationRule#start}. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAt.property.end">end</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#end SecurityhubAutomationRule#end}. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAt.property.start">start</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#start SecurityhubAutomationRule#start}. |
 
 ---
 
@@ -3207,7 +3207,7 @@ public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaLastObservedA
 
 date_range block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#date_range SecurityhubAutomationRule#date_range}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#date_range SecurityhubAutomationRule#date_range}
 
 ---
 
@@ -3219,7 +3219,7 @@ public java.lang.String getEnd();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#end SecurityhubAutomationRule#end}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#end SecurityhubAutomationRule#end}.
 
 ---
 
@@ -3231,7 +3231,7 @@ public java.lang.String getStart();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#start SecurityhubAutomationRule#start}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#start SecurityhubAutomationRule#start}.
 
 ---
 
@@ -3252,8 +3252,8 @@ SecurityhubAutomationRuleCriteriaLastObservedAtDateRange.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtDateRange.property.unit">unit</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#unit SecurityhubAutomationRule#unit}. |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtDateRange.property.value">value</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtDateRange.property.unit">unit</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#unit SecurityhubAutomationRule#unit}. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaLastObservedAtDateRange.property.value">value</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}. |
 
 ---
 
@@ -3265,7 +3265,7 @@ public java.lang.String getUnit();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#unit SecurityhubAutomationRule#unit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#unit SecurityhubAutomationRule#unit}.
 
 ---
 
@@ -3277,7 +3277,7 @@ public java.lang.Number getValue();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}.
 
 ---
 
@@ -3298,8 +3298,8 @@ SecurityhubAutomationRuleCriteriaNoteText.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteText.property.comparison">comparison</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}. |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteText.property.value">value</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteText.property.comparison">comparison</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteText.property.value">value</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}. |
 
 ---
 
@@ -3311,7 +3311,7 @@ public java.lang.String getComparison();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}.
 
 ---
 
@@ -3323,7 +3323,7 @@ public java.lang.String getValue();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}.
 
 ---
 
@@ -3346,8 +3346,8 @@ SecurityhubAutomationRuleCriteriaNoteUpdatedAt.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAt.property.dateRange">dateRange</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange">SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange</a>></code> | date_range block. |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAt.property.end">end</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#end SecurityhubAutomationRule#end}. |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAt.property.start">start</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#start SecurityhubAutomationRule#start}. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAt.property.end">end</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#end SecurityhubAutomationRule#end}. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAt.property.start">start</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#start SecurityhubAutomationRule#start}. |
 
 ---
 
@@ -3361,7 +3361,7 @@ public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaNoteUpdatedAt
 
 date_range block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#date_range SecurityhubAutomationRule#date_range}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#date_range SecurityhubAutomationRule#date_range}
 
 ---
 
@@ -3373,7 +3373,7 @@ public java.lang.String getEnd();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#end SecurityhubAutomationRule#end}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#end SecurityhubAutomationRule#end}.
 
 ---
 
@@ -3385,7 +3385,7 @@ public java.lang.String getStart();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#start SecurityhubAutomationRule#start}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#start SecurityhubAutomationRule#start}.
 
 ---
 
@@ -3406,8 +3406,8 @@ SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange.property.unit">unit</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#unit SecurityhubAutomationRule#unit}. |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange.property.value">value</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange.property.unit">unit</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#unit SecurityhubAutomationRule#unit}. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange.property.value">value</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}. |
 
 ---
 
@@ -3419,7 +3419,7 @@ public java.lang.String getUnit();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#unit SecurityhubAutomationRule#unit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#unit SecurityhubAutomationRule#unit}.
 
 ---
 
@@ -3431,7 +3431,7 @@ public java.lang.Number getValue();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}.
 
 ---
 
@@ -3452,8 +3452,8 @@ SecurityhubAutomationRuleCriteriaNoteUpdatedBy.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedBy.property.comparison">comparison</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}. |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedBy.property.value">value</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedBy.property.comparison">comparison</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaNoteUpdatedBy.property.value">value</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}. |
 
 ---
 
@@ -3465,7 +3465,7 @@ public java.lang.String getComparison();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}.
 
 ---
 
@@ -3477,7 +3477,7 @@ public java.lang.String getValue();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}.
 
 ---
 
@@ -3498,8 +3498,8 @@ SecurityhubAutomationRuleCriteriaProductArn.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductArn.property.comparison">comparison</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}. |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductArn.property.value">value</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductArn.property.comparison">comparison</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductArn.property.value">value</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}. |
 
 ---
 
@@ -3511,7 +3511,7 @@ public java.lang.String getComparison();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}.
 
 ---
 
@@ -3523,7 +3523,7 @@ public java.lang.String getValue();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}.
 
 ---
 
@@ -3544,8 +3544,8 @@ SecurityhubAutomationRuleCriteriaProductName.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductName.property.comparison">comparison</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}. |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductName.property.value">value</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductName.property.comparison">comparison</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaProductName.property.value">value</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}. |
 
 ---
 
@@ -3557,7 +3557,7 @@ public java.lang.String getComparison();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}.
 
 ---
 
@@ -3569,7 +3569,7 @@ public java.lang.String getValue();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}.
 
 ---
 
@@ -3590,8 +3590,8 @@ SecurityhubAutomationRuleCriteriaRecordState.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRecordState.property.comparison">comparison</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}. |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRecordState.property.value">value</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRecordState.property.comparison">comparison</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRecordState.property.value">value</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}. |
 
 ---
 
@@ -3603,7 +3603,7 @@ public java.lang.String getComparison();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}.
 
 ---
 
@@ -3615,7 +3615,7 @@ public java.lang.String getValue();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}.
 
 ---
 
@@ -3636,8 +3636,8 @@ SecurityhubAutomationRuleCriteriaRelatedFindingsId.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsId.property.comparison">comparison</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}. |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsId.property.value">value</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsId.property.comparison">comparison</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsId.property.value">value</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}. |
 
 ---
 
@@ -3649,7 +3649,7 @@ public java.lang.String getComparison();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}.
 
 ---
 
@@ -3661,7 +3661,7 @@ public java.lang.String getValue();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}.
 
 ---
 
@@ -3682,8 +3682,8 @@ SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn.property.comparison">comparison</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}. |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn.property.value">value</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn.property.comparison">comparison</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaRelatedFindingsProductArn.property.value">value</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}. |
 
 ---
 
@@ -3695,7 +3695,7 @@ public java.lang.String getComparison();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}.
 
 ---
 
@@ -3707,7 +3707,7 @@ public java.lang.String getValue();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}.
 
 ---
 
@@ -3728,8 +3728,8 @@ SecurityhubAutomationRuleCriteriaResourceApplicationArn.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationArn.property.comparison">comparison</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}. |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationArn.property.value">value</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationArn.property.comparison">comparison</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationArn.property.value">value</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}. |
 
 ---
 
@@ -3741,7 +3741,7 @@ public java.lang.String getComparison();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}.
 
 ---
 
@@ -3753,7 +3753,7 @@ public java.lang.String getValue();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}.
 
 ---
 
@@ -3774,8 +3774,8 @@ SecurityhubAutomationRuleCriteriaResourceApplicationName.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationName.property.comparison">comparison</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}. |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationName.property.value">value</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationName.property.comparison">comparison</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceApplicationName.property.value">value</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}. |
 
 ---
 
@@ -3787,7 +3787,7 @@ public java.lang.String getComparison();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}.
 
 ---
 
@@ -3799,7 +3799,7 @@ public java.lang.String getValue();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}.
 
 ---
 
@@ -3821,9 +3821,9 @@ SecurityhubAutomationRuleCriteriaResourceDetailsOther.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceDetailsOther.property.comparison">comparison</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}. |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceDetailsOther.property.key">key</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#key SecurityhubAutomationRule#key}. |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceDetailsOther.property.value">value</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceDetailsOther.property.comparison">comparison</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceDetailsOther.property.key">key</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#key SecurityhubAutomationRule#key}. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceDetailsOther.property.value">value</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}. |
 
 ---
 
@@ -3835,7 +3835,7 @@ public java.lang.String getComparison();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}.
 
 ---
 
@@ -3847,7 +3847,7 @@ public java.lang.String getKey();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#key SecurityhubAutomationRule#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#key SecurityhubAutomationRule#key}.
 
 ---
 
@@ -3859,7 +3859,7 @@ public java.lang.String getValue();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}.
 
 ---
 
@@ -3880,8 +3880,8 @@ SecurityhubAutomationRuleCriteriaResourceId.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceId.property.comparison">comparison</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}. |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceId.property.value">value</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceId.property.comparison">comparison</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceId.property.value">value</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}. |
 
 ---
 
@@ -3893,7 +3893,7 @@ public java.lang.String getComparison();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}.
 
 ---
 
@@ -3905,7 +3905,7 @@ public java.lang.String getValue();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}.
 
 ---
 
@@ -3926,8 +3926,8 @@ SecurityhubAutomationRuleCriteriaResourcePartition.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourcePartition.property.comparison">comparison</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}. |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourcePartition.property.value">value</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourcePartition.property.comparison">comparison</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourcePartition.property.value">value</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}. |
 
 ---
 
@@ -3939,7 +3939,7 @@ public java.lang.String getComparison();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}.
 
 ---
 
@@ -3951,7 +3951,7 @@ public java.lang.String getValue();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}.
 
 ---
 
@@ -3972,8 +3972,8 @@ SecurityhubAutomationRuleCriteriaResourceRegion.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceRegion.property.comparison">comparison</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}. |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceRegion.property.value">value</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceRegion.property.comparison">comparison</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceRegion.property.value">value</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}. |
 
 ---
 
@@ -3985,7 +3985,7 @@ public java.lang.String getComparison();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}.
 
 ---
 
@@ -3997,7 +3997,7 @@ public java.lang.String getValue();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}.
 
 ---
 
@@ -4019,9 +4019,9 @@ SecurityhubAutomationRuleCriteriaResourceTags.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTags.property.comparison">comparison</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}. |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTags.property.key">key</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#key SecurityhubAutomationRule#key}. |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTags.property.value">value</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTags.property.comparison">comparison</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTags.property.key">key</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#key SecurityhubAutomationRule#key}. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceTags.property.value">value</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}. |
 
 ---
 
@@ -4033,7 +4033,7 @@ public java.lang.String getComparison();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}.
 
 ---
 
@@ -4045,7 +4045,7 @@ public java.lang.String getKey();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#key SecurityhubAutomationRule#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#key SecurityhubAutomationRule#key}.
 
 ---
 
@@ -4057,7 +4057,7 @@ public java.lang.String getValue();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}.
 
 ---
 
@@ -4078,8 +4078,8 @@ SecurityhubAutomationRuleCriteriaResourceType.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceType.property.comparison">comparison</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}. |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceType.property.value">value</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceType.property.comparison">comparison</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaResourceType.property.value">value</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}. |
 
 ---
 
@@ -4091,7 +4091,7 @@ public java.lang.String getComparison();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}.
 
 ---
 
@@ -4103,7 +4103,7 @@ public java.lang.String getValue();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}.
 
 ---
 
@@ -4124,8 +4124,8 @@ SecurityhubAutomationRuleCriteriaSeverityLabel.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSeverityLabel.property.comparison">comparison</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}. |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSeverityLabel.property.value">value</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSeverityLabel.property.comparison">comparison</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSeverityLabel.property.value">value</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}. |
 
 ---
 
@@ -4137,7 +4137,7 @@ public java.lang.String getComparison();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}.
 
 ---
 
@@ -4149,7 +4149,7 @@ public java.lang.String getValue();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}.
 
 ---
 
@@ -4170,8 +4170,8 @@ SecurityhubAutomationRuleCriteriaSourceUrl.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSourceUrl.property.comparison">comparison</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}. |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSourceUrl.property.value">value</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSourceUrl.property.comparison">comparison</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaSourceUrl.property.value">value</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}. |
 
 ---
 
@@ -4183,7 +4183,7 @@ public java.lang.String getComparison();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}.
 
 ---
 
@@ -4195,7 +4195,7 @@ public java.lang.String getValue();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}.
 
 ---
 
@@ -4216,8 +4216,8 @@ SecurityhubAutomationRuleCriteriaTitle.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTitle.property.comparison">comparison</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}. |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTitle.property.value">value</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTitle.property.comparison">comparison</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaTitle.property.value">value</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}. |
 
 ---
 
@@ -4229,7 +4229,7 @@ public java.lang.String getComparison();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}.
 
 ---
 
@@ -4241,7 +4241,7 @@ public java.lang.String getValue();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}.
 
 ---
 
@@ -4262,8 +4262,8 @@ SecurityhubAutomationRuleCriteriaType.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaType.property.comparison">comparison</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}. |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaType.property.value">value</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaType.property.comparison">comparison</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaType.property.value">value</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}. |
 
 ---
 
@@ -4275,7 +4275,7 @@ public java.lang.String getComparison();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}.
 
 ---
 
@@ -4287,7 +4287,7 @@ public java.lang.String getValue();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}.
 
 ---
 
@@ -4310,8 +4310,8 @@ SecurityhubAutomationRuleCriteriaUpdatedAt.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAt.property.dateRange">dateRange</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtDateRange">SecurityhubAutomationRuleCriteriaUpdatedAtDateRange</a>></code> | date_range block. |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAt.property.end">end</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#end SecurityhubAutomationRule#end}. |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAt.property.start">start</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#start SecurityhubAutomationRule#start}. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAt.property.end">end</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#end SecurityhubAutomationRule#end}. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAt.property.start">start</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#start SecurityhubAutomationRule#start}. |
 
 ---
 
@@ -4325,7 +4325,7 @@ public IResolvable|java.util.List<SecurityhubAutomationRuleCriteriaUpdatedAtDate
 
 date_range block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#date_range SecurityhubAutomationRule#date_range}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#date_range SecurityhubAutomationRule#date_range}
 
 ---
 
@@ -4337,7 +4337,7 @@ public java.lang.String getEnd();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#end SecurityhubAutomationRule#end}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#end SecurityhubAutomationRule#end}.
 
 ---
 
@@ -4349,7 +4349,7 @@ public java.lang.String getStart();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#start SecurityhubAutomationRule#start}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#start SecurityhubAutomationRule#start}.
 
 ---
 
@@ -4370,8 +4370,8 @@ SecurityhubAutomationRuleCriteriaUpdatedAtDateRange.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtDateRange.property.unit">unit</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#unit SecurityhubAutomationRule#unit}. |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtDateRange.property.value">value</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtDateRange.property.unit">unit</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#unit SecurityhubAutomationRule#unit}. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUpdatedAtDateRange.property.value">value</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}. |
 
 ---
 
@@ -4383,7 +4383,7 @@ public java.lang.String getUnit();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#unit SecurityhubAutomationRule#unit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#unit SecurityhubAutomationRule#unit}.
 
 ---
 
@@ -4395,7 +4395,7 @@ public java.lang.Number getValue();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}.
 
 ---
 
@@ -4417,9 +4417,9 @@ SecurityhubAutomationRuleCriteriaUserDefinedFields.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUserDefinedFields.property.comparison">comparison</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}. |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUserDefinedFields.property.key">key</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#key SecurityhubAutomationRule#key}. |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUserDefinedFields.property.value">value</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUserDefinedFields.property.comparison">comparison</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUserDefinedFields.property.key">key</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#key SecurityhubAutomationRule#key}. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaUserDefinedFields.property.value">value</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}. |
 
 ---
 
@@ -4431,7 +4431,7 @@ public java.lang.String getComparison();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}.
 
 ---
 
@@ -4443,7 +4443,7 @@ public java.lang.String getKey();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#key SecurityhubAutomationRule#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#key SecurityhubAutomationRule#key}.
 
 ---
 
@@ -4455,7 +4455,7 @@ public java.lang.String getValue();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}.
 
 ---
 
@@ -4476,8 +4476,8 @@ SecurityhubAutomationRuleCriteriaVerificationState.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaVerificationState.property.comparison">comparison</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}. |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaVerificationState.property.value">value</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaVerificationState.property.comparison">comparison</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaVerificationState.property.value">value</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}. |
 
 ---
 
@@ -4489,7 +4489,7 @@ public java.lang.String getComparison();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}.
 
 ---
 
@@ -4501,7 +4501,7 @@ public java.lang.String getValue();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}.
 
 ---
 
@@ -4522,8 +4522,8 @@ SecurityhubAutomationRuleCriteriaWorkflowStatus.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaWorkflowStatus.property.comparison">comparison</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}. |
-| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaWorkflowStatus.property.value">value</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaWorkflowStatus.property.comparison">comparison</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}. |
+| <code><a href="#@cdktn/provider-aws.securityhubAutomationRule.SecurityhubAutomationRuleCriteriaWorkflowStatus.property.value">value</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}. |
 
 ---
 
@@ -4535,7 +4535,7 @@ public java.lang.String getComparison();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}.
 
 ---
 
@@ -4547,7 +4547,7 @@ public java.lang.String getValue();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}.
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### NetworkmanagerPrefixListAssociation <a name="NetworkmanagerPrefixListAssociation" id="@cdktn/provider-aws.networkmanagerPrefixListAssociation.NetworkmanagerPrefixListAssociation"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/networkmanager_prefix_list_association aws_networkmanager_prefix_list_association}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/networkmanager_prefix_list_association aws_networkmanager_prefix_list_association}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.networkmanagerPrefixListAssociation.NetworkmanagerPrefixListAssociation.Initializer"></a>
 
@@ -489,7 +489,7 @@ The construct id used in the generated config for the NetworkmanagerPrefixListAs
 
 The id of the existing NetworkmanagerPrefixListAssociation that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/networkmanager_prefix_list_association#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/networkmanager_prefix_list_association#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -771,9 +771,9 @@ const networkmanagerPrefixListAssociationConfig: networkmanagerPrefixListAssocia
 | <code><a href="#@cdktn/provider-aws.networkmanagerPrefixListAssociation.NetworkmanagerPrefixListAssociationConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.networkmanagerPrefixListAssociation.NetworkmanagerPrefixListAssociationConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.networkmanagerPrefixListAssociation.NetworkmanagerPrefixListAssociationConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.networkmanagerPrefixListAssociation.NetworkmanagerPrefixListAssociationConfig.property.coreNetworkId">coreNetworkId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/networkmanager_prefix_list_association#core_network_id NetworkmanagerPrefixListAssociation#core_network_id}. |
-| <code><a href="#@cdktn/provider-aws.networkmanagerPrefixListAssociation.NetworkmanagerPrefixListAssociationConfig.property.prefixListAlias">prefixListAlias</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/networkmanager_prefix_list_association#prefix_list_alias NetworkmanagerPrefixListAssociation#prefix_list_alias}. |
-| <code><a href="#@cdktn/provider-aws.networkmanagerPrefixListAssociation.NetworkmanagerPrefixListAssociationConfig.property.prefixListArn">prefixListArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/networkmanager_prefix_list_association#prefix_list_arn NetworkmanagerPrefixListAssociation#prefix_list_arn}. |
+| <code><a href="#@cdktn/provider-aws.networkmanagerPrefixListAssociation.NetworkmanagerPrefixListAssociationConfig.property.coreNetworkId">coreNetworkId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/networkmanager_prefix_list_association#core_network_id NetworkmanagerPrefixListAssociation#core_network_id}. |
+| <code><a href="#@cdktn/provider-aws.networkmanagerPrefixListAssociation.NetworkmanagerPrefixListAssociationConfig.property.prefixListAlias">prefixListAlias</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/networkmanager_prefix_list_association#prefix_list_alias NetworkmanagerPrefixListAssociation#prefix_list_alias}. |
+| <code><a href="#@cdktn/provider-aws.networkmanagerPrefixListAssociation.NetworkmanagerPrefixListAssociationConfig.property.prefixListArn">prefixListArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/networkmanager_prefix_list_association#prefix_list_arn NetworkmanagerPrefixListAssociation#prefix_list_arn}. |
 
 ---
 
@@ -855,7 +855,7 @@ public readonly coreNetworkId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/networkmanager_prefix_list_association#core_network_id NetworkmanagerPrefixListAssociation#core_network_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/networkmanager_prefix_list_association#core_network_id NetworkmanagerPrefixListAssociation#core_network_id}.
 
 ---
 
@@ -867,7 +867,7 @@ public readonly prefixListAlias: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/networkmanager_prefix_list_association#prefix_list_alias NetworkmanagerPrefixListAssociation#prefix_list_alias}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/networkmanager_prefix_list_association#prefix_list_alias NetworkmanagerPrefixListAssociation#prefix_list_alias}.
 
 ---
 
@@ -879,7 +879,7 @@ public readonly prefixListArn: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/networkmanager_prefix_list_association#prefix_list_arn NetworkmanagerPrefixListAssociation#prefix_list_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/networkmanager_prefix_list_association#prefix_list_arn NetworkmanagerPrefixListAssociation#prefix_list_arn}.
 
 ---
 

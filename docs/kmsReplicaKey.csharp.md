@@ -4,7 +4,7 @@
 
 ### KmsReplicaKey <a name="KmsReplicaKey" id="@cdktn/provider-aws.kmsReplicaKey.KmsReplicaKey"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/kms_replica_key aws_kms_replica_key}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/kms_replica_key aws_kms_replica_key}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.kmsReplicaKey.KmsReplicaKey.Initializer"></a>
 
@@ -552,7 +552,7 @@ The construct id used in the generated config for the KmsReplicaKey to import.
 
 The id of the existing KmsReplicaKey that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/kms_replica_key#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/kms_replica_key#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1061,16 +1061,16 @@ new KmsReplicaKeyConfig {
 | <code><a href="#@cdktn/provider-aws.kmsReplicaKey.KmsReplicaKeyConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.kmsReplicaKey.KmsReplicaKeyConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.kmsReplicaKey.KmsReplicaKeyConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.kmsReplicaKey.KmsReplicaKeyConfig.property.primaryKeyArn">PrimaryKeyArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/kms_replica_key#primary_key_arn KmsReplicaKey#primary_key_arn}. |
-| <code><a href="#@cdktn/provider-aws.kmsReplicaKey.KmsReplicaKeyConfig.property.bypassPolicyLockoutSafetyCheck">BypassPolicyLockoutSafetyCheck</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/kms_replica_key#bypass_policy_lockout_safety_check KmsReplicaKey#bypass_policy_lockout_safety_check}. |
-| <code><a href="#@cdktn/provider-aws.kmsReplicaKey.KmsReplicaKeyConfig.property.deletionWindowInDays">DeletionWindowInDays</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/kms_replica_key#deletion_window_in_days KmsReplicaKey#deletion_window_in_days}. |
-| <code><a href="#@cdktn/provider-aws.kmsReplicaKey.KmsReplicaKeyConfig.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/kms_replica_key#description KmsReplicaKey#description}. |
-| <code><a href="#@cdktn/provider-aws.kmsReplicaKey.KmsReplicaKeyConfig.property.enabled">Enabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/kms_replica_key#enabled KmsReplicaKey#enabled}. |
-| <code><a href="#@cdktn/provider-aws.kmsReplicaKey.KmsReplicaKeyConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/kms_replica_key#id KmsReplicaKey#id}. |
-| <code><a href="#@cdktn/provider-aws.kmsReplicaKey.KmsReplicaKeyConfig.property.policy">Policy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/kms_replica_key#policy KmsReplicaKey#policy}. |
+| <code><a href="#@cdktn/provider-aws.kmsReplicaKey.KmsReplicaKeyConfig.property.primaryKeyArn">PrimaryKeyArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/kms_replica_key#primary_key_arn KmsReplicaKey#primary_key_arn}. |
+| <code><a href="#@cdktn/provider-aws.kmsReplicaKey.KmsReplicaKeyConfig.property.bypassPolicyLockoutSafetyCheck">BypassPolicyLockoutSafetyCheck</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/kms_replica_key#bypass_policy_lockout_safety_check KmsReplicaKey#bypass_policy_lockout_safety_check}. |
+| <code><a href="#@cdktn/provider-aws.kmsReplicaKey.KmsReplicaKeyConfig.property.deletionWindowInDays">DeletionWindowInDays</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/kms_replica_key#deletion_window_in_days KmsReplicaKey#deletion_window_in_days}. |
+| <code><a href="#@cdktn/provider-aws.kmsReplicaKey.KmsReplicaKeyConfig.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/kms_replica_key#description KmsReplicaKey#description}. |
+| <code><a href="#@cdktn/provider-aws.kmsReplicaKey.KmsReplicaKeyConfig.property.enabled">Enabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/kms_replica_key#enabled KmsReplicaKey#enabled}. |
+| <code><a href="#@cdktn/provider-aws.kmsReplicaKey.KmsReplicaKeyConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/kms_replica_key#id KmsReplicaKey#id}. |
+| <code><a href="#@cdktn/provider-aws.kmsReplicaKey.KmsReplicaKeyConfig.property.policy">Policy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/kms_replica_key#policy KmsReplicaKey#policy}. |
 | <code><a href="#@cdktn/provider-aws.kmsReplicaKey.KmsReplicaKeyConfig.property.region">Region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.kmsReplicaKey.KmsReplicaKeyConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/kms_replica_key#tags KmsReplicaKey#tags}. |
-| <code><a href="#@cdktn/provider-aws.kmsReplicaKey.KmsReplicaKeyConfig.property.tagsAll">TagsAll</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/kms_replica_key#tags_all KmsReplicaKey#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.kmsReplicaKey.KmsReplicaKeyConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/kms_replica_key#tags KmsReplicaKey#tags}. |
+| <code><a href="#@cdktn/provider-aws.kmsReplicaKey.KmsReplicaKeyConfig.property.tagsAll">TagsAll</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/kms_replica_key#tags_all KmsReplicaKey#tags_all}. |
 
 ---
 
@@ -1152,7 +1152,7 @@ public string PrimaryKeyArn { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/kms_replica_key#primary_key_arn KmsReplicaKey#primary_key_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/kms_replica_key#primary_key_arn KmsReplicaKey#primary_key_arn}.
 
 ---
 
@@ -1164,7 +1164,7 @@ public bool|IResolvable BypassPolicyLockoutSafetyCheck { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/kms_replica_key#bypass_policy_lockout_safety_check KmsReplicaKey#bypass_policy_lockout_safety_check}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/kms_replica_key#bypass_policy_lockout_safety_check KmsReplicaKey#bypass_policy_lockout_safety_check}.
 
 ---
 
@@ -1176,7 +1176,7 @@ public double DeletionWindowInDays { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/kms_replica_key#deletion_window_in_days KmsReplicaKey#deletion_window_in_days}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/kms_replica_key#deletion_window_in_days KmsReplicaKey#deletion_window_in_days}.
 
 ---
 
@@ -1188,7 +1188,7 @@ public string Description { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/kms_replica_key#description KmsReplicaKey#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/kms_replica_key#description KmsReplicaKey#description}.
 
 ---
 
@@ -1200,7 +1200,7 @@ public bool|IResolvable Enabled { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/kms_replica_key#enabled KmsReplicaKey#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/kms_replica_key#enabled KmsReplicaKey#enabled}.
 
 ---
 
@@ -1212,7 +1212,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/kms_replica_key#id KmsReplicaKey#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/kms_replica_key#id KmsReplicaKey#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1227,7 +1227,7 @@ public string Policy { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/kms_replica_key#policy KmsReplicaKey#policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/kms_replica_key#policy KmsReplicaKey#policy}.
 
 ---
 
@@ -1241,7 +1241,7 @@ public string Region { get; set; }
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/kms_replica_key#region KmsReplicaKey#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/kms_replica_key#region KmsReplicaKey#region}
 
 ---
 
@@ -1253,7 +1253,7 @@ public System.Collections.Generic.IDictionary<string, string> Tags { get; set; }
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/kms_replica_key#tags KmsReplicaKey#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/kms_replica_key#tags KmsReplicaKey#tags}.
 
 ---
 
@@ -1265,7 +1265,7 @@ public System.Collections.Generic.IDictionary<string, string> TagsAll { get; set
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/kms_replica_key#tags_all KmsReplicaKey#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/kms_replica_key#tags_all KmsReplicaKey#tags_all}.
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### UxcAccountCustomizations <a name="UxcAccountCustomizations" id="@cdktn/provider-aws.uxcAccountCustomizations.UxcAccountCustomizations"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/uxc_account_customizations aws_uxc_account_customizations}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/uxc_account_customizations aws_uxc_account_customizations}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.uxcAccountCustomizations.UxcAccountCustomizations.Initializer"></a>
 
@@ -38,9 +38,9 @@ uxcAccountCustomizations.UxcAccountCustomizations(
 | <code><a href="#@cdktn/provider-aws.uxcAccountCustomizations.UxcAccountCustomizations.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.uxcAccountCustomizations.UxcAccountCustomizations.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.uxcAccountCustomizations.UxcAccountCustomizations.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.uxcAccountCustomizations.UxcAccountCustomizations.Initializer.parameter.accountColor">account_color</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/uxc_account_customizations#account_color UxcAccountCustomizations#account_color}. |
-| <code><a href="#@cdktn/provider-aws.uxcAccountCustomizations.UxcAccountCustomizations.Initializer.parameter.visibleRegions">visible_regions</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/uxc_account_customizations#visible_regions UxcAccountCustomizations#visible_regions}. |
-| <code><a href="#@cdktn/provider-aws.uxcAccountCustomizations.UxcAccountCustomizations.Initializer.parameter.visibleServices">visible_services</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/uxc_account_customizations#visible_services UxcAccountCustomizations#visible_services}. |
+| <code><a href="#@cdktn/provider-aws.uxcAccountCustomizations.UxcAccountCustomizations.Initializer.parameter.accountColor">account_color</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/uxc_account_customizations#account_color UxcAccountCustomizations#account_color}. |
+| <code><a href="#@cdktn/provider-aws.uxcAccountCustomizations.UxcAccountCustomizations.Initializer.parameter.visibleRegions">visible_regions</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/uxc_account_customizations#visible_regions UxcAccountCustomizations#visible_regions}. |
+| <code><a href="#@cdktn/provider-aws.uxcAccountCustomizations.UxcAccountCustomizations.Initializer.parameter.visibleServices">visible_services</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/uxc_account_customizations#visible_services UxcAccountCustomizations#visible_services}. |
 
 ---
 
@@ -108,7 +108,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/uxc_account_customizations#account_color UxcAccountCustomizations#account_color}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/uxc_account_customizations#account_color UxcAccountCustomizations#account_color}.
 
 ---
 
@@ -116,7 +116,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/uxc_account_customizations#visible_regions UxcAccountCustomizations#visible_regions}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/uxc_account_customizations#visible_regions UxcAccountCustomizations#visible_regions}.
 
 ---
 
@@ -124,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/uxc_account_customizations#visible_services UxcAccountCustomizations#visible_services}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/uxc_account_customizations#visible_services UxcAccountCustomizations#visible_services}.
 
 ---
 
@@ -642,7 +642,7 @@ The construct id used in the generated config for the UxcAccountCustomizations t
 
 The id of the existing UxcAccountCustomizations that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/uxc_account_customizations#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/uxc_account_customizations#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -935,9 +935,9 @@ uxcAccountCustomizations.UxcAccountCustomizationsConfig(
 | <code><a href="#@cdktn/provider-aws.uxcAccountCustomizations.UxcAccountCustomizationsConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.uxcAccountCustomizations.UxcAccountCustomizationsConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.uxcAccountCustomizations.UxcAccountCustomizationsConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.uxcAccountCustomizations.UxcAccountCustomizationsConfig.property.accountColor">account_color</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/uxc_account_customizations#account_color UxcAccountCustomizations#account_color}. |
-| <code><a href="#@cdktn/provider-aws.uxcAccountCustomizations.UxcAccountCustomizationsConfig.property.visibleRegions">visible_regions</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/uxc_account_customizations#visible_regions UxcAccountCustomizations#visible_regions}. |
-| <code><a href="#@cdktn/provider-aws.uxcAccountCustomizations.UxcAccountCustomizationsConfig.property.visibleServices">visible_services</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/uxc_account_customizations#visible_services UxcAccountCustomizations#visible_services}. |
+| <code><a href="#@cdktn/provider-aws.uxcAccountCustomizations.UxcAccountCustomizationsConfig.property.accountColor">account_color</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/uxc_account_customizations#account_color UxcAccountCustomizations#account_color}. |
+| <code><a href="#@cdktn/provider-aws.uxcAccountCustomizations.UxcAccountCustomizationsConfig.property.visibleRegions">visible_regions</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/uxc_account_customizations#visible_regions UxcAccountCustomizations#visible_regions}. |
+| <code><a href="#@cdktn/provider-aws.uxcAccountCustomizations.UxcAccountCustomizationsConfig.property.visibleServices">visible_services</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/uxc_account_customizations#visible_services UxcAccountCustomizations#visible_services}. |
 
 ---
 
@@ -1019,7 +1019,7 @@ account_color: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/uxc_account_customizations#account_color UxcAccountCustomizations#account_color}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/uxc_account_customizations#account_color UxcAccountCustomizations#account_color}.
 
 ---
 
@@ -1031,7 +1031,7 @@ visible_regions: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/uxc_account_customizations#visible_regions UxcAccountCustomizations#visible_regions}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/uxc_account_customizations#visible_regions UxcAccountCustomizations#visible_regions}.
 
 ---
 
@@ -1043,7 +1043,7 @@ visible_services: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/uxc_account_customizations#visible_services UxcAccountCustomizations#visible_services}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/uxc_account_customizations#visible_services UxcAccountCustomizations#visible_services}.
 
 ---
 

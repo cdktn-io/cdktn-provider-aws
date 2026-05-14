@@ -4,7 +4,7 @@
 
 ### DatasyncLocationS3 <a name="DatasyncLocationS3" id="@cdktn/provider-aws.datasyncLocationS3.DatasyncLocationS3"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/datasync_location_s3 aws_datasync_location_s3}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/datasync_location_s3 aws_datasync_location_s3}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.datasyncLocationS3.DatasyncLocationS3.Initializer"></a>
 
@@ -544,7 +544,7 @@ The construct id used in the generated config for the DatasyncLocationS3 to impo
 
 The id of the existing DatasyncLocationS3 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/datasync_location_s3#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/datasync_location_s3#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -997,15 +997,15 @@ new DatasyncLocationS3Config {
 | <code><a href="#@cdktn/provider-aws.datasyncLocationS3.DatasyncLocationS3Config.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.datasyncLocationS3.DatasyncLocationS3Config.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.datasyncLocationS3.DatasyncLocationS3Config.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.datasyncLocationS3.DatasyncLocationS3Config.property.s3BucketArn">S3BucketArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/datasync_location_s3#s3_bucket_arn DatasyncLocationS3#s3_bucket_arn}. |
+| <code><a href="#@cdktn/provider-aws.datasyncLocationS3.DatasyncLocationS3Config.property.s3BucketArn">S3BucketArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/datasync_location_s3#s3_bucket_arn DatasyncLocationS3#s3_bucket_arn}. |
 | <code><a href="#@cdktn/provider-aws.datasyncLocationS3.DatasyncLocationS3Config.property.s3Config">S3Config</a></code> | <code><a href="#@cdktn/provider-aws.datasyncLocationS3.DatasyncLocationS3S3Config">DatasyncLocationS3S3Config</a></code> | s3_config block. |
-| <code><a href="#@cdktn/provider-aws.datasyncLocationS3.DatasyncLocationS3Config.property.subdirectory">Subdirectory</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/datasync_location_s3#subdirectory DatasyncLocationS3#subdirectory}. |
-| <code><a href="#@cdktn/provider-aws.datasyncLocationS3.DatasyncLocationS3Config.property.agentArns">AgentArns</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/datasync_location_s3#agent_arns DatasyncLocationS3#agent_arns}. |
-| <code><a href="#@cdktn/provider-aws.datasyncLocationS3.DatasyncLocationS3Config.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/datasync_location_s3#id DatasyncLocationS3#id}. |
+| <code><a href="#@cdktn/provider-aws.datasyncLocationS3.DatasyncLocationS3Config.property.subdirectory">Subdirectory</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/datasync_location_s3#subdirectory DatasyncLocationS3#subdirectory}. |
+| <code><a href="#@cdktn/provider-aws.datasyncLocationS3.DatasyncLocationS3Config.property.agentArns">AgentArns</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/datasync_location_s3#agent_arns DatasyncLocationS3#agent_arns}. |
+| <code><a href="#@cdktn/provider-aws.datasyncLocationS3.DatasyncLocationS3Config.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/datasync_location_s3#id DatasyncLocationS3#id}. |
 | <code><a href="#@cdktn/provider-aws.datasyncLocationS3.DatasyncLocationS3Config.property.region">Region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.datasyncLocationS3.DatasyncLocationS3Config.property.s3StorageClass">S3StorageClass</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/datasync_location_s3#s3_storage_class DatasyncLocationS3#s3_storage_class}. |
-| <code><a href="#@cdktn/provider-aws.datasyncLocationS3.DatasyncLocationS3Config.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/datasync_location_s3#tags DatasyncLocationS3#tags}. |
-| <code><a href="#@cdktn/provider-aws.datasyncLocationS3.DatasyncLocationS3Config.property.tagsAll">TagsAll</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/datasync_location_s3#tags_all DatasyncLocationS3#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.datasyncLocationS3.DatasyncLocationS3Config.property.s3StorageClass">S3StorageClass</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/datasync_location_s3#s3_storage_class DatasyncLocationS3#s3_storage_class}. |
+| <code><a href="#@cdktn/provider-aws.datasyncLocationS3.DatasyncLocationS3Config.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/datasync_location_s3#tags DatasyncLocationS3#tags}. |
+| <code><a href="#@cdktn/provider-aws.datasyncLocationS3.DatasyncLocationS3Config.property.tagsAll">TagsAll</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/datasync_location_s3#tags_all DatasyncLocationS3#tags_all}. |
 
 ---
 
@@ -1087,7 +1087,7 @@ public string S3BucketArn { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/datasync_location_s3#s3_bucket_arn DatasyncLocationS3#s3_bucket_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/datasync_location_s3#s3_bucket_arn DatasyncLocationS3#s3_bucket_arn}.
 
 ---
 
@@ -1101,7 +1101,7 @@ public DatasyncLocationS3S3Config S3Config { get; set; }
 
 s3_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/datasync_location_s3#s3_config DatasyncLocationS3#s3_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/datasync_location_s3#s3_config DatasyncLocationS3#s3_config}
 
 ---
 
@@ -1113,7 +1113,7 @@ public string Subdirectory { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/datasync_location_s3#subdirectory DatasyncLocationS3#subdirectory}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/datasync_location_s3#subdirectory DatasyncLocationS3#subdirectory}.
 
 ---
 
@@ -1125,7 +1125,7 @@ public string[] AgentArns { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/datasync_location_s3#agent_arns DatasyncLocationS3#agent_arns}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/datasync_location_s3#agent_arns DatasyncLocationS3#agent_arns}.
 
 ---
 
@@ -1137,7 +1137,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/datasync_location_s3#id DatasyncLocationS3#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/datasync_location_s3#id DatasyncLocationS3#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1154,7 +1154,7 @@ public string Region { get; set; }
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/datasync_location_s3#region DatasyncLocationS3#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/datasync_location_s3#region DatasyncLocationS3#region}
 
 ---
 
@@ -1166,7 +1166,7 @@ public string S3StorageClass { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/datasync_location_s3#s3_storage_class DatasyncLocationS3#s3_storage_class}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/datasync_location_s3#s3_storage_class DatasyncLocationS3#s3_storage_class}.
 
 ---
 
@@ -1178,7 +1178,7 @@ public System.Collections.Generic.IDictionary<string, string> Tags { get; set; }
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/datasync_location_s3#tags DatasyncLocationS3#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/datasync_location_s3#tags DatasyncLocationS3#tags}.
 
 ---
 
@@ -1190,7 +1190,7 @@ public System.Collections.Generic.IDictionary<string, string> TagsAll { get; set
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/datasync_location_s3#tags_all DatasyncLocationS3#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/datasync_location_s3#tags_all DatasyncLocationS3#tags_all}.
 
 ---
 
@@ -1210,7 +1210,7 @@ new DatasyncLocationS3S3Config {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.datasyncLocationS3.DatasyncLocationS3S3Config.property.bucketAccessRoleArn">BucketAccessRoleArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/datasync_location_s3#bucket_access_role_arn DatasyncLocationS3#bucket_access_role_arn}. |
+| <code><a href="#@cdktn/provider-aws.datasyncLocationS3.DatasyncLocationS3S3Config.property.bucketAccessRoleArn">BucketAccessRoleArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/datasync_location_s3#bucket_access_role_arn DatasyncLocationS3#bucket_access_role_arn}. |
 
 ---
 
@@ -1222,7 +1222,7 @@ public string BucketAccessRoleArn { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/datasync_location_s3#bucket_access_role_arn DatasyncLocationS3#bucket_access_role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/datasync_location_s3#bucket_access_role_arn DatasyncLocationS3#bucket_access_role_arn}.
 
 ---
 
