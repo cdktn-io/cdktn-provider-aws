@@ -1032,7 +1032,10 @@ Object.defineProperty(exports, 'oamSink', { get: function () { return require('.
 Object.defineProperty(exports, 'oamSinkPolicy', { get: function () { return require('./oam-sink-policy'); } });
 Object.defineProperty(exports, 'observabilityadminCentralizationRuleForOrganization', { get: function () { return require('./observabilityadmin-centralization-rule-for-organization'); } });
 Object.defineProperty(exports, 'observabilityadminTelemetryEnrichment', { get: function () { return require('./observabilityadmin-telemetry-enrichment'); } });
+Object.defineProperty(exports, 'observabilityadminTelemetryEvaluation', { get: function () { return require('./observabilityadmin-telemetry-evaluation'); } });
+Object.defineProperty(exports, 'observabilityadminTelemetryEvaluationForOrganization', { get: function () { return require('./observabilityadmin-telemetry-evaluation-for-organization'); } });
 Object.defineProperty(exports, 'observabilityadminTelemetryPipeline', { get: function () { return require('./observabilityadmin-telemetry-pipeline'); } });
+Object.defineProperty(exports, 'observabilityadminTelemetryRule', { get: function () { return require('./observabilityadmin-telemetry-rule'); } });
 Object.defineProperty(exports, 'odbCloudAutonomousVmCluster', { get: function () { return require('./odb-cloud-autonomous-vm-cluster'); } });
 Object.defineProperty(exports, 'odbCloudExadataInfrastructure', { get: function () { return require('./odb-cloud-exadata-infrastructure'); } });
 Object.defineProperty(exports, 'odbCloudVmCluster', { get: function () { return require('./odb-cloud-vm-cluster'); } });
@@ -1344,9 +1347,11 @@ Object.defineProperty(exports, 'securityGroupRule', { get: function () { return 
 Object.defineProperty(exports, 'securityhubAccount', { get: function () { return require('./securityhub-account'); } });
 Object.defineProperty(exports, 'securityhubAccountV2', { get: function () { return require('./securityhub-account-v2'); } });
 Object.defineProperty(exports, 'securityhubActionTarget', { get: function () { return require('./securityhub-action-target'); } });
+Object.defineProperty(exports, 'securityhubAggregatorV2', { get: function () { return require('./securityhub-aggregator-v2'); } });
 Object.defineProperty(exports, 'securityhubAutomationRule', { get: function () { return require('./securityhub-automation-rule'); } });
 Object.defineProperty(exports, 'securityhubConfigurationPolicy', { get: function () { return require('./securityhub-configuration-policy'); } });
 Object.defineProperty(exports, 'securityhubConfigurationPolicyAssociation', { get: function () { return require('./securityhub-configuration-policy-association'); } });
+Object.defineProperty(exports, 'securityhubConnectorV2', { get: function () { return require('./securityhub-connector-v2'); } });
 Object.defineProperty(exports, 'securityhubFindingAggregator', { get: function () { return require('./securityhub-finding-aggregator'); } });
 Object.defineProperty(exports, 'securityhubInsight', { get: function () { return require('./securityhub-insight'); } });
 Object.defineProperty(exports, 'securityhubInviteAccepter', { get: function () { return require('./securityhub-invite-accepter'); } });

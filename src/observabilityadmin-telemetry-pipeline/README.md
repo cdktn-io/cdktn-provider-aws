@@ -1,3 +1,3 @@
 # `aws_observabilityadmin_telemetry_pipeline`
 
-Refer to the Terraform Registry for docs: [`aws_observabilityadmin_telemetry_pipeline`](https://registry.terraform.io/providers/hashicorp/aws/6.44.0/docs/resources/observabilityadmin_telemetry_pipeline).
+Refer to the Terraform Registry for docs: [`aws_observabilityadmin_telemetry_pipeline`](https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/observabilityadmin_telemetry_pipeline).
