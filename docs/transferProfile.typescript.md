@@ -4,7 +4,7 @@
 
 ### TransferProfile <a name="TransferProfile" id="@cdktn/provider-aws.transferProfile.TransferProfile"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/transfer_profile aws_transfer_profile}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/transfer_profile aws_transfer_profile}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.transferProfile.TransferProfile.Initializer"></a>
 
@@ -524,7 +524,7 @@ The construct id used in the generated config for the TransferProfile to import.
 
 The id of the existing TransferProfile that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/transfer_profile#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/transfer_profile#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -916,13 +916,13 @@ const transferProfileConfig: transferProfile.TransferProfileConfig = { ... }
 | <code><a href="#@cdktn/provider-aws.transferProfile.TransferProfileConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.transferProfile.TransferProfileConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.transferProfile.TransferProfileConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.transferProfile.TransferProfileConfig.property.as2Id">as2Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/transfer_profile#as2_id TransferProfile#as2_id}. |
-| <code><a href="#@cdktn/provider-aws.transferProfile.TransferProfileConfig.property.profileType">profileType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/transfer_profile#profile_type TransferProfile#profile_type}. |
-| <code><a href="#@cdktn/provider-aws.transferProfile.TransferProfileConfig.property.certificateIds">certificateIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/transfer_profile#certificate_ids TransferProfile#certificate_ids}. |
-| <code><a href="#@cdktn/provider-aws.transferProfile.TransferProfileConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/transfer_profile#id TransferProfile#id}. |
+| <code><a href="#@cdktn/provider-aws.transferProfile.TransferProfileConfig.property.as2Id">as2Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/transfer_profile#as2_id TransferProfile#as2_id}. |
+| <code><a href="#@cdktn/provider-aws.transferProfile.TransferProfileConfig.property.profileType">profileType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/transfer_profile#profile_type TransferProfile#profile_type}. |
+| <code><a href="#@cdktn/provider-aws.transferProfile.TransferProfileConfig.property.certificateIds">certificateIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/transfer_profile#certificate_ids TransferProfile#certificate_ids}. |
+| <code><a href="#@cdktn/provider-aws.transferProfile.TransferProfileConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/transfer_profile#id TransferProfile#id}. |
 | <code><a href="#@cdktn/provider-aws.transferProfile.TransferProfileConfig.property.region">region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.transferProfile.TransferProfileConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/transfer_profile#tags TransferProfile#tags}. |
-| <code><a href="#@cdktn/provider-aws.transferProfile.TransferProfileConfig.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/transfer_profile#tags_all TransferProfile#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.transferProfile.TransferProfileConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/transfer_profile#tags TransferProfile#tags}. |
+| <code><a href="#@cdktn/provider-aws.transferProfile.TransferProfileConfig.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/transfer_profile#tags_all TransferProfile#tags_all}. |
 
 ---
 
@@ -1004,7 +1004,7 @@ public readonly as2Id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/transfer_profile#as2_id TransferProfile#as2_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/transfer_profile#as2_id TransferProfile#as2_id}.
 
 ---
 
@@ -1016,7 +1016,7 @@ public readonly profileType: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/transfer_profile#profile_type TransferProfile#profile_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/transfer_profile#profile_type TransferProfile#profile_type}.
 
 ---
 
@@ -1028,7 +1028,7 @@ public readonly certificateIds: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/transfer_profile#certificate_ids TransferProfile#certificate_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/transfer_profile#certificate_ids TransferProfile#certificate_ids}.
 
 ---
 
@@ -1040,7 +1040,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/transfer_profile#id TransferProfile#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/transfer_profile#id TransferProfile#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1057,7 +1057,7 @@ public readonly region: string;
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/transfer_profile#region TransferProfile#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/transfer_profile#region TransferProfile#region}
 
 ---
 
@@ -1069,7 +1069,7 @@ public readonly tags: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/transfer_profile#tags TransferProfile#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/transfer_profile#tags TransferProfile#tags}.
 
 ---
 
@@ -1081,7 +1081,7 @@ public readonly tagsAll: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/transfer_profile#tags_all TransferProfile#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/transfer_profile#tags_all TransferProfile#tags_all}.
 
 ---
 

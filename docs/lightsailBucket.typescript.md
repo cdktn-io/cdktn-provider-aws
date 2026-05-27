@@ -4,7 +4,7 @@
 
 ### LightsailBucket <a name="LightsailBucket" id="@cdktn/provider-aws.lightsailBucket.LightsailBucket"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/lightsail_bucket aws_lightsail_bucket}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/lightsail_bucket aws_lightsail_bucket}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lightsailBucket.LightsailBucket.Initializer"></a>
 
@@ -524,7 +524,7 @@ The construct id used in the generated config for the LightsailBucket to import.
 
 The id of the existing LightsailBucket that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/lightsail_bucket#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/lightsail_bucket#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -949,13 +949,13 @@ const lightsailBucketConfig: lightsailBucket.LightsailBucketConfig = { ... }
 | <code><a href="#@cdktn/provider-aws.lightsailBucket.LightsailBucketConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.lightsailBucket.LightsailBucketConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.lightsailBucket.LightsailBucketConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.lightsailBucket.LightsailBucketConfig.property.bundleId">bundleId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/lightsail_bucket#bundle_id LightsailBucket#bundle_id}. |
-| <code><a href="#@cdktn/provider-aws.lightsailBucket.LightsailBucketConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/lightsail_bucket#name LightsailBucket#name}. |
-| <code><a href="#@cdktn/provider-aws.lightsailBucket.LightsailBucketConfig.property.forceDelete">forceDelete</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/lightsail_bucket#force_delete LightsailBucket#force_delete}. |
-| <code><a href="#@cdktn/provider-aws.lightsailBucket.LightsailBucketConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/lightsail_bucket#id LightsailBucket#id}. |
+| <code><a href="#@cdktn/provider-aws.lightsailBucket.LightsailBucketConfig.property.bundleId">bundleId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/lightsail_bucket#bundle_id LightsailBucket#bundle_id}. |
+| <code><a href="#@cdktn/provider-aws.lightsailBucket.LightsailBucketConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/lightsail_bucket#name LightsailBucket#name}. |
+| <code><a href="#@cdktn/provider-aws.lightsailBucket.LightsailBucketConfig.property.forceDelete">forceDelete</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/lightsail_bucket#force_delete LightsailBucket#force_delete}. |
+| <code><a href="#@cdktn/provider-aws.lightsailBucket.LightsailBucketConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/lightsail_bucket#id LightsailBucket#id}. |
 | <code><a href="#@cdktn/provider-aws.lightsailBucket.LightsailBucketConfig.property.region">region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.lightsailBucket.LightsailBucketConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/lightsail_bucket#tags LightsailBucket#tags}. |
-| <code><a href="#@cdktn/provider-aws.lightsailBucket.LightsailBucketConfig.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/lightsail_bucket#tags_all LightsailBucket#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.lightsailBucket.LightsailBucketConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/lightsail_bucket#tags LightsailBucket#tags}. |
+| <code><a href="#@cdktn/provider-aws.lightsailBucket.LightsailBucketConfig.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/lightsail_bucket#tags_all LightsailBucket#tags_all}. |
 
 ---
 
@@ -1037,7 +1037,7 @@ public readonly bundleId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/lightsail_bucket#bundle_id LightsailBucket#bundle_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/lightsail_bucket#bundle_id LightsailBucket#bundle_id}.
 
 ---
 
@@ -1049,7 +1049,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/lightsail_bucket#name LightsailBucket#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/lightsail_bucket#name LightsailBucket#name}.
 
 ---
 
@@ -1061,7 +1061,7 @@ public readonly forceDelete: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/lightsail_bucket#force_delete LightsailBucket#force_delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/lightsail_bucket#force_delete LightsailBucket#force_delete}.
 
 ---
 
@@ -1073,7 +1073,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/lightsail_bucket#id LightsailBucket#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/lightsail_bucket#id LightsailBucket#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1090,7 +1090,7 @@ public readonly region: string;
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/lightsail_bucket#region LightsailBucket#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/lightsail_bucket#region LightsailBucket#region}
 
 ---
 
@@ -1102,7 +1102,7 @@ public readonly tags: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/lightsail_bucket#tags LightsailBucket#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/lightsail_bucket#tags LightsailBucket#tags}.
 
 ---
 
@@ -1114,7 +1114,7 @@ public readonly tagsAll: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/lightsail_bucket#tags_all LightsailBucket#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/lightsail_bucket#tags_all LightsailBucket#tags_all}.
 
 ---
 

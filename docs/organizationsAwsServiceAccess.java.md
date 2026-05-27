@@ -4,7 +4,7 @@
 
 ### OrganizationsAwsServiceAccess <a name="OrganizationsAwsServiceAccess" id="@cdktn/provider-aws.organizationsAwsServiceAccess.OrganizationsAwsServiceAccess"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/organizations_aws_service_access aws_organizations_aws_service_access}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/organizations_aws_service_access aws_organizations_aws_service_access}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.organizationsAwsServiceAccess.OrganizationsAwsServiceAccess.Initializer"></a>
 
@@ -34,7 +34,7 @@ OrganizationsAwsServiceAccess.Builder.create(Construct scope, java.lang.String i
 | <code><a href="#@cdktn/provider-aws.organizationsAwsServiceAccess.OrganizationsAwsServiceAccess.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.organizationsAwsServiceAccess.OrganizationsAwsServiceAccess.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.organizationsAwsServiceAccess.OrganizationsAwsServiceAccess.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.organizationsAwsServiceAccess.OrganizationsAwsServiceAccess.Initializer.parameter.servicePrincipal">servicePrincipal</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/organizations_aws_service_access#service_principal OrganizationsAwsServiceAccess#service_principal}. |
+| <code><a href="#@cdktn/provider-aws.organizationsAwsServiceAccess.OrganizationsAwsServiceAccess.Initializer.parameter.servicePrincipal">servicePrincipal</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/organizations_aws_service_access#service_principal OrganizationsAwsServiceAccess#service_principal}. |
 
 ---
 
@@ -102,7 +102,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/organizations_aws_service_access#service_principal OrganizationsAwsServiceAccess#service_principal}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/organizations_aws_service_access#service_principal OrganizationsAwsServiceAccess#service_principal}.
 
 ---
 
@@ -551,7 +551,7 @@ The construct id used in the generated config for the OrganizationsAwsServiceAcc
 
 The id of the existing OrganizationsAwsServiceAccess that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/organizations_aws_service_access#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/organizations_aws_service_access#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -809,7 +809,7 @@ OrganizationsAwsServiceAccessConfig.builder()
 | <code><a href="#@cdktn/provider-aws.organizationsAwsServiceAccess.OrganizationsAwsServiceAccessConfig.property.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.organizationsAwsServiceAccess.OrganizationsAwsServiceAccessConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.organizationsAwsServiceAccess.OrganizationsAwsServiceAccessConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.organizationsAwsServiceAccess.OrganizationsAwsServiceAccessConfig.property.servicePrincipal">servicePrincipal</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/organizations_aws_service_access#service_principal OrganizationsAwsServiceAccess#service_principal}. |
+| <code><a href="#@cdktn/provider-aws.organizationsAwsServiceAccess.OrganizationsAwsServiceAccessConfig.property.servicePrincipal">servicePrincipal</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/organizations_aws_service_access#service_principal OrganizationsAwsServiceAccess#service_principal}. |
 
 ---
 
@@ -891,7 +891,7 @@ public java.lang.String getServicePrincipal();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/organizations_aws_service_access#service_principal OrganizationsAwsServiceAccess#service_principal}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/organizations_aws_service_access#service_principal OrganizationsAwsServiceAccess#service_principal}.
 
 ---
 

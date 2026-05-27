@@ -193,6 +193,7 @@ The following submodules are available:
 - [bedrockagentcoreCodeInterpreter](./bedrockagentcoreCodeInterpreter.go.md)
 - [bedrockagentcoreGateway](./bedrockagentcoreGateway.go.md)
 - [bedrockagentcoreGatewayTarget](./bedrockagentcoreGatewayTarget.go.md)
+- [bedrockagentcoreHarness](./bedrockagentcoreHarness.go.md)
 - [bedrockagentcoreMemory](./bedrockagentcoreMemory.go.md)
 - [bedrockagentcoreMemoryStrategy](./bedrockagentcoreMemoryStrategy.go.md)
 - [bedrockagentcoreOauth2CredentialProvider](./bedrockagentcoreOauth2CredentialProvider.go.md)
@@ -1699,6 +1700,7 @@ The following submodules are available:
 - [observabilityadminTelemetryEvaluationForOrganization](./observabilityadminTelemetryEvaluationForOrganization.go.md)
 - [observabilityadminTelemetryPipeline](./observabilityadminTelemetryPipeline.go.md)
 - [observabilityadminTelemetryRule](./observabilityadminTelemetryRule.go.md)
+- [observabilityadminTelemetryRuleForOrganization](./observabilityadminTelemetryRuleForOrganization.go.md)
 - [odbCloudAutonomousVmCluster](./odbCloudAutonomousVmCluster.go.md)
 - [odbCloudExadataInfrastructure](./odbCloudExadataInfrastructure.go.md)
 - [odbCloudVmCluster](./odbCloudVmCluster.go.md)
@@ -2013,6 +2015,7 @@ The following submodules are available:
 - [securityhubActionTarget](./securityhubActionTarget.go.md)
 - [securityhubAggregatorV2](./securityhubAggregatorV2.go.md)
 - [securityhubAutomationRule](./securityhubAutomationRule.go.md)
+- [securityhubAutomationRuleV2](./securityhubAutomationRuleV2.go.md)
 - [securityhubConfigurationPolicy](./securityhubConfigurationPolicy.go.md)
 - [securityhubConfigurationPolicyAssociation](./securityhubConfigurationPolicyAssociation.go.md)
 - [securityhubConnectorV2](./securityhubConnectorV2.go.md)
@@ -2320,8 +2323,10 @@ The following submodules are available:
 - [workspaceswebUserSettingsAssociation](./workspaceswebUserSettingsAssociation.go.md)
 - [xrayEncryptionConfig](./xrayEncryptionConfig.go.md)
 - [xrayGroup](./xrayGroup.go.md)
+- [xrayIndexingRule](./xrayIndexingRule.go.md)
 - [xrayResourcePolicy](./xrayResourcePolicy.go.md)
 - [xraySamplingRule](./xraySamplingRule.go.md)
+- [xrayTraceSegmentDestination](./xrayTraceSegmentDestination.go.md)
 
 
 

@@ -193,6 +193,7 @@ The following submodules are available:
 - [bedrockagentcoreCodeInterpreter](./bedrockagentcoreCodeInterpreter.java.md)
 - [bedrockagentcoreGateway](./bedrockagentcoreGateway.java.md)
 - [bedrockagentcoreGatewayTarget](./bedrockagentcoreGatewayTarget.java.md)
+- [bedrockagentcoreHarness](./bedrockagentcoreHarness.java.md)
 - [bedrockagentcoreMemory](./bedrockagentcoreMemory.java.md)
 - [bedrockagentcoreMemoryStrategy](./bedrockagentcoreMemoryStrategy.java.md)
 - [bedrockagentcoreOauth2CredentialProvider](./bedrockagentcoreOauth2CredentialProvider.java.md)
@@ -1699,6 +1700,7 @@ The following submodules are available:
 - [observabilityadminTelemetryEvaluationForOrganization](./observabilityadminTelemetryEvaluationForOrganization.java.md)
 - [observabilityadminTelemetryPipeline](./observabilityadminTelemetryPipeline.java.md)
 - [observabilityadminTelemetryRule](./observabilityadminTelemetryRule.java.md)
+- [observabilityadminTelemetryRuleForOrganization](./observabilityadminTelemetryRuleForOrganization.java.md)
 - [odbCloudAutonomousVmCluster](./odbCloudAutonomousVmCluster.java.md)
 - [odbCloudExadataInfrastructure](./odbCloudExadataInfrastructure.java.md)
 - [odbCloudVmCluster](./odbCloudVmCluster.java.md)
@@ -2013,6 +2015,7 @@ The following submodules are available:
 - [securityhubActionTarget](./securityhubActionTarget.java.md)
 - [securityhubAggregatorV2](./securityhubAggregatorV2.java.md)
 - [securityhubAutomationRule](./securityhubAutomationRule.java.md)
+- [securityhubAutomationRuleV2](./securityhubAutomationRuleV2.java.md)
 - [securityhubConfigurationPolicy](./securityhubConfigurationPolicy.java.md)
 - [securityhubConfigurationPolicyAssociation](./securityhubConfigurationPolicyAssociation.java.md)
 - [securityhubConnectorV2](./securityhubConnectorV2.java.md)
@@ -2320,8 +2323,10 @@ The following submodules are available:
 - [workspaceswebUserSettingsAssociation](./workspaceswebUserSettingsAssociation.java.md)
 - [xrayEncryptionConfig](./xrayEncryptionConfig.java.md)
 - [xrayGroup](./xrayGroup.java.md)
+- [xrayIndexingRule](./xrayIndexingRule.java.md)
 - [xrayResourcePolicy](./xrayResourcePolicy.java.md)
 - [xraySamplingRule](./xraySamplingRule.java.md)
+- [xrayTraceSegmentDestination](./xrayTraceSegmentDestination.java.md)
 
 
 

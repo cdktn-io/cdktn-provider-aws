@@ -4,7 +4,7 @@
 
 ### ShieldProtection <a name="ShieldProtection" id="@cdktn/provider-aws.shieldProtection.ShieldProtection"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/shield_protection aws_shield_protection}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/shield_protection aws_shield_protection}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.shieldProtection.ShieldProtection.Initializer"></a>
 
@@ -510,7 +510,7 @@ The construct id used in the generated config for the ShieldProtection to import
 
 The id of the existing ShieldProtection that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/shield_protection#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/shield_protection#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -860,11 +860,11 @@ new ShieldProtectionConfig {
 | <code><a href="#@cdktn/provider-aws.shieldProtection.ShieldProtectionConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.shieldProtection.ShieldProtectionConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.shieldProtection.ShieldProtectionConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.shieldProtection.ShieldProtectionConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/shield_protection#name ShieldProtection#name}. |
-| <code><a href="#@cdktn/provider-aws.shieldProtection.ShieldProtectionConfig.property.resourceArn">ResourceArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/shield_protection#resource_arn ShieldProtection#resource_arn}. |
-| <code><a href="#@cdktn/provider-aws.shieldProtection.ShieldProtectionConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/shield_protection#id ShieldProtection#id}. |
-| <code><a href="#@cdktn/provider-aws.shieldProtection.ShieldProtectionConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/shield_protection#tags ShieldProtection#tags}. |
-| <code><a href="#@cdktn/provider-aws.shieldProtection.ShieldProtectionConfig.property.tagsAll">TagsAll</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/shield_protection#tags_all ShieldProtection#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.shieldProtection.ShieldProtectionConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/shield_protection#name ShieldProtection#name}. |
+| <code><a href="#@cdktn/provider-aws.shieldProtection.ShieldProtectionConfig.property.resourceArn">ResourceArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/shield_protection#resource_arn ShieldProtection#resource_arn}. |
+| <code><a href="#@cdktn/provider-aws.shieldProtection.ShieldProtectionConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/shield_protection#id ShieldProtection#id}. |
+| <code><a href="#@cdktn/provider-aws.shieldProtection.ShieldProtectionConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/shield_protection#tags ShieldProtection#tags}. |
+| <code><a href="#@cdktn/provider-aws.shieldProtection.ShieldProtectionConfig.property.tagsAll">TagsAll</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/shield_protection#tags_all ShieldProtection#tags_all}. |
 
 ---
 
@@ -946,7 +946,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/shield_protection#name ShieldProtection#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/shield_protection#name ShieldProtection#name}.
 
 ---
 
@@ -958,7 +958,7 @@ public string ResourceArn { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/shield_protection#resource_arn ShieldProtection#resource_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/shield_protection#resource_arn ShieldProtection#resource_arn}.
 
 ---
 
@@ -970,7 +970,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/shield_protection#id ShieldProtection#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/shield_protection#id ShieldProtection#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -985,7 +985,7 @@ public System.Collections.Generic.IDictionary<string, string> Tags { get; set; }
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/shield_protection#tags ShieldProtection#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/shield_protection#tags ShieldProtection#tags}.
 
 ---
 
@@ -997,7 +997,7 @@ public System.Collections.Generic.IDictionary<string, string> TagsAll { get; set
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/shield_protection#tags_all ShieldProtection#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/shield_protection#tags_all ShieldProtection#tags_all}.
 
 ---
 

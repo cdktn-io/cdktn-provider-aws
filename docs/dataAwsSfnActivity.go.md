@@ -4,7 +4,7 @@
 
 ### DataAwsSfnActivity <a name="DataAwsSfnActivity" id="@cdktn/provider-aws.dataAwsSfnActivity.DataAwsSfnActivity"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/data-sources/sfn_activity aws_sfn_activity}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/data-sources/sfn_activity aws_sfn_activity}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsSfnActivity.DataAwsSfnActivity.Initializer"></a>
 
@@ -415,7 +415,7 @@ The construct id used in the generated config for the DataAwsSfnActivity to impo
 
 The id of the existing DataAwsSfnActivity that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/data-sources/sfn_activity#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/data-sources/sfn_activity#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -720,9 +720,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawssfnactivity"
 | <code><a href="#@cdktn/provider-aws.dataAwsSfnActivity.DataAwsSfnActivityConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsSfnActivity.DataAwsSfnActivityConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsSfnActivity.DataAwsSfnActivityConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dataAwsSfnActivity.DataAwsSfnActivityConfig.property.arn">Arn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/data-sources/sfn_activity#arn DataAwsSfnActivity#arn}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsSfnActivity.DataAwsSfnActivityConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/data-sources/sfn_activity#id DataAwsSfnActivity#id}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsSfnActivity.DataAwsSfnActivityConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/data-sources/sfn_activity#name DataAwsSfnActivity#name}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsSfnActivity.DataAwsSfnActivityConfig.property.arn">Arn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/data-sources/sfn_activity#arn DataAwsSfnActivity#arn}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsSfnActivity.DataAwsSfnActivityConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/data-sources/sfn_activity#id DataAwsSfnActivity#id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsSfnActivity.DataAwsSfnActivityConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/data-sources/sfn_activity#name DataAwsSfnActivity#name}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsSfnActivity.DataAwsSfnActivityConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -805,7 +805,7 @@ Arn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/data-sources/sfn_activity#arn DataAwsSfnActivity#arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/data-sources/sfn_activity#arn DataAwsSfnActivity#arn}.
 
 ---
 
@@ -817,7 +817,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/data-sources/sfn_activity#id DataAwsSfnActivity#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/data-sources/sfn_activity#id DataAwsSfnActivity#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -832,7 +832,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/data-sources/sfn_activity#name DataAwsSfnActivity#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/data-sources/sfn_activity#name DataAwsSfnActivity#name}.
 
 ---
 
@@ -846,7 +846,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/data-sources/sfn_activity#region DataAwsSfnActivity#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/data-sources/sfn_activity#region DataAwsSfnActivity#region}
 
 ---
 
