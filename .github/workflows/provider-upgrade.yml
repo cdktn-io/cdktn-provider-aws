@@ -19,13 +19,13 @@ jobs:
       NODE_OPTIONS: --max-old-space-size=31744
     steps:
       - name: Checkout
-        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd
       - name: Setup Terraform
-        uses: hashicorp/setup-terraform@b9cd54a3c349d3f38e8881555d616ced269862dd
+        uses: hashicorp/setup-terraform@5e8dbf3c6d9deaf4193ca7a8fb23f2ac83bb6c85
         with:
           terraform_wrapper: false
       - name: Setup Node.js
-        uses: actions/setup-node@cdca7365b2dadb8aad0a33bc7601856ffabcc48e
+        uses: actions/setup-node@48b55a011bda9f5d6aeb4c2d9c7362e8dae4041e
         with:
           node-version: 20.16.0
       - name: Setup Copywrite tool
@@ -75,7 +75,7 @@ jobs:
         run: echo "id=$(gh api "/users/${{ steps.generate_token.outputs.app-slug }}[bot]" --jq .id)" >> "$GITHUB_OUTPUT"
       - name: Create Pull Request
         if: ${{ steps.check_version.outputs.new_version == 'available' }}
-        uses: peter-evans/create-pull-request@271a8d0340265f705b14b6d32b9829c1cb33d45e
+        uses: peter-evans/create-pull-request@5f6978faf089d4d20b00c7766989d076bb2fc7f1
         with:
           branch: auto/provider-upgrade
           commit-message: "${{ steps.release.outputs.type }}: upgrade provider from `${{ steps.current_version.outputs.value }}` to version `${{ steps.new_version.outputs.value }}`"
