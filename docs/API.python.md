@@ -193,6 +193,7 @@ The following submodules are available:
 - [bedrockagentcoreCodeInterpreter](./bedrockagentcoreCodeInterpreter.python.md)
 - [bedrockagentcoreGateway](./bedrockagentcoreGateway.python.md)
 - [bedrockagentcoreGatewayTarget](./bedrockagentcoreGatewayTarget.python.md)
+- [bedrockagentcoreHarness](./bedrockagentcoreHarness.python.md)
 - [bedrockagentcoreMemory](./bedrockagentcoreMemory.python.md)
 - [bedrockagentcoreMemoryStrategy](./bedrockagentcoreMemoryStrategy.python.md)
 - [bedrockagentcoreOauth2CredentialProvider](./bedrockagentcoreOauth2CredentialProvider.python.md)
@@ -1699,6 +1700,7 @@ The following submodules are available:
 - [observabilityadminTelemetryEvaluationForOrganization](./observabilityadminTelemetryEvaluationForOrganization.python.md)
 - [observabilityadminTelemetryPipeline](./observabilityadminTelemetryPipeline.python.md)
 - [observabilityadminTelemetryRule](./observabilityadminTelemetryRule.python.md)
+- [observabilityadminTelemetryRuleForOrganization](./observabilityadminTelemetryRuleForOrganization.python.md)
 - [odbCloudAutonomousVmCluster](./odbCloudAutonomousVmCluster.python.md)
 - [odbCloudExadataInfrastructure](./odbCloudExadataInfrastructure.python.md)
 - [odbCloudVmCluster](./odbCloudVmCluster.python.md)
@@ -2013,6 +2015,7 @@ The following submodules are available:
 - [securityhubActionTarget](./securityhubActionTarget.python.md)
 - [securityhubAggregatorV2](./securityhubAggregatorV2.python.md)
 - [securityhubAutomationRule](./securityhubAutomationRule.python.md)
+- [securityhubAutomationRuleV2](./securityhubAutomationRuleV2.python.md)
 - [securityhubConfigurationPolicy](./securityhubConfigurationPolicy.python.md)
 - [securityhubConfigurationPolicyAssociation](./securityhubConfigurationPolicyAssociation.python.md)
 - [securityhubConnectorV2](./securityhubConnectorV2.python.md)
@@ -2320,8 +2323,10 @@ The following submodules are available:
 - [workspaceswebUserSettingsAssociation](./workspaceswebUserSettingsAssociation.python.md)
 - [xrayEncryptionConfig](./xrayEncryptionConfig.python.md)
 - [xrayGroup](./xrayGroup.python.md)
+- [xrayIndexingRule](./xrayIndexingRule.python.md)
 - [xrayResourcePolicy](./xrayResourcePolicy.python.md)
 - [xraySamplingRule](./xraySamplingRule.python.md)
+- [xrayTraceSegmentDestination](./xrayTraceSegmentDestination.python.md)
 
 
 

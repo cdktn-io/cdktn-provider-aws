@@ -193,6 +193,7 @@ The following submodules are available:
 - [bedrockagentcoreCodeInterpreter](./bedrockagentcoreCodeInterpreter.typescript.md)
 - [bedrockagentcoreGateway](./bedrockagentcoreGateway.typescript.md)
 - [bedrockagentcoreGatewayTarget](./bedrockagentcoreGatewayTarget.typescript.md)
+- [bedrockagentcoreHarness](./bedrockagentcoreHarness.typescript.md)
 - [bedrockagentcoreMemory](./bedrockagentcoreMemory.typescript.md)
 - [bedrockagentcoreMemoryStrategy](./bedrockagentcoreMemoryStrategy.typescript.md)
 - [bedrockagentcoreOauth2CredentialProvider](./bedrockagentcoreOauth2CredentialProvider.typescript.md)
@@ -1699,6 +1700,7 @@ The following submodules are available:
 - [observabilityadminTelemetryEvaluationForOrganization](./observabilityadminTelemetryEvaluationForOrganization.typescript.md)
 - [observabilityadminTelemetryPipeline](./observabilityadminTelemetryPipeline.typescript.md)
 - [observabilityadminTelemetryRule](./observabilityadminTelemetryRule.typescript.md)
+- [observabilityadminTelemetryRuleForOrganization](./observabilityadminTelemetryRuleForOrganization.typescript.md)
 - [odbCloudAutonomousVmCluster](./odbCloudAutonomousVmCluster.typescript.md)
 - [odbCloudExadataInfrastructure](./odbCloudExadataInfrastructure.typescript.md)
 - [odbCloudVmCluster](./odbCloudVmCluster.typescript.md)
@@ -2013,6 +2015,7 @@ The following submodules are available:
 - [securityhubActionTarget](./securityhubActionTarget.typescript.md)
 - [securityhubAggregatorV2](./securityhubAggregatorV2.typescript.md)
 - [securityhubAutomationRule](./securityhubAutomationRule.typescript.md)
+- [securityhubAutomationRuleV2](./securityhubAutomationRuleV2.typescript.md)
 - [securityhubConfigurationPolicy](./securityhubConfigurationPolicy.typescript.md)
 - [securityhubConfigurationPolicyAssociation](./securityhubConfigurationPolicyAssociation.typescript.md)
 - [securityhubConnectorV2](./securityhubConnectorV2.typescript.md)
@@ -2320,8 +2323,10 @@ The following submodules are available:
 - [workspaceswebUserSettingsAssociation](./workspaceswebUserSettingsAssociation.typescript.md)
 - [xrayEncryptionConfig](./xrayEncryptionConfig.typescript.md)
 - [xrayGroup](./xrayGroup.typescript.md)
+- [xrayIndexingRule](./xrayIndexingRule.typescript.md)
 - [xrayResourcePolicy](./xrayResourcePolicy.typescript.md)
 - [xraySamplingRule](./xraySamplingRule.typescript.md)
+- [xrayTraceSegmentDestination](./xrayTraceSegmentDestination.typescript.md)
 
 
 
