@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/bedrock_custom_model
+// https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/bedrock_custom_model
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,71 +13,71 @@ import * as cdktn from 'cdktn';
 
 export interface BedrockCustomModelConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/bedrock_custom_model#base_model_identifier BedrockCustomModel#base_model_identifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/bedrock_custom_model#base_model_identifier BedrockCustomModel#base_model_identifier}
   */
   readonly baseModelIdentifier: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/bedrock_custom_model#custom_model_kms_key_id BedrockCustomModel#custom_model_kms_key_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/bedrock_custom_model#custom_model_kms_key_id BedrockCustomModel#custom_model_kms_key_id}
   */
   readonly customModelKmsKeyId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/bedrock_custom_model#custom_model_name BedrockCustomModel#custom_model_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/bedrock_custom_model#custom_model_name BedrockCustomModel#custom_model_name}
   */
   readonly customModelName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/bedrock_custom_model#customization_type BedrockCustomModel#customization_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/bedrock_custom_model#customization_type BedrockCustomModel#customization_type}
   */
   readonly customizationType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/bedrock_custom_model#hyperparameters BedrockCustomModel#hyperparameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/bedrock_custom_model#hyperparameters BedrockCustomModel#hyperparameters}
   */
   readonly hyperparameters: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/bedrock_custom_model#job_name BedrockCustomModel#job_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/bedrock_custom_model#job_name BedrockCustomModel#job_name}
   */
   readonly jobName: string;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/bedrock_custom_model#region BedrockCustomModel#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/bedrock_custom_model#region BedrockCustomModel#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/bedrock_custom_model#role_arn BedrockCustomModel#role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/bedrock_custom_model#role_arn BedrockCustomModel#role_arn}
   */
   readonly roleArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/bedrock_custom_model#tags BedrockCustomModel#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/bedrock_custom_model#tags BedrockCustomModel#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
   * output_data_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/bedrock_custom_model#output_data_config BedrockCustomModel#output_data_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/bedrock_custom_model#output_data_config BedrockCustomModel#output_data_config}
   */
   readonly outputDataConfig?: BedrockCustomModelOutputDataConfig[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/bedrock_custom_model#timeouts BedrockCustomModel#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/bedrock_custom_model#timeouts BedrockCustomModel#timeouts}
   */
   readonly timeouts?: BedrockCustomModelTimeouts;
   /**
   * training_data_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/bedrock_custom_model#training_data_config BedrockCustomModel#training_data_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/bedrock_custom_model#training_data_config BedrockCustomModel#training_data_config}
   */
   readonly trainingDataConfig?: BedrockCustomModelTrainingDataConfig[] | cdktn.IResolvable;
   /**
   * validation_data_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/bedrock_custom_model#validation_data_config BedrockCustomModel#validation_data_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/bedrock_custom_model#validation_data_config BedrockCustomModel#validation_data_config}
   */
   readonly validationDataConfig?: BedrockCustomModelValidationDataConfig[] | cdktn.IResolvable;
   /**
   * vpc_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/bedrock_custom_model#vpc_config BedrockCustomModel#vpc_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/bedrock_custom_model#vpc_config BedrockCustomModel#vpc_config}
   */
   readonly vpcConfig?: BedrockCustomModelVpcConfig[] | cdktn.IResolvable;
 }
@@ -146,7 +146,7 @@ export class BedrockCustomModelTrainingMetricsList extends cdktn.ComplexList {
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
   constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
+    super(terraformResource, terraformAttribute, wrapsSet);
   }
 
   /**
@@ -221,7 +221,7 @@ export class BedrockCustomModelValidationMetricsList extends cdktn.ComplexList {
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
   constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
+    super(terraformResource, terraformAttribute, wrapsSet);
   }
 
   /**
@@ -233,7 +233,7 @@ export class BedrockCustomModelValidationMetricsList extends cdktn.ComplexList {
 }
 export interface BedrockCustomModelOutputDataConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/bedrock_custom_model#s3_uri BedrockCustomModel#s3_uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/bedrock_custom_model#s3_uri BedrockCustomModel#s3_uri}
   */
   readonly s3Uri: string;
 }
@@ -334,7 +334,7 @@ export class BedrockCustomModelOutputDataConfigList extends cdktn.ComplexList {
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
   constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
+    super(terraformResource, terraformAttribute, wrapsSet);
   }
 
   /**
@@ -348,13 +348,13 @@ export interface BedrockCustomModelTimeouts {
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/bedrock_custom_model#create BedrockCustomModel#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/bedrock_custom_model#create BedrockCustomModel#create}
   */
   readonly create?: string;
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/bedrock_custom_model#delete BedrockCustomModel#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/bedrock_custom_model#delete BedrockCustomModel#delete}
   */
   readonly delete?: string;
 }
@@ -477,7 +477,7 @@ export class BedrockCustomModelTimeoutsOutputReference extends cdktn.ComplexObje
 }
 export interface BedrockCustomModelTrainingDataConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/bedrock_custom_model#s3_uri BedrockCustomModel#s3_uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/bedrock_custom_model#s3_uri BedrockCustomModel#s3_uri}
   */
   readonly s3Uri: string;
 }
@@ -578,7 +578,7 @@ export class BedrockCustomModelTrainingDataConfigList extends cdktn.ComplexList 
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
   constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
+    super(terraformResource, terraformAttribute, wrapsSet);
   }
 
   /**
@@ -590,7 +590,7 @@ export class BedrockCustomModelTrainingDataConfigList extends cdktn.ComplexList 
 }
 export interface BedrockCustomModelValidationDataConfigValidator {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/bedrock_custom_model#s3_uri BedrockCustomModel#s3_uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/bedrock_custom_model#s3_uri BedrockCustomModel#s3_uri}
   */
   readonly s3Uri: string;
 }
@@ -691,7 +691,7 @@ export class BedrockCustomModelValidationDataConfigValidatorList extends cdktn.C
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
   constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
+    super(terraformResource, terraformAttribute, wrapsSet);
   }
 
   /**
@@ -705,7 +705,7 @@ export interface BedrockCustomModelValidationDataConfig {
   /**
   * validator block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/bedrock_custom_model#validator BedrockCustomModel#validator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/bedrock_custom_model#validator BedrockCustomModel#validator}
   */
   readonly validator?: BedrockCustomModelValidationDataConfigValidator[] | cdktn.IResolvable;
 }
@@ -809,7 +809,7 @@ export class BedrockCustomModelValidationDataConfigList extends cdktn.ComplexLis
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
   constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
+    super(terraformResource, terraformAttribute, wrapsSet);
   }
 
   /**
@@ -821,11 +821,11 @@ export class BedrockCustomModelValidationDataConfigList extends cdktn.ComplexLis
 }
 export interface BedrockCustomModelVpcConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/bedrock_custom_model#security_group_ids BedrockCustomModel#security_group_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/bedrock_custom_model#security_group_ids BedrockCustomModel#security_group_ids}
   */
   readonly securityGroupIds: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/bedrock_custom_model#subnet_ids BedrockCustomModel#subnet_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/bedrock_custom_model#subnet_ids BedrockCustomModel#subnet_ids}
   */
   readonly subnetIds: string[];
 }
@@ -952,7 +952,7 @@ export class BedrockCustomModelVpcConfigList extends cdktn.ComplexList {
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
   constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
+    super(terraformResource, terraformAttribute, wrapsSet);
   }
 
   /**
@@ -964,7 +964,7 @@ export class BedrockCustomModelVpcConfigList extends cdktn.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/bedrock_custom_model aws_bedrock_custom_model}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/bedrock_custom_model aws_bedrock_custom_model}
 */
 export class BedrockCustomModel extends cdktn.TerraformResource {
 
@@ -980,7 +980,7 @@ export class BedrockCustomModel extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a BedrockCustomModel resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the BedrockCustomModel to import
-  * @param importFromId The id of the existing BedrockCustomModel that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/bedrock_custom_model#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing BedrockCustomModel that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/bedrock_custom_model#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the BedrockCustomModel to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -992,7 +992,7 @@ export class BedrockCustomModel extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/bedrock_custom_model aws_bedrock_custom_model} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/bedrock_custom_model aws_bedrock_custom_model} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1003,7 +1003,7 @@ export class BedrockCustomModel extends cdktn.TerraformResource {
       terraformResourceType: 'aws_bedrock_custom_model',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.45.0',
+        providerVersion: '6.46.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
