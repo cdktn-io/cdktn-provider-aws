@@ -173,9 +173,9 @@
     jsii-pacmak "1.128.0"
 
 "@cdktn/provider-project@^0.7.0":
-  version "0.7.38"
-  resolved "https://registry.yarnpkg.com/@cdktn/provider-project/-/provider-project-0.7.38.tgz#d4a45f6556f12dda443964b5e4b27b538e0c060d"
-  integrity sha512-e4QyaWpFW1CufCG3X5j5xbeT67d/mJSNec9uZewQzzjmo2IZqU6bnjTpNl1nCDUIe3kpJWCCKvprqYyhz+A58Q==
+  version "0.7.39"
+  resolved "https://registry.yarnpkg.com/@cdktn/provider-project/-/provider-project-0.7.39.tgz#2d1748c6156794d89a95dcb30a804c340c3909ce"
+  integrity sha512-LOJWUnZO9zaYcPTFA2H9tVKLpHrFc4gbnIk1kC2oDE6oIVkWI2bpMHAEMT0llTdS5kaiXaURzcXCgR5OypYDQw==
   dependencies:
     change-case "^4.1.2"
     fs-extra "^10.1.0"

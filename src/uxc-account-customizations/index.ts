@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/uxc_account_customizations
+// https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/uxc_account_customizations
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,21 +13,21 @@ import * as cdktn from 'cdktn';
 
 export interface UxcAccountCustomizationsConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/uxc_account_customizations#account_color UxcAccountCustomizations#account_color}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/uxc_account_customizations#account_color UxcAccountCustomizations#account_color}
   */
   readonly accountColor?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/uxc_account_customizations#visible_regions UxcAccountCustomizations#visible_regions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/uxc_account_customizations#visible_regions UxcAccountCustomizations#visible_regions}
   */
   readonly visibleRegions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/uxc_account_customizations#visible_services UxcAccountCustomizations#visible_services}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/uxc_account_customizations#visible_services UxcAccountCustomizations#visible_services}
   */
   readonly visibleServices?: string[];
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/uxc_account_customizations aws_uxc_account_customizations}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/uxc_account_customizations aws_uxc_account_customizations}
 */
 export class UxcAccountCustomizations extends cdktn.TerraformResource {
 
@@ -43,7 +43,7 @@ export class UxcAccountCustomizations extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a UxcAccountCustomizations resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the UxcAccountCustomizations to import
-  * @param importFromId The id of the existing UxcAccountCustomizations that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/uxc_account_customizations#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing UxcAccountCustomizations that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/uxc_account_customizations#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the UxcAccountCustomizations to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -55,7 +55,7 @@ export class UxcAccountCustomizations extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/uxc_account_customizations aws_uxc_account_customizations} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/uxc_account_customizations aws_uxc_account_customizations} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -66,7 +66,7 @@ export class UxcAccountCustomizations extends cdktn.TerraformResource {
       terraformResourceType: 'aws_uxc_account_customizations',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.45.0',
+        providerVersion: '6.46.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

@@ -193,6 +193,7 @@ Object.defineProperty(exports, 'bedrockagentcoreBrowser', { get: function () { r
 Object.defineProperty(exports, 'bedrockagentcoreCodeInterpreter', { get: function () { return require('./bedrockagentcore-code-interpreter'); } });
 Object.defineProperty(exports, 'bedrockagentcoreGateway', { get: function () { return require('./bedrockagentcore-gateway'); } });
 Object.defineProperty(exports, 'bedrockagentcoreGatewayTarget', { get: function () { return require('./bedrockagentcore-gateway-target'); } });
+Object.defineProperty(exports, 'bedrockagentcoreHarness', { get: function () { return require('./bedrockagentcore-harness'); } });
 Object.defineProperty(exports, 'bedrockagentcoreMemory', { get: function () { return require('./bedrockagentcore-memory'); } });
 Object.defineProperty(exports, 'bedrockagentcoreMemoryStrategy', { get: function () { return require('./bedrockagentcore-memory-strategy'); } });
 Object.defineProperty(exports, 'bedrockagentcoreOauth2CredentialProvider', { get: function () { return require('./bedrockagentcore-oauth2-credential-provider'); } });
@@ -1036,6 +1037,7 @@ Object.defineProperty(exports, 'observabilityadminTelemetryEvaluation', { get: f
 Object.defineProperty(exports, 'observabilityadminTelemetryEvaluationForOrganization', { get: function () { return require('./observabilityadmin-telemetry-evaluation-for-organization'); } });
 Object.defineProperty(exports, 'observabilityadminTelemetryPipeline', { get: function () { return require('./observabilityadmin-telemetry-pipeline'); } });
 Object.defineProperty(exports, 'observabilityadminTelemetryRule', { get: function () { return require('./observabilityadmin-telemetry-rule'); } });
+Object.defineProperty(exports, 'observabilityadminTelemetryRuleForOrganization', { get: function () { return require('./observabilityadmin-telemetry-rule-for-organization'); } });
 Object.defineProperty(exports, 'odbCloudAutonomousVmCluster', { get: function () { return require('./odb-cloud-autonomous-vm-cluster'); } });
 Object.defineProperty(exports, 'odbCloudExadataInfrastructure', { get: function () { return require('./odb-cloud-exadata-infrastructure'); } });
 Object.defineProperty(exports, 'odbCloudVmCluster', { get: function () { return require('./odb-cloud-vm-cluster'); } });
@@ -1349,6 +1351,7 @@ Object.defineProperty(exports, 'securityhubAccountV2', { get: function () { retu
 Object.defineProperty(exports, 'securityhubActionTarget', { get: function () { return require('./securityhub-action-target'); } });
 Object.defineProperty(exports, 'securityhubAggregatorV2', { get: function () { return require('./securityhub-aggregator-v2'); } });
 Object.defineProperty(exports, 'securityhubAutomationRule', { get: function () { return require('./securityhub-automation-rule'); } });
+Object.defineProperty(exports, 'securityhubAutomationRuleV2', { get: function () { return require('./securityhub-automation-rule-v2'); } });
 Object.defineProperty(exports, 'securityhubConfigurationPolicy', { get: function () { return require('./securityhub-configuration-policy'); } });
 Object.defineProperty(exports, 'securityhubConfigurationPolicyAssociation', { get: function () { return require('./securityhub-configuration-policy-association'); } });
 Object.defineProperty(exports, 'securityhubConnectorV2', { get: function () { return require('./securityhub-connector-v2'); } });
@@ -1656,8 +1659,10 @@ Object.defineProperty(exports, 'workspaceswebUserSettings', { get: function () {
 Object.defineProperty(exports, 'workspaceswebUserSettingsAssociation', { get: function () { return require('./workspacesweb-user-settings-association'); } });
 Object.defineProperty(exports, 'xrayEncryptionConfig', { get: function () { return require('./xray-encryption-config'); } });
 Object.defineProperty(exports, 'xrayGroup', { get: function () { return require('./xray-group'); } });
+Object.defineProperty(exports, 'xrayIndexingRule', { get: function () { return require('./xray-indexing-rule'); } });
 Object.defineProperty(exports, 'xrayResourcePolicy', { get: function () { return require('./xray-resource-policy'); } });
 Object.defineProperty(exports, 'xraySamplingRule', { get: function () { return require('./xray-sampling-rule'); } });
+Object.defineProperty(exports, 'xrayTraceSegmentDestination', { get: function () { return require('./xray-trace-segment-destination'); } });
 Object.defineProperty(exports, 'dataAwsAccountPrimaryContact', { get: function () { return require('./data-aws-account-primary-contact'); } });
 Object.defineProperty(exports, 'dataAwsAccountRegions', { get: function () { return require('./data-aws-account-regions'); } });
 Object.defineProperty(exports, 'dataAwsAcmCertificate', { get: function () { return require('./data-aws-acm-certificate'); } });
