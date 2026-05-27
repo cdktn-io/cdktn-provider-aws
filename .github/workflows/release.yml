@@ -140,15 +140,16 @@ jobs:
   release_npm:
     name: Publish to npm
     needs: release
-    runs-on: depot-ubuntu-24.04-8
+    runs-on: ubuntu-latest
     permissions:
+      id-token: write
       contents: read
       issues: write
     if: needs.release.outputs.tag_exists != 'true' && needs.release.outputs.latest_commit == github.sha
     steps:
       - uses: actions/setup-node@48b55a011bda9f5d6aeb4c2d9c7362e8dae4041e
         with:
-          node-version: 20.16.0
+          node-version: 24.x
           package-manager-cache: false
       - name: Download build artifacts
         uses: actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c
@@ -176,7 +177,7 @@ jobs:
         env:
           NPM_DIST_TAG: latest
           NPM_REGISTRY: registry.npmjs.org
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          NPM_TRUSTED_PUBLISHER: "true"
           PUBLIB_DRYRUN: ${{ inputs.dry_run }}
         run: npx -p publib@latest publib-npm
       - name: Extract Version
