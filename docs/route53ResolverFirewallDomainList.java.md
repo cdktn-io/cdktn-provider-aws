@@ -4,7 +4,7 @@
 
 ### Route53ResolverFirewallDomainList <a name="Route53ResolverFirewallDomainList" id="@cdktn/provider-aws.route53ResolverFirewallDomainList.Route53ResolverFirewallDomainList"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/route53_resolver_firewall_domain_list aws_route53_resolver_firewall_domain_list}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/route53_resolver_firewall_domain_list aws_route53_resolver_firewall_domain_list}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.route53ResolverFirewallDomainList.Route53ResolverFirewallDomainList.Initializer"></a>
 
@@ -39,12 +39,12 @@ Route53ResolverFirewallDomainList.Builder.create(Construct scope, java.lang.Stri
 | <code><a href="#@cdktn/provider-aws.route53ResolverFirewallDomainList.Route53ResolverFirewallDomainList.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.route53ResolverFirewallDomainList.Route53ResolverFirewallDomainList.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.route53ResolverFirewallDomainList.Route53ResolverFirewallDomainList.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.route53ResolverFirewallDomainList.Route53ResolverFirewallDomainList.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/route53_resolver_firewall_domain_list#name Route53ResolverFirewallDomainList#name}. |
-| <code><a href="#@cdktn/provider-aws.route53ResolverFirewallDomainList.Route53ResolverFirewallDomainList.Initializer.parameter.domains">domains</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/route53_resolver_firewall_domain_list#domains Route53ResolverFirewallDomainList#domains}. |
-| <code><a href="#@cdktn/provider-aws.route53ResolverFirewallDomainList.Route53ResolverFirewallDomainList.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/route53_resolver_firewall_domain_list#id Route53ResolverFirewallDomainList#id}. |
+| <code><a href="#@cdktn/provider-aws.route53ResolverFirewallDomainList.Route53ResolverFirewallDomainList.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/route53_resolver_firewall_domain_list#name Route53ResolverFirewallDomainList#name}. |
+| <code><a href="#@cdktn/provider-aws.route53ResolverFirewallDomainList.Route53ResolverFirewallDomainList.Initializer.parameter.domains">domains</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/route53_resolver_firewall_domain_list#domains Route53ResolverFirewallDomainList#domains}. |
+| <code><a href="#@cdktn/provider-aws.route53ResolverFirewallDomainList.Route53ResolverFirewallDomainList.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/route53_resolver_firewall_domain_list#id Route53ResolverFirewallDomainList#id}. |
 | <code><a href="#@cdktn/provider-aws.route53ResolverFirewallDomainList.Route53ResolverFirewallDomainList.Initializer.parameter.region">region</a></code> | <code>java.lang.String</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.route53ResolverFirewallDomainList.Route53ResolverFirewallDomainList.Initializer.parameter.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/route53_resolver_firewall_domain_list#tags Route53ResolverFirewallDomainList#tags}. |
-| <code><a href="#@cdktn/provider-aws.route53ResolverFirewallDomainList.Route53ResolverFirewallDomainList.Initializer.parameter.tagsAll">tagsAll</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/route53_resolver_firewall_domain_list#tags_all Route53ResolverFirewallDomainList#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.route53ResolverFirewallDomainList.Route53ResolverFirewallDomainList.Initializer.parameter.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/route53_resolver_firewall_domain_list#tags Route53ResolverFirewallDomainList#tags}. |
+| <code><a href="#@cdktn/provider-aws.route53ResolverFirewallDomainList.Route53ResolverFirewallDomainList.Initializer.parameter.tagsAll">tagsAll</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/route53_resolver_firewall_domain_list#tags_all Route53ResolverFirewallDomainList#tags_all}. |
 
 ---
 
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/route53_resolver_firewall_domain_list#name Route53ResolverFirewallDomainList#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/route53_resolver_firewall_domain_list#name Route53ResolverFirewallDomainList#name}.
 
 ---
 
@@ -120,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/route53_resolver_firewall_domain_list#domains Route53ResolverFirewallDomainList#domains}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/route53_resolver_firewall_domain_list#domains Route53ResolverFirewallDomainList#domains}.
 
 ---
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/route53_resolver_firewall_domain_list#id Route53ResolverFirewallDomainList#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/route53_resolver_firewall_domain_list#id Route53ResolverFirewallDomainList#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -141,7 +141,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/route53_resolver_firewall_domain_list#region Route53ResolverFirewallDomainList#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/route53_resolver_firewall_domain_list#region Route53ResolverFirewallDomainList#region}
 
 ---
 
@@ -149,7 +149,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/route53_resolver_firewall_domain_list#tags Route53ResolverFirewallDomainList#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/route53_resolver_firewall_domain_list#tags Route53ResolverFirewallDomainList#tags}.
 
 ---
 
@@ -157,7 +157,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/route53_resolver_firewall_domain_list#tags_all Route53ResolverFirewallDomainList#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/route53_resolver_firewall_domain_list#tags_all Route53ResolverFirewallDomainList#tags_all}.
 
 ---
 
@@ -641,7 +641,7 @@ The construct id used in the generated config for the Route53ResolverFirewallDom
 
 The id of the existing Route53ResolverFirewallDomainList that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/route53_resolver_firewall_domain_list#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/route53_resolver_firewall_domain_list#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1014,12 +1014,12 @@ Route53ResolverFirewallDomainListConfig.builder()
 | <code><a href="#@cdktn/provider-aws.route53ResolverFirewallDomainList.Route53ResolverFirewallDomainListConfig.property.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.route53ResolverFirewallDomainList.Route53ResolverFirewallDomainListConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.route53ResolverFirewallDomainList.Route53ResolverFirewallDomainListConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.route53ResolverFirewallDomainList.Route53ResolverFirewallDomainListConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/route53_resolver_firewall_domain_list#name Route53ResolverFirewallDomainList#name}. |
-| <code><a href="#@cdktn/provider-aws.route53ResolverFirewallDomainList.Route53ResolverFirewallDomainListConfig.property.domains">domains</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/route53_resolver_firewall_domain_list#domains Route53ResolverFirewallDomainList#domains}. |
-| <code><a href="#@cdktn/provider-aws.route53ResolverFirewallDomainList.Route53ResolverFirewallDomainListConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/route53_resolver_firewall_domain_list#id Route53ResolverFirewallDomainList#id}. |
+| <code><a href="#@cdktn/provider-aws.route53ResolverFirewallDomainList.Route53ResolverFirewallDomainListConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/route53_resolver_firewall_domain_list#name Route53ResolverFirewallDomainList#name}. |
+| <code><a href="#@cdktn/provider-aws.route53ResolverFirewallDomainList.Route53ResolverFirewallDomainListConfig.property.domains">domains</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/route53_resolver_firewall_domain_list#domains Route53ResolverFirewallDomainList#domains}. |
+| <code><a href="#@cdktn/provider-aws.route53ResolverFirewallDomainList.Route53ResolverFirewallDomainListConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/route53_resolver_firewall_domain_list#id Route53ResolverFirewallDomainList#id}. |
 | <code><a href="#@cdktn/provider-aws.route53ResolverFirewallDomainList.Route53ResolverFirewallDomainListConfig.property.region">region</a></code> | <code>java.lang.String</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.route53ResolverFirewallDomainList.Route53ResolverFirewallDomainListConfig.property.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/route53_resolver_firewall_domain_list#tags Route53ResolverFirewallDomainList#tags}. |
-| <code><a href="#@cdktn/provider-aws.route53ResolverFirewallDomainList.Route53ResolverFirewallDomainListConfig.property.tagsAll">tagsAll</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/route53_resolver_firewall_domain_list#tags_all Route53ResolverFirewallDomainList#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.route53ResolverFirewallDomainList.Route53ResolverFirewallDomainListConfig.property.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/route53_resolver_firewall_domain_list#tags Route53ResolverFirewallDomainList#tags}. |
+| <code><a href="#@cdktn/provider-aws.route53ResolverFirewallDomainList.Route53ResolverFirewallDomainListConfig.property.tagsAll">tagsAll</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/route53_resolver_firewall_domain_list#tags_all Route53ResolverFirewallDomainList#tags_all}. |
 
 ---
 
@@ -1101,7 +1101,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/route53_resolver_firewall_domain_list#name Route53ResolverFirewallDomainList#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/route53_resolver_firewall_domain_list#name Route53ResolverFirewallDomainList#name}.
 
 ---
 
@@ -1113,7 +1113,7 @@ public java.util.List<java.lang.String> getDomains();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/route53_resolver_firewall_domain_list#domains Route53ResolverFirewallDomainList#domains}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/route53_resolver_firewall_domain_list#domains Route53ResolverFirewallDomainList#domains}.
 
 ---
 
@@ -1125,7 +1125,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/route53_resolver_firewall_domain_list#id Route53ResolverFirewallDomainList#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/route53_resolver_firewall_domain_list#id Route53ResolverFirewallDomainList#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1142,7 +1142,7 @@ public java.lang.String getRegion();
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/route53_resolver_firewall_domain_list#region Route53ResolverFirewallDomainList#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/route53_resolver_firewall_domain_list#region Route53ResolverFirewallDomainList#region}
 
 ---
 
@@ -1154,7 +1154,7 @@ public java.util.Map<java.lang.String, java.lang.String> getTags();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/route53_resolver_firewall_domain_list#tags Route53ResolverFirewallDomainList#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/route53_resolver_firewall_domain_list#tags Route53ResolverFirewallDomainList#tags}.
 
 ---
 
@@ -1166,7 +1166,7 @@ public java.util.Map<java.lang.String, java.lang.String> getTagsAll();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/route53_resolver_firewall_domain_list#tags_all Route53ResolverFirewallDomainList#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/route53_resolver_firewall_domain_list#tags_all Route53ResolverFirewallDomainList#tags_all}.
 
 ---
 

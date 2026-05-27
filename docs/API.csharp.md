@@ -193,6 +193,7 @@ The following submodules are available:
 - [bedrockagentcoreCodeInterpreter](./bedrockagentcoreCodeInterpreter.csharp.md)
 - [bedrockagentcoreGateway](./bedrockagentcoreGateway.csharp.md)
 - [bedrockagentcoreGatewayTarget](./bedrockagentcoreGatewayTarget.csharp.md)
+- [bedrockagentcoreHarness](./bedrockagentcoreHarness.csharp.md)
 - [bedrockagentcoreMemory](./bedrockagentcoreMemory.csharp.md)
 - [bedrockagentcoreMemoryStrategy](./bedrockagentcoreMemoryStrategy.csharp.md)
 - [bedrockagentcoreOauth2CredentialProvider](./bedrockagentcoreOauth2CredentialProvider.csharp.md)
@@ -1699,6 +1700,7 @@ The following submodules are available:
 - [observabilityadminTelemetryEvaluationForOrganization](./observabilityadminTelemetryEvaluationForOrganization.csharp.md)
 - [observabilityadminTelemetryPipeline](./observabilityadminTelemetryPipeline.csharp.md)
 - [observabilityadminTelemetryRule](./observabilityadminTelemetryRule.csharp.md)
+- [observabilityadminTelemetryRuleForOrganization](./observabilityadminTelemetryRuleForOrganization.csharp.md)
 - [odbCloudAutonomousVmCluster](./odbCloudAutonomousVmCluster.csharp.md)
 - [odbCloudExadataInfrastructure](./odbCloudExadataInfrastructure.csharp.md)
 - [odbCloudVmCluster](./odbCloudVmCluster.csharp.md)
@@ -2013,6 +2015,7 @@ The following submodules are available:
 - [securityhubActionTarget](./securityhubActionTarget.csharp.md)
 - [securityhubAggregatorV2](./securityhubAggregatorV2.csharp.md)
 - [securityhubAutomationRule](./securityhubAutomationRule.csharp.md)
+- [securityhubAutomationRuleV2](./securityhubAutomationRuleV2.csharp.md)
 - [securityhubConfigurationPolicy](./securityhubConfigurationPolicy.csharp.md)
 - [securityhubConfigurationPolicyAssociation](./securityhubConfigurationPolicyAssociation.csharp.md)
 - [securityhubConnectorV2](./securityhubConnectorV2.csharp.md)
@@ -2320,8 +2323,10 @@ The following submodules are available:
 - [workspaceswebUserSettingsAssociation](./workspaceswebUserSettingsAssociation.csharp.md)
 - [xrayEncryptionConfig](./xrayEncryptionConfig.csharp.md)
 - [xrayGroup](./xrayGroup.csharp.md)
+- [xrayIndexingRule](./xrayIndexingRule.csharp.md)
 - [xrayResourcePolicy](./xrayResourcePolicy.csharp.md)
 - [xraySamplingRule](./xraySamplingRule.csharp.md)
+- [xrayTraceSegmentDestination](./xrayTraceSegmentDestination.csharp.md)
 
 
 

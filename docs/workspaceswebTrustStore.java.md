@@ -4,7 +4,7 @@
 
 ### WorkspaceswebTrustStore <a name="WorkspaceswebTrustStore" id="@cdktn/provider-aws.workspaceswebTrustStore.WorkspaceswebTrustStore"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/workspacesweb_trust_store aws_workspacesweb_trust_store}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/workspacesweb_trust_store aws_workspacesweb_trust_store}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.workspaceswebTrustStore.WorkspaceswebTrustStore.Initializer"></a>
 
@@ -38,7 +38,7 @@ WorkspaceswebTrustStore.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-aws.workspaceswebTrustStore.WorkspaceswebTrustStore.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.workspaceswebTrustStore.WorkspaceswebTrustStore.Initializer.parameter.certificate">certificate</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.workspaceswebTrustStore.WorkspaceswebTrustStoreCertificate">WorkspaceswebTrustStoreCertificate</a>></code> | certificate block. |
 | <code><a href="#@cdktn/provider-aws.workspaceswebTrustStore.WorkspaceswebTrustStore.Initializer.parameter.region">region</a></code> | <code>java.lang.String</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.workspaceswebTrustStore.WorkspaceswebTrustStore.Initializer.parameter.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/workspacesweb_trust_store#tags WorkspaceswebTrustStore#tags}. |
+| <code><a href="#@cdktn/provider-aws.workspaceswebTrustStore.WorkspaceswebTrustStore.Initializer.parameter.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/workspacesweb_trust_store#tags WorkspaceswebTrustStore#tags}. |
 
 ---
 
@@ -108,7 +108,7 @@ Must be unique amongst siblings in the same scope
 
 certificate block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/workspacesweb_trust_store#certificate WorkspaceswebTrustStore#certificate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/workspacesweb_trust_store#certificate WorkspaceswebTrustStore#certificate}
 
 ---
 
@@ -118,7 +118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/workspacesweb_trust_store#region WorkspaceswebTrustStore#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/workspacesweb_trust_store#region WorkspaceswebTrustStore#region}
 
 ---
 
@@ -126,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/workspacesweb_trust_store#tags WorkspaceswebTrustStore#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/workspacesweb_trust_store#tags WorkspaceswebTrustStore#tags}.
 
 ---
 
@@ -609,7 +609,7 @@ The construct id used in the generated config for the WorkspaceswebTrustStore to
 
 The id of the existing WorkspaceswebTrustStore that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/workspacesweb_trust_store#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/workspacesweb_trust_store#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -919,7 +919,7 @@ WorkspaceswebTrustStoreCertificate.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.workspaceswebTrustStore.WorkspaceswebTrustStoreCertificate.property.body">body</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/workspacesweb_trust_store#body WorkspaceswebTrustStore#body}. |
+| <code><a href="#@cdktn/provider-aws.workspaceswebTrustStore.WorkspaceswebTrustStoreCertificate.property.body">body</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/workspacesweb_trust_store#body WorkspaceswebTrustStore#body}. |
 
 ---
 
@@ -931,7 +931,7 @@ public java.lang.String getBody();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/workspacesweb_trust_store#body WorkspaceswebTrustStore#body}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/workspacesweb_trust_store#body WorkspaceswebTrustStore#body}.
 
 ---
 
@@ -969,7 +969,7 @@ WorkspaceswebTrustStoreConfig.builder()
 | <code><a href="#@cdktn/provider-aws.workspaceswebTrustStore.WorkspaceswebTrustStoreConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.workspaceswebTrustStore.WorkspaceswebTrustStoreConfig.property.certificate">certificate</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.workspaceswebTrustStore.WorkspaceswebTrustStoreCertificate">WorkspaceswebTrustStoreCertificate</a>></code> | certificate block. |
 | <code><a href="#@cdktn/provider-aws.workspaceswebTrustStore.WorkspaceswebTrustStoreConfig.property.region">region</a></code> | <code>java.lang.String</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.workspaceswebTrustStore.WorkspaceswebTrustStoreConfig.property.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/workspacesweb_trust_store#tags WorkspaceswebTrustStore#tags}. |
+| <code><a href="#@cdktn/provider-aws.workspaceswebTrustStore.WorkspaceswebTrustStoreConfig.property.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/workspacesweb_trust_store#tags WorkspaceswebTrustStore#tags}. |
 
 ---
 
@@ -1053,7 +1053,7 @@ public IResolvable|java.util.List<WorkspaceswebTrustStoreCertificate> getCertifi
 
 certificate block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/workspacesweb_trust_store#certificate WorkspaceswebTrustStore#certificate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/workspacesweb_trust_store#certificate WorkspaceswebTrustStore#certificate}
 
 ---
 
@@ -1067,7 +1067,7 @@ public java.lang.String getRegion();
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/workspacesweb_trust_store#region WorkspaceswebTrustStore#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/workspacesweb_trust_store#region WorkspaceswebTrustStore#region}
 
 ---
 
@@ -1079,7 +1079,7 @@ public java.util.Map<java.lang.String, java.lang.String> getTags();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/workspacesweb_trust_store#tags WorkspaceswebTrustStore#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/workspacesweb_trust_store#tags WorkspaceswebTrustStore#tags}.
 
 ---
 

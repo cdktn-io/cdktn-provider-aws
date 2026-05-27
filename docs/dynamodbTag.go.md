@@ -4,7 +4,7 @@
 
 ### DynamodbTag <a name="DynamodbTag" id="@cdktn/provider-aws.dynamodbTag.DynamodbTag"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/dynamodb_tag aws_dynamodb_tag}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/dynamodb_tag aws_dynamodb_tag}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dynamodbTag.DynamodbTag.Initializer"></a>
 
@@ -503,7 +503,7 @@ The construct id used in the generated config for the DynamodbTag to import.
 
 The id of the existing DynamodbTag that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/dynamodb_tag#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/dynamodb_tag#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -842,10 +842,10 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dynamodbtag"
 | <code><a href="#@cdktn/provider-aws.dynamodbTag.DynamodbTagConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dynamodbTag.DynamodbTagConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dynamodbTag.DynamodbTagConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dynamodbTag.DynamodbTagConfig.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/dynamodb_tag#key DynamodbTag#key}. |
-| <code><a href="#@cdktn/provider-aws.dynamodbTag.DynamodbTagConfig.property.resourceArn">ResourceArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/dynamodb_tag#resource_arn DynamodbTag#resource_arn}. |
-| <code><a href="#@cdktn/provider-aws.dynamodbTag.DynamodbTagConfig.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/dynamodb_tag#value DynamodbTag#value}. |
-| <code><a href="#@cdktn/provider-aws.dynamodbTag.DynamodbTagConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/dynamodb_tag#id DynamodbTag#id}. |
+| <code><a href="#@cdktn/provider-aws.dynamodbTag.DynamodbTagConfig.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/dynamodb_tag#key DynamodbTag#key}. |
+| <code><a href="#@cdktn/provider-aws.dynamodbTag.DynamodbTagConfig.property.resourceArn">ResourceArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/dynamodb_tag#resource_arn DynamodbTag#resource_arn}. |
+| <code><a href="#@cdktn/provider-aws.dynamodbTag.DynamodbTagConfig.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/dynamodb_tag#value DynamodbTag#value}. |
+| <code><a href="#@cdktn/provider-aws.dynamodbTag.DynamodbTagConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/dynamodb_tag#id DynamodbTag#id}. |
 | <code><a href="#@cdktn/provider-aws.dynamodbTag.DynamodbTagConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -928,7 +928,7 @@ Key *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/dynamodb_tag#key DynamodbTag#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/dynamodb_tag#key DynamodbTag#key}.
 
 ---
 
@@ -940,7 +940,7 @@ ResourceArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/dynamodb_tag#resource_arn DynamodbTag#resource_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/dynamodb_tag#resource_arn DynamodbTag#resource_arn}.
 
 ---
 
@@ -952,7 +952,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/dynamodb_tag#value DynamodbTag#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/dynamodb_tag#value DynamodbTag#value}.
 
 ---
 
@@ -964,7 +964,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/dynamodb_tag#id DynamodbTag#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/dynamodb_tag#id DynamodbTag#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -981,7 +981,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/dynamodb_tag#region DynamodbTag#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/dynamodb_tag#region DynamodbTag#region}
 
 ---
 

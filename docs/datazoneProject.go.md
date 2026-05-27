@@ -4,7 +4,7 @@
 
 ### DatazoneProject <a name="DatazoneProject" id="@cdktn/provider-aws.datazoneProject.DatazoneProject"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/datazone_project aws_datazone_project}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/datazone_project aws_datazone_project}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.datazoneProject.DatazoneProject.Initializer"></a>
 
@@ -537,7 +537,7 @@ The construct id used in the generated config for the DatazoneProject to import.
 
 The id of the existing DatazoneProject that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/datazone_project#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/datazone_project#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -988,12 +988,12 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/datazoneproject"
 | <code><a href="#@cdktn/provider-aws.datazoneProject.DatazoneProjectConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.datazoneProject.DatazoneProjectConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.datazoneProject.DatazoneProjectConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.datazoneProject.DatazoneProjectConfig.property.domainIdentifier">DomainIdentifier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/datazone_project#domain_identifier DatazoneProject#domain_identifier}. |
-| <code><a href="#@cdktn/provider-aws.datazoneProject.DatazoneProjectConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/datazone_project#name DatazoneProject#name}. |
-| <code><a href="#@cdktn/provider-aws.datazoneProject.DatazoneProjectConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/datazone_project#description DatazoneProject#description}. |
-| <code><a href="#@cdktn/provider-aws.datazoneProject.DatazoneProjectConfig.property.glossaryTerms">GlossaryTerms</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/datazone_project#glossary_terms DatazoneProject#glossary_terms}. |
+| <code><a href="#@cdktn/provider-aws.datazoneProject.DatazoneProjectConfig.property.domainIdentifier">DomainIdentifier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/datazone_project#domain_identifier DatazoneProject#domain_identifier}. |
+| <code><a href="#@cdktn/provider-aws.datazoneProject.DatazoneProjectConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/datazone_project#name DatazoneProject#name}. |
+| <code><a href="#@cdktn/provider-aws.datazoneProject.DatazoneProjectConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/datazone_project#description DatazoneProject#description}. |
+| <code><a href="#@cdktn/provider-aws.datazoneProject.DatazoneProjectConfig.property.glossaryTerms">GlossaryTerms</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/datazone_project#glossary_terms DatazoneProject#glossary_terms}. |
 | <code><a href="#@cdktn/provider-aws.datazoneProject.DatazoneProjectConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.datazoneProject.DatazoneProjectConfig.property.skipDeletionCheck">SkipDeletionCheck</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/datazone_project#skip_deletion_check DatazoneProject#skip_deletion_check}. |
+| <code><a href="#@cdktn/provider-aws.datazoneProject.DatazoneProjectConfig.property.skipDeletionCheck">SkipDeletionCheck</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/datazone_project#skip_deletion_check DatazoneProject#skip_deletion_check}. |
 | <code><a href="#@cdktn/provider-aws.datazoneProject.DatazoneProjectConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.datazoneProject.DatazoneProjectTimeouts">DatazoneProjectTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1076,7 +1076,7 @@ DomainIdentifier *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/datazone_project#domain_identifier DatazoneProject#domain_identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/datazone_project#domain_identifier DatazoneProject#domain_identifier}.
 
 ---
 
@@ -1088,7 +1088,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/datazone_project#name DatazoneProject#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/datazone_project#name DatazoneProject#name}.
 
 ---
 
@@ -1100,7 +1100,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/datazone_project#description DatazoneProject#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/datazone_project#description DatazoneProject#description}.
 
 ---
 
@@ -1112,7 +1112,7 @@ GlossaryTerms *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/datazone_project#glossary_terms DatazoneProject#glossary_terms}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/datazone_project#glossary_terms DatazoneProject#glossary_terms}.
 
 ---
 
@@ -1126,7 +1126,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/datazone_project#region DatazoneProject#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/datazone_project#region DatazoneProject#region}
 
 ---
 
@@ -1138,7 +1138,7 @@ SkipDeletionCheck interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/datazone_project#skip_deletion_check DatazoneProject#skip_deletion_check}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/datazone_project#skip_deletion_check DatazoneProject#skip_deletion_check}.
 
 ---
 
@@ -1152,7 +1152,7 @@ Timeouts DatazoneProjectTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/datazone_project#timeouts DatazoneProject#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/datazone_project#timeouts DatazoneProject#timeouts}
 
 ---
 
@@ -1201,7 +1201,7 @@ Create *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/datazone_project#create DatazoneProject#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/datazone_project#create DatazoneProject#create}
 
 ---
 
@@ -1215,7 +1215,7 @@ Delete *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/datazone_project#delete DatazoneProject#delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/datazone_project#delete DatazoneProject#delete}
 
 ---
 

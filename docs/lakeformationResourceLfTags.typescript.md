@@ -4,7 +4,7 @@
 
 ### LakeformationResourceLfTags <a name="LakeformationResourceLfTags" id="@cdktn/provider-aws.lakeformationResourceLfTags.LakeformationResourceLfTags"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/lakeformation_resource_lf_tags aws_lakeformation_resource_lf_tags}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/lakeformation_resource_lf_tags aws_lakeformation_resource_lf_tags}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lakeformationResourceLfTags.LakeformationResourceLfTags.Initializer"></a>
 
@@ -603,7 +603,7 @@ The construct id used in the generated config for the LakeformationResourceLfTag
 
 The id of the existing LakeformationResourceLfTags that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/lakeformation_resource_lf_tags#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/lakeformation_resource_lf_tags#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -996,9 +996,9 @@ const lakeformationResourceLfTagsConfig: lakeformationResourceLfTags.Lakeformati
 | <code><a href="#@cdktn/provider-aws.lakeformationResourceLfTags.LakeformationResourceLfTagsConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.lakeformationResourceLfTags.LakeformationResourceLfTagsConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.lakeformationResourceLfTags.LakeformationResourceLfTagsConfig.property.lfTag">lfTag</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.lakeformationResourceLfTags.LakeformationResourceLfTagsLfTag">LakeformationResourceLfTagsLfTag</a>[]</code> | lf_tag block. |
-| <code><a href="#@cdktn/provider-aws.lakeformationResourceLfTags.LakeformationResourceLfTagsConfig.property.catalogId">catalogId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/lakeformation_resource_lf_tags#catalog_id LakeformationResourceLfTags#catalog_id}. |
+| <code><a href="#@cdktn/provider-aws.lakeformationResourceLfTags.LakeformationResourceLfTagsConfig.property.catalogId">catalogId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/lakeformation_resource_lf_tags#catalog_id LakeformationResourceLfTags#catalog_id}. |
 | <code><a href="#@cdktn/provider-aws.lakeformationResourceLfTags.LakeformationResourceLfTagsConfig.property.database">database</a></code> | <code><a href="#@cdktn/provider-aws.lakeformationResourceLfTags.LakeformationResourceLfTagsDatabase">LakeformationResourceLfTagsDatabase</a></code> | database block. |
-| <code><a href="#@cdktn/provider-aws.lakeformationResourceLfTags.LakeformationResourceLfTagsConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/lakeformation_resource_lf_tags#id LakeformationResourceLfTags#id}. |
+| <code><a href="#@cdktn/provider-aws.lakeformationResourceLfTags.LakeformationResourceLfTagsConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/lakeformation_resource_lf_tags#id LakeformationResourceLfTags#id}. |
 | <code><a href="#@cdktn/provider-aws.lakeformationResourceLfTags.LakeformationResourceLfTagsConfig.property.region">region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktn/provider-aws.lakeformationResourceLfTags.LakeformationResourceLfTagsConfig.property.table">table</a></code> | <code><a href="#@cdktn/provider-aws.lakeformationResourceLfTags.LakeformationResourceLfTagsTable">LakeformationResourceLfTagsTable</a></code> | table block. |
 | <code><a href="#@cdktn/provider-aws.lakeformationResourceLfTags.LakeformationResourceLfTagsConfig.property.tableWithColumns">tableWithColumns</a></code> | <code><a href="#@cdktn/provider-aws.lakeformationResourceLfTags.LakeformationResourceLfTagsTableWithColumns">LakeformationResourceLfTagsTableWithColumns</a></code> | table_with_columns block. |
@@ -1086,7 +1086,7 @@ public readonly lfTag: IResolvable | LakeformationResourceLfTagsLfTag[];
 
 lf_tag block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/lakeformation_resource_lf_tags#lf_tag LakeformationResourceLfTags#lf_tag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/lakeformation_resource_lf_tags#lf_tag LakeformationResourceLfTags#lf_tag}
 
 ---
 
@@ -1098,7 +1098,7 @@ public readonly catalogId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/lakeformation_resource_lf_tags#catalog_id LakeformationResourceLfTags#catalog_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/lakeformation_resource_lf_tags#catalog_id LakeformationResourceLfTags#catalog_id}.
 
 ---
 
@@ -1112,7 +1112,7 @@ public readonly database: LakeformationResourceLfTagsDatabase;
 
 database block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/lakeformation_resource_lf_tags#database LakeformationResourceLfTags#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/lakeformation_resource_lf_tags#database LakeformationResourceLfTags#database}
 
 ---
 
@@ -1124,7 +1124,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/lakeformation_resource_lf_tags#id LakeformationResourceLfTags#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/lakeformation_resource_lf_tags#id LakeformationResourceLfTags#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1141,7 +1141,7 @@ public readonly region: string;
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/lakeformation_resource_lf_tags#region LakeformationResourceLfTags#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/lakeformation_resource_lf_tags#region LakeformationResourceLfTags#region}
 
 ---
 
@@ -1155,7 +1155,7 @@ public readonly table: LakeformationResourceLfTagsTable;
 
 table block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/lakeformation_resource_lf_tags#table LakeformationResourceLfTags#table}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/lakeformation_resource_lf_tags#table LakeformationResourceLfTags#table}
 
 ---
 
@@ -1169,7 +1169,7 @@ public readonly tableWithColumns: LakeformationResourceLfTagsTableWithColumns;
 
 table_with_columns block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/lakeformation_resource_lf_tags#table_with_columns LakeformationResourceLfTags#table_with_columns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/lakeformation_resource_lf_tags#table_with_columns LakeformationResourceLfTags#table_with_columns}
 
 ---
 
@@ -1183,7 +1183,7 @@ public readonly timeouts: LakeformationResourceLfTagsTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/lakeformation_resource_lf_tags#timeouts LakeformationResourceLfTags#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/lakeformation_resource_lf_tags#timeouts LakeformationResourceLfTags#timeouts}
 
 ---
 
@@ -1201,8 +1201,8 @@ const lakeformationResourceLfTagsDatabase: lakeformationResourceLfTags.Lakeforma
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lakeformationResourceLfTags.LakeformationResourceLfTagsDatabase.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/lakeformation_resource_lf_tags#name LakeformationResourceLfTags#name}. |
-| <code><a href="#@cdktn/provider-aws.lakeformationResourceLfTags.LakeformationResourceLfTagsDatabase.property.catalogId">catalogId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/lakeformation_resource_lf_tags#catalog_id LakeformationResourceLfTags#catalog_id}. |
+| <code><a href="#@cdktn/provider-aws.lakeformationResourceLfTags.LakeformationResourceLfTagsDatabase.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/lakeformation_resource_lf_tags#name LakeformationResourceLfTags#name}. |
+| <code><a href="#@cdktn/provider-aws.lakeformationResourceLfTags.LakeformationResourceLfTagsDatabase.property.catalogId">catalogId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/lakeformation_resource_lf_tags#catalog_id LakeformationResourceLfTags#catalog_id}. |
 
 ---
 
@@ -1214,7 +1214,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/lakeformation_resource_lf_tags#name LakeformationResourceLfTags#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/lakeformation_resource_lf_tags#name LakeformationResourceLfTags#name}.
 
 ---
 
@@ -1226,7 +1226,7 @@ public readonly catalogId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/lakeformation_resource_lf_tags#catalog_id LakeformationResourceLfTags#catalog_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/lakeformation_resource_lf_tags#catalog_id LakeformationResourceLfTags#catalog_id}.
 
 ---
 
@@ -1244,9 +1244,9 @@ const lakeformationResourceLfTagsLfTag: lakeformationResourceLfTags.Lakeformatio
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lakeformationResourceLfTags.LakeformationResourceLfTagsLfTag.property.key">key</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/lakeformation_resource_lf_tags#key LakeformationResourceLfTags#key}. |
-| <code><a href="#@cdktn/provider-aws.lakeformationResourceLfTags.LakeformationResourceLfTagsLfTag.property.value">value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/lakeformation_resource_lf_tags#value LakeformationResourceLfTags#value}. |
-| <code><a href="#@cdktn/provider-aws.lakeformationResourceLfTags.LakeformationResourceLfTagsLfTag.property.catalogId">catalogId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/lakeformation_resource_lf_tags#catalog_id LakeformationResourceLfTags#catalog_id}. |
+| <code><a href="#@cdktn/provider-aws.lakeformationResourceLfTags.LakeformationResourceLfTagsLfTag.property.key">key</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/lakeformation_resource_lf_tags#key LakeformationResourceLfTags#key}. |
+| <code><a href="#@cdktn/provider-aws.lakeformationResourceLfTags.LakeformationResourceLfTagsLfTag.property.value">value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/lakeformation_resource_lf_tags#value LakeformationResourceLfTags#value}. |
+| <code><a href="#@cdktn/provider-aws.lakeformationResourceLfTags.LakeformationResourceLfTagsLfTag.property.catalogId">catalogId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/lakeformation_resource_lf_tags#catalog_id LakeformationResourceLfTags#catalog_id}. |
 
 ---
 
@@ -1258,7 +1258,7 @@ public readonly key: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/lakeformation_resource_lf_tags#key LakeformationResourceLfTags#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/lakeformation_resource_lf_tags#key LakeformationResourceLfTags#key}.
 
 ---
 
@@ -1270,7 +1270,7 @@ public readonly value: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/lakeformation_resource_lf_tags#value LakeformationResourceLfTags#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/lakeformation_resource_lf_tags#value LakeformationResourceLfTags#value}.
 
 ---
 
@@ -1282,7 +1282,7 @@ public readonly catalogId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/lakeformation_resource_lf_tags#catalog_id LakeformationResourceLfTags#catalog_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/lakeformation_resource_lf_tags#catalog_id LakeformationResourceLfTags#catalog_id}.
 
 ---
 
@@ -1300,10 +1300,10 @@ const lakeformationResourceLfTagsTable: lakeformationResourceLfTags.Lakeformatio
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lakeformationResourceLfTags.LakeformationResourceLfTagsTable.property.databaseName">databaseName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/lakeformation_resource_lf_tags#database_name LakeformationResourceLfTags#database_name}. |
-| <code><a href="#@cdktn/provider-aws.lakeformationResourceLfTags.LakeformationResourceLfTagsTable.property.catalogId">catalogId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/lakeformation_resource_lf_tags#catalog_id LakeformationResourceLfTags#catalog_id}. |
-| <code><a href="#@cdktn/provider-aws.lakeformationResourceLfTags.LakeformationResourceLfTagsTable.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/lakeformation_resource_lf_tags#name LakeformationResourceLfTags#name}. |
-| <code><a href="#@cdktn/provider-aws.lakeformationResourceLfTags.LakeformationResourceLfTagsTable.property.wildcard">wildcard</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/lakeformation_resource_lf_tags#wildcard LakeformationResourceLfTags#wildcard}. |
+| <code><a href="#@cdktn/provider-aws.lakeformationResourceLfTags.LakeformationResourceLfTagsTable.property.databaseName">databaseName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/lakeformation_resource_lf_tags#database_name LakeformationResourceLfTags#database_name}. |
+| <code><a href="#@cdktn/provider-aws.lakeformationResourceLfTags.LakeformationResourceLfTagsTable.property.catalogId">catalogId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/lakeformation_resource_lf_tags#catalog_id LakeformationResourceLfTags#catalog_id}. |
+| <code><a href="#@cdktn/provider-aws.lakeformationResourceLfTags.LakeformationResourceLfTagsTable.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/lakeformation_resource_lf_tags#name LakeformationResourceLfTags#name}. |
+| <code><a href="#@cdktn/provider-aws.lakeformationResourceLfTags.LakeformationResourceLfTagsTable.property.wildcard">wildcard</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/lakeformation_resource_lf_tags#wildcard LakeformationResourceLfTags#wildcard}. |
 
 ---
 
@@ -1315,7 +1315,7 @@ public readonly databaseName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/lakeformation_resource_lf_tags#database_name LakeformationResourceLfTags#database_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/lakeformation_resource_lf_tags#database_name LakeformationResourceLfTags#database_name}.
 
 ---
 
@@ -1327,7 +1327,7 @@ public readonly catalogId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/lakeformation_resource_lf_tags#catalog_id LakeformationResourceLfTags#catalog_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/lakeformation_resource_lf_tags#catalog_id LakeformationResourceLfTags#catalog_id}.
 
 ---
 
@@ -1339,7 +1339,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/lakeformation_resource_lf_tags#name LakeformationResourceLfTags#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/lakeformation_resource_lf_tags#name LakeformationResourceLfTags#name}.
 
 ---
 
@@ -1351,7 +1351,7 @@ public readonly wildcard: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/lakeformation_resource_lf_tags#wildcard LakeformationResourceLfTags#wildcard}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/lakeformation_resource_lf_tags#wildcard LakeformationResourceLfTags#wildcard}.
 
 ---
 
@@ -1369,12 +1369,12 @@ const lakeformationResourceLfTagsTableWithColumns: lakeformationResourceLfTags.L
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lakeformationResourceLfTags.LakeformationResourceLfTagsTableWithColumns.property.databaseName">databaseName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/lakeformation_resource_lf_tags#database_name LakeformationResourceLfTags#database_name}. |
-| <code><a href="#@cdktn/provider-aws.lakeformationResourceLfTags.LakeformationResourceLfTagsTableWithColumns.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/lakeformation_resource_lf_tags#name LakeformationResourceLfTags#name}. |
-| <code><a href="#@cdktn/provider-aws.lakeformationResourceLfTags.LakeformationResourceLfTagsTableWithColumns.property.catalogId">catalogId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/lakeformation_resource_lf_tags#catalog_id LakeformationResourceLfTags#catalog_id}. |
-| <code><a href="#@cdktn/provider-aws.lakeformationResourceLfTags.LakeformationResourceLfTagsTableWithColumns.property.columnNames">columnNames</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/lakeformation_resource_lf_tags#column_names LakeformationResourceLfTags#column_names}. |
-| <code><a href="#@cdktn/provider-aws.lakeformationResourceLfTags.LakeformationResourceLfTagsTableWithColumns.property.excludedColumnNames">excludedColumnNames</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/lakeformation_resource_lf_tags#excluded_column_names LakeformationResourceLfTags#excluded_column_names}. |
-| <code><a href="#@cdktn/provider-aws.lakeformationResourceLfTags.LakeformationResourceLfTagsTableWithColumns.property.wildcard">wildcard</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/lakeformation_resource_lf_tags#wildcard LakeformationResourceLfTags#wildcard}. |
+| <code><a href="#@cdktn/provider-aws.lakeformationResourceLfTags.LakeformationResourceLfTagsTableWithColumns.property.databaseName">databaseName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/lakeformation_resource_lf_tags#database_name LakeformationResourceLfTags#database_name}. |
+| <code><a href="#@cdktn/provider-aws.lakeformationResourceLfTags.LakeformationResourceLfTagsTableWithColumns.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/lakeformation_resource_lf_tags#name LakeformationResourceLfTags#name}. |
+| <code><a href="#@cdktn/provider-aws.lakeformationResourceLfTags.LakeformationResourceLfTagsTableWithColumns.property.catalogId">catalogId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/lakeformation_resource_lf_tags#catalog_id LakeformationResourceLfTags#catalog_id}. |
+| <code><a href="#@cdktn/provider-aws.lakeformationResourceLfTags.LakeformationResourceLfTagsTableWithColumns.property.columnNames">columnNames</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/lakeformation_resource_lf_tags#column_names LakeformationResourceLfTags#column_names}. |
+| <code><a href="#@cdktn/provider-aws.lakeformationResourceLfTags.LakeformationResourceLfTagsTableWithColumns.property.excludedColumnNames">excludedColumnNames</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/lakeformation_resource_lf_tags#excluded_column_names LakeformationResourceLfTags#excluded_column_names}. |
+| <code><a href="#@cdktn/provider-aws.lakeformationResourceLfTags.LakeformationResourceLfTagsTableWithColumns.property.wildcard">wildcard</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/lakeformation_resource_lf_tags#wildcard LakeformationResourceLfTags#wildcard}. |
 
 ---
 
@@ -1386,7 +1386,7 @@ public readonly databaseName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/lakeformation_resource_lf_tags#database_name LakeformationResourceLfTags#database_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/lakeformation_resource_lf_tags#database_name LakeformationResourceLfTags#database_name}.
 
 ---
 
@@ -1398,7 +1398,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/lakeformation_resource_lf_tags#name LakeformationResourceLfTags#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/lakeformation_resource_lf_tags#name LakeformationResourceLfTags#name}.
 
 ---
 
@@ -1410,7 +1410,7 @@ public readonly catalogId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/lakeformation_resource_lf_tags#catalog_id LakeformationResourceLfTags#catalog_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/lakeformation_resource_lf_tags#catalog_id LakeformationResourceLfTags#catalog_id}.
 
 ---
 
@@ -1422,7 +1422,7 @@ public readonly columnNames: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/lakeformation_resource_lf_tags#column_names LakeformationResourceLfTags#column_names}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/lakeformation_resource_lf_tags#column_names LakeformationResourceLfTags#column_names}.
 
 ---
 
@@ -1434,7 +1434,7 @@ public readonly excludedColumnNames: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/lakeformation_resource_lf_tags#excluded_column_names LakeformationResourceLfTags#excluded_column_names}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/lakeformation_resource_lf_tags#excluded_column_names LakeformationResourceLfTags#excluded_column_names}.
 
 ---
 
@@ -1446,7 +1446,7 @@ public readonly wildcard: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/lakeformation_resource_lf_tags#wildcard LakeformationResourceLfTags#wildcard}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/lakeformation_resource_lf_tags#wildcard LakeformationResourceLfTags#wildcard}.
 
 ---
 
@@ -1464,8 +1464,8 @@ const lakeformationResourceLfTagsTimeouts: lakeformationResourceLfTags.Lakeforma
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lakeformationResourceLfTags.LakeformationResourceLfTagsTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/lakeformation_resource_lf_tags#create LakeformationResourceLfTags#create}. |
-| <code><a href="#@cdktn/provider-aws.lakeformationResourceLfTags.LakeformationResourceLfTagsTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/lakeformation_resource_lf_tags#delete LakeformationResourceLfTags#delete}. |
+| <code><a href="#@cdktn/provider-aws.lakeformationResourceLfTags.LakeformationResourceLfTagsTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/lakeformation_resource_lf_tags#create LakeformationResourceLfTags#create}. |
+| <code><a href="#@cdktn/provider-aws.lakeformationResourceLfTags.LakeformationResourceLfTagsTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/lakeformation_resource_lf_tags#delete LakeformationResourceLfTags#delete}. |
 
 ---
 
@@ -1477,7 +1477,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/lakeformation_resource_lf_tags#create LakeformationResourceLfTags#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/lakeformation_resource_lf_tags#create LakeformationResourceLfTags#create}.
 
 ---
 
@@ -1489,7 +1489,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/resources/lakeformation_resource_lf_tags#delete LakeformationResourceLfTags#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/lakeformation_resource_lf_tags#delete LakeformationResourceLfTags#delete}.
 
 ---
 

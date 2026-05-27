@@ -4,7 +4,7 @@
 
 ### DataAwsCustomerGateway <a name="DataAwsCustomerGateway" id="@cdktn/provider-aws.dataAwsCustomerGateway.DataAwsCustomerGateway"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/data-sources/customer_gateway aws_customer_gateway}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/data-sources/customer_gateway aws_customer_gateway}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsCustomerGateway.DataAwsCustomerGateway.Initializer"></a>
 
@@ -39,9 +39,9 @@ DataAwsCustomerGateway.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-aws.dataAwsCustomerGateway.DataAwsCustomerGateway.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsCustomerGateway.DataAwsCustomerGateway.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsCustomerGateway.DataAwsCustomerGateway.Initializer.parameter.filter">filter</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.dataAwsCustomerGateway.DataAwsCustomerGatewayFilter">DataAwsCustomerGatewayFilter</a>></code> | filter block. |
-| <code><a href="#@cdktn/provider-aws.dataAwsCustomerGateway.DataAwsCustomerGateway.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/data-sources/customer_gateway#id DataAwsCustomerGateway#id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsCustomerGateway.DataAwsCustomerGateway.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/data-sources/customer_gateway#id DataAwsCustomerGateway#id}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsCustomerGateway.DataAwsCustomerGateway.Initializer.parameter.region">region</a></code> | <code>java.lang.String</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.dataAwsCustomerGateway.DataAwsCustomerGateway.Initializer.parameter.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/data-sources/customer_gateway#tags DataAwsCustomerGateway#tags}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsCustomerGateway.DataAwsCustomerGateway.Initializer.parameter.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/data-sources/customer_gateway#tags DataAwsCustomerGateway#tags}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsCustomerGateway.DataAwsCustomerGateway.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-aws.dataAwsCustomerGateway.DataAwsCustomerGatewayTimeouts">DataAwsCustomerGatewayTimeouts</a></code> | timeouts block. |
 
 ---
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/data-sources/customer_gateway#filter DataAwsCustomerGateway#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/data-sources/customer_gateway#filter DataAwsCustomerGateway#filter}
 
 ---
 
@@ -120,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/data-sources/customer_gateway#id DataAwsCustomerGateway#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/data-sources/customer_gateway#id DataAwsCustomerGateway#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -133,7 +133,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/data-sources/customer_gateway#region DataAwsCustomerGateway#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/data-sources/customer_gateway#region DataAwsCustomerGateway#region}
 
 ---
 
@@ -141,7 +141,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/data-sources/customer_gateway#tags DataAwsCustomerGateway#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/data-sources/customer_gateway#tags DataAwsCustomerGateway#tags}.
 
 ---
 
@@ -151,7 +151,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/data-sources/customer_gateway#timeouts DataAwsCustomerGateway#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/data-sources/customer_gateway#timeouts DataAwsCustomerGateway#timeouts}
 
 ---
 
@@ -557,7 +557,7 @@ The construct id used in the generated config for the DataAwsCustomerGateway to 
 
 The id of the existing DataAwsCustomerGateway that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/data-sources/customer_gateway#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/data-sources/customer_gateway#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -952,9 +952,9 @@ DataAwsCustomerGatewayConfig.builder()
 | <code><a href="#@cdktn/provider-aws.dataAwsCustomerGateway.DataAwsCustomerGatewayConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsCustomerGateway.DataAwsCustomerGatewayConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsCustomerGateway.DataAwsCustomerGatewayConfig.property.filter">filter</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.dataAwsCustomerGateway.DataAwsCustomerGatewayFilter">DataAwsCustomerGatewayFilter</a>></code> | filter block. |
-| <code><a href="#@cdktn/provider-aws.dataAwsCustomerGateway.DataAwsCustomerGatewayConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/data-sources/customer_gateway#id DataAwsCustomerGateway#id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsCustomerGateway.DataAwsCustomerGatewayConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/data-sources/customer_gateway#id DataAwsCustomerGateway#id}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsCustomerGateway.DataAwsCustomerGatewayConfig.property.region">region</a></code> | <code>java.lang.String</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.dataAwsCustomerGateway.DataAwsCustomerGatewayConfig.property.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/data-sources/customer_gateway#tags DataAwsCustomerGateway#tags}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsCustomerGateway.DataAwsCustomerGatewayConfig.property.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/data-sources/customer_gateway#tags DataAwsCustomerGateway#tags}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsCustomerGateway.DataAwsCustomerGatewayConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-aws.dataAwsCustomerGateway.DataAwsCustomerGatewayTimeouts">DataAwsCustomerGatewayTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1039,7 +1039,7 @@ public IResolvable|java.util.List<DataAwsCustomerGatewayFilter> getFilter();
 
 filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/data-sources/customer_gateway#filter DataAwsCustomerGateway#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/data-sources/customer_gateway#filter DataAwsCustomerGateway#filter}
 
 ---
 
@@ -1051,7 +1051,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/data-sources/customer_gateway#id DataAwsCustomerGateway#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/data-sources/customer_gateway#id DataAwsCustomerGateway#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1068,7 +1068,7 @@ public java.lang.String getRegion();
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/data-sources/customer_gateway#region DataAwsCustomerGateway#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/data-sources/customer_gateway#region DataAwsCustomerGateway#region}
 
 ---
 
@@ -1080,7 +1080,7 @@ public java.util.Map<java.lang.String, java.lang.String> getTags();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/data-sources/customer_gateway#tags DataAwsCustomerGateway#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/data-sources/customer_gateway#tags DataAwsCustomerGateway#tags}.
 
 ---
 
@@ -1094,7 +1094,7 @@ public DataAwsCustomerGatewayTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/data-sources/customer_gateway#timeouts DataAwsCustomerGateway#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/data-sources/customer_gateway#timeouts DataAwsCustomerGateway#timeouts}
 
 ---
 
@@ -1115,8 +1115,8 @@ DataAwsCustomerGatewayFilter.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.dataAwsCustomerGateway.DataAwsCustomerGatewayFilter.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/data-sources/customer_gateway#name DataAwsCustomerGateway#name}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsCustomerGateway.DataAwsCustomerGatewayFilter.property.values">values</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/data-sources/customer_gateway#values DataAwsCustomerGateway#values}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsCustomerGateway.DataAwsCustomerGatewayFilter.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/data-sources/customer_gateway#name DataAwsCustomerGateway#name}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsCustomerGateway.DataAwsCustomerGatewayFilter.property.values">values</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/data-sources/customer_gateway#values DataAwsCustomerGateway#values}. |
 
 ---
 
@@ -1128,7 +1128,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/data-sources/customer_gateway#name DataAwsCustomerGateway#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/data-sources/customer_gateway#name DataAwsCustomerGateway#name}.
 
 ---
 
@@ -1140,7 +1140,7 @@ public java.util.List<java.lang.String> getValues();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/data-sources/customer_gateway#values DataAwsCustomerGateway#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/data-sources/customer_gateway#values DataAwsCustomerGateway#values}.
 
 ---
 
@@ -1160,7 +1160,7 @@ DataAwsCustomerGatewayTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.dataAwsCustomerGateway.DataAwsCustomerGatewayTimeouts.property.read">read</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/data-sources/customer_gateway#read DataAwsCustomerGateway#read}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsCustomerGateway.DataAwsCustomerGatewayTimeouts.property.read">read</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/data-sources/customer_gateway#read DataAwsCustomerGateway#read}. |
 
 ---
 
@@ -1172,7 +1172,7 @@ public java.lang.String getRead();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.45.0/docs/data-sources/customer_gateway#read DataAwsCustomerGateway#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/data-sources/customer_gateway#read DataAwsCustomerGateway#read}.
 
 ---
 
