@@ -4,7 +4,7 @@
 
 ### EvidentlyLaunch <a name="EvidentlyLaunch" id="@cdktn/provider-aws.evidentlyLaunch.EvidentlyLaunch"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/evidently_launch aws_evidently_launch}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/evidently_launch aws_evidently_launch}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.evidentlyLaunch.EvidentlyLaunch.Initializer"></a>
 
@@ -604,7 +604,7 @@ The construct id used in the generated config for the EvidentlyLaunch to import.
 
 The id of the existing EvidentlyLaunch that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/evidently_launch#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/evidently_launch#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1162,16 +1162,16 @@ const evidentlyLaunchConfig: evidentlyLaunch.EvidentlyLaunchConfig = { ... }
 | <code><a href="#@cdktn/provider-aws.evidentlyLaunch.EvidentlyLaunchConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.evidentlyLaunch.EvidentlyLaunchConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.evidentlyLaunch.EvidentlyLaunchConfig.property.groups">groups</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.evidentlyLaunch.EvidentlyLaunchGroups">EvidentlyLaunchGroups</a>[]</code> | groups block. |
-| <code><a href="#@cdktn/provider-aws.evidentlyLaunch.EvidentlyLaunchConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/evidently_launch#name EvidentlyLaunch#name}. |
-| <code><a href="#@cdktn/provider-aws.evidentlyLaunch.EvidentlyLaunchConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/evidently_launch#project EvidentlyLaunch#project}. |
-| <code><a href="#@cdktn/provider-aws.evidentlyLaunch.EvidentlyLaunchConfig.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/evidently_launch#description EvidentlyLaunch#description}. |
-| <code><a href="#@cdktn/provider-aws.evidentlyLaunch.EvidentlyLaunchConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/evidently_launch#id EvidentlyLaunch#id}. |
+| <code><a href="#@cdktn/provider-aws.evidentlyLaunch.EvidentlyLaunchConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/evidently_launch#name EvidentlyLaunch#name}. |
+| <code><a href="#@cdktn/provider-aws.evidentlyLaunch.EvidentlyLaunchConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/evidently_launch#project EvidentlyLaunch#project}. |
+| <code><a href="#@cdktn/provider-aws.evidentlyLaunch.EvidentlyLaunchConfig.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/evidently_launch#description EvidentlyLaunch#description}. |
+| <code><a href="#@cdktn/provider-aws.evidentlyLaunch.EvidentlyLaunchConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/evidently_launch#id EvidentlyLaunch#id}. |
 | <code><a href="#@cdktn/provider-aws.evidentlyLaunch.EvidentlyLaunchConfig.property.metricMonitors">metricMonitors</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.evidentlyLaunch.EvidentlyLaunchMetricMonitors">EvidentlyLaunchMetricMonitors</a>[]</code> | metric_monitors block. |
-| <code><a href="#@cdktn/provider-aws.evidentlyLaunch.EvidentlyLaunchConfig.property.randomizationSalt">randomizationSalt</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/evidently_launch#randomization_salt EvidentlyLaunch#randomization_salt}. |
+| <code><a href="#@cdktn/provider-aws.evidentlyLaunch.EvidentlyLaunchConfig.property.randomizationSalt">randomizationSalt</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/evidently_launch#randomization_salt EvidentlyLaunch#randomization_salt}. |
 | <code><a href="#@cdktn/provider-aws.evidentlyLaunch.EvidentlyLaunchConfig.property.region">region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktn/provider-aws.evidentlyLaunch.EvidentlyLaunchConfig.property.scheduledSplitsConfig">scheduledSplitsConfig</a></code> | <code><a href="#@cdktn/provider-aws.evidentlyLaunch.EvidentlyLaunchScheduledSplitsConfig">EvidentlyLaunchScheduledSplitsConfig</a></code> | scheduled_splits_config block. |
-| <code><a href="#@cdktn/provider-aws.evidentlyLaunch.EvidentlyLaunchConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/evidently_launch#tags EvidentlyLaunch#tags}. |
-| <code><a href="#@cdktn/provider-aws.evidentlyLaunch.EvidentlyLaunchConfig.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/evidently_launch#tags_all EvidentlyLaunch#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.evidentlyLaunch.EvidentlyLaunchConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/evidently_launch#tags EvidentlyLaunch#tags}. |
+| <code><a href="#@cdktn/provider-aws.evidentlyLaunch.EvidentlyLaunchConfig.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/evidently_launch#tags_all EvidentlyLaunch#tags_all}. |
 | <code><a href="#@cdktn/provider-aws.evidentlyLaunch.EvidentlyLaunchConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-aws.evidentlyLaunch.EvidentlyLaunchTimeouts">EvidentlyLaunchTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1256,7 +1256,7 @@ public readonly groups: IResolvable | EvidentlyLaunchGroups[];
 
 groups block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/evidently_launch#groups EvidentlyLaunch#groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/evidently_launch#groups EvidentlyLaunch#groups}
 
 ---
 
@@ -1268,7 +1268,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/evidently_launch#name EvidentlyLaunch#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/evidently_launch#name EvidentlyLaunch#name}.
 
 ---
 
@@ -1280,7 +1280,7 @@ public readonly project: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/evidently_launch#project EvidentlyLaunch#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/evidently_launch#project EvidentlyLaunch#project}.
 
 ---
 
@@ -1292,7 +1292,7 @@ public readonly description: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/evidently_launch#description EvidentlyLaunch#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/evidently_launch#description EvidentlyLaunch#description}.
 
 ---
 
@@ -1304,7 +1304,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/evidently_launch#id EvidentlyLaunch#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/evidently_launch#id EvidentlyLaunch#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1321,7 +1321,7 @@ public readonly metricMonitors: IResolvable | EvidentlyLaunchMetricMonitors[];
 
 metric_monitors block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/evidently_launch#metric_monitors EvidentlyLaunch#metric_monitors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/evidently_launch#metric_monitors EvidentlyLaunch#metric_monitors}
 
 ---
 
@@ -1333,7 +1333,7 @@ public readonly randomizationSalt: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/evidently_launch#randomization_salt EvidentlyLaunch#randomization_salt}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/evidently_launch#randomization_salt EvidentlyLaunch#randomization_salt}.
 
 ---
 
@@ -1347,7 +1347,7 @@ public readonly region: string;
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/evidently_launch#region EvidentlyLaunch#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/evidently_launch#region EvidentlyLaunch#region}
 
 ---
 
@@ -1361,7 +1361,7 @@ public readonly scheduledSplitsConfig: EvidentlyLaunchScheduledSplitsConfig;
 
 scheduled_splits_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/evidently_launch#scheduled_splits_config EvidentlyLaunch#scheduled_splits_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/evidently_launch#scheduled_splits_config EvidentlyLaunch#scheduled_splits_config}
 
 ---
 
@@ -1373,7 +1373,7 @@ public readonly tags: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/evidently_launch#tags EvidentlyLaunch#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/evidently_launch#tags EvidentlyLaunch#tags}.
 
 ---
 
@@ -1385,7 +1385,7 @@ public readonly tagsAll: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/evidently_launch#tags_all EvidentlyLaunch#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/evidently_launch#tags_all EvidentlyLaunch#tags_all}.
 
 ---
 
@@ -1399,7 +1399,7 @@ public readonly timeouts: EvidentlyLaunchTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/evidently_launch#timeouts EvidentlyLaunch#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/evidently_launch#timeouts EvidentlyLaunch#timeouts}
 
 ---
 
@@ -1428,10 +1428,10 @@ const evidentlyLaunchGroups: evidentlyLaunch.EvidentlyLaunchGroups = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.evidentlyLaunch.EvidentlyLaunchGroups.property.feature">feature</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/evidently_launch#feature EvidentlyLaunch#feature}. |
-| <code><a href="#@cdktn/provider-aws.evidentlyLaunch.EvidentlyLaunchGroups.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/evidently_launch#name EvidentlyLaunch#name}. |
-| <code><a href="#@cdktn/provider-aws.evidentlyLaunch.EvidentlyLaunchGroups.property.variation">variation</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/evidently_launch#variation EvidentlyLaunch#variation}. |
-| <code><a href="#@cdktn/provider-aws.evidentlyLaunch.EvidentlyLaunchGroups.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/evidently_launch#description EvidentlyLaunch#description}. |
+| <code><a href="#@cdktn/provider-aws.evidentlyLaunch.EvidentlyLaunchGroups.property.feature">feature</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/evidently_launch#feature EvidentlyLaunch#feature}. |
+| <code><a href="#@cdktn/provider-aws.evidentlyLaunch.EvidentlyLaunchGroups.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/evidently_launch#name EvidentlyLaunch#name}. |
+| <code><a href="#@cdktn/provider-aws.evidentlyLaunch.EvidentlyLaunchGroups.property.variation">variation</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/evidently_launch#variation EvidentlyLaunch#variation}. |
+| <code><a href="#@cdktn/provider-aws.evidentlyLaunch.EvidentlyLaunchGroups.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/evidently_launch#description EvidentlyLaunch#description}. |
 
 ---
 
@@ -1443,7 +1443,7 @@ public readonly feature: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/evidently_launch#feature EvidentlyLaunch#feature}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/evidently_launch#feature EvidentlyLaunch#feature}.
 
 ---
 
@@ -1455,7 +1455,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/evidently_launch#name EvidentlyLaunch#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/evidently_launch#name EvidentlyLaunch#name}.
 
 ---
 
@@ -1467,7 +1467,7 @@ public readonly variation: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/evidently_launch#variation EvidentlyLaunch#variation}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/evidently_launch#variation EvidentlyLaunch#variation}.
 
 ---
 
@@ -1479,7 +1479,7 @@ public readonly description: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/evidently_launch#description EvidentlyLaunch#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/evidently_launch#description EvidentlyLaunch#description}.
 
 ---
 
@@ -1511,7 +1511,7 @@ public readonly metricDefinition: EvidentlyLaunchMetricMonitorsMetricDefinition;
 
 metric_definition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/evidently_launch#metric_definition EvidentlyLaunch#metric_definition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/evidently_launch#metric_definition EvidentlyLaunch#metric_definition}
 
 ---
 
@@ -1529,11 +1529,11 @@ const evidentlyLaunchMetricMonitorsMetricDefinition: evidentlyLaunch.EvidentlyLa
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.evidentlyLaunch.EvidentlyLaunchMetricMonitorsMetricDefinition.property.entityIdKey">entityIdKey</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/evidently_launch#entity_id_key EvidentlyLaunch#entity_id_key}. |
-| <code><a href="#@cdktn/provider-aws.evidentlyLaunch.EvidentlyLaunchMetricMonitorsMetricDefinition.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/evidently_launch#name EvidentlyLaunch#name}. |
-| <code><a href="#@cdktn/provider-aws.evidentlyLaunch.EvidentlyLaunchMetricMonitorsMetricDefinition.property.valueKey">valueKey</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/evidently_launch#value_key EvidentlyLaunch#value_key}. |
-| <code><a href="#@cdktn/provider-aws.evidentlyLaunch.EvidentlyLaunchMetricMonitorsMetricDefinition.property.eventPattern">eventPattern</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/evidently_launch#event_pattern EvidentlyLaunch#event_pattern}. |
-| <code><a href="#@cdktn/provider-aws.evidentlyLaunch.EvidentlyLaunchMetricMonitorsMetricDefinition.property.unitLabel">unitLabel</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/evidently_launch#unit_label EvidentlyLaunch#unit_label}. |
+| <code><a href="#@cdktn/provider-aws.evidentlyLaunch.EvidentlyLaunchMetricMonitorsMetricDefinition.property.entityIdKey">entityIdKey</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/evidently_launch#entity_id_key EvidentlyLaunch#entity_id_key}. |
+| <code><a href="#@cdktn/provider-aws.evidentlyLaunch.EvidentlyLaunchMetricMonitorsMetricDefinition.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/evidently_launch#name EvidentlyLaunch#name}. |
+| <code><a href="#@cdktn/provider-aws.evidentlyLaunch.EvidentlyLaunchMetricMonitorsMetricDefinition.property.valueKey">valueKey</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/evidently_launch#value_key EvidentlyLaunch#value_key}. |
+| <code><a href="#@cdktn/provider-aws.evidentlyLaunch.EvidentlyLaunchMetricMonitorsMetricDefinition.property.eventPattern">eventPattern</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/evidently_launch#event_pattern EvidentlyLaunch#event_pattern}. |
+| <code><a href="#@cdktn/provider-aws.evidentlyLaunch.EvidentlyLaunchMetricMonitorsMetricDefinition.property.unitLabel">unitLabel</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/evidently_launch#unit_label EvidentlyLaunch#unit_label}. |
 
 ---
 
@@ -1545,7 +1545,7 @@ public readonly entityIdKey: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/evidently_launch#entity_id_key EvidentlyLaunch#entity_id_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/evidently_launch#entity_id_key EvidentlyLaunch#entity_id_key}.
 
 ---
 
@@ -1557,7 +1557,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/evidently_launch#name EvidentlyLaunch#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/evidently_launch#name EvidentlyLaunch#name}.
 
 ---
 
@@ -1569,7 +1569,7 @@ public readonly valueKey: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/evidently_launch#value_key EvidentlyLaunch#value_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/evidently_launch#value_key EvidentlyLaunch#value_key}.
 
 ---
 
@@ -1581,7 +1581,7 @@ public readonly eventPattern: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/evidently_launch#event_pattern EvidentlyLaunch#event_pattern}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/evidently_launch#event_pattern EvidentlyLaunch#event_pattern}.
 
 ---
 
@@ -1593,7 +1593,7 @@ public readonly unitLabel: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/evidently_launch#unit_label EvidentlyLaunch#unit_label}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/evidently_launch#unit_label EvidentlyLaunch#unit_label}.
 
 ---
 
@@ -1625,7 +1625,7 @@ public readonly steps: IResolvable | EvidentlyLaunchScheduledSplitsConfigSteps[]
 
 steps block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/evidently_launch#steps EvidentlyLaunch#steps}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/evidently_launch#steps EvidentlyLaunch#steps}
 
 ---
 
@@ -1643,8 +1643,8 @@ const evidentlyLaunchScheduledSplitsConfigSteps: evidentlyLaunch.EvidentlyLaunch
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.evidentlyLaunch.EvidentlyLaunchScheduledSplitsConfigSteps.property.groupWeights">groupWeights</a></code> | <code>{[ key: string ]: number}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/evidently_launch#group_weights EvidentlyLaunch#group_weights}. |
-| <code><a href="#@cdktn/provider-aws.evidentlyLaunch.EvidentlyLaunchScheduledSplitsConfigSteps.property.startTime">startTime</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/evidently_launch#start_time EvidentlyLaunch#start_time}. |
+| <code><a href="#@cdktn/provider-aws.evidentlyLaunch.EvidentlyLaunchScheduledSplitsConfigSteps.property.groupWeights">groupWeights</a></code> | <code>{[ key: string ]: number}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/evidently_launch#group_weights EvidentlyLaunch#group_weights}. |
+| <code><a href="#@cdktn/provider-aws.evidentlyLaunch.EvidentlyLaunchScheduledSplitsConfigSteps.property.startTime">startTime</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/evidently_launch#start_time EvidentlyLaunch#start_time}. |
 | <code><a href="#@cdktn/provider-aws.evidentlyLaunch.EvidentlyLaunchScheduledSplitsConfigSteps.property.segmentOverrides">segmentOverrides</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.evidentlyLaunch.EvidentlyLaunchScheduledSplitsConfigStepsSegmentOverrides">EvidentlyLaunchScheduledSplitsConfigStepsSegmentOverrides</a>[]</code> | segment_overrides block. |
 
 ---
@@ -1657,7 +1657,7 @@ public readonly groupWeights: {[ key: string ]: number};
 
 - *Type:* {[ key: string ]: number}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/evidently_launch#group_weights EvidentlyLaunch#group_weights}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/evidently_launch#group_weights EvidentlyLaunch#group_weights}.
 
 ---
 
@@ -1669,7 +1669,7 @@ public readonly startTime: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/evidently_launch#start_time EvidentlyLaunch#start_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/evidently_launch#start_time EvidentlyLaunch#start_time}.
 
 ---
 
@@ -1683,7 +1683,7 @@ public readonly segmentOverrides: IResolvable | EvidentlyLaunchScheduledSplitsCo
 
 segment_overrides block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/evidently_launch#segment_overrides EvidentlyLaunch#segment_overrides}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/evidently_launch#segment_overrides EvidentlyLaunch#segment_overrides}
 
 ---
 
@@ -1701,9 +1701,9 @@ const evidentlyLaunchScheduledSplitsConfigStepsSegmentOverrides: evidentlyLaunch
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.evidentlyLaunch.EvidentlyLaunchScheduledSplitsConfigStepsSegmentOverrides.property.evaluationOrder">evaluationOrder</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/evidently_launch#evaluation_order EvidentlyLaunch#evaluation_order}. |
-| <code><a href="#@cdktn/provider-aws.evidentlyLaunch.EvidentlyLaunchScheduledSplitsConfigStepsSegmentOverrides.property.segment">segment</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/evidently_launch#segment EvidentlyLaunch#segment}. |
-| <code><a href="#@cdktn/provider-aws.evidentlyLaunch.EvidentlyLaunchScheduledSplitsConfigStepsSegmentOverrides.property.weights">weights</a></code> | <code>{[ key: string ]: number}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/evidently_launch#weights EvidentlyLaunch#weights}. |
+| <code><a href="#@cdktn/provider-aws.evidentlyLaunch.EvidentlyLaunchScheduledSplitsConfigStepsSegmentOverrides.property.evaluationOrder">evaluationOrder</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/evidently_launch#evaluation_order EvidentlyLaunch#evaluation_order}. |
+| <code><a href="#@cdktn/provider-aws.evidentlyLaunch.EvidentlyLaunchScheduledSplitsConfigStepsSegmentOverrides.property.segment">segment</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/evidently_launch#segment EvidentlyLaunch#segment}. |
+| <code><a href="#@cdktn/provider-aws.evidentlyLaunch.EvidentlyLaunchScheduledSplitsConfigStepsSegmentOverrides.property.weights">weights</a></code> | <code>{[ key: string ]: number}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/evidently_launch#weights EvidentlyLaunch#weights}. |
 
 ---
 
@@ -1715,7 +1715,7 @@ public readonly evaluationOrder: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/evidently_launch#evaluation_order EvidentlyLaunch#evaluation_order}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/evidently_launch#evaluation_order EvidentlyLaunch#evaluation_order}.
 
 ---
 
@@ -1727,7 +1727,7 @@ public readonly segment: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/evidently_launch#segment EvidentlyLaunch#segment}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/evidently_launch#segment EvidentlyLaunch#segment}.
 
 ---
 
@@ -1739,7 +1739,7 @@ public readonly weights: {[ key: string ]: number};
 
 - *Type:* {[ key: string ]: number}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/evidently_launch#weights EvidentlyLaunch#weights}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/evidently_launch#weights EvidentlyLaunch#weights}.
 
 ---
 
@@ -1757,9 +1757,9 @@ const evidentlyLaunchTimeouts: evidentlyLaunch.EvidentlyLaunchTimeouts = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.evidentlyLaunch.EvidentlyLaunchTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/evidently_launch#create EvidentlyLaunch#create}. |
-| <code><a href="#@cdktn/provider-aws.evidentlyLaunch.EvidentlyLaunchTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/evidently_launch#delete EvidentlyLaunch#delete}. |
-| <code><a href="#@cdktn/provider-aws.evidentlyLaunch.EvidentlyLaunchTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/evidently_launch#update EvidentlyLaunch#update}. |
+| <code><a href="#@cdktn/provider-aws.evidentlyLaunch.EvidentlyLaunchTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/evidently_launch#create EvidentlyLaunch#create}. |
+| <code><a href="#@cdktn/provider-aws.evidentlyLaunch.EvidentlyLaunchTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/evidently_launch#delete EvidentlyLaunch#delete}. |
+| <code><a href="#@cdktn/provider-aws.evidentlyLaunch.EvidentlyLaunchTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/evidently_launch#update EvidentlyLaunch#update}. |
 
 ---
 
@@ -1771,7 +1771,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/evidently_launch#create EvidentlyLaunch#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/evidently_launch#create EvidentlyLaunch#create}.
 
 ---
 
@@ -1783,7 +1783,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/evidently_launch#delete EvidentlyLaunch#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/evidently_launch#delete EvidentlyLaunch#delete}.
 
 ---
 
@@ -1795,7 +1795,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/evidently_launch#update EvidentlyLaunch#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/evidently_launch#update EvidentlyLaunch#update}.
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### RouteTable <a name="RouteTable" id="@cdktn/provider-aws.routeTable.RouteTable"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/route_table aws_route_table}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/route_table aws_route_table}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.routeTable.RouteTable.Initializer"></a>
 
@@ -564,7 +564,7 @@ The construct id used in the generated config for the RouteTable to import.
 
 The id of the existing RouteTable that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/route_table#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/route_table#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -994,13 +994,13 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/routetable"
 | <code><a href="#@cdktn/provider-aws.routeTable.RouteTableConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.routeTable.RouteTableConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.routeTable.RouteTableConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.routeTable.RouteTableConfig.property.vpcId">VpcId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/route_table#vpc_id RouteTable#vpc_id}. |
-| <code><a href="#@cdktn/provider-aws.routeTable.RouteTableConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/route_table#id RouteTable#id}. |
-| <code><a href="#@cdktn/provider-aws.routeTable.RouteTableConfig.property.propagatingVgws">PropagatingVgws</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/route_table#propagating_vgws RouteTable#propagating_vgws}. |
+| <code><a href="#@cdktn/provider-aws.routeTable.RouteTableConfig.property.vpcId">VpcId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/route_table#vpc_id RouteTable#vpc_id}. |
+| <code><a href="#@cdktn/provider-aws.routeTable.RouteTableConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/route_table#id RouteTable#id}. |
+| <code><a href="#@cdktn/provider-aws.routeTable.RouteTableConfig.property.propagatingVgws">PropagatingVgws</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/route_table#propagating_vgws RouteTable#propagating_vgws}. |
 | <code><a href="#@cdktn/provider-aws.routeTable.RouteTableConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.routeTable.RouteTableConfig.property.route">Route</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/route_table#route RouteTable#route}. |
-| <code><a href="#@cdktn/provider-aws.routeTable.RouteTableConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/route_table#tags RouteTable#tags}. |
-| <code><a href="#@cdktn/provider-aws.routeTable.RouteTableConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/route_table#tags_all RouteTable#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.routeTable.RouteTableConfig.property.route">Route</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/route_table#route RouteTable#route}. |
+| <code><a href="#@cdktn/provider-aws.routeTable.RouteTableConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/route_table#tags RouteTable#tags}. |
+| <code><a href="#@cdktn/provider-aws.routeTable.RouteTableConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/route_table#tags_all RouteTable#tags_all}. |
 | <code><a href="#@cdktn/provider-aws.routeTable.RouteTableConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.routeTable.RouteTableTimeouts">RouteTableTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1083,7 +1083,7 @@ VpcId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/route_table#vpc_id RouteTable#vpc_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/route_table#vpc_id RouteTable#vpc_id}.
 
 ---
 
@@ -1095,7 +1095,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/route_table#id RouteTable#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/route_table#id RouteTable#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1110,7 +1110,7 @@ PropagatingVgws *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/route_table#propagating_vgws RouteTable#propagating_vgws}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/route_table#propagating_vgws RouteTable#propagating_vgws}.
 
 ---
 
@@ -1124,7 +1124,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/route_table#region RouteTable#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/route_table#region RouteTable#region}
 
 ---
 
@@ -1136,7 +1136,7 @@ Route interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/route_table#route RouteTable#route}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/route_table#route RouteTable#route}.
 
 ---
 
@@ -1148,7 +1148,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/route_table#tags RouteTable#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/route_table#tags RouteTable#tags}.
 
 ---
 
@@ -1160,7 +1160,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/route_table#tags_all RouteTable#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/route_table#tags_all RouteTable#tags_all}.
 
 ---
 
@@ -1174,7 +1174,7 @@ Timeouts RouteTableTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/route_table#timeouts RouteTable#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/route_table#timeouts RouteTable#timeouts}
 
 ---
 
@@ -1196,6 +1196,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/routetable"
 	LocalGatewayId: *string,
 	NatGatewayId: *string,
 	NetworkInterfaceId: *string,
+	OdbNetworkArn: *string,
 	TransitGatewayId: *string,
 	VpcEndpointId: *string,
 	VpcPeeringConnectionId: *string,
@@ -1206,19 +1207,20 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/routetable"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.routeTable.RouteTableRoute.property.carrierGatewayId">CarrierGatewayId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/route_table#carrier_gateway_id RouteTable#carrier_gateway_id}. |
-| <code><a href="#@cdktn/provider-aws.routeTable.RouteTableRoute.property.cidrBlock">CidrBlock</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/route_table#cidr_block RouteTable#cidr_block}. |
-| <code><a href="#@cdktn/provider-aws.routeTable.RouteTableRoute.property.coreNetworkArn">CoreNetworkArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/route_table#core_network_arn RouteTable#core_network_arn}. |
-| <code><a href="#@cdktn/provider-aws.routeTable.RouteTableRoute.property.destinationPrefixListId">DestinationPrefixListId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/route_table#destination_prefix_list_id RouteTable#destination_prefix_list_id}. |
-| <code><a href="#@cdktn/provider-aws.routeTable.RouteTableRoute.property.egressOnlyGatewayId">EgressOnlyGatewayId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/route_table#egress_only_gateway_id RouteTable#egress_only_gateway_id}. |
-| <code><a href="#@cdktn/provider-aws.routeTable.RouteTableRoute.property.gatewayId">GatewayId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/route_table#gateway_id RouteTable#gateway_id}. |
-| <code><a href="#@cdktn/provider-aws.routeTable.RouteTableRoute.property.ipv6CidrBlock">Ipv6CidrBlock</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/route_table#ipv6_cidr_block RouteTable#ipv6_cidr_block}. |
-| <code><a href="#@cdktn/provider-aws.routeTable.RouteTableRoute.property.localGatewayId">LocalGatewayId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/route_table#local_gateway_id RouteTable#local_gateway_id}. |
-| <code><a href="#@cdktn/provider-aws.routeTable.RouteTableRoute.property.natGatewayId">NatGatewayId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/route_table#nat_gateway_id RouteTable#nat_gateway_id}. |
-| <code><a href="#@cdktn/provider-aws.routeTable.RouteTableRoute.property.networkInterfaceId">NetworkInterfaceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/route_table#network_interface_id RouteTable#network_interface_id}. |
-| <code><a href="#@cdktn/provider-aws.routeTable.RouteTableRoute.property.transitGatewayId">TransitGatewayId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/route_table#transit_gateway_id RouteTable#transit_gateway_id}. |
-| <code><a href="#@cdktn/provider-aws.routeTable.RouteTableRoute.property.vpcEndpointId">VpcEndpointId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/route_table#vpc_endpoint_id RouteTable#vpc_endpoint_id}. |
-| <code><a href="#@cdktn/provider-aws.routeTable.RouteTableRoute.property.vpcPeeringConnectionId">VpcPeeringConnectionId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/route_table#vpc_peering_connection_id RouteTable#vpc_peering_connection_id}. |
+| <code><a href="#@cdktn/provider-aws.routeTable.RouteTableRoute.property.carrierGatewayId">CarrierGatewayId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/route_table#carrier_gateway_id RouteTable#carrier_gateway_id}. |
+| <code><a href="#@cdktn/provider-aws.routeTable.RouteTableRoute.property.cidrBlock">CidrBlock</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/route_table#cidr_block RouteTable#cidr_block}. |
+| <code><a href="#@cdktn/provider-aws.routeTable.RouteTableRoute.property.coreNetworkArn">CoreNetworkArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/route_table#core_network_arn RouteTable#core_network_arn}. |
+| <code><a href="#@cdktn/provider-aws.routeTable.RouteTableRoute.property.destinationPrefixListId">DestinationPrefixListId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/route_table#destination_prefix_list_id RouteTable#destination_prefix_list_id}. |
+| <code><a href="#@cdktn/provider-aws.routeTable.RouteTableRoute.property.egressOnlyGatewayId">EgressOnlyGatewayId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/route_table#egress_only_gateway_id RouteTable#egress_only_gateway_id}. |
+| <code><a href="#@cdktn/provider-aws.routeTable.RouteTableRoute.property.gatewayId">GatewayId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/route_table#gateway_id RouteTable#gateway_id}. |
+| <code><a href="#@cdktn/provider-aws.routeTable.RouteTableRoute.property.ipv6CidrBlock">Ipv6CidrBlock</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/route_table#ipv6_cidr_block RouteTable#ipv6_cidr_block}. |
+| <code><a href="#@cdktn/provider-aws.routeTable.RouteTableRoute.property.localGatewayId">LocalGatewayId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/route_table#local_gateway_id RouteTable#local_gateway_id}. |
+| <code><a href="#@cdktn/provider-aws.routeTable.RouteTableRoute.property.natGatewayId">NatGatewayId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/route_table#nat_gateway_id RouteTable#nat_gateway_id}. |
+| <code><a href="#@cdktn/provider-aws.routeTable.RouteTableRoute.property.networkInterfaceId">NetworkInterfaceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/route_table#network_interface_id RouteTable#network_interface_id}. |
+| <code><a href="#@cdktn/provider-aws.routeTable.RouteTableRoute.property.odbNetworkArn">OdbNetworkArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/route_table#odb_network_arn RouteTable#odb_network_arn}. |
+| <code><a href="#@cdktn/provider-aws.routeTable.RouteTableRoute.property.transitGatewayId">TransitGatewayId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/route_table#transit_gateway_id RouteTable#transit_gateway_id}. |
+| <code><a href="#@cdktn/provider-aws.routeTable.RouteTableRoute.property.vpcEndpointId">VpcEndpointId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/route_table#vpc_endpoint_id RouteTable#vpc_endpoint_id}. |
+| <code><a href="#@cdktn/provider-aws.routeTable.RouteTableRoute.property.vpcPeeringConnectionId">VpcPeeringConnectionId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/route_table#vpc_peering_connection_id RouteTable#vpc_peering_connection_id}. |
 
 ---
 
@@ -1230,7 +1232,7 @@ CarrierGatewayId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/route_table#carrier_gateway_id RouteTable#carrier_gateway_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/route_table#carrier_gateway_id RouteTable#carrier_gateway_id}.
 
 ---
 
@@ -1242,7 +1244,7 @@ CidrBlock *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/route_table#cidr_block RouteTable#cidr_block}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/route_table#cidr_block RouteTable#cidr_block}.
 
 ---
 
@@ -1254,7 +1256,7 @@ CoreNetworkArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/route_table#core_network_arn RouteTable#core_network_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/route_table#core_network_arn RouteTable#core_network_arn}.
 
 ---
 
@@ -1266,7 +1268,7 @@ DestinationPrefixListId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/route_table#destination_prefix_list_id RouteTable#destination_prefix_list_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/route_table#destination_prefix_list_id RouteTable#destination_prefix_list_id}.
 
 ---
 
@@ -1278,7 +1280,7 @@ EgressOnlyGatewayId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/route_table#egress_only_gateway_id RouteTable#egress_only_gateway_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/route_table#egress_only_gateway_id RouteTable#egress_only_gateway_id}.
 
 ---
 
@@ -1290,7 +1292,7 @@ GatewayId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/route_table#gateway_id RouteTable#gateway_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/route_table#gateway_id RouteTable#gateway_id}.
 
 ---
 
@@ -1302,7 +1304,7 @@ Ipv6CidrBlock *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/route_table#ipv6_cidr_block RouteTable#ipv6_cidr_block}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/route_table#ipv6_cidr_block RouteTable#ipv6_cidr_block}.
 
 ---
 
@@ -1314,7 +1316,7 @@ LocalGatewayId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/route_table#local_gateway_id RouteTable#local_gateway_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/route_table#local_gateway_id RouteTable#local_gateway_id}.
 
 ---
 
@@ -1326,7 +1328,7 @@ NatGatewayId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/route_table#nat_gateway_id RouteTable#nat_gateway_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/route_table#nat_gateway_id RouteTable#nat_gateway_id}.
 
 ---
 
@@ -1338,7 +1340,19 @@ NetworkInterfaceId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/route_table#network_interface_id RouteTable#network_interface_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/route_table#network_interface_id RouteTable#network_interface_id}.
+
+---
+
+##### `OdbNetworkArn`<sup>Optional</sup> <a name="OdbNetworkArn" id="@cdktn/provider-aws.routeTable.RouteTableRoute.property.odbNetworkArn"></a>
+
+```go
+OdbNetworkArn *string
+```
+
+- *Type:* *string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/route_table#odb_network_arn RouteTable#odb_network_arn}.
 
 ---
 
@@ -1350,7 +1364,7 @@ TransitGatewayId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/route_table#transit_gateway_id RouteTable#transit_gateway_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/route_table#transit_gateway_id RouteTable#transit_gateway_id}.
 
 ---
 
@@ -1362,7 +1376,7 @@ VpcEndpointId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/route_table#vpc_endpoint_id RouteTable#vpc_endpoint_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/route_table#vpc_endpoint_id RouteTable#vpc_endpoint_id}.
 
 ---
 
@@ -1374,7 +1388,7 @@ VpcPeeringConnectionId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/route_table#vpc_peering_connection_id RouteTable#vpc_peering_connection_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/route_table#vpc_peering_connection_id RouteTable#vpc_peering_connection_id}.
 
 ---
 
@@ -1396,9 +1410,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/routetable"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.routeTable.RouteTableTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/route_table#create RouteTable#create}. |
-| <code><a href="#@cdktn/provider-aws.routeTable.RouteTableTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/route_table#delete RouteTable#delete}. |
-| <code><a href="#@cdktn/provider-aws.routeTable.RouteTableTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/route_table#update RouteTable#update}. |
+| <code><a href="#@cdktn/provider-aws.routeTable.RouteTableTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/route_table#create RouteTable#create}. |
+| <code><a href="#@cdktn/provider-aws.routeTable.RouteTableTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/route_table#delete RouteTable#delete}. |
+| <code><a href="#@cdktn/provider-aws.routeTable.RouteTableTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/route_table#update RouteTable#update}. |
 
 ---
 
@@ -1410,7 +1424,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/route_table#create RouteTable#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/route_table#create RouteTable#create}.
 
 ---
 
@@ -1422,7 +1436,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/route_table#delete RouteTable#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/route_table#delete RouteTable#delete}.
 
 ---
 
@@ -1434,7 +1448,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/route_table#update RouteTable#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/route_table#update RouteTable#update}.
 
 ---
 
@@ -1678,6 +1692,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktn/provider-aws.routeTable.RouteTableRouteOutputReference.resetLocalGatewayId">ResetLocalGatewayId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.routeTable.RouteTableRouteOutputReference.resetNatGatewayId">ResetNatGatewayId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.routeTable.RouteTableRouteOutputReference.resetNetworkInterfaceId">ResetNetworkInterfaceId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.routeTable.RouteTableRouteOutputReference.resetOdbNetworkArn">ResetOdbNetworkArn</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.routeTable.RouteTableRouteOutputReference.resetTransitGatewayId">ResetTransitGatewayId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.routeTable.RouteTableRouteOutputReference.resetVpcEndpointId">ResetVpcEndpointId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.routeTable.RouteTableRouteOutputReference.resetVpcPeeringConnectionId">ResetVpcPeeringConnectionId</a></code> | *No description.* |
@@ -1894,6 +1909,12 @@ func ResetNatGatewayId()
 func ResetNetworkInterfaceId()
 ```
 
+##### `ResetOdbNetworkArn` <a name="ResetOdbNetworkArn" id="@cdktn/provider-aws.routeTable.RouteTableRouteOutputReference.resetOdbNetworkArn"></a>
+
+```go
+func ResetOdbNetworkArn()
+```
+
 ##### `ResetTransitGatewayId` <a name="ResetTransitGatewayId" id="@cdktn/provider-aws.routeTable.RouteTableRouteOutputReference.resetTransitGatewayId"></a>
 
 ```go
@@ -1929,6 +1950,7 @@ func ResetVpcPeeringConnectionId()
 | <code><a href="#@cdktn/provider-aws.routeTable.RouteTableRouteOutputReference.property.localGatewayIdInput">LocalGatewayIdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.routeTable.RouteTableRouteOutputReference.property.natGatewayIdInput">NatGatewayIdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.routeTable.RouteTableRouteOutputReference.property.networkInterfaceIdInput">NetworkInterfaceIdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.routeTable.RouteTableRouteOutputReference.property.odbNetworkArnInput">OdbNetworkArnInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.routeTable.RouteTableRouteOutputReference.property.transitGatewayIdInput">TransitGatewayIdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.routeTable.RouteTableRouteOutputReference.property.vpcEndpointIdInput">VpcEndpointIdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.routeTable.RouteTableRouteOutputReference.property.vpcPeeringConnectionIdInput">VpcPeeringConnectionIdInput</a></code> | <code>*string</code> | *No description.* |
@@ -1942,6 +1964,7 @@ func ResetVpcPeeringConnectionId()
 | <code><a href="#@cdktn/provider-aws.routeTable.RouteTableRouteOutputReference.property.localGatewayId">LocalGatewayId</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.routeTable.RouteTableRouteOutputReference.property.natGatewayId">NatGatewayId</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.routeTable.RouteTableRouteOutputReference.property.networkInterfaceId">NetworkInterfaceId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.routeTable.RouteTableRouteOutputReference.property.odbNetworkArn">OdbNetworkArn</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.routeTable.RouteTableRouteOutputReference.property.transitGatewayId">TransitGatewayId</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.routeTable.RouteTableRouteOutputReference.property.vpcEndpointId">VpcEndpointId</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.routeTable.RouteTableRouteOutputReference.property.vpcPeeringConnectionId">VpcPeeringConnectionId</a></code> | <code>*string</code> | *No description.* |
@@ -2073,6 +2096,16 @@ func NetworkInterfaceIdInput() *string
 
 ---
 
+##### `OdbNetworkArnInput`<sup>Optional</sup> <a name="OdbNetworkArnInput" id="@cdktn/provider-aws.routeTable.RouteTableRouteOutputReference.property.odbNetworkArnInput"></a>
+
+```go
+func OdbNetworkArnInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `TransitGatewayIdInput`<sup>Optional</sup> <a name="TransitGatewayIdInput" id="@cdktn/provider-aws.routeTable.RouteTableRouteOutputReference.property.transitGatewayIdInput"></a>
 
 ```go
@@ -2197,6 +2230,16 @@ func NatGatewayId() *string
 
 ```go
 func NetworkInterfaceId() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `OdbNetworkArn`<sup>Required</sup> <a name="OdbNetworkArn" id="@cdktn/provider-aws.routeTable.RouteTableRouteOutputReference.property.odbNetworkArn"></a>
+
+```go
+func OdbNetworkArn() *string
 ```
 
 - *Type:* *string

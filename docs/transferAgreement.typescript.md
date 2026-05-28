@@ -4,7 +4,7 @@
 
 ### TransferAgreement <a name="TransferAgreement" id="@cdktn/provider-aws.transferAgreement.TransferAgreement"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/transfer_agreement aws_transfer_agreement}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/transfer_agreement aws_transfer_agreement}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.transferAgreement.TransferAgreement.Initializer"></a>
 
@@ -524,7 +524,7 @@ The construct id used in the generated config for the TransferAgreement to impor
 
 The id of the existing TransferAgreement that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/transfer_agreement#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/transfer_agreement#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -993,16 +993,16 @@ const transferAgreementConfig: transferAgreement.TransferAgreementConfig = { ...
 | <code><a href="#@cdktn/provider-aws.transferAgreement.TransferAgreementConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.transferAgreement.TransferAgreementConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.transferAgreement.TransferAgreementConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.transferAgreement.TransferAgreementConfig.property.accessRole">accessRole</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/transfer_agreement#access_role TransferAgreement#access_role}. |
-| <code><a href="#@cdktn/provider-aws.transferAgreement.TransferAgreementConfig.property.baseDirectory">baseDirectory</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/transfer_agreement#base_directory TransferAgreement#base_directory}. |
-| <code><a href="#@cdktn/provider-aws.transferAgreement.TransferAgreementConfig.property.localProfileId">localProfileId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/transfer_agreement#local_profile_id TransferAgreement#local_profile_id}. |
-| <code><a href="#@cdktn/provider-aws.transferAgreement.TransferAgreementConfig.property.partnerProfileId">partnerProfileId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/transfer_agreement#partner_profile_id TransferAgreement#partner_profile_id}. |
-| <code><a href="#@cdktn/provider-aws.transferAgreement.TransferAgreementConfig.property.serverId">serverId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/transfer_agreement#server_id TransferAgreement#server_id}. |
-| <code><a href="#@cdktn/provider-aws.transferAgreement.TransferAgreementConfig.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/transfer_agreement#description TransferAgreement#description}. |
-| <code><a href="#@cdktn/provider-aws.transferAgreement.TransferAgreementConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/transfer_agreement#id TransferAgreement#id}. |
+| <code><a href="#@cdktn/provider-aws.transferAgreement.TransferAgreementConfig.property.accessRole">accessRole</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/transfer_agreement#access_role TransferAgreement#access_role}. |
+| <code><a href="#@cdktn/provider-aws.transferAgreement.TransferAgreementConfig.property.baseDirectory">baseDirectory</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/transfer_agreement#base_directory TransferAgreement#base_directory}. |
+| <code><a href="#@cdktn/provider-aws.transferAgreement.TransferAgreementConfig.property.localProfileId">localProfileId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/transfer_agreement#local_profile_id TransferAgreement#local_profile_id}. |
+| <code><a href="#@cdktn/provider-aws.transferAgreement.TransferAgreementConfig.property.partnerProfileId">partnerProfileId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/transfer_agreement#partner_profile_id TransferAgreement#partner_profile_id}. |
+| <code><a href="#@cdktn/provider-aws.transferAgreement.TransferAgreementConfig.property.serverId">serverId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/transfer_agreement#server_id TransferAgreement#server_id}. |
+| <code><a href="#@cdktn/provider-aws.transferAgreement.TransferAgreementConfig.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/transfer_agreement#description TransferAgreement#description}. |
+| <code><a href="#@cdktn/provider-aws.transferAgreement.TransferAgreementConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/transfer_agreement#id TransferAgreement#id}. |
 | <code><a href="#@cdktn/provider-aws.transferAgreement.TransferAgreementConfig.property.region">region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.transferAgreement.TransferAgreementConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/transfer_agreement#tags TransferAgreement#tags}. |
-| <code><a href="#@cdktn/provider-aws.transferAgreement.TransferAgreementConfig.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/transfer_agreement#tags_all TransferAgreement#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.transferAgreement.TransferAgreementConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/transfer_agreement#tags TransferAgreement#tags}. |
+| <code><a href="#@cdktn/provider-aws.transferAgreement.TransferAgreementConfig.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/transfer_agreement#tags_all TransferAgreement#tags_all}. |
 
 ---
 
@@ -1084,7 +1084,7 @@ public readonly accessRole: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/transfer_agreement#access_role TransferAgreement#access_role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/transfer_agreement#access_role TransferAgreement#access_role}.
 
 ---
 
@@ -1096,7 +1096,7 @@ public readonly baseDirectory: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/transfer_agreement#base_directory TransferAgreement#base_directory}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/transfer_agreement#base_directory TransferAgreement#base_directory}.
 
 ---
 
@@ -1108,7 +1108,7 @@ public readonly localProfileId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/transfer_agreement#local_profile_id TransferAgreement#local_profile_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/transfer_agreement#local_profile_id TransferAgreement#local_profile_id}.
 
 ---
 
@@ -1120,7 +1120,7 @@ public readonly partnerProfileId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/transfer_agreement#partner_profile_id TransferAgreement#partner_profile_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/transfer_agreement#partner_profile_id TransferAgreement#partner_profile_id}.
 
 ---
 
@@ -1132,7 +1132,7 @@ public readonly serverId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/transfer_agreement#server_id TransferAgreement#server_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/transfer_agreement#server_id TransferAgreement#server_id}.
 
 ---
 
@@ -1144,7 +1144,7 @@ public readonly description: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/transfer_agreement#description TransferAgreement#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/transfer_agreement#description TransferAgreement#description}.
 
 ---
 
@@ -1156,7 +1156,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/transfer_agreement#id TransferAgreement#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/transfer_agreement#id TransferAgreement#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1173,7 +1173,7 @@ public readonly region: string;
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/transfer_agreement#region TransferAgreement#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/transfer_agreement#region TransferAgreement#region}
 
 ---
 
@@ -1185,7 +1185,7 @@ public readonly tags: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/transfer_agreement#tags TransferAgreement#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/transfer_agreement#tags TransferAgreement#tags}.
 
 ---
 
@@ -1197,7 +1197,7 @@ public readonly tagsAll: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/transfer_agreement#tags_all TransferAgreement#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/transfer_agreement#tags_all TransferAgreement#tags_all}.
 
 ---
 

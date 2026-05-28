@@ -4,7 +4,7 @@
 
 ### NotificationsChannelAssociation <a name="NotificationsChannelAssociation" id="@cdktn/provider-aws.notificationsChannelAssociation.NotificationsChannelAssociation"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/notifications_channel_association aws_notifications_channel_association}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/notifications_channel_association aws_notifications_channel_association}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.notificationsChannelAssociation.NotificationsChannelAssociation.Initializer"></a>
 
@@ -489,7 +489,7 @@ The construct id used in the generated config for the NotificationsChannelAssoci
 
 The id of the existing NotificationsChannelAssociation that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/notifications_channel_association#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/notifications_channel_association#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -759,8 +759,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/notificationschannelas
 | <code><a href="#@cdktn/provider-aws.notificationsChannelAssociation.NotificationsChannelAssociationConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.notificationsChannelAssociation.NotificationsChannelAssociationConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.notificationsChannelAssociation.NotificationsChannelAssociationConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.notificationsChannelAssociation.NotificationsChannelAssociationConfig.property.arn">Arn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/notifications_channel_association#arn NotificationsChannelAssociation#arn}. |
-| <code><a href="#@cdktn/provider-aws.notificationsChannelAssociation.NotificationsChannelAssociationConfig.property.notificationConfigurationArn">NotificationConfigurationArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/notifications_channel_association#notification_configuration_arn NotificationsChannelAssociation#notification_configuration_arn}. |
+| <code><a href="#@cdktn/provider-aws.notificationsChannelAssociation.NotificationsChannelAssociationConfig.property.arn">Arn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/notifications_channel_association#arn NotificationsChannelAssociation#arn}. |
+| <code><a href="#@cdktn/provider-aws.notificationsChannelAssociation.NotificationsChannelAssociationConfig.property.notificationConfigurationArn">NotificationConfigurationArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/notifications_channel_association#notification_configuration_arn NotificationsChannelAssociation#notification_configuration_arn}. |
 
 ---
 
@@ -842,7 +842,7 @@ Arn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/notifications_channel_association#arn NotificationsChannelAssociation#arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/notifications_channel_association#arn NotificationsChannelAssociation#arn}.
 
 ---
 
@@ -854,7 +854,7 @@ NotificationConfigurationArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/notifications_channel_association#notification_configuration_arn NotificationsChannelAssociation#notification_configuration_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/notifications_channel_association#notification_configuration_arn NotificationsChannelAssociation#notification_configuration_arn}.
 
 ---
 

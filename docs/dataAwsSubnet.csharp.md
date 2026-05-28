@@ -4,7 +4,7 @@
 
 ### DataAwsSubnet <a name="DataAwsSubnet" id="@cdktn/provider-aws.dataAwsSubnet.DataAwsSubnet"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/data-sources/subnet aws_subnet}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/data-sources/subnet aws_subnet}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsSubnet.DataAwsSubnet.Initializer"></a>
 
@@ -497,7 +497,7 @@ The construct id used in the generated config for the DataAwsSubnet to import.
 
 The id of the existing DataAwsSubnet that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/data-sources/subnet#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/data-sources/subnet#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1140,18 +1140,18 @@ new DataAwsSubnetConfig {
 | <code><a href="#@cdktn/provider-aws.dataAwsSubnet.DataAwsSubnetConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsSubnet.DataAwsSubnetConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsSubnet.DataAwsSubnetConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dataAwsSubnet.DataAwsSubnetConfig.property.availabilityZone">AvailabilityZone</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/data-sources/subnet#availability_zone DataAwsSubnet#availability_zone}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsSubnet.DataAwsSubnetConfig.property.availabilityZoneId">AvailabilityZoneId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/data-sources/subnet#availability_zone_id DataAwsSubnet#availability_zone_id}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsSubnet.DataAwsSubnetConfig.property.cidrBlock">CidrBlock</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/data-sources/subnet#cidr_block DataAwsSubnet#cidr_block}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsSubnet.DataAwsSubnetConfig.property.defaultForAz">DefaultForAz</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/data-sources/subnet#default_for_az DataAwsSubnet#default_for_az}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsSubnet.DataAwsSubnetConfig.property.availabilityZone">AvailabilityZone</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/data-sources/subnet#availability_zone DataAwsSubnet#availability_zone}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsSubnet.DataAwsSubnetConfig.property.availabilityZoneId">AvailabilityZoneId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/data-sources/subnet#availability_zone_id DataAwsSubnet#availability_zone_id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsSubnet.DataAwsSubnetConfig.property.cidrBlock">CidrBlock</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/data-sources/subnet#cidr_block DataAwsSubnet#cidr_block}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsSubnet.DataAwsSubnetConfig.property.defaultForAz">DefaultForAz</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/data-sources/subnet#default_for_az DataAwsSubnet#default_for_az}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsSubnet.DataAwsSubnetConfig.property.filter">Filter</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-aws.dataAwsSubnet.DataAwsSubnetFilter">DataAwsSubnetFilter</a>[]</code> | filter block. |
-| <code><a href="#@cdktn/provider-aws.dataAwsSubnet.DataAwsSubnetConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/data-sources/subnet#id DataAwsSubnet#id}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsSubnet.DataAwsSubnetConfig.property.ipv6CidrBlock">Ipv6CidrBlock</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/data-sources/subnet#ipv6_cidr_block DataAwsSubnet#ipv6_cidr_block}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsSubnet.DataAwsSubnetConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/data-sources/subnet#id DataAwsSubnet#id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsSubnet.DataAwsSubnetConfig.property.ipv6CidrBlock">Ipv6CidrBlock</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/data-sources/subnet#ipv6_cidr_block DataAwsSubnet#ipv6_cidr_block}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsSubnet.DataAwsSubnetConfig.property.region">Region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.dataAwsSubnet.DataAwsSubnetConfig.property.state">State</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/data-sources/subnet#state DataAwsSubnet#state}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsSubnet.DataAwsSubnetConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/data-sources/subnet#tags DataAwsSubnet#tags}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsSubnet.DataAwsSubnetConfig.property.state">State</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/data-sources/subnet#state DataAwsSubnet#state}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsSubnet.DataAwsSubnetConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/data-sources/subnet#tags DataAwsSubnet#tags}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsSubnet.DataAwsSubnetConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.dataAwsSubnet.DataAwsSubnetTimeouts">DataAwsSubnetTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktn/provider-aws.dataAwsSubnet.DataAwsSubnetConfig.property.vpcId">VpcId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/data-sources/subnet#vpc_id DataAwsSubnet#vpc_id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsSubnet.DataAwsSubnetConfig.property.vpcId">VpcId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/data-sources/subnet#vpc_id DataAwsSubnet#vpc_id}. |
 
 ---
 
@@ -1233,7 +1233,7 @@ public string AvailabilityZone { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/data-sources/subnet#availability_zone DataAwsSubnet#availability_zone}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/data-sources/subnet#availability_zone DataAwsSubnet#availability_zone}.
 
 ---
 
@@ -1245,7 +1245,7 @@ public string AvailabilityZoneId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/data-sources/subnet#availability_zone_id DataAwsSubnet#availability_zone_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/data-sources/subnet#availability_zone_id DataAwsSubnet#availability_zone_id}.
 
 ---
 
@@ -1257,7 +1257,7 @@ public string CidrBlock { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/data-sources/subnet#cidr_block DataAwsSubnet#cidr_block}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/data-sources/subnet#cidr_block DataAwsSubnet#cidr_block}.
 
 ---
 
@@ -1269,7 +1269,7 @@ public bool|IResolvable DefaultForAz { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/data-sources/subnet#default_for_az DataAwsSubnet#default_for_az}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/data-sources/subnet#default_for_az DataAwsSubnet#default_for_az}.
 
 ---
 
@@ -1283,7 +1283,7 @@ public IResolvable|DataAwsSubnetFilter[] Filter { get; set; }
 
 filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/data-sources/subnet#filter DataAwsSubnet#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/data-sources/subnet#filter DataAwsSubnet#filter}
 
 ---
 
@@ -1295,7 +1295,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/data-sources/subnet#id DataAwsSubnet#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/data-sources/subnet#id DataAwsSubnet#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1310,7 +1310,7 @@ public string Ipv6CidrBlock { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/data-sources/subnet#ipv6_cidr_block DataAwsSubnet#ipv6_cidr_block}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/data-sources/subnet#ipv6_cidr_block DataAwsSubnet#ipv6_cidr_block}.
 
 ---
 
@@ -1324,7 +1324,7 @@ public string Region { get; set; }
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/data-sources/subnet#region DataAwsSubnet#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/data-sources/subnet#region DataAwsSubnet#region}
 
 ---
 
@@ -1336,7 +1336,7 @@ public string State { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/data-sources/subnet#state DataAwsSubnet#state}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/data-sources/subnet#state DataAwsSubnet#state}.
 
 ---
 
@@ -1348,7 +1348,7 @@ public System.Collections.Generic.IDictionary<string, string> Tags { get; set; }
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/data-sources/subnet#tags DataAwsSubnet#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/data-sources/subnet#tags DataAwsSubnet#tags}.
 
 ---
 
@@ -1362,7 +1362,7 @@ public DataAwsSubnetTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/data-sources/subnet#timeouts DataAwsSubnet#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/data-sources/subnet#timeouts DataAwsSubnet#timeouts}
 
 ---
 
@@ -1374,7 +1374,7 @@ public string VpcId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/data-sources/subnet#vpc_id DataAwsSubnet#vpc_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/data-sources/subnet#vpc_id DataAwsSubnet#vpc_id}.
 
 ---
 
@@ -1395,8 +1395,8 @@ new DataAwsSubnetFilter {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.dataAwsSubnet.DataAwsSubnetFilter.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/data-sources/subnet#name DataAwsSubnet#name}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsSubnet.DataAwsSubnetFilter.property.values">Values</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/data-sources/subnet#values DataAwsSubnet#values}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsSubnet.DataAwsSubnetFilter.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/data-sources/subnet#name DataAwsSubnet#name}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsSubnet.DataAwsSubnetFilter.property.values">Values</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/data-sources/subnet#values DataAwsSubnet#values}. |
 
 ---
 
@@ -1408,7 +1408,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/data-sources/subnet#name DataAwsSubnet#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/data-sources/subnet#name DataAwsSubnet#name}.
 
 ---
 
@@ -1420,7 +1420,7 @@ public string[] Values { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/data-sources/subnet#values DataAwsSubnet#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/data-sources/subnet#values DataAwsSubnet#values}.
 
 ---
 
@@ -1440,7 +1440,7 @@ new DataAwsSubnetTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.dataAwsSubnet.DataAwsSubnetTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/data-sources/subnet#read DataAwsSubnet#read}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsSubnet.DataAwsSubnetTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/data-sources/subnet#read DataAwsSubnet#read}. |
 
 ---
 
@@ -1452,7 +1452,7 @@ public string Read { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/data-sources/subnet#read DataAwsSubnet#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/data-sources/subnet#read DataAwsSubnet#read}.
 
 ---
 

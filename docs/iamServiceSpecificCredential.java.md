@@ -4,7 +4,7 @@
 
 ### IamServiceSpecificCredential <a name="IamServiceSpecificCredential" id="@cdktn/provider-aws.iamServiceSpecificCredential.IamServiceSpecificCredential"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/iam_service_specific_credential aws_iam_service_specific_credential}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/iam_service_specific_credential aws_iam_service_specific_credential}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.iamServiceSpecificCredential.IamServiceSpecificCredential.Initializer"></a>
 
@@ -38,11 +38,11 @@ IamServiceSpecificCredential.Builder.create(Construct scope, java.lang.String id
 | <code><a href="#@cdktn/provider-aws.iamServiceSpecificCredential.IamServiceSpecificCredential.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iamServiceSpecificCredential.IamServiceSpecificCredential.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iamServiceSpecificCredential.IamServiceSpecificCredential.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.iamServiceSpecificCredential.IamServiceSpecificCredential.Initializer.parameter.serviceName">serviceName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/iam_service_specific_credential#service_name IamServiceSpecificCredential#service_name}. |
-| <code><a href="#@cdktn/provider-aws.iamServiceSpecificCredential.IamServiceSpecificCredential.Initializer.parameter.userName">userName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/iam_service_specific_credential#user_name IamServiceSpecificCredential#user_name}. |
-| <code><a href="#@cdktn/provider-aws.iamServiceSpecificCredential.IamServiceSpecificCredential.Initializer.parameter.credentialAgeDays">credentialAgeDays</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/iam_service_specific_credential#credential_age_days IamServiceSpecificCredential#credential_age_days}. |
-| <code><a href="#@cdktn/provider-aws.iamServiceSpecificCredential.IamServiceSpecificCredential.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/iam_service_specific_credential#id IamServiceSpecificCredential#id}. |
-| <code><a href="#@cdktn/provider-aws.iamServiceSpecificCredential.IamServiceSpecificCredential.Initializer.parameter.status">status</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/iam_service_specific_credential#status IamServiceSpecificCredential#status}. |
+| <code><a href="#@cdktn/provider-aws.iamServiceSpecificCredential.IamServiceSpecificCredential.Initializer.parameter.serviceName">serviceName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/iam_service_specific_credential#service_name IamServiceSpecificCredential#service_name}. |
+| <code><a href="#@cdktn/provider-aws.iamServiceSpecificCredential.IamServiceSpecificCredential.Initializer.parameter.userName">userName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/iam_service_specific_credential#user_name IamServiceSpecificCredential#user_name}. |
+| <code><a href="#@cdktn/provider-aws.iamServiceSpecificCredential.IamServiceSpecificCredential.Initializer.parameter.credentialAgeDays">credentialAgeDays</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/iam_service_specific_credential#credential_age_days IamServiceSpecificCredential#credential_age_days}. |
+| <code><a href="#@cdktn/provider-aws.iamServiceSpecificCredential.IamServiceSpecificCredential.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/iam_service_specific_credential#id IamServiceSpecificCredential#id}. |
+| <code><a href="#@cdktn/provider-aws.iamServiceSpecificCredential.IamServiceSpecificCredential.Initializer.parameter.status">status</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/iam_service_specific_credential#status IamServiceSpecificCredential#status}. |
 
 ---
 
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/iam_service_specific_credential#service_name IamServiceSpecificCredential#service_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/iam_service_specific_credential#service_name IamServiceSpecificCredential#service_name}.
 
 ---
 
@@ -118,7 +118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/iam_service_specific_credential#user_name IamServiceSpecificCredential#user_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/iam_service_specific_credential#user_name IamServiceSpecificCredential#user_name}.
 
 ---
 
@@ -126,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/iam_service_specific_credential#credential_age_days IamServiceSpecificCredential#credential_age_days}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/iam_service_specific_credential#credential_age_days IamServiceSpecificCredential#credential_age_days}.
 
 ---
 
@@ -134,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/iam_service_specific_credential#id IamServiceSpecificCredential#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/iam_service_specific_credential#id IamServiceSpecificCredential#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -145,7 +145,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/iam_service_specific_credential#status IamServiceSpecificCredential#status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/iam_service_specific_credential#status IamServiceSpecificCredential#status}.
 
 ---
 
@@ -615,7 +615,7 @@ The construct id used in the generated config for the IamServiceSpecificCredenti
 
 The id of the existing IamServiceSpecificCredential that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/iam_service_specific_credential#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/iam_service_specific_credential#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1031,11 +1031,11 @@ IamServiceSpecificCredentialConfig.builder()
 | <code><a href="#@cdktn/provider-aws.iamServiceSpecificCredential.IamServiceSpecificCredentialConfig.property.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iamServiceSpecificCredential.IamServiceSpecificCredentialConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iamServiceSpecificCredential.IamServiceSpecificCredentialConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.iamServiceSpecificCredential.IamServiceSpecificCredentialConfig.property.serviceName">serviceName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/iam_service_specific_credential#service_name IamServiceSpecificCredential#service_name}. |
-| <code><a href="#@cdktn/provider-aws.iamServiceSpecificCredential.IamServiceSpecificCredentialConfig.property.userName">userName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/iam_service_specific_credential#user_name IamServiceSpecificCredential#user_name}. |
-| <code><a href="#@cdktn/provider-aws.iamServiceSpecificCredential.IamServiceSpecificCredentialConfig.property.credentialAgeDays">credentialAgeDays</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/iam_service_specific_credential#credential_age_days IamServiceSpecificCredential#credential_age_days}. |
-| <code><a href="#@cdktn/provider-aws.iamServiceSpecificCredential.IamServiceSpecificCredentialConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/iam_service_specific_credential#id IamServiceSpecificCredential#id}. |
-| <code><a href="#@cdktn/provider-aws.iamServiceSpecificCredential.IamServiceSpecificCredentialConfig.property.status">status</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/iam_service_specific_credential#status IamServiceSpecificCredential#status}. |
+| <code><a href="#@cdktn/provider-aws.iamServiceSpecificCredential.IamServiceSpecificCredentialConfig.property.serviceName">serviceName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/iam_service_specific_credential#service_name IamServiceSpecificCredential#service_name}. |
+| <code><a href="#@cdktn/provider-aws.iamServiceSpecificCredential.IamServiceSpecificCredentialConfig.property.userName">userName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/iam_service_specific_credential#user_name IamServiceSpecificCredential#user_name}. |
+| <code><a href="#@cdktn/provider-aws.iamServiceSpecificCredential.IamServiceSpecificCredentialConfig.property.credentialAgeDays">credentialAgeDays</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/iam_service_specific_credential#credential_age_days IamServiceSpecificCredential#credential_age_days}. |
+| <code><a href="#@cdktn/provider-aws.iamServiceSpecificCredential.IamServiceSpecificCredentialConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/iam_service_specific_credential#id IamServiceSpecificCredential#id}. |
+| <code><a href="#@cdktn/provider-aws.iamServiceSpecificCredential.IamServiceSpecificCredentialConfig.property.status">status</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/iam_service_specific_credential#status IamServiceSpecificCredential#status}. |
 
 ---
 
@@ -1117,7 +1117,7 @@ public java.lang.String getServiceName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/iam_service_specific_credential#service_name IamServiceSpecificCredential#service_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/iam_service_specific_credential#service_name IamServiceSpecificCredential#service_name}.
 
 ---
 
@@ -1129,7 +1129,7 @@ public java.lang.String getUserName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/iam_service_specific_credential#user_name IamServiceSpecificCredential#user_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/iam_service_specific_credential#user_name IamServiceSpecificCredential#user_name}.
 
 ---
 
@@ -1141,7 +1141,7 @@ public java.lang.Number getCredentialAgeDays();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/iam_service_specific_credential#credential_age_days IamServiceSpecificCredential#credential_age_days}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/iam_service_specific_credential#credential_age_days IamServiceSpecificCredential#credential_age_days}.
 
 ---
 
@@ -1153,7 +1153,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/iam_service_specific_credential#id IamServiceSpecificCredential#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/iam_service_specific_credential#id IamServiceSpecificCredential#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1168,7 +1168,7 @@ public java.lang.String getStatus();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/iam_service_specific_credential#status IamServiceSpecificCredential#status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/iam_service_specific_credential#status IamServiceSpecificCredential#status}.
 
 ---
 

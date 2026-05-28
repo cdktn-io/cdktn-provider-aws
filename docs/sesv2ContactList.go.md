@@ -4,7 +4,7 @@
 
 ### Sesv2ContactList <a name="Sesv2ContactList" id="@cdktn/provider-aws.sesv2ContactList.Sesv2ContactList"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/sesv2_contact_list aws_sesv2_contact_list}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/sesv2_contact_list aws_sesv2_contact_list}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sesv2ContactList.Sesv2ContactList.Initializer"></a>
 
@@ -544,7 +544,7 @@ The construct id used in the generated config for the Sesv2ContactList to import
 
 The id of the existing Sesv2ContactList that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/sesv2_contact_list#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/sesv2_contact_list#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -962,12 +962,12 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sesv2contactlist"
 | <code><a href="#@cdktn/provider-aws.sesv2ContactList.Sesv2ContactListConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.sesv2ContactList.Sesv2ContactListConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.sesv2ContactList.Sesv2ContactListConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.sesv2ContactList.Sesv2ContactListConfig.property.contactListName">ContactListName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/sesv2_contact_list#contact_list_name Sesv2ContactList#contact_list_name}. |
-| <code><a href="#@cdktn/provider-aws.sesv2ContactList.Sesv2ContactListConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/sesv2_contact_list#description Sesv2ContactList#description}. |
-| <code><a href="#@cdktn/provider-aws.sesv2ContactList.Sesv2ContactListConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/sesv2_contact_list#id Sesv2ContactList#id}. |
+| <code><a href="#@cdktn/provider-aws.sesv2ContactList.Sesv2ContactListConfig.property.contactListName">ContactListName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/sesv2_contact_list#contact_list_name Sesv2ContactList#contact_list_name}. |
+| <code><a href="#@cdktn/provider-aws.sesv2ContactList.Sesv2ContactListConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/sesv2_contact_list#description Sesv2ContactList#description}. |
+| <code><a href="#@cdktn/provider-aws.sesv2ContactList.Sesv2ContactListConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/sesv2_contact_list#id Sesv2ContactList#id}. |
 | <code><a href="#@cdktn/provider-aws.sesv2ContactList.Sesv2ContactListConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.sesv2ContactList.Sesv2ContactListConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/sesv2_contact_list#tags Sesv2ContactList#tags}. |
-| <code><a href="#@cdktn/provider-aws.sesv2ContactList.Sesv2ContactListConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/sesv2_contact_list#tags_all Sesv2ContactList#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.sesv2ContactList.Sesv2ContactListConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/sesv2_contact_list#tags Sesv2ContactList#tags}. |
+| <code><a href="#@cdktn/provider-aws.sesv2ContactList.Sesv2ContactListConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/sesv2_contact_list#tags_all Sesv2ContactList#tags_all}. |
 | <code><a href="#@cdktn/provider-aws.sesv2ContactList.Sesv2ContactListConfig.property.topic">Topic</a></code> | <code>interface{}</code> | topic block. |
 
 ---
@@ -1050,7 +1050,7 @@ ContactListName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/sesv2_contact_list#contact_list_name Sesv2ContactList#contact_list_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/sesv2_contact_list#contact_list_name Sesv2ContactList#contact_list_name}.
 
 ---
 
@@ -1062,7 +1062,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/sesv2_contact_list#description Sesv2ContactList#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/sesv2_contact_list#description Sesv2ContactList#description}.
 
 ---
 
@@ -1074,7 +1074,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/sesv2_contact_list#id Sesv2ContactList#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/sesv2_contact_list#id Sesv2ContactList#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1091,7 +1091,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/sesv2_contact_list#region Sesv2ContactList#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/sesv2_contact_list#region Sesv2ContactList#region}
 
 ---
 
@@ -1103,7 +1103,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/sesv2_contact_list#tags Sesv2ContactList#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/sesv2_contact_list#tags Sesv2ContactList#tags}.
 
 ---
 
@@ -1115,7 +1115,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/sesv2_contact_list#tags_all Sesv2ContactList#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/sesv2_contact_list#tags_all Sesv2ContactList#tags_all}.
 
 ---
 
@@ -1129,7 +1129,7 @@ Topic interface{}
 
 topic block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/sesv2_contact_list#topic Sesv2ContactList#topic}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/sesv2_contact_list#topic Sesv2ContactList#topic}
 
 ---
 
@@ -1152,10 +1152,10 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/sesv2contactlist"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.sesv2ContactList.Sesv2ContactListTopic.property.defaultSubscriptionStatus">DefaultSubscriptionStatus</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/sesv2_contact_list#default_subscription_status Sesv2ContactList#default_subscription_status}. |
-| <code><a href="#@cdktn/provider-aws.sesv2ContactList.Sesv2ContactListTopic.property.displayName">DisplayName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/sesv2_contact_list#display_name Sesv2ContactList#display_name}. |
-| <code><a href="#@cdktn/provider-aws.sesv2ContactList.Sesv2ContactListTopic.property.topicName">TopicName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/sesv2_contact_list#topic_name Sesv2ContactList#topic_name}. |
-| <code><a href="#@cdktn/provider-aws.sesv2ContactList.Sesv2ContactListTopic.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/sesv2_contact_list#description Sesv2ContactList#description}. |
+| <code><a href="#@cdktn/provider-aws.sesv2ContactList.Sesv2ContactListTopic.property.defaultSubscriptionStatus">DefaultSubscriptionStatus</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/sesv2_contact_list#default_subscription_status Sesv2ContactList#default_subscription_status}. |
+| <code><a href="#@cdktn/provider-aws.sesv2ContactList.Sesv2ContactListTopic.property.displayName">DisplayName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/sesv2_contact_list#display_name Sesv2ContactList#display_name}. |
+| <code><a href="#@cdktn/provider-aws.sesv2ContactList.Sesv2ContactListTopic.property.topicName">TopicName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/sesv2_contact_list#topic_name Sesv2ContactList#topic_name}. |
+| <code><a href="#@cdktn/provider-aws.sesv2ContactList.Sesv2ContactListTopic.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/sesv2_contact_list#description Sesv2ContactList#description}. |
 
 ---
 
@@ -1167,7 +1167,7 @@ DefaultSubscriptionStatus *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/sesv2_contact_list#default_subscription_status Sesv2ContactList#default_subscription_status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/sesv2_contact_list#default_subscription_status Sesv2ContactList#default_subscription_status}.
 
 ---
 
@@ -1179,7 +1179,7 @@ DisplayName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/sesv2_contact_list#display_name Sesv2ContactList#display_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/sesv2_contact_list#display_name Sesv2ContactList#display_name}.
 
 ---
 
@@ -1191,7 +1191,7 @@ TopicName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/sesv2_contact_list#topic_name Sesv2ContactList#topic_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/sesv2_contact_list#topic_name Sesv2ContactList#topic_name}.
 
 ---
 
@@ -1203,7 +1203,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/sesv2_contact_list#description Sesv2ContactList#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/sesv2_contact_list#description Sesv2ContactList#description}.
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### VpnConcentrator <a name="VpnConcentrator" id="@cdktn/provider-aws.vpnConcentrator.VpnConcentrator"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/vpn_concentrator aws_vpn_concentrator}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/vpn_concentrator aws_vpn_concentrator}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.vpnConcentrator.VpnConcentrator.Initializer"></a>
 
@@ -503,7 +503,7 @@ The construct id used in the generated config for the VpnConcentrator to import.
 
 The id of the existing VpnConcentrator that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/vpn_concentrator#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/vpn_concentrator#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -840,10 +840,10 @@ const vpnConcentratorConfig: vpnConcentrator.VpnConcentratorConfig = { ... }
 | <code><a href="#@cdktn/provider-aws.vpnConcentrator.VpnConcentratorConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.vpnConcentrator.VpnConcentratorConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.vpnConcentrator.VpnConcentratorConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.vpnConcentrator.VpnConcentratorConfig.property.transitGatewayId">transitGatewayId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/vpn_concentrator#transit_gateway_id VpnConcentrator#transit_gateway_id}. |
-| <code><a href="#@cdktn/provider-aws.vpnConcentrator.VpnConcentratorConfig.property.type">type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/vpn_concentrator#type VpnConcentrator#type}. |
+| <code><a href="#@cdktn/provider-aws.vpnConcentrator.VpnConcentratorConfig.property.transitGatewayId">transitGatewayId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/vpn_concentrator#transit_gateway_id VpnConcentrator#transit_gateway_id}. |
+| <code><a href="#@cdktn/provider-aws.vpnConcentrator.VpnConcentratorConfig.property.type">type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/vpn_concentrator#type VpnConcentrator#type}. |
 | <code><a href="#@cdktn/provider-aws.vpnConcentrator.VpnConcentratorConfig.property.region">region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.vpnConcentrator.VpnConcentratorConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/vpn_concentrator#tags VpnConcentrator#tags}. |
+| <code><a href="#@cdktn/provider-aws.vpnConcentrator.VpnConcentratorConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/vpn_concentrator#tags VpnConcentrator#tags}. |
 
 ---
 
@@ -925,7 +925,7 @@ public readonly transitGatewayId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/vpn_concentrator#transit_gateway_id VpnConcentrator#transit_gateway_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/vpn_concentrator#transit_gateway_id VpnConcentrator#transit_gateway_id}.
 
 ---
 
@@ -937,7 +937,7 @@ public readonly type: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/vpn_concentrator#type VpnConcentrator#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/vpn_concentrator#type VpnConcentrator#type}.
 
 ---
 
@@ -951,7 +951,7 @@ public readonly region: string;
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/vpn_concentrator#region VpnConcentrator#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/vpn_concentrator#region VpnConcentrator#region}
 
 ---
 
@@ -963,7 +963,7 @@ public readonly tags: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/vpn_concentrator#tags VpnConcentrator#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/vpn_concentrator#tags VpnConcentrator#tags}.
 
 ---
 
