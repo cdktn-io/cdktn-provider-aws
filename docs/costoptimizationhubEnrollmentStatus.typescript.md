@@ -4,7 +4,7 @@
 
 ### CostoptimizationhubEnrollmentStatus <a name="CostoptimizationhubEnrollmentStatus" id="@cdktn/provider-aws.costoptimizationhubEnrollmentStatus.CostoptimizationhubEnrollmentStatus"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/costoptimizationhub_enrollment_status aws_costoptimizationhub_enrollment_status}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/costoptimizationhub_enrollment_status aws_costoptimizationhub_enrollment_status}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.costoptimizationhubEnrollmentStatus.CostoptimizationhubEnrollmentStatus.Initializer"></a>
 
@@ -496,7 +496,7 @@ The construct id used in the generated config for the CostoptimizationhubEnrollm
 
 The id of the existing CostoptimizationhubEnrollmentStatus that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/costoptimizationhub_enrollment_status#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/costoptimizationhub_enrollment_status#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -756,7 +756,7 @@ const costoptimizationhubEnrollmentStatusConfig: costoptimizationhubEnrollmentSt
 | <code><a href="#@cdktn/provider-aws.costoptimizationhubEnrollmentStatus.CostoptimizationhubEnrollmentStatusConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.costoptimizationhubEnrollmentStatus.CostoptimizationhubEnrollmentStatusConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.costoptimizationhubEnrollmentStatus.CostoptimizationhubEnrollmentStatusConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.costoptimizationhubEnrollmentStatus.CostoptimizationhubEnrollmentStatusConfig.property.includeMemberAccounts">includeMemberAccounts</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/costoptimizationhub_enrollment_status#include_member_accounts CostoptimizationhubEnrollmentStatus#include_member_accounts}. |
+| <code><a href="#@cdktn/provider-aws.costoptimizationhubEnrollmentStatus.CostoptimizationhubEnrollmentStatusConfig.property.includeMemberAccounts">includeMemberAccounts</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/costoptimizationhub_enrollment_status#include_member_accounts CostoptimizationhubEnrollmentStatus#include_member_accounts}. |
 
 ---
 
@@ -838,7 +838,7 @@ public readonly includeMemberAccounts: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/costoptimizationhub_enrollment_status#include_member_accounts CostoptimizationhubEnrollmentStatus#include_member_accounts}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/costoptimizationhub_enrollment_status#include_member_accounts CostoptimizationhubEnrollmentStatus#include_member_accounts}.
 
 ---
 

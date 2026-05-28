@@ -4,7 +4,7 @@
 
 ### ArcregionswitchPlan <a name="ArcregionswitchPlan" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlan"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan aws_arcregionswitch_plan}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan aws_arcregionswitch_plan}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlan.Initializer"></a>
 
@@ -75,6 +75,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlan.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlan.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlan.putAssociatedAlarms">PutAssociatedAlarms</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlan.putReportConfiguration">PutReportConfiguration</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlan.putTimeouts">PutTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlan.putTriggers">PutTriggers</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlan.putWorkflow">PutWorkflow</a></code> | *No description.* |
@@ -83,6 +84,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlan.resetPrimaryRegion">ResetPrimaryRegion</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlan.resetRecoveryTimeObjectiveMinutes">ResetRecoveryTimeObjectiveMinutes</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlan.resetRegion">ResetRegion</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlan.resetReportConfiguration">ResetReportConfiguration</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlan.resetTags">ResetTags</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlan.resetTimeouts">ResetTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlan.resetTriggers">ResetTriggers</a></code> | *No description.* |
@@ -411,6 +413,18 @@ func PutAssociatedAlarms(value interface{})
 
 ---
 
+##### `PutReportConfiguration` <a name="PutReportConfiguration" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlan.putReportConfiguration"></a>
+
+```go
+func PutReportConfiguration(value interface{})
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlan.putReportConfiguration.parameter.value"></a>
+
+- *Type:* interface{}
+
+---
+
 ##### `PutTimeouts` <a name="PutTimeouts" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlan.putTimeouts"></a>
 
 ```go
@@ -475,6 +489,12 @@ func ResetRecoveryTimeObjectiveMinutes()
 
 ```go
 func ResetRegion()
+```
+
+##### `ResetReportConfiguration` <a name="ResetReportConfiguration" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlan.resetReportConfiguration"></a>
+
+```go
+func ResetReportConfiguration()
 ```
 
 ##### `ResetTags` <a name="ResetTags" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlan.resetTags"></a>
@@ -604,7 +624,7 @@ The construct id used in the generated config for the ArcregionswitchPlan to imp
 
 The id of the existing ArcregionswitchPlan that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -636,6 +656,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlan.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlan.property.arn">Arn</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlan.property.associatedAlarms">AssociatedAlarms</a></code> | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanAssociatedAlarmsList">ArcregionswitchPlanAssociatedAlarmsList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlan.property.reportConfiguration">ReportConfiguration</a></code> | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationList">ArcregionswitchPlanReportConfigurationList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlan.property.tagsAll">TagsAll</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlan.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanTimeoutsOutputReference">ArcregionswitchPlanTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlan.property.triggers">Triggers</a></code> | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanTriggersList">ArcregionswitchPlanTriggersList</a></code> | *No description.* |
@@ -649,6 +670,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlan.property.recoveryTimeObjectiveMinutesInput">RecoveryTimeObjectiveMinutesInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlan.property.regionInput">RegionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlan.property.regionsInput">RegionsInput</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlan.property.reportConfigurationInput">ReportConfigurationInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlan.property.tagsInput">TagsInput</a></code> | <code>*map[string]*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlan.property.timeoutsInput">TimeoutsInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlan.property.triggersInput">TriggersInput</a></code> | <code>interface{}</code> | *No description.* |
@@ -827,6 +849,16 @@ func AssociatedAlarms() ArcregionswitchPlanAssociatedAlarmsList
 
 ---
 
+##### `ReportConfiguration`<sup>Required</sup> <a name="ReportConfiguration" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlan.property.reportConfiguration"></a>
+
+```go
+func ReportConfiguration() ArcregionswitchPlanReportConfigurationList
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationList">ArcregionswitchPlanReportConfigurationList</a>
+
+---
+
 ##### `TagsAll`<sup>Required</sup> <a name="TagsAll" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlan.property.tagsAll"></a>
 
 ```go
@@ -954,6 +986,16 @@ func RegionsInput() *[]*string
 ```
 
 - *Type:* *[]*string
+
+---
+
+##### `ReportConfigurationInput`<sup>Optional</sup> <a name="ReportConfigurationInput" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlan.property.reportConfigurationInput"></a>
+
+```go
+func ReportConfigurationInput() interface{}
+```
+
+- *Type:* interface{}
 
 ---
 
@@ -1127,11 +1169,11 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/arcregionswitchplan"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanAssociatedAlarms.property.alarmType">AlarmType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#alarm_type ArcregionswitchPlan#alarm_type}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanAssociatedAlarms.property.mapBlockKey">MapBlockKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#map_block_key ArcregionswitchPlan#map_block_key}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanAssociatedAlarms.property.resourceIdentifier">ResourceIdentifier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#resource_identifier ArcregionswitchPlan#resource_identifier}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanAssociatedAlarms.property.crossAccountRole">CrossAccountRole</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanAssociatedAlarms.property.externalId">ExternalId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanAssociatedAlarms.property.alarmType">AlarmType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#alarm_type ArcregionswitchPlan#alarm_type}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanAssociatedAlarms.property.mapBlockKey">MapBlockKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#map_block_key ArcregionswitchPlan#map_block_key}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanAssociatedAlarms.property.resourceIdentifier">ResourceIdentifier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#resource_identifier ArcregionswitchPlan#resource_identifier}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanAssociatedAlarms.property.crossAccountRole">CrossAccountRole</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanAssociatedAlarms.property.externalId">ExternalId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}. |
 
 ---
 
@@ -1143,7 +1185,7 @@ AlarmType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#alarm_type ArcregionswitchPlan#alarm_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#alarm_type ArcregionswitchPlan#alarm_type}.
 
 ---
 
@@ -1155,7 +1197,7 @@ MapBlockKey *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#map_block_key ArcregionswitchPlan#map_block_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#map_block_key ArcregionswitchPlan#map_block_key}.
 
 ---
 
@@ -1167,7 +1209,7 @@ ResourceIdentifier *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#resource_identifier ArcregionswitchPlan#resource_identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#resource_identifier ArcregionswitchPlan#resource_identifier}.
 
 ---
 
@@ -1179,7 +1221,7 @@ CrossAccountRole *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}.
 
 ---
 
@@ -1191,7 +1233,7 @@ ExternalId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}.
 
 ---
 
@@ -1219,6 +1261,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/arcregionswitchplan"
 	PrimaryRegion: *string,
 	RecoveryTimeObjectiveMinutes: *f64,
 	Region: *string,
+	ReportConfiguration: interface{},
 	Tags: *map[string]*string,
 	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v24.arcregionswitchPlan.ArcregionswitchPlanTimeouts,
 	Triggers: interface{},
@@ -1237,16 +1280,17 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/arcregionswitchplan"
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanConfig.property.executionRole">ExecutionRole</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#execution_role ArcregionswitchPlan#execution_role}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#name ArcregionswitchPlan#name}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanConfig.property.recoveryApproach">RecoveryApproach</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#recovery_approach ArcregionswitchPlan#recovery_approach}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanConfig.property.regions">Regions</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#regions ArcregionswitchPlan#regions}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanConfig.property.executionRole">ExecutionRole</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#execution_role ArcregionswitchPlan#execution_role}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#name ArcregionswitchPlan#name}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanConfig.property.recoveryApproach">RecoveryApproach</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#recovery_approach ArcregionswitchPlan#recovery_approach}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanConfig.property.regions">Regions</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#regions ArcregionswitchPlan#regions}. |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanConfig.property.associatedAlarms">AssociatedAlarms</a></code> | <code>interface{}</code> | associated_alarms block. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#description ArcregionswitchPlan#description}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanConfig.property.primaryRegion">PrimaryRegion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#primary_region ArcregionswitchPlan#primary_region}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanConfig.property.recoveryTimeObjectiveMinutes">RecoveryTimeObjectiveMinutes</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#recovery_time_objective_minutes ArcregionswitchPlan#recovery_time_objective_minutes}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#description ArcregionswitchPlan#description}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanConfig.property.primaryRegion">PrimaryRegion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#primary_region ArcregionswitchPlan#primary_region}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanConfig.property.recoveryTimeObjectiveMinutes">RecoveryTimeObjectiveMinutes</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#recovery_time_objective_minutes ArcregionswitchPlan#recovery_time_objective_minutes}. |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#tags ArcregionswitchPlan#tags}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanConfig.property.reportConfiguration">ReportConfiguration</a></code> | <code>interface{}</code> | report_configuration block. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#tags ArcregionswitchPlan#tags}. |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanTimeouts">ArcregionswitchPlanTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanConfig.property.triggers">Triggers</a></code> | <code>interface{}</code> | triggers block. |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanConfig.property.workflow">Workflow</a></code> | <code>interface{}</code> | workflow block. |
@@ -1331,7 +1375,7 @@ ExecutionRole *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#execution_role ArcregionswitchPlan#execution_role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#execution_role ArcregionswitchPlan#execution_role}.
 
 ---
 
@@ -1343,7 +1387,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#name ArcregionswitchPlan#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#name ArcregionswitchPlan#name}.
 
 ---
 
@@ -1355,7 +1399,7 @@ RecoveryApproach *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#recovery_approach ArcregionswitchPlan#recovery_approach}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#recovery_approach ArcregionswitchPlan#recovery_approach}.
 
 ---
 
@@ -1367,7 +1411,7 @@ Regions *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#regions ArcregionswitchPlan#regions}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#regions ArcregionswitchPlan#regions}.
 
 ---
 
@@ -1381,7 +1425,7 @@ AssociatedAlarms interface{}
 
 associated_alarms block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#associated_alarms ArcregionswitchPlan#associated_alarms}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#associated_alarms ArcregionswitchPlan#associated_alarms}
 
 ---
 
@@ -1393,7 +1437,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#description ArcregionswitchPlan#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#description ArcregionswitchPlan#description}.
 
 ---
 
@@ -1405,7 +1449,7 @@ PrimaryRegion *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#primary_region ArcregionswitchPlan#primary_region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#primary_region ArcregionswitchPlan#primary_region}.
 
 ---
 
@@ -1417,7 +1461,7 @@ RecoveryTimeObjectiveMinutes *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#recovery_time_objective_minutes ArcregionswitchPlan#recovery_time_objective_minutes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#recovery_time_objective_minutes ArcregionswitchPlan#recovery_time_objective_minutes}.
 
 ---
 
@@ -1431,7 +1475,21 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#region ArcregionswitchPlan#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#region ArcregionswitchPlan#region}
+
+---
+
+##### `ReportConfiguration`<sup>Optional</sup> <a name="ReportConfiguration" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanConfig.property.reportConfiguration"></a>
+
+```go
+ReportConfiguration interface{}
+```
+
+- *Type:* interface{}
+
+report_configuration block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#report_configuration ArcregionswitchPlan#report_configuration}
 
 ---
 
@@ -1443,7 +1501,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#tags ArcregionswitchPlan#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#tags ArcregionswitchPlan#tags}.
 
 ---
 
@@ -1457,7 +1515,7 @@ Timeouts ArcregionswitchPlanTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#timeouts ArcregionswitchPlan#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#timeouts ArcregionswitchPlan#timeouts}
 
 ---
 
@@ -1471,7 +1529,7 @@ Triggers interface{}
 
 triggers block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#triggers ArcregionswitchPlan#triggers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#triggers ArcregionswitchPlan#triggers}
 
 ---
 
@@ -1485,7 +1543,121 @@ Workflow interface{}
 
 workflow block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#workflow ArcregionswitchPlan#workflow}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#workflow ArcregionswitchPlan#workflow}
+
+---
+
+### ArcregionswitchPlanReportConfiguration <a name="ArcregionswitchPlanReportConfiguration" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfiguration"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfiguration.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/arcregionswitchplan"
+
+&arcregionswitchplan.ArcregionswitchPlanReportConfiguration {
+	ReportOutput: interface{},
+}
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfiguration.property.reportOutput">ReportOutput</a></code> | <code>interface{}</code> | report_output block. |
+
+---
+
+##### `ReportOutput`<sup>Optional</sup> <a name="ReportOutput" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfiguration.property.reportOutput"></a>
+
+```go
+ReportOutput interface{}
+```
+
+- *Type:* interface{}
+
+report_output block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#report_output ArcregionswitchPlan#report_output}
+
+---
+
+### ArcregionswitchPlanReportConfigurationReportOutput <a name="ArcregionswitchPlanReportConfigurationReportOutput" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutput"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutput.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/arcregionswitchplan"
+
+&arcregionswitchplan.ArcregionswitchPlanReportConfigurationReportOutput {
+	S3Configuration: interface{},
+}
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutput.property.s3Configuration">S3Configuration</a></code> | <code>interface{}</code> | s3_configuration block. |
+
+---
+
+##### `S3Configuration`<sup>Optional</sup> <a name="S3Configuration" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutput.property.s3Configuration"></a>
+
+```go
+S3Configuration interface{}
+```
+
+- *Type:* interface{}
+
+s3_configuration block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#s3_configuration ArcregionswitchPlan#s3_configuration}
+
+---
+
+### ArcregionswitchPlanReportConfigurationReportOutputS3Configuration <a name="ArcregionswitchPlanReportConfigurationReportOutputS3Configuration" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputS3Configuration"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputS3Configuration.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/arcregionswitchplan"
+
+&arcregionswitchplan.ArcregionswitchPlanReportConfigurationReportOutputS3Configuration {
+	BucketOwner: *string,
+	BucketPath: *string,
+}
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputS3Configuration.property.bucketOwner">BucketOwner</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#bucket_owner ArcregionswitchPlan#bucket_owner}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputS3Configuration.property.bucketPath">BucketPath</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#bucket_path ArcregionswitchPlan#bucket_path}. |
+
+---
+
+##### `BucketOwner`<sup>Required</sup> <a name="BucketOwner" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputS3Configuration.property.bucketOwner"></a>
+
+```go
+BucketOwner *string
+```
+
+- *Type:* *string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#bucket_owner ArcregionswitchPlan#bucket_owner}.
+
+---
+
+##### `BucketPath`<sup>Required</sup> <a name="BucketPath" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputS3Configuration.property.bucketPath"></a>
+
+```go
+BucketPath *string
+```
+
+- *Type:* *string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#bucket_path ArcregionswitchPlan#bucket_path}.
 
 ---
 
@@ -1523,7 +1695,7 @@ Create *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#create ArcregionswitchPlan#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#create ArcregionswitchPlan#create}
 
 ---
 
@@ -1537,7 +1709,7 @@ Delete *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#delete ArcregionswitchPlan#delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#delete ArcregionswitchPlan#delete}
 
 ---
 
@@ -1551,7 +1723,7 @@ Update *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#update ArcregionswitchPlan#update}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#update ArcregionswitchPlan#update}
 
 ---
 
@@ -1575,11 +1747,11 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/arcregionswitchplan"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanTriggers.property.action">Action</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#action ArcregionswitchPlan#action}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanTriggers.property.minDelayMinutesBetweenExecutions">MinDelayMinutesBetweenExecutions</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#min_delay_minutes_between_executions ArcregionswitchPlan#min_delay_minutes_between_executions}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanTriggers.property.targetRegion">TargetRegion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#target_region ArcregionswitchPlan#target_region}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanTriggers.property.action">Action</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#action ArcregionswitchPlan#action}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanTriggers.property.minDelayMinutesBetweenExecutions">MinDelayMinutesBetweenExecutions</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#min_delay_minutes_between_executions ArcregionswitchPlan#min_delay_minutes_between_executions}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanTriggers.property.targetRegion">TargetRegion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#target_region ArcregionswitchPlan#target_region}. |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanTriggers.property.conditions">Conditions</a></code> | <code>interface{}</code> | conditions block. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanTriggers.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#description ArcregionswitchPlan#description}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanTriggers.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#description ArcregionswitchPlan#description}. |
 
 ---
 
@@ -1591,7 +1763,7 @@ Action *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#action ArcregionswitchPlan#action}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#action ArcregionswitchPlan#action}.
 
 ---
 
@@ -1603,7 +1775,7 @@ MinDelayMinutesBetweenExecutions *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#min_delay_minutes_between_executions ArcregionswitchPlan#min_delay_minutes_between_executions}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#min_delay_minutes_between_executions ArcregionswitchPlan#min_delay_minutes_between_executions}.
 
 ---
 
@@ -1615,7 +1787,7 @@ TargetRegion *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#target_region ArcregionswitchPlan#target_region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#target_region ArcregionswitchPlan#target_region}.
 
 ---
 
@@ -1629,7 +1801,7 @@ Conditions interface{}
 
 conditions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#conditions ArcregionswitchPlan#conditions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#conditions ArcregionswitchPlan#conditions}
 
 ---
 
@@ -1641,7 +1813,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#description ArcregionswitchPlan#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#description ArcregionswitchPlan#description}.
 
 ---
 
@@ -1662,8 +1834,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/arcregionswitchplan"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanTriggersConditions.property.associatedAlarmName">AssociatedAlarmName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#associated_alarm_name ArcregionswitchPlan#associated_alarm_name}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanTriggersConditions.property.condition">Condition</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#condition ArcregionswitchPlan#condition}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanTriggersConditions.property.associatedAlarmName">AssociatedAlarmName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#associated_alarm_name ArcregionswitchPlan#associated_alarm_name}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanTriggersConditions.property.condition">Condition</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#condition ArcregionswitchPlan#condition}. |
 
 ---
 
@@ -1675,7 +1847,7 @@ AssociatedAlarmName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#associated_alarm_name ArcregionswitchPlan#associated_alarm_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#associated_alarm_name ArcregionswitchPlan#associated_alarm_name}.
 
 ---
 
@@ -1687,7 +1859,7 @@ Condition *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#condition ArcregionswitchPlan#condition}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#condition ArcregionswitchPlan#condition}.
 
 ---
 
@@ -1710,10 +1882,10 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/arcregionswitchplan"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflow.property.workflowTargetAction">WorkflowTargetAction</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#workflow_target_action ArcregionswitchPlan#workflow_target_action}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflow.property.workflowTargetAction">WorkflowTargetAction</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#workflow_target_action ArcregionswitchPlan#workflow_target_action}. |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflow.property.step">Step</a></code> | <code>interface{}</code> | step block. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflow.property.workflowDescription">WorkflowDescription</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#workflow_description ArcregionswitchPlan#workflow_description}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflow.property.workflowTargetRegion">WorkflowTargetRegion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#workflow_target_region ArcregionswitchPlan#workflow_target_region}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflow.property.workflowDescription">WorkflowDescription</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#workflow_description ArcregionswitchPlan#workflow_description}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflow.property.workflowTargetRegion">WorkflowTargetRegion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#workflow_target_region ArcregionswitchPlan#workflow_target_region}. |
 
 ---
 
@@ -1725,7 +1897,7 @@ WorkflowTargetAction *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#workflow_target_action ArcregionswitchPlan#workflow_target_action}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#workflow_target_action ArcregionswitchPlan#workflow_target_action}.
 
 ---
 
@@ -1739,7 +1911,7 @@ Step interface{}
 
 step block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#step ArcregionswitchPlan#step}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#step ArcregionswitchPlan#step}
 
 ---
 
@@ -1751,7 +1923,7 @@ WorkflowDescription *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#workflow_description ArcregionswitchPlan#workflow_description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#workflow_description ArcregionswitchPlan#workflow_description}.
 
 ---
 
@@ -1763,7 +1935,7 @@ WorkflowTargetRegion *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#workflow_target_region ArcregionswitchPlan#workflow_target_region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#workflow_target_region ArcregionswitchPlan#workflow_target_region}.
 
 ---
 
@@ -1787,6 +1959,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/arcregionswitchplan"
 	ExecutionApprovalConfig: interface{},
 	GlobalAuroraConfig: interface{},
 	ParallelConfig: interface{},
+	RdsCreateCrossRegionReadReplicaConfig: interface{},
+	RdsPromoteReadReplicaConfig: interface{},
 	RegionSwitchPlanConfig: interface{},
 	Route53HealthCheckConfig: interface{},
 }
@@ -1796,11 +1970,11 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/arcregionswitchplan"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStep.property.executionBlockType">ExecutionBlockType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#execution_block_type ArcregionswitchPlan#execution_block_type}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStep.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#name ArcregionswitchPlan#name}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStep.property.executionBlockType">ExecutionBlockType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#execution_block_type ArcregionswitchPlan#execution_block_type}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStep.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#name ArcregionswitchPlan#name}. |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStep.property.arcRoutingControlConfig">ArcRoutingControlConfig</a></code> | <code>interface{}</code> | arc_routing_control_config block. |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStep.property.customActionLambdaConfig">CustomActionLambdaConfig</a></code> | <code>interface{}</code> | custom_action_lambda_config block. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStep.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#description ArcregionswitchPlan#description}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStep.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#description ArcregionswitchPlan#description}. |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStep.property.documentDbConfig">DocumentDbConfig</a></code> | <code>interface{}</code> | document_db_config block. |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStep.property.ec2AsgCapacityIncreaseConfig">Ec2AsgCapacityIncreaseConfig</a></code> | <code>interface{}</code> | ec2_asg_capacity_increase_config block. |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStep.property.ecsCapacityIncreaseConfig">EcsCapacityIncreaseConfig</a></code> | <code>interface{}</code> | ecs_capacity_increase_config block. |
@@ -1808,6 +1982,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/arcregionswitchplan"
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStep.property.executionApprovalConfig">ExecutionApprovalConfig</a></code> | <code>interface{}</code> | execution_approval_config block. |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStep.property.globalAuroraConfig">GlobalAuroraConfig</a></code> | <code>interface{}</code> | global_aurora_config block. |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStep.property.parallelConfig">ParallelConfig</a></code> | <code>interface{}</code> | parallel_config block. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStep.property.rdsCreateCrossRegionReadReplicaConfig">RdsCreateCrossRegionReadReplicaConfig</a></code> | <code>interface{}</code> | rds_create_cross_region_read_replica_config block. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStep.property.rdsPromoteReadReplicaConfig">RdsPromoteReadReplicaConfig</a></code> | <code>interface{}</code> | rds_promote_read_replica_config block. |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStep.property.regionSwitchPlanConfig">RegionSwitchPlanConfig</a></code> | <code>interface{}</code> | region_switch_plan_config block. |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStep.property.route53HealthCheckConfig">Route53HealthCheckConfig</a></code> | <code>interface{}</code> | route53_health_check_config block. |
 
@@ -1821,7 +1997,7 @@ ExecutionBlockType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#execution_block_type ArcregionswitchPlan#execution_block_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#execution_block_type ArcregionswitchPlan#execution_block_type}.
 
 ---
 
@@ -1833,7 +2009,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#name ArcregionswitchPlan#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#name ArcregionswitchPlan#name}.
 
 ---
 
@@ -1847,7 +2023,7 @@ ArcRoutingControlConfig interface{}
 
 arc_routing_control_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#arc_routing_control_config ArcregionswitchPlan#arc_routing_control_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#arc_routing_control_config ArcregionswitchPlan#arc_routing_control_config}
 
 ---
 
@@ -1861,7 +2037,7 @@ CustomActionLambdaConfig interface{}
 
 custom_action_lambda_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#custom_action_lambda_config ArcregionswitchPlan#custom_action_lambda_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#custom_action_lambda_config ArcregionswitchPlan#custom_action_lambda_config}
 
 ---
 
@@ -1873,7 +2049,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#description ArcregionswitchPlan#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#description ArcregionswitchPlan#description}.
 
 ---
 
@@ -1887,7 +2063,7 @@ DocumentDbConfig interface{}
 
 document_db_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#document_db_config ArcregionswitchPlan#document_db_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#document_db_config ArcregionswitchPlan#document_db_config}
 
 ---
 
@@ -1901,7 +2077,7 @@ Ec2AsgCapacityIncreaseConfig interface{}
 
 ec2_asg_capacity_increase_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#ec2_asg_capacity_increase_config ArcregionswitchPlan#ec2_asg_capacity_increase_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#ec2_asg_capacity_increase_config ArcregionswitchPlan#ec2_asg_capacity_increase_config}
 
 ---
 
@@ -1915,7 +2091,7 @@ EcsCapacityIncreaseConfig interface{}
 
 ecs_capacity_increase_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#ecs_capacity_increase_config ArcregionswitchPlan#ecs_capacity_increase_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#ecs_capacity_increase_config ArcregionswitchPlan#ecs_capacity_increase_config}
 
 ---
 
@@ -1929,7 +2105,7 @@ EksResourceScalingConfig interface{}
 
 eks_resource_scaling_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#eks_resource_scaling_config ArcregionswitchPlan#eks_resource_scaling_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#eks_resource_scaling_config ArcregionswitchPlan#eks_resource_scaling_config}
 
 ---
 
@@ -1943,7 +2119,7 @@ ExecutionApprovalConfig interface{}
 
 execution_approval_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#execution_approval_config ArcregionswitchPlan#execution_approval_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#execution_approval_config ArcregionswitchPlan#execution_approval_config}
 
 ---
 
@@ -1957,7 +2133,7 @@ GlobalAuroraConfig interface{}
 
 global_aurora_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#global_aurora_config ArcregionswitchPlan#global_aurora_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#global_aurora_config ArcregionswitchPlan#global_aurora_config}
 
 ---
 
@@ -1971,7 +2147,35 @@ ParallelConfig interface{}
 
 parallel_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#parallel_config ArcregionswitchPlan#parallel_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#parallel_config ArcregionswitchPlan#parallel_config}
+
+---
+
+##### `RdsCreateCrossRegionReadReplicaConfig`<sup>Optional</sup> <a name="RdsCreateCrossRegionReadReplicaConfig" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStep.property.rdsCreateCrossRegionReadReplicaConfig"></a>
+
+```go
+RdsCreateCrossRegionReadReplicaConfig interface{}
+```
+
+- *Type:* interface{}
+
+rds_create_cross_region_read_replica_config block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#rds_create_cross_region_read_replica_config ArcregionswitchPlan#rds_create_cross_region_read_replica_config}
+
+---
+
+##### `RdsPromoteReadReplicaConfig`<sup>Optional</sup> <a name="RdsPromoteReadReplicaConfig" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStep.property.rdsPromoteReadReplicaConfig"></a>
+
+```go
+RdsPromoteReadReplicaConfig interface{}
+```
+
+- *Type:* interface{}
+
+rds_promote_read_replica_config block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#rds_promote_read_replica_config ArcregionswitchPlan#rds_promote_read_replica_config}
 
 ---
 
@@ -1985,7 +2189,7 @@ RegionSwitchPlanConfig interface{}
 
 region_switch_plan_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#region_switch_plan_config ArcregionswitchPlan#region_switch_plan_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#region_switch_plan_config ArcregionswitchPlan#region_switch_plan_config}
 
 ---
 
@@ -1999,7 +2203,7 @@ Route53HealthCheckConfig interface{}
 
 route53_health_check_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#route53_health_check_config ArcregionswitchPlan#route53_health_check_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#route53_health_check_config ArcregionswitchPlan#route53_health_check_config}
 
 ---
 
@@ -2022,10 +2226,10 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/arcregionswitchplan"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepArcRoutingControlConfig.property.crossAccountRole">CrossAccountRole</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepArcRoutingControlConfig.property.externalId">ExternalId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepArcRoutingControlConfig.property.crossAccountRole">CrossAccountRole</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepArcRoutingControlConfig.property.externalId">ExternalId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}. |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepArcRoutingControlConfig.property.regionAndRoutingControls">RegionAndRoutingControls</a></code> | <code>interface{}</code> | region_and_routing_controls block. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepArcRoutingControlConfig.property.timeoutMinutes">TimeoutMinutes</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepArcRoutingControlConfig.property.timeoutMinutes">TimeoutMinutes</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}. |
 
 ---
 
@@ -2037,7 +2241,7 @@ CrossAccountRole *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}.
 
 ---
 
@@ -2049,7 +2253,7 @@ ExternalId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}.
 
 ---
 
@@ -2063,7 +2267,7 @@ RegionAndRoutingControls interface{}
 
 region_and_routing_controls block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#region_and_routing_controls ArcregionswitchPlan#region_and_routing_controls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#region_and_routing_controls ArcregionswitchPlan#region_and_routing_controls}
 
 ---
 
@@ -2075,7 +2279,7 @@ TimeoutMinutes *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}.
 
 ---
 
@@ -2096,7 +2300,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/arcregionswitchplan"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepArcRoutingControlConfigRegionAndRoutingControls.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#region ArcregionswitchPlan#region}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepArcRoutingControlConfigRegionAndRoutingControls.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#region ArcregionswitchPlan#region}. |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepArcRoutingControlConfigRegionAndRoutingControls.property.routingControl">RoutingControl</a></code> | <code>interface{}</code> | routing_control block. |
 
 ---
@@ -2109,7 +2313,7 @@ Region *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#region ArcregionswitchPlan#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#region ArcregionswitchPlan#region}.
 
 ---
 
@@ -2123,7 +2327,7 @@ RoutingControl interface{}
 
 routing_control block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#routing_control ArcregionswitchPlan#routing_control}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#routing_control ArcregionswitchPlan#routing_control}
 
 ---
 
@@ -2144,8 +2348,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/arcregionswitchplan"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepArcRoutingControlConfigRegionAndRoutingControlsRoutingControl.property.routingControlArn">RoutingControlArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#routing_control_arn ArcregionswitchPlan#routing_control_arn}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepArcRoutingControlConfigRegionAndRoutingControlsRoutingControl.property.state">State</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#state ArcregionswitchPlan#state}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepArcRoutingControlConfigRegionAndRoutingControlsRoutingControl.property.routingControlArn">RoutingControlArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#routing_control_arn ArcregionswitchPlan#routing_control_arn}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepArcRoutingControlConfigRegionAndRoutingControlsRoutingControl.property.state">State</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#state ArcregionswitchPlan#state}. |
 
 ---
 
@@ -2157,7 +2361,7 @@ RoutingControlArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#routing_control_arn ArcregionswitchPlan#routing_control_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#routing_control_arn ArcregionswitchPlan#routing_control_arn}.
 
 ---
 
@@ -2169,7 +2373,7 @@ State *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#state ArcregionswitchPlan#state}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#state ArcregionswitchPlan#state}.
 
 ---
 
@@ -2193,10 +2397,10 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/arcregionswitchplan"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepCustomActionLambdaConfig.property.regionToRun">RegionToRun</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#region_to_run ArcregionswitchPlan#region_to_run}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepCustomActionLambdaConfig.property.retryIntervalMinutes">RetryIntervalMinutes</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#retry_interval_minutes ArcregionswitchPlan#retry_interval_minutes}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepCustomActionLambdaConfig.property.regionToRun">RegionToRun</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#region_to_run ArcregionswitchPlan#region_to_run}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepCustomActionLambdaConfig.property.retryIntervalMinutes">RetryIntervalMinutes</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#retry_interval_minutes ArcregionswitchPlan#retry_interval_minutes}. |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepCustomActionLambdaConfig.property.lambda">Lambda</a></code> | <code>interface{}</code> | lambda block. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepCustomActionLambdaConfig.property.timeoutMinutes">TimeoutMinutes</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepCustomActionLambdaConfig.property.timeoutMinutes">TimeoutMinutes</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}. |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepCustomActionLambdaConfig.property.ungraceful">Ungraceful</a></code> | <code>interface{}</code> | ungraceful block. |
 
 ---
@@ -2209,7 +2413,7 @@ RegionToRun *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#region_to_run ArcregionswitchPlan#region_to_run}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#region_to_run ArcregionswitchPlan#region_to_run}.
 
 ---
 
@@ -2221,7 +2425,7 @@ RetryIntervalMinutes *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#retry_interval_minutes ArcregionswitchPlan#retry_interval_minutes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#retry_interval_minutes ArcregionswitchPlan#retry_interval_minutes}.
 
 ---
 
@@ -2235,7 +2439,7 @@ Lambda interface{}
 
 lambda block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#lambda ArcregionswitchPlan#lambda}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#lambda ArcregionswitchPlan#lambda}
 
 ---
 
@@ -2247,7 +2451,7 @@ TimeoutMinutes *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}.
 
 ---
 
@@ -2261,7 +2465,7 @@ Ungraceful interface{}
 
 ungraceful block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}
 
 ---
 
@@ -2283,9 +2487,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/arcregionswitchplan"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepCustomActionLambdaConfigLambda.property.arn">Arn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#arn ArcregionswitchPlan#arn}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepCustomActionLambdaConfigLambda.property.crossAccountRole">CrossAccountRole</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepCustomActionLambdaConfigLambda.property.externalId">ExternalId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepCustomActionLambdaConfigLambda.property.arn">Arn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#arn ArcregionswitchPlan#arn}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepCustomActionLambdaConfigLambda.property.crossAccountRole">CrossAccountRole</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepCustomActionLambdaConfigLambda.property.externalId">ExternalId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}. |
 
 ---
 
@@ -2297,7 +2501,7 @@ Arn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#arn ArcregionswitchPlan#arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#arn ArcregionswitchPlan#arn}.
 
 ---
 
@@ -2309,7 +2513,7 @@ CrossAccountRole *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}.
 
 ---
 
@@ -2321,7 +2525,7 @@ ExternalId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}.
 
 ---
 
@@ -2341,7 +2545,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/arcregionswitchplan"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepCustomActionLambdaConfigUngraceful.property.behavior">Behavior</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#behavior ArcregionswitchPlan#behavior}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepCustomActionLambdaConfigUngraceful.property.behavior">Behavior</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#behavior ArcregionswitchPlan#behavior}. |
 
 ---
 
@@ -2353,7 +2557,7 @@ Behavior *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#behavior ArcregionswitchPlan#behavior}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#behavior ArcregionswitchPlan#behavior}.
 
 ---
 
@@ -2379,12 +2583,12 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/arcregionswitchplan"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepDocumentDbConfig.property.behavior">Behavior</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#behavior ArcregionswitchPlan#behavior}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepDocumentDbConfig.property.databaseClusterArns">DatabaseClusterArns</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#database_cluster_arns ArcregionswitchPlan#database_cluster_arns}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepDocumentDbConfig.property.globalClusterIdentifier">GlobalClusterIdentifier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#global_cluster_identifier ArcregionswitchPlan#global_cluster_identifier}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepDocumentDbConfig.property.crossAccountRole">CrossAccountRole</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepDocumentDbConfig.property.externalId">ExternalId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepDocumentDbConfig.property.timeoutMinutes">TimeoutMinutes</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepDocumentDbConfig.property.behavior">Behavior</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#behavior ArcregionswitchPlan#behavior}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepDocumentDbConfig.property.databaseClusterArns">DatabaseClusterArns</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#database_cluster_arns ArcregionswitchPlan#database_cluster_arns}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepDocumentDbConfig.property.globalClusterIdentifier">GlobalClusterIdentifier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#global_cluster_identifier ArcregionswitchPlan#global_cluster_identifier}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepDocumentDbConfig.property.crossAccountRole">CrossAccountRole</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepDocumentDbConfig.property.externalId">ExternalId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepDocumentDbConfig.property.timeoutMinutes">TimeoutMinutes</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}. |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepDocumentDbConfig.property.ungraceful">Ungraceful</a></code> | <code>interface{}</code> | ungraceful block. |
 
 ---
@@ -2397,7 +2601,7 @@ Behavior *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#behavior ArcregionswitchPlan#behavior}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#behavior ArcregionswitchPlan#behavior}.
 
 ---
 
@@ -2409,7 +2613,7 @@ DatabaseClusterArns *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#database_cluster_arns ArcregionswitchPlan#database_cluster_arns}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#database_cluster_arns ArcregionswitchPlan#database_cluster_arns}.
 
 ---
 
@@ -2421,7 +2625,7 @@ GlobalClusterIdentifier *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#global_cluster_identifier ArcregionswitchPlan#global_cluster_identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#global_cluster_identifier ArcregionswitchPlan#global_cluster_identifier}.
 
 ---
 
@@ -2433,7 +2637,7 @@ CrossAccountRole *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}.
 
 ---
 
@@ -2445,7 +2649,7 @@ ExternalId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}.
 
 ---
 
@@ -2457,7 +2661,7 @@ TimeoutMinutes *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}.
 
 ---
 
@@ -2471,7 +2675,7 @@ Ungraceful interface{}
 
 ungraceful block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}
 
 ---
 
@@ -2491,7 +2695,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/arcregionswitchplan"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepDocumentDbConfigUngraceful.property.ungraceful">Ungraceful</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepDocumentDbConfigUngraceful.property.ungraceful">Ungraceful</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}. |
 
 ---
 
@@ -2503,7 +2707,7 @@ Ungraceful *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}.
 
 ---
 
@@ -2527,10 +2731,10 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/arcregionswitchplan"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfig.property.capacityMonitoringApproach">CapacityMonitoringApproach</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#capacity_monitoring_approach ArcregionswitchPlan#capacity_monitoring_approach}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfig.property.capacityMonitoringApproach">CapacityMonitoringApproach</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#capacity_monitoring_approach ArcregionswitchPlan#capacity_monitoring_approach}. |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfig.property.asg">Asg</a></code> | <code>interface{}</code> | asg block. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfig.property.targetPercent">TargetPercent</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#target_percent ArcregionswitchPlan#target_percent}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfig.property.timeoutMinutes">TimeoutMinutes</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfig.property.targetPercent">TargetPercent</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#target_percent ArcregionswitchPlan#target_percent}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfig.property.timeoutMinutes">TimeoutMinutes</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}. |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfig.property.ungraceful">Ungraceful</a></code> | <code>interface{}</code> | ungraceful block. |
 
 ---
@@ -2543,7 +2747,7 @@ CapacityMonitoringApproach *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#capacity_monitoring_approach ArcregionswitchPlan#capacity_monitoring_approach}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#capacity_monitoring_approach ArcregionswitchPlan#capacity_monitoring_approach}.
 
 ---
 
@@ -2557,7 +2761,7 @@ Asg interface{}
 
 asg block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#asg ArcregionswitchPlan#asg}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#asg ArcregionswitchPlan#asg}
 
 ---
 
@@ -2569,7 +2773,7 @@ TargetPercent *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#target_percent ArcregionswitchPlan#target_percent}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#target_percent ArcregionswitchPlan#target_percent}.
 
 ---
 
@@ -2581,7 +2785,7 @@ TimeoutMinutes *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}.
 
 ---
 
@@ -2595,7 +2799,7 @@ Ungraceful interface{}
 
 ungraceful block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}
 
 ---
 
@@ -2617,9 +2821,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/arcregionswitchplan"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfigAsg.property.arn">Arn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#arn ArcregionswitchPlan#arn}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfigAsg.property.crossAccountRole">CrossAccountRole</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfigAsg.property.externalId">ExternalId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfigAsg.property.arn">Arn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#arn ArcregionswitchPlan#arn}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfigAsg.property.crossAccountRole">CrossAccountRole</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfigAsg.property.externalId">ExternalId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}. |
 
 ---
 
@@ -2631,7 +2835,7 @@ Arn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#arn ArcregionswitchPlan#arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#arn ArcregionswitchPlan#arn}.
 
 ---
 
@@ -2643,7 +2847,7 @@ CrossAccountRole *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}.
 
 ---
 
@@ -2655,7 +2859,7 @@ ExternalId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}.
 
 ---
 
@@ -2675,7 +2879,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/arcregionswitchplan"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfigUngraceful.property.minimumSuccessPercentage">MinimumSuccessPercentage</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#minimum_success_percentage ArcregionswitchPlan#minimum_success_percentage}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepEc2AsgCapacityIncreaseConfigUngraceful.property.minimumSuccessPercentage">MinimumSuccessPercentage</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#minimum_success_percentage ArcregionswitchPlan#minimum_success_percentage}. |
 
 ---
 
@@ -2687,7 +2891,7 @@ MinimumSuccessPercentage *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#minimum_success_percentage ArcregionswitchPlan#minimum_success_percentage}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#minimum_success_percentage ArcregionswitchPlan#minimum_success_percentage}.
 
 ---
 
@@ -2711,10 +2915,10 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/arcregionswitchplan"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfig.property.capacityMonitoringApproach">CapacityMonitoringApproach</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#capacity_monitoring_approach ArcregionswitchPlan#capacity_monitoring_approach}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfig.property.capacityMonitoringApproach">CapacityMonitoringApproach</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#capacity_monitoring_approach ArcregionswitchPlan#capacity_monitoring_approach}. |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfig.property.service">Service</a></code> | <code>interface{}</code> | service block. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfig.property.targetPercent">TargetPercent</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#target_percent ArcregionswitchPlan#target_percent}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfig.property.timeoutMinutes">TimeoutMinutes</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfig.property.targetPercent">TargetPercent</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#target_percent ArcregionswitchPlan#target_percent}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfig.property.timeoutMinutes">TimeoutMinutes</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}. |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfig.property.ungraceful">Ungraceful</a></code> | <code>interface{}</code> | ungraceful block. |
 
 ---
@@ -2727,7 +2931,7 @@ CapacityMonitoringApproach *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#capacity_monitoring_approach ArcregionswitchPlan#capacity_monitoring_approach}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#capacity_monitoring_approach ArcregionswitchPlan#capacity_monitoring_approach}.
 
 ---
 
@@ -2741,7 +2945,7 @@ Service interface{}
 
 service block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#service ArcregionswitchPlan#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#service ArcregionswitchPlan#service}
 
 ---
 
@@ -2753,7 +2957,7 @@ TargetPercent *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#target_percent ArcregionswitchPlan#target_percent}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#target_percent ArcregionswitchPlan#target_percent}.
 
 ---
 
@@ -2765,7 +2969,7 @@ TimeoutMinutes *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}.
 
 ---
 
@@ -2779,7 +2983,7 @@ Ungraceful interface{}
 
 ungraceful block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}
 
 ---
 
@@ -2802,10 +3006,10 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/arcregionswitchplan"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfigService.property.clusterArn">ClusterArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#cluster_arn ArcregionswitchPlan#cluster_arn}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfigService.property.serviceArn">ServiceArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#service_arn ArcregionswitchPlan#service_arn}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfigService.property.crossAccountRole">CrossAccountRole</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfigService.property.externalId">ExternalId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfigService.property.clusterArn">ClusterArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#cluster_arn ArcregionswitchPlan#cluster_arn}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfigService.property.serviceArn">ServiceArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#service_arn ArcregionswitchPlan#service_arn}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfigService.property.crossAccountRole">CrossAccountRole</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfigService.property.externalId">ExternalId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}. |
 
 ---
 
@@ -2817,7 +3021,7 @@ ClusterArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#cluster_arn ArcregionswitchPlan#cluster_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#cluster_arn ArcregionswitchPlan#cluster_arn}.
 
 ---
 
@@ -2829,7 +3033,7 @@ ServiceArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#service_arn ArcregionswitchPlan#service_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#service_arn ArcregionswitchPlan#service_arn}.
 
 ---
 
@@ -2841,7 +3045,7 @@ CrossAccountRole *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}.
 
 ---
 
@@ -2853,7 +3057,7 @@ ExternalId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}.
 
 ---
 
@@ -2873,7 +3077,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/arcregionswitchplan"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfigUngraceful.property.minimumSuccessPercentage">MinimumSuccessPercentage</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#minimum_success_percentage ArcregionswitchPlan#minimum_success_percentage}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepEcsCapacityIncreaseConfigUngraceful.property.minimumSuccessPercentage">MinimumSuccessPercentage</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#minimum_success_percentage ArcregionswitchPlan#minimum_success_percentage}. |
 
 ---
 
@@ -2885,7 +3089,7 @@ MinimumSuccessPercentage *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#minimum_success_percentage ArcregionswitchPlan#minimum_success_percentage}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#minimum_success_percentage ArcregionswitchPlan#minimum_success_percentage}.
 
 ---
 
@@ -2911,12 +3115,12 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/arcregionswitchplan"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepEksResourceScalingConfig.property.capacityMonitoringApproach">CapacityMonitoringApproach</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#capacity_monitoring_approach ArcregionswitchPlan#capacity_monitoring_approach}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepEksResourceScalingConfig.property.targetPercent">TargetPercent</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#target_percent ArcregionswitchPlan#target_percent}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepEksResourceScalingConfig.property.capacityMonitoringApproach">CapacityMonitoringApproach</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#capacity_monitoring_approach ArcregionswitchPlan#capacity_monitoring_approach}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepEksResourceScalingConfig.property.targetPercent">TargetPercent</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#target_percent ArcregionswitchPlan#target_percent}. |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepEksResourceScalingConfig.property.eksClusters">EksClusters</a></code> | <code>interface{}</code> | eks_clusters block. |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepEksResourceScalingConfig.property.kubernetesResourceType">KubernetesResourceType</a></code> | <code>interface{}</code> | kubernetes_resource_type block. |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepEksResourceScalingConfig.property.scalingResources">ScalingResources</a></code> | <code>interface{}</code> | scaling_resources block. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepEksResourceScalingConfig.property.timeoutMinutes">TimeoutMinutes</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepEksResourceScalingConfig.property.timeoutMinutes">TimeoutMinutes</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}. |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepEksResourceScalingConfig.property.ungraceful">Ungraceful</a></code> | <code>interface{}</code> | ungraceful block. |
 
 ---
@@ -2929,7 +3133,7 @@ CapacityMonitoringApproach *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#capacity_monitoring_approach ArcregionswitchPlan#capacity_monitoring_approach}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#capacity_monitoring_approach ArcregionswitchPlan#capacity_monitoring_approach}.
 
 ---
 
@@ -2941,7 +3145,7 @@ TargetPercent *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#target_percent ArcregionswitchPlan#target_percent}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#target_percent ArcregionswitchPlan#target_percent}.
 
 ---
 
@@ -2955,7 +3159,7 @@ EksClusters interface{}
 
 eks_clusters block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#eks_clusters ArcregionswitchPlan#eks_clusters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#eks_clusters ArcregionswitchPlan#eks_clusters}
 
 ---
 
@@ -2969,7 +3173,7 @@ KubernetesResourceType interface{}
 
 kubernetes_resource_type block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#kubernetes_resource_type ArcregionswitchPlan#kubernetes_resource_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#kubernetes_resource_type ArcregionswitchPlan#kubernetes_resource_type}
 
 ---
 
@@ -2983,7 +3187,7 @@ ScalingResources interface{}
 
 scaling_resources block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#scaling_resources ArcregionswitchPlan#scaling_resources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#scaling_resources ArcregionswitchPlan#scaling_resources}
 
 ---
 
@@ -2995,7 +3199,7 @@ TimeoutMinutes *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}.
 
 ---
 
@@ -3009,7 +3213,7 @@ Ungraceful interface{}
 
 ungraceful block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}
 
 ---
 
@@ -3031,9 +3235,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/arcregionswitchplan"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepEksResourceScalingConfigEksClusters.property.clusterArn">ClusterArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#cluster_arn ArcregionswitchPlan#cluster_arn}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepEksResourceScalingConfigEksClusters.property.crossAccountRole">CrossAccountRole</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepEksResourceScalingConfigEksClusters.property.externalId">ExternalId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepEksResourceScalingConfigEksClusters.property.clusterArn">ClusterArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#cluster_arn ArcregionswitchPlan#cluster_arn}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepEksResourceScalingConfigEksClusters.property.crossAccountRole">CrossAccountRole</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepEksResourceScalingConfigEksClusters.property.externalId">ExternalId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}. |
 
 ---
 
@@ -3045,7 +3249,7 @@ ClusterArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#cluster_arn ArcregionswitchPlan#cluster_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#cluster_arn ArcregionswitchPlan#cluster_arn}.
 
 ---
 
@@ -3057,7 +3261,7 @@ CrossAccountRole *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}.
 
 ---
 
@@ -3069,7 +3273,7 @@ ExternalId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}.
 
 ---
 
@@ -3090,8 +3294,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/arcregionswitchplan"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepEksResourceScalingConfigKubernetesResourceType.property.apiVersion">ApiVersion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#api_version ArcregionswitchPlan#api_version}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepEksResourceScalingConfigKubernetesResourceType.property.kind">Kind</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#kind ArcregionswitchPlan#kind}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepEksResourceScalingConfigKubernetesResourceType.property.apiVersion">ApiVersion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#api_version ArcregionswitchPlan#api_version}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepEksResourceScalingConfigKubernetesResourceType.property.kind">Kind</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#kind ArcregionswitchPlan#kind}. |
 
 ---
 
@@ -3103,7 +3307,7 @@ ApiVersion *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#api_version ArcregionswitchPlan#api_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#api_version ArcregionswitchPlan#api_version}.
 
 ---
 
@@ -3115,7 +3319,7 @@ Kind *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#kind ArcregionswitchPlan#kind}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#kind ArcregionswitchPlan#kind}.
 
 ---
 
@@ -3136,7 +3340,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/arcregionswitchplan"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepEksResourceScalingConfigScalingResources.property.namespace">Namespace</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#namespace ArcregionswitchPlan#namespace}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepEksResourceScalingConfigScalingResources.property.namespace">Namespace</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#namespace ArcregionswitchPlan#namespace}. |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepEksResourceScalingConfigScalingResources.property.resources">Resources</a></code> | <code>interface{}</code> | resources block. |
 
 ---
@@ -3149,7 +3353,7 @@ Namespace *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#namespace ArcregionswitchPlan#namespace}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#namespace ArcregionswitchPlan#namespace}.
 
 ---
 
@@ -3163,7 +3367,7 @@ Resources interface{}
 
 resources block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#resources ArcregionswitchPlan#resources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#resources ArcregionswitchPlan#resources}
 
 ---
 
@@ -3186,10 +3390,10 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/arcregionswitchplan"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepEksResourceScalingConfigScalingResourcesResources.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#name ArcregionswitchPlan#name}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepEksResourceScalingConfigScalingResourcesResources.property.namespace">Namespace</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#namespace ArcregionswitchPlan#namespace}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepEksResourceScalingConfigScalingResourcesResources.property.resourceName">ResourceName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#resource_name ArcregionswitchPlan#resource_name}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepEksResourceScalingConfigScalingResourcesResources.property.hpaName">HpaName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#hpa_name ArcregionswitchPlan#hpa_name}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepEksResourceScalingConfigScalingResourcesResources.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#name ArcregionswitchPlan#name}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepEksResourceScalingConfigScalingResourcesResources.property.namespace">Namespace</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#namespace ArcregionswitchPlan#namespace}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepEksResourceScalingConfigScalingResourcesResources.property.resourceName">ResourceName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#resource_name ArcregionswitchPlan#resource_name}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepEksResourceScalingConfigScalingResourcesResources.property.hpaName">HpaName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#hpa_name ArcregionswitchPlan#hpa_name}. |
 
 ---
 
@@ -3201,7 +3405,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#name ArcregionswitchPlan#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#name ArcregionswitchPlan#name}.
 
 ---
 
@@ -3213,7 +3417,7 @@ Namespace *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#namespace ArcregionswitchPlan#namespace}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#namespace ArcregionswitchPlan#namespace}.
 
 ---
 
@@ -3225,7 +3429,7 @@ ResourceName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#resource_name ArcregionswitchPlan#resource_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#resource_name ArcregionswitchPlan#resource_name}.
 
 ---
 
@@ -3237,7 +3441,7 @@ HpaName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#hpa_name ArcregionswitchPlan#hpa_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#hpa_name ArcregionswitchPlan#hpa_name}.
 
 ---
 
@@ -3257,7 +3461,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/arcregionswitchplan"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepEksResourceScalingConfigUngraceful.property.minimumSuccessPercentage">MinimumSuccessPercentage</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#minimum_success_percentage ArcregionswitchPlan#minimum_success_percentage}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepEksResourceScalingConfigUngraceful.property.minimumSuccessPercentage">MinimumSuccessPercentage</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#minimum_success_percentage ArcregionswitchPlan#minimum_success_percentage}. |
 
 ---
 
@@ -3269,7 +3473,7 @@ MinimumSuccessPercentage *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#minimum_success_percentage ArcregionswitchPlan#minimum_success_percentage}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#minimum_success_percentage ArcregionswitchPlan#minimum_success_percentage}.
 
 ---
 
@@ -3290,8 +3494,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/arcregionswitchplan"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepExecutionApprovalConfig.property.approvalRole">ApprovalRole</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#approval_role ArcregionswitchPlan#approval_role}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepExecutionApprovalConfig.property.timeoutMinutes">TimeoutMinutes</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepExecutionApprovalConfig.property.approvalRole">ApprovalRole</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#approval_role ArcregionswitchPlan#approval_role}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepExecutionApprovalConfig.property.timeoutMinutes">TimeoutMinutes</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}. |
 
 ---
 
@@ -3303,7 +3507,7 @@ ApprovalRole *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#approval_role ArcregionswitchPlan#approval_role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#approval_role ArcregionswitchPlan#approval_role}.
 
 ---
 
@@ -3315,7 +3519,7 @@ TimeoutMinutes *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}.
 
 ---
 
@@ -3341,12 +3545,12 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/arcregionswitchplan"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepGlobalAuroraConfig.property.behavior">Behavior</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#behavior ArcregionswitchPlan#behavior}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepGlobalAuroraConfig.property.databaseClusterArns">DatabaseClusterArns</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#database_cluster_arns ArcregionswitchPlan#database_cluster_arns}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepGlobalAuroraConfig.property.globalClusterIdentifier">GlobalClusterIdentifier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#global_cluster_identifier ArcregionswitchPlan#global_cluster_identifier}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepGlobalAuroraConfig.property.crossAccountRole">CrossAccountRole</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepGlobalAuroraConfig.property.externalId">ExternalId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepGlobalAuroraConfig.property.timeoutMinutes">TimeoutMinutes</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepGlobalAuroraConfig.property.behavior">Behavior</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#behavior ArcregionswitchPlan#behavior}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepGlobalAuroraConfig.property.databaseClusterArns">DatabaseClusterArns</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#database_cluster_arns ArcregionswitchPlan#database_cluster_arns}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepGlobalAuroraConfig.property.globalClusterIdentifier">GlobalClusterIdentifier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#global_cluster_identifier ArcregionswitchPlan#global_cluster_identifier}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepGlobalAuroraConfig.property.crossAccountRole">CrossAccountRole</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepGlobalAuroraConfig.property.externalId">ExternalId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepGlobalAuroraConfig.property.timeoutMinutes">TimeoutMinutes</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}. |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepGlobalAuroraConfig.property.ungraceful">Ungraceful</a></code> | <code>interface{}</code> | ungraceful block. |
 
 ---
@@ -3359,7 +3563,7 @@ Behavior *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#behavior ArcregionswitchPlan#behavior}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#behavior ArcregionswitchPlan#behavior}.
 
 ---
 
@@ -3371,7 +3575,7 @@ DatabaseClusterArns *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#database_cluster_arns ArcregionswitchPlan#database_cluster_arns}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#database_cluster_arns ArcregionswitchPlan#database_cluster_arns}.
 
 ---
 
@@ -3383,7 +3587,7 @@ GlobalClusterIdentifier *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#global_cluster_identifier ArcregionswitchPlan#global_cluster_identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#global_cluster_identifier ArcregionswitchPlan#global_cluster_identifier}.
 
 ---
 
@@ -3395,7 +3599,7 @@ CrossAccountRole *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}.
 
 ---
 
@@ -3407,7 +3611,7 @@ ExternalId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}.
 
 ---
 
@@ -3419,7 +3623,7 @@ TimeoutMinutes *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}.
 
 ---
 
@@ -3433,7 +3637,7 @@ Ungraceful interface{}
 
 ungraceful block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}
 
 ---
 
@@ -3453,7 +3657,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/arcregionswitchplan"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepGlobalAuroraConfigUngraceful.property.ungraceful">Ungraceful</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepGlobalAuroraConfigUngraceful.property.ungraceful">Ungraceful</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}. |
 
 ---
 
@@ -3465,7 +3669,7 @@ Ungraceful *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}.
 
 ---
 
@@ -3499,7 +3703,7 @@ Step interface{}
 
 step block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#step ArcregionswitchPlan#step}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#step ArcregionswitchPlan#step}
 
 ---
 
@@ -3522,6 +3726,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/arcregionswitchplan"
 	EksResourceScalingConfig: interface{},
 	ExecutionApprovalConfig: interface{},
 	GlobalAuroraConfig: interface{},
+	RdsCreateCrossRegionReadReplicaConfig: interface{},
+	RdsPromoteReadReplicaConfig: interface{},
 	RegionSwitchPlanConfig: interface{},
 	Route53HealthCheckConfig: interface{},
 }
@@ -3531,17 +3737,19 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/arcregionswitchplan"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStep.property.executionBlockType">ExecutionBlockType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#execution_block_type ArcregionswitchPlan#execution_block_type}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStep.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#name ArcregionswitchPlan#name}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStep.property.executionBlockType">ExecutionBlockType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#execution_block_type ArcregionswitchPlan#execution_block_type}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStep.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#name ArcregionswitchPlan#name}. |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStep.property.arcRoutingControlConfig">ArcRoutingControlConfig</a></code> | <code>interface{}</code> | arc_routing_control_config block. |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStep.property.customActionLambdaConfig">CustomActionLambdaConfig</a></code> | <code>interface{}</code> | custom_action_lambda_config block. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStep.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#description ArcregionswitchPlan#description}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStep.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#description ArcregionswitchPlan#description}. |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStep.property.documentDbConfig">DocumentDbConfig</a></code> | <code>interface{}</code> | document_db_config block. |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStep.property.ec2AsgCapacityIncreaseConfig">Ec2AsgCapacityIncreaseConfig</a></code> | <code>interface{}</code> | ec2_asg_capacity_increase_config block. |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStep.property.ecsCapacityIncreaseConfig">EcsCapacityIncreaseConfig</a></code> | <code>interface{}</code> | ecs_capacity_increase_config block. |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStep.property.eksResourceScalingConfig">EksResourceScalingConfig</a></code> | <code>interface{}</code> | eks_resource_scaling_config block. |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStep.property.executionApprovalConfig">ExecutionApprovalConfig</a></code> | <code>interface{}</code> | execution_approval_config block. |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStep.property.globalAuroraConfig">GlobalAuroraConfig</a></code> | <code>interface{}</code> | global_aurora_config block. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStep.property.rdsCreateCrossRegionReadReplicaConfig">RdsCreateCrossRegionReadReplicaConfig</a></code> | <code>interface{}</code> | rds_create_cross_region_read_replica_config block. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStep.property.rdsPromoteReadReplicaConfig">RdsPromoteReadReplicaConfig</a></code> | <code>interface{}</code> | rds_promote_read_replica_config block. |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStep.property.regionSwitchPlanConfig">RegionSwitchPlanConfig</a></code> | <code>interface{}</code> | region_switch_plan_config block. |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStep.property.route53HealthCheckConfig">Route53HealthCheckConfig</a></code> | <code>interface{}</code> | route53_health_check_config block. |
 
@@ -3555,7 +3763,7 @@ ExecutionBlockType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#execution_block_type ArcregionswitchPlan#execution_block_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#execution_block_type ArcregionswitchPlan#execution_block_type}.
 
 ---
 
@@ -3567,7 +3775,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#name ArcregionswitchPlan#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#name ArcregionswitchPlan#name}.
 
 ---
 
@@ -3581,7 +3789,7 @@ ArcRoutingControlConfig interface{}
 
 arc_routing_control_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#arc_routing_control_config ArcregionswitchPlan#arc_routing_control_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#arc_routing_control_config ArcregionswitchPlan#arc_routing_control_config}
 
 ---
 
@@ -3595,7 +3803,7 @@ CustomActionLambdaConfig interface{}
 
 custom_action_lambda_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#custom_action_lambda_config ArcregionswitchPlan#custom_action_lambda_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#custom_action_lambda_config ArcregionswitchPlan#custom_action_lambda_config}
 
 ---
 
@@ -3607,7 +3815,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#description ArcregionswitchPlan#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#description ArcregionswitchPlan#description}.
 
 ---
 
@@ -3621,7 +3829,7 @@ DocumentDbConfig interface{}
 
 document_db_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#document_db_config ArcregionswitchPlan#document_db_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#document_db_config ArcregionswitchPlan#document_db_config}
 
 ---
 
@@ -3635,7 +3843,7 @@ Ec2AsgCapacityIncreaseConfig interface{}
 
 ec2_asg_capacity_increase_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#ec2_asg_capacity_increase_config ArcregionswitchPlan#ec2_asg_capacity_increase_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#ec2_asg_capacity_increase_config ArcregionswitchPlan#ec2_asg_capacity_increase_config}
 
 ---
 
@@ -3649,7 +3857,7 @@ EcsCapacityIncreaseConfig interface{}
 
 ecs_capacity_increase_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#ecs_capacity_increase_config ArcregionswitchPlan#ecs_capacity_increase_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#ecs_capacity_increase_config ArcregionswitchPlan#ecs_capacity_increase_config}
 
 ---
 
@@ -3663,7 +3871,7 @@ EksResourceScalingConfig interface{}
 
 eks_resource_scaling_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#eks_resource_scaling_config ArcregionswitchPlan#eks_resource_scaling_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#eks_resource_scaling_config ArcregionswitchPlan#eks_resource_scaling_config}
 
 ---
 
@@ -3677,7 +3885,7 @@ ExecutionApprovalConfig interface{}
 
 execution_approval_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#execution_approval_config ArcregionswitchPlan#execution_approval_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#execution_approval_config ArcregionswitchPlan#execution_approval_config}
 
 ---
 
@@ -3691,7 +3899,35 @@ GlobalAuroraConfig interface{}
 
 global_aurora_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#global_aurora_config ArcregionswitchPlan#global_aurora_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#global_aurora_config ArcregionswitchPlan#global_aurora_config}
+
+---
+
+##### `RdsCreateCrossRegionReadReplicaConfig`<sup>Optional</sup> <a name="RdsCreateCrossRegionReadReplicaConfig" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStep.property.rdsCreateCrossRegionReadReplicaConfig"></a>
+
+```go
+RdsCreateCrossRegionReadReplicaConfig interface{}
+```
+
+- *Type:* interface{}
+
+rds_create_cross_region_read_replica_config block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#rds_create_cross_region_read_replica_config ArcregionswitchPlan#rds_create_cross_region_read_replica_config}
+
+---
+
+##### `RdsPromoteReadReplicaConfig`<sup>Optional</sup> <a name="RdsPromoteReadReplicaConfig" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStep.property.rdsPromoteReadReplicaConfig"></a>
+
+```go
+RdsPromoteReadReplicaConfig interface{}
+```
+
+- *Type:* interface{}
+
+rds_promote_read_replica_config block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#rds_promote_read_replica_config ArcregionswitchPlan#rds_promote_read_replica_config}
 
 ---
 
@@ -3705,7 +3941,7 @@ RegionSwitchPlanConfig interface{}
 
 region_switch_plan_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#region_switch_plan_config ArcregionswitchPlan#region_switch_plan_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#region_switch_plan_config ArcregionswitchPlan#region_switch_plan_config}
 
 ---
 
@@ -3719,7 +3955,7 @@ Route53HealthCheckConfig interface{}
 
 route53_health_check_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#route53_health_check_config ArcregionswitchPlan#route53_health_check_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#route53_health_check_config ArcregionswitchPlan#route53_health_check_config}
 
 ---
 
@@ -3742,10 +3978,10 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/arcregionswitchplan"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlConfig.property.crossAccountRole">CrossAccountRole</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlConfig.property.externalId">ExternalId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlConfig.property.crossAccountRole">CrossAccountRole</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlConfig.property.externalId">ExternalId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}. |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlConfig.property.regionAndRoutingControls">RegionAndRoutingControls</a></code> | <code>interface{}</code> | region_and_routing_controls block. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlConfig.property.timeoutMinutes">TimeoutMinutes</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlConfig.property.timeoutMinutes">TimeoutMinutes</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}. |
 
 ---
 
@@ -3757,7 +3993,7 @@ CrossAccountRole *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}.
 
 ---
 
@@ -3769,7 +4005,7 @@ ExternalId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}.
 
 ---
 
@@ -3783,7 +4019,7 @@ RegionAndRoutingControls interface{}
 
 region_and_routing_controls block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#region_and_routing_controls ArcregionswitchPlan#region_and_routing_controls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#region_and_routing_controls ArcregionswitchPlan#region_and_routing_controls}
 
 ---
 
@@ -3795,7 +4031,7 @@ TimeoutMinutes *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}.
 
 ---
 
@@ -3816,7 +4052,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/arcregionswitchplan"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlConfigRegionAndRoutingControls.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#region ArcregionswitchPlan#region}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlConfigRegionAndRoutingControls.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#region ArcregionswitchPlan#region}. |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlConfigRegionAndRoutingControls.property.routingControl">RoutingControl</a></code> | <code>interface{}</code> | routing_control block. |
 
 ---
@@ -3829,7 +4065,7 @@ Region *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#region ArcregionswitchPlan#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#region ArcregionswitchPlan#region}.
 
 ---
 
@@ -3843,7 +4079,7 @@ RoutingControl interface{}
 
 routing_control block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#routing_control ArcregionswitchPlan#routing_control}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#routing_control ArcregionswitchPlan#routing_control}
 
 ---
 
@@ -3864,8 +4100,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/arcregionswitchplan"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlConfigRegionAndRoutingControlsRoutingControl.property.routingControlArn">RoutingControlArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#routing_control_arn ArcregionswitchPlan#routing_control_arn}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlConfigRegionAndRoutingControlsRoutingControl.property.state">State</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#state ArcregionswitchPlan#state}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlConfigRegionAndRoutingControlsRoutingControl.property.routingControlArn">RoutingControlArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#routing_control_arn ArcregionswitchPlan#routing_control_arn}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepArcRoutingControlConfigRegionAndRoutingControlsRoutingControl.property.state">State</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#state ArcregionswitchPlan#state}. |
 
 ---
 
@@ -3877,7 +4113,7 @@ RoutingControlArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#routing_control_arn ArcregionswitchPlan#routing_control_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#routing_control_arn ArcregionswitchPlan#routing_control_arn}.
 
 ---
 
@@ -3889,7 +4125,7 @@ State *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#state ArcregionswitchPlan#state}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#state ArcregionswitchPlan#state}.
 
 ---
 
@@ -3913,10 +4149,10 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/arcregionswitchplan"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambdaConfig.property.regionToRun">RegionToRun</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#region_to_run ArcregionswitchPlan#region_to_run}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambdaConfig.property.retryIntervalMinutes">RetryIntervalMinutes</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#retry_interval_minutes ArcregionswitchPlan#retry_interval_minutes}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambdaConfig.property.regionToRun">RegionToRun</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#region_to_run ArcregionswitchPlan#region_to_run}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambdaConfig.property.retryIntervalMinutes">RetryIntervalMinutes</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#retry_interval_minutes ArcregionswitchPlan#retry_interval_minutes}. |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambdaConfig.property.lambda">Lambda</a></code> | <code>interface{}</code> | lambda block. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambdaConfig.property.timeoutMinutes">TimeoutMinutes</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambdaConfig.property.timeoutMinutes">TimeoutMinutes</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}. |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambdaConfig.property.ungraceful">Ungraceful</a></code> | <code>interface{}</code> | ungraceful block. |
 
 ---
@@ -3929,7 +4165,7 @@ RegionToRun *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#region_to_run ArcregionswitchPlan#region_to_run}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#region_to_run ArcregionswitchPlan#region_to_run}.
 
 ---
 
@@ -3941,7 +4177,7 @@ RetryIntervalMinutes *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#retry_interval_minutes ArcregionswitchPlan#retry_interval_minutes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#retry_interval_minutes ArcregionswitchPlan#retry_interval_minutes}.
 
 ---
 
@@ -3955,7 +4191,7 @@ Lambda interface{}
 
 lambda block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#lambda ArcregionswitchPlan#lambda}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#lambda ArcregionswitchPlan#lambda}
 
 ---
 
@@ -3967,7 +4203,7 @@ TimeoutMinutes *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}.
 
 ---
 
@@ -3981,7 +4217,7 @@ Ungraceful interface{}
 
 ungraceful block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}
 
 ---
 
@@ -4003,9 +4239,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/arcregionswitchplan"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambdaConfigLambda.property.arn">Arn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#arn ArcregionswitchPlan#arn}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambdaConfigLambda.property.crossAccountRole">CrossAccountRole</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambdaConfigLambda.property.externalId">ExternalId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambdaConfigLambda.property.arn">Arn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#arn ArcregionswitchPlan#arn}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambdaConfigLambda.property.crossAccountRole">CrossAccountRole</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambdaConfigLambda.property.externalId">ExternalId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}. |
 
 ---
 
@@ -4017,7 +4253,7 @@ Arn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#arn ArcregionswitchPlan#arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#arn ArcregionswitchPlan#arn}.
 
 ---
 
@@ -4029,7 +4265,7 @@ CrossAccountRole *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}.
 
 ---
 
@@ -4041,7 +4277,7 @@ ExternalId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}.
 
 ---
 
@@ -4061,7 +4297,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/arcregionswitchplan"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambdaConfigUngraceful.property.behavior">Behavior</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#behavior ArcregionswitchPlan#behavior}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepCustomActionLambdaConfigUngraceful.property.behavior">Behavior</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#behavior ArcregionswitchPlan#behavior}. |
 
 ---
 
@@ -4073,7 +4309,7 @@ Behavior *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#behavior ArcregionswitchPlan#behavior}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#behavior ArcregionswitchPlan#behavior}.
 
 ---
 
@@ -4099,12 +4335,12 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/arcregionswitchplan"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepDocumentDbConfig.property.behavior">Behavior</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#behavior ArcregionswitchPlan#behavior}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepDocumentDbConfig.property.databaseClusterArns">DatabaseClusterArns</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#database_cluster_arns ArcregionswitchPlan#database_cluster_arns}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepDocumentDbConfig.property.globalClusterIdentifier">GlobalClusterIdentifier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#global_cluster_identifier ArcregionswitchPlan#global_cluster_identifier}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepDocumentDbConfig.property.crossAccountRole">CrossAccountRole</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepDocumentDbConfig.property.externalId">ExternalId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepDocumentDbConfig.property.timeoutMinutes">TimeoutMinutes</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepDocumentDbConfig.property.behavior">Behavior</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#behavior ArcregionswitchPlan#behavior}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepDocumentDbConfig.property.databaseClusterArns">DatabaseClusterArns</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#database_cluster_arns ArcregionswitchPlan#database_cluster_arns}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepDocumentDbConfig.property.globalClusterIdentifier">GlobalClusterIdentifier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#global_cluster_identifier ArcregionswitchPlan#global_cluster_identifier}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepDocumentDbConfig.property.crossAccountRole">CrossAccountRole</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepDocumentDbConfig.property.externalId">ExternalId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepDocumentDbConfig.property.timeoutMinutes">TimeoutMinutes</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}. |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepDocumentDbConfig.property.ungraceful">Ungraceful</a></code> | <code>interface{}</code> | ungraceful block. |
 
 ---
@@ -4117,7 +4353,7 @@ Behavior *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#behavior ArcregionswitchPlan#behavior}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#behavior ArcregionswitchPlan#behavior}.
 
 ---
 
@@ -4129,7 +4365,7 @@ DatabaseClusterArns *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#database_cluster_arns ArcregionswitchPlan#database_cluster_arns}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#database_cluster_arns ArcregionswitchPlan#database_cluster_arns}.
 
 ---
 
@@ -4141,7 +4377,7 @@ GlobalClusterIdentifier *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#global_cluster_identifier ArcregionswitchPlan#global_cluster_identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#global_cluster_identifier ArcregionswitchPlan#global_cluster_identifier}.
 
 ---
 
@@ -4153,7 +4389,7 @@ CrossAccountRole *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}.
 
 ---
 
@@ -4165,7 +4401,7 @@ ExternalId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}.
 
 ---
 
@@ -4177,7 +4413,7 @@ TimeoutMinutes *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}.
 
 ---
 
@@ -4191,7 +4427,7 @@ Ungraceful interface{}
 
 ungraceful block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}
 
 ---
 
@@ -4211,7 +4447,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/arcregionswitchplan"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepDocumentDbConfigUngraceful.property.ungraceful">Ungraceful</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepDocumentDbConfigUngraceful.property.ungraceful">Ungraceful</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}. |
 
 ---
 
@@ -4223,7 +4459,7 @@ Ungraceful *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}.
 
 ---
 
@@ -4247,10 +4483,10 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/arcregionswitchplan"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncreaseConfig.property.capacityMonitoringApproach">CapacityMonitoringApproach</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#capacity_monitoring_approach ArcregionswitchPlan#capacity_monitoring_approach}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncreaseConfig.property.capacityMonitoringApproach">CapacityMonitoringApproach</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#capacity_monitoring_approach ArcregionswitchPlan#capacity_monitoring_approach}. |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncreaseConfig.property.asg">Asg</a></code> | <code>interface{}</code> | asg block. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncreaseConfig.property.targetPercent">TargetPercent</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#target_percent ArcregionswitchPlan#target_percent}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncreaseConfig.property.timeoutMinutes">TimeoutMinutes</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncreaseConfig.property.targetPercent">TargetPercent</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#target_percent ArcregionswitchPlan#target_percent}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncreaseConfig.property.timeoutMinutes">TimeoutMinutes</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}. |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncreaseConfig.property.ungraceful">Ungraceful</a></code> | <code>interface{}</code> | ungraceful block. |
 
 ---
@@ -4263,7 +4499,7 @@ CapacityMonitoringApproach *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#capacity_monitoring_approach ArcregionswitchPlan#capacity_monitoring_approach}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#capacity_monitoring_approach ArcregionswitchPlan#capacity_monitoring_approach}.
 
 ---
 
@@ -4277,7 +4513,7 @@ Asg interface{}
 
 asg block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#asg ArcregionswitchPlan#asg}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#asg ArcregionswitchPlan#asg}
 
 ---
 
@@ -4289,7 +4525,7 @@ TargetPercent *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#target_percent ArcregionswitchPlan#target_percent}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#target_percent ArcregionswitchPlan#target_percent}.
 
 ---
 
@@ -4301,7 +4537,7 @@ TimeoutMinutes *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}.
 
 ---
 
@@ -4315,7 +4551,7 @@ Ungraceful interface{}
 
 ungraceful block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}
 
 ---
 
@@ -4337,9 +4573,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/arcregionswitchplan"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncreaseConfigAsg.property.arn">Arn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#arn ArcregionswitchPlan#arn}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncreaseConfigAsg.property.crossAccountRole">CrossAccountRole</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncreaseConfigAsg.property.externalId">ExternalId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncreaseConfigAsg.property.arn">Arn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#arn ArcregionswitchPlan#arn}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncreaseConfigAsg.property.crossAccountRole">CrossAccountRole</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncreaseConfigAsg.property.externalId">ExternalId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}. |
 
 ---
 
@@ -4351,7 +4587,7 @@ Arn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#arn ArcregionswitchPlan#arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#arn ArcregionswitchPlan#arn}.
 
 ---
 
@@ -4363,7 +4599,7 @@ CrossAccountRole *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}.
 
 ---
 
@@ -4375,7 +4611,7 @@ ExternalId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}.
 
 ---
 
@@ -4395,7 +4631,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/arcregionswitchplan"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncreaseConfigUngraceful.property.minimumSuccessPercentage">MinimumSuccessPercentage</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#minimum_success_percentage ArcregionswitchPlan#minimum_success_percentage}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepEc2AsgCapacityIncreaseConfigUngraceful.property.minimumSuccessPercentage">MinimumSuccessPercentage</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#minimum_success_percentage ArcregionswitchPlan#minimum_success_percentage}. |
 
 ---
 
@@ -4407,7 +4643,7 @@ MinimumSuccessPercentage *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#minimum_success_percentage ArcregionswitchPlan#minimum_success_percentage}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#minimum_success_percentage ArcregionswitchPlan#minimum_success_percentage}.
 
 ---
 
@@ -4431,10 +4667,10 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/arcregionswitchplan"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfig.property.capacityMonitoringApproach">CapacityMonitoringApproach</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#capacity_monitoring_approach ArcregionswitchPlan#capacity_monitoring_approach}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfig.property.capacityMonitoringApproach">CapacityMonitoringApproach</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#capacity_monitoring_approach ArcregionswitchPlan#capacity_monitoring_approach}. |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfig.property.service">Service</a></code> | <code>interface{}</code> | service block. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfig.property.targetPercent">TargetPercent</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#target_percent ArcregionswitchPlan#target_percent}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfig.property.timeoutMinutes">TimeoutMinutes</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfig.property.targetPercent">TargetPercent</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#target_percent ArcregionswitchPlan#target_percent}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfig.property.timeoutMinutes">TimeoutMinutes</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}. |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfig.property.ungraceful">Ungraceful</a></code> | <code>interface{}</code> | ungraceful block. |
 
 ---
@@ -4447,7 +4683,7 @@ CapacityMonitoringApproach *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#capacity_monitoring_approach ArcregionswitchPlan#capacity_monitoring_approach}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#capacity_monitoring_approach ArcregionswitchPlan#capacity_monitoring_approach}.
 
 ---
 
@@ -4461,7 +4697,7 @@ Service interface{}
 
 service block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#service ArcregionswitchPlan#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#service ArcregionswitchPlan#service}
 
 ---
 
@@ -4473,7 +4709,7 @@ TargetPercent *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#target_percent ArcregionswitchPlan#target_percent}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#target_percent ArcregionswitchPlan#target_percent}.
 
 ---
 
@@ -4485,7 +4721,7 @@ TimeoutMinutes *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}.
 
 ---
 
@@ -4499,7 +4735,7 @@ Ungraceful interface{}
 
 ungraceful block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}
 
 ---
 
@@ -4522,10 +4758,10 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/arcregionswitchplan"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfigService.property.clusterArn">ClusterArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#cluster_arn ArcregionswitchPlan#cluster_arn}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfigService.property.serviceArn">ServiceArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#service_arn ArcregionswitchPlan#service_arn}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfigService.property.crossAccountRole">CrossAccountRole</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfigService.property.externalId">ExternalId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfigService.property.clusterArn">ClusterArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#cluster_arn ArcregionswitchPlan#cluster_arn}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfigService.property.serviceArn">ServiceArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#service_arn ArcregionswitchPlan#service_arn}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfigService.property.crossAccountRole">CrossAccountRole</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfigService.property.externalId">ExternalId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}. |
 
 ---
 
@@ -4537,7 +4773,7 @@ ClusterArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#cluster_arn ArcregionswitchPlan#cluster_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#cluster_arn ArcregionswitchPlan#cluster_arn}.
 
 ---
 
@@ -4549,7 +4785,7 @@ ServiceArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#service_arn ArcregionswitchPlan#service_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#service_arn ArcregionswitchPlan#service_arn}.
 
 ---
 
@@ -4561,7 +4797,7 @@ CrossAccountRole *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}.
 
 ---
 
@@ -4573,7 +4809,7 @@ ExternalId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}.
 
 ---
 
@@ -4593,7 +4829,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/arcregionswitchplan"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfigUngraceful.property.minimumSuccessPercentage">MinimumSuccessPercentage</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#minimum_success_percentage ArcregionswitchPlan#minimum_success_percentage}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepEcsCapacityIncreaseConfigUngraceful.property.minimumSuccessPercentage">MinimumSuccessPercentage</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#minimum_success_percentage ArcregionswitchPlan#minimum_success_percentage}. |
 
 ---
 
@@ -4605,7 +4841,7 @@ MinimumSuccessPercentage *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#minimum_success_percentage ArcregionswitchPlan#minimum_success_percentage}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#minimum_success_percentage ArcregionswitchPlan#minimum_success_percentage}.
 
 ---
 
@@ -4631,12 +4867,12 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/arcregionswitchplan"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfig.property.capacityMonitoringApproach">CapacityMonitoringApproach</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#capacity_monitoring_approach ArcregionswitchPlan#capacity_monitoring_approach}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfig.property.targetPercent">TargetPercent</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#target_percent ArcregionswitchPlan#target_percent}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfig.property.capacityMonitoringApproach">CapacityMonitoringApproach</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#capacity_monitoring_approach ArcregionswitchPlan#capacity_monitoring_approach}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfig.property.targetPercent">TargetPercent</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#target_percent ArcregionswitchPlan#target_percent}. |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfig.property.eksClusters">EksClusters</a></code> | <code>interface{}</code> | eks_clusters block. |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfig.property.kubernetesResourceType">KubernetesResourceType</a></code> | <code>interface{}</code> | kubernetes_resource_type block. |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfig.property.scalingResources">ScalingResources</a></code> | <code>interface{}</code> | scaling_resources block. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfig.property.timeoutMinutes">TimeoutMinutes</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfig.property.timeoutMinutes">TimeoutMinutes</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}. |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfig.property.ungraceful">Ungraceful</a></code> | <code>interface{}</code> | ungraceful block. |
 
 ---
@@ -4649,7 +4885,7 @@ CapacityMonitoringApproach *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#capacity_monitoring_approach ArcregionswitchPlan#capacity_monitoring_approach}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#capacity_monitoring_approach ArcregionswitchPlan#capacity_monitoring_approach}.
 
 ---
 
@@ -4661,7 +4897,7 @@ TargetPercent *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#target_percent ArcregionswitchPlan#target_percent}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#target_percent ArcregionswitchPlan#target_percent}.
 
 ---
 
@@ -4675,7 +4911,7 @@ EksClusters interface{}
 
 eks_clusters block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#eks_clusters ArcregionswitchPlan#eks_clusters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#eks_clusters ArcregionswitchPlan#eks_clusters}
 
 ---
 
@@ -4689,7 +4925,7 @@ KubernetesResourceType interface{}
 
 kubernetes_resource_type block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#kubernetes_resource_type ArcregionswitchPlan#kubernetes_resource_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#kubernetes_resource_type ArcregionswitchPlan#kubernetes_resource_type}
 
 ---
 
@@ -4703,7 +4939,7 @@ ScalingResources interface{}
 
 scaling_resources block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#scaling_resources ArcregionswitchPlan#scaling_resources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#scaling_resources ArcregionswitchPlan#scaling_resources}
 
 ---
 
@@ -4715,7 +4951,7 @@ TimeoutMinutes *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}.
 
 ---
 
@@ -4729,7 +4965,7 @@ Ungraceful interface{}
 
 ungraceful block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}
 
 ---
 
@@ -4751,9 +4987,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/arcregionswitchplan"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigEksClusters.property.clusterArn">ClusterArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#cluster_arn ArcregionswitchPlan#cluster_arn}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigEksClusters.property.crossAccountRole">CrossAccountRole</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigEksClusters.property.externalId">ExternalId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigEksClusters.property.clusterArn">ClusterArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#cluster_arn ArcregionswitchPlan#cluster_arn}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigEksClusters.property.crossAccountRole">CrossAccountRole</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigEksClusters.property.externalId">ExternalId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}. |
 
 ---
 
@@ -4765,7 +5001,7 @@ ClusterArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#cluster_arn ArcregionswitchPlan#cluster_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#cluster_arn ArcregionswitchPlan#cluster_arn}.
 
 ---
 
@@ -4777,7 +5013,7 @@ CrossAccountRole *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}.
 
 ---
 
@@ -4789,7 +5025,7 @@ ExternalId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}.
 
 ---
 
@@ -4810,8 +5046,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/arcregionswitchplan"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigKubernetesResourceType.property.apiVersion">ApiVersion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#api_version ArcregionswitchPlan#api_version}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigKubernetesResourceType.property.kind">Kind</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#kind ArcregionswitchPlan#kind}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigKubernetesResourceType.property.apiVersion">ApiVersion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#api_version ArcregionswitchPlan#api_version}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigKubernetesResourceType.property.kind">Kind</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#kind ArcregionswitchPlan#kind}. |
 
 ---
 
@@ -4823,7 +5059,7 @@ ApiVersion *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#api_version ArcregionswitchPlan#api_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#api_version ArcregionswitchPlan#api_version}.
 
 ---
 
@@ -4835,7 +5071,7 @@ Kind *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#kind ArcregionswitchPlan#kind}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#kind ArcregionswitchPlan#kind}.
 
 ---
 
@@ -4856,7 +5092,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/arcregionswitchplan"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigScalingResources.property.namespace">Namespace</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#namespace ArcregionswitchPlan#namespace}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigScalingResources.property.namespace">Namespace</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#namespace ArcregionswitchPlan#namespace}. |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigScalingResources.property.resources">Resources</a></code> | <code>interface{}</code> | resources block. |
 
 ---
@@ -4869,7 +5105,7 @@ Namespace *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#namespace ArcregionswitchPlan#namespace}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#namespace ArcregionswitchPlan#namespace}.
 
 ---
 
@@ -4883,7 +5119,7 @@ Resources interface{}
 
 resources block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#resources ArcregionswitchPlan#resources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#resources ArcregionswitchPlan#resources}
 
 ---
 
@@ -4906,10 +5142,10 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/arcregionswitchplan"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigScalingResourcesResources.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#name ArcregionswitchPlan#name}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigScalingResourcesResources.property.namespace">Namespace</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#namespace ArcregionswitchPlan#namespace}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigScalingResourcesResources.property.resourceName">ResourceName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#resource_name ArcregionswitchPlan#resource_name}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigScalingResourcesResources.property.hpaName">HpaName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#hpa_name ArcregionswitchPlan#hpa_name}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigScalingResourcesResources.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#name ArcregionswitchPlan#name}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigScalingResourcesResources.property.namespace">Namespace</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#namespace ArcregionswitchPlan#namespace}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigScalingResourcesResources.property.resourceName">ResourceName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#resource_name ArcregionswitchPlan#resource_name}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigScalingResourcesResources.property.hpaName">HpaName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#hpa_name ArcregionswitchPlan#hpa_name}. |
 
 ---
 
@@ -4921,7 +5157,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#name ArcregionswitchPlan#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#name ArcregionswitchPlan#name}.
 
 ---
 
@@ -4933,7 +5169,7 @@ Namespace *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#namespace ArcregionswitchPlan#namespace}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#namespace ArcregionswitchPlan#namespace}.
 
 ---
 
@@ -4945,7 +5181,7 @@ ResourceName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#resource_name ArcregionswitchPlan#resource_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#resource_name ArcregionswitchPlan#resource_name}.
 
 ---
 
@@ -4957,7 +5193,7 @@ HpaName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#hpa_name ArcregionswitchPlan#hpa_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#hpa_name ArcregionswitchPlan#hpa_name}.
 
 ---
 
@@ -4977,7 +5213,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/arcregionswitchplan"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigUngraceful.property.minimumSuccessPercentage">MinimumSuccessPercentage</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#minimum_success_percentage ArcregionswitchPlan#minimum_success_percentage}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigUngraceful.property.minimumSuccessPercentage">MinimumSuccessPercentage</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#minimum_success_percentage ArcregionswitchPlan#minimum_success_percentage}. |
 
 ---
 
@@ -4989,7 +5225,7 @@ MinimumSuccessPercentage *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#minimum_success_percentage ArcregionswitchPlan#minimum_success_percentage}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#minimum_success_percentage ArcregionswitchPlan#minimum_success_percentage}.
 
 ---
 
@@ -5010,8 +5246,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/arcregionswitchplan"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepExecutionApprovalConfig.property.approvalRole">ApprovalRole</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#approval_role ArcregionswitchPlan#approval_role}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepExecutionApprovalConfig.property.timeoutMinutes">TimeoutMinutes</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepExecutionApprovalConfig.property.approvalRole">ApprovalRole</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#approval_role ArcregionswitchPlan#approval_role}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepExecutionApprovalConfig.property.timeoutMinutes">TimeoutMinutes</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}. |
 
 ---
 
@@ -5023,7 +5259,7 @@ ApprovalRole *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#approval_role ArcregionswitchPlan#approval_role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#approval_role ArcregionswitchPlan#approval_role}.
 
 ---
 
@@ -5035,7 +5271,7 @@ TimeoutMinutes *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}.
 
 ---
 
@@ -5061,12 +5297,12 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/arcregionswitchplan"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepGlobalAuroraConfig.property.behavior">Behavior</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#behavior ArcregionswitchPlan#behavior}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepGlobalAuroraConfig.property.databaseClusterArns">DatabaseClusterArns</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#database_cluster_arns ArcregionswitchPlan#database_cluster_arns}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepGlobalAuroraConfig.property.globalClusterIdentifier">GlobalClusterIdentifier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#global_cluster_identifier ArcregionswitchPlan#global_cluster_identifier}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepGlobalAuroraConfig.property.crossAccountRole">CrossAccountRole</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepGlobalAuroraConfig.property.externalId">ExternalId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepGlobalAuroraConfig.property.timeoutMinutes">TimeoutMinutes</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepGlobalAuroraConfig.property.behavior">Behavior</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#behavior ArcregionswitchPlan#behavior}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepGlobalAuroraConfig.property.databaseClusterArns">DatabaseClusterArns</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#database_cluster_arns ArcregionswitchPlan#database_cluster_arns}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepGlobalAuroraConfig.property.globalClusterIdentifier">GlobalClusterIdentifier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#global_cluster_identifier ArcregionswitchPlan#global_cluster_identifier}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepGlobalAuroraConfig.property.crossAccountRole">CrossAccountRole</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepGlobalAuroraConfig.property.externalId">ExternalId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepGlobalAuroraConfig.property.timeoutMinutes">TimeoutMinutes</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}. |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepGlobalAuroraConfig.property.ungraceful">Ungraceful</a></code> | <code>interface{}</code> | ungraceful block. |
 
 ---
@@ -5079,7 +5315,7 @@ Behavior *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#behavior ArcregionswitchPlan#behavior}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#behavior ArcregionswitchPlan#behavior}.
 
 ---
 
@@ -5091,7 +5327,7 @@ DatabaseClusterArns *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#database_cluster_arns ArcregionswitchPlan#database_cluster_arns}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#database_cluster_arns ArcregionswitchPlan#database_cluster_arns}.
 
 ---
 
@@ -5103,7 +5339,7 @@ GlobalClusterIdentifier *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#global_cluster_identifier ArcregionswitchPlan#global_cluster_identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#global_cluster_identifier ArcregionswitchPlan#global_cluster_identifier}.
 
 ---
 
@@ -5115,7 +5351,7 @@ CrossAccountRole *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}.
 
 ---
 
@@ -5127,7 +5363,7 @@ ExternalId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}.
 
 ---
 
@@ -5139,7 +5375,7 @@ TimeoutMinutes *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}.
 
 ---
 
@@ -5153,7 +5389,7 @@ Ungraceful interface{}
 
 ungraceful block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}
 
 ---
 
@@ -5173,7 +5409,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/arcregionswitchplan"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepGlobalAuroraConfigUngraceful.property.ungraceful">Ungraceful</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepGlobalAuroraConfigUngraceful.property.ungraceful">Ungraceful</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}. |
 
 ---
 
@@ -5185,7 +5421,155 @@ Ungraceful *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#ungraceful ArcregionswitchPlan#ungraceful}.
+
+---
+
+### ArcregionswitchPlanWorkflowStepParallelConfigStepRdsCreateCrossRegionReadReplicaConfig <a name="ArcregionswitchPlanWorkflowStepParallelConfigStepRdsCreateCrossRegionReadReplicaConfig" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsCreateCrossRegionReadReplicaConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsCreateCrossRegionReadReplicaConfig.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/arcregionswitchplan"
+
+&arcregionswitchplan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsCreateCrossRegionReadReplicaConfig {
+	DbInstanceArnMap: *map[string]*string,
+	CrossAccountRole: *string,
+	ExternalId: *string,
+	TimeoutMinutes: *f64,
+}
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsCreateCrossRegionReadReplicaConfig.property.dbInstanceArnMap">DbInstanceArnMap</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#db_instance_arn_map ArcregionswitchPlan#db_instance_arn_map}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsCreateCrossRegionReadReplicaConfig.property.crossAccountRole">CrossAccountRole</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsCreateCrossRegionReadReplicaConfig.property.externalId">ExternalId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsCreateCrossRegionReadReplicaConfig.property.timeoutMinutes">TimeoutMinutes</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}. |
+
+---
+
+##### `DbInstanceArnMap`<sup>Required</sup> <a name="DbInstanceArnMap" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsCreateCrossRegionReadReplicaConfig.property.dbInstanceArnMap"></a>
+
+```go
+DbInstanceArnMap *map[string]*string
+```
+
+- *Type:* *map[string]*string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#db_instance_arn_map ArcregionswitchPlan#db_instance_arn_map}.
+
+---
+
+##### `CrossAccountRole`<sup>Optional</sup> <a name="CrossAccountRole" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsCreateCrossRegionReadReplicaConfig.property.crossAccountRole"></a>
+
+```go
+CrossAccountRole *string
+```
+
+- *Type:* *string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}.
+
+---
+
+##### `ExternalId`<sup>Optional</sup> <a name="ExternalId" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsCreateCrossRegionReadReplicaConfig.property.externalId"></a>
+
+```go
+ExternalId *string
+```
+
+- *Type:* *string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}.
+
+---
+
+##### `TimeoutMinutes`<sup>Optional</sup> <a name="TimeoutMinutes" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsCreateCrossRegionReadReplicaConfig.property.timeoutMinutes"></a>
+
+```go
+TimeoutMinutes *f64
+```
+
+- *Type:* *f64
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}.
+
+---
+
+### ArcregionswitchPlanWorkflowStepParallelConfigStepRdsPromoteReadReplicaConfig <a name="ArcregionswitchPlanWorkflowStepParallelConfigStepRdsPromoteReadReplicaConfig" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsPromoteReadReplicaConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsPromoteReadReplicaConfig.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/arcregionswitchplan"
+
+&arcregionswitchplan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsPromoteReadReplicaConfig {
+	DbInstanceArnMap: *map[string]*string,
+	CrossAccountRole: *string,
+	ExternalId: *string,
+	TimeoutMinutes: *f64,
+}
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsPromoteReadReplicaConfig.property.dbInstanceArnMap">DbInstanceArnMap</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#db_instance_arn_map ArcregionswitchPlan#db_instance_arn_map}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsPromoteReadReplicaConfig.property.crossAccountRole">CrossAccountRole</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsPromoteReadReplicaConfig.property.externalId">ExternalId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsPromoteReadReplicaConfig.property.timeoutMinutes">TimeoutMinutes</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}. |
+
+---
+
+##### `DbInstanceArnMap`<sup>Required</sup> <a name="DbInstanceArnMap" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsPromoteReadReplicaConfig.property.dbInstanceArnMap"></a>
+
+```go
+DbInstanceArnMap *map[string]*string
+```
+
+- *Type:* *map[string]*string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#db_instance_arn_map ArcregionswitchPlan#db_instance_arn_map}.
+
+---
+
+##### `CrossAccountRole`<sup>Optional</sup> <a name="CrossAccountRole" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsPromoteReadReplicaConfig.property.crossAccountRole"></a>
+
+```go
+CrossAccountRole *string
+```
+
+- *Type:* *string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}.
+
+---
+
+##### `ExternalId`<sup>Optional</sup> <a name="ExternalId" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsPromoteReadReplicaConfig.property.externalId"></a>
+
+```go
+ExternalId *string
+```
+
+- *Type:* *string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}.
+
+---
+
+##### `TimeoutMinutes`<sup>Optional</sup> <a name="TimeoutMinutes" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsPromoteReadReplicaConfig.property.timeoutMinutes"></a>
+
+```go
+TimeoutMinutes *f64
+```
+
+- *Type:* *f64
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}.
 
 ---
 
@@ -5207,9 +5591,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/arcregionswitchplan"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRegionSwitchPlanConfig.property.arn">Arn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#arn ArcregionswitchPlan#arn}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRegionSwitchPlanConfig.property.crossAccountRole">CrossAccountRole</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRegionSwitchPlanConfig.property.externalId">ExternalId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRegionSwitchPlanConfig.property.arn">Arn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#arn ArcregionswitchPlan#arn}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRegionSwitchPlanConfig.property.crossAccountRole">CrossAccountRole</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRegionSwitchPlanConfig.property.externalId">ExternalId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}. |
 
 ---
 
@@ -5221,7 +5605,7 @@ Arn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#arn ArcregionswitchPlan#arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#arn ArcregionswitchPlan#arn}.
 
 ---
 
@@ -5233,7 +5617,7 @@ CrossAccountRole *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}.
 
 ---
 
@@ -5245,7 +5629,7 @@ ExternalId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}.
 
 ---
 
@@ -5270,12 +5654,12 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/arcregionswitchplan"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRoute53HealthCheckConfig.property.hostedZoneId">HostedZoneId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#hosted_zone_id ArcregionswitchPlan#hosted_zone_id}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRoute53HealthCheckConfig.property.recordName">RecordName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#record_name ArcregionswitchPlan#record_name}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRoute53HealthCheckConfig.property.crossAccountRole">CrossAccountRole</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRoute53HealthCheckConfig.property.externalId">ExternalId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRoute53HealthCheckConfig.property.hostedZoneId">HostedZoneId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#hosted_zone_id ArcregionswitchPlan#hosted_zone_id}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRoute53HealthCheckConfig.property.recordName">RecordName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#record_name ArcregionswitchPlan#record_name}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRoute53HealthCheckConfig.property.crossAccountRole">CrossAccountRole</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRoute53HealthCheckConfig.property.externalId">ExternalId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}. |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRoute53HealthCheckConfig.property.recordSet">RecordSet</a></code> | <code>interface{}</code> | record_set block. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRoute53HealthCheckConfig.property.timeoutMinutes">TimeoutMinutes</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRoute53HealthCheckConfig.property.timeoutMinutes">TimeoutMinutes</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}. |
 
 ---
 
@@ -5287,7 +5671,7 @@ HostedZoneId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#hosted_zone_id ArcregionswitchPlan#hosted_zone_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#hosted_zone_id ArcregionswitchPlan#hosted_zone_id}.
 
 ---
 
@@ -5299,7 +5683,7 @@ RecordName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#record_name ArcregionswitchPlan#record_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#record_name ArcregionswitchPlan#record_name}.
 
 ---
 
@@ -5311,7 +5695,7 @@ CrossAccountRole *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}.
 
 ---
 
@@ -5323,7 +5707,7 @@ ExternalId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}.
 
 ---
 
@@ -5337,7 +5721,7 @@ RecordSet interface{}
 
 record_set block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#record_set ArcregionswitchPlan#record_set}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#record_set ArcregionswitchPlan#record_set}
 
 ---
 
@@ -5349,7 +5733,7 @@ TimeoutMinutes *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}.
 
 ---
 
@@ -5370,8 +5754,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/arcregionswitchplan"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRoute53HealthCheckConfigRecordSet.property.recordSetIdentifier">RecordSetIdentifier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#record_set_identifier ArcregionswitchPlan#record_set_identifier}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRoute53HealthCheckConfigRecordSet.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#region ArcregionswitchPlan#region}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRoute53HealthCheckConfigRecordSet.property.recordSetIdentifier">RecordSetIdentifier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#record_set_identifier ArcregionswitchPlan#record_set_identifier}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRoute53HealthCheckConfigRecordSet.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#region ArcregionswitchPlan#region}. |
 
 ---
 
@@ -5383,7 +5767,7 @@ RecordSetIdentifier *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#record_set_identifier ArcregionswitchPlan#record_set_identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#record_set_identifier ArcregionswitchPlan#record_set_identifier}.
 
 ---
 
@@ -5395,7 +5779,155 @@ Region *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#region ArcregionswitchPlan#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#region ArcregionswitchPlan#region}.
+
+---
+
+### ArcregionswitchPlanWorkflowStepRdsCreateCrossRegionReadReplicaConfig <a name="ArcregionswitchPlanWorkflowStepRdsCreateCrossRegionReadReplicaConfig" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsCreateCrossRegionReadReplicaConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsCreateCrossRegionReadReplicaConfig.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/arcregionswitchplan"
+
+&arcregionswitchplan.ArcregionswitchPlanWorkflowStepRdsCreateCrossRegionReadReplicaConfig {
+	DbInstanceArnMap: *map[string]*string,
+	CrossAccountRole: *string,
+	ExternalId: *string,
+	TimeoutMinutes: *f64,
+}
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsCreateCrossRegionReadReplicaConfig.property.dbInstanceArnMap">DbInstanceArnMap</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#db_instance_arn_map ArcregionswitchPlan#db_instance_arn_map}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsCreateCrossRegionReadReplicaConfig.property.crossAccountRole">CrossAccountRole</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsCreateCrossRegionReadReplicaConfig.property.externalId">ExternalId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsCreateCrossRegionReadReplicaConfig.property.timeoutMinutes">TimeoutMinutes</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}. |
+
+---
+
+##### `DbInstanceArnMap`<sup>Required</sup> <a name="DbInstanceArnMap" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsCreateCrossRegionReadReplicaConfig.property.dbInstanceArnMap"></a>
+
+```go
+DbInstanceArnMap *map[string]*string
+```
+
+- *Type:* *map[string]*string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#db_instance_arn_map ArcregionswitchPlan#db_instance_arn_map}.
+
+---
+
+##### `CrossAccountRole`<sup>Optional</sup> <a name="CrossAccountRole" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsCreateCrossRegionReadReplicaConfig.property.crossAccountRole"></a>
+
+```go
+CrossAccountRole *string
+```
+
+- *Type:* *string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}.
+
+---
+
+##### `ExternalId`<sup>Optional</sup> <a name="ExternalId" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsCreateCrossRegionReadReplicaConfig.property.externalId"></a>
+
+```go
+ExternalId *string
+```
+
+- *Type:* *string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}.
+
+---
+
+##### `TimeoutMinutes`<sup>Optional</sup> <a name="TimeoutMinutes" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsCreateCrossRegionReadReplicaConfig.property.timeoutMinutes"></a>
+
+```go
+TimeoutMinutes *f64
+```
+
+- *Type:* *f64
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}.
+
+---
+
+### ArcregionswitchPlanWorkflowStepRdsPromoteReadReplicaConfig <a name="ArcregionswitchPlanWorkflowStepRdsPromoteReadReplicaConfig" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsPromoteReadReplicaConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsPromoteReadReplicaConfig.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/arcregionswitchplan"
+
+&arcregionswitchplan.ArcregionswitchPlanWorkflowStepRdsPromoteReadReplicaConfig {
+	DbInstanceArnMap: *map[string]*string,
+	CrossAccountRole: *string,
+	ExternalId: *string,
+	TimeoutMinutes: *f64,
+}
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsPromoteReadReplicaConfig.property.dbInstanceArnMap">DbInstanceArnMap</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#db_instance_arn_map ArcregionswitchPlan#db_instance_arn_map}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsPromoteReadReplicaConfig.property.crossAccountRole">CrossAccountRole</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsPromoteReadReplicaConfig.property.externalId">ExternalId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsPromoteReadReplicaConfig.property.timeoutMinutes">TimeoutMinutes</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}. |
+
+---
+
+##### `DbInstanceArnMap`<sup>Required</sup> <a name="DbInstanceArnMap" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsPromoteReadReplicaConfig.property.dbInstanceArnMap"></a>
+
+```go
+DbInstanceArnMap *map[string]*string
+```
+
+- *Type:* *map[string]*string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#db_instance_arn_map ArcregionswitchPlan#db_instance_arn_map}.
+
+---
+
+##### `CrossAccountRole`<sup>Optional</sup> <a name="CrossAccountRole" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsPromoteReadReplicaConfig.property.crossAccountRole"></a>
+
+```go
+CrossAccountRole *string
+```
+
+- *Type:* *string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}.
+
+---
+
+##### `ExternalId`<sup>Optional</sup> <a name="ExternalId" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsPromoteReadReplicaConfig.property.externalId"></a>
+
+```go
+ExternalId *string
+```
+
+- *Type:* *string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}.
+
+---
+
+##### `TimeoutMinutes`<sup>Optional</sup> <a name="TimeoutMinutes" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsPromoteReadReplicaConfig.property.timeoutMinutes"></a>
+
+```go
+TimeoutMinutes *f64
+```
+
+- *Type:* *f64
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}.
 
 ---
 
@@ -5417,9 +5949,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/arcregionswitchplan"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRegionSwitchPlanConfig.property.arn">Arn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#arn ArcregionswitchPlan#arn}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRegionSwitchPlanConfig.property.crossAccountRole">CrossAccountRole</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRegionSwitchPlanConfig.property.externalId">ExternalId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRegionSwitchPlanConfig.property.arn">Arn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#arn ArcregionswitchPlan#arn}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRegionSwitchPlanConfig.property.crossAccountRole">CrossAccountRole</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRegionSwitchPlanConfig.property.externalId">ExternalId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}. |
 
 ---
 
@@ -5431,7 +5963,7 @@ Arn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#arn ArcregionswitchPlan#arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#arn ArcregionswitchPlan#arn}.
 
 ---
 
@@ -5443,7 +5975,7 @@ CrossAccountRole *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}.
 
 ---
 
@@ -5455,7 +5987,7 @@ ExternalId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}.
 
 ---
 
@@ -5480,12 +6012,12 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/arcregionswitchplan"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRoute53HealthCheckConfig.property.hostedZoneId">HostedZoneId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#hosted_zone_id ArcregionswitchPlan#hosted_zone_id}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRoute53HealthCheckConfig.property.recordName">RecordName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#record_name ArcregionswitchPlan#record_name}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRoute53HealthCheckConfig.property.crossAccountRole">CrossAccountRole</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRoute53HealthCheckConfig.property.externalId">ExternalId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRoute53HealthCheckConfig.property.hostedZoneId">HostedZoneId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#hosted_zone_id ArcregionswitchPlan#hosted_zone_id}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRoute53HealthCheckConfig.property.recordName">RecordName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#record_name ArcregionswitchPlan#record_name}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRoute53HealthCheckConfig.property.crossAccountRole">CrossAccountRole</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRoute53HealthCheckConfig.property.externalId">ExternalId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}. |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRoute53HealthCheckConfig.property.recordSet">RecordSet</a></code> | <code>interface{}</code> | record_set block. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRoute53HealthCheckConfig.property.timeoutMinutes">TimeoutMinutes</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRoute53HealthCheckConfig.property.timeoutMinutes">TimeoutMinutes</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}. |
 
 ---
 
@@ -5497,7 +6029,7 @@ HostedZoneId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#hosted_zone_id ArcregionswitchPlan#hosted_zone_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#hosted_zone_id ArcregionswitchPlan#hosted_zone_id}.
 
 ---
 
@@ -5509,7 +6041,7 @@ RecordName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#record_name ArcregionswitchPlan#record_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#record_name ArcregionswitchPlan#record_name}.
 
 ---
 
@@ -5521,7 +6053,7 @@ CrossAccountRole *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#cross_account_role ArcregionswitchPlan#cross_account_role}.
 
 ---
 
@@ -5533,7 +6065,7 @@ ExternalId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#external_id ArcregionswitchPlan#external_id}.
 
 ---
 
@@ -5547,7 +6079,7 @@ RecordSet interface{}
 
 record_set block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#record_set ArcregionswitchPlan#record_set}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#record_set ArcregionswitchPlan#record_set}
 
 ---
 
@@ -5559,7 +6091,7 @@ TimeoutMinutes *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#timeout_minutes ArcregionswitchPlan#timeout_minutes}.
 
 ---
 
@@ -5580,8 +6112,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/arcregionswitchplan"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRoute53HealthCheckConfigRecordSet.property.recordSetIdentifier">RecordSetIdentifier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#record_set_identifier ArcregionswitchPlan#record_set_identifier}. |
-| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRoute53HealthCheckConfigRecordSet.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#region ArcregionswitchPlan#region}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRoute53HealthCheckConfigRecordSet.property.recordSetIdentifier">RecordSetIdentifier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#record_set_identifier ArcregionswitchPlan#record_set_identifier}. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRoute53HealthCheckConfigRecordSet.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#region ArcregionswitchPlan#region}. |
 
 ---
 
@@ -5593,7 +6125,7 @@ RecordSetIdentifier *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#record_set_identifier ArcregionswitchPlan#record_set_identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#record_set_identifier ArcregionswitchPlan#record_set_identifier}.
 
 ---
 
@@ -5605,7 +6137,7 @@ Region *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/arcregionswitch_plan#region ArcregionswitchPlan#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/arcregionswitch_plan#region ArcregionswitchPlan#region}.
 
 ---
 
@@ -6152,6 +6684,1415 @@ func ResourceIdentifier() *string
 ---
 
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanAssociatedAlarmsOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+
+### ArcregionswitchPlanReportConfigurationList <a name="ArcregionswitchPlanReportConfigurationList" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationList.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/arcregionswitchplan"
+
+arcregionswitchplan.NewArcregionswitchPlanReportConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ArcregionswitchPlanReportConfigurationList
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationList.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationList.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationList.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationList.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `Get` <a name="Get" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationList.get"></a>
+
+```go
+func Get(index *f64) ArcregionswitchPlanReportConfigurationOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationList.get.parameter.index"></a>
+
+- *Type:* *f64
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationList.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationList.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationList.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationList.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationList.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationList.property.internalValue"></a>
+
+```go
+func InternalValue() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+
+### ArcregionswitchPlanReportConfigurationOutputReference <a name="ArcregionswitchPlanReportConfigurationOutputReference" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/arcregionswitchplan"
+
+arcregionswitchplan.NewArcregionswitchPlanReportConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ArcregionswitchPlanReportConfigurationOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>*f64</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* *f64
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationOutputReference.putReportOutput">PutReportOutput</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationOutputReference.resetReportOutput">ResetReportOutput</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `PutReportOutput` <a name="PutReportOutput" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationOutputReference.putReportOutput"></a>
+
+```go
+func PutReportOutput(value interface{})
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationOutputReference.putReportOutput.parameter.value"></a>
+
+- *Type:* interface{}
+
+---
+
+##### `ResetReportOutput` <a name="ResetReportOutput" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationOutputReference.resetReportOutput"></a>
+
+```go
+func ResetReportOutput()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationOutputReference.property.reportOutput">ReportOutput</a></code> | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputList">ArcregionswitchPlanReportConfigurationReportOutputList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationOutputReference.property.reportOutputInput">ReportOutputInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `ReportOutput`<sup>Required</sup> <a name="ReportOutput" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationOutputReference.property.reportOutput"></a>
+
+```go
+func ReportOutput() ArcregionswitchPlanReportConfigurationReportOutputList
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputList">ArcregionswitchPlanReportConfigurationReportOutputList</a>
+
+---
+
+##### `ReportOutputInput`<sup>Optional</sup> <a name="ReportOutputInput" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationOutputReference.property.reportOutputInput"></a>
+
+```go
+func ReportOutputInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+
+### ArcregionswitchPlanReportConfigurationReportOutputList <a name="ArcregionswitchPlanReportConfigurationReportOutputList" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputList.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/arcregionswitchplan"
+
+arcregionswitchplan.NewArcregionswitchPlanReportConfigurationReportOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ArcregionswitchPlanReportConfigurationReportOutputList
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputList.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputList.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputList.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputList.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `Get` <a name="Get" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputList.get"></a>
+
+```go
+func Get(index *f64) ArcregionswitchPlanReportConfigurationReportOutputOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputList.get.parameter.index"></a>
+
+- *Type:* *f64
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputList.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputList.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputList.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputList.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputList.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputList.property.internalValue"></a>
+
+```go
+func InternalValue() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+
+### ArcregionswitchPlanReportConfigurationReportOutputOutputReference <a name="ArcregionswitchPlanReportConfigurationReportOutputOutputReference" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/arcregionswitchplan"
+
+arcregionswitchplan.NewArcregionswitchPlanReportConfigurationReportOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ArcregionswitchPlanReportConfigurationReportOutputOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>*f64</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* *f64
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputOutputReference.putS3Configuration">PutS3Configuration</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputOutputReference.resetS3Configuration">ResetS3Configuration</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `PutS3Configuration` <a name="PutS3Configuration" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputOutputReference.putS3Configuration"></a>
+
+```go
+func PutS3Configuration(value interface{})
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputOutputReference.putS3Configuration.parameter.value"></a>
+
+- *Type:* interface{}
+
+---
+
+##### `ResetS3Configuration` <a name="ResetS3Configuration" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputOutputReference.resetS3Configuration"></a>
+
+```go
+func ResetS3Configuration()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputOutputReference.property.s3Configuration">S3Configuration</a></code> | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputS3ConfigurationList">ArcregionswitchPlanReportConfigurationReportOutputS3ConfigurationList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputOutputReference.property.s3ConfigurationInput">S3ConfigurationInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `S3Configuration`<sup>Required</sup> <a name="S3Configuration" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputOutputReference.property.s3Configuration"></a>
+
+```go
+func S3Configuration() ArcregionswitchPlanReportConfigurationReportOutputS3ConfigurationList
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputS3ConfigurationList">ArcregionswitchPlanReportConfigurationReportOutputS3ConfigurationList</a>
+
+---
+
+##### `S3ConfigurationInput`<sup>Optional</sup> <a name="S3ConfigurationInput" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputOutputReference.property.s3ConfigurationInput"></a>
+
+```go
+func S3ConfigurationInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+
+### ArcregionswitchPlanReportConfigurationReportOutputS3ConfigurationList <a name="ArcregionswitchPlanReportConfigurationReportOutputS3ConfigurationList" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputS3ConfigurationList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputS3ConfigurationList.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/arcregionswitchplan"
+
+arcregionswitchplan.NewArcregionswitchPlanReportConfigurationReportOutputS3ConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ArcregionswitchPlanReportConfigurationReportOutputS3ConfigurationList
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputS3ConfigurationList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputS3ConfigurationList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputS3ConfigurationList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputS3ConfigurationList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputS3ConfigurationList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputS3ConfigurationList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputS3ConfigurationList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputS3ConfigurationList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputS3ConfigurationList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputS3ConfigurationList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputS3ConfigurationList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputS3ConfigurationList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputS3ConfigurationList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputS3ConfigurationList.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputS3ConfigurationList.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputS3ConfigurationList.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputS3ConfigurationList.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `Get` <a name="Get" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputS3ConfigurationList.get"></a>
+
+```go
+func Get(index *f64) ArcregionswitchPlanReportConfigurationReportOutputS3ConfigurationOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputS3ConfigurationList.get.parameter.index"></a>
+
+- *Type:* *f64
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputS3ConfigurationList.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputS3ConfigurationList.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputS3ConfigurationList.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputS3ConfigurationList.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputS3ConfigurationList.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputS3ConfigurationList.property.internalValue"></a>
+
+```go
+func InternalValue() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+
+### ArcregionswitchPlanReportConfigurationReportOutputS3ConfigurationOutputReference <a name="ArcregionswitchPlanReportConfigurationReportOutputS3ConfigurationOutputReference" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputS3ConfigurationOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputS3ConfigurationOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/arcregionswitchplan"
+
+arcregionswitchplan.NewArcregionswitchPlanReportConfigurationReportOutputS3ConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ArcregionswitchPlanReportConfigurationReportOutputS3ConfigurationOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputS3ConfigurationOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputS3ConfigurationOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputS3ConfigurationOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>*f64</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputS3ConfigurationOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputS3ConfigurationOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputS3ConfigurationOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputS3ConfigurationOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* *f64
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputS3ConfigurationOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputS3ConfigurationOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputS3ConfigurationOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputS3ConfigurationOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputS3ConfigurationOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputS3ConfigurationOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputS3ConfigurationOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputS3ConfigurationOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputS3ConfigurationOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputS3ConfigurationOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputS3ConfigurationOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputS3ConfigurationOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputS3ConfigurationOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputS3ConfigurationOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputS3ConfigurationOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputS3ConfigurationOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputS3ConfigurationOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputS3ConfigurationOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputS3ConfigurationOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputS3ConfigurationOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputS3ConfigurationOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputS3ConfigurationOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputS3ConfigurationOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputS3ConfigurationOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputS3ConfigurationOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputS3ConfigurationOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputS3ConfigurationOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputS3ConfigurationOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputS3ConfigurationOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputS3ConfigurationOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputS3ConfigurationOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputS3ConfigurationOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputS3ConfigurationOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputS3ConfigurationOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputS3ConfigurationOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputS3ConfigurationOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputS3ConfigurationOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputS3ConfigurationOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputS3ConfigurationOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputS3ConfigurationOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputS3ConfigurationOutputReference.property.bucketOwnerInput">BucketOwnerInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputS3ConfigurationOutputReference.property.bucketPathInput">BucketPathInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputS3ConfigurationOutputReference.property.bucketOwner">BucketOwner</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputS3ConfigurationOutputReference.property.bucketPath">BucketPath</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputS3ConfigurationOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputS3ConfigurationOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputS3ConfigurationOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `BucketOwnerInput`<sup>Optional</sup> <a name="BucketOwnerInput" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputS3ConfigurationOutputReference.property.bucketOwnerInput"></a>
+
+```go
+func BucketOwnerInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `BucketPathInput`<sup>Optional</sup> <a name="BucketPathInput" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputS3ConfigurationOutputReference.property.bucketPathInput"></a>
+
+```go
+func BucketPathInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `BucketOwner`<sup>Required</sup> <a name="BucketOwner" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputS3ConfigurationOutputReference.property.bucketOwner"></a>
+
+```go
+func BucketOwner() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `BucketPath`<sup>Required</sup> <a name="BucketPath" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputS3ConfigurationOutputReference.property.bucketPath"></a>
+
+```go
+func BucketPath() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanReportConfigurationReportOutputS3ConfigurationOutputReference.property.internalValue"></a>
 
 ```go
 func InternalValue() interface{}
@@ -20221,6 +22162,8 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepOutputReference.putExecutionApprovalConfig">PutExecutionApprovalConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepOutputReference.putGlobalAuroraConfig">PutGlobalAuroraConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepOutputReference.putParallelConfig">PutParallelConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepOutputReference.putRdsCreateCrossRegionReadReplicaConfig">PutRdsCreateCrossRegionReadReplicaConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepOutputReference.putRdsPromoteReadReplicaConfig">PutRdsPromoteReadReplicaConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepOutputReference.putRegionSwitchPlanConfig">PutRegionSwitchPlanConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepOutputReference.putRoute53HealthCheckConfig">PutRoute53HealthCheckConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepOutputReference.resetArcRoutingControlConfig">ResetArcRoutingControlConfig</a></code> | *No description.* |
@@ -20233,6 +22176,8 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepOutputReference.resetExecutionApprovalConfig">ResetExecutionApprovalConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepOutputReference.resetGlobalAuroraConfig">ResetGlobalAuroraConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepOutputReference.resetParallelConfig">ResetParallelConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepOutputReference.resetRdsCreateCrossRegionReadReplicaConfig">ResetRdsCreateCrossRegionReadReplicaConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepOutputReference.resetRdsPromoteReadReplicaConfig">ResetRdsPromoteReadReplicaConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepOutputReference.resetRegionSwitchPlanConfig">ResetRegionSwitchPlanConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepOutputReference.resetRoute53HealthCheckConfig">ResetRoute53HealthCheckConfig</a></code> | *No description.* |
 
@@ -20496,6 +22441,30 @@ func PutParallelConfig(value interface{})
 
 ---
 
+##### `PutRdsCreateCrossRegionReadReplicaConfig` <a name="PutRdsCreateCrossRegionReadReplicaConfig" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepOutputReference.putRdsCreateCrossRegionReadReplicaConfig"></a>
+
+```go
+func PutRdsCreateCrossRegionReadReplicaConfig(value interface{})
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepOutputReference.putRdsCreateCrossRegionReadReplicaConfig.parameter.value"></a>
+
+- *Type:* interface{}
+
+---
+
+##### `PutRdsPromoteReadReplicaConfig` <a name="PutRdsPromoteReadReplicaConfig" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepOutputReference.putRdsPromoteReadReplicaConfig"></a>
+
+```go
+func PutRdsPromoteReadReplicaConfig(value interface{})
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepOutputReference.putRdsPromoteReadReplicaConfig.parameter.value"></a>
+
+- *Type:* interface{}
+
+---
+
 ##### `PutRegionSwitchPlanConfig` <a name="PutRegionSwitchPlanConfig" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepOutputReference.putRegionSwitchPlanConfig"></a>
 
 ```go
@@ -20580,6 +22549,18 @@ func ResetGlobalAuroraConfig()
 func ResetParallelConfig()
 ```
 
+##### `ResetRdsCreateCrossRegionReadReplicaConfig` <a name="ResetRdsCreateCrossRegionReadReplicaConfig" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepOutputReference.resetRdsCreateCrossRegionReadReplicaConfig"></a>
+
+```go
+func ResetRdsCreateCrossRegionReadReplicaConfig()
+```
+
+##### `ResetRdsPromoteReadReplicaConfig` <a name="ResetRdsPromoteReadReplicaConfig" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepOutputReference.resetRdsPromoteReadReplicaConfig"></a>
+
+```go
+func ResetRdsPromoteReadReplicaConfig()
+```
+
 ##### `ResetRegionSwitchPlanConfig` <a name="ResetRegionSwitchPlanConfig" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepOutputReference.resetRegionSwitchPlanConfig"></a>
 
 ```go
@@ -20608,6 +22589,8 @@ func ResetRoute53HealthCheckConfig()
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepOutputReference.property.executionApprovalConfig">ExecutionApprovalConfig</a></code> | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepExecutionApprovalConfigList">ArcregionswitchPlanWorkflowStepExecutionApprovalConfigList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepOutputReference.property.globalAuroraConfig">GlobalAuroraConfig</a></code> | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepGlobalAuroraConfigList">ArcregionswitchPlanWorkflowStepGlobalAuroraConfigList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepOutputReference.property.parallelConfig">ParallelConfig</a></code> | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigList">ArcregionswitchPlanWorkflowStepParallelConfigList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepOutputReference.property.rdsCreateCrossRegionReadReplicaConfig">RdsCreateCrossRegionReadReplicaConfig</a></code> | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsCreateCrossRegionReadReplicaConfigList">ArcregionswitchPlanWorkflowStepRdsCreateCrossRegionReadReplicaConfigList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepOutputReference.property.rdsPromoteReadReplicaConfig">RdsPromoteReadReplicaConfig</a></code> | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsPromoteReadReplicaConfigList">ArcregionswitchPlanWorkflowStepRdsPromoteReadReplicaConfigList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepOutputReference.property.regionSwitchPlanConfig">RegionSwitchPlanConfig</a></code> | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRegionSwitchPlanConfigList">ArcregionswitchPlanWorkflowStepRegionSwitchPlanConfigList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepOutputReference.property.route53HealthCheckConfig">Route53HealthCheckConfig</a></code> | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRoute53HealthCheckConfigList">ArcregionswitchPlanWorkflowStepRoute53HealthCheckConfigList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepOutputReference.property.arcRoutingControlConfigInput">ArcRoutingControlConfigInput</a></code> | <code>interface{}</code> | *No description.* |
@@ -20622,6 +22605,8 @@ func ResetRoute53HealthCheckConfig()
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepOutputReference.property.globalAuroraConfigInput">GlobalAuroraConfigInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepOutputReference.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepOutputReference.property.parallelConfigInput">ParallelConfigInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepOutputReference.property.rdsCreateCrossRegionReadReplicaConfigInput">RdsCreateCrossRegionReadReplicaConfigInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepOutputReference.property.rdsPromoteReadReplicaConfigInput">RdsPromoteReadReplicaConfigInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepOutputReference.property.regionSwitchPlanConfigInput">RegionSwitchPlanConfigInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepOutputReference.property.route53HealthCheckConfigInput">Route53HealthCheckConfigInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepOutputReference.property.description">Description</a></code> | <code>*string</code> | *No description.* |
@@ -20742,6 +22727,26 @@ func ParallelConfig() ArcregionswitchPlanWorkflowStepParallelConfigList
 ```
 
 - *Type:* <a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigList">ArcregionswitchPlanWorkflowStepParallelConfigList</a>
+
+---
+
+##### `RdsCreateCrossRegionReadReplicaConfig`<sup>Required</sup> <a name="RdsCreateCrossRegionReadReplicaConfig" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepOutputReference.property.rdsCreateCrossRegionReadReplicaConfig"></a>
+
+```go
+func RdsCreateCrossRegionReadReplicaConfig() ArcregionswitchPlanWorkflowStepRdsCreateCrossRegionReadReplicaConfigList
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsCreateCrossRegionReadReplicaConfigList">ArcregionswitchPlanWorkflowStepRdsCreateCrossRegionReadReplicaConfigList</a>
+
+---
+
+##### `RdsPromoteReadReplicaConfig`<sup>Required</sup> <a name="RdsPromoteReadReplicaConfig" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepOutputReference.property.rdsPromoteReadReplicaConfig"></a>
+
+```go
+func RdsPromoteReadReplicaConfig() ArcregionswitchPlanWorkflowStepRdsPromoteReadReplicaConfigList
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsPromoteReadReplicaConfigList">ArcregionswitchPlanWorkflowStepRdsPromoteReadReplicaConfigList</a>
 
 ---
 
@@ -20879,6 +22884,26 @@ func NameInput() *string
 
 ```go
 func ParallelConfigInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `RdsCreateCrossRegionReadReplicaConfigInput`<sup>Optional</sup> <a name="RdsCreateCrossRegionReadReplicaConfigInput" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepOutputReference.property.rdsCreateCrossRegionReadReplicaConfigInput"></a>
+
+```go
+func RdsCreateCrossRegionReadReplicaConfigInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `RdsPromoteReadReplicaConfigInput`<sup>Optional</sup> <a name="RdsPromoteReadReplicaConfigInput" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepOutputReference.property.rdsPromoteReadReplicaConfigInput"></a>
+
+```go
+func RdsPromoteReadReplicaConfigInput() interface{}
 ```
 
 - *Type:* interface{}
@@ -33553,6 +35578,8 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepOutputReference.putEksResourceScalingConfig">PutEksResourceScalingConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepOutputReference.putExecutionApprovalConfig">PutExecutionApprovalConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepOutputReference.putGlobalAuroraConfig">PutGlobalAuroraConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepOutputReference.putRdsCreateCrossRegionReadReplicaConfig">PutRdsCreateCrossRegionReadReplicaConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepOutputReference.putRdsPromoteReadReplicaConfig">PutRdsPromoteReadReplicaConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepOutputReference.putRegionSwitchPlanConfig">PutRegionSwitchPlanConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepOutputReference.putRoute53HealthCheckConfig">PutRoute53HealthCheckConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepOutputReference.resetArcRoutingControlConfig">ResetArcRoutingControlConfig</a></code> | *No description.* |
@@ -33564,6 +35591,8 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepOutputReference.resetEksResourceScalingConfig">ResetEksResourceScalingConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepOutputReference.resetExecutionApprovalConfig">ResetExecutionApprovalConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepOutputReference.resetGlobalAuroraConfig">ResetGlobalAuroraConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepOutputReference.resetRdsCreateCrossRegionReadReplicaConfig">ResetRdsCreateCrossRegionReadReplicaConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepOutputReference.resetRdsPromoteReadReplicaConfig">ResetRdsPromoteReadReplicaConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepOutputReference.resetRegionSwitchPlanConfig">ResetRegionSwitchPlanConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepOutputReference.resetRoute53HealthCheckConfig">ResetRoute53HealthCheckConfig</a></code> | *No description.* |
 
@@ -33815,6 +35844,30 @@ func PutGlobalAuroraConfig(value interface{})
 
 ---
 
+##### `PutRdsCreateCrossRegionReadReplicaConfig` <a name="PutRdsCreateCrossRegionReadReplicaConfig" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepOutputReference.putRdsCreateCrossRegionReadReplicaConfig"></a>
+
+```go
+func PutRdsCreateCrossRegionReadReplicaConfig(value interface{})
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepOutputReference.putRdsCreateCrossRegionReadReplicaConfig.parameter.value"></a>
+
+- *Type:* interface{}
+
+---
+
+##### `PutRdsPromoteReadReplicaConfig` <a name="PutRdsPromoteReadReplicaConfig" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepOutputReference.putRdsPromoteReadReplicaConfig"></a>
+
+```go
+func PutRdsPromoteReadReplicaConfig(value interface{})
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepOutputReference.putRdsPromoteReadReplicaConfig.parameter.value"></a>
+
+- *Type:* interface{}
+
+---
+
 ##### `PutRegionSwitchPlanConfig` <a name="PutRegionSwitchPlanConfig" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepOutputReference.putRegionSwitchPlanConfig"></a>
 
 ```go
@@ -33893,6 +35946,18 @@ func ResetExecutionApprovalConfig()
 func ResetGlobalAuroraConfig()
 ```
 
+##### `ResetRdsCreateCrossRegionReadReplicaConfig` <a name="ResetRdsCreateCrossRegionReadReplicaConfig" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepOutputReference.resetRdsCreateCrossRegionReadReplicaConfig"></a>
+
+```go
+func ResetRdsCreateCrossRegionReadReplicaConfig()
+```
+
+##### `ResetRdsPromoteReadReplicaConfig` <a name="ResetRdsPromoteReadReplicaConfig" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepOutputReference.resetRdsPromoteReadReplicaConfig"></a>
+
+```go
+func ResetRdsPromoteReadReplicaConfig()
+```
+
 ##### `ResetRegionSwitchPlanConfig` <a name="ResetRegionSwitchPlanConfig" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepOutputReference.resetRegionSwitchPlanConfig"></a>
 
 ```go
@@ -33920,6 +35985,8 @@ func ResetRoute53HealthCheckConfig()
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepOutputReference.property.eksResourceScalingConfig">EksResourceScalingConfig</a></code> | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigList">ArcregionswitchPlanWorkflowStepParallelConfigStepEksResourceScalingConfigList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepOutputReference.property.executionApprovalConfig">ExecutionApprovalConfig</a></code> | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepExecutionApprovalConfigList">ArcregionswitchPlanWorkflowStepParallelConfigStepExecutionApprovalConfigList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepOutputReference.property.globalAuroraConfig">GlobalAuroraConfig</a></code> | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepGlobalAuroraConfigList">ArcregionswitchPlanWorkflowStepParallelConfigStepGlobalAuroraConfigList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepOutputReference.property.rdsCreateCrossRegionReadReplicaConfig">RdsCreateCrossRegionReadReplicaConfig</a></code> | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsCreateCrossRegionReadReplicaConfigList">ArcregionswitchPlanWorkflowStepParallelConfigStepRdsCreateCrossRegionReadReplicaConfigList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepOutputReference.property.rdsPromoteReadReplicaConfig">RdsPromoteReadReplicaConfig</a></code> | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsPromoteReadReplicaConfigList">ArcregionswitchPlanWorkflowStepParallelConfigStepRdsPromoteReadReplicaConfigList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepOutputReference.property.regionSwitchPlanConfig">RegionSwitchPlanConfig</a></code> | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRegionSwitchPlanConfigList">ArcregionswitchPlanWorkflowStepParallelConfigStepRegionSwitchPlanConfigList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepOutputReference.property.route53HealthCheckConfig">Route53HealthCheckConfig</a></code> | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRoute53HealthCheckConfigList">ArcregionswitchPlanWorkflowStepParallelConfigStepRoute53HealthCheckConfigList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepOutputReference.property.arcRoutingControlConfigInput">ArcRoutingControlConfigInput</a></code> | <code>interface{}</code> | *No description.* |
@@ -33933,6 +36000,8 @@ func ResetRoute53HealthCheckConfig()
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepOutputReference.property.executionBlockTypeInput">ExecutionBlockTypeInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepOutputReference.property.globalAuroraConfigInput">GlobalAuroraConfigInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepOutputReference.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepOutputReference.property.rdsCreateCrossRegionReadReplicaConfigInput">RdsCreateCrossRegionReadReplicaConfigInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepOutputReference.property.rdsPromoteReadReplicaConfigInput">RdsPromoteReadReplicaConfigInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepOutputReference.property.regionSwitchPlanConfigInput">RegionSwitchPlanConfigInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepOutputReference.property.route53HealthCheckConfigInput">Route53HealthCheckConfigInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepOutputReference.property.description">Description</a></code> | <code>*string</code> | *No description.* |
@@ -34043,6 +36112,26 @@ func GlobalAuroraConfig() ArcregionswitchPlanWorkflowStepParallelConfigStepGloba
 ```
 
 - *Type:* <a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepGlobalAuroraConfigList">ArcregionswitchPlanWorkflowStepParallelConfigStepGlobalAuroraConfigList</a>
+
+---
+
+##### `RdsCreateCrossRegionReadReplicaConfig`<sup>Required</sup> <a name="RdsCreateCrossRegionReadReplicaConfig" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepOutputReference.property.rdsCreateCrossRegionReadReplicaConfig"></a>
+
+```go
+func RdsCreateCrossRegionReadReplicaConfig() ArcregionswitchPlanWorkflowStepParallelConfigStepRdsCreateCrossRegionReadReplicaConfigList
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsCreateCrossRegionReadReplicaConfigList">ArcregionswitchPlanWorkflowStepParallelConfigStepRdsCreateCrossRegionReadReplicaConfigList</a>
+
+---
+
+##### `RdsPromoteReadReplicaConfig`<sup>Required</sup> <a name="RdsPromoteReadReplicaConfig" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepOutputReference.property.rdsPromoteReadReplicaConfig"></a>
+
+```go
+func RdsPromoteReadReplicaConfig() ArcregionswitchPlanWorkflowStepParallelConfigStepRdsPromoteReadReplicaConfigList
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsPromoteReadReplicaConfigList">ArcregionswitchPlanWorkflowStepParallelConfigStepRdsPromoteReadReplicaConfigList</a>
 
 ---
 
@@ -34176,6 +36265,26 @@ func NameInput() *string
 
 ---
 
+##### `RdsCreateCrossRegionReadReplicaConfigInput`<sup>Optional</sup> <a name="RdsCreateCrossRegionReadReplicaConfigInput" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepOutputReference.property.rdsCreateCrossRegionReadReplicaConfigInput"></a>
+
+```go
+func RdsCreateCrossRegionReadReplicaConfigInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `RdsPromoteReadReplicaConfigInput`<sup>Optional</sup> <a name="RdsPromoteReadReplicaConfigInput" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepOutputReference.property.rdsPromoteReadReplicaConfigInput"></a>
+
+```go
+func RdsPromoteReadReplicaConfigInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
 ##### `RegionSwitchPlanConfigInput`<sup>Optional</sup> <a name="RegionSwitchPlanConfigInput" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepOutputReference.property.regionSwitchPlanConfigInput"></a>
 
 ```go
@@ -34227,6 +36336,1078 @@ func Name() *string
 ---
 
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+
+### ArcregionswitchPlanWorkflowStepParallelConfigStepRdsCreateCrossRegionReadReplicaConfigList <a name="ArcregionswitchPlanWorkflowStepParallelConfigStepRdsCreateCrossRegionReadReplicaConfigList" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsCreateCrossRegionReadReplicaConfigList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsCreateCrossRegionReadReplicaConfigList.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/arcregionswitchplan"
+
+arcregionswitchplan.NewArcregionswitchPlanWorkflowStepParallelConfigStepRdsCreateCrossRegionReadReplicaConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ArcregionswitchPlanWorkflowStepParallelConfigStepRdsCreateCrossRegionReadReplicaConfigList
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsCreateCrossRegionReadReplicaConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsCreateCrossRegionReadReplicaConfigList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsCreateCrossRegionReadReplicaConfigList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsCreateCrossRegionReadReplicaConfigList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsCreateCrossRegionReadReplicaConfigList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsCreateCrossRegionReadReplicaConfigList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsCreateCrossRegionReadReplicaConfigList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsCreateCrossRegionReadReplicaConfigList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsCreateCrossRegionReadReplicaConfigList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsCreateCrossRegionReadReplicaConfigList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsCreateCrossRegionReadReplicaConfigList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsCreateCrossRegionReadReplicaConfigList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsCreateCrossRegionReadReplicaConfigList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsCreateCrossRegionReadReplicaConfigList.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsCreateCrossRegionReadReplicaConfigList.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsCreateCrossRegionReadReplicaConfigList.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsCreateCrossRegionReadReplicaConfigList.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `Get` <a name="Get" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsCreateCrossRegionReadReplicaConfigList.get"></a>
+
+```go
+func Get(index *f64) ArcregionswitchPlanWorkflowStepParallelConfigStepRdsCreateCrossRegionReadReplicaConfigOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsCreateCrossRegionReadReplicaConfigList.get.parameter.index"></a>
+
+- *Type:* *f64
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsCreateCrossRegionReadReplicaConfigList.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsCreateCrossRegionReadReplicaConfigList.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsCreateCrossRegionReadReplicaConfigList.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsCreateCrossRegionReadReplicaConfigList.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsCreateCrossRegionReadReplicaConfigList.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsCreateCrossRegionReadReplicaConfigList.property.internalValue"></a>
+
+```go
+func InternalValue() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+
+### ArcregionswitchPlanWorkflowStepParallelConfigStepRdsCreateCrossRegionReadReplicaConfigOutputReference <a name="ArcregionswitchPlanWorkflowStepParallelConfigStepRdsCreateCrossRegionReadReplicaConfigOutputReference" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsCreateCrossRegionReadReplicaConfigOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsCreateCrossRegionReadReplicaConfigOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/arcregionswitchplan"
+
+arcregionswitchplan.NewArcregionswitchPlanWorkflowStepParallelConfigStepRdsCreateCrossRegionReadReplicaConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ArcregionswitchPlanWorkflowStepParallelConfigStepRdsCreateCrossRegionReadReplicaConfigOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsCreateCrossRegionReadReplicaConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsCreateCrossRegionReadReplicaConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsCreateCrossRegionReadReplicaConfigOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>*f64</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsCreateCrossRegionReadReplicaConfigOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsCreateCrossRegionReadReplicaConfigOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsCreateCrossRegionReadReplicaConfigOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsCreateCrossRegionReadReplicaConfigOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* *f64
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsCreateCrossRegionReadReplicaConfigOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsCreateCrossRegionReadReplicaConfigOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsCreateCrossRegionReadReplicaConfigOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsCreateCrossRegionReadReplicaConfigOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsCreateCrossRegionReadReplicaConfigOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsCreateCrossRegionReadReplicaConfigOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsCreateCrossRegionReadReplicaConfigOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsCreateCrossRegionReadReplicaConfigOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsCreateCrossRegionReadReplicaConfigOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsCreateCrossRegionReadReplicaConfigOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsCreateCrossRegionReadReplicaConfigOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsCreateCrossRegionReadReplicaConfigOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsCreateCrossRegionReadReplicaConfigOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsCreateCrossRegionReadReplicaConfigOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsCreateCrossRegionReadReplicaConfigOutputReference.resetCrossAccountRole">ResetCrossAccountRole</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsCreateCrossRegionReadReplicaConfigOutputReference.resetExternalId">ResetExternalId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsCreateCrossRegionReadReplicaConfigOutputReference.resetTimeoutMinutes">ResetTimeoutMinutes</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsCreateCrossRegionReadReplicaConfigOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsCreateCrossRegionReadReplicaConfigOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsCreateCrossRegionReadReplicaConfigOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsCreateCrossRegionReadReplicaConfigOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsCreateCrossRegionReadReplicaConfigOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsCreateCrossRegionReadReplicaConfigOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsCreateCrossRegionReadReplicaConfigOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsCreateCrossRegionReadReplicaConfigOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsCreateCrossRegionReadReplicaConfigOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsCreateCrossRegionReadReplicaConfigOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsCreateCrossRegionReadReplicaConfigOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsCreateCrossRegionReadReplicaConfigOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsCreateCrossRegionReadReplicaConfigOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsCreateCrossRegionReadReplicaConfigOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsCreateCrossRegionReadReplicaConfigOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsCreateCrossRegionReadReplicaConfigOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsCreateCrossRegionReadReplicaConfigOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsCreateCrossRegionReadReplicaConfigOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsCreateCrossRegionReadReplicaConfigOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsCreateCrossRegionReadReplicaConfigOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsCreateCrossRegionReadReplicaConfigOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsCreateCrossRegionReadReplicaConfigOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsCreateCrossRegionReadReplicaConfigOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsCreateCrossRegionReadReplicaConfigOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `ResetCrossAccountRole` <a name="ResetCrossAccountRole" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsCreateCrossRegionReadReplicaConfigOutputReference.resetCrossAccountRole"></a>
+
+```go
+func ResetCrossAccountRole()
+```
+
+##### `ResetExternalId` <a name="ResetExternalId" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsCreateCrossRegionReadReplicaConfigOutputReference.resetExternalId"></a>
+
+```go
+func ResetExternalId()
+```
+
+##### `ResetTimeoutMinutes` <a name="ResetTimeoutMinutes" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsCreateCrossRegionReadReplicaConfigOutputReference.resetTimeoutMinutes"></a>
+
+```go
+func ResetTimeoutMinutes()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsCreateCrossRegionReadReplicaConfigOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsCreateCrossRegionReadReplicaConfigOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsCreateCrossRegionReadReplicaConfigOutputReference.property.crossAccountRoleInput">CrossAccountRoleInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsCreateCrossRegionReadReplicaConfigOutputReference.property.dbInstanceArnMapInput">DbInstanceArnMapInput</a></code> | <code>*map[string]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsCreateCrossRegionReadReplicaConfigOutputReference.property.externalIdInput">ExternalIdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsCreateCrossRegionReadReplicaConfigOutputReference.property.timeoutMinutesInput">TimeoutMinutesInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsCreateCrossRegionReadReplicaConfigOutputReference.property.crossAccountRole">CrossAccountRole</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsCreateCrossRegionReadReplicaConfigOutputReference.property.dbInstanceArnMap">DbInstanceArnMap</a></code> | <code>*map[string]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsCreateCrossRegionReadReplicaConfigOutputReference.property.externalId">ExternalId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsCreateCrossRegionReadReplicaConfigOutputReference.property.timeoutMinutes">TimeoutMinutes</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsCreateCrossRegionReadReplicaConfigOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsCreateCrossRegionReadReplicaConfigOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsCreateCrossRegionReadReplicaConfigOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `CrossAccountRoleInput`<sup>Optional</sup> <a name="CrossAccountRoleInput" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsCreateCrossRegionReadReplicaConfigOutputReference.property.crossAccountRoleInput"></a>
+
+```go
+func CrossAccountRoleInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `DbInstanceArnMapInput`<sup>Optional</sup> <a name="DbInstanceArnMapInput" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsCreateCrossRegionReadReplicaConfigOutputReference.property.dbInstanceArnMapInput"></a>
+
+```go
+func DbInstanceArnMapInput() *map[string]*string
+```
+
+- *Type:* *map[string]*string
+
+---
+
+##### `ExternalIdInput`<sup>Optional</sup> <a name="ExternalIdInput" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsCreateCrossRegionReadReplicaConfigOutputReference.property.externalIdInput"></a>
+
+```go
+func ExternalIdInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `TimeoutMinutesInput`<sup>Optional</sup> <a name="TimeoutMinutesInput" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsCreateCrossRegionReadReplicaConfigOutputReference.property.timeoutMinutesInput"></a>
+
+```go
+func TimeoutMinutesInput() *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `CrossAccountRole`<sup>Required</sup> <a name="CrossAccountRole" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsCreateCrossRegionReadReplicaConfigOutputReference.property.crossAccountRole"></a>
+
+```go
+func CrossAccountRole() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `DbInstanceArnMap`<sup>Required</sup> <a name="DbInstanceArnMap" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsCreateCrossRegionReadReplicaConfigOutputReference.property.dbInstanceArnMap"></a>
+
+```go
+func DbInstanceArnMap() *map[string]*string
+```
+
+- *Type:* *map[string]*string
+
+---
+
+##### `ExternalId`<sup>Required</sup> <a name="ExternalId" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsCreateCrossRegionReadReplicaConfigOutputReference.property.externalId"></a>
+
+```go
+func ExternalId() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `TimeoutMinutes`<sup>Required</sup> <a name="TimeoutMinutes" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsCreateCrossRegionReadReplicaConfigOutputReference.property.timeoutMinutes"></a>
+
+```go
+func TimeoutMinutes() *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsCreateCrossRegionReadReplicaConfigOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+
+### ArcregionswitchPlanWorkflowStepParallelConfigStepRdsPromoteReadReplicaConfigList <a name="ArcregionswitchPlanWorkflowStepParallelConfigStepRdsPromoteReadReplicaConfigList" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsPromoteReadReplicaConfigList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsPromoteReadReplicaConfigList.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/arcregionswitchplan"
+
+arcregionswitchplan.NewArcregionswitchPlanWorkflowStepParallelConfigStepRdsPromoteReadReplicaConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ArcregionswitchPlanWorkflowStepParallelConfigStepRdsPromoteReadReplicaConfigList
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsPromoteReadReplicaConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsPromoteReadReplicaConfigList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsPromoteReadReplicaConfigList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsPromoteReadReplicaConfigList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsPromoteReadReplicaConfigList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsPromoteReadReplicaConfigList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsPromoteReadReplicaConfigList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsPromoteReadReplicaConfigList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsPromoteReadReplicaConfigList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsPromoteReadReplicaConfigList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsPromoteReadReplicaConfigList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsPromoteReadReplicaConfigList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsPromoteReadReplicaConfigList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsPromoteReadReplicaConfigList.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsPromoteReadReplicaConfigList.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsPromoteReadReplicaConfigList.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsPromoteReadReplicaConfigList.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `Get` <a name="Get" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsPromoteReadReplicaConfigList.get"></a>
+
+```go
+func Get(index *f64) ArcregionswitchPlanWorkflowStepParallelConfigStepRdsPromoteReadReplicaConfigOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsPromoteReadReplicaConfigList.get.parameter.index"></a>
+
+- *Type:* *f64
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsPromoteReadReplicaConfigList.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsPromoteReadReplicaConfigList.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsPromoteReadReplicaConfigList.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsPromoteReadReplicaConfigList.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsPromoteReadReplicaConfigList.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsPromoteReadReplicaConfigList.property.internalValue"></a>
+
+```go
+func InternalValue() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+
+### ArcregionswitchPlanWorkflowStepParallelConfigStepRdsPromoteReadReplicaConfigOutputReference <a name="ArcregionswitchPlanWorkflowStepParallelConfigStepRdsPromoteReadReplicaConfigOutputReference" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsPromoteReadReplicaConfigOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsPromoteReadReplicaConfigOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/arcregionswitchplan"
+
+arcregionswitchplan.NewArcregionswitchPlanWorkflowStepParallelConfigStepRdsPromoteReadReplicaConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ArcregionswitchPlanWorkflowStepParallelConfigStepRdsPromoteReadReplicaConfigOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsPromoteReadReplicaConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsPromoteReadReplicaConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsPromoteReadReplicaConfigOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>*f64</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsPromoteReadReplicaConfigOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsPromoteReadReplicaConfigOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsPromoteReadReplicaConfigOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsPromoteReadReplicaConfigOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* *f64
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsPromoteReadReplicaConfigOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsPromoteReadReplicaConfigOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsPromoteReadReplicaConfigOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsPromoteReadReplicaConfigOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsPromoteReadReplicaConfigOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsPromoteReadReplicaConfigOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsPromoteReadReplicaConfigOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsPromoteReadReplicaConfigOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsPromoteReadReplicaConfigOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsPromoteReadReplicaConfigOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsPromoteReadReplicaConfigOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsPromoteReadReplicaConfigOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsPromoteReadReplicaConfigOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsPromoteReadReplicaConfigOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsPromoteReadReplicaConfigOutputReference.resetCrossAccountRole">ResetCrossAccountRole</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsPromoteReadReplicaConfigOutputReference.resetExternalId">ResetExternalId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsPromoteReadReplicaConfigOutputReference.resetTimeoutMinutes">ResetTimeoutMinutes</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsPromoteReadReplicaConfigOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsPromoteReadReplicaConfigOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsPromoteReadReplicaConfigOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsPromoteReadReplicaConfigOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsPromoteReadReplicaConfigOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsPromoteReadReplicaConfigOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsPromoteReadReplicaConfigOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsPromoteReadReplicaConfigOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsPromoteReadReplicaConfigOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsPromoteReadReplicaConfigOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsPromoteReadReplicaConfigOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsPromoteReadReplicaConfigOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsPromoteReadReplicaConfigOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsPromoteReadReplicaConfigOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsPromoteReadReplicaConfigOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsPromoteReadReplicaConfigOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsPromoteReadReplicaConfigOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsPromoteReadReplicaConfigOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsPromoteReadReplicaConfigOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsPromoteReadReplicaConfigOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsPromoteReadReplicaConfigOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsPromoteReadReplicaConfigOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsPromoteReadReplicaConfigOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsPromoteReadReplicaConfigOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `ResetCrossAccountRole` <a name="ResetCrossAccountRole" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsPromoteReadReplicaConfigOutputReference.resetCrossAccountRole"></a>
+
+```go
+func ResetCrossAccountRole()
+```
+
+##### `ResetExternalId` <a name="ResetExternalId" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsPromoteReadReplicaConfigOutputReference.resetExternalId"></a>
+
+```go
+func ResetExternalId()
+```
+
+##### `ResetTimeoutMinutes` <a name="ResetTimeoutMinutes" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsPromoteReadReplicaConfigOutputReference.resetTimeoutMinutes"></a>
+
+```go
+func ResetTimeoutMinutes()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsPromoteReadReplicaConfigOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsPromoteReadReplicaConfigOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsPromoteReadReplicaConfigOutputReference.property.crossAccountRoleInput">CrossAccountRoleInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsPromoteReadReplicaConfigOutputReference.property.dbInstanceArnMapInput">DbInstanceArnMapInput</a></code> | <code>*map[string]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsPromoteReadReplicaConfigOutputReference.property.externalIdInput">ExternalIdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsPromoteReadReplicaConfigOutputReference.property.timeoutMinutesInput">TimeoutMinutesInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsPromoteReadReplicaConfigOutputReference.property.crossAccountRole">CrossAccountRole</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsPromoteReadReplicaConfigOutputReference.property.dbInstanceArnMap">DbInstanceArnMap</a></code> | <code>*map[string]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsPromoteReadReplicaConfigOutputReference.property.externalId">ExternalId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsPromoteReadReplicaConfigOutputReference.property.timeoutMinutes">TimeoutMinutes</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsPromoteReadReplicaConfigOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsPromoteReadReplicaConfigOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsPromoteReadReplicaConfigOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `CrossAccountRoleInput`<sup>Optional</sup> <a name="CrossAccountRoleInput" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsPromoteReadReplicaConfigOutputReference.property.crossAccountRoleInput"></a>
+
+```go
+func CrossAccountRoleInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `DbInstanceArnMapInput`<sup>Optional</sup> <a name="DbInstanceArnMapInput" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsPromoteReadReplicaConfigOutputReference.property.dbInstanceArnMapInput"></a>
+
+```go
+func DbInstanceArnMapInput() *map[string]*string
+```
+
+- *Type:* *map[string]*string
+
+---
+
+##### `ExternalIdInput`<sup>Optional</sup> <a name="ExternalIdInput" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsPromoteReadReplicaConfigOutputReference.property.externalIdInput"></a>
+
+```go
+func ExternalIdInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `TimeoutMinutesInput`<sup>Optional</sup> <a name="TimeoutMinutesInput" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsPromoteReadReplicaConfigOutputReference.property.timeoutMinutesInput"></a>
+
+```go
+func TimeoutMinutesInput() *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `CrossAccountRole`<sup>Required</sup> <a name="CrossAccountRole" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsPromoteReadReplicaConfigOutputReference.property.crossAccountRole"></a>
+
+```go
+func CrossAccountRole() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `DbInstanceArnMap`<sup>Required</sup> <a name="DbInstanceArnMap" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsPromoteReadReplicaConfigOutputReference.property.dbInstanceArnMap"></a>
+
+```go
+func DbInstanceArnMap() *map[string]*string
+```
+
+- *Type:* *map[string]*string
+
+---
+
+##### `ExternalId`<sup>Required</sup> <a name="ExternalId" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsPromoteReadReplicaConfigOutputReference.property.externalId"></a>
+
+```go
+func ExternalId() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `TimeoutMinutes`<sup>Required</sup> <a name="TimeoutMinutes" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsPromoteReadReplicaConfigOutputReference.property.timeoutMinutes"></a>
+
+```go
+func TimeoutMinutes() *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRdsPromoteReadReplicaConfigOutputReference.property.internalValue"></a>
 
 ```go
 func InternalValue() interface{}
@@ -35805,6 +38986,1078 @@ func Region() *string
 ---
 
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepParallelConfigStepRoute53HealthCheckConfigRecordSetOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+
+### ArcregionswitchPlanWorkflowStepRdsCreateCrossRegionReadReplicaConfigList <a name="ArcregionswitchPlanWorkflowStepRdsCreateCrossRegionReadReplicaConfigList" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsCreateCrossRegionReadReplicaConfigList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsCreateCrossRegionReadReplicaConfigList.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/arcregionswitchplan"
+
+arcregionswitchplan.NewArcregionswitchPlanWorkflowStepRdsCreateCrossRegionReadReplicaConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ArcregionswitchPlanWorkflowStepRdsCreateCrossRegionReadReplicaConfigList
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsCreateCrossRegionReadReplicaConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsCreateCrossRegionReadReplicaConfigList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsCreateCrossRegionReadReplicaConfigList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsCreateCrossRegionReadReplicaConfigList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsCreateCrossRegionReadReplicaConfigList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsCreateCrossRegionReadReplicaConfigList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsCreateCrossRegionReadReplicaConfigList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsCreateCrossRegionReadReplicaConfigList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsCreateCrossRegionReadReplicaConfigList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsCreateCrossRegionReadReplicaConfigList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsCreateCrossRegionReadReplicaConfigList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsCreateCrossRegionReadReplicaConfigList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsCreateCrossRegionReadReplicaConfigList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsCreateCrossRegionReadReplicaConfigList.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsCreateCrossRegionReadReplicaConfigList.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsCreateCrossRegionReadReplicaConfigList.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsCreateCrossRegionReadReplicaConfigList.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `Get` <a name="Get" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsCreateCrossRegionReadReplicaConfigList.get"></a>
+
+```go
+func Get(index *f64) ArcregionswitchPlanWorkflowStepRdsCreateCrossRegionReadReplicaConfigOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsCreateCrossRegionReadReplicaConfigList.get.parameter.index"></a>
+
+- *Type:* *f64
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsCreateCrossRegionReadReplicaConfigList.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsCreateCrossRegionReadReplicaConfigList.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsCreateCrossRegionReadReplicaConfigList.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsCreateCrossRegionReadReplicaConfigList.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsCreateCrossRegionReadReplicaConfigList.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsCreateCrossRegionReadReplicaConfigList.property.internalValue"></a>
+
+```go
+func InternalValue() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+
+### ArcregionswitchPlanWorkflowStepRdsCreateCrossRegionReadReplicaConfigOutputReference <a name="ArcregionswitchPlanWorkflowStepRdsCreateCrossRegionReadReplicaConfigOutputReference" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsCreateCrossRegionReadReplicaConfigOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsCreateCrossRegionReadReplicaConfigOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/arcregionswitchplan"
+
+arcregionswitchplan.NewArcregionswitchPlanWorkflowStepRdsCreateCrossRegionReadReplicaConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ArcregionswitchPlanWorkflowStepRdsCreateCrossRegionReadReplicaConfigOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsCreateCrossRegionReadReplicaConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsCreateCrossRegionReadReplicaConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsCreateCrossRegionReadReplicaConfigOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>*f64</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsCreateCrossRegionReadReplicaConfigOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsCreateCrossRegionReadReplicaConfigOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsCreateCrossRegionReadReplicaConfigOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsCreateCrossRegionReadReplicaConfigOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* *f64
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsCreateCrossRegionReadReplicaConfigOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsCreateCrossRegionReadReplicaConfigOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsCreateCrossRegionReadReplicaConfigOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsCreateCrossRegionReadReplicaConfigOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsCreateCrossRegionReadReplicaConfigOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsCreateCrossRegionReadReplicaConfigOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsCreateCrossRegionReadReplicaConfigOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsCreateCrossRegionReadReplicaConfigOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsCreateCrossRegionReadReplicaConfigOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsCreateCrossRegionReadReplicaConfigOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsCreateCrossRegionReadReplicaConfigOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsCreateCrossRegionReadReplicaConfigOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsCreateCrossRegionReadReplicaConfigOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsCreateCrossRegionReadReplicaConfigOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsCreateCrossRegionReadReplicaConfigOutputReference.resetCrossAccountRole">ResetCrossAccountRole</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsCreateCrossRegionReadReplicaConfigOutputReference.resetExternalId">ResetExternalId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsCreateCrossRegionReadReplicaConfigOutputReference.resetTimeoutMinutes">ResetTimeoutMinutes</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsCreateCrossRegionReadReplicaConfigOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsCreateCrossRegionReadReplicaConfigOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsCreateCrossRegionReadReplicaConfigOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsCreateCrossRegionReadReplicaConfigOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsCreateCrossRegionReadReplicaConfigOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsCreateCrossRegionReadReplicaConfigOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsCreateCrossRegionReadReplicaConfigOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsCreateCrossRegionReadReplicaConfigOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsCreateCrossRegionReadReplicaConfigOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsCreateCrossRegionReadReplicaConfigOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsCreateCrossRegionReadReplicaConfigOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsCreateCrossRegionReadReplicaConfigOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsCreateCrossRegionReadReplicaConfigOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsCreateCrossRegionReadReplicaConfigOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsCreateCrossRegionReadReplicaConfigOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsCreateCrossRegionReadReplicaConfigOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsCreateCrossRegionReadReplicaConfigOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsCreateCrossRegionReadReplicaConfigOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsCreateCrossRegionReadReplicaConfigOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsCreateCrossRegionReadReplicaConfigOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsCreateCrossRegionReadReplicaConfigOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsCreateCrossRegionReadReplicaConfigOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsCreateCrossRegionReadReplicaConfigOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsCreateCrossRegionReadReplicaConfigOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `ResetCrossAccountRole` <a name="ResetCrossAccountRole" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsCreateCrossRegionReadReplicaConfigOutputReference.resetCrossAccountRole"></a>
+
+```go
+func ResetCrossAccountRole()
+```
+
+##### `ResetExternalId` <a name="ResetExternalId" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsCreateCrossRegionReadReplicaConfigOutputReference.resetExternalId"></a>
+
+```go
+func ResetExternalId()
+```
+
+##### `ResetTimeoutMinutes` <a name="ResetTimeoutMinutes" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsCreateCrossRegionReadReplicaConfigOutputReference.resetTimeoutMinutes"></a>
+
+```go
+func ResetTimeoutMinutes()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsCreateCrossRegionReadReplicaConfigOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsCreateCrossRegionReadReplicaConfigOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsCreateCrossRegionReadReplicaConfigOutputReference.property.crossAccountRoleInput">CrossAccountRoleInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsCreateCrossRegionReadReplicaConfigOutputReference.property.dbInstanceArnMapInput">DbInstanceArnMapInput</a></code> | <code>*map[string]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsCreateCrossRegionReadReplicaConfigOutputReference.property.externalIdInput">ExternalIdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsCreateCrossRegionReadReplicaConfigOutputReference.property.timeoutMinutesInput">TimeoutMinutesInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsCreateCrossRegionReadReplicaConfigOutputReference.property.crossAccountRole">CrossAccountRole</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsCreateCrossRegionReadReplicaConfigOutputReference.property.dbInstanceArnMap">DbInstanceArnMap</a></code> | <code>*map[string]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsCreateCrossRegionReadReplicaConfigOutputReference.property.externalId">ExternalId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsCreateCrossRegionReadReplicaConfigOutputReference.property.timeoutMinutes">TimeoutMinutes</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsCreateCrossRegionReadReplicaConfigOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsCreateCrossRegionReadReplicaConfigOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsCreateCrossRegionReadReplicaConfigOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `CrossAccountRoleInput`<sup>Optional</sup> <a name="CrossAccountRoleInput" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsCreateCrossRegionReadReplicaConfigOutputReference.property.crossAccountRoleInput"></a>
+
+```go
+func CrossAccountRoleInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `DbInstanceArnMapInput`<sup>Optional</sup> <a name="DbInstanceArnMapInput" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsCreateCrossRegionReadReplicaConfigOutputReference.property.dbInstanceArnMapInput"></a>
+
+```go
+func DbInstanceArnMapInput() *map[string]*string
+```
+
+- *Type:* *map[string]*string
+
+---
+
+##### `ExternalIdInput`<sup>Optional</sup> <a name="ExternalIdInput" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsCreateCrossRegionReadReplicaConfigOutputReference.property.externalIdInput"></a>
+
+```go
+func ExternalIdInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `TimeoutMinutesInput`<sup>Optional</sup> <a name="TimeoutMinutesInput" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsCreateCrossRegionReadReplicaConfigOutputReference.property.timeoutMinutesInput"></a>
+
+```go
+func TimeoutMinutesInput() *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `CrossAccountRole`<sup>Required</sup> <a name="CrossAccountRole" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsCreateCrossRegionReadReplicaConfigOutputReference.property.crossAccountRole"></a>
+
+```go
+func CrossAccountRole() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `DbInstanceArnMap`<sup>Required</sup> <a name="DbInstanceArnMap" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsCreateCrossRegionReadReplicaConfigOutputReference.property.dbInstanceArnMap"></a>
+
+```go
+func DbInstanceArnMap() *map[string]*string
+```
+
+- *Type:* *map[string]*string
+
+---
+
+##### `ExternalId`<sup>Required</sup> <a name="ExternalId" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsCreateCrossRegionReadReplicaConfigOutputReference.property.externalId"></a>
+
+```go
+func ExternalId() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `TimeoutMinutes`<sup>Required</sup> <a name="TimeoutMinutes" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsCreateCrossRegionReadReplicaConfigOutputReference.property.timeoutMinutes"></a>
+
+```go
+func TimeoutMinutes() *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsCreateCrossRegionReadReplicaConfigOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+
+### ArcregionswitchPlanWorkflowStepRdsPromoteReadReplicaConfigList <a name="ArcregionswitchPlanWorkflowStepRdsPromoteReadReplicaConfigList" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsPromoteReadReplicaConfigList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsPromoteReadReplicaConfigList.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/arcregionswitchplan"
+
+arcregionswitchplan.NewArcregionswitchPlanWorkflowStepRdsPromoteReadReplicaConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ArcregionswitchPlanWorkflowStepRdsPromoteReadReplicaConfigList
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsPromoteReadReplicaConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsPromoteReadReplicaConfigList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsPromoteReadReplicaConfigList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsPromoteReadReplicaConfigList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsPromoteReadReplicaConfigList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsPromoteReadReplicaConfigList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsPromoteReadReplicaConfigList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsPromoteReadReplicaConfigList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsPromoteReadReplicaConfigList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsPromoteReadReplicaConfigList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsPromoteReadReplicaConfigList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsPromoteReadReplicaConfigList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsPromoteReadReplicaConfigList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsPromoteReadReplicaConfigList.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsPromoteReadReplicaConfigList.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsPromoteReadReplicaConfigList.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsPromoteReadReplicaConfigList.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `Get` <a name="Get" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsPromoteReadReplicaConfigList.get"></a>
+
+```go
+func Get(index *f64) ArcregionswitchPlanWorkflowStepRdsPromoteReadReplicaConfigOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsPromoteReadReplicaConfigList.get.parameter.index"></a>
+
+- *Type:* *f64
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsPromoteReadReplicaConfigList.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsPromoteReadReplicaConfigList.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsPromoteReadReplicaConfigList.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsPromoteReadReplicaConfigList.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsPromoteReadReplicaConfigList.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsPromoteReadReplicaConfigList.property.internalValue"></a>
+
+```go
+func InternalValue() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+
+### ArcregionswitchPlanWorkflowStepRdsPromoteReadReplicaConfigOutputReference <a name="ArcregionswitchPlanWorkflowStepRdsPromoteReadReplicaConfigOutputReference" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsPromoteReadReplicaConfigOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsPromoteReadReplicaConfigOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/arcregionswitchplan"
+
+arcregionswitchplan.NewArcregionswitchPlanWorkflowStepRdsPromoteReadReplicaConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ArcregionswitchPlanWorkflowStepRdsPromoteReadReplicaConfigOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsPromoteReadReplicaConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsPromoteReadReplicaConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsPromoteReadReplicaConfigOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>*f64</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsPromoteReadReplicaConfigOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsPromoteReadReplicaConfigOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsPromoteReadReplicaConfigOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsPromoteReadReplicaConfigOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* *f64
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsPromoteReadReplicaConfigOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsPromoteReadReplicaConfigOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsPromoteReadReplicaConfigOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsPromoteReadReplicaConfigOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsPromoteReadReplicaConfigOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsPromoteReadReplicaConfigOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsPromoteReadReplicaConfigOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsPromoteReadReplicaConfigOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsPromoteReadReplicaConfigOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsPromoteReadReplicaConfigOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsPromoteReadReplicaConfigOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsPromoteReadReplicaConfigOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsPromoteReadReplicaConfigOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsPromoteReadReplicaConfigOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsPromoteReadReplicaConfigOutputReference.resetCrossAccountRole">ResetCrossAccountRole</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsPromoteReadReplicaConfigOutputReference.resetExternalId">ResetExternalId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsPromoteReadReplicaConfigOutputReference.resetTimeoutMinutes">ResetTimeoutMinutes</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsPromoteReadReplicaConfigOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsPromoteReadReplicaConfigOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsPromoteReadReplicaConfigOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsPromoteReadReplicaConfigOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsPromoteReadReplicaConfigOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsPromoteReadReplicaConfigOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsPromoteReadReplicaConfigOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsPromoteReadReplicaConfigOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsPromoteReadReplicaConfigOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsPromoteReadReplicaConfigOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsPromoteReadReplicaConfigOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsPromoteReadReplicaConfigOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsPromoteReadReplicaConfigOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsPromoteReadReplicaConfigOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsPromoteReadReplicaConfigOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsPromoteReadReplicaConfigOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsPromoteReadReplicaConfigOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsPromoteReadReplicaConfigOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsPromoteReadReplicaConfigOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsPromoteReadReplicaConfigOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsPromoteReadReplicaConfigOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsPromoteReadReplicaConfigOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsPromoteReadReplicaConfigOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsPromoteReadReplicaConfigOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `ResetCrossAccountRole` <a name="ResetCrossAccountRole" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsPromoteReadReplicaConfigOutputReference.resetCrossAccountRole"></a>
+
+```go
+func ResetCrossAccountRole()
+```
+
+##### `ResetExternalId` <a name="ResetExternalId" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsPromoteReadReplicaConfigOutputReference.resetExternalId"></a>
+
+```go
+func ResetExternalId()
+```
+
+##### `ResetTimeoutMinutes` <a name="ResetTimeoutMinutes" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsPromoteReadReplicaConfigOutputReference.resetTimeoutMinutes"></a>
+
+```go
+func ResetTimeoutMinutes()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsPromoteReadReplicaConfigOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsPromoteReadReplicaConfigOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsPromoteReadReplicaConfigOutputReference.property.crossAccountRoleInput">CrossAccountRoleInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsPromoteReadReplicaConfigOutputReference.property.dbInstanceArnMapInput">DbInstanceArnMapInput</a></code> | <code>*map[string]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsPromoteReadReplicaConfigOutputReference.property.externalIdInput">ExternalIdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsPromoteReadReplicaConfigOutputReference.property.timeoutMinutesInput">TimeoutMinutesInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsPromoteReadReplicaConfigOutputReference.property.crossAccountRole">CrossAccountRole</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsPromoteReadReplicaConfigOutputReference.property.dbInstanceArnMap">DbInstanceArnMap</a></code> | <code>*map[string]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsPromoteReadReplicaConfigOutputReference.property.externalId">ExternalId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsPromoteReadReplicaConfigOutputReference.property.timeoutMinutes">TimeoutMinutes</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsPromoteReadReplicaConfigOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsPromoteReadReplicaConfigOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsPromoteReadReplicaConfigOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `CrossAccountRoleInput`<sup>Optional</sup> <a name="CrossAccountRoleInput" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsPromoteReadReplicaConfigOutputReference.property.crossAccountRoleInput"></a>
+
+```go
+func CrossAccountRoleInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `DbInstanceArnMapInput`<sup>Optional</sup> <a name="DbInstanceArnMapInput" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsPromoteReadReplicaConfigOutputReference.property.dbInstanceArnMapInput"></a>
+
+```go
+func DbInstanceArnMapInput() *map[string]*string
+```
+
+- *Type:* *map[string]*string
+
+---
+
+##### `ExternalIdInput`<sup>Optional</sup> <a name="ExternalIdInput" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsPromoteReadReplicaConfigOutputReference.property.externalIdInput"></a>
+
+```go
+func ExternalIdInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `TimeoutMinutesInput`<sup>Optional</sup> <a name="TimeoutMinutesInput" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsPromoteReadReplicaConfigOutputReference.property.timeoutMinutesInput"></a>
+
+```go
+func TimeoutMinutesInput() *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `CrossAccountRole`<sup>Required</sup> <a name="CrossAccountRole" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsPromoteReadReplicaConfigOutputReference.property.crossAccountRole"></a>
+
+```go
+func CrossAccountRole() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `DbInstanceArnMap`<sup>Required</sup> <a name="DbInstanceArnMap" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsPromoteReadReplicaConfigOutputReference.property.dbInstanceArnMap"></a>
+
+```go
+func DbInstanceArnMap() *map[string]*string
+```
+
+- *Type:* *map[string]*string
+
+---
+
+##### `ExternalId`<sup>Required</sup> <a name="ExternalId" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsPromoteReadReplicaConfigOutputReference.property.externalId"></a>
+
+```go
+func ExternalId() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `TimeoutMinutes`<sup>Required</sup> <a name="TimeoutMinutes" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsPromoteReadReplicaConfigOutputReference.property.timeoutMinutes"></a>
+
+```go
+func TimeoutMinutes() *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-aws.arcregionswitchPlan.ArcregionswitchPlanWorkflowStepRdsPromoteReadReplicaConfigOutputReference.property.internalValue"></a>
 
 ```go
 func InternalValue() interface{}

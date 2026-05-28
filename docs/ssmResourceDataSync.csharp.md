@@ -4,7 +4,7 @@
 
 ### SsmResourceDataSync <a name="SsmResourceDataSync" id="@cdktn/provider-aws.ssmResourceDataSync.SsmResourceDataSync"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/ssm_resource_data_sync aws_ssm_resource_data_sync}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/ssm_resource_data_sync aws_ssm_resource_data_sync}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ssmResourceDataSync.SsmResourceDataSync.Initializer"></a>
 
@@ -516,7 +516,7 @@ The construct id used in the generated config for the SsmResourceDataSync to imp
 
 The id of the existing SsmResourceDataSync that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/ssm_resource_data_sync#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/ssm_resource_data_sync#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -832,9 +832,9 @@ new SsmResourceDataSyncConfig {
 | <code><a href="#@cdktn/provider-aws.ssmResourceDataSync.SsmResourceDataSyncConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.ssmResourceDataSync.SsmResourceDataSyncConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.ssmResourceDataSync.SsmResourceDataSyncConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.ssmResourceDataSync.SsmResourceDataSyncConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/ssm_resource_data_sync#name SsmResourceDataSync#name}. |
+| <code><a href="#@cdktn/provider-aws.ssmResourceDataSync.SsmResourceDataSyncConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/ssm_resource_data_sync#name SsmResourceDataSync#name}. |
 | <code><a href="#@cdktn/provider-aws.ssmResourceDataSync.SsmResourceDataSyncConfig.property.s3Destination">S3Destination</a></code> | <code><a href="#@cdktn/provider-aws.ssmResourceDataSync.SsmResourceDataSyncS3Destination">SsmResourceDataSyncS3Destination</a></code> | s3_destination block. |
-| <code><a href="#@cdktn/provider-aws.ssmResourceDataSync.SsmResourceDataSyncConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/ssm_resource_data_sync#id SsmResourceDataSync#id}. |
+| <code><a href="#@cdktn/provider-aws.ssmResourceDataSync.SsmResourceDataSyncConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/ssm_resource_data_sync#id SsmResourceDataSync#id}. |
 | <code><a href="#@cdktn/provider-aws.ssmResourceDataSync.SsmResourceDataSyncConfig.property.region">Region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -917,7 +917,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/ssm_resource_data_sync#name SsmResourceDataSync#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/ssm_resource_data_sync#name SsmResourceDataSync#name}.
 
 ---
 
@@ -931,7 +931,7 @@ public SsmResourceDataSyncS3Destination S3Destination { get; set; }
 
 s3_destination block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/ssm_resource_data_sync#s3_destination SsmResourceDataSync#s3_destination}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/ssm_resource_data_sync#s3_destination SsmResourceDataSync#s3_destination}
 
 ---
 
@@ -943,7 +943,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/ssm_resource_data_sync#id SsmResourceDataSync#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/ssm_resource_data_sync#id SsmResourceDataSync#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -960,7 +960,7 @@ public string Region { get; set; }
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/ssm_resource_data_sync#region SsmResourceDataSync#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/ssm_resource_data_sync#region SsmResourceDataSync#region}
 
 ---
 
@@ -974,6 +974,7 @@ using Io.Cdktn.Providers.Aws;
 new SsmResourceDataSyncS3Destination {
     string BucketName,
     string Region,
+    SsmResourceDataSyncS3DestinationDestinationDataSharing DestinationDataSharing = null,
     string KmsKeyArn = null,
     string Prefix = null,
     string SyncFormat = null
@@ -984,11 +985,12 @@ new SsmResourceDataSyncS3Destination {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.ssmResourceDataSync.SsmResourceDataSyncS3Destination.property.bucketName">BucketName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/ssm_resource_data_sync#bucket_name SsmResourceDataSync#bucket_name}. |
-| <code><a href="#@cdktn/provider-aws.ssmResourceDataSync.SsmResourceDataSyncS3Destination.property.region">Region</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/ssm_resource_data_sync#region SsmResourceDataSync#region}. |
-| <code><a href="#@cdktn/provider-aws.ssmResourceDataSync.SsmResourceDataSyncS3Destination.property.kmsKeyArn">KmsKeyArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/ssm_resource_data_sync#kms_key_arn SsmResourceDataSync#kms_key_arn}. |
-| <code><a href="#@cdktn/provider-aws.ssmResourceDataSync.SsmResourceDataSyncS3Destination.property.prefix">Prefix</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/ssm_resource_data_sync#prefix SsmResourceDataSync#prefix}. |
-| <code><a href="#@cdktn/provider-aws.ssmResourceDataSync.SsmResourceDataSyncS3Destination.property.syncFormat">SyncFormat</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/ssm_resource_data_sync#sync_format SsmResourceDataSync#sync_format}. |
+| <code><a href="#@cdktn/provider-aws.ssmResourceDataSync.SsmResourceDataSyncS3Destination.property.bucketName">BucketName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/ssm_resource_data_sync#bucket_name SsmResourceDataSync#bucket_name}. |
+| <code><a href="#@cdktn/provider-aws.ssmResourceDataSync.SsmResourceDataSyncS3Destination.property.region">Region</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/ssm_resource_data_sync#region SsmResourceDataSync#region}. |
+| <code><a href="#@cdktn/provider-aws.ssmResourceDataSync.SsmResourceDataSyncS3Destination.property.destinationDataSharing">DestinationDataSharing</a></code> | <code><a href="#@cdktn/provider-aws.ssmResourceDataSync.SsmResourceDataSyncS3DestinationDestinationDataSharing">SsmResourceDataSyncS3DestinationDestinationDataSharing</a></code> | destination_data_sharing block. |
+| <code><a href="#@cdktn/provider-aws.ssmResourceDataSync.SsmResourceDataSyncS3Destination.property.kmsKeyArn">KmsKeyArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/ssm_resource_data_sync#kms_key_arn SsmResourceDataSync#kms_key_arn}. |
+| <code><a href="#@cdktn/provider-aws.ssmResourceDataSync.SsmResourceDataSyncS3Destination.property.prefix">Prefix</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/ssm_resource_data_sync#prefix SsmResourceDataSync#prefix}. |
+| <code><a href="#@cdktn/provider-aws.ssmResourceDataSync.SsmResourceDataSyncS3Destination.property.syncFormat">SyncFormat</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/ssm_resource_data_sync#sync_format SsmResourceDataSync#sync_format}. |
 
 ---
 
@@ -1000,7 +1002,7 @@ public string BucketName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/ssm_resource_data_sync#bucket_name SsmResourceDataSync#bucket_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/ssm_resource_data_sync#bucket_name SsmResourceDataSync#bucket_name}.
 
 ---
 
@@ -1012,7 +1014,21 @@ public string Region { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/ssm_resource_data_sync#region SsmResourceDataSync#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/ssm_resource_data_sync#region SsmResourceDataSync#region}.
+
+---
+
+##### `DestinationDataSharing`<sup>Optional</sup> <a name="DestinationDataSharing" id="@cdktn/provider-aws.ssmResourceDataSync.SsmResourceDataSyncS3Destination.property.destinationDataSharing"></a>
+
+```csharp
+public SsmResourceDataSyncS3DestinationDestinationDataSharing DestinationDataSharing { get; set; }
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.ssmResourceDataSync.SsmResourceDataSyncS3DestinationDestinationDataSharing">SsmResourceDataSyncS3DestinationDestinationDataSharing</a>
+
+destination_data_sharing block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/ssm_resource_data_sync#destination_data_sharing SsmResourceDataSync#destination_data_sharing}
 
 ---
 
@@ -1024,7 +1040,7 @@ public string KmsKeyArn { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/ssm_resource_data_sync#kms_key_arn SsmResourceDataSync#kms_key_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/ssm_resource_data_sync#kms_key_arn SsmResourceDataSync#kms_key_arn}.
 
 ---
 
@@ -1036,7 +1052,7 @@ public string Prefix { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/ssm_resource_data_sync#prefix SsmResourceDataSync#prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/ssm_resource_data_sync#prefix SsmResourceDataSync#prefix}.
 
 ---
 
@@ -1048,11 +1064,321 @@ public string SyncFormat { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/ssm_resource_data_sync#sync_format SsmResourceDataSync#sync_format}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/ssm_resource_data_sync#sync_format SsmResourceDataSync#sync_format}.
+
+---
+
+### SsmResourceDataSyncS3DestinationDestinationDataSharing <a name="SsmResourceDataSyncS3DestinationDestinationDataSharing" id="@cdktn/provider-aws.ssmResourceDataSync.SsmResourceDataSyncS3DestinationDestinationDataSharing"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.ssmResourceDataSync.SsmResourceDataSyncS3DestinationDestinationDataSharing.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Aws;
+
+new SsmResourceDataSyncS3DestinationDestinationDataSharing {
+    string DestinationDataSharingType = null
+};
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.ssmResourceDataSync.SsmResourceDataSyncS3DestinationDestinationDataSharing.property.destinationDataSharingType">DestinationDataSharingType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/ssm_resource_data_sync#destination_data_sharing_type SsmResourceDataSync#destination_data_sharing_type}. |
+
+---
+
+##### `DestinationDataSharingType`<sup>Optional</sup> <a name="DestinationDataSharingType" id="@cdktn/provider-aws.ssmResourceDataSync.SsmResourceDataSyncS3DestinationDestinationDataSharing.property.destinationDataSharingType"></a>
+
+```csharp
+public string DestinationDataSharingType { get; set; }
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/ssm_resource_data_sync#destination_data_sharing_type SsmResourceDataSync#destination_data_sharing_type}.
 
 ---
 
 ## Classes <a name="Classes" id="Classes"></a>
+
+### SsmResourceDataSyncS3DestinationDestinationDataSharingOutputReference <a name="SsmResourceDataSyncS3DestinationDestinationDataSharingOutputReference" id="@cdktn/provider-aws.ssmResourceDataSync.SsmResourceDataSyncS3DestinationDestinationDataSharingOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.ssmResourceDataSync.SsmResourceDataSyncS3DestinationDestinationDataSharingOutputReference.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Aws;
+
+new SsmResourceDataSyncS3DestinationDestinationDataSharingOutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.ssmResourceDataSync.SsmResourceDataSyncS3DestinationDestinationDataSharingOutputReference.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>Io.Cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.ssmResourceDataSync.SsmResourceDataSyncS3DestinationDestinationDataSharingOutputReference.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktn/provider-aws.ssmResourceDataSync.SsmResourceDataSyncS3DestinationDestinationDataSharingOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* Io.Cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-aws.ssmResourceDataSync.SsmResourceDataSyncS3DestinationDestinationDataSharingOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-aws.ssmResourceDataSync.SsmResourceDataSyncS3DestinationDestinationDataSharingOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ssmResourceDataSync.SsmResourceDataSyncS3DestinationDestinationDataSharingOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ssmResourceDataSync.SsmResourceDataSyncS3DestinationDestinationDataSharingOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ssmResourceDataSync.SsmResourceDataSyncS3DestinationDestinationDataSharingOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ssmResourceDataSync.SsmResourceDataSyncS3DestinationDestinationDataSharingOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ssmResourceDataSync.SsmResourceDataSyncS3DestinationDestinationDataSharingOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ssmResourceDataSync.SsmResourceDataSyncS3DestinationDestinationDataSharingOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ssmResourceDataSync.SsmResourceDataSyncS3DestinationDestinationDataSharingOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ssmResourceDataSync.SsmResourceDataSyncS3DestinationDestinationDataSharingOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ssmResourceDataSync.SsmResourceDataSyncS3DestinationDestinationDataSharingOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ssmResourceDataSync.SsmResourceDataSyncS3DestinationDestinationDataSharingOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ssmResourceDataSync.SsmResourceDataSyncS3DestinationDestinationDataSharingOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.ssmResourceDataSync.SsmResourceDataSyncS3DestinationDestinationDataSharingOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.ssmResourceDataSync.SsmResourceDataSyncS3DestinationDestinationDataSharingOutputReference.resetDestinationDataSharingType">ResetDestinationDataSharingType</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-aws.ssmResourceDataSync.SsmResourceDataSyncS3DestinationDestinationDataSharingOutputReference.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-aws.ssmResourceDataSync.SsmResourceDataSyncS3DestinationDestinationDataSharingOutputReference.getAnyMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, object> GetAnyMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-aws.ssmResourceDataSync.SsmResourceDataSyncS3DestinationDestinationDataSharingOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-aws.ssmResourceDataSync.SsmResourceDataSyncS3DestinationDestinationDataSharingOutputReference.getBooleanAttribute"></a>
+
+```csharp
+private IResolvable GetBooleanAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-aws.ssmResourceDataSync.SsmResourceDataSyncS3DestinationDestinationDataSharingOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-aws.ssmResourceDataSync.SsmResourceDataSyncS3DestinationDestinationDataSharingOutputReference.getBooleanMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, bool> GetBooleanMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-aws.ssmResourceDataSync.SsmResourceDataSyncS3DestinationDestinationDataSharingOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-aws.ssmResourceDataSync.SsmResourceDataSyncS3DestinationDestinationDataSharingOutputReference.getListAttribute"></a>
+
+```csharp
+private string[] GetListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-aws.ssmResourceDataSync.SsmResourceDataSyncS3DestinationDestinationDataSharingOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-aws.ssmResourceDataSync.SsmResourceDataSyncS3DestinationDestinationDataSharingOutputReference.getNumberAttribute"></a>
+
+```csharp
+private double GetNumberAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-aws.ssmResourceDataSync.SsmResourceDataSyncS3DestinationDestinationDataSharingOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-aws.ssmResourceDataSync.SsmResourceDataSyncS3DestinationDestinationDataSharingOutputReference.getNumberListAttribute"></a>
+
+```csharp
+private double[] GetNumberListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-aws.ssmResourceDataSync.SsmResourceDataSyncS3DestinationDestinationDataSharingOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-aws.ssmResourceDataSync.SsmResourceDataSyncS3DestinationDestinationDataSharingOutputReference.getNumberMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, double> GetNumberMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-aws.ssmResourceDataSync.SsmResourceDataSyncS3DestinationDestinationDataSharingOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-aws.ssmResourceDataSync.SsmResourceDataSyncS3DestinationDestinationDataSharingOutputReference.getStringAttribute"></a>
+
+```csharp
+private string GetStringAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-aws.ssmResourceDataSync.SsmResourceDataSyncS3DestinationDestinationDataSharingOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-aws.ssmResourceDataSync.SsmResourceDataSyncS3DestinationDestinationDataSharingOutputReference.getStringMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, string> GetStringMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-aws.ssmResourceDataSync.SsmResourceDataSyncS3DestinationDestinationDataSharingOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-aws.ssmResourceDataSync.SsmResourceDataSyncS3DestinationDestinationDataSharingOutputReference.interpolationForAttribute"></a>
+
+```csharp
+private IResolvable InterpolationForAttribute(string Property)
+```
+
+###### `Property`<sup>Required</sup> <a name="Property" id="@cdktn/provider-aws.ssmResourceDataSync.SsmResourceDataSyncS3DestinationDestinationDataSharingOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-aws.ssmResourceDataSync.SsmResourceDataSyncS3DestinationDestinationDataSharingOutputReference.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktn/provider-aws.ssmResourceDataSync.SsmResourceDataSyncS3DestinationDestinationDataSharingOutputReference.resolve.parameter._context"></a>
+
+- *Type:* Io.Cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-aws.ssmResourceDataSync.SsmResourceDataSyncS3DestinationDestinationDataSharingOutputReference.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `ResetDestinationDataSharingType` <a name="ResetDestinationDataSharingType" id="@cdktn/provider-aws.ssmResourceDataSync.SsmResourceDataSyncS3DestinationDestinationDataSharingOutputReference.resetDestinationDataSharingType"></a>
+
+```csharp
+private void ResetDestinationDataSharingType()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.ssmResourceDataSync.SsmResourceDataSyncS3DestinationDestinationDataSharingOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.ssmResourceDataSync.SsmResourceDataSyncS3DestinationDestinationDataSharingOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ssmResourceDataSync.SsmResourceDataSyncS3DestinationDestinationDataSharingOutputReference.property.destinationDataSharingTypeInput">DestinationDataSharingTypeInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ssmResourceDataSync.SsmResourceDataSyncS3DestinationDestinationDataSharingOutputReference.property.destinationDataSharingType">DestinationDataSharingType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ssmResourceDataSync.SsmResourceDataSyncS3DestinationDestinationDataSharingOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-aws.ssmResourceDataSync.SsmResourceDataSyncS3DestinationDestinationDataSharing">SsmResourceDataSyncS3DestinationDestinationDataSharing</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-aws.ssmResourceDataSync.SsmResourceDataSyncS3DestinationDestinationDataSharingOutputReference.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-aws.ssmResourceDataSync.SsmResourceDataSyncS3DestinationDestinationDataSharingOutputReference.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `DestinationDataSharingTypeInput`<sup>Optional</sup> <a name="DestinationDataSharingTypeInput" id="@cdktn/provider-aws.ssmResourceDataSync.SsmResourceDataSyncS3DestinationDestinationDataSharingOutputReference.property.destinationDataSharingTypeInput"></a>
+
+```csharp
+public string DestinationDataSharingTypeInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `DestinationDataSharingType`<sup>Required</sup> <a name="DestinationDataSharingType" id="@cdktn/provider-aws.ssmResourceDataSync.SsmResourceDataSyncS3DestinationDestinationDataSharingOutputReference.property.destinationDataSharingType"></a>
+
+```csharp
+public string DestinationDataSharingType { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-aws.ssmResourceDataSync.SsmResourceDataSyncS3DestinationDestinationDataSharingOutputReference.property.internalValue"></a>
+
+```csharp
+public SsmResourceDataSyncS3DestinationDestinationDataSharing InternalValue { get; }
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.ssmResourceDataSync.SsmResourceDataSyncS3DestinationDestinationDataSharing">SsmResourceDataSyncS3DestinationDestinationDataSharing</a>
+
+---
+
 
 ### SsmResourceDataSyncS3DestinationOutputReference <a name="SsmResourceDataSyncS3DestinationOutputReference" id="@cdktn/provider-aws.ssmResourceDataSync.SsmResourceDataSyncS3DestinationOutputReference"></a>
 
@@ -1104,6 +1430,8 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-aws.ssmResourceDataSync.SsmResourceDataSyncS3DestinationOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.ssmResourceDataSync.SsmResourceDataSyncS3DestinationOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-aws.ssmResourceDataSync.SsmResourceDataSyncS3DestinationOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.ssmResourceDataSync.SsmResourceDataSyncS3DestinationOutputReference.putDestinationDataSharing">PutDestinationDataSharing</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ssmResourceDataSync.SsmResourceDataSyncS3DestinationOutputReference.resetDestinationDataSharing">ResetDestinationDataSharing</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.ssmResourceDataSync.SsmResourceDataSyncS3DestinationOutputReference.resetKmsKeyArn">ResetKmsKeyArn</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.ssmResourceDataSync.SsmResourceDataSyncS3DestinationOutputReference.resetPrefix">ResetPrefix</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.ssmResourceDataSync.SsmResourceDataSyncS3DestinationOutputReference.resetSyncFormat">ResetSyncFormat</a></code> | *No description.* |
@@ -1260,6 +1588,24 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
+##### `PutDestinationDataSharing` <a name="PutDestinationDataSharing" id="@cdktn/provider-aws.ssmResourceDataSync.SsmResourceDataSyncS3DestinationOutputReference.putDestinationDataSharing"></a>
+
+```csharp
+private void PutDestinationDataSharing(SsmResourceDataSyncS3DestinationDestinationDataSharing Value)
+```
+
+###### `Value`<sup>Required</sup> <a name="Value" id="@cdktn/provider-aws.ssmResourceDataSync.SsmResourceDataSyncS3DestinationOutputReference.putDestinationDataSharing.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-aws.ssmResourceDataSync.SsmResourceDataSyncS3DestinationDestinationDataSharing">SsmResourceDataSyncS3DestinationDestinationDataSharing</a>
+
+---
+
+##### `ResetDestinationDataSharing` <a name="ResetDestinationDataSharing" id="@cdktn/provider-aws.ssmResourceDataSync.SsmResourceDataSyncS3DestinationOutputReference.resetDestinationDataSharing"></a>
+
+```csharp
+private void ResetDestinationDataSharing()
+```
+
 ##### `ResetKmsKeyArn` <a name="ResetKmsKeyArn" id="@cdktn/provider-aws.ssmResourceDataSync.SsmResourceDataSyncS3DestinationOutputReference.resetKmsKeyArn"></a>
 
 ```csharp
@@ -1285,7 +1631,9 @@ private void ResetSyncFormat()
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.ssmResourceDataSync.SsmResourceDataSyncS3DestinationOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.ssmResourceDataSync.SsmResourceDataSyncS3DestinationOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ssmResourceDataSync.SsmResourceDataSyncS3DestinationOutputReference.property.destinationDataSharing">DestinationDataSharing</a></code> | <code><a href="#@cdktn/provider-aws.ssmResourceDataSync.SsmResourceDataSyncS3DestinationDestinationDataSharingOutputReference">SsmResourceDataSyncS3DestinationDestinationDataSharingOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.ssmResourceDataSync.SsmResourceDataSyncS3DestinationOutputReference.property.bucketNameInput">BucketNameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ssmResourceDataSync.SsmResourceDataSyncS3DestinationOutputReference.property.destinationDataSharingInput">DestinationDataSharingInput</a></code> | <code><a href="#@cdktn/provider-aws.ssmResourceDataSync.SsmResourceDataSyncS3DestinationDestinationDataSharing">SsmResourceDataSyncS3DestinationDestinationDataSharing</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.ssmResourceDataSync.SsmResourceDataSyncS3DestinationOutputReference.property.kmsKeyArnInput">KmsKeyArnInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.ssmResourceDataSync.SsmResourceDataSyncS3DestinationOutputReference.property.prefixInput">PrefixInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.ssmResourceDataSync.SsmResourceDataSyncS3DestinationOutputReference.property.regionInput">RegionInput</a></code> | <code>string</code> | *No description.* |
@@ -1323,6 +1671,16 @@ public string Fqn { get; }
 
 ---
 
+##### `DestinationDataSharing`<sup>Required</sup> <a name="DestinationDataSharing" id="@cdktn/provider-aws.ssmResourceDataSync.SsmResourceDataSyncS3DestinationOutputReference.property.destinationDataSharing"></a>
+
+```csharp
+public SsmResourceDataSyncS3DestinationDestinationDataSharingOutputReference DestinationDataSharing { get; }
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.ssmResourceDataSync.SsmResourceDataSyncS3DestinationDestinationDataSharingOutputReference">SsmResourceDataSyncS3DestinationDestinationDataSharingOutputReference</a>
+
+---
+
 ##### `BucketNameInput`<sup>Optional</sup> <a name="BucketNameInput" id="@cdktn/provider-aws.ssmResourceDataSync.SsmResourceDataSyncS3DestinationOutputReference.property.bucketNameInput"></a>
 
 ```csharp
@@ -1330,6 +1688,16 @@ public string BucketNameInput { get; }
 ```
 
 - *Type:* string
+
+---
+
+##### `DestinationDataSharingInput`<sup>Optional</sup> <a name="DestinationDataSharingInput" id="@cdktn/provider-aws.ssmResourceDataSync.SsmResourceDataSyncS3DestinationOutputReference.property.destinationDataSharingInput"></a>
+
+```csharp
+public SsmResourceDataSyncS3DestinationDestinationDataSharing DestinationDataSharingInput { get; }
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.ssmResourceDataSync.SsmResourceDataSyncS3DestinationDestinationDataSharing">SsmResourceDataSyncS3DestinationDestinationDataSharing</a>
 
 ---
 

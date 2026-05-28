@@ -4,7 +4,7 @@
 
 ### WafregionalWebAcl <a name="WafregionalWebAcl" id="@cdktn/provider-aws.wafregionalWebAcl.WafregionalWebAcl"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/wafregional_web_acl aws_wafregional_web_acl}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/wafregional_web_acl aws_wafregional_web_acl}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafregionalWebAcl.WafregionalWebAcl.Initializer"></a>
 
@@ -43,14 +43,14 @@ WafregionalWebAcl.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-aws.wafregionalWebAcl.WafregionalWebAcl.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.wafregionalWebAcl.WafregionalWebAcl.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.wafregionalWebAcl.WafregionalWebAcl.Initializer.parameter.defaultAction">defaultAction</a></code> | <code><a href="#@cdktn/provider-aws.wafregionalWebAcl.WafregionalWebAclDefaultAction">WafregionalWebAclDefaultAction</a></code> | default_action block. |
-| <code><a href="#@cdktn/provider-aws.wafregionalWebAcl.WafregionalWebAcl.Initializer.parameter.metricName">metricName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/wafregional_web_acl#metric_name WafregionalWebAcl#metric_name}. |
-| <code><a href="#@cdktn/provider-aws.wafregionalWebAcl.WafregionalWebAcl.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/wafregional_web_acl#name WafregionalWebAcl#name}. |
-| <code><a href="#@cdktn/provider-aws.wafregionalWebAcl.WafregionalWebAcl.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/wafregional_web_acl#id WafregionalWebAcl#id}. |
+| <code><a href="#@cdktn/provider-aws.wafregionalWebAcl.WafregionalWebAcl.Initializer.parameter.metricName">metricName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/wafregional_web_acl#metric_name WafregionalWebAcl#metric_name}. |
+| <code><a href="#@cdktn/provider-aws.wafregionalWebAcl.WafregionalWebAcl.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/wafregional_web_acl#name WafregionalWebAcl#name}. |
+| <code><a href="#@cdktn/provider-aws.wafregionalWebAcl.WafregionalWebAcl.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/wafregional_web_acl#id WafregionalWebAcl#id}. |
 | <code><a href="#@cdktn/provider-aws.wafregionalWebAcl.WafregionalWebAcl.Initializer.parameter.loggingConfiguration">loggingConfiguration</a></code> | <code><a href="#@cdktn/provider-aws.wafregionalWebAcl.WafregionalWebAclLoggingConfiguration">WafregionalWebAclLoggingConfiguration</a></code> | logging_configuration block. |
 | <code><a href="#@cdktn/provider-aws.wafregionalWebAcl.WafregionalWebAcl.Initializer.parameter.region">region</a></code> | <code>java.lang.String</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktn/provider-aws.wafregionalWebAcl.WafregionalWebAcl.Initializer.parameter.rule">rule</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.wafregionalWebAcl.WafregionalWebAclRule">WafregionalWebAclRule</a>></code> | rule block. |
-| <code><a href="#@cdktn/provider-aws.wafregionalWebAcl.WafregionalWebAcl.Initializer.parameter.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/wafregional_web_acl#tags WafregionalWebAcl#tags}. |
-| <code><a href="#@cdktn/provider-aws.wafregionalWebAcl.WafregionalWebAcl.Initializer.parameter.tagsAll">tagsAll</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/wafregional_web_acl#tags_all WafregionalWebAcl#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.wafregionalWebAcl.WafregionalWebAcl.Initializer.parameter.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/wafregional_web_acl#tags WafregionalWebAcl#tags}. |
+| <code><a href="#@cdktn/provider-aws.wafregionalWebAcl.WafregionalWebAcl.Initializer.parameter.tagsAll">tagsAll</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/wafregional_web_acl#tags_all WafregionalWebAcl#tags_all}. |
 
 ---
 
@@ -120,7 +120,7 @@ Must be unique amongst siblings in the same scope
 
 default_action block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/wafregional_web_acl#default_action WafregionalWebAcl#default_action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/wafregional_web_acl#default_action WafregionalWebAcl#default_action}
 
 ---
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/wafregional_web_acl#metric_name WafregionalWebAcl#metric_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/wafregional_web_acl#metric_name WafregionalWebAcl#metric_name}.
 
 ---
 
@@ -136,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/wafregional_web_acl#name WafregionalWebAcl#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/wafregional_web_acl#name WafregionalWebAcl#name}.
 
 ---
 
@@ -144,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/wafregional_web_acl#id WafregionalWebAcl#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/wafregional_web_acl#id WafregionalWebAcl#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -157,7 +157,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 logging_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/wafregional_web_acl#logging_configuration WafregionalWebAcl#logging_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/wafregional_web_acl#logging_configuration WafregionalWebAcl#logging_configuration}
 
 ---
 
@@ -167,7 +167,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/wafregional_web_acl#region WafregionalWebAcl#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/wafregional_web_acl#region WafregionalWebAcl#region}
 
 ---
 
@@ -177,7 +177,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/wafregional_web_acl#rule WafregionalWebAcl#rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/wafregional_web_acl#rule WafregionalWebAcl#rule}
 
 ---
 
@@ -185,7 +185,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/wafregional_web_acl#tags WafregionalWebAcl#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/wafregional_web_acl#tags WafregionalWebAcl#tags}.
 
 ---
 
@@ -193,7 +193,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/wafregional_web_acl#tags_all WafregionalWebAcl#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/wafregional_web_acl#tags_all WafregionalWebAcl#tags_all}.
 
 ---
 
@@ -723,7 +723,7 @@ The construct id used in the generated config for the WafregionalWebAcl to impor
 
 The id of the existing WafregionalWebAcl that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/wafregional_web_acl#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/wafregional_web_acl#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1166,14 +1166,14 @@ WafregionalWebAclConfig.builder()
 | <code><a href="#@cdktn/provider-aws.wafregionalWebAcl.WafregionalWebAclConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.wafregionalWebAcl.WafregionalWebAclConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.wafregionalWebAcl.WafregionalWebAclConfig.property.defaultAction">defaultAction</a></code> | <code><a href="#@cdktn/provider-aws.wafregionalWebAcl.WafregionalWebAclDefaultAction">WafregionalWebAclDefaultAction</a></code> | default_action block. |
-| <code><a href="#@cdktn/provider-aws.wafregionalWebAcl.WafregionalWebAclConfig.property.metricName">metricName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/wafregional_web_acl#metric_name WafregionalWebAcl#metric_name}. |
-| <code><a href="#@cdktn/provider-aws.wafregionalWebAcl.WafregionalWebAclConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/wafregional_web_acl#name WafregionalWebAcl#name}. |
-| <code><a href="#@cdktn/provider-aws.wafregionalWebAcl.WafregionalWebAclConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/wafregional_web_acl#id WafregionalWebAcl#id}. |
+| <code><a href="#@cdktn/provider-aws.wafregionalWebAcl.WafregionalWebAclConfig.property.metricName">metricName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/wafregional_web_acl#metric_name WafregionalWebAcl#metric_name}. |
+| <code><a href="#@cdktn/provider-aws.wafregionalWebAcl.WafregionalWebAclConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/wafregional_web_acl#name WafregionalWebAcl#name}. |
+| <code><a href="#@cdktn/provider-aws.wafregionalWebAcl.WafregionalWebAclConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/wafregional_web_acl#id WafregionalWebAcl#id}. |
 | <code><a href="#@cdktn/provider-aws.wafregionalWebAcl.WafregionalWebAclConfig.property.loggingConfiguration">loggingConfiguration</a></code> | <code><a href="#@cdktn/provider-aws.wafregionalWebAcl.WafregionalWebAclLoggingConfiguration">WafregionalWebAclLoggingConfiguration</a></code> | logging_configuration block. |
 | <code><a href="#@cdktn/provider-aws.wafregionalWebAcl.WafregionalWebAclConfig.property.region">region</a></code> | <code>java.lang.String</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktn/provider-aws.wafregionalWebAcl.WafregionalWebAclConfig.property.rule">rule</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-aws.wafregionalWebAcl.WafregionalWebAclRule">WafregionalWebAclRule</a>></code> | rule block. |
-| <code><a href="#@cdktn/provider-aws.wafregionalWebAcl.WafregionalWebAclConfig.property.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/wafregional_web_acl#tags WafregionalWebAcl#tags}. |
-| <code><a href="#@cdktn/provider-aws.wafregionalWebAcl.WafregionalWebAclConfig.property.tagsAll">tagsAll</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/wafregional_web_acl#tags_all WafregionalWebAcl#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.wafregionalWebAcl.WafregionalWebAclConfig.property.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/wafregional_web_acl#tags WafregionalWebAcl#tags}. |
+| <code><a href="#@cdktn/provider-aws.wafregionalWebAcl.WafregionalWebAclConfig.property.tagsAll">tagsAll</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/wafregional_web_acl#tags_all WafregionalWebAcl#tags_all}. |
 
 ---
 
@@ -1257,7 +1257,7 @@ public WafregionalWebAclDefaultAction getDefaultAction();
 
 default_action block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/wafregional_web_acl#default_action WafregionalWebAcl#default_action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/wafregional_web_acl#default_action WafregionalWebAcl#default_action}
 
 ---
 
@@ -1269,7 +1269,7 @@ public java.lang.String getMetricName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/wafregional_web_acl#metric_name WafregionalWebAcl#metric_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/wafregional_web_acl#metric_name WafregionalWebAcl#metric_name}.
 
 ---
 
@@ -1281,7 +1281,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/wafregional_web_acl#name WafregionalWebAcl#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/wafregional_web_acl#name WafregionalWebAcl#name}.
 
 ---
 
@@ -1293,7 +1293,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/wafregional_web_acl#id WafregionalWebAcl#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/wafregional_web_acl#id WafregionalWebAcl#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1310,7 +1310,7 @@ public WafregionalWebAclLoggingConfiguration getLoggingConfiguration();
 
 logging_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/wafregional_web_acl#logging_configuration WafregionalWebAcl#logging_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/wafregional_web_acl#logging_configuration WafregionalWebAcl#logging_configuration}
 
 ---
 
@@ -1324,7 +1324,7 @@ public java.lang.String getRegion();
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/wafregional_web_acl#region WafregionalWebAcl#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/wafregional_web_acl#region WafregionalWebAcl#region}
 
 ---
 
@@ -1338,7 +1338,7 @@ public IResolvable|java.util.List<WafregionalWebAclRule> getRule();
 
 rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/wafregional_web_acl#rule WafregionalWebAcl#rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/wafregional_web_acl#rule WafregionalWebAcl#rule}
 
 ---
 
@@ -1350,7 +1350,7 @@ public java.util.Map<java.lang.String, java.lang.String> getTags();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/wafregional_web_acl#tags WafregionalWebAcl#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/wafregional_web_acl#tags WafregionalWebAcl#tags}.
 
 ---
 
@@ -1362,7 +1362,7 @@ public java.util.Map<java.lang.String, java.lang.String> getTagsAll();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/wafregional_web_acl#tags_all WafregionalWebAcl#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/wafregional_web_acl#tags_all WafregionalWebAcl#tags_all}.
 
 ---
 
@@ -1382,7 +1382,7 @@ WafregionalWebAclDefaultAction.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.wafregionalWebAcl.WafregionalWebAclDefaultAction.property.type">type</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/wafregional_web_acl#type WafregionalWebAcl#type}. |
+| <code><a href="#@cdktn/provider-aws.wafregionalWebAcl.WafregionalWebAclDefaultAction.property.type">type</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/wafregional_web_acl#type WafregionalWebAcl#type}. |
 
 ---
 
@@ -1394,7 +1394,7 @@ public java.lang.String getType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/wafregional_web_acl#type WafregionalWebAcl#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/wafregional_web_acl#type WafregionalWebAcl#type}.
 
 ---
 
@@ -1415,7 +1415,7 @@ WafregionalWebAclLoggingConfiguration.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.wafregionalWebAcl.WafregionalWebAclLoggingConfiguration.property.logDestination">logDestination</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/wafregional_web_acl#log_destination WafregionalWebAcl#log_destination}. |
+| <code><a href="#@cdktn/provider-aws.wafregionalWebAcl.WafregionalWebAclLoggingConfiguration.property.logDestination">logDestination</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/wafregional_web_acl#log_destination WafregionalWebAcl#log_destination}. |
 | <code><a href="#@cdktn/provider-aws.wafregionalWebAcl.WafregionalWebAclLoggingConfiguration.property.redactedFields">redactedFields</a></code> | <code><a href="#@cdktn/provider-aws.wafregionalWebAcl.WafregionalWebAclLoggingConfigurationRedactedFields">WafregionalWebAclLoggingConfigurationRedactedFields</a></code> | redacted_fields block. |
 
 ---
@@ -1428,7 +1428,7 @@ public java.lang.String getLogDestination();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/wafregional_web_acl#log_destination WafregionalWebAcl#log_destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/wafregional_web_acl#log_destination WafregionalWebAcl#log_destination}.
 
 ---
 
@@ -1442,7 +1442,7 @@ public WafregionalWebAclLoggingConfigurationRedactedFields getRedactedFields();
 
 redacted_fields block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/wafregional_web_acl#redacted_fields WafregionalWebAcl#redacted_fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/wafregional_web_acl#redacted_fields WafregionalWebAcl#redacted_fields}
 
 ---
 
@@ -1476,7 +1476,7 @@ public IResolvable|java.util.List<WafregionalWebAclLoggingConfigurationRedactedF
 
 field_to_match block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/wafregional_web_acl#field_to_match WafregionalWebAcl#field_to_match}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/wafregional_web_acl#field_to_match WafregionalWebAcl#field_to_match}
 
 ---
 
@@ -1497,8 +1497,8 @@ WafregionalWebAclLoggingConfigurationRedactedFieldsFieldToMatch.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.wafregionalWebAcl.WafregionalWebAclLoggingConfigurationRedactedFieldsFieldToMatch.property.type">type</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/wafregional_web_acl#type WafregionalWebAcl#type}. |
-| <code><a href="#@cdktn/provider-aws.wafregionalWebAcl.WafregionalWebAclLoggingConfigurationRedactedFieldsFieldToMatch.property.data">data</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/wafregional_web_acl#data WafregionalWebAcl#data}. |
+| <code><a href="#@cdktn/provider-aws.wafregionalWebAcl.WafregionalWebAclLoggingConfigurationRedactedFieldsFieldToMatch.property.type">type</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/wafregional_web_acl#type WafregionalWebAcl#type}. |
+| <code><a href="#@cdktn/provider-aws.wafregionalWebAcl.WafregionalWebAclLoggingConfigurationRedactedFieldsFieldToMatch.property.data">data</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/wafregional_web_acl#data WafregionalWebAcl#data}. |
 
 ---
 
@@ -1510,7 +1510,7 @@ public java.lang.String getType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/wafregional_web_acl#type WafregionalWebAcl#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/wafregional_web_acl#type WafregionalWebAcl#type}.
 
 ---
 
@@ -1522,7 +1522,7 @@ public java.lang.String getData();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/wafregional_web_acl#data WafregionalWebAcl#data}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/wafregional_web_acl#data WafregionalWebAcl#data}.
 
 ---
 
@@ -1546,11 +1546,11 @@ WafregionalWebAclRule.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.wafregionalWebAcl.WafregionalWebAclRule.property.priority">priority</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/wafregional_web_acl#priority WafregionalWebAcl#priority}. |
-| <code><a href="#@cdktn/provider-aws.wafregionalWebAcl.WafregionalWebAclRule.property.ruleId">ruleId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/wafregional_web_acl#rule_id WafregionalWebAcl#rule_id}. |
+| <code><a href="#@cdktn/provider-aws.wafregionalWebAcl.WafregionalWebAclRule.property.priority">priority</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/wafregional_web_acl#priority WafregionalWebAcl#priority}. |
+| <code><a href="#@cdktn/provider-aws.wafregionalWebAcl.WafregionalWebAclRule.property.ruleId">ruleId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/wafregional_web_acl#rule_id WafregionalWebAcl#rule_id}. |
 | <code><a href="#@cdktn/provider-aws.wafregionalWebAcl.WafregionalWebAclRule.property.action">action</a></code> | <code><a href="#@cdktn/provider-aws.wafregionalWebAcl.WafregionalWebAclRuleAction">WafregionalWebAclRuleAction</a></code> | action block. |
 | <code><a href="#@cdktn/provider-aws.wafregionalWebAcl.WafregionalWebAclRule.property.overrideAction">overrideAction</a></code> | <code><a href="#@cdktn/provider-aws.wafregionalWebAcl.WafregionalWebAclRuleOverrideAction">WafregionalWebAclRuleOverrideAction</a></code> | override_action block. |
-| <code><a href="#@cdktn/provider-aws.wafregionalWebAcl.WafregionalWebAclRule.property.type">type</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/wafregional_web_acl#type WafregionalWebAcl#type}. |
+| <code><a href="#@cdktn/provider-aws.wafregionalWebAcl.WafregionalWebAclRule.property.type">type</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/wafregional_web_acl#type WafregionalWebAcl#type}. |
 
 ---
 
@@ -1562,7 +1562,7 @@ public java.lang.Number getPriority();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/wafregional_web_acl#priority WafregionalWebAcl#priority}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/wafregional_web_acl#priority WafregionalWebAcl#priority}.
 
 ---
 
@@ -1574,7 +1574,7 @@ public java.lang.String getRuleId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/wafregional_web_acl#rule_id WafregionalWebAcl#rule_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/wafregional_web_acl#rule_id WafregionalWebAcl#rule_id}.
 
 ---
 
@@ -1588,7 +1588,7 @@ public WafregionalWebAclRuleAction getAction();
 
 action block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/wafregional_web_acl#action WafregionalWebAcl#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/wafregional_web_acl#action WafregionalWebAcl#action}
 
 ---
 
@@ -1602,7 +1602,7 @@ public WafregionalWebAclRuleOverrideAction getOverrideAction();
 
 override_action block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/wafregional_web_acl#override_action WafregionalWebAcl#override_action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/wafregional_web_acl#override_action WafregionalWebAcl#override_action}
 
 ---
 
@@ -1614,7 +1614,7 @@ public java.lang.String getType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/wafregional_web_acl#type WafregionalWebAcl#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/wafregional_web_acl#type WafregionalWebAcl#type}.
 
 ---
 
@@ -1634,7 +1634,7 @@ WafregionalWebAclRuleAction.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.wafregionalWebAcl.WafregionalWebAclRuleAction.property.type">type</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/wafregional_web_acl#type WafregionalWebAcl#type}. |
+| <code><a href="#@cdktn/provider-aws.wafregionalWebAcl.WafregionalWebAclRuleAction.property.type">type</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/wafregional_web_acl#type WafregionalWebAcl#type}. |
 
 ---
 
@@ -1646,7 +1646,7 @@ public java.lang.String getType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/wafregional_web_acl#type WafregionalWebAcl#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/wafregional_web_acl#type WafregionalWebAcl#type}.
 
 ---
 
@@ -1666,7 +1666,7 @@ WafregionalWebAclRuleOverrideAction.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.wafregionalWebAcl.WafregionalWebAclRuleOverrideAction.property.type">type</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/wafregional_web_acl#type WafregionalWebAcl#type}. |
+| <code><a href="#@cdktn/provider-aws.wafregionalWebAcl.WafregionalWebAclRuleOverrideAction.property.type">type</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/wafregional_web_acl#type WafregionalWebAcl#type}. |
 
 ---
 
@@ -1678,7 +1678,7 @@ public java.lang.String getType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/wafregional_web_acl#type WafregionalWebAcl#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/wafregional_web_acl#type WafregionalWebAcl#type}.
 
 ---
 

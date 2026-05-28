@@ -4,7 +4,7 @@
 
 ### AccountAlternateContact <a name="AccountAlternateContact" id="@cdktn/provider-aws.accountAlternateContact.AccountAlternateContact"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/account_alternate_contact aws_account_alternate_contact}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/account_alternate_contact aws_account_alternate_contact}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.accountAlternateContact.AccountAlternateContact.Initializer"></a>
 
@@ -523,7 +523,7 @@ The construct id used in the generated config for the AccountAlternateContact to
 
 The id of the existing AccountAlternateContact that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/account_alternate_contact#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/account_alternate_contact#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -915,13 +915,13 @@ const accountAlternateContactConfig: accountAlternateContact.AccountAlternateCon
 | <code><a href="#@cdktn/provider-aws.accountAlternateContact.AccountAlternateContactConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.accountAlternateContact.AccountAlternateContactConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.accountAlternateContact.AccountAlternateContactConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.accountAlternateContact.AccountAlternateContactConfig.property.alternateContactType">alternateContactType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/account_alternate_contact#alternate_contact_type AccountAlternateContact#alternate_contact_type}. |
-| <code><a href="#@cdktn/provider-aws.accountAlternateContact.AccountAlternateContactConfig.property.emailAddress">emailAddress</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/account_alternate_contact#email_address AccountAlternateContact#email_address}. |
-| <code><a href="#@cdktn/provider-aws.accountAlternateContact.AccountAlternateContactConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/account_alternate_contact#name AccountAlternateContact#name}. |
-| <code><a href="#@cdktn/provider-aws.accountAlternateContact.AccountAlternateContactConfig.property.phoneNumber">phoneNumber</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/account_alternate_contact#phone_number AccountAlternateContact#phone_number}. |
-| <code><a href="#@cdktn/provider-aws.accountAlternateContact.AccountAlternateContactConfig.property.title">title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/account_alternate_contact#title AccountAlternateContact#title}. |
-| <code><a href="#@cdktn/provider-aws.accountAlternateContact.AccountAlternateContactConfig.property.accountId">accountId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/account_alternate_contact#account_id AccountAlternateContact#account_id}. |
-| <code><a href="#@cdktn/provider-aws.accountAlternateContact.AccountAlternateContactConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/account_alternate_contact#id AccountAlternateContact#id}. |
+| <code><a href="#@cdktn/provider-aws.accountAlternateContact.AccountAlternateContactConfig.property.alternateContactType">alternateContactType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/account_alternate_contact#alternate_contact_type AccountAlternateContact#alternate_contact_type}. |
+| <code><a href="#@cdktn/provider-aws.accountAlternateContact.AccountAlternateContactConfig.property.emailAddress">emailAddress</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/account_alternate_contact#email_address AccountAlternateContact#email_address}. |
+| <code><a href="#@cdktn/provider-aws.accountAlternateContact.AccountAlternateContactConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/account_alternate_contact#name AccountAlternateContact#name}. |
+| <code><a href="#@cdktn/provider-aws.accountAlternateContact.AccountAlternateContactConfig.property.phoneNumber">phoneNumber</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/account_alternate_contact#phone_number AccountAlternateContact#phone_number}. |
+| <code><a href="#@cdktn/provider-aws.accountAlternateContact.AccountAlternateContactConfig.property.title">title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/account_alternate_contact#title AccountAlternateContact#title}. |
+| <code><a href="#@cdktn/provider-aws.accountAlternateContact.AccountAlternateContactConfig.property.accountId">accountId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/account_alternate_contact#account_id AccountAlternateContact#account_id}. |
+| <code><a href="#@cdktn/provider-aws.accountAlternateContact.AccountAlternateContactConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/account_alternate_contact#id AccountAlternateContact#id}. |
 | <code><a href="#@cdktn/provider-aws.accountAlternateContact.AccountAlternateContactConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-aws.accountAlternateContact.AccountAlternateContactTimeouts">AccountAlternateContactTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1004,7 +1004,7 @@ public readonly alternateContactType: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/account_alternate_contact#alternate_contact_type AccountAlternateContact#alternate_contact_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/account_alternate_contact#alternate_contact_type AccountAlternateContact#alternate_contact_type}.
 
 ---
 
@@ -1016,7 +1016,7 @@ public readonly emailAddress: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/account_alternate_contact#email_address AccountAlternateContact#email_address}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/account_alternate_contact#email_address AccountAlternateContact#email_address}.
 
 ---
 
@@ -1028,7 +1028,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/account_alternate_contact#name AccountAlternateContact#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/account_alternate_contact#name AccountAlternateContact#name}.
 
 ---
 
@@ -1040,7 +1040,7 @@ public readonly phoneNumber: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/account_alternate_contact#phone_number AccountAlternateContact#phone_number}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/account_alternate_contact#phone_number AccountAlternateContact#phone_number}.
 
 ---
 
@@ -1052,7 +1052,7 @@ public readonly title: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/account_alternate_contact#title AccountAlternateContact#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/account_alternate_contact#title AccountAlternateContact#title}.
 
 ---
 
@@ -1064,7 +1064,7 @@ public readonly accountId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/account_alternate_contact#account_id AccountAlternateContact#account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/account_alternate_contact#account_id AccountAlternateContact#account_id}.
 
 ---
 
@@ -1076,7 +1076,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/account_alternate_contact#id AccountAlternateContact#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/account_alternate_contact#id AccountAlternateContact#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1093,7 +1093,7 @@ public readonly timeouts: AccountAlternateContactTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/account_alternate_contact#timeouts AccountAlternateContact#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/account_alternate_contact#timeouts AccountAlternateContact#timeouts}
 
 ---
 
@@ -1111,9 +1111,9 @@ const accountAlternateContactTimeouts: accountAlternateContact.AccountAlternateC
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.accountAlternateContact.AccountAlternateContactTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/account_alternate_contact#create AccountAlternateContact#create}. |
-| <code><a href="#@cdktn/provider-aws.accountAlternateContact.AccountAlternateContactTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/account_alternate_contact#delete AccountAlternateContact#delete}. |
-| <code><a href="#@cdktn/provider-aws.accountAlternateContact.AccountAlternateContactTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/account_alternate_contact#update AccountAlternateContact#update}. |
+| <code><a href="#@cdktn/provider-aws.accountAlternateContact.AccountAlternateContactTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/account_alternate_contact#create AccountAlternateContact#create}. |
+| <code><a href="#@cdktn/provider-aws.accountAlternateContact.AccountAlternateContactTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/account_alternate_contact#delete AccountAlternateContact#delete}. |
+| <code><a href="#@cdktn/provider-aws.accountAlternateContact.AccountAlternateContactTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/account_alternate_contact#update AccountAlternateContact#update}. |
 
 ---
 
@@ -1125,7 +1125,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/account_alternate_contact#create AccountAlternateContact#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/account_alternate_contact#create AccountAlternateContact#create}.
 
 ---
 
@@ -1137,7 +1137,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/account_alternate_contact#delete AccountAlternateContact#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/account_alternate_contact#delete AccountAlternateContact#delete}.
 
 ---
 
@@ -1149,7 +1149,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/account_alternate_contact#update AccountAlternateContact#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/account_alternate_contact#update AccountAlternateContact#update}.
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### BudgetsBudgetAction <a name="BudgetsBudgetAction" id="@cdktn/provider-aws.budgetsBudgetAction.BudgetsBudgetAction"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/budgets_budget_action aws_budgets_budget_action}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/budgets_budget_action aws_budgets_budget_action}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.budgetsBudgetAction.BudgetsBudgetAction.Initializer"></a>
 
@@ -576,7 +576,7 @@ The construct id used in the generated config for the BudgetsBudgetAction to imp
 
 The id of the existing BudgetsBudgetAction that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/budgets_budget_action#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/budgets_budget_action#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1107,8 +1107,8 @@ new BudgetsBudgetActionActionThreshold {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.budgetsBudgetAction.BudgetsBudgetActionActionThreshold.property.actionThresholdType">ActionThresholdType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/budgets_budget_action#action_threshold_type BudgetsBudgetAction#action_threshold_type}. |
-| <code><a href="#@cdktn/provider-aws.budgetsBudgetAction.BudgetsBudgetActionActionThreshold.property.actionThresholdValue">ActionThresholdValue</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/budgets_budget_action#action_threshold_value BudgetsBudgetAction#action_threshold_value}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudgetAction.BudgetsBudgetActionActionThreshold.property.actionThresholdType">ActionThresholdType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/budgets_budget_action#action_threshold_type BudgetsBudgetAction#action_threshold_type}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudgetAction.BudgetsBudgetActionActionThreshold.property.actionThresholdValue">ActionThresholdValue</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/budgets_budget_action#action_threshold_value BudgetsBudgetAction#action_threshold_value}. |
 
 ---
 
@@ -1120,7 +1120,7 @@ public string ActionThresholdType { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/budgets_budget_action#action_threshold_type BudgetsBudgetAction#action_threshold_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/budgets_budget_action#action_threshold_type BudgetsBudgetAction#action_threshold_type}.
 
 ---
 
@@ -1132,7 +1132,7 @@ public double ActionThresholdValue { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/budgets_budget_action#action_threshold_value BudgetsBudgetAction#action_threshold_value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/budgets_budget_action#action_threshold_value BudgetsBudgetAction#action_threshold_value}.
 
 ---
 
@@ -1179,17 +1179,17 @@ new BudgetsBudgetActionConfig {
 | <code><a href="#@cdktn/provider-aws.budgetsBudgetAction.BudgetsBudgetActionConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.budgetsBudgetAction.BudgetsBudgetActionConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.budgetsBudgetAction.BudgetsBudgetActionConfig.property.actionThreshold">ActionThreshold</a></code> | <code><a href="#@cdktn/provider-aws.budgetsBudgetAction.BudgetsBudgetActionActionThreshold">BudgetsBudgetActionActionThreshold</a></code> | action_threshold block. |
-| <code><a href="#@cdktn/provider-aws.budgetsBudgetAction.BudgetsBudgetActionConfig.property.actionType">ActionType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/budgets_budget_action#action_type BudgetsBudgetAction#action_type}. |
-| <code><a href="#@cdktn/provider-aws.budgetsBudgetAction.BudgetsBudgetActionConfig.property.approvalModel">ApprovalModel</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/budgets_budget_action#approval_model BudgetsBudgetAction#approval_model}. |
-| <code><a href="#@cdktn/provider-aws.budgetsBudgetAction.BudgetsBudgetActionConfig.property.budgetName">BudgetName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/budgets_budget_action#budget_name BudgetsBudgetAction#budget_name}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudgetAction.BudgetsBudgetActionConfig.property.actionType">ActionType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/budgets_budget_action#action_type BudgetsBudgetAction#action_type}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudgetAction.BudgetsBudgetActionConfig.property.approvalModel">ApprovalModel</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/budgets_budget_action#approval_model BudgetsBudgetAction#approval_model}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudgetAction.BudgetsBudgetActionConfig.property.budgetName">BudgetName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/budgets_budget_action#budget_name BudgetsBudgetAction#budget_name}. |
 | <code><a href="#@cdktn/provider-aws.budgetsBudgetAction.BudgetsBudgetActionConfig.property.definition">Definition</a></code> | <code><a href="#@cdktn/provider-aws.budgetsBudgetAction.BudgetsBudgetActionDefinition">BudgetsBudgetActionDefinition</a></code> | definition block. |
-| <code><a href="#@cdktn/provider-aws.budgetsBudgetAction.BudgetsBudgetActionConfig.property.executionRoleArn">ExecutionRoleArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/budgets_budget_action#execution_role_arn BudgetsBudgetAction#execution_role_arn}. |
-| <code><a href="#@cdktn/provider-aws.budgetsBudgetAction.BudgetsBudgetActionConfig.property.notificationType">NotificationType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/budgets_budget_action#notification_type BudgetsBudgetAction#notification_type}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudgetAction.BudgetsBudgetActionConfig.property.executionRoleArn">ExecutionRoleArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/budgets_budget_action#execution_role_arn BudgetsBudgetAction#execution_role_arn}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudgetAction.BudgetsBudgetActionConfig.property.notificationType">NotificationType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/budgets_budget_action#notification_type BudgetsBudgetAction#notification_type}. |
 | <code><a href="#@cdktn/provider-aws.budgetsBudgetAction.BudgetsBudgetActionConfig.property.subscriber">Subscriber</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-aws.budgetsBudgetAction.BudgetsBudgetActionSubscriber">BudgetsBudgetActionSubscriber</a>[]</code> | subscriber block. |
-| <code><a href="#@cdktn/provider-aws.budgetsBudgetAction.BudgetsBudgetActionConfig.property.accountId">AccountId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/budgets_budget_action#account_id BudgetsBudgetAction#account_id}. |
-| <code><a href="#@cdktn/provider-aws.budgetsBudgetAction.BudgetsBudgetActionConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/budgets_budget_action#id BudgetsBudgetAction#id}. |
-| <code><a href="#@cdktn/provider-aws.budgetsBudgetAction.BudgetsBudgetActionConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/budgets_budget_action#tags BudgetsBudgetAction#tags}. |
-| <code><a href="#@cdktn/provider-aws.budgetsBudgetAction.BudgetsBudgetActionConfig.property.tagsAll">TagsAll</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/budgets_budget_action#tags_all BudgetsBudgetAction#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudgetAction.BudgetsBudgetActionConfig.property.accountId">AccountId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/budgets_budget_action#account_id BudgetsBudgetAction#account_id}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudgetAction.BudgetsBudgetActionConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/budgets_budget_action#id BudgetsBudgetAction#id}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudgetAction.BudgetsBudgetActionConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/budgets_budget_action#tags BudgetsBudgetAction#tags}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudgetAction.BudgetsBudgetActionConfig.property.tagsAll">TagsAll</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/budgets_budget_action#tags_all BudgetsBudgetAction#tags_all}. |
 | <code><a href="#@cdktn/provider-aws.budgetsBudgetAction.BudgetsBudgetActionConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.budgetsBudgetAction.BudgetsBudgetActionTimeouts">BudgetsBudgetActionTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1274,7 +1274,7 @@ public BudgetsBudgetActionActionThreshold ActionThreshold { get; set; }
 
 action_threshold block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/budgets_budget_action#action_threshold BudgetsBudgetAction#action_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/budgets_budget_action#action_threshold BudgetsBudgetAction#action_threshold}
 
 ---
 
@@ -1286,7 +1286,7 @@ public string ActionType { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/budgets_budget_action#action_type BudgetsBudgetAction#action_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/budgets_budget_action#action_type BudgetsBudgetAction#action_type}.
 
 ---
 
@@ -1298,7 +1298,7 @@ public string ApprovalModel { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/budgets_budget_action#approval_model BudgetsBudgetAction#approval_model}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/budgets_budget_action#approval_model BudgetsBudgetAction#approval_model}.
 
 ---
 
@@ -1310,7 +1310,7 @@ public string BudgetName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/budgets_budget_action#budget_name BudgetsBudgetAction#budget_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/budgets_budget_action#budget_name BudgetsBudgetAction#budget_name}.
 
 ---
 
@@ -1324,7 +1324,7 @@ public BudgetsBudgetActionDefinition Definition { get; set; }
 
 definition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/budgets_budget_action#definition BudgetsBudgetAction#definition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/budgets_budget_action#definition BudgetsBudgetAction#definition}
 
 ---
 
@@ -1336,7 +1336,7 @@ public string ExecutionRoleArn { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/budgets_budget_action#execution_role_arn BudgetsBudgetAction#execution_role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/budgets_budget_action#execution_role_arn BudgetsBudgetAction#execution_role_arn}.
 
 ---
 
@@ -1348,7 +1348,7 @@ public string NotificationType { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/budgets_budget_action#notification_type BudgetsBudgetAction#notification_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/budgets_budget_action#notification_type BudgetsBudgetAction#notification_type}.
 
 ---
 
@@ -1362,7 +1362,7 @@ public IResolvable|BudgetsBudgetActionSubscriber[] Subscriber { get; set; }
 
 subscriber block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/budgets_budget_action#subscriber BudgetsBudgetAction#subscriber}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/budgets_budget_action#subscriber BudgetsBudgetAction#subscriber}
 
 ---
 
@@ -1374,7 +1374,7 @@ public string AccountId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/budgets_budget_action#account_id BudgetsBudgetAction#account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/budgets_budget_action#account_id BudgetsBudgetAction#account_id}.
 
 ---
 
@@ -1386,7 +1386,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/budgets_budget_action#id BudgetsBudgetAction#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/budgets_budget_action#id BudgetsBudgetAction#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1401,7 +1401,7 @@ public System.Collections.Generic.IDictionary<string, string> Tags { get; set; }
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/budgets_budget_action#tags BudgetsBudgetAction#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/budgets_budget_action#tags BudgetsBudgetAction#tags}.
 
 ---
 
@@ -1413,7 +1413,7 @@ public System.Collections.Generic.IDictionary<string, string> TagsAll { get; set
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/budgets_budget_action#tags_all BudgetsBudgetAction#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/budgets_budget_action#tags_all BudgetsBudgetAction#tags_all}.
 
 ---
 
@@ -1427,7 +1427,7 @@ public BudgetsBudgetActionTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/budgets_budget_action#timeouts BudgetsBudgetAction#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/budgets_budget_action#timeouts BudgetsBudgetAction#timeouts}
 
 ---
 
@@ -1465,7 +1465,7 @@ public BudgetsBudgetActionDefinitionIamActionDefinition IamActionDefinition { ge
 
 iam_action_definition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/budgets_budget_action#iam_action_definition BudgetsBudgetAction#iam_action_definition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/budgets_budget_action#iam_action_definition BudgetsBudgetAction#iam_action_definition}
 
 ---
 
@@ -1479,7 +1479,7 @@ public BudgetsBudgetActionDefinitionScpActionDefinition ScpActionDefinition { ge
 
 scp_action_definition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/budgets_budget_action#scp_action_definition BudgetsBudgetAction#scp_action_definition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/budgets_budget_action#scp_action_definition BudgetsBudgetAction#scp_action_definition}
 
 ---
 
@@ -1493,7 +1493,7 @@ public BudgetsBudgetActionDefinitionSsmActionDefinition SsmActionDefinition { ge
 
 ssm_action_definition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/budgets_budget_action#ssm_action_definition BudgetsBudgetAction#ssm_action_definition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/budgets_budget_action#ssm_action_definition BudgetsBudgetAction#ssm_action_definition}
 
 ---
 
@@ -1516,10 +1516,10 @@ new BudgetsBudgetActionDefinitionIamActionDefinition {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.budgetsBudgetAction.BudgetsBudgetActionDefinitionIamActionDefinition.property.policyArn">PolicyArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/budgets_budget_action#policy_arn BudgetsBudgetAction#policy_arn}. |
-| <code><a href="#@cdktn/provider-aws.budgetsBudgetAction.BudgetsBudgetActionDefinitionIamActionDefinition.property.groups">Groups</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/budgets_budget_action#groups BudgetsBudgetAction#groups}. |
-| <code><a href="#@cdktn/provider-aws.budgetsBudgetAction.BudgetsBudgetActionDefinitionIamActionDefinition.property.roles">Roles</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/budgets_budget_action#roles BudgetsBudgetAction#roles}. |
-| <code><a href="#@cdktn/provider-aws.budgetsBudgetAction.BudgetsBudgetActionDefinitionIamActionDefinition.property.users">Users</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/budgets_budget_action#users BudgetsBudgetAction#users}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudgetAction.BudgetsBudgetActionDefinitionIamActionDefinition.property.policyArn">PolicyArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/budgets_budget_action#policy_arn BudgetsBudgetAction#policy_arn}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudgetAction.BudgetsBudgetActionDefinitionIamActionDefinition.property.groups">Groups</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/budgets_budget_action#groups BudgetsBudgetAction#groups}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudgetAction.BudgetsBudgetActionDefinitionIamActionDefinition.property.roles">Roles</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/budgets_budget_action#roles BudgetsBudgetAction#roles}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudgetAction.BudgetsBudgetActionDefinitionIamActionDefinition.property.users">Users</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/budgets_budget_action#users BudgetsBudgetAction#users}. |
 
 ---
 
@@ -1531,7 +1531,7 @@ public string PolicyArn { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/budgets_budget_action#policy_arn BudgetsBudgetAction#policy_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/budgets_budget_action#policy_arn BudgetsBudgetAction#policy_arn}.
 
 ---
 
@@ -1543,7 +1543,7 @@ public string[] Groups { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/budgets_budget_action#groups BudgetsBudgetAction#groups}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/budgets_budget_action#groups BudgetsBudgetAction#groups}.
 
 ---
 
@@ -1555,7 +1555,7 @@ public string[] Roles { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/budgets_budget_action#roles BudgetsBudgetAction#roles}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/budgets_budget_action#roles BudgetsBudgetAction#roles}.
 
 ---
 
@@ -1567,7 +1567,7 @@ public string[] Users { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/budgets_budget_action#users BudgetsBudgetAction#users}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/budgets_budget_action#users BudgetsBudgetAction#users}.
 
 ---
 
@@ -1588,8 +1588,8 @@ new BudgetsBudgetActionDefinitionScpActionDefinition {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.budgetsBudgetAction.BudgetsBudgetActionDefinitionScpActionDefinition.property.policyId">PolicyId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/budgets_budget_action#policy_id BudgetsBudgetAction#policy_id}. |
-| <code><a href="#@cdktn/provider-aws.budgetsBudgetAction.BudgetsBudgetActionDefinitionScpActionDefinition.property.targetIds">TargetIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/budgets_budget_action#target_ids BudgetsBudgetAction#target_ids}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudgetAction.BudgetsBudgetActionDefinitionScpActionDefinition.property.policyId">PolicyId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/budgets_budget_action#policy_id BudgetsBudgetAction#policy_id}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudgetAction.BudgetsBudgetActionDefinitionScpActionDefinition.property.targetIds">TargetIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/budgets_budget_action#target_ids BudgetsBudgetAction#target_ids}. |
 
 ---
 
@@ -1601,7 +1601,7 @@ public string PolicyId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/budgets_budget_action#policy_id BudgetsBudgetAction#policy_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/budgets_budget_action#policy_id BudgetsBudgetAction#policy_id}.
 
 ---
 
@@ -1613,7 +1613,7 @@ public string[] TargetIds { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/budgets_budget_action#target_ids BudgetsBudgetAction#target_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/budgets_budget_action#target_ids BudgetsBudgetAction#target_ids}.
 
 ---
 
@@ -1635,9 +1635,9 @@ new BudgetsBudgetActionDefinitionSsmActionDefinition {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.budgetsBudgetAction.BudgetsBudgetActionDefinitionSsmActionDefinition.property.actionSubType">ActionSubType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/budgets_budget_action#action_sub_type BudgetsBudgetAction#action_sub_type}. |
-| <code><a href="#@cdktn/provider-aws.budgetsBudgetAction.BudgetsBudgetActionDefinitionSsmActionDefinition.property.instanceIds">InstanceIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/budgets_budget_action#instance_ids BudgetsBudgetAction#instance_ids}. |
-| <code><a href="#@cdktn/provider-aws.budgetsBudgetAction.BudgetsBudgetActionDefinitionSsmActionDefinition.property.region">Region</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/budgets_budget_action#region BudgetsBudgetAction#region}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudgetAction.BudgetsBudgetActionDefinitionSsmActionDefinition.property.actionSubType">ActionSubType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/budgets_budget_action#action_sub_type BudgetsBudgetAction#action_sub_type}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudgetAction.BudgetsBudgetActionDefinitionSsmActionDefinition.property.instanceIds">InstanceIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/budgets_budget_action#instance_ids BudgetsBudgetAction#instance_ids}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudgetAction.BudgetsBudgetActionDefinitionSsmActionDefinition.property.region">Region</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/budgets_budget_action#region BudgetsBudgetAction#region}. |
 
 ---
 
@@ -1649,7 +1649,7 @@ public string ActionSubType { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/budgets_budget_action#action_sub_type BudgetsBudgetAction#action_sub_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/budgets_budget_action#action_sub_type BudgetsBudgetAction#action_sub_type}.
 
 ---
 
@@ -1661,7 +1661,7 @@ public string[] InstanceIds { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/budgets_budget_action#instance_ids BudgetsBudgetAction#instance_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/budgets_budget_action#instance_ids BudgetsBudgetAction#instance_ids}.
 
 ---
 
@@ -1673,7 +1673,7 @@ public string Region { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/budgets_budget_action#region BudgetsBudgetAction#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/budgets_budget_action#region BudgetsBudgetAction#region}.
 
 ---
 
@@ -1694,8 +1694,8 @@ new BudgetsBudgetActionSubscriber {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.budgetsBudgetAction.BudgetsBudgetActionSubscriber.property.address">Address</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/budgets_budget_action#address BudgetsBudgetAction#address}. |
-| <code><a href="#@cdktn/provider-aws.budgetsBudgetAction.BudgetsBudgetActionSubscriber.property.subscriptionType">SubscriptionType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/budgets_budget_action#subscription_type BudgetsBudgetAction#subscription_type}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudgetAction.BudgetsBudgetActionSubscriber.property.address">Address</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/budgets_budget_action#address BudgetsBudgetAction#address}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudgetAction.BudgetsBudgetActionSubscriber.property.subscriptionType">SubscriptionType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/budgets_budget_action#subscription_type BudgetsBudgetAction#subscription_type}. |
 
 ---
 
@@ -1707,7 +1707,7 @@ public string Address { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/budgets_budget_action#address BudgetsBudgetAction#address}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/budgets_budget_action#address BudgetsBudgetAction#address}.
 
 ---
 
@@ -1719,7 +1719,7 @@ public string SubscriptionType { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/budgets_budget_action#subscription_type BudgetsBudgetAction#subscription_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/budgets_budget_action#subscription_type BudgetsBudgetAction#subscription_type}.
 
 ---
 
@@ -1741,9 +1741,9 @@ new BudgetsBudgetActionTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.budgetsBudgetAction.BudgetsBudgetActionTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/budgets_budget_action#create BudgetsBudgetAction#create}. |
-| <code><a href="#@cdktn/provider-aws.budgetsBudgetAction.BudgetsBudgetActionTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/budgets_budget_action#delete BudgetsBudgetAction#delete}. |
-| <code><a href="#@cdktn/provider-aws.budgetsBudgetAction.BudgetsBudgetActionTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/budgets_budget_action#update BudgetsBudgetAction#update}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudgetAction.BudgetsBudgetActionTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/budgets_budget_action#create BudgetsBudgetAction#create}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudgetAction.BudgetsBudgetActionTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/budgets_budget_action#delete BudgetsBudgetAction#delete}. |
+| <code><a href="#@cdktn/provider-aws.budgetsBudgetAction.BudgetsBudgetActionTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/budgets_budget_action#update BudgetsBudgetAction#update}. |
 
 ---
 
@@ -1755,7 +1755,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/budgets_budget_action#create BudgetsBudgetAction#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/budgets_budget_action#create BudgetsBudgetAction#create}.
 
 ---
 
@@ -1767,7 +1767,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/budgets_budget_action#delete BudgetsBudgetAction#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/budgets_budget_action#delete BudgetsBudgetAction#delete}.
 
 ---
 
@@ -1779,7 +1779,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/budgets_budget_action#update BudgetsBudgetAction#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/budgets_budget_action#update BudgetsBudgetAction#update}.
 
 ---
 

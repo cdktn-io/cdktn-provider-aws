@@ -4,7 +4,7 @@
 
 ### S3FilesAccessPoint <a name="S3FilesAccessPoint" id="@cdktn/provider-aws.s3FilesAccessPoint.S3FilesAccessPoint"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/s3files_access_point aws_s3files_access_point}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/s3files_access_point aws_s3files_access_point}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3FilesAccessPoint.S3FilesAccessPoint.Initializer"></a>
 
@@ -563,7 +563,7 @@ The construct id used in the generated config for the S3FilesAccessPoint to impo
 
 The id of the existing S3FilesAccessPoint that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/s3files_access_point#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/s3files_access_point#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -995,7 +995,7 @@ new S3FilesAccessPointConfig {
 | <code><a href="#@cdktn/provider-aws.s3FilesAccessPoint.S3FilesAccessPointConfig.property.posixUser">PosixUser</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-aws.s3FilesAccessPoint.S3FilesAccessPointPosixUser">S3FilesAccessPointPosixUser</a>[]</code> | posix_user block. |
 | <code><a href="#@cdktn/provider-aws.s3FilesAccessPoint.S3FilesAccessPointConfig.property.region">Region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktn/provider-aws.s3FilesAccessPoint.S3FilesAccessPointConfig.property.rootDirectory">RootDirectory</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-aws.s3FilesAccessPoint.S3FilesAccessPointRootDirectory">S3FilesAccessPointRootDirectory</a>[]</code> | root_directory block. |
-| <code><a href="#@cdktn/provider-aws.s3FilesAccessPoint.S3FilesAccessPointConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/s3files_access_point#tags S3FilesAccessPoint#tags}. |
+| <code><a href="#@cdktn/provider-aws.s3FilesAccessPoint.S3FilesAccessPointConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/s3files_access_point#tags S3FilesAccessPoint#tags}. |
 | <code><a href="#@cdktn/provider-aws.s3FilesAccessPoint.S3FilesAccessPointConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.s3FilesAccessPoint.S3FilesAccessPointTimeouts">S3FilesAccessPointTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1080,7 +1080,7 @@ public string FileSystemId { get; set; }
 
 File system ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/s3files_access_point#file_system_id S3FilesAccessPoint#file_system_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/s3files_access_point#file_system_id S3FilesAccessPoint#file_system_id}
 
 ---
 
@@ -1094,7 +1094,7 @@ public IResolvable|S3FilesAccessPointPosixUser[] PosixUser { get; set; }
 
 posix_user block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/s3files_access_point#posix_user S3FilesAccessPoint#posix_user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/s3files_access_point#posix_user S3FilesAccessPoint#posix_user}
 
 ---
 
@@ -1108,7 +1108,7 @@ public string Region { get; set; }
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/s3files_access_point#region S3FilesAccessPoint#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/s3files_access_point#region S3FilesAccessPoint#region}
 
 ---
 
@@ -1122,7 +1122,7 @@ public IResolvable|S3FilesAccessPointRootDirectory[] RootDirectory { get; set; }
 
 root_directory block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/s3files_access_point#root_directory S3FilesAccessPoint#root_directory}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/s3files_access_point#root_directory S3FilesAccessPoint#root_directory}
 
 ---
 
@@ -1134,7 +1134,7 @@ public System.Collections.Generic.IDictionary<string, string> Tags { get; set; }
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/s3files_access_point#tags S3FilesAccessPoint#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/s3files_access_point#tags S3FilesAccessPoint#tags}.
 
 ---
 
@@ -1148,7 +1148,7 @@ public S3FilesAccessPointTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/s3files_access_point#timeouts S3FilesAccessPoint#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/s3files_access_point#timeouts S3FilesAccessPoint#timeouts}
 
 ---
 
@@ -1186,7 +1186,7 @@ public double Gid { get; set; }
 
 POSIX group ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/s3files_access_point#gid S3FilesAccessPoint#gid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/s3files_access_point#gid S3FilesAccessPoint#gid}
 
 ---
 
@@ -1200,7 +1200,7 @@ public double Uid { get; set; }
 
 POSIX user ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/s3files_access_point#uid S3FilesAccessPoint#uid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/s3files_access_point#uid S3FilesAccessPoint#uid}
 
 ---
 
@@ -1214,7 +1214,7 @@ public double[] SecondaryGids { get; set; }
 
 Secondary POSIX group IDs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/s3files_access_point#secondary_gids S3FilesAccessPoint#secondary_gids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/s3files_access_point#secondary_gids S3FilesAccessPoint#secondary_gids}
 
 ---
 
@@ -1250,7 +1250,7 @@ public IResolvable|S3FilesAccessPointRootDirectoryCreationPermissions[] Creation
 
 creation_permissions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/s3files_access_point#creation_permissions S3FilesAccessPoint#creation_permissions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/s3files_access_point#creation_permissions S3FilesAccessPoint#creation_permissions}
 
 ---
 
@@ -1264,7 +1264,7 @@ public string Path { get; set; }
 
 Root directory path.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/s3files_access_point#path S3FilesAccessPoint#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/s3files_access_point#path S3FilesAccessPoint#path}
 
 ---
 
@@ -1302,7 +1302,7 @@ public double OwnerGid { get; set; }
 
 Owner group ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/s3files_access_point#owner_gid S3FilesAccessPoint#owner_gid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/s3files_access_point#owner_gid S3FilesAccessPoint#owner_gid}
 
 ---
 
@@ -1316,7 +1316,7 @@ public double OwnerUid { get; set; }
 
 Owner user ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/s3files_access_point#owner_uid S3FilesAccessPoint#owner_uid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/s3files_access_point#owner_uid S3FilesAccessPoint#owner_uid}
 
 ---
 
@@ -1330,7 +1330,7 @@ public string Permissions { get; set; }
 
 POSIX permissions.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/s3files_access_point#permissions S3FilesAccessPoint#permissions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/s3files_access_point#permissions S3FilesAccessPoint#permissions}
 
 ---
 
@@ -1366,7 +1366,7 @@ public string Create { get; set; }
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/s3files_access_point#create S3FilesAccessPoint#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/s3files_access_point#create S3FilesAccessPoint#create}
 
 ---
 
@@ -1380,7 +1380,7 @@ public string Delete { get; set; }
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/s3files_access_point#delete S3FilesAccessPoint#delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/s3files_access_point#delete S3FilesAccessPoint#delete}
 
 ---
 

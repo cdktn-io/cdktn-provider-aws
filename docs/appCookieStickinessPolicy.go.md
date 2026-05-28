@@ -4,7 +4,7 @@
 
 ### AppCookieStickinessPolicy <a name="AppCookieStickinessPolicy" id="@cdktn/provider-aws.appCookieStickinessPolicy.AppCookieStickinessPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/app_cookie_stickiness_policy aws_app_cookie_stickiness_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/app_cookie_stickiness_policy aws_app_cookie_stickiness_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appCookieStickinessPolicy.AppCookieStickinessPolicy.Initializer"></a>
 
@@ -503,7 +503,7 @@ The construct id used in the generated config for the AppCookieStickinessPolicy 
 
 The id of the existing AppCookieStickinessPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/app_cookie_stickiness_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/app_cookie_stickiness_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -865,11 +865,11 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/appcookiestickinesspol
 | <code><a href="#@cdktn/provider-aws.appCookieStickinessPolicy.AppCookieStickinessPolicyConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.appCookieStickinessPolicy.AppCookieStickinessPolicyConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.appCookieStickinessPolicy.AppCookieStickinessPolicyConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.appCookieStickinessPolicy.AppCookieStickinessPolicyConfig.property.cookieName">CookieName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/app_cookie_stickiness_policy#cookie_name AppCookieStickinessPolicy#cookie_name}. |
-| <code><a href="#@cdktn/provider-aws.appCookieStickinessPolicy.AppCookieStickinessPolicyConfig.property.lbPort">LbPort</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/app_cookie_stickiness_policy#lb_port AppCookieStickinessPolicy#lb_port}. |
-| <code><a href="#@cdktn/provider-aws.appCookieStickinessPolicy.AppCookieStickinessPolicyConfig.property.loadBalancer">LoadBalancer</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/app_cookie_stickiness_policy#load_balancer AppCookieStickinessPolicy#load_balancer}. |
-| <code><a href="#@cdktn/provider-aws.appCookieStickinessPolicy.AppCookieStickinessPolicyConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/app_cookie_stickiness_policy#name AppCookieStickinessPolicy#name}. |
-| <code><a href="#@cdktn/provider-aws.appCookieStickinessPolicy.AppCookieStickinessPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/app_cookie_stickiness_policy#id AppCookieStickinessPolicy#id}. |
+| <code><a href="#@cdktn/provider-aws.appCookieStickinessPolicy.AppCookieStickinessPolicyConfig.property.cookieName">CookieName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/app_cookie_stickiness_policy#cookie_name AppCookieStickinessPolicy#cookie_name}. |
+| <code><a href="#@cdktn/provider-aws.appCookieStickinessPolicy.AppCookieStickinessPolicyConfig.property.lbPort">LbPort</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/app_cookie_stickiness_policy#lb_port AppCookieStickinessPolicy#lb_port}. |
+| <code><a href="#@cdktn/provider-aws.appCookieStickinessPolicy.AppCookieStickinessPolicyConfig.property.loadBalancer">LoadBalancer</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/app_cookie_stickiness_policy#load_balancer AppCookieStickinessPolicy#load_balancer}. |
+| <code><a href="#@cdktn/provider-aws.appCookieStickinessPolicy.AppCookieStickinessPolicyConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/app_cookie_stickiness_policy#name AppCookieStickinessPolicy#name}. |
+| <code><a href="#@cdktn/provider-aws.appCookieStickinessPolicy.AppCookieStickinessPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/app_cookie_stickiness_policy#id AppCookieStickinessPolicy#id}. |
 | <code><a href="#@cdktn/provider-aws.appCookieStickinessPolicy.AppCookieStickinessPolicyConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -952,7 +952,7 @@ CookieName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/app_cookie_stickiness_policy#cookie_name AppCookieStickinessPolicy#cookie_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/app_cookie_stickiness_policy#cookie_name AppCookieStickinessPolicy#cookie_name}.
 
 ---
 
@@ -964,7 +964,7 @@ LbPort *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/app_cookie_stickiness_policy#lb_port AppCookieStickinessPolicy#lb_port}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/app_cookie_stickiness_policy#lb_port AppCookieStickinessPolicy#lb_port}.
 
 ---
 
@@ -976,7 +976,7 @@ LoadBalancer *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/app_cookie_stickiness_policy#load_balancer AppCookieStickinessPolicy#load_balancer}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/app_cookie_stickiness_policy#load_balancer AppCookieStickinessPolicy#load_balancer}.
 
 ---
 
@@ -988,7 +988,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/app_cookie_stickiness_policy#name AppCookieStickinessPolicy#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/app_cookie_stickiness_policy#name AppCookieStickinessPolicy#name}.
 
 ---
 
@@ -1000,7 +1000,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/app_cookie_stickiness_policy#id AppCookieStickinessPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/app_cookie_stickiness_policy#id AppCookieStickinessPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1017,7 +1017,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/app_cookie_stickiness_policy#region AppCookieStickinessPolicy#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/app_cookie_stickiness_policy#region AppCookieStickinessPolicy#region}
 
 ---
 

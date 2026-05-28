@@ -4,7 +4,7 @@
 
 ### MedialiveMultiplex <a name="MedialiveMultiplex" id="@cdktn/provider-aws.medialiveMultiplex.MedialiveMultiplex"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/medialive_multiplex aws_medialive_multiplex}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/medialive_multiplex aws_medialive_multiplex}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.medialiveMultiplex.MedialiveMultiplex.Initializer"></a>
 
@@ -564,7 +564,7 @@ The construct id used in the generated config for the MedialiveMultiplex to impo
 
 The id of the existing MedialiveMultiplex that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/medialive_multiplex#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/medialive_multiplex#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1006,14 +1006,14 @@ new MedialiveMultiplexConfig {
 | <code><a href="#@cdktn/provider-aws.medialiveMultiplex.MedialiveMultiplexConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.medialiveMultiplex.MedialiveMultiplexConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.medialiveMultiplex.MedialiveMultiplexConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.medialiveMultiplex.MedialiveMultiplexConfig.property.availabilityZones">AvailabilityZones</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/medialive_multiplex#availability_zones MedialiveMultiplex#availability_zones}. |
-| <code><a href="#@cdktn/provider-aws.medialiveMultiplex.MedialiveMultiplexConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/medialive_multiplex#name MedialiveMultiplex#name}. |
-| <code><a href="#@cdktn/provider-aws.medialiveMultiplex.MedialiveMultiplexConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/medialive_multiplex#id MedialiveMultiplex#id}. |
+| <code><a href="#@cdktn/provider-aws.medialiveMultiplex.MedialiveMultiplexConfig.property.availabilityZones">AvailabilityZones</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/medialive_multiplex#availability_zones MedialiveMultiplex#availability_zones}. |
+| <code><a href="#@cdktn/provider-aws.medialiveMultiplex.MedialiveMultiplexConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/medialive_multiplex#name MedialiveMultiplex#name}. |
+| <code><a href="#@cdktn/provider-aws.medialiveMultiplex.MedialiveMultiplexConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/medialive_multiplex#id MedialiveMultiplex#id}. |
 | <code><a href="#@cdktn/provider-aws.medialiveMultiplex.MedialiveMultiplexConfig.property.multiplexSettings">MultiplexSettings</a></code> | <code><a href="#@cdktn/provider-aws.medialiveMultiplex.MedialiveMultiplexMultiplexSettings">MedialiveMultiplexMultiplexSettings</a></code> | multiplex_settings block. |
 | <code><a href="#@cdktn/provider-aws.medialiveMultiplex.MedialiveMultiplexConfig.property.region">Region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.medialiveMultiplex.MedialiveMultiplexConfig.property.startMultiplex">StartMultiplex</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/medialive_multiplex#start_multiplex MedialiveMultiplex#start_multiplex}. |
-| <code><a href="#@cdktn/provider-aws.medialiveMultiplex.MedialiveMultiplexConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/medialive_multiplex#tags MedialiveMultiplex#tags}. |
-| <code><a href="#@cdktn/provider-aws.medialiveMultiplex.MedialiveMultiplexConfig.property.tagsAll">TagsAll</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/medialive_multiplex#tags_all MedialiveMultiplex#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.medialiveMultiplex.MedialiveMultiplexConfig.property.startMultiplex">StartMultiplex</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/medialive_multiplex#start_multiplex MedialiveMultiplex#start_multiplex}. |
+| <code><a href="#@cdktn/provider-aws.medialiveMultiplex.MedialiveMultiplexConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/medialive_multiplex#tags MedialiveMultiplex#tags}. |
+| <code><a href="#@cdktn/provider-aws.medialiveMultiplex.MedialiveMultiplexConfig.property.tagsAll">TagsAll</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/medialive_multiplex#tags_all MedialiveMultiplex#tags_all}. |
 | <code><a href="#@cdktn/provider-aws.medialiveMultiplex.MedialiveMultiplexConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.medialiveMultiplex.MedialiveMultiplexTimeouts">MedialiveMultiplexTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1096,7 +1096,7 @@ public string[] AvailabilityZones { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/medialive_multiplex#availability_zones MedialiveMultiplex#availability_zones}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/medialive_multiplex#availability_zones MedialiveMultiplex#availability_zones}.
 
 ---
 
@@ -1108,7 +1108,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/medialive_multiplex#name MedialiveMultiplex#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/medialive_multiplex#name MedialiveMultiplex#name}.
 
 ---
 
@@ -1120,7 +1120,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/medialive_multiplex#id MedialiveMultiplex#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/medialive_multiplex#id MedialiveMultiplex#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1137,7 +1137,7 @@ public MedialiveMultiplexMultiplexSettings MultiplexSettings { get; set; }
 
 multiplex_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/medialive_multiplex#multiplex_settings MedialiveMultiplex#multiplex_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/medialive_multiplex#multiplex_settings MedialiveMultiplex#multiplex_settings}
 
 ---
 
@@ -1151,7 +1151,7 @@ public string Region { get; set; }
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/medialive_multiplex#region MedialiveMultiplex#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/medialive_multiplex#region MedialiveMultiplex#region}
 
 ---
 
@@ -1163,7 +1163,7 @@ public bool|IResolvable StartMultiplex { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/medialive_multiplex#start_multiplex MedialiveMultiplex#start_multiplex}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/medialive_multiplex#start_multiplex MedialiveMultiplex#start_multiplex}.
 
 ---
 
@@ -1175,7 +1175,7 @@ public System.Collections.Generic.IDictionary<string, string> Tags { get; set; }
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/medialive_multiplex#tags MedialiveMultiplex#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/medialive_multiplex#tags MedialiveMultiplex#tags}.
 
 ---
 
@@ -1187,7 +1187,7 @@ public System.Collections.Generic.IDictionary<string, string> TagsAll { get; set
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/medialive_multiplex#tags_all MedialiveMultiplex#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/medialive_multiplex#tags_all MedialiveMultiplex#tags_all}.
 
 ---
 
@@ -1201,7 +1201,7 @@ public MedialiveMultiplexTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/medialive_multiplex#timeouts MedialiveMultiplex#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/medialive_multiplex#timeouts MedialiveMultiplex#timeouts}
 
 ---
 
@@ -1224,10 +1224,10 @@ new MedialiveMultiplexMultiplexSettings {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.medialiveMultiplex.MedialiveMultiplexMultiplexSettings.property.transportStreamBitrate">TransportStreamBitrate</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/medialive_multiplex#transport_stream_bitrate MedialiveMultiplex#transport_stream_bitrate}. |
-| <code><a href="#@cdktn/provider-aws.medialiveMultiplex.MedialiveMultiplexMultiplexSettings.property.transportStreamId">TransportStreamId</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/medialive_multiplex#transport_stream_id MedialiveMultiplex#transport_stream_id}. |
-| <code><a href="#@cdktn/provider-aws.medialiveMultiplex.MedialiveMultiplexMultiplexSettings.property.maximumVideoBufferDelayMilliseconds">MaximumVideoBufferDelayMilliseconds</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/medialive_multiplex#maximum_video_buffer_delay_milliseconds MedialiveMultiplex#maximum_video_buffer_delay_milliseconds}. |
-| <code><a href="#@cdktn/provider-aws.medialiveMultiplex.MedialiveMultiplexMultiplexSettings.property.transportStreamReservedBitrate">TransportStreamReservedBitrate</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/medialive_multiplex#transport_stream_reserved_bitrate MedialiveMultiplex#transport_stream_reserved_bitrate}. |
+| <code><a href="#@cdktn/provider-aws.medialiveMultiplex.MedialiveMultiplexMultiplexSettings.property.transportStreamBitrate">TransportStreamBitrate</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/medialive_multiplex#transport_stream_bitrate MedialiveMultiplex#transport_stream_bitrate}. |
+| <code><a href="#@cdktn/provider-aws.medialiveMultiplex.MedialiveMultiplexMultiplexSettings.property.transportStreamId">TransportStreamId</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/medialive_multiplex#transport_stream_id MedialiveMultiplex#transport_stream_id}. |
+| <code><a href="#@cdktn/provider-aws.medialiveMultiplex.MedialiveMultiplexMultiplexSettings.property.maximumVideoBufferDelayMilliseconds">MaximumVideoBufferDelayMilliseconds</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/medialive_multiplex#maximum_video_buffer_delay_milliseconds MedialiveMultiplex#maximum_video_buffer_delay_milliseconds}. |
+| <code><a href="#@cdktn/provider-aws.medialiveMultiplex.MedialiveMultiplexMultiplexSettings.property.transportStreamReservedBitrate">TransportStreamReservedBitrate</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/medialive_multiplex#transport_stream_reserved_bitrate MedialiveMultiplex#transport_stream_reserved_bitrate}. |
 
 ---
 
@@ -1239,7 +1239,7 @@ public double TransportStreamBitrate { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/medialive_multiplex#transport_stream_bitrate MedialiveMultiplex#transport_stream_bitrate}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/medialive_multiplex#transport_stream_bitrate MedialiveMultiplex#transport_stream_bitrate}.
 
 ---
 
@@ -1251,7 +1251,7 @@ public double TransportStreamId { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/medialive_multiplex#transport_stream_id MedialiveMultiplex#transport_stream_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/medialive_multiplex#transport_stream_id MedialiveMultiplex#transport_stream_id}.
 
 ---
 
@@ -1263,7 +1263,7 @@ public double MaximumVideoBufferDelayMilliseconds { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/medialive_multiplex#maximum_video_buffer_delay_milliseconds MedialiveMultiplex#maximum_video_buffer_delay_milliseconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/medialive_multiplex#maximum_video_buffer_delay_milliseconds MedialiveMultiplex#maximum_video_buffer_delay_milliseconds}.
 
 ---
 
@@ -1275,7 +1275,7 @@ public double TransportStreamReservedBitrate { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/medialive_multiplex#transport_stream_reserved_bitrate MedialiveMultiplex#transport_stream_reserved_bitrate}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/medialive_multiplex#transport_stream_reserved_bitrate MedialiveMultiplex#transport_stream_reserved_bitrate}.
 
 ---
 
@@ -1297,9 +1297,9 @@ new MedialiveMultiplexTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.medialiveMultiplex.MedialiveMultiplexTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/medialive_multiplex#create MedialiveMultiplex#create}. |
-| <code><a href="#@cdktn/provider-aws.medialiveMultiplex.MedialiveMultiplexTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/medialive_multiplex#delete MedialiveMultiplex#delete}. |
-| <code><a href="#@cdktn/provider-aws.medialiveMultiplex.MedialiveMultiplexTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/medialive_multiplex#update MedialiveMultiplex#update}. |
+| <code><a href="#@cdktn/provider-aws.medialiveMultiplex.MedialiveMultiplexTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/medialive_multiplex#create MedialiveMultiplex#create}. |
+| <code><a href="#@cdktn/provider-aws.medialiveMultiplex.MedialiveMultiplexTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/medialive_multiplex#delete MedialiveMultiplex#delete}. |
+| <code><a href="#@cdktn/provider-aws.medialiveMultiplex.MedialiveMultiplexTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/medialive_multiplex#update MedialiveMultiplex#update}. |
 
 ---
 
@@ -1311,7 +1311,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/medialive_multiplex#create MedialiveMultiplex#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/medialive_multiplex#create MedialiveMultiplex#create}.
 
 ---
 
@@ -1323,7 +1323,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/medialive_multiplex#delete MedialiveMultiplex#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/medialive_multiplex#delete MedialiveMultiplex#delete}.
 
 ---
 
@@ -1335,7 +1335,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/medialive_multiplex#update MedialiveMultiplex#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/medialive_multiplex#update MedialiveMultiplex#update}.
 
 ---
 

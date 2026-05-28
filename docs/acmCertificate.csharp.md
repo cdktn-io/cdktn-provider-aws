@@ -4,7 +4,7 @@
 
 ### AcmCertificate <a name="AcmCertificate" id="@cdktn/provider-aws.acmCertificate.AcmCertificate"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/acm_certificate aws_acm_certificate}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/acm_certificate aws_acm_certificate}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.acmCertificate.AcmCertificate.Initializer"></a>
 
@@ -85,6 +85,8 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-aws.acmCertificate.AcmCertificate.resetKeyAlgorithm">ResetKeyAlgorithm</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.acmCertificate.AcmCertificate.resetOptions">ResetOptions</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.acmCertificate.AcmCertificate.resetPrivateKey">ResetPrivateKey</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.acmCertificate.AcmCertificate.resetPrivateKeyWo">ResetPrivateKeyWo</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.acmCertificate.AcmCertificate.resetPrivateKeyWoVersion">ResetPrivateKeyWoVersion</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.acmCertificate.AcmCertificate.resetRegion">ResetRegion</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.acmCertificate.AcmCertificate.resetSubjectAlternativeNames">ResetSubjectAlternativeNames</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.acmCertificate.AcmCertificate.resetTags">ResetTags</a></code> | *No description.* |
@@ -481,6 +483,18 @@ private void ResetOptions()
 private void ResetPrivateKey()
 ```
 
+##### `ResetPrivateKeyWo` <a name="ResetPrivateKeyWo" id="@cdktn/provider-aws.acmCertificate.AcmCertificate.resetPrivateKeyWo"></a>
+
+```csharp
+private void ResetPrivateKeyWo()
+```
+
+##### `ResetPrivateKeyWoVersion` <a name="ResetPrivateKeyWoVersion" id="@cdktn/provider-aws.acmCertificate.AcmCertificate.resetPrivateKeyWoVersion"></a>
+
+```csharp
+private void ResetPrivateKeyWoVersion()
+```
+
 ##### `ResetRegion` <a name="ResetRegion" id="@cdktn/provider-aws.acmCertificate.AcmCertificate.resetRegion"></a>
 
 ```csharp
@@ -620,7 +634,7 @@ The construct id used in the generated config for the AcmCertificate to import.
 
 The id of the existing AcmCertificate that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/acm_certificate#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/acm_certificate#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -671,6 +685,8 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0
 | <code><a href="#@cdktn/provider-aws.acmCertificate.AcmCertificate.property.keyAlgorithmInput">KeyAlgorithmInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.acmCertificate.AcmCertificate.property.optionsInput">OptionsInput</a></code> | <code><a href="#@cdktn/provider-aws.acmCertificate.AcmCertificateOptions">AcmCertificateOptions</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.acmCertificate.AcmCertificate.property.privateKeyInput">PrivateKeyInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.acmCertificate.AcmCertificate.property.privateKeyWoInput">PrivateKeyWoInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.acmCertificate.AcmCertificate.property.privateKeyWoVersionInput">PrivateKeyWoVersionInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.acmCertificate.AcmCertificate.property.regionInput">RegionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.acmCertificate.AcmCertificate.property.subjectAlternativeNamesInput">SubjectAlternativeNamesInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.acmCertificate.AcmCertificate.property.tagsAllInput">TagsAllInput</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
@@ -685,6 +701,8 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0
 | <code><a href="#@cdktn/provider-aws.acmCertificate.AcmCertificate.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.acmCertificate.AcmCertificate.property.keyAlgorithm">KeyAlgorithm</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.acmCertificate.AcmCertificate.property.privateKey">PrivateKey</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.acmCertificate.AcmCertificate.property.privateKeyWo">PrivateKeyWo</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.acmCertificate.AcmCertificate.property.privateKeyWoVersion">PrivateKeyWoVersion</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.acmCertificate.AcmCertificate.property.region">Region</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.acmCertificate.AcmCertificate.property.subjectAlternativeNames">SubjectAlternativeNames</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.acmCertificate.AcmCertificate.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
@@ -1045,6 +1063,26 @@ public string PrivateKeyInput { get; }
 
 ---
 
+##### `PrivateKeyWoInput`<sup>Optional</sup> <a name="PrivateKeyWoInput" id="@cdktn/provider-aws.acmCertificate.AcmCertificate.property.privateKeyWoInput"></a>
+
+```csharp
+public string PrivateKeyWoInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `PrivateKeyWoVersionInput`<sup>Optional</sup> <a name="PrivateKeyWoVersionInput" id="@cdktn/provider-aws.acmCertificate.AcmCertificate.property.privateKeyWoVersionInput"></a>
+
+```csharp
+public double PrivateKeyWoVersionInput { get; }
+```
+
+- *Type:* double
+
+---
+
 ##### `RegionInput`<sup>Optional</sup> <a name="RegionInput" id="@cdktn/provider-aws.acmCertificate.AcmCertificate.property.regionInput"></a>
 
 ```csharp
@@ -1185,6 +1223,26 @@ public string PrivateKey { get; }
 
 ---
 
+##### `PrivateKeyWo`<sup>Required</sup> <a name="PrivateKeyWo" id="@cdktn/provider-aws.acmCertificate.AcmCertificate.property.privateKeyWo"></a>
+
+```csharp
+public string PrivateKeyWo { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `PrivateKeyWoVersion`<sup>Required</sup> <a name="PrivateKeyWoVersion" id="@cdktn/provider-aws.acmCertificate.AcmCertificate.property.privateKeyWoVersion"></a>
+
+```csharp
+public double PrivateKeyWoVersion { get; }
+```
+
+- *Type:* double
+
+---
+
 ##### `Region`<sup>Required</sup> <a name="Region" id="@cdktn/provider-aws.acmCertificate.AcmCertificate.property.region"></a>
 
 ```csharp
@@ -1279,6 +1337,8 @@ new AcmCertificateConfig {
     string KeyAlgorithm = null,
     AcmCertificateOptions Options = null,
     string PrivateKey = null,
+    string PrivateKeyWo = null,
+    double PrivateKeyWoVersion = null,
     string Region = null,
     string[] SubjectAlternativeNames = null,
     System.Collections.Generic.IDictionary<string, string> Tags = null,
@@ -1299,20 +1359,22 @@ new AcmCertificateConfig {
 | <code><a href="#@cdktn/provider-aws.acmCertificate.AcmCertificateConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.acmCertificate.AcmCertificateConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.acmCertificate.AcmCertificateConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.acmCertificate.AcmCertificateConfig.property.certificateAuthorityArn">CertificateAuthorityArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/acm_certificate#certificate_authority_arn AcmCertificate#certificate_authority_arn}. |
-| <code><a href="#@cdktn/provider-aws.acmCertificate.AcmCertificateConfig.property.certificateBody">CertificateBody</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/acm_certificate#certificate_body AcmCertificate#certificate_body}. |
-| <code><a href="#@cdktn/provider-aws.acmCertificate.AcmCertificateConfig.property.certificateChain">CertificateChain</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/acm_certificate#certificate_chain AcmCertificate#certificate_chain}. |
-| <code><a href="#@cdktn/provider-aws.acmCertificate.AcmCertificateConfig.property.domainName">DomainName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/acm_certificate#domain_name AcmCertificate#domain_name}. |
-| <code><a href="#@cdktn/provider-aws.acmCertificate.AcmCertificateConfig.property.earlyRenewalDuration">EarlyRenewalDuration</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/acm_certificate#early_renewal_duration AcmCertificate#early_renewal_duration}. |
-| <code><a href="#@cdktn/provider-aws.acmCertificate.AcmCertificateConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/acm_certificate#id AcmCertificate#id}. |
-| <code><a href="#@cdktn/provider-aws.acmCertificate.AcmCertificateConfig.property.keyAlgorithm">KeyAlgorithm</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/acm_certificate#key_algorithm AcmCertificate#key_algorithm}. |
+| <code><a href="#@cdktn/provider-aws.acmCertificate.AcmCertificateConfig.property.certificateAuthorityArn">CertificateAuthorityArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/acm_certificate#certificate_authority_arn AcmCertificate#certificate_authority_arn}. |
+| <code><a href="#@cdktn/provider-aws.acmCertificate.AcmCertificateConfig.property.certificateBody">CertificateBody</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/acm_certificate#certificate_body AcmCertificate#certificate_body}. |
+| <code><a href="#@cdktn/provider-aws.acmCertificate.AcmCertificateConfig.property.certificateChain">CertificateChain</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/acm_certificate#certificate_chain AcmCertificate#certificate_chain}. |
+| <code><a href="#@cdktn/provider-aws.acmCertificate.AcmCertificateConfig.property.domainName">DomainName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/acm_certificate#domain_name AcmCertificate#domain_name}. |
+| <code><a href="#@cdktn/provider-aws.acmCertificate.AcmCertificateConfig.property.earlyRenewalDuration">EarlyRenewalDuration</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/acm_certificate#early_renewal_duration AcmCertificate#early_renewal_duration}. |
+| <code><a href="#@cdktn/provider-aws.acmCertificate.AcmCertificateConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/acm_certificate#id AcmCertificate#id}. |
+| <code><a href="#@cdktn/provider-aws.acmCertificate.AcmCertificateConfig.property.keyAlgorithm">KeyAlgorithm</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/acm_certificate#key_algorithm AcmCertificate#key_algorithm}. |
 | <code><a href="#@cdktn/provider-aws.acmCertificate.AcmCertificateConfig.property.options">Options</a></code> | <code><a href="#@cdktn/provider-aws.acmCertificate.AcmCertificateOptions">AcmCertificateOptions</a></code> | options block. |
-| <code><a href="#@cdktn/provider-aws.acmCertificate.AcmCertificateConfig.property.privateKey">PrivateKey</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/acm_certificate#private_key AcmCertificate#private_key}. |
+| <code><a href="#@cdktn/provider-aws.acmCertificate.AcmCertificateConfig.property.privateKey">PrivateKey</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/acm_certificate#private_key AcmCertificate#private_key}. |
+| <code><a href="#@cdktn/provider-aws.acmCertificate.AcmCertificateConfig.property.privateKeyWo">PrivateKeyWo</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/acm_certificate#private_key_wo AcmCertificate#private_key_wo}. |
+| <code><a href="#@cdktn/provider-aws.acmCertificate.AcmCertificateConfig.property.privateKeyWoVersion">PrivateKeyWoVersion</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/acm_certificate#private_key_wo_version AcmCertificate#private_key_wo_version}. |
 | <code><a href="#@cdktn/provider-aws.acmCertificate.AcmCertificateConfig.property.region">Region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.acmCertificate.AcmCertificateConfig.property.subjectAlternativeNames">SubjectAlternativeNames</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/acm_certificate#subject_alternative_names AcmCertificate#subject_alternative_names}. |
-| <code><a href="#@cdktn/provider-aws.acmCertificate.AcmCertificateConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/acm_certificate#tags AcmCertificate#tags}. |
-| <code><a href="#@cdktn/provider-aws.acmCertificate.AcmCertificateConfig.property.tagsAll">TagsAll</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/acm_certificate#tags_all AcmCertificate#tags_all}. |
-| <code><a href="#@cdktn/provider-aws.acmCertificate.AcmCertificateConfig.property.validationMethod">ValidationMethod</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/acm_certificate#validation_method AcmCertificate#validation_method}. |
+| <code><a href="#@cdktn/provider-aws.acmCertificate.AcmCertificateConfig.property.subjectAlternativeNames">SubjectAlternativeNames</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/acm_certificate#subject_alternative_names AcmCertificate#subject_alternative_names}. |
+| <code><a href="#@cdktn/provider-aws.acmCertificate.AcmCertificateConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/acm_certificate#tags AcmCertificate#tags}. |
+| <code><a href="#@cdktn/provider-aws.acmCertificate.AcmCertificateConfig.property.tagsAll">TagsAll</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/acm_certificate#tags_all AcmCertificate#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.acmCertificate.AcmCertificateConfig.property.validationMethod">ValidationMethod</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/acm_certificate#validation_method AcmCertificate#validation_method}. |
 | <code><a href="#@cdktn/provider-aws.acmCertificate.AcmCertificateConfig.property.validationOption">ValidationOption</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-aws.acmCertificate.AcmCertificateValidationOption">AcmCertificateValidationOption</a>[]</code> | validation_option block. |
 
 ---
@@ -1395,7 +1457,7 @@ public string CertificateAuthorityArn { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/acm_certificate#certificate_authority_arn AcmCertificate#certificate_authority_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/acm_certificate#certificate_authority_arn AcmCertificate#certificate_authority_arn}.
 
 ---
 
@@ -1407,7 +1469,7 @@ public string CertificateBody { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/acm_certificate#certificate_body AcmCertificate#certificate_body}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/acm_certificate#certificate_body AcmCertificate#certificate_body}.
 
 ---
 
@@ -1419,7 +1481,7 @@ public string CertificateChain { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/acm_certificate#certificate_chain AcmCertificate#certificate_chain}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/acm_certificate#certificate_chain AcmCertificate#certificate_chain}.
 
 ---
 
@@ -1431,7 +1493,7 @@ public string DomainName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/acm_certificate#domain_name AcmCertificate#domain_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/acm_certificate#domain_name AcmCertificate#domain_name}.
 
 ---
 
@@ -1443,7 +1505,7 @@ public string EarlyRenewalDuration { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/acm_certificate#early_renewal_duration AcmCertificate#early_renewal_duration}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/acm_certificate#early_renewal_duration AcmCertificate#early_renewal_duration}.
 
 ---
 
@@ -1455,7 +1517,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/acm_certificate#id AcmCertificate#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/acm_certificate#id AcmCertificate#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1470,7 +1532,7 @@ public string KeyAlgorithm { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/acm_certificate#key_algorithm AcmCertificate#key_algorithm}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/acm_certificate#key_algorithm AcmCertificate#key_algorithm}.
 
 ---
 
@@ -1484,7 +1546,7 @@ public AcmCertificateOptions Options { get; set; }
 
 options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/acm_certificate#options AcmCertificate#options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/acm_certificate#options AcmCertificate#options}
 
 ---
 
@@ -1496,7 +1558,31 @@ public string PrivateKey { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/acm_certificate#private_key AcmCertificate#private_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/acm_certificate#private_key AcmCertificate#private_key}.
+
+---
+
+##### `PrivateKeyWo`<sup>Optional</sup> <a name="PrivateKeyWo" id="@cdktn/provider-aws.acmCertificate.AcmCertificateConfig.property.privateKeyWo"></a>
+
+```csharp
+public string PrivateKeyWo { get; set; }
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/acm_certificate#private_key_wo AcmCertificate#private_key_wo}.
+
+---
+
+##### `PrivateKeyWoVersion`<sup>Optional</sup> <a name="PrivateKeyWoVersion" id="@cdktn/provider-aws.acmCertificate.AcmCertificateConfig.property.privateKeyWoVersion"></a>
+
+```csharp
+public double PrivateKeyWoVersion { get; set; }
+```
+
+- *Type:* double
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/acm_certificate#private_key_wo_version AcmCertificate#private_key_wo_version}.
 
 ---
 
@@ -1510,7 +1596,7 @@ public string Region { get; set; }
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/acm_certificate#region AcmCertificate#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/acm_certificate#region AcmCertificate#region}
 
 ---
 
@@ -1522,7 +1608,7 @@ public string[] SubjectAlternativeNames { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/acm_certificate#subject_alternative_names AcmCertificate#subject_alternative_names}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/acm_certificate#subject_alternative_names AcmCertificate#subject_alternative_names}.
 
 ---
 
@@ -1534,7 +1620,7 @@ public System.Collections.Generic.IDictionary<string, string> Tags { get; set; }
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/acm_certificate#tags AcmCertificate#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/acm_certificate#tags AcmCertificate#tags}.
 
 ---
 
@@ -1546,7 +1632,7 @@ public System.Collections.Generic.IDictionary<string, string> TagsAll { get; set
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/acm_certificate#tags_all AcmCertificate#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/acm_certificate#tags_all AcmCertificate#tags_all}.
 
 ---
 
@@ -1558,7 +1644,7 @@ public string ValidationMethod { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/acm_certificate#validation_method AcmCertificate#validation_method}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/acm_certificate#validation_method AcmCertificate#validation_method}.
 
 ---
 
@@ -1572,7 +1658,7 @@ public IResolvable|AcmCertificateValidationOption[] ValidationOption { get; set;
 
 validation_option block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/acm_certificate#validation_option AcmCertificate#validation_option}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/acm_certificate#validation_option AcmCertificate#validation_option}
 
 ---
 
@@ -1606,8 +1692,8 @@ new AcmCertificateOptions {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.acmCertificate.AcmCertificateOptions.property.certificateTransparencyLoggingPreference">CertificateTransparencyLoggingPreference</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/acm_certificate#certificate_transparency_logging_preference AcmCertificate#certificate_transparency_logging_preference}. |
-| <code><a href="#@cdktn/provider-aws.acmCertificate.AcmCertificateOptions.property.export">Export</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/acm_certificate#export AcmCertificate#export}. |
+| <code><a href="#@cdktn/provider-aws.acmCertificate.AcmCertificateOptions.property.certificateTransparencyLoggingPreference">CertificateTransparencyLoggingPreference</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/acm_certificate#certificate_transparency_logging_preference AcmCertificate#certificate_transparency_logging_preference}. |
+| <code><a href="#@cdktn/provider-aws.acmCertificate.AcmCertificateOptions.property.export">Export</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/acm_certificate#export AcmCertificate#export}. |
 
 ---
 
@@ -1619,7 +1705,7 @@ public string CertificateTransparencyLoggingPreference { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/acm_certificate#certificate_transparency_logging_preference AcmCertificate#certificate_transparency_logging_preference}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/acm_certificate#certificate_transparency_logging_preference AcmCertificate#certificate_transparency_logging_preference}.
 
 ---
 
@@ -1631,7 +1717,7 @@ public string Export { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/acm_certificate#export AcmCertificate#export}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/acm_certificate#export AcmCertificate#export}.
 
 ---
 
@@ -1665,8 +1751,8 @@ new AcmCertificateValidationOption {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.acmCertificate.AcmCertificateValidationOption.property.domainName">DomainName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/acm_certificate#domain_name AcmCertificate#domain_name}. |
-| <code><a href="#@cdktn/provider-aws.acmCertificate.AcmCertificateValidationOption.property.validationDomain">ValidationDomain</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/acm_certificate#validation_domain AcmCertificate#validation_domain}. |
+| <code><a href="#@cdktn/provider-aws.acmCertificate.AcmCertificateValidationOption.property.domainName">DomainName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/acm_certificate#domain_name AcmCertificate#domain_name}. |
+| <code><a href="#@cdktn/provider-aws.acmCertificate.AcmCertificateValidationOption.property.validationDomain">ValidationDomain</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/acm_certificate#validation_domain AcmCertificate#validation_domain}. |
 
 ---
 
@@ -1678,7 +1764,7 @@ public string DomainName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/acm_certificate#domain_name AcmCertificate#domain_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/acm_certificate#domain_name AcmCertificate#domain_name}.
 
 ---
 
@@ -1690,7 +1776,7 @@ public string ValidationDomain { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/acm_certificate#validation_domain AcmCertificate#validation_domain}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/acm_certificate#validation_domain AcmCertificate#validation_domain}.
 
 ---
 
