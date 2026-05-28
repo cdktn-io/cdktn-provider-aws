@@ -197,6 +197,9 @@ Object.defineProperty(exports, 'bedrockagentcoreHarness', { get: function () { r
 Object.defineProperty(exports, 'bedrockagentcoreMemory', { get: function () { return require('./bedrockagentcore-memory'); } });
 Object.defineProperty(exports, 'bedrockagentcoreMemoryStrategy', { get: function () { return require('./bedrockagentcore-memory-strategy'); } });
 Object.defineProperty(exports, 'bedrockagentcoreOauth2CredentialProvider', { get: function () { return require('./bedrockagentcore-oauth2-credential-provider'); } });
+Object.defineProperty(exports, 'bedrockagentcoreOnlineEvaluationConfig', { get: function () { return require('./bedrockagentcore-online-evaluation-config'); } });
+Object.defineProperty(exports, 'bedrockagentcorePolicyEngine', { get: function () { return require('./bedrockagentcore-policy-engine'); } });
+Object.defineProperty(exports, 'bedrockagentcoreResourcePolicy', { get: function () { return require('./bedrockagentcore-resource-policy'); } });
 Object.defineProperty(exports, 'bedrockagentcoreTokenVaultCmk', { get: function () { return require('./bedrockagentcore-token-vault-cmk'); } });
 Object.defineProperty(exports, 'bedrockagentcoreWorkloadIdentity', { get: function () { return require('./bedrockagentcore-workload-identity'); } });
 Object.defineProperty(exports, 'billingView', { get: function () { return require('./billing-view'); } });
@@ -1276,6 +1279,7 @@ Object.defineProperty(exports, 's3ControlBucketPolicy', { get: function () { ret
 Object.defineProperty(exports, 's3ControlDirectoryBucketAccessPointScope', { get: function () { return require('./s3control-directory-bucket-access-point-scope'); } });
 Object.defineProperty(exports, 's3ControlMultiRegionAccessPoint', { get: function () { return require('./s3control-multi-region-access-point'); } });
 Object.defineProperty(exports, 's3ControlMultiRegionAccessPointPolicy', { get: function () { return require('./s3control-multi-region-access-point-policy'); } });
+Object.defineProperty(exports, 's3ControlMultiRegionAccessPointRoutes', { get: function () { return require('./s3control-multi-region-access-point-routes'); } });
 Object.defineProperty(exports, 's3ControlObjectLambdaAccessPoint', { get: function () { return require('./s3control-object-lambda-access-point'); } });
 Object.defineProperty(exports, 's3ControlObjectLambdaAccessPointPolicy', { get: function () { return require('./s3control-object-lambda-access-point-policy'); } });
 Object.defineProperty(exports, 's3ControlStorageLensConfiguration', { get: function () { return require('./s3control-storage-lens-configuration'); } });

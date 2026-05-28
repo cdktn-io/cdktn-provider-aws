@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/ssm_resource_data_sync
+// https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/ssm_resource_data_sync
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,50 +13,140 @@ import * as cdktn from 'cdktn';
 
 export interface SsmResourceDataSyncConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/ssm_resource_data_sync#id SsmResourceDataSync#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/ssm_resource_data_sync#id SsmResourceDataSync#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/ssm_resource_data_sync#name SsmResourceDataSync#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/ssm_resource_data_sync#name SsmResourceDataSync#name}
   */
   readonly name: string;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/ssm_resource_data_sync#region SsmResourceDataSync#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/ssm_resource_data_sync#region SsmResourceDataSync#region}
   */
   readonly region?: string;
   /**
   * s3_destination block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/ssm_resource_data_sync#s3_destination SsmResourceDataSync#s3_destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/ssm_resource_data_sync#s3_destination SsmResourceDataSync#s3_destination}
   */
   readonly s3Destination: SsmResourceDataSyncS3Destination;
 }
+export interface SsmResourceDataSyncS3DestinationDestinationDataSharing {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/ssm_resource_data_sync#destination_data_sharing_type SsmResourceDataSync#destination_data_sharing_type}
+  */
+  readonly destinationDataSharingType?: string;
+}
+
+export function ssmResourceDataSyncS3DestinationDestinationDataSharingToTerraform(struct?: SsmResourceDataSyncS3DestinationDestinationDataSharingOutputReference | SsmResourceDataSyncS3DestinationDestinationDataSharing): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    destination_data_sharing_type: cdktn.stringToTerraform(struct!.destinationDataSharingType),
+  }
+}
+
+
+export function ssmResourceDataSyncS3DestinationDestinationDataSharingToHclTerraform(struct?: SsmResourceDataSyncS3DestinationDestinationDataSharingOutputReference | SsmResourceDataSyncS3DestinationDestinationDataSharing): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    destination_data_sharing_type: {
+      value: cdktn.stringToHclTerraform(struct!.destinationDataSharingType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class SsmResourceDataSyncS3DestinationDestinationDataSharingOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): SsmResourceDataSyncS3DestinationDestinationDataSharing | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._destinationDataSharingType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.destinationDataSharingType = this._destinationDataSharingType;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: SsmResourceDataSyncS3DestinationDestinationDataSharing | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._destinationDataSharingType = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._destinationDataSharingType = value.destinationDataSharingType;
+    }
+  }
+
+  // destination_data_sharing_type - computed: false, optional: true, required: false
+  private _destinationDataSharingType?: string; 
+  public get destinationDataSharingType() {
+    return this.getStringAttribute('destination_data_sharing_type');
+  }
+  public set destinationDataSharingType(value: string) {
+    this._destinationDataSharingType = value;
+  }
+  public resetDestinationDataSharingType() {
+    this._destinationDataSharingType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get destinationDataSharingTypeInput() {
+    return this._destinationDataSharingType;
+  }
+}
 export interface SsmResourceDataSyncS3Destination {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/ssm_resource_data_sync#bucket_name SsmResourceDataSync#bucket_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/ssm_resource_data_sync#bucket_name SsmResourceDataSync#bucket_name}
   */
   readonly bucketName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/ssm_resource_data_sync#kms_key_arn SsmResourceDataSync#kms_key_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/ssm_resource_data_sync#kms_key_arn SsmResourceDataSync#kms_key_arn}
   */
   readonly kmsKeyArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/ssm_resource_data_sync#prefix SsmResourceDataSync#prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/ssm_resource_data_sync#prefix SsmResourceDataSync#prefix}
   */
   readonly prefix?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/ssm_resource_data_sync#region SsmResourceDataSync#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/ssm_resource_data_sync#region SsmResourceDataSync#region}
   */
   readonly region: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/ssm_resource_data_sync#sync_format SsmResourceDataSync#sync_format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/ssm_resource_data_sync#sync_format SsmResourceDataSync#sync_format}
   */
   readonly syncFormat?: string;
+  /**
+  * destination_data_sharing block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/ssm_resource_data_sync#destination_data_sharing SsmResourceDataSync#destination_data_sharing}
+  */
+  readonly destinationDataSharing?: SsmResourceDataSyncS3DestinationDestinationDataSharing;
 }
 
 export function ssmResourceDataSyncS3DestinationToTerraform(struct?: SsmResourceDataSyncS3DestinationOutputReference | SsmResourceDataSyncS3Destination): any {
@@ -70,6 +160,7 @@ export function ssmResourceDataSyncS3DestinationToTerraform(struct?: SsmResource
     prefix: cdktn.stringToTerraform(struct!.prefix),
     region: cdktn.stringToTerraform(struct!.region),
     sync_format: cdktn.stringToTerraform(struct!.syncFormat),
+    destination_data_sharing: ssmResourceDataSyncS3DestinationDestinationDataSharingToTerraform(struct!.destinationDataSharing),
   }
 }
 
@@ -109,6 +200,12 @@ export function ssmResourceDataSyncS3DestinationToHclTerraform(struct?: SsmResou
       isBlock: false,
       type: "simple",
       storageClassType: "string",
+    },
+    destination_data_sharing: {
+      value: ssmResourceDataSyncS3DestinationDestinationDataSharingToHclTerraform(struct!.destinationDataSharing),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SsmResourceDataSyncS3DestinationDestinationDataSharingList",
     },
   };
 
@@ -150,6 +247,10 @@ export class SsmResourceDataSyncS3DestinationOutputReference extends cdktn.Compl
       hasAnyValues = true;
       internalValueResult.syncFormat = this._syncFormat;
     }
+    if (this._destinationDataSharing?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.destinationDataSharing = this._destinationDataSharing?.internalValue;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -161,6 +262,7 @@ export class SsmResourceDataSyncS3DestinationOutputReference extends cdktn.Compl
       this._prefix = undefined;
       this._region = undefined;
       this._syncFormat = undefined;
+      this._destinationDataSharing.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
@@ -169,6 +271,7 @@ export class SsmResourceDataSyncS3DestinationOutputReference extends cdktn.Compl
       this._prefix = value.prefix;
       this._region = value.region;
       this._syncFormat = value.syncFormat;
+      this._destinationDataSharing.internalValue = value.destinationDataSharing;
     }
   }
 
@@ -245,10 +348,26 @@ export class SsmResourceDataSyncS3DestinationOutputReference extends cdktn.Compl
   public get syncFormatInput() {
     return this._syncFormat;
   }
+
+  // destination_data_sharing - computed: false, optional: true, required: false
+  private _destinationDataSharing = new SsmResourceDataSyncS3DestinationDestinationDataSharingOutputReference(this, "destination_data_sharing");
+  public get destinationDataSharing() {
+    return this._destinationDataSharing;
+  }
+  public putDestinationDataSharing(value: SsmResourceDataSyncS3DestinationDestinationDataSharing) {
+    this._destinationDataSharing.internalValue = value;
+  }
+  public resetDestinationDataSharing() {
+    this._destinationDataSharing.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get destinationDataSharingInput() {
+    return this._destinationDataSharing.internalValue;
+  }
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/ssm_resource_data_sync aws_ssm_resource_data_sync}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/ssm_resource_data_sync aws_ssm_resource_data_sync}
 */
 export class SsmResourceDataSync extends cdktn.TerraformResource {
 
@@ -264,7 +383,7 @@ export class SsmResourceDataSync extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a SsmResourceDataSync resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SsmResourceDataSync to import
-  * @param importFromId The id of the existing SsmResourceDataSync that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/ssm_resource_data_sync#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing SsmResourceDataSync that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/ssm_resource_data_sync#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SsmResourceDataSync to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -276,7 +395,7 @@ export class SsmResourceDataSync extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/resources/ssm_resource_data_sync aws_ssm_resource_data_sync} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/ssm_resource_data_sync aws_ssm_resource_data_sync} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -287,7 +406,7 @@ export class SsmResourceDataSync extends cdktn.TerraformResource {
       terraformResourceType: 'aws_ssm_resource_data_sync',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.46.0',
+        providerVersion: '6.47.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

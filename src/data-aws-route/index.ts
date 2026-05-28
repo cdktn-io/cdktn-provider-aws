@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/data-sources/route
+// https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/data-sources/route
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,84 +13,88 @@ import * as cdktn from 'cdktn';
 
 export interface DataAwsRouteConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/data-sources/route#carrier_gateway_id DataAwsRoute#carrier_gateway_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/data-sources/route#carrier_gateway_id DataAwsRoute#carrier_gateway_id}
   */
   readonly carrierGatewayId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/data-sources/route#core_network_arn DataAwsRoute#core_network_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/data-sources/route#core_network_arn DataAwsRoute#core_network_arn}
   */
   readonly coreNetworkArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/data-sources/route#destination_cidr_block DataAwsRoute#destination_cidr_block}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/data-sources/route#destination_cidr_block DataAwsRoute#destination_cidr_block}
   */
   readonly destinationCidrBlock?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/data-sources/route#destination_ipv6_cidr_block DataAwsRoute#destination_ipv6_cidr_block}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/data-sources/route#destination_ipv6_cidr_block DataAwsRoute#destination_ipv6_cidr_block}
   */
   readonly destinationIpv6CidrBlock?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/data-sources/route#destination_prefix_list_id DataAwsRoute#destination_prefix_list_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/data-sources/route#destination_prefix_list_id DataAwsRoute#destination_prefix_list_id}
   */
   readonly destinationPrefixListId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/data-sources/route#egress_only_gateway_id DataAwsRoute#egress_only_gateway_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/data-sources/route#egress_only_gateway_id DataAwsRoute#egress_only_gateway_id}
   */
   readonly egressOnlyGatewayId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/data-sources/route#gateway_id DataAwsRoute#gateway_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/data-sources/route#gateway_id DataAwsRoute#gateway_id}
   */
   readonly gatewayId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/data-sources/route#id DataAwsRoute#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/data-sources/route#id DataAwsRoute#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/data-sources/route#instance_id DataAwsRoute#instance_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/data-sources/route#instance_id DataAwsRoute#instance_id}
   */
   readonly instanceId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/data-sources/route#local_gateway_id DataAwsRoute#local_gateway_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/data-sources/route#local_gateway_id DataAwsRoute#local_gateway_id}
   */
   readonly localGatewayId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/data-sources/route#nat_gateway_id DataAwsRoute#nat_gateway_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/data-sources/route#nat_gateway_id DataAwsRoute#nat_gateway_id}
   */
   readonly natGatewayId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/data-sources/route#network_interface_id DataAwsRoute#network_interface_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/data-sources/route#network_interface_id DataAwsRoute#network_interface_id}
   */
   readonly networkInterfaceId?: string;
   /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/data-sources/route#odb_network_arn DataAwsRoute#odb_network_arn}
+  */
+  readonly odbNetworkArn?: string;
+  /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/data-sources/route#region DataAwsRoute#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/data-sources/route#region DataAwsRoute#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/data-sources/route#route_table_id DataAwsRoute#route_table_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/data-sources/route#route_table_id DataAwsRoute#route_table_id}
   */
   readonly routeTableId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/data-sources/route#transit_gateway_id DataAwsRoute#transit_gateway_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/data-sources/route#transit_gateway_id DataAwsRoute#transit_gateway_id}
   */
   readonly transitGatewayId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/data-sources/route#vpc_peering_connection_id DataAwsRoute#vpc_peering_connection_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/data-sources/route#vpc_peering_connection_id DataAwsRoute#vpc_peering_connection_id}
   */
   readonly vpcPeeringConnectionId?: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/data-sources/route#timeouts DataAwsRoute#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/data-sources/route#timeouts DataAwsRoute#timeouts}
   */
   readonly timeouts?: DataAwsRouteTimeouts;
 }
 export interface DataAwsRouteTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/data-sources/route#read DataAwsRoute#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/data-sources/route#read DataAwsRoute#read}
   */
   readonly read?: string;
 }
@@ -184,7 +188,7 @@ export class DataAwsRouteTimeoutsOutputReference extends cdktn.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/data-sources/route aws_route}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/data-sources/route aws_route}
 */
 export class DataAwsRoute extends cdktn.TerraformDataSource {
 
@@ -200,7 +204,7 @@ export class DataAwsRoute extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataAwsRoute resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsRoute to import
-  * @param importFromId The id of the existing DataAwsRoute that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/data-sources/route#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsRoute that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/data-sources/route#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsRoute to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -212,7 +216,7 @@ export class DataAwsRoute extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.46.0/docs/data-sources/route aws_route} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/data-sources/route aws_route} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -223,7 +227,7 @@ export class DataAwsRoute extends cdktn.TerraformDataSource {
       terraformResourceType: 'aws_route',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.46.0',
+        providerVersion: '6.47.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
@@ -246,6 +250,7 @@ export class DataAwsRoute extends cdktn.TerraformDataSource {
     this._localGatewayId = config.localGatewayId;
     this._natGatewayId = config.natGatewayId;
     this._networkInterfaceId = config.networkInterfaceId;
+    this._odbNetworkArn = config.odbNetworkArn;
     this._region = config.region;
     this._routeTableId = config.routeTableId;
     this._transitGatewayId = config.transitGatewayId;
@@ -449,6 +454,22 @@ export class DataAwsRoute extends cdktn.TerraformDataSource {
     return this._networkInterfaceId;
   }
 
+  // odb_network_arn - computed: true, optional: true, required: false
+  private _odbNetworkArn?: string; 
+  public get odbNetworkArn() {
+    return this.getStringAttribute('odb_network_arn');
+  }
+  public set odbNetworkArn(value: string) {
+    this._odbNetworkArn = value;
+  }
+  public resetOdbNetworkArn() {
+    this._odbNetworkArn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get odbNetworkArnInput() {
+    return this._odbNetworkArn;
+  }
+
   // region - computed: true, optional: true, required: false
   private _region?: string; 
   public get region() {
@@ -544,6 +565,7 @@ export class DataAwsRoute extends cdktn.TerraformDataSource {
       local_gateway_id: cdktn.stringToTerraform(this._localGatewayId),
       nat_gateway_id: cdktn.stringToTerraform(this._natGatewayId),
       network_interface_id: cdktn.stringToTerraform(this._networkInterfaceId),
+      odb_network_arn: cdktn.stringToTerraform(this._odbNetworkArn),
       region: cdktn.stringToTerraform(this._region),
       route_table_id: cdktn.stringToTerraform(this._routeTableId),
       transit_gateway_id: cdktn.stringToTerraform(this._transitGatewayId),
@@ -622,6 +644,12 @@ export class DataAwsRoute extends cdktn.TerraformDataSource {
       },
       network_interface_id: {
         value: cdktn.stringToHclTerraform(this._networkInterfaceId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      odb_network_arn: {
+        value: cdktn.stringToHclTerraform(this._odbNetworkArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
