@@ -4,7 +4,7 @@
 
 ### DxHostedConnection <a name="DxHostedConnection" id="@cdktn/provider-aws.dxHostedConnection.DxHostedConnection"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/dx_hosted_connection aws_dx_hosted_connection}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/dx_hosted_connection aws_dx_hosted_connection}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dxHostedConnection.DxHostedConnection.Initializer"></a>
 
@@ -39,12 +39,12 @@ DxHostedConnection.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-aws.dxHostedConnection.DxHostedConnection.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dxHostedConnection.DxHostedConnection.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dxHostedConnection.DxHostedConnection.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dxHostedConnection.DxHostedConnection.Initializer.parameter.bandwidth">bandwidth</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/dx_hosted_connection#bandwidth DxHostedConnection#bandwidth}. |
-| <code><a href="#@cdktn/provider-aws.dxHostedConnection.DxHostedConnection.Initializer.parameter.connectionId">connectionId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/dx_hosted_connection#connection_id DxHostedConnection#connection_id}. |
-| <code><a href="#@cdktn/provider-aws.dxHostedConnection.DxHostedConnection.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/dx_hosted_connection#name DxHostedConnection#name}. |
-| <code><a href="#@cdktn/provider-aws.dxHostedConnection.DxHostedConnection.Initializer.parameter.ownerAccountId">ownerAccountId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/dx_hosted_connection#owner_account_id DxHostedConnection#owner_account_id}. |
-| <code><a href="#@cdktn/provider-aws.dxHostedConnection.DxHostedConnection.Initializer.parameter.vlan">vlan</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/dx_hosted_connection#vlan DxHostedConnection#vlan}. |
-| <code><a href="#@cdktn/provider-aws.dxHostedConnection.DxHostedConnection.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/dx_hosted_connection#id DxHostedConnection#id}. |
+| <code><a href="#@cdktn/provider-aws.dxHostedConnection.DxHostedConnection.Initializer.parameter.bandwidth">bandwidth</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/dx_hosted_connection#bandwidth DxHostedConnection#bandwidth}. |
+| <code><a href="#@cdktn/provider-aws.dxHostedConnection.DxHostedConnection.Initializer.parameter.connectionId">connectionId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/dx_hosted_connection#connection_id DxHostedConnection#connection_id}. |
+| <code><a href="#@cdktn/provider-aws.dxHostedConnection.DxHostedConnection.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/dx_hosted_connection#name DxHostedConnection#name}. |
+| <code><a href="#@cdktn/provider-aws.dxHostedConnection.DxHostedConnection.Initializer.parameter.ownerAccountId">ownerAccountId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/dx_hosted_connection#owner_account_id DxHostedConnection#owner_account_id}. |
+| <code><a href="#@cdktn/provider-aws.dxHostedConnection.DxHostedConnection.Initializer.parameter.vlan">vlan</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/dx_hosted_connection#vlan DxHostedConnection#vlan}. |
+| <code><a href="#@cdktn/provider-aws.dxHostedConnection.DxHostedConnection.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/dx_hosted_connection#id DxHostedConnection#id}. |
 
 ---
 
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/dx_hosted_connection#bandwidth DxHostedConnection#bandwidth}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/dx_hosted_connection#bandwidth DxHostedConnection#bandwidth}.
 
 ---
 
@@ -120,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/dx_hosted_connection#connection_id DxHostedConnection#connection_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/dx_hosted_connection#connection_id DxHostedConnection#connection_id}.
 
 ---
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/dx_hosted_connection#name DxHostedConnection#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/dx_hosted_connection#name DxHostedConnection#name}.
 
 ---
 
@@ -136,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/dx_hosted_connection#owner_account_id DxHostedConnection#owner_account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/dx_hosted_connection#owner_account_id DxHostedConnection#owner_account_id}.
 
 ---
 
@@ -144,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/dx_hosted_connection#vlan DxHostedConnection#vlan}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/dx_hosted_connection#vlan DxHostedConnection#vlan}.
 
 ---
 
@@ -152,7 +152,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/dx_hosted_connection#id DxHostedConnection#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/dx_hosted_connection#id DxHostedConnection#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -611,7 +611,7 @@ The construct id used in the generated config for the DxHostedConnection to impo
 
 The id of the existing DxHostedConnection that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/dx_hosted_connection#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/dx_hosted_connection#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1094,12 +1094,12 @@ DxHostedConnectionConfig.builder()
 | <code><a href="#@cdktn/provider-aws.dxHostedConnection.DxHostedConnectionConfig.property.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dxHostedConnection.DxHostedConnectionConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dxHostedConnection.DxHostedConnectionConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dxHostedConnection.DxHostedConnectionConfig.property.bandwidth">bandwidth</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/dx_hosted_connection#bandwidth DxHostedConnection#bandwidth}. |
-| <code><a href="#@cdktn/provider-aws.dxHostedConnection.DxHostedConnectionConfig.property.connectionId">connectionId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/dx_hosted_connection#connection_id DxHostedConnection#connection_id}. |
-| <code><a href="#@cdktn/provider-aws.dxHostedConnection.DxHostedConnectionConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/dx_hosted_connection#name DxHostedConnection#name}. |
-| <code><a href="#@cdktn/provider-aws.dxHostedConnection.DxHostedConnectionConfig.property.ownerAccountId">ownerAccountId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/dx_hosted_connection#owner_account_id DxHostedConnection#owner_account_id}. |
-| <code><a href="#@cdktn/provider-aws.dxHostedConnection.DxHostedConnectionConfig.property.vlan">vlan</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/dx_hosted_connection#vlan DxHostedConnection#vlan}. |
-| <code><a href="#@cdktn/provider-aws.dxHostedConnection.DxHostedConnectionConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/dx_hosted_connection#id DxHostedConnection#id}. |
+| <code><a href="#@cdktn/provider-aws.dxHostedConnection.DxHostedConnectionConfig.property.bandwidth">bandwidth</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/dx_hosted_connection#bandwidth DxHostedConnection#bandwidth}. |
+| <code><a href="#@cdktn/provider-aws.dxHostedConnection.DxHostedConnectionConfig.property.connectionId">connectionId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/dx_hosted_connection#connection_id DxHostedConnection#connection_id}. |
+| <code><a href="#@cdktn/provider-aws.dxHostedConnection.DxHostedConnectionConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/dx_hosted_connection#name DxHostedConnection#name}. |
+| <code><a href="#@cdktn/provider-aws.dxHostedConnection.DxHostedConnectionConfig.property.ownerAccountId">ownerAccountId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/dx_hosted_connection#owner_account_id DxHostedConnection#owner_account_id}. |
+| <code><a href="#@cdktn/provider-aws.dxHostedConnection.DxHostedConnectionConfig.property.vlan">vlan</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/dx_hosted_connection#vlan DxHostedConnection#vlan}. |
+| <code><a href="#@cdktn/provider-aws.dxHostedConnection.DxHostedConnectionConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/dx_hosted_connection#id DxHostedConnection#id}. |
 
 ---
 
@@ -1181,7 +1181,7 @@ public java.lang.String getBandwidth();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/dx_hosted_connection#bandwidth DxHostedConnection#bandwidth}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/dx_hosted_connection#bandwidth DxHostedConnection#bandwidth}.
 
 ---
 
@@ -1193,7 +1193,7 @@ public java.lang.String getConnectionId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/dx_hosted_connection#connection_id DxHostedConnection#connection_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/dx_hosted_connection#connection_id DxHostedConnection#connection_id}.
 
 ---
 
@@ -1205,7 +1205,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/dx_hosted_connection#name DxHostedConnection#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/dx_hosted_connection#name DxHostedConnection#name}.
 
 ---
 
@@ -1217,7 +1217,7 @@ public java.lang.String getOwnerAccountId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/dx_hosted_connection#owner_account_id DxHostedConnection#owner_account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/dx_hosted_connection#owner_account_id DxHostedConnection#owner_account_id}.
 
 ---
 
@@ -1229,7 +1229,7 @@ public java.lang.Number getVlan();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/dx_hosted_connection#vlan DxHostedConnection#vlan}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/dx_hosted_connection#vlan DxHostedConnection#vlan}.
 
 ---
 
@@ -1241,7 +1241,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/dx_hosted_connection#id DxHostedConnection#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/dx_hosted_connection#id DxHostedConnection#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

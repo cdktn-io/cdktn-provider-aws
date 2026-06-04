@@ -4,7 +4,7 @@
 
 ### LambdaAlias <a name="LambdaAlias" id="@cdktn/provider-aws.lambdaAlias.LambdaAlias"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/lambda_alias aws_lambda_alias}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/lambda_alias aws_lambda_alias}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lambdaAlias.LambdaAlias.Initializer"></a>
 
@@ -27,7 +27,8 @@ lambdaAlias.LambdaAlias(
   description: str = None,
   id: str = None,
   region: str = None,
-  routing_config: LambdaAliasRoutingConfig = None
+  routing_config: LambdaAliasRoutingConfig = None,
+  timeouts: LambdaAliasTimeouts = None
 )
 ```
 
@@ -42,13 +43,14 @@ lambdaAlias.LambdaAlias(
 | <code><a href="#@cdktn/provider-aws.lambdaAlias.LambdaAlias.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.lambdaAlias.LambdaAlias.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.lambdaAlias.LambdaAlias.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.lambdaAlias.LambdaAlias.Initializer.parameter.functionName">function_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/lambda_alias#function_name LambdaAlias#function_name}. |
-| <code><a href="#@cdktn/provider-aws.lambdaAlias.LambdaAlias.Initializer.parameter.functionVersion">function_version</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/lambda_alias#function_version LambdaAlias#function_version}. |
-| <code><a href="#@cdktn/provider-aws.lambdaAlias.LambdaAlias.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/lambda_alias#name LambdaAlias#name}. |
-| <code><a href="#@cdktn/provider-aws.lambdaAlias.LambdaAlias.Initializer.parameter.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/lambda_alias#description LambdaAlias#description}. |
-| <code><a href="#@cdktn/provider-aws.lambdaAlias.LambdaAlias.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/lambda_alias#id LambdaAlias#id}. |
+| <code><a href="#@cdktn/provider-aws.lambdaAlias.LambdaAlias.Initializer.parameter.functionName">function_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/lambda_alias#function_name LambdaAlias#function_name}. |
+| <code><a href="#@cdktn/provider-aws.lambdaAlias.LambdaAlias.Initializer.parameter.functionVersion">function_version</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/lambda_alias#function_version LambdaAlias#function_version}. |
+| <code><a href="#@cdktn/provider-aws.lambdaAlias.LambdaAlias.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/lambda_alias#name LambdaAlias#name}. |
+| <code><a href="#@cdktn/provider-aws.lambdaAlias.LambdaAlias.Initializer.parameter.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/lambda_alias#description LambdaAlias#description}. |
+| <code><a href="#@cdktn/provider-aws.lambdaAlias.LambdaAlias.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/lambda_alias#id LambdaAlias#id}. |
 | <code><a href="#@cdktn/provider-aws.lambdaAlias.LambdaAlias.Initializer.parameter.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktn/provider-aws.lambdaAlias.LambdaAlias.Initializer.parameter.routingConfig">routing_config</a></code> | <code><a href="#@cdktn/provider-aws.lambdaAlias.LambdaAliasRoutingConfig">LambdaAliasRoutingConfig</a></code> | routing_config block. |
+| <code><a href="#@cdktn/provider-aws.lambdaAlias.LambdaAlias.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-aws.lambdaAlias.LambdaAliasTimeouts">LambdaAliasTimeouts</a></code> | timeouts block. |
 
 ---
 
@@ -116,7 +118,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/lambda_alias#function_name LambdaAlias#function_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/lambda_alias#function_name LambdaAlias#function_name}.
 
 ---
 
@@ -124,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/lambda_alias#function_version LambdaAlias#function_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/lambda_alias#function_version LambdaAlias#function_version}.
 
 ---
 
@@ -132,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/lambda_alias#name LambdaAlias#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/lambda_alias#name LambdaAlias#name}.
 
 ---
 
@@ -140,7 +142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/lambda_alias#description LambdaAlias#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/lambda_alias#description LambdaAlias#description}.
 
 ---
 
@@ -148,7 +150,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/lambda_alias#id LambdaAlias#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/lambda_alias#id LambdaAlias#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -161,7 +163,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/lambda_alias#region LambdaAlias#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/lambda_alias#region LambdaAlias#region}
 
 ---
 
@@ -171,7 +173,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 routing_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/lambda_alias#routing_config LambdaAlias#routing_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/lambda_alias#routing_config LambdaAlias#routing_config}
+
+---
+
+##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktn/provider-aws.lambdaAlias.LambdaAlias.Initializer.parameter.timeouts"></a>
+
+- *Type:* <a href="#@cdktn/provider-aws.lambdaAlias.LambdaAliasTimeouts">LambdaAliasTimeouts</a>
+
+timeouts block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/lambda_alias#timeouts LambdaAlias#timeouts}
 
 ---
 
@@ -204,10 +216,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-aws.lambdaAlias.LambdaAlias.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-aws.lambdaAlias.LambdaAlias.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-aws.lambdaAlias.LambdaAlias.putRoutingConfig">put_routing_config</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lambdaAlias.LambdaAlias.putTimeouts">put_timeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.lambdaAlias.LambdaAlias.resetDescription">reset_description</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.lambdaAlias.LambdaAlias.resetId">reset_id</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.lambdaAlias.LambdaAlias.resetRegion">reset_region</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.lambdaAlias.LambdaAlias.resetRoutingConfig">reset_routing_config</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lambdaAlias.LambdaAlias.resetTimeouts">reset_timeouts</a></code> | *No description.* |
 
 ---
 
@@ -571,7 +585,23 @@ def put_routing_config(
 
 - *Type:* typing.Mapping[typing.Union[int, float]]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/lambda_alias#additional_version_weights LambdaAlias#additional_version_weights}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/lambda_alias#additional_version_weights LambdaAlias#additional_version_weights}.
+
+---
+
+##### `put_timeouts` <a name="put_timeouts" id="@cdktn/provider-aws.lambdaAlias.LambdaAlias.putTimeouts"></a>
+
+```python
+def put_timeouts(
+  update: str = None
+) -> None
+```
+
+###### `update`<sup>Optional</sup> <a name="update" id="@cdktn/provider-aws.lambdaAlias.LambdaAlias.putTimeouts.parameter.update"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/lambda_alias#update LambdaAlias#update}.
 
 ---
 
@@ -597,6 +627,12 @@ def reset_region() -> None
 
 ```python
 def reset_routing_config() -> None
+```
+
+##### `reset_timeouts` <a name="reset_timeouts" id="@cdktn/provider-aws.lambdaAlias.LambdaAlias.resetTimeouts"></a>
+
+```python
+def reset_timeouts() -> None
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -713,7 +749,7 @@ The construct id used in the generated config for the LambdaAlias to import.
 
 The id of the existing LambdaAlias that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/lambda_alias#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/lambda_alias#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -746,6 +782,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0
 | <code><a href="#@cdktn/provider-aws.lambdaAlias.LambdaAlias.property.arn">arn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.lambdaAlias.LambdaAlias.property.invokeArn">invoke_arn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.lambdaAlias.LambdaAlias.property.routingConfig">routing_config</a></code> | <code><a href="#@cdktn/provider-aws.lambdaAlias.LambdaAliasRoutingConfigOutputReference">LambdaAliasRoutingConfigOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lambdaAlias.LambdaAlias.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-aws.lambdaAlias.LambdaAliasTimeoutsOutputReference">LambdaAliasTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.lambdaAlias.LambdaAlias.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.lambdaAlias.LambdaAlias.property.functionNameInput">function_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.lambdaAlias.LambdaAlias.property.functionVersionInput">function_version_input</a></code> | <code>str</code> | *No description.* |
@@ -753,6 +790,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0
 | <code><a href="#@cdktn/provider-aws.lambdaAlias.LambdaAlias.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.lambdaAlias.LambdaAlias.property.regionInput">region_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.lambdaAlias.LambdaAlias.property.routingConfigInput">routing_config_input</a></code> | <code><a href="#@cdktn/provider-aws.lambdaAlias.LambdaAliasRoutingConfig">LambdaAliasRoutingConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lambdaAlias.LambdaAlias.property.timeoutsInput">timeouts_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.lambdaAlias.LambdaAliasTimeouts">LambdaAliasTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.lambdaAlias.LambdaAlias.property.description">description</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.lambdaAlias.LambdaAlias.property.functionName">function_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.lambdaAlias.LambdaAlias.property.functionVersion">function_version</a></code> | <code>str</code> | *No description.* |
@@ -934,6 +972,16 @@ routing_config: LambdaAliasRoutingConfigOutputReference
 
 ---
 
+##### `timeouts`<sup>Required</sup> <a name="timeouts" id="@cdktn/provider-aws.lambdaAlias.LambdaAlias.property.timeouts"></a>
+
+```python
+timeouts: LambdaAliasTimeoutsOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.lambdaAlias.LambdaAliasTimeoutsOutputReference">LambdaAliasTimeoutsOutputReference</a>
+
+---
+
 ##### `description_input`<sup>Optional</sup> <a name="description_input" id="@cdktn/provider-aws.lambdaAlias.LambdaAlias.property.descriptionInput"></a>
 
 ```python
@@ -1001,6 +1049,16 @@ routing_config_input: LambdaAliasRoutingConfig
 ```
 
 - *Type:* <a href="#@cdktn/provider-aws.lambdaAlias.LambdaAliasRoutingConfig">LambdaAliasRoutingConfig</a>
+
+---
+
+##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktn/provider-aws.lambdaAlias.LambdaAlias.property.timeoutsInput"></a>
+
+```python
+timeouts_input: IResolvable | LambdaAliasTimeouts
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.lambdaAlias.LambdaAliasTimeouts">LambdaAliasTimeouts</a>
 
 ---
 
@@ -1105,7 +1163,8 @@ lambdaAlias.LambdaAliasConfig(
   description: str = None,
   id: str = None,
   region: str = None,
-  routing_config: LambdaAliasRoutingConfig = None
+  routing_config: LambdaAliasRoutingConfig = None,
+  timeouts: LambdaAliasTimeouts = None
 )
 ```
 
@@ -1120,13 +1179,14 @@ lambdaAlias.LambdaAliasConfig(
 | <code><a href="#@cdktn/provider-aws.lambdaAlias.LambdaAliasConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.lambdaAlias.LambdaAliasConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.lambdaAlias.LambdaAliasConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.lambdaAlias.LambdaAliasConfig.property.functionName">function_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/lambda_alias#function_name LambdaAlias#function_name}. |
-| <code><a href="#@cdktn/provider-aws.lambdaAlias.LambdaAliasConfig.property.functionVersion">function_version</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/lambda_alias#function_version LambdaAlias#function_version}. |
-| <code><a href="#@cdktn/provider-aws.lambdaAlias.LambdaAliasConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/lambda_alias#name LambdaAlias#name}. |
-| <code><a href="#@cdktn/provider-aws.lambdaAlias.LambdaAliasConfig.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/lambda_alias#description LambdaAlias#description}. |
-| <code><a href="#@cdktn/provider-aws.lambdaAlias.LambdaAliasConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/lambda_alias#id LambdaAlias#id}. |
+| <code><a href="#@cdktn/provider-aws.lambdaAlias.LambdaAliasConfig.property.functionName">function_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/lambda_alias#function_name LambdaAlias#function_name}. |
+| <code><a href="#@cdktn/provider-aws.lambdaAlias.LambdaAliasConfig.property.functionVersion">function_version</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/lambda_alias#function_version LambdaAlias#function_version}. |
+| <code><a href="#@cdktn/provider-aws.lambdaAlias.LambdaAliasConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/lambda_alias#name LambdaAlias#name}. |
+| <code><a href="#@cdktn/provider-aws.lambdaAlias.LambdaAliasConfig.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/lambda_alias#description LambdaAlias#description}. |
+| <code><a href="#@cdktn/provider-aws.lambdaAlias.LambdaAliasConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/lambda_alias#id LambdaAlias#id}. |
 | <code><a href="#@cdktn/provider-aws.lambdaAlias.LambdaAliasConfig.property.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktn/provider-aws.lambdaAlias.LambdaAliasConfig.property.routingConfig">routing_config</a></code> | <code><a href="#@cdktn/provider-aws.lambdaAlias.LambdaAliasRoutingConfig">LambdaAliasRoutingConfig</a></code> | routing_config block. |
+| <code><a href="#@cdktn/provider-aws.lambdaAlias.LambdaAliasConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-aws.lambdaAlias.LambdaAliasTimeouts">LambdaAliasTimeouts</a></code> | timeouts block. |
 
 ---
 
@@ -1208,7 +1268,7 @@ function_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/lambda_alias#function_name LambdaAlias#function_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/lambda_alias#function_name LambdaAlias#function_name}.
 
 ---
 
@@ -1220,7 +1280,7 @@ function_version: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/lambda_alias#function_version LambdaAlias#function_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/lambda_alias#function_version LambdaAlias#function_version}.
 
 ---
 
@@ -1232,7 +1292,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/lambda_alias#name LambdaAlias#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/lambda_alias#name LambdaAlias#name}.
 
 ---
 
@@ -1244,7 +1304,7 @@ description: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/lambda_alias#description LambdaAlias#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/lambda_alias#description LambdaAlias#description}.
 
 ---
 
@@ -1256,7 +1316,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/lambda_alias#id LambdaAlias#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/lambda_alias#id LambdaAlias#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1273,7 +1333,7 @@ region: str
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/lambda_alias#region LambdaAlias#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/lambda_alias#region LambdaAlias#region}
 
 ---
 
@@ -1287,7 +1347,21 @@ routing_config: LambdaAliasRoutingConfig
 
 routing_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/lambda_alias#routing_config LambdaAlias#routing_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/lambda_alias#routing_config LambdaAlias#routing_config}
+
+---
+
+##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktn/provider-aws.lambdaAlias.LambdaAliasConfig.property.timeouts"></a>
+
+```python
+timeouts: LambdaAliasTimeouts
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.lambdaAlias.LambdaAliasTimeouts">LambdaAliasTimeouts</a>
+
+timeouts block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/lambda_alias#timeouts LambdaAlias#timeouts}
 
 ---
 
@@ -1307,7 +1381,7 @@ lambdaAlias.LambdaAliasRoutingConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lambdaAlias.LambdaAliasRoutingConfig.property.additionalVersionWeights">additional_version_weights</a></code> | <code>typing.Mapping[typing.Union[int, float]]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/lambda_alias#additional_version_weights LambdaAlias#additional_version_weights}. |
+| <code><a href="#@cdktn/provider-aws.lambdaAlias.LambdaAliasRoutingConfig.property.additionalVersionWeights">additional_version_weights</a></code> | <code>typing.Mapping[typing.Union[int, float]]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/lambda_alias#additional_version_weights LambdaAlias#additional_version_weights}. |
 
 ---
 
@@ -1319,7 +1393,39 @@ additional_version_weights: typing.Mapping[typing.Union[int, float]]
 
 - *Type:* typing.Mapping[typing.Union[int, float]]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/lambda_alias#additional_version_weights LambdaAlias#additional_version_weights}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/lambda_alias#additional_version_weights LambdaAlias#additional_version_weights}.
+
+---
+
+### LambdaAliasTimeouts <a name="LambdaAliasTimeouts" id="@cdktn/provider-aws.lambdaAlias.LambdaAliasTimeouts"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.lambdaAlias.LambdaAliasTimeouts.Initializer"></a>
+
+```python
+from cdktn_provider_aws import lambda_alias
+
+lambdaAlias.LambdaAliasTimeouts(
+  update: str = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.lambdaAlias.LambdaAliasTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/lambda_alias#update LambdaAlias#update}. |
+
+---
+
+##### `update`<sup>Optional</sup> <a name="update" id="@cdktn/provider-aws.lambdaAlias.LambdaAliasTimeouts.property.update"></a>
+
+```python
+update: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/lambda_alias#update LambdaAlias#update}.
 
 ---
 
@@ -1624,6 +1730,309 @@ internal_value: LambdaAliasRoutingConfig
 ```
 
 - *Type:* <a href="#@cdktn/provider-aws.lambdaAlias.LambdaAliasRoutingConfig">LambdaAliasRoutingConfig</a>
+
+---
+
+
+### LambdaAliasTimeoutsOutputReference <a name="LambdaAliasTimeoutsOutputReference" id="@cdktn/provider-aws.lambdaAlias.LambdaAliasTimeoutsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.lambdaAlias.LambdaAliasTimeoutsOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_aws import lambda_alias
+
+lambdaAlias.LambdaAliasTimeoutsOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.lambdaAlias.LambdaAliasTimeoutsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.lambdaAlias.LambdaAliasTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.lambdaAlias.LambdaAliasTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.lambdaAlias.LambdaAliasTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-aws.lambdaAlias.LambdaAliasTimeoutsOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lambdaAlias.LambdaAliasTimeoutsOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lambdaAlias.LambdaAliasTimeoutsOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lambdaAlias.LambdaAliasTimeoutsOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lambdaAlias.LambdaAliasTimeoutsOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lambdaAlias.LambdaAliasTimeoutsOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lambdaAlias.LambdaAliasTimeoutsOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lambdaAlias.LambdaAliasTimeoutsOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lambdaAlias.LambdaAliasTimeoutsOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lambdaAlias.LambdaAliasTimeoutsOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lambdaAlias.LambdaAliasTimeoutsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lambdaAlias.LambdaAliasTimeoutsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.lambdaAlias.LambdaAliasTimeoutsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.lambdaAlias.LambdaAliasTimeoutsOutputReference.resetUpdate">reset_update</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-aws.lambdaAlias.LambdaAliasTimeoutsOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-aws.lambdaAlias.LambdaAliasTimeoutsOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.lambdaAlias.LambdaAliasTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-aws.lambdaAlias.LambdaAliasTimeoutsOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.lambdaAlias.LambdaAliasTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-aws.lambdaAlias.LambdaAliasTimeoutsOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.lambdaAlias.LambdaAliasTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-aws.lambdaAlias.LambdaAliasTimeoutsOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.lambdaAlias.LambdaAliasTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-aws.lambdaAlias.LambdaAliasTimeoutsOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.lambdaAlias.LambdaAliasTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-aws.lambdaAlias.LambdaAliasTimeoutsOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.lambdaAlias.LambdaAliasTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-aws.lambdaAlias.LambdaAliasTimeoutsOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.lambdaAlias.LambdaAliasTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-aws.lambdaAlias.LambdaAliasTimeoutsOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.lambdaAlias.LambdaAliasTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-aws.lambdaAlias.LambdaAliasTimeoutsOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.lambdaAlias.LambdaAliasTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-aws.lambdaAlias.LambdaAliasTimeoutsOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-aws.lambdaAlias.LambdaAliasTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-aws.lambdaAlias.LambdaAliasTimeoutsOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.lambdaAlias.LambdaAliasTimeoutsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-aws.lambdaAlias.LambdaAliasTimeoutsOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `reset_update` <a name="reset_update" id="@cdktn/provider-aws.lambdaAlias.LambdaAliasTimeoutsOutputReference.resetUpdate"></a>
+
+```python
+def reset_update() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.lambdaAlias.LambdaAliasTimeoutsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.lambdaAlias.LambdaAliasTimeoutsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lambdaAlias.LambdaAliasTimeoutsOutputReference.property.updateInput">update_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lambdaAlias.LambdaAliasTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lambdaAlias.LambdaAliasTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-aws.lambdaAlias.LambdaAliasTimeouts">LambdaAliasTimeouts</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-aws.lambdaAlias.LambdaAliasTimeoutsOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.lambdaAlias.LambdaAliasTimeoutsOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `update_input`<sup>Optional</sup> <a name="update_input" id="@cdktn/provider-aws.lambdaAlias.LambdaAliasTimeoutsOutputReference.property.updateInput"></a>
+
+```python
+update_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `update`<sup>Required</sup> <a name="update" id="@cdktn/provider-aws.lambdaAlias.LambdaAliasTimeoutsOutputReference.property.update"></a>
+
+```python
+update: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-aws.lambdaAlias.LambdaAliasTimeoutsOutputReference.property.internalValue"></a>
+
+```python
+internal_value: IResolvable | LambdaAliasTimeouts
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-aws.lambdaAlias.LambdaAliasTimeouts">LambdaAliasTimeouts</a>
 
 ---
 

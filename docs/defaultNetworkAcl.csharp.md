@@ -4,7 +4,7 @@
 
 ### DefaultNetworkAcl <a name="DefaultNetworkAcl" id="@cdktn/provider-aws.defaultNetworkAcl.DefaultNetworkAcl"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/default_network_acl aws_default_network_acl}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/default_network_acl aws_default_network_acl}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.defaultNetworkAcl.DefaultNetworkAcl.Initializer"></a>
 
@@ -564,7 +564,7 @@ The construct id used in the generated config for the DefaultNetworkAcl to impor
 
 The id of the existing DefaultNetworkAcl that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/default_network_acl#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/default_network_acl#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1005,14 +1005,14 @@ new DefaultNetworkAclConfig {
 | <code><a href="#@cdktn/provider-aws.defaultNetworkAcl.DefaultNetworkAclConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.defaultNetworkAcl.DefaultNetworkAclConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.defaultNetworkAcl.DefaultNetworkAclConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.defaultNetworkAcl.DefaultNetworkAclConfig.property.defaultNetworkAclId">DefaultNetworkAclId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/default_network_acl#default_network_acl_id DefaultNetworkAcl#default_network_acl_id}. |
+| <code><a href="#@cdktn/provider-aws.defaultNetworkAcl.DefaultNetworkAclConfig.property.defaultNetworkAclId">DefaultNetworkAclId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/default_network_acl#default_network_acl_id DefaultNetworkAcl#default_network_acl_id}. |
 | <code><a href="#@cdktn/provider-aws.defaultNetworkAcl.DefaultNetworkAclConfig.property.egress">Egress</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-aws.defaultNetworkAcl.DefaultNetworkAclEgress">DefaultNetworkAclEgress</a>[]</code> | egress block. |
-| <code><a href="#@cdktn/provider-aws.defaultNetworkAcl.DefaultNetworkAclConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/default_network_acl#id DefaultNetworkAcl#id}. |
+| <code><a href="#@cdktn/provider-aws.defaultNetworkAcl.DefaultNetworkAclConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/default_network_acl#id DefaultNetworkAcl#id}. |
 | <code><a href="#@cdktn/provider-aws.defaultNetworkAcl.DefaultNetworkAclConfig.property.ingress">Ingress</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-aws.defaultNetworkAcl.DefaultNetworkAclIngress">DefaultNetworkAclIngress</a>[]</code> | ingress block. |
 | <code><a href="#@cdktn/provider-aws.defaultNetworkAcl.DefaultNetworkAclConfig.property.region">Region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.defaultNetworkAcl.DefaultNetworkAclConfig.property.subnetIds">SubnetIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/default_network_acl#subnet_ids DefaultNetworkAcl#subnet_ids}. |
-| <code><a href="#@cdktn/provider-aws.defaultNetworkAcl.DefaultNetworkAclConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/default_network_acl#tags DefaultNetworkAcl#tags}. |
-| <code><a href="#@cdktn/provider-aws.defaultNetworkAcl.DefaultNetworkAclConfig.property.tagsAll">TagsAll</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/default_network_acl#tags_all DefaultNetworkAcl#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.defaultNetworkAcl.DefaultNetworkAclConfig.property.subnetIds">SubnetIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/default_network_acl#subnet_ids DefaultNetworkAcl#subnet_ids}. |
+| <code><a href="#@cdktn/provider-aws.defaultNetworkAcl.DefaultNetworkAclConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/default_network_acl#tags DefaultNetworkAcl#tags}. |
+| <code><a href="#@cdktn/provider-aws.defaultNetworkAcl.DefaultNetworkAclConfig.property.tagsAll">TagsAll</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/default_network_acl#tags_all DefaultNetworkAcl#tags_all}. |
 
 ---
 
@@ -1094,7 +1094,7 @@ public string DefaultNetworkAclId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/default_network_acl#default_network_acl_id DefaultNetworkAcl#default_network_acl_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/default_network_acl#default_network_acl_id DefaultNetworkAcl#default_network_acl_id}.
 
 ---
 
@@ -1108,7 +1108,7 @@ public IResolvable|DefaultNetworkAclEgress[] Egress { get; set; }
 
 egress block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/default_network_acl#egress DefaultNetworkAcl#egress}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/default_network_acl#egress DefaultNetworkAcl#egress}
 
 ---
 
@@ -1120,7 +1120,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/default_network_acl#id DefaultNetworkAcl#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/default_network_acl#id DefaultNetworkAcl#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1137,7 +1137,7 @@ public IResolvable|DefaultNetworkAclIngress[] Ingress { get; set; }
 
 ingress block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/default_network_acl#ingress DefaultNetworkAcl#ingress}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/default_network_acl#ingress DefaultNetworkAcl#ingress}
 
 ---
 
@@ -1151,7 +1151,7 @@ public string Region { get; set; }
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/default_network_acl#region DefaultNetworkAcl#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/default_network_acl#region DefaultNetworkAcl#region}
 
 ---
 
@@ -1163,7 +1163,7 @@ public string[] SubnetIds { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/default_network_acl#subnet_ids DefaultNetworkAcl#subnet_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/default_network_acl#subnet_ids DefaultNetworkAcl#subnet_ids}.
 
 ---
 
@@ -1175,7 +1175,7 @@ public System.Collections.Generic.IDictionary<string, string> Tags { get; set; }
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/default_network_acl#tags DefaultNetworkAcl#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/default_network_acl#tags DefaultNetworkAcl#tags}.
 
 ---
 
@@ -1187,7 +1187,7 @@ public System.Collections.Generic.IDictionary<string, string> TagsAll { get; set
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/default_network_acl#tags_all DefaultNetworkAcl#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/default_network_acl#tags_all DefaultNetworkAcl#tags_all}.
 
 ---
 
@@ -1215,15 +1215,15 @@ new DefaultNetworkAclEgress {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.defaultNetworkAcl.DefaultNetworkAclEgress.property.action">Action</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/default_network_acl#action DefaultNetworkAcl#action}. |
-| <code><a href="#@cdktn/provider-aws.defaultNetworkAcl.DefaultNetworkAclEgress.property.fromPort">FromPort</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/default_network_acl#from_port DefaultNetworkAcl#from_port}. |
-| <code><a href="#@cdktn/provider-aws.defaultNetworkAcl.DefaultNetworkAclEgress.property.protocol">Protocol</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/default_network_acl#protocol DefaultNetworkAcl#protocol}. |
-| <code><a href="#@cdktn/provider-aws.defaultNetworkAcl.DefaultNetworkAclEgress.property.ruleNo">RuleNo</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/default_network_acl#rule_no DefaultNetworkAcl#rule_no}. |
-| <code><a href="#@cdktn/provider-aws.defaultNetworkAcl.DefaultNetworkAclEgress.property.toPort">ToPort</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/default_network_acl#to_port DefaultNetworkAcl#to_port}. |
-| <code><a href="#@cdktn/provider-aws.defaultNetworkAcl.DefaultNetworkAclEgress.property.cidrBlock">CidrBlock</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/default_network_acl#cidr_block DefaultNetworkAcl#cidr_block}. |
-| <code><a href="#@cdktn/provider-aws.defaultNetworkAcl.DefaultNetworkAclEgress.property.icmpCode">IcmpCode</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/default_network_acl#icmp_code DefaultNetworkAcl#icmp_code}. |
-| <code><a href="#@cdktn/provider-aws.defaultNetworkAcl.DefaultNetworkAclEgress.property.icmpType">IcmpType</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/default_network_acl#icmp_type DefaultNetworkAcl#icmp_type}. |
-| <code><a href="#@cdktn/provider-aws.defaultNetworkAcl.DefaultNetworkAclEgress.property.ipv6CidrBlock">Ipv6CidrBlock</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/default_network_acl#ipv6_cidr_block DefaultNetworkAcl#ipv6_cidr_block}. |
+| <code><a href="#@cdktn/provider-aws.defaultNetworkAcl.DefaultNetworkAclEgress.property.action">Action</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/default_network_acl#action DefaultNetworkAcl#action}. |
+| <code><a href="#@cdktn/provider-aws.defaultNetworkAcl.DefaultNetworkAclEgress.property.fromPort">FromPort</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/default_network_acl#from_port DefaultNetworkAcl#from_port}. |
+| <code><a href="#@cdktn/provider-aws.defaultNetworkAcl.DefaultNetworkAclEgress.property.protocol">Protocol</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/default_network_acl#protocol DefaultNetworkAcl#protocol}. |
+| <code><a href="#@cdktn/provider-aws.defaultNetworkAcl.DefaultNetworkAclEgress.property.ruleNo">RuleNo</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/default_network_acl#rule_no DefaultNetworkAcl#rule_no}. |
+| <code><a href="#@cdktn/provider-aws.defaultNetworkAcl.DefaultNetworkAclEgress.property.toPort">ToPort</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/default_network_acl#to_port DefaultNetworkAcl#to_port}. |
+| <code><a href="#@cdktn/provider-aws.defaultNetworkAcl.DefaultNetworkAclEgress.property.cidrBlock">CidrBlock</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/default_network_acl#cidr_block DefaultNetworkAcl#cidr_block}. |
+| <code><a href="#@cdktn/provider-aws.defaultNetworkAcl.DefaultNetworkAclEgress.property.icmpCode">IcmpCode</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/default_network_acl#icmp_code DefaultNetworkAcl#icmp_code}. |
+| <code><a href="#@cdktn/provider-aws.defaultNetworkAcl.DefaultNetworkAclEgress.property.icmpType">IcmpType</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/default_network_acl#icmp_type DefaultNetworkAcl#icmp_type}. |
+| <code><a href="#@cdktn/provider-aws.defaultNetworkAcl.DefaultNetworkAclEgress.property.ipv6CidrBlock">Ipv6CidrBlock</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/default_network_acl#ipv6_cidr_block DefaultNetworkAcl#ipv6_cidr_block}. |
 
 ---
 
@@ -1235,7 +1235,7 @@ public string Action { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/default_network_acl#action DefaultNetworkAcl#action}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/default_network_acl#action DefaultNetworkAcl#action}.
 
 ---
 
@@ -1247,7 +1247,7 @@ public double FromPort { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/default_network_acl#from_port DefaultNetworkAcl#from_port}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/default_network_acl#from_port DefaultNetworkAcl#from_port}.
 
 ---
 
@@ -1259,7 +1259,7 @@ public string Protocol { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/default_network_acl#protocol DefaultNetworkAcl#protocol}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/default_network_acl#protocol DefaultNetworkAcl#protocol}.
 
 ---
 
@@ -1271,7 +1271,7 @@ public double RuleNo { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/default_network_acl#rule_no DefaultNetworkAcl#rule_no}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/default_network_acl#rule_no DefaultNetworkAcl#rule_no}.
 
 ---
 
@@ -1283,7 +1283,7 @@ public double ToPort { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/default_network_acl#to_port DefaultNetworkAcl#to_port}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/default_network_acl#to_port DefaultNetworkAcl#to_port}.
 
 ---
 
@@ -1295,7 +1295,7 @@ public string CidrBlock { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/default_network_acl#cidr_block DefaultNetworkAcl#cidr_block}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/default_network_acl#cidr_block DefaultNetworkAcl#cidr_block}.
 
 ---
 
@@ -1307,7 +1307,7 @@ public double IcmpCode { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/default_network_acl#icmp_code DefaultNetworkAcl#icmp_code}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/default_network_acl#icmp_code DefaultNetworkAcl#icmp_code}.
 
 ---
 
@@ -1319,7 +1319,7 @@ public double IcmpType { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/default_network_acl#icmp_type DefaultNetworkAcl#icmp_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/default_network_acl#icmp_type DefaultNetworkAcl#icmp_type}.
 
 ---
 
@@ -1331,7 +1331,7 @@ public string Ipv6CidrBlock { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/default_network_acl#ipv6_cidr_block DefaultNetworkAcl#ipv6_cidr_block}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/default_network_acl#ipv6_cidr_block DefaultNetworkAcl#ipv6_cidr_block}.
 
 ---
 
@@ -1359,15 +1359,15 @@ new DefaultNetworkAclIngress {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.defaultNetworkAcl.DefaultNetworkAclIngress.property.action">Action</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/default_network_acl#action DefaultNetworkAcl#action}. |
-| <code><a href="#@cdktn/provider-aws.defaultNetworkAcl.DefaultNetworkAclIngress.property.fromPort">FromPort</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/default_network_acl#from_port DefaultNetworkAcl#from_port}. |
-| <code><a href="#@cdktn/provider-aws.defaultNetworkAcl.DefaultNetworkAclIngress.property.protocol">Protocol</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/default_network_acl#protocol DefaultNetworkAcl#protocol}. |
-| <code><a href="#@cdktn/provider-aws.defaultNetworkAcl.DefaultNetworkAclIngress.property.ruleNo">RuleNo</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/default_network_acl#rule_no DefaultNetworkAcl#rule_no}. |
-| <code><a href="#@cdktn/provider-aws.defaultNetworkAcl.DefaultNetworkAclIngress.property.toPort">ToPort</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/default_network_acl#to_port DefaultNetworkAcl#to_port}. |
-| <code><a href="#@cdktn/provider-aws.defaultNetworkAcl.DefaultNetworkAclIngress.property.cidrBlock">CidrBlock</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/default_network_acl#cidr_block DefaultNetworkAcl#cidr_block}. |
-| <code><a href="#@cdktn/provider-aws.defaultNetworkAcl.DefaultNetworkAclIngress.property.icmpCode">IcmpCode</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/default_network_acl#icmp_code DefaultNetworkAcl#icmp_code}. |
-| <code><a href="#@cdktn/provider-aws.defaultNetworkAcl.DefaultNetworkAclIngress.property.icmpType">IcmpType</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/default_network_acl#icmp_type DefaultNetworkAcl#icmp_type}. |
-| <code><a href="#@cdktn/provider-aws.defaultNetworkAcl.DefaultNetworkAclIngress.property.ipv6CidrBlock">Ipv6CidrBlock</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/default_network_acl#ipv6_cidr_block DefaultNetworkAcl#ipv6_cidr_block}. |
+| <code><a href="#@cdktn/provider-aws.defaultNetworkAcl.DefaultNetworkAclIngress.property.action">Action</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/default_network_acl#action DefaultNetworkAcl#action}. |
+| <code><a href="#@cdktn/provider-aws.defaultNetworkAcl.DefaultNetworkAclIngress.property.fromPort">FromPort</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/default_network_acl#from_port DefaultNetworkAcl#from_port}. |
+| <code><a href="#@cdktn/provider-aws.defaultNetworkAcl.DefaultNetworkAclIngress.property.protocol">Protocol</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/default_network_acl#protocol DefaultNetworkAcl#protocol}. |
+| <code><a href="#@cdktn/provider-aws.defaultNetworkAcl.DefaultNetworkAclIngress.property.ruleNo">RuleNo</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/default_network_acl#rule_no DefaultNetworkAcl#rule_no}. |
+| <code><a href="#@cdktn/provider-aws.defaultNetworkAcl.DefaultNetworkAclIngress.property.toPort">ToPort</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/default_network_acl#to_port DefaultNetworkAcl#to_port}. |
+| <code><a href="#@cdktn/provider-aws.defaultNetworkAcl.DefaultNetworkAclIngress.property.cidrBlock">CidrBlock</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/default_network_acl#cidr_block DefaultNetworkAcl#cidr_block}. |
+| <code><a href="#@cdktn/provider-aws.defaultNetworkAcl.DefaultNetworkAclIngress.property.icmpCode">IcmpCode</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/default_network_acl#icmp_code DefaultNetworkAcl#icmp_code}. |
+| <code><a href="#@cdktn/provider-aws.defaultNetworkAcl.DefaultNetworkAclIngress.property.icmpType">IcmpType</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/default_network_acl#icmp_type DefaultNetworkAcl#icmp_type}. |
+| <code><a href="#@cdktn/provider-aws.defaultNetworkAcl.DefaultNetworkAclIngress.property.ipv6CidrBlock">Ipv6CidrBlock</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/default_network_acl#ipv6_cidr_block DefaultNetworkAcl#ipv6_cidr_block}. |
 
 ---
 
@@ -1379,7 +1379,7 @@ public string Action { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/default_network_acl#action DefaultNetworkAcl#action}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/default_network_acl#action DefaultNetworkAcl#action}.
 
 ---
 
@@ -1391,7 +1391,7 @@ public double FromPort { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/default_network_acl#from_port DefaultNetworkAcl#from_port}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/default_network_acl#from_port DefaultNetworkAcl#from_port}.
 
 ---
 
@@ -1403,7 +1403,7 @@ public string Protocol { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/default_network_acl#protocol DefaultNetworkAcl#protocol}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/default_network_acl#protocol DefaultNetworkAcl#protocol}.
 
 ---
 
@@ -1415,7 +1415,7 @@ public double RuleNo { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/default_network_acl#rule_no DefaultNetworkAcl#rule_no}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/default_network_acl#rule_no DefaultNetworkAcl#rule_no}.
 
 ---
 
@@ -1427,7 +1427,7 @@ public double ToPort { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/default_network_acl#to_port DefaultNetworkAcl#to_port}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/default_network_acl#to_port DefaultNetworkAcl#to_port}.
 
 ---
 
@@ -1439,7 +1439,7 @@ public string CidrBlock { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/default_network_acl#cidr_block DefaultNetworkAcl#cidr_block}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/default_network_acl#cidr_block DefaultNetworkAcl#cidr_block}.
 
 ---
 
@@ -1451,7 +1451,7 @@ public double IcmpCode { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/default_network_acl#icmp_code DefaultNetworkAcl#icmp_code}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/default_network_acl#icmp_code DefaultNetworkAcl#icmp_code}.
 
 ---
 
@@ -1463,7 +1463,7 @@ public double IcmpType { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/default_network_acl#icmp_type DefaultNetworkAcl#icmp_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/default_network_acl#icmp_type DefaultNetworkAcl#icmp_type}.
 
 ---
 
@@ -1475,7 +1475,7 @@ public string Ipv6CidrBlock { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/default_network_acl#ipv6_cidr_block DefaultNetworkAcl#ipv6_cidr_block}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/default_network_acl#ipv6_cidr_block DefaultNetworkAcl#ipv6_cidr_block}.
 
 ---
 

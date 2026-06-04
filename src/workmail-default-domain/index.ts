@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/workmail_default_domain
+// https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/workmail_default_domain
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,25 +15,25 @@ export interface WorkmailDefaultDomainConfig extends cdktn.TerraformMetaArgument
   /**
   * Mail domain name to set as the default.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/workmail_default_domain#domain_name WorkmailDefaultDomain#domain_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/workmail_default_domain#domain_name WorkmailDefaultDomain#domain_name}
   */
   readonly domainName: string;
   /**
   * Identifier of the WorkMail organization.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/workmail_default_domain#organization_id WorkmailDefaultDomain#organization_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/workmail_default_domain#organization_id WorkmailDefaultDomain#organization_id}
   */
   readonly organizationId: string;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/workmail_default_domain#region WorkmailDefaultDomain#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/workmail_default_domain#region WorkmailDefaultDomain#region}
   */
   readonly region?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/workmail_default_domain aws_workmail_default_domain}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/workmail_default_domain aws_workmail_default_domain}
 */
 export class WorkmailDefaultDomain extends cdktn.TerraformResource {
 
@@ -49,7 +49,7 @@ export class WorkmailDefaultDomain extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a WorkmailDefaultDomain resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the WorkmailDefaultDomain to import
-  * @param importFromId The id of the existing WorkmailDefaultDomain that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/workmail_default_domain#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing WorkmailDefaultDomain that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/workmail_default_domain#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the WorkmailDefaultDomain to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -61,7 +61,7 @@ export class WorkmailDefaultDomain extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/workmail_default_domain aws_workmail_default_domain} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/workmail_default_domain aws_workmail_default_domain} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -72,7 +72,7 @@ export class WorkmailDefaultDomain extends cdktn.TerraformResource {
       terraformResourceType: 'aws_workmail_default_domain',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.47.0',
+        providerVersion: '6.48.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

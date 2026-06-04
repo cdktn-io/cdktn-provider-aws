@@ -4,7 +4,7 @@
 
 ### QldbLedger <a name="QldbLedger" id="@cdktn/provider-aws.qldbLedger.QldbLedger"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/qldb_ledger aws_qldb_ledger}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/qldb_ledger aws_qldb_ledger}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.qldbLedger.QldbLedger.Initializer"></a>
 
@@ -558,7 +558,7 @@ The construct id used in the generated config for the QldbLedger to import.
 
 The id of the existing QldbLedger that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/qldb_ledger#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/qldb_ledger#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -983,14 +983,14 @@ const qldbLedgerConfig: qldbLedger.QldbLedgerConfig = { ... }
 | <code><a href="#@cdktn/provider-aws.qldbLedger.QldbLedgerConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.qldbLedger.QldbLedgerConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.qldbLedger.QldbLedgerConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.qldbLedger.QldbLedgerConfig.property.permissionsMode">permissionsMode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/qldb_ledger#permissions_mode QldbLedger#permissions_mode}. |
-| <code><a href="#@cdktn/provider-aws.qldbLedger.QldbLedgerConfig.property.deletionProtection">deletionProtection</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/qldb_ledger#deletion_protection QldbLedger#deletion_protection}. |
-| <code><a href="#@cdktn/provider-aws.qldbLedger.QldbLedgerConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/qldb_ledger#id QldbLedger#id}. |
-| <code><a href="#@cdktn/provider-aws.qldbLedger.QldbLedgerConfig.property.kmsKey">kmsKey</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/qldb_ledger#kms_key QldbLedger#kms_key}. |
-| <code><a href="#@cdktn/provider-aws.qldbLedger.QldbLedgerConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/qldb_ledger#name QldbLedger#name}. |
+| <code><a href="#@cdktn/provider-aws.qldbLedger.QldbLedgerConfig.property.permissionsMode">permissionsMode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/qldb_ledger#permissions_mode QldbLedger#permissions_mode}. |
+| <code><a href="#@cdktn/provider-aws.qldbLedger.QldbLedgerConfig.property.deletionProtection">deletionProtection</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/qldb_ledger#deletion_protection QldbLedger#deletion_protection}. |
+| <code><a href="#@cdktn/provider-aws.qldbLedger.QldbLedgerConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/qldb_ledger#id QldbLedger#id}. |
+| <code><a href="#@cdktn/provider-aws.qldbLedger.QldbLedgerConfig.property.kmsKey">kmsKey</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/qldb_ledger#kms_key QldbLedger#kms_key}. |
+| <code><a href="#@cdktn/provider-aws.qldbLedger.QldbLedgerConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/qldb_ledger#name QldbLedger#name}. |
 | <code><a href="#@cdktn/provider-aws.qldbLedger.QldbLedgerConfig.property.region">region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.qldbLedger.QldbLedgerConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/qldb_ledger#tags QldbLedger#tags}. |
-| <code><a href="#@cdktn/provider-aws.qldbLedger.QldbLedgerConfig.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/qldb_ledger#tags_all QldbLedger#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.qldbLedger.QldbLedgerConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/qldb_ledger#tags QldbLedger#tags}. |
+| <code><a href="#@cdktn/provider-aws.qldbLedger.QldbLedgerConfig.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/qldb_ledger#tags_all QldbLedger#tags_all}. |
 | <code><a href="#@cdktn/provider-aws.qldbLedger.QldbLedgerConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-aws.qldbLedger.QldbLedgerTimeouts">QldbLedgerTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1073,7 +1073,7 @@ public readonly permissionsMode: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/qldb_ledger#permissions_mode QldbLedger#permissions_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/qldb_ledger#permissions_mode QldbLedger#permissions_mode}.
 
 ---
 
@@ -1085,7 +1085,7 @@ public readonly deletionProtection: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/qldb_ledger#deletion_protection QldbLedger#deletion_protection}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/qldb_ledger#deletion_protection QldbLedger#deletion_protection}.
 
 ---
 
@@ -1097,7 +1097,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/qldb_ledger#id QldbLedger#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/qldb_ledger#id QldbLedger#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1112,7 +1112,7 @@ public readonly kmsKey: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/qldb_ledger#kms_key QldbLedger#kms_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/qldb_ledger#kms_key QldbLedger#kms_key}.
 
 ---
 
@@ -1124,7 +1124,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/qldb_ledger#name QldbLedger#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/qldb_ledger#name QldbLedger#name}.
 
 ---
 
@@ -1138,7 +1138,7 @@ public readonly region: string;
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/qldb_ledger#region QldbLedger#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/qldb_ledger#region QldbLedger#region}
 
 ---
 
@@ -1150,7 +1150,7 @@ public readonly tags: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/qldb_ledger#tags QldbLedger#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/qldb_ledger#tags QldbLedger#tags}.
 
 ---
 
@@ -1162,7 +1162,7 @@ public readonly tagsAll: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/qldb_ledger#tags_all QldbLedger#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/qldb_ledger#tags_all QldbLedger#tags_all}.
 
 ---
 
@@ -1176,7 +1176,7 @@ public readonly timeouts: QldbLedgerTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/qldb_ledger#timeouts QldbLedger#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/qldb_ledger#timeouts QldbLedger#timeouts}
 
 ---
 
@@ -1194,8 +1194,8 @@ const qldbLedgerTimeouts: qldbLedger.QldbLedgerTimeouts = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.qldbLedger.QldbLedgerTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/qldb_ledger#create QldbLedger#create}. |
-| <code><a href="#@cdktn/provider-aws.qldbLedger.QldbLedgerTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/qldb_ledger#delete QldbLedger#delete}. |
+| <code><a href="#@cdktn/provider-aws.qldbLedger.QldbLedgerTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/qldb_ledger#create QldbLedger#create}. |
+| <code><a href="#@cdktn/provider-aws.qldbLedger.QldbLedgerTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/qldb_ledger#delete QldbLedger#delete}. |
 
 ---
 
@@ -1207,7 +1207,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/qldb_ledger#create QldbLedger#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/qldb_ledger#create QldbLedger#create}.
 
 ---
 
@@ -1219,7 +1219,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/qldb_ledger#delete QldbLedger#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/qldb_ledger#delete QldbLedger#delete}.
 
 ---
 

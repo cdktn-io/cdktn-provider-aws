@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/data-sources/savingsplans_offerings
+// https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/data-sources/savingsplans_offerings
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,49 +13,49 @@ import * as cdktn from 'cdktn';
 
 export interface DataAwsSavingsplansOfferingsConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/data-sources/savingsplans_offerings#currencies DataAwsSavingsplansOfferings#currencies}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/data-sources/savingsplans_offerings#currencies DataAwsSavingsplansOfferings#currencies}
   */
   readonly currencies?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/data-sources/savingsplans_offerings#descriptions DataAwsSavingsplansOfferings#descriptions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/data-sources/savingsplans_offerings#descriptions DataAwsSavingsplansOfferings#descriptions}
   */
   readonly descriptions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/data-sources/savingsplans_offerings#durations DataAwsSavingsplansOfferings#durations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/data-sources/savingsplans_offerings#durations DataAwsSavingsplansOfferings#durations}
   */
   readonly durations?: number[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/data-sources/savingsplans_offerings#offering_ids DataAwsSavingsplansOfferings#offering_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/data-sources/savingsplans_offerings#offering_ids DataAwsSavingsplansOfferings#offering_ids}
   */
   readonly offeringIds?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/data-sources/savingsplans_offerings#operations DataAwsSavingsplansOfferings#operations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/data-sources/savingsplans_offerings#operations DataAwsSavingsplansOfferings#operations}
   */
   readonly operations?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/data-sources/savingsplans_offerings#payment_options DataAwsSavingsplansOfferings#payment_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/data-sources/savingsplans_offerings#payment_options DataAwsSavingsplansOfferings#payment_options}
   */
   readonly paymentOptions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/data-sources/savingsplans_offerings#plan_types DataAwsSavingsplansOfferings#plan_types}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/data-sources/savingsplans_offerings#plan_types DataAwsSavingsplansOfferings#plan_types}
   */
   readonly planTypes?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/data-sources/savingsplans_offerings#product_type DataAwsSavingsplansOfferings#product_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/data-sources/savingsplans_offerings#product_type DataAwsSavingsplansOfferings#product_type}
   */
   readonly productType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/data-sources/savingsplans_offerings#service_codes DataAwsSavingsplansOfferings#service_codes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/data-sources/savingsplans_offerings#service_codes DataAwsSavingsplansOfferings#service_codes}
   */
   readonly serviceCodes?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/data-sources/savingsplans_offerings#usage_types DataAwsSavingsplansOfferings#usage_types}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/data-sources/savingsplans_offerings#usage_types DataAwsSavingsplansOfferings#usage_types}
   */
   readonly usageTypes?: string[];
   /**
   * filter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/data-sources/savingsplans_offerings#filter DataAwsSavingsplansOfferings#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/data-sources/savingsplans_offerings#filter DataAwsSavingsplansOfferings#filter}
   */
   readonly filter?: DataAwsSavingsplansOfferingsFilter[] | cdktn.IResolvable;
 }
@@ -267,11 +267,11 @@ export class DataAwsSavingsplansOfferingsOfferingsList extends cdktn.ComplexList
 }
 export interface DataAwsSavingsplansOfferingsFilter {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/data-sources/savingsplans_offerings#name DataAwsSavingsplansOfferings#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/data-sources/savingsplans_offerings#name DataAwsSavingsplansOfferings#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/data-sources/savingsplans_offerings#values DataAwsSavingsplansOfferings#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/data-sources/savingsplans_offerings#values DataAwsSavingsplansOfferings#values}
   */
   readonly values: string[];
 }
@@ -410,7 +410,7 @@ export class DataAwsSavingsplansOfferingsFilterList extends cdktn.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/data-sources/savingsplans_offerings aws_savingsplans_offerings}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/data-sources/savingsplans_offerings aws_savingsplans_offerings}
 */
 export class DataAwsSavingsplansOfferings extends cdktn.TerraformDataSource {
 
@@ -426,7 +426,7 @@ export class DataAwsSavingsplansOfferings extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataAwsSavingsplansOfferings resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsSavingsplansOfferings to import
-  * @param importFromId The id of the existing DataAwsSavingsplansOfferings that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/data-sources/savingsplans_offerings#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsSavingsplansOfferings that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/data-sources/savingsplans_offerings#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsSavingsplansOfferings to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -438,7 +438,7 @@ export class DataAwsSavingsplansOfferings extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/data-sources/savingsplans_offerings aws_savingsplans_offerings} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/data-sources/savingsplans_offerings aws_savingsplans_offerings} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -449,7 +449,7 @@ export class DataAwsSavingsplansOfferings extends cdktn.TerraformDataSource {
       terraformResourceType: 'aws_savingsplans_offerings',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.47.0',
+        providerVersion: '6.48.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

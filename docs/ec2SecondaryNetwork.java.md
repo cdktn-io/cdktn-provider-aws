@@ -4,7 +4,7 @@
 
 ### Ec2SecondaryNetwork <a name="Ec2SecondaryNetwork" id="@cdktn/provider-aws.ec2SecondaryNetwork.Ec2SecondaryNetwork"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/ec2_secondary_network aws_ec2_secondary_network}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/ec2_secondary_network aws_ec2_secondary_network}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ec2SecondaryNetwork.Ec2SecondaryNetwork.Initializer"></a>
 
@@ -38,10 +38,10 @@ Ec2SecondaryNetwork.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-aws.ec2SecondaryNetwork.Ec2SecondaryNetwork.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.ec2SecondaryNetwork.Ec2SecondaryNetwork.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.ec2SecondaryNetwork.Ec2SecondaryNetwork.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.ec2SecondaryNetwork.Ec2SecondaryNetwork.Initializer.parameter.ipv4CidrBlock">ipv4CidrBlock</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/ec2_secondary_network#ipv4_cidr_block Ec2SecondaryNetwork#ipv4_cidr_block}. |
-| <code><a href="#@cdktn/provider-aws.ec2SecondaryNetwork.Ec2SecondaryNetwork.Initializer.parameter.networkType">networkType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/ec2_secondary_network#network_type Ec2SecondaryNetwork#network_type}. |
+| <code><a href="#@cdktn/provider-aws.ec2SecondaryNetwork.Ec2SecondaryNetwork.Initializer.parameter.ipv4CidrBlock">ipv4CidrBlock</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/ec2_secondary_network#ipv4_cidr_block Ec2SecondaryNetwork#ipv4_cidr_block}. |
+| <code><a href="#@cdktn/provider-aws.ec2SecondaryNetwork.Ec2SecondaryNetwork.Initializer.parameter.networkType">networkType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/ec2_secondary_network#network_type Ec2SecondaryNetwork#network_type}. |
 | <code><a href="#@cdktn/provider-aws.ec2SecondaryNetwork.Ec2SecondaryNetwork.Initializer.parameter.region">region</a></code> | <code>java.lang.String</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.ec2SecondaryNetwork.Ec2SecondaryNetwork.Initializer.parameter.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/ec2_secondary_network#tags Ec2SecondaryNetwork#tags}. |
+| <code><a href="#@cdktn/provider-aws.ec2SecondaryNetwork.Ec2SecondaryNetwork.Initializer.parameter.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/ec2_secondary_network#tags Ec2SecondaryNetwork#tags}. |
 | <code><a href="#@cdktn/provider-aws.ec2SecondaryNetwork.Ec2SecondaryNetwork.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-aws.ec2SecondaryNetwork.Ec2SecondaryNetworkTimeouts">Ec2SecondaryNetworkTimeouts</a></code> | timeouts block. |
 
 ---
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/ec2_secondary_network#ipv4_cidr_block Ec2SecondaryNetwork#ipv4_cidr_block}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/ec2_secondary_network#ipv4_cidr_block Ec2SecondaryNetwork#ipv4_cidr_block}.
 
 ---
 
@@ -118,7 +118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/ec2_secondary_network#network_type Ec2SecondaryNetwork#network_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/ec2_secondary_network#network_type Ec2SecondaryNetwork#network_type}.
 
 ---
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/ec2_secondary_network#region Ec2SecondaryNetwork#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/ec2_secondary_network#region Ec2SecondaryNetwork#region}
 
 ---
 
@@ -136,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/ec2_secondary_network#tags Ec2SecondaryNetwork#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/ec2_secondary_network#tags Ec2SecondaryNetwork#tags}.
 
 ---
 
@@ -146,7 +146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/ec2_secondary_network#timeouts Ec2SecondaryNetwork#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/ec2_secondary_network#timeouts Ec2SecondaryNetwork#timeouts}
 
 ---
 
@@ -629,7 +629,7 @@ The construct id used in the generated config for the Ec2SecondaryNetwork to imp
 
 The id of the existing Ec2SecondaryNetwork that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/ec2_secondary_network#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/ec2_secondary_network#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1045,10 +1045,10 @@ Ec2SecondaryNetworkConfig.builder()
 | <code><a href="#@cdktn/provider-aws.ec2SecondaryNetwork.Ec2SecondaryNetworkConfig.property.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.ec2SecondaryNetwork.Ec2SecondaryNetworkConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.ec2SecondaryNetwork.Ec2SecondaryNetworkConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.ec2SecondaryNetwork.Ec2SecondaryNetworkConfig.property.ipv4CidrBlock">ipv4CidrBlock</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/ec2_secondary_network#ipv4_cidr_block Ec2SecondaryNetwork#ipv4_cidr_block}. |
-| <code><a href="#@cdktn/provider-aws.ec2SecondaryNetwork.Ec2SecondaryNetworkConfig.property.networkType">networkType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/ec2_secondary_network#network_type Ec2SecondaryNetwork#network_type}. |
+| <code><a href="#@cdktn/provider-aws.ec2SecondaryNetwork.Ec2SecondaryNetworkConfig.property.ipv4CidrBlock">ipv4CidrBlock</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/ec2_secondary_network#ipv4_cidr_block Ec2SecondaryNetwork#ipv4_cidr_block}. |
+| <code><a href="#@cdktn/provider-aws.ec2SecondaryNetwork.Ec2SecondaryNetworkConfig.property.networkType">networkType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/ec2_secondary_network#network_type Ec2SecondaryNetwork#network_type}. |
 | <code><a href="#@cdktn/provider-aws.ec2SecondaryNetwork.Ec2SecondaryNetworkConfig.property.region">region</a></code> | <code>java.lang.String</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.ec2SecondaryNetwork.Ec2SecondaryNetworkConfig.property.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/ec2_secondary_network#tags Ec2SecondaryNetwork#tags}. |
+| <code><a href="#@cdktn/provider-aws.ec2SecondaryNetwork.Ec2SecondaryNetworkConfig.property.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/ec2_secondary_network#tags Ec2SecondaryNetwork#tags}. |
 | <code><a href="#@cdktn/provider-aws.ec2SecondaryNetwork.Ec2SecondaryNetworkConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-aws.ec2SecondaryNetwork.Ec2SecondaryNetworkTimeouts">Ec2SecondaryNetworkTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1131,7 +1131,7 @@ public java.lang.String getIpv4CidrBlock();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/ec2_secondary_network#ipv4_cidr_block Ec2SecondaryNetwork#ipv4_cidr_block}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/ec2_secondary_network#ipv4_cidr_block Ec2SecondaryNetwork#ipv4_cidr_block}.
 
 ---
 
@@ -1143,7 +1143,7 @@ public java.lang.String getNetworkType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/ec2_secondary_network#network_type Ec2SecondaryNetwork#network_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/ec2_secondary_network#network_type Ec2SecondaryNetwork#network_type}.
 
 ---
 
@@ -1157,7 +1157,7 @@ public java.lang.String getRegion();
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/ec2_secondary_network#region Ec2SecondaryNetwork#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/ec2_secondary_network#region Ec2SecondaryNetwork#region}
 
 ---
 
@@ -1169,7 +1169,7 @@ public java.util.Map<java.lang.String, java.lang.String> getTags();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/ec2_secondary_network#tags Ec2SecondaryNetwork#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/ec2_secondary_network#tags Ec2SecondaryNetwork#tags}.
 
 ---
 
@@ -1183,7 +1183,7 @@ public Ec2SecondaryNetworkTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/ec2_secondary_network#timeouts Ec2SecondaryNetwork#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/ec2_secondary_network#timeouts Ec2SecondaryNetwork#timeouts}
 
 ---
 
@@ -1233,7 +1233,7 @@ public java.lang.String getCreate();
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/ec2_secondary_network#create Ec2SecondaryNetwork#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/ec2_secondary_network#create Ec2SecondaryNetwork#create}
 
 ---
 
@@ -1247,7 +1247,7 @@ public java.lang.String getDelete();
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/ec2_secondary_network#delete Ec2SecondaryNetwork#delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/ec2_secondary_network#delete Ec2SecondaryNetwork#delete}
 
 ---
 
@@ -1261,7 +1261,7 @@ public java.lang.String getUpdate();
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/ec2_secondary_network#update Ec2SecondaryNetwork#update}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/ec2_secondary_network#update Ec2SecondaryNetwork#update}
 
 ---
 

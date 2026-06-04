@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/data-sources/ec2_host
+// https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/data-sources/ec2_host
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,11 +13,11 @@ import * as cdktn from 'cdktn';
 
 export interface DataAwsEc2HostConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/data-sources/ec2_host#host_id DataAwsEc2Host#host_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/data-sources/ec2_host#host_id DataAwsEc2Host#host_id}
   */
   readonly hostId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/data-sources/ec2_host#id DataAwsEc2Host#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/data-sources/ec2_host#id DataAwsEc2Host#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -26,33 +26,284 @@ export interface DataAwsEc2HostConfig extends cdktn.TerraformMetaArguments {
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/data-sources/ec2_host#region DataAwsEc2Host#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/data-sources/ec2_host#region DataAwsEc2Host#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/data-sources/ec2_host#tags DataAwsEc2Host#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/data-sources/ec2_host#tags DataAwsEc2Host#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
   * filter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/data-sources/ec2_host#filter DataAwsEc2Host#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/data-sources/ec2_host#filter DataAwsEc2Host#filter}
   */
   readonly filter?: DataAwsEc2HostFilter[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/data-sources/ec2_host#timeouts DataAwsEc2Host#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/data-sources/ec2_host#timeouts DataAwsEc2Host#timeouts}
   */
   readonly timeouts?: DataAwsEc2HostTimeouts;
 }
+export interface DataAwsEc2HostAvailableCapacityAvailableInstanceCapacity {
+}
+
+export function dataAwsEc2HostAvailableCapacityAvailableInstanceCapacityToTerraform(struct?: DataAwsEc2HostAvailableCapacityAvailableInstanceCapacity): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function dataAwsEc2HostAvailableCapacityAvailableInstanceCapacityToHclTerraform(struct?: DataAwsEc2HostAvailableCapacityAvailableInstanceCapacity): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataAwsEc2HostAvailableCapacityAvailableInstanceCapacityOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsEc2HostAvailableCapacityAvailableInstanceCapacity | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsEc2HostAvailableCapacityAvailableInstanceCapacity | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // available_capacity - computed: true, optional: false, required: false
+  public get availableCapacity() {
+    return this.getNumberAttribute('available_capacity');
+  }
+
+  // instance_type - computed: true, optional: false, required: false
+  public get instanceType() {
+    return this.getStringAttribute('instance_type');
+  }
+
+  // total_capacity - computed: true, optional: false, required: false
+  public get totalCapacity() {
+    return this.getNumberAttribute('total_capacity');
+  }
+}
+
+export class DataAwsEc2HostAvailableCapacityAvailableInstanceCapacityList extends cdktn.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsEc2HostAvailableCapacityAvailableInstanceCapacityOutputReference {
+    return new DataAwsEc2HostAvailableCapacityAvailableInstanceCapacityOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataAwsEc2HostAvailableCapacity {
+}
+
+export function dataAwsEc2HostAvailableCapacityToTerraform(struct?: DataAwsEc2HostAvailableCapacity): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function dataAwsEc2HostAvailableCapacityToHclTerraform(struct?: DataAwsEc2HostAvailableCapacity): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataAwsEc2HostAvailableCapacityOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsEc2HostAvailableCapacity | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsEc2HostAvailableCapacity | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // available_instance_capacity - computed: true, optional: false, required: false
+  private _availableInstanceCapacity = new DataAwsEc2HostAvailableCapacityAvailableInstanceCapacityList(this, "available_instance_capacity", false);
+  public get availableInstanceCapacity() {
+    return this._availableInstanceCapacity;
+  }
+
+  // available_vcpus - computed: true, optional: false, required: false
+  public get availableVcpus() {
+    return this.getNumberAttribute('available_vcpus');
+  }
+}
+
+export class DataAwsEc2HostAvailableCapacityList extends cdktn.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsEc2HostAvailableCapacityOutputReference {
+    return new DataAwsEc2HostAvailableCapacityOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataAwsEc2HostInstances {
+}
+
+export function dataAwsEc2HostInstancesToTerraform(struct?: DataAwsEc2HostInstances): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function dataAwsEc2HostInstancesToHclTerraform(struct?: DataAwsEc2HostInstances): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataAwsEc2HostInstancesOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsEc2HostInstances | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsEc2HostInstances | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // instance_id - computed: true, optional: false, required: false
+  public get instanceId() {
+    return this.getStringAttribute('instance_id');
+  }
+
+  // instance_type - computed: true, optional: false, required: false
+  public get instanceType() {
+    return this.getStringAttribute('instance_type');
+  }
+
+  // owner_id - computed: true, optional: false, required: false
+  public get ownerId() {
+    return this.getStringAttribute('owner_id');
+  }
+}
+
+export class DataAwsEc2HostInstancesList extends cdktn.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsEc2HostInstancesOutputReference {
+    return new DataAwsEc2HostInstancesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface DataAwsEc2HostFilter {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/data-sources/ec2_host#name DataAwsEc2Host#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/data-sources/ec2_host#name DataAwsEc2Host#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/data-sources/ec2_host#values DataAwsEc2Host#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/data-sources/ec2_host#values DataAwsEc2Host#values}
   */
   readonly values: string[];
 }
@@ -191,7 +442,7 @@ export class DataAwsEc2HostFilterList extends cdktn.ComplexList {
 }
 export interface DataAwsEc2HostTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/data-sources/ec2_host#read DataAwsEc2Host#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/data-sources/ec2_host#read DataAwsEc2Host#read}
   */
   readonly read?: string;
 }
@@ -285,7 +536,7 @@ export class DataAwsEc2HostTimeoutsOutputReference extends cdktn.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/data-sources/ec2_host aws_ec2_host}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/data-sources/ec2_host aws_ec2_host}
 */
 export class DataAwsEc2Host extends cdktn.TerraformDataSource {
 
@@ -301,7 +552,7 @@ export class DataAwsEc2Host extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataAwsEc2Host resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsEc2Host to import
-  * @param importFromId The id of the existing DataAwsEc2Host that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/data-sources/ec2_host#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsEc2Host that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/data-sources/ec2_host#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsEc2Host to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -313,7 +564,7 @@ export class DataAwsEc2Host extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/data-sources/ec2_host aws_ec2_host} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/data-sources/ec2_host aws_ec2_host} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -324,7 +575,7 @@ export class DataAwsEc2Host extends cdktn.TerraformDataSource {
       terraformResourceType: 'aws_ec2_host',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.47.0',
+        providerVersion: '6.48.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
@@ -347,6 +598,16 @@ export class DataAwsEc2Host extends cdktn.TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
+  // allocation_time - computed: true, optional: false, required: false
+  public get allocationTime() {
+    return this.getStringAttribute('allocation_time');
+  }
+
+  // allows_multiple_instance_types - computed: true, optional: false, required: false
+  public get allowsMultipleInstanceTypes() {
+    return this.getStringAttribute('allows_multiple_instance_types');
+  }
+
   // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
@@ -365,6 +626,17 @@ export class DataAwsEc2Host extends cdktn.TerraformDataSource {
   // availability_zone - computed: true, optional: false, required: false
   public get availabilityZone() {
     return this.getStringAttribute('availability_zone');
+  }
+
+  // availability_zone_id - computed: true, optional: false, required: false
+  public get availabilityZoneId() {
+    return this.getStringAttribute('availability_zone_id');
+  }
+
+  // available_capacity - computed: true, optional: false, required: false
+  private _availableCapacity = new DataAwsEc2HostAvailableCapacityList(this, "available_capacity", false);
+  public get availableCapacity() {
+    return this._availableCapacity;
   }
 
   // cores - computed: true, optional: false, required: false
@@ -388,9 +660,19 @@ export class DataAwsEc2Host extends cdktn.TerraformDataSource {
     return this._hostId;
   }
 
+  // host_maintenance - computed: true, optional: false, required: false
+  public get hostMaintenance() {
+    return this.getStringAttribute('host_maintenance');
+  }
+
   // host_recovery - computed: true, optional: false, required: false
   public get hostRecovery() {
     return this.getStringAttribute('host_recovery');
+  }
+
+  // host_reservation_id - computed: true, optional: false, required: false
+  public get hostReservationId() {
+    return this.getStringAttribute('host_reservation_id');
   }
 
   // id - computed: true, optional: true, required: false
@@ -419,6 +701,17 @@ export class DataAwsEc2Host extends cdktn.TerraformDataSource {
     return this.getStringAttribute('instance_type');
   }
 
+  // instances - computed: true, optional: false, required: false
+  private _instances = new DataAwsEc2HostInstancesList(this, "instances", false);
+  public get instances() {
+    return this._instances;
+  }
+
+  // member_of_service_linked_resource_group - computed: true, optional: false, required: false
+  public get memberOfServiceLinkedResourceGroup() {
+    return this.getBooleanAttribute('member_of_service_linked_resource_group');
+  }
+
   // outpost_arn - computed: true, optional: false, required: false
   public get outpostArn() {
     return this.getStringAttribute('outpost_arn');
@@ -445,9 +738,19 @@ export class DataAwsEc2Host extends cdktn.TerraformDataSource {
     return this._region;
   }
 
+  // release_time - computed: true, optional: false, required: false
+  public get releaseTime() {
+    return this.getStringAttribute('release_time');
+  }
+
   // sockets - computed: true, optional: false, required: false
   public get sockets() {
     return this.getNumberAttribute('sockets');
+  }
+
+  // state - computed: true, optional: false, required: false
+  public get state() {
+    return this.getStringAttribute('state');
   }
 
   // tags - computed: true, optional: true, required: false

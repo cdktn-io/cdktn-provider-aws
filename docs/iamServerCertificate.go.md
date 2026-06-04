@@ -4,7 +4,7 @@
 
 ### IamServerCertificate <a name="IamServerCertificate" id="@cdktn/provider-aws.iamServerCertificate.IamServerCertificate"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/iam_server_certificate aws_iam_server_certificate}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/iam_server_certificate aws_iam_server_certificate}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.iamServerCertificate.IamServerCertificate.Initializer"></a>
 
@@ -558,7 +558,7 @@ The construct id used in the generated config for the IamServerCertificate to im
 
 The id of the existing IamServerCertificate that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/iam_server_certificate#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/iam_server_certificate#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1045,15 +1045,15 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/iamservercertificate"
 | <code><a href="#@cdktn/provider-aws.iamServerCertificate.IamServerCertificateConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iamServerCertificate.IamServerCertificateConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iamServerCertificate.IamServerCertificateConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.iamServerCertificate.IamServerCertificateConfig.property.certificateBody">CertificateBody</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/iam_server_certificate#certificate_body IamServerCertificate#certificate_body}. |
-| <code><a href="#@cdktn/provider-aws.iamServerCertificate.IamServerCertificateConfig.property.privateKey">PrivateKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/iam_server_certificate#private_key IamServerCertificate#private_key}. |
-| <code><a href="#@cdktn/provider-aws.iamServerCertificate.IamServerCertificateConfig.property.certificateChain">CertificateChain</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/iam_server_certificate#certificate_chain IamServerCertificate#certificate_chain}. |
-| <code><a href="#@cdktn/provider-aws.iamServerCertificate.IamServerCertificateConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/iam_server_certificate#id IamServerCertificate#id}. |
-| <code><a href="#@cdktn/provider-aws.iamServerCertificate.IamServerCertificateConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/iam_server_certificate#name IamServerCertificate#name}. |
-| <code><a href="#@cdktn/provider-aws.iamServerCertificate.IamServerCertificateConfig.property.namePrefix">NamePrefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/iam_server_certificate#name_prefix IamServerCertificate#name_prefix}. |
-| <code><a href="#@cdktn/provider-aws.iamServerCertificate.IamServerCertificateConfig.property.path">Path</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/iam_server_certificate#path IamServerCertificate#path}. |
-| <code><a href="#@cdktn/provider-aws.iamServerCertificate.IamServerCertificateConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/iam_server_certificate#tags IamServerCertificate#tags}. |
-| <code><a href="#@cdktn/provider-aws.iamServerCertificate.IamServerCertificateConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/iam_server_certificate#tags_all IamServerCertificate#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.iamServerCertificate.IamServerCertificateConfig.property.certificateBody">CertificateBody</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/iam_server_certificate#certificate_body IamServerCertificate#certificate_body}. |
+| <code><a href="#@cdktn/provider-aws.iamServerCertificate.IamServerCertificateConfig.property.privateKey">PrivateKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/iam_server_certificate#private_key IamServerCertificate#private_key}. |
+| <code><a href="#@cdktn/provider-aws.iamServerCertificate.IamServerCertificateConfig.property.certificateChain">CertificateChain</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/iam_server_certificate#certificate_chain IamServerCertificate#certificate_chain}. |
+| <code><a href="#@cdktn/provider-aws.iamServerCertificate.IamServerCertificateConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/iam_server_certificate#id IamServerCertificate#id}. |
+| <code><a href="#@cdktn/provider-aws.iamServerCertificate.IamServerCertificateConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/iam_server_certificate#name IamServerCertificate#name}. |
+| <code><a href="#@cdktn/provider-aws.iamServerCertificate.IamServerCertificateConfig.property.namePrefix">NamePrefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/iam_server_certificate#name_prefix IamServerCertificate#name_prefix}. |
+| <code><a href="#@cdktn/provider-aws.iamServerCertificate.IamServerCertificateConfig.property.path">Path</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/iam_server_certificate#path IamServerCertificate#path}. |
+| <code><a href="#@cdktn/provider-aws.iamServerCertificate.IamServerCertificateConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/iam_server_certificate#tags IamServerCertificate#tags}. |
+| <code><a href="#@cdktn/provider-aws.iamServerCertificate.IamServerCertificateConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/iam_server_certificate#tags_all IamServerCertificate#tags_all}. |
 | <code><a href="#@cdktn/provider-aws.iamServerCertificate.IamServerCertificateConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.iamServerCertificate.IamServerCertificateTimeouts">IamServerCertificateTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1136,7 +1136,7 @@ CertificateBody *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/iam_server_certificate#certificate_body IamServerCertificate#certificate_body}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/iam_server_certificate#certificate_body IamServerCertificate#certificate_body}.
 
 ---
 
@@ -1148,7 +1148,7 @@ PrivateKey *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/iam_server_certificate#private_key IamServerCertificate#private_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/iam_server_certificate#private_key IamServerCertificate#private_key}.
 
 ---
 
@@ -1160,7 +1160,7 @@ CertificateChain *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/iam_server_certificate#certificate_chain IamServerCertificate#certificate_chain}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/iam_server_certificate#certificate_chain IamServerCertificate#certificate_chain}.
 
 ---
 
@@ -1172,7 +1172,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/iam_server_certificate#id IamServerCertificate#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/iam_server_certificate#id IamServerCertificate#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1187,7 +1187,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/iam_server_certificate#name IamServerCertificate#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/iam_server_certificate#name IamServerCertificate#name}.
 
 ---
 
@@ -1199,7 +1199,7 @@ NamePrefix *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/iam_server_certificate#name_prefix IamServerCertificate#name_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/iam_server_certificate#name_prefix IamServerCertificate#name_prefix}.
 
 ---
 
@@ -1211,7 +1211,7 @@ Path *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/iam_server_certificate#path IamServerCertificate#path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/iam_server_certificate#path IamServerCertificate#path}.
 
 ---
 
@@ -1223,7 +1223,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/iam_server_certificate#tags IamServerCertificate#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/iam_server_certificate#tags IamServerCertificate#tags}.
 
 ---
 
@@ -1235,7 +1235,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/iam_server_certificate#tags_all IamServerCertificate#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/iam_server_certificate#tags_all IamServerCertificate#tags_all}.
 
 ---
 
@@ -1249,7 +1249,7 @@ Timeouts IamServerCertificateTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/iam_server_certificate#timeouts IamServerCertificate#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/iam_server_certificate#timeouts IamServerCertificate#timeouts}
 
 ---
 
@@ -1269,7 +1269,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/iamservercertificate"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.iamServerCertificate.IamServerCertificateTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/iam_server_certificate#delete IamServerCertificate#delete}. |
+| <code><a href="#@cdktn/provider-aws.iamServerCertificate.IamServerCertificateTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/iam_server_certificate#delete IamServerCertificate#delete}. |
 
 ---
 
@@ -1281,7 +1281,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/iam_server_certificate#delete IamServerCertificate#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/iam_server_certificate#delete IamServerCertificate#delete}.
 
 ---
 

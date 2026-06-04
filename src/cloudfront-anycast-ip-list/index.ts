@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/cloudfront_anycast_ip_list
+// https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/cloudfront_anycast_ip_list
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,21 +13,21 @@ import * as cdktn from 'cdktn';
 
 export interface CloudfrontAnycastIpListConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/cloudfront_anycast_ip_list#ip_count CloudfrontAnycastIpList#ip_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/cloudfront_anycast_ip_list#ip_count CloudfrontAnycastIpList#ip_count}
   */
   readonly ipCount: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/cloudfront_anycast_ip_list#name CloudfrontAnycastIpList#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/cloudfront_anycast_ip_list#name CloudfrontAnycastIpList#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/cloudfront_anycast_ip_list#tags CloudfrontAnycastIpList#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/cloudfront_anycast_ip_list#tags CloudfrontAnycastIpList#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/cloudfront_anycast_ip_list#timeouts CloudfrontAnycastIpList#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/cloudfront_anycast_ip_list#timeouts CloudfrontAnycastIpList#timeouts}
   */
   readonly timeouts?: CloudfrontAnycastIpListTimeouts;
 }
@@ -35,7 +35,7 @@ export interface CloudfrontAnycastIpListTimeouts {
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/cloudfront_anycast_ip_list#create CloudfrontAnycastIpList#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/cloudfront_anycast_ip_list#create CloudfrontAnycastIpList#create}
   */
   readonly create?: string;
 }
@@ -129,7 +129,7 @@ export class CloudfrontAnycastIpListTimeoutsOutputReference extends cdktn.Comple
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/cloudfront_anycast_ip_list aws_cloudfront_anycast_ip_list}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/cloudfront_anycast_ip_list aws_cloudfront_anycast_ip_list}
 */
 export class CloudfrontAnycastIpList extends cdktn.TerraformResource {
 
@@ -145,7 +145,7 @@ export class CloudfrontAnycastIpList extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a CloudfrontAnycastIpList resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CloudfrontAnycastIpList to import
-  * @param importFromId The id of the existing CloudfrontAnycastIpList that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/cloudfront_anycast_ip_list#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing CloudfrontAnycastIpList that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/cloudfront_anycast_ip_list#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CloudfrontAnycastIpList to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -157,7 +157,7 @@ export class CloudfrontAnycastIpList extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/cloudfront_anycast_ip_list aws_cloudfront_anycast_ip_list} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/cloudfront_anycast_ip_list aws_cloudfront_anycast_ip_list} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -168,7 +168,7 @@ export class CloudfrontAnycastIpList extends cdktn.TerraformResource {
       terraformResourceType: 'aws_cloudfront_anycast_ip_list',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.47.0',
+        providerVersion: '6.48.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

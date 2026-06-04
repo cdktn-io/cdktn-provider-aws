@@ -4,7 +4,7 @@
 
 ### DataAwsLb <a name="DataAwsLb" id="@cdktn/provider-aws.dataAwsLb.DataAwsLb"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/data-sources/lb aws_lb}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/data-sources/lb aws_lb}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLb.DataAwsLb.Initializer"></a>
 
@@ -41,11 +41,11 @@ dataAwsLb.DataAwsLb(
 | <code><a href="#@cdktn/provider-aws.dataAwsLb.DataAwsLb.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsLb.DataAwsLb.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsLb.DataAwsLb.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dataAwsLb.DataAwsLb.Initializer.parameter.arn">arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/data-sources/lb#arn DataAwsLb#arn}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsLb.DataAwsLb.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/data-sources/lb#id DataAwsLb#id}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsLb.DataAwsLb.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/data-sources/lb#name DataAwsLb#name}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsLb.DataAwsLb.Initializer.parameter.arn">arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/data-sources/lb#arn DataAwsLb#arn}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsLb.DataAwsLb.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/data-sources/lb#id DataAwsLb#id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsLb.DataAwsLb.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/data-sources/lb#name DataAwsLb#name}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsLb.DataAwsLb.Initializer.parameter.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.dataAwsLb.DataAwsLb.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/data-sources/lb#tags DataAwsLb#tags}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsLb.DataAwsLb.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/data-sources/lb#tags DataAwsLb#tags}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsLb.DataAwsLb.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-aws.dataAwsLb.DataAwsLbTimeouts">DataAwsLbTimeouts</a></code> | timeouts block. |
 
 ---
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/data-sources/lb#arn DataAwsLb#arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/data-sources/lb#arn DataAwsLb#arn}.
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/data-sources/lb#id DataAwsLb#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/data-sources/lb#id DataAwsLb#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -133,7 +133,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/data-sources/lb#name DataAwsLb#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/data-sources/lb#name DataAwsLb#name}.
 
 ---
 
@@ -143,7 +143,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/data-sources/lb#region DataAwsLb#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/data-sources/lb#region DataAwsLb#region}
 
 ---
 
@@ -151,7 +151,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/data-sources/lb#tags DataAwsLb#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/data-sources/lb#tags DataAwsLb#tags}.
 
 ---
 
@@ -161,7 +161,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/data-sources/lb#timeouts DataAwsLb#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/data-sources/lb#timeouts DataAwsLb#timeouts}
 
 ---
 
@@ -449,7 +449,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/data-sources/lb#read DataAwsLb#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/data-sources/lb#read DataAwsLb#read}.
 
 ---
 
@@ -603,7 +603,7 @@ The construct id used in the generated config for the DataAwsLb to import.
 
 The id of the existing DataAwsLb that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/data-sources/lb#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/data-sources/lb#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -643,6 +643,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0
 | <code><a href="#@cdktn/provider-aws.dataAwsLb.DataAwsLb.property.enableCrossZoneLoadBalancing">enable_cross_zone_load_balancing</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsLb.DataAwsLb.property.enableDeletionProtection">enable_deletion_protection</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsLb.DataAwsLb.property.enableHttp2">enable_http2</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsLb.DataAwsLb.property.enablePrefixForIpv6SourceNat">enable_prefix_for_ipv6_source_nat</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsLb.DataAwsLb.property.enableTlsVersionAndCipherSuiteHeaders">enable_tls_version_and_cipher_suite_headers</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsLb.DataAwsLb.property.enableWafFailOpen">enable_waf_fail_open</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsLb.DataAwsLb.property.enableXffClientPort">enable_xff_client_port</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
@@ -916,6 +917,16 @@ enable_http2: IResolvable
 ```
 
 - *Type:* cdktn.IResolvable
+
+---
+
+##### `enable_prefix_for_ipv6_source_nat`<sup>Required</sup> <a name="enable_prefix_for_ipv6_source_nat" id="@cdktn/provider-aws.dataAwsLb.DataAwsLb.property.enablePrefixForIpv6SourceNat"></a>
+
+```python
+enable_prefix_for_ipv6_source_nat: str
+```
+
+- *Type:* str
 
 ---
 
@@ -1295,11 +1306,11 @@ dataAwsLb.DataAwsLbConfig(
 | <code><a href="#@cdktn/provider-aws.dataAwsLb.DataAwsLbConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsLb.DataAwsLbConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsLb.DataAwsLbConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dataAwsLb.DataAwsLbConfig.property.arn">arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/data-sources/lb#arn DataAwsLb#arn}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsLb.DataAwsLbConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/data-sources/lb#id DataAwsLb#id}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsLb.DataAwsLbConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/data-sources/lb#name DataAwsLb#name}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsLb.DataAwsLbConfig.property.arn">arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/data-sources/lb#arn DataAwsLb#arn}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsLb.DataAwsLbConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/data-sources/lb#id DataAwsLb#id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsLb.DataAwsLbConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/data-sources/lb#name DataAwsLb#name}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsLb.DataAwsLbConfig.property.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.dataAwsLb.DataAwsLbConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/data-sources/lb#tags DataAwsLb#tags}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsLb.DataAwsLbConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/data-sources/lb#tags DataAwsLb#tags}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsLb.DataAwsLbConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-aws.dataAwsLb.DataAwsLbTimeouts">DataAwsLbTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1382,7 +1393,7 @@ arn: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/data-sources/lb#arn DataAwsLb#arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/data-sources/lb#arn DataAwsLb#arn}.
 
 ---
 
@@ -1394,7 +1405,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/data-sources/lb#id DataAwsLb#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/data-sources/lb#id DataAwsLb#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1409,7 +1420,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/data-sources/lb#name DataAwsLb#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/data-sources/lb#name DataAwsLb#name}.
 
 ---
 
@@ -1423,7 +1434,7 @@ region: str
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/data-sources/lb#region DataAwsLb#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/data-sources/lb#region DataAwsLb#region}
 
 ---
 
@@ -1435,7 +1446,7 @@ tags: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/data-sources/lb#tags DataAwsLb#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/data-sources/lb#tags DataAwsLb#tags}.
 
 ---
 
@@ -1449,7 +1460,7 @@ timeouts: DataAwsLbTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/data-sources/lb#timeouts DataAwsLb#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/data-sources/lb#timeouts DataAwsLb#timeouts}
 
 ---
 
@@ -1513,7 +1524,7 @@ dataAwsLb.DataAwsLbTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.dataAwsLb.DataAwsLbTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/data-sources/lb#read DataAwsLb#read}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsLb.DataAwsLbTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/data-sources/lb#read DataAwsLb#read}. |
 
 ---
 
@@ -1525,7 +1536,7 @@ read: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/data-sources/lb#read DataAwsLb#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/data-sources/lb#read DataAwsLb#read}.
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### DataAwsS3AccountPublicAccessBlock <a name="DataAwsS3AccountPublicAccessBlock" id="@cdktn/provider-aws.dataAwsS3AccountPublicAccessBlock.DataAwsS3AccountPublicAccessBlock"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/data-sources/s3_account_public_access_block aws_s3_account_public_access_block}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/data-sources/s3_account_public_access_block aws_s3_account_public_access_block}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsS3AccountPublicAccessBlock.DataAwsS3AccountPublicAccessBlock.Initializer"></a>
 
@@ -401,7 +401,7 @@ The construct id used in the generated config for the DataAwsS3AccountPublicAcce
 
 The id of the existing DataAwsS3AccountPublicAccessBlock that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/data-sources/s3_account_public_access_block#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/data-sources/s3_account_public_access_block#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -693,8 +693,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dataawss3accountpublic
 | <code><a href="#@cdktn/provider-aws.dataAwsS3AccountPublicAccessBlock.DataAwsS3AccountPublicAccessBlockConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsS3AccountPublicAccessBlock.DataAwsS3AccountPublicAccessBlockConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsS3AccountPublicAccessBlock.DataAwsS3AccountPublicAccessBlockConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dataAwsS3AccountPublicAccessBlock.DataAwsS3AccountPublicAccessBlockConfig.property.accountId">AccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/data-sources/s3_account_public_access_block#account_id DataAwsS3AccountPublicAccessBlock#account_id}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsS3AccountPublicAccessBlock.DataAwsS3AccountPublicAccessBlockConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/data-sources/s3_account_public_access_block#id DataAwsS3AccountPublicAccessBlock#id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsS3AccountPublicAccessBlock.DataAwsS3AccountPublicAccessBlockConfig.property.accountId">AccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/data-sources/s3_account_public_access_block#account_id DataAwsS3AccountPublicAccessBlock#account_id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsS3AccountPublicAccessBlock.DataAwsS3AccountPublicAccessBlockConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/data-sources/s3_account_public_access_block#id DataAwsS3AccountPublicAccessBlock#id}. |
 
 ---
 
@@ -776,7 +776,7 @@ AccountId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/data-sources/s3_account_public_access_block#account_id DataAwsS3AccountPublicAccessBlock#account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/data-sources/s3_account_public_access_block#account_id DataAwsS3AccountPublicAccessBlock#account_id}.
 
 ---
 
@@ -788,7 +788,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/data-sources/s3_account_public_access_block#id DataAwsS3AccountPublicAccessBlock#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/data-sources/s3_account_public_access_block#id DataAwsS3AccountPublicAccessBlock#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

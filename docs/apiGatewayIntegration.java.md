@@ -4,7 +4,7 @@
 
 ### ApiGatewayIntegration <a name="ApiGatewayIntegration" id="@cdktn/provider-aws.apiGatewayIntegration.ApiGatewayIntegration"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/api_gateway_integration aws_api_gateway_integration}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/api_gateway_integration aws_api_gateway_integration}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.apiGatewayIntegration.ApiGatewayIntegration.Initializer"></a>
 
@@ -54,27 +54,27 @@ ApiGatewayIntegration.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-aws.apiGatewayIntegration.ApiGatewayIntegration.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.apiGatewayIntegration.ApiGatewayIntegration.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.apiGatewayIntegration.ApiGatewayIntegration.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.apiGatewayIntegration.ApiGatewayIntegration.Initializer.parameter.httpMethod">httpMethod</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/api_gateway_integration#http_method ApiGatewayIntegration#http_method}. |
-| <code><a href="#@cdktn/provider-aws.apiGatewayIntegration.ApiGatewayIntegration.Initializer.parameter.resourceId">resourceId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/api_gateway_integration#resource_id ApiGatewayIntegration#resource_id}. |
-| <code><a href="#@cdktn/provider-aws.apiGatewayIntegration.ApiGatewayIntegration.Initializer.parameter.restApiId">restApiId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/api_gateway_integration#rest_api_id ApiGatewayIntegration#rest_api_id}. |
-| <code><a href="#@cdktn/provider-aws.apiGatewayIntegration.ApiGatewayIntegration.Initializer.parameter.type">type</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/api_gateway_integration#type ApiGatewayIntegration#type}. |
-| <code><a href="#@cdktn/provider-aws.apiGatewayIntegration.ApiGatewayIntegration.Initializer.parameter.cacheKeyParameters">cacheKeyParameters</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/api_gateway_integration#cache_key_parameters ApiGatewayIntegration#cache_key_parameters}. |
-| <code><a href="#@cdktn/provider-aws.apiGatewayIntegration.ApiGatewayIntegration.Initializer.parameter.cacheNamespace">cacheNamespace</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/api_gateway_integration#cache_namespace ApiGatewayIntegration#cache_namespace}. |
-| <code><a href="#@cdktn/provider-aws.apiGatewayIntegration.ApiGatewayIntegration.Initializer.parameter.connectionId">connectionId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/api_gateway_integration#connection_id ApiGatewayIntegration#connection_id}. |
-| <code><a href="#@cdktn/provider-aws.apiGatewayIntegration.ApiGatewayIntegration.Initializer.parameter.connectionType">connectionType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/api_gateway_integration#connection_type ApiGatewayIntegration#connection_type}. |
-| <code><a href="#@cdktn/provider-aws.apiGatewayIntegration.ApiGatewayIntegration.Initializer.parameter.contentHandling">contentHandling</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/api_gateway_integration#content_handling ApiGatewayIntegration#content_handling}. |
-| <code><a href="#@cdktn/provider-aws.apiGatewayIntegration.ApiGatewayIntegration.Initializer.parameter.credentials">credentials</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/api_gateway_integration#credentials ApiGatewayIntegration#credentials}. |
-| <code><a href="#@cdktn/provider-aws.apiGatewayIntegration.ApiGatewayIntegration.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/api_gateway_integration#id ApiGatewayIntegration#id}. |
-| <code><a href="#@cdktn/provider-aws.apiGatewayIntegration.ApiGatewayIntegration.Initializer.parameter.integrationHttpMethod">integrationHttpMethod</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/api_gateway_integration#integration_http_method ApiGatewayIntegration#integration_http_method}. |
-| <code><a href="#@cdktn/provider-aws.apiGatewayIntegration.ApiGatewayIntegration.Initializer.parameter.integrationTarget">integrationTarget</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/api_gateway_integration#integration_target ApiGatewayIntegration#integration_target}. |
-| <code><a href="#@cdktn/provider-aws.apiGatewayIntegration.ApiGatewayIntegration.Initializer.parameter.passthroughBehavior">passthroughBehavior</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/api_gateway_integration#passthrough_behavior ApiGatewayIntegration#passthrough_behavior}. |
+| <code><a href="#@cdktn/provider-aws.apiGatewayIntegration.ApiGatewayIntegration.Initializer.parameter.httpMethod">httpMethod</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/api_gateway_integration#http_method ApiGatewayIntegration#http_method}. |
+| <code><a href="#@cdktn/provider-aws.apiGatewayIntegration.ApiGatewayIntegration.Initializer.parameter.resourceId">resourceId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/api_gateway_integration#resource_id ApiGatewayIntegration#resource_id}. |
+| <code><a href="#@cdktn/provider-aws.apiGatewayIntegration.ApiGatewayIntegration.Initializer.parameter.restApiId">restApiId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/api_gateway_integration#rest_api_id ApiGatewayIntegration#rest_api_id}. |
+| <code><a href="#@cdktn/provider-aws.apiGatewayIntegration.ApiGatewayIntegration.Initializer.parameter.type">type</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/api_gateway_integration#type ApiGatewayIntegration#type}. |
+| <code><a href="#@cdktn/provider-aws.apiGatewayIntegration.ApiGatewayIntegration.Initializer.parameter.cacheKeyParameters">cacheKeyParameters</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/api_gateway_integration#cache_key_parameters ApiGatewayIntegration#cache_key_parameters}. |
+| <code><a href="#@cdktn/provider-aws.apiGatewayIntegration.ApiGatewayIntegration.Initializer.parameter.cacheNamespace">cacheNamespace</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/api_gateway_integration#cache_namespace ApiGatewayIntegration#cache_namespace}. |
+| <code><a href="#@cdktn/provider-aws.apiGatewayIntegration.ApiGatewayIntegration.Initializer.parameter.connectionId">connectionId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/api_gateway_integration#connection_id ApiGatewayIntegration#connection_id}. |
+| <code><a href="#@cdktn/provider-aws.apiGatewayIntegration.ApiGatewayIntegration.Initializer.parameter.connectionType">connectionType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/api_gateway_integration#connection_type ApiGatewayIntegration#connection_type}. |
+| <code><a href="#@cdktn/provider-aws.apiGatewayIntegration.ApiGatewayIntegration.Initializer.parameter.contentHandling">contentHandling</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/api_gateway_integration#content_handling ApiGatewayIntegration#content_handling}. |
+| <code><a href="#@cdktn/provider-aws.apiGatewayIntegration.ApiGatewayIntegration.Initializer.parameter.credentials">credentials</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/api_gateway_integration#credentials ApiGatewayIntegration#credentials}. |
+| <code><a href="#@cdktn/provider-aws.apiGatewayIntegration.ApiGatewayIntegration.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/api_gateway_integration#id ApiGatewayIntegration#id}. |
+| <code><a href="#@cdktn/provider-aws.apiGatewayIntegration.ApiGatewayIntegration.Initializer.parameter.integrationHttpMethod">integrationHttpMethod</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/api_gateway_integration#integration_http_method ApiGatewayIntegration#integration_http_method}. |
+| <code><a href="#@cdktn/provider-aws.apiGatewayIntegration.ApiGatewayIntegration.Initializer.parameter.integrationTarget">integrationTarget</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/api_gateway_integration#integration_target ApiGatewayIntegration#integration_target}. |
+| <code><a href="#@cdktn/provider-aws.apiGatewayIntegration.ApiGatewayIntegration.Initializer.parameter.passthroughBehavior">passthroughBehavior</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/api_gateway_integration#passthrough_behavior ApiGatewayIntegration#passthrough_behavior}. |
 | <code><a href="#@cdktn/provider-aws.apiGatewayIntegration.ApiGatewayIntegration.Initializer.parameter.region">region</a></code> | <code>java.lang.String</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.apiGatewayIntegration.ApiGatewayIntegration.Initializer.parameter.requestParameters">requestParameters</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/api_gateway_integration#request_parameters ApiGatewayIntegration#request_parameters}. |
-| <code><a href="#@cdktn/provider-aws.apiGatewayIntegration.ApiGatewayIntegration.Initializer.parameter.requestTemplates">requestTemplates</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/api_gateway_integration#request_templates ApiGatewayIntegration#request_templates}. |
-| <code><a href="#@cdktn/provider-aws.apiGatewayIntegration.ApiGatewayIntegration.Initializer.parameter.responseTransferMode">responseTransferMode</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/api_gateway_integration#response_transfer_mode ApiGatewayIntegration#response_transfer_mode}. |
-| <code><a href="#@cdktn/provider-aws.apiGatewayIntegration.ApiGatewayIntegration.Initializer.parameter.timeoutMilliseconds">timeoutMilliseconds</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/api_gateway_integration#timeout_milliseconds ApiGatewayIntegration#timeout_milliseconds}. |
+| <code><a href="#@cdktn/provider-aws.apiGatewayIntegration.ApiGatewayIntegration.Initializer.parameter.requestParameters">requestParameters</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/api_gateway_integration#request_parameters ApiGatewayIntegration#request_parameters}. |
+| <code><a href="#@cdktn/provider-aws.apiGatewayIntegration.ApiGatewayIntegration.Initializer.parameter.requestTemplates">requestTemplates</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/api_gateway_integration#request_templates ApiGatewayIntegration#request_templates}. |
+| <code><a href="#@cdktn/provider-aws.apiGatewayIntegration.ApiGatewayIntegration.Initializer.parameter.responseTransferMode">responseTransferMode</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/api_gateway_integration#response_transfer_mode ApiGatewayIntegration#response_transfer_mode}. |
+| <code><a href="#@cdktn/provider-aws.apiGatewayIntegration.ApiGatewayIntegration.Initializer.parameter.timeoutMilliseconds">timeoutMilliseconds</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/api_gateway_integration#timeout_milliseconds ApiGatewayIntegration#timeout_milliseconds}. |
 | <code><a href="#@cdktn/provider-aws.apiGatewayIntegration.ApiGatewayIntegration.Initializer.parameter.tlsConfig">tlsConfig</a></code> | <code><a href="#@cdktn/provider-aws.apiGatewayIntegration.ApiGatewayIntegrationTlsConfig">ApiGatewayIntegrationTlsConfig</a></code> | tls_config block. |
-| <code><a href="#@cdktn/provider-aws.apiGatewayIntegration.ApiGatewayIntegration.Initializer.parameter.uri">uri</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/api_gateway_integration#uri ApiGatewayIntegration#uri}. |
+| <code><a href="#@cdktn/provider-aws.apiGatewayIntegration.ApiGatewayIntegration.Initializer.parameter.uri">uri</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/api_gateway_integration#uri ApiGatewayIntegration#uri}. |
 
 ---
 
@@ -142,7 +142,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/api_gateway_integration#http_method ApiGatewayIntegration#http_method}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/api_gateway_integration#http_method ApiGatewayIntegration#http_method}.
 
 ---
 
@@ -150,7 +150,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/api_gateway_integration#resource_id ApiGatewayIntegration#resource_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/api_gateway_integration#resource_id ApiGatewayIntegration#resource_id}.
 
 ---
 
@@ -158,7 +158,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/api_gateway_integration#rest_api_id ApiGatewayIntegration#rest_api_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/api_gateway_integration#rest_api_id ApiGatewayIntegration#rest_api_id}.
 
 ---
 
@@ -166,7 +166,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/api_gateway_integration#type ApiGatewayIntegration#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/api_gateway_integration#type ApiGatewayIntegration#type}.
 
 ---
 
@@ -174,7 +174,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/api_gateway_integration#cache_key_parameters ApiGatewayIntegration#cache_key_parameters}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/api_gateway_integration#cache_key_parameters ApiGatewayIntegration#cache_key_parameters}.
 
 ---
 
@@ -182,7 +182,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/api_gateway_integration#cache_namespace ApiGatewayIntegration#cache_namespace}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/api_gateway_integration#cache_namespace ApiGatewayIntegration#cache_namespace}.
 
 ---
 
@@ -190,7 +190,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/api_gateway_integration#connection_id ApiGatewayIntegration#connection_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/api_gateway_integration#connection_id ApiGatewayIntegration#connection_id}.
 
 ---
 
@@ -198,7 +198,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/api_gateway_integration#connection_type ApiGatewayIntegration#connection_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/api_gateway_integration#connection_type ApiGatewayIntegration#connection_type}.
 
 ---
 
@@ -206,7 +206,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/api_gateway_integration#content_handling ApiGatewayIntegration#content_handling}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/api_gateway_integration#content_handling ApiGatewayIntegration#content_handling}.
 
 ---
 
@@ -214,7 +214,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/api_gateway_integration#credentials ApiGatewayIntegration#credentials}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/api_gateway_integration#credentials ApiGatewayIntegration#credentials}.
 
 ---
 
@@ -222,7 +222,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/api_gateway_integration#id ApiGatewayIntegration#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/api_gateway_integration#id ApiGatewayIntegration#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -233,7 +233,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/api_gateway_integration#integration_http_method ApiGatewayIntegration#integration_http_method}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/api_gateway_integration#integration_http_method ApiGatewayIntegration#integration_http_method}.
 
 ---
 
@@ -241,7 +241,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/api_gateway_integration#integration_target ApiGatewayIntegration#integration_target}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/api_gateway_integration#integration_target ApiGatewayIntegration#integration_target}.
 
 ---
 
@@ -249,7 +249,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/api_gateway_integration#passthrough_behavior ApiGatewayIntegration#passthrough_behavior}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/api_gateway_integration#passthrough_behavior ApiGatewayIntegration#passthrough_behavior}.
 
 ---
 
@@ -259,7 +259,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/api_gateway_integration#region ApiGatewayIntegration#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/api_gateway_integration#region ApiGatewayIntegration#region}
 
 ---
 
@@ -267,7 +267,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/api_gateway_integration#request_parameters ApiGatewayIntegration#request_parameters}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/api_gateway_integration#request_parameters ApiGatewayIntegration#request_parameters}.
 
 ---
 
@@ -275,7 +275,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/api_gateway_integration#request_templates ApiGatewayIntegration#request_templates}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/api_gateway_integration#request_templates ApiGatewayIntegration#request_templates}.
 
 ---
 
@@ -283,7 +283,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/api_gateway_integration#response_transfer_mode ApiGatewayIntegration#response_transfer_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/api_gateway_integration#response_transfer_mode ApiGatewayIntegration#response_transfer_mode}.
 
 ---
 
@@ -291,7 +291,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/api_gateway_integration#timeout_milliseconds ApiGatewayIntegration#timeout_milliseconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/api_gateway_integration#timeout_milliseconds ApiGatewayIntegration#timeout_milliseconds}.
 
 ---
 
@@ -301,7 +301,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 tls_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/api_gateway_integration#tls_config ApiGatewayIntegration#tls_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/api_gateway_integration#tls_config ApiGatewayIntegration#tls_config}
 
 ---
 
@@ -309,7 +309,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/api_gateway_integration#uri ApiGatewayIntegration#uri}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/api_gateway_integration#uri ApiGatewayIntegration#uri}.
 
 ---
 
@@ -890,7 +890,7 @@ The construct id used in the generated config for the ApiGatewayIntegration to i
 
 The id of the existing ApiGatewayIntegration that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/api_gateway_integration#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/api_gateway_integration#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1597,27 +1597,27 @@ ApiGatewayIntegrationConfig.builder()
 | <code><a href="#@cdktn/provider-aws.apiGatewayIntegration.ApiGatewayIntegrationConfig.property.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.apiGatewayIntegration.ApiGatewayIntegrationConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.apiGatewayIntegration.ApiGatewayIntegrationConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.apiGatewayIntegration.ApiGatewayIntegrationConfig.property.httpMethod">httpMethod</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/api_gateway_integration#http_method ApiGatewayIntegration#http_method}. |
-| <code><a href="#@cdktn/provider-aws.apiGatewayIntegration.ApiGatewayIntegrationConfig.property.resourceId">resourceId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/api_gateway_integration#resource_id ApiGatewayIntegration#resource_id}. |
-| <code><a href="#@cdktn/provider-aws.apiGatewayIntegration.ApiGatewayIntegrationConfig.property.restApiId">restApiId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/api_gateway_integration#rest_api_id ApiGatewayIntegration#rest_api_id}. |
-| <code><a href="#@cdktn/provider-aws.apiGatewayIntegration.ApiGatewayIntegrationConfig.property.type">type</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/api_gateway_integration#type ApiGatewayIntegration#type}. |
-| <code><a href="#@cdktn/provider-aws.apiGatewayIntegration.ApiGatewayIntegrationConfig.property.cacheKeyParameters">cacheKeyParameters</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/api_gateway_integration#cache_key_parameters ApiGatewayIntegration#cache_key_parameters}. |
-| <code><a href="#@cdktn/provider-aws.apiGatewayIntegration.ApiGatewayIntegrationConfig.property.cacheNamespace">cacheNamespace</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/api_gateway_integration#cache_namespace ApiGatewayIntegration#cache_namespace}. |
-| <code><a href="#@cdktn/provider-aws.apiGatewayIntegration.ApiGatewayIntegrationConfig.property.connectionId">connectionId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/api_gateway_integration#connection_id ApiGatewayIntegration#connection_id}. |
-| <code><a href="#@cdktn/provider-aws.apiGatewayIntegration.ApiGatewayIntegrationConfig.property.connectionType">connectionType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/api_gateway_integration#connection_type ApiGatewayIntegration#connection_type}. |
-| <code><a href="#@cdktn/provider-aws.apiGatewayIntegration.ApiGatewayIntegrationConfig.property.contentHandling">contentHandling</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/api_gateway_integration#content_handling ApiGatewayIntegration#content_handling}. |
-| <code><a href="#@cdktn/provider-aws.apiGatewayIntegration.ApiGatewayIntegrationConfig.property.credentials">credentials</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/api_gateway_integration#credentials ApiGatewayIntegration#credentials}. |
-| <code><a href="#@cdktn/provider-aws.apiGatewayIntegration.ApiGatewayIntegrationConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/api_gateway_integration#id ApiGatewayIntegration#id}. |
-| <code><a href="#@cdktn/provider-aws.apiGatewayIntegration.ApiGatewayIntegrationConfig.property.integrationHttpMethod">integrationHttpMethod</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/api_gateway_integration#integration_http_method ApiGatewayIntegration#integration_http_method}. |
-| <code><a href="#@cdktn/provider-aws.apiGatewayIntegration.ApiGatewayIntegrationConfig.property.integrationTarget">integrationTarget</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/api_gateway_integration#integration_target ApiGatewayIntegration#integration_target}. |
-| <code><a href="#@cdktn/provider-aws.apiGatewayIntegration.ApiGatewayIntegrationConfig.property.passthroughBehavior">passthroughBehavior</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/api_gateway_integration#passthrough_behavior ApiGatewayIntegration#passthrough_behavior}. |
+| <code><a href="#@cdktn/provider-aws.apiGatewayIntegration.ApiGatewayIntegrationConfig.property.httpMethod">httpMethod</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/api_gateway_integration#http_method ApiGatewayIntegration#http_method}. |
+| <code><a href="#@cdktn/provider-aws.apiGatewayIntegration.ApiGatewayIntegrationConfig.property.resourceId">resourceId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/api_gateway_integration#resource_id ApiGatewayIntegration#resource_id}. |
+| <code><a href="#@cdktn/provider-aws.apiGatewayIntegration.ApiGatewayIntegrationConfig.property.restApiId">restApiId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/api_gateway_integration#rest_api_id ApiGatewayIntegration#rest_api_id}. |
+| <code><a href="#@cdktn/provider-aws.apiGatewayIntegration.ApiGatewayIntegrationConfig.property.type">type</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/api_gateway_integration#type ApiGatewayIntegration#type}. |
+| <code><a href="#@cdktn/provider-aws.apiGatewayIntegration.ApiGatewayIntegrationConfig.property.cacheKeyParameters">cacheKeyParameters</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/api_gateway_integration#cache_key_parameters ApiGatewayIntegration#cache_key_parameters}. |
+| <code><a href="#@cdktn/provider-aws.apiGatewayIntegration.ApiGatewayIntegrationConfig.property.cacheNamespace">cacheNamespace</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/api_gateway_integration#cache_namespace ApiGatewayIntegration#cache_namespace}. |
+| <code><a href="#@cdktn/provider-aws.apiGatewayIntegration.ApiGatewayIntegrationConfig.property.connectionId">connectionId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/api_gateway_integration#connection_id ApiGatewayIntegration#connection_id}. |
+| <code><a href="#@cdktn/provider-aws.apiGatewayIntegration.ApiGatewayIntegrationConfig.property.connectionType">connectionType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/api_gateway_integration#connection_type ApiGatewayIntegration#connection_type}. |
+| <code><a href="#@cdktn/provider-aws.apiGatewayIntegration.ApiGatewayIntegrationConfig.property.contentHandling">contentHandling</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/api_gateway_integration#content_handling ApiGatewayIntegration#content_handling}. |
+| <code><a href="#@cdktn/provider-aws.apiGatewayIntegration.ApiGatewayIntegrationConfig.property.credentials">credentials</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/api_gateway_integration#credentials ApiGatewayIntegration#credentials}. |
+| <code><a href="#@cdktn/provider-aws.apiGatewayIntegration.ApiGatewayIntegrationConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/api_gateway_integration#id ApiGatewayIntegration#id}. |
+| <code><a href="#@cdktn/provider-aws.apiGatewayIntegration.ApiGatewayIntegrationConfig.property.integrationHttpMethod">integrationHttpMethod</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/api_gateway_integration#integration_http_method ApiGatewayIntegration#integration_http_method}. |
+| <code><a href="#@cdktn/provider-aws.apiGatewayIntegration.ApiGatewayIntegrationConfig.property.integrationTarget">integrationTarget</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/api_gateway_integration#integration_target ApiGatewayIntegration#integration_target}. |
+| <code><a href="#@cdktn/provider-aws.apiGatewayIntegration.ApiGatewayIntegrationConfig.property.passthroughBehavior">passthroughBehavior</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/api_gateway_integration#passthrough_behavior ApiGatewayIntegration#passthrough_behavior}. |
 | <code><a href="#@cdktn/provider-aws.apiGatewayIntegration.ApiGatewayIntegrationConfig.property.region">region</a></code> | <code>java.lang.String</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.apiGatewayIntegration.ApiGatewayIntegrationConfig.property.requestParameters">requestParameters</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/api_gateway_integration#request_parameters ApiGatewayIntegration#request_parameters}. |
-| <code><a href="#@cdktn/provider-aws.apiGatewayIntegration.ApiGatewayIntegrationConfig.property.requestTemplates">requestTemplates</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/api_gateway_integration#request_templates ApiGatewayIntegration#request_templates}. |
-| <code><a href="#@cdktn/provider-aws.apiGatewayIntegration.ApiGatewayIntegrationConfig.property.responseTransferMode">responseTransferMode</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/api_gateway_integration#response_transfer_mode ApiGatewayIntegration#response_transfer_mode}. |
-| <code><a href="#@cdktn/provider-aws.apiGatewayIntegration.ApiGatewayIntegrationConfig.property.timeoutMilliseconds">timeoutMilliseconds</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/api_gateway_integration#timeout_milliseconds ApiGatewayIntegration#timeout_milliseconds}. |
+| <code><a href="#@cdktn/provider-aws.apiGatewayIntegration.ApiGatewayIntegrationConfig.property.requestParameters">requestParameters</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/api_gateway_integration#request_parameters ApiGatewayIntegration#request_parameters}. |
+| <code><a href="#@cdktn/provider-aws.apiGatewayIntegration.ApiGatewayIntegrationConfig.property.requestTemplates">requestTemplates</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/api_gateway_integration#request_templates ApiGatewayIntegration#request_templates}. |
+| <code><a href="#@cdktn/provider-aws.apiGatewayIntegration.ApiGatewayIntegrationConfig.property.responseTransferMode">responseTransferMode</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/api_gateway_integration#response_transfer_mode ApiGatewayIntegration#response_transfer_mode}. |
+| <code><a href="#@cdktn/provider-aws.apiGatewayIntegration.ApiGatewayIntegrationConfig.property.timeoutMilliseconds">timeoutMilliseconds</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/api_gateway_integration#timeout_milliseconds ApiGatewayIntegration#timeout_milliseconds}. |
 | <code><a href="#@cdktn/provider-aws.apiGatewayIntegration.ApiGatewayIntegrationConfig.property.tlsConfig">tlsConfig</a></code> | <code><a href="#@cdktn/provider-aws.apiGatewayIntegration.ApiGatewayIntegrationTlsConfig">ApiGatewayIntegrationTlsConfig</a></code> | tls_config block. |
-| <code><a href="#@cdktn/provider-aws.apiGatewayIntegration.ApiGatewayIntegrationConfig.property.uri">uri</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/api_gateway_integration#uri ApiGatewayIntegration#uri}. |
+| <code><a href="#@cdktn/provider-aws.apiGatewayIntegration.ApiGatewayIntegrationConfig.property.uri">uri</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/api_gateway_integration#uri ApiGatewayIntegration#uri}. |
 
 ---
 
@@ -1699,7 +1699,7 @@ public java.lang.String getHttpMethod();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/api_gateway_integration#http_method ApiGatewayIntegration#http_method}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/api_gateway_integration#http_method ApiGatewayIntegration#http_method}.
 
 ---
 
@@ -1711,7 +1711,7 @@ public java.lang.String getResourceId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/api_gateway_integration#resource_id ApiGatewayIntegration#resource_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/api_gateway_integration#resource_id ApiGatewayIntegration#resource_id}.
 
 ---
 
@@ -1723,7 +1723,7 @@ public java.lang.String getRestApiId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/api_gateway_integration#rest_api_id ApiGatewayIntegration#rest_api_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/api_gateway_integration#rest_api_id ApiGatewayIntegration#rest_api_id}.
 
 ---
 
@@ -1735,7 +1735,7 @@ public java.lang.String getType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/api_gateway_integration#type ApiGatewayIntegration#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/api_gateway_integration#type ApiGatewayIntegration#type}.
 
 ---
 
@@ -1747,7 +1747,7 @@ public java.util.List<java.lang.String> getCacheKeyParameters();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/api_gateway_integration#cache_key_parameters ApiGatewayIntegration#cache_key_parameters}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/api_gateway_integration#cache_key_parameters ApiGatewayIntegration#cache_key_parameters}.
 
 ---
 
@@ -1759,7 +1759,7 @@ public java.lang.String getCacheNamespace();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/api_gateway_integration#cache_namespace ApiGatewayIntegration#cache_namespace}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/api_gateway_integration#cache_namespace ApiGatewayIntegration#cache_namespace}.
 
 ---
 
@@ -1771,7 +1771,7 @@ public java.lang.String getConnectionId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/api_gateway_integration#connection_id ApiGatewayIntegration#connection_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/api_gateway_integration#connection_id ApiGatewayIntegration#connection_id}.
 
 ---
 
@@ -1783,7 +1783,7 @@ public java.lang.String getConnectionType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/api_gateway_integration#connection_type ApiGatewayIntegration#connection_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/api_gateway_integration#connection_type ApiGatewayIntegration#connection_type}.
 
 ---
 
@@ -1795,7 +1795,7 @@ public java.lang.String getContentHandling();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/api_gateway_integration#content_handling ApiGatewayIntegration#content_handling}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/api_gateway_integration#content_handling ApiGatewayIntegration#content_handling}.
 
 ---
 
@@ -1807,7 +1807,7 @@ public java.lang.String getCredentials();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/api_gateway_integration#credentials ApiGatewayIntegration#credentials}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/api_gateway_integration#credentials ApiGatewayIntegration#credentials}.
 
 ---
 
@@ -1819,7 +1819,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/api_gateway_integration#id ApiGatewayIntegration#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/api_gateway_integration#id ApiGatewayIntegration#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1834,7 +1834,7 @@ public java.lang.String getIntegrationHttpMethod();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/api_gateway_integration#integration_http_method ApiGatewayIntegration#integration_http_method}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/api_gateway_integration#integration_http_method ApiGatewayIntegration#integration_http_method}.
 
 ---
 
@@ -1846,7 +1846,7 @@ public java.lang.String getIntegrationTarget();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/api_gateway_integration#integration_target ApiGatewayIntegration#integration_target}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/api_gateway_integration#integration_target ApiGatewayIntegration#integration_target}.
 
 ---
 
@@ -1858,7 +1858,7 @@ public java.lang.String getPassthroughBehavior();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/api_gateway_integration#passthrough_behavior ApiGatewayIntegration#passthrough_behavior}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/api_gateway_integration#passthrough_behavior ApiGatewayIntegration#passthrough_behavior}.
 
 ---
 
@@ -1872,7 +1872,7 @@ public java.lang.String getRegion();
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/api_gateway_integration#region ApiGatewayIntegration#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/api_gateway_integration#region ApiGatewayIntegration#region}
 
 ---
 
@@ -1884,7 +1884,7 @@ public java.util.Map<java.lang.String, java.lang.String> getRequestParameters();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/api_gateway_integration#request_parameters ApiGatewayIntegration#request_parameters}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/api_gateway_integration#request_parameters ApiGatewayIntegration#request_parameters}.
 
 ---
 
@@ -1896,7 +1896,7 @@ public java.util.Map<java.lang.String, java.lang.String> getRequestTemplates();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/api_gateway_integration#request_templates ApiGatewayIntegration#request_templates}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/api_gateway_integration#request_templates ApiGatewayIntegration#request_templates}.
 
 ---
 
@@ -1908,7 +1908,7 @@ public java.lang.String getResponseTransferMode();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/api_gateway_integration#response_transfer_mode ApiGatewayIntegration#response_transfer_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/api_gateway_integration#response_transfer_mode ApiGatewayIntegration#response_transfer_mode}.
 
 ---
 
@@ -1920,7 +1920,7 @@ public java.lang.Number getTimeoutMilliseconds();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/api_gateway_integration#timeout_milliseconds ApiGatewayIntegration#timeout_milliseconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/api_gateway_integration#timeout_milliseconds ApiGatewayIntegration#timeout_milliseconds}.
 
 ---
 
@@ -1934,7 +1934,7 @@ public ApiGatewayIntegrationTlsConfig getTlsConfig();
 
 tls_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/api_gateway_integration#tls_config ApiGatewayIntegration#tls_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/api_gateway_integration#tls_config ApiGatewayIntegration#tls_config}
 
 ---
 
@@ -1946,7 +1946,7 @@ public java.lang.String getUri();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/api_gateway_integration#uri ApiGatewayIntegration#uri}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/api_gateway_integration#uri ApiGatewayIntegration#uri}.
 
 ---
 
@@ -1966,7 +1966,7 @@ ApiGatewayIntegrationTlsConfig.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.apiGatewayIntegration.ApiGatewayIntegrationTlsConfig.property.insecureSkipVerification">insecureSkipVerification</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/api_gateway_integration#insecure_skip_verification ApiGatewayIntegration#insecure_skip_verification}. |
+| <code><a href="#@cdktn/provider-aws.apiGatewayIntegration.ApiGatewayIntegrationTlsConfig.property.insecureSkipVerification">insecureSkipVerification</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/api_gateway_integration#insecure_skip_verification ApiGatewayIntegration#insecure_skip_verification}. |
 
 ---
 
@@ -1978,7 +1978,7 @@ public java.lang.Boolean|IResolvable getInsecureSkipVerification();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/api_gateway_integration#insecure_skip_verification ApiGatewayIntegration#insecure_skip_verification}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/api_gateway_integration#insecure_skip_verification ApiGatewayIntegration#insecure_skip_verification}.
 
 ---
 
