@@ -1,3 +1,3 @@
 # `aws_volume_attachment`
 
-Refer to the Terraform Registry for docs: [`aws_volume_attachment`](https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/volume_attachment).
+Refer to the Terraform Registry for docs: [`aws_volume_attachment`](https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/volume_attachment).

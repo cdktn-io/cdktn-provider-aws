@@ -538,6 +538,8 @@ Object.defineProperty(exports, 'ec2InstanceConnectEndpoint', { get: function () 
 Object.defineProperty(exports, 'ec2InstanceMetadataDefaults', { get: function () { return require('./ec2-instance-metadata-defaults'); } });
 Object.defineProperty(exports, 'ec2InstanceState', { get: function () { return require('./ec2-instance-state'); } });
 Object.defineProperty(exports, 'ec2LocalGatewayRoute', { get: function () { return require('./ec2-local-gateway-route'); } });
+Object.defineProperty(exports, 'ec2LocalGatewayRouteTable', { get: function () { return require('./ec2-local-gateway-route-table'); } });
+Object.defineProperty(exports, 'ec2LocalGatewayRouteTableVirtualInterfaceGroupAssociation', { get: function () { return require('./ec2-local-gateway-route-table-virtual-interface-group-association'); } });
 Object.defineProperty(exports, 'ec2LocalGatewayRouteTableVpcAssociation', { get: function () { return require('./ec2-local-gateway-route-table-vpc-association'); } });
 Object.defineProperty(exports, 'ec2ManagedPrefixList', { get: function () { return require('./ec2-managed-prefix-list'); } });
 Object.defineProperty(exports, 'ec2ManagedPrefixListEntry', { get: function () { return require('./ec2-managed-prefix-list-entry'); } });
@@ -826,6 +828,7 @@ Object.defineProperty(exports, 'kendraThesaurus', { get: function () { return re
 Object.defineProperty(exports, 'keyPair', { get: function () { return require('./key-pair'); } });
 Object.defineProperty(exports, 'keyspacesKeyspace', { get: function () { return require('./keyspaces-keyspace'); } });
 Object.defineProperty(exports, 'keyspacesTable', { get: function () { return require('./keyspaces-table'); } });
+Object.defineProperty(exports, 'kinesisAccountSettings', { get: function () { return require('./kinesis-account-settings'); } });
 Object.defineProperty(exports, 'kinesisAnalyticsApplication', { get: function () { return require('./kinesis-analytics-application'); } });
 Object.defineProperty(exports, 'kinesisFirehoseDeliveryStream', { get: function () { return require('./kinesis-firehose-delivery-stream'); } });
 Object.defineProperty(exports, 'kinesisResourcePolicy', { get: function () { return require('./kinesis-resource-policy'); } });
@@ -1089,6 +1092,7 @@ Object.defineProperty(exports, 'pinpointEventStream', { get: function () { retur
 Object.defineProperty(exports, 'pinpointGcmChannel', { get: function () { return require('./pinpoint-gcm-channel'); } });
 Object.defineProperty(exports, 'pinpointSmsChannel', { get: function () { return require('./pinpoint-sms-channel'); } });
 Object.defineProperty(exports, 'pinpointsmsvoicev2ConfigurationSet', { get: function () { return require('./pinpointsmsvoicev2-configuration-set'); } });
+Object.defineProperty(exports, 'pinpointsmsvoicev2EventDestination', { get: function () { return require('./pinpointsmsvoicev2-event-destination'); } });
 Object.defineProperty(exports, 'pinpointsmsvoicev2OptOutList', { get: function () { return require('./pinpointsmsvoicev2-opt-out-list'); } });
 Object.defineProperty(exports, 'pinpointsmsvoicev2PhoneNumber', { get: function () { return require('./pinpointsmsvoicev2-phone-number'); } });
 Object.defineProperty(exports, 'pipesPipe', { get: function () { return require('./pipes-pipe'); } });
@@ -1844,6 +1848,7 @@ Object.defineProperty(exports, 'dataAwsEc2ClientVpnEndpoint', { get: function ()
 Object.defineProperty(exports, 'dataAwsEc2CoipPool', { get: function () { return require('./data-aws-ec2-coip-pool'); } });
 Object.defineProperty(exports, 'dataAwsEc2CoipPools', { get: function () { return require('./data-aws-ec2-coip-pools'); } });
 Object.defineProperty(exports, 'dataAwsEc2Host', { get: function () { return require('./data-aws-ec2-host'); } });
+Object.defineProperty(exports, 'dataAwsEc2Hosts', { get: function () { return require('./data-aws-ec2-hosts'); } });
 Object.defineProperty(exports, 'dataAwsEc2InstanceType', { get: function () { return require('./data-aws-ec2-instance-type'); } });
 Object.defineProperty(exports, 'dataAwsEc2InstanceTypeOffering', { get: function () { return require('./data-aws-ec2-instance-type-offering'); } });
 Object.defineProperty(exports, 'dataAwsEc2InstanceTypeOfferings', { get: function () { return require('./data-aws-ec2-instance-type-offerings'); } });

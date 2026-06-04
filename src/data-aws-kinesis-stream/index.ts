@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/data-sources/kinesis_stream
+// https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/data-sources/kinesis_stream
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,24 +13,24 @@ import * as cdktn from 'cdktn';
 
 export interface DataAwsKinesisStreamConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/data-sources/kinesis_stream#id DataAwsKinesisStream#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/data-sources/kinesis_stream#id DataAwsKinesisStream#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/data-sources/kinesis_stream#name DataAwsKinesisStream#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/data-sources/kinesis_stream#name DataAwsKinesisStream#name}
   */
   readonly name: string;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/data-sources/kinesis_stream#region DataAwsKinesisStream#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/data-sources/kinesis_stream#region DataAwsKinesisStream#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/data-sources/kinesis_stream#tags DataAwsKinesisStream#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/data-sources/kinesis_stream#tags DataAwsKinesisStream#tags}
   */
   readonly tags?: { [key: string]: string };
 }
@@ -109,9 +109,89 @@ export class DataAwsKinesisStreamStreamModeDetailsList extends cdktn.ComplexList
     return new DataAwsKinesisStreamStreamModeDetailsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface DataAwsKinesisStreamWarmThroughput {
+}
+
+export function dataAwsKinesisStreamWarmThroughputToTerraform(struct?: DataAwsKinesisStreamWarmThroughput): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function dataAwsKinesisStreamWarmThroughputToHclTerraform(struct?: DataAwsKinesisStreamWarmThroughput): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataAwsKinesisStreamWarmThroughputOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsKinesisStreamWarmThroughput | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsKinesisStreamWarmThroughput | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // current_mib_ps - computed: true, optional: false, required: false
+  public get currentMibPs() {
+    return this.getNumberAttribute('current_mib_ps');
+  }
+
+  // target_mib_ps - computed: true, optional: false, required: false
+  public get targetMibPs() {
+    return this.getNumberAttribute('target_mib_ps');
+  }
+}
+
+export class DataAwsKinesisStreamWarmThroughputList extends cdktn.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsKinesisStreamWarmThroughputOutputReference {
+    return new DataAwsKinesisStreamWarmThroughputOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/data-sources/kinesis_stream aws_kinesis_stream}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/data-sources/kinesis_stream aws_kinesis_stream}
 */
 export class DataAwsKinesisStream extends cdktn.TerraformDataSource {
 
@@ -127,7 +207,7 @@ export class DataAwsKinesisStream extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataAwsKinesisStream resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsKinesisStream to import
-  * @param importFromId The id of the existing DataAwsKinesisStream that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/data-sources/kinesis_stream#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsKinesisStream that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/data-sources/kinesis_stream#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsKinesisStream to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -139,7 +219,7 @@ export class DataAwsKinesisStream extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/data-sources/kinesis_stream aws_kinesis_stream} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/data-sources/kinesis_stream aws_kinesis_stream} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -150,7 +230,7 @@ export class DataAwsKinesisStream extends cdktn.TerraformDataSource {
       terraformResourceType: 'aws_kinesis_stream',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.47.0',
+        providerVersion: '6.48.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
@@ -286,6 +366,12 @@ export class DataAwsKinesisStream extends cdktn.TerraformDataSource {
   // Temporarily expose input value. Use with caution.
   public get tagsInput() {
     return this._tags;
+  }
+
+  // warm_throughput - computed: true, optional: false, required: false
+  private _warmThroughput = new DataAwsKinesisStreamWarmThroughputList(this, "warm_throughput", false);
+  public get warmThroughput() {
+    return this._warmThroughput;
   }
 
   // =========

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/kinesis_stream
+// https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/kinesis_stream
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,78 +13,82 @@ import * as cdktn from 'cdktn';
 
 export interface KinesisStreamConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/kinesis_stream#arn KinesisStream#arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/kinesis_stream#arn KinesisStream#arn}
   */
   readonly arn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/kinesis_stream#encryption_type KinesisStream#encryption_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/kinesis_stream#encryption_type KinesisStream#encryption_type}
   */
   readonly encryptionType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/kinesis_stream#enforce_consumer_deletion KinesisStream#enforce_consumer_deletion}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/kinesis_stream#enforce_consumer_deletion KinesisStream#enforce_consumer_deletion}
   */
   readonly enforceConsumerDeletion?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/kinesis_stream#id KinesisStream#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/kinesis_stream#id KinesisStream#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/kinesis_stream#kms_key_id KinesisStream#kms_key_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/kinesis_stream#kms_key_id KinesisStream#kms_key_id}
   */
   readonly kmsKeyId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/kinesis_stream#max_record_size_in_kib KinesisStream#max_record_size_in_kib}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/kinesis_stream#max_record_size_in_kib KinesisStream#max_record_size_in_kib}
   */
   readonly maxRecordSizeInKib?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/kinesis_stream#name KinesisStream#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/kinesis_stream#name KinesisStream#name}
   */
   readonly name: string;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/kinesis_stream#region KinesisStream#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/kinesis_stream#region KinesisStream#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/kinesis_stream#retention_period KinesisStream#retention_period}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/kinesis_stream#retention_period KinesisStream#retention_period}
   */
   readonly retentionPeriod?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/kinesis_stream#shard_count KinesisStream#shard_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/kinesis_stream#shard_count KinesisStream#shard_count}
   */
   readonly shardCount?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/kinesis_stream#shard_level_metrics KinesisStream#shard_level_metrics}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/kinesis_stream#shard_level_metrics KinesisStream#shard_level_metrics}
   */
   readonly shardLevelMetrics?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/kinesis_stream#tags KinesisStream#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/kinesis_stream#tags KinesisStream#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/kinesis_stream#tags_all KinesisStream#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/kinesis_stream#tags_all KinesisStream#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/kinesis_stream#warm_throughput_mib_ps KinesisStream#warm_throughput_mib_ps}
+  */
+  readonly warmThroughputMibPs?: number;
+  /**
   * stream_mode_details block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/kinesis_stream#stream_mode_details KinesisStream#stream_mode_details}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/kinesis_stream#stream_mode_details KinesisStream#stream_mode_details}
   */
   readonly streamModeDetails?: KinesisStreamStreamModeDetails;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/kinesis_stream#timeouts KinesisStream#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/kinesis_stream#timeouts KinesisStream#timeouts}
   */
   readonly timeouts?: KinesisStreamTimeouts;
 }
 export interface KinesisStreamStreamModeDetails {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/kinesis_stream#stream_mode KinesisStream#stream_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/kinesis_stream#stream_mode KinesisStream#stream_mode}
   */
   readonly streamMode: string;
 }
@@ -165,15 +169,15 @@ export class KinesisStreamStreamModeDetailsOutputReference extends cdktn.Complex
 }
 export interface KinesisStreamTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/kinesis_stream#create KinesisStream#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/kinesis_stream#create KinesisStream#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/kinesis_stream#delete KinesisStream#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/kinesis_stream#delete KinesisStream#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/kinesis_stream#update KinesisStream#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/kinesis_stream#update KinesisStream#update}
   */
   readonly update?: string;
 }
@@ -325,7 +329,7 @@ export class KinesisStreamTimeoutsOutputReference extends cdktn.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/kinesis_stream aws_kinesis_stream}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/kinesis_stream aws_kinesis_stream}
 */
 export class KinesisStream extends cdktn.TerraformResource {
 
@@ -341,7 +345,7 @@ export class KinesisStream extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a KinesisStream resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the KinesisStream to import
-  * @param importFromId The id of the existing KinesisStream that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/kinesis_stream#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing KinesisStream that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/kinesis_stream#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the KinesisStream to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -353,7 +357,7 @@ export class KinesisStream extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.47.0/docs/resources/kinesis_stream aws_kinesis_stream} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/kinesis_stream aws_kinesis_stream} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -364,7 +368,7 @@ export class KinesisStream extends cdktn.TerraformResource {
       terraformResourceType: 'aws_kinesis_stream',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.47.0',
+        providerVersion: '6.48.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
@@ -388,6 +392,7 @@ export class KinesisStream extends cdktn.TerraformResource {
     this._shardLevelMetrics = config.shardLevelMetrics;
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
+    this._warmThroughputMibPs = config.warmThroughputMibPs;
     this._streamModeDetails.internalValue = config.streamModeDetails;
     this._timeouts.internalValue = config.timeouts;
   }
@@ -601,6 +606,22 @@ export class KinesisStream extends cdktn.TerraformResource {
     return this._tagsAll;
   }
 
+  // warm_throughput_mib_ps - computed: false, optional: true, required: false
+  private _warmThroughputMibPs?: number; 
+  public get warmThroughputMibPs() {
+    return this.getNumberAttribute('warm_throughput_mib_ps');
+  }
+  public set warmThroughputMibPs(value: number) {
+    this._warmThroughputMibPs = value;
+  }
+  public resetWarmThroughputMibPs() {
+    this._warmThroughputMibPs = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get warmThroughputMibPsInput() {
+    return this._warmThroughputMibPs;
+  }
+
   // stream_mode_details - computed: false, optional: true, required: false
   private _streamModeDetails = new KinesisStreamStreamModeDetailsOutputReference(this, "stream_mode_details");
   public get streamModeDetails() {
@@ -652,6 +673,7 @@ export class KinesisStream extends cdktn.TerraformResource {
       shard_level_metrics: cdktn.listMapper(cdktn.stringToTerraform, false)(this._shardLevelMetrics),
       tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
       tags_all: cdktn.hashMapper(cdktn.stringToTerraform)(this._tagsAll),
+      warm_throughput_mib_ps: cdktn.numberToTerraform(this._warmThroughputMibPs),
       stream_mode_details: kinesisStreamStreamModeDetailsToTerraform(this._streamModeDetails.internalValue),
       timeouts: kinesisStreamTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -736,6 +758,12 @@ export class KinesisStream extends cdktn.TerraformResource {
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
+      },
+      warm_throughput_mib_ps: {
+        value: cdktn.numberToHclTerraform(this._warmThroughputMibPs),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
       },
       stream_mode_details: {
         value: kinesisStreamStreamModeDetailsToHclTerraform(this._streamModeDetails.internalValue),
