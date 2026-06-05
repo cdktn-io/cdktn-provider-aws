@@ -4,7 +4,7 @@
 
 ### WorkmailUser <a name="WorkmailUser" id="@cdktn/provider-aws.workmailUser.WorkmailUser"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/workmail_user aws_workmail_user}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/workmail_user aws_workmail_user}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.workmailUser.WorkmailUser.Initializer"></a>
 
@@ -608,7 +608,7 @@ The construct id used in the generated config for the WorkmailUser to import.
 
 The id of the existing WorkmailUser that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/workmail_user#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/workmail_user#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1496,7 +1496,7 @@ public string DisplayName { get; set; }
 
 Display name of the user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/workmail_user#display_name WorkmailUser#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/workmail_user#display_name WorkmailUser#display_name}
 
 ---
 
@@ -1510,7 +1510,7 @@ public string Email { get; set; }
 
 Primary email address used to register the user with WorkMail.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/workmail_user#email WorkmailUser#email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/workmail_user#email WorkmailUser#email}
 
 ---
 
@@ -1524,7 +1524,7 @@ public string Name { get; set; }
 
 Username of the user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/workmail_user#name WorkmailUser#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/workmail_user#name WorkmailUser#name}
 
 ---
 
@@ -1538,7 +1538,7 @@ public string OrganizationId { get; set; }
 
 Identifier of the WorkMail organization where the user is managed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/workmail_user#organization_id WorkmailUser#organization_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/workmail_user#organization_id WorkmailUser#organization_id}
 
 ---
 
@@ -1552,7 +1552,7 @@ public string City { get; set; }
 
 City where the user is located.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/workmail_user#city WorkmailUser#city}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/workmail_user#city WorkmailUser#city}
 
 ---
 
@@ -1566,7 +1566,7 @@ public string Company { get; set; }
 
 Company associated with the user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/workmail_user#company WorkmailUser#company}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/workmail_user#company WorkmailUser#company}
 
 ---
 
@@ -1580,7 +1580,7 @@ public string Country { get; set; }
 
 Country where the user is located.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/workmail_user#country WorkmailUser#country}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/workmail_user#country WorkmailUser#country}
 
 ---
 
@@ -1594,7 +1594,7 @@ public string Department { get; set; }
 
 Department associated with the user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/workmail_user#department WorkmailUser#department}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/workmail_user#department WorkmailUser#department}
 
 ---
 
@@ -1608,7 +1608,7 @@ public string FirstName { get; set; }
 
 First name of the user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/workmail_user#first_name WorkmailUser#first_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/workmail_user#first_name WorkmailUser#first_name}
 
 ---
 
@@ -1622,7 +1622,7 @@ public bool|IResolvable HiddenFromGlobalAddressList { get; set; }
 
 Whether to hide the user from the global address list.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/workmail_user#hidden_from_global_address_list WorkmailUser#hidden_from_global_address_list}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/workmail_user#hidden_from_global_address_list WorkmailUser#hidden_from_global_address_list}
 
 ---
 
@@ -1636,7 +1636,7 @@ public string IdentityProviderUserId { get; set; }
 
 User ID from IAM Identity Center associated with the user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/workmail_user#identity_provider_user_id WorkmailUser#identity_provider_user_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/workmail_user#identity_provider_user_id WorkmailUser#identity_provider_user_id}
 
 ---
 
@@ -1650,7 +1650,7 @@ public string Initials { get; set; }
 
 Initials of the user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/workmail_user#initials WorkmailUser#initials}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/workmail_user#initials WorkmailUser#initials}
 
 ---
 
@@ -1664,7 +1664,7 @@ public string JobTitle { get; set; }
 
 Job title of the user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/workmail_user#job_title WorkmailUser#job_title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/workmail_user#job_title WorkmailUser#job_title}
 
 ---
 
@@ -1678,7 +1678,7 @@ public string LastName { get; set; }
 
 Last name of the user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/workmail_user#last_name WorkmailUser#last_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/workmail_user#last_name WorkmailUser#last_name}
 
 ---
 
@@ -1692,7 +1692,7 @@ public string Office { get; set; }
 
 Office where the user is located.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/workmail_user#office WorkmailUser#office}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/workmail_user#office WorkmailUser#office}
 
 ---
 
@@ -1706,7 +1706,7 @@ public string Password { get; set; }
 
 Password to set for the user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/workmail_user#password WorkmailUser#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/workmail_user#password WorkmailUser#password}
 
 ---
 
@@ -1720,7 +1720,7 @@ public string Region { get; set; }
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/workmail_user#region WorkmailUser#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/workmail_user#region WorkmailUser#region}
 
 ---
 
@@ -1734,7 +1734,7 @@ public string Street { get; set; }
 
 Street address of the user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/workmail_user#street WorkmailUser#street}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/workmail_user#street WorkmailUser#street}
 
 ---
 
@@ -1748,7 +1748,7 @@ public string Telephone { get; set; }
 
 Telephone number of the user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/workmail_user#telephone WorkmailUser#telephone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/workmail_user#telephone WorkmailUser#telephone}
 
 ---
 
@@ -1762,7 +1762,7 @@ public string UserRole { get; set; }
 
 Role assigned to the user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/workmail_user#user_role WorkmailUser#user_role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/workmail_user#user_role WorkmailUser#user_role}
 
 ---
 
@@ -1776,7 +1776,7 @@ public string ZipCode { get; set; }
 
 ZIP or postal code of the user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/workmail_user#zip_code WorkmailUser#zip_code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/workmail_user#zip_code WorkmailUser#zip_code}
 
 ---
 

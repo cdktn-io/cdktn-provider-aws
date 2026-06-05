@@ -4,7 +4,7 @@
 
 ### Route53DomainsDomain <a name="Route53DomainsDomain" id="@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomain"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain aws_route53domains_domain}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain aws_route53domains_domain}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomain.Initializer"></a>
 
@@ -665,7 +665,7 @@ The construct id used in the generated config for the Route53DomainsDomain to im
 
 The id of the existing Route53DomainsDomain that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1340,20 +1340,20 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/route53domainsdomain"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainAdminContact.property.addressLine1">AddressLine1</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#address_line_1 Route53DomainsDomain#address_line_1}. |
-| <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainAdminContact.property.addressLine2">AddressLine2</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#address_line_2 Route53DomainsDomain#address_line_2}. |
-| <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainAdminContact.property.city">City</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#city Route53DomainsDomain#city}. |
-| <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainAdminContact.property.contactType">ContactType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#contact_type Route53DomainsDomain#contact_type}. |
-| <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainAdminContact.property.countryCode">CountryCode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#country_code Route53DomainsDomain#country_code}. |
-| <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainAdminContact.property.email">Email</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#email Route53DomainsDomain#email}. |
+| <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainAdminContact.property.addressLine1">AddressLine1</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#address_line_1 Route53DomainsDomain#address_line_1}. |
+| <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainAdminContact.property.addressLine2">AddressLine2</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#address_line_2 Route53DomainsDomain#address_line_2}. |
+| <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainAdminContact.property.city">City</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#city Route53DomainsDomain#city}. |
+| <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainAdminContact.property.contactType">ContactType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#contact_type Route53DomainsDomain#contact_type}. |
+| <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainAdminContact.property.countryCode">CountryCode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#country_code Route53DomainsDomain#country_code}. |
+| <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainAdminContact.property.email">Email</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#email Route53DomainsDomain#email}. |
 | <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainAdminContact.property.extraParam">ExtraParam</a></code> | <code>interface{}</code> | extra_param block. |
-| <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainAdminContact.property.fax">Fax</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#fax Route53DomainsDomain#fax}. |
-| <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainAdminContact.property.firstName">FirstName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#first_name Route53DomainsDomain#first_name}. |
-| <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainAdminContact.property.lastName">LastName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#last_name Route53DomainsDomain#last_name}. |
-| <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainAdminContact.property.organizationName">OrganizationName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#organization_name Route53DomainsDomain#organization_name}. |
-| <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainAdminContact.property.phoneNumber">PhoneNumber</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#phone_number Route53DomainsDomain#phone_number}. |
-| <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainAdminContact.property.state">State</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#state Route53DomainsDomain#state}. |
-| <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainAdminContact.property.zipCode">ZipCode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#zip_code Route53DomainsDomain#zip_code}. |
+| <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainAdminContact.property.fax">Fax</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#fax Route53DomainsDomain#fax}. |
+| <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainAdminContact.property.firstName">FirstName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#first_name Route53DomainsDomain#first_name}. |
+| <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainAdminContact.property.lastName">LastName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#last_name Route53DomainsDomain#last_name}. |
+| <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainAdminContact.property.organizationName">OrganizationName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#organization_name Route53DomainsDomain#organization_name}. |
+| <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainAdminContact.property.phoneNumber">PhoneNumber</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#phone_number Route53DomainsDomain#phone_number}. |
+| <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainAdminContact.property.state">State</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#state Route53DomainsDomain#state}. |
+| <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainAdminContact.property.zipCode">ZipCode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#zip_code Route53DomainsDomain#zip_code}. |
 
 ---
 
@@ -1365,7 +1365,7 @@ AddressLine1 *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#address_line_1 Route53DomainsDomain#address_line_1}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#address_line_1 Route53DomainsDomain#address_line_1}.
 
 ---
 
@@ -1377,7 +1377,7 @@ AddressLine2 *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#address_line_2 Route53DomainsDomain#address_line_2}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#address_line_2 Route53DomainsDomain#address_line_2}.
 
 ---
 
@@ -1389,7 +1389,7 @@ City *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#city Route53DomainsDomain#city}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#city Route53DomainsDomain#city}.
 
 ---
 
@@ -1401,7 +1401,7 @@ ContactType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#contact_type Route53DomainsDomain#contact_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#contact_type Route53DomainsDomain#contact_type}.
 
 ---
 
@@ -1413,7 +1413,7 @@ CountryCode *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#country_code Route53DomainsDomain#country_code}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#country_code Route53DomainsDomain#country_code}.
 
 ---
 
@@ -1425,7 +1425,7 @@ Email *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#email Route53DomainsDomain#email}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#email Route53DomainsDomain#email}.
 
 ---
 
@@ -1439,7 +1439,7 @@ ExtraParam interface{}
 
 extra_param block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#extra_param Route53DomainsDomain#extra_param}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#extra_param Route53DomainsDomain#extra_param}
 
 ---
 
@@ -1451,7 +1451,7 @@ Fax *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#fax Route53DomainsDomain#fax}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#fax Route53DomainsDomain#fax}.
 
 ---
 
@@ -1463,7 +1463,7 @@ FirstName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#first_name Route53DomainsDomain#first_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#first_name Route53DomainsDomain#first_name}.
 
 ---
 
@@ -1475,7 +1475,7 @@ LastName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#last_name Route53DomainsDomain#last_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#last_name Route53DomainsDomain#last_name}.
 
 ---
 
@@ -1487,7 +1487,7 @@ OrganizationName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#organization_name Route53DomainsDomain#organization_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#organization_name Route53DomainsDomain#organization_name}.
 
 ---
 
@@ -1499,7 +1499,7 @@ PhoneNumber *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#phone_number Route53DomainsDomain#phone_number}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#phone_number Route53DomainsDomain#phone_number}.
 
 ---
 
@@ -1511,7 +1511,7 @@ State *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#state Route53DomainsDomain#state}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#state Route53DomainsDomain#state}.
 
 ---
 
@@ -1523,7 +1523,7 @@ ZipCode *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#zip_code Route53DomainsDomain#zip_code}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#zip_code Route53DomainsDomain#zip_code}.
 
 ---
 
@@ -1544,8 +1544,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/route53domainsdomain"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainAdminContactExtraParam.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#name Route53DomainsDomain#name}. |
-| <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainAdminContactExtraParam.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#value Route53DomainsDomain#value}. |
+| <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainAdminContactExtraParam.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#name Route53DomainsDomain#name}. |
+| <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainAdminContactExtraParam.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#value Route53DomainsDomain#value}. |
 
 ---
 
@@ -1557,7 +1557,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#name Route53DomainsDomain#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#name Route53DomainsDomain#name}.
 
 ---
 
@@ -1569,7 +1569,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#value Route53DomainsDomain#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#value Route53DomainsDomain#value}.
 
 ---
 
@@ -1602,20 +1602,20 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/route53domainsdomain"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainBillingContact.property.addressLine1">AddressLine1</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#address_line_1 Route53DomainsDomain#address_line_1}. |
-| <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainBillingContact.property.addressLine2">AddressLine2</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#address_line_2 Route53DomainsDomain#address_line_2}. |
-| <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainBillingContact.property.city">City</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#city Route53DomainsDomain#city}. |
-| <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainBillingContact.property.contactType">ContactType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#contact_type Route53DomainsDomain#contact_type}. |
-| <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainBillingContact.property.countryCode">CountryCode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#country_code Route53DomainsDomain#country_code}. |
-| <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainBillingContact.property.email">Email</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#email Route53DomainsDomain#email}. |
-| <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainBillingContact.property.extraParam">ExtraParam</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#extra_param Route53DomainsDomain#extra_param}. |
-| <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainBillingContact.property.fax">Fax</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#fax Route53DomainsDomain#fax}. |
-| <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainBillingContact.property.firstName">FirstName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#first_name Route53DomainsDomain#first_name}. |
-| <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainBillingContact.property.lastName">LastName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#last_name Route53DomainsDomain#last_name}. |
-| <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainBillingContact.property.organizationName">OrganizationName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#organization_name Route53DomainsDomain#organization_name}. |
-| <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainBillingContact.property.phoneNumber">PhoneNumber</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#phone_number Route53DomainsDomain#phone_number}. |
-| <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainBillingContact.property.state">State</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#state Route53DomainsDomain#state}. |
-| <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainBillingContact.property.zipCode">ZipCode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#zip_code Route53DomainsDomain#zip_code}. |
+| <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainBillingContact.property.addressLine1">AddressLine1</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#address_line_1 Route53DomainsDomain#address_line_1}. |
+| <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainBillingContact.property.addressLine2">AddressLine2</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#address_line_2 Route53DomainsDomain#address_line_2}. |
+| <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainBillingContact.property.city">City</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#city Route53DomainsDomain#city}. |
+| <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainBillingContact.property.contactType">ContactType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#contact_type Route53DomainsDomain#contact_type}. |
+| <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainBillingContact.property.countryCode">CountryCode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#country_code Route53DomainsDomain#country_code}. |
+| <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainBillingContact.property.email">Email</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#email Route53DomainsDomain#email}. |
+| <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainBillingContact.property.extraParam">ExtraParam</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#extra_param Route53DomainsDomain#extra_param}. |
+| <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainBillingContact.property.fax">Fax</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#fax Route53DomainsDomain#fax}. |
+| <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainBillingContact.property.firstName">FirstName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#first_name Route53DomainsDomain#first_name}. |
+| <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainBillingContact.property.lastName">LastName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#last_name Route53DomainsDomain#last_name}. |
+| <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainBillingContact.property.organizationName">OrganizationName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#organization_name Route53DomainsDomain#organization_name}. |
+| <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainBillingContact.property.phoneNumber">PhoneNumber</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#phone_number Route53DomainsDomain#phone_number}. |
+| <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainBillingContact.property.state">State</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#state Route53DomainsDomain#state}. |
+| <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainBillingContact.property.zipCode">ZipCode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#zip_code Route53DomainsDomain#zip_code}. |
 
 ---
 
@@ -1627,7 +1627,7 @@ AddressLine1 *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#address_line_1 Route53DomainsDomain#address_line_1}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#address_line_1 Route53DomainsDomain#address_line_1}.
 
 ---
 
@@ -1639,7 +1639,7 @@ AddressLine2 *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#address_line_2 Route53DomainsDomain#address_line_2}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#address_line_2 Route53DomainsDomain#address_line_2}.
 
 ---
 
@@ -1651,7 +1651,7 @@ City *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#city Route53DomainsDomain#city}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#city Route53DomainsDomain#city}.
 
 ---
 
@@ -1663,7 +1663,7 @@ ContactType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#contact_type Route53DomainsDomain#contact_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#contact_type Route53DomainsDomain#contact_type}.
 
 ---
 
@@ -1675,7 +1675,7 @@ CountryCode *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#country_code Route53DomainsDomain#country_code}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#country_code Route53DomainsDomain#country_code}.
 
 ---
 
@@ -1687,7 +1687,7 @@ Email *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#email Route53DomainsDomain#email}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#email Route53DomainsDomain#email}.
 
 ---
 
@@ -1699,7 +1699,7 @@ ExtraParam interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#extra_param Route53DomainsDomain#extra_param}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#extra_param Route53DomainsDomain#extra_param}.
 
 ---
 
@@ -1711,7 +1711,7 @@ Fax *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#fax Route53DomainsDomain#fax}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#fax Route53DomainsDomain#fax}.
 
 ---
 
@@ -1723,7 +1723,7 @@ FirstName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#first_name Route53DomainsDomain#first_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#first_name Route53DomainsDomain#first_name}.
 
 ---
 
@@ -1735,7 +1735,7 @@ LastName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#last_name Route53DomainsDomain#last_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#last_name Route53DomainsDomain#last_name}.
 
 ---
 
@@ -1747,7 +1747,7 @@ OrganizationName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#organization_name Route53DomainsDomain#organization_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#organization_name Route53DomainsDomain#organization_name}.
 
 ---
 
@@ -1759,7 +1759,7 @@ PhoneNumber *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#phone_number Route53DomainsDomain#phone_number}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#phone_number Route53DomainsDomain#phone_number}.
 
 ---
 
@@ -1771,7 +1771,7 @@ State *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#state Route53DomainsDomain#state}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#state Route53DomainsDomain#state}.
 
 ---
 
@@ -1783,7 +1783,7 @@ ZipCode *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#zip_code Route53DomainsDomain#zip_code}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#zip_code Route53DomainsDomain#zip_code}.
 
 ---
 
@@ -1804,8 +1804,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/route53domainsdomain"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainBillingContactExtraParam.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#name Route53DomainsDomain#name}. |
-| <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainBillingContactExtraParam.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#value Route53DomainsDomain#value}. |
+| <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainBillingContactExtraParam.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#name Route53DomainsDomain#name}. |
+| <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainBillingContactExtraParam.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#value Route53DomainsDomain#value}. |
 
 ---
 
@@ -1817,7 +1817,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#name Route53DomainsDomain#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#name Route53DomainsDomain#name}.
 
 ---
 
@@ -1829,7 +1829,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#value Route53DomainsDomain#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#value Route53DomainsDomain#value}.
 
 ---
 
@@ -1877,21 +1877,21 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/route53domainsdomain"
 | <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainConfig.property.domainName">DomainName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#domain_name Route53DomainsDomain#domain_name}. |
+| <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainConfig.property.domainName">DomainName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#domain_name Route53DomainsDomain#domain_name}. |
 | <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainConfig.property.adminContact">AdminContact</a></code> | <code>interface{}</code> | admin_contact block. |
-| <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainConfig.property.adminPrivacy">AdminPrivacy</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#admin_privacy Route53DomainsDomain#admin_privacy}. |
-| <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainConfig.property.autoRenew">AutoRenew</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#auto_renew Route53DomainsDomain#auto_renew}. |
-| <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainConfig.property.billingContact">BillingContact</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#billing_contact Route53DomainsDomain#billing_contact}. |
-| <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainConfig.property.billingPrivacy">BillingPrivacy</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#billing_privacy Route53DomainsDomain#billing_privacy}. |
-| <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainConfig.property.durationInYears">DurationInYears</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#duration_in_years Route53DomainsDomain#duration_in_years}. |
-| <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainConfig.property.nameServer">NameServer</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#name_server Route53DomainsDomain#name_server}. |
+| <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainConfig.property.adminPrivacy">AdminPrivacy</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#admin_privacy Route53DomainsDomain#admin_privacy}. |
+| <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainConfig.property.autoRenew">AutoRenew</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#auto_renew Route53DomainsDomain#auto_renew}. |
+| <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainConfig.property.billingContact">BillingContact</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#billing_contact Route53DomainsDomain#billing_contact}. |
+| <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainConfig.property.billingPrivacy">BillingPrivacy</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#billing_privacy Route53DomainsDomain#billing_privacy}. |
+| <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainConfig.property.durationInYears">DurationInYears</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#duration_in_years Route53DomainsDomain#duration_in_years}. |
+| <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainConfig.property.nameServer">NameServer</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#name_server Route53DomainsDomain#name_server}. |
 | <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainConfig.property.registrantContact">RegistrantContact</a></code> | <code>interface{}</code> | registrant_contact block. |
-| <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainConfig.property.registrantPrivacy">RegistrantPrivacy</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#registrant_privacy Route53DomainsDomain#registrant_privacy}. |
-| <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#tags Route53DomainsDomain#tags}. |
+| <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainConfig.property.registrantPrivacy">RegistrantPrivacy</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#registrant_privacy Route53DomainsDomain#registrant_privacy}. |
+| <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#tags Route53DomainsDomain#tags}. |
 | <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainConfig.property.techContact">TechContact</a></code> | <code>interface{}</code> | tech_contact block. |
-| <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainConfig.property.techPrivacy">TechPrivacy</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#tech_privacy Route53DomainsDomain#tech_privacy}. |
+| <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainConfig.property.techPrivacy">TechPrivacy</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#tech_privacy Route53DomainsDomain#tech_privacy}. |
 | <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainTimeouts">Route53DomainsDomainTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainConfig.property.transferLock">TransferLock</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#transfer_lock Route53DomainsDomain#transfer_lock}. |
+| <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainConfig.property.transferLock">TransferLock</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#transfer_lock Route53DomainsDomain#transfer_lock}. |
 
 ---
 
@@ -1973,7 +1973,7 @@ DomainName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#domain_name Route53DomainsDomain#domain_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#domain_name Route53DomainsDomain#domain_name}.
 
 ---
 
@@ -1987,7 +1987,7 @@ AdminContact interface{}
 
 admin_contact block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#admin_contact Route53DomainsDomain#admin_contact}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#admin_contact Route53DomainsDomain#admin_contact}
 
 ---
 
@@ -1999,7 +1999,7 @@ AdminPrivacy interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#admin_privacy Route53DomainsDomain#admin_privacy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#admin_privacy Route53DomainsDomain#admin_privacy}.
 
 ---
 
@@ -2011,7 +2011,7 @@ AutoRenew interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#auto_renew Route53DomainsDomain#auto_renew}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#auto_renew Route53DomainsDomain#auto_renew}.
 
 ---
 
@@ -2023,7 +2023,7 @@ BillingContact interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#billing_contact Route53DomainsDomain#billing_contact}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#billing_contact Route53DomainsDomain#billing_contact}.
 
 ---
 
@@ -2035,7 +2035,7 @@ BillingPrivacy interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#billing_privacy Route53DomainsDomain#billing_privacy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#billing_privacy Route53DomainsDomain#billing_privacy}.
 
 ---
 
@@ -2047,7 +2047,7 @@ DurationInYears *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#duration_in_years Route53DomainsDomain#duration_in_years}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#duration_in_years Route53DomainsDomain#duration_in_years}.
 
 ---
 
@@ -2059,7 +2059,7 @@ NameServer interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#name_server Route53DomainsDomain#name_server}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#name_server Route53DomainsDomain#name_server}.
 
 ---
 
@@ -2073,7 +2073,7 @@ RegistrantContact interface{}
 
 registrant_contact block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#registrant_contact Route53DomainsDomain#registrant_contact}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#registrant_contact Route53DomainsDomain#registrant_contact}
 
 ---
 
@@ -2085,7 +2085,7 @@ RegistrantPrivacy interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#registrant_privacy Route53DomainsDomain#registrant_privacy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#registrant_privacy Route53DomainsDomain#registrant_privacy}.
 
 ---
 
@@ -2097,7 +2097,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#tags Route53DomainsDomain#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#tags Route53DomainsDomain#tags}.
 
 ---
 
@@ -2111,7 +2111,7 @@ TechContact interface{}
 
 tech_contact block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#tech_contact Route53DomainsDomain#tech_contact}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#tech_contact Route53DomainsDomain#tech_contact}
 
 ---
 
@@ -2123,7 +2123,7 @@ TechPrivacy interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#tech_privacy Route53DomainsDomain#tech_privacy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#tech_privacy Route53DomainsDomain#tech_privacy}.
 
 ---
 
@@ -2137,7 +2137,7 @@ Timeouts Route53DomainsDomainTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#timeouts Route53DomainsDomain#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#timeouts Route53DomainsDomain#timeouts}
 
 ---
 
@@ -2149,7 +2149,7 @@ TransferLock interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#transfer_lock Route53DomainsDomain#transfer_lock}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#transfer_lock Route53DomainsDomain#transfer_lock}.
 
 ---
 
@@ -2170,8 +2170,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/route53domainsdomain"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainNameServer.property.glueIps">GlueIps</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#glue_ips Route53DomainsDomain#glue_ips}. |
-| <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainNameServer.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#name Route53DomainsDomain#name}. |
+| <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainNameServer.property.glueIps">GlueIps</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#glue_ips Route53DomainsDomain#glue_ips}. |
+| <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainNameServer.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#name Route53DomainsDomain#name}. |
 
 ---
 
@@ -2183,7 +2183,7 @@ GlueIps *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#glue_ips Route53DomainsDomain#glue_ips}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#glue_ips Route53DomainsDomain#glue_ips}.
 
 ---
 
@@ -2195,7 +2195,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#name Route53DomainsDomain#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#name Route53DomainsDomain#name}.
 
 ---
 
@@ -2228,20 +2228,20 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/route53domainsdomain"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainRegistrantContact.property.addressLine1">AddressLine1</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#address_line_1 Route53DomainsDomain#address_line_1}. |
-| <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainRegistrantContact.property.addressLine2">AddressLine2</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#address_line_2 Route53DomainsDomain#address_line_2}. |
-| <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainRegistrantContact.property.city">City</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#city Route53DomainsDomain#city}. |
-| <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainRegistrantContact.property.contactType">ContactType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#contact_type Route53DomainsDomain#contact_type}. |
-| <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainRegistrantContact.property.countryCode">CountryCode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#country_code Route53DomainsDomain#country_code}. |
-| <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainRegistrantContact.property.email">Email</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#email Route53DomainsDomain#email}. |
+| <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainRegistrantContact.property.addressLine1">AddressLine1</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#address_line_1 Route53DomainsDomain#address_line_1}. |
+| <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainRegistrantContact.property.addressLine2">AddressLine2</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#address_line_2 Route53DomainsDomain#address_line_2}. |
+| <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainRegistrantContact.property.city">City</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#city Route53DomainsDomain#city}. |
+| <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainRegistrantContact.property.contactType">ContactType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#contact_type Route53DomainsDomain#contact_type}. |
+| <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainRegistrantContact.property.countryCode">CountryCode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#country_code Route53DomainsDomain#country_code}. |
+| <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainRegistrantContact.property.email">Email</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#email Route53DomainsDomain#email}. |
 | <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainRegistrantContact.property.extraParam">ExtraParam</a></code> | <code>interface{}</code> | extra_param block. |
-| <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainRegistrantContact.property.fax">Fax</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#fax Route53DomainsDomain#fax}. |
-| <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainRegistrantContact.property.firstName">FirstName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#first_name Route53DomainsDomain#first_name}. |
-| <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainRegistrantContact.property.lastName">LastName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#last_name Route53DomainsDomain#last_name}. |
-| <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainRegistrantContact.property.organizationName">OrganizationName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#organization_name Route53DomainsDomain#organization_name}. |
-| <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainRegistrantContact.property.phoneNumber">PhoneNumber</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#phone_number Route53DomainsDomain#phone_number}. |
-| <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainRegistrantContact.property.state">State</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#state Route53DomainsDomain#state}. |
-| <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainRegistrantContact.property.zipCode">ZipCode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#zip_code Route53DomainsDomain#zip_code}. |
+| <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainRegistrantContact.property.fax">Fax</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#fax Route53DomainsDomain#fax}. |
+| <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainRegistrantContact.property.firstName">FirstName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#first_name Route53DomainsDomain#first_name}. |
+| <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainRegistrantContact.property.lastName">LastName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#last_name Route53DomainsDomain#last_name}. |
+| <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainRegistrantContact.property.organizationName">OrganizationName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#organization_name Route53DomainsDomain#organization_name}. |
+| <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainRegistrantContact.property.phoneNumber">PhoneNumber</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#phone_number Route53DomainsDomain#phone_number}. |
+| <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainRegistrantContact.property.state">State</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#state Route53DomainsDomain#state}. |
+| <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainRegistrantContact.property.zipCode">ZipCode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#zip_code Route53DomainsDomain#zip_code}. |
 
 ---
 
@@ -2253,7 +2253,7 @@ AddressLine1 *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#address_line_1 Route53DomainsDomain#address_line_1}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#address_line_1 Route53DomainsDomain#address_line_1}.
 
 ---
 
@@ -2265,7 +2265,7 @@ AddressLine2 *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#address_line_2 Route53DomainsDomain#address_line_2}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#address_line_2 Route53DomainsDomain#address_line_2}.
 
 ---
 
@@ -2277,7 +2277,7 @@ City *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#city Route53DomainsDomain#city}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#city Route53DomainsDomain#city}.
 
 ---
 
@@ -2289,7 +2289,7 @@ ContactType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#contact_type Route53DomainsDomain#contact_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#contact_type Route53DomainsDomain#contact_type}.
 
 ---
 
@@ -2301,7 +2301,7 @@ CountryCode *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#country_code Route53DomainsDomain#country_code}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#country_code Route53DomainsDomain#country_code}.
 
 ---
 
@@ -2313,7 +2313,7 @@ Email *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#email Route53DomainsDomain#email}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#email Route53DomainsDomain#email}.
 
 ---
 
@@ -2327,7 +2327,7 @@ ExtraParam interface{}
 
 extra_param block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#extra_param Route53DomainsDomain#extra_param}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#extra_param Route53DomainsDomain#extra_param}
 
 ---
 
@@ -2339,7 +2339,7 @@ Fax *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#fax Route53DomainsDomain#fax}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#fax Route53DomainsDomain#fax}.
 
 ---
 
@@ -2351,7 +2351,7 @@ FirstName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#first_name Route53DomainsDomain#first_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#first_name Route53DomainsDomain#first_name}.
 
 ---
 
@@ -2363,7 +2363,7 @@ LastName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#last_name Route53DomainsDomain#last_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#last_name Route53DomainsDomain#last_name}.
 
 ---
 
@@ -2375,7 +2375,7 @@ OrganizationName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#organization_name Route53DomainsDomain#organization_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#organization_name Route53DomainsDomain#organization_name}.
 
 ---
 
@@ -2387,7 +2387,7 @@ PhoneNumber *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#phone_number Route53DomainsDomain#phone_number}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#phone_number Route53DomainsDomain#phone_number}.
 
 ---
 
@@ -2399,7 +2399,7 @@ State *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#state Route53DomainsDomain#state}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#state Route53DomainsDomain#state}.
 
 ---
 
@@ -2411,7 +2411,7 @@ ZipCode *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#zip_code Route53DomainsDomain#zip_code}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#zip_code Route53DomainsDomain#zip_code}.
 
 ---
 
@@ -2432,8 +2432,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/route53domainsdomain"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainRegistrantContactExtraParam.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#name Route53DomainsDomain#name}. |
-| <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainRegistrantContactExtraParam.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#value Route53DomainsDomain#value}. |
+| <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainRegistrantContactExtraParam.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#name Route53DomainsDomain#name}. |
+| <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainRegistrantContactExtraParam.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#value Route53DomainsDomain#value}. |
 
 ---
 
@@ -2445,7 +2445,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#name Route53DomainsDomain#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#name Route53DomainsDomain#name}.
 
 ---
 
@@ -2457,7 +2457,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#value Route53DomainsDomain#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#value Route53DomainsDomain#value}.
 
 ---
 
@@ -2490,20 +2490,20 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/route53domainsdomain"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainTechContact.property.addressLine1">AddressLine1</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#address_line_1 Route53DomainsDomain#address_line_1}. |
-| <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainTechContact.property.addressLine2">AddressLine2</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#address_line_2 Route53DomainsDomain#address_line_2}. |
-| <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainTechContact.property.city">City</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#city Route53DomainsDomain#city}. |
-| <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainTechContact.property.contactType">ContactType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#contact_type Route53DomainsDomain#contact_type}. |
-| <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainTechContact.property.countryCode">CountryCode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#country_code Route53DomainsDomain#country_code}. |
-| <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainTechContact.property.email">Email</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#email Route53DomainsDomain#email}. |
+| <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainTechContact.property.addressLine1">AddressLine1</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#address_line_1 Route53DomainsDomain#address_line_1}. |
+| <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainTechContact.property.addressLine2">AddressLine2</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#address_line_2 Route53DomainsDomain#address_line_2}. |
+| <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainTechContact.property.city">City</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#city Route53DomainsDomain#city}. |
+| <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainTechContact.property.contactType">ContactType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#contact_type Route53DomainsDomain#contact_type}. |
+| <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainTechContact.property.countryCode">CountryCode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#country_code Route53DomainsDomain#country_code}. |
+| <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainTechContact.property.email">Email</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#email Route53DomainsDomain#email}. |
 | <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainTechContact.property.extraParam">ExtraParam</a></code> | <code>interface{}</code> | extra_param block. |
-| <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainTechContact.property.fax">Fax</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#fax Route53DomainsDomain#fax}. |
-| <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainTechContact.property.firstName">FirstName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#first_name Route53DomainsDomain#first_name}. |
-| <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainTechContact.property.lastName">LastName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#last_name Route53DomainsDomain#last_name}. |
-| <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainTechContact.property.organizationName">OrganizationName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#organization_name Route53DomainsDomain#organization_name}. |
-| <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainTechContact.property.phoneNumber">PhoneNumber</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#phone_number Route53DomainsDomain#phone_number}. |
-| <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainTechContact.property.state">State</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#state Route53DomainsDomain#state}. |
-| <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainTechContact.property.zipCode">ZipCode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#zip_code Route53DomainsDomain#zip_code}. |
+| <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainTechContact.property.fax">Fax</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#fax Route53DomainsDomain#fax}. |
+| <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainTechContact.property.firstName">FirstName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#first_name Route53DomainsDomain#first_name}. |
+| <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainTechContact.property.lastName">LastName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#last_name Route53DomainsDomain#last_name}. |
+| <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainTechContact.property.organizationName">OrganizationName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#organization_name Route53DomainsDomain#organization_name}. |
+| <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainTechContact.property.phoneNumber">PhoneNumber</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#phone_number Route53DomainsDomain#phone_number}. |
+| <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainTechContact.property.state">State</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#state Route53DomainsDomain#state}. |
+| <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainTechContact.property.zipCode">ZipCode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#zip_code Route53DomainsDomain#zip_code}. |
 
 ---
 
@@ -2515,7 +2515,7 @@ AddressLine1 *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#address_line_1 Route53DomainsDomain#address_line_1}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#address_line_1 Route53DomainsDomain#address_line_1}.
 
 ---
 
@@ -2527,7 +2527,7 @@ AddressLine2 *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#address_line_2 Route53DomainsDomain#address_line_2}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#address_line_2 Route53DomainsDomain#address_line_2}.
 
 ---
 
@@ -2539,7 +2539,7 @@ City *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#city Route53DomainsDomain#city}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#city Route53DomainsDomain#city}.
 
 ---
 
@@ -2551,7 +2551,7 @@ ContactType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#contact_type Route53DomainsDomain#contact_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#contact_type Route53DomainsDomain#contact_type}.
 
 ---
 
@@ -2563,7 +2563,7 @@ CountryCode *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#country_code Route53DomainsDomain#country_code}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#country_code Route53DomainsDomain#country_code}.
 
 ---
 
@@ -2575,7 +2575,7 @@ Email *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#email Route53DomainsDomain#email}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#email Route53DomainsDomain#email}.
 
 ---
 
@@ -2589,7 +2589,7 @@ ExtraParam interface{}
 
 extra_param block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#extra_param Route53DomainsDomain#extra_param}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#extra_param Route53DomainsDomain#extra_param}
 
 ---
 
@@ -2601,7 +2601,7 @@ Fax *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#fax Route53DomainsDomain#fax}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#fax Route53DomainsDomain#fax}.
 
 ---
 
@@ -2613,7 +2613,7 @@ FirstName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#first_name Route53DomainsDomain#first_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#first_name Route53DomainsDomain#first_name}.
 
 ---
 
@@ -2625,7 +2625,7 @@ LastName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#last_name Route53DomainsDomain#last_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#last_name Route53DomainsDomain#last_name}.
 
 ---
 
@@ -2637,7 +2637,7 @@ OrganizationName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#organization_name Route53DomainsDomain#organization_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#organization_name Route53DomainsDomain#organization_name}.
 
 ---
 
@@ -2649,7 +2649,7 @@ PhoneNumber *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#phone_number Route53DomainsDomain#phone_number}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#phone_number Route53DomainsDomain#phone_number}.
 
 ---
 
@@ -2661,7 +2661,7 @@ State *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#state Route53DomainsDomain#state}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#state Route53DomainsDomain#state}.
 
 ---
 
@@ -2673,7 +2673,7 @@ ZipCode *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#zip_code Route53DomainsDomain#zip_code}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#zip_code Route53DomainsDomain#zip_code}.
 
 ---
 
@@ -2694,8 +2694,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/route53domainsdomain"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainTechContactExtraParam.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#name Route53DomainsDomain#name}. |
-| <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainTechContactExtraParam.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#value Route53DomainsDomain#value}. |
+| <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainTechContactExtraParam.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#name Route53DomainsDomain#name}. |
+| <code><a href="#@cdktn/provider-aws.route53DomainsDomain.Route53DomainsDomainTechContactExtraParam.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#value Route53DomainsDomain#value}. |
 
 ---
 
@@ -2707,7 +2707,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#name Route53DomainsDomain#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#name Route53DomainsDomain#name}.
 
 ---
 
@@ -2719,7 +2719,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#value Route53DomainsDomain#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#value Route53DomainsDomain#value}.
 
 ---
 
@@ -2757,7 +2757,7 @@ Create *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#create Route53DomainsDomain#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#create Route53DomainsDomain#create}
 
 ---
 
@@ -2771,7 +2771,7 @@ Delete *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#delete Route53DomainsDomain#delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#delete Route53DomainsDomain#delete}
 
 ---
 
@@ -2785,7 +2785,7 @@ Update *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/route53domains_domain#update Route53DomainsDomain#update}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/route53domains_domain#update Route53DomainsDomain#update}
 
 ---
 
