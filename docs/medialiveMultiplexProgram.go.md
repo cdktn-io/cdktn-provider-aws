@@ -4,7 +4,7 @@
 
 ### MedialiveMultiplexProgram <a name="MedialiveMultiplexProgram" id="@cdktn/provider-aws.medialiveMultiplexProgram.MedialiveMultiplexProgram"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/medialive_multiplex_program aws_medialive_multiplex_program}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/medialive_multiplex_program aws_medialive_multiplex_program}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.medialiveMultiplexProgram.MedialiveMultiplexProgram.Initializer"></a>
 
@@ -536,7 +536,7 @@ The construct id used in the generated config for the MedialiveMultiplexProgram 
 
 The id of the existing MedialiveMultiplexProgram that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/medialive_multiplex_program#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/medialive_multiplex_program#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -886,8 +886,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/medialivemultiplexprog
 | <code><a href="#@cdktn/provider-aws.medialiveMultiplexProgram.MedialiveMultiplexProgramConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.medialiveMultiplexProgram.MedialiveMultiplexProgramConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.medialiveMultiplexProgram.MedialiveMultiplexProgramConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.medialiveMultiplexProgram.MedialiveMultiplexProgramConfig.property.multiplexId">MultiplexId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/medialive_multiplex_program#multiplex_id MedialiveMultiplexProgram#multiplex_id}. |
-| <code><a href="#@cdktn/provider-aws.medialiveMultiplexProgram.MedialiveMultiplexProgramConfig.property.programName">ProgramName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/medialive_multiplex_program#program_name MedialiveMultiplexProgram#program_name}. |
+| <code><a href="#@cdktn/provider-aws.medialiveMultiplexProgram.MedialiveMultiplexProgramConfig.property.multiplexId">MultiplexId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/medialive_multiplex_program#multiplex_id MedialiveMultiplexProgram#multiplex_id}. |
+| <code><a href="#@cdktn/provider-aws.medialiveMultiplexProgram.MedialiveMultiplexProgramConfig.property.programName">ProgramName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/medialive_multiplex_program#program_name MedialiveMultiplexProgram#program_name}. |
 | <code><a href="#@cdktn/provider-aws.medialiveMultiplexProgram.MedialiveMultiplexProgramConfig.property.multiplexProgramSettings">MultiplexProgramSettings</a></code> | <code>interface{}</code> | multiplex_program_settings block. |
 | <code><a href="#@cdktn/provider-aws.medialiveMultiplexProgram.MedialiveMultiplexProgramConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktn/provider-aws.medialiveMultiplexProgram.MedialiveMultiplexProgramConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.medialiveMultiplexProgram.MedialiveMultiplexProgramTimeouts">MedialiveMultiplexProgramTimeouts</a></code> | timeouts block. |
@@ -972,7 +972,7 @@ MultiplexId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/medialive_multiplex_program#multiplex_id MedialiveMultiplexProgram#multiplex_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/medialive_multiplex_program#multiplex_id MedialiveMultiplexProgram#multiplex_id}.
 
 ---
 
@@ -984,7 +984,7 @@ ProgramName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/medialive_multiplex_program#program_name MedialiveMultiplexProgram#program_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/medialive_multiplex_program#program_name MedialiveMultiplexProgram#program_name}.
 
 ---
 
@@ -998,7 +998,7 @@ MultiplexProgramSettings interface{}
 
 multiplex_program_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/medialive_multiplex_program#multiplex_program_settings MedialiveMultiplexProgram#multiplex_program_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/medialive_multiplex_program#multiplex_program_settings MedialiveMultiplexProgram#multiplex_program_settings}
 
 ---
 
@@ -1012,7 +1012,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/medialive_multiplex_program#region MedialiveMultiplexProgram#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/medialive_multiplex_program#region MedialiveMultiplexProgram#region}
 
 ---
 
@@ -1026,7 +1026,7 @@ Timeouts MedialiveMultiplexProgramTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/medialive_multiplex_program#timeouts MedialiveMultiplexProgram#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/medialive_multiplex_program#timeouts MedialiveMultiplexProgram#timeouts}
 
 ---
 
@@ -1049,8 +1049,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/medialivemultiplexprog
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.medialiveMultiplexProgram.MedialiveMultiplexProgramMultiplexProgramSettings.property.preferredChannelPipeline">PreferredChannelPipeline</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/medialive_multiplex_program#preferred_channel_pipeline MedialiveMultiplexProgram#preferred_channel_pipeline}. |
-| <code><a href="#@cdktn/provider-aws.medialiveMultiplexProgram.MedialiveMultiplexProgramMultiplexProgramSettings.property.programNumber">ProgramNumber</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/medialive_multiplex_program#program_number MedialiveMultiplexProgram#program_number}. |
+| <code><a href="#@cdktn/provider-aws.medialiveMultiplexProgram.MedialiveMultiplexProgramMultiplexProgramSettings.property.preferredChannelPipeline">PreferredChannelPipeline</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/medialive_multiplex_program#preferred_channel_pipeline MedialiveMultiplexProgram#preferred_channel_pipeline}. |
+| <code><a href="#@cdktn/provider-aws.medialiveMultiplexProgram.MedialiveMultiplexProgramMultiplexProgramSettings.property.programNumber">ProgramNumber</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/medialive_multiplex_program#program_number MedialiveMultiplexProgram#program_number}. |
 | <code><a href="#@cdktn/provider-aws.medialiveMultiplexProgram.MedialiveMultiplexProgramMultiplexProgramSettings.property.serviceDescriptor">ServiceDescriptor</a></code> | <code>interface{}</code> | service_descriptor block. |
 | <code><a href="#@cdktn/provider-aws.medialiveMultiplexProgram.MedialiveMultiplexProgramMultiplexProgramSettings.property.videoSettings">VideoSettings</a></code> | <code>interface{}</code> | video_settings block. |
 
@@ -1064,7 +1064,7 @@ PreferredChannelPipeline *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/medialive_multiplex_program#preferred_channel_pipeline MedialiveMultiplexProgram#preferred_channel_pipeline}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/medialive_multiplex_program#preferred_channel_pipeline MedialiveMultiplexProgram#preferred_channel_pipeline}.
 
 ---
 
@@ -1076,7 +1076,7 @@ ProgramNumber *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/medialive_multiplex_program#program_number MedialiveMultiplexProgram#program_number}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/medialive_multiplex_program#program_number MedialiveMultiplexProgram#program_number}.
 
 ---
 
@@ -1090,7 +1090,7 @@ ServiceDescriptor interface{}
 
 service_descriptor block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/medialive_multiplex_program#service_descriptor MedialiveMultiplexProgram#service_descriptor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/medialive_multiplex_program#service_descriptor MedialiveMultiplexProgram#service_descriptor}
 
 ---
 
@@ -1104,7 +1104,7 @@ VideoSettings interface{}
 
 video_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/medialive_multiplex_program#video_settings MedialiveMultiplexProgram#video_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/medialive_multiplex_program#video_settings MedialiveMultiplexProgram#video_settings}
 
 ---
 
@@ -1125,8 +1125,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/medialivemultiplexprog
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.medialiveMultiplexProgram.MedialiveMultiplexProgramMultiplexProgramSettingsServiceDescriptor.property.providerName">ProviderName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/medialive_multiplex_program#provider_name MedialiveMultiplexProgram#provider_name}. |
-| <code><a href="#@cdktn/provider-aws.medialiveMultiplexProgram.MedialiveMultiplexProgramMultiplexProgramSettingsServiceDescriptor.property.serviceName">ServiceName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/medialive_multiplex_program#service_name MedialiveMultiplexProgram#service_name}. |
+| <code><a href="#@cdktn/provider-aws.medialiveMultiplexProgram.MedialiveMultiplexProgramMultiplexProgramSettingsServiceDescriptor.property.providerName">ProviderName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/medialive_multiplex_program#provider_name MedialiveMultiplexProgram#provider_name}. |
+| <code><a href="#@cdktn/provider-aws.medialiveMultiplexProgram.MedialiveMultiplexProgramMultiplexProgramSettingsServiceDescriptor.property.serviceName">ServiceName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/medialive_multiplex_program#service_name MedialiveMultiplexProgram#service_name}. |
 
 ---
 
@@ -1138,7 +1138,7 @@ ProviderName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/medialive_multiplex_program#provider_name MedialiveMultiplexProgram#provider_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/medialive_multiplex_program#provider_name MedialiveMultiplexProgram#provider_name}.
 
 ---
 
@@ -1150,7 +1150,7 @@ ServiceName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/medialive_multiplex_program#service_name MedialiveMultiplexProgram#service_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/medialive_multiplex_program#service_name MedialiveMultiplexProgram#service_name}.
 
 ---
 
@@ -1171,7 +1171,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/medialivemultiplexprog
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.medialiveMultiplexProgram.MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettings.property.constantBitrate">ConstantBitrate</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/medialive_multiplex_program#constant_bitrate MedialiveMultiplexProgram#constant_bitrate}. |
+| <code><a href="#@cdktn/provider-aws.medialiveMultiplexProgram.MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettings.property.constantBitrate">ConstantBitrate</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/medialive_multiplex_program#constant_bitrate MedialiveMultiplexProgram#constant_bitrate}. |
 | <code><a href="#@cdktn/provider-aws.medialiveMultiplexProgram.MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettings.property.statmuxSettings">StatmuxSettings</a></code> | <code>interface{}</code> | statmux_settings block. |
 
 ---
@@ -1184,7 +1184,7 @@ ConstantBitrate *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/medialive_multiplex_program#constant_bitrate MedialiveMultiplexProgram#constant_bitrate}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/medialive_multiplex_program#constant_bitrate MedialiveMultiplexProgram#constant_bitrate}.
 
 ---
 
@@ -1198,7 +1198,7 @@ StatmuxSettings interface{}
 
 statmux_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/medialive_multiplex_program#statmux_settings MedialiveMultiplexProgram#statmux_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/medialive_multiplex_program#statmux_settings MedialiveMultiplexProgram#statmux_settings}
 
 ---
 
@@ -1220,9 +1220,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/medialivemultiplexprog
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.medialiveMultiplexProgram.MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatmuxSettings.property.maximumBitrate">MaximumBitrate</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/medialive_multiplex_program#maximum_bitrate MedialiveMultiplexProgram#maximum_bitrate}. |
-| <code><a href="#@cdktn/provider-aws.medialiveMultiplexProgram.MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatmuxSettings.property.minimumBitrate">MinimumBitrate</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/medialive_multiplex_program#minimum_bitrate MedialiveMultiplexProgram#minimum_bitrate}. |
-| <code><a href="#@cdktn/provider-aws.medialiveMultiplexProgram.MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatmuxSettings.property.priority">Priority</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/medialive_multiplex_program#priority MedialiveMultiplexProgram#priority}. |
+| <code><a href="#@cdktn/provider-aws.medialiveMultiplexProgram.MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatmuxSettings.property.maximumBitrate">MaximumBitrate</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/medialive_multiplex_program#maximum_bitrate MedialiveMultiplexProgram#maximum_bitrate}. |
+| <code><a href="#@cdktn/provider-aws.medialiveMultiplexProgram.MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatmuxSettings.property.minimumBitrate">MinimumBitrate</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/medialive_multiplex_program#minimum_bitrate MedialiveMultiplexProgram#minimum_bitrate}. |
+| <code><a href="#@cdktn/provider-aws.medialiveMultiplexProgram.MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatmuxSettings.property.priority">Priority</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/medialive_multiplex_program#priority MedialiveMultiplexProgram#priority}. |
 
 ---
 
@@ -1234,7 +1234,7 @@ MaximumBitrate *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/medialive_multiplex_program#maximum_bitrate MedialiveMultiplexProgram#maximum_bitrate}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/medialive_multiplex_program#maximum_bitrate MedialiveMultiplexProgram#maximum_bitrate}.
 
 ---
 
@@ -1246,7 +1246,7 @@ MinimumBitrate *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/medialive_multiplex_program#minimum_bitrate MedialiveMultiplexProgram#minimum_bitrate}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/medialive_multiplex_program#minimum_bitrate MedialiveMultiplexProgram#minimum_bitrate}.
 
 ---
 
@@ -1258,7 +1258,7 @@ Priority *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/medialive_multiplex_program#priority MedialiveMultiplexProgram#priority}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/medialive_multiplex_program#priority MedialiveMultiplexProgram#priority}.
 
 ---
 
@@ -1292,7 +1292,7 @@ Create *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/medialive_multiplex_program#create MedialiveMultiplexProgram#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/medialive_multiplex_program#create MedialiveMultiplexProgram#create}
 
 ---
 

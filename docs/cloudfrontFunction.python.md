@@ -4,7 +4,7 @@
 
 ### CloudfrontFunction <a name="CloudfrontFunction" id="@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunction"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/cloudfront_function aws_cloudfront_function}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudfront_function aws_cloudfront_function}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunction.Initializer"></a>
 
@@ -27,7 +27,9 @@ cloudfrontFunction.CloudfrontFunction(
   comment: str = None,
   id: str = None,
   key_value_store_associations: typing.List[str] = None,
-  publish: bool | IResolvable = None
+  publish: bool | IResolvable = None,
+  tags: typing.Mapping[str] = None,
+  tags_all: typing.Mapping[str] = None
 )
 ```
 
@@ -42,13 +44,15 @@ cloudfrontFunction.CloudfrontFunction(
 | <code><a href="#@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunction.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunction.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunction.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunction.Initializer.parameter.code">code</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/cloudfront_function#code CloudfrontFunction#code}. |
-| <code><a href="#@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunction.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/cloudfront_function#name CloudfrontFunction#name}. |
-| <code><a href="#@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunction.Initializer.parameter.runtime">runtime</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/cloudfront_function#runtime CloudfrontFunction#runtime}. |
-| <code><a href="#@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunction.Initializer.parameter.comment">comment</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/cloudfront_function#comment CloudfrontFunction#comment}. |
-| <code><a href="#@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunction.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/cloudfront_function#id CloudfrontFunction#id}. |
-| <code><a href="#@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunction.Initializer.parameter.keyValueStoreAssociations">key_value_store_associations</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/cloudfront_function#key_value_store_associations CloudfrontFunction#key_value_store_associations}. |
-| <code><a href="#@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunction.Initializer.parameter.publish">publish</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/cloudfront_function#publish CloudfrontFunction#publish}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunction.Initializer.parameter.code">code</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudfront_function#code CloudfrontFunction#code}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunction.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudfront_function#name CloudfrontFunction#name}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunction.Initializer.parameter.runtime">runtime</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudfront_function#runtime CloudfrontFunction#runtime}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunction.Initializer.parameter.comment">comment</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudfront_function#comment CloudfrontFunction#comment}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunction.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudfront_function#id CloudfrontFunction#id}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunction.Initializer.parameter.keyValueStoreAssociations">key_value_store_associations</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudfront_function#key_value_store_associations CloudfrontFunction#key_value_store_associations}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunction.Initializer.parameter.publish">publish</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudfront_function#publish CloudfrontFunction#publish}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunction.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudfront_function#tags CloudfrontFunction#tags}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunction.Initializer.parameter.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudfront_function#tags_all CloudfrontFunction#tags_all}. |
 
 ---
 
@@ -116,7 +120,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/cloudfront_function#code CloudfrontFunction#code}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudfront_function#code CloudfrontFunction#code}.
 
 ---
 
@@ -124,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/cloudfront_function#name CloudfrontFunction#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudfront_function#name CloudfrontFunction#name}.
 
 ---
 
@@ -132,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/cloudfront_function#runtime CloudfrontFunction#runtime}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudfront_function#runtime CloudfrontFunction#runtime}.
 
 ---
 
@@ -140,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/cloudfront_function#comment CloudfrontFunction#comment}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudfront_function#comment CloudfrontFunction#comment}.
 
 ---
 
@@ -148,7 +152,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/cloudfront_function#id CloudfrontFunction#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudfront_function#id CloudfrontFunction#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -159,7 +163,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/cloudfront_function#key_value_store_associations CloudfrontFunction#key_value_store_associations}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudfront_function#key_value_store_associations CloudfrontFunction#key_value_store_associations}.
 
 ---
 
@@ -167,7 +171,23 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/cloudfront_function#publish CloudfrontFunction#publish}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudfront_function#publish CloudfrontFunction#publish}.
+
+---
+
+##### `tags`<sup>Optional</sup> <a name="tags" id="@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunction.Initializer.parameter.tags"></a>
+
+- *Type:* typing.Mapping[str]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudfront_function#tags CloudfrontFunction#tags}.
+
+---
+
+##### `tags_all`<sup>Optional</sup> <a name="tags_all" id="@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunction.Initializer.parameter.tagsAll"></a>
+
+- *Type:* typing.Mapping[str]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudfront_function#tags_all CloudfrontFunction#tags_all}.
 
 ---
 
@@ -203,6 +223,8 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunction.resetId">reset_id</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunction.resetKeyValueStoreAssociations">reset_key_value_store_associations</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunction.resetPublish">reset_publish</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunction.resetTags">reset_tags</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunction.resetTagsAll">reset_tags_all</a></code> | *No description.* |
 
 ---
 
@@ -578,6 +600,18 @@ def reset_key_value_store_associations() -> None
 def reset_publish() -> None
 ```
 
+##### `reset_tags` <a name="reset_tags" id="@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunction.resetTags"></a>
+
+```python
+def reset_tags() -> None
+```
+
+##### `reset_tags_all` <a name="reset_tags_all" id="@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunction.resetTagsAll"></a>
+
+```python
+def reset_tags_all() -> None
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -692,7 +726,7 @@ The construct id used in the generated config for the CloudfrontFunction to impo
 
 The id of the existing CloudfrontFunction that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/cloudfront_function#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudfront_function#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -733,6 +767,8 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0
 | <code><a href="#@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunction.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunction.property.publishInput">publish_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunction.property.runtimeInput">runtime_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunction.property.tagsAllInput">tags_all_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunction.property.tagsInput">tags_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunction.property.code">code</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunction.property.comment">comment</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunction.property.id">id</a></code> | <code>str</code> | *No description.* |
@@ -740,6 +776,8 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0
 | <code><a href="#@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunction.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunction.property.publish">publish</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunction.property.runtime">runtime</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunction.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunction.property.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 
 ---
 
@@ -995,6 +1033,26 @@ runtime_input: str
 
 ---
 
+##### `tags_all_input`<sup>Optional</sup> <a name="tags_all_input" id="@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunction.property.tagsAllInput"></a>
+
+```python
+tags_all_input: typing.Mapping[str]
+```
+
+- *Type:* typing.Mapping[str]
+
+---
+
+##### `tags_input`<sup>Optional</sup> <a name="tags_input" id="@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunction.property.tagsInput"></a>
+
+```python
+tags_input: typing.Mapping[str]
+```
+
+- *Type:* typing.Mapping[str]
+
+---
+
 ##### `code`<sup>Required</sup> <a name="code" id="@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunction.property.code"></a>
 
 ```python
@@ -1065,6 +1123,26 @@ runtime: str
 
 ---
 
+##### `tags`<sup>Required</sup> <a name="tags" id="@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunction.property.tags"></a>
+
+```python
+tags: typing.Mapping[str]
+```
+
+- *Type:* typing.Mapping[str]
+
+---
+
+##### `tags_all`<sup>Required</sup> <a name="tags_all" id="@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunction.property.tagsAll"></a>
+
+```python
+tags_all: typing.Mapping[str]
+```
+
+- *Type:* typing.Mapping[str]
+
+---
+
 #### Constants <a name="Constants" id="Constants"></a>
 
 | **Name** | **Type** | **Description** |
@@ -1106,7 +1184,9 @@ cloudfrontFunction.CloudfrontFunctionConfig(
   comment: str = None,
   id: str = None,
   key_value_store_associations: typing.List[str] = None,
-  publish: bool | IResolvable = None
+  publish: bool | IResolvable = None,
+  tags: typing.Mapping[str] = None,
+  tags_all: typing.Mapping[str] = None
 )
 ```
 
@@ -1121,13 +1201,15 @@ cloudfrontFunction.CloudfrontFunctionConfig(
 | <code><a href="#@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunctionConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunctionConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunctionConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunctionConfig.property.code">code</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/cloudfront_function#code CloudfrontFunction#code}. |
-| <code><a href="#@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunctionConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/cloudfront_function#name CloudfrontFunction#name}. |
-| <code><a href="#@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunctionConfig.property.runtime">runtime</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/cloudfront_function#runtime CloudfrontFunction#runtime}. |
-| <code><a href="#@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunctionConfig.property.comment">comment</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/cloudfront_function#comment CloudfrontFunction#comment}. |
-| <code><a href="#@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunctionConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/cloudfront_function#id CloudfrontFunction#id}. |
-| <code><a href="#@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunctionConfig.property.keyValueStoreAssociations">key_value_store_associations</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/cloudfront_function#key_value_store_associations CloudfrontFunction#key_value_store_associations}. |
-| <code><a href="#@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunctionConfig.property.publish">publish</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/cloudfront_function#publish CloudfrontFunction#publish}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunctionConfig.property.code">code</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudfront_function#code CloudfrontFunction#code}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunctionConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudfront_function#name CloudfrontFunction#name}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunctionConfig.property.runtime">runtime</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudfront_function#runtime CloudfrontFunction#runtime}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunctionConfig.property.comment">comment</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudfront_function#comment CloudfrontFunction#comment}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunctionConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudfront_function#id CloudfrontFunction#id}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunctionConfig.property.keyValueStoreAssociations">key_value_store_associations</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudfront_function#key_value_store_associations CloudfrontFunction#key_value_store_associations}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunctionConfig.property.publish">publish</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudfront_function#publish CloudfrontFunction#publish}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunctionConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudfront_function#tags CloudfrontFunction#tags}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunctionConfig.property.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudfront_function#tags_all CloudfrontFunction#tags_all}. |
 
 ---
 
@@ -1209,7 +1291,7 @@ code: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/cloudfront_function#code CloudfrontFunction#code}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudfront_function#code CloudfrontFunction#code}.
 
 ---
 
@@ -1221,7 +1303,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/cloudfront_function#name CloudfrontFunction#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudfront_function#name CloudfrontFunction#name}.
 
 ---
 
@@ -1233,7 +1315,7 @@ runtime: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/cloudfront_function#runtime CloudfrontFunction#runtime}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudfront_function#runtime CloudfrontFunction#runtime}.
 
 ---
 
@@ -1245,7 +1327,7 @@ comment: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/cloudfront_function#comment CloudfrontFunction#comment}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudfront_function#comment CloudfrontFunction#comment}.
 
 ---
 
@@ -1257,7 +1339,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/cloudfront_function#id CloudfrontFunction#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudfront_function#id CloudfrontFunction#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1272,7 +1354,7 @@ key_value_store_associations: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/cloudfront_function#key_value_store_associations CloudfrontFunction#key_value_store_associations}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudfront_function#key_value_store_associations CloudfrontFunction#key_value_store_associations}.
 
 ---
 
@@ -1284,7 +1366,31 @@ publish: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/cloudfront_function#publish CloudfrontFunction#publish}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudfront_function#publish CloudfrontFunction#publish}.
+
+---
+
+##### `tags`<sup>Optional</sup> <a name="tags" id="@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunctionConfig.property.tags"></a>
+
+```python
+tags: typing.Mapping[str]
+```
+
+- *Type:* typing.Mapping[str]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudfront_function#tags CloudfrontFunction#tags}.
+
+---
+
+##### `tags_all`<sup>Optional</sup> <a name="tags_all" id="@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunctionConfig.property.tagsAll"></a>
+
+```python
+tags_all: typing.Mapping[str]
+```
+
+- *Type:* typing.Mapping[str]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudfront_function#tags_all CloudfrontFunction#tags_all}.
 
 ---
 

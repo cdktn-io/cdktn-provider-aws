@@ -4,7 +4,7 @@
 
 ### TranscribeVocabularyFilter <a name="TranscribeVocabularyFilter" id="@cdktn/provider-aws.transcribeVocabularyFilter.TranscribeVocabularyFilter"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/transcribe_vocabulary_filter aws_transcribe_vocabulary_filter}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/transcribe_vocabulary_filter aws_transcribe_vocabulary_filter}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.transcribeVocabularyFilter.TranscribeVocabularyFilter.Initializer"></a>
 
@@ -41,14 +41,14 @@ TranscribeVocabularyFilter.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-aws.transcribeVocabularyFilter.TranscribeVocabularyFilter.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.transcribeVocabularyFilter.TranscribeVocabularyFilter.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.transcribeVocabularyFilter.TranscribeVocabularyFilter.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.transcribeVocabularyFilter.TranscribeVocabularyFilter.Initializer.parameter.languageCode">languageCode</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/transcribe_vocabulary_filter#language_code TranscribeVocabularyFilter#language_code}. |
-| <code><a href="#@cdktn/provider-aws.transcribeVocabularyFilter.TranscribeVocabularyFilter.Initializer.parameter.vocabularyFilterName">vocabularyFilterName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/transcribe_vocabulary_filter#vocabulary_filter_name TranscribeVocabularyFilter#vocabulary_filter_name}. |
-| <code><a href="#@cdktn/provider-aws.transcribeVocabularyFilter.TranscribeVocabularyFilter.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/transcribe_vocabulary_filter#id TranscribeVocabularyFilter#id}. |
+| <code><a href="#@cdktn/provider-aws.transcribeVocabularyFilter.TranscribeVocabularyFilter.Initializer.parameter.languageCode">languageCode</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/transcribe_vocabulary_filter#language_code TranscribeVocabularyFilter#language_code}. |
+| <code><a href="#@cdktn/provider-aws.transcribeVocabularyFilter.TranscribeVocabularyFilter.Initializer.parameter.vocabularyFilterName">vocabularyFilterName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/transcribe_vocabulary_filter#vocabulary_filter_name TranscribeVocabularyFilter#vocabulary_filter_name}. |
+| <code><a href="#@cdktn/provider-aws.transcribeVocabularyFilter.TranscribeVocabularyFilter.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/transcribe_vocabulary_filter#id TranscribeVocabularyFilter#id}. |
 | <code><a href="#@cdktn/provider-aws.transcribeVocabularyFilter.TranscribeVocabularyFilter.Initializer.parameter.region">region</a></code> | <code>java.lang.String</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.transcribeVocabularyFilter.TranscribeVocabularyFilter.Initializer.parameter.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/transcribe_vocabulary_filter#tags TranscribeVocabularyFilter#tags}. |
-| <code><a href="#@cdktn/provider-aws.transcribeVocabularyFilter.TranscribeVocabularyFilter.Initializer.parameter.tagsAll">tagsAll</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/transcribe_vocabulary_filter#tags_all TranscribeVocabularyFilter#tags_all}. |
-| <code><a href="#@cdktn/provider-aws.transcribeVocabularyFilter.TranscribeVocabularyFilter.Initializer.parameter.vocabularyFilterFileUri">vocabularyFilterFileUri</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/transcribe_vocabulary_filter#vocabulary_filter_file_uri TranscribeVocabularyFilter#vocabulary_filter_file_uri}. |
-| <code><a href="#@cdktn/provider-aws.transcribeVocabularyFilter.TranscribeVocabularyFilter.Initializer.parameter.words">words</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/transcribe_vocabulary_filter#words TranscribeVocabularyFilter#words}. |
+| <code><a href="#@cdktn/provider-aws.transcribeVocabularyFilter.TranscribeVocabularyFilter.Initializer.parameter.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/transcribe_vocabulary_filter#tags TranscribeVocabularyFilter#tags}. |
+| <code><a href="#@cdktn/provider-aws.transcribeVocabularyFilter.TranscribeVocabularyFilter.Initializer.parameter.tagsAll">tagsAll</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/transcribe_vocabulary_filter#tags_all TranscribeVocabularyFilter#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.transcribeVocabularyFilter.TranscribeVocabularyFilter.Initializer.parameter.vocabularyFilterFileUri">vocabularyFilterFileUri</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/transcribe_vocabulary_filter#vocabulary_filter_file_uri TranscribeVocabularyFilter#vocabulary_filter_file_uri}. |
+| <code><a href="#@cdktn/provider-aws.transcribeVocabularyFilter.TranscribeVocabularyFilter.Initializer.parameter.words">words</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/transcribe_vocabulary_filter#words TranscribeVocabularyFilter#words}. |
 
 ---
 
@@ -116,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/transcribe_vocabulary_filter#language_code TranscribeVocabularyFilter#language_code}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/transcribe_vocabulary_filter#language_code TranscribeVocabularyFilter#language_code}.
 
 ---
 
@@ -124,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/transcribe_vocabulary_filter#vocabulary_filter_name TranscribeVocabularyFilter#vocabulary_filter_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/transcribe_vocabulary_filter#vocabulary_filter_name TranscribeVocabularyFilter#vocabulary_filter_name}.
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/transcribe_vocabulary_filter#id TranscribeVocabularyFilter#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/transcribe_vocabulary_filter#id TranscribeVocabularyFilter#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -145,7 +145,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/transcribe_vocabulary_filter#region TranscribeVocabularyFilter#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/transcribe_vocabulary_filter#region TranscribeVocabularyFilter#region}
 
 ---
 
@@ -153,7 +153,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/transcribe_vocabulary_filter#tags TranscribeVocabularyFilter#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/transcribe_vocabulary_filter#tags TranscribeVocabularyFilter#tags}.
 
 ---
 
@@ -161,7 +161,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/transcribe_vocabulary_filter#tags_all TranscribeVocabularyFilter#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/transcribe_vocabulary_filter#tags_all TranscribeVocabularyFilter#tags_all}.
 
 ---
 
@@ -169,7 +169,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/transcribe_vocabulary_filter#vocabulary_filter_file_uri TranscribeVocabularyFilter#vocabulary_filter_file_uri}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/transcribe_vocabulary_filter#vocabulary_filter_file_uri TranscribeVocabularyFilter#vocabulary_filter_file_uri}.
 
 ---
 
@@ -177,7 +177,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/transcribe_vocabulary_filter#words TranscribeVocabularyFilter#words}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/transcribe_vocabulary_filter#words TranscribeVocabularyFilter#words}.
 
 ---
 
@@ -668,7 +668,7 @@ The construct id used in the generated config for the TranscribeVocabularyFilter
 
 The id of the existing TranscribeVocabularyFilter that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/transcribe_vocabulary_filter#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/transcribe_vocabulary_filter#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1098,14 +1098,14 @@ TranscribeVocabularyFilterConfig.builder()
 | <code><a href="#@cdktn/provider-aws.transcribeVocabularyFilter.TranscribeVocabularyFilterConfig.property.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.transcribeVocabularyFilter.TranscribeVocabularyFilterConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.transcribeVocabularyFilter.TranscribeVocabularyFilterConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.transcribeVocabularyFilter.TranscribeVocabularyFilterConfig.property.languageCode">languageCode</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/transcribe_vocabulary_filter#language_code TranscribeVocabularyFilter#language_code}. |
-| <code><a href="#@cdktn/provider-aws.transcribeVocabularyFilter.TranscribeVocabularyFilterConfig.property.vocabularyFilterName">vocabularyFilterName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/transcribe_vocabulary_filter#vocabulary_filter_name TranscribeVocabularyFilter#vocabulary_filter_name}. |
-| <code><a href="#@cdktn/provider-aws.transcribeVocabularyFilter.TranscribeVocabularyFilterConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/transcribe_vocabulary_filter#id TranscribeVocabularyFilter#id}. |
+| <code><a href="#@cdktn/provider-aws.transcribeVocabularyFilter.TranscribeVocabularyFilterConfig.property.languageCode">languageCode</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/transcribe_vocabulary_filter#language_code TranscribeVocabularyFilter#language_code}. |
+| <code><a href="#@cdktn/provider-aws.transcribeVocabularyFilter.TranscribeVocabularyFilterConfig.property.vocabularyFilterName">vocabularyFilterName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/transcribe_vocabulary_filter#vocabulary_filter_name TranscribeVocabularyFilter#vocabulary_filter_name}. |
+| <code><a href="#@cdktn/provider-aws.transcribeVocabularyFilter.TranscribeVocabularyFilterConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/transcribe_vocabulary_filter#id TranscribeVocabularyFilter#id}. |
 | <code><a href="#@cdktn/provider-aws.transcribeVocabularyFilter.TranscribeVocabularyFilterConfig.property.region">region</a></code> | <code>java.lang.String</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.transcribeVocabularyFilter.TranscribeVocabularyFilterConfig.property.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/transcribe_vocabulary_filter#tags TranscribeVocabularyFilter#tags}. |
-| <code><a href="#@cdktn/provider-aws.transcribeVocabularyFilter.TranscribeVocabularyFilterConfig.property.tagsAll">tagsAll</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/transcribe_vocabulary_filter#tags_all TranscribeVocabularyFilter#tags_all}. |
-| <code><a href="#@cdktn/provider-aws.transcribeVocabularyFilter.TranscribeVocabularyFilterConfig.property.vocabularyFilterFileUri">vocabularyFilterFileUri</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/transcribe_vocabulary_filter#vocabulary_filter_file_uri TranscribeVocabularyFilter#vocabulary_filter_file_uri}. |
-| <code><a href="#@cdktn/provider-aws.transcribeVocabularyFilter.TranscribeVocabularyFilterConfig.property.words">words</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/transcribe_vocabulary_filter#words TranscribeVocabularyFilter#words}. |
+| <code><a href="#@cdktn/provider-aws.transcribeVocabularyFilter.TranscribeVocabularyFilterConfig.property.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/transcribe_vocabulary_filter#tags TranscribeVocabularyFilter#tags}. |
+| <code><a href="#@cdktn/provider-aws.transcribeVocabularyFilter.TranscribeVocabularyFilterConfig.property.tagsAll">tagsAll</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/transcribe_vocabulary_filter#tags_all TranscribeVocabularyFilter#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.transcribeVocabularyFilter.TranscribeVocabularyFilterConfig.property.vocabularyFilterFileUri">vocabularyFilterFileUri</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/transcribe_vocabulary_filter#vocabulary_filter_file_uri TranscribeVocabularyFilter#vocabulary_filter_file_uri}. |
+| <code><a href="#@cdktn/provider-aws.transcribeVocabularyFilter.TranscribeVocabularyFilterConfig.property.words">words</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/transcribe_vocabulary_filter#words TranscribeVocabularyFilter#words}. |
 
 ---
 
@@ -1187,7 +1187,7 @@ public java.lang.String getLanguageCode();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/transcribe_vocabulary_filter#language_code TranscribeVocabularyFilter#language_code}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/transcribe_vocabulary_filter#language_code TranscribeVocabularyFilter#language_code}.
 
 ---
 
@@ -1199,7 +1199,7 @@ public java.lang.String getVocabularyFilterName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/transcribe_vocabulary_filter#vocabulary_filter_name TranscribeVocabularyFilter#vocabulary_filter_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/transcribe_vocabulary_filter#vocabulary_filter_name TranscribeVocabularyFilter#vocabulary_filter_name}.
 
 ---
 
@@ -1211,7 +1211,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/transcribe_vocabulary_filter#id TranscribeVocabularyFilter#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/transcribe_vocabulary_filter#id TranscribeVocabularyFilter#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1228,7 +1228,7 @@ public java.lang.String getRegion();
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/transcribe_vocabulary_filter#region TranscribeVocabularyFilter#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/transcribe_vocabulary_filter#region TranscribeVocabularyFilter#region}
 
 ---
 
@@ -1240,7 +1240,7 @@ public java.util.Map<java.lang.String, java.lang.String> getTags();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/transcribe_vocabulary_filter#tags TranscribeVocabularyFilter#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/transcribe_vocabulary_filter#tags TranscribeVocabularyFilter#tags}.
 
 ---
 
@@ -1252,7 +1252,7 @@ public java.util.Map<java.lang.String, java.lang.String> getTagsAll();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/transcribe_vocabulary_filter#tags_all TranscribeVocabularyFilter#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/transcribe_vocabulary_filter#tags_all TranscribeVocabularyFilter#tags_all}.
 
 ---
 
@@ -1264,7 +1264,7 @@ public java.lang.String getVocabularyFilterFileUri();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/transcribe_vocabulary_filter#vocabulary_filter_file_uri TranscribeVocabularyFilter#vocabulary_filter_file_uri}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/transcribe_vocabulary_filter#vocabulary_filter_file_uri TranscribeVocabularyFilter#vocabulary_filter_file_uri}.
 
 ---
 
@@ -1276,7 +1276,7 @@ public java.util.List<java.lang.String> getWords();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/transcribe_vocabulary_filter#words TranscribeVocabularyFilter#words}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/transcribe_vocabulary_filter#words TranscribeVocabularyFilter#words}.
 
 ---
 

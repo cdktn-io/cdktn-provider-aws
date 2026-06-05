@@ -4,7 +4,7 @@
 
 ### S3TablesNamespace <a name="S3TablesNamespace" id="@cdktn/provider-aws.s3TablesNamespace.S3TablesNamespace"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/s3tables_namespace aws_s3tables_namespace}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/s3tables_namespace aws_s3tables_namespace}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3TablesNamespace.S3TablesNamespace.Initializer"></a>
 
@@ -38,8 +38,8 @@ s3TablesNamespace.S3TablesNamespace(
 | <code><a href="#@cdktn/provider-aws.s3TablesNamespace.S3TablesNamespace.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.s3TablesNamespace.S3TablesNamespace.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.s3TablesNamespace.S3TablesNamespace.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.s3TablesNamespace.S3TablesNamespace.Initializer.parameter.namespace">namespace</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/s3tables_namespace#namespace S3TablesNamespace#namespace}. |
-| <code><a href="#@cdktn/provider-aws.s3TablesNamespace.S3TablesNamespace.Initializer.parameter.tableBucketArn">table_bucket_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/s3tables_namespace#table_bucket_arn S3TablesNamespace#table_bucket_arn}. |
+| <code><a href="#@cdktn/provider-aws.s3TablesNamespace.S3TablesNamespace.Initializer.parameter.namespace">namespace</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/s3tables_namespace#namespace S3TablesNamespace#namespace}. |
+| <code><a href="#@cdktn/provider-aws.s3TablesNamespace.S3TablesNamespace.Initializer.parameter.tableBucketArn">table_bucket_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/s3tables_namespace#table_bucket_arn S3TablesNamespace#table_bucket_arn}. |
 | <code><a href="#@cdktn/provider-aws.s3TablesNamespace.S3TablesNamespace.Initializer.parameter.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -108,7 +108,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/s3tables_namespace#namespace S3TablesNamespace#namespace}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/s3tables_namespace#namespace S3TablesNamespace#namespace}.
 
 ---
 
@@ -116,7 +116,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/s3tables_namespace#table_bucket_arn S3TablesNamespace#table_bucket_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/s3tables_namespace#table_bucket_arn S3TablesNamespace#table_bucket_arn}.
 
 ---
 
@@ -126,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/s3tables_namespace#region S3TablesNamespace#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/s3tables_namespace#region S3TablesNamespace#region}
 
 ---
 
@@ -630,7 +630,7 @@ The construct id used in the generated config for the S3TablesNamespace to impor
 
 The id of the existing S3TablesNamespace that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/s3tables_namespace#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/s3tables_namespace#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -956,8 +956,8 @@ s3TablesNamespace.S3TablesNamespaceConfig(
 | <code><a href="#@cdktn/provider-aws.s3TablesNamespace.S3TablesNamespaceConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.s3TablesNamespace.S3TablesNamespaceConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.s3TablesNamespace.S3TablesNamespaceConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.s3TablesNamespace.S3TablesNamespaceConfig.property.namespace">namespace</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/s3tables_namespace#namespace S3TablesNamespace#namespace}. |
-| <code><a href="#@cdktn/provider-aws.s3TablesNamespace.S3TablesNamespaceConfig.property.tableBucketArn">table_bucket_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/s3tables_namespace#table_bucket_arn S3TablesNamespace#table_bucket_arn}. |
+| <code><a href="#@cdktn/provider-aws.s3TablesNamespace.S3TablesNamespaceConfig.property.namespace">namespace</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/s3tables_namespace#namespace S3TablesNamespace#namespace}. |
+| <code><a href="#@cdktn/provider-aws.s3TablesNamespace.S3TablesNamespaceConfig.property.tableBucketArn">table_bucket_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/s3tables_namespace#table_bucket_arn S3TablesNamespace#table_bucket_arn}. |
 | <code><a href="#@cdktn/provider-aws.s3TablesNamespace.S3TablesNamespaceConfig.property.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -1040,7 +1040,7 @@ namespace: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/s3tables_namespace#namespace S3TablesNamespace#namespace}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/s3tables_namespace#namespace S3TablesNamespace#namespace}.
 
 ---
 
@@ -1052,7 +1052,7 @@ table_bucket_arn: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/s3tables_namespace#table_bucket_arn S3TablesNamespace#table_bucket_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/s3tables_namespace#table_bucket_arn S3TablesNamespace#table_bucket_arn}.
 
 ---
 
@@ -1066,7 +1066,7 @@ region: str
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/s3tables_namespace#region S3TablesNamespace#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/s3tables_namespace#region S3TablesNamespace#region}
 
 ---
 

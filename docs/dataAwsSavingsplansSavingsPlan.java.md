@@ -4,7 +4,7 @@
 
 ### DataAwsSavingsplansSavingsPlan <a name="DataAwsSavingsplansSavingsPlan" id="@cdktn/provider-aws.dataAwsSavingsplansSavingsPlan.DataAwsSavingsplansSavingsPlan"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/data-sources/savingsplans_savings_plan aws_savingsplans_savings_plan}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/savingsplans_savings_plan aws_savingsplans_savings_plan}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsSavingsplansSavingsPlan.DataAwsSavingsplansSavingsPlan.Initializer"></a>
 
@@ -104,7 +104,7 @@ Must be unique amongst siblings in the same scope
 
 The ID of the Savings Plan.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/data-sources/savingsplans_savings_plan#savings_plan_id DataAwsSavingsplansSavingsPlan#savings_plan_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/savingsplans_savings_plan#savings_plan_id DataAwsSavingsplansSavingsPlan#savings_plan_id}
 
 ---
 
@@ -449,7 +449,7 @@ The construct id used in the generated config for the DataAwsSavingsplansSavings
 
 The id of the existing DataAwsSavingsplansSavingsPlan that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/data-sources/savingsplans_savings_plan#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/savingsplans_savings_plan#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -978,7 +978,7 @@ public java.lang.String getSavingsPlanId();
 
 The ID of the Savings Plan.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/data-sources/savingsplans_savings_plan#savings_plan_id DataAwsSavingsplansSavingsPlan#savings_plan_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/savingsplans_savings_plan#savings_plan_id DataAwsSavingsplansSavingsPlan#savings_plan_id}
 
 ---
 

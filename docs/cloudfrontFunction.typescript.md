@@ -4,7 +4,7 @@
 
 ### CloudfrontFunction <a name="CloudfrontFunction" id="@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunction"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/cloudfront_function aws_cloudfront_function}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudfront_function aws_cloudfront_function}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunction.Initializer"></a>
 
@@ -78,6 +78,8 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunction.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunction.resetKeyValueStoreAssociations">resetKeyValueStoreAssociations</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunction.resetPublish">resetPublish</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunction.resetTags">resetTags</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunction.resetTagsAll">resetTagsAll</a></code> | *No description.* |
 
 ---
 
@@ -414,6 +416,18 @@ public resetKeyValueStoreAssociations(): void
 public resetPublish(): void
 ```
 
+##### `resetTags` <a name="resetTags" id="@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunction.resetTags"></a>
+
+```typescript
+public resetTags(): void
+```
+
+##### `resetTagsAll` <a name="resetTagsAll" id="@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunction.resetTagsAll"></a>
+
+```typescript
+public resetTagsAll(): void
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -517,7 +531,7 @@ The construct id used in the generated config for the CloudfrontFunction to impo
 
 The id of the existing CloudfrontFunction that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/cloudfront_function#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudfront_function#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -558,6 +572,8 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0
 | <code><a href="#@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunction.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunction.property.publishInput">publishInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunction.property.runtimeInput">runtimeInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunction.property.tagsAllInput">tagsAllInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunction.property.tagsInput">tagsInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunction.property.code">code</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunction.property.comment">comment</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunction.property.id">id</a></code> | <code>string</code> | *No description.* |
@@ -565,6 +581,8 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0
 | <code><a href="#@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunction.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunction.property.publish">publish</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunction.property.runtime">runtime</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunction.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunction.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 
 ---
 
@@ -820,6 +838,26 @@ public readonly runtimeInput: string;
 
 ---
 
+##### `tagsAllInput`<sup>Optional</sup> <a name="tagsAllInput" id="@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunction.property.tagsAllInput"></a>
+
+```typescript
+public readonly tagsAllInput: {[ key: string ]: string};
+```
+
+- *Type:* {[ key: string ]: string}
+
+---
+
+##### `tagsInput`<sup>Optional</sup> <a name="tagsInput" id="@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunction.property.tagsInput"></a>
+
+```typescript
+public readonly tagsInput: {[ key: string ]: string};
+```
+
+- *Type:* {[ key: string ]: string}
+
+---
+
 ##### `code`<sup>Required</sup> <a name="code" id="@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunction.property.code"></a>
 
 ```typescript
@@ -890,6 +928,26 @@ public readonly runtime: string;
 
 ---
 
+##### `tags`<sup>Required</sup> <a name="tags" id="@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunction.property.tags"></a>
+
+```typescript
+public readonly tags: {[ key: string ]: string};
+```
+
+- *Type:* {[ key: string ]: string}
+
+---
+
+##### `tagsAll`<sup>Required</sup> <a name="tagsAll" id="@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunction.property.tagsAll"></a>
+
+```typescript
+public readonly tagsAll: {[ key: string ]: string};
+```
+
+- *Type:* {[ key: string ]: string}
+
+---
+
 #### Constants <a name="Constants" id="Constants"></a>
 
 | **Name** | **Type** | **Description** |
@@ -931,13 +989,15 @@ const cloudfrontFunctionConfig: cloudfrontFunction.CloudfrontFunctionConfig = { 
 | <code><a href="#@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunctionConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunctionConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunctionConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunctionConfig.property.code">code</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/cloudfront_function#code CloudfrontFunction#code}. |
-| <code><a href="#@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunctionConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/cloudfront_function#name CloudfrontFunction#name}. |
-| <code><a href="#@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunctionConfig.property.runtime">runtime</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/cloudfront_function#runtime CloudfrontFunction#runtime}. |
-| <code><a href="#@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunctionConfig.property.comment">comment</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/cloudfront_function#comment CloudfrontFunction#comment}. |
-| <code><a href="#@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunctionConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/cloudfront_function#id CloudfrontFunction#id}. |
-| <code><a href="#@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunctionConfig.property.keyValueStoreAssociations">keyValueStoreAssociations</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/cloudfront_function#key_value_store_associations CloudfrontFunction#key_value_store_associations}. |
-| <code><a href="#@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunctionConfig.property.publish">publish</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/cloudfront_function#publish CloudfrontFunction#publish}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunctionConfig.property.code">code</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudfront_function#code CloudfrontFunction#code}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunctionConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudfront_function#name CloudfrontFunction#name}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunctionConfig.property.runtime">runtime</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudfront_function#runtime CloudfrontFunction#runtime}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunctionConfig.property.comment">comment</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudfront_function#comment CloudfrontFunction#comment}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunctionConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudfront_function#id CloudfrontFunction#id}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunctionConfig.property.keyValueStoreAssociations">keyValueStoreAssociations</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudfront_function#key_value_store_associations CloudfrontFunction#key_value_store_associations}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunctionConfig.property.publish">publish</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudfront_function#publish CloudfrontFunction#publish}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunctionConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudfront_function#tags CloudfrontFunction#tags}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunctionConfig.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudfront_function#tags_all CloudfrontFunction#tags_all}. |
 
 ---
 
@@ -1019,7 +1079,7 @@ public readonly code: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/cloudfront_function#code CloudfrontFunction#code}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudfront_function#code CloudfrontFunction#code}.
 
 ---
 
@@ -1031,7 +1091,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/cloudfront_function#name CloudfrontFunction#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudfront_function#name CloudfrontFunction#name}.
 
 ---
 
@@ -1043,7 +1103,7 @@ public readonly runtime: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/cloudfront_function#runtime CloudfrontFunction#runtime}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudfront_function#runtime CloudfrontFunction#runtime}.
 
 ---
 
@@ -1055,7 +1115,7 @@ public readonly comment: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/cloudfront_function#comment CloudfrontFunction#comment}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudfront_function#comment CloudfrontFunction#comment}.
 
 ---
 
@@ -1067,7 +1127,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/cloudfront_function#id CloudfrontFunction#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudfront_function#id CloudfrontFunction#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1082,7 +1142,7 @@ public readonly keyValueStoreAssociations: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/cloudfront_function#key_value_store_associations CloudfrontFunction#key_value_store_associations}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudfront_function#key_value_store_associations CloudfrontFunction#key_value_store_associations}.
 
 ---
 
@@ -1094,7 +1154,31 @@ public readonly publish: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/cloudfront_function#publish CloudfrontFunction#publish}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudfront_function#publish CloudfrontFunction#publish}.
+
+---
+
+##### `tags`<sup>Optional</sup> <a name="tags" id="@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunctionConfig.property.tags"></a>
+
+```typescript
+public readonly tags: {[ key: string ]: string};
+```
+
+- *Type:* {[ key: string ]: string}
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudfront_function#tags CloudfrontFunction#tags}.
+
+---
+
+##### `tagsAll`<sup>Optional</sup> <a name="tagsAll" id="@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunctionConfig.property.tagsAll"></a>
+
+```typescript
+public readonly tagsAll: {[ key: string ]: string};
+```
+
+- *Type:* {[ key: string ]: string}
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudfront_function#tags_all CloudfrontFunction#tags_all}.
 
 ---
 

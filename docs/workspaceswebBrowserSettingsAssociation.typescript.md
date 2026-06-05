@@ -4,7 +4,7 @@
 
 ### WorkspaceswebBrowserSettingsAssociation <a name="WorkspaceswebBrowserSettingsAssociation" id="@cdktn/provider-aws.workspaceswebBrowserSettingsAssociation.WorkspaceswebBrowserSettingsAssociation"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/workspacesweb_browser_settings_association aws_workspacesweb_browser_settings_association}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/workspacesweb_browser_settings_association aws_workspacesweb_browser_settings_association}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.workspaceswebBrowserSettingsAssociation.WorkspaceswebBrowserSettingsAssociation.Initializer"></a>
 
@@ -496,7 +496,7 @@ The construct id used in the generated config for the WorkspaceswebBrowserSettin
 
 The id of the existing WorkspaceswebBrowserSettingsAssociation that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/workspacesweb_browser_settings_association#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/workspacesweb_browser_settings_association#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -778,8 +778,8 @@ const workspaceswebBrowserSettingsAssociationConfig: workspaceswebBrowserSetting
 | <code><a href="#@cdktn/provider-aws.workspaceswebBrowserSettingsAssociation.WorkspaceswebBrowserSettingsAssociationConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.workspaceswebBrowserSettingsAssociation.WorkspaceswebBrowserSettingsAssociationConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.workspaceswebBrowserSettingsAssociation.WorkspaceswebBrowserSettingsAssociationConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.workspaceswebBrowserSettingsAssociation.WorkspaceswebBrowserSettingsAssociationConfig.property.browserSettingsArn">browserSettingsArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/workspacesweb_browser_settings_association#browser_settings_arn WorkspaceswebBrowserSettingsAssociation#browser_settings_arn}. |
-| <code><a href="#@cdktn/provider-aws.workspaceswebBrowserSettingsAssociation.WorkspaceswebBrowserSettingsAssociationConfig.property.portalArn">portalArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/workspacesweb_browser_settings_association#portal_arn WorkspaceswebBrowserSettingsAssociation#portal_arn}. |
+| <code><a href="#@cdktn/provider-aws.workspaceswebBrowserSettingsAssociation.WorkspaceswebBrowserSettingsAssociationConfig.property.browserSettingsArn">browserSettingsArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/workspacesweb_browser_settings_association#browser_settings_arn WorkspaceswebBrowserSettingsAssociation#browser_settings_arn}. |
+| <code><a href="#@cdktn/provider-aws.workspaceswebBrowserSettingsAssociation.WorkspaceswebBrowserSettingsAssociationConfig.property.portalArn">portalArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/workspacesweb_browser_settings_association#portal_arn WorkspaceswebBrowserSettingsAssociation#portal_arn}. |
 | <code><a href="#@cdktn/provider-aws.workspaceswebBrowserSettingsAssociation.WorkspaceswebBrowserSettingsAssociationConfig.property.region">region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -862,7 +862,7 @@ public readonly browserSettingsArn: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/workspacesweb_browser_settings_association#browser_settings_arn WorkspaceswebBrowserSettingsAssociation#browser_settings_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/workspacesweb_browser_settings_association#browser_settings_arn WorkspaceswebBrowserSettingsAssociation#browser_settings_arn}.
 
 ---
 
@@ -874,7 +874,7 @@ public readonly portalArn: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/workspacesweb_browser_settings_association#portal_arn WorkspaceswebBrowserSettingsAssociation#portal_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/workspacesweb_browser_settings_association#portal_arn WorkspaceswebBrowserSettingsAssociation#portal_arn}.
 
 ---
 
@@ -888,7 +888,7 @@ public readonly region: string;
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/workspacesweb_browser_settings_association#region WorkspaceswebBrowserSettingsAssociation#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/workspacesweb_browser_settings_association#region WorkspaceswebBrowserSettingsAssociation#region}
 
 ---
 

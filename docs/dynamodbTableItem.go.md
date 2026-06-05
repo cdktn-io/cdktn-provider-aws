@@ -4,7 +4,7 @@
 
 ### DynamodbTableItem <a name="DynamodbTableItem" id="@cdktn/provider-aws.dynamodbTableItem.DynamodbTableItem"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/dynamodb_table_item aws_dynamodb_table_item}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/dynamodb_table_item aws_dynamodb_table_item}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dynamodbTableItem.DynamodbTableItem.Initializer"></a>
 
@@ -510,7 +510,7 @@ The construct id used in the generated config for the DynamodbTableItem to impor
 
 The id of the existing DynamodbTableItem that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/dynamodb_table_item#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/dynamodb_table_item#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -872,11 +872,11 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v24/dynamodbtableitem"
 | <code><a href="#@cdktn/provider-aws.dynamodbTableItem.DynamodbTableItemConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dynamodbTableItem.DynamodbTableItemConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dynamodbTableItem.DynamodbTableItemConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dynamodbTableItem.DynamodbTableItemConfig.property.hashKey">HashKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/dynamodb_table_item#hash_key DynamodbTableItem#hash_key}. |
-| <code><a href="#@cdktn/provider-aws.dynamodbTableItem.DynamodbTableItemConfig.property.item">Item</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/dynamodb_table_item#item DynamodbTableItem#item}. |
-| <code><a href="#@cdktn/provider-aws.dynamodbTableItem.DynamodbTableItemConfig.property.tableName">TableName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/dynamodb_table_item#table_name DynamodbTableItem#table_name}. |
-| <code><a href="#@cdktn/provider-aws.dynamodbTableItem.DynamodbTableItemConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/dynamodb_table_item#id DynamodbTableItem#id}. |
-| <code><a href="#@cdktn/provider-aws.dynamodbTableItem.DynamodbTableItemConfig.property.rangeKey">RangeKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/dynamodb_table_item#range_key DynamodbTableItem#range_key}. |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableItem.DynamodbTableItemConfig.property.hashKey">HashKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/dynamodb_table_item#hash_key DynamodbTableItem#hash_key}. |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableItem.DynamodbTableItemConfig.property.item">Item</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/dynamodb_table_item#item DynamodbTableItem#item}. |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableItem.DynamodbTableItemConfig.property.tableName">TableName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/dynamodb_table_item#table_name DynamodbTableItem#table_name}. |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableItem.DynamodbTableItemConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/dynamodb_table_item#id DynamodbTableItem#id}. |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableItem.DynamodbTableItemConfig.property.rangeKey">RangeKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/dynamodb_table_item#range_key DynamodbTableItem#range_key}. |
 | <code><a href="#@cdktn/provider-aws.dynamodbTableItem.DynamodbTableItemConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -959,7 +959,7 @@ HashKey *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/dynamodb_table_item#hash_key DynamodbTableItem#hash_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/dynamodb_table_item#hash_key DynamodbTableItem#hash_key}.
 
 ---
 
@@ -971,7 +971,7 @@ Item *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/dynamodb_table_item#item DynamodbTableItem#item}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/dynamodb_table_item#item DynamodbTableItem#item}.
 
 ---
 
@@ -983,7 +983,7 @@ TableName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/dynamodb_table_item#table_name DynamodbTableItem#table_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/dynamodb_table_item#table_name DynamodbTableItem#table_name}.
 
 ---
 
@@ -995,7 +995,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/dynamodb_table_item#id DynamodbTableItem#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/dynamodb_table_item#id DynamodbTableItem#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1010,7 +1010,7 @@ RangeKey *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/dynamodb_table_item#range_key DynamodbTableItem#range_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/dynamodb_table_item#range_key DynamodbTableItem#range_key}.
 
 ---
 
@@ -1024,7 +1024,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/dynamodb_table_item#region DynamodbTableItem#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/dynamodb_table_item#region DynamodbTableItem#region}
 
 ---
 

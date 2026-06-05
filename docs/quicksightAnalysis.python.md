@@ -4,7 +4,7 @@
 
 ### QuicksightAnalysis <a name="QuicksightAnalysis" id="@cdktn/provider-aws.quicksightAnalysis.QuicksightAnalysis"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/quicksight_analysis aws_quicksight_analysis}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_analysis aws_quicksight_analysis}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.quicksightAnalysis.QuicksightAnalysis.Initializer"></a>
 
@@ -49,19 +49,19 @@ quicksightAnalysis.QuicksightAnalysis(
 | <code><a href="#@cdktn/provider-aws.quicksightAnalysis.QuicksightAnalysis.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.quicksightAnalysis.QuicksightAnalysis.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.quicksightAnalysis.QuicksightAnalysis.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.quicksightAnalysis.QuicksightAnalysis.Initializer.parameter.analysisId">analysis_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/quicksight_analysis#analysis_id QuicksightAnalysis#analysis_id}. |
-| <code><a href="#@cdktn/provider-aws.quicksightAnalysis.QuicksightAnalysis.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/quicksight_analysis#name QuicksightAnalysis#name}. |
-| <code><a href="#@cdktn/provider-aws.quicksightAnalysis.QuicksightAnalysis.Initializer.parameter.awsAccountId">aws_account_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/quicksight_analysis#aws_account_id QuicksightAnalysis#aws_account_id}. |
+| <code><a href="#@cdktn/provider-aws.quicksightAnalysis.QuicksightAnalysis.Initializer.parameter.analysisId">analysis_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_analysis#analysis_id QuicksightAnalysis#analysis_id}. |
+| <code><a href="#@cdktn/provider-aws.quicksightAnalysis.QuicksightAnalysis.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_analysis#name QuicksightAnalysis#name}. |
+| <code><a href="#@cdktn/provider-aws.quicksightAnalysis.QuicksightAnalysis.Initializer.parameter.awsAccountId">aws_account_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_analysis#aws_account_id QuicksightAnalysis#aws_account_id}. |
 | <code><a href="#@cdktn/provider-aws.quicksightAnalysis.QuicksightAnalysis.Initializer.parameter.definition">definition</a></code> | <code>typing.Any</code> | definition block. |
-| <code><a href="#@cdktn/provider-aws.quicksightAnalysis.QuicksightAnalysis.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/quicksight_analysis#id QuicksightAnalysis#id}. |
+| <code><a href="#@cdktn/provider-aws.quicksightAnalysis.QuicksightAnalysis.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_analysis#id QuicksightAnalysis#id}. |
 | <code><a href="#@cdktn/provider-aws.quicksightAnalysis.QuicksightAnalysis.Initializer.parameter.parameters">parameters</a></code> | <code><a href="#@cdktn/provider-aws.quicksightAnalysis.QuicksightAnalysisParameters">QuicksightAnalysisParameters</a></code> | parameters block. |
 | <code><a href="#@cdktn/provider-aws.quicksightAnalysis.QuicksightAnalysis.Initializer.parameter.permissions">permissions</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.quicksightAnalysis.QuicksightAnalysisPermissions">QuicksightAnalysisPermissions</a>]</code> | permissions block. |
-| <code><a href="#@cdktn/provider-aws.quicksightAnalysis.QuicksightAnalysis.Initializer.parameter.recoveryWindowInDays">recovery_window_in_days</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/quicksight_analysis#recovery_window_in_days QuicksightAnalysis#recovery_window_in_days}. |
+| <code><a href="#@cdktn/provider-aws.quicksightAnalysis.QuicksightAnalysis.Initializer.parameter.recoveryWindowInDays">recovery_window_in_days</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_analysis#recovery_window_in_days QuicksightAnalysis#recovery_window_in_days}. |
 | <code><a href="#@cdktn/provider-aws.quicksightAnalysis.QuicksightAnalysis.Initializer.parameter.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktn/provider-aws.quicksightAnalysis.QuicksightAnalysis.Initializer.parameter.sourceEntity">source_entity</a></code> | <code><a href="#@cdktn/provider-aws.quicksightAnalysis.QuicksightAnalysisSourceEntity">QuicksightAnalysisSourceEntity</a></code> | source_entity block. |
-| <code><a href="#@cdktn/provider-aws.quicksightAnalysis.QuicksightAnalysis.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/quicksight_analysis#tags QuicksightAnalysis#tags}. |
-| <code><a href="#@cdktn/provider-aws.quicksightAnalysis.QuicksightAnalysis.Initializer.parameter.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/quicksight_analysis#tags_all QuicksightAnalysis#tags_all}. |
-| <code><a href="#@cdktn/provider-aws.quicksightAnalysis.QuicksightAnalysis.Initializer.parameter.themeArn">theme_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/quicksight_analysis#theme_arn QuicksightAnalysis#theme_arn}. |
+| <code><a href="#@cdktn/provider-aws.quicksightAnalysis.QuicksightAnalysis.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_analysis#tags QuicksightAnalysis#tags}. |
+| <code><a href="#@cdktn/provider-aws.quicksightAnalysis.QuicksightAnalysis.Initializer.parameter.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_analysis#tags_all QuicksightAnalysis#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.quicksightAnalysis.QuicksightAnalysis.Initializer.parameter.themeArn">theme_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_analysis#theme_arn QuicksightAnalysis#theme_arn}. |
 | <code><a href="#@cdktn/provider-aws.quicksightAnalysis.QuicksightAnalysis.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-aws.quicksightAnalysis.QuicksightAnalysisTimeouts">QuicksightAnalysisTimeouts</a></code> | timeouts block. |
 
 ---
@@ -130,7 +130,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/quicksight_analysis#analysis_id QuicksightAnalysis#analysis_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_analysis#analysis_id QuicksightAnalysis#analysis_id}.
 
 ---
 
@@ -138,7 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/quicksight_analysis#name QuicksightAnalysis#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_analysis#name QuicksightAnalysis#name}.
 
 ---
 
@@ -146,7 +146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/quicksight_analysis#aws_account_id QuicksightAnalysis#aws_account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_analysis#aws_account_id QuicksightAnalysis#aws_account_id}.
 
 ---
 
@@ -156,7 +156,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 definition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/quicksight_analysis#definition QuicksightAnalysis#definition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_analysis#definition QuicksightAnalysis#definition}
 
 ---
 
@@ -164,7 +164,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/quicksight_analysis#id QuicksightAnalysis#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_analysis#id QuicksightAnalysis#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -177,7 +177,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 parameters block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/quicksight_analysis#parameters QuicksightAnalysis#parameters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_analysis#parameters QuicksightAnalysis#parameters}
 
 ---
 
@@ -187,7 +187,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 permissions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/quicksight_analysis#permissions QuicksightAnalysis#permissions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_analysis#permissions QuicksightAnalysis#permissions}
 
 ---
 
@@ -195,7 +195,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/quicksight_analysis#recovery_window_in_days QuicksightAnalysis#recovery_window_in_days}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_analysis#recovery_window_in_days QuicksightAnalysis#recovery_window_in_days}.
 
 ---
 
@@ -205,7 +205,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/quicksight_analysis#region QuicksightAnalysis#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_analysis#region QuicksightAnalysis#region}
 
 ---
 
@@ -215,7 +215,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 source_entity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/quicksight_analysis#source_entity QuicksightAnalysis#source_entity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_analysis#source_entity QuicksightAnalysis#source_entity}
 
 ---
 
@@ -223,7 +223,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/quicksight_analysis#tags QuicksightAnalysis#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_analysis#tags QuicksightAnalysis#tags}.
 
 ---
 
@@ -231,7 +231,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/quicksight_analysis#tags_all QuicksightAnalysis#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_analysis#tags_all QuicksightAnalysis#tags_all}.
 
 ---
 
@@ -239,7 +239,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/quicksight_analysis#theme_arn QuicksightAnalysis#theme_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_analysis#theme_arn QuicksightAnalysis#theme_arn}.
 
 ---
 
@@ -249,7 +249,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/quicksight_analysis#timeouts QuicksightAnalysis#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_analysis#timeouts QuicksightAnalysis#timeouts}
 
 ---
 
@@ -665,7 +665,7 @@ def put_parameters(
 
 date_time_parameters block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/quicksight_analysis#date_time_parameters QuicksightAnalysis#date_time_parameters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_analysis#date_time_parameters QuicksightAnalysis#date_time_parameters}
 
 ---
 
@@ -675,7 +675,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 decimal_parameters block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/quicksight_analysis#decimal_parameters QuicksightAnalysis#decimal_parameters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_analysis#decimal_parameters QuicksightAnalysis#decimal_parameters}
 
 ---
 
@@ -685,7 +685,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 integer_parameters block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/quicksight_analysis#integer_parameters QuicksightAnalysis#integer_parameters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_analysis#integer_parameters QuicksightAnalysis#integer_parameters}
 
 ---
 
@@ -695,7 +695,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 string_parameters block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/quicksight_analysis#string_parameters QuicksightAnalysis#string_parameters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_analysis#string_parameters QuicksightAnalysis#string_parameters}
 
 ---
 
@@ -727,7 +727,7 @@ def put_source_entity(
 
 source_template block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/quicksight_analysis#source_template QuicksightAnalysis#source_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_analysis#source_template QuicksightAnalysis#source_template}
 
 ---
 
@@ -745,7 +745,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/quicksight_analysis#create QuicksightAnalysis#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_analysis#create QuicksightAnalysis#create}.
 
 ---
 
@@ -753,7 +753,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/quicksight_analysis#delete QuicksightAnalysis#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_analysis#delete QuicksightAnalysis#delete}.
 
 ---
 
@@ -761,7 +761,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/quicksight_analysis#update QuicksightAnalysis#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_analysis#update QuicksightAnalysis#update}.
 
 ---
 
@@ -951,7 +951,7 @@ The construct id used in the generated config for the QuicksightAnalysis to impo
 
 The id of the existing QuicksightAnalysis that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/quicksight_analysis#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_analysis#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1552,19 +1552,19 @@ quicksightAnalysis.QuicksightAnalysisConfig(
 | <code><a href="#@cdktn/provider-aws.quicksightAnalysis.QuicksightAnalysisConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.quicksightAnalysis.QuicksightAnalysisConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.quicksightAnalysis.QuicksightAnalysisConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.quicksightAnalysis.QuicksightAnalysisConfig.property.analysisId">analysis_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/quicksight_analysis#analysis_id QuicksightAnalysis#analysis_id}. |
-| <code><a href="#@cdktn/provider-aws.quicksightAnalysis.QuicksightAnalysisConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/quicksight_analysis#name QuicksightAnalysis#name}. |
-| <code><a href="#@cdktn/provider-aws.quicksightAnalysis.QuicksightAnalysisConfig.property.awsAccountId">aws_account_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/quicksight_analysis#aws_account_id QuicksightAnalysis#aws_account_id}. |
+| <code><a href="#@cdktn/provider-aws.quicksightAnalysis.QuicksightAnalysisConfig.property.analysisId">analysis_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_analysis#analysis_id QuicksightAnalysis#analysis_id}. |
+| <code><a href="#@cdktn/provider-aws.quicksightAnalysis.QuicksightAnalysisConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_analysis#name QuicksightAnalysis#name}. |
+| <code><a href="#@cdktn/provider-aws.quicksightAnalysis.QuicksightAnalysisConfig.property.awsAccountId">aws_account_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_analysis#aws_account_id QuicksightAnalysis#aws_account_id}. |
 | <code><a href="#@cdktn/provider-aws.quicksightAnalysis.QuicksightAnalysisConfig.property.definition">definition</a></code> | <code>typing.Any</code> | definition block. |
-| <code><a href="#@cdktn/provider-aws.quicksightAnalysis.QuicksightAnalysisConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/quicksight_analysis#id QuicksightAnalysis#id}. |
+| <code><a href="#@cdktn/provider-aws.quicksightAnalysis.QuicksightAnalysisConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_analysis#id QuicksightAnalysis#id}. |
 | <code><a href="#@cdktn/provider-aws.quicksightAnalysis.QuicksightAnalysisConfig.property.parameters">parameters</a></code> | <code><a href="#@cdktn/provider-aws.quicksightAnalysis.QuicksightAnalysisParameters">QuicksightAnalysisParameters</a></code> | parameters block. |
 | <code><a href="#@cdktn/provider-aws.quicksightAnalysis.QuicksightAnalysisConfig.property.permissions">permissions</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.quicksightAnalysis.QuicksightAnalysisPermissions">QuicksightAnalysisPermissions</a>]</code> | permissions block. |
-| <code><a href="#@cdktn/provider-aws.quicksightAnalysis.QuicksightAnalysisConfig.property.recoveryWindowInDays">recovery_window_in_days</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/quicksight_analysis#recovery_window_in_days QuicksightAnalysis#recovery_window_in_days}. |
+| <code><a href="#@cdktn/provider-aws.quicksightAnalysis.QuicksightAnalysisConfig.property.recoveryWindowInDays">recovery_window_in_days</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_analysis#recovery_window_in_days QuicksightAnalysis#recovery_window_in_days}. |
 | <code><a href="#@cdktn/provider-aws.quicksightAnalysis.QuicksightAnalysisConfig.property.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktn/provider-aws.quicksightAnalysis.QuicksightAnalysisConfig.property.sourceEntity">source_entity</a></code> | <code><a href="#@cdktn/provider-aws.quicksightAnalysis.QuicksightAnalysisSourceEntity">QuicksightAnalysisSourceEntity</a></code> | source_entity block. |
-| <code><a href="#@cdktn/provider-aws.quicksightAnalysis.QuicksightAnalysisConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/quicksight_analysis#tags QuicksightAnalysis#tags}. |
-| <code><a href="#@cdktn/provider-aws.quicksightAnalysis.QuicksightAnalysisConfig.property.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/quicksight_analysis#tags_all QuicksightAnalysis#tags_all}. |
-| <code><a href="#@cdktn/provider-aws.quicksightAnalysis.QuicksightAnalysisConfig.property.themeArn">theme_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/quicksight_analysis#theme_arn QuicksightAnalysis#theme_arn}. |
+| <code><a href="#@cdktn/provider-aws.quicksightAnalysis.QuicksightAnalysisConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_analysis#tags QuicksightAnalysis#tags}. |
+| <code><a href="#@cdktn/provider-aws.quicksightAnalysis.QuicksightAnalysisConfig.property.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_analysis#tags_all QuicksightAnalysis#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.quicksightAnalysis.QuicksightAnalysisConfig.property.themeArn">theme_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_analysis#theme_arn QuicksightAnalysis#theme_arn}. |
 | <code><a href="#@cdktn/provider-aws.quicksightAnalysis.QuicksightAnalysisConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-aws.quicksightAnalysis.QuicksightAnalysisTimeouts">QuicksightAnalysisTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1647,7 +1647,7 @@ analysis_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/quicksight_analysis#analysis_id QuicksightAnalysis#analysis_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_analysis#analysis_id QuicksightAnalysis#analysis_id}.
 
 ---
 
@@ -1659,7 +1659,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/quicksight_analysis#name QuicksightAnalysis#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_analysis#name QuicksightAnalysis#name}.
 
 ---
 
@@ -1671,7 +1671,7 @@ aws_account_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/quicksight_analysis#aws_account_id QuicksightAnalysis#aws_account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_analysis#aws_account_id QuicksightAnalysis#aws_account_id}.
 
 ---
 
@@ -1685,7 +1685,7 @@ definition: typing.Any
 
 definition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/quicksight_analysis#definition QuicksightAnalysis#definition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_analysis#definition QuicksightAnalysis#definition}
 
 ---
 
@@ -1697,7 +1697,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/quicksight_analysis#id QuicksightAnalysis#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_analysis#id QuicksightAnalysis#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1714,7 +1714,7 @@ parameters: QuicksightAnalysisParameters
 
 parameters block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/quicksight_analysis#parameters QuicksightAnalysis#parameters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_analysis#parameters QuicksightAnalysis#parameters}
 
 ---
 
@@ -1728,7 +1728,7 @@ permissions: IResolvable | typing.List[QuicksightAnalysisPermissions]
 
 permissions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/quicksight_analysis#permissions QuicksightAnalysis#permissions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_analysis#permissions QuicksightAnalysis#permissions}
 
 ---
 
@@ -1740,7 +1740,7 @@ recovery_window_in_days: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/quicksight_analysis#recovery_window_in_days QuicksightAnalysis#recovery_window_in_days}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_analysis#recovery_window_in_days QuicksightAnalysis#recovery_window_in_days}.
 
 ---
 
@@ -1754,7 +1754,7 @@ region: str
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/quicksight_analysis#region QuicksightAnalysis#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_analysis#region QuicksightAnalysis#region}
 
 ---
 
@@ -1768,7 +1768,7 @@ source_entity: QuicksightAnalysisSourceEntity
 
 source_entity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/quicksight_analysis#source_entity QuicksightAnalysis#source_entity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_analysis#source_entity QuicksightAnalysis#source_entity}
 
 ---
 
@@ -1780,7 +1780,7 @@ tags: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/quicksight_analysis#tags QuicksightAnalysis#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_analysis#tags QuicksightAnalysis#tags}.
 
 ---
 
@@ -1792,7 +1792,7 @@ tags_all: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/quicksight_analysis#tags_all QuicksightAnalysis#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_analysis#tags_all QuicksightAnalysis#tags_all}.
 
 ---
 
@@ -1804,7 +1804,7 @@ theme_arn: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/quicksight_analysis#theme_arn QuicksightAnalysis#theme_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_analysis#theme_arn QuicksightAnalysis#theme_arn}.
 
 ---
 
@@ -1818,7 +1818,7 @@ timeouts: QuicksightAnalysisTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/quicksight_analysis#timeouts QuicksightAnalysis#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_analysis#timeouts QuicksightAnalysis#timeouts}
 
 ---
 
@@ -1858,7 +1858,7 @@ date_time_parameters: IResolvable | typing.List[QuicksightAnalysisParametersDate
 
 date_time_parameters block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/quicksight_analysis#date_time_parameters QuicksightAnalysis#date_time_parameters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_analysis#date_time_parameters QuicksightAnalysis#date_time_parameters}
 
 ---
 
@@ -1872,7 +1872,7 @@ decimal_parameters: IResolvable | typing.List[QuicksightAnalysisParametersDecima
 
 decimal_parameters block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/quicksight_analysis#decimal_parameters QuicksightAnalysis#decimal_parameters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_analysis#decimal_parameters QuicksightAnalysis#decimal_parameters}
 
 ---
 
@@ -1886,7 +1886,7 @@ integer_parameters: IResolvable | typing.List[QuicksightAnalysisParametersIntege
 
 integer_parameters block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/quicksight_analysis#integer_parameters QuicksightAnalysis#integer_parameters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_analysis#integer_parameters QuicksightAnalysis#integer_parameters}
 
 ---
 
@@ -1900,7 +1900,7 @@ string_parameters: IResolvable | typing.List[QuicksightAnalysisParametersStringP
 
 string_parameters block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/quicksight_analysis#string_parameters QuicksightAnalysis#string_parameters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_analysis#string_parameters QuicksightAnalysis#string_parameters}
 
 ---
 
@@ -1921,8 +1921,8 @@ quicksightAnalysis.QuicksightAnalysisParametersDateTimeParameters(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.quicksightAnalysis.QuicksightAnalysisParametersDateTimeParameters.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/quicksight_analysis#name QuicksightAnalysis#name}. |
-| <code><a href="#@cdktn/provider-aws.quicksightAnalysis.QuicksightAnalysisParametersDateTimeParameters.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/quicksight_analysis#values QuicksightAnalysis#values}. |
+| <code><a href="#@cdktn/provider-aws.quicksightAnalysis.QuicksightAnalysisParametersDateTimeParameters.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_analysis#name QuicksightAnalysis#name}. |
+| <code><a href="#@cdktn/provider-aws.quicksightAnalysis.QuicksightAnalysisParametersDateTimeParameters.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_analysis#values QuicksightAnalysis#values}. |
 
 ---
 
@@ -1934,7 +1934,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/quicksight_analysis#name QuicksightAnalysis#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_analysis#name QuicksightAnalysis#name}.
 
 ---
 
@@ -1946,7 +1946,7 @@ values: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/quicksight_analysis#values QuicksightAnalysis#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_analysis#values QuicksightAnalysis#values}.
 
 ---
 
@@ -1967,8 +1967,8 @@ quicksightAnalysis.QuicksightAnalysisParametersDecimalParameters(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.quicksightAnalysis.QuicksightAnalysisParametersDecimalParameters.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/quicksight_analysis#name QuicksightAnalysis#name}. |
-| <code><a href="#@cdktn/provider-aws.quicksightAnalysis.QuicksightAnalysisParametersDecimalParameters.property.values">values</a></code> | <code>typing.List[typing.Union[int, float]]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/quicksight_analysis#values QuicksightAnalysis#values}. |
+| <code><a href="#@cdktn/provider-aws.quicksightAnalysis.QuicksightAnalysisParametersDecimalParameters.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_analysis#name QuicksightAnalysis#name}. |
+| <code><a href="#@cdktn/provider-aws.quicksightAnalysis.QuicksightAnalysisParametersDecimalParameters.property.values">values</a></code> | <code>typing.List[typing.Union[int, float]]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_analysis#values QuicksightAnalysis#values}. |
 
 ---
 
@@ -1980,7 +1980,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/quicksight_analysis#name QuicksightAnalysis#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_analysis#name QuicksightAnalysis#name}.
 
 ---
 
@@ -1992,7 +1992,7 @@ values: typing.List[typing.Union[int, float]]
 
 - *Type:* typing.List[typing.Union[int, float]]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/quicksight_analysis#values QuicksightAnalysis#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_analysis#values QuicksightAnalysis#values}.
 
 ---
 
@@ -2013,8 +2013,8 @@ quicksightAnalysis.QuicksightAnalysisParametersIntegerParameters(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.quicksightAnalysis.QuicksightAnalysisParametersIntegerParameters.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/quicksight_analysis#name QuicksightAnalysis#name}. |
-| <code><a href="#@cdktn/provider-aws.quicksightAnalysis.QuicksightAnalysisParametersIntegerParameters.property.values">values</a></code> | <code>typing.List[typing.Union[int, float]]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/quicksight_analysis#values QuicksightAnalysis#values}. |
+| <code><a href="#@cdktn/provider-aws.quicksightAnalysis.QuicksightAnalysisParametersIntegerParameters.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_analysis#name QuicksightAnalysis#name}. |
+| <code><a href="#@cdktn/provider-aws.quicksightAnalysis.QuicksightAnalysisParametersIntegerParameters.property.values">values</a></code> | <code>typing.List[typing.Union[int, float]]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_analysis#values QuicksightAnalysis#values}. |
 
 ---
 
@@ -2026,7 +2026,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/quicksight_analysis#name QuicksightAnalysis#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_analysis#name QuicksightAnalysis#name}.
 
 ---
 
@@ -2038,7 +2038,7 @@ values: typing.List[typing.Union[int, float]]
 
 - *Type:* typing.List[typing.Union[int, float]]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/quicksight_analysis#values QuicksightAnalysis#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_analysis#values QuicksightAnalysis#values}.
 
 ---
 
@@ -2059,8 +2059,8 @@ quicksightAnalysis.QuicksightAnalysisParametersStringParameters(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.quicksightAnalysis.QuicksightAnalysisParametersStringParameters.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/quicksight_analysis#name QuicksightAnalysis#name}. |
-| <code><a href="#@cdktn/provider-aws.quicksightAnalysis.QuicksightAnalysisParametersStringParameters.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/quicksight_analysis#values QuicksightAnalysis#values}. |
+| <code><a href="#@cdktn/provider-aws.quicksightAnalysis.QuicksightAnalysisParametersStringParameters.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_analysis#name QuicksightAnalysis#name}. |
+| <code><a href="#@cdktn/provider-aws.quicksightAnalysis.QuicksightAnalysisParametersStringParameters.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_analysis#values QuicksightAnalysis#values}. |
 
 ---
 
@@ -2072,7 +2072,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/quicksight_analysis#name QuicksightAnalysis#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_analysis#name QuicksightAnalysis#name}.
 
 ---
 
@@ -2084,7 +2084,7 @@ values: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/quicksight_analysis#values QuicksightAnalysis#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_analysis#values QuicksightAnalysis#values}.
 
 ---
 
@@ -2105,8 +2105,8 @@ quicksightAnalysis.QuicksightAnalysisPermissions(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.quicksightAnalysis.QuicksightAnalysisPermissions.property.actions">actions</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/quicksight_analysis#actions QuicksightAnalysis#actions}. |
-| <code><a href="#@cdktn/provider-aws.quicksightAnalysis.QuicksightAnalysisPermissions.property.principal">principal</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/quicksight_analysis#principal QuicksightAnalysis#principal}. |
+| <code><a href="#@cdktn/provider-aws.quicksightAnalysis.QuicksightAnalysisPermissions.property.actions">actions</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_analysis#actions QuicksightAnalysis#actions}. |
+| <code><a href="#@cdktn/provider-aws.quicksightAnalysis.QuicksightAnalysisPermissions.property.principal">principal</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_analysis#principal QuicksightAnalysis#principal}. |
 
 ---
 
@@ -2118,7 +2118,7 @@ actions: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/quicksight_analysis#actions QuicksightAnalysis#actions}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_analysis#actions QuicksightAnalysis#actions}.
 
 ---
 
@@ -2130,7 +2130,7 @@ principal: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/quicksight_analysis#principal QuicksightAnalysis#principal}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_analysis#principal QuicksightAnalysis#principal}.
 
 ---
 
@@ -2164,7 +2164,7 @@ source_template: QuicksightAnalysisSourceEntitySourceTemplate
 
 source_template block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/quicksight_analysis#source_template QuicksightAnalysis#source_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_analysis#source_template QuicksightAnalysis#source_template}
 
 ---
 
@@ -2185,7 +2185,7 @@ quicksightAnalysis.QuicksightAnalysisSourceEntitySourceTemplate(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.quicksightAnalysis.QuicksightAnalysisSourceEntitySourceTemplate.property.arn">arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/quicksight_analysis#arn QuicksightAnalysis#arn}. |
+| <code><a href="#@cdktn/provider-aws.quicksightAnalysis.QuicksightAnalysisSourceEntitySourceTemplate.property.arn">arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_analysis#arn QuicksightAnalysis#arn}. |
 | <code><a href="#@cdktn/provider-aws.quicksightAnalysis.QuicksightAnalysisSourceEntitySourceTemplate.property.dataSetReferences">data_set_references</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.quicksightAnalysis.QuicksightAnalysisSourceEntitySourceTemplateDataSetReferences">QuicksightAnalysisSourceEntitySourceTemplateDataSetReferences</a>]</code> | data_set_references block. |
 
 ---
@@ -2198,7 +2198,7 @@ arn: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/quicksight_analysis#arn QuicksightAnalysis#arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_analysis#arn QuicksightAnalysis#arn}.
 
 ---
 
@@ -2212,7 +2212,7 @@ data_set_references: IResolvable | typing.List[QuicksightAnalysisSourceEntitySou
 
 data_set_references block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/quicksight_analysis#data_set_references QuicksightAnalysis#data_set_references}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_analysis#data_set_references QuicksightAnalysis#data_set_references}
 
 ---
 
@@ -2233,8 +2233,8 @@ quicksightAnalysis.QuicksightAnalysisSourceEntitySourceTemplateDataSetReferences
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.quicksightAnalysis.QuicksightAnalysisSourceEntitySourceTemplateDataSetReferences.property.dataSetArn">data_set_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/quicksight_analysis#data_set_arn QuicksightAnalysis#data_set_arn}. |
-| <code><a href="#@cdktn/provider-aws.quicksightAnalysis.QuicksightAnalysisSourceEntitySourceTemplateDataSetReferences.property.dataSetPlaceholder">data_set_placeholder</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/quicksight_analysis#data_set_placeholder QuicksightAnalysis#data_set_placeholder}. |
+| <code><a href="#@cdktn/provider-aws.quicksightAnalysis.QuicksightAnalysisSourceEntitySourceTemplateDataSetReferences.property.dataSetArn">data_set_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_analysis#data_set_arn QuicksightAnalysis#data_set_arn}. |
+| <code><a href="#@cdktn/provider-aws.quicksightAnalysis.QuicksightAnalysisSourceEntitySourceTemplateDataSetReferences.property.dataSetPlaceholder">data_set_placeholder</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_analysis#data_set_placeholder QuicksightAnalysis#data_set_placeholder}. |
 
 ---
 
@@ -2246,7 +2246,7 @@ data_set_arn: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/quicksight_analysis#data_set_arn QuicksightAnalysis#data_set_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_analysis#data_set_arn QuicksightAnalysis#data_set_arn}.
 
 ---
 
@@ -2258,7 +2258,7 @@ data_set_placeholder: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/quicksight_analysis#data_set_placeholder QuicksightAnalysis#data_set_placeholder}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_analysis#data_set_placeholder QuicksightAnalysis#data_set_placeholder}.
 
 ---
 
@@ -2280,9 +2280,9 @@ quicksightAnalysis.QuicksightAnalysisTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.quicksightAnalysis.QuicksightAnalysisTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/quicksight_analysis#create QuicksightAnalysis#create}. |
-| <code><a href="#@cdktn/provider-aws.quicksightAnalysis.QuicksightAnalysisTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/quicksight_analysis#delete QuicksightAnalysis#delete}. |
-| <code><a href="#@cdktn/provider-aws.quicksightAnalysis.QuicksightAnalysisTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/quicksight_analysis#update QuicksightAnalysis#update}. |
+| <code><a href="#@cdktn/provider-aws.quicksightAnalysis.QuicksightAnalysisTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_analysis#create QuicksightAnalysis#create}. |
+| <code><a href="#@cdktn/provider-aws.quicksightAnalysis.QuicksightAnalysisTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_analysis#delete QuicksightAnalysis#delete}. |
+| <code><a href="#@cdktn/provider-aws.quicksightAnalysis.QuicksightAnalysisTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_analysis#update QuicksightAnalysis#update}. |
 
 ---
 
@@ -2294,7 +2294,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/quicksight_analysis#create QuicksightAnalysis#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_analysis#create QuicksightAnalysis#create}.
 
 ---
 
@@ -2306,7 +2306,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/quicksight_analysis#delete QuicksightAnalysis#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_analysis#delete QuicksightAnalysis#delete}.
 
 ---
 
@@ -2318,7 +2318,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/quicksight_analysis#update QuicksightAnalysis#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_analysis#update QuicksightAnalysis#update}.
 
 ---
 
@@ -5557,7 +5557,7 @@ def put_source_template(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/quicksight_analysis#arn QuicksightAnalysis#arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_analysis#arn QuicksightAnalysis#arn}.
 
 ---
 
@@ -5567,7 +5567,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 data_set_references block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/quicksight_analysis#data_set_references QuicksightAnalysis#data_set_references}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/quicksight_analysis#data_set_references QuicksightAnalysis#data_set_references}
 
 ---
 

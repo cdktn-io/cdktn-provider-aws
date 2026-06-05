@@ -4,7 +4,7 @@
 
 ### SnsTopicPolicy <a name="SnsTopicPolicy" id="@cdktn/provider-aws.snsTopicPolicy.SnsTopicPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/sns_topic_policy aws_sns_topic_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/sns_topic_policy aws_sns_topic_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.snsTopicPolicy.SnsTopicPolicy.Initializer"></a>
 
@@ -503,7 +503,7 @@ The construct id used in the generated config for the SnsTopicPolicy to import.
 
 The id of the existing SnsTopicPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/sns_topic_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/sns_topic_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -818,9 +818,9 @@ const snsTopicPolicyConfig: snsTopicPolicy.SnsTopicPolicyConfig = { ... }
 | <code><a href="#@cdktn/provider-aws.snsTopicPolicy.SnsTopicPolicyConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.snsTopicPolicy.SnsTopicPolicyConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.snsTopicPolicy.SnsTopicPolicyConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.snsTopicPolicy.SnsTopicPolicyConfig.property.arn">arn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/sns_topic_policy#arn SnsTopicPolicy#arn}. |
-| <code><a href="#@cdktn/provider-aws.snsTopicPolicy.SnsTopicPolicyConfig.property.policy">policy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/sns_topic_policy#policy SnsTopicPolicy#policy}. |
-| <code><a href="#@cdktn/provider-aws.snsTopicPolicy.SnsTopicPolicyConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/sns_topic_policy#id SnsTopicPolicy#id}. |
+| <code><a href="#@cdktn/provider-aws.snsTopicPolicy.SnsTopicPolicyConfig.property.arn">arn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/sns_topic_policy#arn SnsTopicPolicy#arn}. |
+| <code><a href="#@cdktn/provider-aws.snsTopicPolicy.SnsTopicPolicyConfig.property.policy">policy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/sns_topic_policy#policy SnsTopicPolicy#policy}. |
+| <code><a href="#@cdktn/provider-aws.snsTopicPolicy.SnsTopicPolicyConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/sns_topic_policy#id SnsTopicPolicy#id}. |
 | <code><a href="#@cdktn/provider-aws.snsTopicPolicy.SnsTopicPolicyConfig.property.region">region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -903,7 +903,7 @@ public readonly arn: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/sns_topic_policy#arn SnsTopicPolicy#arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/sns_topic_policy#arn SnsTopicPolicy#arn}.
 
 ---
 
@@ -915,7 +915,7 @@ public readonly policy: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/sns_topic_policy#policy SnsTopicPolicy#policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/sns_topic_policy#policy SnsTopicPolicy#policy}.
 
 ---
 
@@ -927,7 +927,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/sns_topic_policy#id SnsTopicPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/sns_topic_policy#id SnsTopicPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -944,7 +944,7 @@ public readonly region: string;
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/sns_topic_policy#region SnsTopicPolicy#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/sns_topic_policy#region SnsTopicPolicy#region}
 
 ---
 

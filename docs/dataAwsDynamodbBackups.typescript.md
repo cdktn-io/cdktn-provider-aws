@@ -4,7 +4,7 @@
 
 ### DataAwsDynamodbBackups <a name="DataAwsDynamodbBackups" id="@cdktn/provider-aws.dataAwsDynamodbBackups.DataAwsDynamodbBackups"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/data-sources/dynamodb_backups aws_dynamodb_backups}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/dynamodb_backups aws_dynamodb_backups}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsDynamodbBackups.DataAwsDynamodbBackups.Initializer"></a>
 
@@ -422,7 +422,7 @@ The construct id used in the generated config for the DataAwsDynamodbBackups to 
 
 The id of the existing DataAwsDynamodbBackups that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/data-sources/dynamodb_backups#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/dynamodb_backups#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -748,11 +748,11 @@ const dataAwsDynamodbBackupsConfig: dataAwsDynamodbBackups.DataAwsDynamodbBackup
 | <code><a href="#@cdktn/provider-aws.dataAwsDynamodbBackups.DataAwsDynamodbBackupsConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsDynamodbBackups.DataAwsDynamodbBackupsConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsDynamodbBackups.DataAwsDynamodbBackupsConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dataAwsDynamodbBackups.DataAwsDynamodbBackupsConfig.property.backupType">backupType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/data-sources/dynamodb_backups#backup_type DataAwsDynamodbBackups#backup_type}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsDynamodbBackups.DataAwsDynamodbBackupsConfig.property.backupType">backupType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/dynamodb_backups#backup_type DataAwsDynamodbBackups#backup_type}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsDynamodbBackups.DataAwsDynamodbBackupsConfig.property.region">region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.dataAwsDynamodbBackups.DataAwsDynamodbBackupsConfig.property.tableName">tableName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/data-sources/dynamodb_backups#table_name DataAwsDynamodbBackups#table_name}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsDynamodbBackups.DataAwsDynamodbBackupsConfig.property.timeRangeLowerBound">timeRangeLowerBound</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/data-sources/dynamodb_backups#time_range_lower_bound DataAwsDynamodbBackups#time_range_lower_bound}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsDynamodbBackups.DataAwsDynamodbBackupsConfig.property.timeRangeUpperBound">timeRangeUpperBound</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/data-sources/dynamodb_backups#time_range_upper_bound DataAwsDynamodbBackups#time_range_upper_bound}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsDynamodbBackups.DataAwsDynamodbBackupsConfig.property.tableName">tableName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/dynamodb_backups#table_name DataAwsDynamodbBackups#table_name}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsDynamodbBackups.DataAwsDynamodbBackupsConfig.property.timeRangeLowerBound">timeRangeLowerBound</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/dynamodb_backups#time_range_lower_bound DataAwsDynamodbBackups#time_range_lower_bound}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsDynamodbBackups.DataAwsDynamodbBackupsConfig.property.timeRangeUpperBound">timeRangeUpperBound</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/dynamodb_backups#time_range_upper_bound DataAwsDynamodbBackups#time_range_upper_bound}. |
 
 ---
 
@@ -834,7 +834,7 @@ public readonly backupType: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/data-sources/dynamodb_backups#backup_type DataAwsDynamodbBackups#backup_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/dynamodb_backups#backup_type DataAwsDynamodbBackups#backup_type}.
 
 ---
 
@@ -848,7 +848,7 @@ public readonly region: string;
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/data-sources/dynamodb_backups#region DataAwsDynamodbBackups#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/dynamodb_backups#region DataAwsDynamodbBackups#region}
 
 ---
 
@@ -860,7 +860,7 @@ public readonly tableName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/data-sources/dynamodb_backups#table_name DataAwsDynamodbBackups#table_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/dynamodb_backups#table_name DataAwsDynamodbBackups#table_name}.
 
 ---
 
@@ -872,7 +872,7 @@ public readonly timeRangeLowerBound: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/data-sources/dynamodb_backups#time_range_lower_bound DataAwsDynamodbBackups#time_range_lower_bound}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/dynamodb_backups#time_range_lower_bound DataAwsDynamodbBackups#time_range_lower_bound}.
 
 ---
 
@@ -884,7 +884,7 @@ public readonly timeRangeUpperBound: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/data-sources/dynamodb_backups#time_range_upper_bound DataAwsDynamodbBackups#time_range_upper_bound}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/dynamodb_backups#time_range_upper_bound DataAwsDynamodbBackups#time_range_upper_bound}.
 
 ---
 

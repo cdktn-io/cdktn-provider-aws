@@ -4,7 +4,7 @@
 
 ### CloudfrontFunction <a name="CloudfrontFunction" id="@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunction"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/cloudfront_function aws_cloudfront_function}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudfront_function aws_cloudfront_function}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunction.Initializer"></a>
 
@@ -26,6 +26,8 @@ CloudfrontFunction.Builder.create(Construct scope, java.lang.String id)
 //  .id(java.lang.String)
 //  .keyValueStoreAssociations(java.util.List<java.lang.String>)
 //  .publish(java.lang.Boolean|IResolvable)
+//  .tags(java.util.Map<java.lang.String, java.lang.String>)
+//  .tagsAll(java.util.Map<java.lang.String, java.lang.String>)
     .build();
 ```
 
@@ -40,13 +42,15 @@ CloudfrontFunction.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunction.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunction.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunction.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunction.Initializer.parameter.code">code</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/cloudfront_function#code CloudfrontFunction#code}. |
-| <code><a href="#@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunction.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/cloudfront_function#name CloudfrontFunction#name}. |
-| <code><a href="#@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunction.Initializer.parameter.runtime">runtime</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/cloudfront_function#runtime CloudfrontFunction#runtime}. |
-| <code><a href="#@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunction.Initializer.parameter.comment">comment</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/cloudfront_function#comment CloudfrontFunction#comment}. |
-| <code><a href="#@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunction.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/cloudfront_function#id CloudfrontFunction#id}. |
-| <code><a href="#@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunction.Initializer.parameter.keyValueStoreAssociations">keyValueStoreAssociations</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/cloudfront_function#key_value_store_associations CloudfrontFunction#key_value_store_associations}. |
-| <code><a href="#@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunction.Initializer.parameter.publish">publish</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/cloudfront_function#publish CloudfrontFunction#publish}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunction.Initializer.parameter.code">code</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudfront_function#code CloudfrontFunction#code}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunction.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudfront_function#name CloudfrontFunction#name}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunction.Initializer.parameter.runtime">runtime</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudfront_function#runtime CloudfrontFunction#runtime}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunction.Initializer.parameter.comment">comment</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudfront_function#comment CloudfrontFunction#comment}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunction.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudfront_function#id CloudfrontFunction#id}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunction.Initializer.parameter.keyValueStoreAssociations">keyValueStoreAssociations</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudfront_function#key_value_store_associations CloudfrontFunction#key_value_store_associations}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunction.Initializer.parameter.publish">publish</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudfront_function#publish CloudfrontFunction#publish}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunction.Initializer.parameter.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudfront_function#tags CloudfrontFunction#tags}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunction.Initializer.parameter.tagsAll">tagsAll</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudfront_function#tags_all CloudfrontFunction#tags_all}. |
 
 ---
 
@@ -114,7 +118,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/cloudfront_function#code CloudfrontFunction#code}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudfront_function#code CloudfrontFunction#code}.
 
 ---
 
@@ -122,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/cloudfront_function#name CloudfrontFunction#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudfront_function#name CloudfrontFunction#name}.
 
 ---
 
@@ -130,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/cloudfront_function#runtime CloudfrontFunction#runtime}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudfront_function#runtime CloudfrontFunction#runtime}.
 
 ---
 
@@ -138,7 +142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/cloudfront_function#comment CloudfrontFunction#comment}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudfront_function#comment CloudfrontFunction#comment}.
 
 ---
 
@@ -146,7 +150,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/cloudfront_function#id CloudfrontFunction#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudfront_function#id CloudfrontFunction#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -157,7 +161,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/cloudfront_function#key_value_store_associations CloudfrontFunction#key_value_store_associations}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudfront_function#key_value_store_associations CloudfrontFunction#key_value_store_associations}.
 
 ---
 
@@ -165,7 +169,23 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/cloudfront_function#publish CloudfrontFunction#publish}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudfront_function#publish CloudfrontFunction#publish}.
+
+---
+
+##### `tags`<sup>Optional</sup> <a name="tags" id="@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunction.Initializer.parameter.tags"></a>
+
+- *Type:* java.util.Map<java.lang.String, java.lang.String>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudfront_function#tags CloudfrontFunction#tags}.
+
+---
+
+##### `tagsAll`<sup>Optional</sup> <a name="tagsAll" id="@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunction.Initializer.parameter.tagsAll"></a>
+
+- *Type:* java.util.Map<java.lang.String, java.lang.String>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudfront_function#tags_all CloudfrontFunction#tags_all}.
 
 ---
 
@@ -201,6 +221,8 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunction.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunction.resetKeyValueStoreAssociations">resetKeyValueStoreAssociations</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunction.resetPublish">resetPublish</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunction.resetTags">resetTags</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunction.resetTagsAll">resetTagsAll</a></code> | *No description.* |
 
 ---
 
@@ -539,6 +561,18 @@ public void resetKeyValueStoreAssociations()
 public void resetPublish()
 ```
 
+##### `resetTags` <a name="resetTags" id="@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunction.resetTags"></a>
+
+```java
+public void resetTags()
+```
+
+##### `resetTagsAll` <a name="resetTagsAll" id="@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunction.resetTagsAll"></a>
+
+```java
+public void resetTagsAll()
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -642,7 +676,7 @@ The construct id used in the generated config for the CloudfrontFunction to impo
 
 The id of the existing CloudfrontFunction that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/cloudfront_function#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudfront_function#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -683,6 +717,8 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0
 | <code><a href="#@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunction.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunction.property.publishInput">publishInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunction.property.runtimeInput">runtimeInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunction.property.tagsAllInput">tagsAllInput</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunction.property.tagsInput">tagsInput</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunction.property.code">code</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunction.property.comment">comment</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunction.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -690,6 +726,8 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0
 | <code><a href="#@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunction.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunction.property.publish">publish</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunction.property.runtime">runtime</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunction.property.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunction.property.tagsAll">tagsAll</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
 
 ---
 
@@ -945,6 +983,26 @@ public java.lang.String getRuntimeInput();
 
 ---
 
+##### `tagsAllInput`<sup>Optional</sup> <a name="tagsAllInput" id="@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunction.property.tagsAllInput"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getTagsAllInput();
+```
+
+- *Type:* java.util.Map<java.lang.String, java.lang.String>
+
+---
+
+##### `tagsInput`<sup>Optional</sup> <a name="tagsInput" id="@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunction.property.tagsInput"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getTagsInput();
+```
+
+- *Type:* java.util.Map<java.lang.String, java.lang.String>
+
+---
+
 ##### `code`<sup>Required</sup> <a name="code" id="@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunction.property.code"></a>
 
 ```java
@@ -1015,6 +1073,26 @@ public java.lang.String getRuntime();
 
 ---
 
+##### `tags`<sup>Required</sup> <a name="tags" id="@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunction.property.tags"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getTags();
+```
+
+- *Type:* java.util.Map<java.lang.String, java.lang.String>
+
+---
+
+##### `tagsAll`<sup>Required</sup> <a name="tagsAll" id="@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunction.property.tagsAll"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getTagsAll();
+```
+
+- *Type:* java.util.Map<java.lang.String, java.lang.String>
+
+---
+
 #### Constants <a name="Constants" id="Constants"></a>
 
 | **Name** | **Type** | **Description** |
@@ -1057,6 +1135,8 @@ CloudfrontFunctionConfig.builder()
 //  .id(java.lang.String)
 //  .keyValueStoreAssociations(java.util.List<java.lang.String>)
 //  .publish(java.lang.Boolean|IResolvable)
+//  .tags(java.util.Map<java.lang.String, java.lang.String>)
+//  .tagsAll(java.util.Map<java.lang.String, java.lang.String>)
     .build();
 ```
 
@@ -1071,13 +1151,15 @@ CloudfrontFunctionConfig.builder()
 | <code><a href="#@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunctionConfig.property.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunctionConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunctionConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunctionConfig.property.code">code</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/cloudfront_function#code CloudfrontFunction#code}. |
-| <code><a href="#@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunctionConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/cloudfront_function#name CloudfrontFunction#name}. |
-| <code><a href="#@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunctionConfig.property.runtime">runtime</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/cloudfront_function#runtime CloudfrontFunction#runtime}. |
-| <code><a href="#@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunctionConfig.property.comment">comment</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/cloudfront_function#comment CloudfrontFunction#comment}. |
-| <code><a href="#@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunctionConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/cloudfront_function#id CloudfrontFunction#id}. |
-| <code><a href="#@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunctionConfig.property.keyValueStoreAssociations">keyValueStoreAssociations</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/cloudfront_function#key_value_store_associations CloudfrontFunction#key_value_store_associations}. |
-| <code><a href="#@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunctionConfig.property.publish">publish</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/cloudfront_function#publish CloudfrontFunction#publish}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunctionConfig.property.code">code</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudfront_function#code CloudfrontFunction#code}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunctionConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudfront_function#name CloudfrontFunction#name}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunctionConfig.property.runtime">runtime</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudfront_function#runtime CloudfrontFunction#runtime}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunctionConfig.property.comment">comment</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudfront_function#comment CloudfrontFunction#comment}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunctionConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudfront_function#id CloudfrontFunction#id}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunctionConfig.property.keyValueStoreAssociations">keyValueStoreAssociations</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudfront_function#key_value_store_associations CloudfrontFunction#key_value_store_associations}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunctionConfig.property.publish">publish</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudfront_function#publish CloudfrontFunction#publish}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunctionConfig.property.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudfront_function#tags CloudfrontFunction#tags}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunctionConfig.property.tagsAll">tagsAll</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudfront_function#tags_all CloudfrontFunction#tags_all}. |
 
 ---
 
@@ -1159,7 +1241,7 @@ public java.lang.String getCode();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/cloudfront_function#code CloudfrontFunction#code}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudfront_function#code CloudfrontFunction#code}.
 
 ---
 
@@ -1171,7 +1253,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/cloudfront_function#name CloudfrontFunction#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudfront_function#name CloudfrontFunction#name}.
 
 ---
 
@@ -1183,7 +1265,7 @@ public java.lang.String getRuntime();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/cloudfront_function#runtime CloudfrontFunction#runtime}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudfront_function#runtime CloudfrontFunction#runtime}.
 
 ---
 
@@ -1195,7 +1277,7 @@ public java.lang.String getComment();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/cloudfront_function#comment CloudfrontFunction#comment}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudfront_function#comment CloudfrontFunction#comment}.
 
 ---
 
@@ -1207,7 +1289,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/cloudfront_function#id CloudfrontFunction#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudfront_function#id CloudfrontFunction#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1222,7 +1304,7 @@ public java.util.List<java.lang.String> getKeyValueStoreAssociations();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/cloudfront_function#key_value_store_associations CloudfrontFunction#key_value_store_associations}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudfront_function#key_value_store_associations CloudfrontFunction#key_value_store_associations}.
 
 ---
 
@@ -1234,7 +1316,31 @@ public java.lang.Boolean|IResolvable getPublish();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/cloudfront_function#publish CloudfrontFunction#publish}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudfront_function#publish CloudfrontFunction#publish}.
+
+---
+
+##### `tags`<sup>Optional</sup> <a name="tags" id="@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunctionConfig.property.tags"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getTags();
+```
+
+- *Type:* java.util.Map<java.lang.String, java.lang.String>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudfront_function#tags CloudfrontFunction#tags}.
+
+---
+
+##### `tagsAll`<sup>Optional</sup> <a name="tagsAll" id="@cdktn/provider-aws.cloudfrontFunction.CloudfrontFunctionConfig.property.tagsAll"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getTagsAll();
+```
+
+- *Type:* java.util.Map<java.lang.String, java.lang.String>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/cloudfront_function#tags_all CloudfrontFunction#tags_all}.
 
 ---
 

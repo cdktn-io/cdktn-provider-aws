@@ -4,7 +4,7 @@
 
 ### ConfigAggregateAuthorization <a name="ConfigAggregateAuthorization" id="@cdktn/provider-aws.configAggregateAuthorization.ConfigAggregateAuthorization"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/config_aggregate_authorization aws_config_aggregate_authorization}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/config_aggregate_authorization aws_config_aggregate_authorization}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.configAggregateAuthorization.ConfigAggregateAuthorization.Initializer"></a>
 
@@ -39,12 +39,12 @@ ConfigAggregateAuthorization.Builder.create(Construct scope, java.lang.String id
 | <code><a href="#@cdktn/provider-aws.configAggregateAuthorization.ConfigAggregateAuthorization.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.configAggregateAuthorization.ConfigAggregateAuthorization.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.configAggregateAuthorization.ConfigAggregateAuthorization.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.configAggregateAuthorization.ConfigAggregateAuthorization.Initializer.parameter.accountId">accountId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/config_aggregate_authorization#account_id ConfigAggregateAuthorization#account_id}. |
-| <code><a href="#@cdktn/provider-aws.configAggregateAuthorization.ConfigAggregateAuthorization.Initializer.parameter.authorizedAwsRegion">authorizedAwsRegion</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/config_aggregate_authorization#authorized_aws_region ConfigAggregateAuthorization#authorized_aws_region}. |
-| <code><a href="#@cdktn/provider-aws.configAggregateAuthorization.ConfigAggregateAuthorization.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/config_aggregate_authorization#id ConfigAggregateAuthorization#id}. |
-| <code><a href="#@cdktn/provider-aws.configAggregateAuthorization.ConfigAggregateAuthorization.Initializer.parameter.region">region</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/config_aggregate_authorization#region ConfigAggregateAuthorization#region}. |
-| <code><a href="#@cdktn/provider-aws.configAggregateAuthorization.ConfigAggregateAuthorization.Initializer.parameter.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/config_aggregate_authorization#tags ConfigAggregateAuthorization#tags}. |
-| <code><a href="#@cdktn/provider-aws.configAggregateAuthorization.ConfigAggregateAuthorization.Initializer.parameter.tagsAll">tagsAll</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/config_aggregate_authorization#tags_all ConfigAggregateAuthorization#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.configAggregateAuthorization.ConfigAggregateAuthorization.Initializer.parameter.accountId">accountId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/config_aggregate_authorization#account_id ConfigAggregateAuthorization#account_id}. |
+| <code><a href="#@cdktn/provider-aws.configAggregateAuthorization.ConfigAggregateAuthorization.Initializer.parameter.authorizedAwsRegion">authorizedAwsRegion</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/config_aggregate_authorization#authorized_aws_region ConfigAggregateAuthorization#authorized_aws_region}. |
+| <code><a href="#@cdktn/provider-aws.configAggregateAuthorization.ConfigAggregateAuthorization.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/config_aggregate_authorization#id ConfigAggregateAuthorization#id}. |
+| <code><a href="#@cdktn/provider-aws.configAggregateAuthorization.ConfigAggregateAuthorization.Initializer.parameter.region">region</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/config_aggregate_authorization#region ConfigAggregateAuthorization#region}. |
+| <code><a href="#@cdktn/provider-aws.configAggregateAuthorization.ConfigAggregateAuthorization.Initializer.parameter.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/config_aggregate_authorization#tags ConfigAggregateAuthorization#tags}. |
+| <code><a href="#@cdktn/provider-aws.configAggregateAuthorization.ConfigAggregateAuthorization.Initializer.parameter.tagsAll">tagsAll</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/config_aggregate_authorization#tags_all ConfigAggregateAuthorization#tags_all}. |
 
 ---
 
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/config_aggregate_authorization#account_id ConfigAggregateAuthorization#account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/config_aggregate_authorization#account_id ConfigAggregateAuthorization#account_id}.
 
 ---
 
@@ -120,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/config_aggregate_authorization#authorized_aws_region ConfigAggregateAuthorization#authorized_aws_region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/config_aggregate_authorization#authorized_aws_region ConfigAggregateAuthorization#authorized_aws_region}.
 
 ---
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/config_aggregate_authorization#id ConfigAggregateAuthorization#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/config_aggregate_authorization#id ConfigAggregateAuthorization#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -139,7 +139,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/config_aggregate_authorization#region ConfigAggregateAuthorization#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/config_aggregate_authorization#region ConfigAggregateAuthorization#region}.
 
 ---
 
@@ -147,7 +147,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/config_aggregate_authorization#tags ConfigAggregateAuthorization#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/config_aggregate_authorization#tags ConfigAggregateAuthorization#tags}.
 
 ---
 
@@ -155,7 +155,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/config_aggregate_authorization#tags_all ConfigAggregateAuthorization#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/config_aggregate_authorization#tags_all ConfigAggregateAuthorization#tags_all}.
 
 ---
 
@@ -639,7 +639,7 @@ The construct id used in the generated config for the ConfigAggregateAuthorizati
 
 The id of the existing ConfigAggregateAuthorization that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/config_aggregate_authorization#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/config_aggregate_authorization#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1012,12 +1012,12 @@ ConfigAggregateAuthorizationConfig.builder()
 | <code><a href="#@cdktn/provider-aws.configAggregateAuthorization.ConfigAggregateAuthorizationConfig.property.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.configAggregateAuthorization.ConfigAggregateAuthorizationConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.configAggregateAuthorization.ConfigAggregateAuthorizationConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.configAggregateAuthorization.ConfigAggregateAuthorizationConfig.property.accountId">accountId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/config_aggregate_authorization#account_id ConfigAggregateAuthorization#account_id}. |
-| <code><a href="#@cdktn/provider-aws.configAggregateAuthorization.ConfigAggregateAuthorizationConfig.property.authorizedAwsRegion">authorizedAwsRegion</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/config_aggregate_authorization#authorized_aws_region ConfigAggregateAuthorization#authorized_aws_region}. |
-| <code><a href="#@cdktn/provider-aws.configAggregateAuthorization.ConfigAggregateAuthorizationConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/config_aggregate_authorization#id ConfigAggregateAuthorization#id}. |
-| <code><a href="#@cdktn/provider-aws.configAggregateAuthorization.ConfigAggregateAuthorizationConfig.property.region">region</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/config_aggregate_authorization#region ConfigAggregateAuthorization#region}. |
-| <code><a href="#@cdktn/provider-aws.configAggregateAuthorization.ConfigAggregateAuthorizationConfig.property.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/config_aggregate_authorization#tags ConfigAggregateAuthorization#tags}. |
-| <code><a href="#@cdktn/provider-aws.configAggregateAuthorization.ConfigAggregateAuthorizationConfig.property.tagsAll">tagsAll</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/config_aggregate_authorization#tags_all ConfigAggregateAuthorization#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.configAggregateAuthorization.ConfigAggregateAuthorizationConfig.property.accountId">accountId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/config_aggregate_authorization#account_id ConfigAggregateAuthorization#account_id}. |
+| <code><a href="#@cdktn/provider-aws.configAggregateAuthorization.ConfigAggregateAuthorizationConfig.property.authorizedAwsRegion">authorizedAwsRegion</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/config_aggregate_authorization#authorized_aws_region ConfigAggregateAuthorization#authorized_aws_region}. |
+| <code><a href="#@cdktn/provider-aws.configAggregateAuthorization.ConfigAggregateAuthorizationConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/config_aggregate_authorization#id ConfigAggregateAuthorization#id}. |
+| <code><a href="#@cdktn/provider-aws.configAggregateAuthorization.ConfigAggregateAuthorizationConfig.property.region">region</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/config_aggregate_authorization#region ConfigAggregateAuthorization#region}. |
+| <code><a href="#@cdktn/provider-aws.configAggregateAuthorization.ConfigAggregateAuthorizationConfig.property.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/config_aggregate_authorization#tags ConfigAggregateAuthorization#tags}. |
+| <code><a href="#@cdktn/provider-aws.configAggregateAuthorization.ConfigAggregateAuthorizationConfig.property.tagsAll">tagsAll</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/config_aggregate_authorization#tags_all ConfigAggregateAuthorization#tags_all}. |
 
 ---
 
@@ -1099,7 +1099,7 @@ public java.lang.String getAccountId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/config_aggregate_authorization#account_id ConfigAggregateAuthorization#account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/config_aggregate_authorization#account_id ConfigAggregateAuthorization#account_id}.
 
 ---
 
@@ -1111,7 +1111,7 @@ public java.lang.String getAuthorizedAwsRegion();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/config_aggregate_authorization#authorized_aws_region ConfigAggregateAuthorization#authorized_aws_region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/config_aggregate_authorization#authorized_aws_region ConfigAggregateAuthorization#authorized_aws_region}.
 
 ---
 
@@ -1123,7 +1123,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/config_aggregate_authorization#id ConfigAggregateAuthorization#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/config_aggregate_authorization#id ConfigAggregateAuthorization#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1138,7 +1138,7 @@ public java.lang.String getRegion();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/config_aggregate_authorization#region ConfigAggregateAuthorization#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/config_aggregate_authorization#region ConfigAggregateAuthorization#region}.
 
 ---
 
@@ -1150,7 +1150,7 @@ public java.util.Map<java.lang.String, java.lang.String> getTags();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/config_aggregate_authorization#tags ConfigAggregateAuthorization#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/config_aggregate_authorization#tags ConfigAggregateAuthorization#tags}.
 
 ---
 
@@ -1162,7 +1162,7 @@ public java.util.Map<java.lang.String, java.lang.String> getTagsAll();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/resources/config_aggregate_authorization#tags_all ConfigAggregateAuthorization#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/resources/config_aggregate_authorization#tags_all ConfigAggregateAuthorization#tags_all}.
 
 ---
 
