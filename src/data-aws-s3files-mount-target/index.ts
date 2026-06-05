@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/data-sources/s3files_mount_target
+// https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/s3files_mount_target
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,7 +15,7 @@ export interface DataAwsS3FilesMountTargetConfig extends cdktn.TerraformMetaArgu
   /**
   * Mount target ID
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/data-sources/s3files_mount_target#id DataAwsS3FilesMountTarget#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/s3files_mount_target#id DataAwsS3FilesMountTarget#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -24,13 +24,13 @@ export interface DataAwsS3FilesMountTargetConfig extends cdktn.TerraformMetaArgu
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/data-sources/s3files_mount_target#region DataAwsS3FilesMountTarget#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/s3files_mount_target#region DataAwsS3FilesMountTarget#region}
   */
   readonly region?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/data-sources/s3files_mount_target aws_s3files_mount_target}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/s3files_mount_target aws_s3files_mount_target}
 */
 export class DataAwsS3FilesMountTarget extends cdktn.TerraformDataSource {
 
@@ -46,7 +46,7 @@ export class DataAwsS3FilesMountTarget extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataAwsS3FilesMountTarget resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsS3FilesMountTarget to import
-  * @param importFromId The id of the existing DataAwsS3FilesMountTarget that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/data-sources/s3files_mount_target#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsS3FilesMountTarget that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/s3files_mount_target#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsS3FilesMountTarget to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -58,7 +58,7 @@ export class DataAwsS3FilesMountTarget extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.48.0/docs/data-sources/s3files_mount_target aws_s3files_mount_target} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.49.0/docs/data-sources/s3files_mount_target aws_s3files_mount_target} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -69,7 +69,7 @@ export class DataAwsS3FilesMountTarget extends cdktn.TerraformDataSource {
       terraformResourceType: 'aws_s3files_mount_target',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.48.0',
+        providerVersion: '6.49.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
